@@ -65,6 +65,13 @@ class SeriesTemplate:
         for e in self.eras:
             if e["from"] <= year <= e["to"]:
                 return e
+        if self.eras:
+            last = max(self.eras, key=lambda e: e["to"])
+            if year > last["to"]:
+                return last  # beyond the researched range: the latest era continues
+            first = min(self.eras, key=lambda e: e["from"])
+            if year < first["from"]:
+                return first
         return None
 
     def exists_in(self, year: int) -> bool:
@@ -79,8 +86,10 @@ class SeriesTemplate:
         if e and e.get("name"):
             name = e["name"]
         if macro and macro in self.region_names:
-            for r in self.region_names[macro]:
-                if r["from"] <= year <= r["to"] and r.get("name"):
+            spans = self.region_names[macro]
+            y = min(year, max(r["to"] for r in spans))
+            for r in spans:
+                if r["from"] <= y <= r["to"] and r.get("name"):
                     return r["name"]
         return name.replace("{track}", label).replace("{region}", label)
 
