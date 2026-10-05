@@ -1296,6 +1296,45 @@
    "team_funding_floor": 0.6
   },
   {
+   "key": "open_wheel_top_irl",
+   "name": "Indy Racing League",
+   "discipline": "open_wheel",
+   "tier": 7,
+   "scope": "national",
+   "venues": [
+    "open_wheel_oval",
+    "big_oval",
+    "superspeedway"
+   ],
+   "season_cost": 7000000,
+   "events": 17,
+   "field_size": 27,
+   "prestige": 88,
+   "visibility": 88,
+   "car_weight": 0.55,
+   "min_age": 18,
+   "max_age": null,
+   "typical_age": [
+    20,
+    34
+   ],
+   "team_based": true,
+   "cars": 24,
+   "pro": true,
+   "salary_top": 4000000,
+   "purse_win": 100000,
+   "license_min_tier": 4,
+   "license_min_starts": 10,
+   "selection": {
+    "performance": 0.435,
+    "potential": 0.217,
+    "money": 0.261,
+    "marketability": 0.087
+   },
+   "team_funding_floor": 0.6,
+   "note": "The IRL (1996-2007): all-oval rival to CART during the open-wheel split; merged into IndyCar in 2008."
+  },
+  {
    "key": "prototype_endurance",
    "name": "Prototype & GT Pro Endurance Championship",
    "discipline": "sports_car",
