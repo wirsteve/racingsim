@@ -357,7 +357,7 @@ simulation reproduces the observed patterns. They live in `racingsim/constants.p
 |---|---|---|
 | Ability scale per tier (mean) | 30, 37, 44, 52, 58, 64, 69, 74 | talent compresses at the top; seats shrink faster than talent |
 | Family racing budget | lognormal, median ≈ $8k, σ = 1.45; adults' budgets grow through their 20s–40s | most racers self-fund cheap classes; a few families fund national programs |
-| Season costs | per series, 2025 USD (e.g. street stock $8k, limited late model $35k, weekly late model $90k, regional SLM tour $175k, Formula Junior $150k, Formula 2000 $450k, Formula Pro $650k, ARCA-analog $1M, Truck-analog $2.5M, O'Reilly-analog $4.5M, Cup-analog $20M per car) | research budgets (typical/competitive) |
+| Season costs | per series, 2025 USD (e.g. mini stock / sport compact $3–3.5k, street stock $8k, limited late model $35k, weekly late model $90k, regional SLM tour $175k, Formula Junior $150k, Formula 2000 $450k, Formula Pro $650k, ARCA-analog $1M, Truck-analog $2.5M, O'Reilly-analog $4.5M, Cup-analog $20M per car) | research budgets (typical/competitive) |
 | Team funding share | junior formula/dev series mostly driver-paid; per-series floors rising with team quality: Truck-analog 35%, O'Reilly-analog 50%, IndyCar-analog 60%, Cup-analog 92%, prototype 95%, dirt pro 55–60% | funding mix table (§3); B 3 |
 | Owner weights | e.g. ARCA-analog money 0.5; Truck-analog money 0.4; O'Reilly-analog 0.35; Cup-analog performance 0.6; dirt pro performance 0.75 | research A 14.5, B 10.1 |
 | Talent bet | owners absorb a driver's funding gap with probability rising with perceived performance, team stature, manufacturer ties and breakout flags | Bell/Larson/Chastain patterns |

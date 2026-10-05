@@ -69,7 +69,7 @@ def retirements(world: "World", results: "SeasonResults", summary: "YearSummary"
     rng = world.rng
     retired = []
     for d in list(world.drivers.values()):
-        if d.status == RETIRED:
+        if d.status == RETIRED or d.is_player:  # the player decides when to retire
             continue
         age = d.age(world.year)
         tier = d.tier if d.series_id else max(0, d.max_tier - 1)

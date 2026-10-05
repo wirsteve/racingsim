@@ -115,6 +115,7 @@ def run_shootouts(world: "World", summary: "YearSummary") -> None:
             if not (so["min_age"] <= d.age(year) <= so["max_age"]):
                 continue
             pool.append(d)
+        applicant = None
         if len(pool) < 4:
             continue
 
@@ -128,6 +129,11 @@ def run_shootouts(world: "World", summary: "YearSummary") -> None:
 
         pool.sort(key=invite_score, reverse=True)
         invited = pool[: so["invites"]]
+        # Drivers can apply: the player's application guarantees an invitation if eligible.
+        applicant = world.player
+        if (applicant is not None and so["key"] in world.player_applications and applicant in pool
+                and applicant not in invited):
+            invited = invited[:-1] + [applicant]
         target = world.pyramid.templates.get(so["target_template"])
         disc = target.discipline if target else invited[0].primary_discipline
 
@@ -136,12 +142,17 @@ def run_shootouts(world: "World", summary: "YearSummary") -> None:
             return d.ability * (0.8 + 0.2 * d.proficiency.get(disc, 0.3)) + d.adaptability * 0.05 + rng.gauss(0, 2.5)
 
         ranked = sorted(invited, key=test_score, reverse=True)
-        winner = ranked[0]
-        winner.scholarship += so["award"]
-        winner.exposure = clamp(winner.exposure + 25)
-        winner.reputation = clamp(winner.reputation + 10)
-        winner.connections[f"target:{so['target_template']}"] = 1.0
-        winner.log(year, f"won the {so['name']} (${so['award']:,.0f} toward the {target.name if target else 'next step'})")
-        summary.signings.append(f"{winner.name} wins {so['name']}")
-        for d in ranked[1:3]:
+        n_win = so.get("winners", 1)
+        for place, winner in enumerate(ranked[:n_win]):
+            winner.scholarship += so["award"]
+            winner.exposure = clamp(winner.exposure + 25)
+            winner.reputation = clamp(winner.reputation + 10)
+            winner.connections[f"target:{so['target_template']}"] = 1.0
+            verb = "won the" if n_win == 1 else "was selected by the"
+            winner.log(year, f"{verb} {so['name']} (${so['award']:,.0f} toward the {target.name if target else 'next step'})")
+            summary.signings.append(f"{winner.name} wins {so['name']}")
+        for d in ranked[n_win:n_win + 2]:
             d.exposure = clamp(d.exposure + 8)
+        if applicant is not None and applicant in invited and applicant not in ranked[:n_win]:
+            pos = ranked.index(applicant) + 1
+            applicant.log(year, f"finished {pos} of {len(ranked)} at the {so['name']}")

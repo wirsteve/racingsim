@@ -163,14 +163,23 @@ def _candidate_disciplines(world: "World", d: Driver, age: int) -> list[tuple[st
     return out
 
 
-def choose_self_run(world: "World", d: Driver, entrant: bool = False) -> bool:
-    """Pick next season's self-funded program. Returns False if the driver is sidelined."""
+def self_run_options(world: "World", d: Driver, entrant: bool = False,
+                     player_view: bool = False) -> list[dict]:
+    """Self-funded programmes a driver could run next season, scored as the AI would.
+
+    ``player_view`` widens the menu for the human: every discipline and every
+    regional tour (travel costs make far-away ones expensive), with no random noise.
+    """
     rng = world.rng
     age = d.age(world.year) + 1
     funding = d.available_funding()
-    best, best_val, best_afford = None, -1e9, 0.0
     current = d.series_id
-    for disc, switch_pen in _candidate_disciplines(world, d, age):
+    out = []
+    if player_view:
+        discs = [(x, 0.0) for x in sorted({t.discipline for t in world.pyramid.templates.values()})]
+    else:
+        discs = _candidate_disciplines(world, d, age)
+    for disc, switch_pen in discs:
         for tpl in world.pyramid.templates.values():
             if tpl.team_based or tpl.discipline != disc:
                 continue
@@ -178,7 +187,11 @@ def choose_self_run(world: "World", d: Driver, entrant: bool = False) -> bool:
                 continue
             if entrant and tpl.tier > 1:
                 continue
-            for s in _self_run_instances(world, d, tpl):
+            if player_view and tpl.scope == "region":
+                instances = _template_index(world).get(tpl.key, [])
+            else:
+                instances = _self_run_instances(world, d, tpl)
+            for s in instances:
                 cost = season_cost_for(world, d, s)
                 afford = funding / cost if cost else 3.0
                 if afford < 0.45:
@@ -198,31 +211,44 @@ def choose_self_run(world: "World", d: Driver, entrant: bool = False) -> bool:
                 elif tpl.tier > d.tier and d.series_id and (age <= 30 or tpl.tier <= 2):
                     # After 2-4 seasons at a level racers itch to step up (research A 14.1).
                     val += min(d.years_at_tier, 4) * 1.6
-                val += rng.gauss(0, 3)
-                if val > best_val:
-                    best, best_val, best_afford = s, val, afford
-    if best is None:
+                if not player_view:
+                    val += rng.gauss(0, 3)
+                out.append({"series": s, "cost": cost, "afford": afford, "value": val,
+                            "readiness": readiness})
+    return out
+
+
+def choose_self_run(world: "World", d: Driver, entrant: bool = False) -> bool:
+    """Pick next season's self-funded program. Returns False if the driver is sidelined."""
+    options = self_run_options(world, d, entrant=entrant)
+    if not options:
         if d.series_id is not None or entrant:
             d.status = SIDELINED
         d.series_id = None
         d.seasons_sidelined += 1
         return False
-    if best.discipline != d.primary_discipline and best.tier >= 1:
-        d.primary_discipline = best.discipline
-    moved_up = best.tier > d.tier and not entrant
-    d.series_id = best.id
-    if best.tier != d.tier:
-        d.years_at_tier = 0
-    d.tier = best.tier
-    d.max_tier = max(d.max_tier, best.tier)
-    d.status = ACTIVE if best_afford >= 0.8 else PART_TIME
-    d.seasons_sidelined = 0
-    if best.scope == "track":
-        d.home_track_id = best.region_key
-    if moved_up and best.tier >= 3:
-        d.log(world.year + 1, f"moved up to the {best.name}")
+    best = max(options, key=lambda o: o["value"])
+    enter_self_run(world, d, best["series"], best["afford"], entrant=entrant)
     _maybe_relocate(world, d)
     return True
+
+
+def enter_self_run(world: "World", d: Driver, series: "Series", afford: float, entrant: bool = False) -> None:
+    release_seat(world, d)
+    if series.discipline != d.primary_discipline and series.tier >= 1:
+        d.primary_discipline = series.discipline
+    moved_up = series.tier > d.tier and not entrant
+    d.series_id = series.id
+    if series.tier != d.tier:
+        d.years_at_tier = 0
+    d.tier = series.tier
+    d.max_tier = max(d.max_tier, series.tier)
+    d.status = ACTIVE if afford >= 0.8 else PART_TIME
+    d.seasons_sidelined = 0
+    if series.scope == "track":
+        d.home_track_id = series.region_key
+    if moved_up and series.tier >= 3:
+        d.log(world.year + 1, f"moved up to the {series.name}")
 
 
 def _maybe_relocate(world: "World", d: Driver) -> None:
@@ -345,9 +371,9 @@ def _would_accept(world: "World", d: Driver, team: Team, tpl: "SeriesTemplate") 
 
 
 def _utility(world: "World", team: Team, tpl: "SeriesTemplate", role: str, gap: float,
-             d: Driver) -> tuple[float, float, bool]:
+             d: Driver, rng=None) -> tuple[float, float, bool]:
     """(utility, funding coverage, team absorbs gap)."""
-    rng = world.rng
+    rng = rng or world.rng
     perf, pot = rate_for_team(team, d, tpl.discipline, tpl.tier, world.year, world)
     funding = d.available_funding()
     absorbed = False
@@ -402,22 +428,35 @@ def _eligible(world: "World", d: Driver, tpl: "SeriesTemplate", role: str) -> bo
     return True
 
 
-def run_market(world: "World", summary: "YearSummary") -> None:
+def open_market(world: "World", summary: "YearSummary") -> None:
+    """Contracts tick; open seats are queued. The player may act before close_market."""
     rng = world.rng
-    coverage = world.seat_coverage
     _evolve_teams(world)
-    world.market.expired = {}
-    queue: list = []
-    _tick_contracts(world, queue, summary)
-    buckets = _candidate_buckets(world)
-    world.market.switch_open = {
+    m = world.market
+    m.expired = {}
+    m.queue = []
+    m.signed = set()
+    _tick_contracts(world, m.queue, summary)
+    m.buckets = _candidate_buckets(world)
+    m.switch_open = {
         d.id for d in world.drivers.values()
         if d.status != RETIRED and rng.random() < (
             0.08 + d.adaptability / 600 + (0.15 if d.status == SIDELINED or d.years_at_tier >= 3 else 0.0))}
-    world.market.comeback_open = {
+    m.comeback_open = {
         d.id for d in world.drivers.values()
         if d.grassroots_veteran and d.status != RETIRED and rng.random() < 0.08}
-    signed: set[int] = set()
+
+
+def run_market(world: "World", summary: "YearSummary") -> None:
+    open_market(world, summary)
+    close_market(world, summary)
+
+
+def close_market(world: "World", summary: "YearSummary") -> None:
+    rng = world.rng
+    coverage = world.seat_coverage
+    m = world.market
+    queue, buckets, signed = m.queue, m.buckets, m.signed
     deferred: list = []
 
     while queue:
@@ -436,7 +475,7 @@ def run_market(world: "World", summary: "YearSummary") -> None:
         sample = pool if len(pool) <= 350 else rng.sample(pool, 350)
         best = None
         for d in sample:
-            if d.id in signed or d.status == RETIRED or d.injury_races > 12:
+            if d.id in signed or d.status == RETIRED or d.injury_races > 12 or d.is_player:
                 continue
             if not _eligible(world, d, tpl, role):
                 continue
@@ -472,7 +511,7 @@ def run_market(world: "World", summary: "YearSummary") -> None:
         role = seat_role(tpl, slot)
         gap = seat_gap(team, tpl, role)
         pool = [d for d in buckets.get(tpl.tier, []) if d.id not in signed and d.team_id is None
-                and d.status != RETIRED and _eligible(world, d, tpl, role)
+                and d.status != RETIRED and not d.is_player and _eligible(world, d, tpl, role)
                 and d.proficiency.get(tpl.discipline, 0) >= 0.12]
         if role == "am":
             pool = [d for d in pool if categorize(d, world.year + 1) in ("bronze", "silver")]
@@ -500,7 +539,7 @@ def run_market(world: "World", summary: "YearSummary") -> None:
 
     # Everyone without a team seat decides their own programme.
     for d in list(world.drivers.values()):
-        if d.status == RETIRED or d.team_id is not None:
+        if d.status == RETIRED or d.team_id is not None or d.is_player:
             continue
         choose_self_run(world, d)
     for did in [k for k in coverage if world.drivers.get(k) is None or world.drivers[k].team_id is None]:

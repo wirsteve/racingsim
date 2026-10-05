@@ -150,6 +150,64 @@
    "note": "Restricted micros / outlaw karts; youth dirt entry."
   },
   {
+   "key": "local_sport_compact",
+   "name": "{track} Sport Compact",
+   "discipline": "dirt_oval",
+   "tier": 1,
+   "scope": "track",
+   "venues": [
+    "dirt_full_body"
+   ],
+   "season_cost": 3000,
+   "events": 16,
+   "field_size": 12,
+   "prestige": 5,
+   "visibility": 2,
+   "car_weight": 0.45,
+   "min_age": 12,
+   "max_age": null,
+   "typical_age": [
+    14,
+    50
+   ],
+   "venue_levels": [
+    "local",
+    "regional"
+   ],
+   "purse_win": 250,
+   "regional_draw_mi": 70,
+   "note": "IMCA-style sport compact: the entry rung of the weekly dirt ladder (research A 2: race-ready for $500-2,000)."
+  },
+  {
+   "key": "local_mini_stock",
+   "name": "{track} Mini Stock",
+   "discipline": "stock_car",
+   "tier": 1,
+   "scope": "track",
+   "venues": [
+    "short_oval"
+   ],
+   "season_cost": 3500,
+   "events": 14,
+   "field_size": 12,
+   "prestige": 5,
+   "visibility": 2,
+   "car_weight": 0.45,
+   "min_age": 12,
+   "max_age": null,
+   "typical_age": [
+    14,
+    50
+   ],
+   "venue_levels": [
+    "local",
+    "regional"
+   ],
+   "purse_win": 300,
+   "regional_draw_mi": 70,
+   "note": "Cheapest weekly class (mini stocks / four-cylinder compacts): the first rung for families without money (research A 2: $500-2,000 cars)."
+  },
+  {
    "key": "local_street_stock",
    "name": "{track} Street Stock",
    "discipline": "stock_car",
@@ -1286,7 +1344,8 @@
    "entrants": 40,
    "visibility": 85,
    "purse_win": 50000,
-   "note": "Snowball Derby analog (December, Pensacola)."
+   "note": "Snowball Derby analog (December, Pensacola).",
+   "week": 30
   },
   {
    "key": "virginia_lms_300",
@@ -1298,7 +1357,8 @@
    "entrants": 40,
    "visibility": 80,
    "purse_win": 32000,
-   "note": "Martinsville late model stock crown jewel analog (~90 cars for 40 spots)."
+   "note": "Martinsville late model stock crown jewel analog (~90 cars for 40 spots).",
+   "week": 26
   },
   {
    "key": "maine_250",
@@ -1310,7 +1370,8 @@
    "entrants": 40,
    "visibility": 70,
    "purse_win": 25000,
-   "note": "Oxford 250 analog."
+   "note": "Oxford 250 analog.",
+   "week": 21
   },
   {
    "key": "indiana_400",
@@ -1322,7 +1383,8 @@
    "entrants": 32,
    "visibility": 65,
    "purse_win": 20000,
-   "note": "Winchester 400 analog."
+   "note": "Winchester 400 analog.",
+   "week": 26
   },
   {
    "key": "music_city_400",
@@ -1334,7 +1396,8 @@
    "entrants": 36,
    "visibility": 70,
    "purse_win": 20000,
-   "note": "All American 400 analog."
+   "note": "All American 400 analog.",
+   "week": 28
   },
   {
    "key": "wisconsin_nationals",
@@ -1346,7 +1409,8 @@
    "entrants": 30,
    "visibility": 65,
    "purse_win": 20000,
-   "note": "Slinger Nationals analog."
+   "note": "Slinger Nationals analog.",
+   "week": 16
   },
   {
    "key": "winter_speed_series",
@@ -1358,7 +1422,8 @@
    "entrants": 40,
    "visibility": 55,
    "purse_win": 10000,
-   "note": "New Smyrna February winter series analog."
+   "note": "New Smyrna February winter series analog.",
+   "week": 3
   },
   {
    "key": "indoor_midget_nationals",
@@ -1370,7 +1435,8 @@
    "entrants": 48,
    "visibility": 85,
    "purse_win": 20000,
-   "note": "Chili Bowl analog: 300+ entries, open to drivers from every tier."
+   "note": "Chili Bowl analog: 300+ entries, open to drivers from every tier.",
+   "week": 1
   },
   {
    "key": "sprint_car_nationals",
@@ -1382,7 +1448,8 @@
    "entrants": 40,
    "visibility": 85,
    "purse_win": 195000,
-   "note": "Knoxville Nationals analog."
+   "note": "Knoxville Nationals analog.",
+   "week": 22
   },
   {
    "key": "summer_sprint_royale",
@@ -1394,7 +1461,8 @@
    "entrants": 36,
    "visibility": 80,
    "purse_win": 200000,
-   "note": "Kings Royal analog."
+   "note": "Kings Royal analog.",
+   "week": 17
   },
   {
    "key": "dirt_late_model_dream",
@@ -1406,7 +1474,8 @@
    "entrants": 36,
    "visibility": 80,
    "purse_win": 100000,
-   "note": "Dirt Late Model Dream analog."
+   "note": "Dirt Late Model Dream analog.",
+   "week": 13
   },
   {
    "key": "fall_dirt_late_100",
@@ -1418,7 +1487,8 @@
    "entrants": 30,
    "visibility": 75,
    "purse_win": 100000,
-   "note": "World 100 analog."
+   "note": "World 100 analog.",
+   "week": 24
   },
   {
    "key": "big_block_week",
@@ -1430,7 +1500,8 @@
    "entrants": 36,
    "visibility": 65,
    "purse_win": 53000,
-   "note": "Super DIRT Week analog (Oswego)."
+   "note": "Super DIRT Week analog (Oswego).",
+   "week": 27
   },
   {
    "key": "northwest_showdown",
@@ -1442,7 +1513,8 @@
    "entrants": 30,
    "visibility": 55,
    "purse_win": 30000,
-   "note": "Evergreen summer showdown analog."
+   "note": "Evergreen summer showdown analog.",
+   "week": 20
   },
   {
    "key": "boone_super_nationals",
@@ -1454,7 +1526,8 @@
    "entrants": 60,
    "visibility": 45,
    "purse_win": 10000,
-   "note": "IMCA Super Nationals analog: the weekly racers' showcase."
+   "note": "IMCA Super Nationals analog: the weekly racers' showcase.",
+   "week": 24
   },
   {
    "key": "pennsylvania_410_classic",
@@ -1466,7 +1539,8 @@
    "entrants": 32,
    "visibility": 65,
    "purse_win": 50000,
-   "note": "Central PA 410 crown-jewel analog."
+   "note": "Central PA 410 crown-jewel analog.",
+   "week": 18
   }
  ],
  "shootouts": [
@@ -1483,7 +1557,8 @@
    "award": 200000,
    "target_template": "junior_formula",
    "prefer_low_funding": false,
-   "note": "Karting-champion shootouts for funded junior formula seats (Road to Indy karting shootouts analog)."
+   "note": "Karting-champion shootouts for funded junior formula seats (Road to Indy karting shootouts analog).",
+   "winners": 1
   },
   {
    "key": "roadster_shootout",
@@ -1498,19 +1573,29 @@
    "award": 110000,
    "target_template": "spec_roadster_cup",
    "prefer_low_funding": false,
-   "note": "Club-racing shootout for a funded pro-cup season (spec roadster shootout analog)."
+   "note": "Club-racing shootout for a funded pro-cup season (spec roadster shootout analog).",
+   "winners": 1
   },
   {
    "key": "stock_combine",
    "name": "Stock Car Opportunity Combine",
    "from_templates": [
-    "local_late_model",
-    "legends_regional",
     "bandolero",
-    "local_street_stock",
     "late_model_tour",
+    "legends_regional",
+    "local_dirt_late_model",
+    "local_dirt_modified",
+    "local_hobby_dirt",
+    "local_late_model",
+    "local_limited_late",
+    "local_mini_stock",
+    "local_sport_compact",
+    "local_sprint",
+    "local_street_stock",
     "micro_sprint",
-    "quarter_midget"
+    "quarter_midget",
+    "regional_midget",
+    "sprint_car_tour"
    ],
    "invites": 12,
    "min_age": 15,
@@ -1518,7 +1603,8 @@
    "award": 175000,
    "target_template": "late_model_tour",
    "prefer_low_funding": true,
-   "note": "Sanctioning-body combine selecting under-funded prospects for a fully funded late model season (diversity/opportunity program analog)."
+   "note": "Sanctioning-body combine selecting under-funded prospects for a fully funded late model season (diversity/opportunity program analog).",
+   "winners": 3
   }
  ]
 }

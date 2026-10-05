@@ -1,4 +1,14 @@
-"""Off-season orchestration: the order in which the ecosystem reacts to a season."""
+"""Off-season orchestration: the order in which the ecosystem reacts to a season.
+
+The off-season is split in two so a human player can make decisions in the middle:
+
+``begin_offseason``    the paddock digests the season, people age/retire, sponsors
+                       move, development programs and shootouts run, contracts tick
+                       and the open seats are put on the market;
+(player decisions)     see ``racingsim.game.career``;
+``complete_offseason`` the AI fills the remaining seats top-down, everyone else
+                       picks a self-run programme, and the next cohort arrives.
+"""
 
 from __future__ import annotations
 
@@ -11,8 +21,13 @@ if TYPE_CHECKING:
     from ..sim.season import SeasonResults
     from ..world.world import World, YearSummary
 
+NEWSWORTHY = ("won the", "development program", "Shootout", "Combine", "first premier-level",
+              "seriously injured", "retired from driving", "stepped back")
 
-def run_offseason(world: "World", results: "SeasonResults", summary: "YearSummary") -> None:
+
+def begin_offseason(world: "World", results: "SeasonResults", summary: "YearSummary") -> None:
+    world.market.event_marks = {d.id: len(d.events) for d in world.drivers.values()}
+    _season_news(world, results)
     # 1. The paddock digests the season: demonstrated level, exposure, reputation.
     scouting.update_after_season(world, results)
     # 2. Money from last year's vouchers is spent; new vouchers are earned.
@@ -39,8 +54,13 @@ def run_offseason(world: "World", results: "SeasonResults", summary: "YearSummar
     # 5. Talent pipelines: manufacturer programs, shootouts, combines.
     programs.manufacturer_programs(world, summary)
     programs.run_shootouts(world, summary)
-    # 6. Silly season: team seats top-down, then everyone else picks a self-run program.
-    market.run_market(world, summary)
+    # 6a. Silly season opens: contracts tick, open seats go on the market.
+    market.open_market(world, summary)
+
+
+def complete_offseason(world: "World", summary: "YearSummary") -> None:
+    # 6b. Seats fill top-down, then everyone else picks a self-run programme.
+    market.close_market(world, summary)
     # 7. A new cohort arrives to replace those who left.
     active = sum(1 for d in world.drivers.values() if d.status != RETIRED)
     target = world.target_population or active
@@ -49,3 +69,35 @@ def run_offseason(world: "World", results: "SeasonResults", summary: "YearSummar
     for d in world.drivers.values():
         if d.status != RETIRED:
             d.years_at_tier += 1
+    _offseason_news(world)
+
+
+def run_offseason(world: "World", results: "SeasonResults", summary: "YearSummary") -> None:
+    begin_offseason(world, results, summary)
+    complete_offseason(world, summary)
+
+
+def _season_news(world: "World", results: "SeasonResults") -> None:
+    for sid, did in results.champions.items():
+        s = world.series(sid)
+        if s.tier >= 3 or (world.player_id == did):
+            d = world.drivers[did]
+            world.post("title", f"{d.name} wins the {s.name} championship", driver_id=did,
+                       series_id=sid, week=0, importance=3 if s.tier >= 6 else 2)
+
+
+def _offseason_news(world: "World") -> None:
+    """Notable drivers' career events from this off-season become news items."""
+    marks = world.market.event_marks
+    for d in world.drivers.values():
+        start = marks.get(d.id, 0)
+        new = d.events[start:]
+        if not new:
+            continue
+        notable = d.is_player or d.max_tier >= 6 or d.reputation >= 55
+        for e in new:
+            text = e.split(": ", 1)[-1]
+            if d.is_player or (notable and ("signed with" in text or any(k in text for k in NEWSWORTHY))) \
+                    or any(k in text for k in ("Shootout", "Combine", "development program at", "first premier-level")):
+                world.post("player" if d.is_player else "move", f"{d.name} {text}", driver_id=d.id, week=0,
+                           importance=3 if d.is_player else 1)

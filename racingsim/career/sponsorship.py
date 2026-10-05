@@ -130,3 +130,42 @@ def _new_deals(world: "World") -> None:
             continue
         amount = min(free, rng.uniform(lo, hi) * clamp(0.5 + _appeal(best) / 120, 0.5, 1.6))
         _sign(world, s, best, amount, rng.randint(1, 3))
+
+
+def pitch_for_player(world: "World", d: Driver) -> str:
+    """The player knocks on doors. Odds follow the same appeal logic sponsors use."""
+    rng = world.rng
+    tier = max(0, min(7, d.tier))
+    local = [s for s in world.sponsors.values() if s.region == d.home_region
+             and s.min_tier <= tier <= s.max_tier and s.budget - s.committed > 300]
+    national = [s for s in world.sponsors.values() if s.scope == "national"
+                and s.min_tier <= tier <= s.max_tier and s.budget - s.committed > 50_000]
+    pool = local + national
+    if not pool:
+        return "Nobody returned your calls. Try again when you're racing at a higher level or in a bigger market."
+    rng.shuffle(pool)
+    appeal = _appeal(d)
+    wins = []
+    national_signed = False
+    for s in pool[:4]:
+        p = clamp((appeal - (18 + tier * 6)) / 60 + 0.25, 0.05, 0.8)
+        if s.scope == "national":
+            if national_signed:
+                continue
+            p *= 0.45  # national brands rarely sign off a cold call
+        if rng.random() < p:
+            lo, hi = DEAL_BANDS[tier]
+            # Deal size tracks how appealing you are, not just the tier you race in.
+            share = clamp(appeal / 110, 0.05, 1.0) * rng.uniform(0.5, 1.0)
+            amount = min(s.budget - s.committed, lo + (hi - lo) * share)
+            if amount < 250:
+                continue
+            _sign(world, s, d, amount, rng.randint(1, 2))
+            wins.append(f"{s.name} (${amount:,.0f}/season)")
+            national_signed = national_signed or s.scope == "national"
+        if len(wins) >= 2:
+            break
+    if not wins:
+        return "Plenty of handshakes, no signatures. Results and a bigger audience would help."
+    d.log(world.year, "signed sponsorship with " + ", ".join(wins))
+    return "New backing: " + "; ".join(wins)

@@ -83,6 +83,16 @@ research must be recorded in the repository.
 
 ---
 
+## R8 — Playable career mode and UI
+
+| ID | Requirement | Status |
+|----|-------------|--------|
+| R8.1 | The player creates a driver (name, home region, starting age, starting discipline, family money, optional talent) and starts at a real local track or youth series near home. | [x] |
+| R8.2 | Seasons can be simmed week by week, to the player's next race, or to season end; crown jewels can be entered (max 3/season); combines and shootouts can be applied to. | [x] |
+| R8.3 | Each off-season the player chooses from genuine team offers (same owner logic as the AI), self-run programmes in any affordable series (with travel costs), staying, sitting out, or retiring; plus once-per-off-season actions (pitch sponsors, hire a coach, relocate). The AI never decides for the player. | [x] |
+| R8.4 | Browser UI: dashboard, career/driver pages (scouting reports for others, exact ratings for the player), series (standings, schedule, results, teams, champions), racing pyramid, drivers browser, teams, track database with map, crown jewels, news wire, save/load, light/dark theme, mobile layout. | [x] |
+| R8.5 | Standard library only; `python -m racingsim serve`. | [x] |
+
 ## Known gaps (tracked for the next iteration)
 
 * Agents/managers are modelled implicitly (an awareness boost for drivers with
@@ -103,4 +113,6 @@ research must be recorded in the repository.
 | Track facts (factual layer) | `data/tracks/*.json` |
 | Track game ratings (derived layer) | `racingsim/tracks/ratings.py`, `data/track_rating_overrides.json` |
 | Career systems | `racingsim/career/` |
+| Career mode | `racingsim/game/` |
+| Web UI + JSON API | `racingsim/ui/` |
 | Tests | `tests/` |

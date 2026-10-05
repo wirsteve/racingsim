@@ -100,6 +100,7 @@ class CrownJewel:
     visibility: int
     purse_win: float
     note: str = ""
+    week: int = 0  # season week (1-30) the event runs
 
 
 class Pyramid:

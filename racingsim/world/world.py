@@ -32,6 +32,12 @@ class MarketState:
     expired: dict[int, int] = field(default_factory=dict)   # driver -> team whose deal expired
     switch_open: set[int] = field(default_factory=set)      # open to a sideways discipline move
     comeback_open: set[int] = field(default_factory=set)    # grassroots veterans open to a comeback
+    queue: list = field(default_factory=list)               # open seats (heap) between open/close
+    buckets: dict = field(default_factory=dict)             # candidate prefilter by tier
+    signed: set[int] = field(default_factory=set)
+    event_marks: dict[int, int] = field(default_factory=dict)  # for turning new events into news
+    player_actions: set[str] = field(default_factory=set)   # once-per-off-season player actions used
+    player_offers: Optional[list] = None                    # cached team offers for the player
 
 
 @dataclass
@@ -68,6 +74,12 @@ class World:
         self.market = MarketState()
         self.cache: dict = {}                       # derived indexes (travel costs, series lookup)
         self.target_population = 0
+        self.player_id: Optional[int] = None
+        self.player_jewels: set[str] = set()        # crown jewels the player chose to enter
+        self.player_applications: set[str] = set()  # combines/shootouts the player applied to
+        self.news: list[dict] = []
+        self.season = None                          # current SeasonRunner (UI / career mode)
+        self.race_logs: dict[int, dict] = {}        # year -> series/jewel key -> race summaries
 
     # ----------------------------------------------------------------- helpers
     def next_id(self, kind: str) -> int:
@@ -196,16 +208,41 @@ class World:
 
     # ------------------------------------------------------------------- loop
     def run_year(self) -> YearSummary:
-        from ..career.offseason import run_offseason
-        from ..sim.season import run_season
+        """AI-only batch year: season, then the whole off-season."""
+        from ..career.offseason import begin_offseason, complete_offseason
+        from ..sim.season import SeasonRunner
         summary = YearSummary(year=self.year)
-        results = run_season(self, summary)
-        self.last_season = results
-        run_offseason(self, results, summary)
+        self.season = SeasonRunner(self, summary)
+        results = self.season.run_to_end()
+        begin_offseason(self, results, summary)
+        complete_offseason(self, summary)
+        return self.end_year(summary)
+
+    def end_year(self, summary: YearSummary) -> YearSummary:
+        if self.season is not None:
+            self.race_logs[self.year] = dict(self.season.race_log)
+            for y in [y for y in self.race_logs if y < self.year - 2]:
+                del self.race_logs[y]
         summary.drivers_by_tier = self.tier_counts()
         self.summaries.append(summary)
         self.year += 1
+        self.player_jewels = set()
+        self.player_applications = set()
         return summary
+
+    def post(self, kind: str, text: str, driver_id: Optional[int] = None,
+             series_id: Optional[str] = None, week: Optional[int] = None, importance: int = 1) -> None:
+        """Add an item to the news wire shown in the UI."""
+        if week is None:
+            week = self.season.week if self.season is not None and not self.season.finished else 0
+        self.news.append({"year": self.year, "week": week, "kind": kind, "text": text,
+                          "driver_id": driver_id, "series_id": series_id, "importance": importance})
+        if len(self.news) > 3000:
+            del self.news[:1000]
+
+    @property
+    def player(self) -> Optional[Driver]:
+        return self.drivers.get(self.player_id) if self.player_id is not None else None
 
     def tier_counts(self) -> dict[int, int]:
         counts: dict[int, int] = {}

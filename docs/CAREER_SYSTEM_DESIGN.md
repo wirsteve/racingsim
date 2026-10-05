@@ -149,7 +149,27 @@ discipline switcher, shootout/combine winner, development signee, crown-jewel
 winner from local ranks, ran out of money. `tests/test_career_systems.py`
 asserts these arise from a seeded simulation rather than from scripted events.
 
-## 8. Known simplifications / next steps
+## 8. Career mode and UI
+
+* `racingsim/game/career.py` — the player's driver is an ordinary `Driver` with
+  `is_player=True`. The AI market, self-run choices and retirement skip the player;
+  everything else (scouting, sponsors, programs, substitutes, injuries) treats the
+  player like anyone else.
+* The off-season is split (`begin_offseason` → player decisions → `complete_offseason`).
+  Team offers are the open seats where the owner's utility for the player beats the
+  best sampled AI candidate (minus a small margin), evaluated with a seeded RNG so
+  offers don't change on page refresh.
+* `racingsim/sim/season.py` runs a 30-week calendar (`SeasonRunner.step`); crown
+  jewels sit on fixed weeks; race results are logged for the UI and a news wire is
+  posted from races, titles, signings and career events.
+* Player levers: crown-jewel entries (max 3, rented car outside your discipline),
+  combine/shootout applications (guaranteed invite, merit-based test), sponsor
+  pitches, coaching, relocation, and the choice of ride.
+* `racingsim/ui/` — a standard-library HTTP server with a JSON API and a vanilla-JS
+  single-page app. Ratings shown for other drivers are scouting reports whose noise
+  shrinks with exposure; the player's own ratings are exact.
+
+## 9. Known simplifications / next steps
 
 * One season per year without a detailed calendar overlap model (drivers race one
   primary series plus crown jewels and substitute drives; part-time schedules

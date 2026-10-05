@@ -2,6 +2,11 @@
 
 **Status:** living document. Last reviewed alongside the first implementation of
 the career ecosystem and track database.
+**Context:** racingsim is a personal project that is not being published or
+distributed. The risks below only matter if that ever changes; the safe
+abstractions stay in place because they cost little, but nothing here blocks
+using real names locally.
+
 **Not legal advice.** This is an engineering risk register: it records what the
 game uses from the real world, why, the safer abstraction we chose where risk
 was unclear, and what a lawyer should confirm before any commercial release.

@@ -71,6 +71,10 @@ def update_after_season(world: "World", results: "SeasonResults") -> None:
             new_exposure += vis * (0.25 + 0.75 * fin ** 2) + min(rec.wins, 8) * vis * 0.03
             if rec.champion:
                 new_exposure += vis * 0.35
+            if d.age(world.year) <= 19 and rec.tier <= 3:
+                # A teenager winning at the local level gets talked about: word travels to
+                # regional owners and manufacturer scouts faster than results alone suggest.
+                new_exposure += min(rec.wins, 8) * 1.5 + (6 if rec.champion else 0)
             d.momentum = clamp(d.momentum * 0.5 + (fin - 0.5) * 40, -50, 50)
             # Reputation drifts toward what the driver has shown at this level.
             target = clamp(rec.tier * 9 + fin * 25 + (12 if rec.champion else 0))
@@ -103,7 +107,7 @@ def estimated_potential(d: Driver, year: int) -> float:
 
 
 def is_aware(world: "World", team_tier: int, team_region: Optional[str], discipline: str,
-             d: Driver, connection: float = 0.0) -> bool:
+             d: Driver, connection: float = 0.0, rng=None) -> bool:
     """Does a decision maker at this tier know this driver exists?"""
     need = NOTICE_THRESHOLD[team_tier]
     p = logistic((d.exposure - need) / 6.0)
@@ -118,7 +122,7 @@ def is_aware(world: "World", team_tier: int, team_region: Optional[str], discipl
         p += 0.08
     if has_manager(d):
         p += 0.1
-    return world.rng.random() < p
+    return (rng or world.rng).random() < p
 
 
 def has_manager(d: Driver) -> bool:

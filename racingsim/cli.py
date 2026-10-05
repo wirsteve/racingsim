@@ -1,5 +1,6 @@
 """Command-line entry point.
 
+    python -m racingsim serve                       # play in the browser
     python -m racingsim simulate --years 10 --seed 7
     python -m racingsim tracks --region WI
     python -m racingsim track "Slinger Speedway"
@@ -91,6 +92,12 @@ def cmd_export(args: argparse.Namespace) -> int:
     return 0
 
 
+def cmd_serve(args: argparse.Namespace) -> int:
+    from .ui.server import serve
+    serve(host=args.host, port=args.port, open_browser=not args.no_browser)
+    return 0
+
+
 def main(argv: list[str] | None = None) -> int:
     p = argparse.ArgumentParser(prog="racingsim")
     sub = p.add_subparsers(dest="cmd", required=True)
@@ -110,5 +117,10 @@ def main(argv: list[str] | None = None) -> int:
     e = sub.add_parser("export-tracks", help="persist the track database to SQLite")
     e.add_argument("path")
     e.set_defaults(func=cmd_export)
+    sv = sub.add_parser("serve", help="run the game UI in your browser")
+    sv.add_argument("--host", default="127.0.0.1")
+    sv.add_argument("--port", type=int, default=8765)
+    sv.add_argument("--no-browser", action="store_true")
+    sv.set_defaults(func=cmd_serve)
     args = p.parse_args(argv)
     return args.func(args)

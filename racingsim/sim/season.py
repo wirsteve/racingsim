@@ -72,76 +72,177 @@ def self_run_equipment(world: "World", d: Driver, series: "Series") -> tuple[flo
     return clamp(equipment, 8, 95), attendance
 
 
-def run_season(world: "World", summary: "YearSummary") -> SeasonResults:
-    rng = world.rng
-    res = SeasonResults()
-    acc: dict[int, _Acc] = {}
-    attendance: dict[int, float] = {}
+SEASON_WEEKS = 30  # roughly late January to early December
 
-    by_series: dict[str, list[Driver]] = defaultdict(list)
-    for d in world.drivers.values():
-        if d.status in (ACTIVE, PART_TIME) and d.series_id in world.pyramid.series:
-            by_series[d.series_id].append(d)
 
-    # Pre-season: equipment for every entrant.
-    for sid, drivers in by_series.items():
-        s = world.series(sid)
-        for d in drivers:
-            if s.template.team_based and d.team_id in world.teams:
-                team = world.teams[d.team_id]
-                covered = world_seat_coverage(world, d)
-                res.equipment[d.id] = clamp(team.equipment - (1 - covered) * 25 + rng.gauss(0, 2), 5, 99)
-                attendance[d.id] = 1.0 if covered >= 0.6 else clamp(covered / 0.6, 0.3, 1.0)
-            else:
-                eq, att = self_run_equipment(world, d, s)
-                res.equipment[d.id] = eq
-                attendance[d.id] = att * (0.6 if d.status == PART_TIME else 1.0)
+class SeasonRunner:
+    """Runs one season week by week so the UI can show it unfolding.
 
-    sub_pool = _substitute_pool(world)
+    Every series' calendar is spread across ``SEASON_WEEKS``; crown-jewel events sit
+    on fixed weeks (``week`` in data/series.json). ``run_to_end`` reproduces the
+    batch behaviour used by the AI-only simulation and the tests.
+    """
 
-    for sid, drivers in by_series.items():
+    def __init__(self, world: "World", summary: "YearSummary"):
+        self.world = world
+        self.summary = summary
+        self.res = SeasonResults()
+        self.acc: dict[int, _Acc] = {}
+        self.attendance: dict[int, float] = {}
+        self.week = 0
+        self.finished = False
+        self.entered_jewels: dict[int, int] = {}
+        self.race_log: dict[str, list[dict]] = defaultdict(list)
+        rng = world.rng
+        res = self.res
+
+        self.by_series: dict[str, list[Driver]] = defaultdict(list)
+        for d in world.drivers.values():
+            if d.status in (ACTIVE, PART_TIME) and d.series_id in world.pyramid.series:
+                self.by_series[d.series_id].append(d)
+
+        # Pre-season: equipment for every entrant.
+        for sid, drivers in self.by_series.items():
+            s = world.series(sid)
+            for d in drivers:
+                if s.template.team_based and d.team_id in world.teams:
+                    team = world.teams[d.team_id]
+                    covered = world_seat_coverage(world, d)
+                    res.equipment[d.id] = clamp(team.equipment - (1 - covered) * 25 + rng.gauss(0, 2), 5, 99)
+                    self.attendance[d.id] = 1.0 if covered >= 0.6 else clamp(covered / 0.6, 0.3, 1.0)
+                else:
+                    eq, att = self_run_equipment(world, d, s)
+                    res.equipment[d.id] = eq
+                    self.attendance[d.id] = att * (0.6 if d.status == PART_TIME else 1.0)
+
+        self.sub_pool = _substitute_pool(world)
+        self.calendar: dict[int, list[tuple[str, int]]] = defaultdict(list)
+        for sid in sorted(self.by_series):
+            n = len(world.series(sid).schedule)
+            for i in range(n):
+                self.calendar[1 + (i * SEASON_WEEKS) // max(n, 1)].append((sid, i))
+        self.jewels: dict[int, list] = defaultdict(list)
+        for i, cj in enumerate(world.pyramid.crown_jewels):
+            self.jewels[cj.week or (3 + i * 2) % SEASON_WEEKS + 1].append(cj)
+
+    # ------------------------------------------------------------------ stepping
+    def step(self) -> list[dict]:
+        """Run the next week. Returns the races that ran (summaries for the UI)."""
+        if self.finished:
+            return []
+        self.week += 1
+        ran = []
+        for sid, idx in self.calendar.get(self.week, []):
+            info = self._run_event(sid, idx)
+            if info:
+                ran.append(info)
+        for cj in self.jewels.get(self.week, []):
+            info = _crown_jewel(self.world, self, cj)
+            if info:
+                ran.append(info)
+        if self.week >= SEASON_WEEKS:
+            _finalise_records(self.world, self.res, self.acc, self.summary)
+            self.finished = True
+        return ran
+
+    def run_to_end(self) -> SeasonResults:
+        while not self.finished:
+            self.step()
+        return self.res
+
+    def next_week_for(self, driver: Driver) -> Optional[int]:
+        """Next week in which this driver's series races (for 'sim to next race')."""
+        if not driver.series_id:
+            return None
+        for w in range(self.week + 1, SEASON_WEEKS + 1):
+            if any(sid == driver.series_id for sid, _ in self.calendar.get(w, [])):
+                return w
+        return None
+
+    def standings(self, series_id: str) -> list[tuple[int, "_Acc"]]:
+        rows = [(did, a) for did, a in self.acc.items() if a.series_id == series_id]
+        rows.sort(key=lambda r: (-r[1].points, -r[1].wins))
+        return rows
+
+    # ------------------------------------------------------------------ events
+    def _run_event(self, sid: str, event_idx: int) -> Optional[dict]:
+        world, res, rng = self.world, self.res, self.world.rng
         s = world.series(sid)
         tpl = s.template
-        for event_idx, track_id in enumerate(s.schedule):
-            track = world.tracks.get(track_id)
-            entries: list[Entry] = []
-            if tpl.team_based:
-                for team in world.teams_in(sid):
-                    for car in range(team.cars):
-                        car_drivers = []
-                        for slot in range(car * team.drivers_per_car, (car + 1) * team.drivers_per_car):
-                            did = team.roster[slot] if slot < len(team.roster) else None
-                            d = world.drivers.get(did) if did else None
-                            if d is None or d.status == RETIRED:
-                                continue
-                            if (d.injury_races > 0 or not tpl.age_allows_track(d.age(world.year), track)
-                                    or rng.random() > attendance.get(d.id, 1.0)):
-                                sub = _pick_substitute(world, sub_pool, s, track, team)
-                                if sub is not None:
-                                    res.substitute_runs.append((sub.id, sid, -1.0))
-                                    res.equipment.setdefault(sub.id, team.equipment)
-                                    car_drivers.append(sub)
-                                continue
-                            car_drivers.append(d)
-                        if car_drivers:
-                            entries.append(Entry(car_drivers, res.equipment.get(car_drivers[0].id, team.equipment),
-                                                 team_id=team.id, car_key=f"{team.id}:{car}"))
-            else:
-                pool = [d for d in drivers if d.injury_races <= 0
-                        and rng.random() < attendance.get(d.id, 1.0)]
-                cap = int(tpl.field_size * 1.5)
-                if len(pool) > cap:
-                    pool = rng.sample(pool, cap)
-                entries = [Entry([d], res.equipment[d.id]) for d in pool]
-            if len(entries) < 3:
-                continue
-            finishes = run_race(entries, track, tpl.discipline, tpl.tier, tpl.car_weight, rng)
-            _tally(world, res, acc, finishes, s)
-            _tick_injuries(entries)
+        track_id = s.schedule[event_idx]
+        track = world.tracks.get(track_id)
+        drivers = self.by_series[sid]
+        entries: list[Entry] = []
+        if tpl.team_based:
+            for team in world.teams_in(sid):
+                for car in range(team.cars):
+                    car_drivers = []
+                    for slot in range(car * team.drivers_per_car, (car + 1) * team.drivers_per_car):
+                        did = team.roster[slot] if slot < len(team.roster) else None
+                        d = world.drivers.get(did) if did else None
+                        if d is None or d.status == RETIRED:
+                            continue
+                        if (d.injury_races > 0 or not tpl.age_allows_track(d.age(world.year), track)
+                                or rng.random() > self.attendance.get(d.id, 1.0)):
+                            sub = _pick_substitute(world, self.sub_pool, s, track, team)
+                            if sub is not None:
+                                res.substitute_runs.append((sub.id, sid, -1.0))
+                                res.equipment.setdefault(sub.id, team.equipment)
+                                car_drivers.append(sub)
+                            continue
+                        car_drivers.append(d)
+                    if car_drivers:
+                        entries.append(Entry(car_drivers, res.equipment.get(car_drivers[0].id, team.equipment),
+                                             team_id=team.id, car_key=f"{team.id}:{car}"))
+        else:
+            pool = [d for d in drivers if d.injury_races <= 0
+                    and (d.is_player or rng.random() < self.attendance.get(d.id, 1.0))]
+            cap = int(tpl.field_size * 1.5)
+            if len(pool) > cap:
+                keep = [d for d in pool if d.is_player]
+                pool = keep + rng.sample([d for d in pool if not d.is_player], cap - len(keep))
+            entries = [Entry([d], res.equipment[d.id]) for d in pool]
+        if len(entries) < 3:
+            return None
+        finishes = run_race(entries, track, tpl.discipline, tpl.tier, tpl.car_weight, rng)
+        _tally(world, res, self.acc, finishes, s)
+        _tick_injuries(entries)
+        return self._log(s, track, finishes, event_idx)
 
-    _crown_jewels(world, res, acc)
-    _finalise_records(world, res, acc, summary)
-    return res
+    def _log(self, s: "Series", track, finishes: list[Finish], event_idx: int,
+             jewel: Optional[str] = None, jewel_name: Optional[str] = None) -> Optional[dict]:
+        world = self.world
+        player_in = any(d.is_player for f in finishes for d in f.entry.drivers)
+        winner = finishes[0].entry.drivers[0]
+        info = {"week": self.week, "series_id": s.id if s else None, "event": event_idx,
+                "track_id": track.id, "track": track.name, "winner": winner.id,
+                "jewel": jewel, "jewel_name": jewel_name, "player": player_in, "field": len(finishes)}
+        keep = jewel is not None or player_in or (s is not None and (s.tier >= 3 or s.scope != "track"))
+        if keep:
+            info["results"] = [
+                [f.entry.drivers[0].id, f.entry.team_id, f.position, f.dnf,
+                 [d.id for d in f.entry.drivers[1:]]]
+                for f in finishes]
+            self.race_log[jewel or s.id].append(info)
+        if s is not None and s.tier == 7:
+            world.post("race", f"{winner.name} wins the {s.name} race at {track.name}",
+                       driver_id=winner.id, series_id=s.id, week=self.week)
+        if player_in:
+            me = next(f for f in finishes for d in f.entry.drivers if d.is_player)
+            name = jewel_name or s.name
+            pos = me.position
+            text = (f"You won at {track.name} ({name})!" if pos == 1 else
+                    f"You finished P{pos} of {len(finishes)} at {track.name} ({name})"
+                    + (" - DNF" if me.dnf else ""))
+            world.post("player", text, driver_id=world.player_id,
+                       series_id=s.id if s else None, week=self.week, importance=3 if pos <= 3 else 1)
+        return info
+
+
+def run_season(world: "World", summary: "YearSummary") -> SeasonResults:
+    runner = SeasonRunner(world, summary)
+    world.season = runner
+    return runner.run_to_end()
 
 
 def world_seat_coverage(world: "World", d: Driver) -> float:
@@ -196,7 +297,10 @@ def _tally(world: "World", res: SeasonResults, acc: dict[int, _Acc], finishes: l
             d.injury_history += 1
             res.injuries.append((did, races))
             if severe:
-                d.log(world.year, f"seriously injured in a crash at {world.tracks.get(s.schedule[0]).name if s.scope == 'track' else s.name}")
+                d.log(world.year, f"seriously injured in a crash in the {s.name}")
+                if s.tier >= 5 or d.is_player:
+                    world.post("injury", f"{d.name} seriously injured in a {s.name} crash ({races} races out)",
+                               driver_id=d.id, series_id=s.id, importance=2)
 
 
 def _substitute_pool(world: "World") -> list[Driver]:
@@ -233,48 +337,79 @@ def _pick_substitute(world: "World", pool: list[Driver], s: "Series", track, tea
     return best
 
 
-def _crown_jewels(world: "World", res: SeasonResults, acc: dict[int, _Acc]) -> None:
+def _crown_jewel(world: "World", runner: "SeasonRunner", cj) -> Optional[dict]:
     rng = world.rng
-    entered: dict[int, int] = {}
-    for cj in world.pyramid.crown_jewels:
-        track = world.tracks.get(cj.track_id)
-        candidates = []
-        for d in world.drivers.values():
-            if d.status not in (ACTIVE, PART_TIME) or d.injury_races > 0:
-                continue
-            if entered.get(d.id, 0) >= 3:  # a crowded calendar: pick your big races
-                continue
-            if not (cj.min_tier <= d.tier <= cj.max_tier):
-                continue
-            if d.primary_discipline != cj.discipline and not any(
-                    r.discipline == cj.discipline for r in d.history[-5:]):
-                continue
-            if d.age(world.year) < 14:
-                continue
-            dist = math.hypot(d.lat - (track.facts.lat or 0), (d.lon - (track.facts.lon or 0)) * 0.8) * 69
-            appeal = (d.reputation + d.demonstrated) / 2 + d.tier * 4 - dist / 60
-            # Travel + entry cost deters under-funded racers far from the venue.
-            if d.available_funding() < 3000 + dist * 4 and d.tier <= 3:
-                continue
-            candidates.append((appeal + rng.gauss(0, 10), d))
-        candidates.sort(key=lambda x: -x[0])
-        field_drivers = [d for _, d in candidates[: cj.entrants]]
-        if len(field_drivers) < 6:
+    res, acc, entered = runner.res, runner.acc, runner.entered_jewels
+    track = world.tracks.get(cj.track_id)
+    candidates = []
+    forced = []
+    for d in world.drivers.values():
+        if d.status not in (ACTIVE, PART_TIME) or d.injury_races > 0:
             continue
-        for d in field_drivers:
-            entered[d.id] = entered.get(d.id, 0) + 1
-        entries = [Entry([d], res.equipment.get(d.id, 50.0)) for d in field_drivers]
-        finishes = run_race(entries, track, cj.discipline, max(cj.max_tier - 1, 2), 0.45, rng)
-        order = [f.entry.drivers[0].id for f in finishes]
-        res.crown_jewel_results.append((cj.key, order))
-        winner = world.drivers[order[0]]
-        winner.crown_jewels.append(f"{world.year} {cj.name}")
-        winner.savings += cj.purse_win * 0.5
-        winner.log(world.year, f"won the {cj.name} at {track.name}")
-        for pos, did in enumerate(order[:10], start=1):
-            a = acc.get(did)
-            if a is not None:
-                a.purse += purse_for(pos, len(order), cj.purse_win) * 0.5
+        if d.is_player:
+            # The player chooses which crown jewels to enter (UI); the AI never enters for them.
+            if (cj.key in world.player_jewels and jewel_eligible(world, d, cj)
+                    and entered.get(d.id, 0) < MAX_JEWELS_PER_SEASON):
+                forced.append(d)
+            continue
+        if entered.get(d.id, 0) >= MAX_JEWELS_PER_SEASON:  # a crowded calendar: pick your big races
+            continue
+        if not jewel_eligible(world, d, cj):
+            continue
+        dist = math.hypot(d.lat - (track.facts.lat or 0), (d.lon - (track.facts.lon or 0)) * 0.8) * 69
+        appeal = (d.reputation + d.demonstrated) / 2 + d.tier * 4 - dist / 60
+        # Travel + entry cost deters under-funded racers far from the venue.
+        if d.available_funding() < 3000 + dist * 4 and d.tier <= 3:
+            continue
+        candidates.append((appeal + rng.gauss(0, 10), d))
+    candidates.sort(key=lambda x: -x[0])
+    field_drivers = forced + [d for _, d in candidates[: cj.entrants - len(forced)]]
+    if len(field_drivers) < 6:
+        return None
+    for d in field_drivers:
+        entered[d.id] = entered.get(d.id, 0) + 1
+        if d.is_player:
+            d.savings = max(0.0, d.savings - jewel_entry_cost(d, track))
+    entries = [Entry([d], _jewel_equipment(world, res, d, cj, rng)) for d in field_drivers]
+    finishes = run_race(entries, track, cj.discipline, max(cj.max_tier - 1, 2), 0.45, rng)
+    order = [f.entry.drivers[0].id for f in finishes]
+    res.crown_jewel_results.append((cj.key, order))
+    winner = world.drivers[order[0]]
+    winner.crown_jewels.append(f"{world.year} {cj.name}")
+    winner.savings += cj.purse_win * 0.5
+    winner.log(world.year, f"won the {cj.name} at {track.name}")
+    world.post("jewel", f"{winner.name} wins the {cj.name} at {track.name}", driver_id=winner.id,
+               week=runner.week, importance=2)
+    for pos, did in enumerate(order[:10], start=1):
+        a = acc.get(did)
+        if a is not None:
+            a.purse += purse_for(pos, len(order), cj.purse_win) * 0.5
+    return runner._log(None, track, finishes, 0, jewel=cj.key, jewel_name=cj.name)
+
+
+def _jewel_equipment(world: "World", res: SeasonResults, d: Driver, cj, rng) -> float:
+    """Regulars bring their own car; outsiders rent or borrow one (Cup stars in midgets do too)."""
+    own_series = world.pyramid.series.get(d.series_id) if d.series_id else None
+    if own_series is not None and own_series.discipline == cj.discipline:
+        return res.equipment.get(d.id, 50.0)
+    money = d.available_funding()
+    return clamp(45 + 10 * math.log10(max(money, 1_000) / 10_000) + rng.gauss(0, 5), 30, 75)
+
+
+MAX_JEWELS_PER_SEASON = 3
+
+
+def jewel_eligible(world: "World", d: Driver, cj) -> bool:
+    if d.age(world.year) < 14:
+        return False
+    if not (cj.min_tier <= d.tier <= cj.max_tier) and not (d.is_player and d.tier >= cj.min_tier - 1):
+        return False
+    return d.primary_discipline == cj.discipline or any(r.discipline == cj.discipline for r in d.history[-5:])
+
+
+def jewel_entry_cost(d: Driver, track) -> float:
+    dist = math.hypot(d.lat - (track.facts.lat or 0), (d.lon - (track.facts.lon or 0)) * 0.8) * 69
+    return 2500 + dist * 4
 
 
 def _finalise_records(world: "World", res: SeasonResults, acc: dict[int, _Acc], summary) -> None:

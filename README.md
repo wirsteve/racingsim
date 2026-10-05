@@ -18,14 +18,33 @@ sponsors (see [`LICENSING_IP_REVIEW.md`](LICENSING_IP_REVIEW.md)).
 | [`MOTORSPORTS_RESEARCH.md`](MOTORSPORTS_RESEARCH.md) | Research synthesis: career ladders, case studies, economics, scouting, geography, tracks, simulation assumptions |
 | [`docs/research/`](docs/research/) | Detailed research briefs with full source lists |
 | [`docs/CAREER_SYSTEM_DESIGN.md`](docs/CAREER_SYSTEM_DESIGN.md) | How research becomes game systems |
-| [`LICENSING_IP_REVIEW.md`](LICENSING_IP_REVIEW.md) | IP/licensing risk register and safe abstractions |
+| [`LICENSING_IP_REVIEW.md`](LICENSING_IP_REVIEW.md) | IP/licensing notes (personal project — kept as good practice) |
 
-## Quick start
+## Play
 
-Requires Python 3.10+ (standard library only; `pytest` for tests).
+Requires Python 3.10+ (standard library only — nothing to install).
 
 ```bash
-python -m racingsim simulate --years 10 --stories      # generate a world, run 10 seasons
+python -m racingsim serve        # opens http://127.0.0.1:8765 in your browser
+```
+
+1. **New Career** — pick your name, home state/province, starting age, where you
+   start racing (karting, asphalt ovals, dirt, club racing), your family's money,
+   and (optionally) your talent.
+2. **The season** — sim week by week, to your next race, or to the end of the
+   season. Enter crown-jewel events you're eligible for — they're how local racers
+   get seen.
+3. **The off-season** — pitch sponsors, hire a coach, or relocate; then pick your
+   ride: a team offer (funded, or bring money), your own programme in any series you
+   can afford, sit out, or retire.
+4. Browse the world: the racing pyramid, every series and team, thousands of
+   drivers (scouting reports, not true ratings), 312 real tracks on a map, and the
+   news wire. Save/load any time (`saves/` folder).
+
+## Other commands
+
+```bash
+python -m racingsim simulate --years 10 --stories      # AI-only world, 10 seasons
 python -m racingsim tracks --region WI                  # list Wisconsin venues
 python -m racingsim track "Martinsville"                # facts / profile / game ratings
 python -m racingsim export-tracks tracks.sqlite         # persist the track database
