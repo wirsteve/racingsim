@@ -1,0 +1,1173 @@
+{
+ "_comment": "Draft calibration; see MOTORSPORTS_RESEARCH.md 'Geography'. racer_weight = relative share of grassroots racers; culture = relative strength of each discipline's grassroots scene (0-100); sponsor_market = depth of local business sponsorship; industry_hubs = concentration of pro teams/shops (team scouting and job proximity).",
+ "macro_regions": {
+  "northeast": "New England & upstate New York: asphalt modifieds, big-block dirt modifieds",
+  "mid_atlantic": "Pennsylvania/Maryland/NJ: 410 & 358 sprint cars, dirt late models, modifieds",
+  "southeast": "Carolinas/Virginia/Georgia/Tennessee/Florida/Alabama: late model stock & super late models, NASCAR industry hub",
+  "midwest_north": "Wisconsin/Michigan/Minnesota: asphalt super late models, short-track heritage",
+  "midwest_central": "Indiana/Ohio/Illinois: USAC sprint & midget, open-wheel industry hub, dirt",
+  "plains": "Iowa/Nebraska/Kansas/Missouri/Oklahoma/Dakotas: weekly dirt modifieds and sprint cars",
+  "south_central": "Texas/Louisiana/Arkansas: dirt modifieds, growing road racing",
+  "mountain": "Colorado/Arizona/Utah/Nevada & mountain west: small scenes, long travel",
+  "pacific": "California/Oregon/Washington: dirt sprint & midget, road racing and karting",
+  "canada_east": "Ontario/Quebec/Maritimes: asphalt late models, dirt sprint cars",
+  "canada_west": "Prairies & BC: smaller short-track scenes"
+ },
+ "regions": [
+  {
+   "code": "AL",
+   "name": "Alabama",
+   "country": "USA",
+   "macro_region": "southeast",
+   "lat": 33.2,
+   "lon": -86.8,
+   "racer_weight": 3.0,
+   "culture": {
+    "stock_car": 70,
+    "dirt_oval": 70,
+    "open_wheel": 5,
+    "sports_car": 10,
+    "club_road": 10,
+    "karting": 25,
+    "touring_car": 5
+   },
+   "sponsor_market": 45,
+   "industry_hubs": {}
+  },
+  {
+   "code": "AZ",
+   "name": "Arizona",
+   "country": "USA",
+   "macro_region": "mountain",
+   "lat": 33.5,
+   "lon": -112.0,
+   "racer_weight": 2.0,
+   "culture": {
+    "stock_car": 40,
+    "dirt_oval": 45,
+    "open_wheel": 15,
+    "sports_car": 30,
+    "club_road": 30,
+    "karting": 40,
+    "touring_car": 10
+   },
+   "sponsor_market": 55,
+   "industry_hubs": {}
+  },
+  {
+   "code": "AR",
+   "name": "Arkansas",
+   "country": "USA",
+   "macro_region": "south_central",
+   "lat": 34.9,
+   "lon": -92.4,
+   "racer_weight": 1.8,
+   "culture": {
+    "stock_car": 30,
+    "dirt_oval": 85,
+    "open_wheel": 5,
+    "sports_car": 5,
+    "club_road": 8,
+    "karting": 20,
+    "touring_car": 3
+   },
+   "sponsor_market": 35,
+   "industry_hubs": {}
+  },
+  {
+   "code": "CA",
+   "name": "California",
+   "country": "USA",
+   "macro_region": "pacific",
+   "lat": 36.0,
+   "lon": -119.5,
+   "racer_weight": 7.5,
+   "culture": {
+    "stock_car": 40,
+    "dirt_oval": 60,
+    "open_wheel": 30,
+    "sports_car": 50,
+    "club_road": 60,
+    "karting": 70,
+    "touring_car": 25
+   },
+   "sponsor_market": 90,
+   "industry_hubs": {
+    "sports_car": 45,
+    "karting": 50
+   }
+  },
+  {
+   "code": "CO",
+   "name": "Colorado",
+   "country": "USA",
+   "macro_region": "mountain",
+   "lat": 39.7,
+   "lon": -105.0,
+   "racer_weight": 1.6,
+   "culture": {
+    "stock_car": 35,
+    "dirt_oval": 45,
+    "open_wheel": 10,
+    "sports_car": 30,
+    "club_road": 40,
+    "karting": 30,
+    "touring_car": 15
+   },
+   "sponsor_market": 55,
+   "industry_hubs": {}
+  },
+  {
+   "code": "CT",
+   "name": "Connecticut",
+   "country": "USA",
+   "macro_region": "northeast",
+   "lat": 41.6,
+   "lon": -72.7,
+   "racer_weight": 1.5,
+   "culture": {
+    "stock_car": 70,
+    "dirt_oval": 30,
+    "open_wheel": 5,
+    "sports_car": 25,
+    "club_road": 30,
+    "karting": 25,
+    "touring_car": 10
+   },
+   "sponsor_market": 60,
+   "industry_hubs": {}
+  },
+  {
+   "code": "DE",
+   "name": "Delaware",
+   "country": "USA",
+   "macro_region": "mid_atlantic",
+   "lat": 39.0,
+   "lon": -75.5,
+   "racer_weight": 0.5,
+   "culture": {
+    "stock_car": 30,
+    "dirt_oval": 60,
+    "open_wheel": 5,
+    "sports_car": 15,
+    "club_road": 20,
+    "karting": 20,
+    "touring_car": 5
+   },
+   "sponsor_market": 45,
+   "industry_hubs": {}
+  },
+  {
+   "code": "FL",
+   "name": "Florida",
+   "country": "USA",
+   "macro_region": "southeast",
+   "lat": 28.3,
+   "lon": -81.7,
+   "racer_weight": 6.0,
+   "culture": {
+    "stock_car": 60,
+    "dirt_oval": 55,
+    "open_wheel": 25,
+    "sports_car": 45,
+    "club_road": 45,
+    "karting": 80,
+    "touring_car": 15
+   },
+   "sponsor_market": 80,
+   "industry_hubs": {
+    "karting": 55
+   }
+  },
+  {
+   "code": "GA",
+   "name": "Georgia",
+   "country": "USA",
+   "macro_region": "southeast",
+   "lat": 33.6,
+   "lon": -84.0,
+   "racer_weight": 4.2,
+   "culture": {
+    "stock_car": 60,
+    "dirt_oval": 75,
+    "open_wheel": 10,
+    "sports_car": 40,
+    "club_road": 40,
+    "karting": 40,
+    "touring_car": 10
+   },
+   "sponsor_market": 70,
+   "industry_hubs": {
+    "sports_car": 40
+   }
+  },
+  {
+   "code": "ID",
+   "name": "Idaho",
+   "country": "USA",
+   "macro_region": "mountain",
+   "lat": 43.6,
+   "lon": -116.2,
+   "racer_weight": 0.8,
+   "culture": {
+    "stock_car": 40,
+    "dirt_oval": 50,
+    "open_wheel": 5,
+    "sports_car": 10,
+    "club_road": 20,
+    "karting": 15,
+    "touring_car": 5
+   },
+   "sponsor_market": 30,
+   "industry_hubs": {}
+  },
+  {
+   "code": "IL",
+   "name": "Illinois",
+   "country": "USA",
+   "macro_region": "midwest_central",
+   "lat": 41.0,
+   "lon": -89.0,
+   "racer_weight": 4.0,
+   "culture": {
+    "stock_car": 45,
+    "dirt_oval": 70,
+    "open_wheel": 20,
+    "sports_car": 20,
+    "club_road": 30,
+    "karting": 35,
+    "touring_car": 10
+   },
+   "sponsor_market": 75,
+   "industry_hubs": {}
+  },
+  {
+   "code": "IN",
+   "name": "Indiana",
+   "country": "USA",
+   "macro_region": "midwest_central",
+   "lat": 39.9,
+   "lon": -86.2,
+   "racer_weight": 5.0,
+   "culture": {
+    "stock_car": 50,
+    "dirt_oval": 80,
+    "open_wheel": 95,
+    "sports_car": 20,
+    "club_road": 30,
+    "karting": 50,
+    "touring_car": 10
+   },
+   "sponsor_market": 70,
+   "industry_hubs": {
+    "open_wheel": 100,
+    "dirt_oval": 70
+   }
+  },
+  {
+   "code": "IA",
+   "name": "Iowa",
+   "country": "USA",
+   "macro_region": "plains",
+   "lat": 41.9,
+   "lon": -93.4,
+   "racer_weight": 3.2,
+   "culture": {
+    "stock_car": 20,
+    "dirt_oval": 95,
+    "open_wheel": 5,
+    "sports_car": 5,
+    "club_road": 8,
+    "karting": 15,
+    "touring_car": 3
+   },
+   "sponsor_market": 40,
+   "industry_hubs": {
+    "dirt_oval": 40
+   }
+  },
+  {
+   "code": "KS",
+   "name": "Kansas",
+   "country": "USA",
+   "macro_region": "plains",
+   "lat": 38.5,
+   "lon": -97.5,
+   "racer_weight": 1.6,
+   "culture": {
+    "stock_car": 20,
+    "dirt_oval": 90,
+    "open_wheel": 5,
+    "sports_car": 5,
+    "club_road": 10,
+    "karting": 15,
+    "touring_car": 3
+   },
+   "sponsor_market": 40,
+   "industry_hubs": {}
+  },
+  {
+   "code": "KY",
+   "name": "Kentucky",
+   "country": "USA",
+   "macro_region": "southeast",
+   "lat": 37.8,
+   "lon": -85.3,
+   "racer_weight": 2.0,
+   "culture": {
+    "stock_car": 40,
+    "dirt_oval": 75,
+    "open_wheel": 5,
+    "sports_car": 10,
+    "club_road": 15,
+    "karting": 20,
+    "touring_car": 5
+   },
+   "sponsor_market": 45,
+   "industry_hubs": {}
+  },
+  {
+   "code": "LA",
+   "name": "Louisiana",
+   "country": "USA",
+   "macro_region": "south_central",
+   "lat": 30.8,
+   "lon": -91.5,
+   "racer_weight": 1.6,
+   "culture": {
+    "stock_car": 45,
+    "dirt_oval": 65,
+    "open_wheel": 5,
+    "sports_car": 15,
+    "club_road": 20,
+    "karting": 20,
+    "touring_car": 5
+   },
+   "sponsor_market": 45,
+   "industry_hubs": {}
+  },
+  {
+   "code": "ME",
+   "name": "Maine",
+   "country": "USA",
+   "macro_region": "northeast",
+   "lat": 44.2,
+   "lon": -70.0,
+   "racer_weight": 1.2,
+   "culture": {
+    "stock_car": 85,
+    "dirt_oval": 15,
+    "open_wheel": 3,
+    "sports_car": 5,
+    "club_road": 10,
+    "karting": 10,
+    "touring_car": 3
+   },
+   "sponsor_market": 35,
+   "industry_hubs": {}
+  },
+  {
+   "code": "MD",
+   "name": "Maryland",
+   "country": "USA",
+   "macro_region": "mid_atlantic",
+   "lat": 39.2,
+   "lon": -76.8,
+   "racer_weight": 1.5,
+   "culture": {
+    "stock_car": 30,
+    "dirt_oval": 75,
+    "open_wheel": 5,
+    "sports_car": 20,
+    "club_road": 30,
+    "karting": 25,
+    "touring_car": 5
+   },
+   "sponsor_market": 60,
+   "industry_hubs": {}
+  },
+  {
+   "code": "MA",
+   "name": "Massachusetts",
+   "country": "USA",
+   "macro_region": "northeast",
+   "lat": 42.3,
+   "lon": -71.6,
+   "racer_weight": 1.5,
+   "culture": {
+    "stock_car": 70,
+    "dirt_oval": 25,
+    "open_wheel": 5,
+    "sports_car": 20,
+    "club_road": 30,
+    "karting": 25,
+    "touring_car": 10
+   },
+   "sponsor_market": 70,
+   "industry_hubs": {}
+  },
+  {
+   "code": "MI",
+   "name": "Michigan",
+   "country": "USA",
+   "macro_region": "midwest_north",
+   "lat": 42.8,
+   "lon": -84.6,
+   "racer_weight": 4.0,
+   "culture": {
+    "stock_car": 65,
+    "dirt_oval": 60,
+    "open_wheel": 15,
+    "sports_car": 25,
+    "club_road": 35,
+    "karting": 35,
+    "touring_car": 15
+   },
+   "sponsor_market": 70,
+   "industry_hubs": {
+    "sports_car": 30
+   }
+  },
+  {
+   "code": "MN",
+   "name": "Minnesota",
+   "country": "USA",
+   "macro_region": "midwest_north",
+   "lat": 45.0,
+   "lon": -93.5,
+   "racer_weight": 2.6,
+   "culture": {
+    "stock_car": 45,
+    "dirt_oval": 75,
+    "open_wheel": 5,
+    "sports_car": 15,
+    "club_road": 25,
+    "karting": 20,
+    "touring_car": 5
+   },
+   "sponsor_market": 60,
+   "industry_hubs": {}
+  },
+  {
+   "code": "MS",
+   "name": "Mississippi",
+   "country": "USA",
+   "macro_region": "southeast",
+   "lat": 32.5,
+   "lon": -89.8,
+   "racer_weight": 1.6,
+   "culture": {
+    "stock_car": 55,
+    "dirt_oval": 70,
+    "open_wheel": 3,
+    "sports_car": 5,
+    "club_road": 8,
+    "karting": 15,
+    "touring_car": 3
+   },
+   "sponsor_market": 35,
+   "industry_hubs": {}
+  },
+  {
+   "code": "MO",
+   "name": "Missouri",
+   "country": "USA",
+   "macro_region": "plains",
+   "lat": 38.5,
+   "lon": -92.5,
+   "racer_weight": 3.0,
+   "culture": {
+    "stock_car": 30,
+    "dirt_oval": 90,
+    "open_wheel": 5,
+    "sports_car": 10,
+    "club_road": 15,
+    "karting": 20,
+    "touring_car": 5
+   },
+   "sponsor_market": 50,
+   "industry_hubs": {}
+  },
+  {
+   "code": "MT",
+   "name": "Montana",
+   "country": "USA",
+   "macro_region": "mountain",
+   "lat": 46.6,
+   "lon": -110.0,
+   "racer_weight": 0.6,
+   "culture": {
+    "stock_car": 30,
+    "dirt_oval": 60,
+    "open_wheel": 3,
+    "sports_car": 8,
+    "club_road": 15,
+    "karting": 10,
+    "touring_car": 3
+   },
+   "sponsor_market": 25,
+   "industry_hubs": {}
+  },
+  {
+   "code": "NE",
+   "name": "Nebraska",
+   "country": "USA",
+   "macro_region": "plains",
+   "lat": 41.0,
+   "lon": -97.0,
+   "racer_weight": 1.6,
+   "culture": {
+    "stock_car": 15,
+    "dirt_oval": 95,
+    "open_wheel": 3,
+    "sports_car": 5,
+    "club_road": 10,
+    "karting": 10,
+    "touring_car": 3
+   },
+   "sponsor_market": 35,
+   "industry_hubs": {}
+  },
+  {
+   "code": "NV",
+   "name": "Nevada",
+   "country": "USA",
+   "macro_region": "mountain",
+   "lat": 36.4,
+   "lon": -115.5,
+   "racer_weight": 1.0,
+   "culture": {
+    "stock_car": 40,
+    "dirt_oval": 40,
+    "open_wheel": 10,
+    "sports_car": 25,
+    "club_road": 25,
+    "karting": 35,
+    "touring_car": 10
+   },
+   "sponsor_market": 55,
+   "industry_hubs": {}
+  },
+  {
+   "code": "NH",
+   "name": "New Hampshire",
+   "country": "USA",
+   "macro_region": "northeast",
+   "lat": 43.2,
+   "lon": -71.5,
+   "racer_weight": 1.0,
+   "culture": {
+    "stock_car": 85,
+    "dirt_oval": 25,
+    "open_wheel": 5,
+    "sports_car": 20,
+    "club_road": 25,
+    "karting": 15,
+    "touring_car": 5
+   },
+   "sponsor_market": 45,
+   "industry_hubs": {}
+  },
+  {
+   "code": "NJ",
+   "name": "New Jersey",
+   "country": "USA",
+   "macro_region": "mid_atlantic",
+   "lat": 40.2,
+   "lon": -74.5,
+   "racer_weight": 2.0,
+   "culture": {
+    "stock_car": 40,
+    "dirt_oval": 65,
+    "open_wheel": 10,
+    "sports_car": 25,
+    "club_road": 35,
+    "karting": 35,
+    "touring_car": 10
+   },
+   "sponsor_market": 75,
+   "industry_hubs": {}
+  },
+  {
+   "code": "NM",
+   "name": "New Mexico",
+   "country": "USA",
+   "macro_region": "mountain",
+   "lat": 35.0,
+   "lon": -106.4,
+   "racer_weight": 0.7,
+   "culture": {
+    "stock_car": 30,
+    "dirt_oval": 55,
+    "open_wheel": 5,
+    "sports_car": 10,
+    "club_road": 15,
+    "karting": 15,
+    "touring_car": 5
+   },
+   "sponsor_market": 30,
+   "industry_hubs": {}
+  },
+  {
+   "code": "NY",
+   "name": "New York",
+   "country": "USA",
+   "macro_region": "northeast",
+   "lat": 42.8,
+   "lon": -75.5,
+   "racer_weight": 5.0,
+   "culture": {
+    "stock_car": 55,
+    "dirt_oval": 80,
+    "open_wheel": 10,
+    "sports_car": 35,
+    "club_road": 35,
+    "karting": 30,
+    "touring_car": 15
+   },
+   "sponsor_market": 85,
+   "industry_hubs": {
+    "sports_car": 30
+   }
+  },
+  {
+   "code": "NC",
+   "name": "North Carolina",
+   "country": "USA",
+   "macro_region": "southeast",
+   "lat": 35.5,
+   "lon": -80.3,
+   "racer_weight": 7.0,
+   "culture": {
+    "stock_car": 100,
+    "dirt_oval": 65,
+    "open_wheel": 15,
+    "sports_car": 30,
+    "club_road": 35,
+    "karting": 55,
+    "touring_car": 10
+   },
+   "sponsor_market": 85,
+   "industry_hubs": {
+    "stock_car": 100,
+    "karting": 45
+   }
+  },
+  {
+   "code": "ND",
+   "name": "North Dakota",
+   "country": "USA",
+   "macro_region": "plains",
+   "lat": 47.0,
+   "lon": -100.0,
+   "racer_weight": 0.7,
+   "culture": {
+    "stock_car": 10,
+    "dirt_oval": 90,
+    "open_wheel": 3,
+    "sports_car": 3,
+    "club_road": 5,
+    "karting": 5,
+    "touring_car": 2
+   },
+   "sponsor_market": 25,
+   "industry_hubs": {}
+  },
+  {
+   "code": "OH",
+   "name": "Ohio",
+   "country": "USA",
+   "macro_region": "midwest_central",
+   "lat": 40.3,
+   "lon": -82.8,
+   "racer_weight": 5.0,
+   "culture": {
+    "stock_car": 55,
+    "dirt_oval": 85,
+    "open_wheel": 25,
+    "sports_car": 30,
+    "club_road": 35,
+    "karting": 40,
+    "touring_car": 15
+   },
+   "sponsor_market": 70,
+   "industry_hubs": {
+    "sports_car": 30
+   }
+  },
+  {
+   "code": "OK",
+   "name": "Oklahoma",
+   "country": "USA",
+   "macro_region": "plains",
+   "lat": 35.5,
+   "lon": -97.5,
+   "racer_weight": 2.0,
+   "culture": {
+    "stock_car": 20,
+    "dirt_oval": 95,
+    "open_wheel": 10,
+    "sports_car": 5,
+    "club_road": 10,
+    "karting": 20,
+    "touring_car": 3
+   },
+   "sponsor_market": 45,
+   "industry_hubs": {
+    "dirt_oval": 40
+   }
+  },
+  {
+   "code": "OR",
+   "name": "Oregon",
+   "country": "USA",
+   "macro_region": "pacific",
+   "lat": 44.5,
+   "lon": -122.8,
+   "racer_weight": 1.4,
+   "culture": {
+    "stock_car": 45,
+    "dirt_oval": 50,
+    "open_wheel": 10,
+    "sports_car": 25,
+    "club_road": 40,
+    "karting": 25,
+    "touring_car": 10
+   },
+   "sponsor_market": 50,
+   "industry_hubs": {}
+  },
+  {
+   "code": "PA",
+   "name": "Pennsylvania",
+   "country": "USA",
+   "macro_region": "mid_atlantic",
+   "lat": 40.5,
+   "lon": -77.5,
+   "racer_weight": 6.0,
+   "culture": {
+    "stock_car": 50,
+    "dirt_oval": 95,
+    "open_wheel": 15,
+    "sports_car": 30,
+    "club_road": 35,
+    "karting": 40,
+    "touring_car": 10
+   },
+   "sponsor_market": 75,
+   "industry_hubs": {
+    "dirt_oval": 70
+   }
+  },
+  {
+   "code": "RI",
+   "name": "Rhode Island",
+   "country": "USA",
+   "macro_region": "northeast",
+   "lat": 41.7,
+   "lon": -71.5,
+   "racer_weight": 0.4,
+   "culture": {
+    "stock_car": 60,
+    "dirt_oval": 10,
+    "open_wheel": 3,
+    "sports_car": 10,
+    "club_road": 15,
+    "karting": 15,
+    "touring_car": 5
+   },
+   "sponsor_market": 40,
+   "industry_hubs": {}
+  },
+  {
+   "code": "SC",
+   "name": "South Carolina",
+   "country": "USA",
+   "macro_region": "southeast",
+   "lat": 34.0,
+   "lon": -81.0,
+   "racer_weight": 3.5,
+   "culture": {
+    "stock_car": 80,
+    "dirt_oval": 75,
+    "open_wheel": 5,
+    "sports_car": 15,
+    "club_road": 20,
+    "karting": 30,
+    "touring_car": 5
+   },
+   "sponsor_market": 55,
+   "industry_hubs": {
+    "stock_car": 40
+   }
+  },
+  {
+   "code": "SD",
+   "name": "South Dakota",
+   "country": "USA",
+   "macro_region": "plains",
+   "lat": 44.0,
+   "lon": -99.5,
+   "racer_weight": 0.8,
+   "culture": {
+    "stock_car": 10,
+    "dirt_oval": 90,
+    "open_wheel": 3,
+    "sports_car": 3,
+    "club_road": 5,
+    "karting": 5,
+    "touring_car": 2
+   },
+   "sponsor_market": 25,
+   "industry_hubs": {}
+  },
+  {
+   "code": "TN",
+   "name": "Tennessee",
+   "country": "USA",
+   "macro_region": "southeast",
+   "lat": 35.9,
+   "lon": -86.4,
+   "racer_weight": 3.5,
+   "culture": {
+    "stock_car": 70,
+    "dirt_oval": 75,
+    "open_wheel": 5,
+    "sports_car": 15,
+    "club_road": 20,
+    "karting": 30,
+    "touring_car": 5
+   },
+   "sponsor_market": 55,
+   "industry_hubs": {
+    "stock_car": 30
+   }
+  },
+  {
+   "code": "TX",
+   "name": "Texas",
+   "country": "USA",
+   "macro_region": "south_central",
+   "lat": 31.0,
+   "lon": -97.5,
+   "racer_weight": 6.0,
+   "culture": {
+    "stock_car": 40,
+    "dirt_oval": 75,
+    "open_wheel": 10,
+    "sports_car": 35,
+    "club_road": 40,
+    "karting": 50,
+    "touring_car": 15
+   },
+   "sponsor_market": 85,
+   "industry_hubs": {
+    "sports_car": 35
+   }
+  },
+  {
+   "code": "UT",
+   "name": "Utah",
+   "country": "USA",
+   "macro_region": "mountain",
+   "lat": 40.7,
+   "lon": -111.9,
+   "racer_weight": 0.9,
+   "culture": {
+    "stock_car": 40,
+    "dirt_oval": 40,
+    "open_wheel": 5,
+    "sports_car": 25,
+    "club_road": 35,
+    "karting": 25,
+    "touring_car": 10
+   },
+   "sponsor_market": 40,
+   "industry_hubs": {}
+  },
+  {
+   "code": "VT",
+   "name": "Vermont",
+   "country": "USA",
+   "macro_region": "northeast",
+   "lat": 44.2,
+   "lon": -72.6,
+   "racer_weight": 0.6,
+   "culture": {
+    "stock_car": 85,
+    "dirt_oval": 20,
+    "open_wheel": 3,
+    "sports_car": 10,
+    "club_road": 15,
+    "karting": 10,
+    "touring_car": 3
+   },
+   "sponsor_market": 25,
+   "industry_hubs": {}
+  },
+  {
+   "code": "VA",
+   "name": "Virginia",
+   "country": "USA",
+   "macro_region": "southeast",
+   "lat": 37.4,
+   "lon": -78.3,
+   "racer_weight": 4.5,
+   "culture": {
+    "stock_car": 95,
+    "dirt_oval": 60,
+    "open_wheel": 5,
+    "sports_car": 30,
+    "club_road": 35,
+    "karting": 35,
+    "touring_car": 10
+   },
+   "sponsor_market": 70,
+   "industry_hubs": {
+    "stock_car": 45
+   }
+  },
+  {
+   "code": "WA",
+   "name": "Washington",
+   "country": "USA",
+   "macro_region": "pacific",
+   "lat": 47.4,
+   "lon": -121.5,
+   "racer_weight": 2.0,
+   "culture": {
+    "stock_car": 50,
+    "dirt_oval": 55,
+    "open_wheel": 10,
+    "sports_car": 25,
+    "club_road": 40,
+    "karting": 30,
+    "touring_car": 10
+   },
+   "sponsor_market": 65,
+   "industry_hubs": {}
+  },
+  {
+   "code": "WV",
+   "name": "West Virginia",
+   "country": "USA",
+   "macro_region": "mid_atlantic",
+   "lat": 38.6,
+   "lon": -80.6,
+   "racer_weight": 1.2,
+   "culture": {
+    "stock_car": 35,
+    "dirt_oval": 80,
+    "open_wheel": 3,
+    "sports_car": 8,
+    "club_road": 15,
+    "karting": 10,
+    "touring_car": 3
+   },
+   "sponsor_market": 30,
+   "industry_hubs": {}
+  },
+  {
+   "code": "WI",
+   "name": "Wisconsin",
+   "country": "USA",
+   "macro_region": "midwest_north",
+   "lat": 43.8,
+   "lon": -89.0,
+   "racer_weight": 4.0,
+   "culture": {
+    "stock_car": 90,
+    "dirt_oval": 60,
+    "open_wheel": 5,
+    "sports_car": 25,
+    "club_road": 35,
+    "karting": 30,
+    "touring_car": 10
+   },
+   "sponsor_market": 60,
+   "industry_hubs": {
+    "stock_car": 30
+   }
+  },
+  {
+   "code": "WY",
+   "name": "Wyoming",
+   "country": "USA",
+   "macro_region": "mountain",
+   "lat": 42.8,
+   "lon": -107.5,
+   "racer_weight": 0.3,
+   "culture": {
+    "stock_car": 25,
+    "dirt_oval": 55,
+    "open_wheel": 3,
+    "sports_car": 5,
+    "club_road": 10,
+    "karting": 5,
+    "touring_car": 2
+   },
+   "sponsor_market": 20,
+   "industry_hubs": {}
+  },
+  {
+   "code": "ON",
+   "name": "Ontario",
+   "country": "CAN",
+   "macro_region": "canada_east",
+   "lat": 43.7,
+   "lon": -79.8,
+   "racer_weight": 3.0,
+   "culture": {
+    "stock_car": 70,
+    "dirt_oval": 45,
+    "open_wheel": 10,
+    "sports_car": 35,
+    "club_road": 40,
+    "karting": 40,
+    "touring_car": 15
+   },
+   "sponsor_market": 75,
+   "industry_hubs": {}
+  },
+  {
+   "code": "QC",
+   "name": "Quebec",
+   "country": "CAN",
+   "macro_region": "canada_east",
+   "lat": 45.8,
+   "lon": -72.9,
+   "racer_weight": 2.0,
+   "culture": {
+    "stock_car": 70,
+    "dirt_oval": 35,
+    "open_wheel": 15,
+    "sports_car": 30,
+    "club_road": 35,
+    "karting": 40,
+    "touring_car": 15
+   },
+   "sponsor_market": 65,
+   "industry_hubs": {}
+  },
+  {
+   "code": "NS",
+   "name": "Nova Scotia",
+   "country": "CAN",
+   "macro_region": "canada_east",
+   "lat": 45.0,
+   "lon": -63.5,
+   "racer_weight": 0.6,
+   "culture": {
+    "stock_car": 85,
+    "dirt_oval": 10,
+    "open_wheel": 3,
+    "sports_car": 5,
+    "club_road": 10,
+    "karting": 10,
+    "touring_car": 5
+   },
+   "sponsor_market": 35,
+   "industry_hubs": {}
+  },
+  {
+   "code": "NB",
+   "name": "New Brunswick",
+   "country": "CAN",
+   "macro_region": "canada_east",
+   "lat": 46.2,
+   "lon": -66.0,
+   "racer_weight": 0.4,
+   "culture": {
+    "stock_car": 80,
+    "dirt_oval": 15,
+    "open_wheel": 3,
+    "sports_car": 5,
+    "club_road": 10,
+    "karting": 10,
+    "touring_car": 5
+   },
+   "sponsor_market": 30,
+   "industry_hubs": {}
+  },
+  {
+   "code": "AB",
+   "name": "Alberta",
+   "country": "CAN",
+   "macro_region": "canada_west",
+   "lat": 52.0,
+   "lon": -113.8,
+   "racer_weight": 1.0,
+   "culture": {
+    "stock_car": 50,
+    "dirt_oval": 40,
+    "open_wheel": 5,
+    "sports_car": 20,
+    "club_road": 30,
+    "karting": 20,
+    "touring_car": 10
+   },
+   "sponsor_market": 55,
+   "industry_hubs": {}
+  },
+  {
+   "code": "BC",
+   "name": "British Columbia",
+   "country": "CAN",
+   "macro_region": "canada_west",
+   "lat": 49.3,
+   "lon": -123.0,
+   "racer_weight": 1.0,
+   "culture": {
+    "stock_car": 50,
+    "dirt_oval": 30,
+    "open_wheel": 5,
+    "sports_car": 25,
+    "club_road": 40,
+    "karting": 25,
+    "touring_car": 10
+   },
+   "sponsor_market": 55,
+   "industry_hubs": {}
+  },
+  {
+   "code": "MB",
+   "name": "Manitoba",
+   "country": "CAN",
+   "macro_region": "canada_west",
+   "lat": 49.9,
+   "lon": -97.2,
+   "racer_weight": 0.4,
+   "culture": {
+    "stock_car": 40,
+    "dirt_oval": 50,
+    "open_wheel": 3,
+    "sports_car": 5,
+    "club_road": 15,
+    "karting": 10,
+    "touring_car": 5
+   },
+   "sponsor_market": 35,
+   "industry_hubs": {}
+  },
+  {
+   "code": "SK",
+   "name": "Saskatchewan",
+   "country": "CAN",
+   "macro_region": "canada_west",
+   "lat": 50.5,
+   "lon": -104.6,
+   "racer_weight": 0.3,
+   "culture": {
+    "stock_car": 35,
+    "dirt_oval": 55,
+    "open_wheel": 3,
+    "sports_car": 5,
+    "club_road": 10,
+    "karting": 10,
+    "touring_car": 5
+   },
+   "sponsor_market": 30,
+   "industry_hubs": {}
+  }
+ ]
+}

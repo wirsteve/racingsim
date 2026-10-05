@@ -1,0 +1,1485 @@
+{
+ "_comment": "Racing pyramid templates. Names are fictional abstractions; real-world analogs are documented in MOTORSPORTS_RESEARCH.md only. Costs in 2025 USD (driver/car-side competitive budget per season, per car). Calibrated from research F section 5 and A/B.",
+ "tiers": [
+  {
+   "level": 0,
+   "name": "Youth & Entry",
+   "description": "Karting, quarter midgets, Bandoleros, micro sprints. Ages ~5-17. Family-funded."
+  },
+  {
+   "level": 1,
+   "name": "Local Entry",
+   "description": "Weekly entry divisions (street/hobby stock), Legends, regional club racing. Self-funded."
+  },
+  {
+   "level": 2,
+   "name": "Local Premier",
+   "description": "Weekly headline divisions (late models, modifieds, sprint cars), national club racing, national karting, first-car junior formula."
+  },
+  {
+   "level": 3,
+   "name": "Regional Touring",
+   "description": "Regional late model / dirt tours, regional stock car development, Formula 2000, spec-roadster pro cup."
+  },
+  {
+   "level": 4,
+   "name": "National Development",
+   "description": "National stock car development series, national midget/sprint car, Formula Pro, one-make GT and touring cups."
+  },
+  {
+   "level": 5,
+   "name": "National Pro Feeder",
+   "description": "Truck series, Formula Lights, GT4/touring endurance, national dirt late model tour."
+  },
+  {
+   "level": 6,
+   "name": "National Pro",
+   "description": "Stock car national series, outlaw 410 sprint tour (dirt pinnacle), GT endurance."
+  },
+  {
+   "level": 7,
+   "name": "Premier Professional",
+   "description": "Premier stock car cup, premier open-wheel championship, prototype endurance."
+  }
+ ],
+ "series": [
+  {
+   "key": "youth_karting",
+   "name": "{region} Youth Karting Championship",
+   "discipline": "karting",
+   "tier": 0,
+   "scope": "region",
+   "venues": [
+    "kart",
+    "club_road"
+   ],
+   "season_cost": 10000,
+   "events": 10,
+   "field_size": 30,
+   "prestige": 5,
+   "visibility": 4,
+   "car_weight": 0.35,
+   "min_age": 5,
+   "max_age": 17,
+   "typical_age": [
+    7,
+    15
+   ],
+   "purse_win": 0,
+   "note": "Club/regional karting. Budgets $3k-15k (research F 5.3)."
+  },
+  {
+   "key": "quarter_midget",
+   "name": "{region} Quarter Midget Series",
+   "discipline": "stock_car",
+   "tier": 0,
+   "scope": "region",
+   "venues": [
+    "youth_oval"
+   ],
+   "season_cost": 7000,
+   "events": 10,
+   "field_size": 24,
+   "prestige": 5,
+   "visibility": 4,
+   "car_weight": 0.35,
+   "min_age": 5,
+   "max_age": 16,
+   "typical_age": [
+    6,
+    13
+   ],
+   "venue_levels": [
+    "local",
+    "regional"
+   ],
+   "note": "Quarter midgets: ~4,000 youth members nationally; ages 5-16."
+  },
+  {
+   "key": "bandolero",
+   "name": "{region} Bandolero Series",
+   "discipline": "stock_car",
+   "tier": 0,
+   "scope": "region",
+   "venues": [
+    "short_oval"
+   ],
+   "season_cost": 12000,
+   "events": 10,
+   "field_size": 20,
+   "prestige": 6,
+   "visibility": 5,
+   "car_weight": 0.35,
+   "min_age": 7,
+   "max_age": 16,
+   "typical_age": [
+    9,
+    14
+   ],
+   "venue_levels": [
+    "local",
+    "regional"
+   ],
+   "note": "Entry stock car for ages 8-16."
+  },
+  {
+   "key": "micro_sprint",
+   "name": "{region} Youth Micro Sprint Series",
+   "discipline": "dirt_oval",
+   "tier": 0,
+   "scope": "region",
+   "venues": [
+    "dirt_oval"
+   ],
+   "season_cost": 15000,
+   "events": 12,
+   "field_size": 22,
+   "prestige": 6,
+   "visibility": 5,
+   "car_weight": 0.35,
+   "min_age": 8,
+   "max_age": 17,
+   "typical_age": [
+    10,
+    16
+   ],
+   "venue_levels": [
+    "local",
+    "regional"
+   ],
+   "note": "Restricted micros / outlaw karts; youth dirt entry."
+  },
+  {
+   "key": "local_street_stock",
+   "name": "{track} Street Stock",
+   "discipline": "stock_car",
+   "tier": 1,
+   "scope": "track",
+   "venues": [
+    "short_oval"
+   ],
+   "season_cost": 8000,
+   "events": 14,
+   "field_size": 18,
+   "prestige": 8,
+   "visibility": 3,
+   "car_weight": 0.45,
+   "min_age": 14,
+   "max_age": null,
+   "typical_age": [
+    16,
+    45
+   ],
+   "venue_levels": [
+    "local",
+    "regional"
+   ],
+   "purse_win": 600,
+   "regional_draw_mi": 80
+  },
+  {
+   "key": "local_hobby_dirt",
+   "name": "{track} Hobby Stock",
+   "discipline": "dirt_oval",
+   "tier": 1,
+   "scope": "track",
+   "venues": [
+    "dirt_full_body"
+   ],
+   "season_cost": 8000,
+   "events": 16,
+   "field_size": 20,
+   "prestige": 8,
+   "visibility": 3,
+   "car_weight": 0.45,
+   "min_age": 14,
+   "max_age": null,
+   "typical_age": [
+    16,
+    45
+   ],
+   "venue_levels": [
+    "local",
+    "regional"
+   ],
+   "purse_win": 500,
+   "regional_draw_mi": 80
+  },
+  {
+   "key": "legends_regional",
+   "name": "{region} Legends Car Series",
+   "discipline": "stock_car",
+   "tier": 1,
+   "scope": "region",
+   "venues": [
+    "short_oval"
+   ],
+   "season_cost": 20000,
+   "events": 12,
+   "field_size": 24,
+   "prestige": 12,
+   "visibility": 8,
+   "car_weight": 0.4,
+   "min_age": 10,
+   "max_age": null,
+   "typical_age": [
+    11,
+    30
+   ],
+   "venue_levels": [
+    "local",
+    "regional"
+   ],
+   "purse_win": 1000
+  },
+  {
+   "key": "club_regional",
+   "name": "{region} Club Racing Regional",
+   "discipline": "club_road",
+   "tier": 1,
+   "scope": "region",
+   "venues": [
+    "club_road"
+   ],
+   "season_cost": 20000,
+   "events": 10,
+   "field_size": 30,
+   "prestige": 8,
+   "visibility": 3,
+   "car_weight": 0.45,
+   "min_age": 16,
+   "max_age": null,
+   "typical_age": [
+    22,
+    60
+   ],
+   "purse_win": 0,
+   "note": "SCCA/NASA regional analog; spec cars, amateur."
+  },
+  {
+   "key": "local_late_model",
+   "name": "{track} Late Model",
+   "discipline": "stock_car",
+   "tier": 2,
+   "scope": "track",
+   "venues": [
+    "short_oval"
+   ],
+   "season_cost": 90000,
+   "events": 14,
+   "field_size": 18,
+   "prestige": 22,
+   "visibility": 10,
+   "car_weight": 0.45,
+   "min_age": 14,
+   "max_age": null,
+   "typical_age": [
+    16,
+    40
+   ],
+   "venue_levels": [
+    "local",
+    "regional"
+   ],
+   "purse_win": 2000,
+   "regional_draw_mi": 150
+  },
+  {
+   "key": "local_dirt_modified",
+   "name": "{track} Modified",
+   "discipline": "dirt_oval",
+   "tier": 2,
+   "scope": "track",
+   "venues": [
+    "dirt_full_body"
+   ],
+   "season_cost": 35000,
+   "events": 16,
+   "field_size": 22,
+   "prestige": 18,
+   "visibility": 8,
+   "car_weight": 0.45,
+   "min_age": 15,
+   "max_age": null,
+   "typical_age": [
+    17,
+    45
+   ],
+   "venue_levels": [
+    "local",
+    "regional"
+   ],
+   "purse_win": 1500,
+   "regional_draw_mi": 150
+  },
+  {
+   "key": "local_dirt_late_model",
+   "name": "{track} Dirt Late Model",
+   "discipline": "dirt_oval",
+   "tier": 2,
+   "scope": "track",
+   "venues": [
+    "dirt_full_body"
+   ],
+   "season_cost": 110000,
+   "events": 14,
+   "field_size": 18,
+   "prestige": 22,
+   "visibility": 10,
+   "car_weight": 0.45,
+   "min_age": 15,
+   "max_age": null,
+   "typical_age": [
+    18,
+    45
+   ],
+   "venue_levels": [
+    "local",
+    "regional"
+   ],
+   "purse_win": 2500,
+   "regional_draw_mi": 150,
+   "macro_hint": "southeast,midwest_central,mid_atlantic,plains"
+  },
+  {
+   "key": "local_sprint",
+   "name": "{track} Sprint Car",
+   "discipline": "dirt_oval",
+   "tier": 2,
+   "scope": "track",
+   "venues": [
+    "dirt_open_wheel"
+   ],
+   "season_cost": 90000,
+   "events": 14,
+   "field_size": 18,
+   "prestige": 22,
+   "visibility": 10,
+   "car_weight": 0.45,
+   "min_age": 14,
+   "max_age": null,
+   "typical_age": [
+    16,
+    40
+   ],
+   "venue_levels": [
+    "local",
+    "regional"
+   ],
+   "purse_win": 2500,
+   "regional_draw_mi": 200
+  },
+  {
+   "key": "club_national",
+   "name": "National Club Racing Championship",
+   "discipline": "club_road",
+   "tier": 2,
+   "scope": "national",
+   "venues": [
+    "club_road",
+    "pro_road"
+   ],
+   "season_cost": 45000,
+   "events": 10,
+   "field_size": 40,
+   "prestige": 25,
+   "visibility": 12,
+   "car_weight": 0.45,
+   "min_age": 16,
+   "max_age": null,
+   "typical_age": [
+    20,
+    55
+   ]
+  },
+  {
+   "key": "national_karting",
+   "name": "National Karting Championship",
+   "discipline": "karting",
+   "tier": 2,
+   "scope": "national",
+   "venues": [
+    "kart",
+    "club_road"
+   ],
+   "season_cost": 50000,
+   "events": 8,
+   "field_size": 40,
+   "prestige": 25,
+   "visibility": 18,
+   "car_weight": 0.35,
+   "min_age": 12,
+   "max_age": 21,
+   "typical_age": [
+    12,
+    17
+   ]
+  },
+  {
+   "key": "junior_formula",
+   "name": "Formula Junior Championship",
+   "discipline": "open_wheel",
+   "tier": 2,
+   "scope": "national",
+   "venues": [
+    "pro_road",
+    "club_road"
+   ],
+   "season_cost": 150000,
+   "events": 14,
+   "field_size": 22,
+   "prestige": 30,
+   "visibility": 30,
+   "car_weight": 0.4,
+   "min_age": 14,
+   "max_age": 22,
+   "typical_age": [
+    14,
+    18
+   ],
+   "team_based": true,
+   "cars": 22,
+   "champion_scholarship": 250000,
+   "note": "USF Juniors / F4 analog (min age 14; budgets $120-300k; champion scholarship ~$250k).",
+   "selection": {
+    "performance": 0.15,
+    "potential": 0.15,
+    "money": 0.65,
+    "marketability": 0.05
+   }
+  },
+  {
+   "key": "late_model_tour",
+   "name": "{region} Late Model Tour",
+   "discipline": "stock_car",
+   "tier": 3,
+   "scope": "region",
+   "venues": [
+    "short_oval"
+   ],
+   "season_cost": 175000,
+   "events": 12,
+   "field_size": 26,
+   "prestige": 40,
+   "visibility": 25,
+   "car_weight": 0.45,
+   "min_age": 14,
+   "max_age": null,
+   "typical_age": [
+    16,
+    35
+   ],
+   "macro_regions": [
+    "southeast",
+    "midwest_north",
+    "midwest_central",
+    "northeast",
+    "pacific",
+    "canada_east",
+    "south_central"
+   ],
+   "purse_win": 6000
+  },
+  {
+   "key": "modified_tour",
+   "name": "{region} Asphalt Modified Tour",
+   "discipline": "stock_car",
+   "tier": 3,
+   "scope": "region",
+   "venues": [
+    "short_oval"
+   ],
+   "season_cost": 150000,
+   "events": 12,
+   "field_size": 26,
+   "prestige": 38,
+   "visibility": 22,
+   "car_weight": 0.45,
+   "min_age": 15,
+   "max_age": null,
+   "typical_age": [
+    18,
+    45
+   ],
+   "macro_regions": [
+    "northeast",
+    "mid_atlantic"
+   ],
+   "purse_win": 5000
+  },
+  {
+   "key": "dirt_late_model_tour",
+   "name": "{region} Dirt Late Model Tour",
+   "discipline": "dirt_oval",
+   "tier": 3,
+   "scope": "region",
+   "venues": [
+    "dirt_full_body"
+   ],
+   "season_cost": 200000,
+   "events": 14,
+   "field_size": 26,
+   "prestige": 38,
+   "visibility": 25,
+   "car_weight": 0.45,
+   "min_age": 15,
+   "max_age": null,
+   "typical_age": [
+    18,
+    40
+   ],
+   "macro_regions": [
+    "southeast",
+    "midwest_central",
+    "mid_atlantic",
+    "plains",
+    "south_central"
+   ],
+   "purse_win": 8000
+  },
+  {
+   "key": "sprint_car_tour",
+   "name": "{region} 360 Sprint Car Tour",
+   "discipline": "dirt_oval",
+   "tier": 3,
+   "scope": "region",
+   "venues": [
+    "dirt_open_wheel"
+   ],
+   "season_cost": 120000,
+   "events": 14,
+   "field_size": 24,
+   "prestige": 38,
+   "visibility": 25,
+   "car_weight": 0.45,
+   "min_age": 15,
+   "max_age": null,
+   "typical_age": [
+    16,
+    35
+   ],
+   "purse_win": 5000
+  },
+  {
+   "key": "regional_midget",
+   "name": "{region} Midget Series",
+   "discipline": "dirt_oval",
+   "tier": 3,
+   "scope": "region",
+   "venues": [
+    "dirt_open_wheel"
+   ],
+   "season_cost": 120000,
+   "events": 12,
+   "field_size": 22,
+   "prestige": 35,
+   "visibility": 25,
+   "car_weight": 0.45,
+   "min_age": 14,
+   "max_age": null,
+   "typical_age": [
+    15,
+    25
+   ],
+   "macro_regions": [
+    "plains",
+    "midwest_central",
+    "pacific",
+    "mid_atlantic"
+   ],
+   "purse_win": 3000
+  },
+  {
+   "key": "stock_regional_dev",
+   "name": "{region} Stock Car Development Series",
+   "discipline": "stock_car",
+   "tier": 3,
+   "scope": "region",
+   "venues": [
+    "short_oval",
+    "mid_oval"
+   ],
+   "season_cost": 500000,
+   "events": 10,
+   "field_size": 18,
+   "prestige": 42,
+   "visibility": 35,
+   "car_weight": 0.5,
+   "min_age": 15,
+   "max_age": null,
+   "typical_age": [
+    15,
+    24
+   ],
+   "macro_regions": [
+    "southeast",
+    "pacific"
+   ],
+   "team_based": true,
+   "cars": 16,
+   "purse_win": 5000,
+   "license_min_tier": 1,
+   "license_min_starts": 10,
+   "note": "ARCA East/West analog: development teams, manufacturer prospects."
+  },
+  {
+   "key": "formula_2000",
+   "name": "Formula 2000 Championship",
+   "discipline": "open_wheel",
+   "tier": 3,
+   "scope": "national",
+   "venues": [
+    "pro_road",
+    "open_wheel_oval"
+   ],
+   "season_cost": 450000,
+   "events": 16,
+   "field_size": 22,
+   "prestige": 42,
+   "visibility": 40,
+   "car_weight": 0.4,
+   "min_age": 15,
+   "max_age": null,
+   "typical_age": [
+    15,
+    20
+   ],
+   "team_based": true,
+   "cars": 22,
+   "champion_scholarship": 405000,
+   "license_min_tier": 2,
+   "license_min_starts": 6,
+   "note": "USF2000 analog.",
+   "selection": {
+    "performance": 0.2,
+    "potential": 0.15,
+    "money": 0.6,
+    "marketability": 0.05
+   }
+  },
+  {
+   "key": "spec_roadster_cup",
+   "name": "Spec Roadster Pro Cup",
+   "discipline": "sports_car",
+   "tier": 3,
+   "scope": "national",
+   "venues": [
+    "pro_road"
+   ],
+   "season_cost": 125000,
+   "events": 12,
+   "field_size": 32,
+   "prestige": 35,
+   "visibility": 30,
+   "car_weight": 0.4,
+   "min_age": 15,
+   "max_age": null,
+   "typical_age": [
+    17,
+    35
+   ],
+   "team_based": true,
+   "cars": 32,
+   "champion_scholarship": 250000,
+   "license_min_tier": 1,
+   "license_min_starts": 6,
+   "note": "MX-5 Cup analog: arrive-and-drive, driver-funded, scholarship ladder."
+  },
+  {
+   "key": "stock_national_dev",
+   "name": "National Stock Car Development Series",
+   "discipline": "stock_car",
+   "tier": 4,
+   "scope": "national",
+   "venues": [
+    "short_oval",
+    "mid_oval",
+    "big_oval",
+    "superspeedway"
+   ],
+   "season_cost": 1000000,
+   "events": 20,
+   "field_size": 22,
+   "prestige": 50,
+   "visibility": 50,
+   "car_weight": 0.55,
+   "min_age": 15,
+   "max_age": null,
+   "typical_age": [
+    16,
+    26
+   ],
+   "team_based": true,
+   "cars": 22,
+   "purse_win": 15000,
+   "license_min_tier": 2,
+   "license_min_starts": 10,
+   "note": "ARCA analog. Under-18s skip big ovals/superspeedways.",
+   "full_age": 18,
+   "selection": {
+    "performance": 0.25,
+    "potential": 0.2,
+    "money": 0.5,
+    "marketability": 0.05
+   }
+  },
+  {
+   "key": "formula_pro",
+   "name": "Formula Pro Championship",
+   "discipline": "open_wheel",
+   "tier": 4,
+   "scope": "national",
+   "venues": [
+    "pro_road",
+    "open_wheel_oval"
+   ],
+   "season_cost": 650000,
+   "events": 18,
+   "field_size": 18,
+   "prestige": 48,
+   "visibility": 45,
+   "car_weight": 0.4,
+   "min_age": 16,
+   "max_age": null,
+   "typical_age": [
+    16,
+    22
+   ],
+   "team_based": true,
+   "cars": 18,
+   "champion_scholarship": 550000,
+   "license_min_tier": 2,
+   "license_min_starts": 8,
+   "note": "USF Pro 2000 analog.",
+   "selection": {
+    "performance": 0.25,
+    "potential": 0.15,
+    "money": 0.55,
+    "marketability": 0.05
+   }
+  },
+  {
+   "key": "national_midget",
+   "name": "National Midget Championship",
+   "discipline": "dirt_oval",
+   "tier": 4,
+   "scope": "national",
+   "venues": [
+    "dirt_open_wheel"
+   ],
+   "season_cost": 250000,
+   "events": 20,
+   "field_size": 22,
+   "prestige": 50,
+   "visibility": 45,
+   "car_weight": 0.45,
+   "min_age": 14,
+   "max_age": null,
+   "typical_age": [
+    15,
+    26
+   ],
+   "team_based": true,
+   "cars": 22,
+   "purse_win": 4000,
+   "note": "USAC national midget analog; manufacturer dirt programs."
+  },
+  {
+   "key": "national_sprint",
+   "name": "National Non-Wing Sprint Car Championship",
+   "discipline": "dirt_oval",
+   "tier": 4,
+   "scope": "national",
+   "venues": [
+    "dirt_open_wheel"
+   ],
+   "season_cost": 300000,
+   "events": 22,
+   "field_size": 22,
+   "prestige": 48,
+   "visibility": 45,
+   "car_weight": 0.45,
+   "min_age": 15,
+   "max_age": null,
+   "typical_age": [
+    17,
+    35
+   ],
+   "team_based": true,
+   "cars": 22,
+   "purse_win": 6000,
+   "pro": true,
+   "salary_top": 60000,
+   "selection": {
+    "performance": 0.6,
+    "potential": 0.1,
+    "money": 0.25,
+    "marketability": 0.05
+   }
+  },
+  {
+   "key": "one_make_gt_cup",
+   "name": "GT One-Make Cup",
+   "discipline": "sports_car",
+   "tier": 4,
+   "scope": "national",
+   "venues": [
+    "pro_road"
+   ],
+   "season_cost": 400000,
+   "events": 14,
+   "field_size": 26,
+   "prestige": 40,
+   "visibility": 35,
+   "car_weight": 0.4,
+   "min_age": 16,
+   "max_age": null,
+   "typical_age": [
+    17,
+    45
+   ],
+   "team_based": true,
+   "cars": 26,
+   "champion_scholarship": 250000,
+   "license_min_tier": 2,
+   "license_min_starts": 6,
+   "note": "GR Cup / Carrera Cup analog; mix of young pros and gentlemen drivers."
+  },
+  {
+   "key": "touring_national",
+   "name": "National Touring Car Championship",
+   "discipline": "touring_car",
+   "tier": 4,
+   "scope": "national",
+   "venues": [
+    "pro_road"
+   ],
+   "season_cost": 250000,
+   "events": 14,
+   "field_size": 24,
+   "prestige": 35,
+   "visibility": 30,
+   "car_weight": 0.45,
+   "min_age": 16,
+   "max_age": null,
+   "typical_age": [
+    18,
+    45
+   ],
+   "team_based": true,
+   "cars": 24,
+   "license_min_tier": 1,
+   "license_min_starts": 6,
+   "note": "TC America analog."
+  },
+  {
+   "key": "truck_series",
+   "name": "National Truck Series",
+   "discipline": "stock_car",
+   "tier": 5,
+   "scope": "national",
+   "venues": [
+    "short_oval",
+    "mid_oval",
+    "big_oval",
+    "superspeedway",
+    "pro_road"
+   ],
+   "season_cost": 2500000,
+   "events": 23,
+   "field_size": 36,
+   "prestige": 65,
+   "visibility": 65,
+   "car_weight": 0.55,
+   "min_age": 16,
+   "max_age": null,
+   "typical_age": [
+    18,
+    30
+   ],
+   "team_based": true,
+   "cars": 34,
+   "pro": true,
+   "salary_top": 400000,
+   "purse_win": 50000,
+   "license_min_tier": 3,
+   "license_min_starts": 10,
+   "note": "Truck series analog. Under-18s limited to short ovals and road courses.",
+   "full_age": 18,
+   "selection": {
+    "performance": 0.3,
+    "potential": 0.2,
+    "money": 0.4,
+    "marketability": 0.1
+   }
+  },
+  {
+   "key": "formula_lights",
+   "name": "Formula Lights Championship",
+   "discipline": "open_wheel",
+   "tier": 5,
+   "scope": "national",
+   "venues": [
+    "pro_road",
+    "open_wheel_oval",
+    "big_oval"
+   ],
+   "season_cost": 1300000,
+   "events": 14,
+   "field_size": 20,
+   "prestige": 60,
+   "visibility": 60,
+   "car_weight": 0.4,
+   "min_age": 16,
+   "max_age": null,
+   "typical_age": [
+    18,
+    24
+   ],
+   "team_based": true,
+   "cars": 20,
+   "champion_scholarship": 850000,
+   "license_min_tier": 3,
+   "license_min_starts": 8,
+   "note": "Indy NXT analog. Champion's scholarship toward a premier seat.",
+   "selection": {
+    "performance": 0.3,
+    "potential": 0.15,
+    "money": 0.5,
+    "marketability": 0.05
+   }
+  },
+  {
+   "key": "endurance_challenge",
+   "name": "GT4 & Touring Endurance Challenge",
+   "discipline": "sports_car",
+   "tier": 5,
+   "scope": "national",
+   "venues": [
+    "pro_road"
+   ],
+   "season_cost": 1000000,
+   "events": 10,
+   "field_size": 30,
+   "prestige": 50,
+   "visibility": 50,
+   "car_weight": 0.5,
+   "min_age": 16,
+   "max_age": null,
+   "typical_age": [
+    20,
+    50
+   ],
+   "team_based": true,
+   "cars": 30,
+   "drivers_per_car": 2,
+   "pro_am": true,
+   "pro": true,
+   "salary_top": 150000,
+   "license_min_tier": 3,
+   "license_min_starts": 6,
+   "note": "Michelin Pilot Challenge analog (GS + TCR)."
+  },
+  {
+   "key": "dirt_late_national",
+   "name": "National Dirt Late Model Tour",
+   "discipline": "dirt_oval",
+   "tier": 5,
+   "scope": "national",
+   "venues": [
+    "dirt_full_body"
+   ],
+   "season_cost": 525000,
+   "events": 40,
+   "field_size": 26,
+   "prestige": 60,
+   "visibility": 55,
+   "car_weight": 0.5,
+   "min_age": 16,
+   "max_age": null,
+   "typical_age": [
+    20,
+    45
+   ],
+   "team_based": true,
+   "cars": 24,
+   "pro": true,
+   "salary_top": 250000,
+   "purse_win": 15000,
+   "license_min_tier": 3,
+   "license_min_starts": 10,
+   "selection": {
+    "performance": 0.7,
+    "potential": 0.05,
+    "money": 0.15,
+    "marketability": 0.1
+   }
+  },
+  {
+   "key": "stock_national",
+   "name": "Stock Car National Series",
+   "discipline": "stock_car",
+   "tier": 6,
+   "scope": "national",
+   "venues": [
+    "short_oval",
+    "mid_oval",
+    "big_oval",
+    "superspeedway",
+    "pro_road"
+   ],
+   "season_cost": 4500000,
+   "events": 33,
+   "field_size": 38,
+   "prestige": 75,
+   "visibility": 80,
+   "car_weight": 0.6,
+   "min_age": 17,
+   "max_age": null,
+   "typical_age": [
+    19,
+    32
+   ],
+   "team_based": true,
+   "cars": 38,
+   "pro": true,
+   "salary_top": 1000000,
+   "purse_win": 100000,
+   "license_min_tier": 4,
+   "license_min_starts": 10,
+   "note": "Xfinity/O'Reilly analog.",
+   "full_age": 18,
+   "selection": {
+    "performance": 0.35,
+    "potential": 0.15,
+    "money": 0.35,
+    "marketability": 0.15
+   }
+  },
+  {
+   "key": "outlaw_sprint",
+   "name": "Outlaw 410 Sprint Car Tour",
+   "discipline": "dirt_oval",
+   "tier": 6,
+   "scope": "national",
+   "venues": [
+    "dirt_open_wheel"
+   ],
+   "season_cost": 800000,
+   "events": 70,
+   "field_size": 26,
+   "prestige": 72,
+   "visibility": 70,
+   "car_weight": 0.5,
+   "min_age": 16,
+   "max_age": null,
+   "typical_age": [
+    20,
+    42
+   ],
+   "team_based": true,
+   "cars": 22,
+   "pro": true,
+   "salary_top": 400000,
+   "purse_win": 12000,
+   "license_min_tier": 3,
+   "license_min_starts": 20,
+   "note": "World of Outlaws / High Limit analog: pinnacle of dirt.",
+   "selection": {
+    "performance": 0.75,
+    "potential": 0.05,
+    "money": 0.1,
+    "marketability": 0.1
+   }
+  },
+  {
+   "key": "gt_endurance",
+   "name": "GT Endurance Championship",
+   "discipline": "sports_car",
+   "tier": 6,
+   "scope": "national",
+   "venues": [
+    "pro_road"
+   ],
+   "season_cost": 4000000,
+   "events": 11,
+   "field_size": 30,
+   "prestige": 70,
+   "visibility": 70,
+   "car_weight": 0.6,
+   "min_age": 18,
+   "max_age": null,
+   "typical_age": [
+    22,
+    55
+   ],
+   "team_based": true,
+   "cars": 16,
+   "drivers_per_car": 2,
+   "pro_am": true,
+   "pro": true,
+   "salary_top": 400000,
+   "license_min_tier": 4,
+   "license_min_starts": 6,
+   "note": "IMSA GTD analog; Pro-Am pairs: one pro + one paying amateur."
+  },
+  {
+   "key": "cup_series",
+   "name": "Premier Stock Car Cup",
+   "discipline": "stock_car",
+   "tier": 7,
+   "scope": "national",
+   "venues": [
+    "short_oval",
+    "mid_oval",
+    "big_oval",
+    "superspeedway",
+    "pro_road"
+   ],
+   "season_cost": 20000000,
+   "events": 36,
+   "field_size": 38,
+   "prestige": 100,
+   "visibility": 100,
+   "car_weight": 0.6,
+   "min_age": 18,
+   "max_age": null,
+   "typical_age": [
+    21,
+    40
+   ],
+   "team_based": true,
+   "cars": 38,
+   "pro": true,
+   "salary_top": 10000000,
+   "purse_win": 400000,
+   "license_min_tier": 5,
+   "license_min_starts": 10,
+   "selection": {
+    "performance": 0.6,
+    "potential": 0.15,
+    "money": 0.1,
+    "marketability": 0.15
+   }
+  },
+  {
+   "key": "open_wheel_top",
+   "name": "Premier Open-Wheel Championship",
+   "discipline": "open_wheel",
+   "tier": 7,
+   "scope": "national",
+   "venues": [
+    "pro_road",
+    "open_wheel_oval",
+    "big_oval"
+   ],
+   "season_cost": 9000000,
+   "events": 17,
+   "field_size": 27,
+   "prestige": 95,
+   "visibility": 95,
+   "car_weight": 0.55,
+   "min_age": 18,
+   "max_age": null,
+   "typical_age": [
+    20,
+    38
+   ],
+   "team_based": true,
+   "cars": 27,
+   "pro": true,
+   "salary_top": 4000000,
+   "purse_win": 100000,
+   "license_min_tier": 4,
+   "license_min_starts": 10,
+   "selection": {
+    "performance": 0.5,
+    "potential": 0.1,
+    "money": 0.3,
+    "marketability": 0.1
+   }
+  },
+  {
+   "key": "prototype_endurance",
+   "name": "Prototype & GT Pro Endurance Championship",
+   "discipline": "sports_car",
+   "tier": 7,
+   "scope": "national",
+   "venues": [
+    "pro_road"
+   ],
+   "season_cost": 15000000,
+   "events": 9,
+   "field_size": 24,
+   "prestige": 92,
+   "visibility": 90,
+   "car_weight": 0.6,
+   "min_age": 18,
+   "max_age": null,
+   "typical_age": [
+    24,
+    45
+   ],
+   "team_based": true,
+   "cars": 24,
+   "drivers_per_car": 2,
+   "pro": true,
+   "salary_top": 1500000,
+   "license_min_tier": 5,
+   "license_min_starts": 6,
+   "note": "IMSA GTP + GTD Pro analog: factory and pro drivers.",
+   "selection": {
+    "performance": 0.7,
+    "potential": 0.1,
+    "money": 0.05,
+    "marketability": 0.15
+   }
+  }
+ ],
+ "crown_jewels": [
+  {
+   "key": "gulf_coast_slm_classic",
+   "name": "Gulf Coast Super Late Model Classic",
+   "track_id": "five-flags-speedway-fl",
+   "discipline": "stock_car",
+   "min_tier": 2,
+   "max_tier": 6,
+   "entrants": 40,
+   "visibility": 85,
+   "purse_win": 50000,
+   "note": "Snowball Derby analog (December, Pensacola)."
+  },
+  {
+   "key": "virginia_lms_300",
+   "name": "Virginia Late Model Stock 300",
+   "track_id": "martinsville-speedway-va",
+   "discipline": "stock_car",
+   "min_tier": 2,
+   "max_tier": 5,
+   "entrants": 40,
+   "visibility": 80,
+   "purse_win": 32000,
+   "note": "Martinsville late model stock crown jewel analog (~90 cars for 40 spots)."
+  },
+  {
+   "key": "maine_250",
+   "name": "Maine Short Track 250",
+   "track_id": "oxford-plains-speedway-me",
+   "discipline": "stock_car",
+   "min_tier": 2,
+   "max_tier": 5,
+   "entrants": 40,
+   "visibility": 70,
+   "purse_win": 25000,
+   "note": "Oxford 250 analog."
+  },
+  {
+   "key": "indiana_400",
+   "name": "Indiana Super Late Model 400",
+   "track_id": "winchester-speedway-in",
+   "discipline": "stock_car",
+   "min_tier": 2,
+   "max_tier": 5,
+   "entrants": 32,
+   "visibility": 65,
+   "purse_win": 20000,
+   "note": "Winchester 400 analog."
+  },
+  {
+   "key": "music_city_400",
+   "name": "Music City Super Late Model 400",
+   "track_id": "nashville-fairgrounds-speedway-tn",
+   "discipline": "stock_car",
+   "min_tier": 2,
+   "max_tier": 5,
+   "entrants": 36,
+   "visibility": 70,
+   "purse_win": 20000,
+   "note": "All American 400 analog."
+  },
+  {
+   "key": "wisconsin_nationals",
+   "name": "Wisconsin Short Track Nationals",
+   "track_id": "slinger-speedway-wi",
+   "discipline": "stock_car",
+   "min_tier": 2,
+   "max_tier": 5,
+   "entrants": 30,
+   "visibility": 65,
+   "purse_win": 20000,
+   "note": "Slinger Nationals analog."
+  },
+  {
+   "key": "winter_speed_series",
+   "name": "Winter Speed Series Finale",
+   "track_id": "new-smyrna-speedway-fl",
+   "discipline": "stock_car",
+   "min_tier": 1,
+   "max_tier": 4,
+   "entrants": 40,
+   "visibility": 55,
+   "purse_win": 10000,
+   "note": "New Smyrna February winter series analog."
+  },
+  {
+   "key": "indoor_midget_nationals",
+   "name": "Indoor Midget Nationals",
+   "track_id": "tulsa-expo-raceway-ok",
+   "discipline": "dirt_oval",
+   "min_tier": 2,
+   "max_tier": 7,
+   "entrants": 48,
+   "visibility": 85,
+   "purse_win": 20000,
+   "note": "Chili Bowl analog: 300+ entries, open to drivers from every tier."
+  },
+  {
+   "key": "sprint_car_nationals",
+   "name": "Sprint Car Nationals",
+   "track_id": "knoxville-raceway-ia",
+   "discipline": "dirt_oval",
+   "min_tier": 2,
+   "max_tier": 6,
+   "entrants": 40,
+   "visibility": 85,
+   "purse_win": 195000,
+   "note": "Knoxville Nationals analog."
+  },
+  {
+   "key": "summer_sprint_royale",
+   "name": "Summer Sprint Car Royale",
+   "track_id": "eldora-speedway-oh",
+   "discipline": "dirt_oval",
+   "min_tier": 2,
+   "max_tier": 6,
+   "entrants": 36,
+   "visibility": 80,
+   "purse_win": 200000,
+   "note": "Kings Royal analog."
+  },
+  {
+   "key": "dirt_late_model_dream",
+   "name": "Dirt Late Model Summer Dream",
+   "track_id": "eldora-speedway-oh",
+   "discipline": "dirt_oval",
+   "min_tier": 2,
+   "max_tier": 5,
+   "entrants": 36,
+   "visibility": 80,
+   "purse_win": 100000,
+   "note": "Dirt Late Model Dream analog."
+  },
+  {
+   "key": "fall_dirt_late_100",
+   "name": "Fall Dirt Late Model 100",
+   "track_id": "eldora-speedway-oh",
+   "discipline": "dirt_oval",
+   "min_tier": 2,
+   "max_tier": 5,
+   "entrants": 30,
+   "visibility": 75,
+   "purse_win": 100000,
+   "note": "World 100 analog."
+  },
+  {
+   "key": "big_block_week",
+   "name": "Big-Block Modified Week",
+   "track_id": "oswego-speedway-ny",
+   "discipline": "dirt_oval",
+   "min_tier": 2,
+   "max_tier": 5,
+   "entrants": 36,
+   "visibility": 65,
+   "purse_win": 53000,
+   "note": "Super DIRT Week analog (Oswego)."
+  },
+  {
+   "key": "northwest_showdown",
+   "name": "Northwest Super Late Model Showdown",
+   "track_id": "evergreen-speedway-wa",
+   "discipline": "stock_car",
+   "min_tier": 2,
+   "max_tier": 4,
+   "entrants": 30,
+   "visibility": 55,
+   "purse_win": 30000,
+   "note": "Evergreen summer showdown analog."
+  },
+  {
+   "key": "boone_super_nationals",
+   "name": "Heartland Weekly Racer Super Nationals",
+   "track_id": "boone-speedway-ia",
+   "discipline": "dirt_oval",
+   "min_tier": 1,
+   "max_tier": 3,
+   "entrants": 60,
+   "visibility": 45,
+   "purse_win": 10000,
+   "note": "IMCA Super Nationals analog: the weekly racers' showcase."
+  },
+  {
+   "key": "pennsylvania_410_classic",
+   "name": "Pennsylvania 410 Classic",
+   "track_id": "williams-grove-speedway-pa",
+   "discipline": "dirt_oval",
+   "min_tier": 2,
+   "max_tier": 6,
+   "entrants": 32,
+   "visibility": 65,
+   "purse_win": 50000,
+   "note": "Central PA 410 crown-jewel analog."
+  }
+ ],
+ "shootouts": [
+  {
+   "key": "formula_shootout",
+   "name": "Junior Formula Scholarship Shootout",
+   "from_templates": [
+    "national_karting",
+    "youth_karting"
+   ],
+   "invites": 10,
+   "min_age": 13,
+   "max_age": 19,
+   "award": 200000,
+   "target_template": "junior_formula",
+   "prefer_low_funding": false,
+   "note": "Karting-champion shootouts for funded junior formula seats (Road to Indy karting shootouts analog)."
+  },
+  {
+   "key": "roadster_shootout",
+   "name": "Spec Roadster Scholarship Shootout",
+   "from_templates": [
+    "club_regional",
+    "club_national"
+   ],
+   "invites": 12,
+   "min_age": 16,
+   "max_age": 45,
+   "award": 110000,
+   "target_template": "spec_roadster_cup",
+   "prefer_low_funding": false,
+   "note": "Club-racing shootout for a funded pro-cup season (spec roadster shootout analog)."
+  },
+  {
+   "key": "stock_combine",
+   "name": "Stock Car Opportunity Combine",
+   "from_templates": [
+    "local_late_model",
+    "legends_regional",
+    "bandolero",
+    "local_street_stock",
+    "late_model_tour",
+    "micro_sprint",
+    "quarter_midget"
+   ],
+   "invites": 12,
+   "min_age": 15,
+   "max_age": 25,
+   "award": 175000,
+   "target_template": "late_model_tour",
+   "prefer_low_funding": true,
+   "note": "Sanctioning-body combine selecting under-funded prospects for a fully funded late model season (diversity/opportunity program analog)."
+  }
+ ]
+}
