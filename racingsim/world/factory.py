@@ -136,8 +136,10 @@ def make_teams_for_series(world: "World", series: "Series") -> list[Team]:
         owner_type = "pro" if q > 0.7 else "privateer" if q > 0.3 else "family"
         region = _team_home(world, series)
         mfr = None
-        if world.manufacturers and tpl.discipline in ("stock_car", "dirt_oval", "sports_car") and tpl.tier >= 3:
-            eligible = [m for m in world.manufacturers.values() if tpl.discipline in m.disciplines]
+        if world.manufacturers and tpl.discipline in ("stock_car", "dirt_oval", "sports_car", "open_wheel") and tpl.tier >= 3:
+            eligible = [m for m in world.manufacturers.values() if m.races(tpl.discipline, world.year)]
+            if tpl.discipline == "open_wheel" and tpl.tier < 7:
+                eligible = []  # spec junior formulae: no manufacturer affiliation
             if eligible and (q > 0.45 or rng.random() < 0.3):
                 mfr = rng.choice(eligible).id
                 if q > 0.75:
@@ -181,17 +183,16 @@ def _team_home(world: "World", series: "Series") -> str:
 
 
 def make_manufacturers(world: "World") -> list[Manufacturer]:
+    """Real manufacturers with their participation years (data/manufacturers.json)."""
+    from ..util import load_json
     out = []
-    profiles = [
-        # (disciplines, program budget, slots, aggressiveness): mirrors research A 14.9 archetypes
-        (["stock_car", "dirt_oval", "sports_car"], 6_000_000, 10, 0.8),   # systematic, dirt pipeline
-        (["stock_car", "sports_car"], 4_000_000, 6, 0.5),                 # team-centric, fewer bigger bets
-        (["stock_car", "sports_car"], 3_000_000, 6, 0.6),                 # opportunistic, signs proven winners
-        (["sports_car", "open_wheel"], 2_000_000, 4, 0.4),                # sports-car factory/junior programme
-    ]
-    for (name, _), (disc, budget, slots, aggr) in zip(names.MANUFACTURERS, profiles):
-        out.append(Manufacturer(id=world.next_id("mfr"), name=name, disciplines=disc,
-                                program_budget=budget, program_slots=slots, aggressiveness=aggr))
+    for m in load_json("manufacturers.json")["manufacturers"]:
+        years = dict(m["years"])
+        prog = m.get("program") or {}
+        out.append(Manufacturer(
+            id=world.next_id("mfr"), name=m["name"], disciplines=list(m["years"]),
+            program_budget=prog.get("budget", 0), program_slots=prog.get("slots", 0),
+            aggressiveness=prog.get("aggr", 0.5), years=years, program_years=m.get("program_years")))
     return out
 
 

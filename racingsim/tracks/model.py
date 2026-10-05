@@ -57,11 +57,23 @@ class TrackFacts:
     lon: Optional[float] = None
     sources: list[str] = field(default_factory=list)
     aliases: list[str] = field(default_factory=list)  # former / naming-rights names (search only)
+    closed: Optional[int] = None      # last year the venue held racing (None = still open / unknown)
+    history: list[dict] = field(default_factory=list)  # [{year, change}] reconfigurations since 1995
 
     @property
     def is_active(self) -> bool:
         """Game treats an unconfirmed status as operating."""
         return self.active is not False
+
+    def available_in(self, year: int) -> bool:
+        """Did the venue host racing in ``year``? (opened/closed years; unknown = assume yes)."""
+        if self.opened is not None and self.opened > year:
+            return False
+        if self.closed is not None:
+            return year <= self.closed
+        if self.active is False:
+            return year <= 2015  # closed at an undocumented date: assume open in the 1990s-2000s
+        return True
 
     @property
     def is_dirt(self) -> bool:
@@ -91,6 +103,8 @@ class TrackFacts:
             problems.append(f"implausible banking {self.banking_deg_turns}")
         if self.opened is not None and not (1850 <= self.opened <= 2030):  # fairground horse tracks predate cars
             problems.append(f"implausible opened {self.opened}")
+        if self.closed is not None and not (1900 <= self.closed <= 2030):
+            problems.append(f"implausible closed {self.closed}")
         if self.lat is not None and not (-90 <= self.lat <= 90):
             problems.append("bad lat")
         if self.lon is not None and not (-180 <= self.lon <= 180):

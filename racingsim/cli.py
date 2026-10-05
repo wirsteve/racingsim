@@ -26,7 +26,7 @@ def cmd_simulate(args: argparse.Namespace) -> int:
     t0 = time.time()
     world = World.generate(WorldConfig(seed=args.seed, population_scale=args.scale))
     print(f"Generated {len(world.drivers):,} drivers, {len(world.teams)} teams, "
-          f"{len(world.pyramid.series)} championships on {len(world.tracks)} real tracks "
+          f"{len(world.pyramid.active())} championships on {len(world.tracks)} real tracks "
           f"({time.time() - t0:.1f}s)")
     for _ in range(args.years):
         s = world.run_year()

@@ -1,10 +1,14 @@
 """The racing pyramid: series templates (data/series.json) instantiated onto real tracks.
 
-Series names are fictional abstractions of real-world structures (see
-LICENSING_IP_REVIEW.md). Each template describes one *rung type*; it may be
-instantiated once nationally, once per macro-region (regional tours), or once per
-local track (weekly divisions), which is what produces a wide base of hundreds of
-local championships under a narrow professional top.
+Each template describes one *rung type*; it may be instantiated once nationally,
+once per macro-region (regional tours), or once per local track (weekly divisions),
+which is what produces a wide base of hundreds of local championships under a
+narrow professional top.
+
+Templates carry **eras** (data/series_eras.json): the real series name in each
+season from 1995 on (e.g. "NASCAR Winston Cup Series" 1995-2003 ... "NASCAR Cup
+Series" 2020+), and the years a rung did not exist. The pyramid is refreshed each
+season: series are renamed, rungs appear or go dormant, and venues open or close.
 """
 
 from __future__ import annotations
@@ -54,6 +58,31 @@ class SeriesTemplate:
     team_funding_floor: Optional[float] = None
     macro_hint: str = ""             # regions where a local division is common (others: rarer)
     note: str = ""
+    eras: list = field(default_factory=list)          # [{from, to, name}] real names by season
+    region_names: dict = field(default_factory=dict)  # macro -> [{from, to, name}]
+
+    def era(self, year: int) -> Optional[dict]:
+        for e in self.eras:
+            if e["from"] <= year <= e["to"]:
+                return e
+        return None
+
+    def exists_in(self, year: int) -> bool:
+        if not self.eras:
+            return True
+        e = self.era(year)
+        return e is not None and e.get("name") is not None
+
+    def display_name(self, year: int, label: str = "", macro: Optional[str] = None) -> str:
+        name = self.name
+        e = self.era(year)
+        if e and e.get("name"):
+            name = e["name"]
+        if macro and macro in self.region_names:
+            for r in self.region_names[macro]:
+                if r["from"] <= year <= r["to"] and r.get("name"):
+                    return r["name"]
+        return name.replace("{track}", label).replace("{region}", label)
 
     def age_allows_track(self, age: int, track: Track) -> bool:
         """NASCAR-style age-by-track-type approval (research A, section 3)."""
@@ -73,6 +102,9 @@ class Series:
     schedule: list[str]              # track ids, in calendar order
     anchor_lat: float = 0.0
     anchor_lon: float = 0.0
+    label: str = ""                  # track short name / region label used in the name
+    dormant: bool = False            # rung or venue does not exist this season
+    real_schedule: bool = False      # schedule taken from the real calendar of that year
 
     # Convenience pass-throughs
     @property
@@ -101,27 +133,106 @@ class CrownJewel:
     purse_win: float
     note: str = ""
     week: int = 0  # season week (1-30) the event runs
+    since: int = 0  # first year the event was held
+
+    def exists_in(self, year: int) -> bool:
+        return year >= self.since
 
 
 class Pyramid:
     def __init__(self, templates: list[SeriesTemplate], series: list[Series],
-                 crown_jewels: list[CrownJewel], tier_names: dict[int, str]):
+                 crown_jewels: list[CrownJewel], tier_names: dict[int, str], year: int = 2026):
         self.templates = {t.key: t for t in templates}
         self.series = {s.id: s for s in series}
-        self.crown_jewels = crown_jewels
+        self.all_crown_jewels = crown_jewels
         self.tier_names = tier_names
+        self.year = year
+
+    @property
+    def crown_jewels(self) -> list[CrownJewel]:
+        return [cj for cj in self.all_crown_jewels if cj.exists_in(self.year)]
+
+    def active(self) -> list[Series]:
+        return [s for s in self.series.values() if not s.dormant]
 
     def by_tier(self, tier: int) -> list[Series]:
-        return [s for s in self.series.values() if s.tier == tier]
+        return [s for s in self.active() if s.tier == tier]
 
     def by_discipline(self, discipline: str) -> list[Series]:
-        return [s for s in self.series.values() if s.discipline == discipline]
+        return [s for s in self.active() if s.discipline == discipline]
 
     def max_tier(self) -> int:
         return max(t.tier for t in self.templates.values())
 
     def get(self, series_id: str) -> Series:
         return self.series[series_id]
+
+    def refresh(self, year: int, tracks: TrackDatabase, geo: Geography, rng: random.Random,
+                schedule_provider=None) -> tuple[list[Series], list[Series]]:
+        """Move the pyramid to ``year``. Returns (newly active series, newly dormant series)."""
+        self.year = year
+        born, died = [], []
+        for tpl in self.templates.values():
+            exists = tpl.exists_in(year)
+            if tpl.scope == "track":
+                eligible = {t.id: t for t in _eligible(tpl, tracks, year=year, geo=geo,
+                                                       macro_regions=_hint(tpl) or None)}
+                for t in eligible.values():
+                    sid = f"{tpl.key}@{t.id}"
+                    if sid not in self.series and exists and t.facts.lat is not None:
+                        s = _local_series(tpl, t)
+                        self.series[sid] = s
+                        born.append(s)
+                for s in [x for x in self.series.values() if x.template is tpl]:
+                    alive = exists and s.region_key in eligible
+                    _flip(s, alive, born, died)
+            elif tpl.scope == "region":
+                for macro in (tpl.macro_regions or geo.macro_regions()):
+                    sid = f"{tpl.key}@{macro}"
+                    sched = _regional_schedule(tpl, tracks, geo, rng, macro, year) if exists else []
+                    if sid not in self.series:
+                        if not sched:
+                            continue
+                        s = _make_regional(tpl, tracks, macro, sched)
+                        self.series[sid] = s
+                        born.append(s)
+                    s = self.series[sid]
+                    if sched:
+                        s.schedule = sched
+                    _flip(s, exists and bool(sched), born, died)
+            else:
+                real = schedule_provider(tpl.key, year) if (schedule_provider and exists) else None
+                sched = real or (_national_schedule(tpl, tracks, rng, year) if exists else [])
+                if tpl.key not in self.series:
+                    if not sched:
+                        continue
+                    s = Series(id=tpl.key, template=tpl, name=tpl.name, region_key=None, schedule=sched)
+                    self.series[tpl.key] = s
+                    born.append(s)
+                s = self.series[tpl.key]
+                if sched:
+                    s.schedule = sched
+                    s.real_schedule = bool(real)
+                    pts = [tracks.get(x).facts for x in sched]
+                    s.anchor_lat = sum(f.lat or 0 for f in pts) / len(pts)
+                    s.anchor_lon = sum(f.lon or 0 for f in pts) / len(pts)
+                _flip(s, exists and bool(sched), born, died)
+        for s in self.series.values():
+            s.name = s.template.display_name(year, s.label, s.region_key if s.scope == "region" else None)
+        return born, died
+
+
+def _flip(s: "Series", alive: bool, born: list, died: list) -> None:
+    if alive and s.dormant:
+        s.dormant = False
+        born.append(s)
+    elif not alive and not s.dormant:
+        s.dormant = True
+        died.append(s)
+
+
+def _hint(tpl: SeriesTemplate) -> set[str]:
+    return {m.strip() for m in tpl.macro_hint.split(",") if m.strip()}
 
 
 def _short_track_name(name: str) -> str:
@@ -134,36 +245,45 @@ def _short_track_name(name: str) -> str:
 
 def load_templates() -> tuple[list[SeriesTemplate], list[dict], dict[int, str]]:
     raw = load_json("series.json")
+    try:
+        eras = load_json("series_eras.json").get("templates", {})
+    except FileNotFoundError:
+        eras = {}
     known = set(SeriesTemplate.__dataclass_fields__)
-    templates = [SeriesTemplate(**{k: v for k, v in t.items() if k in known}) for t in raw["series"]]
+    templates = []
+    for t in raw["series"]:
+        tpl = SeriesTemplate(**{k: v for k, v in t.items() if k in known})
+        e = eras.get(tpl.key, {})
+        tpl.eras = e.get("eras", [])
+        tpl.region_names = e.get("region_names", {})
+        templates.append(tpl)
     tiers = {int(t["level"]): t["name"] for t in raw["tiers"]}
     return templates, raw.get("crown_jewels", []), tiers
 
 
 def build_pyramid(tracks: TrackDatabase, geo: Geography, rng: random.Random,
-                  templates: Optional[list[SeriesTemplate]] = None) -> Pyramid:
+                  templates: Optional[list[SeriesTemplate]] = None, year: int = 2026,
+                  schedule_provider=None) -> Pyramid:
     loaded, jewels_raw, tier_names = load_templates()
     templates = templates or loaded
-    series: list[Series] = []
-    for tpl in templates:
-        if tpl.scope == "track":
-            series.extend(_instantiate_local(tpl, tracks, geo))
-        elif tpl.scope == "region":
-            series.extend(_instantiate_regional(tpl, tracks, geo, rng))
-        else:
-            series.append(_instantiate_national(tpl, tracks, rng))
-    jewels = []
-    for j in jewels_raw:
-        if j["track_id"] in tracks:
-            jewels.append(CrownJewel(**j))
-    return Pyramid(templates, [s for s in series if s.schedule], jewels, tier_names)
+    known = set(CrownJewel.__dataclass_fields__)
+    jewels = [CrownJewel(**{k: v for k, v in j.items() if k in known})
+              for j in jewels_raw if j["track_id"] in tracks]
+    pyramid = Pyramid(templates, [], jewels, tier_names, year)
+    pyramid.refresh(year, tracks, geo, rng, schedule_provider)
+    # Start-of-world series are not "new" in any narrative sense.
+    for s in list(pyramid.series.values()):
+        if s.dormant or not s.schedule:
+            del pyramid.series[s.id]
+    return pyramid
 
 
-def _eligible(tpl: SeriesTemplate, tracks: TrackDatabase, *, macro_regions=None, geo=None) -> list[Track]:
+def _eligible(tpl: SeriesTemplate, tracks: TrackDatabase, *, macro_regions=None, geo=None,
+              year: Optional[int] = None) -> list[Track]:
     pool = []
     for venue in tpl.venues:
         pool.extend(tracks.suitable(venue, levels=set(tpl.venue_levels) or None,
-                                    countries=set(tpl.countries) or None))
+                                    countries=set(tpl.countries) or None, year=year))
     seen, out = set(), []
     for t in pool:
         if t.id in seen:
@@ -177,57 +297,37 @@ def _eligible(tpl: SeriesTemplate, tracks: TrackDatabase, *, macro_regions=None,
     return out
 
 
-def _instantiate_local(tpl: SeriesTemplate, tracks: TrackDatabase, geo: Geography) -> list[Series]:
-    out = []
-    hint = {m.strip() for m in tpl.macro_hint.split(",") if m.strip()}
-    for t in _eligible(tpl, tracks, macro_regions=hint or None, geo=geo):
-        if t.facts.lat is None:
-            continue
-        out.append(Series(
-            id=f"{tpl.key}@{t.id}",
-            template=tpl,
-            name=tpl.name.replace("{track}", _short_track_name(t.name)),
-            region_key=t.id,
-            schedule=[t.id] * tpl.events,
-            anchor_lat=t.facts.lat,
-            anchor_lon=t.facts.lon,
-        ))
-    return out
+def _local_series(tpl: SeriesTemplate, t: Track) -> Series:
+    label = _short_track_name(t.name)
+    return Series(id=f"{tpl.key}@{t.id}", template=tpl, name=tpl.name.replace("{track}", label),
+                  region_key=t.id, schedule=[t.id] * tpl.events, anchor_lat=t.facts.lat,
+                  anchor_lon=t.facts.lon, label=label)
 
 
-def _instantiate_regional(tpl: SeriesTemplate, tracks: TrackDatabase, geo: Geography,
-                          rng: random.Random) -> list[Series]:
-    out = []
-    macros = tpl.macro_regions or geo.macro_regions()
-    for macro in macros:
-        pool = _eligible(tpl, tracks, macro_regions={macro}, geo=geo)
-        if len(pool) < 2:
-            continue
-        pool.sort(key=lambda t: (-t.profile.prestige, t.id))
-        top = pool[: max(tpl.events, 6)]
-        schedule = [top[i % len(top)].id for i in range(tpl.events)]
-        rng.shuffle(schedule)
-        lat = sum(tracks.get(s).facts.lat for s in schedule) / len(schedule)
-        lon = sum(tracks.get(s).facts.lon for s in schedule) / len(schedule)
-        label = macro.replace("_", " ").title()
-        out.append(Series(
-            id=f"{tpl.key}@{macro}", template=tpl,
-            name=tpl.name.replace("{region}", label), region_key=macro,
-            schedule=schedule, anchor_lat=lat, anchor_lon=lon,
-        ))
-    return out
+def _regional_schedule(tpl: SeriesTemplate, tracks: TrackDatabase, geo: Geography, rng: random.Random,
+                       macro: str, year: int) -> list[str]:
+    pool = _eligible(tpl, tracks, macro_regions={macro}, geo=geo, year=year)
+    if len(pool) < 2:
+        return []
+    pool.sort(key=lambda t: (-t.profile.prestige, t.id))
+    top = pool[: max(tpl.events, 6)]
+    schedule = [top[i % len(top)].id for i in range(tpl.events)]
+    rng.shuffle(schedule)
+    return schedule
 
 
-def _instantiate_national(tpl: SeriesTemplate, tracks: TrackDatabase, rng: random.Random) -> Series:
-    pool = _eligible(tpl, tracks)
+def _make_regional(tpl: SeriesTemplate, tracks: TrackDatabase, macro: str, schedule: list[str]) -> Series:
+    lat = sum(tracks.get(s).facts.lat for s in schedule) / len(schedule)
+    lon = sum(tracks.get(s).facts.lon for s in schedule) / len(schedule)
+    label = macro.replace("_", " ").title()
+    return Series(id=f"{tpl.key}@{macro}", template=tpl, name=tpl.name.replace("{region}", label),
+                  region_key=macro, schedule=schedule, anchor_lat=lat, anchor_lon=lon, label=label)
+
+
+def _national_schedule(tpl: SeriesTemplate, tracks: TrackDatabase, rng: random.Random, year: int) -> list[str]:
+    pool = _eligible(tpl, tracks, year=year)
     pool.sort(key=lambda t: (-t.profile.prestige, t.id))
     top = pool[: max(tpl.events, 8)]
     schedule = [top[i % len(top)].id for i in range(tpl.events)] if top else []
     rng.shuffle(schedule)
-    if schedule:
-        lat = sum(tracks.get(s).facts.lat or 0 for s in schedule) / len(schedule)
-        lon = sum(tracks.get(s).facts.lon or 0 for s in schedule) / len(schedule)
-    else:
-        lat = lon = 0.0
-    return Series(id=tpl.key, template=tpl, name=tpl.name, region_key=None,
-                  schedule=schedule, anchor_lat=lat, anchor_lon=lon)
+    return schedule

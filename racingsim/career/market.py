@@ -102,7 +102,7 @@ def _template_index(world: "World") -> dict[str, list["Series"]]:
     idx = world.cache.get("tpl_index")
     if idx is None:
         idx = defaultdict(list)
-        for s in world.pyramid.series.values():
+        for s in world.pyramid.active():
             idx[s.template.key].append(s)
         world.cache["tpl_index"] = idx
     return idx
@@ -277,6 +277,8 @@ def _tick_contracts(world: "World", queue: list, summary: "YearSummary") -> None
     rng = world.rng
     coverage = world.seat_coverage
     for team in world.teams.values():
+        if world.series(team.series_id).dormant:
+            continue
         tpl = world.series(team.series_id).template
         for slot, did in enumerate(team.roster):
             if did is None:

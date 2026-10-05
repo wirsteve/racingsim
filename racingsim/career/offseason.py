@@ -54,7 +54,9 @@ def begin_offseason(world: "World", results: "SeasonResults", summary: "YearSumm
     # 5. Talent pipelines: manufacturer programs, shootouts, combines.
     programs.manufacturer_programs(world, summary)
     programs.run_shootouts(world, summary)
-    # 6a. Silly season opens: contracts tick, open seats go on the market.
+    # 6a. The calendar turns: series renamed, rungs appear or go dormant, venues open/close.
+    world.advance_pyramid(world.year + 1)
+    # 6b. Silly season opens: contracts tick, open seats go on the market.
     market.open_market(world, summary)
 
 
@@ -66,6 +68,9 @@ def complete_offseason(world: "World", summary: "YearSummary") -> None:
     target = world.target_population or active
     count = max(0, int(summary.retirements * 0.95 + (target - active) * 0.4))
     lifecycle.new_entrants(world, summary, count)
+    if world.history is not None:
+        from ..history.seed import history_entrants
+        summary.new_entrants += history_entrants(world, world.year + 1)
     for d in world.drivers.values():
         if d.status != RETIRED:
             d.years_at_tier += 1

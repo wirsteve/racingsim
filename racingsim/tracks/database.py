@@ -43,6 +43,20 @@ class TrackDatabase:
                         if _richness(f) <= _richness(facts[f.id]):
                             continue
                     facts[f.id] = f
+        years_path = (directory.parent if directory.name == "tracks" else directory) / "track_years.json"
+        if years_path.exists():
+            with open(years_path, encoding="utf-8") as fh:
+                years = json.load(fh)
+            by_name = {f.name: f for f in facts.values()}
+            for name, info in years.items():
+                f = by_name.get(name)
+                if f is None:
+                    continue
+                if info.get("opened") and f.opened is None:
+                    f.opened = info["opened"]
+                if info.get("closed"):
+                    f.closed = info["closed"]
+                f.history = info.get("history", [])
         return cls(build_track(f, overrides) for f in facts.values())
 
     # ------------------------------------------------------------------ queries
@@ -63,10 +77,13 @@ class TrackDatabase:
 
     def suitable(self, venue_key: str, *, levels: Optional[set[str]] = None,
                  regions: Optional[set[str]] = None, countries: Optional[set[str]] = None,
-                 active_only: bool = True) -> list[Track]:
+                 active_only: bool = True, year: Optional[int] = None) -> list[Track]:
         out = []
         for t in self._tracks.values():
-            if active_only and not t.facts.is_active:
+            if year is not None:
+                if not t.facts.available_in(year):
+                    continue
+            elif active_only and not t.facts.is_active:
                 continue
             if venue_key not in t.profile.series_suitability:
                 continue

@@ -21,6 +21,7 @@ class WorldConfig:
     seed: int = 2026
     start_year: int = 2026
     population_scale: float = 1.0      # scales local/regional field fill (tests use < 1)
+    real_history: bool = True          # seed national series with the real teams/drivers of start_year
     # Local field fill vs nominal field size: there are more entry-level racers than
     # headline-division racers at every short track (research F 5.1).
     fill_by_tier: tuple = (1.0, 1.35, 0.85, 1.0, 1.0, 1.0, 1.0, 1.0)
@@ -54,14 +55,19 @@ class YearSummary:
 
 class World:
     def __init__(self, config: Optional[WorldConfig] = None,
-                 tracks: Optional[TrackDatabase] = None):
+                 tracks: Optional[TrackDatabase] = None, history=None):
         self.config = config or WorldConfig()
         self.rng = random.Random(self.config.seed)
         self.year = self.config.start_year
         self.geo = Geography.load()
         self.tracks = tracks or TrackDatabase.load()
         self._transfer = load_json("disciplines.json")["transfer"]
-        self.pyramid: Pyramid = build_pyramid(self.tracks, self.geo, self.rng)
+        self.history = history
+        if self.history is None and self.config.real_history:
+            from ..history import HistoryDB
+            self.history = HistoryDB.load_default()
+        self.pyramid: Pyramid = build_pyramid(self.tracks, self.geo, self.rng, year=self.year,
+                                              schedule_provider=self.schedule_provider)
         self.drivers: dict[int, Driver] = {}
         self.teams: dict[int, Team] = {}
         self.sponsors: dict[int, Sponsor] = {}
@@ -80,6 +86,8 @@ class World:
         self.news: list[dict] = []
         self.season = None                          # current SeasonRunner (UI / career mode)
         self.race_logs: dict[int, dict] = {}        # year -> series/jewel key -> race summaries
+        self.real_drivers: dict[str, int] = {}      # Wikipedia title -> driver id (historical mode)
+        self.history_entrants: dict[int, list] = {}  # year -> real drivers who start racing then
 
     # ----------------------------------------------------------------- helpers
     def next_id(self, kind: str) -> int:
@@ -98,23 +106,60 @@ class World:
     def teams_in(self, series_id: str) -> list[Team]:
         return [t for t in self.teams.values() if t.series_id == series_id]
 
+    def advance_pyramid(self, year: int) -> None:
+        """Move the racing world to ``year``: renamed series, new/dormant rungs, venues opening/closing."""
+        from .factory import make_teams_for_series
+        born, died = self.pyramid.refresh(year, self.tracks, self.geo, self.rng, self.schedule_provider)
+        dead_ids = {s.id for s in died}
+        for d in self.drivers.values():
+            if d.series_id in dead_ids:
+                if d.team_id is not None:
+                    team = self.teams.get(d.team_id)
+                    if team:
+                        team.roster = [None if x == d.id else x for x in team.roster]
+                    d.team_id = None
+                    d.seat_funded = False
+                    d.contract_years = 0
+                d.series_id = None
+        for s in born:
+            if s.template.team_based and not self.teams_in(s.id):
+                for team in make_teams_for_series(self, s):
+                    team.roster = [None] * team.seats
+                    self.teams[team.id] = team
+        for s in born:
+            if s.scope != "track" and s.tier >= 3:
+                self.post("series", f"New for {year}: the {s.name}", series_id=s.id, week=0)
+        self.cache.clear()
+
+    def schedule_provider(self, template_key: str, year: int):
+        """Real national calendars when the historical database has them."""
+        hist = getattr(self, "history", None)
+        return hist.schedule(template_key, year, self.tracks) if hist is not None else None
+
     def region(self, code: str) -> Region:
         return self.geo.get(code)
 
     # -------------------------------------------------------------- generation
     @classmethod
     def generate(cls, config: Optional[WorldConfig] = None,
-                 tracks: Optional[TrackDatabase] = None) -> "World":
-        w = cls(config, tracks)
+                 tracks: Optional[TrackDatabase] = None, history=None) -> "World":
+        w = cls(config, tracks, history)
         for m in make_manufacturers(w):
             w.manufacturers[m.id] = m
         for s in make_sponsors(w, scale=w.config.population_scale):
             w.sponsors[s.id] = s
+        seeded: set[str] = set()
+        if w.history is not None:
+            from ..history.seed import seed_national
+            seeded = seed_national(w, w.history)
         for series in sorted(w.pyramid.series.values(), key=lambda s: -s.tier):
             if series.template.team_based:
-                w._populate_team_series(series)
+                w._populate_team_series(series, existing=series.id in seeded)
             else:
                 w._populate_self_run_series(series)
+        if w.history is not None:
+            from ..history.seed import seed_prospects
+            seed_prospects(w, w.history)
         from ..career.sponsorship import initial_personal_sponsors
         initial_personal_sponsors(w)
         w.target_population = sum(1 for _ in w.active_drivers())
@@ -154,13 +199,21 @@ class World:
                             budget_floor=tpl.season_cost * (1.0 if tpl.scope == "track" else 1.25))
             self._seat(d, series, None)
 
-    def _populate_team_series(self, series: Series) -> None:
+    def _populate_team_series(self, series: Series, existing: bool = False) -> None:
+        """Fill a team series with generated drivers (only the empty seats if real teams exist)."""
         tpl = series.template
         from ..career.market import seat_gap, seat_role
-        for team in make_teams_for_series(self, series):
-            self.teams[team.id] = team
-            team.roster = [None] * team.seats
+        if existing:
+            teams = self.teams_in(series.id)
+        else:
+            teams = make_teams_for_series(self, series)
+            for team in teams:
+                self.teams[team.id] = team
+                team.roster = [None] * team.seats
+        for team in teams:
             for slot in range(team.seats):
+                if team.roster[slot] is not None:
+                    continue
                 role = seat_role(tpl, slot)
                 gap = seat_gap(team, tpl, role)
                 region = self.geo.random_home(self.rng, tpl.discipline)

@@ -72,13 +72,14 @@ SPONSOR_PATTERNS_REGIONAL = (
     "{place} Building Supply", "{last} Logistics", "{place} Power Equipment", "{last} Motors",
     "{place} Bank & Trust", "{last} Industrial", "{place} Energy Co-op", "{last} Homes",
 )
+# Real national brands with long motorsport histories (personal-use game).
 SPONSOR_NATIONAL = (
-    "Apex Hardware", "Bluewater Insurance", "Crossline Energy Drink", "Delmont Foods",
-    "Everpoint Wireless", "Frontier Freight", "Granite Tools", "Harbor Pharmacy",
-    "Ironridge Trucks Rental", "Juniper Home Centers", "Keystone Lubricants", "Liberty Lending",
-    "Meridian Batteries", "Northstar Outdoors", "Oakline Snacks", "Pinnacle Paints",
-    "Quarry Building Supply", "Redline Coffee", "Summit Telecom", "Trailhead Beef Jerky",
-    "Unity Auto Parts", "Vantage Software", "Westward Hotels", "Yardmaster Mowers",
+    "Lowe's", "The Home Depot", "DuPont", "Tide", "Miller Lite", "Budweiser", "M&M's", "Target",
+    "GEICO", "Snap-on", "Valvoline", "Mobil 1", "Pennzoil", "Menards", "Coca-Cola", "Kellogg's",
+    "Interstate Batteries", "UPS", "FedEx", "Caterpillar", "NAPA Auto Parts", "AutoZone",
+    "Advance Auto Parts", "Bass Pro Shops", "Sunoco", "Coors Light", "Quaker State", "STP",
+    "Havoline", "Cheerios", "Monster Energy", "Mountain Dew", "Hooters", "Goodwrench",
+    "Kodak", "Craftsman", "Dewalt", "Busch Light", "Shell", "Gatorade",
 )
 PLACES = (
     "Tri-County", "Valley", "Lakeside", "Ridge", "Riverbend", "Prairie", "Pine Hill", "Crossroads",

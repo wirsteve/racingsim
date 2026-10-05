@@ -1336,7 +1336,7 @@
  "crown_jewels": [
   {
    "key": "gulf_coast_slm_classic",
-   "name": "Gulf Coast Super Late Model Classic",
+   "name": "Snowball Derby",
    "track_id": "five-flags-speedway-fl",
    "discipline": "stock_car",
    "min_tier": 2,
@@ -1345,11 +1345,12 @@
    "visibility": 85,
    "purse_win": 50000,
    "note": "Snowball Derby analog (December, Pensacola).",
-   "week": 30
+   "week": 30,
+   "since": 1968
   },
   {
    "key": "virginia_lms_300",
-   "name": "Virginia Late Model Stock 300",
+   "name": "Martinsville Late Model 300",
    "track_id": "martinsville-speedway-va",
    "discipline": "stock_car",
    "min_tier": 2,
@@ -1357,12 +1358,13 @@
    "entrants": 40,
    "visibility": 80,
    "purse_win": 32000,
-   "note": "Martinsville late model stock crown jewel analog (~90 cars for 40 spots).",
-   "week": 26
+   "note": "Martinsville's fall Late Model Stock 300 (title sponsors vary; currently the ValleyStar Credit Union 300). Start year approximate.",
+   "week": 26,
+   "since": 1999
   },
   {
    "key": "maine_250",
-   "name": "Maine Short Track 250",
+   "name": "Oxford 250",
    "track_id": "oxford-plains-speedway-me",
    "discipline": "stock_car",
    "min_tier": 2,
@@ -1371,11 +1373,12 @@
    "visibility": 70,
    "purse_win": 25000,
    "note": "Oxford 250 analog.",
-   "week": 21
+   "week": 21,
+   "since": 1974
   },
   {
    "key": "indiana_400",
-   "name": "Indiana Super Late Model 400",
+   "name": "Winchester 400",
    "track_id": "winchester-speedway-in",
    "discipline": "stock_car",
    "min_tier": 2,
@@ -1384,11 +1387,12 @@
    "visibility": 65,
    "purse_win": 20000,
    "note": "Winchester 400 analog.",
-   "week": 26
+   "week": 26,
+   "since": 1971
   },
   {
    "key": "music_city_400",
-   "name": "Music City Super Late Model 400",
+   "name": "All American 400",
    "track_id": "nashville-fairgrounds-speedway-tn",
    "discipline": "stock_car",
    "min_tier": 2,
@@ -1397,11 +1401,12 @@
    "visibility": 70,
    "purse_win": 20000,
    "note": "All American 400 analog.",
-   "week": 28
+   "week": 28,
+   "since": 1972
   },
   {
    "key": "wisconsin_nationals",
-   "name": "Wisconsin Short Track Nationals",
+   "name": "Slinger Nationals",
    "track_id": "slinger-speedway-wi",
    "discipline": "stock_car",
    "min_tier": 2,
@@ -1410,11 +1415,12 @@
    "visibility": 65,
    "purse_win": 20000,
    "note": "Slinger Nationals analog.",
-   "week": 16
+   "week": 16,
+   "since": 1980
   },
   {
    "key": "winter_speed_series",
-   "name": "Winter Speed Series Finale",
+   "name": "World Series of Asphalt Stock Car Racing",
    "track_id": "new-smyrna-speedway-fl",
    "discipline": "stock_car",
    "min_tier": 1,
@@ -1423,11 +1429,12 @@
    "visibility": 55,
    "purse_win": 10000,
    "note": "New Smyrna February winter series analog.",
-   "week": 3
+   "week": 3,
+   "since": 1966
   },
   {
    "key": "indoor_midget_nationals",
-   "name": "Indoor Midget Nationals",
+   "name": "Chili Bowl Nationals",
    "track_id": "tulsa-expo-raceway-ok",
    "discipline": "dirt_oval",
    "min_tier": 2,
@@ -1436,11 +1443,12 @@
    "visibility": 85,
    "purse_win": 20000,
    "note": "Chili Bowl analog: 300+ entries, open to drivers from every tier.",
-   "week": 1
+   "week": 1,
+   "since": 1987
   },
   {
    "key": "sprint_car_nationals",
-   "name": "Sprint Car Nationals",
+   "name": "Knoxville Nationals",
    "track_id": "knoxville-raceway-ia",
    "discipline": "dirt_oval",
    "min_tier": 2,
@@ -1449,11 +1457,12 @@
    "visibility": 85,
    "purse_win": 195000,
    "note": "Knoxville Nationals analog.",
-   "week": 22
+   "week": 22,
+   "since": 1961
   },
   {
    "key": "summer_sprint_royale",
-   "name": "Summer Sprint Car Royale",
+   "name": "Kings Royal",
    "track_id": "eldora-speedway-oh",
    "discipline": "dirt_oval",
    "min_tier": 2,
@@ -1462,11 +1471,12 @@
    "visibility": 80,
    "purse_win": 200000,
    "note": "Kings Royal analog.",
-   "week": 17
+   "week": 17,
+   "since": 1984
   },
   {
    "key": "dirt_late_model_dream",
-   "name": "Dirt Late Model Summer Dream",
+   "name": "Dirt Late Model Dream",
    "track_id": "eldora-speedway-oh",
    "discipline": "dirt_oval",
    "min_tier": 2,
@@ -1475,11 +1485,12 @@
    "visibility": 80,
    "purse_win": 100000,
    "note": "Dirt Late Model Dream analog.",
-   "week": 13
+   "week": 13,
+   "since": 1994
   },
   {
    "key": "fall_dirt_late_100",
-   "name": "Fall Dirt Late Model 100",
+   "name": "World 100",
    "track_id": "eldora-speedway-oh",
    "discipline": "dirt_oval",
    "min_tier": 2,
@@ -1488,11 +1499,12 @@
    "visibility": 75,
    "purse_win": 100000,
    "note": "World 100 analog.",
-   "week": 24
+   "week": 24,
+   "since": 1971
   },
   {
    "key": "big_block_week",
-   "name": "Big-Block Modified Week",
+   "name": "Super DIRT Week",
    "track_id": "oswego-speedway-ny",
    "discipline": "dirt_oval",
    "min_tier": 2,
@@ -1500,12 +1512,13 @@
    "entrants": 36,
    "visibility": 65,
    "purse_win": 53000,
-   "note": "Super DIRT Week analog (Oswego).",
-   "week": 27
+   "note": "Super DIRT Week; held at the Syracuse Mile until 2015 and Oswego from 2016 (game uses Oswego).",
+   "week": 27,
+   "since": 1972
   },
   {
    "key": "northwest_showdown",
-   "name": "Northwest Super Late Model Showdown",
+   "name": "Summer Showdown",
    "track_id": "evergreen-speedway-wa",
    "discipline": "stock_car",
    "min_tier": 2,
@@ -1513,12 +1526,13 @@
    "entrants": 30,
    "visibility": 55,
    "purse_win": 30000,
-   "note": "Evergreen summer showdown analog.",
-   "week": 20
+   "note": "Evergreen Speedway's summer super late model showdown (start year approximate).",
+   "week": 20,
+   "since": 2010
   },
   {
    "key": "boone_super_nationals",
-   "name": "Heartland Weekly Racer Super Nationals",
+   "name": "IMCA Super Nationals",
    "track_id": "boone-speedway-ia",
    "discipline": "dirt_oval",
    "min_tier": 1,
@@ -1527,11 +1541,12 @@
    "visibility": 45,
    "purse_win": 10000,
    "note": "IMCA Super Nationals analog: the weekly racers' showcase.",
-   "week": 24
+   "week": 24,
+   "since": 1983
   },
   {
    "key": "pennsylvania_410_classic",
-   "name": "Pennsylvania 410 Classic",
+   "name": "National Open",
    "track_id": "williams-grove-speedway-pa",
    "discipline": "dirt_oval",
    "min_tier": 2,
@@ -1540,7 +1555,8 @@
    "visibility": 65,
    "purse_win": 50000,
    "note": "Central PA 410 crown-jewel analog.",
-   "week": 18
+   "week": 18,
+   "since": 1963
   }
  ],
  "shootouts": [

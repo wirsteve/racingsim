@@ -128,7 +128,7 @@ def _return_to_grassroots(world: "World", d: Driver) -> bool:
     """Former pro self-funds a local headline division near home, using savings."""
     from .market import release_seat
     release_seat(world, d)
-    options = [s for s in world.pyramid.series.values()
+    options = [s for s in world.pyramid.active()
                if s.scope == "track" and s.tier == 2 and s.discipline in (d.primary_discipline, "dirt_oval", "stock_car")]
     if not options:
         return False

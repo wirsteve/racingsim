@@ -58,7 +58,8 @@ def handle(method: str, path: str, query: dict, body: dict):
             first=body.get("first", ""), last=body.get("last", ""), region=body["region"],
             age=int(body.get("age", 10)), discipline=body.get("discipline", "karting"),
             background=body.get("background", "middle"), talent=body.get("talent", "unknown"),
-            seed=int(body.get("seed") or 2026), scale=float(body.get("scale") or 0.6))
+            seed=int(body.get("seed") or 2026), scale=float(body.get("scale") or 0.6),
+            start_year=int(body.get("start_year") or 2026))
         return api.status(STATE.game)
     if head == "load" and method == "POST":
         try:

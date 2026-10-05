@@ -428,7 +428,7 @@ def _finalise_records(world: "World", res: SeasonResults, acc: dict[int, _Acc], 
                 year=world.year, series_id=sid, tier=s.tier, discipline=s.discipline,
                 team_id=a.team_id, starts=a.starts, wins=a.wins, top5=a.top5,
                 avg_finish=a.finish_sum / a.starts, expected_finish=a.expected_sum / a.starts,
-                championship_pos=pos, field_size=n, champion=champion,
+                championship_pos=pos, field_size=n, champion=champion, series_name=s.name,
             )
             rec.note = f"{a.fin_pct_sum / a.starts:.3f}|{a.exp_pct_sum / a.starts:.3f}"
             d.history.append(rec)

@@ -18,8 +18,11 @@ async function api(path, body) {
   return j;
 }
 
-function money(x) {
+// Internal values are 2025 dollars; show the season's nominal dollars.
+function money(x, idx) {
   if (x === null || x === undefined) return "—";
+  const k = idx !== undefined ? idx : (S.status && S.status.price_index) || 1;
+  x = x * k;
   const a = Math.abs(x);
   if (a >= 1e6) return `$${(x / 1e6).toFixed(a >= 1e7 ? 0 : 1)}M`;
   if (a >= 1e3) return `$${Math.round(x / 1e3)}k`;
@@ -46,7 +49,7 @@ function rating(v, opts = {}) {
   const w = Math.max(4, Math.min(100, ((v - 20) / 60) * 100));
   return `<span class="rating" title="${opts.title || "20-80 scale"}"><b>${v}</b><span class="bar"><i style="width:${w}%;background:${ratingColor(v)}"></i></span></span>`;
 }
-const driverLink = (id, name, me) => `<a class="link" href="#/driver/${id}">${esc(name)}</a>${me ? ' <span class="badge warn">YOU</span>' : ""}`;
+const driverLink = (id, name, me, real) => `<a class="link" href="#/driver/${id}">${esc(name)}</a>${me ? ' <span class="badge warn">YOU</span>' : ""}${real ? ' <span class="badge" title="Real driver">R</span>' : ""}`;
 const seriesLink = (s) => s ? `<a class="link" href="#/series/${encodeURIComponent(s.id)}">${esc(s.name)}</a>` : `<span class="muted">—</span>`;
 const teamLink = (t) => t ? `<a class="link" href="#/team/${t.id}">${esc(t.name)}</a>` : `<span class="muted">own car</span>`;
 const trackLink = (id, name) => `<a class="link" href="#/track/${encodeURIComponent(id)}">${esc(name)}</a>`;
@@ -232,7 +235,7 @@ function heroCard(me) {
   const where = me.series ? `${seriesLink(me.series)} · ${teamLink(me.team)}` : `<span class="muted">No ride</span>`;
   return `<div class="card hero">
     <div class="avatar">${initials(me.name)}</div>
-    <div><h1>${esc(me.name)} ${me.is_player ? '<span class="badge warn">YOU</span>' : ""}</h1>
+    <div><h1>${esc(me.name)} ${me.is_player ? '<span class="badge warn">YOU</span>' : ""}${me.real ? ` <span class="badge good">real driver</span>${me.wiki ? ` <a class="link small" target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/${encodeURIComponent(me.wiki)}">Wikipedia ↗</a>` : ""}` : ""}</h1>
       <div class="sub">Age ${me.age} · ${esc(me.home_name)} · ${statusBadge(me.status)} ${me.series ? tierBadge(me.series.tier, me.series.tier_name) + " " + discBadge(me.series.discipline) : ""}</div>
       <div class="sub" style="margin-top:4px">${where}</div></div>
     <div class="kpis">
@@ -507,7 +510,7 @@ async function seriesPage(id, tab = "standings") {
       ${chip("Prestige", t.prestige)}${chip("Scout visibility", t.visibility)}${chip("Min age", t.min_age)}${t.max_age ? chip("Max age", t.max_age) : ""}
       ${t.full_age ? chip("Big-oval age", t.full_age) : ""}${t.purse_win ? chip("Purse to win", money(t.purse_win)) : ""}
       ${t.scholarship ? chip("Champion scholarship", money(t.scholarship)) : ""}${t.team_based ? chip("Seats", "team-based") : chip("Cars", "self-run")}
-      ${t.pro ? chip("Pros", "paid") : ""}${t.license_min_tier ? chip("Licence", `T${t.license_min_tier}+ & ${t.license_min_starts} starts`) : ""}</div></div>
+      ${t.pro ? chip("Pros", "paid") : ""}${s.real_schedule ? chip("Calendar", "real " + S.status.year + " schedule") : ""}${t.license_min_tier ? chip("Licence", `T${t.license_min_tier}+ & ${t.license_min_starts} starts`) : ""}</div></div>
     <div class="tabs">${tabs.map(([k, l]) => `<button class="${k === tab ? "on" : ""}" data-act="stab" data-tab="${k}" data-id="${esc(id)}">${l}</button>`).join("")}</div>
     ${body[tab]()}`);
 }
@@ -515,7 +518,7 @@ on("stab", (el) => seriesPage(el.dataset.id, el.dataset.tab));
 
 function driversTable(id, rows, opts = {}) {
   return table(id, [
-    { key: "name", label: "Driver", render: (r) => driverLink(r.id, r.name, r.is_player), sort: (r) => r.name },
+    { key: "name", label: "Driver", render: (r) => driverLink(r.id, r.name, r.is_player, r.real), sort: (r) => r.name },
     { key: "age", label: "Age", num: true },
     { key: "home", label: "Home" },
     { key: "tier", label: "Tier", num: true, render: (r) => tierBadge(r.tier) },
@@ -729,7 +732,7 @@ on("load", async (el) => {
 });
 
 // ---- new career wizard
-const NEW = { age: 10, discipline: "karting", background: "middle", talent: "unknown", region: "NC", scale: "0.6", seed: "" };
+const NEW = { age: 10, discipline: "karting", background: "middle", talent: "unknown", region: "NC", scale: "0.6", seed: "", start_year: 2026 };
 async function newPage() {
   if (!S.setup) S.setup = await api("setup");
   const st = S.setup;
@@ -744,11 +747,13 @@ async function newPage() {
         <div class="form-grid">
           <label class="field">First name<input id="nf-first" value="${esc(NEW.first || "")}" placeholder="First"></label>
           <label class="field">Last name<input id="nf-last" value="${esc(NEW.last || "")}" placeholder="Last"></label>
+          <label class="field">Start year<select data-change="newf" data-k="start_year">${st.years.slice().reverse().map((y) => `<option value="${y}" ${Number(NEW.start_year) === y ? "selected" : ""}>${y}${st.history_years.includes(y) ? " · real national rosters" : ""}</option>`).join("")}</select>
+            <span class="muted small">Born ${NEW.start_year - NEW.age}. ${st.history_years.includes(Number(NEW.start_year)) ? "The national series start with that season's real teams and drivers." : "National series start with generated drivers."}</span></label>
           <label class="field">Home<select data-change="newf" data-k="region">${st.regions.map((r) => `<option value="${r.code}" ${r.code === NEW.region ? "selected" : ""}>${esc(r.name)}${r.country === "CAN" ? " (Canada)" : ""}</option>`).join("")}</select></label>
           <label class="field">Starting age: <b>${NEW.age}</b><input type="range" min="5" max="40" value="${NEW.age}" data-change="newf" data-k="age"><span class="muted small">${ageHint}</span></label>
         </div>
         <h3 style="margin-top:18px">Where you start racing</h3>${cards("discipline", st.disciplines, (i) => i.label.split(" (")[0], (i) => esc((i.label.match(/\((.*)\)/) || [, ""])[1]))}
-        <h3 style="margin-top:18px">Family background</h3>${cards("background", st.backgrounds, (i) => i.label, (i) => `${esc(i.detail)}<br><b>${money(i.budget)}</b>/season`)}
+        <h3 style="margin-top:18px">Family background</h3>${cards("background", st.backgrounds, (i) => i.label, (i) => `${esc(i.detail)}<br><b>${money(i.budget, st.price_index[NEW.start_year])}</b>/season <span class="muted">(${NEW.start_year} dollars)</span>`)}
         <h3 style="margin-top:18px">Talent</h3>${cards("talent", st.talents, (i) => i.label, (i) => esc(i.detail))}
         <h3 style="margin-top:18px">World</h3>
         <div class="form-grid">
@@ -766,7 +771,7 @@ async function newPage() {
     </div>`);
 }
 on("pick", (el) => { NEW[el.dataset.k] = el.dataset.v; keepNames(); newPage(); });
-on("newf", (el) => { NEW[el.dataset.k] = el.dataset.k === "age" ? Number(el.value) : el.value; keepNames(); newPage(); });
+on("newf", (el) => { NEW[el.dataset.k] = ["age", "start_year"].includes(el.dataset.k) ? Number(el.value) : el.value; keepNames(); newPage(); });
 function keepNames() { NEW.first = $("#nf-first")?.value ?? NEW.first; NEW.last = $("#nf-last")?.value ?? NEW.last; NEW.seed = $("#nf-seed")?.value ?? NEW.seed; }
 on("start", async (el) => {
   keepNames();

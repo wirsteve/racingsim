@@ -37,6 +37,7 @@ class SeasonRecord:
     champion: bool = False
     crown_jewel_wins: list[str] = field(default_factory=list)
     note: str = ""
+    series_name: str = ""       # the series' name that season (names change by era)
 
 
 @dataclass
@@ -102,6 +103,8 @@ class Driver:
     first_license_age: int = 0  # age of first competition licence (Bronze rule for Pro-Am)
     grassroots_veteran: bool = False  # ex-national driver now racing locally by choice
     is_player: bool = False           # the human's driver: the AI never decides for them
+    real: bool = False                # a real person (historical mode)
+    wiki: Optional[str] = None        # their Wikipedia article title
     connections: dict[str, float] = field(default_factory=dict)  # "team:12" -> 0..1, "mfr:3" -> 0..1
     program_mfr: Optional[int] = None
     program_years: int = 0
@@ -194,3 +197,22 @@ class Manufacturer:
     program_slots: int
     aggressiveness: float       # 0..1 how young/early they sign
     prospects: list[int] = field(default_factory=list)
+    years: dict = field(default_factory=dict)          # discipline -> [first, last] season raced
+    program_years: Optional[list] = None               # [first, last] season with a driver program
+
+    def races(self, discipline: str, year: int) -> bool:
+        if not self.years:
+            return discipline in self.disciplines
+        span = self.years.get(discipline)
+        if not span:
+            return False
+        spans = span if isinstance(span[0], list) else [span]  # one or several stints
+        return any(a <= year <= b for a, b in spans)
+
+    def runs_program(self, year: int) -> bool:
+        if not self.program_years or self.program_slots <= 0:
+            return False
+        return self.program_years[0] <= year <= self.program_years[1]
+
+    def active_disciplines(self, year: int) -> list[str]:
+        return [d for d in self.disciplines if self.races(d, year)]

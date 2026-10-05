@@ -42,6 +42,14 @@ def manufacturer_programs(world: "World", summary: "YearSummary") -> None:
     rng = world.rng
     year = world.year
     for m in world.manufacturers.values():
+        if not m.runs_program(world.year):
+            for did in list(m.prospects):  # programme wound down (e.g. a make leaving the sport)
+                d = world.drivers.get(did)
+                if d is not None:
+                    d.program_mfr = None
+                    d.log(year, f"{m.name} ended its driver development program")
+                m.prospects.remove(did)
+            continue
         # Review current prospects.
         for did in list(m.prospects):
             d = world.drivers.get(did)
@@ -71,7 +79,7 @@ def manufacturer_programs(world: "World", summary: "YearSummary") -> None:
             age = d.age(year)
             if not (lo <= age <= hi + 3):
                 continue
-            if max(d.proficiency.get(x, 0) for x in m.disciplines) < 0.3:
+            if max((d.proficiency.get(x, 0) for x in m.active_disciplines(year)), default=0) < 0.3:
                 continue
             if d.tier < 1:
                 continue

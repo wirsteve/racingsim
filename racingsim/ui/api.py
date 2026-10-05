@@ -97,6 +97,7 @@ def driver_row(world: "World", d: Driver) -> dict:
         "crown_jewels": len(d.crown_jewels), "max_tier": d.max_tier, "is_player": d.is_player,
         "last_pos": last.championship_pos if last else None, "last_field": last.field_size if last else None,
         "funded": d.seat_funded, "program": world.manufacturers[d.program_mfr].name if d.program_mfr else None,
+        "real": d.real, "wiki": d.wiki,
     }
 
 
@@ -109,7 +110,7 @@ def driver_detail(world: "World", did: int) -> dict:
         s = world.pyramid.series.get(r.series_id)
         history.append({
             "year": r.year, "age": r.year - d.birth_year, "series": series_brief(world, r.series_id),
-            "series_name": s.name if s else r.series_id, "tier": r.tier, "discipline": r.discipline,
+            "series_name": r.series_name or (s.name if s else r.series_id), "tier": r.tier, "discipline": r.discipline,
             "team": team_brief(world, r.team_id), "starts": r.starts, "wins": r.wins, "top5": r.top5,
             "avg_finish": round(r.avg_finish, 1), "pos": r.championship_pos, "field": r.field_size,
             "champion": r.champion, "jewels": r.crown_jewel_wins,
@@ -153,7 +154,9 @@ def status(game: "Game") -> dict:
     w = game.world
     p = w.player
     runner = game.runner
+    from ..history.economy import price_index
     out = {"phase": game.phase, "year": w.year, "week": runner.week if game.phase == "season" else 0,
+           "price_index": price_index(w.year), "start_year": w.config.start_year,
            "weeks": SEASON_WEEKS, "label": week_label(runner.week, preseason=True) if game.phase == "season" else "Off-season",
            "message": game.last_message, "player": None}
     if p is not None:
@@ -412,7 +415,7 @@ def pyramid(world: "World") -> list[dict]:
     for d in world.drivers.values():
         if d.status != RETIRED and d.series_id:
             counts[world.series(d.series_id).template.key] += 1
-    instances = Counter(s.template.key for s in world.pyramid.series.values())
+    instances = Counter(s.template.key for s in world.pyramid.active())
     for tpl in sorted(world.pyramid.templates.values(), key=lambda t: (t.tier, t.discipline, t.key)):
         if instances[tpl.key] == 0:
             continue
@@ -426,7 +429,7 @@ def pyramid(world: "World") -> list[dict]:
             "team_based": tpl.team_based, "min_age": tpl.min_age, "max_age": tpl.max_age,
             "field": tpl.field_size, "events": tpl.events, "prestige": tpl.prestige, "visibility": tpl.visibility,
             "pro": tpl.pro, "seats": tpl.cars * tpl.drivers_per_car if tpl.team_based else None,
-            "single_id": next((s.id for s in world.pyramid.series.values() if s.template.key == tpl.key), None)
+            "single_id": next((s.id for s in world.pyramid.active() if s.template.key == tpl.key), None)
             if instances[tpl.key] == 1 else None,
         })
     return [by_tier[t] for t in sorted(by_tier, reverse=True)]
@@ -435,7 +438,7 @@ def pyramid(world: "World") -> list[dict]:
 def series_instances(world: "World", key: str) -> list[dict]:
     counts = Counter(d.series_id for d in world.drivers.values() if d.status != RETIRED and d.series_id)
     out = []
-    for s in world.pyramid.series.values():
+    for s in world.pyramid.active():
         if s.template.key != key:
             continue
         region = None
@@ -464,7 +467,7 @@ def series_detail(world: "World", sid: str) -> dict:
     drivers = [] if tpl.team_based else [driver_row(world, d) for d in world.drivers.values()
                                          if d.series_id == sid and d.status != RETIRED]
     return {
-        **series_brief(world, sid), "template": {
+        **series_brief(world, sid), "real_schedule": s.real_schedule, "dormant": s.dormant, "template": {
             "cost": tpl.season_cost, "events": tpl.events, "field": tpl.field_size, "min_age": tpl.min_age,
             "max_age": tpl.max_age, "full_age": tpl.full_age, "team_based": tpl.team_based, "pro": tpl.pro,
             "prestige": tpl.prestige, "visibility": tpl.visibility, "purse_win": tpl.purse_win,
@@ -491,7 +494,7 @@ def team_detail(world: "World", tid: int) -> dict:
 def tracks_query(world: "World", q: dict) -> list[dict]:
     out = []
     usage = defaultdict(set)
-    for s in world.pyramid.series.values():
+    for s in world.pyramid.active():
         for tid in set(s.schedule):
             usage[tid].add(s.tier)
     for t in world.tracks:
@@ -523,7 +526,7 @@ def tracks_query(world: "World", q: dict) -> list[dict]:
 def track_detail(world: "World", tid: str) -> dict:
     t = world.tracks.get(tid)
     d = t.to_dict()
-    hosted = sorted({(s.tier, s.name, s.id) for s in world.pyramid.series.values() if tid in s.schedule},
+    hosted = sorted({(s.tier, s.name, s.id) for s in world.pyramid.active() if tid in s.schedule},
                     reverse=True)
     jewels_here = [cj.name for cj in world.pyramid.crown_jewels if cj.track_id == tid]
     return {"id": t.id, "name": t.display_name, "facts": d["facts"], "profile": d["profile"], "sim": d["sim"],
@@ -562,9 +565,18 @@ def regions(world: "World") -> list[dict]:
 
 
 def setup_options() -> dict:
+    from ..history.economy import price_index
     from ..world.regions import Geography
     geo = Geography.load()
+    try:
+        from ..history import HistoryDB
+        hist = HistoryDB.load_default()
+        hist_years = hist.years() if hist else []
+    except Exception:  # pragma: no cover - history data optional
+        hist_years = []
     return {
+        "years": list(range(1995, 2027)), "price_index": {y: price_index(y) for y in range(1995, 2027)},
+        "history_years": hist_years,
         "backgrounds": [{"id": k, "label": v[0], "detail": v[1], "budget": v[2]} for k, v in career.BACKGROUNDS.items()],
         "talents": [{"id": k, "label": v[0], "detail": v[1]} for k, v in career.TALENTS.items()],
         "disciplines": [{"id": k, "label": v} for k, v in career.START_DISCIPLINES.items()],
