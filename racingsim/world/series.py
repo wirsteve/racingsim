@@ -51,6 +51,7 @@ class SeriesTemplate:
     regional_draw_mi: float = 0.0    # for track-scope: how far racers will tow weekly
     full_age: Optional[int] = None   # below this age: only ovals <= 1.25 mi and road courses
     selection: dict = field(default_factory=dict)  # owner weighting override for seat decisions
+    team_funding_floor: Optional[float] = None
     macro_hint: str = ""             # regions where a local division is common (others: rarer)
     note: str = ""
 

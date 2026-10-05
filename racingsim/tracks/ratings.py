@@ -114,6 +114,8 @@ def size_class(facts: TrackFacts) -> str:
         return "intermediate_oval" if banking >= 14 else "flat_intermediate"
     if length >= 0.75:
         return "short_oval"
+    if facts.banking_deg_turns is None:
+        return "short_oval"  # banking undocumented: treat as a neutral short oval
     return "bullring" if banking >= 18 else "flat_short_oval" if banking < 13 else "short_oval"
 
 
@@ -125,6 +127,8 @@ def series_suitability(facts: TrackFacts) -> list[str]:
     if facts.track_type == "kart_circuit":
         out.add("kart")
         return sorted(out)
+    if disc and disc <= {"quarter_midget", "bandolero"}:
+        return ["youth_oval"]  # dedicated youth venues (quarter-midget club tracks)
     if facts.is_dirt and facts.is_oval:
         out.add("dirt_oval")
         if "sprint_car" in disc or "midget" in disc:
@@ -168,7 +172,7 @@ def derive_profile(facts: TrackFacts, prestige_bonus: int = 0) -> TrackProfile:
         prestige += 4
     length = facts.length_mi or 0.4
     attendance += int(min(15, length * 4)) if facts.is_oval else int(min(10, length * 2))
-    if not facts.active:
+    if facts.active is False:
         attendance = 0
     return TrackProfile(
         size_class=size_class(facts),
@@ -216,16 +220,23 @@ def derive_sim_ratings(facts: TrackFacts) -> TrackSimRatings:
                  fuel_sensitivity=65, pit_road_time_loss=55, setup_sensitivity=75,
                  groove_width=int(clamp(35 + banking * 1.5)))
     elif sc in ("short_oval", "flat_short_oval", "bullring") and not facts.is_dirt:
-        high_bank = banking >= 18
-        r.update(passing_difficulty=55 if high_bank else 70,
-                 tire_degradation=55 if high_bank else 45,
-                 mechanical_stress=65 if high_bank else 55,
-                 brake_stress=55 if high_bank else 85, engine_stress=50,
+        # Blend flat-paperclip and high-banked-bullring behaviour by banking;
+        # undocumented banking sits in the middle.
+        if facts.banking_deg_turns is None:
+            hb = 0.5
+        else:
+            hb = clamp((facts.banking_deg_turns - 12) / 8, 0, 1)
+
+        def mix(flat: float, high: float) -> float:
+            return flat + (high - flat) * hb
+
+        r.update(passing_difficulty=mix(70, 55), tire_degradation=mix(45, 55),
+                 mechanical_stress=mix(55, 65), brake_stress=mix(85, 55), engine_stress=50,
                  aero_importance=20, mechanical_grip_importance=80, horsepower_importance=35,
-                 qualifying_importance=70, caution_probability=70 if high_bank else 60,
-                 crash_severity=35 if not high_bank else 45, drafting_effect=3,
+                 qualifying_importance=70, caution_probability=mix(60, 70),
+                 crash_severity=mix(35, 45), drafting_effect=3,
                  fuel_sensitivity=25, pit_road_time_loss=35, setup_sensitivity=65,
-                 groove_width=55 if high_bank else 30)
+                 groove_width=mix(30, 55))
     elif facts.is_dirt and facts.is_oval:
         big = sc == "dirt_big_oval"
         r.update(passing_difficulty=40, tire_degradation=60, mechanical_stress=70,

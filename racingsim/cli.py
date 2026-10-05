@@ -60,14 +60,15 @@ def cmd_tracks(args: argparse.Namespace) -> int:
         f = t.facts
         length = f"{f.length_mi:.3f} mi" if f.length_mi else "?"
         print(f"{f.country} {f.region or '--':<3} {t.name:<45} {f.surface:<16} {t.profile.size_class:<18} "
-              f"{length:>10} {f.level:<9}{'' if f.active else ' (inactive)'}")
+              f"{length:>10} {f.level:<9}{'' if f.is_active else ' (inactive)'}")
     print(f"\n{len(rows)} tracks")
     return 0
 
 
 def cmd_track(args: argparse.Namespace) -> int:
     db = TrackDatabase.load()
-    matches = [t for t in db if args.name.lower() in t.name.lower()]
+    q = args.name.lower()
+    matches = [t for t in db if q in t.name.lower() or any(q in a.lower() for a in t.facts.aliases)]
     for t in matches:
         d = t.to_dict()
         print(f"== {t.name}")

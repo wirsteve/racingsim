@@ -41,3 +41,15 @@ PROGRAM_AGE_RANGE = (14, 19)
 
 # Probability a retired top-tier pro keeps racing regionally/locally (research A 14.11, C 5.7).
 GRASSROOTS_RETURN_PROB = 0.35
+
+# The simulated grassroots base is a compressed sample of reality (~80-160k real US
+# racers vs ~11k simulated at population_scale=1), while national seats are modelled
+# 1:1. Rare-but-important tails (career-investment families, generational talent)
+# must therefore be denser per simulated racer, or too few funded young prospects
+# exist to fill real-sized national ladders. REPRESENTATION_RATIO is real racers
+# per simulated grassroots racer at scale 1.0.
+REPRESENTATION_RATIO = 8.0
+# Real-world share of young racers whose families fund a national-level programme
+# ($150k+/season), and share of generational talents (both approx., design values).
+INVESTMENT_FAMILY_SHARE = 0.003
+PRODIGY_SHARE = 0.0015

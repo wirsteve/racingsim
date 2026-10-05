@@ -23,7 +23,7 @@ def develop(world: "World", results: "SeasonResults") -> None:
         starts = rec.starts if rec else 0
         seat_time = min(1.0, starts / 18)
         if age <= d.peak_age:
-            rate = 0.20 if age < 15 else 0.15 if age < 19 else 0.11 if age < 24 else 0.07
+            rate = 0.22 if age < 15 else 0.20 if age < 19 else 0.15 if age < 24 else 0.08
             coaching = 1 + 0.035 * d.tier  # better teams, engineers, coaches higher up
             drive = 0.75 + d.determination / 250 + d.professionalism / 500
             growth = (d.potential - d.ability) * rate * (0.35 + 0.65 * seat_time) * coaching * drive
@@ -33,7 +33,7 @@ def develop(world: "World", results: "SeasonResults") -> None:
                 bump = rng.uniform(3, 8)
                 d.potential = clamp(d.potential + bump, 0, 99)
         else:
-            decline = 0.12 * (age - d.peak_age) + rng.gauss(0, 0.5)
+            decline = 0.18 * (age - d.peak_age) + rng.gauss(0, 0.5)
             d.ability = clamp(d.ability - max(0.0, decline), 1, 99)
             d.potential = min(d.potential, d.ability + 1)
         if rec is not None:
@@ -83,17 +83,22 @@ def retirements(world: "World", results: "SeasonResults", summary: "YearSummary"
             fin = 1 - (rec.avg_finish - 1) / max(1, rec.field_size - 1)
             if fin < 0.3:
                 h += 0.04
-        if age > 38:
+        if tier >= 3 and age > 38:
+            # Professional careers wind down from the late 30s.
             h += 0.025 * (age - 38) * (1.6 if tier >= 5 else 1.0)
-        if age > 60:
-            h += 0.15
+        elif tier <= 2 and age > 48:
+            # Weekly racers often keep going into their 50s-60s.
+            h += 0.012 * (age - 48)
+        if age > 62:
+            h += 0.12
         if d.injury_races > 10:
             h += 0.2
         h *= 1.5 - d.determination / 100
         if rng.random() >= clamp(h, 0, 0.95):
             continue
         # Veterans who lose national rides often go back to short tracks (research A 11, C 5.7).
-        if d.max_tier >= 5 and age <= 58 and d.tier >= 4 and rng.random() < GRASSROOTS_RETURN_PROB:
+        if (d.max_tier >= 5 and 30 <= age <= 60 and not d.grassroots_veteran
+                and rng.random() < GRASSROOTS_RETURN_PROB):
             if _return_to_grassroots(world, d):
                 continue
         retire(world, d, summary)
@@ -134,7 +139,9 @@ def _return_to_grassroots(world: "World", d: Driver) -> bool:
     d.tier = s.tier
     d.home_track_id = s.region_key
     d.status = ACTIVE
-    d.family_budget = max(d.family_budget, s.template.season_cost * 0.8)
+    d.grassroots_veteran = True
+    # Name value attracts local sponsors and savings fund the car (Schrader/Kenseth pattern).
+    d.family_budget = max(d.family_budget, s.template.season_cost * 0.9)
     d.log(world.year, f"stepped back to weekly racing in the {s.name}")
     return True
 

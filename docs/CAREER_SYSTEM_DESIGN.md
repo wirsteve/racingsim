@@ -44,8 +44,8 @@ off-season (career/offseason.py)
 
 ## 2. The pyramid
 
-Eight tiers (0 youth → 7 premier professional). 39 series templates in
-`data/series.json` produce several hundred championships:
+Eight tiers (0 youth → 7 premier professional). 40 series templates in
+`data/series.json` produce 614 championships on the current track database (505 weekly track divisions, 88 regional series, 21 national series):
 
 | Scope | Instantiated | Examples |
 |---|---|---|

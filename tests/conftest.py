@@ -1,3 +1,5 @@
+import os
+
 import pytest
 
 from racingsim.tracks import TrackDatabase
@@ -19,7 +21,8 @@ def fresh_world(tracks) -> World:
 @pytest.fixture(scope="session")
 def simulated_world(tracks) -> World:
     """A seeded world advanced several seasons; shared by the systemic tests."""
-    w = World.generate(WorldConfig(seed=7, population_scale=0.4), tracks=tracks)
+    w = World.generate(WorldConfig(seed=int(os.environ.get("RACINGSIM_TEST_SEED", 7)), population_scale=0.4),
+                      tracks=tracks)
     for _ in range(SIM_YEARS):
         w.run_year()
     return w

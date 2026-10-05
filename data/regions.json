@@ -1168,6 +1168,26 @@
    },
    "sponsor_market": 30,
    "industry_hubs": {}
+  },
+  {
+   "code": "PE",
+   "name": "Prince Edward Island",
+   "country": "CAN",
+   "macro_region": "canada_east",
+   "lat": 46.3,
+   "lon": -63.2,
+   "racer_weight": 0.2,
+   "culture": {
+    "stock_car": 80,
+    "dirt_oval": 10,
+    "open_wheel": 3,
+    "sports_car": 5,
+    "club_road": 5,
+    "karting": 10,
+    "touring_car": 3
+   },
+   "sponsor_market": 25,
+   "industry_hubs": {}
   }
  ]
 }

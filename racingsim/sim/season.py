@@ -146,7 +146,7 @@ def run_season(world: "World", summary: "YearSummary") -> SeasonResults:
 
 def world_seat_coverage(world: "World", d: Driver) -> float:
     """Share of the required seat funding actually delivered (set by the market)."""
-    return getattr(world, "seat_coverage", {}).get(d.id, 1.0)
+    return world.seat_coverage.get(d.id, 1.0)
 
 
 def _tick_injuries(entries: list[Entry]) -> None:
@@ -235,15 +235,19 @@ def _pick_substitute(world: "World", pool: list[Driver], s: "Series", track, tea
 
 def _crown_jewels(world: "World", res: SeasonResults, acc: dict[int, _Acc]) -> None:
     rng = world.rng
+    entered: dict[int, int] = {}
     for cj in world.pyramid.crown_jewels:
         track = world.tracks.get(cj.track_id)
         candidates = []
         for d in world.drivers.values():
             if d.status not in (ACTIVE, PART_TIME) or d.injury_races > 0:
                 continue
+            if entered.get(d.id, 0) >= 3:  # a crowded calendar: pick your big races
+                continue
             if not (cj.min_tier <= d.tier <= cj.max_tier):
                 continue
-            if d.proficiency.get(cj.discipline, 0) < 0.25:
+            if d.primary_discipline != cj.discipline and not any(
+                    r.discipline == cj.discipline for r in d.history[-5:]):
                 continue
             if d.age(world.year) < 14:
                 continue
@@ -257,6 +261,8 @@ def _crown_jewels(world: "World", res: SeasonResults, acc: dict[int, _Acc]) -> N
         field_drivers = [d for _, d in candidates[: cj.entrants]]
         if len(field_drivers) < 6:
             continue
+        for d in field_drivers:
+            entered[d.id] = entered.get(d.id, 0) + 1
         entries = [Entry([d], res.equipment.get(d.id, 50.0)) for d in field_drivers]
         finishes = run_race(entries, track, cj.discipline, max(cj.max_tier - 1, 2), 0.45, rng)
         order = [f.entry.drivers[0].id for f in finishes]

@@ -1,21 +1,131 @@
 {
-  "_comment": "Skill transfer between disciplines (0-1): how much of a driver's proven proficiency carries over when they move sideways. Calibrated from case studies in MOTORSPORTS_RESEARCH.md (dirt->stock car transfers well: Gordon, Stewart, Larson, Bell; Supercars->NASCAR road courses: van Gisbergen; open wheel->stock car is historically mixed: Hornish, Montoya; karting feeds everything early). Rows = from, columns = to.",
-  "disciplines": {
-    "karting":     {"label": "Karting",                 "surface": "asphalt", "venues": ["kart"]},
-    "stock_car":   {"label": "Asphalt stock cars",      "surface": "asphalt", "venues": ["short_oval", "mid_oval", "big_oval", "superspeedway", "pro_road"]},
-    "dirt_oval":   {"label": "Dirt oval",               "surface": "dirt",    "venues": ["dirt_oval", "dirt_open_wheel", "dirt_full_body"]},
-    "open_wheel":  {"label": "Open-wheel / formula",    "surface": "asphalt", "venues": ["pro_road", "club_road", "open_wheel_oval", "big_oval"]},
-    "sports_car":  {"label": "Sports cars / endurance", "surface": "asphalt", "venues": ["pro_road", "club_road"]},
-    "touring_car": {"label": "Touring cars",            "surface": "asphalt", "venues": ["pro_road", "club_road"]},
-    "club_road":   {"label": "Club road racing",        "surface": "asphalt", "venues": ["club_road", "pro_road"]}
+ "_comment": "Skill transfer between disciplines (0-1): how much of a driver's proven proficiency carries over when they move sideways. Calibrated from case studies in MOTORSPORTS_RESEARCH.md (dirt->stock car transfers well: Gordon, Stewart, Larson, Bell; Supercars->NASCAR road courses: van Gisbergen; open wheel->stock car is historically mixed: Hornish, Montoya; karting feeds everything early). Rows = from, columns = to.",
+ "disciplines": {
+  "karting": {
+   "label": "Karting",
+   "surface": "asphalt",
+   "venues": [
+    "kart"
+   ]
   },
-  "transfer": {
-    "karting":     {"karting": 1.0, "stock_car": 0.55, "dirt_oval": 0.45, "open_wheel": 0.75, "sports_car": 0.65, "touring_car": 0.65, "club_road": 0.70},
-    "stock_car":   {"karting": 0.40, "stock_car": 1.0, "dirt_oval": 0.55, "open_wheel": 0.45, "sports_car": 0.55, "touring_car": 0.60, "club_road": 0.55},
-    "dirt_oval":   {"karting": 0.40, "stock_car": 0.75, "dirt_oval": 1.0, "open_wheel": 0.45, "sports_car": 0.40, "touring_car": 0.40, "club_road": 0.40},
-    "open_wheel":  {"karting": 0.60, "stock_car": 0.60, "dirt_oval": 0.45, "open_wheel": 1.0, "sports_car": 0.85, "touring_car": 0.75, "club_road": 0.85},
-    "sports_car":  {"karting": 0.50, "stock_car": 0.55, "dirt_oval": 0.35, "open_wheel": 0.75, "sports_car": 1.0, "touring_car": 0.85, "club_road": 0.90},
-    "touring_car": {"karting": 0.50, "stock_car": 0.70, "dirt_oval": 0.40, "open_wheel": 0.65, "sports_car": 0.85, "touring_car": 1.0, "club_road": 0.90},
-    "club_road":   {"karting": 0.50, "stock_car": 0.50, "dirt_oval": 0.35, "open_wheel": 0.70, "sports_car": 0.85, "touring_car": 0.80, "club_road": 1.0}
+  "stock_car": {
+   "label": "Asphalt stock cars",
+   "surface": "asphalt",
+   "venues": [
+    "short_oval",
+    "mid_oval",
+    "big_oval",
+    "superspeedway",
+    "pro_road"
+   ]
+  },
+  "dirt_oval": {
+   "label": "Dirt oval",
+   "surface": "dirt",
+   "venues": [
+    "dirt_oval",
+    "dirt_open_wheel",
+    "dirt_full_body"
+   ]
+  },
+  "open_wheel": {
+   "label": "Open-wheel / formula",
+   "surface": "asphalt",
+   "venues": [
+    "pro_road",
+    "club_road",
+    "open_wheel_oval",
+    "big_oval"
+   ]
+  },
+  "sports_car": {
+   "label": "Sports cars / endurance",
+   "surface": "asphalt",
+   "venues": [
+    "pro_road",
+    "club_road"
+   ]
+  },
+  "touring_car": {
+   "label": "Touring cars",
+   "surface": "asphalt",
+   "venues": [
+    "pro_road",
+    "club_road"
+   ]
+  },
+  "club_road": {
+   "label": "Club road racing",
+   "surface": "asphalt",
+   "venues": [
+    "club_road",
+    "pro_road"
+   ]
   }
+ },
+ "transfer": {
+  "karting": {
+   "karting": 1.0,
+   "stock_car": 0.55,
+   "dirt_oval": 0.45,
+   "open_wheel": 0.75,
+   "sports_car": 0.65,
+   "touring_car": 0.65,
+   "club_road": 0.7
+  },
+  "stock_car": {
+   "karting": 0.4,
+   "stock_car": 1.0,
+   "dirt_oval": 0.55,
+   "open_wheel": 0.45,
+   "sports_car": 0.55,
+   "touring_car": 0.6,
+   "club_road": 0.55
+  },
+  "dirt_oval": {
+   "karting": 0.4,
+   "stock_car": 0.75,
+   "dirt_oval": 1.0,
+   "open_wheel": 0.45,
+   "sports_car": 0.4,
+   "touring_car": 0.4,
+   "club_road": 0.4
+  },
+  "open_wheel": {
+   "karting": 0.6,
+   "stock_car": 0.6,
+   "dirt_oval": 0.45,
+   "open_wheel": 1.0,
+   "sports_car": 0.85,
+   "touring_car": 0.75,
+   "club_road": 0.85
+  },
+  "sports_car": {
+   "karting": 0.5,
+   "stock_car": 0.55,
+   "dirt_oval": 0.35,
+   "open_wheel": 0.6,
+   "sports_car": 1.0,
+   "touring_car": 0.85,
+   "club_road": 0.9
+  },
+  "touring_car": {
+   "karting": 0.5,
+   "stock_car": 0.7,
+   "dirt_oval": 0.4,
+   "open_wheel": 0.65,
+   "sports_car": 0.85,
+   "touring_car": 1.0,
+   "club_road": 0.9
+  },
+  "club_road": {
+   "karting": 0.5,
+   "stock_car": 0.5,
+   "dirt_oval": 0.35,
+   "open_wheel": 0.7,
+   "sports_car": 0.85,
+   "touring_car": 0.8,
+   "club_road": 1.0
+  }
+ }
 }

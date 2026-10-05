@@ -59,14 +59,14 @@ class TrackDatabase:
         return self._tracks[track_id]
 
     def active(self) -> list[Track]:
-        return [t for t in self._tracks.values() if t.facts.active]
+        return [t for t in self._tracks.values() if t.facts.is_active]
 
     def suitable(self, venue_key: str, *, levels: Optional[set[str]] = None,
                  regions: Optional[set[str]] = None, countries: Optional[set[str]] = None,
                  active_only: bool = True) -> list[Track]:
         out = []
         for t in self._tracks.values():
-            if active_only and not t.facts.active:
+            if active_only and not t.facts.is_active:
                 continue
             if venue_key not in t.profile.series_suitability:
                 continue
@@ -105,11 +105,11 @@ class TrackDatabase:
             for t in self._tracks.values():
                 f = t.facts
                 cur.execute(
-                    "INSERT OR REPLACE INTO track_facts VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)",
+                    "INSERT OR REPLACE INTO track_facts VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)",
                     (f.id, f.name, f.city, f.region, f.country, f.track_type, f.surface,
                      f.length_mi, f.configuration, f.turns, f.banking_deg_turns,
-                     f.banking_deg_straights, f.opened, int(f.active), json.dumps(f.disciplines),
-                     f.level, f.notable_note, json.dumps([f.lat, f.lon]), json.dumps(f.sources)),
+                     f.banking_deg_straights, f.opened, None if f.active is None else int(f.active), json.dumps(f.disciplines),
+                     f.level, f.notable_note, json.dumps([f.lat, f.lon]), json.dumps(f.sources), json.dumps(f.aliases)),
                 )
                 p = t.profile
                 cur.execute(
@@ -133,10 +133,10 @@ def _richness(f: TrackFacts) -> int:
 _SCHEMA = f"""
 CREATE TABLE IF NOT EXISTS track_facts (
     id TEXT PRIMARY KEY, name TEXT NOT NULL, city TEXT, region TEXT, country TEXT NOT NULL,
-    track_type TEXT NOT NULL, surface TEXT NOT NULL, length_mi REAL, configuration TEXT,
+    track_type TEXT NOT NULL, surface TEXT, length_mi REAL, configuration TEXT,
     turns INTEGER, banking_deg_turns REAL, banking_deg_straights REAL, opened INTEGER,
-    active INTEGER NOT NULL, disciplines TEXT, level TEXT, notable_note TEXT, latlon TEXT,
-    sources TEXT
+    active INTEGER, disciplines TEXT, level TEXT, notable_note TEXT, latlon TEXT,
+    sources TEXT, aliases TEXT
 );
 CREATE TABLE IF NOT EXISTS track_profile (
     id TEXT PRIMARY KEY REFERENCES track_facts(id), size_class TEXT, prestige INTEGER,

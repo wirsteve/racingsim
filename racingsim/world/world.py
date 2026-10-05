@@ -27,6 +27,14 @@ class WorldConfig:
 
 
 @dataclass
+class MarketState:
+    """Per-off-season decisions made once per driver (not once per seat evaluated)."""
+    expired: dict[int, int] = field(default_factory=dict)   # driver -> team whose deal expired
+    switch_open: set[int] = field(default_factory=set)      # open to a sideways discipline move
+    comeback_open: set[int] = field(default_factory=set)    # grassroots veterans open to a comeback
+
+
+@dataclass
 class YearSummary:
     year: int
     drivers_by_tier: dict[int, int] = field(default_factory=dict)
@@ -56,6 +64,10 @@ class World:
         self.summaries: list[YearSummary] = []
         self.shootouts = load_json("series.json").get("shootouts", [])
         self.last_season: dict = {}
+        self.seat_coverage: dict[int, float] = {}   # share of a pay seat's gap actually funded
+        self.market = MarketState()
+        self.cache: dict = {}                       # derived indexes (travel costs, series lookup)
+        self.target_population = 0
 
     # ----------------------------------------------------------------- helpers
     def next_id(self, kind: str) -> int:

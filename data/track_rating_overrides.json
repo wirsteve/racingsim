@@ -112,20 +112,6 @@
   },
   "rationale": "Hilly, low-grip road course; tire falloff."
  },
- "weathertech-raceway-laguna-seca-ca": {
-  "sim": {
-   "passing_difficulty": 75,
-   "brake_stress": 78
-  },
-  "rationale": "Short, technical road course with few passing zones."
- },
- "laguna-seca-ca": {
-  "sim": {
-   "passing_difficulty": 75,
-   "brake_stress": 78
-  },
-  "rationale": "Short, technical road course with few passing zones."
- },
  "sebring-international-raceway-fl": {
   "prestige_bonus": 25,
   "sim": {
@@ -210,5 +196,19 @@
    "caution_probability": 80
   },
   "rationale": "Indoor 1/5-mile clay oval; premier midget event."
+ },
+ "laguna-seca-raceway-ca": {
+  "sim": {
+   "passing_difficulty": 75,
+   "brake_stress": 78
+  },
+  "rationale": "Short, technical road course with few passing zones."
+ },
+ "road-atlanta-ga": {
+  "prestige_bonus": 15,
+  "sim": {
+   "crash_severity": 60
+  },
+  "rationale": "Fast, hilly road course; endurance crown-jewel venue."
  }
 }

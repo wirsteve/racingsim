@@ -83,6 +83,14 @@ research must be recorded in the repository.
 
 ---
 
+## Known gaps (tracked for the next iteration)
+
+* Agents/managers are modelled implicitly (an awareness boost for drivers with
+  means or reputation), not as entities (R1.3, R2.1 "connections").
+* International ladders and venues beyond a seed set of 14 circuits (R4.1, R6.2).
+* Drivers becoming owners/promoters after retirement.
+* Calibration deviations recorded in `MOTORSPORTS_RESEARCH.md` §12.
+
 ## Traceability
 
 | Area | Where |

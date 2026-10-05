@@ -34,10 +34,10 @@ python -m pytest -q                                     # run the tests
 
 ## What's implemented
 
-* **Track database**: several hundred real venues (major and grassroots) stored as
+* **Track database**: 312 real venues (99 local, 134 regional, 63 national, 16 international) stored as
   sourced facts, plus separately derived game profiles and simulation ratings,
   persisted to SQLite.
-* **Racing pyramid**: 8 tiers and 39 series templates instantiated onto real tracks:
+* **Racing pyramid**: 8 tiers and 40 series templates instantiated onto real tracks (614 championships):
   weekly divisions at local tracks, regional tours, national ladders in stock cars,
   dirt, open wheel, sports cars, touring cars and club racing.
 * **Systemic careers**: thousands of procedurally generated drivers whose

@@ -42,20 +42,26 @@ class TrackFacts:
     region: Optional[str]
     country: str
     track_type: str
-    surface: str
+    surface: Optional[str]          # None when undocumented; game layer treats as paved
     length_mi: Optional[float]
     configuration: Optional[str] = None
     turns: Optional[int] = None
     banking_deg_turns: Optional[float] = None
     banking_deg_straights: Optional[float] = None
     opened: Optional[int] = None
-    active: bool = True
+    active: Optional[bool] = True   # None = status unconfirmed
     disciplines: list[str] = field(default_factory=list)
     level: str = "local"
     notable_note: Optional[str] = None
     lat: Optional[float] = None
     lon: Optional[float] = None
     sources: list[str] = field(default_factory=list)
+    aliases: list[str] = field(default_factory=list)  # former / naming-rights names (search only)
+
+    @property
+    def is_active(self) -> bool:
+        """Game treats an unconfirmed status as operating."""
+        return self.active is not False
 
     @property
     def is_dirt(self) -> bool:
@@ -75,7 +81,7 @@ class TrackFacts:
             problems.append("missing name")
         if self.track_type not in TRACK_TYPES:
             problems.append(f"bad track_type {self.track_type!r}")
-        if self.surface not in SURFACES:
+        if self.surface is not None and self.surface not in SURFACES:
             problems.append(f"bad surface {self.surface!r}")
         if self.level not in LEVELS:
             problems.append(f"bad level {self.level!r}")
@@ -83,7 +89,7 @@ class TrackFacts:
             problems.append(f"implausible length {self.length_mi}")
         if self.banking_deg_turns is not None and not (0 <= self.banking_deg_turns <= 45):
             problems.append(f"implausible banking {self.banking_deg_turns}")
-        if self.opened is not None and not (1890 <= self.opened <= 2030):
+        if self.opened is not None and not (1850 <= self.opened <= 2030):  # fairground horse tracks predate cars
             problems.append(f"implausible opened {self.opened}")
         if self.lat is not None and not (-90 <= self.lat <= 90):
             problems.append("bad lat")

@@ -57,7 +57,7 @@ def season_cost_for(world: "World", d: Driver, series: "Series") -> float:
     """Car budget plus travel from the driver's home for a self-run season."""
     tpl = series.template
     cost = tpl.season_cost
-    cache = world.__dict__.setdefault("_travel_cache", {})
+    cache = world.cache.setdefault("travel", {})
     key = (d.id, series.id, round(d.lat, 2), round(d.lon, 2))
     if key in cache:
         return cost + cache[key]
@@ -93,24 +93,24 @@ def release_seat(world: "World", d: Driver) -> Optional[tuple[Team, int]]:
     d.seat_funded = False
     d.salary = 0.0
     d.contract_years = 0
-    world.__dict__.setdefault("seat_coverage", {}).pop(d.id, None)
+    world.seat_coverage.pop(d.id, None)
     return out
 
 
 # ----------------------------------------------------------------------------- self-run
 def _template_index(world: "World") -> dict[str, list["Series"]]:
-    idx = world.__dict__.get("_tpl_index")
+    idx = world.cache.get("tpl_index")
     if idx is None:
         idx = defaultdict(list)
         for s in world.pyramid.series.values():
             idx[s.template.key].append(s)
-        world.__dict__["_tpl_index"] = idx
+        world.cache["tpl_index"] = idx
     return idx
 
 
 def _region_local_index(world: "World") -> dict[tuple[str, str], list["Series"]]:
     """For each (region, template) the track-scope series sorted by distance from the region."""
-    idx = world.__dict__.get("_local_index")
+    idx = world.cache.get("local_index")
     if idx is None:
         idx = {}
         tpls = _template_index(world)
@@ -120,7 +120,7 @@ def _region_local_index(world: "World") -> dict[tuple[str, str], list["Series"]]
                     continue
                 ranked = sorted(series, key=lambda s: haversine_mi(region.lat, region.lon, s.anchor_lat, s.anchor_lon))
                 idx[(code, key)] = ranked[:10]
-        world.__dict__["_local_index"] = idx
+        world.cache["local_index"] = idx
     return idx
 
 
@@ -185,6 +185,9 @@ def choose_self_run(world: "World", d: Driver, entrant: bool = False) -> bool:
                     continue
                 readiness = d.demonstrated - TIER_STRENGTH[tpl.tier]
                 ambition = (d.determination - 50) / 10
+                # Climbing is a young racer's game; by 30 most weekly racers race for fun.
+                if tpl.tier > d.tier and tpl.tier >= 3 and age > 26:
+                    ambition -= (age - 26) * 0.6
                 # Racers climb as high as money and self-belief allow; surplus money
                 # beyond "can afford it" adds little, being out of one's depth hurts.
                 val = tpl.tier * 9 + clamp(readiness + ambition, -25, 0) * 0.7 + min(afford, 1.3) * 10 + switch_pen
@@ -192,7 +195,7 @@ def choose_self_run(world: "World", d: Driver, entrant: bool = False) -> bool:
                     val -= 8  # part-time is a last resort
                 if s.id == current:
                     val += 5  # inertia: most racers stay put
-                elif tpl.tier > d.tier and d.series_id:
+                elif tpl.tier > d.tier and d.series_id and (age <= 30 or tpl.tier <= 2):
                     # After 2-4 seasons at a level racers itch to step up (research A 14.1).
                     val += min(d.years_at_tier, 4) * 1.6
                 val += rng.gauss(0, 3)
@@ -246,7 +249,7 @@ def _evolve_teams(world: "World") -> None:
 
 def _tick_contracts(world: "World", queue: list, summary: "YearSummary") -> None:
     rng = world.rng
-    coverage = world.__dict__.setdefault("seat_coverage", {})
+    coverage = world.seat_coverage
     for team in world.teams.values():
         tpl = world.series(team.series_id).template
         for slot, did in enumerate(team.roster):
@@ -261,26 +264,32 @@ def _tick_contracts(world: "World", queue: list, summary: "YearSummary") -> None
             d.contract_years -= 1
             role = seat_role(tpl, slot)
             gap = seat_gap(team, tpl, role)
-            perf, _ = rate_for_team(team, d, tpl.discipline, tpl.tier, world.year)
+            perf, _ = rate_for_team(team, d, tpl.discipline, tpl.tier, world.year, world)
             release = False
             reason = ""
-            if not d.seat_funded and gap > 0:
+            if role == "am" and categorize(d, world.year + 1) not in ("bronze", "silver"):
+                release, reason = True, "was re-categorised out of the amateur seat"
+            elif not d.seat_funded and gap > 0:
                 cov = d.available_funding() / gap
                 coverage[d.id] = min(1.0, cov)
                 if cov < 0.5:
                     release, reason = True, "lost the ride when the money ran out"
             if not release and d.contract_years <= 0:
-                keep = 0.8 if perf > -0.3 else 0.45 if perf > -1.0 else 0.15
-                if not d.seat_funded and gap > 0:
-                    keep += 0.1
-                if rng.random() > keep:
-                    release, reason = True, "was not re-signed"
+                age = d.age(world.year) + 1
+                if perf > 0.8 and age < 34 and rng.random() < 0.85:
+                    # Stars are locked up before their deal runs out.
+                    d.contract_years = rng.randint(2, 3)
                 else:
-                    d.contract_years = rng.randint(1, 3 if perf > 0.5 else 2)
+                    # Expiring deal = open seat. The incumbent stays a candidate (with the
+                    # team-relationship bonus) but has to beat whoever else is available.
+                    world.market.expired[d.id] = team.id
+                    release, reason = True, ""
+                    if not d.seat_funded and gap > 0:
+                        coverage.pop(d.id, None)
             elif not release and d.seat_funded and perf < -1.4 and rng.random() < 0.35:
                 release, reason = True, "was released for poor results"
             if release:
-                if tpl.tier >= 4:
+                if tpl.tier >= 4 and reason:
                     d.log(world.year, f"{reason} at {team.name} ({world.series(team.series_id).name})")
                 release_seat(world, d)
                 d.series_id = None
@@ -311,14 +320,20 @@ def _candidate_buckets(world: "World") -> dict[int, list[Driver]]:
 
 
 def _would_accept(world: "World", d: Driver, team: Team, tpl: "SeriesTemplate") -> bool:
+    if d.grassroots_veteran and tpl.tier >= 4:
+        # Decided once per off-season in run_market: the occasional comeback.
+        return d.id in world.market.comeback_open
     cur_tier = d.tier if d.series_id else -1
     if d.team_id is not None and d.series_id and d.contract_years > 0:
         return tpl.tier > cur_tier  # only leave a contract for a promotion
-    prof = d.proficiency.get(tpl.discipline, 0.0)
-    if tpl.discipline != d.primary_discipline and prof < 0.35:
-        # Sideways moves: accepted when they are a step up or the alternative is nothing.
+    if tpl.discipline != d.primary_discipline:
+        # Most drivers stay in their discipline. Each off-season a minority are open to a
+        # sideways move (more so when stalled or without a ride), and then only for a
+        # step up or when the alternative is not racing at all (research C 4.5/5.6).
+        if d.id not in world.market.switch_open:
+            return False
         if not (tpl.tier > cur_tier or d.series_id is None):
-            return world.rng.random() < d.adaptability / 300
+            return False
     if tpl.tier > cur_tier:
         return True
     if tpl.tier == cur_tier:
@@ -333,7 +348,7 @@ def _utility(world: "World", team: Team, tpl: "SeriesTemplate", role: str, gap: 
              d: Driver) -> tuple[float, float, bool]:
     """(utility, funding coverage, team absorbs gap)."""
     rng = world.rng
-    perf, pot = rate_for_team(team, d, tpl.discipline, tpl.tier, world.year)
+    perf, pot = rate_for_team(team, d, tpl.discipline, tpl.tier, world.year, world)
     funding = d.available_funding()
     absorbed = False
     if gap > 0:
@@ -351,12 +366,22 @@ def _utility(world: "World", team: Team, tpl: "SeriesTemplate", role: str, gap: 
         conn += 0.1
     u = (team.w_performance * perf * 1.6 + team.w_potential * pot + team.w_money * money * 2.2
          + team.w_marketability * market + 0.6 * conn + d.professionalism / 400 + rng.gauss(0, 0.25))
+    # Development ladders are for young drivers: owners (and the families paying) invest in
+    # teenagers, not 35-year-olds (research A 6, B 2.5). Older money goes to Pro-Am seats.
+    age = d.age(world.year) + 1
+    if role != "am" and not tpl.pro_am:
+        over = age - tpl.typical_age[1]
+        if over > 0:
+            u -= over * (0.35 if tpl.tier <= 5 else 0.2)
     if tpl.pro_am or tpl.drivers_per_car > 1:
         cat = categorize(d, world.year + 1)
         if role == "am":
             u += {"bronze": 1.2, "silver": 0.3}.get(cat, -9)
-        else:
+        elif tpl.pro_am:
             u += {"platinum": 0.5, "gold": 0.4, "silver": 0.0}.get(cat, -0.5)
+        else:
+            # All-pro lineups (prototype / GT Pro): rated professionals only.
+            u += {"platinum": 0.6, "gold": 0.4, "silver": -0.3}.get(cat, -9)
     if gap > 0 and coverage < 0.5:
         # Talent bet: owner finds the money for a standout (Bell/Larson/Chastain patterns).
         bet = (perf - 0.9) * 0.35 + (team.reputation - 50) / 250 + 0.35 * conn + (0.25 if d.breakout else 0)
@@ -379,11 +404,19 @@ def _eligible(world: "World", d: Driver, tpl: "SeriesTemplate", role: str) -> bo
 
 def run_market(world: "World", summary: "YearSummary") -> None:
     rng = world.rng
-    coverage = world.__dict__.setdefault("seat_coverage", {})
+    coverage = world.seat_coverage
     _evolve_teams(world)
+    world.market.expired = {}
     queue: list = []
     _tick_contracts(world, queue, summary)
     buckets = _candidate_buckets(world)
+    world.market.switch_open = {
+        d.id for d in world.drivers.values()
+        if d.status != RETIRED and rng.random() < (
+            0.08 + d.adaptability / 600 + (0.15 if d.status == SIDELINED or d.years_at_tier >= 3 else 0.0))}
+    world.market.comeback_open = {
+        d.id for d in world.drivers.values()
+        if d.grassroots_veteran and d.status != RETIRED and rng.random() < 0.08}
     signed: set[int] = set()
     deferred: list = []
 
@@ -413,6 +446,8 @@ def run_market(world: "World", summary: "YearSummary") -> None:
             conn = d.connections.get(f"team:{team.id}", 0) + (
                 d.connections.get(f"mfr:{team.manufacturer_id}", 0) if team.manufacturer_id else 0)
             if not is_aware(world, tpl.tier, team.home_region, tpl.discipline, d, connection=conn * 0.5):
+                continue
+            if role == "am" and categorize(d, world.year + 1) not in ("bronze", "silver"):
                 continue
             if not _would_accept(world, d, team, tpl):
                 continue
@@ -448,12 +483,20 @@ def run_market(world: "World", summary: "YearSummary") -> None:
             if cov < 0.25:
                 continue
             score = perceived_level(d, tpl.discipline) + cov * 10 + rng.gauss(0, 3)
+            over = d.age(world.year) + 1 - tpl.typical_age[1]
+            if over > 0 and role != "am" and not tpl.pro_am:
+                score -= over * 2.0
             if best is None or score > best[0]:
                 best = (score, d, min(cov, 1.0))
         if best is not None:
             _, d, cov = best
             _sign(world, d, team, slot, s, gap, cov, False, summary, None)
             signed.add(d.id)
+
+    for did in world.market.expired:
+        d = world.drivers[did]
+        if d.team_id is None and d.max_tier >= 4:
+            d.log(world.year, "was not re-signed when the contract expired")
 
     # Everyone without a team seat decides their own programme.
     for d in list(world.drivers.values()):
@@ -468,7 +511,7 @@ def _sign(world: "World", d: Driver, team: Team, slot: int, s: "Series", gap: fl
           absorbed: bool, summary: "YearSummary", queue: Optional[list]) -> None:
     tpl = s.template
     rng = world.rng
-    coverage = world.__dict__.setdefault("seat_coverage", {})
+    coverage = world.seat_coverage
     old = release_seat(world, d)
     if old is not None and queue is not None:
         old_team, old_slot = old
@@ -485,7 +528,7 @@ def _sign(world: "World", d: Driver, team: Team, slot: int, s: "Series", gap: fl
         coverage.pop(d.id, None)
     else:
         coverage[d.id] = min(1.0, cov)
-    perf, _ = rate_for_team(team, d, tpl.discipline, tpl.tier, world.year)
+    perf, _ = rate_for_team(team, d, tpl.discipline, tpl.tier, world.year, world)
     d.contract_years = 1 if not funded else rng.randint(1, 3 if perf > 0.5 else 2)
     if funded and tpl.pro:
         d.salary = tpl.salary_top * clamp(0.15 + 0.2 * perf + (team.equipment - 40) / 120, 0.03, 1.2)
@@ -503,7 +546,8 @@ def _sign(world: "World", d: Driver, team: Team, slot: int, s: "Series", gap: fl
             summary.first_top_tier.append(d.id)
             d.log(world.year + 1, f"earned a first premier-level ride with {team.name} ({s.name}) at {d.age(world.year + 1)}")
     d.max_tier = max(d.max_tier, tpl.tier)
-    if tpl.tier >= 3 and tpl.tier != prev_tier or (tpl.tier >= 5 and old is None):
+    resigned = world.market.expired.get(d.id) == team.id
+    if not resigned and (tpl.tier >= 3 and tpl.tier != prev_tier or (tpl.tier >= 5 and old is None)):
         how = "funded seat" if funded else f"bringing ${min(gap, d.available_funding()):,.0f}"
         if absorbed:
             how = "team found the funding"

@@ -98,7 +98,7 @@ def update_after_season(world: "World", results: "SeasonResults") -> None:
 def estimated_potential(d: Driver, year: int) -> float:
     """What scouts *believe* the ceiling is: shown level plus youth headroom."""
     age = d.age(year)
-    headroom = max(0.0, 23 - age) * 1.5
+    headroom = max(0.0, 25 - age) * 2.0
     return d.demonstrated + headroom
 
 
@@ -129,17 +129,24 @@ def has_manager(d: Driver) -> bool:
 def categorize(d: Driver, year: int) -> str:
     """FIA-style driver categorisation used by Pro-Am seat rules (research B 4.3).
 
-    Simplified: Platinum = premier-level pros; Gold = national pros; Silver = anyone
-    under 30 or who started young; Bronze = first licence after 30 without pro
-    results. Age downgrades at 55/60/65.
+    Based on *results and career shape*, not merely where someone has raced (an
+    amateur paying for a GT seat does not become a pro by sitting in it):
+    Platinum = premier-level front-runners or long premier careers; Gold = results
+    at national pro level, a national title, or a career begun before 20 with 5+
+    seasons of serious racing; Silver = under 30 or first licensed before 30;
+    Bronze = first licence after 30. Age downgrades at 55/60/65; never below
+    Silver before 27.
     """
     order = ["bronze", "silver", "gold", "platinum"]
-    pro_titles = [t for t in d.history if t.champion and t.tier >= 4]
-    if d.max_tier >= 7:
+    premier = [r for r in d.history if r.tier == 7]
+    strong_pro = [r for r in d.history if r.tier >= 5 and r.championship_pos <= max(1, r.field_size // 4)]
+    national_titles = [r for r in d.history if r.champion and r.tier >= 4]
+    serious_seasons = sum(1 for r in d.history if r.tier >= 3)
+    if any(r.championship_pos <= 5 for r in premier) or len(premier) >= 3:
         cat = 3
-    elif d.max_tier >= 5 or pro_titles:
+    elif strong_pro or national_titles or premier or (d.first_license_age < 20 and serious_seasons >= 5):
         cat = 2
-    elif d.first_license_age >= 30 and d.age(year) >= 30:
+    elif d.first_license_age >= 30:
         cat = 0
     else:
         cat = 1
@@ -156,10 +163,19 @@ def categorize(d: Driver, year: int) -> str:
     return order[max(0, cat)]
 
 
-def perceived_level(d: Driver, discipline: str) -> float:
-    """Demonstrated level discounted for inexperience in the target discipline."""
+def perceived_level(d: Driver, discipline: str, transfer: Optional[float] = None) -> float:
+    """Demonstrated level, discounted for inexperience in the target discipline.
+
+    Owners trust results in *their* discipline. If none of the driver's last three
+    seasons were in it, the shown level is discounted by how poorly the driver's
+    background transfers (research C 5.6: dirt->stock car transfers well; open
+    wheel->oval stock car and dirt->sports cars do not).
+    """
     prof = d.proficiency.get(discipline, 0.0)
     level = d.demonstrated * (0.78 + 0.22 * prof)
+    recent = d.history[-3:]
+    if transfer is not None and recent and not any(r.discipline == discipline for r in recent):
+        level -= (1.0 - transfer) * 20.0
     if d.breakout > 0:
         level += 3.0
     return level
@@ -169,11 +185,16 @@ def tier_z(level: float, tier: int) -> float:
     return (level - TIER_STRENGTH[tier]) / TIER_SPREAD[tier]
 
 
-def rate_for_team(team: "Team", d: Driver, discipline: str, tier: int, year: int) -> tuple[float, float]:
+def rate_for_team(team: "Team", d: Driver, discipline: str, tier: int, year: int,
+                  world: Optional["World"] = None) -> tuple[float, float]:
     """(performance z, potential z) from a team's point of view."""
-    perf = tier_z(perceived_level(d, discipline), tier)
+    transfer = None
+    if world is not None and d.history:
+        transfer = world.transfer(d.history[-1].discipline, discipline)
+    perf = tier_z(perceived_level(d, discipline, transfer), tier)
     age = d.age(year)
-    pot = tier_z(estimated_potential(d, year), tier) if age <= 26 else perf - 0.5 * max(0, age - 32) / 5
+    # Past the mid-20s 'potential' becomes 'how many good years are left'.
+    pot = tier_z(estimated_potential(d, year), tier) if age <= 26 else perf - 0.25 * max(0, age - 32)
     return perf, pot
 
 

@@ -183,9 +183,17 @@ def test_categorization_rules():
     assert categorize(d, 2026) == "bronze"
     d.first_license_age = 12
     assert categorize(d, 2026) == "silver"
+    from racingsim.world.entities import SeasonRecord
     d.max_tier = 7
+    d.history = [SeasonRecord(year=2020 + i, series_id="cup", tier=7, discipline="stock_car", team_id=1,
+                              starts=36, wins=2, top5=10, avg_finish=8, expected_finish=8,
+                              championship_pos=3, field_size=38) for i in range(3)]
     assert categorize(d, 2026) == "platinum"
-    assert categorize(d, 2046) == "silver"  # age downgrades at 55 and 60
+    assert categorize(d, 2041) == "silver"   # age downgrades after 55 and 60
+    assert categorize(d, 2046) == "bronze"   # Bronze from 65
+    d.history = []
+    d.max_tier = 6                           # merely racing at national level is not a result
+    assert categorize(d, 2026) == "silver"
 
 
 def test_determinism(tracks):

@@ -310,6 +310,7 @@ California race through winter.
 See [`docs/research/track_dataset_notes.md`](docs/research/track_dataset_notes.md)
 for dataset coverage. Summary:
 
+* **312 venues** (99 local, 134 regional, 63 national, 16 international; 45 US states and 8 provinces), 510 source URLs.
 * The database stores **facts** (name, city, state/province, country, type,
   surface, length, configuration, turn banking, opening year, active status,
   disciplines, level, coordinates, sources) separately from the game's **profile**
@@ -356,11 +357,16 @@ simulation reproduces the observed patterns. They live in `racingsim/constants.p
 |---|---|---|
 | Ability scale per tier (mean) | 30, 37, 44, 52, 58, 64, 69, 74 | talent compresses at the top; seats shrink faster than talent |
 | Family racing budget | lognormal, median ≈ $8k, σ = 1.45; adults' budgets grow through their 20s–40s | most racers self-fund cheap classes; a few families fund national programs |
-| Season costs | per series, 2025 USD (e.g. street stock $8k, weekly late model $90k, regional SLM tour $175k, Formula Junior $150k, Formula 2000 $450k, Formula Pro $650k, ARCA-analog $1M, Truck-analog $2.5M, O'Reilly-analog $4.5M, Cup-analog $20M per car) | research budgets (typical/competitive) |
-| Team funding share | junior formula/dev series mostly driver-paid; pro tiers floors 20/25/35/75% (T4–T7) rising with team quality; dirt owners ≥55% | funding mix table (§3) |
+| Season costs | per series, 2025 USD (e.g. street stock $8k, limited late model $35k, weekly late model $90k, regional SLM tour $175k, Formula Junior $150k, Formula 2000 $450k, Formula Pro $650k, ARCA-analog $1M, Truck-analog $2.5M, O'Reilly-analog $4.5M, Cup-analog $20M per car) | research budgets (typical/competitive) |
+| Team funding share | junior formula/dev series mostly driver-paid; per-series floors rising with team quality: Truck-analog 35%, O'Reilly-analog 50%, IndyCar-analog 60%, Cup-analog 92%, prototype 95%, dirt pro 55–60% | funding mix table (§3); B 3 |
 | Owner weights | e.g. ARCA-analog money 0.5; Truck-analog money 0.4; O'Reilly-analog 0.35; Cup-analog performance 0.6; dirt pro performance 0.75 | research A 14.5, B 10.1 |
 | Talent bet | owners absorb a driver's funding gap with probability rising with perceived performance, team stature, manufacturer ties and breakout flags | Bell/Larson/Chastain patterns |
-| Attrition | 15/16/13/10/8/7/6/5% per year by tier, modified by results, age, sidelined seasons, injuries, determination | research F 5.2 |
+| Attrition | 15/16/13/10/8/7/6/5% per year by tier, modified by results, sidelined seasons, injuries, determination; pros wind down from 38, weekly racers from 48 | research F 5.2; A 11 (career local racers into their 60s) |
+| Career-investment families & generational talent | 0.3% / 0.15% of real young racers, scaled up by the grassroots representation ratio (≈8 real racers per simulated one at scale 1) | the simulated base is a compressed sample while national seats are 1:1; rare tails must be denser to feed real-sized ladders |
+| Development ladders are young | owners penalise drivers older than a series' typical age band; climbing ambition fades after ~26 for touring-level moves | research A 6, B 2.5 (ARCA/USF ages 15–22) |
+| Expiring contracts open the seat | stars under 34 are extended; everyone else competes with the market (incumbents keep a relationship bonus) | silly-season dynamics; Moffitt/Heim cases |
+| Owners trust results in their discipline | unusual discipline switches are discounted by (1 − transfer) × 20 level points; drivers are open to sideways moves ~10–25% of off-seasons | research C 5.6, 4.5 |
+| Budgets grow and racers save | adult hobby budgets grow 0–6%/yr through 50; surplus in a cheaper class is banked toward a bigger car | how weekly racers step up (street stock → limited late → late model) |
 | Veterans' grassroots return | 35% of national-level drivers who would retire instead step back to weekly racing | research A 14.11, C 5.7 |
 | Development programs | sign around 16 (range 14–19); fund steps; release stalled prospects | research C 5.2, A 14.9 |
 | Sponsor collapse | 4%/season local/regional; 15% national | research C 5.4, A 14.7 |
@@ -387,6 +393,42 @@ reproduces the research's qualitative shape:
 * geography shapes entry disciplines (Iowa dirt-heavy; North Carolina stock-car
   heavy) and local racers race near home;
 * age rules and Pro-Am category rules are enforced.
+
+### Calibration results (seed 2026, population scale 1.0, 15 seasons)
+
+| Tier | Drivers | Median age | Research reference |
+|---|---|---|---|
+| 0 Youth | 1,632 | 10 | QM 5–16, karting 5–15 |
+| 1 Local entry | 4,382 | 21 | — |
+| 2 Local premier | 3,724 | 24 | — |
+| 3 Regional touring | 809 | 31 | real ratio T3:T2 ≈ 1:6 (ours 1:4.6) |
+| 4 National development | 124 | 30 | ~400 real (several series folded) |
+| 5 National pro feeder | 128 | 36 | Trucks 36 cap, NXT 20–28, Pilot Challenge |
+| 6 National pro | 88 | 34 | O'Reilly 38, 410 tours ~32, GTD |
+| 7 Premier | 97 | 36 | Cup 38, IndyCar 27, prototype 32 seats |
+
+* Population is stable after the first few seasons (≈1,330–1,400 entrants and
+  retirements per year at full scale).
+* First premier rides: ~10 per year across the three premier series (Cup-analog
+  ~3–4/yr, IndyCar-analog ~2–3/yr, prototype ~2–3/yr); research: Cup 2–4, IndyCar
+  2–4 rookies/yr.
+* Routes into the premier tier: Cup-analog seats come almost entirely from the
+  O'Reilly-analog; IndyCar-analog mostly from Formula Lights with occasional GT,
+  sprint-car and stock-car crossovers; prototype seats from GT endurance pros.
+* Only 0.75% of everyone who ever raced in the simulation reached the premier tier
+  (this includes the seeded initial professionals; for drivers who *entered* the
+  simulation it is far lower, as tested).
+
+**Known deviations (to improve):**
+
+* First-premier median age is Cup-analog 26 / IndyCar-analog 24 (research ≈22).
+* Upper-tier median ages (34–36) are older than reality (≈28–31), mainly because
+  sports-car and dirt pro careers skew older and IndyCar-analog veterans hold seats
+  while Formula Lights is filled by weaker pay drivers (the funding cliff).
+* Tier 2 is ≈0.85× tier 1 (research ≈0.5×): our tier-1 base is thin because the
+  track database samples only a fraction of the ~900 US ovals.
+* Absolute ability at the top settles a few points below the design scale
+  (perceived levels are results-based, so decisions are unaffected).
 
 ---
 

@@ -1,5 +1,5 @@
 {
- "_comment": "Racing pyramid templates. Names are fictional abstractions; real-world analogs are documented in MOTORSPORTS_RESEARCH.md only. Costs in 2025 USD (driver/car-side competitive budget per season, per car). Calibrated from research F section 5 and A/B.",
+ "_comment": "Racing pyramid templates. Names are fictional abstractions; real-world analogs are documented in MOTORSPORTS_RESEARCH.md only. Costs in 2025 USD (driver/car-side competitive budget per season, per car). Calibrated from research F section 5 and A/B. team_funding_floor = minimum share of a seat's cost a pro team raises itself (research A 14.4 / B 3: Cup teams fund nearly all seats; IndyCar small teams need driver sponsorship; Truck/O'Reilly drivers bring much of it; dirt owners fund the car).",
  "tiers": [
   {
    "level": 0,
@@ -255,6 +255,35 @@
    ],
    "purse_win": 0,
    "note": "SCCA/NASA regional analog; spec cars, amateur."
+  },
+  {
+   "key": "local_limited_late",
+   "name": "{track} Limited Late Model",
+   "discipline": "stock_car",
+   "tier": 2,
+   "scope": "track",
+   "venues": [
+    "short_oval"
+   ],
+   "season_cost": 35000,
+   "events": 14,
+   "field_size": 18,
+   "prestige": 15,
+   "visibility": 7,
+   "car_weight": 0.45,
+   "min_age": 12,
+   "max_age": null,
+   "typical_age": [
+    14,
+    40
+   ],
+   "venue_levels": [
+    "local",
+    "regional"
+   ],
+   "purse_win": 1200,
+   "regional_draw_mi": 120,
+   "note": "Intermediate asphalt division (limited / pro late models, research A 2: $5-60k). The step between street stocks and late models."
   },
   {
    "key": "local_late_model",
@@ -606,7 +635,7 @@
    "visibility": 35,
    "car_weight": 0.5,
    "min_age": 15,
-   "max_age": null,
+   "max_age": 30,
    "typical_age": [
     15,
     24
@@ -639,7 +668,7 @@
    "visibility": 40,
    "car_weight": 0.4,
    "min_age": 15,
-   "max_age": null,
+   "max_age": 25,
    "typical_age": [
     15,
     20
@@ -704,7 +733,7 @@
    "visibility": 50,
    "car_weight": 0.55,
    "min_age": 15,
-   "max_age": null,
+   "max_age": 35,
    "typical_age": [
     16,
     26
@@ -740,7 +769,7 @@
    "visibility": 45,
    "car_weight": 0.4,
    "min_age": 16,
-   "max_age": null,
+   "max_age": 27,
    "typical_age": [
     16,
     22
@@ -815,7 +844,8 @@
     "potential": 0.1,
     "money": 0.25,
     "marketability": 0.05
-   }
+   },
+   "team_funding_floor": 0.5
   },
   {
    "key": "one_make_gt_cup",
@@ -894,8 +924,8 @@
    "min_age": 16,
    "max_age": null,
    "typical_age": [
-    18,
-    30
+    17,
+    28
    ],
    "team_based": true,
    "cars": 34,
@@ -907,11 +937,12 @@
    "note": "Truck series analog. Under-18s limited to short ovals and road courses.",
    "full_age": 18,
    "selection": {
-    "performance": 0.3,
-    "potential": 0.2,
-    "money": 0.4,
-    "marketability": 0.1
-   }
+    "performance": 0.286,
+    "potential": 0.238,
+    "money": 0.381,
+    "marketability": 0.095
+   },
+   "team_funding_floor": 0.35
   },
   {
    "key": "formula_lights",
@@ -931,9 +962,9 @@
    "visibility": 60,
    "car_weight": 0.4,
    "min_age": 16,
-   "max_age": null,
+   "max_age": 30,
    "typical_age": [
-    18,
+    17,
     24
    ],
    "team_based": true,
@@ -943,10 +974,10 @@
    "license_min_starts": 8,
    "note": "Indy NXT analog. Champion's scholarship toward a premier seat.",
    "selection": {
-    "performance": 0.3,
-    "potential": 0.15,
-    "money": 0.5,
-    "marketability": 0.05
+    "performance": 0.273,
+    "potential": 0.227,
+    "money": 0.455,
+    "marketability": 0.045
    }
   },
   {
@@ -978,7 +1009,8 @@
    "salary_top": 150000,
    "license_min_tier": 3,
    "license_min_starts": 6,
-   "note": "Michelin Pilot Challenge analog (GS + TCR)."
+   "note": "Michelin Pilot Challenge analog (GS + TCR).",
+   "team_funding_floor": 0.2
   },
   {
    "key": "dirt_late_national",
@@ -1013,7 +1045,8 @@
     "potential": 0.05,
     "money": 0.15,
     "marketability": 0.1
-   }
+   },
+   "team_funding_floor": 0.55
   },
   {
    "key": "stock_national",
@@ -1038,7 +1071,7 @@
    "max_age": null,
    "typical_age": [
     19,
-    32
+    30
    ],
    "team_based": true,
    "cars": 38,
@@ -1050,11 +1083,12 @@
    "note": "Xfinity/O'Reilly analog.",
    "full_age": 18,
    "selection": {
-    "performance": 0.35,
-    "potential": 0.15,
-    "money": 0.35,
-    "marketability": 0.15
-   }
+    "performance": 0.318,
+    "potential": 0.227,
+    "money": 0.318,
+    "marketability": 0.136
+   },
+   "team_funding_floor": 0.5
   },
   {
    "key": "outlaw_sprint",
@@ -1090,7 +1124,8 @@
     "potential": 0.05,
     "money": 0.1,
     "marketability": 0.1
-   }
+   },
+   "team_funding_floor": 0.6
   },
   {
    "key": "gt_endurance",
@@ -1121,7 +1156,8 @@
    "salary_top": 400000,
    "license_min_tier": 4,
    "license_min_starts": 6,
-   "note": "IMSA GTD analog; Pro-Am pairs: one pro + one paying amateur."
+   "note": "IMSA GTD analog; Pro-Am pairs: one pro + one paying amateur.",
+   "team_funding_floor": 0.3
   },
   {
    "key": "cup_series",
@@ -1146,7 +1182,7 @@
    "max_age": null,
    "typical_age": [
     21,
-    40
+    36
    ],
    "team_based": true,
    "cars": 38,
@@ -1156,11 +1192,12 @@
    "license_min_tier": 5,
    "license_min_starts": 10,
    "selection": {
-    "performance": 0.6,
-    "potential": 0.15,
-    "money": 0.1,
-    "marketability": 0.15
-   }
+    "performance": 0.545,
+    "potential": 0.227,
+    "money": 0.091,
+    "marketability": 0.136
+   },
+   "team_funding_floor": 0.92
   },
   {
    "key": "open_wheel_top",
@@ -1183,7 +1220,7 @@
    "max_age": null,
    "typical_age": [
     20,
-    38
+    34
    ],
    "team_based": true,
    "cars": 27,
@@ -1193,11 +1230,12 @@
    "license_min_tier": 4,
    "license_min_starts": 10,
    "selection": {
-    "performance": 0.5,
-    "potential": 0.1,
-    "money": 0.3,
-    "marketability": 0.1
-   }
+    "performance": 0.435,
+    "potential": 0.217,
+    "money": 0.261,
+    "marketability": 0.087
+   },
+   "team_funding_floor": 0.6
   },
   {
    "key": "prototype_endurance",
@@ -1218,22 +1256,23 @@
    "max_age": null,
    "typical_age": [
     24,
-    45
+    40
    ],
    "team_based": true,
-   "cars": 24,
+   "cars": 16,
    "drivers_per_car": 2,
    "pro": true,
    "salary_top": 1500000,
    "license_min_tier": 5,
    "license_min_starts": 6,
-   "note": "IMSA GTP + GTD Pro analog: factory and pro drivers.",
+   "note": "IMSA GTP + GTD Pro analog: factory and pro drivers. Car count reduced vs reality (~24+) because the game's talent pool is North America-only for now; many real factory drivers are imports.",
    "selection": {
     "performance": 0.7,
     "potential": 0.1,
     "money": 0.05,
     "marketability": 0.15
-   }
+   },
+   "team_funding_floor": 0.95
   }
  ],
  "crown_jewels": [

@@ -53,8 +53,15 @@ Guiding policy (requirement R7):
 - **Safe fallback:** the track layer is data-only. A release build can apply a
   `display_name` override table to rename any venue without touching
   facts, ratings or saves (saves reference stable track IDs, not names).
-- **Action items:** legal review of the top ~60 national venues' names; confirm
-  no naming-rights sponsor names remain in `data/tracks/*.json`.
+- **Done:** naming-rights names were replaced with neutral common names on import
+  (e.g. "Atlanta Motor Speedway", "Road Atlanta", "Laguna Seca Raceway",
+  "Gateway Motorsports Park", "Mosport Park"); commercial names are kept only in a
+  search-only `aliases` field. See `docs/research/track_dataset_notes.md`.
+- **Still flagged:** venues whose *only* common name contains a brand or company
+  name: "Lucas Oil Speedway" (Wheatland, MO), "Trackhouse Motorplex" (a race team's
+  name on a kart venue), "The Thermal Club", "Jukasa Motor Speedway". Kept as-is
+  for now (factual identification); candidates for `display_name` overrides.
+- **Action items:** legal review of the top ~60 national venues' names.
 
 ### 2.2 Track facts
 - Location, length, surface, banking, configuration, opening year and active

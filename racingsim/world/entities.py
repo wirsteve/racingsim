@@ -100,6 +100,7 @@ class Driver:
     demonstrated: float = 0.0   # results-based level the paddock believes in (scouting view)
     breakout: int = 0           # seasons left on a "standout one-off" flag (research C 5.3)
     first_license_age: int = 0  # age of first competition licence (Bronze rule for Pro-Am)
+    grassroots_veteran: bool = False  # ex-national driver now racing locally by choice
     connections: dict[str, float] = field(default_factory=dict)  # "team:12" -> 0..1, "mfr:3" -> 0..1
     program_mfr: Optional[int] = None
     program_years: int = 0

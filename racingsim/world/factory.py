@@ -6,7 +6,10 @@ import math
 import random
 from typing import TYPE_CHECKING, Optional
 
-from ..constants import FAMILY_BUDGET_MEDIAN, FAMILY_BUDGET_SIGMA, TIER_SPREAD, TIER_STRENGTH
+from ..constants import (
+    FAMILY_BUDGET_MEDIAN, FAMILY_BUDGET_SIGMA, INVESTMENT_FAMILY_SHARE, PRODIGY_SHARE,
+    REPRESENTATION_RATIO, TIER_SPREAD, TIER_STRENGTH,
+)
 from ..util import clamp, lognormal_money, weighted_choice
 from . import names
 from .entities import DISCIPLINES, Driver, Manufacturer, Sponsor, Team
@@ -55,9 +58,10 @@ def make_driver(world: "World", *, discipline: str, age: int, region: "Region",
     year = world.year
     # Potential: younger drivers have more headroom; a small share are generational talents.
     headroom_years = max(0.0, 23 - age)
-    headroom = headroom_years * rng.uniform(0.6, 2.4) + abs(rng.gauss(0, 4))
-    if rng.random() < 0.01:
-        headroom += rng.uniform(8, 18)  # prodigy
+    headroom = headroom_years * rng.uniform(0.4, 3.0) + abs(rng.gauss(0, 4))
+    represent = REPRESENTATION_RATIO / max(world.config.population_scale, 0.05)
+    if age <= 16 and rng.random() < min(0.1, PRODIGY_SHARE * represent):
+        headroom += rng.uniform(8, 18)  # generational talent
     potential = clamp(ability + headroom, ability, 99)
     peak_age = clamp(rng.gauss(29, 2.5), 24, 34)
     if rng.random() < 0.10:
@@ -71,6 +75,10 @@ def make_driver(world: "World", *, discipline: str, age: int, region: "Region",
     if years_racing is None:
         years_racing = max(0.5, age - start_age_for(rng, discipline, youth=age < 16))
     fam = max(family_budget(rng, region, age), budget_floor * rng.uniform(1.0, 1.5))
+    if age <= 16 and rng.random() < min(0.15, INVESTMENT_FAMILY_SHARE * represent):
+        # A family that treats racing as a career investment (or owns a business that
+        # will sponsor it): the Menard/Stroll/Burton archetype at the extreme.
+        fam = max(fam, lognormal_money(rng, 180_000, 0.9))
     d = Driver(
         id=world.next_id("driver"),
         first_name=first, last_name=last,
@@ -121,9 +129,7 @@ def make_teams_for_series(world: "World", series: "Series") -> list[Team]:
             # Share of a seat's cost the organisation raises itself (charter money, team-sold
             # sponsorship, owner money). Research A 14.4: Trucks/O'Reilly drivers bring much of
             # the budget; premier-level teams fund nearly everything; dirt owners fund the car.
-            floor = PRO_FUNDING_FLOOR.get(tpl.tier, 0.25)
-            if tpl.discipline == "dirt_oval":
-                floor = max(floor, 0.55)
+            floor = tpl.team_funding_floor if tpl.team_funding_floor is not None else PRO_FUNDING_FLOOR.get(tpl.tier, 0.25)
             funding_ratio = clamp(floor + (1.25 - floor) * q + rng.gauss(0, 0.08), 0.05, 1.35)
         else:
             funding_ratio = clamp((0.05 + 0.6 * q) * (tpl.tier / 7) + rng.gauss(0, 0.05), 0.0, 0.8)
