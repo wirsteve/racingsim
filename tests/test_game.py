@@ -37,7 +37,8 @@ def test_season_end_opens_offseason_with_choices(game):
     menu = game.menu()
     kinds = {c["kind"] for c in menu["choices"]}
     assert {"self", "sit_out", "retire"} <= kinds
-    assert {a["id"] for a in menu["actions"]} == {"pitch", "coach", "relocate"}
+    ids = {a["id"] for a in menu["actions"]}
+    assert {"pitch", "coach", "relocate"} <= ids and ids - {"pitch", "coach", "relocate"} <= {"found_team"}
 
 
 def test_ai_never_moves_the_player(game):

@@ -486,7 +486,7 @@ function renderOffseason(o) {
         <div class="card"><h3>Off-season actions</h3><p class="muted small">One of each per off-season. Do these before choosing a ride — owners re-evaluate you.</p>
           ${o.actions.map((a) => `<div style="margin:10px 0"><div><b>${esc(a.label)}</b></div><div class="muted small">${esc(a.detail)}</div>
             ${a.id === "relocate" ? `<select id="relocate-to" ${a.used ? "disabled" : ""}>${o.regions.map((r) => `<option value="${r.code}" ${r.code === me.home ? "selected" : ""}>${esc(r.name)}${Object.keys(r.hubs || {}).length ? " ★ hub" : ""}</option>`).join("")}</select>` : ""}
-            ${a.options ? `<select id="act-arg-${esc(a.id)}" ${a.used ? "disabled" : ""}>${a.options.map((x) => `<option value="${esc(x.value)}">${esc(x.label)}</option>`).join("")}</select>` : ""}
+            ${a.options ? `<select id="act-arg-${esc(a.id)}" ${a.used ? "disabled" : ""}>${a.options.map((x) => `<option value="${esc(x.value)}" ${x.selected ? "selected" : ""}>${esc(x.label)}</option>`).join("")}</select>` : ""}
             <button class="small" style="margin-top:6px" data-act="action" data-id="${a.id}" ${a.used ? "disabled" : ""}>${a.used ? "Done" : "Do it"}</button></div>`).join("")}
         </div>
         <div class="card"><h3>Where you stand</h3>

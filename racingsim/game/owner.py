@@ -71,7 +71,8 @@ def actions(world: "World", d: "Driver") -> list[dict]:
     return [
         {"id": "team_budget", "label": f"{t.name}: budget",
          "detail": "Lean banks money, push spends ahead of income for speed. What you spend this year is next year's car.",
-         "options": [{"value": k, "label": k.title() + (" (current)" if k == t.budget_mode else "")} for k in BUDGET]},
+         "options": [{"value": k, "label": k.title() + (" (current)" if k == t.budget_mode else ""),
+                      "selected": k == t.budget_mode} for k in BUDGET]},
         {"id": "team_priority", "label": f"{t.name}: hiring priority",
          "detail": "Who your team signs for open seats when the market runs.",
          "options": [{"value": k, "label": k.title()} for k in PRIORITY]},
