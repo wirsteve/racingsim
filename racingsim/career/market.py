@@ -163,8 +163,10 @@ def _candidate_disciplines(world: "World", d: Driver, age: int) -> list[tuple[st
     region = world.geo.regions.get(d.home_region)
     culture = region.culture if region else {}
     if disc == "karting" and age >= 12:
-        out += [("stock_car", -2 + culture.get("stock_car", 30) / 25),
-                ("dirt_oval", -2 + culture.get("dirt_oval", 30) / 25)]
+        # Families who can afford the formula-car ladder keep their kids in karts longer.
+        stay = 2.5 if age <= 14 and d.available_funding() >= 40_000 else 0.0
+        out += [("stock_car", -2 - stay + culture.get("stock_car", 30) / 25),
+                ("dirt_oval", -2 - stay + culture.get("dirt_oval", 30) / 25)]
         if age >= 16:
             out.append(("club_road", -4 + culture.get("club_road", 20) / 25))
     elif d.tier == 0 and age >= 12:
@@ -218,6 +220,8 @@ def self_run_options(world: "World", d: Driver, entrant: bool = False,
                 # Racers climb as high as money and self-belief allow; surplus money
                 # beyond "can afford it" adds little, being out of one's depth hurts.
                 val = tpl.tier * 9 + clamp(readiness + ambition, -25, 0) * 0.7 + min(afford, 1.3) * 10 + switch_pen
+                if tpl.discipline == "karting" and age <= 16:
+                    val += 10  # for a kid, karting *is* the ladder (regional -> national karting)
                 if afford < 0.8:
                     val -= 8  # part-time is a last resort
                 if s.id == current:
@@ -368,7 +372,9 @@ def _would_accept(world: "World", d: Driver, team: Team, tpl: "SeriesTemplate") 
     cur_tier = d.tier if d.series_id else -1
     if d.team_id is not None and d.series_id and d.contract_years > 0:
         return tpl.tier > cur_tier  # only leave a contract for a promotion
-    if tpl.discipline != d.primary_discipline:
+    graduating = d.primary_discipline == "karting" and tpl.discipline == "open_wheel"
+    if tpl.discipline != d.primary_discipline and not graduating:
+        # Karting -> junior formula is the normal ladder, not a sideways move.
         # Most drivers stay in their discipline. Each off-season a minority are open to a
         # sideways move (more so when stalled or without a ride), and then only for a
         # step up or when the alternative is not racing at all (research C 4.5/5.6).
@@ -496,7 +502,8 @@ def close_market(world: "World", summary: "YearSummary") -> None:
             if not _eligible(world, d, tpl, role):
                 continue
             prof = d.proficiency.get(tpl.discipline, 0.0)
-            if prof < 0.12 and d.max_tier < tpl.tier and role != "am":
+            if (prof < 0.12 and d.max_tier < tpl.tier and role != "am"
+                    and not (d.primary_discipline == "karting" and tpl.discipline == "open_wheel")):
                 continue
             conn = d.connections.get(f"team:{team.id}", 0) + (
                 d.connections.get(f"mfr:{team.manufacturer_id}", 0) if team.manufacturer_id else 0)
@@ -528,7 +535,8 @@ def close_market(world: "World", summary: "YearSummary") -> None:
         gap = seat_gap(team, tpl, role)
         pool = [d for d in buckets.get(tpl.tier, []) if d.id not in signed and d.team_id is None
                 and d.status != RETIRED and not d.is_player and _eligible(world, d, tpl, role)
-                and d.proficiency.get(tpl.discipline, 0) >= 0.12]
+                and (d.proficiency.get(tpl.discipline, 0) >= 0.12
+                     or (d.primary_discipline == "karting" and tpl.discipline == "open_wheel"))]
         if role == "am":
             pool = [d for d in pool if categorize(d, world.year + 1) in ("bronze", "silver")]
         best = None
@@ -543,6 +551,11 @@ def close_market(world: "World", summary: "YearSummary") -> None:
                 score -= over * 2.0
             if best is None or score > best[0]:
                 best = (score, d, min(cov, 1.0))
+        if best is None and role == "am" and rng.random() < 0.75:
+            # Pro-Am seats are bought by people who made their money elsewhere (research B 4.3).
+            d = _gentleman_driver(world, tpl, gap)
+            summary.new_entrants += 1
+            best = (0.0, d, 1.0)
         if best is not None:
             _, d, cov = best
             _sign(world, d, team, slot, s, gap, cov, False, summary, None)
@@ -560,6 +573,24 @@ def close_market(world: "World", summary: "YearSummary") -> None:
         choose_self_run(world, d)
     for did in [k for k in coverage if world.drivers.get(k) is None or world.drivers[k].team_id is None]:
         coverage.pop(did, None)
+
+
+def _gentleman_driver(world: "World", tpl: "SeriesTemplate", gap: float) -> Driver:
+    from ..world.factory import ability_for_tier, make_driver
+    rng = world.rng
+    age = int(clamp(rng.gauss(46, 8), 30, 68))
+    d = make_driver(world, discipline="club_road", age=age, region=world.geo.random_home(rng, tpl.discipline),
+                    ability=ability_for_tier(rng, max(0, tpl.tier - 2)), years_racing=rng.uniform(2, 10),
+                    budget_floor=gap * 1.1)
+    d.first_license_age = max(30, age - 8)
+    d.first_season = world.year - 3
+    d.proficiency[tpl.discipline] = max(d.proficiency.get(tpl.discipline, 0), 0.55)
+    d.max_tier = max(d.max_tier, tpl.tier - 2)
+    d.career_starts = max(d.career_starts, tpl.license_min_starts)
+    d.reputation = clamp(10 + tpl.tier * 5 + rng.gauss(0, 5))
+    world.drivers[d.id] = d
+    d.log(world.year, "bought into a Pro-Am seat after success outside racing")
+    return d
 
 
 def _sign(world: "World", d: Driver, team: Team, slot: int, s: "Series", gap: float, cov: float,
