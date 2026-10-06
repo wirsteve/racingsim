@@ -145,6 +145,7 @@ class CrownJewel:
     note: str = ""
     week: int = 0  # season week (1-30) the event runs
     since: int = 0  # first year the event was held
+    history_source: Optional[str] = None  # real winners list in the history database
 
     def exists_in(self, year: int) -> bool:
         return year >= self.since

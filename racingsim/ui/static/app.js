@@ -320,7 +320,9 @@ async function jewelsPage() {
       { key: "entered", label: "Enter", nosort: true, render: (j) => (j.done ? "" : j.eligible
         ? `<label class="small nowrap"><input type="checkbox" data-change="jewel" data-key="${j.key}" ${j.entered ? "checked" : ""}> ${money(j.cost)}</label>`
         : `<span class="muted small">needs ${esc(j.why_not || "eligibility")}</span>`) },
-    ], js)}</div>`);
+    ], js)}</div>
+    ${js.some((j) => (j.real_winners || []).length) ? `<div class="card" style="margin-top:16px"><h3>Real history before your career began</h3>
+      <div class="grid g3">${js.filter((j) => (j.real_winners || []).length).map((j) => `<div><b>${esc(j.name)}</b><ul class="timeline small">${j.real_winners.map((r) => `<li>${r.year} — ${esc(r.name)}</li>`).join("")}</ul></div>`).join("")}</div></div>` : ""}`);
 }
 
 async function driverPage(id) {

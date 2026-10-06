@@ -347,6 +347,13 @@ def jewels(game: "Game") -> list[dict]:
             if not item["eligible"]:
                 why = jewel_block_reasons(w, p, cj, t)
                 item["why_not"] = ", ".join(why) or "not eligible"
+        hist = getattr(w, "history", None)
+        if hist is not None and getattr(cj, "history_source", None):
+            # Real winners before the career's start year (afterwards the world writes its own history).
+            start = getattr(w.config, "start_year", w.year)
+            item["real_winners"] = [{"year": y, "name": n} for y, n in hist.conn.execute(
+                "SELECT year, winner FROM race WHERE source = ? AND year < ? AND winner IS NOT NULL "
+                "ORDER BY year DESC LIMIT 8", (cj.history_source, start))]
         if res:
             wd = w.drivers[res[0]]
             item["winner"] = {"id": wd.id, "name": wd.name}
