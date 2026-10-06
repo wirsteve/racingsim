@@ -194,8 +194,8 @@ def seed_national(world: "World", hist: HistoryDB) -> set[str]:
                         sponsor_funding=tpl.season_cost / tpl.drivers_per_car * ratio, cars=len(cars),
                         drivers_per_car=tpl.drivers_per_car, manufacturer_id=mfr,
                         reputation=clamp(20 + 70 * q))
-            sel = dict(tpl.selection) if tpl.selection else {"performance": 0.45, "potential": 0.15, "money": 0.3,
-                                                              "marketability": 0.1}
+            from ..world.factory import base_selection
+            sel, team.w_connections = base_selection(tpl)
             tot = sum(sel.values())
             team.w_performance, team.w_potential = sel["performance"] / tot, sel.get("potential", 0.15) / tot
             team.w_money, team.w_marketability = sel["money"] / tot, sel.get("marketability", 0.1) / tot

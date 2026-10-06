@@ -1,1 +1,1181 @@
-[]
+[
+ {
+  "id": "factor:age",
+  "name": "Age (and age at each level)",
+  "description": "Teams and programs strongly prefer young drivers for promotion; equal results at 30+ convert to far fewer promotions. Age also sets licence minima and drives exit hazard late in careers.",
+  "weight_by_level": {
+   "0": {
+    "min": 0.06,
+    "max": 0.1,
+    "mid": 0.08,
+    "sources": [],
+    "notes": null
+   },
+   "1": {
+    "min": 0.045,
+    "max": 0.075,
+    "mid": 0.06,
+    "sources": [],
+    "notes": null
+   },
+   "2": {
+    "min": 0.045,
+    "max": 0.075,
+    "mid": 0.06,
+    "sources": [],
+    "notes": null
+   },
+   "3": {
+    "min": 0.053,
+    "max": 0.088,
+    "mid": 0.07,
+    "sources": [],
+    "notes": null
+   },
+   "4": {
+    "min": 0.06,
+    "max": 0.1,
+    "mid": 0.08,
+    "sources": [],
+    "notes": null
+   },
+   "5": {
+    "min": 0.068,
+    "max": 0.112,
+    "mid": 0.09,
+    "sources": [],
+    "notes": null
+   },
+   "6": {
+    "min": 0.053,
+    "max": 0.088,
+    "mid": 0.07,
+    "sources": [],
+    "notes": null
+   },
+   "7": {
+    "min": 0.045,
+    "max": 0.075,
+    "mid": 0.06,
+    "sources": [],
+    "notes": null
+   }
+  },
+  "evidence": [
+   "Trucks top-5 finishers promoted within 3 seasons by age: 20-22 77% (n=22), 23-25 75%, 26-29 56%, 30-34 29%, 35+ 18% (n=71) [src:racingsim-history-analysis]",
+   "Xfinity top-5 -> Cup by age: 20-22 87%, 23-25 93%, 26-29 92%, 30-34 50%, 35+ 29% [src:racingsim-history-analysis]",
+   "Indy Lights top-5 -> IndyCar by age: <=19 71%, 20-22 49%, 23-25 54%, 26-29 29%, 30-34 11% [src:racingsim-history-analysis]",
+   "Median age at first full-time season fell sharply: Cup 33 (1995-99) -> 25-25.5 (2010s/2020s); Trucks 33 -> 22-22.5; Xfinity 30 -> 23; Indy Lights 26 -> 21.5-22; USF2000 22 -> 18 [src:racingsim-history-analysis]",
+   "Minimum ages: NASCAR 18 for national series from 2002; Trucks 16 (short tracks/road), 2026 O'Reilly 17; USF Juniors 14, USF2000 15, Indy NXT 16.5, IndyCar 18 [src:nascar-age-rules, src:usf-licensing-2026]"
+  ],
+  "confidence": "high",
+  "sources": [
+   "src:racingsim-history-analysis",
+   "src:nascar-age-rules",
+   "src:usf-licensing-2026"
+  ],
+  "game_notes": "Promotion multiplier vs peak (<=25): 26-29 x0.6-0.9, 30-34 x0.3-0.55, 35+ x0.15-0.3 (NASCAR); open wheel declines earlier (26-29 x0.5, 30+ x0.2).",
+  "weight_semantics": "share of the advancement/retention decision at that tier; 'mid' sums to 1.0 across all 15 factors per tier; min/max = mid -/+ 25% (high), 35% (medium), 50% (low confidence); calibrated judgement anchored on computed_evidence.json, not regression output"
+ },
+ {
+  "id": "factor:connections",
+  "name": "Networking / connections (pipeline teams, mentors, family name)",
+  "description": "Being inside a Cup/IndyCar organisation's orbit (affiliated lower-series team, mentor owner, family in the sport). The single clearest non-results effect in the data.",
+  "weight_by_level": {
+   "0": {
+    "min": 0.033,
+    "max": 0.068,
+    "mid": 0.05,
+    "sources": [],
+    "notes": null
+   },
+   "1": {
+    "min": 0.039,
+    "max": 0.081,
+    "mid": 0.06,
+    "sources": [],
+    "notes": null
+   },
+   "2": {
+    "min": 0.046,
+    "max": 0.095,
+    "mid": 0.07,
+    "sources": [],
+    "notes": null
+   },
+   "3": {
+    "min": 0.046,
+    "max": 0.095,
+    "mid": 0.07,
+    "sources": [],
+    "notes": null
+   },
+   "4": {
+    "min": 0.046,
+    "max": 0.095,
+    "mid": 0.07,
+    "sources": [],
+    "notes": null
+   },
+   "5": {
+    "min": 0.052,
+    "max": 0.108,
+    "mid": 0.08,
+    "sources": [],
+    "notes": null
+   },
+   "6": {
+    "min": 0.058,
+    "max": 0.121,
+    "mid": 0.09,
+    "sources": [],
+    "notes": null
+   },
+   "7": {
+    "min": 0.039,
+    "max": 0.081,
+    "mid": 0.06,
+    "sources": [],
+    "notes": null
+   }
+  },
+  "evidence": [
+   "Trucks full-timers finishing top-5: promoted within 3 seasons 59% at Cup-affiliated teams vs 27% at independents; P6-10 49% vs 26% [src:racingsim-history-analysis]",
+   "Xfinity top-5: 84% (affiliated) vs 47% (independent) reach Cup full-time within 3 seasons [src:racingsim-history-analysis]",
+   "Josh Berry reached Cup at 33 via Dale Earnhardt Jr./JRM (met through sim racing); Bubba Pollard's Xfinity debut at 37 also via JRM [src:nascar-pollard-berry, src:racingamerica-berry]",
+   "2005 Cup: 23 of 76 drivers had family ties in the sport [src:groothuis-2008-nepotism]"
+  ],
+  "confidence": "medium",
+  "sources": [
+   "src:racingsim-history-analysis",
+   "src:nascar-pollard-berry",
+   "src:racingamerica-berry",
+   "src:groothuis-2008-nepotism"
+  ],
+  "game_notes": "Affiliation with a premier-level organisation roughly doubles promotion odds at equal finishing position (multiplier ~1.5-2.2).",
+  "weight_semantics": "share of the advancement/retention decision at that tier; 'mid' sums to 1.0 across all 15 factors per tier; min/max = mid -/+ 25% (high), 35% (medium), 50% (low confidence); calibrated judgement anchored on computed_evidence.json, not regression output"
+ },
+ {
+  "id": "factor:development-program",
+  "name": "Driver development programs",
+  "description": "Manufacturer/team/sanctioning-body programs (TRD/TD2, Chevrolet Drivers Edge, Ford Performance, NASCAR Drive for Diversity, NASCAR Next, Road to Indy scholarships, Mazda Road to 24, Toyota dirt midget support via Keith Kunz). They pick drivers in their teens and pay for or place them, converting talent into seats.",
+  "weight_by_level": {
+   "0": {
+    "min": 0.019,
+    "max": 0.041,
+    "mid": 0.03,
+    "sources": [],
+    "notes": null
+   },
+   "1": {
+    "min": 0.007,
+    "max": 0.014,
+    "mid": 0.01,
+    "sources": [],
+    "notes": null
+   },
+   "2": {
+    "min": 0.013,
+    "max": 0.027,
+    "mid": 0.02,
+    "sources": [],
+    "notes": null
+   },
+   "3": {
+    "min": 0.033,
+    "max": 0.068,
+    "mid": 0.05,
+    "sources": [],
+    "notes": null
+   },
+   "4": {
+    "min": 0.052,
+    "max": 0.108,
+    "mid": 0.08,
+    "sources": [],
+    "notes": null
+   },
+   "5": {
+    "min": 0.058,
+    "max": 0.121,
+    "mid": 0.09,
+    "sources": [],
+    "notes": null
+   },
+   "6": {
+    "min": 0.052,
+    "max": 0.108,
+    "mid": 0.08,
+    "sources": [],
+    "notes": null
+   },
+   "7": {
+    "min": 0.019,
+    "max": 0.041,
+    "mid": 0.03,
+    "sources": [],
+    "notes": null
+   }
+  },
+  "evidence": [
+   "TRD 2024 class: 13 drivers across stock car, dirt (WoO sprint, USAC midget) and sports cars; program started 2012; signs drivers from age 13-16 (Keelan Harvick 13 in 2026, Erik Jones 16 in 2013) [src:trd-2024-lineup, src:inquirer-trd-moneyball-2018, src:toyota-keelan-harvick-2026]",
+   "NASCAR Next: 39 of 51 selected reached a national series, ~1/4 reached Cup; D4D (since 2004) produced Larson, Wallace, Suarez; ~10% of 2019 Daytona 500 field traced to D4D [src:nascar-next, src:nascar-d4d-2023, src:autowire-revracing-2026]",
+   "Road to Indy scholarships ($0.24-0.85M per champion) make the USF2000 champion -> next rung transfer near-certain since 2010 (100% (n=15)); when the Indy Lights prize was cut to $500k (2022) the champion missed a full-time seat [src:racingsim-history-analysis, src:midohio-usf-scholarships-2024, src:the-race-lights-prize-2022]",
+   "Mazda MX-5 Cup champion $200k Road to 24 scholarship [src:mazda-mx5cup-scholarship]"
+  ],
+  "confidence": "medium",
+  "sources": [
+   "src:trd-2024-lineup",
+   "src:inquirer-trd-moneyball-2018",
+   "src:toyota-keelan-harvick-2026",
+   "src:nascar-next",
+   "src:nascar-d4d-2023",
+   "src:autowire-revracing-2026",
+   "src:midohio-usf-scholarships-2024",
+   "src:the-race-lights-prize-2022",
+   "src:mazda-mx5cup-scholarship",
+   "src:racingsim-history-analysis"
+  ],
+  "weight_semantics": "share of the advancement/retention decision at that tier; 'mid' sums to 1.0 across all 15 factors per tier; min/max = mid -/+ 25% (high), 35% (medium), 50% (low confidence); calibrated judgement anchored on computed_evidence.json, not regression output"
+ },
+ {
+  "id": "factor:equipment-quality",
+  "name": "Equipment quality / team strength",
+  "description": "How much of a driver's finishing position is the car/organisation. Large in NASCAR national series and IndyCar, smaller in spec junior formulae. Advancement weight is lower than its performance share because scouts partially discount equipment, but strong teams also act as promotion pipelines (see connections).",
+  "weight_by_level": {
+   "0": {
+    "min": 0.039,
+    "max": 0.081,
+    "mid": 0.06,
+    "sources": [],
+    "notes": null
+   },
+   "1": {
+    "min": 0.052,
+    "max": 0.108,
+    "mid": 0.08,
+    "sources": [],
+    "notes": null
+   },
+   "2": {
+    "min": 0.058,
+    "max": 0.121,
+    "mid": 0.09,
+    "sources": [],
+    "notes": null
+   },
+   "3": {
+    "min": 0.052,
+    "max": 0.108,
+    "mid": 0.08,
+    "sources": [],
+    "notes": null
+   },
+   "4": {
+    "min": 0.052,
+    "max": 0.108,
+    "mid": 0.08,
+    "sources": [],
+    "notes": null
+   },
+   "5": {
+    "min": 0.046,
+    "max": 0.095,
+    "mid": 0.07,
+    "sources": [],
+    "notes": null
+   },
+   "6": {
+    "min": 0.046,
+    "max": 0.095,
+    "mid": 0.07,
+    "sources": [],
+    "notes": null
+   },
+   "7": {
+    "min": 0.039,
+    "max": 0.081,
+    "mid": 0.06,
+    "sources": [],
+    "notes": null
+   }
+  },
+  "evidence": [
+   "Share of driver-season result variance shared by teammates (ICC): Cup 0.423 (2015-26 era 0.57), Xfinity 0.665 (2015-26 0.781), Trucks 0.275, IndyCar 0.389, CART 0.413, Indy Lights -0.004, USF2000 0.183 [src:racingsim-history-analysis]",
+   "Two-way fixed effects (driver + team-season), team share of explained variance: Cup 0.431, Xfinity 0.633, Trucks 0.346, IndyCar 0.567, CART 0.667 (low confidence, limited-mobility bias) [src:racingsim-history-analysis]",
+   "Team switchers: change in a driver's results vs change in team strength - slope Xfinity 0.466, IndyCar 0.41, CART 0.373, Cup 0.206, Trucks 0.119 [src:racingsim-history-analysis]",
+   "Top-3 organisations take a median ~70% of wins per season in Cup/Xfinity/Trucks and ~80-90% in IndyCar/CART and the ladder series [src:racingsim-history-analysis]",
+   "F1 (benchmark of a non-spec series): constructor explains ~86-88% of race-result variance [src:vankesteren-bergkamp-f1-2023, src:bell-2016-jqas-f1]",
+   "Kyle Busch (2023): equipment gaps among top Cup organisations have narrowed [src:speedsport-kbusch-money-game-2023]"
+  ],
+  "confidence": "medium",
+  "sources": [
+   "src:racingsim-history-analysis",
+   "src:vankesteren-bergkamp-f1-2023",
+   "src:bell-2016-jqas-f1",
+   "src:speedsport-kbusch-money-game-2023"
+  ],
+  "game_notes": "Performance model: car/team share of race-pace variance ~0.35-0.6 at tiers 5-7 stock car and IndyCar, ~0.1-0.25 in spec ladders (tiers 3-5 open wheel), ~0.3-0.5 at local tiers where budgets vary widely (estimate).",
+  "weight_semantics": "share of the advancement/retention decision at that tier; 'mid' sums to 1.0 across all 15 factors per tier; min/max = mid -/+ 25% (high), 35% (medium), 50% (low confidence); calibrated judgement anchored on computed_evidence.json, not regression output"
+ },
+ {
+  "id": "factor:family-funding",
+  "name": "Family funding",
+  "description": "Parents' and family-business money. Overwhelming at youth and local levels (who races at all), still decisive at regional/national development level, and often disguised as 'sponsorship' at pro levels (family companies as primary sponsors).",
+  "weight_by_level": {
+   "0": {
+    "min": 0.227,
+    "max": 0.472,
+    "mid": 0.35,
+    "sources": [],
+    "notes": null
+   },
+   "1": {
+    "min": 0.195,
+    "max": 0.405,
+    "mid": 0.3,
+    "sources": [],
+    "notes": null
+   },
+   "2": {
+    "min": 0.163,
+    "max": 0.338,
+    "mid": 0.25,
+    "sources": [],
+    "notes": null
+   },
+   "3": {
+    "min": 0.143,
+    "max": 0.297,
+    "mid": 0.22,
+    "sources": [],
+    "notes": null
+   },
+   "4": {
+    "min": 0.111,
+    "max": 0.23,
+    "mid": 0.17,
+    "sources": [],
+    "notes": null
+   },
+   "5": {
+    "min": 0.078,
+    "max": 0.162,
+    "mid": 0.12,
+    "sources": [],
+    "notes": null
+   },
+   "6": {
+    "min": 0.046,
+    "max": 0.095,
+    "mid": 0.07,
+    "sources": [],
+    "notes": null
+   },
+   "7": {
+    "min": 0.013,
+    "max": 0.027,
+    "mid": 0.02,
+    "sources": [],
+    "notes": null
+   }
+  },
+  "evidence": [
+   "Youth/grassroots costs are borne by families: quarter midget ~$2.5k car + $35-125 entries; national junior karting $50-120k/yr; late model $60-200k/yr; many local racers lose $30-50k/yr [src:ncqma-qa, src:karting-cost-aggregators, src:thegazette-iowa-costs-2017, src:shorttrackscene-lms-costs-2018]",
+   "Documented family-funded routes: Sergio Pena (> $1M from father), William Sawalich (father's company Starkey sponsors), Paul Menard (Menards, 16 Cup seasons), Kyle Larson (parents borrowed for sprint car) [src:wiki-sergio-pena, src:eplocalnews-sawalich-2022, src:espn-menard-2010, src:yahoo-larson-parents]",
+   "ARCA field described as mostly manufacturer development drivers or family-funded drivers [src:speedwayactionimages-arca-2025]",
+   "Owner-driver/family-named teams hold ~6-11% of Trucks/Xfinity full-time seats but promote rarely (Trucks 4% vs 26%) - family money buys longevity more than promotion [src:racingsim-history-analysis]",
+   "F1: family-connected drivers enter ~4 years younger (27 vs 31) and brothers/fathers have lower exit hazards [src:depken-2016-f1-family]"
+  ],
+  "confidence": "medium",
+  "sources": [
+   "src:ncqma-qa",
+   "src:karting-cost-aggregators",
+   "src:thegazette-iowa-costs-2017",
+   "src:shorttrackscene-lms-costs-2018",
+   "src:wiki-sergio-pena",
+   "src:eplocalnews-sawalich-2022",
+   "src:espn-menard-2010",
+   "src:yahoo-larson-parents",
+   "src:speedwayactionimages-arca-2025",
+   "src:depken-2016-f1-family",
+   "src:racingsim-history-analysis"
+  ],
+  "game_notes": "Family wealth should mainly control (a) whether a youth racer can keep racing/move up, (b) age at entry (earlier), (c) staying power as a journeyman; give it diminishing effect above tier 5.",
+  "weight_semantics": "share of the advancement/retention decision at that tier; 'mid' sums to 1.0 across all 15 factors per tier; min/max = mid -/+ 25% (high), 35% (medium), 50% (low confidence); calibrated judgement anchored on computed_evidence.json, not regression output"
+ },
+ {
+  "id": "factor:injuries",
+  "name": "Crashes and injuries",
+  "description": "Season-interrupting and career-ending injuries plus crash-damage costs that drain budgets. A hazard rather than a lever: small average weight, large individual impact.",
+  "weight_by_level": {
+   "0": {
+    "min": 0.005,
+    "max": 0.015,
+    "mid": 0.01,
+    "sources": [],
+    "notes": null
+   },
+   "1": {
+    "min": 0.01,
+    "max": 0.03,
+    "mid": 0.02,
+    "sources": [],
+    "notes": null
+   },
+   "2": {
+    "min": 0.005,
+    "max": 0.015,
+    "mid": 0.01,
+    "sources": [],
+    "notes": null
+   },
+   "3": {
+    "min": 0.005,
+    "max": 0.015,
+    "mid": 0.01,
+    "sources": [],
+    "notes": null
+   },
+   "4": {
+    "min": 0.005,
+    "max": 0.015,
+    "mid": 0.01,
+    "sources": [],
+    "notes": null
+   },
+   "5": {
+    "min": 0.005,
+    "max": 0.015,
+    "mid": 0.01,
+    "sources": [],
+    "notes": null
+   },
+   "6": {
+    "min": 0.005,
+    "max": 0.015,
+    "mid": 0.01,
+    "sources": [],
+    "notes": null
+   },
+   "7": {
+    "min": 0.015,
+    "max": 0.045,
+    "mid": 0.03,
+    "sources": [],
+    "notes": null
+   }
+  },
+  "evidence": [
+   "Cup examples 2013-2023: Stewart (2013, rest of season), Hamlin (2013, 4 races), Kyle Busch (2015, 11), Bowman (2022, 5), Kurt Busch (2022, 16 then retired), Gragson (2023, 1) - roughly 0.5-1 full-time Cup driver per season misses races for injury, i.e. ~1.5-3% of full-time driver-seasons; career-ending ~0.2-0.5% per driver-season (informed estimate from these cases) [src:nascar-injury-history, src:kurt-busch-retirement-2023]",
+   "Wickens 2018: career-ending (for IndyCar) spinal injury in rookie season [src:cbc-wickens]",
+   "Single-seater in-race injury ~1.2 per 1,000 competitor-races; concussion ~1-1.2 per 1,000 drives [src:deakin-2017-concussion]; CART 1984: one accident per ~1,400 racing miles, ~9.5 accidents per injury [src:olvey-trammell-1986]",
+   "Crash cost: one Xfinity wreck cost three teams ~$250k; Cup wall hit ~$30-100k, total loss $250-500k [src:nbcsports-road-america-wreck, src:speedwaydigest-crash-costs]"
+  ],
+  "confidence": "low",
+  "sources": [
+   "src:nascar-injury-history",
+   "src:kurt-busch-retirement-2023",
+   "src:cbc-wickens",
+   "src:deakin-2017-concussion",
+   "src:olvey-trammell-1986",
+   "src:nbcsports-road-america-wreck",
+   "src:speedwaydigest-crash-costs"
+  ],
+  "game_notes": "Per driver-season: P(miss races) ~2-4% at pro levels (higher on dirt/sprint cars, estimate), P(career-ending) ~0.2-0.6%; wreck-heavy drivers burn crash budget (economics.json) and lose rides at self-funded levels.",
+  "weight_semantics": "share of the advancement/retention decision at that tier; 'mid' sums to 1.0 across all 15 factors per tier; min/max = mid -/+ 25% (high), 35% (medium), 50% (low confidence); calibrated judgement anchored on computed_evidence.json, not regression output"
+ },
+ {
+  "id": "factor:luck-timing",
+  "name": "Luck / timing (seat availability)",
+  "description": "Whether a seat opens when a driver is ready: turnover of full-time seats, injuries to incumbents, team closures, prize-structure changes.",
+  "weight_by_level": {
+   "0": {
+    "min": 0.026,
+    "max": 0.054,
+    "mid": 0.04,
+    "sources": [],
+    "notes": null
+   },
+   "1": {
+    "min": 0.019,
+    "max": 0.041,
+    "mid": 0.03,
+    "sources": [],
+    "notes": null
+   },
+   "2": {
+    "min": 0.007,
+    "max": 0.014,
+    "mid": 0.01,
+    "sources": [],
+    "notes": null
+   },
+   "3": {
+    "min": 0.013,
+    "max": 0.027,
+    "mid": 0.02,
+    "sources": [],
+    "notes": null
+   },
+   "4": {
+    "min": 0.019,
+    "max": 0.041,
+    "mid": 0.03,
+    "sources": [],
+    "notes": null
+   },
+   "5": {
+    "min": 0.013,
+    "max": 0.027,
+    "mid": 0.02,
+    "sources": [],
+    "notes": null
+   },
+   "6": {
+    "min": 0.013,
+    "max": 0.027,
+    "mid": 0.02,
+    "sources": [],
+    "notes": null
+   },
+   "7": {
+    "min": 0.013,
+    "max": 0.027,
+    "mid": 0.02,
+    "sources": [],
+    "notes": null
+   }
+  },
+  "evidence": [
+   "Full-time seat turnover per season (share of next year's full-timers who were not full-time the year before): Cup median 16%, IndyCar 25%, Xfinity 39%, Trucks 39%, Indy Lights 58%, Pro Mazda/USF2000 ~69% [src:racingsim-history-analysis]",
+   "New full-time Cup drivers: 59% promoted from full-time Xfinity/Trucks, 36% were part-timers in Cup the year before [src:racingsim-history-analysis]",
+   "Lundqvist (2022 Indy Lights champion) won the one year the champion prize was cut and missed a 2023 seat; Kurt Busch's 2022 injury opened the 45 car for Ty Gibbs [src:the-race-lights-prize-2022, src:nascar-injury-history]"
+  ],
+  "confidence": "medium",
+  "sources": [
+   "src:racingsim-history-analysis",
+   "src:the-race-lights-prize-2022",
+   "src:nascar-injury-history"
+  ],
+  "game_notes": "Simulate seats explicitly: ~16% of premier stock-car seats, ~25% of IndyCar seats, ~35-40% of Xfinity/Trucks seats and 55-70% of junior-formula seats change hands each winter.",
+  "weight_semantics": "share of the advancement/retention decision at that tier; 'mid' sums to 1.0 across all 15 factors per tier; min/max = mid -/+ 25% (high), 35% (medium), 50% (low confidence); calibrated judgement anchored on computed_evidence.json, not regression output"
+ },
+ {
+  "id": "factor:manufacturer-support",
+  "name": "Manufacturer support",
+  "description": "OEM money, engines, alliance-team placement. Overlaps with development programs; relevant from ARCA/USF Pro upward, strong at Xfinity/Cup and IMSA factory programs.",
+  "weight_by_level": {
+   "0": {
+    "min": 0,
+    "max": 0.01,
+    "mid": 0.0,
+    "sources": [],
+    "notes": null
+   },
+   "1": {
+    "min": 0,
+    "max": 0.01,
+    "mid": 0.0,
+    "sources": [],
+    "notes": null
+   },
+   "2": {
+    "min": 0.005,
+    "max": 0.015,
+    "mid": 0.01,
+    "sources": [],
+    "notes": null
+   },
+   "3": {
+    "min": 0.01,
+    "max": 0.03,
+    "mid": 0.02,
+    "sources": [],
+    "notes": null
+   },
+   "4": {
+    "min": 0.015,
+    "max": 0.045,
+    "mid": 0.03,
+    "sources": [],
+    "notes": null
+   },
+   "5": {
+    "min": 0.02,
+    "max": 0.06,
+    "mid": 0.04,
+    "sources": [],
+    "notes": null
+   },
+   "6": {
+    "min": 0.025,
+    "max": 0.075,
+    "mid": 0.05,
+    "sources": [],
+    "notes": null
+   },
+   "7": {
+    "min": 0.025,
+    "max": 0.075,
+    "mid": 0.05,
+    "sources": [],
+    "notes": null
+   }
+  },
+  "evidence": [
+   "Ford Performance/DGR-Crosley, Chevrolet Drivers Edge (JRM/GMS), TRD place drivers in alliance teams from late models to Xfinity [src:nascar-dgr-ford-2019, src:nbcsports-drivers-edge-2019, src:trd-2024-lineup]",
+   "In data, full-time Truck drivers' 3-yr promotion rate by make: Ford 34%, Chevrolet 23%, Toyota 22% - make alone is not decisive; the alliance team is [src:racingsim-history-analysis]",
+   "Venturini ARCA lineups are Toyota development drivers entering 'with a check signed by Toyota' [src:speedwayactionimages-arca-2025]"
+  ],
+  "confidence": "low",
+  "sources": [
+   "src:nascar-dgr-ford-2019",
+   "src:nbcsports-drivers-edge-2019",
+   "src:trd-2024-lineup",
+   "src:speedwayactionimages-arca-2025",
+   "src:racingsim-history-analysis"
+  ],
+  "weight_semantics": "share of the advancement/retention decision at that tier; 'mid' sums to 1.0 across all 15 factors per tier; min/max = mid -/+ 25% (high), 35% (medium), 50% (low confidence); calibrated judgement anchored on computed_evidence.json, not regression output"
+ },
+ {
+  "id": "factor:marketability",
+  "name": "Marketability (image, social reach, demographics)",
+  "description": "Fan appeal and reach that sponsors pay for; can sustain a career despite results (and diversity/gender programs and sponsors value demographics).",
+  "weight_by_level": {
+   "0": {
+    "min": 0.005,
+    "max": 0.015,
+    "mid": 0.01,
+    "sources": [],
+    "notes": null
+   },
+   "1": {
+    "min": 0.01,
+    "max": 0.03,
+    "mid": 0.02,
+    "sources": [],
+    "notes": null
+   },
+   "2": {
+    "min": 0.01,
+    "max": 0.03,
+    "mid": 0.02,
+    "sources": [],
+    "notes": null
+   },
+   "3": {
+    "min": 0.01,
+    "max": 0.03,
+    "mid": 0.02,
+    "sources": [],
+    "notes": null
+   },
+   "4": {
+    "min": 0.015,
+    "max": 0.045,
+    "mid": 0.03,
+    "sources": [],
+    "notes": null
+   },
+   "5": {
+    "min": 0.02,
+    "max": 0.06,
+    "mid": 0.04,
+    "sources": [],
+    "notes": null
+   },
+   "6": {
+    "min": 0.02,
+    "max": 0.06,
+    "mid": 0.04,
+    "sources": [],
+    "notes": null
+   },
+   "7": {
+    "min": 0.025,
+    "max": 0.075,
+    "mid": 0.05,
+    "sources": [],
+    "notes": null
+   }
+  },
+  "evidence": [
+   "Hailie Deegan: ~$8.5M rookie-year social value (SBJ), 2nd in motorsports, while scoring 5 top-10s in 67 Truck starts; she said she probably would not have had the ride without social media [src:speedwaydigest-deegan-social]",
+   "Sponsors ask about social reach/engagement, not just TV impressions [src:nascar-social-sponsor]",
+   "Celebrity (experience, family name) raises Cup exposure value independent of results [src:rotthoff-2014-nascar-camera]"
+  ],
+  "confidence": "low",
+  "sources": [
+   "src:speedwaydigest-deegan-social",
+   "src:nascar-social-sponsor",
+   "src:rotthoff-2014-nascar-camera"
+  ],
+  "weight_semantics": "share of the advancement/retention decision at that tier; 'mid' sums to 1.0 across all 15 factors per tier; min/max = mid -/+ 25% (high), 35% (medium), 50% (low confidence); calibrated judgement anchored on computed_evidence.json, not regression output"
+ },
+ {
+  "id": "factor:reliability",
+  "name": "Mechanical reliability",
+  "description": "Engine/part failures depress results; mostly a function of budget/equipment. Small separate effect on advancement.",
+  "weight_by_level": {
+   "0": {
+    "min": 0.005,
+    "max": 0.015,
+    "mid": 0.01,
+    "sources": [],
+    "notes": null
+   },
+   "1": {
+    "min": 0.01,
+    "max": 0.03,
+    "mid": 0.02,
+    "sources": [],
+    "notes": null
+   },
+   "2": {
+    "min": 0.005,
+    "max": 0.015,
+    "mid": 0.01,
+    "sources": [],
+    "notes": null
+   },
+   "3": {
+    "min": 0.005,
+    "max": 0.015,
+    "mid": 0.01,
+    "sources": [],
+    "notes": null
+   },
+   "4": {
+    "min": 0.005,
+    "max": 0.015,
+    "mid": 0.01,
+    "sources": [],
+    "notes": null
+   },
+   "5": {
+    "min": 0.005,
+    "max": 0.015,
+    "mid": 0.01,
+    "sources": [],
+    "notes": null
+   },
+   "6": {
+    "min": 0.005,
+    "max": 0.015,
+    "mid": 0.01,
+    "sources": [],
+    "notes": null
+   },
+   "7": {
+    "min": 0.005,
+    "max": 0.015,
+    "mid": 0.01,
+    "sources": [],
+    "notes": null
+   }
+  },
+  "evidence": [
+   "Cup: non-crash DNFs reduce a driver's TV exposure value; crash DNFs do not significantly [src:rotthoff-2014-nascar-camera]",
+   "No DNF-cause data in the repo history files (finishing positions only) - not computable here [src:racingsim-history-analysis]"
+  ],
+  "confidence": "low",
+  "sources": [
+   "src:rotthoff-2014-nascar-camera",
+   "src:racingsim-history-analysis"
+  ],
+  "weight_semantics": "share of the advancement/retention decision at that tier; 'mid' sums to 1.0 across all 15 factors per tier; min/max = mid -/+ 25% (high), 35% (medium), 50% (low confidence); calibrated judgement anchored on computed_evidence.json, not regression output"
+ },
+ {
+  "id": "factor:reputation",
+  "name": "Reputation / track record / experience",
+  "description": "Accumulated standing (past wins, titles, experience, 'name'). Keeps veterans in seats at the premier level and helps journeymen find rides lower down.",
+  "weight_by_level": {
+   "0": {
+    "min": 0.013,
+    "max": 0.027,
+    "mid": 0.02,
+    "sources": [],
+    "notes": null
+   },
+   "1": {
+    "min": 0.026,
+    "max": 0.054,
+    "mid": 0.04,
+    "sources": [],
+    "notes": null
+   },
+   "2": {
+    "min": 0.033,
+    "max": 0.068,
+    "mid": 0.05,
+    "sources": [],
+    "notes": null
+   },
+   "3": {
+    "min": 0.026,
+    "max": 0.054,
+    "mid": 0.04,
+    "sources": [],
+    "notes": null
+   },
+   "4": {
+    "min": 0.019,
+    "max": 0.041,
+    "mid": 0.03,
+    "sources": [],
+    "notes": null
+   },
+   "5": {
+    "min": 0.026,
+    "max": 0.054,
+    "mid": 0.04,
+    "sources": [],
+    "notes": null
+   },
+   "6": {
+    "min": 0.026,
+    "max": 0.054,
+    "mid": 0.04,
+    "sources": [],
+    "notes": null
+   },
+   "7": {
+    "min": 0.065,
+    "max": 0.135,
+    "mid": 0.1,
+    "sources": [],
+    "notes": null
+   }
+  },
+  "evidence": [
+   "Cup exposure value rises ~$1.7M per year of experience (diminishing: +$0.92M from year 4->5, +$0.21M from 10->11); past wins matter [src:rotthoff-2014-nascar-camera]",
+   "Sons of drivers get more TV time than performance implies; only Earnhardt Jr. and Jarrett monetised family name beyond performance [src:groothuis-2008-nepotism, src:rotthoff-2014-nascar-camera]",
+   "Cup veterans whose full-time Cup career ended: 30% dropped to full-time lower-series rides (journeymen), median age 37.0 [src:racingsim-history-analysis]"
+  ],
+  "confidence": "medium",
+  "sources": [
+   "src:rotthoff-2014-nascar-camera",
+   "src:groothuis-2008-nepotism",
+   "src:racingsim-history-analysis"
+  ],
+  "weight_semantics": "share of the advancement/retention decision at that tier; 'mid' sums to 1.0 across all 15 factors per tier; min/max = mid -/+ 25% (high), 35% (medium), 50% (low confidence); calibrated judgement anchored on computed_evidence.json, not regression output"
+ },
+ {
+  "id": "factor:results",
+  "name": "Results (wins, championship position)",
+  "description": "Observed finishing positions and titles. Strongly increase promotion odds at every pro level, but the champion-to-next-level rate is far from 100% outside scholarship ladders, and many premier rookies arrive with modest results.",
+  "weight_by_level": {
+   "0": {
+    "min": 0.112,
+    "max": 0.188,
+    "mid": 0.15,
+    "sources": [],
+    "notes": null
+   },
+   "1": {
+    "min": 0.112,
+    "max": 0.188,
+    "mid": 0.15,
+    "sources": [],
+    "notes": null
+   },
+   "2": {
+    "min": 0.12,
+    "max": 0.2,
+    "mid": 0.16,
+    "sources": [],
+    "notes": null
+   },
+   "3": {
+    "min": 0.112,
+    "max": 0.188,
+    "mid": 0.15,
+    "sources": [],
+    "notes": null
+   },
+   "4": {
+    "min": 0.098,
+    "max": 0.163,
+    "mid": 0.13,
+    "sources": [],
+    "notes": null
+   },
+   "5": {
+    "min": 0.098,
+    "max": 0.163,
+    "mid": 0.13,
+    "sources": [],
+    "notes": null
+   },
+   "6": {
+    "min": 0.105,
+    "max": 0.175,
+    "mid": 0.14,
+    "sources": [],
+    "notes": null
+   },
+   "7": {
+    "min": 0.15,
+    "max": 0.25,
+    "mid": 0.2,
+    "sources": [],
+    "notes": null
+   }
+  },
+  "evidence": [
+   "Full-time at a higher national rung within 3 seasons - Trucks: champion 48% (n=29), P2-3 36% (n=55), P4-5 38% (n=56), P6-10 31% (n=140), P11+ 14% (n=317) [src:racingsim-history-analysis]",
+   "Xfinity -> Cup within 3: champion 91% (n=22), P2-3 60% (n=45), P4-5 58% (n=52), P6-10 35% (n=126), P11+ 15% (n=379) [src:racingsim-history-analysis]",
+   "Indy Lights -> IndyCar/CART within 3: champion 75% (n=28), P2-3 46% (n=56), P4-5 31% (n=55), P6-10 20% (n=125), P11+ 11% (n=94) [src:racingsim-history-analysis]",
+   "USF2000 -> higher rung within 3 (scholarship era 2006+): champion 100% (n=15), P2-3 72% (n=29), P6-10 39% (n=67); Pro Mazda champion 42% (n=26) [src:racingsim-history-analysis]",
+   "Cup rookies 1997-2026: 51% had zero Xfinity wins and 30% no full-time Xfinity season before their first full-time Cup year [src:racingsim-history-analysis]",
+   "Seat-loss risk (not full-time at same/higher level next year) for bottom-third full-timers: Cup ~33%, Xfinity ~54%, Trucks ~51%, IndyCar ~46% vs ~5-8% for top-third [src:racingsim-history-analysis]",
+   "Cup TV-exposure value of a win ~$6.3M, P2-5 ~$2.5M, P6-10 ~$1.65M (sponsor value tracks results) [src:rotthoff-2014-nascar-camera]",
+   "F1: no podium in a season raises exit probability ~11.7 pp [src:depken-2016-f1-family]"
+  ],
+  "confidence": "high",
+  "sources": [
+   "src:racingsim-history-analysis",
+   "src:rotthoff-2014-nascar-camera",
+   "src:depken-2016-f1-family"
+  ],
+  "game_notes": "Promotion probability by finish bucket (3-yr window) - see REPORT table; multiply by age and money modifiers rather than using results alone.",
+  "weight_semantics": "share of the advancement/retention decision at that tier; 'mid' sums to 1.0 across all 15 factors per tier; min/max = mid -/+ 25% (high), 35% (medium), 50% (low confidence); calibrated judgement anchored on computed_evidence.json, not regression output"
+ },
+ {
+  "id": "factor:sponsorship",
+  "name": "Sponsorship (bringing commercial money)",
+  "description": "Ability to bring sponsor dollars that pay for the seat. Dominant gating factor from national development (ARCA, USF Pro) through Xfinity; at premier level still needed for most seats outside owner-funded ones.",
+  "weight_by_level": {
+   "0": {
+    "min": 0.019,
+    "max": 0.041,
+    "mid": 0.03,
+    "sources": [],
+    "notes": null
+   },
+   "1": {
+    "min": 0.033,
+    "max": 0.068,
+    "mid": 0.05,
+    "sources": [],
+    "notes": null
+   },
+   "2": {
+    "min": 0.052,
+    "max": 0.108,
+    "mid": 0.08,
+    "sources": [],
+    "notes": null
+   },
+   "3": {
+    "min": 0.065,
+    "max": 0.135,
+    "mid": 0.1,
+    "sources": [],
+    "notes": null
+   },
+   "4": {
+    "min": 0.085,
+    "max": 0.176,
+    "mid": 0.13,
+    "sources": [],
+    "notes": null
+   },
+   "5": {
+    "min": 0.104,
+    "max": 0.216,
+    "mid": 0.16,
+    "sources": [],
+    "notes": null
+   },
+   "6": {
+    "min": 0.117,
+    "max": 0.243,
+    "mid": 0.18,
+    "sources": [],
+    "notes": null
+   },
+   "7": {
+    "min": 0.098,
+    "max": 0.203,
+    "mid": 0.15,
+    "sources": [],
+    "notes": null
+   }
+  },
+  "evidence": [
+   "Kyle Busch: ~$6M needed for an Xfinity driver to land a Cup seat; 'money game, not a success game' [src:speedsport-kbusch-money-game-2023]",
+   "KBM truck program ~$3.2M per truck-season; Justin Boston/Zloop deal ~$3.2M/yr [src:foxsports-kbusch-truck-costs-2017, src:espn-kbm-boston-2015]",
+   "Good Truck ride ~$130k/race, Xfinity $130-160k/race (2026); back-marker Xfinity season offered for $650k (2021) [src:yahoo-baldwin-costs-2026, src:racingnews-mbm-xfinity-ride-2020]",
+   "Indy NXT seat ~$1.2M (2024) vs USF Pro champion scholarship ~$0.55-0.68M; several USF champions could not move up [src:usopenwheelnation-indynxt-costs-2025, src:midohio-usf-scholarships-2024]",
+   "Fortune-500 share of Cup primary sponsors fell from ~60% (2005) to ~20%; seasons now patchworked from several sponsors [src:frontstretch-sponsor-decline]"
+  ],
+  "confidence": "medium",
+  "sources": [
+   "src:speedsport-kbusch-money-game-2023",
+   "src:foxsports-kbusch-truck-costs-2017",
+   "src:espn-kbm-boston-2015",
+   "src:yahoo-baldwin-costs-2026",
+   "src:racingnews-mbm-xfinity-ride-2020",
+   "src:usopenwheelnation-indynxt-costs-2025",
+   "src:midohio-usf-scholarships-2024",
+   "src:frontstretch-sponsor-decline"
+  ],
+  "game_notes": "Model a 'funding' stat = sponsorship + family money; seat price by tier in economics.json. A driver whose funding covers the seat price gets the seat even with mediocre results (pay seat).",
+  "weight_semantics": "share of the advancement/retention decision at that tier; 'mid' sums to 1.0 across all 15 factors per tier; min/max = mid -/+ 25% (high), 35% (medium), 50% (low confidence); calibrated judgement anchored on computed_evidence.json, not regression output"
+ },
+ {
+  "id": "factor:talent",
+  "name": "Talent (latent skill as perceived by scouts)",
+  "description": "Underlying driving ability, racecraft and feedback. Acts mostly through results and through being spotted by development programs; matters most where cars are spec/cheap and money cannot buy pace (youth, spec ladders) and where programs scout (TRD rates drivers relative to equipment and field strength).",
+  "weight_by_level": {
+   "0": {
+    "min": 0.098,
+    "max": 0.203,
+    "mid": 0.15,
+    "sources": [],
+    "notes": null
+   },
+   "1": {
+    "min": 0.098,
+    "max": 0.203,
+    "mid": 0.15,
+    "sources": [],
+    "notes": null
+   },
+   "2": {
+    "min": 0.091,
+    "max": 0.189,
+    "mid": 0.14,
+    "sources": [],
+    "notes": null
+   },
+   "3": {
+    "min": 0.078,
+    "max": 0.162,
+    "mid": 0.12,
+    "sources": [],
+    "notes": null
+   },
+   "4": {
+    "min": 0.065,
+    "max": 0.135,
+    "mid": 0.1,
+    "sources": [],
+    "notes": null
+   },
+   "5": {
+    "min": 0.046,
+    "max": 0.095,
+    "mid": 0.07,
+    "sources": [],
+    "notes": null
+   },
+   "6": {
+    "min": 0.052,
+    "max": 0.108,
+    "mid": 0.08,
+    "sources": [],
+    "notes": null
+   },
+   "7": {
+    "min": 0.052,
+    "max": 0.108,
+    "mid": 0.08,
+    "sources": [],
+    "notes": null
+   }
+  },
+  "evidence": [
+   "TRD scouts hundreds of races and rates drivers 1-10 on ability relative to equipment and field strength [src:frontofficesports-trd-2018]",
+   "Kyle Busch (2023): talented short-trackers (Bubba Pollard, Scott Hansen, Mike Rowe) never reached NASCAR for lack of money - talent is necessary, not sufficient [src:speedsport-kbusch-money-game-2023]",
+   "Indy Lights within-team ICC of results ~-0.004 and USF2000 0.183: in spec ladders driver differences dominate results, so talent shows through [src:racingsim-history-analysis]"
+  ],
+  "confidence": "medium",
+  "sources": [
+   "src:frontofficesports-trd-2018",
+   "src:speedsport-kbusch-money-game-2023",
+   "src:racingsim-history-analysis"
+  ],
+  "game_notes": "Use talent as the generator of results; give scouts a noisy read of talent adjusted for equipment (TRD-style).",
+  "weight_semantics": "share of the advancement/retention decision at that tier; 'mid' sums to 1.0 across all 15 factors per tier; min/max = mid -/+ 25% (high), 35% (medium), 50% (low confidence); calibrated judgement anchored on computed_evidence.json, not regression output"
+ },
+ {
+  "id": "factor:team-funding",
+  "name": "Team / owner funding of the seat",
+  "description": "Seats paid by the team (owner's money, team-level sponsors, charter/TV income, manufacturer money). Rare below Cup/IndyCar; at premier level the best seats are team-funded and pay salaries.",
+  "weight_by_level": {
+   "0": {
+    "min": 0.007,
+    "max": 0.014,
+    "mid": 0.01,
+    "sources": [],
+    "notes": null
+   },
+   "1": {
+    "min": 0.007,
+    "max": 0.014,
+    "mid": 0.01,
+    "sources": [],
+    "notes": null
+   },
+   "2": {
+    "min": 0.013,
+    "max": 0.027,
+    "mid": 0.02,
+    "sources": [],
+    "notes": null
+   },
+   "3": {
+    "min": 0.013,
+    "max": 0.027,
+    "mid": 0.02,
+    "sources": [],
+    "notes": null
+   },
+   "4": {
+    "min": 0.013,
+    "max": 0.027,
+    "mid": 0.02,
+    "sources": [],
+    "notes": null
+   },
+   "5": {
+    "min": 0.019,
+    "max": 0.041,
+    "mid": 0.03,
+    "sources": [],
+    "notes": null
+   },
+   "6": {
+    "min": 0.033,
+    "max": 0.068,
+    "mid": 0.05,
+    "sources": [],
+    "notes": null
+   },
+   "7": {
+    "min": 0.052,
+    "max": 0.108,
+    "mid": 0.08,
+    "sources": [],
+    "notes": null
+   }
+  },
+  "evidence": [
+   "Cup charter income: base ~$185k/event, average ~$330k/race; per-car revenue $8.2-43M but average owner loss ~$2.2M/car (2024) [src:charter-trial-2025]",
+   "IndyCar Leaders Circle $910k per entry (2023) [src:racer-leaders-circle-2023]",
+   "Truck teams got ~0.5% of team TV money (2014) - lower-series seats must be funded by drivers/sponsors [src:jeffgluck-tjmartins-2017]",
+   "Kyle Busch: Hendrick funding Larson is a rare exception to sponsor-driven seats [src:speedsport-kbusch-money-game-2023]"
+  ],
+  "confidence": "medium",
+  "sources": [
+   "src:charter-trial-2025",
+   "src:racer-leaders-circle-2023",
+   "src:jeffgluck-tjmartins-2017",
+   "src:speedsport-kbusch-money-game-2023"
+  ],
+  "weight_semantics": "share of the advancement/retention decision at that tier; 'mid' sums to 1.0 across all 15 factors per tier; min/max = mid -/+ 25% (high), 35% (medium), 50% (low confidence); calibrated judgement anchored on computed_evidence.json, not regression output"
+ }
+]

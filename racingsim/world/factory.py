@@ -144,8 +144,7 @@ def make_teams_for_series(world: "World", series: "Series") -> list[Team]:
                 mfr = rng.choice(eligible).id
                 if q > 0.75:
                     owner_type = "factory" if tpl.discipline == "sports_car" else "pro"
-        sel = dict(tpl.selection) if tpl.selection else {
-            "performance": 0.45, "potential": 0.15, "money": 0.3, "marketability": 0.1}
+        sel, conn_w = base_selection(tpl)
         # The less a team raises itself, the more it must hire for money (pay drivers).
         sel["money"] = sel.get("money", 0.3) + max(0.0, 1 - funding_ratio) * 0.15
         sel["performance"] = sel.get("performance", 0.45) + max(0.0, funding_ratio - 0.8) * 0.2
@@ -165,6 +164,7 @@ def make_teams_for_series(world: "World", series: "Series") -> list[Team]:
             w_potential=sel.get("potential", 0.15) / total,
             w_money=sel["money"] / total,
             w_marketability=sel.get("marketability", 0.1) / total,
+            w_connections=conn_w,
             reputation=clamp(20 + 70 * q),
         )
         out.append(team)
@@ -221,3 +221,18 @@ def make_sponsors(world: "World", scale: float = 1.0) -> list[Sponsor]:
             budget=lognormal_money(rng, 1_200_000, 0.9), min_tier=4, max_tier=7,
             loyalty=rng.uniform(0.2, 0.7)))
     return out
+
+
+DEFAULT_SELECTION = {"performance": 0.45, "potential": 0.15, "money": 0.3, "marketability": 0.1}
+
+
+def base_selection(tpl) -> tuple[dict, float]:
+    """What owners in this series weigh: research weights for the tier (knowledge layer), blended
+    50/50 with any series-specific rule in data/series.json. Returns (weights, connection weight)."""
+    from ..knowledge.weights import selection_weights
+    research = selection_weights(tpl.tier)
+    conn_w = 0.6 * (research["connections"] if research else 1.0)
+    base = {k: research[k] for k in DEFAULT_SELECTION} if research else dict(DEFAULT_SELECTION)
+    if tpl.selection:
+        base = {k: 0.5 * base.get(k, 0) + 0.5 * tpl.selection.get(k, DEFAULT_SELECTION[k]) for k in DEFAULT_SELECTION}
+    return base, conn_w

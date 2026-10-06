@@ -1,1 +1,317 @@
-[]
+[
+ {
+  "id": "body:accus-fia",
+  "name": "ACCUS (FIA national sporting authority for the USA)",
+  "abbrev": "ACCUS",
+  "country": "USA",
+  "founded": 1957,
+  "defunct": null,
+  "website": null,
+  "scope": "national ASN liaison to the FIA",
+  "notes": "Formed 1957; members IMSA, IndyCar, NASCAR, NHRA, SCCA, USAC. Issues FIA international licences: grade A (<=1 kg/hp cars), B (1-2 kg/hp; age 18+ and ~10 sanctioned races in 2 yrs), C (2-3 kg/hp), D (>3 kg/hp, club/bronze international series). Co-sanctions F4 U.S. and FR Americas for FIA status (super licence points).",
+  "confidence": "high",
+  "sources": [
+   "src:wiki-accus",
+   "src:imsa-fia-license-pdfs",
+   "src:wiki-f4-us"
+  ]
+ },
+ {
+  "id": "body:andersen-promotions",
+  "name": "Andersen Promotions (USF Pro Championships)",
+  "abbrev": "AP",
+  "country": "USA",
+  "founded": 2010,
+  "defunct": null,
+  "website": "https://www.usfpro2000.com",
+  "scope": "national promoter/owner of the USF Pro Championships ladder (USF Juniors, USF2000, USF Pro 2000)",
+  "notes": "Dan Andersen co-founded US F2000 in 1990 and revived it in 2010; took over Star Mazda (renamed Pro Mazda) in Dec 2012. Series are USAC-sanctioned and owned/managed by Andersen Promotions. Ladder formerly branded Road to Indy / Mazda Road to Indy. >USD 29M in scholarships awarded since inception.",
+  "confidence": "high",
+  "sources": [
+   "src:wiki-usf-pro-championships",
+   "src:wiki-usf2000",
+   "src:usfpro2000-series",
+   "src:racer-usf-2025-scholarships"
+  ]
+ },
+ {
+  "id": "body:cart-champcar",
+  "name": "Championship Auto Racing Teams / Champ Car (OWRS)",
+  "abbrev": "CART",
+  "country": "USA",
+  "founded": 1978,
+  "defunct": 2008,
+  "website": null,
+  "scope": "national/international top-level open wheel (historic)",
+  "notes": "Team-owner-run body formed Nov 1978 after split from USAC; sanctioned 1979-2003; Champ Car World Series (Open Wheel Racing Series) 2004-2007; merged into IRL/IndyCar 22 Feb 2008. Ran Indy Lights (to 2001) and used Atlantic as feeder (2002-2008).",
+  "confidence": "high",
+  "sources": [
+   "src:wiki-cart",
+   "src:wiki-atlantic"
+  ]
+ },
+ {
+  "id": "body:fia",
+  "name": "Federation Internationale de l'Automobile",
+  "abbrev": "FIA",
+  "country": "International",
+  "founded": 1904,
+  "defunct": null,
+  "website": "https://www.fia.com",
+  "scope": "international",
+  "notes": "Owns the Driver Categorisation (Platinum/Gold/Silver/Bronze) used by IMSA, SRO and one-make cups to define pro-am lineups; FIA F4/Formula Regional/F3/F2 ladder; super licence points system.",
+  "confidence": "high",
+  "sources": [
+   "src:wiki-fia-categorisation"
+  ]
+ },
+ {
+  "id": "body:grand-am",
+  "name": "Grand American Road Racing Association",
+  "abbrev": "Grand-Am",
+  "country": "USA",
+  "founded": 1999,
+  "defunct": 2013,
+  "website": null,
+  "scope": "national pro sports-car (historic)",
+  "notes": "NASCAR-affiliated sanctioning body of the Rolex Sports Car Series (2000-2013) and Grand-Am Cup/KONI/Continental Tire Challenge; merged with IMSA/ALMS for 2014.",
+  "confidence": "medium",
+  "sources": [
+   "src:wiki-alms-grandam",
+   "src:wiki-pilot-challenge-history",
+   "src:wiki-imsa-body"
+  ]
+ },
+ {
+  "id": "body:ikf",
+  "name": "International Kart Federation",
+  "abbrev": "IKF",
+  "country": "USA",
+  "founded": 1957,
+  "defunct": null,
+  "website": "https://www.ikfkarting.com",
+  "scope": "national (historically west-coast) karting",
+  "notes": "First US karting organisation (California, rules published Nov 1957); Grand Nationals; allied with SKUSA in 2018.",
+  "confidence": "high",
+  "sources": [
+   "src:wiki-ikf",
+   "src:wka-history"
+  ]
+ },
+ {
+  "id": "body:imsa",
+  "name": "International Motor Sports Association",
+  "abbrev": "IMSA",
+  "country": "USA",
+  "founded": 1969,
+  "defunct": null,
+  "website": "https://www.imsa.com",
+  "scope": "national pro sports-car sanctioning body",
+  "notes": "Founded 1969 by John and Peggy Bishop with Bill France Sr. financing; merged with Grand-Am (Sept 2012, effective 2014); owned by NASCAR Holdings. Sanctions WeatherTech SportsCar Championship, Michelin Pilot Challenge, VP Racing SportsCar Challenge, Mazda MX-5 Cup, Porsche Carrera Cup NA, Lamborghini Super Trofeo NA and Ferrari Challenge NA. IMSA driver membership minimum age 17 (15 for MX-5 Cup), reducible by one year at IMSA discretion.",
+  "confidence": "high",
+  "sources": [
+   "src:wiki-imsa-body",
+   "src:wiki-imsa-sportscar",
+   "src:imsa-sporting-regs-2025"
+  ]
+ },
+ {
+  "id": "body:indycar",
+  "name": "INDYCAR LLC (IndyCar / Indy Racing League)",
+  "abbrev": "INDYCAR",
+  "country": "USA",
+  "founded": 1996,
+  "defunct": null,
+  "website": "https://www.indycar.com",
+  "scope": "national (top-level open wheel); sanctions IndyCar Series and Indy NXT",
+  "notes": "Created by IMS owner Tony George as Indy Racing League (first season 1996) to rival CART; absorbed Champ Car in Feb 2008; owned by Penske Entertainment since 2020. Self-sanctions IndyCar and Indy NXT; issues IndyCar licences (new objective licensing criteria from 2027).",
+  "confidence": "high",
+  "sources": [
+   "src:wiki-indycar-series",
+   "src:wiki-cart",
+   "src:motorsport-indycar-licensing-2027"
+  ]
+ },
+ {
+  "id": "body:nasa",
+  "name": "National Auto Sport Association",
+  "abbrev": "NASA",
+  "country": "USA",
+  "founded": 1991,
+  "defunct": null,
+  "website": "https://drivenasa.com",
+  "scope": "national amateur club racing via regional chapters; HPDE, time trial, wheel-to-wheel racing",
+  "notes": "Founded 1991 around track days; HPDE groups 1-4 lead to a competition licence; National Championships since 2006 (Daytona since 2021). Popular classes Spec Miata, Spec E30, 944 Spec. Membership ~USD 45/yr.",
+  "confidence": "high",
+  "sources": [
+   "src:wiki-nasa"
+  ]
+ },
+ {
+  "id": "body:parella-speedtour",
+  "name": "Parella Motorsports Holdings / SpeedTour (Racing America)",
+  "abbrev": "PMH",
+  "country": "USA",
+  "founded": null,
+  "defunct": null,
+  "website": "https://speedtour.net",
+  "scope": "national promoter (vintage, Trans Am, junior formula)",
+  "notes": "Owns SVRA, Trans Am, FR Americas, F4 U.S., Ligier Junior Formula Championship and IGT; SpeedTour festivals; acquired Racing America Dec 2025 and rebranded under that name.",
+  "confidence": "medium",
+  "sources": [
+   "src:racingamerica-pmh"
+  ]
+ },
+ {
+  "id": "body:rok-cup-usa",
+  "name": "ROK Cup USA (Vortex ROK promoter)",
+  "abbrev": "ROK Cup USA",
+  "country": "USA",
+  "founded": null,
+  "defunct": null,
+  "website": "https://rokcupusa.com",
+  "scope": "national one-engine karting promoter",
+  "notes": "Promotes Florida Winter Tour, ROK Cup national events and qualifiers for ROK Vegas and the ROK Superfinal (Italy). Founding year not verified.",
+  "confidence": "medium",
+  "sources": [
+   "src:rokcupusa-fwt"
+  ]
+ },
+ {
+  "id": "body:scca",
+  "name": "Sports Car Club of America",
+  "abbrev": "SCCA",
+  "country": "USA",
+  "founded": 1944,
+  "defunct": null,
+  "website": "https://www.scca.com",
+  "scope": "national amateur club racing (regional, Majors/Super Tour, Runoffs), autocross, rally; pro arm SCCA Pro Racing",
+  "notes": "Largest US amateur road-racing club. Licensing ladder: Novice Permit (age 14+) -> driver school credit + 3 successful regional weekends -> Full Competition License (required for Majors/Super Tour/Runoffs). Created Trans-Am (1966). SCCA Enterprises builds spec cars (Spec Racer Ford, FE2). ACCUS member club.",
+  "confidence": "high",
+  "sources": [
+   "src:scca-i-want-to-road-race",
+   "src:wiki-scca-runoffs",
+   "src:wiki-transam",
+   "src:wiki-spec-racer-ford",
+   "src:wiki-accus"
+  ]
+ },
+ {
+  "id": "body:scca-pro-racing",
+  "name": "SCCA Pro Racing",
+  "abbrev": "SCCA Pro",
+  "country": "USA",
+  "founded": 1963,
+  "defunct": null,
+  "website": "https://www.sccaproracing.com",
+  "scope": "national pro sanctioning arm of SCCA",
+  "notes": "Formed 1963; sanctioned Trans-Am 1966-2006, World Challenge (1990-2010s), the Atlantic Championship revival (2012-), F1600/F2000 Championship Series; today sanctions F4 U.S. and Formula Regional Americas (with ACCUS for FIA status).",
+  "confidence": "high",
+  "sources": [
+   "src:wiki-scca-pro-racing",
+   "src:wiki-f4-us",
+   "src:wiki-fr-americas",
+   "src:wiki-f1600-series"
+  ]
+ },
+ {
+  "id": "body:skip-barber",
+  "name": "Skip Barber Racing School",
+  "abbrev": "Skip Barber",
+  "country": "USA",
+  "founded": 1975,
+  "defunct": null,
+  "website": "https://www.skipbarber.com",
+  "scope": "national racing school and entry-level series promoter",
+  "notes": "Founded 1975, 400k+ students; Barber (Dodge) Pro Series 1986-2003; Skip Barber Formula Race Series continues; also runs arrive-and-drive programs (incl. a 2024 Pilot Challenge program).",
+  "confidence": "medium",
+  "sources": [
+   "src:skipbarber-wiki"
+  ]
+ },
+ {
+  "id": "body:skusa",
+  "name": "Superkarts! USA",
+  "abbrev": "SKUSA",
+  "country": "USA",
+  "founded": null,
+  "defunct": null,
+  "website": "https://www.superkartsusa.com",
+  "scope": "national sprint karting (Pro Tour, Winter Series, SuperNationals)",
+  "notes": "Runs the SuperNationals in Las Vegas since Nov 1997 (largest NA karting event, 400+ drivers) and the national Pro Tour; membership USD 150 initial/100 renewal. Alliance with IKF (2018). Founding year not verified (pre-1997).",
+  "confidence": "medium",
+  "sources": [
+   "src:wiki-skusa-supernationals",
+   "src:skusa-pricing-2026",
+   "src:wiki-ikf"
+  ]
+ },
+ {
+  "id": "body:sro-america",
+  "name": "SRO Motorsports America",
+  "abbrev": "SRO America",
+  "country": "USA",
+  "founded": 2018,
+  "defunct": null,
+  "website": "https://www.gt-world-challenge-america.com",
+  "scope": "national pro/pro-am GT and touring promoter (USAC-sanctioned)",
+  "notes": "Stephane Ratel Organisation took majority ownership of World Challenge in May 2018; runs GT World Challenge America, GT4 America, GT America, TC America, McLaren Trophy America and promotes Toyota GR Cup on its weekends. Classes use FIA driver categorisation (Pro/Pro-Am/Am, Silver).",
+  "confidence": "high",
+  "sources": [
+   "src:wiki-gtwc-america",
+   "src:wiki-tc-america",
+   "src:gt4america-explainer",
+   "src:slashgear-grcup"
+  ]
+ },
+ {
+  "id": "body:usac",
+  "name": "United States Auto Club",
+  "abbrev": "USAC",
+  "country": "USA",
+  "founded": 1955,
+  "defunct": null,
+  "website": "https://www.usacracing.com",
+  "scope": "national; oval midget/sprint/Silver Crown plus sanctioning of road-racing series run by promoters",
+  "notes": "Sanctioned Indy/Champ cars until CART split (1979); ran the professional USAC Road Racing Championship 1958-1962; today sanctions the USF Pro Championships, SRO America series (GT World Challenge America, GT4 America, TC America; since 2017) and Porsche Sprint Challenge NA. ACCUS member club.",
+  "confidence": "high",
+  "sources": [
+   "src:wiki-usac-road-racing",
+   "src:wiki-usf-pro-championships",
+   "src:wiki-gtwc-america",
+   "src:wiki-porsche-sprint-challenge",
+   "src:wiki-accus"
+  ]
+ },
+ {
+  "id": "body:uspks",
+  "name": "United States Pro Kart Series",
+  "abbrev": "USPKS",
+  "country": "USA",
+  "founded": 2013,
+  "defunct": null,
+  "website": "https://www.uspks.com",
+  "scope": "national karting promoter (east/midwest)",
+  "notes": "Founded 2013 by Mark Coats; inaugural event Mooresville NC.",
+  "confidence": "high",
+  "sources": [
+   "src:uspks-home"
+  ]
+ },
+ {
+  "id": "body:wka",
+  "name": "World Karting Association",
+  "abbrev": "WKA",
+  "country": "USA",
+  "founded": 1971,
+  "defunct": null,
+  "website": "https://www.worldkarting.com",
+  "scope": "national karting (sprint, road-race/enduro, dirt/speedway)",
+  "notes": "Founded 1971 (Kugler family) as east-coast alternative to IKF; based in Concord NC behind Charlotte Motor Speedway; 50k+ members since founding; Manufacturers Cup national sprint series. F4 U.S. Karting Alliance partner.",
+  "confidence": "high",
+  "sources": [
+   "src:wka-history",
+   "src:f4us-getting-started"
+  ]
+ }
+]

@@ -12,5 +12,68 @@
   "reason": "robots.txt 'User-agent: * Disallow: /' (only Google/Bing allowed, API path /w/ disallowed for all); not scraped",
   "checked": "2026-10-06",
   "replacement_source": "Wikipedia/Wikidata short-track and touring-series articles, official series and track websites, OpenStreetMap/Wikidata for venues"
+ },
+ {
+  "source": "racing-reference.info",
+  "url": "https://www.racing-reference.info/",
+  "reason": "Cloudflare challenge / scripted access not allowed (project rule)",
+  "checked": "2026-10-06",
+  "replacement_source": "src:racingsim-history-analysis (repo season files built from Wikipedia/Wikidata)"
+ },
+ {
+  "source": "thethirdturn.com",
+  "url": "https://www.thethirdturn.com/",
+  "reason": "robots.txt Disallow: / (project rule)",
+  "checked": "2026-10-06",
+  "replacement_source": "src:racingsim-history-analysis; touring-series results gathered by sibling agents in ../touring/"
+ },
+ {
+  "source": "racer.com",
+  "url": "https://racer.com/2025/02/25/why-do-indycar-team-budgets-keep-climbing",
+  "reason": "HTTP 429 Too Many Requests on two fetches (2025-02-25 budgets article; 2026-09-11 licensing article); stopped using",
+  "checked": "2026-10-06",
+  "replacement_source": "search-result snippets only (src:racer-leaders-circle-2023, src:racer-miller-payday-2018); src:usopenwheelnation-indynxt-costs-2025"
+ },
+ {
+  "source": "forbes.com",
+  "url": "https://www.forbes.com/sites/gregengle/2025/10/29/nascar-charter-documents-reveal-how-much-teams-actually-get-paid-per-race/",
+  "reason": "HTTP 403 Forbidden",
+  "checked": "2026-10-06",
+  "replacement_source": "src:charter-trial-2025 (ESPN/Jayski/FOX summaries of the same court documents)"
+ },
+ {
+  "source": "nascar.com gallery pages",
+  "url": "https://www.nascar.com/gallery/drivers-who-missed-time-due-to-injury/",
+  "reason": "HTTP 403 Forbidden",
+  "checked": "2026-10-06",
+  "replacement_source": "src:nascar-injury-history (search snippets), src:kurt-busch-retirement-2023"
+ },
+ {
+  "source": "seriouslyfastmotorsports.com",
+  "url": "https://seriouslyfastmotorsports.com/2025/11/06/the-broken-ladder-how-arcas-financial-model-exploits-underfunded-drivers/",
+  "reason": "HTTP 404 on fetch (article moved or removed)",
+  "checked": "2026-10-06",
+  "replacement_source": "src:speedwayactionimages-arca-2025, src:arca-awards-guide-2023"
+ },
+ {
+  "source": "src:racing-reference",
+  "url": "https://www.racing-reference.info/",
+  "reason": "Excluded by project rules (Cloudflare block / robots.txt Disallow: /); not fetched. Appeared only in search result lists.",
+  "checked": "2026-10-06",
+  "replacement_source": "src:wiki-alms-grandam; src:racingsim-history-analysis"
+ },
+ {
+  "source": "src:thethirdturn",
+  "url": "https://www.thethirdturn.com/",
+  "reason": "Excluded by project rules (robots.txt Disallow: /); pages for USF2000, Star Mazda, Formula BMW USA, Pilot Challenge and Prototype Challenge appeared in search results but were not fetched.",
+  "checked": "2026-10-06",
+  "replacement_source": "src:wiki-usf2000; src:mazda-star-mazda-history; src:wiki-formula-bmw-usa; src:wiki-pilot-challenge-history; src:wiki-imsa-prototype-challenge"
+ },
+ {
+  "source": "src:racer-indycar-budgets-2025",
+  "url": "https://racer.com/2025/02/25/why-do-indycar-team-budgets-keep-climbing",
+  "reason": "HTTP 429 Too Many Requests on direct fetch; stopped using racer.com for direct fetches, used search-result snippets only.",
+  "checked": "2026-10-06",
+  "replacement_source": "src:medium-indycar-economics; src:racer-leaders-circle-2025 (snippets)"
  }
 ]

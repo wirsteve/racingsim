@@ -1,1 +1,5369 @@
-[]
+[
+ {
+  "id": "series:alms",
+  "name": "American Le Mans Series (historic)",
+  "names_by_year": [],
+  "sanctioning_body": "body:imsa",
+  "discipline": "sports_car",
+  "car_class": null,
+  "level": "premier",
+  "game_tier": 7,
+  "scope": "national",
+  "regions": [
+   "USA",
+   "CAN"
+  ],
+  "years": {
+   "from": 1999,
+   "to": 2013
+  },
+  "typical_age": null,
+  "entry_age": null,
+  "exit_age": null,
+  "experience_level": null,
+  "race_length": null,
+  "track_types": [
+   "road_course",
+   "street"
+  ],
+  "field_size": null,
+  "season_events": null,
+  "annual_cost_usd": null,
+  "seat_cost_usd": null,
+  "win_purse_usd": null,
+  "points_fund_usd": null,
+  "scholarship_usd": null,
+  "team_structure": null,
+  "equipment_ownership": null,
+  "licensing": null,
+  "prerequisites": null,
+  "feeder_series": [],
+  "next_steps": [
+   "series:imsa-weathertech"
+  ],
+  "advancement_rate": null,
+  "advancement_drivers": null,
+  "dead_ends": null,
+  "notes": "High-tech LMP/GT series (Panoz); Star Mazda ran as support from 1999.",
+  "confidence": "medium",
+  "sources": [
+   "src:wiki-alms-grandam",
+   "src:mazda-star-mazda-history"
+  ],
+  "game_template": "prototype_endurance",
+  "history_source": null
+ },
+ {
+  "id": "series:atlantic-championship",
+  "name": "Atlantic Championship (Toyota Atlantic / Champ Car Atlantic)",
+  "names_by_year": [
+   {
+    "from": 1974,
+    "to": 1988,
+    "name": "Formula Atlantic / Atlantic Championship (various sponsors)"
+   },
+   {
+    "from": 1989,
+    "to": 2005,
+    "name": "Toyota Atlantic Championship"
+   },
+   {
+    "from": 2006,
+    "to": 2008,
+    "name": "Champ Car Atlantic Championship"
+   },
+   {
+    "from": 2009,
+    "to": 2009,
+    "name": "Atlantic Championship (IMSA)"
+   },
+   {
+    "from": 2012,
+    "to": null,
+    "name": "Atlantic Championship (amateur revival, FRP/SCCA Pro)"
+   }
+  ],
+  "sanctioning_body": "body:cart-champcar",
+  "discipline": "open_wheel",
+  "car_class": "class:formula-atlantic",
+  "level": "national",
+  "game_tier": 4,
+  "scope": "national",
+  "regions": [
+   "USA",
+   "CAN"
+  ],
+  "years": {
+   "from": 1974,
+   "to": 2009
+  },
+  "typical_age": {
+   "min": 18,
+   "max": 27,
+   "unit": "years",
+   "confidence": "low",
+   "sources": [
+    "src:wiki-allmendinger",
+    "src:wiki-danica",
+    "src:wiki-atlantic"
+   ],
+   "notes": "champions incl. Allmendinger (~21), Pagenaud (22), Edwards (youngest, 2009)"
+  },
+  "entry_age": null,
+  "exit_age": null,
+  "experience_level": "national pro feeder",
+  "race_length": null,
+  "track_types": [
+   "road_course",
+   "street",
+   "short_oval"
+  ],
+  "field_size": {
+   "min": 15,
+   "max": 30,
+   "unit": "drivers per season",
+   "confidence": "medium",
+   "sources": [
+    "src:wiki-atlantic-2007"
+   ],
+   "notes": "~30 in 2007 after cost cuts"
+  },
+  "season_events": null,
+  "annual_cost_usd": {
+   "min": 500000,
+   "max": 600000,
+   "unit": "USD/season",
+   "year_basis": 2007,
+   "confidence": "medium",
+   "sources": [
+    "src:wiki-atlantic-2007"
+   ],
+   "notes": "2006-07 spec Swift/Mazda-Cosworth formula"
+  },
+  "seat_cost_usd": null,
+  "win_purse_usd": null,
+  "points_fund_usd": null,
+  "scholarship_usd": {
+   "value": 2000000,
+   "unit": "USD prize (2007, champion to Champ Car)",
+   "confidence": "medium",
+   "sources": [
+    "src:wiki-atlantic-2007"
+   ]
+  },
+  "team_structure": "teams",
+  "equipment_ownership": "team-owned; paid seats",
+  "licensing": null,
+  "prerequisites": null,
+  "feeder_series": [
+   "series:barber-dodge-pro",
+   "series:formula-bmw-usa",
+   "series:usf2000",
+   "series:usf-pro-2000"
+  ],
+  "next_steps": [
+   "series:cart-champcar",
+   "series:indy-nxt",
+   "series:indycar"
+  ],
+  "advancement_rate": null,
+  "advancement_drivers": {
+   "talent": 0.4,
+   "money": 0.35,
+   "connections": 0.15,
+   "sponsorship": 0.1,
+   "confidence": "low",
+   "notes": "informed estimate of relative weights (sum 1.0) from series economics and documented examples"
+  },
+  "dead_ends": "Lost its role when Champ Car merged into IndyCar (2008); folded after 2009 as a pro series.",
+  "notes": "Second rung below Indy Lights in CART era; sole Champ Car feeder 2002-2008. Patrick (2003-04), Allmendinger (2003 champ), Pagenaud (2006 champ).",
+  "confidence": "medium",
+  "sources": [
+   "src:wiki-atlantic",
+   "src:wiki-atlantic-2007",
+   "src:wiki-allmendinger",
+   "src:wiki-danica"
+  ],
+  "game_template": "formula_pro",
+  "history_source": null
+ },
+ {
+  "id": "series:barber-dodge-pro",
+  "name": "Barber Dodge Pro Series (historic)",
+  "names_by_year": [
+   {
+    "from": 1986,
+    "to": 2003,
+    "name": "Barber Saab / Barber Dodge Pro Series"
+   }
+  ],
+  "sanctioning_body": "body:skip-barber",
+  "discipline": "open_wheel",
+  "car_class": null,
+  "level": "national",
+  "game_tier": 3,
+  "scope": "national",
+  "regions": [
+   "USA"
+  ],
+  "years": {
+   "from": 1986,
+   "to": 2003
+  },
+  "typical_age": {
+   "min": 18,
+   "max": 26,
+   "unit": "years",
+   "confidence": "low",
+   "sources": [
+    "src:wiki-allmendinger"
+   ],
+   "notes": "Allmendinger champion at ~20"
+  },
+  "entry_age": null,
+  "exit_age": null,
+  "experience_level": "pro-am spec series",
+  "race_length": null,
+  "track_types": [
+   "road_course",
+   "street"
+  ],
+  "field_size": null,
+  "season_events": null,
+  "annual_cost_usd": null,
+  "seat_cost_usd": null,
+  "win_purse_usd": null,
+  "points_fund_usd": null,
+  "scholarship_usd": null,
+  "team_structure": "promoter-owned spec cars",
+  "equipment_ownership": "series-owned",
+  "licensing": null,
+  "prerequisites": null,
+  "feeder_series": [
+   "series:skip-barber-formula"
+  ],
+  "next_steps": [
+   "series:atlantic-championship",
+   "series:indy-nxt"
+  ],
+  "advancement_rate": null,
+  "advancement_drivers": {
+   "talent": 0.5,
+   "money": 0.3,
+   "connections": 0.2,
+   "confidence": "low",
+   "notes": "informed estimate of relative weights (sum 1.0) from series economics and documented examples"
+  },
+  "dead_ends": null,
+  "notes": "One of the first pro spec open-wheel series in NA; 2002 champion Allmendinger went to Toyota Atlantic (2003 champion) then Champ Car.",
+  "confidence": "medium",
+  "sources": [
+   "src:skipbarber-wiki",
+   "src:wiki-allmendinger"
+  ],
+  "game_template": "formula_2000",
+  "history_source": null
+ },
+ {
+  "id": "series:cart-champcar",
+  "name": "CART / Champ Car World Series (historic)",
+  "names_by_year": [
+   {
+    "from": 1979,
+    "to": 1996,
+    "name": "CART Indy Car World Series (PPG)"
+   },
+   {
+    "from": 1997,
+    "to": 1997,
+    "name": "CART PPG World Series"
+   },
+   {
+    "from": 1998,
+    "to": 2002,
+    "name": "CART FedEx Championship Series"
+   },
+   {
+    "from": 2003,
+    "to": 2007,
+    "name": "Champ Car World Series"
+   }
+  ],
+  "sanctioning_body": "body:cart-champcar",
+  "discipline": "open_wheel",
+  "car_class": null,
+  "level": "premier",
+  "game_tier": 7,
+  "scope": "international",
+  "regions": [
+   "USA",
+   "CAN",
+   "MEX",
+   "AUS",
+   "JPN",
+   "BRA",
+   "EUR"
+  ],
+  "years": {
+   "from": 1979,
+   "to": 2007
+  },
+  "typical_age": {
+   "min": 24,
+   "max": 38,
+   "unit": "years",
+   "confidence": "high",
+   "sources": [
+    "src:racingsim-history-analysis"
+   ],
+   "notes": "1995-2007 full-timers median 29, p10 24, p90 38"
+  },
+  "entry_age": null,
+  "exit_age": null,
+  "experience_level": "premier professional",
+  "race_length": null,
+  "track_types": [
+   "road_course",
+   "street",
+   "superspeedway",
+   "short_oval"
+  ],
+  "field_size": {
+   "min": 17,
+   "max": 28,
+   "unit": "cars per race",
+   "confidence": "medium",
+   "sources": [
+    "src:racingsim-history-analysis"
+   ],
+   "notes": "standings rows 22-54 (1995-2007), shrinking late Champ Car"
+  },
+  "season_events": null,
+  "annual_cost_usd": null,
+  "seat_cost_usd": null,
+  "win_purse_usd": null,
+  "points_fund_usd": null,
+  "scholarship_usd": null,
+  "team_structure": "team-owner-run series",
+  "equipment_ownership": "team-owned",
+  "licensing": null,
+  "prerequisites": null,
+  "feeder_series": [
+   "series:indy-nxt",
+   "series:atlantic-championship",
+   "series:european-fia-ladder"
+  ],
+  "next_steps": [
+   "series:indycar",
+   "series:nascar-cup",
+   "series:imsa-weathertech"
+  ],
+  "advancement_rate": null,
+  "advancement_drivers": {
+   "talent": 0.35,
+   "money": 0.3,
+   "sponsorship": 0.2,
+   "connections": 0.15,
+   "confidence": "low",
+   "notes": "informed estimate of relative weights (sum 1.0) from series economics and documented examples"
+  },
+  "dead_ends": null,
+  "notes": "Merged into IndyCar Feb 2008. Allmendinger (Champ Car 2004-06) -> NASCAR 2007; Montoya (CART 1999 champ) -> F1 -> NASCAR -> IndyCar.",
+  "confidence": "high",
+  "sources": [
+   "src:racingsim-history-analysis",
+   "src:wiki-cart",
+   "src:wiki-allmendinger"
+  ],
+  "game_template": "open_wheel_top",
+  "history_source": "cart_champcar"
+ },
+ {
+  "id": "series:club-karting",
+  "name": "Club / local sprint karting (WKA/IKF/SKUSA-affiliated clubs, LO206, TaG)",
+  "names_by_year": [],
+  "sanctioning_body": "body:wka",
+  "discipline": "karting",
+  "car_class": "class:kart-lo206",
+  "level": "local",
+  "game_tier": 0,
+  "scope": "local",
+  "regions": [
+   "USA",
+   "CAN"
+  ],
+  "years": {
+   "from": 1957,
+   "to": null
+  },
+  "typical_age": {
+   "min": 5,
+   "max": 60,
+   "unit": "years",
+   "confidence": "medium",
+   "sources": [
+    "src:skusa-classes-2026",
+    "src:musiccity-lo206"
+   ],
+   "notes": "youth classes from ~5-7 (Kid Kart) up to masters; most aspiring pros start 5-10"
+  },
+  "entry_age": {
+   "min": 5,
+   "max": 10,
+   "unit": "years",
+   "confidence": "medium",
+   "sources": [
+    "src:wiki-kirkwood",
+    "src:wiki-de-phillippi",
+    "src:wiki-kyle-larson"
+   ],
+   "notes": "Kirkwood raced from 5, De Phillippi 5, Larson 7; Newgarden started late at 13"
+  },
+  "exit_age": {
+   "min": 12,
+   "max": 16,
+   "unit": "years",
+   "confidence": "low",
+   "sources": [
+    "src:informed-estimate"
+   ],
+   "notes": "aspiring pros leave club racing for national karting or cars"
+  },
+  "experience_level": "novice to advanced amateur",
+  "race_length": {
+   "min": 8,
+   "max": 20,
+   "unit": "laps per final",
+   "confidence": "low",
+   "sources": [
+    "src:informed-estimate"
+   ],
+   "notes": "typical club sprint heats/finals"
+  },
+  "track_types": [
+   "kart_track"
+  ],
+  "field_size": {
+   "min": 5,
+   "max": 100,
+   "unit": "karts per class",
+   "confidence": "medium",
+   "sources": [
+    "src:musiccity-lo206"
+   ],
+   "notes": "small classes common; LO206 events can exceed 100 karts"
+  },
+  "season_events": {
+   "min": 8,
+   "max": 14,
+   "unit": "race days",
+   "confidence": "low",
+   "sources": [
+    "src:kartpulse-cost"
+   ],
+   "notes": "~12 club races in cost example"
+  },
+  "annual_cost_usd": {
+   "min": 4000,
+   "max": 12000,
+   "unit": "USD/season",
+   "year_basis": 2024,
+   "confidence": "low",
+   "sources": [
+    "src:kartpulse-cost",
+    "src:musiccity-lo206"
+   ],
+   "notes": "owner-driver club racing after equipment purchase; first year ~8k incl. used kart"
+  },
+  "seat_cost_usd": null,
+  "win_purse_usd": null,
+  "points_fund_usd": null,
+  "scholarship_usd": null,
+  "team_structure": "family / owner-driver, optional tent program",
+  "equipment_ownership": "owner-driver (family-owned karts)",
+  "licensing": "club / sanctioning-body membership (WKA, SKUSA ~USD 100-150/yr); age-bracketed classes",
+  "prerequisites": "none",
+  "feeder_series": [],
+  "next_steps": [
+   "series:skusa-pro-tour",
+   "series:wka-national",
+   "series:rok-cup-usa",
+   "series:uspks",
+   "series:skip-barber-formula",
+   "series:scca-regional"
+  ],
+  "advancement_rate": {
+   "min": 0.02,
+   "max": 0.1,
+   "unit": "share of youth club karters reaching national karting",
+   "confidence": "low",
+   "sources": [
+    "src:informed-estimate"
+   ],
+   "notes": "informed estimate"
+  },
+  "advancement_drivers": {
+   "talent": 0.4,
+   "money": 0.4,
+   "connections": 0.1,
+   "sponsorship": 0.1,
+   "confidence": "low",
+   "notes": "informed estimate of relative weights (sum 1.0) from series economics and documented examples"
+  },
+  "dead_ends": "Most club karters remain hobbyists; adult LO206/masters classes are a lifelong amateur end state.",
+  "notes": "Briggs LO206 is the most popular US club class; entries ~USD 45-85.",
+  "confidence": "medium",
+  "sources": [
+   "src:musiccity-lo206",
+   "src:kartpulse-cost",
+   "src:wka-history",
+   "src:skusa-classes-2026"
+  ],
+  "game_template": "youth_karting",
+  "history_source": null
+ },
+ {
+  "id": "series:european-fia-ladder",
+  "name": "European FIA single-seater ladder (FRECA/GB3 -> FIA F3 -> FIA F2), aggregate",
+  "names_by_year": [],
+  "sanctioning_body": "body:fia",
+  "discipline": "open_wheel",
+  "car_class": null,
+  "level": "international",
+  "game_tier": 5,
+  "scope": "international",
+  "regions": [
+   "EUR"
+  ],
+  "years": {
+   "from": 2005,
+   "to": null
+  },
+  "typical_age": {
+   "min": 17,
+   "max": 24,
+   "unit": "years",
+   "confidence": "low",
+   "sources": [
+    "src:informed-estimate"
+   ],
+   "notes": "informed estimate"
+  },
+  "entry_age": null,
+  "exit_age": null,
+  "experience_level": "pro feeder to F1",
+  "race_length": null,
+  "track_types": [],
+  "field_size": null,
+  "season_events": null,
+  "annual_cost_usd": {
+   "min": 1000000,
+   "max": 3000000,
+   "unit": "USD/season",
+   "year_basis": 2024,
+   "confidence": "low",
+   "sources": [
+    "src:formulascout-f3-guide"
+   ],
+   "notes": "F3 seat ~EUR 1M; F2 ~EUR 2.5-3M (some quotes higher)"
+  },
+  "seat_cost_usd": null,
+  "win_purse_usd": null,
+  "points_fund_usd": null,
+  "scholarship_usd": null,
+  "team_structure": null,
+  "equipment_ownership": null,
+  "licensing": null,
+  "prerequisites": null,
+  "feeder_series": [
+   "series:f4-us",
+   "series:skusa-supernationals"
+  ],
+  "next_steps": [
+   "series:indycar",
+   "series:indy-nxt",
+   "series:usf-pro-2000",
+   "series:imsa-weathertech"
+  ],
+  "advancement_rate": null,
+  "advancement_drivers": {
+   "talent": 0.35,
+   "money": 0.4,
+   "connections": 0.15,
+   "manufacturer": 0.1,
+   "confidence": "low",
+   "notes": "informed estimate of relative weights (sum 1.0) from series economics and documented examples"
+  },
+  "dead_ends": null,
+  "notes": "Aggregate placeholder for import routes. F2 alumni in IndyCar: Lundgaard, Armstrong, Ilott, Pourchaire, Ericsson, Ferrucci, Grosjean, Rossi; Herta went to UK F4/Euroformula Open then back to Indy Lights.",
+  "confidence": "low",
+  "sources": [
+   "src:indycar-f2-to-indycar",
+   "src:formulascout-f3-guide",
+   "src:wiki-herta"
+  ],
+  "game_template": "formula_lights",
+  "history_source": null
+ },
+ {
+  "id": "series:f1600-championship",
+  "name": "F1600 Championship Series",
+  "names_by_year": [],
+  "sanctioning_body": "body:scca-pro-racing",
+  "discipline": "open_wheel",
+  "car_class": "class:formula-f1600",
+  "level": "regional",
+  "game_tier": 2,
+  "scope": "regional",
+  "regions": [
+   "USA-East"
+  ],
+  "years": {
+   "from": 2011,
+   "to": null
+  },
+  "typical_age": {
+   "min": 15,
+   "max": 50,
+   "unit": "years",
+   "confidence": "low",
+   "sources": [
+    "src:informed-estimate"
+   ],
+   "notes": "mix of juniors and adult amateurs"
+  },
+  "entry_age": null,
+  "exit_age": null,
+  "experience_level": "semi-pro / pro-am",
+  "race_length": null,
+  "track_types": [
+   "road_course"
+  ],
+  "field_size": null,
+  "season_events": null,
+  "annual_cost_usd": {
+   "min": 50000,
+   "max": 120000,
+   "unit": "USD/season",
+   "confidence": "low",
+   "sources": [
+    "src:informed-estimate"
+   ]
+  },
+  "seat_cost_usd": null,
+  "win_purse_usd": null,
+  "points_fund_usd": null,
+  "scholarship_usd": null,
+  "team_structure": "small teams and owner-drivers",
+  "equipment_ownership": "owner-driver or team",
+  "licensing": "SCCA full competition license",
+  "prerequisites": "SCCA licence",
+  "feeder_series": [
+   "series:scca-regional",
+   "series:club-karting",
+   "series:skip-barber-formula"
+  ],
+  "next_steps": [
+   "series:usf2000",
+   "series:usf-juniors"
+  ],
+  "advancement_rate": null,
+  "advancement_drivers": {
+   "talent": 0.4,
+   "money": 0.4,
+   "connections": 0.1,
+   "sponsorship": 0.1,
+   "confidence": "low",
+   "notes": "informed estimate of relative weights (sum 1.0) from series economics and documented examples"
+  },
+  "dead_ends": null,
+  "notes": "Formula Race Promotions series for Formula F (Kent / Honda Fit); companion F2000 Championship Series; USF2000 accepts 12 F1600 races as qualification.",
+  "confidence": "low",
+  "sources": [
+   "src:wiki-f1600-series",
+   "src:usfjuniors-licensing"
+  ],
+  "game_template": "junior_formula",
+  "history_source": null
+ },
+ {
+  "id": "series:f4-us",
+  "name": "Formula 4 United States Championship",
+  "names_by_year": [
+   {
+    "from": 2016,
+    "to": null,
+    "name": "Formula 4 United States Championship (Powered by Honda)"
+   }
+  ],
+  "sanctioning_body": "body:scca-pro-racing",
+  "discipline": "open_wheel",
+  "car_class": "class:fia-f4",
+  "level": "national",
+  "game_tier": 2,
+  "scope": "national",
+  "regions": [
+   "USA",
+   "CAN"
+  ],
+  "years": {
+   "from": 2016,
+   "to": null
+  },
+  "typical_age": {
+   "min": 15,
+   "max": 19,
+   "unit": "years",
+   "confidence": "low",
+   "sources": [
+    "src:wiki-kirkwood"
+   ],
+   "notes": "FIA F4 min age 15; Kirkwood raced it at 17-18"
+  },
+  "entry_age": {
+   "value": 15,
+   "unit": "years (minimum)",
+   "confidence": "medium",
+   "sources": [
+    "src:ligier-jfc"
+   ]
+  },
+  "exit_age": {
+   "min": 16,
+   "max": 20,
+   "unit": "years",
+   "confidence": "low",
+   "sources": [
+    "src:informed-estimate"
+   ]
+  },
+  "experience_level": "first national car series (FIA F4)",
+  "race_length": {
+   "min": 20,
+   "max": 30,
+   "unit": "minutes",
+   "confidence": "low",
+   "sources": [
+    "src:informed-estimate"
+   ],
+   "notes": "typical F4 sprint length"
+  },
+  "track_types": [
+   "road_course"
+  ],
+  "field_size": {
+   "min": 10,
+   "max": 35,
+   "unit": "drivers per season",
+   "confidence": "medium",
+   "sources": [
+    "src:wiki-f4-us-2025"
+   ],
+   "notes": "~10-13 in 2025, larger earlier (2016-2022)"
+  },
+  "season_events": {
+   "min": 18,
+   "max": 21,
+   "unit": "races",
+   "confidence": "high",
+   "sources": [
+    "src:wiki-f4-us-2025",
+    "src:wiki-scca-pro-racing"
+   ],
+   "notes": "7 rounds x 3 races (2025); 18 races (2026)"
+  },
+  "annual_cost_usd": {
+   "min": 130000,
+   "max": 195000,
+   "unit": "USD/season",
+   "year_basis": 2025,
+   "confidence": "high",
+   "sources": [
+    "src:f4us-getting-started",
+    "src:wiki-f4-us"
+   ],
+   "notes": "official operational estimate; 2016 est. 115k; excludes testing/travel"
+  },
+  "seat_cost_usd": null,
+  "win_purse_usd": null,
+  "points_fund_usd": null,
+  "scholarship_usd": null,
+  "team_structure": "teams",
+  "equipment_ownership": "team-owned cars, family-funded seats",
+  "licensing": "FIA/ACCUS national licence via SCCA Pro Racing; FIA super licence points",
+  "prerequisites": "karting / Ligier JFC",
+  "feeder_series": [
+   "series:skusa-pro-tour",
+   "series:wka-national",
+   "series:ligier-jfc",
+   "series:skusa-supernationals"
+  ],
+  "next_steps": [
+   "series:usf2000",
+   "series:formula-regional-americas",
+   "series:usf-pro-2000",
+   "series:european-fia-ladder"
+  ],
+  "advancement_rate": {
+   "min": 0.2,
+   "max": 0.5,
+   "unit": "share of full-timers moving to a higher open-wheel series within 2 yrs",
+   "confidence": "low",
+   "sources": [
+    "src:informed-estimate"
+   ],
+   "notes": "informed estimate"
+  },
+  "advancement_drivers": {
+   "talent": 0.4,
+   "money": 0.4,
+   "connections": 0.1,
+   "manufacturer": 0.1,
+   "confidence": "low",
+   "notes": "informed estimate; HPD junior program draws from F4/FRA"
+  },
+  "dead_ends": "Small 2024-25 fields; competes with USF Juniors as the bottom rung.",
+  "notes": "Kirkwood: F4 US 2016 3rd, 2017 champion (9 wins) -> USF2000 2018 champion.",
+  "confidence": "medium",
+  "sources": [
+   "src:wiki-f4-us",
+   "src:wiki-f4-us-2025",
+   "src:f4us-getting-started",
+   "src:wiki-kirkwood",
+   "src:hpd-academy"
+  ],
+  "game_template": "junior_formula",
+  "history_source": null
+ },
+ {
+  "id": "series:ferrari-challenge-na",
+  "name": "Ferrari Challenge North America",
+  "names_by_year": [],
+  "sanctioning_body": "body:imsa",
+  "discipline": "sports_car",
+  "car_class": "class:ferrari-296-challenge",
+  "level": "national",
+  "game_tier": 4,
+  "scope": "national",
+  "regions": [
+   "USA",
+   "CAN"
+  ],
+  "years": {
+   "from": null,
+   "to": null
+  },
+  "typical_age": {
+   "min": 30,
+   "max": 70,
+   "unit": "years",
+   "confidence": "low",
+   "sources": [
+    "src:informed-estimate"
+   ]
+  },
+  "entry_age": null,
+  "exit_age": null,
+  "experience_level": "gentleman amateur",
+  "race_length": null,
+  "track_types": [
+   "road_course"
+  ],
+  "field_size": null,
+  "season_events": {
+   "min": 6,
+   "max": 7,
+   "unit": "rounds incl. Finali Mondiali",
+   "confidence": "medium",
+   "sources": [
+    "src:imsa-ferrari-challenge-2025"
+   ]
+  },
+  "annual_cost_usd": {
+   "min": 500000,
+   "max": 1000000,
+   "unit": "USD/season",
+   "confidence": "low",
+   "sources": [
+    "src:manofmany-lambo-ferrari"
+   ],
+   "notes": "turnkey team package ~1M incl. Finali; car ~EUR 390k"
+  },
+  "seat_cost_usd": null,
+  "win_purse_usd": null,
+  "points_fund_usd": null,
+  "scholarship_usd": null,
+  "team_structure": "Ferrari dealer teams",
+  "equipment_ownership": "owner-driver (customer-owned cars)",
+  "licensing": "IMSA licence",
+  "prerequisites": null,
+  "feeder_series": [],
+  "next_steps": [
+   "series:imsa-weathertech",
+   "series:gt-world-challenge-america"
+  ],
+  "advancement_rate": null,
+  "advancement_drivers": {
+   "money": 0.7,
+   "talent": 0.2,
+   "connections": 0.1,
+   "confidence": "low",
+   "notes": "informed estimate of relative weights (sum 1.0) from series economics and documented examples"
+  },
+  "dead_ends": "Mostly an end state for wealthy amateurs; best go to GTD as Bronze drivers.",
+  "notes": "Trofeo Pirelli (+Am) and Coppa Shell (+Am).",
+  "confidence": "low",
+  "sources": [
+   "src:imsa-ferrari-challenge-2025",
+   "src:manofmany-lambo-ferrari"
+  ],
+  "game_template": "one_make_gt_cup",
+  "history_source": null
+ },
+ {
+  "id": "series:florida-winter-tour",
+  "name": "Florida Winter Tour",
+  "names_by_year": [],
+  "sanctioning_body": "body:rok-cup-usa",
+  "discipline": "karting",
+  "car_class": "class:kart-junior-100cc",
+  "level": "national",
+  "game_tier": 2,
+  "scope": "national",
+  "regions": [
+   "USA"
+  ],
+  "years": {
+   "from": 2000,
+   "to": null
+  },
+  "typical_age": {
+   "min": 7,
+   "max": 18,
+   "unit": "years",
+   "confidence": "high",
+   "sources": [
+    "src:skusa-classes-2026",
+    "src:rokcupusa-fwt"
+   ],
+   "notes": "youth classes 7-15, seniors 15+; masters classes also run"
+  },
+  "entry_age": {
+   "min": 7,
+   "max": 12,
+   "unit": "years",
+   "confidence": "medium",
+   "sources": [
+    "src:skusa-classes-2026"
+   ],
+   "notes": "Micro 7-10, Mini 9-13"
+  },
+  "exit_age": {
+   "min": 14,
+   "max": 18,
+   "unit": "years",
+   "confidence": "low",
+   "sources": [
+    "src:usfjuniors-licensing",
+    "src:ligier-jfc"
+   ],
+   "notes": "car series accept 14 (USF Juniors, Ligier JFC) / 15 (USF2000, F4)"
+  },
+  "experience_level": "advanced youth amateur",
+  "race_length": {
+   "min": 10,
+   "max": 25,
+   "unit": "laps per final",
+   "confidence": "low",
+   "sources": [
+    "src:informed-estimate"
+   ]
+  },
+  "track_types": [
+   "kart_track"
+  ],
+  "field_size": {
+   "min": 15,
+   "max": 50,
+   "unit": "karts per class",
+   "confidence": "low",
+   "sources": [
+    "src:informed-estimate"
+   ],
+   "notes": "informed estimate"
+  },
+  "season_events": {
+   "min": 3,
+   "max": 8,
+   "unit": "events",
+   "confidence": "low",
+   "sources": [
+    "src:informed-estimate"
+   ],
+   "notes": "informed estimate; double-header weekends common"
+  },
+  "annual_cost_usd": {
+   "min": 30000,
+   "max": 100000,
+   "unit": "USD/season",
+   "year_basis": 2025,
+   "confidence": "low",
+   "sources": [
+    "src:search-karting-national-costs",
+    "src:skusa-pricing-2026"
+   ],
+   "notes": "national junior program with team tent; top factory-supported programs can exceed this"
+  },
+  "seat_cost_usd": null,
+  "win_purse_usd": null,
+  "points_fund_usd": null,
+  "scholarship_usd": null,
+  "team_structure": "kart teams/tents (chassis-brand teams) running family-funded drivers",
+  "equipment_ownership": "family-owned karts, team support fees",
+  "licensing": "series membership; age-bracketed classes (Micro 7-10, Mini 9-13, Junior 12-15, Senior 15+)",
+  "prerequisites": "club karting experience",
+  "feeder_series": [
+   "series:club-karting"
+  ],
+  "next_steps": [
+   "series:skusa-supernationals",
+   "series:usf-juniors",
+   "series:f4-us",
+   "series:ligier-jfc",
+   "series:skip-barber-formula",
+   "series:usf2000"
+  ],
+  "advancement_rate": {
+   "min": 0.05,
+   "max": 0.2,
+   "unit": "share of national junior karters moving to car racing within 3 yrs",
+   "confidence": "low",
+   "sources": [
+    "src:informed-estimate"
+   ],
+   "notes": "informed estimate"
+  },
+  "advancement_drivers": {
+   "talent": 0.35,
+   "money": 0.45,
+   "connections": 0.1,
+   "sponsorship": 0.1,
+   "confidence": "low",
+   "notes": "informed estimate of relative weights (sum 1.0) from series economics and documented examples"
+  },
+  "dead_ends": "Many talented karters stop at 15-17 for lack of the ~USD 150-400k/yr needed for car racing; some become karting pros/coaches.",
+  "notes": "Winter (Jan-Mar) series in Florida since early 2000s, international entries; 2026: 3 rounds at Orlando Kart Center and T4 Kartplex.",
+  "confidence": "medium",
+  "sources": [
+   "src:rokcupusa-fwt"
+  ],
+  "game_template": "national_karting",
+  "history_source": null
+ },
+ {
+  "id": "series:formula-bmw-usa",
+  "name": "Formula BMW USA / Americas (historic)",
+  "names_by_year": [
+   {
+    "from": 2004,
+    "to": 2007,
+    "name": "Formula BMW USA"
+   },
+   {
+    "from": 2008,
+    "to": 2008,
+    "name": "Formula BMW Americas"
+   }
+  ],
+  "sanctioning_body": null,
+  "discipline": "open_wheel",
+  "car_class": null,
+  "level": "national",
+  "game_tier": 2,
+  "scope": "national",
+  "regions": [
+   "USA",
+   "CAN",
+   "MEX"
+  ],
+  "years": {
+   "from": 2004,
+   "to": 2008
+  },
+  "typical_age": {
+   "min": 15,
+   "max": 20,
+   "unit": "years",
+   "confidence": "low",
+   "sources": [
+    "src:wiki-formula-bmw-usa"
+   ]
+  },
+  "entry_age": null,
+  "exit_age": null,
+  "experience_level": "first-car junior formula",
+  "race_length": null,
+  "track_types": [
+   "road_course",
+   "street"
+  ],
+  "field_size": null,
+  "season_events": null,
+  "annual_cost_usd": null,
+  "seat_cost_usd": null,
+  "win_purse_usd": null,
+  "points_fund_usd": null,
+  "scholarship_usd": null,
+  "team_structure": "teams",
+  "equipment_ownership": "team-owned",
+  "licensing": null,
+  "prerequisites": null,
+  "feeder_series": [
+   "series:skusa-pro-tour",
+   "series:wka-national"
+  ],
+  "next_steps": [
+   "series:atlantic-championship",
+   "series:usf-pro-2000",
+   "series:indy-nxt"
+  ],
+  "advancement_rate": null,
+  "advancement_drivers": {
+   "talent": 0.4,
+   "money": 0.35,
+   "connections": 0.1,
+   "manufacturer": 0.15,
+   "confidence": "low",
+   "notes": "informed estimate of relative weights (sum 1.0) from series economics and documented examples"
+  },
+  "dead_ends": null,
+  "notes": "BMW-backed karting-to-cars series supporting Champ Car/ALMS/F1 races; champions incl. Wickens (2006), Hinchcliffe rookie cup (2004); BMW junior scholarship ~USD 80k (2008).",
+  "confidence": "medium",
+  "sources": [
+   "src:wiki-formula-bmw-usa"
+  ],
+  "game_template": "junior_formula",
+  "history_source": null
+ },
+ {
+  "id": "series:formula-pro-usa",
+  "name": "Formula Pro USA Western Championship",
+  "names_by_year": [],
+  "sanctioning_body": null,
+  "discipline": "open_wheel",
+  "car_class": "class:formula-regional-ligier",
+  "level": "regional",
+  "game_tier": 3,
+  "scope": "regional",
+  "regions": [
+   "USA-West"
+  ],
+  "years": {
+   "from": 2023,
+   "to": null
+  },
+  "typical_age": {
+   "min": 14,
+   "max": 22,
+   "unit": "years",
+   "confidence": "low",
+   "sources": [
+    "src:informed-estimate"
+   ]
+  },
+  "entry_age": null,
+  "exit_age": null,
+  "experience_level": "regional junior formula (F3 and F4 classes)",
+  "race_length": null,
+  "track_types": [
+   "road_course"
+  ],
+  "field_size": null,
+  "season_events": null,
+  "annual_cost_usd": null,
+  "seat_cost_usd": null,
+  "win_purse_usd": null,
+  "points_fund_usd": null,
+  "scholarship_usd": null,
+  "team_structure": "teams (Exclusive Racing)",
+  "equipment_ownership": "team-owned",
+  "licensing": null,
+  "prerequisites": null,
+  "feeder_series": [
+   "series:club-karting",
+   "series:skusa-pro-tour"
+  ],
+  "next_steps": [
+   "series:f4-us",
+   "series:formula-regional-americas",
+   "series:usf2000"
+  ],
+  "advancement_rate": null,
+  "advancement_drivers": {
+   "talent": 0.4,
+   "money": 0.45,
+   "connections": 0.15,
+   "confidence": "low",
+   "notes": "informed estimate of relative weights (sum 1.0) from series economics and documented examples"
+  },
+  "dead_ends": null,
+  "notes": "FPUSA-3 (JS F3) and FPUSA-4 (JS F4) classes; also a winter series.",
+  "confidence": "low",
+  "sources": [
+   "src:wiki-formula-pro-usa"
+  ],
+  "game_template": "junior_formula",
+  "history_source": null
+ },
+ {
+  "id": "series:formula-regional-americas",
+  "name": "Formula Regional Americas Championship",
+  "names_by_year": [
+   {
+    "from": 2018,
+    "to": 2019,
+    "name": "F3 Americas Championship"
+   },
+   {
+    "from": 2020,
+    "to": null,
+    "name": "Formula Regional Americas Championship (Powered by Honda)"
+   }
+  ],
+  "sanctioning_body": "body:scca-pro-racing",
+  "discipline": "open_wheel",
+  "car_class": "class:formula-regional-ligier",
+  "level": "national",
+  "game_tier": 4,
+  "scope": "national",
+  "regions": [
+   "USA",
+   "CAN"
+  ],
+  "years": {
+   "from": 2018,
+   "to": null
+  },
+  "typical_age": {
+   "min": 16,
+   "max": 21,
+   "unit": "years",
+   "confidence": "low",
+   "sources": [
+    "src:informed-estimate"
+   ]
+  },
+  "entry_age": null,
+  "exit_age": null,
+  "experience_level": "national pro feeder (FIA Formula Regional)",
+  "race_length": {
+   "min": 25,
+   "max": 35,
+   "unit": "minutes",
+   "confidence": "low",
+   "sources": [
+    "src:informed-estimate"
+   ]
+  },
+  "track_types": [
+   "road_course"
+  ],
+  "field_size": null,
+  "season_events": {
+   "min": 18,
+   "max": 21,
+   "unit": "races",
+   "confidence": "high",
+   "sources": [
+    "src:wiki-scca-pro-racing",
+    "src:wiki-fr-americas"
+   ],
+   "notes": "21 races in 2026; 3 per event"
+  },
+  "annual_cost_usd": {
+   "min": 250000,
+   "max": 450000,
+   "unit": "USD/season",
+   "confidence": "low",
+   "sources": [
+    "src:informed-estimate"
+   ],
+   "notes": "informed estimate between F4 US (130-195k) and Pro 2000"
+  },
+  "seat_cost_usd": null,
+  "win_purse_usd": null,
+  "points_fund_usd": null,
+  "scholarship_usd": {
+   "value": 100000,
+   "unit": "USD cash to champion (from 2025)",
+   "confidence": "high",
+   "sources": [
+    "src:wiki-fr-americas"
+   ]
+  },
+  "team_structure": "teams",
+  "equipment_ownership": "team-owned; paid seats",
+  "licensing": "FIA/ACCUS licence; super licence points for top 9",
+  "prerequisites": null,
+  "feeder_series": [
+   "series:f4-us",
+   "series:usf2000"
+  ],
+  "next_steps": [
+   "series:usf-pro-2000",
+   "series:indy-nxt",
+   "series:european-fia-ladder"
+  ],
+  "advancement_rate": null,
+  "advancement_drivers": {
+   "talent": 0.35,
+   "money": 0.45,
+   "connections": 0.1,
+   "manufacturer": 0.1,
+   "confidence": "low",
+   "notes": "informed estimate; HPD scholarship historically for champion"
+  },
+  "dead_ends": "Weaker direct IndyCar link than USF ladder; counts for USF Pro 2000 qualification.",
+  "notes": "Formerly F3 Americas; HPD established champion scholarship.",
+  "confidence": "medium",
+  "sources": [
+   "src:wiki-fr-americas",
+   "src:hpd-academy",
+   "src:usfjuniors-licensing"
+  ],
+  "game_template": "formula_pro",
+  "history_source": null
+ },
+ {
+  "id": "series:grand-am-rolex",
+  "name": "Grand-Am Rolex Sports Car Series (historic)",
+  "names_by_year": [],
+  "sanctioning_body": "body:grand-am",
+  "discipline": "sports_car",
+  "car_class": null,
+  "level": "premier",
+  "game_tier": 7,
+  "scope": "national",
+  "regions": [
+   "USA"
+  ],
+  "years": {
+   "from": 2000,
+   "to": 2013
+  },
+  "typical_age": null,
+  "entry_age": null,
+  "exit_age": null,
+  "experience_level": null,
+  "race_length": null,
+  "track_types": [
+   "road_course"
+  ],
+  "field_size": null,
+  "season_events": null,
+  "annual_cost_usd": null,
+  "seat_cost_usd": null,
+  "win_purse_usd": null,
+  "points_fund_usd": null,
+  "scholarship_usd": null,
+  "team_structure": null,
+  "equipment_ownership": null,
+  "licensing": null,
+  "prerequisites": null,
+  "feeder_series": [],
+  "next_steps": [
+   "series:imsa-weathertech"
+  ],
+  "advancement_rate": null,
+  "advancement_drivers": null,
+  "dead_ends": null,
+  "notes": "Low-cost Daytona Prototypes + GT; Jordan Taylor 2013 DP champion.",
+  "confidence": "medium",
+  "sources": [
+   "src:wiki-alms-grandam",
+   "src:wiki-jordan-taylor"
+  ],
+  "game_template": "prototype_endurance",
+  "history_source": null
+ },
+ {
+  "id": "series:gt-america",
+  "name": "GT America (SRO)",
+  "names_by_year": [],
+  "sanctioning_body": "body:sro-america",
+  "discipline": "sports_car",
+  "car_class": "class:fia-gt3",
+  "level": "national",
+  "game_tier": 5,
+  "scope": "national",
+  "regions": [
+   "USA"
+  ],
+  "years": {
+   "from": 2021,
+   "to": null
+  },
+  "typical_age": null,
+  "entry_age": null,
+  "exit_age": null,
+  "experience_level": "single-driver amateur (Bronze-focused) GT",
+  "race_length": null,
+  "track_types": [
+   "road_course",
+   "street"
+  ],
+  "field_size": null,
+  "season_events": null,
+  "annual_cost_usd": null,
+  "seat_cost_usd": null,
+  "win_purse_usd": null,
+  "points_fund_usd": null,
+  "scholarship_usd": null,
+  "team_structure": null,
+  "equipment_ownership": null,
+  "licensing": null,
+  "prerequisites": null,
+  "feeder_series": [
+   "series:ferrari-challenge-na",
+   "series:porsche-sprint-challenge-na"
+  ],
+  "next_steps": [
+   "series:gt-world-challenge-america"
+  ],
+  "advancement_rate": null,
+  "advancement_drivers": {
+   "money": 0.7,
+   "talent": 0.2,
+   "connections": 0.1,
+   "confidence": "low",
+   "notes": "informed estimate of relative weights (sum 1.0) from series economics and documented examples"
+  },
+  "dead_ends": null,
+  "notes": "Start year and format details low confidence (2025 format changes reported).",
+  "confidence": "low",
+  "sources": [
+   "src:wiki-gtwc-america"
+  ],
+  "game_template": "endurance_challenge",
+  "history_source": null
+ },
+ {
+  "id": "series:gt-world-challenge-america",
+  "name": "GT World Challenge America",
+  "names_by_year": [
+   {
+    "from": 1990,
+    "to": 2010,
+    "name": "SCCA (Speed) World Challenge"
+   },
+   {
+    "from": 2011,
+    "to": 2018,
+    "name": "Pirelli World Challenge"
+   },
+   {
+    "from": 2019,
+    "to": null,
+    "name": "GT World Challenge America (Blancpain / Fanatec / AWS sponsors)"
+   }
+  ],
+  "sanctioning_body": "body:usac",
+  "discipline": "sports_car",
+  "car_class": "class:fia-gt3",
+  "level": "national",
+  "game_tier": 6,
+  "scope": "national",
+  "regions": [
+   "USA",
+   "CAN"
+  ],
+  "years": {
+   "from": 1990,
+   "to": null
+  },
+  "typical_age": {
+   "min": 18,
+   "max": 65,
+   "unit": "years",
+   "confidence": "low",
+   "sources": [
+    "src:informed-estimate"
+   ]
+  },
+  "entry_age": null,
+  "exit_age": null,
+  "experience_level": "pro-am GT3",
+  "race_length": {
+   "min": 90,
+   "max": 180,
+   "unit": "minutes",
+   "confidence": "high",
+   "sources": [
+    "src:wiki-gtwc-america"
+   ],
+   "notes": "two 90-min sprints; single 3-hour race per weekend from 2026"
+  },
+  "track_types": [
+   "road_course",
+   "street"
+  ],
+  "field_size": null,
+  "season_events": null,
+  "annual_cost_usd": {
+   "min": 800000,
+   "max": 2000000,
+   "unit": "USD per car per season",
+   "confidence": "low",
+   "sources": [
+    "src:dailysportscar-gt3-costs"
+   ],
+   "notes": "informed estimate from GT3 budgets (British GT ~GBP 400k/car; IMSA GTD sprint ~2M)"
+  },
+  "seat_cost_usd": null,
+  "win_purse_usd": null,
+  "points_fund_usd": null,
+  "scholarship_usd": null,
+  "team_structure": "GT3 customer teams; Pro/Pro-Am/Am lineups",
+  "equipment_ownership": "team-owned; Bronze drivers fund seats shared with paid pros",
+  "licensing": "USAC/SRO, FIA driver categorisation",
+  "prerequisites": null,
+  "feeder_series": [
+   "series:gt4-america",
+   "series:toyota-gr-cup",
+   "series:porsche-carrera-cup-na",
+   "series:lamborghini-super-trofeo-na"
+  ],
+  "next_steps": [
+   "series:imsa-weathertech"
+  ],
+  "advancement_rate": null,
+  "advancement_drivers": {
+   "money": 0.4,
+   "talent": 0.3,
+   "manufacturer": 0.2,
+   "connections": 0.1,
+   "confidence": "low",
+   "notes": "informed estimate of relative weights (sum 1.0) from series economics and documented examples"
+  },
+  "dead_ends": null,
+  "notes": "Multi-class World Challenge (GT/GTS/TC) until 2018; GT3-only since 2019.",
+  "confidence": "medium",
+  "sources": [
+   "src:wiki-gtwc-america",
+   "src:dailysportscar-gt3-costs"
+  ],
+  "game_template": "gt_endurance",
+  "history_source": null,
+  "promoter": "body:sro-america"
+ },
+ {
+  "id": "series:gt4-america",
+  "name": "GT4 America (Pirelli GT4 America)",
+  "names_by_year": [],
+  "sanctioning_body": "body:sro-america",
+  "discipline": "sports_car",
+  "car_class": "class:fia-gt4",
+  "level": "national",
+  "game_tier": 5,
+  "scope": "national",
+  "regions": [
+   "USA"
+  ],
+  "years": {
+   "from": 2018,
+   "to": null
+  },
+  "typical_age": {
+   "min": 18,
+   "max": 60,
+   "unit": "years",
+   "confidence": "low",
+   "sources": [
+    "src:informed-estimate"
+   ]
+  },
+  "entry_age": null,
+  "exit_age": null,
+  "experience_level": "pro-am",
+  "race_length": {
+   "value": 60,
+   "unit": "minutes (two races per weekend, driver change)",
+   "confidence": "high",
+   "sources": [
+    "src:gt4america-explainer"
+   ]
+  },
+  "track_types": [
+   "road_course",
+   "street"
+  ],
+  "field_size": null,
+  "season_events": null,
+  "annual_cost_usd": {
+   "min": 300000,
+   "max": 700000,
+   "unit": "USD per car per season",
+   "confidence": "low",
+   "sources": [
+    "src:search-gt4-imsa-costs"
+   ],
+   "notes": "~40k+ per event"
+  },
+  "seat_cost_usd": null,
+  "win_purse_usd": null,
+  "points_fund_usd": null,
+  "scholarship_usd": null,
+  "team_structure": "teams",
+  "equipment_ownership": "team-run; shared driver budgets",
+  "licensing": "USAC/SRO; Silver, Pro-Am, Am classes by FIA rating",
+  "prerequisites": null,
+  "feeder_series": [
+   "series:toyota-gr-cup",
+   "series:mx5-cup",
+   "series:scca-runoffs"
+  ],
+  "next_steps": [
+   "series:gt-world-challenge-america",
+   "series:imsa-pilot-challenge"
+  ],
+  "advancement_rate": null,
+  "advancement_drivers": {
+   "money": 0.45,
+   "talent": 0.3,
+   "manufacturer": 0.15,
+   "connections": 0.1,
+   "confidence": "low",
+   "notes": "informed estimate of relative weights (sum 1.0) from series economics and documented examples"
+  },
+  "dead_ends": null,
+  "notes": "Year of GT4 America branding uncertain (2018/2019).",
+  "confidence": "medium",
+  "sources": [
+   "src:gt4america-explainer",
+   "src:wiki-gtwc-america"
+  ],
+  "game_template": "endurance_challenge",
+  "history_source": null
+ },
+ {
+  "id": "series:imsa-pilot-challenge",
+  "name": "IMSA Michelin Pilot Challenge",
+  "names_by_year": [
+   {
+    "from": 2001,
+    "to": 2006,
+    "name": "Grand-Am Cup"
+   },
+   {
+    "from": 2007,
+    "to": 2009,
+    "name": "Grand-Am KONI Challenge"
+   },
+   {
+    "from": 2010,
+    "to": 2013,
+    "name": "Grand-Am Continental Tire Sports Car Challenge"
+   },
+   {
+    "from": 2014,
+    "to": 2018,
+    "name": "IMSA Continental Tire SportsCar Challenge"
+   },
+   {
+    "from": 2019,
+    "to": null,
+    "name": "IMSA Michelin Pilot Challenge"
+   }
+  ],
+  "sanctioning_body": "body:imsa",
+  "discipline": "sports_car",
+  "car_class": "class:fia-gt4",
+  "level": "national",
+  "game_tier": 5,
+  "scope": "national",
+  "regions": [
+   "USA",
+   "CAN"
+  ],
+  "years": {
+   "from": 2001,
+   "to": null
+  },
+  "typical_age": {
+   "min": 18,
+   "max": 60,
+   "unit": "years",
+   "confidence": "low",
+   "sources": [
+    "src:informed-estimate"
+   ]
+  },
+  "entry_age": null,
+  "exit_age": null,
+  "experience_level": "pro-am (no Platinum drivers)",
+  "race_length": {
+   "min": 2,
+   "max": 4,
+   "unit": "hours",
+   "confidence": "high",
+   "sources": [
+    "src:wiki-pilot-challenge"
+   ],
+   "notes": "2-hour races, 4-hour Daytona opener"
+  },
+  "track_types": [
+   "road_course",
+   "street"
+  ],
+  "field_size": null,
+  "season_events": {
+   "min": 9,
+   "max": 10,
+   "unit": "races",
+   "confidence": "high",
+   "sources": [
+    "src:wiki-pilot-challenge"
+   ]
+  },
+  "annual_cost_usd": {
+   "min": 500000,
+   "max": 1000000,
+   "unit": "USD per car per season",
+   "confidence": "low",
+   "sources": [
+    "src:search-gt4-imsa-costs"
+   ],
+   "notes": "GT4 ~40k+ per event; ~1M at the high end"
+  },
+  "seat_cost_usd": null,
+  "win_purse_usd": null,
+  "points_fund_usd": null,
+  "scholarship_usd": null,
+  "team_structure": "pro teams with two-driver pro-am lineups (some factory-supported)",
+  "equipment_ownership": "team-owned; paid/gentleman seats",
+  "licensing": "IMSA licence; Platinum-rated drivers barred",
+  "prerequisites": null,
+  "feeder_series": [
+   "series:mx5-cup",
+   "series:imsa-vp-racing-challenge",
+   "series:toyota-gr-cup",
+   "series:usf-pro-2000",
+   "series:scca-runoffs"
+  ],
+  "next_steps": [
+   "series:imsa-weathertech"
+  ],
+  "advancement_rate": {
+   "min": 0.05,
+   "max": 0.2,
+   "unit": "share of pro drivers stepping into WeatherTech seats within 3 yrs",
+   "confidence": "low",
+   "sources": [
+    "src:informed-estimate"
+   ]
+  },
+  "advancement_drivers": {
+   "talent": 0.3,
+   "money": 0.35,
+   "manufacturer": 0.2,
+   "connections": 0.1,
+   "sponsorship": 0.05,
+   "confidence": "low",
+   "notes": "informed estimate of relative weights (sum 1.0) from series economics and documented examples"
+  },
+  "dead_ends": null,
+  "notes": "GS (GT4) and TCR classes (TCR retained through 2028); 2026 largest field in six years.",
+  "confidence": "medium",
+  "sources": [
+   "src:wiki-pilot-challenge",
+   "src:wiki-pilot-challenge-history",
+   "src:search-gt4-imsa-costs"
+  ],
+  "game_template": "endurance_challenge",
+  "history_source": null
+ },
+ {
+  "id": "series:imsa-prototype-challenge",
+  "name": "IMSA Prototype Challenge (historic)",
+  "names_by_year": [
+   {
+    "from": 2006,
+    "to": 2016,
+    "name": "IMSA Prototype Lites (sponsor variants)"
+   },
+   {
+    "from": 2017,
+    "to": 2022,
+    "name": "IMSA Prototype Challenge"
+   }
+  ],
+  "sanctioning_body": "body:imsa",
+  "discipline": "sports_car",
+  "car_class": "class:lmp3",
+  "level": "national",
+  "game_tier": 4,
+  "scope": "national",
+  "regions": [
+   "USA"
+  ],
+  "years": {
+   "from": 2006,
+   "to": 2022
+  },
+  "typical_age": null,
+  "entry_age": null,
+  "exit_age": null,
+  "experience_level": "development",
+  "race_length": null,
+  "track_types": [
+   "road_course"
+  ],
+  "field_size": null,
+  "season_events": null,
+  "annual_cost_usd": null,
+  "seat_cost_usd": null,
+  "win_purse_usd": null,
+  "points_fund_usd": null,
+  "scholarship_usd": null,
+  "team_structure": null,
+  "equipment_ownership": null,
+  "licensing": null,
+  "prerequisites": null,
+  "feeder_series": [
+   "series:usf2000",
+   "series:mx5-cup"
+  ],
+  "next_steps": [
+   "series:imsa-weathertech"
+  ],
+  "advancement_rate": null,
+  "advancement_drivers": {
+   "money": 0.45,
+   "talent": 0.35,
+   "connections": 0.1,
+   "manufacturer": 0.1,
+   "confidence": "low",
+   "notes": "informed estimate of relative weights (sum 1.0) from series economics and documented examples"
+  },
+  "dead_ends": null,
+  "notes": "LMP3 from 2017; replaced by VP Racing SportsCar Challenge (2023).",
+  "confidence": "medium",
+  "sources": [
+   "src:wiki-imsa-prototype-challenge"
+  ],
+  "game_template": "endurance_challenge",
+  "history_source": null
+ },
+ {
+  "id": "series:imsa-vp-racing-challenge",
+  "name": "IMSA VP Racing SportsCar Challenge",
+  "names_by_year": [],
+  "sanctioning_body": "body:imsa",
+  "discipline": "sports_car",
+  "car_class": "class:lmp3",
+  "level": "national",
+  "game_tier": 4,
+  "scope": "national",
+  "regions": [
+   "USA"
+  ],
+  "years": {
+   "from": 2023,
+   "to": null
+  },
+  "typical_age": {
+   "min": 16,
+   "max": 60,
+   "unit": "years",
+   "confidence": "low",
+   "sources": [
+    "src:informed-estimate"
+   ]
+  },
+  "entry_age": null,
+  "exit_age": null,
+  "experience_level": "development (Silver/Bronze only)",
+  "race_length": {
+   "value": 45,
+   "unit": "minutes (2 sprints per weekend, 2023-2026)",
+   "confidence": "high",
+   "sources": [
+    "src:imsa-vp-challenge"
+   ],
+   "notes": "returns to endurance format with LMP3/GT4/BMW M2 in 2027"
+  },
+  "track_types": [
+   "road_course"
+  ],
+  "field_size": null,
+  "season_events": null,
+  "annual_cost_usd": {
+   "min": 150000,
+   "max": 400000,
+   "unit": "USD/season",
+   "confidence": "low",
+   "sources": [
+    "src:informed-estimate"
+   ],
+   "notes": "informed estimate (LMP3 / GT4 sprint)"
+  },
+  "seat_cost_usd": null,
+  "win_purse_usd": null,
+  "points_fund_usd": null,
+  "scholarship_usd": null,
+  "team_structure": "teams",
+  "equipment_ownership": "team-run; paid seats",
+  "licensing": "IMSA licence; FIA Silver or Bronze only",
+  "prerequisites": null,
+  "feeder_series": [
+   "series:mx5-cup",
+   "series:usf2000",
+   "series:toyota-gr-cup",
+   "series:imsa-prototype-challenge"
+  ],
+  "next_steps": [
+   "series:imsa-pilot-challenge",
+   "series:imsa-weathertech"
+  ],
+  "advancement_rate": null,
+  "advancement_drivers": {
+   "money": 0.45,
+   "talent": 0.3,
+   "connections": 0.1,
+   "manufacturer": 0.1,
+   "sponsorship": 0.05,
+   "confidence": "low",
+   "notes": "informed estimate of relative weights (sum 1.0) from series economics and documented examples"
+  },
+  "dead_ends": null,
+  "notes": "LMP3, GSX (GT4), GTDX (GT3) classes; designed as IMSA development ladder.",
+  "confidence": "medium",
+  "sources": [
+   "src:imsa-vp-challenge"
+  ],
+  "game_template": "endurance_challenge",
+  "history_source": null
+ },
+ {
+  "id": "series:imsa-weathertech",
+  "name": "IMSA WeatherTech SportsCar Championship",
+  "names_by_year": [
+   {
+    "from": 2014,
+    "to": 2015,
+    "name": "TUDOR United SportsCar Championship"
+   },
+   {
+    "from": 2016,
+    "to": null,
+    "name": "IMSA WeatherTech SportsCar Championship"
+   }
+  ],
+  "sanctioning_body": "body:imsa",
+  "discipline": "sports_car",
+  "car_class": "class:gtp-lmdh",
+  "level": "premier",
+  "game_tier": 7,
+  "scope": "national",
+  "regions": [
+   "USA",
+   "CAN"
+  ],
+  "years": {
+   "from": 2014,
+   "to": null
+  },
+  "typical_age": {
+   "min": 20,
+   "max": 60,
+   "unit": "years",
+   "confidence": "low",
+   "sources": [
+    "src:informed-estimate"
+   ],
+   "notes": "pros ~20-45 plus Bronze gentlemen 30-60"
+  },
+  "entry_age": {
+   "min": 18,
+   "max": 25,
+   "unit": "years",
+   "confidence": "low",
+   "sources": [
+    "src:wiki-jordan-taylor",
+    "src:wiki-oward"
+   ],
+   "notes": "O'Ward won IMSA PC races at 17; Taylor Rolex GT at ~19"
+  },
+  "exit_age": null,
+  "experience_level": "premier pro + pro-am",
+  "race_length": {
+   "min": 2.67,
+   "max": 24,
+   "unit": "hours",
+   "confidence": "high",
+   "sources": [
+    "src:wiki-imsa-sportscar"
+   ],
+   "notes": "sprints ~2h40; Daytona 24, Sebring 12, Petit 10, WGI/Indy 6"
+  },
+  "track_types": [
+   "road_course",
+   "street"
+  ],
+  "field_size": null,
+  "season_events": {
+   "min": 9,
+   "max": 11,
+   "unit": "races",
+   "confidence": "medium",
+   "sources": [
+    "src:wiki-imsa-sportscar"
+   ]
+  },
+  "annual_cost_usd": {
+   "min": 2000000,
+   "max": 12000000,
+   "unit": "USD per car per season",
+   "year_basis": 2024,
+   "confidence": "medium",
+   "sources": [
+    "src:dailysportscar-gt3-costs",
+    "src:sportscar365-lmp2-bronze",
+    "src:endurance-info-lmdh-cost"
+   ],
+   "notes": "GTD ~2M sprint-only to ~5M full; LMP2 <2M + Daytona 0.5-0.65M; GTP ~EUR 8-10M (factory)"
+  },
+  "seat_cost_usd": {
+   "min": 300000,
+   "max": 1100000,
+   "unit": "USD paid by Bronze driver per season",
+   "confidence": "low",
+   "sources": [
+    "src:racer-pruett-pro-pay"
+   ],
+   "notes": "forum-sourced EUR 300k-1M; low confidence"
+  },
+  "win_purse_usd": null,
+  "points_fund_usd": null,
+  "scholarship_usd": null,
+  "team_structure": "factory teams (GTP, GTD PRO), customer pro-am teams (LMP2, GTD)",
+  "equipment_ownership": "team/manufacturer-owned; Bronze drivers fund LMP2/GTD seats",
+  "licensing": "IMSA licence (min 17); FIA driver categorisation: LMP2 Bronze mandatory, no Platinum except Daytona; GTD needs a Bronze (from 2023); GTD PRO/GTP unrestricted",
+  "prerequisites": "pro results in IMSA ladder, one-make cups, single-seaters or factory nomination",
+  "feeder_series": [
+   "series:imsa-pilot-challenge",
+   "series:imsa-vp-racing-challenge",
+   "series:porsche-carrera-cup-na",
+   "series:lamborghini-super-trofeo-na",
+   "series:gt-world-challenge-america",
+   "series:indy-nxt",
+   "series:indycar",
+   "series:usf-pro-2000",
+   "series:ferrari-challenge-na"
+  ],
+  "next_steps": [
+   "series:nascar-cup"
+  ],
+  "advancement_rate": null,
+  "advancement_drivers": {
+   "talent": 0.3,
+   "money": 0.2,
+   "manufacturer": 0.3,
+   "connections": 0.15,
+   "sponsorship": 0.05,
+   "confidence": "low",
+   "notes": "informed estimate; factory nomination dominates GTP/GTD PRO, money dominates LMP2/GTD Bronze seats"
+  },
+  "dead_ends": "Silver/Gold pros without factory contracts compete for limited paid GTD seats; many become coaches or endurance-only third drivers.",
+  "notes": "Classes GTP (LMDh, 2023-), LMP2, GTD PRO, GTD; historically DPi (2017-2022), GTLM, PC. Factory GTP: Porsche, Cadillac, BMW, Acura, Aston Martin (2025).",
+  "confidence": "medium",
+  "sources": [
+   "src:wiki-imsa-sportscar",
+   "src:sportscar365-gtd-bronze",
+   "src:sportscar365-lmp2-bronze",
+   "src:dailysportscar-gt3-costs",
+   "src:endurance-info-lmdh-cost",
+   "src:racer-pruett-pro-pay"
+  ],
+  "game_template": "prototype_endurance",
+  "history_source": null,
+  "pro_salary_usd": {
+   "min": 80000,
+   "max": 450000,
+   "unit": "USD/yr for GTD pros",
+   "confidence": "medium",
+   "sources": [
+    "src:racer-pruett-pro-pay"
+   ],
+   "notes": "avg ~150-160k; outliers 400-450k; factory GTP pay higher"
+  },
+  "entry_fee_usd": {
+   "value": 15500,
+   "unit": "USD standard entry package (2025)",
+   "confidence": "medium",
+   "sources": [
+    "src:dailysportscar-gt3-costs"
+   ]
+  }
+ },
+ {
+  "id": "series:indy-nxt",
+  "name": "Indy NXT by Firestone",
+  "names_by_year": [
+   {
+    "from": 1986,
+    "to": 1990,
+    "name": "American Racing Series"
+   },
+   {
+    "from": 1991,
+    "to": 2001,
+    "name": "Indy Lights (CART)"
+   },
+   {
+    "from": 2002,
+    "to": 2005,
+    "name": "Infiniti Pro Series (IRL)"
+   },
+   {
+    "from": 2006,
+    "to": 2007,
+    "name": "Indy Pro Series"
+   },
+   {
+    "from": 2008,
+    "to": 2022,
+    "name": "Firestone Indy Lights"
+   },
+   {
+    "from": 2023,
+    "to": null,
+    "name": "Indy NXT by Firestone"
+   }
+  ],
+  "sanctioning_body": "body:indycar",
+  "discipline": "open_wheel",
+  "car_class": "class:dallara-il15",
+  "level": "national",
+  "game_tier": 5,
+  "scope": "national",
+  "regions": [
+   "USA",
+   "CAN"
+  ],
+  "years": {
+   "from": 1986,
+   "to": null
+  },
+  "typical_age": {
+   "min": 19,
+   "max": 26,
+   "unit": "years",
+   "confidence": "high",
+   "sources": [
+    "src:racingsim-history-analysis"
+   ],
+   "notes": "full-timers 2010-2026 median 22, p10 19, p90 26"
+  },
+  "entry_age": {
+   "min": 18,
+   "max": 23,
+   "unit": "years",
+   "confidence": "medium",
+   "sources": [
+    "src:racingsim-history-analysis"
+   ]
+  },
+  "exit_age": {
+   "min": 20,
+   "max": 26,
+   "unit": "years",
+   "confidence": "medium",
+   "sources": [
+    "src:racingsim-history-analysis"
+   ]
+  },
+  "experience_level": "national pro feeder (top IndyCar development series)",
+  "race_length": {
+   "min": 35,
+   "max": 100,
+   "unit": "miles",
+   "confidence": "low",
+   "sources": [
+    "src:informed-estimate"
+   ],
+   "notes": "informed estimate; ovals longer"
+  },
+  "track_types": [
+   "road_course",
+   "street",
+   "superspeedway",
+   "short_oval"
+  ],
+  "field_size": {
+   "min": 12,
+   "max": 28,
+   "unit": "drivers scored per season",
+   "confidence": "high",
+   "sources": [
+    "src:racingsim-history-analysis"
+   ],
+   "notes": "2015-2026; full-timers 7-23; low point 2018-2019 (12-13 drivers), growth 2023-2026"
+  },
+  "season_events": {
+   "min": 14,
+   "max": 20,
+   "unit": "races",
+   "confidence": "high",
+   "sources": [
+    "src:racingsim-history-analysis"
+   ],
+   "notes": "14 in 2023-2025; 17 scheduled 2026"
+  },
+  "annual_cost_usd": {
+   "min": 1000000,
+   "max": 1500000,
+   "unit": "USD/season",
+   "year_basis": 2025,
+   "confidence": "medium",
+   "sources": [
+    "src:usopenwheelnation-nxt-costs",
+    "src:motorsport-road-to-indy-2018"
+   ],
+   "notes": "~1M (2018), ~1.2M (2025), expected ~1.5M"
+  },
+  "seat_cost_usd": null,
+  "win_purse_usd": null,
+  "points_fund_usd": null,
+  "scholarship_usd": {
+   "min": 850000,
+   "max": 1000000,
+   "unit": "USD to champion toward IndyCar",
+   "confidence": "high",
+   "sources": [
+    "src:wiki-indy-nxt"
+   ],
+   "notes": "Lights era: 1M + 3 races incl. Indy 500; NXT (2023): ~850k for tests + Indy 500 + 1 more race"
+  },
+  "team_structure": "IndyCar-affiliated teams (Andretti, HMD, Cape, Abel...)",
+  "equipment_ownership": "team-owned; paid seats with sponsorship",
+  "licensing": "IndyCar licence; oval approval required; from 2027 NXT title/top-3/2+ wins (min 12 starts) = IndyCar competitively qualified",
+  "prerequisites": "USF Pro 2000 or equivalent (FR, F3)",
+  "feeder_series": [
+   "series:usf-pro-2000",
+   "series:usf2000",
+   "series:european-fia-ladder",
+   "series:formula-regional-americas",
+   "series:atlantic-championship"
+  ],
+  "next_steps": [
+   "series:indycar",
+   "series:imsa-weathertech",
+   "series:gt-world-challenge-america"
+  ],
+  "advancement_rate": {
+   "min": 0.43,
+   "max": 0.54,
+   "unit": "share of full-timers (1995-2021) later starting an IndyCar/CART race",
+   "confidence": "high",
+   "sources": [
+    "src:racingsim-history-analysis"
+   ],
+   "notes": "0.469 of n=196; 0.311 had a full IndyCar season; 2010-2021 cohort 0.479 / 0.356; champions 0.92 any start, 0.77 full season"
+  },
+  "advancement_drivers": {
+   "talent": 0.35,
+   "money": 0.35,
+   "sponsorship": 0.15,
+   "connections": 0.15,
+   "confidence": "low",
+   "notes": "informed estimate of relative weights (sum 1.0) from series economics and documented examples"
+  },
+  "dead_ends": "Roughly half of full-timers never start an IndyCar race; common exits to IMSA (GTD/LMP2), Pilot Challenge, or retirement.",
+  "notes": "Median one full season; 13% do 3+ seasons. Champions get IndyCar budget support.",
+  "confidence": "high",
+  "sources": [
+   "src:racingsim-history-analysis",
+   "src:wiki-indy-nxt",
+   "src:usopenwheelnation-nxt-costs",
+   "src:motorsport-indycar-licensing-2027",
+   "src:motorsport-road-to-indy-2018"
+  ],
+  "game_template": "formula_lights",
+  "history_source": "indy_lights",
+  "gap_years": [
+   2020
+  ]
+ },
+ {
+  "id": "series:indycar",
+  "name": "NTT IndyCar Series",
+  "names_by_year": [
+   {
+    "from": 1996,
+    "to": 1997,
+    "name": "Indy Racing League"
+   },
+   {
+    "from": 1998,
+    "to": 1999,
+    "name": "Pep Boys Indy Racing League"
+   },
+   {
+    "from": 2000,
+    "to": 2001,
+    "name": "Indy Racing Northern Light Series"
+   },
+   {
+    "from": 2002,
+    "to": 2002,
+    "name": "Indy Racing League"
+   },
+   {
+    "from": 2003,
+    "to": 2009,
+    "name": "IndyCar Series (IRL IndyCar Series)"
+   },
+   {
+    "from": 2010,
+    "to": 2013,
+    "name": "IZOD IndyCar Series"
+   },
+   {
+    "from": 2014,
+    "to": 2018,
+    "name": "Verizon IndyCar Series"
+   },
+   {
+    "from": 2019,
+    "to": null,
+    "name": "NTT IndyCar Series"
+   }
+  ],
+  "sanctioning_body": "body:indycar",
+  "discipline": "open_wheel",
+  "car_class": "class:indycar-dallara-ir18",
+  "level": "premier",
+  "game_tier": 7,
+  "scope": "national",
+  "regions": [
+   "USA",
+   "CAN"
+  ],
+  "years": {
+   "from": 1996,
+   "to": null
+  },
+  "typical_age": {
+   "min": 23,
+   "max": 40,
+   "unit": "years",
+   "confidence": "high",
+   "sources": [
+    "src:racingsim-history-analysis"
+   ],
+   "notes": "full-timers 2010-2026 median 29, p10 23, p90 40"
+  },
+  "entry_age": {
+   "min": 20,
+   "max": 33,
+   "unit": "years",
+   "confidence": "high",
+   "sources": [
+    "src:racingsim-history-analysis"
+   ],
+   "notes": "debut age 2008-2026 median 24, p10 20, p90 33 (n=114)"
+  },
+  "exit_age": {
+   "min": 30,
+   "max": 45,
+   "unit": "years",
+   "confidence": "low",
+   "sources": [
+    "src:racingsim-history-analysis"
+   ],
+   "notes": "informed from full-timer age distribution"
+  },
+  "experience_level": "premier professional",
+  "race_length": {
+   "min": 150,
+   "max": 500,
+   "unit": "miles",
+   "confidence": "low",
+   "sources": [
+    "src:informed-estimate"
+   ],
+   "notes": "road/street ~200 mi; Indy 500 = 500 mi; informed estimate"
+  },
+  "track_types": [
+   "superspeedway",
+   "short_oval",
+   "road_course",
+   "street"
+  ],
+  "field_size": {
+   "min": 25,
+   "max": 33,
+   "unit": "cars per race",
+   "confidence": "medium",
+   "sources": [
+    "src:wiki-indycar-series",
+    "src:racingsim-history-analysis"
+   ],
+   "notes": "19-27 full-timers 2015-2026; Indy 500 33 starters"
+  },
+  "season_events": {
+   "min": 14,
+   "max": 18,
+   "unit": "races",
+   "confidence": "high",
+   "sources": [
+    "src:racingsim-history-analysis",
+    "src:wiki-indycar-series"
+   ]
+  },
+  "annual_cost_usd": {
+   "min": 8000000,
+   "max": 13000000,
+   "unit": "USD per car per season (team budget)",
+   "year_basis": 2025,
+   "confidence": "medium",
+   "sources": [
+    "src:racer-indycar-budgets-2025"
+   ],
+   "notes": "~6M early 2020s; 8-10M mid-pack, 13M+ top teams (2025)"
+  },
+  "seat_cost_usd": {
+   "min": 1800000,
+   "max": 5000000,
+   "unit": "USD brought by pay/rookie driver",
+   "confidence": "low",
+   "sources": [
+    "src:medium-indycar-economics"
+   ],
+   "notes": "unvetted secondary estimate"
+  },
+  "win_purse_usd": null,
+  "points_fund_usd": {
+   "min": 1160000,
+   "max": 1700000,
+   "unit": "USD Leaders Circle per full-time entry (top 22)",
+   "confidence": "medium",
+   "sources": [
+    "src:racer-leaders-circle-2025"
+   ],
+   "notes": "~1.16-1.2M 2025, ~1.7M planned 2026"
+  },
+  "scholarship_usd": null,
+  "team_structure": "professional teams (Penske, Ganassi, Andretti, McLaren, RLL, Meyer Shank...)",
+  "equipment_ownership": "team-owned; paid stars and funded/pay drivers",
+  "licensing": "IndyCar licence (rookie licences temporary; oval test + Indy 500 ROP); from 2027 objective criteria: Indy NXT results or F1/F2/FE/Super Formula/GTP/Cup/Hypercar records",
+  "prerequisites": "Indy NXT success or senior international record",
+  "feeder_series": [
+   "series:indy-nxt",
+   "series:usf-pro-2000",
+   "series:european-fia-ladder",
+   "series:super-formula",
+   "series:supercars",
+   "series:cart-champcar",
+   "series:atlantic-championship"
+  ],
+  "next_steps": [
+   "series:imsa-weathertech",
+   "series:nascar-cup"
+  ],
+  "advancement_rate": null,
+  "advancement_drivers": {
+   "talent": 0.35,
+   "money": 0.25,
+   "sponsorship": 0.2,
+   "connections": 0.2,
+   "confidence": "low",
+   "notes": "informed estimate of relative weights (sum 1.0) from series economics and documented examples"
+  },
+  "dead_ends": "Of 2008-2016 debutants, 44% never had a 10+ start season and only ~5% lasted 10+ full seasons; ex-IndyCar drivers often move to IMSA endurance roles.",
+  "notes": "1996-2007 seasons are the IRL split era (game template open_wheel_top_irl). Only ~54% of 2010-2026 debutants raced Indy Lights first; ~38% of 2020-2026 full-timers came from outside the ladder (F1/F2, Supercars, Super Formula, NASCAR).",
+  "confidence": "high",
+  "sources": [
+   "src:racingsim-history-analysis",
+   "src:wiki-indycar-series",
+   "src:racer-indycar-budgets-2025",
+   "src:racer-leaders-circle-2025",
+   "src:motorsport-indycar-licensing-2027",
+   "src:indycar-rop"
+  ],
+  "game_template": "open_wheel_top",
+  "history_source": "irl_indycar"
+ },
+ {
+  "id": "series:lamborghini-super-trofeo-na",
+  "name": "Lamborghini Super Trofeo North America",
+  "names_by_year": [],
+  "sanctioning_body": "body:imsa",
+  "discipline": "sports_car",
+  "car_class": "class:lamborghini-huracan-st",
+  "level": "national",
+  "game_tier": 4,
+  "scope": "national",
+  "regions": [
+   "USA"
+  ],
+  "years": {
+   "from": 2013,
+   "to": null
+  },
+  "typical_age": {
+   "min": 18,
+   "max": 65,
+   "unit": "years",
+   "confidence": "low",
+   "sources": [
+    "src:informed-estimate"
+   ]
+  },
+  "entry_age": null,
+  "exit_age": null,
+  "experience_level": "pro-am",
+  "race_length": {
+   "value": 50,
+   "unit": "minutes",
+   "confidence": "high",
+   "sources": [
+    "src:imsa-lst-brochure-2025"
+   ]
+  },
+  "track_types": [
+   "road_course"
+  ],
+  "field_size": null,
+  "season_events": null,
+  "annual_cost_usd": {
+   "min": 400000,
+   "max": 800000,
+   "unit": "USD/season",
+   "confidence": "low",
+   "sources": [
+    "src:informed-estimate"
+   ],
+   "notes": "informed estimate"
+  },
+  "seat_cost_usd": null,
+  "win_purse_usd": null,
+  "points_fund_usd": null,
+  "scholarship_usd": null,
+  "team_structure": "Lamborghini customer teams",
+  "equipment_ownership": "team-run; gentleman-funded",
+  "licensing": "IMSA licence; classes by FIA rating (Pro Gold/Silver, Pro-Am, Am Bronze, LB Cup)",
+  "prerequisites": null,
+  "feeder_series": [
+   "series:mx5-cup",
+   "series:porsche-sprint-challenge-na"
+  ],
+  "next_steps": [
+   "series:imsa-weathertech",
+   "series:gt-world-challenge-america"
+  ],
+  "advancement_rate": null,
+  "advancement_drivers": {
+   "money": 0.45,
+   "talent": 0.3,
+   "manufacturer": 0.15,
+   "connections": 0.1,
+   "confidence": "low",
+   "notes": "informed estimate of relative weights (sum 1.0) from series economics and documented examples"
+  },
+  "dead_ends": null,
+  "notes": "Lamborghini Young Driver Program shootout; 2025 = 13th season.",
+  "confidence": "medium",
+  "sources": [
+   "src:imsa-lst-brochure-2025",
+   "src:manofmany-lambo-ferrari"
+  ],
+  "game_template": "one_make_gt_cup",
+  "history_source": null
+ },
+ {
+  "id": "series:ligier-jfc",
+  "name": "Ligier Junior Formula Championship",
+  "names_by_year": [],
+  "sanctioning_body": "body:parella-speedtour",
+  "discipline": "open_wheel",
+  "car_class": "class:fia-f4",
+  "level": "regional",
+  "game_tier": 2,
+  "scope": "national",
+  "regions": [
+   "USA"
+  ],
+  "years": {
+   "from": null,
+   "to": null
+  },
+  "typical_age": {
+   "min": 14,
+   "max": 18,
+   "unit": "years",
+   "confidence": "medium",
+   "sources": [
+    "src:ligier-jfc"
+   ]
+  },
+  "entry_age": {
+   "value": 14,
+   "unit": "years (minimum)",
+   "confidence": "medium",
+   "sources": [
+    "src:ligier-jfc"
+   ]
+  },
+  "exit_age": null,
+  "experience_level": "first car after karting",
+  "race_length": null,
+  "track_types": [
+   "road_course"
+  ],
+  "field_size": null,
+  "season_events": null,
+  "annual_cost_usd": null,
+  "seat_cost_usd": null,
+  "win_purse_usd": null,
+  "points_fund_usd": null,
+  "scholarship_usd": null,
+  "team_structure": "teams",
+  "equipment_ownership": "team/family-owned Ligier JS F4/F422",
+  "licensing": "minimum age 14",
+  "prerequisites": null,
+  "feeder_series": [
+   "series:skusa-pro-tour",
+   "series:wka-national",
+   "series:club-karting"
+  ],
+  "next_steps": [
+   "series:f4-us",
+   "series:usf-juniors"
+  ],
+  "advancement_rate": null,
+  "advancement_drivers": {
+   "talent": 0.4,
+   "money": 0.45,
+   "connections": 0.15,
+   "confidence": "low",
+   "notes": "informed estimate of relative weights (sum 1.0) from series economics and documented examples"
+  },
+  "dead_ends": null,
+  "notes": "Same car can continue into F4 U.S. at 15; marketed as lowest cost per mile; SpeedTour events.",
+  "confidence": "low",
+  "sources": [
+   "src:ligier-jfc",
+   "src:racingamerica-pmh"
+  ],
+  "game_template": "junior_formula",
+  "history_source": null
+ },
+ {
+  "id": "series:mx5-cup",
+  "name": "Mazda MX-5 Cup",
+  "names_by_year": [
+   {
+    "from": 2016,
+    "to": null,
+    "name": "(Global / Whelen) Mazda MX-5 Cup (ND era)"
+   }
+  ],
+  "sanctioning_body": "body:imsa",
+  "discipline": "sports_car",
+  "car_class": "class:mx5-cup-nd",
+  "level": "national",
+  "game_tier": 3,
+  "scope": "national",
+  "regions": [
+   "USA",
+   "CAN"
+  ],
+  "years": {
+   "from": 2016,
+   "to": null
+  },
+  "typical_age": {
+   "min": 15,
+   "max": 35,
+   "unit": "years",
+   "confidence": "low",
+   "sources": [
+    "src:imsa-sporting-regs-2025"
+   ],
+   "notes": "min age 15 (14 with experience); mix of juniors and amateurs"
+  },
+  "entry_age": {
+   "min": 15,
+   "max": 25,
+   "unit": "years",
+   "confidence": "low",
+   "sources": [
+    "src:informed-estimate"
+   ]
+  },
+  "exit_age": null,
+  "experience_level": "national pro-am development",
+  "race_length": {
+   "min": 40,
+   "max": 45,
+   "unit": "minutes",
+   "confidence": "low",
+   "sources": [
+    "src:informed-estimate"
+   ]
+  },
+  "track_types": [
+   "road_course",
+   "street"
+  ],
+  "field_size": null,
+  "season_events": {
+   "value": 14,
+   "unit": "races (7 double-headers, 2026)",
+   "confidence": "high",
+   "sources": [
+    "src:mx5cup-series"
+   ]
+  },
+  "annual_cost_usd": {
+   "min": 125000,
+   "max": 200000,
+   "unit": "USD/season incl. car amortisation",
+   "year_basis": 2025,
+   "confidence": "medium",
+   "sources": [
+    "src:thedrive-mx5-budget",
+    "src:imsa-mx5-fees-2025"
+   ],
+   "notes": "front-running 125-150k + car; entry ~17.5-20.7k"
+  },
+  "seat_cost_usd": null,
+  "win_purse_usd": null,
+  "points_fund_usd": null,
+  "scholarship_usd": {
+   "min": 200000,
+   "max": 250000,
+   "unit": "USD champion scholarship",
+   "confidence": "high",
+   "sources": [
+    "src:mx5cup-series",
+    "src:thedrive-mx5-budget"
+   ],
+   "notes": "2026 250k; ~1.28M total prize fund"
+  },
+  "team_structure": "prep teams (some owner-drivers)",
+  "equipment_ownership": "owner-driver or team-owned",
+  "licensing": "IMSA licence (min 15 for MX-5 Cup)",
+  "prerequisites": null,
+  "feeder_series": [
+   "series:scca-regional",
+   "series:spec-miata-club",
+   "series:nasa-club",
+   "series:usf2000",
+   "series:skusa-pro-tour"
+  ],
+  "next_steps": [
+   "series:imsa-pilot-challenge",
+   "series:imsa-vp-racing-challenge",
+   "series:imsa-weathertech"
+  ],
+  "advancement_rate": {
+   "min": 0.1,
+   "max": 0.3,
+   "unit": "share of full-timers moving to an IMSA pro series within 3 yrs",
+   "confidence": "low",
+   "sources": [
+    "src:informed-estimate"
+   ]
+  },
+  "advancement_drivers": {
+   "talent": 0.35,
+   "money": 0.35,
+   "manufacturer": 0.15,
+   "sponsorship": 0.1,
+   "connections": 0.05,
+   "confidence": "low",
+   "notes": "informed estimate of relative weights (sum 1.0) from series economics and documented examples"
+  },
+  "dead_ends": null,
+  "notes": "Mazda Motorsports ladder; races at IMSA/IndyCar weekends.",
+  "confidence": "medium",
+  "sources": [
+   "src:mx5cup-series",
+   "src:thedrive-mx5-budget",
+   "src:imsa-mx5-fees-2025",
+   "src:imsa-sporting-regs-2025"
+  ],
+  "game_template": "spec_roadster_cup",
+  "history_source": null
+ },
+ {
+  "id": "series:nasa-championships",
+  "name": "NASA National Championships",
+  "names_by_year": [],
+  "sanctioning_body": "body:nasa",
+  "discipline": "club_road",
+  "car_class": null,
+  "level": "national",
+  "game_tier": 2,
+  "scope": "national",
+  "regions": [
+   "USA"
+  ],
+  "years": {
+   "from": 2006,
+   "to": null
+  },
+  "typical_age": null,
+  "entry_age": null,
+  "exit_age": null,
+  "experience_level": null,
+  "race_length": null,
+  "track_types": [
+   "road_course"
+  ],
+  "field_size": null,
+  "season_events": {
+   "value": 1,
+   "unit": "event (annual)",
+   "confidence": "high",
+   "sources": [
+    "src:wiki-nasa"
+   ]
+  },
+  "annual_cost_usd": null,
+  "seat_cost_usd": null,
+  "win_purse_usd": null,
+  "points_fund_usd": null,
+  "scholarship_usd": null,
+  "team_structure": null,
+  "equipment_ownership": null,
+  "licensing": null,
+  "prerequisites": null,
+  "feeder_series": [
+   "series:nasa-club"
+  ],
+  "next_steps": [
+   "series:mx5-cup",
+   "series:toyota-gr-cup"
+  ],
+  "advancement_rate": null,
+  "advancement_drivers": {
+   "talent": 0.35,
+   "money": 0.45,
+   "connections": 0.1,
+   "sponsorship": 0.1,
+   "confidence": "low",
+   "notes": "informed estimate of relative weights (sum 1.0) from series economics and documented examples"
+  },
+  "dead_ends": null,
+  "notes": "Mid-Ohio 2006 first; Daytona since 2021.",
+  "confidence": "medium",
+  "sources": [
+   "src:wiki-nasa"
+  ],
+  "game_template": "club_national",
+  "history_source": null
+ },
+ {
+  "id": "series:nasa-club",
+  "name": "NASA regional club racing",
+  "names_by_year": [],
+  "sanctioning_body": "body:nasa",
+  "discipline": "club_road",
+  "car_class": "class:spec-e30",
+  "level": "regional",
+  "game_tier": 1,
+  "scope": "regional",
+  "regions": [
+   "USA"
+  ],
+  "years": {
+   "from": 1991,
+   "to": null
+  },
+  "typical_age": {
+   "min": 18,
+   "max": 70,
+   "unit": "years",
+   "confidence": "low",
+   "sources": [
+    "src:informed-estimate"
+   ]
+  },
+  "entry_age": null,
+  "exit_age": null,
+  "experience_level": "novice to amateur",
+  "race_length": null,
+  "track_types": [
+   "road_course"
+  ],
+  "field_size": null,
+  "season_events": null,
+  "annual_cost_usd": {
+   "min": 8000,
+   "max": 30000,
+   "unit": "USD/season",
+   "confidence": "low",
+   "sources": [
+    "src:nomoneymotorsports-sm"
+   ],
+   "notes": "similar to SCCA spec-class costs"
+  },
+  "seat_cost_usd": null,
+  "win_purse_usd": null,
+  "points_fund_usd": null,
+  "scholarship_usd": null,
+  "team_structure": "owner-driver",
+  "equipment_ownership": "owner-driver",
+  "licensing": "HPDE 1-4 progression -> competition licence (NASA membership ~USD 45/yr)",
+  "prerequisites": null,
+  "feeder_series": [],
+  "next_steps": [
+   "series:nasa-championships",
+   "series:scca-regional",
+   "series:mx5-cup"
+  ],
+  "advancement_rate": null,
+  "advancement_drivers": {
+   "talent": 0.3,
+   "money": 0.5,
+   "connections": 0.1,
+   "sponsorship": 0.1,
+   "confidence": "low",
+   "notes": "informed estimate of relative weights (sum 1.0) from series economics and documented examples"
+  },
+  "dead_ends": null,
+  "notes": "Spec Miata, Spec E30 and 944 Spec most popular.",
+  "confidence": "medium",
+  "sources": [
+   "src:wiki-nasa"
+  ],
+  "game_template": "club_regional",
+  "history_source": null
+ },
+ {
+  "id": "series:porsche-carrera-cup-na",
+  "name": "Porsche Carrera Cup North America",
+  "names_by_year": [],
+  "sanctioning_body": "body:imsa",
+  "discipline": "sports_car",
+  "car_class": "class:porsche-911-gt3-cup",
+  "level": "national",
+  "game_tier": 4,
+  "scope": "national",
+  "regions": [
+   "USA",
+   "CAN"
+  ],
+  "years": {
+   "from": 2021,
+   "to": null
+  },
+  "typical_age": {
+   "min": 17,
+   "max": 65,
+   "unit": "years",
+   "confidence": "high",
+   "sources": [
+    "src:pccna-series-info"
+   ],
+   "notes": "Pro 17-35, Pro-Am 36-49, Masters 50+"
+  },
+  "entry_age": {
+   "min": 17,
+   "max": 24,
+   "unit": "years",
+   "confidence": "medium",
+   "sources": [
+    "src:pccna-series-info",
+    "src:porsche-junior-2026"
+   ],
+   "notes": "pro-track drivers; Porsche Junior eligibility <=23-24"
+  },
+  "exit_age": null,
+  "experience_level": "pro (Pro class) and gentleman (Pro-Am/Masters)",
+  "race_length": {
+   "min": 40,
+   "max": 45,
+   "unit": "minutes",
+   "confidence": "low",
+   "sources": [
+    "src:informed-estimate"
+   ]
+  },
+  "track_types": [
+   "road_course",
+   "street"
+  ],
+  "field_size": {
+   "min": 20,
+   "max": 30,
+   "unit": "cars",
+   "confidence": "high",
+   "sources": [
+    "src:imsa-pccna-2026-preview"
+   ],
+   "notes": "27 at 2026 Sebring (14 Pro, 4 Pro-Am, 9 Masters)"
+  },
+  "season_events": {
+   "min": 14,
+   "max": 16,
+   "unit": "races",
+   "confidence": "low",
+   "sources": [
+    "src:pccna-series-info"
+   ],
+   "notes": "~8 doubleheader events"
+  },
+  "annual_cost_usd": {
+   "min": 400000,
+   "max": 600000,
+   "unit": "USD/season",
+   "confidence": "low",
+   "sources": [
+    "src:renndriver-carrera-cup"
+   ],
+   "notes": "EUR 350-500k national Carrera Cup budget (European basis)"
+  },
+  "seat_cost_usd": null,
+  "win_purse_usd": null,
+  "points_fund_usd": null,
+  "scholarship_usd": null,
+  "team_structure": "Porsche customer teams",
+  "equipment_ownership": "team-run; paid seats",
+  "licensing": "IMSA licence; age-defined classes",
+  "prerequisites": null,
+  "feeder_series": [
+   "series:porsche-sprint-challenge-na",
+   "series:usf-pro-2000",
+   "series:mx5-cup",
+   "series:skusa-pro-tour"
+  ],
+  "next_steps": [
+   "series:imsa-weathertech",
+   "series:gt-world-challenge-america",
+   "series:european-fia-ladder"
+  ],
+  "advancement_rate": {
+   "min": 0.1,
+   "max": 0.3,
+   "unit": "share of Pro-class drivers getting factory/pro GT seats within 3 yrs",
+   "confidence": "low",
+   "sources": [
+    "src:informed-estimate"
+   ]
+  },
+  "advancement_drivers": {
+   "talent": 0.3,
+   "money": 0.35,
+   "manufacturer": 0.2,
+   "connections": 0.1,
+   "sponsorship": 0.05,
+   "confidence": "low",
+   "notes": "informed estimate of relative weights (sum 1.0) from series economics and documented examples"
+  },
+  "dead_ends": null,
+  "notes": "Porsche Junior selection (one nominee per Carrera Cup aged <=23) is the factory gateway (De Phillippi was 2nd American Porsche Junior, 2013).",
+  "confidence": "medium",
+  "sources": [
+   "src:pccna-series-info",
+   "src:imsa-pccna-2026-preview",
+   "src:porsche-junior-2026",
+   "src:wiki-de-phillippi",
+   "src:renndriver-carrera-cup"
+  ],
+  "game_template": "one_make_gt_cup",
+  "history_source": null
+ },
+ {
+  "id": "series:porsche-sprint-challenge-na",
+  "name": "Porsche Sprint Challenge North America",
+  "names_by_year": [],
+  "sanctioning_body": "body:usac",
+  "discipline": "sports_car",
+  "car_class": "class:porsche-911-gt3-cup",
+  "level": "national",
+  "game_tier": 4,
+  "scope": "national",
+  "regions": [
+   "USA"
+  ],
+  "years": {
+   "from": 2021,
+   "to": null
+  },
+  "typical_age": {
+   "min": 25,
+   "max": 65,
+   "unit": "years",
+   "confidence": "low",
+   "sources": [
+    "src:informed-estimate"
+   ]
+  },
+  "entry_age": null,
+  "exit_age": null,
+  "experience_level": "amateur / gentleman",
+  "race_length": null,
+  "track_types": [
+   "road_course"
+  ],
+  "field_size": null,
+  "season_events": {
+   "min": 12,
+   "max": 16,
+   "unit": "races",
+   "confidence": "low",
+   "sources": [
+    "src:wiki-porsche-sprint-challenge"
+   ],
+   "notes": "16-race format at launch"
+  },
+  "annual_cost_usd": {
+   "min": 150000,
+   "max": 400000,
+   "unit": "USD/season",
+   "confidence": "low",
+   "sources": [
+    "src:informed-estimate"
+   ],
+   "notes": "informed estimate (GT3 Cup or Cayman GT4 Clubsport)"
+  },
+  "seat_cost_usd": null,
+  "win_purse_usd": null,
+  "points_fund_usd": null,
+  "scholarship_usd": null,
+  "team_structure": "Porsche customer teams",
+  "equipment_ownership": "owner-driver (gentleman) cars run by teams",
+  "licensing": null,
+  "prerequisites": null,
+  "feeder_series": [
+   "series:scca-regional",
+   "series:nasa-club"
+  ],
+  "next_steps": [
+   "series:porsche-carrera-cup-na",
+   "series:imsa-pilot-challenge"
+  ],
+  "advancement_rate": null,
+  "advancement_drivers": {
+   "money": 0.6,
+   "talent": 0.25,
+   "connections": 0.15,
+   "confidence": "low",
+   "notes": "informed estimate of relative weights (sum 1.0) from series economics and documented examples"
+  },
+  "dead_ends": null,
+  "notes": "USAC-sanctioned base of the Porsche one-make pyramid; GT3 Cup and Cayman GT4 RS Clubsport championships by age/car.",
+  "confidence": "low",
+  "sources": [
+   "src:wiki-porsche-sprint-challenge"
+  ],
+  "game_template": "one_make_gt_cup",
+  "history_source": null
+ },
+ {
+  "id": "series:rok-cup-usa",
+  "name": "ROK Cup USA national program (ROK Vegas, Superfinal qualifiers)",
+  "names_by_year": [],
+  "sanctioning_body": "body:rok-cup-usa",
+  "discipline": "karting",
+  "car_class": "class:kart-junior-100cc",
+  "level": "national",
+  "game_tier": 2,
+  "scope": "national",
+  "regions": [
+   "USA"
+  ],
+  "years": {
+   "from": null,
+   "to": null
+  },
+  "typical_age": {
+   "min": 7,
+   "max": 18,
+   "unit": "years",
+   "confidence": "high",
+   "sources": [
+    "src:skusa-classes-2026",
+    "src:rokcupusa-fwt"
+   ],
+   "notes": "youth classes 7-15, seniors 15+; masters classes also run"
+  },
+  "entry_age": {
+   "min": 7,
+   "max": 12,
+   "unit": "years",
+   "confidence": "medium",
+   "sources": [
+    "src:skusa-classes-2026"
+   ],
+   "notes": "Micro 7-10, Mini 9-13"
+  },
+  "exit_age": {
+   "min": 14,
+   "max": 18,
+   "unit": "years",
+   "confidence": "low",
+   "sources": [
+    "src:usfjuniors-licensing",
+    "src:ligier-jfc"
+   ],
+   "notes": "car series accept 14 (USF Juniors, Ligier JFC) / 15 (USF2000, F4)"
+  },
+  "experience_level": "advanced youth amateur",
+  "race_length": {
+   "min": 10,
+   "max": 25,
+   "unit": "laps per final",
+   "confidence": "low",
+   "sources": [
+    "src:informed-estimate"
+   ]
+  },
+  "track_types": [
+   "kart_track"
+  ],
+  "field_size": {
+   "min": 10,
+   "max": 40,
+   "unit": "karts per class",
+   "confidence": "low",
+   "sources": [
+    "src:informed-estimate"
+   ],
+   "notes": "informed estimate"
+  },
+  "season_events": {
+   "min": 3,
+   "max": 8,
+   "unit": "events",
+   "confidence": "low",
+   "sources": [
+    "src:informed-estimate"
+   ],
+   "notes": "informed estimate; double-header weekends common"
+  },
+  "annual_cost_usd": {
+   "min": 30000,
+   "max": 100000,
+   "unit": "USD/season",
+   "year_basis": 2025,
+   "confidence": "low",
+   "sources": [
+    "src:search-karting-national-costs",
+    "src:skusa-pricing-2026"
+   ],
+   "notes": "national junior program with team tent; top factory-supported programs can exceed this"
+  },
+  "seat_cost_usd": null,
+  "win_purse_usd": null,
+  "points_fund_usd": null,
+  "scholarship_usd": null,
+  "team_structure": "kart teams/tents (chassis-brand teams) running family-funded drivers",
+  "equipment_ownership": "family-owned karts, team support fees",
+  "licensing": "series membership; age-bracketed classes (Micro 7-10, Mini 9-13, Junior 12-15, Senior 15+)",
+  "prerequisites": "club karting experience",
+  "feeder_series": [
+   "series:club-karting"
+  ],
+  "next_steps": [
+   "series:skusa-supernationals",
+   "series:usf-juniors",
+   "series:f4-us",
+   "series:ligier-jfc",
+   "series:skip-barber-formula",
+   "series:usf2000"
+  ],
+  "advancement_rate": {
+   "min": 0.05,
+   "max": 0.2,
+   "unit": "share of national junior karters moving to car racing within 3 yrs",
+   "confidence": "low",
+   "sources": [
+    "src:informed-estimate"
+   ],
+   "notes": "informed estimate"
+  },
+  "advancement_drivers": {
+   "talent": 0.35,
+   "money": 0.45,
+   "connections": 0.1,
+   "sponsorship": 0.1,
+   "confidence": "low",
+   "notes": "informed estimate of relative weights (sum 1.0) from series economics and documented examples"
+  },
+  "dead_ends": "Many talented karters stop at 15-17 for lack of the ~USD 150-400k/yr needed for car racing; some become karting pros/coaches.",
+  "notes": "Vortex ROK one-engine program; tickets to ROK Superfinal (Italy).",
+  "confidence": "low",
+  "sources": [
+   "src:rokcupusa-fwt"
+  ],
+  "game_template": "national_karting",
+  "history_source": null
+ },
+ {
+  "id": "series:scca-majors-super-tour",
+  "name": "SCCA U.S. Majors Tour / Hoosier Super Tour",
+  "names_by_year": [],
+  "sanctioning_body": "body:scca",
+  "discipline": "club_road",
+  "car_class": null,
+  "level": "national",
+  "game_tier": 2,
+  "scope": "national",
+  "regions": [
+   "USA"
+  ],
+  "years": {
+   "from": null,
+   "to": null
+  },
+  "typical_age": {
+   "min": 16,
+   "max": 70,
+   "unit": "years",
+   "confidence": "low",
+   "sources": [
+    "src:informed-estimate"
+   ]
+  },
+  "entry_age": null,
+  "exit_age": null,
+  "experience_level": "advanced amateur",
+  "race_length": null,
+  "track_types": [
+   "road_course"
+  ],
+  "field_size": null,
+  "season_events": null,
+  "annual_cost_usd": {
+   "min": 20000,
+   "max": 80000,
+   "unit": "USD/season",
+   "confidence": "low",
+   "sources": [
+    "src:informed-estimate"
+   ],
+   "notes": "informed estimate; travel-heavy"
+  },
+  "seat_cost_usd": null,
+  "win_purse_usd": null,
+  "points_fund_usd": null,
+  "scholarship_usd": null,
+  "team_structure": "owner-driver and small prep shops",
+  "equipment_ownership": "owner-driver",
+  "licensing": "SCCA Full Competition License required",
+  "prerequisites": "full licence (3+ successful regional weekends)",
+  "feeder_series": [
+   "series:scca-regional"
+  ],
+  "next_steps": [
+   "series:scca-runoffs"
+  ],
+  "advancement_rate": null,
+  "advancement_drivers": {
+   "talent": 0.35,
+   "money": 0.45,
+   "connections": 0.1,
+   "sponsorship": 0.1,
+   "confidence": "low",
+   "notes": "informed estimate of relative weights (sum 1.0) from series economics and documented examples"
+  },
+  "dead_ends": null,
+  "notes": "Runoffs path: 3 Majors/Super Tour events, 3 finished races, top 50% of conference/Super Tour points (top 10 if class <20).",
+  "confidence": "medium",
+  "sources": [
+   "src:wiki-scca-runoffs",
+   "src:scca-i-want-to-road-race"
+  ],
+  "game_template": "club_national",
+  "history_source": null
+ },
+ {
+  "id": "series:scca-regional",
+  "name": "SCCA Regional Club Racing",
+  "names_by_year": [],
+  "sanctioning_body": "body:scca",
+  "discipline": "club_road",
+  "car_class": "class:spec-miata",
+  "level": "regional",
+  "game_tier": 1,
+  "scope": "regional",
+  "regions": [
+   "USA"
+  ],
+  "years": {
+   "from": 1944,
+   "to": null
+  },
+  "typical_age": {
+   "min": 16,
+   "max": 70,
+   "unit": "years",
+   "confidence": "medium",
+   "sources": [
+    "src:scca-i-want-to-road-race"
+   ],
+   "notes": "novice permit from 14; mostly adult hobbyists"
+  },
+  "entry_age": {
+   "min": 14,
+   "max": 50,
+   "unit": "years",
+   "confidence": "medium",
+   "sources": [
+    "src:scca-i-want-to-road-race"
+   ]
+  },
+  "exit_age": null,
+  "experience_level": "novice to amateur",
+  "race_length": {
+   "min": 20,
+   "max": 45,
+   "unit": "minutes",
+   "confidence": "low",
+   "sources": [
+    "src:informed-estimate"
+   ]
+  },
+  "track_types": [
+   "road_course"
+  ],
+  "field_size": {
+   "min": 10,
+   "max": 60,
+   "unit": "cars per run group",
+   "confidence": "low",
+   "sources": [
+    "src:informed-estimate"
+   ]
+  },
+  "season_events": {
+   "min": 4,
+   "max": 12,
+   "unit": "weekends",
+   "confidence": "low",
+   "sources": [
+    "src:informed-estimate"
+   ]
+  },
+  "annual_cost_usd": {
+   "min": 10000,
+   "max": 30000,
+   "unit": "USD/season",
+   "year_basis": 2024,
+   "confidence": "medium",
+   "sources": [
+    "src:nomoneymotorsports-sm"
+   ],
+   "notes": "Spec Miata ~1k/weekend all-in; ~10k DIY season; plus car purchase"
+  },
+  "seat_cost_usd": null,
+  "win_purse_usd": null,
+  "points_fund_usd": null,
+  "scholarship_usd": null,
+  "team_structure": "owner-driver, optional arrive-and-drive",
+  "equipment_ownership": "owner-driver",
+  "licensing": "Novice Permit (14+) -> driver school credit -> 3 successful regional weekends -> Full Competition License",
+  "prerequisites": "SCCA driver school or recognised racing school",
+  "feeder_series": [
+   "series:club-karting",
+   "series:nasa-club"
+  ],
+  "next_steps": [
+   "series:scca-majors-super-tour",
+   "series:mx5-cup",
+   "series:f1600-championship",
+   "series:toyota-gr-cup"
+  ],
+  "advancement_rate": {
+   "min": 0.05,
+   "max": 0.25,
+   "unit": "share moving to national-level (Majors/Runoffs) or pro cups",
+   "confidence": "low",
+   "sources": [
+    "src:informed-estimate"
+   ]
+  },
+  "advancement_drivers": {
+   "talent": 0.3,
+   "money": 0.5,
+   "connections": 0.1,
+   "sponsorship": 0.1,
+   "confidence": "low",
+   "notes": "informed estimate of relative weights (sum 1.0) from series economics and documented examples"
+  },
+  "dead_ends": "Most competitors are lifelong amateurs.",
+  "notes": "Classes include Spec Miata, SRF3, Formula F/FE2/FV, Touring, GT, etc.",
+  "confidence": "medium",
+  "sources": [
+   "src:scca-i-want-to-road-race",
+   "src:nomoneymotorsports-sm",
+   "src:scca-formula-classes"
+  ],
+  "game_template": "club_regional",
+  "history_source": null
+ },
+ {
+  "id": "series:scca-runoffs",
+  "name": "SCCA National Championship Runoffs",
+  "names_by_year": [
+   {
+    "from": 1964,
+    "to": 1964,
+    "name": "American Road Race of Champions"
+   },
+   {
+    "from": 1965,
+    "to": null,
+    "name": "SCCA National Championship Runoffs"
+   }
+  ],
+  "sanctioning_body": "body:scca",
+  "discipline": "club_road",
+  "car_class": null,
+  "level": "national",
+  "game_tier": 2,
+  "scope": "national",
+  "regions": [
+   "USA"
+  ],
+  "years": {
+   "from": 1964,
+   "to": null
+  },
+  "typical_age": {
+   "min": 16,
+   "max": 75,
+   "unit": "years",
+   "confidence": "low",
+   "sources": [
+    "src:informed-estimate"
+   ]
+  },
+  "entry_age": null,
+  "exit_age": null,
+  "experience_level": "elite amateur",
+  "race_length": null,
+  "track_types": [
+   "road_course"
+  ],
+  "field_size": {
+   "min": 10,
+   "max": 60,
+   "unit": "cars per class",
+   "confidence": "low",
+   "sources": [
+    "src:scca-runoffs-2025"
+   ],
+   "notes": "23 classes in 18 run groups in 2025; SM 29 cars"
+  },
+  "season_events": {
+   "value": 1,
+   "unit": "event (annual)",
+   "confidence": "high",
+   "sources": [
+    "src:wiki-scca-runoffs"
+   ]
+  },
+  "annual_cost_usd": null,
+  "seat_cost_usd": null,
+  "win_purse_usd": null,
+  "points_fund_usd": null,
+  "scholarship_usd": null,
+  "team_structure": null,
+  "equipment_ownership": null,
+  "licensing": "SCCA Full Competition License + qualification",
+  "prerequisites": null,
+  "feeder_series": [
+   "series:scca-majors-super-tour"
+  ],
+  "next_steps": [
+   "series:mx5-cup",
+   "series:imsa-pilot-challenge",
+   "series:trans-am-ta2"
+  ],
+  "advancement_rate": null,
+  "advancement_drivers": {
+   "talent": 0.4,
+   "money": 0.4,
+   "connections": 0.1,
+   "manufacturer": 0.1,
+   "confidence": "low",
+   "notes": "informed estimate of relative weights (sum 1.0) from series economics and documented examples"
+  },
+  "dead_ends": null,
+  "notes": "National championship event since 1964; class consolidation from 2025.",
+  "confidence": "high",
+  "sources": [
+   "src:wiki-scca-runoffs",
+   "src:scca-runoffs-2025"
+  ],
+  "game_template": "club_national",
+  "history_source": null
+ },
+ {
+  "id": "series:skip-barber-formula",
+  "name": "Skip Barber Formula Race Series (school series)",
+  "names_by_year": [
+   {
+    "from": 1976,
+    "to": null,
+    "name": "Skip Barber Race Series / Skip Barber Formula Race Series"
+   }
+  ],
+  "sanctioning_body": "body:skip-barber",
+  "discipline": "open_wheel",
+  "car_class": "class:formula-f1600",
+  "level": "regional",
+  "game_tier": 2,
+  "scope": "national",
+  "regions": [
+   "USA"
+  ],
+  "years": {
+   "from": 1976,
+   "to": null
+  },
+  "typical_age": {
+   "min": 14,
+   "max": 40,
+   "unit": "years",
+   "confidence": "low",
+   "sources": [
+    "src:wiki-newgarden",
+    "src:wiki-de-phillippi"
+   ],
+   "notes": "juniors 14-18 plus adult amateurs"
+  },
+  "entry_age": {
+   "min": 14,
+   "max": 18,
+   "unit": "years",
+   "confidence": "low",
+   "sources": [
+    "src:wiki-newgarden"
+   ],
+   "notes": "Newgarden entered at ~15-16 (2006)"
+  },
+  "exit_age": {
+   "min": 16,
+   "max": 20,
+   "unit": "years",
+   "confidence": "low",
+   "sources": [
+    "src:informed-estimate"
+   ]
+  },
+  "experience_level": "novice to intermediate (arrive-and-drive)",
+  "race_length": null,
+  "track_types": [
+   "road_course"
+  ],
+  "field_size": null,
+  "season_events": null,
+  "annual_cost_usd": {
+   "min": 30000,
+   "max": 80000,
+   "unit": "USD/season",
+   "confidence": "low",
+   "sources": [
+    "src:informed-estimate"
+   ],
+   "notes": "informed estimate for arrive-and-drive school series"
+  },
+  "seat_cost_usd": null,
+  "win_purse_usd": null,
+  "points_fund_usd": null,
+  "scholarship_usd": null,
+  "team_structure": "school-owned cars (arrive-and-drive)",
+  "equipment_ownership": "school-owned",
+  "licensing": "Skip Barber school completion; SCCA-recognised",
+  "prerequisites": "racing school",
+  "feeder_series": [
+   "series:club-karting",
+   "series:skusa-pro-tour"
+  ],
+  "next_steps": [
+   "series:usf-juniors",
+   "series:usf2000",
+   "series:f1600-championship"
+  ],
+  "advancement_rate": {
+   "min": 0.05,
+   "max": 0.2,
+   "unit": "share of junior entrants moving up within 3 yrs",
+   "confidence": "low",
+   "sources": [
+    "src:informed-estimate"
+   ]
+  },
+  "advancement_drivers": {
+   "talent": 0.45,
+   "money": 0.35,
+   "connections": 0.1,
+   "sponsorship": 0.1,
+   "confidence": "low",
+   "notes": "informed estimate of relative weights (sum 1.0) from series economics and documented examples"
+  },
+  "dead_ends": null,
+  "notes": "Historically a scholarship gateway: 2009 Skip Barber national champion De Phillippi won a 2010 Star Mazda ride; school claims more IndyCar alumni than any program (Newgarden, Rossi, Hunter-Reay, Pigot). Also an iRacing-to-real ride shootout.",
+  "confidence": "low",
+  "sources": [
+   "src:skipbarber-wiki",
+   "src:wiki-de-phillippi",
+   "src:wiki-newgarden"
+  ],
+  "game_template": "junior_formula",
+  "history_source": null
+ },
+ {
+  "id": "series:skusa-pro-tour",
+  "name": "SKUSA Pro Tour",
+  "names_by_year": [],
+  "sanctioning_body": "body:skusa",
+  "discipline": "karting",
+  "car_class": "class:kart-junior-100cc",
+  "level": "national",
+  "game_tier": 2,
+  "scope": "national",
+  "regions": [
+   "USA"
+  ],
+  "years": {
+   "from": null,
+   "to": null
+  },
+  "typical_age": {
+   "min": 7,
+   "max": 18,
+   "unit": "years",
+   "confidence": "high",
+   "sources": [
+    "src:skusa-classes-2026",
+    "src:rokcupusa-fwt"
+   ],
+   "notes": "youth classes 7-15, seniors 15+; masters classes also run"
+  },
+  "entry_age": {
+   "min": 7,
+   "max": 12,
+   "unit": "years",
+   "confidence": "medium",
+   "sources": [
+    "src:skusa-classes-2026"
+   ],
+   "notes": "Micro 7-10, Mini 9-13"
+  },
+  "exit_age": {
+   "min": 14,
+   "max": 18,
+   "unit": "years",
+   "confidence": "low",
+   "sources": [
+    "src:usfjuniors-licensing",
+    "src:ligier-jfc"
+   ],
+   "notes": "car series accept 14 (USF Juniors, Ligier JFC) / 15 (USF2000, F4)"
+  },
+  "experience_level": "advanced youth amateur",
+  "race_length": {
+   "min": 10,
+   "max": 25,
+   "unit": "laps per final",
+   "confidence": "low",
+   "sources": [
+    "src:informed-estimate"
+   ]
+  },
+  "track_types": [
+   "kart_track"
+  ],
+  "field_size": {
+   "min": 20,
+   "max": 60,
+   "unit": "karts per class",
+   "confidence": "low",
+   "sources": [
+    "src:informed-estimate"
+   ],
+   "notes": "informed estimate"
+  },
+  "season_events": {
+   "min": 3,
+   "max": 8,
+   "unit": "events",
+   "confidence": "low",
+   "sources": [
+    "src:informed-estimate"
+   ],
+   "notes": "informed estimate; double-header weekends common"
+  },
+  "annual_cost_usd": {
+   "min": 30000,
+   "max": 100000,
+   "unit": "USD/season",
+   "year_basis": 2025,
+   "confidence": "low",
+   "sources": [
+    "src:search-karting-national-costs",
+    "src:skusa-pricing-2026"
+   ],
+   "notes": "national junior program with team tent; top factory-supported programs can exceed this"
+  },
+  "seat_cost_usd": null,
+  "win_purse_usd": null,
+  "points_fund_usd": null,
+  "scholarship_usd": null,
+  "team_structure": "kart teams/tents (chassis-brand teams) running family-funded drivers",
+  "equipment_ownership": "family-owned karts, team support fees",
+  "licensing": "series membership; age-bracketed classes (Micro 7-10, Mini 9-13, Junior 12-15, Senior 15+)",
+  "prerequisites": "club karting experience",
+  "feeder_series": [
+   "series:club-karting"
+  ],
+  "next_steps": [
+   "series:skusa-supernationals",
+   "series:usf-juniors",
+   "series:f4-us",
+   "series:ligier-jfc",
+   "series:skip-barber-formula",
+   "series:usf2000"
+  ],
+  "advancement_rate": {
+   "min": 0.05,
+   "max": 0.2,
+   "unit": "share of national junior karters moving to car racing within 3 yrs",
+   "confidence": "low",
+   "sources": [
+    "src:informed-estimate"
+   ],
+   "notes": "informed estimate"
+  },
+  "advancement_drivers": {
+   "talent": 0.35,
+   "money": 0.45,
+   "connections": 0.1,
+   "sponsorship": 0.1,
+   "confidence": "low",
+   "notes": "informed estimate of relative weights (sum 1.0) from series economics and documented examples"
+  },
+  "dead_ends": "Many talented karters stop at 15-17 for lack of the ~USD 150-400k/yr needed for car racing; some become karting pros/coaches.",
+  "notes": "National sprint tour (~3 double-header events); USD 310k Pro Tour purse in 2026; classes Micro/Mini Swift, KA100 & X30 Junior/Senior, Pro Shifter, masters.",
+  "confidence": "medium",
+  "sources": [
+   "src:skusa-classes-2026",
+   "src:skusa-pricing-2026"
+  ],
+  "game_template": "national_karting",
+  "history_source": null
+ },
+ {
+  "id": "series:skusa-supernationals",
+  "name": "SKUSA SuperNationals (Las Vegas)",
+  "names_by_year": [],
+  "sanctioning_body": "body:skusa",
+  "discipline": "karting",
+  "car_class": "class:kart-senior-125cc",
+  "level": "national",
+  "game_tier": 2,
+  "scope": "international",
+  "regions": [
+   "USA"
+  ],
+  "years": {
+   "from": 1997,
+   "to": null
+  },
+  "typical_age": {
+   "min": 7,
+   "max": 50,
+   "unit": "years",
+   "confidence": "high",
+   "sources": [
+    "src:skusa-classes-2026"
+   ]
+  },
+  "entry_age": {
+   "min": 7,
+   "max": 10,
+   "unit": "years",
+   "confidence": "high",
+   "sources": [
+    "src:skusa-classes-2026"
+   ]
+  },
+  "exit_age": null,
+  "experience_level": "elite youth and pro karters",
+  "race_length": null,
+  "track_types": [
+   "kart_track",
+   "temporary_kart_circuit"
+  ],
+  "field_size": {
+   "min": 400,
+   "max": 500,
+   "unit": "drivers total",
+   "confidence": "medium",
+   "sources": [
+    "src:wiki-skusa-supernationals"
+   ],
+   "notes": "180+ in 1997, 400+ now across ~29 classes"
+  },
+  "season_events": {
+   "value": 1,
+   "unit": "event (annual, November)",
+   "confidence": "high",
+   "sources": [
+    "src:wiki-skusa-supernationals"
+   ]
+  },
+  "annual_cost_usd": null,
+  "seat_cost_usd": null,
+  "win_purse_usd": null,
+  "points_fund_usd": null,
+  "scholarship_usd": null,
+  "team_structure": "kart teams",
+  "equipment_ownership": "family/team",
+  "licensing": "SKUSA membership",
+  "prerequisites": "national-level karting",
+  "feeder_series": [
+   "series:skusa-pro-tour",
+   "series:club-karting"
+  ],
+  "next_steps": [
+   "series:usf-juniors",
+   "series:f4-us",
+   "series:usf2000"
+  ],
+  "advancement_rate": null,
+  "advancement_drivers": {
+   "talent": 0.45,
+   "money": 0.35,
+   "connections": 0.1,
+   "sponsorship": 0.1,
+   "confidence": "low",
+   "notes": "informed estimate of relative weights (sum 1.0) from series economics and documented examples"
+  },
+  "dead_ends": null,
+  "notes": "Crown-jewel karting event; titles (e.g. De Phillippi 4 SuperNats wins) are key scouting signals.",
+  "confidence": "medium",
+  "sources": [
+   "src:wiki-skusa-supernationals",
+   "src:skusa-classes-2026",
+   "src:wiki-de-phillippi"
+  ],
+  "game_template": "national_karting",
+  "history_source": null
+ },
+ {
+  "id": "series:spec-miata-club",
+  "name": "Spec Miata (SCCA/NASA club class)",
+  "names_by_year": [],
+  "sanctioning_body": "body:scca",
+  "discipline": "club_road",
+  "car_class": "class:spec-miata",
+  "level": "regional",
+  "game_tier": 1,
+  "scope": "national",
+  "regions": [
+   "USA"
+  ],
+  "years": {
+   "from": null,
+   "to": null
+  },
+  "typical_age": {
+   "min": 16,
+   "max": 70,
+   "unit": "years",
+   "confidence": "low",
+   "sources": [
+    "src:informed-estimate"
+   ]
+  },
+  "entry_age": null,
+  "exit_age": null,
+  "experience_level": "amateur",
+  "race_length": null,
+  "track_types": [
+   "road_course"
+  ],
+  "field_size": {
+   "min": 15,
+   "max": 60,
+   "unit": "cars",
+   "confidence": "low",
+   "sources": [
+    "src:scca-runoffs-2025"
+   ],
+   "notes": "29 at 2025 Runoffs; regional grids vary"
+  },
+  "season_events": null,
+  "annual_cost_usd": {
+   "min": 10000,
+   "max": 40000,
+   "unit": "USD/season",
+   "confidence": "medium",
+   "sources": [
+    "src:nomoneymotorsports-sm"
+   ],
+   "notes": "excl. car purchase 6-65k"
+  },
+  "seat_cost_usd": null,
+  "win_purse_usd": null,
+  "points_fund_usd": null,
+  "scholarship_usd": null,
+  "team_structure": "owner-driver or arrive-and-drive",
+  "equipment_ownership": "owner-driver",
+  "licensing": "SCCA or NASA competition licence",
+  "prerequisites": null,
+  "feeder_series": [
+   "series:club-karting"
+  ],
+  "next_steps": [
+   "series:scca-runoffs",
+   "series:nasa-championships",
+   "series:mx5-cup"
+  ],
+  "advancement_rate": null,
+  "advancement_drivers": {
+   "talent": 0.35,
+   "money": 0.45,
+   "connections": 0.1,
+   "manufacturer": 0.1,
+   "confidence": "low",
+   "notes": "informed estimate; Mazda contingency/scholarship ladder"
+  },
+  "dead_ends": null,
+  "notes": "Most popular US club class; also eligible in SCCA ITA/ITS.",
+  "confidence": "medium",
+  "sources": [
+   "src:wiki-spec-miata",
+   "src:nomoneymotorsports-sm",
+   "src:scca-runoffs-2025"
+  ],
+  "game_template": "club_regional",
+  "history_source": null
+ },
+ {
+  "id": "series:super-formula",
+  "name": "Super Formula (Japan)",
+  "names_by_year": [],
+  "sanctioning_body": null,
+  "discipline": "open_wheel",
+  "car_class": null,
+  "level": "international",
+  "game_tier": 6,
+  "scope": "international",
+  "regions": [
+   "JPN"
+  ],
+  "years": {
+   "from": null,
+   "to": null
+  },
+  "typical_age": null,
+  "entry_age": null,
+  "exit_age": null,
+  "experience_level": "pro (Japan top formula)",
+  "race_length": null,
+  "track_types": [],
+  "field_size": null,
+  "season_events": null,
+  "annual_cost_usd": null,
+  "seat_cost_usd": null,
+  "win_purse_usd": null,
+  "points_fund_usd": null,
+  "scholarship_usd": null,
+  "team_structure": null,
+  "equipment_ownership": null,
+  "licensing": null,
+  "prerequisites": null,
+  "feeder_series": [],
+  "next_steps": [
+   "series:indycar"
+  ],
+  "advancement_rate": null,
+  "advancement_drivers": null,
+  "dead_ends": null,
+  "notes": "Palou: 2019 Super Formula winner/ROTY, 3rd overall -> Dale Coyne 2020 at 22 -> 4x IndyCar champion. Accepted directly under 2027 IndyCar licensing.",
+  "confidence": "low",
+  "sources": [
+   "src:indycar-palou-coyne",
+   "src:motorsport-indycar-licensing-2027"
+  ],
+  "game_template": null,
+  "history_source": null
+ },
+ {
+  "id": "series:supercars",
+  "name": "Supercars Championship (Australia)",
+  "names_by_year": [],
+  "sanctioning_body": null,
+  "discipline": "touring_car",
+  "car_class": null,
+  "level": "international",
+  "game_tier": 7,
+  "scope": "international",
+  "regions": [
+   "AUS",
+   "NZL"
+  ],
+  "years": {
+   "from": null,
+   "to": null
+  },
+  "typical_age": null,
+  "entry_age": null,
+  "exit_age": null,
+  "experience_level": "premier pro (Australia)",
+  "race_length": null,
+  "track_types": [],
+  "field_size": null,
+  "season_events": null,
+  "annual_cost_usd": null,
+  "seat_cost_usd": null,
+  "win_purse_usd": null,
+  "points_fund_usd": null,
+  "scholarship_usd": null,
+  "team_structure": null,
+  "equipment_ownership": null,
+  "licensing": null,
+  "prerequisites": null,
+  "feeder_series": [],
+  "next_steps": [
+   "series:indycar",
+   "series:nascar-cup"
+  ],
+  "advancement_rate": null,
+  "advancement_drivers": null,
+  "dead_ends": null,
+  "notes": "McLaughlin: 3x Supercars champion -> Penske IndyCar full-time 2021 at 27; van Gisbergen -> NASCAR (2023 Chicago street win). Referenced for crossover paths only.",
+  "confidence": "low",
+  "sources": [
+   "src:wiki-mclaughlin",
+   "src:wiki-road-course-ringer"
+  ],
+  "game_template": null,
+  "history_source": null
+ },
+ {
+  "id": "series:tc-america",
+  "name": "TC America",
+  "names_by_year": [],
+  "sanctioning_body": "body:sro-america",
+  "discipline": "touring_car",
+  "car_class": "class:tcr",
+  "level": "national",
+  "game_tier": 4,
+  "scope": "national",
+  "regions": [
+   "USA"
+  ],
+  "years": {
+   "from": 2019,
+   "to": null
+  },
+  "typical_age": null,
+  "entry_age": null,
+  "exit_age": null,
+  "experience_level": null,
+  "race_length": {
+   "value": 40,
+   "unit": "minutes (two sprints per weekend)",
+   "confidence": "medium",
+   "sources": [
+    "src:wiki-tc-america"
+   ]
+  },
+  "track_types": [
+   "road_course",
+   "street"
+  ],
+  "field_size": null,
+  "season_events": null,
+  "annual_cost_usd": {
+   "min": 100000,
+   "max": 250000,
+   "unit": "USD/season",
+   "confidence": "low",
+   "sources": [
+    "src:informed-estimate"
+   ]
+  },
+  "seat_cost_usd": null,
+  "win_purse_usd": null,
+  "points_fund_usd": null,
+  "scholarship_usd": null,
+  "team_structure": "teams and owner-drivers",
+  "equipment_ownership": "mixed",
+  "licensing": null,
+  "prerequisites": null,
+  "feeder_series": [
+   "series:scca-regional",
+   "series:nasa-club"
+  ],
+  "next_steps": [
+   "series:imsa-pilot-challenge",
+   "series:gt4-america"
+  ],
+  "advancement_rate": null,
+  "advancement_drivers": {
+   "money": 0.5,
+   "talent": 0.3,
+   "connections": 0.1,
+   "manufacturer": 0.1,
+   "confidence": "low",
+   "notes": "informed estimate of relative weights (sum 1.0) from series economics and documented examples"
+  },
+  "dead_ends": null,
+  "notes": "Successor to World Challenge touring classes (TC/TCA/TCR, TCX = BMW M2 CS Racing).",
+  "confidence": "medium",
+  "sources": [
+   "src:wiki-tc-america"
+  ],
+  "game_template": "touring_national",
+  "history_source": null
+ },
+ {
+  "id": "series:toyota-gr-cup",
+  "name": "Toyota GR Cup North America",
+  "names_by_year": [],
+  "sanctioning_body": "body:sro-america",
+  "discipline": "sports_car",
+  "car_class": "class:gr86-cup",
+  "level": "national",
+  "game_tier": 3,
+  "scope": "national",
+  "regions": [
+   "USA"
+  ],
+  "years": {
+   "from": 2023,
+   "to": null
+  },
+  "typical_age": {
+   "min": 16,
+   "max": 50,
+   "unit": "years",
+   "confidence": "low",
+   "sources": [
+    "src:slashgear-grcup"
+   ],
+   "notes": "min 16; Legends Cup 45+"
+  },
+  "entry_age": {
+   "value": 16,
+   "unit": "years (minimum)",
+   "confidence": "medium",
+   "sources": [
+    "src:slashgear-grcup"
+   ]
+  },
+  "exit_age": null,
+  "experience_level": "national pro-am development",
+  "race_length": null,
+  "track_types": [
+   "road_course",
+   "street"
+  ],
+  "field_size": null,
+  "season_events": {
+   "value": 14,
+   "unit": "races (7 rounds, 2026)",
+   "confidence": "high",
+   "sources": [
+    "src:wiki-grcup-2026"
+   ]
+  },
+  "annual_cost_usd": {
+   "min": 160000,
+   "max": 300000,
+   "unit": "USD/season",
+   "year_basis": 2025,
+   "confidence": "medium",
+   "sources": [
+    "src:slashgear-grcup"
+   ],
+   "notes": "car ~125k + entry ~32k; full season up to ~300k"
+  },
+  "seat_cost_usd": null,
+  "win_purse_usd": null,
+  "points_fund_usd": {
+   "value": 1000000,
+   "unit": "USD purse and prizes (2026)",
+   "confidence": "medium",
+   "sources": [
+    "src:slashgear-grcup"
+   ]
+  },
+  "scholarship_usd": null,
+  "team_structure": "teams and owner-drivers",
+  "equipment_ownership": "owner-driver or team",
+  "licensing": "racing licence, min age 16",
+  "prerequisites": null,
+  "feeder_series": [
+   "series:scca-regional",
+   "series:skusa-pro-tour",
+   "series:usf2000"
+  ],
+  "next_steps": [
+   "series:gt4-america",
+   "series:imsa-pilot-challenge",
+   "series:gt-world-challenge-america"
+  ],
+  "advancement_rate": null,
+  "advancement_drivers": {
+   "talent": 0.35,
+   "money": 0.35,
+   "manufacturer": 0.15,
+   "sponsorship": 0.1,
+   "connections": 0.05,
+   "confidence": "low",
+   "notes": "informed estimate of relative weights (sum 1.0) from series economics and documented examples"
+  },
+  "dead_ends": null,
+  "notes": "Runs on SRO America weekends; Toyota GR young driver academy.",
+  "confidence": "medium",
+  "sources": [
+   "src:slashgear-grcup",
+   "src:wiki-grcup-2026"
+  ],
+  "game_template": "spec_roadster_cup",
+  "history_source": null
+ },
+ {
+  "id": "series:trans-am-ta",
+  "name": "Trans Am Series (TA class)",
+  "names_by_year": [
+   {
+    "from": 1966,
+    "to": 1966,
+    "name": "Trans-American Sedan Championship"
+   },
+   {
+    "from": 1967,
+    "to": null,
+    "name": "Trans-Am Series / Trans Am Series presented by Pirelli"
+   }
+  ],
+  "sanctioning_body": "body:parella-speedtour",
+  "discipline": "touring_car",
+  "car_class": "class:trans-am-ta",
+  "level": "national",
+  "game_tier": 4,
+  "scope": "national",
+  "regions": [
+   "USA"
+  ],
+  "years": {
+   "from": 1966,
+   "to": null
+  },
+  "typical_age": {
+   "min": 20,
+   "max": 65,
+   "unit": "years",
+   "confidence": "low",
+   "sources": [
+    "src:informed-estimate"
+   ]
+  },
+  "entry_age": null,
+  "exit_age": null,
+  "experience_level": "pro-am",
+  "race_length": null,
+  "track_types": [
+   "road_course",
+   "street"
+  ],
+  "field_size": null,
+  "season_events": null,
+  "annual_cost_usd": {
+   "min": 400000,
+   "max": 700000,
+   "unit": "USD/season",
+   "confidence": "medium",
+   "sources": [
+    "src:motorsportmag-transam"
+   ],
+   "notes": "top TA budget ~700k"
+  },
+  "seat_cost_usd": null,
+  "win_purse_usd": null,
+  "points_fund_usd": null,
+  "scholarship_usd": null,
+  "team_structure": "teams and owner-drivers",
+  "equipment_ownership": "owner-driver or team",
+  "licensing": null,
+  "prerequisites": null,
+  "feeder_series": [
+   "series:trans-am-ta2"
+  ],
+  "next_steps": [
+   "series:nascar-xfinity"
+  ],
+  "advancement_rate": null,
+  "advancement_drivers": {
+   "money": 0.5,
+   "talent": 0.3,
+   "connections": 0.1,
+   "sponsorship": 0.1,
+   "confidence": "low",
+   "notes": "informed estimate of relative weights (sum 1.0) from series economics and documented examples"
+  },
+  "dead_ends": null,
+  "notes": "SCCA-created 1966 (pony cars); SCCA Pro Racing sanctioned to 2006, revived 2009; now Parella/SpeedTour.",
+  "confidence": "medium",
+  "sources": [
+   "src:wiki-transam",
+   "src:motorsportmag-transam",
+   "src:wiki-scca-pro-racing"
+  ],
+  "game_template": "touring_national",
+  "history_source": null
+ },
+ {
+  "id": "series:trans-am-ta2",
+  "name": "Trans Am TA2",
+  "names_by_year": [],
+  "sanctioning_body": "body:parella-speedtour",
+  "discipline": "touring_car",
+  "car_class": "class:trans-am-ta2",
+  "level": "national",
+  "game_tier": 4,
+  "scope": "national",
+  "regions": [
+   "USA"
+  ],
+  "years": {
+   "from": null,
+   "to": null
+  },
+  "typical_age": {
+   "min": 16,
+   "max": 65,
+   "unit": "years",
+   "confidence": "low",
+   "sources": [
+    "src:informed-estimate"
+   ]
+  },
+  "entry_age": null,
+  "exit_age": null,
+  "experience_level": "pro-am",
+  "race_length": null,
+  "track_types": [
+   "road_course",
+   "street"
+  ],
+  "field_size": null,
+  "season_events": null,
+  "annual_cost_usd": {
+   "min": 300000,
+   "max": 400000,
+   "unit": "USD/season",
+   "confidence": "medium",
+   "sources": [
+    "src:motorsportmag-transam"
+   ],
+   "notes": "~350k per competitors"
+  },
+  "seat_cost_usd": null,
+  "win_purse_usd": null,
+  "points_fund_usd": null,
+  "scholarship_usd": null,
+  "team_structure": "teams and owner-drivers",
+  "equipment_ownership": "owner-driver or team",
+  "licensing": null,
+  "prerequisites": null,
+  "feeder_series": [
+   "series:scca-regional",
+   "series:nasa-club"
+  ],
+  "next_steps": [
+   "series:trans-am-ta",
+   "series:nascar-xfinity"
+  ],
+  "advancement_rate": null,
+  "advancement_drivers": {
+   "money": 0.45,
+   "talent": 0.35,
+   "connections": 0.1,
+   "sponsorship": 0.1,
+   "confidence": "low",
+   "notes": "informed estimate of relative weights (sum 1.0) from series economics and documented examples"
+  },
+  "dead_ends": null,
+  "notes": "Popular with NASCAR prospects for road-course reps.",
+  "confidence": "medium",
+  "sources": [
+   "src:motorsportmag-transam"
+  ],
+  "game_template": "touring_national",
+  "history_source": null
+ },
+ {
+  "id": "series:usac-road-racing",
+  "name": "USAC Road Racing Championship (historic)",
+  "names_by_year": [],
+  "sanctioning_body": "body:usac",
+  "discipline": "sports_car",
+  "car_class": null,
+  "level": "premier",
+  "game_tier": 7,
+  "scope": "national",
+  "regions": [
+   "USA"
+  ],
+  "years": {
+   "from": 1958,
+   "to": 1962
+  },
+  "typical_age": null,
+  "entry_age": null,
+  "exit_age": null,
+  "experience_level": "professional sports car",
+  "race_length": null,
+  "track_types": [
+   "road_course"
+  ],
+  "field_size": null,
+  "season_events": null,
+  "annual_cost_usd": null,
+  "seat_cost_usd": null,
+  "win_purse_usd": null,
+  "points_fund_usd": null,
+  "scholarship_usd": null,
+  "team_structure": null,
+  "equipment_ownership": null,
+  "licensing": null,
+  "prerequisites": null,
+  "feeder_series": [],
+  "next_steps": [
+   "series:cart-champcar"
+  ],
+  "advancement_rate": null,
+  "advancement_drivers": null,
+  "dead_ends": null,
+  "notes": "Pro alternative to SCCA amateur nationals; champions Gurney, Pabst, Shelby, Miles, Penske; succeeded by SCCA USRRC (1963).",
+  "confidence": "medium",
+  "sources": [
+   "src:wiki-usac-road-racing"
+  ],
+  "game_template": "prototype_endurance",
+  "history_source": null
+ },
+ {
+  "id": "series:usf-juniors",
+  "name": "USF Juniors",
+  "names_by_year": [
+   {
+    "from": 2022,
+    "to": null,
+    "name": "USF Juniors presented by Continental Tire (Cooper Tires 2022-23)"
+   }
+  ],
+  "sanctioning_body": "body:andersen-promotions",
+  "discipline": "open_wheel",
+  "car_class": "class:tatuus-jr23",
+  "level": "national",
+  "game_tier": 2,
+  "scope": "national",
+  "regions": [
+   "USA"
+  ],
+  "years": {
+   "from": 2022,
+   "to": null
+  },
+  "typical_age": {
+   "min": 14,
+   "max": 18,
+   "unit": "years",
+   "confidence": "medium",
+   "sources": [
+    "src:usfjuniors-licensing"
+   ],
+   "notes": "min age 14"
+  },
+  "entry_age": {
+   "value": 14,
+   "unit": "years (minimum)",
+   "confidence": "high",
+   "sources": [
+    "src:usfjuniors-licensing"
+   ]
+  },
+  "exit_age": {
+   "min": 15,
+   "max": 18,
+   "unit": "years",
+   "confidence": "low",
+   "sources": [
+    "src:informed-estimate"
+   ]
+  },
+  "experience_level": "first car after karting (F4-level)",
+  "race_length": {
+   "min": 20,
+   "max": 30,
+   "unit": "minutes",
+   "confidence": "low",
+   "sources": [
+    "src:informed-estimate"
+   ]
+  },
+  "track_types": [
+   "road_course"
+  ],
+  "field_size": {
+   "min": 15,
+   "max": 30,
+   "unit": "drivers per season",
+   "confidence": "low",
+   "sources": [
+    "src:wiki-usf-juniors-2025"
+   ],
+   "notes": "international field, estimate"
+  },
+  "season_events": {
+   "value": 16,
+   "unit": "races (6 rounds, 2025)",
+   "confidence": "high",
+   "sources": [
+    "src:wiki-usf-juniors-2025"
+   ]
+  },
+  "annual_cost_usd": {
+   "min": 150000,
+   "max": 300000,
+   "unit": "USD/season",
+   "year_basis": 2025,
+   "confidence": "low",
+   "sources": [
+    "src:therace-usf-juniors",
+    "src:racer-usf-2025-scholarships"
+   ],
+   "notes": "launch target 120-150k (2021); costs have risen with Tatuus switch; informed estimate"
+  },
+  "seat_cost_usd": null,
+  "win_purse_usd": null,
+  "points_fund_usd": null,
+  "scholarship_usd": {
+   "min": 249675,
+   "max": 263675,
+   "unit": "USD to champion for USF2000",
+   "confidence": "high",
+   "sources": [
+    "src:racer-usf-2025-scholarships",
+    "src:wiki-usf-juniors-2025"
+   ],
+   "notes": "2025 value; ~14k lower than 2024"
+  },
+  "team_structure": "teams (many shared with USF2000)",
+  "equipment_ownership": "team-owned cars, family-funded seats",
+  "licensing": "USF licence USD 700/yr; min age 14; FIA licence optional",
+  "prerequisites": "6 amateur open-wheel races, or 4 OW + 10 kart races, or top-10 national karting ranking + 2 OW races + 2 test days",
+  "feeder_series": [
+   "series:skusa-pro-tour",
+   "series:wka-national",
+   "series:rok-cup-usa",
+   "series:skip-barber-formula",
+   "series:ligier-jfc",
+   "series:f1600-championship"
+  ],
+  "next_steps": [
+   "series:usf2000"
+  ],
+  "advancement_rate": {
+   "min": 0.3,
+   "max": 0.6,
+   "unit": "share of full-timers moving to USF2000 within 2 yrs",
+   "confidence": "low",
+   "sources": [
+    "src:informed-estimate"
+   ],
+   "notes": "informed estimate; series too new for history"
+  },
+  "advancement_drivers": {
+   "talent": 0.4,
+   "money": 0.45,
+   "connections": 0.1,
+   "sponsorship": 0.05,
+   "confidence": "low",
+   "notes": "informed estimate of relative weights (sum 1.0) from series economics and documented examples"
+  },
+  "dead_ends": null,
+  "notes": "Fourth (bottom) rung of USF Pro Championships; car switched from Ligier F4 (2022) to Tatuus JR-23 (2023).",
+  "confidence": "medium",
+  "sources": [
+   "src:usfjuniors-licensing",
+   "src:wiki-usf-juniors-2025",
+   "src:racer-usf-juniors-jr23",
+   "src:therace-usf-juniors",
+   "src:racer-usf-2025-scholarships"
+  ],
+  "game_template": "junior_formula",
+  "history_source": null
+ },
+ {
+  "id": "series:usf-pro-2000",
+  "name": "USF Pro 2000 Championship",
+  "names_by_year": [
+   {
+    "from": 1991,
+    "to": 2012,
+    "name": "Star Mazda Championship"
+   },
+   {
+    "from": 2013,
+    "to": 2018,
+    "name": "Pro Mazda Championship"
+   },
+   {
+    "from": 2019,
+    "to": 2022,
+    "name": "Indy Pro 2000 Championship"
+   },
+   {
+    "from": 2023,
+    "to": null,
+    "name": "USF Pro 2000 Championship"
+   }
+  ],
+  "sanctioning_body": "body:usac",
+  "discipline": "open_wheel",
+  "car_class": "class:tatuus-ip22-pro2000",
+  "level": "national",
+  "game_tier": 4,
+  "scope": "national",
+  "regions": [
+   "USA",
+   "CAN"
+  ],
+  "years": {
+   "from": 1991,
+   "to": null
+  },
+  "typical_age": {
+   "min": 17,
+   "max": 23,
+   "unit": "years",
+   "confidence": "high",
+   "sources": [
+    "src:racingsim-history-analysis"
+   ],
+   "notes": "full-timers 2010-2026 median 20, p10 17, p90 23"
+  },
+  "entry_age": {
+   "min": 16,
+   "max": 20,
+   "unit": "years",
+   "confidence": "medium",
+   "sources": [
+    "src:usfjuniors-licensing",
+    "src:racingsim-history-analysis"
+   ],
+   "notes": "min age 16"
+  },
+  "exit_age": {
+   "min": 19,
+   "max": 24,
+   "unit": "years",
+   "confidence": "medium",
+   "sources": [
+    "src:racingsim-history-analysis"
+   ]
+  },
+  "experience_level": "national pro feeder",
+  "race_length": {
+   "min": 30,
+   "max": 45,
+   "unit": "minutes",
+   "confidence": "low",
+   "sources": [
+    "src:informed-estimate"
+   ]
+  },
+  "track_types": [
+   "road_course",
+   "street",
+   "short_oval"
+  ],
+  "field_size": {
+   "min": 19,
+   "max": 32,
+   "unit": "drivers scored per season",
+   "confidence": "high",
+   "sources": [
+    "src:racingsim-history-analysis"
+   ],
+   "notes": "2015-2026; 6-17 full-timers"
+  },
+  "season_events": {
+   "min": 12,
+   "max": 18,
+   "unit": "races",
+   "confidence": "high",
+   "sources": [
+    "src:racingsim-history-analysis",
+    "src:usfpro2000-series"
+   ],
+   "notes": "2026: 8 events / 18 races"
+  },
+  "annual_cost_usd": {
+   "min": 450000,
+   "max": 650000,
+   "unit": "USD/season",
+   "year_basis": 2025,
+   "confidence": "low",
+   "sources": [
+    "src:racer-usf-2025-scholarships",
+    "src:motorsport-road-to-indy-2018"
+   ],
+   "notes": "anchored on USF2000 champion package (405-458k) meant to fund a Pro 2000 season; 2018 compared to Euroformula Open budgets"
+  },
+  "seat_cost_usd": null,
+  "win_purse_usd": null,
+  "points_fund_usd": null,
+  "scholarship_usd": {
+   "min": 546500,
+   "max": 593056,
+   "unit": "USD to champion for Indy NXT",
+   "confidence": "high",
+   "sources": [
+    "src:racer-usf-2025-scholarships",
+    "src:usfpro2000-series"
+   ],
+   "notes": "2025 546,500; 2026 593,056"
+  },
+  "team_structure": "professional junior teams",
+  "equipment_ownership": "team-owned; paid seats",
+  "licensing": "USF licence; min age 16",
+  "prerequisites": "8 USF2000 races with 6 top-10s, or 12 races in FR Americas/GB3/FRECA etc.",
+  "feeder_series": [
+   "series:usf2000",
+   "series:formula-regional-americas",
+   "series:european-fia-ladder"
+  ],
+  "next_steps": [
+   "series:indy-nxt",
+   "series:imsa-weathertech",
+   "series:imsa-pilot-challenge"
+  ],
+  "advancement_rate": {
+   "min": 0.36,
+   "max": 0.45,
+   "unit": "share of full-timers (2007-2021) later racing in Indy Lights/NXT",
+   "confidence": "high",
+   "sources": [
+    "src:racingsim-history-analysis"
+   ],
+   "notes": "0.407 of n=135; 0.156 later started an IndyCar race; 0.123 had a full IndyCar season"
+  },
+  "advancement_drivers": {
+   "talent": 0.35,
+   "money": 0.45,
+   "sponsorship": 0.1,
+   "connections": 0.1,
+   "confidence": "low",
+   "notes": "informed estimate of relative weights (sum 1.0) from series economics and documented examples"
+  },
+  "dead_ends": "Funding gap to Indy NXT (~USD 1.2M vs ~0.55M scholarship) stops champions (Urrutia, Telitz, Franzoni did not reach IndyCar); many become sports-car pros (Dane Cameron, John Edwards, De Phillippi, Joey Hand).",
+  "notes": "Champions 2007-2019 (n=13) reached IndyCar 54% (46% with a 10+ start season); 1995-2019 (n=25) 36% / 28%; last eight champions (to 2025) all graduated to Indy NXT/IndyCar.",
+  "confidence": "high",
+  "sources": [
+   "src:racingsim-history-analysis",
+   "src:usfpro2000-series",
+   "src:mazda-star-mazda-history",
+   "src:racer-usf-2025-scholarships",
+   "src:motorsportprospects-usf-2025",
+   "src:usfjuniors-licensing"
+  ],
+  "game_template": "formula_pro",
+  "history_source": "pro_mazda",
+  "promoter": "body:andersen-promotions"
+ },
+ {
+  "id": "series:usf2000",
+  "name": "USF2000 Championship",
+  "names_by_year": [
+   {
+    "from": 1990,
+    "to": 1990,
+    "name": "USAC FF2000 Championship"
+   },
+   {
+    "from": 1991,
+    "to": 2002,
+    "name": "U.S. F2000 National Championship"
+   },
+   {
+    "from": 2003,
+    "to": 2005,
+    "name": "Formula Ford Zetec Championship Series"
+   },
+   {
+    "from": 2006,
+    "to": 2006,
+    "name": "Cooper Tires Formula Ford 2000 Championship Series"
+   },
+   {
+    "from": 2010,
+    "to": 2020,
+    "name": "U.S. F2000 National Championship (Cooper Tires / Mazda)"
+   },
+   {
+    "from": 2021,
+    "to": null,
+    "name": "USF2000 Championship"
+   }
+  ],
+  "sanctioning_body": "body:usac",
+  "discipline": "open_wheel",
+  "car_class": "class:tatuus-usf2000",
+  "level": "national",
+  "game_tier": 3,
+  "scope": "national",
+  "regions": [
+   "USA",
+   "CAN"
+  ],
+  "years": {
+   "from": 1990,
+   "to": null
+  },
+  "typical_age": {
+   "min": 16,
+   "max": 22,
+   "unit": "years",
+   "confidence": "high",
+   "sources": [
+    "src:racingsim-history-analysis"
+   ],
+   "notes": "full-timers 2010-2026: median 19, p10 16, p90 22 (n=201 driver-seasons)"
+  },
+  "entry_age": {
+   "min": 15,
+   "max": 18,
+   "unit": "years",
+   "confidence": "medium",
+   "sources": [
+    "src:usfjuniors-licensing",
+    "src:racingsim-history-analysis"
+   ],
+   "notes": "min age 15"
+  },
+  "exit_age": {
+   "min": 17,
+   "max": 22,
+   "unit": "years",
+   "confidence": "medium",
+   "sources": [
+    "src:racingsim-history-analysis"
+   ]
+  },
+  "experience_level": "national development (first Road to Indy rung pre-2022)",
+  "race_length": {
+   "min": 25,
+   "max": 40,
+   "unit": "minutes",
+   "confidence": "low",
+   "sources": [
+    "src:informed-estimate"
+   ]
+  },
+  "track_types": [
+   "road_course",
+   "street",
+   "short_oval"
+  ],
+  "field_size": {
+   "min": 26,
+   "max": 36,
+   "unit": "drivers scored per season",
+   "confidence": "high",
+   "sources": [
+    "src:racingsim-history-analysis"
+   ],
+   "notes": "2015-2026; 13-23 full-timers per season"
+  },
+  "season_events": {
+   "min": 14,
+   "max": 18,
+   "unit": "races",
+   "confidence": "high",
+   "sources": [
+    "src:racingsim-history-analysis",
+    "src:wiki-usf2000-2025"
+   ],
+   "notes": "18 races at 8 venues (2025): 2 street, 5 road, 1 oval"
+  },
+  "annual_cost_usd": {
+   "min": 300000,
+   "max": 450000,
+   "unit": "USD/season",
+   "year_basis": 2025,
+   "confidence": "low",
+   "sources": [
+    "src:racer-usf-2025-scholarships",
+    "src:trackforum-usf2000-cost"
+   ],
+   "notes": "c.2010 175-250k; current value anchored to USF Juniors->USF2000 and USF2000->Pro 2000 scholarship packages (250-460k); informed estimate"
+  },
+  "seat_cost_usd": null,
+  "win_purse_usd": null,
+  "points_fund_usd": null,
+  "scholarship_usd": {
+   "min": 405050,
+   "max": 458400,
+   "unit": "USD to champion for USF Pro 2000",
+   "confidence": "high",
+   "sources": [
+    "src:racer-usf-2025-scholarships",
+    "src:wiki-usf2000-2025"
+   ],
+   "notes": "2024 458,400; 2025 405,050"
+  },
+  "team_structure": "professional junior teams (Cape, Pabst, VRD, Exclusive, Jay Howard, DEForce...)",
+  "equipment_ownership": "team-owned; paid seats (family/sponsor funded)",
+  "licensing": "USF licence; min age 15",
+  "prerequisites": "8 USF Juniors races with 6 top-10s, or 12 Juniors races, or 12 races in F4 US/F1600",
+  "feeder_series": [
+   "series:usf-juniors",
+   "series:f4-us",
+   "series:f1600-championship",
+   "series:skip-barber-formula",
+   "series:skusa-pro-tour"
+  ],
+  "next_steps": [
+   "series:usf-pro-2000",
+   "series:indy-nxt",
+   "series:formula-regional-americas",
+   "series:mx5-cup",
+   "series:imsa-vp-racing-challenge"
+  ],
+  "advancement_rate": {
+   "min": 0.38,
+   "max": 0.46,
+   "unit": "share of full-timers (2010-2021) later racing in Pro Mazda/USF Pro 2000",
+   "confidence": "high",
+   "sources": [
+    "src:racingsim-history-analysis"
+   ],
+   "notes": "0.424 of n=139; 0.32 later reached Indy Lights; 0.11 started an IndyCar race; 0.08 had a full IndyCar season"
+  },
+  "advancement_drivers": {
+   "talent": 0.35,
+   "money": 0.45,
+   "sponsorship": 0.1,
+   "connections": 0.1,
+   "confidence": "low",
+   "notes": "informed estimate of relative weights (sum 1.0) from series economics and documented examples"
+  },
+  "dead_ends": "About 58% of full-timers do one season only and ~88% never start an IndyCar race; many move to sports cars (MX-5 Cup, IMSA) or stop.",
+  "notes": "Distinct champions 1995-2019 (n=22) later started an IndyCar race 50% of the time, 23% with a 10+ start season (Wheldon, Hildebrand, Karam, Askew, Kirkwood).",
+  "confidence": "high",
+  "sources": [
+   "src:racingsim-history-analysis",
+   "src:wiki-usf2000",
+   "src:wiki-usf2000-2025",
+   "src:usfjuniors-licensing",
+   "src:racer-usf-2025-scholarships"
+  ],
+  "game_template": "formula_2000",
+  "history_source": "usf2000",
+  "promoter": "body:andersen-promotions",
+  "gap_years": [
+   2007,
+   2008,
+   2009
+  ]
+ },
+ {
+  "id": "series:uspks",
+  "name": "United States Pro Kart Series",
+  "names_by_year": [],
+  "sanctioning_body": "body:uspks",
+  "discipline": "karting",
+  "car_class": "class:kart-junior-100cc",
+  "level": "national",
+  "game_tier": 2,
+  "scope": "national",
+  "regions": [
+   "USA"
+  ],
+  "years": {
+   "from": 2013,
+   "to": null
+  },
+  "typical_age": {
+   "min": 7,
+   "max": 18,
+   "unit": "years",
+   "confidence": "high",
+   "sources": [
+    "src:skusa-classes-2026",
+    "src:rokcupusa-fwt"
+   ],
+   "notes": "youth classes 7-15, seniors 15+; masters classes also run"
+  },
+  "entry_age": {
+   "min": 7,
+   "max": 12,
+   "unit": "years",
+   "confidence": "medium",
+   "sources": [
+    "src:skusa-classes-2026"
+   ],
+   "notes": "Micro 7-10, Mini 9-13"
+  },
+  "exit_age": {
+   "min": 14,
+   "max": 18,
+   "unit": "years",
+   "confidence": "low",
+   "sources": [
+    "src:usfjuniors-licensing",
+    "src:ligier-jfc"
+   ],
+   "notes": "car series accept 14 (USF Juniors, Ligier JFC) / 15 (USF2000, F4)"
+  },
+  "experience_level": "advanced youth amateur",
+  "race_length": {
+   "min": 10,
+   "max": 25,
+   "unit": "laps per final",
+   "confidence": "low",
+   "sources": [
+    "src:informed-estimate"
+   ]
+  },
+  "track_types": [
+   "kart_track"
+  ],
+  "field_size": {
+   "min": 10,
+   "max": 40,
+   "unit": "karts per class",
+   "confidence": "low",
+   "sources": [
+    "src:informed-estimate"
+   ],
+   "notes": "informed estimate"
+  },
+  "season_events": {
+   "min": 3,
+   "max": 8,
+   "unit": "events",
+   "confidence": "low",
+   "sources": [
+    "src:informed-estimate"
+   ],
+   "notes": "informed estimate; double-header weekends common"
+  },
+  "annual_cost_usd": {
+   "min": 30000,
+   "max": 100000,
+   "unit": "USD/season",
+   "year_basis": 2025,
+   "confidence": "low",
+   "sources": [
+    "src:search-karting-national-costs",
+    "src:skusa-pricing-2026"
+   ],
+   "notes": "national junior program with team tent; top factory-supported programs can exceed this"
+  },
+  "seat_cost_usd": null,
+  "win_purse_usd": null,
+  "points_fund_usd": null,
+  "scholarship_usd": null,
+  "team_structure": "kart teams/tents (chassis-brand teams) running family-funded drivers",
+  "equipment_ownership": "family-owned karts, team support fees",
+  "licensing": "series membership; age-bracketed classes (Micro 7-10, Mini 9-13, Junior 12-15, Senior 15+)",
+  "prerequisites": "club karting experience",
+  "feeder_series": [
+   "series:club-karting"
+  ],
+  "next_steps": [
+   "series:skusa-supernationals",
+   "series:usf-juniors",
+   "series:f4-us",
+   "series:ligier-jfc",
+   "series:skip-barber-formula",
+   "series:usf2000"
+  ],
+  "advancement_rate": {
+   "min": 0.05,
+   "max": 0.2,
+   "unit": "share of national junior karters moving to car racing within 3 yrs",
+   "confidence": "low",
+   "sources": [
+    "src:informed-estimate"
+   ],
+   "notes": "informed estimate"
+  },
+  "advancement_drivers": {
+   "talent": 0.35,
+   "money": 0.45,
+   "connections": 0.1,
+   "sponsorship": 0.1,
+   "confidence": "low",
+   "notes": "informed estimate of relative weights (sum 1.0) from series economics and documented examples"
+  },
+  "dead_ends": "Many talented karters stop at 15-17 for lack of the ~USD 150-400k/yr needed for car racing; some become karting pros/coaches.",
+  "notes": "East/Midwest national series founded 2013 by Mark Coats.",
+  "confidence": "low",
+  "sources": [
+   "src:uspks-home"
+  ],
+  "game_template": "national_karting",
+  "history_source": null
+ },
+ {
+  "id": "series:wka-national",
+  "name": "WKA Manufacturers Cup / national sprint series",
+  "names_by_year": [],
+  "sanctioning_body": "body:wka",
+  "discipline": "karting",
+  "car_class": "class:kart-junior-100cc",
+  "level": "national",
+  "game_tier": 2,
+  "scope": "national",
+  "regions": [
+   "USA"
+  ],
+  "years": {
+   "from": 1971,
+   "to": null
+  },
+  "typical_age": {
+   "min": 7,
+   "max": 18,
+   "unit": "years",
+   "confidence": "high",
+   "sources": [
+    "src:skusa-classes-2026",
+    "src:rokcupusa-fwt"
+   ],
+   "notes": "youth classes 7-15, seniors 15+; masters classes also run"
+  },
+  "entry_age": {
+   "min": 7,
+   "max": 12,
+   "unit": "years",
+   "confidence": "medium",
+   "sources": [
+    "src:skusa-classes-2026"
+   ],
+   "notes": "Micro 7-10, Mini 9-13"
+  },
+  "exit_age": {
+   "min": 14,
+   "max": 18,
+   "unit": "years",
+   "confidence": "low",
+   "sources": [
+    "src:usfjuniors-licensing",
+    "src:ligier-jfc"
+   ],
+   "notes": "car series accept 14 (USF Juniors, Ligier JFC) / 15 (USF2000, F4)"
+  },
+  "experience_level": "advanced youth amateur",
+  "race_length": {
+   "min": 10,
+   "max": 25,
+   "unit": "laps per final",
+   "confidence": "low",
+   "sources": [
+    "src:informed-estimate"
+   ]
+  },
+  "track_types": [
+   "kart_track"
+  ],
+  "field_size": {
+   "min": 10,
+   "max": 40,
+   "unit": "karts per class",
+   "confidence": "low",
+   "sources": [
+    "src:informed-estimate"
+   ],
+   "notes": "informed estimate"
+  },
+  "season_events": {
+   "min": 3,
+   "max": 8,
+   "unit": "events",
+   "confidence": "low",
+   "sources": [
+    "src:informed-estimate"
+   ],
+   "notes": "informed estimate; double-header weekends common"
+  },
+  "annual_cost_usd": {
+   "min": 30000,
+   "max": 100000,
+   "unit": "USD/season",
+   "year_basis": 2025,
+   "confidence": "low",
+   "sources": [
+    "src:search-karting-national-costs",
+    "src:skusa-pricing-2026"
+   ],
+   "notes": "national junior program with team tent; top factory-supported programs can exceed this"
+  },
+  "seat_cost_usd": null,
+  "win_purse_usd": null,
+  "points_fund_usd": null,
+  "scholarship_usd": null,
+  "team_structure": "kart teams/tents (chassis-brand teams) running family-funded drivers",
+  "equipment_ownership": "family-owned karts, team support fees",
+  "licensing": "series membership; age-bracketed classes (Micro 7-10, Mini 9-13, Junior 12-15, Senior 15+)",
+  "prerequisites": "club karting experience",
+  "feeder_series": [
+   "series:club-karting"
+  ],
+  "next_steps": [
+   "series:skusa-supernationals",
+   "series:usf-juniors",
+   "series:f4-us",
+   "series:ligier-jfc",
+   "series:skip-barber-formula",
+   "series:usf2000"
+  ],
+  "advancement_rate": {
+   "min": 0.05,
+   "max": 0.2,
+   "unit": "share of national junior karters moving to car racing within 3 yrs",
+   "confidence": "low",
+   "sources": [
+    "src:informed-estimate"
+   ],
+   "notes": "informed estimate"
+  },
+  "advancement_drivers": {
+   "talent": 0.35,
+   "money": 0.45,
+   "connections": 0.1,
+   "sponsorship": 0.1,
+   "confidence": "low",
+   "notes": "informed estimate of relative weights (sum 1.0) from series economics and documented examples"
+  },
+  "dead_ends": "Many talented karters stop at 15-17 for lack of the ~USD 150-400k/yr needed for car racing; some become karting pros/coaches.",
+  "notes": "WKA national sprint program; WKA also runs road-race/enduro and dirt karting.",
+  "confidence": "low",
+  "sources": [
+   "src:wka-history"
+  ],
+  "game_template": "national_karting",
+  "history_source": null
+ }
+]

@@ -205,8 +205,8 @@ def build_knowledge(conn: sqlite3.Connection, directory: Path) -> dict:
                      (f["id"], f.get("name"), _s(f.get("description")), f.get("confidence"),
                       _j(f.get("sources") or []), _j(f)))
         for tier, w in (f.get("weight_by_level") or {}).items():
-            lo, hi = (_num(w.get("min", w.get("value"))), _num(w.get("max", w.get("value")))) if isinstance(w, dict) \
-                else (_num(w), _num(w))
+            lo, hi = (_num(w.get("min", w.get("mid", w.get("value")))), _num(w.get("max", w.get("mid", w.get("value"))))) \
+                if isinstance(w, dict) else (_num(w), _num(w))
             try:
                 conn.execute("INSERT INTO advancement_weight VALUES (?,?,?,?)", (f["id"], int(str(tier).lstrip("T")), lo, hi))
             except ValueError:

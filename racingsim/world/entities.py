@@ -168,6 +168,7 @@ class Team:
     w_potential: float = 0.2
     w_money: float = 0.25
     w_marketability: float = 0.1
+    w_connections: float = 0.6   # how much relationships (team, manufacturer, scholarship) sway the owner
     roster: list[int] = field(default_factory=list)
     history: list[tuple[int, float]] = field(default_factory=list)  # (year, avg championship pct)
     reputation: float = 50.0

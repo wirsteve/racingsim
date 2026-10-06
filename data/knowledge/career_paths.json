@@ -1,1 +1,1943 @@
-[]
+[
+ {
+  "id": "path:karting-to-stock-dirt",
+  "name": "Crossover: karting -> oval stock car / dirt (common US route)",
+  "discipline": "stock_car",
+  "description": "Many US drivers leave karting not for formula cars but for quarter-midgets/micro sprints, USAC midgets or late models, eventually NASCAR. Outlaw (dirt) karting feeds dirt open-wheel directly.",
+  "steps": [
+   {
+    "order": 1,
+    "stage": "Karting (sprint or outlaw dirt)",
+    "series": [
+     "series:club-karting",
+     "series:wka-national"
+    ],
+    "typical_age": {
+     "min": 5,
+     "max": 16,
+     "unit": "years",
+     "confidence": "medium",
+     "sources": [
+      "src:wiki-tony-stewart",
+      "src:wiki-kyle-larson",
+      "src:search-karting-to-nascar"
+     ]
+    },
+    "typical_years": {
+     "min": 4,
+     "max": 10,
+     "unit": "years",
+     "confidence": "low",
+     "sources": [
+      "src:informed-estimate"
+     ]
+    },
+    "advance_share": {
+     "min": 0.05,
+     "max": 0.2,
+     "unit": "share moving to car racing",
+     "confidence": "low",
+     "sources": [
+      "src:informed-estimate"
+     ]
+    },
+    "gating": {
+     "talent": 0.4,
+     "money": 0.4,
+     "connections": 0.2
+    },
+    "notes": "Stewart IKF 1983 & WKA 1987 titles; Larson outlaw karts from 7; Harvick karting from 5."
+   },
+   {
+    "order": 2,
+    "stage": "Midgets/sprints or late models",
+    "series": [
+     "series:usac-national-midget",
+     "series:late-model-local"
+    ],
+    "typical_age": {
+     "min": 14,
+     "max": 22,
+     "unit": "years",
+     "confidence": "low",
+     "sources": [
+      "src:wiki-tony-stewart",
+      "src:wiki-kyle-larson"
+     ]
+    },
+    "typical_years": {
+     "min": 2,
+     "max": 6,
+     "unit": "seasons",
+     "confidence": "low",
+     "sources": [
+      "src:informed-estimate"
+     ]
+    },
+    "advance_share": null,
+    "gating": {
+     "talent": 0.4,
+     "money": 0.3,
+     "connections": 0.2,
+     "manufacturer": 0.1
+    },
+    "notes": "Series ids owned by the stock-car/dirt agents."
+   },
+   {
+    "order": 3,
+    "stage": "NASCAR national series",
+    "series": [
+     "series:nascar-xfinity",
+     "series:nascar-cup"
+    ],
+    "typical_age": {
+     "min": 19,
+     "max": 28,
+     "unit": "years",
+     "confidence": "low",
+     "sources": [
+      "src:informed-estimate"
+     ]
+    },
+    "typical_years": null,
+    "advance_share": null,
+    "gating": {
+     "talent": 0.35,
+     "money": 0.25,
+     "sponsorship": 0.2,
+     "connections": 0.1,
+     "manufacturer": 0.1
+    },
+    "notes": null
+   }
+  ],
+  "examples": [
+   {
+    "driver": "driver:Tony_Stewart",
+    "route": "karting -> 3/4 midgets 1989 -> USAC 1991-95 -> IRL -> NASCAR"
+   },
+   {
+    "driver": "driver:Kyle_Larson",
+    "route": "outlaw karts at 7 -> USAC midget/sprint/Silver Crown (Keith Kunz, Toyota) -> NASCAR Cup 2014-, 2021 champion (repo)"
+   },
+   {
+    "driver": "driver:Kevin_Harvick",
+    "route": "karting from 5 with national titles -> stock cars (search snippet, low confidence)"
+   }
+  ],
+  "confidence": "low",
+  "sources": [
+   "src:wiki-tony-stewart",
+   "src:wiki-kyle-larson",
+   "src:search-karting-to-nascar"
+  ]
+ },
+ {
+  "id": "path:openwheel-cart-era",
+  "name": "Open wheel (historic 1986-2008): karting -> Barber/Formula BMW/Atlantic -> Indy Lights -> CART/Champ Car",
+  "discipline": "open_wheel",
+  "description": "Pre-merger ladder: Skip Barber/Barber Dodge and Formula BMW USA as first steps, Toyota/Champ Car Atlantic and CART Indy Lights as top feeders.",
+  "steps": [
+   {
+    "order": 1,
+    "stage": "Karting",
+    "series": [
+     "series:club-karting",
+     "series:wka-national"
+    ],
+    "typical_age": {
+     "min": 8,
+     "max": 16,
+     "unit": "years",
+     "confidence": "low",
+     "sources": [
+      "src:wiki-allmendinger",
+      "src:wiki-danica"
+     ]
+    },
+    "typical_years": {
+     "min": 3,
+     "max": 8,
+     "unit": "years",
+     "confidence": "low",
+     "sources": [
+      "src:informed-estimate"
+     ]
+    },
+    "advance_share": null,
+    "gating": {
+     "talent": 0.4,
+     "money": 0.45,
+     "connections": 0.15
+    },
+    "notes": "Allmendinger 2x IKF champion; Patrick WKA champion."
+   },
+   {
+    "order": 2,
+    "stage": "Junior formula",
+    "series": [
+     "series:skip-barber-formula",
+     "series:barber-dodge-pro",
+     "series:formula-bmw-usa",
+     "series:usf2000"
+    ],
+    "typical_age": {
+     "min": 16,
+     "max": 21,
+     "unit": "years",
+     "confidence": "low",
+     "sources": [
+      "src:informed-estimate"
+     ]
+    },
+    "typical_years": {
+     "min": 1,
+     "max": 3,
+     "unit": "seasons",
+     "confidence": "low",
+     "sources": [
+      "src:informed-estimate"
+     ]
+    },
+    "advance_share": null,
+    "gating": {
+     "talent": 0.4,
+     "money": 0.4,
+     "connections": 0.2
+    },
+    "notes": null
+   },
+   {
+    "order": 3,
+    "stage": "Atlantic / Indy Lights",
+    "series": [
+     "series:atlantic-championship",
+     "series:indy-nxt"
+    ],
+    "typical_age": {
+     "min": 19,
+     "max": 27,
+     "unit": "years",
+     "confidence": "high",
+     "sources": [
+      "src:racingsim-history-analysis"
+     ],
+     "notes": "CART-era Lights full-timers median 25.5"
+    },
+    "typical_years": {
+     "min": 1,
+     "max": 3,
+     "unit": "seasons",
+     "confidence": "medium",
+     "sources": [
+      "src:racingsim-history-analysis"
+     ]
+    },
+    "advance_share": {
+     "min": 0.45,
+     "max": 0.6,
+     "unit": "share of CART-era Indy Lights full-timers starting a top-tier race",
+     "confidence": "high",
+     "sources": [
+      "src:racingsim-history-analysis"
+     ],
+     "notes": "0.537 (n=67, 1995-2001)"
+    },
+    "gating": {
+     "talent": 0.35,
+     "money": 0.35,
+     "sponsorship": 0.15,
+     "connections": 0.15
+    },
+    "notes": "CART-era Lights champions: 6 of 7 (1995-2001) became full-time top-tier drivers."
+   },
+   {
+    "order": 4,
+    "stage": "CART / Champ Car",
+    "series": [
+     "series:cart-champcar"
+    ],
+    "typical_age": {
+     "min": 21,
+     "max": 30,
+     "unit": "years",
+     "confidence": "medium",
+     "sources": [
+      "src:racingsim-history-analysis"
+     ]
+    },
+    "typical_years": null,
+    "advance_share": null,
+    "gating": {
+     "talent": 0.35,
+     "money": 0.3,
+     "sponsorship": 0.2,
+     "connections": 0.15
+    },
+    "notes": null
+   }
+  ],
+  "examples": [
+   {
+    "driver": "driver:A._J._Allmendinger",
+    "route": "IKF karting -> Barber Dodge 2002 champion -> Toyota Atlantic 2003 champion -> Champ Car 2004-06 -> NASCAR 2007"
+   },
+   {
+    "driver": "driver:Scott_Dixon",
+    "route": "Indy Lights 1999-2000 (2000 champion) -> CART 2001 -> IRL/IndyCar 2003-"
+   },
+   {
+    "driver": "driver:Tony_Kanaan",
+    "route": "Indy Lights 1996-97 (1997 champion) -> CART 1998-2002 -> IRL 2003-"
+   },
+   {
+    "driver": "driver:Simon_Pagenaud",
+    "route": "Champ Car Atlantic 2006 champion -> Champ Car 2007 -> IndyCar 2011-"
+   }
+  ],
+  "confidence": "medium",
+  "sources": [
+   "src:racingsim-history-analysis",
+   "src:wiki-cart",
+   "src:wiki-atlantic",
+   "src:wiki-allmendinger",
+   "src:skipbarber-wiki",
+   "src:wiki-formula-bmw-usa"
+  ]
+ },
+ {
+  "id": "path:openwheel-european-import",
+  "name": "Open wheel: European/international ladder import into IndyCar",
+  "discipline": "open_wheel",
+  "description": "Drivers who climb FIA F4 -> Formula Regional -> F3 -> F2 (or Super Formula / F1 / Supercars) and enter IndyCar directly or via one Indy NXT season, typically after missing an F1 seat.",
+  "steps": [
+   {
+    "order": 1,
+    "stage": "Karting (often European)",
+    "series": [
+     "series:skusa-supernationals",
+     "series:club-karting"
+    ],
+    "typical_age": {
+     "min": 7,
+     "max": 15,
+     "unit": "years",
+     "confidence": "low",
+     "sources": [
+      "src:informed-estimate"
+     ]
+    },
+    "typical_years": {
+     "min": 5,
+     "max": 8,
+     "unit": "years",
+     "confidence": "low",
+     "sources": [
+      "src:informed-estimate"
+     ]
+    },
+    "advance_share": null,
+    "gating": {
+     "talent": 0.4,
+     "money": 0.45,
+     "connections": 0.15
+    },
+    "notes": null
+   },
+   {
+    "order": 2,
+    "stage": "European FIA ladder",
+    "series": [
+     "series:european-fia-ladder"
+    ],
+    "typical_age": {
+     "min": 15,
+     "max": 24,
+     "unit": "years",
+     "confidence": "low",
+     "sources": [
+      "src:informed-estimate"
+     ]
+    },
+    "typical_years": {
+     "min": 3,
+     "max": 6,
+     "unit": "seasons",
+     "confidence": "low",
+     "sources": [
+      "src:informed-estimate"
+     ]
+    },
+    "advance_share": {
+     "min": 0.02,
+     "max": 0.1,
+     "unit": "share of European F3/F2 drivers later racing IndyCar",
+     "confidence": "low",
+     "sources": [
+      "src:informed-estimate"
+     ],
+     "notes": "informed estimate"
+    },
+    "gating": {
+     "talent": 0.35,
+     "money": 0.4,
+     "connections": 0.15,
+     "manufacturer": 0.1
+    },
+    "notes": "F3 seat ~EUR 1M, F2 ~EUR 2.5-3M per season."
+   },
+   {
+    "order": 3,
+    "stage": "Optional Indy NXT bridge",
+    "series": [
+     "series:indy-nxt"
+    ],
+    "typical_age": {
+     "min": 19,
+     "max": 24,
+     "unit": "years",
+     "confidence": "medium",
+     "sources": [
+      "src:racingsim-history-analysis"
+     ]
+    },
+    "typical_years": {
+     "min": 0,
+     "max": 2,
+     "unit": "seasons",
+     "confidence": "medium",
+     "sources": [
+      "src:racingsim-history-analysis"
+     ]
+    },
+    "advance_share": {
+     "min": 0.5,
+     "max": 0.9,
+     "unit": "share reaching IndyCar after NXT",
+     "confidence": "low",
+     "sources": [
+      "src:racingsim-history-analysis"
+     ],
+     "notes": "Herta, Hauger (2025 NXT champion -> IndyCar 2026), Collet"
+    },
+    "gating": {
+     "talent": 0.35,
+     "money": 0.35,
+     "sponsorship": 0.15,
+     "connections": 0.15
+    },
+    "notes": null
+   },
+   {
+    "order": 4,
+    "stage": "IndyCar",
+    "series": [
+     "series:indycar"
+    ],
+    "typical_age": {
+     "min": 21,
+     "max": 35,
+     "unit": "years at debut",
+     "confidence": "medium",
+     "sources": [
+      "src:indycar-palou-coyne",
+      "src:wiki-mclaughlin",
+      "src:racingsim-history-analysis"
+     ]
+    },
+    "typical_years": null,
+    "advance_share": null,
+    "gating": {
+     "talent": 0.35,
+     "money": 0.3,
+     "sponsorship": 0.15,
+     "connections": 0.2
+    },
+    "notes": "Share of IndyCar debutants 2010-2026 with no USF/Lights experience: ~45%; 38% of 2020-2026 full-timers came from outside the US ladder."
+   }
+  ],
+  "evidence": {
+   "indycar_debutants_with_lights": {
+    "min": 0.5,
+    "max": 0.56,
+    "unit": "share of 2010-2026 debutants",
+    "confidence": "high",
+    "sources": [
+     "src:racingsim-history-analysis"
+    ],
+    "notes": "0.535 of n=101"
+   },
+   "indycar_fulltimers_from_ladder": {
+    "min": 0.58,
+    "max": 0.66,
+    "unit": "share of 2020-2026 full-timers with any USF/Lights start",
+    "confidence": "high",
+    "sources": [
+     "src:racingsim-history-analysis"
+    ],
+    "notes": "0.62 of n=50"
+   }
+  },
+  "examples": [
+   {
+    "driver": "driver:Alex_Palou",
+    "route": "Europe/Japan -> Super Formula 2019 (win, 3rd, ROTY) -> Dale Coyne IndyCar 2020 at 22-23 -> Ganassi, multiple champion"
+   },
+   {
+    "driver": "driver:Christian_Lundgaard",
+    "route": "F2 -> IndyCar 2021 one-off, full-time 2022 (RLL) (repo data)"
+   },
+   {
+    "driver": "driver:Marcus_Armstrong",
+    "route": "F2 -> Ganassi IndyCar 2023 (repo data)"
+   },
+   {
+    "driver": "driver:Marcus_Ericsson",
+    "route": "F1 -> IndyCar 2019 at 28"
+   },
+   {
+    "driver": "driver:Romain_Grosjean",
+    "route": "F1 -> IndyCar 2021 at 35"
+   },
+   {
+    "driver": "driver:Scott_McLaughlin",
+    "route": "3x Supercars champion -> Penske IndyCar 2021 at 27"
+   },
+   {
+    "driver": "driver:Colton_Herta",
+    "route": "US karting -> UK MSA Formula 2015 -> Euroformula Open 2016 -> Indy Lights 2017-18 -> IndyCar 2019 at 18-19"
+   },
+   {
+    "driver": "driver:Dennis_Hauger",
+    "route": "FIA ladder -> Indy NXT 2025 champion -> IndyCar 2026"
+   }
+  ],
+  "confidence": "medium",
+  "sources": [
+   "src:racingsim-history-analysis",
+   "src:indycar-f2-to-indycar",
+   "src:indycar-palou-coyne",
+   "src:wiki-mclaughlin",
+   "src:wiki-herta",
+   "src:formulascout-f3-guide"
+  ]
+ },
+ {
+  "id": "path:openwheel-scholarship-funded",
+  "name": "Open wheel: scholarship-funded champion route",
+  "discipline": "open_wheel",
+  "description": "Variant of the USF ladder in which a driver wins (or nearly wins) each rung and uses the champion scholarship packages to fund the next level; money still needed for testing and the NXT gap.",
+  "steps": [
+   {
+    "order": 1,
+    "stage": "Karting/shootouts",
+    "series": [
+     "series:skusa-supernationals",
+     "series:skip-barber-formula",
+     "series:skusa-pro-tour"
+    ],
+    "typical_age": {
+     "min": 10,
+     "max": 16,
+     "unit": "years",
+     "confidence": "low",
+     "sources": [
+      "src:informed-estimate"
+     ]
+    },
+    "typical_years": {
+     "min": 3,
+     "max": 8,
+     "unit": "years",
+     "confidence": "low",
+     "sources": [
+      "src:informed-estimate"
+     ]
+    },
+    "advance_share": {
+     "min": 0.01,
+     "max": 0.05,
+     "unit": "share winning a ladder-entry scholarship/shootout",
+     "confidence": "low",
+     "sources": [
+      "src:informed-estimate"
+     ],
+     "notes": "Mazda Road to Indy Shootout 2016-2018 awarded a USD 200k USF2000 scholarship"
+    },
+    "gating": {
+     "talent": 0.6,
+     "money": 0.25,
+     "connections": 0.15
+    },
+    "notes": "Historic gateways: Skip Barber national title -> Star Mazda full ride (De Phillippi 2009), MRTI Shootout, Team USA Scholarship."
+   },
+   {
+    "order": 2,
+    "stage": "USF Juniors champion",
+    "series": [
+     "series:usf-juniors"
+    ],
+    "typical_age": {
+     "min": 14,
+     "max": 17,
+     "unit": "years",
+     "confidence": "medium",
+     "sources": [
+      "src:usfjuniors-licensing"
+     ]
+    },
+    "typical_years": {
+     "min": 1,
+     "max": 1,
+     "unit": "season",
+     "confidence": "low",
+     "sources": [
+      "src:informed-estimate"
+     ]
+    },
+    "advance_share": {
+     "min": 0.9,
+     "max": 1.0,
+     "unit": "champions moving to USF2000",
+     "confidence": "low",
+     "sources": [
+      "src:informed-estimate"
+     ],
+     "notes": "scholarship ~USD 250k (2025)"
+    },
+    "gating": {
+     "talent": 0.6,
+     "money": 0.3,
+     "connections": 0.1
+    },
+    "notes": null
+   },
+   {
+    "order": 3,
+    "stage": "USF2000 champion",
+    "series": [
+     "series:usf2000"
+    ],
+    "typical_age": {
+     "min": 17,
+     "max": 21,
+     "unit": "years",
+     "confidence": "high",
+     "sources": [
+      "src:racingsim-history-analysis"
+     ],
+     "notes": "champion age median ~20 (p10 17, p90 21; 2010-2019)"
+    },
+    "typical_years": {
+     "min": 1,
+     "max": 2,
+     "unit": "seasons",
+     "confidence": "high",
+     "sources": [
+      "src:racingsim-history-analysis"
+     ]
+    },
+    "advance_share": {
+     "min": 0.3,
+     "max": 0.5,
+     "unit": "share of distinct champions later starting IndyCar",
+     "confidence": "high",
+     "sources": [
+      "src:racingsim-history-analysis"
+     ],
+     "notes": "1995-2019: 0.5 any start, 0.227 full season (n=22)"
+    },
+    "gating": {
+     "talent": 0.55,
+     "money": 0.3,
+     "connections": 0.15
+    },
+    "notes": "Scholarship USD 405-458k to Pro 2000."
+   },
+   {
+    "order": 4,
+    "stage": "USF Pro 2000 champion",
+    "series": [
+     "series:usf-pro-2000"
+    ],
+    "typical_age": {
+     "min": 18,
+     "max": 22,
+     "unit": "years",
+     "confidence": "high",
+     "sources": [
+      "src:racingsim-history-analysis"
+     ]
+    },
+    "typical_years": {
+     "min": 1,
+     "max": 2,
+     "unit": "seasons",
+     "confidence": "high",
+     "sources": [
+      "src:racingsim-history-analysis"
+     ]
+    },
+    "advance_share": {
+     "min": 0.36,
+     "max": 0.54,
+     "unit": "share of champions later starting IndyCar",
+     "confidence": "high",
+     "sources": [
+      "src:racingsim-history-analysis"
+     ],
+     "notes": "1995-2019 0.36 (n=25); 2007-2019 0.538 (n=13); last eight champions to 2025 all reached NXT/IndyCar"
+    },
+    "gating": {
+     "talent": 0.5,
+     "money": 0.35,
+     "connections": 0.15
+    },
+    "notes": "Scholarship USD 547-593k to Indy NXT."
+   },
+   {
+    "order": 5,
+    "stage": "Indy NXT champion",
+    "series": [
+     "series:indy-nxt"
+    ],
+    "typical_age": {
+     "min": 19,
+     "max": 23,
+     "unit": "years",
+     "confidence": "high",
+     "sources": [
+      "src:racingsim-history-analysis"
+     ],
+     "notes": "2010-2021 champions median 21"
+    },
+    "typical_years": {
+     "min": 1,
+     "max": 2,
+     "unit": "seasons",
+     "confidence": "high",
+     "sources": [
+      "src:racingsim-history-analysis"
+     ]
+    },
+    "advance_share": {
+     "min": 0.85,
+     "max": 0.95,
+     "unit": "share of champions later starting IndyCar",
+     "confidence": "high",
+     "sources": [
+      "src:racingsim-history-analysis"
+     ],
+     "notes": "0.923 any start, 0.769 full season (n=26, 1995-2021); first IndyCar start median 1 yr later"
+    },
+    "gating": {
+     "talent": 0.5,
+     "money": 0.25,
+     "sponsorship": 0.15,
+     "connections": 0.1
+    },
+    "notes": "Prize ~USD 850k-1M + Indy 500 entry; from 2027 an NXT title = IndyCar competitively qualified."
+   },
+   {
+    "order": 6,
+    "stage": "IndyCar",
+    "series": [
+     "series:indycar"
+    ],
+    "typical_age": {
+     "min": 20,
+     "max": 24,
+     "unit": "years",
+     "confidence": "medium",
+     "sources": [
+      "src:racingsim-history-analysis"
+     ]
+    },
+    "typical_years": null,
+    "advance_share": null,
+    "gating": {
+     "talent": 0.45,
+     "money": 0.2,
+     "sponsorship": 0.2,
+     "connections": 0.15
+    },
+    "notes": null
+   }
+  ],
+  "dead_ends": [
+   "Champion scholarship covers under half of an Indy NXT budget (2025)",
+   "Non-wiki / unfunded champions (e.g. USF2000 2011 Suvanto, 2014 Latorre, 2015 Jamin) stalled despite titles per repo data"
+  ],
+  "examples": [
+   {
+    "driver": "driver:Kyle_Kirkwood",
+    "route": "won F4 US, USF2000, Pro Mazda and Indy Lights titles (first to win every USF rung) -> IndyCar 2022"
+   },
+   {
+    "driver": "driver:Connor_De_Phillippi",
+    "route": "2009 Skip Barber national champion -> 2010 Star Mazda full ride (MRTI) -> 2011 4 wins -> left for Porsche Junior (sports cars)"
+   },
+   {
+    "driver": "driver:Sage_Karam",
+    "route": "USF2000 2010 champion at 15 -> Star Mazda 2011-12 -> Indy Lights 2013 champion -> IndyCar 2014 (mostly part-time thereafter)"
+   }
+  ],
+  "confidence": "high",
+  "sources": [
+   "src:racingsim-history-analysis",
+   "src:wiki-usf-pro-championships",
+   "src:racer-usf-2025-scholarships",
+   "src:wiki-indy-nxt",
+   "src:usopenwheelnation-nxt-costs",
+   "src:wiki-de-phillippi",
+   "src:motorsport-indycar-licensing-2027"
+  ]
+ },
+ {
+  "id": "path:openwheel-to-nascar",
+  "name": "Crossover: open wheel (IndyCar/CART/USAC) -> NASCAR",
+  "discipline": "road_racing",
+  "description": "Open-wheel drivers moving to stock cars, usually for larger budgets/salaries; most successful when they also have oval (USAC/IRL) backgrounds.",
+  "steps": [
+   {
+    "order": 1,
+    "stage": "Top open wheel",
+    "series": [
+     "series:indycar",
+     "series:cart-champcar"
+    ],
+    "typical_age": {
+     "min": 22,
+     "max": 32,
+     "unit": "years",
+     "confidence": "low",
+     "sources": [
+      "src:informed-estimate"
+     ]
+    },
+    "typical_years": {
+     "min": 2,
+     "max": 8,
+     "unit": "seasons",
+     "confidence": "low",
+     "sources": [
+      "src:wiki-danica",
+      "src:wiki-allmendinger",
+      "src:wiki-tony-stewart"
+     ]
+    },
+    "advance_share": {
+     "min": 0.02,
+     "max": 0.08,
+     "unit": "share of IndyCar/CART regulars moving to NASCAR",
+     "confidence": "low",
+     "sources": [
+      "src:informed-estimate"
+     ]
+    },
+    "gating": {
+     "talent": 0.3,
+     "sponsorship": 0.35,
+     "connections": 0.25,
+     "manufacturer": 0.1
+    },
+    "notes": null
+   },
+   {
+    "order": 2,
+    "stage": "NASCAR",
+    "series": [
+     "series:nascar-xfinity",
+     "series:nascar-cup"
+    ],
+    "typical_age": {
+     "min": 24,
+     "max": 35,
+     "unit": "years",
+     "confidence": "low",
+     "sources": [
+      "src:wiki-allmendinger",
+      "src:wiki-danica"
+     ]
+    },
+    "typical_years": {
+     "min": 1,
+     "max": 15,
+     "unit": "seasons",
+     "confidence": "low",
+     "sources": [
+      "src:informed-estimate"
+     ]
+    },
+    "advance_share": null,
+    "gating": {
+     "talent": 0.35,
+     "sponsorship": 0.35,
+     "connections": 0.2,
+     "manufacturer": 0.1
+    },
+    "notes": null
+   }
+  ],
+  "examples": [
+   {
+    "driver": "driver:Tony_Stewart",
+    "route": "IKF/WKA karting champion -> USAC (1994 midget champion) -> IRL 1996-98 (1997 champion, repo) -> NASCAR Cup 1999 (repo)"
+   },
+   {
+    "driver": "driver:Danica_Patrick",
+    "route": "WKA karting -> UK Formula Vauxhall/Ford at 16 -> Toyota Atlantic 2003-04 -> IRL 2005-2011 -> NASCAR Cup 2012-2018 (repo data)"
+   },
+   {
+    "driver": "driver:A._J._Allmendinger",
+    "route": "Champ Car 2004-06 (5 wins 2006) -> NASCAR Cup 2007- (still racing Cup 2026 per repo data)"
+   },
+   {
+    "driver": "driver:Juan_Pablo_Montoya",
+    "route": "CART 1999 champion -> (F1, not verified here) -> NASCAR Cup 2007-2013 full-time -> IndyCar 2014-17 (repo data)"
+   }
+  ],
+  "confidence": "medium",
+  "sources": [
+   "src:wiki-tony-stewart",
+   "src:wiki-danica",
+   "src:wiki-allmendinger",
+   "src:racingsim-history-analysis"
+  ]
+ },
+ {
+  "id": "path:openwheel-to-sportscar-second-career",
+  "name": "Crossover: open wheel -> sports car \"second career\"",
+  "discipline": "road_racing",
+  "description": "Ladder drivers who run out of single-seater budget (or age out of IndyCar) and become paid sports-car pros, often via manufacturer programs; IMSA endurance rounds also hire IndyCar drivers as extra drivers.",
+  "steps": [
+   {
+    "order": 1,
+    "stage": "USF ladder / Indy NXT / IndyCar",
+    "series": [
+     "series:usf-pro-2000",
+     "series:indy-nxt",
+     "series:indycar"
+    ],
+    "typical_age": {
+     "min": 19,
+     "max": 35,
+     "unit": "years",
+     "confidence": "high",
+     "sources": [
+      "src:racingsim-history-analysis"
+     ]
+    },
+    "typical_years": {
+     "min": 1,
+     "max": 6,
+     "unit": "seasons",
+     "confidence": "high",
+     "sources": [
+      "src:racingsim-history-analysis"
+     ]
+    },
+    "advance_share": {
+     "min": 0.5,
+     "max": 0.6,
+     "unit": "share of NXT full-timers who never start IndyCar (pool of potential sports-car converts)",
+     "confidence": "high",
+     "sources": [
+      "src:racingsim-history-analysis"
+     ],
+     "notes": "1 - 0.469"
+    },
+    "gating": {
+     "talent": 0.35,
+     "money": 0.4,
+     "connections": 0.15,
+     "manufacturer": 0.1
+    },
+    "notes": null
+   },
+   {
+    "order": 2,
+    "stage": "IMSA/SRO pro (Silver/Gold paired with Bronze) or factory junior",
+    "series": [
+     "series:imsa-pilot-challenge",
+     "series:imsa-weathertech",
+     "series:gt-world-challenge-america",
+     "series:porsche-carrera-cup-na"
+    ],
+    "typical_age": {
+     "min": 20,
+     "max": 40,
+     "unit": "years",
+     "confidence": "low",
+     "sources": [
+      "src:informed-estimate"
+     ]
+    },
+    "typical_years": {
+     "min": 3,
+     "max": 15,
+     "unit": "seasons",
+     "confidence": "low",
+     "sources": [
+      "src:informed-estimate"
+     ]
+    },
+    "advance_share": {
+     "min": 0.2,
+     "max": 0.5,
+     "unit": "share of converts staying paid pros 3+ yrs",
+     "confidence": "low",
+     "sources": [
+      "src:informed-estimate"
+     ]
+    },
+    "gating": {
+     "talent": 0.35,
+     "manufacturer": 0.3,
+     "connections": 0.2,
+     "money": 0.15
+    },
+    "notes": null
+   }
+  ],
+  "examples": [
+   {
+    "driver": "driver:Connor_De_Phillippi",
+    "route": "Star Mazda 2010-12 (no NXT budget path) -> Porsche Junior -> Audi/BMW factory"
+   },
+   {
+    "driver": "driver:Dane_Cameron",
+    "route": "USF2000 2006 P2 -> Star Mazda 2007 champion (repo data); later sports-car career not verified in this pass"
+   },
+   {
+    "driver": "driver:Joey_Hand",
+    "route": "Star Mazda 1999 champion (repo data); later sports-car career not verified in this pass"
+   }
+  ],
+  "confidence": "low",
+  "sources": [
+   "src:racingsim-history-analysis",
+   "src:wiki-de-phillippi"
+  ]
+ },
+ {
+  "id": "path:openwheel-usf-ladder",
+  "name": "Open wheel: karting -> USF ladder -> Indy NXT -> IndyCar",
+  "discipline": "open_wheel",
+  "description": "The North American single-seater ladder (Road to Indy / Mazda Road to Indy / USF Pro Championships). Each rung is roughly one to two seasons; money gates every step, scholarships soften it for champions. Shares are computed from the repo history (full-timer = started >=70% of rounds).",
+  "steps": [
+   {
+    "order": 1,
+    "stage": "Karting",
+    "series": [
+     "series:club-karting",
+     "series:skusa-pro-tour",
+     "series:wka-national",
+     "series:rok-cup-usa",
+     "series:florida-winter-tour",
+     "series:skusa-supernationals"
+    ],
+    "typical_age": {
+     "min": 5,
+     "max": 15,
+     "unit": "years",
+     "confidence": "medium",
+     "sources": [
+      "src:skusa-classes-2026",
+      "src:wiki-kirkwood",
+      "src:wiki-de-phillippi"
+     ]
+    },
+    "typical_years": {
+     "min": 4,
+     "max": 10,
+     "unit": "years",
+     "confidence": "low",
+     "sources": [
+      "src:wiki-kirkwood",
+      "src:wiki-de-phillippi"
+     ],
+     "notes": "Kirkwood/De Phillippi ~10 yrs from age 5; Newgarden only ~2-3 yrs from 13"
+    },
+    "advance_share": {
+     "min": 0.05,
+     "max": 0.2,
+     "unit": "share of national junior karters moving into cars",
+     "confidence": "low",
+     "sources": [
+      "src:informed-estimate"
+     ]
+    },
+    "gating": {
+     "talent": 0.35,
+     "money": 0.45,
+     "connections": 0.1,
+     "sponsorship": 0.1
+    },
+    "notes": "National karting (SKUSA/ROK/WKA, Florida Winter Tour, SuperNationals) is where teams and scholarships scout. Costs ~USD 30-100k/yr at national level."
+   },
+   {
+    "order": 2,
+    "stage": "First car (F4-level)",
+    "series": [
+     "series:usf-juniors",
+     "series:f4-us",
+     "series:ligier-jfc",
+     "series:skip-barber-formula",
+     "series:f1600-championship"
+    ],
+    "typical_age": {
+     "min": 14,
+     "max": 17,
+     "unit": "years",
+     "confidence": "high",
+     "sources": [
+      "src:usfjuniors-licensing",
+      "src:ligier-jfc"
+     ],
+     "notes": "USF Juniors/Ligier JFC min 14, F4 US 15"
+    },
+    "typical_years": {
+     "min": 1,
+     "max": 2,
+     "unit": "seasons",
+     "confidence": "low",
+     "sources": [
+      "src:wiki-kirkwood"
+     ]
+    },
+    "advance_share": {
+     "min": 0.3,
+     "max": 0.6,
+     "unit": "share moving up to USF2000/FRA within 2 yrs",
+     "confidence": "low",
+     "sources": [
+      "src:informed-estimate"
+     ]
+    },
+    "gating": {
+     "talent": 0.4,
+     "money": 0.45,
+     "connections": 0.1,
+     "sponsorship": 0.05
+    },
+    "notes": "USF Juniors champion scholarship ~USD 250k to USF2000; F4 US season ~USD 130-195k. Team USA Scholarship (UK Formula Ford) is a parallel talent route."
+   },
+   {
+    "order": 3,
+    "stage": "USF2000",
+    "series": [
+     "series:usf2000"
+    ],
+    "typical_age": {
+     "min": 16,
+     "max": 22,
+     "unit": "years",
+     "confidence": "high",
+     "sources": [
+      "src:racingsim-history-analysis"
+     ],
+     "notes": "full-timer age median 19"
+    },
+    "typical_years": {
+     "min": 1,
+     "max": 2,
+     "unit": "seasons",
+     "confidence": "high",
+     "sources": [
+      "src:racingsim-history-analysis"
+     ],
+     "notes": "59% of regulars do one season, 34% two"
+    },
+    "advance_share": {
+     "min": 0.38,
+     "max": 0.46,
+     "unit": "share of full-timers later racing USF Pro 2000",
+     "confidence": "high",
+     "sources": [
+      "src:racingsim-history-analysis"
+     ],
+     "notes": "0.424 of n=139 (2010-2021)"
+    },
+    "gating": {
+     "talent": 0.35,
+     "money": 0.45,
+     "sponsorship": 0.1,
+     "connections": 0.1
+    },
+    "notes": "Champion scholarship USD 405-458k to Pro 2000. Only ~11% of USF2000 full-timers ever start an IndyCar race."
+   },
+   {
+    "order": 4,
+    "stage": "USF Pro 2000",
+    "series": [
+     "series:usf-pro-2000"
+    ],
+    "typical_age": {
+     "min": 17,
+     "max": 23,
+     "unit": "years",
+     "confidence": "high",
+     "sources": [
+      "src:racingsim-history-analysis"
+     ],
+     "notes": "median 20; movers arrive at median 20 (p10 18, p90 22)"
+    },
+    "typical_years": {
+     "min": 1,
+     "max": 2,
+     "unit": "seasons",
+     "confidence": "high",
+     "sources": [
+      "src:racingsim-history-analysis"
+     ],
+     "notes": "60% one season"
+    },
+    "advance_share": {
+     "min": 0.36,
+     "max": 0.45,
+     "unit": "share of full-timers later racing Indy Lights/NXT",
+     "confidence": "high",
+     "sources": [
+      "src:racingsim-history-analysis"
+     ],
+     "notes": "0.407 of n=135 (2007-2021)"
+    },
+    "gating": {
+     "talent": 0.35,
+     "money": 0.45,
+     "sponsorship": 0.1,
+     "connections": 0.1
+    },
+    "notes": "Champion scholarship USD 547-593k to Indy NXT, less than half of a ~USD 1.2M NXT season."
+   },
+   {
+    "order": 5,
+    "stage": "Indy NXT",
+    "series": [
+     "series:indy-nxt"
+    ],
+    "typical_age": {
+     "min": 19,
+     "max": 26,
+     "unit": "years",
+     "confidence": "high",
+     "sources": [
+      "src:racingsim-history-analysis"
+     ],
+     "notes": "median 22; movers from Pro Mazda arrive at median 21.5"
+    },
+    "typical_years": {
+     "min": 1,
+     "max": 3,
+     "unit": "seasons",
+     "confidence": "high",
+     "sources": [
+      "src:racingsim-history-analysis"
+     ],
+     "notes": "54% one, 33% two, 13% three+"
+    },
+    "advance_share": {
+     "min": 0.43,
+     "max": 0.54,
+     "unit": "share of full-timers later starting an IndyCar race",
+     "confidence": "high",
+     "sources": [
+      "src:racingsim-history-analysis"
+     ],
+     "notes": "0.469 any start / 0.311 full season (n=196, 1995-2021)"
+    },
+    "gating": {
+     "talent": 0.35,
+     "money": 0.35,
+     "sponsorship": 0.15,
+     "connections": 0.15
+    },
+    "notes": "Champions reach IndyCar 92% of the time (77% with a full season). Budget ~USD 1-1.5M."
+   },
+   {
+    "order": 6,
+    "stage": "IndyCar",
+    "series": [
+     "series:indycar"
+    ],
+    "typical_age": {
+     "min": 20,
+     "max": 33,
+     "unit": "years at debut",
+     "confidence": "high",
+     "sources": [
+      "src:racingsim-history-analysis"
+     ],
+     "notes": "debut median 24"
+    },
+    "typical_years": {
+     "min": 0,
+     "max": 10,
+     "unit": "full seasons",
+     "confidence": "high",
+     "sources": [
+      "src:racingsim-history-analysis"
+     ],
+     "notes": "debut cohort 2008-2016: 44% never a 10+ start season, 33% 1-3, 18% 4-9, 5% 10+"
+    },
+    "advance_share": null,
+    "gating": {
+     "talent": 0.35,
+     "money": 0.25,
+     "sponsorship": 0.2,
+     "connections": 0.2
+    },
+    "notes": "Seat requires either team-paid talent or ~USD 2-5M brought by driver (low confidence)."
+   }
+  ],
+  "composite": {
+   "usf2000_fulltimer_to_indycar_start": {
+    "min": 0.09,
+    "max": 0.14,
+    "unit": "share",
+    "confidence": "high",
+    "sources": [
+     "src:racingsim-history-analysis"
+    ],
+    "notes": "0.111 (2010-2019) - 0.118 (1995-2019)"
+   },
+   "usf2000_fulltimer_to_indycar_fulltime": {
+    "min": 0.07,
+    "max": 0.09,
+    "unit": "share",
+    "confidence": "high",
+    "sources": [
+     "src:racingsim-history-analysis"
+    ],
+    "notes": "0.078-0.085"
+   },
+   "pro2000_fulltimer_to_indycar_start": {
+    "min": 0.13,
+    "max": 0.19,
+    "unit": "share",
+    "confidence": "high",
+    "sources": [
+     "src:racingsim-history-analysis"
+    ],
+    "notes": "0.156 (2007/1995-2019)"
+   }
+  },
+  "crossovers": [
+   {
+    "from": "series:usf2000",
+    "to": "series:indy-nxt",
+    "frequency": "occasional",
+    "notes": "skipping Pro 2000 (e.g. Herta-style funded jumps); 32% of USF2000 full-timers eventually race Lights"
+   },
+   {
+    "from": "series:usf-pro-2000",
+    "to": "series:imsa-weathertech",
+    "frequency": "occasional",
+    "notes": "sports-car exit when NXT budget missing (De Phillippi)"
+   },
+   {
+    "from": "series:indy-nxt",
+    "to": "series:imsa-weathertech",
+    "frequency": "occasional",
+    "notes": "roughly half of NXT full-timers never start IndyCar; IMSA is a common destination (informed)"
+   }
+  ],
+  "dead_ends": [
+   "Funding gap USF Pro 2000 -> Indy NXT (Urrutia 2015, Telitz 2016, Franzoni 2017 Pro Mazda champions never started IndyCar per repo data)",
+   "Indy NXT -> IndyCar: ~half never start; ~31% get a full season",
+   "IndyCar one-and-done: 44% of 2008-2016 debutants never had a 10+ start season"
+  ],
+  "examples": [
+   {
+    "driver": "driver:Kyle_Kirkwood",
+    "route": "karting from 5 -> F4 US 2016 (3rd), 2017 champion -> USF2000 2018 champion -> Pro Mazda 2019 champion -> Indy Lights 2021 champion -> IndyCar 2022 (Foyt) at 23"
+   },
+   {
+    "driver": "driver:Oliver_Askew",
+    "route": "USF2000 2017 champion -> Pro Mazda 2018 P3 -> Indy Lights 2019 champion -> IndyCar 2020 at 23"
+   },
+   {
+    "driver": "driver:Rinus_VeeKay",
+    "route": "USF2000 2017 P2 -> Pro Mazda 2018 champion -> Indy Lights 2019 P2 -> IndyCar 2020 at 19"
+   },
+   {
+    "driver": "driver:Spencer_Pigot",
+    "route": "USF2000 2011-12 -> Pro Mazda 2013-14 (2014 champion) -> Indy Lights 2015 champion -> IndyCar 2016"
+   },
+   {
+    "driver": "driver:Christian_Rasmussen",
+    "route": "USF2000 2020 champion -> USF/Indy Pro 2000 2021 champion -> Indy Lights/NXT 2022-23 (2023 champion) -> IndyCar 2024"
+   },
+   {
+    "driver": "driver:David_Malukas",
+    "route": "USF2000 2017 -> Pro Mazda 2018 -> Indy Lights 2019, 2021 (P2) -> IndyCar 2022 at 20"
+   },
+   {
+    "driver": "driver:J._R._Hildebrand",
+    "route": "USF2000 2006 champion -> Indy Lights 2007-09 (2009 champion) -> IndyCar 2010"
+   },
+   {
+    "driver": "driver:Josef_Newgarden",
+    "route": "karting from 13 -> Skip Barber 2006-08 -> Team USA Scholarship / UK Formula Ford 2008-09 -> GP3 2010 -> Indy Lights 2011 champion -> IndyCar 2012 at 21"
+   }
+  ],
+  "confidence": "high",
+  "sources": [
+   "src:racingsim-history-analysis",
+   "src:wiki-usf-pro-championships",
+   "src:racer-usf-2025-scholarships",
+   "src:usfjuniors-licensing",
+   "src:wiki-kirkwood",
+   "src:wiki-newgarden",
+   "src:usopenwheelnation-nxt-costs"
+  ]
+ },
+ {
+  "id": "path:roadracing-to-nascar-road-specialist",
+  "name": "Road racing crossover: sports car/touring road specialist -> NASCAR road-course starts",
+  "discipline": "road_racing",
+  "description": "Road-course \"ringers\" hired by NASCAR teams for road races; practice declined with playoffs/charters but revived via open entries (Project 91) and full-time converts.",
+  "steps": [
+   {
+    "order": 1,
+    "stage": "Pro road racing",
+    "series": [
+     "series:imsa-weathertech",
+     "series:trans-am-ta",
+     "series:trans-am-ta2",
+     "series:supercars",
+     "series:gt-world-challenge-america"
+    ],
+    "typical_age": {
+     "min": 25,
+     "max": 45,
+     "unit": "years",
+     "confidence": "low",
+     "sources": [
+      "src:informed-estimate"
+     ]
+    },
+    "typical_years": {
+     "min": 5,
+     "max": 15,
+     "unit": "seasons",
+     "confidence": "low",
+     "sources": [
+      "src:informed-estimate"
+     ]
+    },
+    "advance_share": {
+     "min": 0.01,
+     "max": 0.05,
+     "unit": "share of top road pros getting NASCAR road starts",
+     "confidence": "low",
+     "sources": [
+      "src:informed-estimate"
+     ]
+    },
+    "gating": {
+     "talent": 0.4,
+     "connections": 0.3,
+     "sponsorship": 0.2,
+     "manufacturer": 0.1
+    },
+    "notes": "TA2 is also used by NASCAR prospects to learn road courses."
+   },
+   {
+    "order": 2,
+    "stage": "NASCAR road-course starts",
+    "series": [
+     "series:nascar-cup",
+     "series:nascar-xfinity"
+    ],
+    "typical_age": {
+     "min": 28,
+     "max": 45,
+     "unit": "years",
+     "confidence": "low",
+     "sources": [
+      "src:wiki-road-course-ringer"
+     ]
+    },
+    "typical_years": {
+     "min": 1,
+     "max": 10,
+     "unit": "seasons (part-time)",
+     "confidence": "low",
+     "sources": [
+      "src:wiki-road-course-ringer"
+     ]
+    },
+    "advance_share": null,
+    "gating": {
+     "talent": 0.4,
+     "connections": 0.3,
+     "sponsorship": 0.2,
+     "manufacturer": 0.1
+    },
+    "notes": "Ron Fellows made 25 Cup starts 1995-2013 (best 2nd twice)."
+   }
+  ],
+  "examples": [
+   {
+    "driver": "driver:Boris_Said",
+    "route": "sports-car pro -> NASCAR road ringer from 1995 (Xfinity & Truck wins, 2003 Sonoma pole)"
+   },
+   {
+    "driver": "driver:Ron_Fellows",
+    "route": "Trans-Am/Corvette sports-car pro -> 25 Cup starts 1995-2013"
+   },
+   {
+    "driver": "driver:Max_Papis",
+    "route": "CART/IMSA -> NASCAR 2006-2013 (12 of 14 Xfinity starts on road courses)"
+   },
+   {
+    "driver": "driver:Shane_van_Gisbergen",
+    "route": "Supercars champion -> Project 91 Cup entry won 2023 Chicago street race -> NASCAR career"
+   }
+  ],
+  "confidence": "medium",
+  "sources": [
+   "src:wiki-road-course-ringer",
+   "src:motorsportmag-transam"
+  ]
+ },
+ {
+  "id": "path:sportscar-club-to-factory",
+  "name": "Sports car: club/karting -> one-make cups -> IMSA ladder -> GTD/LMP2 pro -> factory GTD PRO/GTP",
+  "discipline": "sports_car",
+  "description": "Professional sports-car ladder. Young Silver-rated drivers are paired with paying Bronze drivers in pro-am classes; manufacturer junior/factory programs (Porsche Junior, BMW Junior Team, HPD Academy, Corvette, Mazda) are the decisive gate to paid GTD PRO/GTP seats.",
+  "steps": [
+   {
+    "order": 1,
+    "stage": "Karting or club racing",
+    "series": [
+     "series:skusa-pro-tour",
+     "series:club-karting",
+     "series:scca-regional",
+     "series:nasa-club",
+     "series:spec-miata-club"
+    ],
+    "typical_age": {
+     "min": 8,
+     "max": 20,
+     "unit": "years",
+     "confidence": "medium",
+     "sources": [
+      "src:wiki-jordan-taylor",
+      "src:wiki-de-phillippi"
+     ]
+    },
+    "typical_years": {
+     "min": 2,
+     "max": 8,
+     "unit": "years",
+     "confidence": "low",
+     "sources": [
+      "src:informed-estimate"
+     ]
+    },
+    "advance_share": {
+     "min": 0.01,
+     "max": 0.05,
+     "unit": "share of club racers reaching a pro cup",
+     "confidence": "low",
+     "sources": [
+      "src:informed-estimate"
+     ]
+    },
+    "gating": {
+     "talent": 0.35,
+     "money": 0.45,
+     "connections": 0.1,
+     "sponsorship": 0.1
+    },
+    "notes": "SCCA novice permit from 14; Jordan Taylor came from 100cc karting/Florida Winter Tour."
+   },
+   {
+    "order": 2,
+    "stage": "One-make cups / junior open wheel",
+    "series": [
+     "series:mx5-cup",
+     "series:toyota-gr-cup",
+     "series:porsche-carrera-cup-na",
+     "series:lamborghini-super-trofeo-na",
+     "series:usf2000",
+     "series:usf-pro-2000"
+    ],
+    "typical_age": {
+     "min": 15,
+     "max": 24,
+     "unit": "years",
+     "confidence": "medium",
+     "sources": [
+      "src:pccna-series-info",
+      "src:imsa-sporting-regs-2025"
+     ]
+    },
+    "typical_years": {
+     "min": 1,
+     "max": 3,
+     "unit": "seasons",
+     "confidence": "low",
+     "sources": [
+      "src:informed-estimate"
+     ]
+    },
+    "advance_share": {
+     "min": 0.1,
+     "max": 0.3,
+     "unit": "share moving to IMSA/SRO pro series within 3 yrs",
+     "confidence": "low",
+     "sources": [
+      "src:informed-estimate"
+     ]
+    },
+    "gating": {
+     "talent": 0.35,
+     "money": 0.35,
+     "manufacturer": 0.15,
+     "sponsorship": 0.1,
+     "connections": 0.05
+    },
+    "notes": "MX-5 Cup champion USD 250k scholarship; Carrera Cup Pro class 17-35 feeds Porsche Junior (<=23-24)."
+   },
+   {
+    "order": 3,
+    "stage": "IMSA/SRO development & GT4",
+    "series": [
+     "series:imsa-vp-racing-challenge",
+     "series:imsa-pilot-challenge",
+     "series:gt4-america"
+    ],
+    "typical_age": {
+     "min": 17,
+     "max": 28,
+     "unit": "years",
+     "confidence": "low",
+     "sources": [
+      "src:informed-estimate"
+     ]
+    },
+    "typical_years": {
+     "min": 1,
+     "max": 4,
+     "unit": "seasons",
+     "confidence": "low",
+     "sources": [
+      "src:informed-estimate"
+     ]
+    },
+    "advance_share": {
+     "min": 0.05,
+     "max": 0.2,
+     "unit": "share stepping to WeatherTech/GTWC seats",
+     "confidence": "low",
+     "sources": [
+      "src:informed-estimate"
+     ]
+    },
+    "gating": {
+     "talent": 0.3,
+     "money": 0.35,
+     "manufacturer": 0.2,
+     "connections": 0.1,
+     "sponsorship": 0.05
+    },
+    "notes": "VP Racing Challenge is Silver/Bronze only; Pilot Challenge bars Platinum."
+   },
+   {
+    "order": 4,
+    "stage": "Pro in pro-am GTD/LMP2/GTWC",
+    "series": [
+     "series:imsa-weathertech",
+     "series:gt-world-challenge-america"
+    ],
+    "typical_age": {
+     "min": 19,
+     "max": 35,
+     "unit": "years",
+     "confidence": "low",
+     "sources": [
+      "src:informed-estimate"
+     ]
+    },
+    "typical_years": {
+     "min": 2,
+     "max": 8,
+     "unit": "seasons",
+     "confidence": "low",
+     "sources": [
+      "src:informed-estimate"
+     ]
+    },
+    "advance_share": {
+     "min": 0.1,
+     "max": 0.3,
+     "unit": "share of pro-am pros gaining factory contracts",
+     "confidence": "low",
+     "sources": [
+      "src:informed-estimate"
+     ]
+    },
+    "gating": {
+     "talent": 0.35,
+     "manufacturer": 0.3,
+     "connections": 0.2,
+     "money": 0.1,
+     "sponsorship": 0.05
+    },
+    "notes": "GTD pros paid ~USD 80-225k (avg ~150-160k); Bronze teammates fund seats."
+   },
+   {
+    "order": 5,
+    "stage": "Factory GTD PRO / GTP",
+    "series": [
+     "series:imsa-weathertech"
+    ],
+    "typical_age": {
+     "min": 22,
+     "max": 45,
+     "unit": "years",
+     "confidence": "low",
+     "sources": [
+      "src:informed-estimate"
+     ]
+    },
+    "typical_years": {
+     "min": 3,
+     "max": 15,
+     "unit": "seasons",
+     "confidence": "low",
+     "sources": [
+      "src:informed-estimate"
+     ]
+    },
+    "advance_share": null,
+    "gating": {
+     "talent": 0.4,
+     "manufacturer": 0.4,
+     "connections": 0.2
+    },
+    "notes": "Factory pay higher than GTD (low-confidence GBP 150k-1M works range)."
+   }
+  ],
+  "examples": [
+   {
+    "driver": "driver:Jordan_Taylor_(racing_driver)",
+    "route": "100cc karting -> Grand-Am Rolex GT 2010-11 -> Corvette endurance third driver 2012 -> 2013 Rolex DP champion (WTR) -> 2015 Le Mans GTE-Pro win -> full-time Corvette factory 2020"
+   },
+   {
+    "driver": "driver:Connor_De_Phillippi",
+    "route": "karting (4 SuperNats) -> Skip Barber 2009 champion -> Star Mazda 2010-12 -> Porsche Junior 2013 -> Audi factory -> BMW factory IMSA 2018-"
+   },
+   {
+    "driver": "driver:Neil_Verhagen",
+    "route": "BMW Junior Team 2020-22 -> BMW M works driver"
+   },
+   {
+    "driver": "driver:Pato_O'Ward",
+    "route": "detour: Pro Mazda 2016 -> IMSA Prototype Challenge 2017 (Daytona & Sebring class wins at 17) -> Indy Lights 2018 champion (open wheel)"
+   }
+  ],
+  "confidence": "medium",
+  "sources": [
+   "src:wiki-jordan-taylor",
+   "src:wiki-de-phillippi",
+   "src:bmw-junior",
+   "src:porsche-junior-2026",
+   "src:hpd-academy",
+   "src:pccna-series-info",
+   "src:mx5cup-series",
+   "src:imsa-vp-challenge",
+   "src:racer-pruett-pro-pay",
+   "src:wiki-oward"
+  ]
+ },
+ {
+  "id": "path:sportscar-gentleman-pro-am",
+  "name": "Sports car: gentleman / Bronze driver pro-am route",
+  "discipline": "sports_car",
+  "description": "Late starters (first licence after age 30 => FIA Bronze) who fund their own racing; Bronze drivers are structurally required in IMSA GTD (from 2023) and LMP2, so wealth buys access to the top championship.",
+  "steps": [
+   {
+    "order": 1,
+    "stage": "HPDE / club licence",
+    "series": [
+     "series:nasa-club",
+     "series:scca-regional"
+    ],
+    "typical_age": {
+     "min": 30,
+     "max": 60,
+     "unit": "years",
+     "confidence": "medium",
+     "sources": [
+      "src:wiki-fia-categorisation"
+     ],
+     "notes": "Bronze = first licence after 30"
+    },
+    "typical_years": {
+     "min": 1,
+     "max": 3,
+     "unit": "years",
+     "confidence": "low",
+     "sources": [
+      "src:informed-estimate"
+     ]
+    },
+    "advance_share": {
+     "min": 0.05,
+     "max": 0.2,
+     "unit": "share moving to pro-am cups",
+     "confidence": "low",
+     "sources": [
+      "src:informed-estimate"
+     ]
+    },
+    "gating": {
+     "money": 0.7,
+     "talent": 0.2,
+     "connections": 0.1
+    },
+    "notes": "NASA HPDE groups 1-4 -> licence; SCCA novice permit."
+   },
+   {
+    "order": 2,
+    "stage": "Gentleman one-make cups",
+    "series": [
+     "series:porsche-sprint-challenge-na",
+     "series:ferrari-challenge-na",
+     "series:lamborghini-super-trofeo-na",
+     "series:porsche-carrera-cup-na",
+     "series:toyota-gr-cup"
+    ],
+    "typical_age": {
+     "min": 35,
+     "max": 65,
+     "unit": "years",
+     "confidence": "high",
+     "sources": [
+      "src:pccna-series-info",
+      "src:slashgear-grcup"
+     ],
+     "notes": "Carrera Cup Pro-Am 36-49, Masters 50+; GR Cup Legends 45+"
+    },
+    "typical_years": {
+     "min": 1,
+     "max": 5,
+     "unit": "seasons",
+     "confidence": "low",
+     "sources": [
+      "src:informed-estimate"
+     ]
+    },
+    "advance_share": {
+     "min": 0.1,
+     "max": 0.4,
+     "unit": "share moving to multi-make pro-am GT",
+     "confidence": "low",
+     "sources": [
+      "src:informed-estimate"
+     ]
+    },
+    "gating": {
+     "money": 0.7,
+     "talent": 0.2,
+     "connections": 0.1
+    },
+    "notes": "Ferrari Challenge ~USD 1M turnkey; Carrera Cup ~USD 0.4-0.6M."
+   },
+   {
+    "order": 3,
+    "stage": "Am/Pro-Am GT",
+    "series": [
+     "series:gt-america",
+     "series:gt4-america",
+     "series:gt-world-challenge-america",
+     "series:imsa-pilot-challenge"
+    ],
+    "typical_age": {
+     "min": 35,
+     "max": 65,
+     "unit": "years",
+     "confidence": "low",
+     "sources": [
+      "src:informed-estimate"
+     ]
+    },
+    "typical_years": {
+     "min": 2,
+     "max": 6,
+     "unit": "seasons",
+     "confidence": "low",
+     "sources": [
+      "src:informed-estimate"
+     ]
+    },
+    "advance_share": {
+     "min": 0.1,
+     "max": 0.3,
+     "unit": "share buying WeatherTech/Le Mans pro-am seats",
+     "confidence": "low",
+     "sources": [
+      "src:informed-estimate"
+     ]
+    },
+    "gating": {
+     "money": 0.75,
+     "talent": 0.15,
+     "connections": 0.1
+    },
+    "notes": null
+   },
+   {
+    "order": 4,
+    "stage": "IMSA GTD / LMP2 Bronze seat",
+    "series": [
+     "series:imsa-weathertech"
+    ],
+    "typical_age": {
+     "min": 35,
+     "max": 65,
+     "unit": "years",
+     "confidence": "low",
+     "sources": [
+      "src:informed-estimate"
+     ]
+    },
+    "typical_years": {
+     "min": 1,
+     "max": 8,
+     "unit": "seasons",
+     "confidence": "low",
+     "sources": [
+      "src:informed-estimate"
+     ]
+    },
+    "advance_share": null,
+    "gating": {
+     "money": 0.8,
+     "talent": 0.15,
+     "connections": 0.05
+    },
+    "notes": "Bronze drivers reportedly pay ~EUR 0.3-1M per season (low confidence); LMP2 Bronze mandatory all season; GTD at least one Bronze since 2023."
+   }
+  ],
+  "dead_ends": [
+   "Pure end state: no professional advancement; talent of the Bronze driver strongly affects team results"
+  ],
+  "examples": [],
+  "confidence": "medium",
+  "sources": [
+   "src:wiki-fia-categorisation",
+   "src:sportscar365-gtd-bronze",
+   "src:sportscar365-lmp2-bronze",
+   "src:pccna-series-info",
+   "src:racer-pruett-pro-pay",
+   "src:wiki-nasa",
+   "src:imsa-lst-brochure-2025"
+  ]
+ }
+]

@@ -38,7 +38,7 @@ ENTITY_FILES = ["sanctioning_bodies.json", "car_classes.json", "series.json", "c
                 "datasets.json"]
 CONF_RANK = {"high": 3, "medium": 2, "low": 1, None: 0}
 FACT_KEYS = {"min", "max", "value", "category"}
-REF_PREFIXES = ("series:", "body:", "class:", "path:", "stage:", "factor:", "src:", "track:", "driver:")
+REF_PREFIXES = ("series:", "body:", "class:", "path:", "stage:", "factor:", "src:", "track:", "driver:", "econ:")
 
 
 # ------------------------------------------------------------------ helpers
@@ -82,6 +82,24 @@ def items(data) -> list[dict]:
                 out.append(v)
         return out
     return [x for x in data if isinstance(x, dict)]
+
+
+def flatten_economics(raw) -> list[dict]:
+    """economics.json may be {topic: [entries]}: flatten to entries with ids and topics."""
+    if not isinstance(raw, dict) or not any(isinstance(v, list) for v in raw.values()):
+        return items(raw)
+    out = []
+    for topic, entries in raw.items():
+        if topic.startswith("_") or not isinstance(entries, list):
+            continue
+        for i, e in enumerate(entries):
+            if not isinstance(e, dict):
+                continue
+            subject = e.get("series") or e.get("tier") or e.get("flow") or e.get("level") or i
+            e = dict(e, topic=topic, level=e.get("level") or e.get("tier") or e.get("series"))
+            e["id"] = canon_id(f"econ:{topic}-{str(subject).replace('series:', '')}")
+            out.append(e)
+    return out
 
 
 def is_fact(v) -> bool:
@@ -297,7 +315,8 @@ def main(staging: list[Path]) -> int:
     track_enrich_in: list[dict] = []
     for d in staging:
         for f in ENTITY_FILES:
-            groups[f].append(items(load(d / f)))
+            raw = load(d / f)
+            groups[f].append(flatten_economics(raw) if f == "economics.json" else items(raw))
         for k, v in (load(d / "sources.json") or {}).items():
             sources.setdefault(canon_id(k), v)
         ledger += load(d / "ledger.jsonl") or []

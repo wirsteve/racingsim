@@ -413,7 +413,8 @@ def _utility(world: "World", team: Team, tpl: "SeriesTemplate", role: str, gap: 
     if d.home_region == team.home_region:
         conn += 0.1
     u = (team.w_performance * perf * 1.6 + team.w_potential * pot + team.w_money * money * 2.2
-         + team.w_marketability * market + 0.6 * conn + d.professionalism / 400 + rng.gauss(0, 0.25))
+         + team.w_marketability * market + team.w_connections * conn + d.professionalism / 400
+         + rng.gauss(0, 0.25))
     # Development ladders are for young drivers: owners (and the families paying) invest in
     # teenagers, not 35-year-olds (research A 6, B 2.5). Older money goes to Pro-Am seats.
     age = d.age(world.year) + 1
