@@ -145,7 +145,8 @@ def seed_national(world: "World", hist: HistoryDB) -> set[str]:
     seeded: set[str] = set()
     created: dict[str, Driver] = {}
     national = {tpl for tpl, *_ in hist.all_sources()
-                if tpl in world.pyramid.templates and world.pyramid.templates[tpl].scope == "national"}
+                if tpl in world.pyramid.templates and world.pyramid.templates[tpl].scope == "national"
+                and world.pyramid.templates[tpl].team_based}  # self-run national series: see seed_tours
     pairs = [(world.pyramid.series.get(k), hist.season(k, year)) for k in sorted(national)]
     # Team-based real regional tours (e.g. Busch North / K&N East) are seeded the same way.
     pairs += [(x, hist.raw_season(x.source, year)) for x in world.pyramid.active()
@@ -237,10 +238,15 @@ def seed_tours(world: "World", hist: HistoryDB) -> int:
     year, rng = world.year, world.rng
     careers = hist.careers()
     placed = 0
-    for s in sorted(world.pyramid.active(), key=lambda x: -x.tier):
-        if not s.source or s.template.team_based:
+    for s in sorted(world.pyramid.active(), key=lambda x: (-x.tier, x.id)):
+        if s.template.team_based:
             continue
-        doc = hist.raw_season(s.source, year)
+        if s.source:
+            doc = hist.raw_season(s.source, year)
+        elif s.scope == "national":
+            doc = hist.season(s.template.key, year)  # e.g. ASA STARS: owner-drivers, no teams
+        else:
+            continue
         if not doc or not doc.get("standings"):
             continue
         st = [r for r in doc["standings"] if r.get("name")]
@@ -249,7 +255,8 @@ def seed_tours(world: "World", hist: HistoryDB) -> int:
         if not regs:
             regs = [r for r in st if r.get("pos")][: s.template.field_size]
         regs = regs[: int(s.template.field_size * 1.2)]
-        states = sorted(c for c, r in world.geo.regions.items() if r.macro_region == s.region_key)
+        states = sorted(c for c, r in world.geo.regions.items() if r.macro_region == s.region_key) \
+            if s.scope == "region" else sorted(set(doc.get("footprint") or [])) or None
         for r in regs:
             key = r.get("wiki") or f"name:{r['name']}"
             if key in world.real_drivers:

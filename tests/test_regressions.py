@@ -171,3 +171,10 @@ def test_world_generation_is_deterministic_across_hash_seeds():
         outs.add(subprocess.run([sys.executable, "-c", code], capture_output=True, text=True, env=env,
                                 cwd=os.path.dirname(os.path.dirname(__file__)), check=True).stdout)
     assert len(outs) == 1
+
+
+def test_self_run_series_never_have_team_seats(tracks):
+    w = World.generate(WorldConfig(seed=5, start_year=2024, population_scale=0.15), tracks=tracks)
+    bad = [d for d in w.drivers.values()
+           if d.series_id and not w.series(d.series_id).template.team_based and d.team_id is not None]
+    assert not bad
