@@ -1,11 +1,100 @@
 [
- {"name": "history:nascar-cup", "cwd": "tools/history", "cmd": ["python", "scrape_nascar_cup.py"],
-  "copy": [{"from": "nascar_cup", "to": "data/history/nascar_cup"}, {"from": "drivers_cup.json", "to": "data/history/drivers_cup.json"}]},
- {"name": "history:nascar-xfinity-trucks", "cwd": "tools/history", "cmd": ["python", "scrape_nascar_lower.py"],
-  "copy": [{"from": "nascar_xfinity", "to": "data/history/nascar_xfinity"}, {"from": "nascar_trucks", "to": "data/history/nascar_trucks"},
-           {"from": "drivers_xfinity_trucks.json", "to": "data/history/drivers_xfinity_trucks.json"}]},
- {"name": "history:open-wheel", "cwd": "tools/history", "cmd": ["python", "scrape_openwheel.py"],
-  "copy": [{"from": "cart_champcar", "to": "data/history/cart_champcar"}, {"from": "irl_indycar", "to": "data/history/irl_indycar"},
-           {"from": "indy_lights", "to": "data/history/indy_lights"}, {"from": "pro_mazda", "to": "data/history/pro_mazda"},
-           {"from": "usf2000", "to": "data/history/usf2000"}, {"from": "drivers_openwheel.json", "to": "data/history/drivers_openwheel.json"}]}
+ {
+  "name": "history:nascar-cup",
+  "cwd": "tools/history",
+  "cmd": [
+   "python",
+   "scrape_nascar_cup.py"
+  ],
+  "copy": [
+   {
+    "from": "nascar_cup",
+    "to": "data/history/nascar_cup"
+   },
+   {
+    "from": "drivers_cup.json",
+    "to": "data/history/drivers_cup.json"
+   }
+  ]
+ },
+ {
+  "name": "history:nascar-xfinity-trucks",
+  "cwd": "tools/history",
+  "cmd": [
+   "python",
+   "scrape_nascar_lower.py"
+  ],
+  "copy": [
+   {
+    "from": "nascar_xfinity",
+    "to": "data/history/nascar_xfinity"
+   },
+   {
+    "from": "nascar_trucks",
+    "to": "data/history/nascar_trucks"
+   },
+   {
+    "from": "drivers_xfinity_trucks.json",
+    "to": "data/history/drivers_xfinity_trucks.json"
+   }
+  ]
+ },
+ {
+  "name": "history:open-wheel",
+  "cwd": "tools/history",
+  "cmd": [
+   "python",
+   "scrape_openwheel.py"
+  ],
+  "copy": [
+   {
+    "from": "cart_champcar",
+    "to": "data/history/cart_champcar"
+   },
+   {
+    "from": "irl_indycar",
+    "to": "data/history/irl_indycar"
+   },
+   {
+    "from": "indy_lights",
+    "to": "data/history/indy_lights"
+   },
+   {
+    "from": "pro_mazda",
+    "to": "data/history/pro_mazda"
+   },
+   {
+    "from": "usf2000",
+    "to": "data/history/usf2000"
+   },
+   {
+    "from": "drivers_openwheel.json",
+    "to": "data/history/drivers_openwheel.json"
+   }
+  ]
+ },
+ {
+  "name": "dataset:nascar-results",
+  "cwd": "tools/ingest/datasets",
+  "cmd": [
+   "python",
+   "ingest_nascar_data.py"
+  ]
+ },
+ {
+  "name": "dataset:nascar-results-pack",
+  "cwd": "tools/ingest/datasets",
+  "cmd": [
+   "python",
+   "pack_results.py"
+  ]
+ },
+ {
+  "name": "dataset:wikidata-tracks",
+  "cwd": "tools/ingest/datasets",
+  "cmd": [
+   "python",
+   "ingest_wikidata_tracks.py"
+  ]
+ }
 ]

@@ -23,6 +23,7 @@ def inputs() -> list[Path]:
              DATA_DIR / "track_years.json", DATA_DIR / "track_rating_overrides.json"]
     files += sorted((DATA_DIR / "tracks").glob("*.json"))
     files += sorted(KNOWLEDGE_DIR.glob("*.json*")) if KNOWLEDGE_DIR.exists() else []
+    files += sorted((DATA_DIR / "results").glob("*.jsonl.gz"))
     return files
 
 

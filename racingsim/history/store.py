@@ -136,6 +136,10 @@ def build(directory: Path, target: str | Path, tracks=None, stamp: str = "",
     build_teams(conn)
     if knowledge_dir is not None and knowledge_dir.exists():
         build_knowledge(conn, knowledge_dir)
+        results_dir = knowledge_dir.parent / "results"
+        if results_dir.exists():
+            from ..knowledge.build import build_results
+            build_results(conn, results_dir)
     if tracks is not None and hasattr(tracks, "write_sqlite"):
         tracks.write_sqlite(conn)
     conn.execute("INSERT INTO meta VALUES ('stamp', ?)", (stamp,))

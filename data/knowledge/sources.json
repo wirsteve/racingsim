@@ -1,4 +1,12 @@
 {
+ "src:al-kamel-imsa": {
+  "name": "Al Kamel Systems IMSA results",
+  "url": "https://imsa.results.alkamelcloud.com/",
+  "kind": "results_archive",
+  "reliability": "high",
+  "license": "proprietary, redistribution prohibited",
+  "accessed": "2026-10-06"
+ },
  "src:arca-2025-schedule": {
   "id": "src:arca-2025-schedule",
   "name": "ARCA: 2025 ARCA Menards Series schedule released",
@@ -120,6 +128,14 @@
   "license": null,
   "accessed": "2026-10-06"
  },
+ "src:champcarstats": {
+  "name": "ChampCarStats.com",
+  "url": "http://www.champcarstats.com/",
+  "kind": "historical_db",
+  "reliability": "high",
+  "license": "none stated (copyright notice)",
+  "accessed": "2026-10-06"
+ },
  "src:champion-ride-struggles": {
   "name": "FOX Sports / Sportskeeda / Heavy: Truck champions' ride and funding struggles (Zane Smith, Sheldon Creed)",
   "url": "https://www.foxsports.com/stories/nascar/zane-smith-will-get-opportunities-after-nascar-truck-series-championship",
@@ -220,6 +236,14 @@
   "license": null,
   "accessed": "2026-10-06",
   "notes": "late model weight figure (2925+) conflicts with WoO page (2,350); treated as error"
+ },
+ "src:driveraverages": {
+  "name": "DriverAverages.com",
+  "url": "https://www.driveraverages.com/",
+  "kind": "historical_db",
+  "reliability": "high",
+  "license": "n/a",
+  "accessed": "2026-10-06"
  },
  "src:dtd-dlm-regionals": {
   "id": "src:dtd-dlm-regionals",
@@ -451,6 +475,14 @@
   "accessed": "2026-10-06",
   "notes": "via search snippets"
  },
+ "src:hifld-major-sport-venues": {
+  "name": "DHS HIFLD Major Sport Venues (data.gov)",
+  "url": "https://catalog.data.gov/dataset/major-sport-venues",
+  "kind": "government",
+  "reliability": "medium",
+  "license": "US government works",
+  "accessed": "2026-10-06"
+ },
  "src:highlimit-allstars": {
   "id": "src:highlimit-allstars",
   "name": "FloRacing / High Limit Racing: High Limit acquires All Star Circuit of Champions",
@@ -588,6 +620,14 @@
   "license": null,
   "accessed": "2026-10-06"
  },
+ "src:indycar-indystats-api": {
+  "name": "IndyCar.com IndyStats service",
+  "url": "https://www.indycar.com/Services/IndyStats.svc/",
+  "kind": "official_series",
+  "reliability": "high",
+  "license": "n/a",
+  "accessed": "2026-10-06"
+ },
  "src:indycar-palou-coyne": {
   "name": "indycar.com: Coyne team signs Palou to drive in 2020",
   "url": "https://www.indycar.com/news/2019/12/12-19-coyne",
@@ -603,6 +643,15 @@
   "reliability": "medium",
   "license": null,
   "accessed": "2026-10-06"
+ },
+ "src:indycarpy": {
+  "name": "indycarpy (GitHub)",
+  "url": "https://github.com/TMCabrera/indycarpy",
+  "kind": "dataset",
+  "reliability": "low",
+  "license": "GPL-3",
+  "accessed": "2026-10-06",
+  "notes": "scraper for a now-removed indycar.com endpoint"
  },
  "src:indymotorspeedway-ladder": {
   "name": "Indianapolis Motor Speedway: About the INDYCAR ladder system",
@@ -672,6 +721,14 @@
   "license": null,
   "accessed": "2026-10-06",
   "notes": "via search snippet"
+ },
+ "src:kaggle-nascar-2017-2024": {
+  "name": "Kaggle NASCAR 2017-2024 Full Race + Points Data",
+  "url": "https://www.kaggle.com/datasets/joeah99/nascar-2017-2024-full-race-points-data",
+  "kind": "dataset",
+  "reliability": "medium",
+  "license": "unknown",
+  "accessed": "2026-10-06"
  },
  "src:karting-cost-aggregators": {
   "name": "Karting cost guides (sportsgeardaily, senndit, myracingpath) incl. Reuters 2015 survey citation",
@@ -849,12 +906,37 @@
   "license": null,
   "accessed": "2026-10-06"
  },
+ "src:nascar-com-feeds": {
+  "name": "NASCAR.com / cf.nascar.com feeds",
+  "url": "https://cf.nascar.com/",
+  "kind": "official_series",
+  "reliability": "high",
+  "license": "n/a",
+  "accessed": "2026-10-06"
+ },
  "src:nascar-d4d-2023": {
   "name": "NASCAR.com: NASCAR, Rev Racing announce 20th Drive for Diversity class (2023-11-20)",
   "url": "https://www.nascar.com/news-media/2023/11/20/nascar-rev-racing-announce-20th-nascar-drive-for-diversity-driver-development-class/",
   "kind": "official_sanctioning",
   "reliability": "high",
   "license": null,
+  "accessed": "2026-10-06"
+ },
+ "src:nascar-data": {
+  "name": "nascaR.data R package (Kyle Grealis) - NASCAR race results",
+  "url": "https://github.com/kyleGrealis/nascaR.data",
+  "kind": "dataset",
+  "reliability": "high",
+  "license": "GPL-3; data with permission from DriverAverages.com",
+  "accessed": "2026-10-06",
+  "notes": "parquet files at https://nascar.kylegrealis.com/"
+ },
+ "src:nascar-data-docs": {
+  "name": "nascaR.data vignette: Ingesting NASCAR Data",
+  "url": "https://kylegrealis.github.io/nascaR.data/articles/ingesting-nascar-data.html",
+  "kind": "dataset",
+  "reliability": "high",
+  "license": "GPL-3",
   "accessed": "2026-10-06"
  },
  "src:nascar-dgr-ford-2019": {
@@ -952,6 +1034,14 @@
   "accessed": "2026-10-06",
   "notes": "club FAQ"
  },
+ "src:neilpaine-nascar-data": {
+  "name": "Neil Paine NASCAR-data (GitHub)",
+  "url": "https://github.com/Neil-Paine-1/NASCAR-data",
+  "kind": "dataset",
+  "reliability": "medium",
+  "license": "MIT (repo); rows derived from racing-reference.info",
+  "accessed": "2026-10-06"
+ },
  "src:nomoneymotorsports-sm": {
   "name": "No Money Motorsports: Spec Miata season cost / buyer's guide",
   "url": "https://nomoneymotorsports.com/2024/06/25/how-much-does-a-season-of-racing-spec-miata-cost-it-can-be-done-for-less-than-youve-heard/",
@@ -968,6 +1058,22 @@
   "license": null,
   "accessed": "2026-10-06",
   "notes": "abstract-level figures"
+ },
+ "src:osm-qlever": {
+  "name": "OpenStreetMap via QLever osm-planet SPARQL (Univ. Freiburg)",
+  "url": "https://qlever.dev/api/osm-planet",
+  "kind": "dataset",
+  "reliability": "medium",
+  "license": "ODbL 1.0 (c) OpenStreetMap contributors",
+  "accessed": "2026-10-06"
+ },
+ "src:overpass-api-de": {
+  "name": "Overpass API (overpass-api.de)",
+  "url": "https://overpass-api.de/",
+  "kind": "dataset",
+  "reliability": "high",
+  "license": "ODbL data",
+  "accessed": "2026-10-06"
  },
  "src:pccna-series-info": {
   "name": "Porsche Carrera Cup North America official: Series Info",
@@ -1080,6 +1186,15 @@
   "license": null,
   "accessed": "2026-10-06"
  },
+ "src:racing-reference": {
+  "name": "Racing-Reference",
+  "url": "https://www.racing-reference.info/",
+  "kind": "historical_db",
+  "reliability": "high",
+  "license": "n/a",
+  "accessed": "2026-10-06",
+  "notes": "not fetched (RULES.md)"
+ },
  "src:racingamerica-berry": {
   "name": "Racing America: Josh Berry's journey rewarded with Cup win",
   "url": "https://www.racingamerica.com/news/nascar/josh-berrys-journey-rewarded-with-nascar-cup-series-win",
@@ -1150,6 +1265,14 @@
   "license": null,
   "accessed": "2026-10-06"
  },
+ "src:repo-history": {
+  "name": "racingsim repo data/history (Wikipedia-derived seasons)",
+  "url": "file:///home/user/racingsim/data/history",
+  "kind": "wiki",
+  "reliability": "high",
+  "license": "CC BY-SA (Wikipedia-derived)",
+  "accessed": "2026-10-06"
+ },
  "src:rokcupusa-fwt": {
   "name": "ROK Cup USA official: Florida Winter Tour and class structure",
   "url": "https://rokcupusa.com/class-structure/",
@@ -1211,6 +1334,15 @@
   "license": null,
   "accessed": "2026-10-06",
   "notes": "third-party estimates incl. endorsements; not disclosed by teams"
+ },
+ "src:scca": {
+  "name": "SCCA",
+  "url": "https://www.scca.com/",
+  "kind": "official_sanctioning",
+  "reliability": "high",
+  "license": "n/a",
+  "accessed": "2026-10-06",
+  "notes": "robots.txt allows public pages with Crawl-delay 10; results archive not evaluated in depth"
  },
  "src:scca-formula-classes": {
   "name": "SCCA / Wikipedia: SCCA formula classes (FF/F1600, FC, FE2, FA, FV, F600, FX)",
@@ -1438,6 +1570,14 @@
   "accessed": "2026-10-06",
   "notes": "blog; snippet only"
  },
+ "src:speedhive-api": {
+  "name": "MYLAPS Speedhive event results",
+  "url": "https://speedhive.mylaps.com/",
+  "kind": "results_archive",
+  "reliability": "medium",
+  "license": "none found",
+  "accessed": "2026-10-06"
+ },
  "src:speedsport-hendrick-day": {
   "name": "SPEED SPORT: Hendrick Motorsports underscores commitment to Corey Day",
   "url": "https://speedsport.com/nascar/nascar-oreilly-auto-parts-series/hendrick-motorsports-underscores-commitment-to-corey-day/",
@@ -1592,6 +1732,15 @@
   "accessed": "2026-10-06",
   "notes": null
  },
+ "src:taginfo-osm": {
+  "name": "OSM taginfo",
+  "url": "https://taginfo.openstreetmap.org/",
+  "kind": "dataset",
+  "reliability": "high",
+  "license": "ODbL",
+  "accessed": "2026-10-06",
+  "notes": "tag statistics used to sanity-check QLever coverage"
+ },
  "src:the-race-lights-prize-2022": {
   "name": "The Race: Dramatic Indy Lights prize reduction has huge consequences (2022)",
   "url": "https://www.the-race.com/indycar/dramatic-indy-lights-prize-reduction-has-huge-consequences/",
@@ -1645,6 +1794,23 @@
   "accessed": "2026-10-06",
   "notes": "2026 age rules; corroborated by search snippets from flowracers.com, trackside.media, si.com"
  },
+ "src:thethirdturn": {
+  "name": "The Third Turn",
+  "url": "https://www.thethirdturn.com/",
+  "kind": "historical_db",
+  "reliability": "medium",
+  "license": "n/a",
+  "accessed": "2026-10-06",
+  "notes": "not fetched (RULES.md)"
+ },
+ "src:tobi-imsa-data": {
+  "name": "tobi/imsa_data (GitHub)",
+  "url": "https://github.com/tobi/imsa_data",
+  "kind": "dataset",
+  "reliability": "medium",
+  "license": "MIT code; Al Kamel data",
+  "accessed": "2026-10-06"
+ },
  "src:toyota-keelan-harvick-2026": {
   "name": "AP via ABC/FOX: TRD signs 13-year-old Keelan Harvick to long-term deal (2026)",
   "url": "https://www.foxsports.com/articles/motor/toyota-racing-development-signs-13yearold-keelan-harvick-to-a-longterm-driver-deal",
@@ -1678,6 +1844,14 @@
   "license": null,
   "accessed": "2026-10-06",
   "notes": null
+ },
+ "src:usac-racing": {
+  "name": "USAC Racing",
+  "url": "https://www.usacracing.com/",
+  "kind": "official_sanctioning",
+  "reliability": "high",
+  "license": "n/a",
+  "accessed": "2026-10-06"
  },
  "src:usac-sprint-2025": {
   "id": "src:usac-sprint-2025",
@@ -2387,6 +2561,14 @@
   "accessed": "2026-10-05",
   "notes": "driver birth dates/places, coordinates"
  },
+ "src:wikidata-racetracks": {
+  "name": "Wikidata Query Service - racetracks in USA/Canada",
+  "url": "https://query.wikidata.org/",
+  "kind": "wiki",
+  "reliability": "medium",
+  "license": "CC0 1.0",
+  "accessed": "2026-10-06"
+ },
  "src:wikipedia": {
   "name": "Wikipedia (English) season and venue articles",
   "url": "https://en.wikipedia.org/",
@@ -2433,6 +2615,14 @@
   "license": null,
   "accessed": "2026-10-06",
   "notes": "via search snippet: Gravel 2024-2025 champion"
+ },
+ "src:world-of-outlaws": {
+  "name": "World of Outlaws",
+  "url": "https://www.worldofoutlaws.com/",
+  "kind": "official_series",
+  "reliability": "high",
+  "license": "n/a",
+  "accessed": "2026-10-06"
  },
  "src:yahoo-baldwin-costs-2026": {
   "name": "Yahoo Sports: Tommy Baldwin reveals cost of competing each race in Truck Series, O'Reilly Series (2026)",

@@ -12,6 +12,10 @@ def _count(conn, sql: str) -> int:
     return conn.execute(sql).fetchone()[0] or 0
 
 
+def _has(conn, table: str) -> bool:
+    return conn.execute("SELECT 1 FROM sqlite_master WHERE name = ?", (table,)).fetchone() is not None
+
+
 def summary(conn: sqlite3.Connection) -> dict:
     s: dict = {}
     s["series_profiles"] = _count(conn, "SELECT COUNT(*) FROM series_info")
@@ -32,6 +36,8 @@ def summary(conn: sqlite3.Connection) -> dict:
     s["history_seasons"] = _count(conn, "SELECT COUNT(*) FROM season")
     s["history_races"] = _count(conn, "SELECT COUNT(*) FROM race")
     s["history_standings_rows"] = _count(conn, "SELECT COUNT(*) FROM standing")
+    s["race_results_rows"] = _count(conn, "SELECT COUNT(*) FROM race_result") if _has(conn, "race_result") else 0
+    s["race_results_races"] = _count(conn, "SELECT COUNT(*) FROM race_info") if _has(conn, "race_info") else 0
     s["historical_drivers"] = _count(conn, "SELECT COUNT(*) FROM driver")
     s["historical_team_seasons"] = _count(conn, "SELECT COUNT(*) FROM team")
     s["historical_teams"] = _count(conn, "SELECT COUNT(DISTINCT team) FROM team")

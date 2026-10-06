@@ -24,7 +24,7 @@
    "sources": [
     "src:search-sprint-classes"
    ],
-   "notes": "with driver; with driver"
+   "notes": "with driver; with driver; with driver"
   },
   "tires": "Hoosier",
   "spec_rules": "",
@@ -36,7 +36,7 @@
    "sources": [
     "src:search-sprint-classes"
    ],
-   "notes": "race-ready; race-ready"
+   "notes": "race-ready; race-ready; race-ready"
   },
   "used_car_cost_usd": {
    "min": 15000,
@@ -44,7 +44,7 @@
    "unit": "USD",
    "confidence": "low",
    "sources": [],
-   "notes": "estimate; estimate"
+   "notes": "estimate; estimate; estimate"
   },
   "notes": null,
   "confidence": "low",
@@ -66,7 +66,7 @@
    "sources": [
     "src:dirtcar-the-cars"
    ],
-   "notes": "~570 hp; ~570 hp"
+   "notes": "~570 hp; ~570 hp; ~570 hp"
   },
   "weight_lb": {
    "value": 2400,
@@ -75,7 +75,7 @@
    "sources": [
     "src:dirtcar-the-cars"
    ],
-   "notes": "2,400 lb; 2,400 lb"
+   "notes": "2,400 lb; 2,400 lb; 2,400 lb"
   },
   "tires": "Hoosier",
   "spec_rules": "",
@@ -113,7 +113,7 @@
    "sources": [
     "src:dirtcar-the-cars"
    ],
-   "notes": "1,475 lb; 1,475 lb"
+   "notes": "1,475 lb; 1,475 lb; 1,475 lb"
   },
   "tires": "Hoosier",
   "spec_rules": "ASCS rules",
@@ -125,7 +125,7 @@
    "sources": [
     "src:search-sprint-classes"
    ],
-   "notes": "new; new"
+   "notes": "new; new; new"
   },
   "used_car_cost_usd": {
    "min": 20000,
@@ -133,7 +133,7 @@
    "unit": "USD",
    "confidence": "low",
    "sources": [],
-   "notes": "estimate; estimate"
+   "notes": "estimate; estimate; estimate"
   },
   "notes": null,
   "confidence": "medium",
@@ -159,7 +159,7 @@
     "src:wiki-sprint-car",
     "src:dirtcar-the-cars"
    ],
-   "notes": "900+ hp; 900+ hp"
+   "notes": "900+ hp; 900+ hp; 900+ hp"
   },
   "weight_lb": {
    "value": 1425,
@@ -169,7 +169,7 @@
     "src:dirtcar-the-cars",
     "src:wiki-sprint-car"
    ],
-   "notes": "1,425 lb with driver; 1,425 lb with driver"
+   "notes": "1,425 lb with driver; 1,425 lb with driver; 1,425 lb with driver"
   },
   "tires": "Hoosier",
   "spec_rules": "WoO/High Limit rules",
@@ -181,7 +181,7 @@
    "sources": [
     "src:search-410-cost"
    ],
-   "notes": "car w/o engine ~$50k + engine $70k+; car w/o engine ~$50k + engine $70k+"
+   "notes": "car w/o engine ~$50k + engine $70k+; car w/o engine ~$50k + engine $70k+; car w/o engine ~$50k + engine $70k+"
   },
   "used_car_cost_usd": {
    "min": 40000,
@@ -189,7 +189,7 @@
    "unit": "USD",
    "confidence": "low",
    "sources": [],
-   "notes": "estimate; estimate"
+   "notes": "estimate; estimate; estimate"
   },
   "notes": null,
   "confidence": "high",
@@ -213,7 +213,7 @@
    "sources": [
     "src:wiki-arca"
    ],
-   "notes": "~700 hp, 530 lb-ft; ~700 hp, 530 lb-ft"
+   "notes": "~700 hp, 530 lb-ft; ~700 hp, 530 lb-ft; ~700 hp, 530 lb-ft"
   },
   "weight_lb": {
    "min": 3300,
@@ -223,7 +223,7 @@
    "sources": [
     "src:wiki-arca"
    ],
-   "notes": "without driver; without driver"
+   "notes": "without driver; without driver; without driver"
   },
   "tires": "Hoosier/General (series supplier)",
   "spec_rules": "Spec engine since 2015 era to cut cost",
@@ -269,7 +269,7 @@
    "sources": [
     "src:wiki-wmt"
    ],
-   "notes": "minimum 2,610 lb; minimum 2,610 lb"
+   "notes": "minimum 2,610 lb; minimum 2,610 lb; minimum 2,610 lb"
   },
   "tires": "spec Hoosier",
   "spec_rules": "NASCAR WMT rules",
@@ -279,7 +279,7 @@
    "unit": "USD",
    "confidence": "low",
    "sources": [],
-   "notes": "informed estimate; informed estimate"
+   "notes": "informed estimate; informed estimate; informed estimate"
   },
   "used_car_cost_usd": {
    "min": 30000,
@@ -287,7 +287,7 @@
    "unit": "USD",
    "confidence": "low",
    "sources": [],
-   "notes": "informed estimate; informed estimate"
+   "notes": "informed estimate; informed estimate; informed estimate"
   },
   "notes": null,
   "confidence": "medium",
@@ -338,7 +338,7 @@
    "sources": [
     "src:bandolero-retail"
    ],
-   "notes": "~30 hp; ~30 hp"
+   "notes": "~30 hp; ~30 hp; ~30 hp"
   },
   "weight_lb": {
    "unit": "lb",
@@ -357,7 +357,7 @@
    "sources": [
     "src:bandolero-retail"
    ],
-   "notes": "rolling chassis $6,995 + engine $2,424-4,274 retail; rolling chassis $6,995 + engine $2,424-4,274 retail"
+   "notes": "rolling chassis $6,995 + engine $2,424-4,274 retail; rolling chassis $6,995 + engine $2,424-4,274 retail; rolling chassis $6,995 + engine $2,424-4,274 retail"
   },
   "used_car_cost_usd": {
    "min": 3000,
@@ -365,7 +365,7 @@
    "unit": "USD",
    "confidence": "low",
    "sources": [],
-   "notes": "informed estimate; informed estimate"
+   "notes": "informed estimate; informed estimate; informed estimate"
   },
   "notes": "Bandits 7-11, Outlaws 12+.",
   "confidence": "medium",
@@ -390,7 +390,7 @@
     "src:superdirtcar-101",
     "src:dirtcar-the-cars"
    ],
-   "notes": "650-800 (series page) / 900 (DIRTcar overview); 650-800 (series page) / 900 (DIRTcar overview)"
+   "notes": "650-800 (series page) / 900 (DIRTcar overview); 650-800 (series page) / 900 (DIRTcar overview); 650-800 (series page) / 900 (DIRTcar overview)"
   },
   "weight_lb": {
    "value": 2500,
@@ -400,7 +400,7 @@
     "src:superdirtcar-101",
     "src:wiki-super-dirtcar"
    ],
-   "notes": "2,500 lb with driver; 2,500 lb with driver"
+   "notes": "2,500 lb with driver; 2,500 lb with driver; 2,500 lb with driver"
   },
   "tires": "Hoosier exclusive",
   "spec_rules": "Super DIRTcar Series rules",
@@ -439,7 +439,7 @@
     "src:dirtcar-the-cars",
     "src:racingnews-crate"
    ],
-   "notes": "602 ~375; 604 ~400; 602 ~375; 604 ~400"
+   "notes": "602 ~375; 604 ~400; 602 ~375; 604 ~400; 602 ~375; 604 ~400"
   },
   "weight_lb": {
    "min": 2300,
@@ -449,7 +449,7 @@
    "sources": [
     "src:dirtcar-the-cars"
    ],
-   "notes": "2,300-2,400 depending on engine; 2,300-2,400 depending on engine"
+   "notes": "2,300-2,400 depending on engine; 2,300-2,400 depending on engine; 2,300-2,400 depending on engine"
   },
   "tires": "spec Hoosier",
   "spec_rules": "sealed crates",
@@ -459,7 +459,7 @@
    "unit": "USD",
    "confidence": "low",
    "sources": [],
-   "notes": "estimate for new; chassis kit from ~$16k (Rocket 2025); estimate for new; chassis kit from ~$16k (Rocket 2025)"
+   "notes": "estimate for new; chassis kit from ~$16k (Rocket 2025); estimate for new; chassis kit from ~$16k (Rocket 2025); estimate for new; chassis kit from ~$16k (Rocket 2025)"
   },
   "used_car_cost_usd": {
    "min": 10000,
@@ -470,7 +470,7 @@
    "sources": [
     "src:racingnews-crate"
    ],
-   "notes": "competitive 604 car ~$18,000 bumper to bumper (2018); competitive 604 car ~$18,000 bumper to bumper (2018)"
+   "notes": "competitive 604 car ~$18,000 bumper to bumper (2018); competitive 604 car ~$18,000 bumper to bumper (2018); competitive 604 car ~$18,000 bumper to bumper (2018)"
   },
   "notes": "602 crate $3.5-4.8k base, sealed race-ready ~$8.5k; 604 ~$6-10.4k.",
   "confidence": "medium",
@@ -496,7 +496,7 @@
     "src:wiki-dallara-il15",
     "src:wiki-indy-nxt"
    ],
-   "notes": "450hp + 50hp push-to-pass; 450hp + 50hp push-to-pass; 450hp + 50hp push-to-pass"
+   "notes": "450hp + 50hp push-to-pass; 450hp + 50hp push-to-pass; 450hp + 50hp push-to-pass; 450hp + 50hp push-to-pass"
   },
   "weight_lb": {
    "value": 1400,
@@ -532,7 +532,7 @@
    "sources": [
     "src:dirtcar-the-cars"
    ],
-   "notes": "~350 hp; ~350 hp"
+   "notes": "~350 hp; ~350 hp; ~350 hp"
   },
   "weight_lb": {
    "value": 3000,
@@ -541,7 +541,7 @@
    "sources": [
     "src:dirtcar-the-cars"
    ],
-   "notes": "~3,000 lb; ~3,000 lb"
+   "notes": "~3,000 lb; ~3,000 lb; ~3,000 lb"
   },
   "tires": "spec",
   "spec_rules": "crate",
@@ -552,7 +552,7 @@
    "unit": "USD",
    "confidence": "low",
    "sources": [],
-   "notes": "estimate; estimate"
+   "notes": "estimate; estimate; estimate"
   },
   "notes": null,
   "confidence": "medium",
@@ -623,7 +623,7 @@
    "sources": [
     "src:informed-estimate"
    ],
-   "notes": "informed estimate from FIA F4 minimum weights; informed estimate from FIA F4 minimum weights; informed estimate from FIA F4 minimum weights"
+   "notes": "informed estimate from FIA F4 minimum weights; informed estimate from FIA F4 minimum weights; informed estimate from FIA F4 minimum weights; informed estimate from FIA F4 minimum weights"
   },
   "tires": "Hankook (F4 US since 2019)",
   "spec_rules": "FIA F4 regulations, cost-capped parts",
@@ -651,7 +651,7 @@
    "sources": [
     "src:informed-estimate"
    ],
-   "notes": "informed estimate of BoP range; informed estimate of BoP range; informed estimate of BoP range"
+   "notes": "informed estimate of BoP range; informed estimate of BoP range; informed estimate of BoP range; informed estimate of BoP range"
   },
   "weight_lb": {
    "min": 2850,
@@ -661,7 +661,7 @@
    "sources": [
     "src:informed-estimate"
    ],
-   "notes": "informed estimate; informed estimate; informed estimate"
+   "notes": "informed estimate; informed estimate; informed estimate; informed estimate"
   },
   "tires": "Michelin (IMSA) / Pirelli (SRO)",
   "spec_rules": "Balance of Performance",
@@ -673,7 +673,7 @@
    "sources": [
     "src:informed-estimate"
    ],
-   "notes": "informed estimate; informed estimate; informed estimate"
+   "notes": "informed estimate; informed estimate; informed estimate; informed estimate"
   },
   "used_car_cost_usd": null,
   "notes": "IMSA GTD requires a Bronze in lineup (from 2023); GTD PRO unrestricted.",
@@ -699,7 +699,7 @@
    "sources": [
     "src:informed-estimate"
    ],
-   "notes": "informed estimate of BoP range; informed estimate of BoP range; informed estimate of BoP range"
+   "notes": "informed estimate of BoP range; informed estimate of BoP range; informed estimate of BoP range; informed estimate of BoP range"
   },
   "weight_lb": {
    "min": 3000,
@@ -709,7 +709,7 @@
    "sources": [
     "src:informed-estimate"
    ],
-   "notes": "informed estimate; informed estimate; informed estimate"
+   "notes": "informed estimate; informed estimate; informed estimate; informed estimate"
   },
   "tires": "Michelin (IMSA) / Pirelli (SRO)",
   "spec_rules": "Balance of Performance",
@@ -721,7 +721,7 @@
    "sources": [
     "src:informed-estimate"
    ],
-   "notes": "informed estimate; informed estimate; informed estimate"
+   "notes": "informed estimate; informed estimate; informed estimate; informed estimate"
   },
   "used_car_cost_usd": null,
   "notes": "Raced in Pilot Challenge GS, GT4 America, VP Racing SportsCar Challenge GSX.",
@@ -748,7 +748,7 @@
     "src:wiki-atlantic",
     "src:scca-formula-classes"
    ],
-   "notes": "SCCA FA up to ~240hp; 2006-09 pro spec ~300bhp; SCCA FA up to ~240hp; 2006-09 pro spec ~300bhp; SCCA FA up to ~240hp; 2006-09 pro spec ~300bhp"
+   "notes": "SCCA FA up to ~240hp; 2006-09 pro spec ~300bhp; SCCA FA up to ~240hp; 2006-09 pro spec ~300bhp; SCCA FA up to ~240hp; 2006-09 pro spec ~300bhp; SCCA FA up to ~240hp; 2006-09 pro spec ~300bhp"
   },
   "weight_lb": null,
   "tires": null,
@@ -798,7 +798,7 @@
    "sources": [
     "src:scca-formula-classes"
    ],
-   "notes": "+ ~21k conversion to FE2; + ~21k conversion to FE2; + ~21k conversion to FE2"
+   "notes": "+ ~21k conversion to FE2; + ~21k conversion to FE2; + ~21k conversion to FE2; + ~21k conversion to FE2"
   },
   "notes": "SCCA national spec formula class.",
   "confidence": "medium",
@@ -821,7 +821,7 @@
    "sources": [
     "src:scca-formula-classes"
    ],
-   "notes": "SCCA FF ~120hp; SCCA FF ~120hp; SCCA FF ~120hp"
+   "notes": "SCCA FF ~120hp; SCCA FF ~120hp; SCCA FF ~120hp; SCCA FF ~120hp"
   },
   "weight_lb": {
    "min": 1080,
@@ -831,7 +831,7 @@
    "sources": [
     "src:informed-estimate"
    ],
-   "notes": "informed estimate of class minimum; informed estimate of class minimum; informed estimate of class minimum"
+   "notes": "informed estimate of class minimum; informed estimate of class minimum; informed estimate of class minimum; informed estimate of class minimum"
   },
   "tires": "treaded/hoosier club tires",
   "spec_rules": "no wings; SCCA FF/F1600 rules",
@@ -844,7 +844,7 @@
    "sources": [
     "src:informed-estimate"
    ],
-   "notes": "informed estimate of used market; informed estimate of used market; informed estimate of used market"
+   "notes": "informed estimate of used market; informed estimate of used market; informed estimate of used market; informed estimate of used market"
   },
   "notes": "Classic first car; used by Team USA Scholarship (UK Formula Ford Festival/Walter Hayes Trophy) and F1600 Championship Series.",
   "confidence": "medium",
@@ -940,7 +940,7 @@
    "sources": [
     "src:informed-estimate"
    ],
-   "notes": "informed estimate of ~500 kW cap; informed estimate of ~500 kW cap; informed estimate of ~500 kW cap"
+   "notes": "informed estimate of ~500 kW cap; informed estimate of ~500 kW cap; informed estimate of ~500 kW cap; informed estimate of ~500 kW cap"
   },
   "weight_lb": null,
   "tires": "Michelin",
@@ -953,7 +953,7 @@
    "sources": [
     "src:endurance-info-lmdh-cost"
    ],
-   "notes": "rolling chassis ~1-1.2M; customer Porsche 963 ~2.9M incl. support; rolling chassis ~1-1.2M; customer Porsche 963 ~2.9M incl. support; rolling chassis ~1-1.2M; customer Porsche 963 ~2.9M incl. support"
+   "notes": "rolling chassis ~1-1.2M; customer Porsche 963 ~2.9M incl. support; rolling chassis ~1-1.2M; customer Porsche 963 ~2.9M incl. support; rolling chassis ~1-1.2M; customer Porsche 963 ~2.9M incl. support; rolling chassis ~1-1.2M; customer Porsche 963 ~2.9M incl. support"
   },
   "used_car_cost_usd": null,
   "notes": "Factory-only in practice; IMSA top class since 2023.",
@@ -992,7 +992,7 @@
    "sources": [
     "src:gazette-iowa-costs"
    ],
-   "notes": "car w/o engine ~$34k + engine $12-32k; car w/o engine ~$34k + engine $12-32k"
+   "notes": "car w/o engine ~$34k + engine $12-32k; car w/o engine ~$34k + engine $12-32k; car w/o engine ~$34k + engine $12-32k"
   },
   "used_car_cost_usd": null,
   "notes": null,
@@ -1014,7 +1014,7 @@
    "unit": "hp",
    "confidence": "low",
    "sources": [],
-   "notes": "estimate; open engine $10-13k; estimate; open engine $10-13k"
+   "notes": "estimate; open engine $10-13k; estimate; open engine $10-13k; estimate; open engine $10-13k"
   },
   "weight_lb": {
    "unit": "lb",
@@ -1032,7 +1032,7 @@
    "sources": [
     "src:gazette-iowa-costs"
    ],
-   "notes": "car w/o engine $35-38k + engine $5-13k; car w/o engine $35-38k + engine $5-13k"
+   "notes": "car w/o engine $35-38k + engine $5-13k; car w/o engine $35-38k + engine $5-13k; car w/o engine $35-38k + engine $5-13k"
   },
   "used_car_cost_usd": {
    "min": 10000,
@@ -1040,7 +1040,7 @@
    "unit": "USD",
    "confidence": "low",
    "sources": [],
-   "notes": "estimate; estimate"
+   "notes": "estimate; estimate; estimate"
   },
   "notes": null,
   "confidence": "medium",
@@ -1122,7 +1122,7 @@
     "src:honda-racing-ir18",
     "src:racer-indycar-hybrid"
    ],
-   "notes": "550-700hp by boost level; +~60hp hybrid; up to ~800hp with push-to-pass; 550-700hp by boost level; +~60hp hybrid; up to ~800hp with push-to-pass; 550-700hp by boost level; +~60hp hybrid; up to ~800hp with push-to-pass"
+   "notes": "550-700hp by boost level; +~60hp hybrid; up to ~800hp with push-to-pass; 550-700hp by boost level; +~60hp hybrid; up to ~800hp with push-to-pass; 550-700hp by boost level; +~60hp hybrid; up to ~800hp with push-to-pass; 550-700hp by boost level; +~60hp hybrid; up to ~800hp with push-to-pass"
   },
   "weight_lb": {
    "min": 1590,
@@ -1132,7 +1132,7 @@
    "sources": [
     "src:honda-racing-ir18"
    ],
-   "notes": "speedway vs road/street configuration; speedway vs road/street configuration; speedway vs road/street configuration"
+   "notes": "speedway vs road/street configuration; speedway vs road/street configuration; speedway vs road/street configuration; speedway vs road/street configuration"
   },
   "tires": "Firestone",
   "spec_rules": "spec chassis, two engine suppliers",
@@ -1162,7 +1162,7 @@
    "sources": [
     "src:informed-estimate"
    ],
-   "notes": "informed estimate (no official hp figure found); informed estimate (no official hp figure found); informed estimate (no official hp figure found)"
+   "notes": "informed estimate (no official hp figure found); informed estimate (no official hp figure found); informed estimate (no official hp figure found); informed estimate (no official hp figure found)"
   },
   "weight_lb": {
    "value": 320,
@@ -1198,7 +1198,7 @@
    "sources": [
     "src:informed-estimate"
    ],
-   "notes": "informed estimate; informed estimate; informed estimate"
+   "notes": "informed estimate; informed estimate; informed estimate; informed estimate"
   },
   "weight_lb": null,
   "tires": "club-spec tires",
@@ -1212,7 +1212,7 @@
    "sources": [
     "src:musiccity-lo206"
    ],
-   "notes": "competitive used chassis+engine package; competitive used chassis+engine package; competitive used chassis+engine package"
+   "notes": "competitive used chassis+engine package; competitive used chassis+engine package; competitive used chassis+engine package; competitive used chassis+engine package"
   },
   "notes": "Most popular US club karting class; some events >100 karts per class.",
   "confidence": "medium",
@@ -1235,7 +1235,7 @@
    "sources": [
     "src:skusa-classes-2026"
    ],
-   "notes": "informed estimate; official pages give class weights not hp; informed estimate; official pages give class weights not hp; informed estimate; official pages give class weights not hp"
+   "notes": "informed estimate; official pages give class weights not hp; informed estimate; official pages give class weights not hp; informed estimate; official pages give class weights not hp; informed estimate; official pages give class weights not hp"
   },
   "weight_lb": {
    "min": 220,
@@ -1258,7 +1258,7 @@
    "sources": [
     "src:kartpulse-cost"
    ],
-   "notes": "informed estimate from general kart pricing; informed estimate from general kart pricing; informed estimate from general kart pricing"
+   "notes": "informed estimate from general kart pricing; informed estimate from general kart pricing; informed estimate from general kart pricing; informed estimate from general kart pricing"
   },
   "used_car_cost_usd": null,
   "notes": "Entry rung of national karting; Kid Kart (approx 5-7) exists below at club level (not verified here).",
@@ -1283,7 +1283,7 @@
    "sources": [
     "src:informed-estimate"
    ],
-   "notes": "informed estimate; informed estimate; informed estimate"
+   "notes": "informed estimate; informed estimate; informed estimate; informed estimate"
   },
   "weight_lb": {
    "min": 355,
@@ -1305,7 +1305,7 @@
    "sources": [
     "src:kartpulse-cost"
    ],
-   "notes": "used frame ~1.5k + used engine ~2k quoted; new packages higher; used frame ~1.5k + used engine ~2k quoted; new packages higher; used frame ~1.5k + used engine ~2k quoted; new packages higher"
+   "notes": "used frame ~1.5k + used engine ~2k quoted; new packages higher; used frame ~1.5k + used engine ~2k quoted; new packages higher; used frame ~1.5k + used engine ~2k quoted; new packages higher; used frame ~1.5k + used engine ~2k quoted; new packages higher"
   },
   "used_car_cost_usd": {
    "min": 3500,
@@ -1339,7 +1339,7 @@
    "sources": [
     "src:informed-estimate"
    ],
-   "notes": "informed estimate; informed estimate; informed estimate"
+   "notes": "informed estimate; informed estimate; informed estimate; informed estimate"
   },
   "weight_lb": null,
   "tires": "spec tires",
@@ -1369,7 +1369,7 @@
    "sources": [
     "src:informed-estimate"
    ],
-   "notes": "informed estimate; informed estimate; informed estimate"
+   "notes": "informed estimate; informed estimate; informed estimate; informed estimate"
   },
   "weight_lb": null,
   "tires": "Pirelli",
@@ -1416,7 +1416,7 @@
     "src:sts-slm-vs-lms",
     "src:crateinsider-lmsc"
    ],
-   "notes": "built engine ~515hp; 604 crate lower; built engine ~515hp; 604 crate lower"
+   "notes": "built engine ~515hp; 604 crate lower; built engine ~515hp; 604 crate lower; built engine ~515hp; 604 crate lower"
   },
   "weight_lb": {
    "min": 3050,
@@ -1440,7 +1440,7 @@
     "src:sts-slm-vs-lms",
     "src:crateinsider-lmsc"
    ],
-   "notes": "turnkey; turnkey"
+   "notes": "turnkey; turnkey; turnkey"
   },
   "used_car_cost_usd": {
    "min": 20000,
@@ -1448,7 +1448,7 @@
    "unit": "USD",
    "confidence": "low",
    "sources": [],
-   "notes": "informed estimate; informed estimate"
+   "notes": "informed estimate; informed estimate; informed estimate"
   },
   "notes": "Engine ~US$10,000 (built); dominant in VA/NC/SC; ValleyStar 300 at Martinsville is the crown jewel.",
   "confidence": "medium",
@@ -1472,7 +1472,7 @@
    "sources": [
     "src:thedrive-legend"
    ],
-   "notes": "~125 hp @10,000 rpm; ~125 hp @10,000 rpm"
+   "notes": "~125 hp @10,000 rpm; ~125 hp @10,000 rpm; ~125 hp @10,000 rpm"
   },
   "weight_lb": {
    "value": 1250,
@@ -1481,7 +1481,7 @@
    "sources": [
     "src:thedrive-legend"
    ],
-   "notes": "minimum 1,250 lb with driver; minimum 1,250 lb with driver"
+   "notes": "minimum 1,250 lb with driver; minimum 1,250 lb with driver; minimum 1,250 lb with driver"
   },
   "tires": "spec Federal/Hoosier",
   "spec_rules": "Spec sealed engines; INEX membership ~$175/yr",
@@ -1494,7 +1494,7 @@
    "sources": [
     "src:thedrive-legend"
    ],
-   "notes": "turnkey $17,500 (2022) to $18,995 (current); turnkey $17,500 (2022) to $18,995 (current)"
+   "notes": "turnkey $17,500 (2022) to $18,995 (current); turnkey $17,500 (2022) to $18,995 (current); turnkey $17,500 (2022) to $18,995 (current)"
   },
   "used_car_cost_usd": {
    "min": 8000,
@@ -1504,7 +1504,7 @@
    "sources": [
     "src:thedrive-legend"
    ],
-   "notes": "used listing ~$15,000; lower bound estimate; used listing ~$15,000; lower bound estimate"
+   "notes": "used listing ~$15,000; lower bound estimate; used listing ~$15,000; lower bound estimate; used listing ~$15,000; lower bound estimate"
   },
   "notes": null,
   "confidence": "medium",
@@ -1527,7 +1527,7 @@
    "unit": "hp",
    "confidence": "low",
    "sources": [],
-   "notes": "estimate; estimate"
+   "notes": "estimate; estimate; estimate"
   },
   "weight_lb": {
    "min": 2300,
@@ -1535,7 +1535,7 @@
    "unit": "lb",
    "confidence": "low",
    "sources": [],
-   "notes": "estimate; estimate"
+   "notes": "estimate; estimate; estimate"
   },
   "tires": "spec",
   "spec_rules": "",
@@ -1570,7 +1570,7 @@
    "sources": [
     "src:wiki-late-model"
    ],
-   "notes": "'less horsepower than pro models'; range is estimate; 'less horsepower than pro models'; range is estimate"
+   "notes": "'less horsepower than pro models'; range is estimate; 'less horsepower than pro models'; range is estimate; 'less horsepower than pro models'; range is estimate"
   },
   "weight_lb": {
    "min": 2800,
@@ -1578,7 +1578,7 @@
    "unit": "lb",
    "confidence": "low",
    "sources": [],
-   "notes": "estimate; estimate"
+   "notes": "estimate; estimate; estimate"
   },
   "tires": "spec Hoosier/American Racer",
   "spec_rules": "track-specific",
@@ -1588,7 +1588,7 @@
    "unit": "USD",
    "confidence": "low",
    "sources": [],
-   "notes": "informed estimate; informed estimate"
+   "notes": "informed estimate; informed estimate; informed estimate"
   },
   "used_car_cost_usd": {
    "min": 10000,
@@ -1596,7 +1596,7 @@
    "unit": "USD",
    "confidence": "low",
    "sources": [],
-   "notes": "informed estimate; informed estimate"
+   "notes": "informed estimate; informed estimate; informed estimate"
   },
   "notes": "Many tracks' stepping stone between street stock and late model.",
   "confidence": "low",
@@ -1619,7 +1619,7 @@
    "sources": [
     "src:informed-estimate"
    ],
-   "notes": "informed estimate; informed estimate; informed estimate"
+   "notes": "informed estimate; informed estimate; informed estimate; informed estimate"
   },
   "weight_lb": null,
   "tires": null,
@@ -1656,7 +1656,7 @@
    "sources": [
     "src:informed-estimate"
    ],
-   "notes": "informed estimate; informed estimate; informed estimate"
+   "notes": "informed estimate; informed estimate; informed estimate; informed estimate"
   },
   "weight_lb": null,
   "tires": null,
@@ -1686,7 +1686,7 @@
     "src:hyperracing-micro",
     "src:search-micro-ages"
    ],
-   "notes": "stock A-class ~110-118hp; outlaw up to 640cc 135-160hp; stock A-class ~110-118hp; outlaw up to 640cc 135-160hp"
+   "notes": "stock A-class ~110-118hp; outlaw up to 640cc 135-160hp; stock A-class ~110-118hp; outlaw up to 640cc 135-160hp; stock A-class ~110-118hp; outlaw up to 640cc 135-160hp"
   },
   "weight_lb": {
    "min": 750,
@@ -1696,7 +1696,7 @@
    "sources": [
     "src:hyperracing-micro"
    ],
-   "notes": "with driver; with driver"
+   "notes": "with driver; with driver; with driver"
   },
   "tires": "spec dirt (Hoosier)",
   "spec_rules": "Restrictor/junior classes for 10-12 year olds",
@@ -1706,7 +1706,7 @@
    "unit": "USD",
    "confidence": "low",
    "sources": [],
-   "notes": "informed estimate, no source fetched; informed estimate, no source fetched"
+   "notes": "informed estimate, no source fetched; informed estimate, no source fetched; informed estimate, no source fetched"
   },
   "used_car_cost_usd": {
    "min": 5000,
@@ -1714,7 +1714,7 @@
    "unit": "USD",
    "confidence": "low",
    "sources": [],
-   "notes": "informed estimate; informed estimate"
+   "notes": "informed estimate; informed estimate; informed estimate"
   },
   "notes": "70-85 mph on 1/6-1/4 mi tracks.",
   "confidence": "medium",
@@ -1749,7 +1749,7 @@
     "src:wiki-midget",
     "src:powri-wiki"
    ],
-   "notes": "~900 lb; ~900 lb"
+   "notes": "~900 lb; ~900 lb; ~900 lb"
   },
   "tires": "Hoosier",
   "spec_rules": "USAC/POWRi",
@@ -1761,7 +1761,7 @@
    "sources": [
     "src:search-midget-cost"
    ],
-   "notes": "car $40-60k + front-running engine $40-50k; car $40-60k + front-running engine $40-50k"
+   "notes": "car $40-60k + front-running engine $40-50k; car $40-60k + front-running engine $40-50k; car $40-60k + front-running engine $40-50k"
   },
   "used_car_cost_usd": {
    "min": 20000,
@@ -1769,7 +1769,7 @@
    "unit": "USD",
    "confidence": "low",
    "sources": [],
-   "notes": "estimate; estimate"
+   "notes": "estimate; estimate; estimate"
   },
   "notes": "Engine service $6.5-9.5k.",
   "confidence": "high",
@@ -1792,7 +1792,7 @@
    "unit": "hp",
    "confidence": "low",
    "sources": [],
-   "notes": "informed estimate for near-stock 4-cyl; informed estimate for near-stock 4-cyl"
+   "notes": "informed estimate for near-stock 4-cyl; informed estimate for near-stock 4-cyl; informed estimate for near-stock 4-cyl"
   },
   "weight_lb": {
    "min": 1900,
@@ -1802,7 +1802,7 @@
    "sources": [
     "src:search-ministock"
    ],
-   "notes": "weight by displacement in one track's rules; weight by displacement in one track's rules"
+   "notes": "weight by displacement in one track's rules; weight by displacement in one track's rules; weight by displacement in one track's rules"
   },
   "tires": "street-type or spec",
   "spec_rules": "Stock body/suspension, claim rules common",
@@ -1820,7 +1820,7 @@
    "sources": [
     "src:search-ministock"
    ],
-   "notes": "race-ready from $500-2,000 per snippet; competitive cars higher; race-ready from $500-2,000 per snippet; competitive cars higher"
+   "notes": "race-ready from $500-2,000 per snippet; competitive cars higher; race-ready from $500-2,000 per snippet; competitive cars higher; race-ready from $500-2,000 per snippet; competitive cars higher"
   },
   "notes": null,
   "confidence": "low",
@@ -1843,7 +1843,7 @@
    "sources": [
     "src:informed-estimate"
    ],
-   "notes": "informed estimate; official page gives no hp; informed estimate; official page gives no hp; informed estimate; official page gives no hp"
+   "notes": "informed estimate; official page gives no hp; informed estimate; official page gives no hp; informed estimate; official page gives no hp; informed estimate; official page gives no hp"
   },
   "weight_lb": null,
   "tires": "Michelin Pilot Sport Competition slicks",
@@ -1856,7 +1856,7 @@
    "sources": [
     "src:thedrive-mx5-budget"
    ],
-   "notes": "~58k at 2016 launch; ~99-100k turnkey reported later; ~58k at 2016 launch; ~99-100k turnkey reported later; ~58k at 2016 launch; ~99-100k turnkey reported later"
+   "notes": "~58k at 2016 launch; ~99-100k turnkey reported later; ~58k at 2016 launch; ~99-100k turnkey reported later; ~58k at 2016 launch; ~99-100k turnkey reported later; ~58k at 2016 launch; ~99-100k turnkey reported later"
   },
   "used_car_cost_usd": null,
   "notes": null,
@@ -1879,7 +1879,7 @@
    "unit": "hp",
    "confidence": "low",
    "sources": [],
-   "notes": "informed estimate from NASCAR package, not fetched; informed estimate from NASCAR package, not fetched"
+   "notes": "informed estimate from NASCAR package, not fetched; informed estimate from NASCAR package, not fetched; informed estimate from NASCAR package, not fetched"
   },
   "weight_lb": {
    "min": 3400,
@@ -1887,7 +1887,7 @@
    "unit": "lb",
    "confidence": "low",
    "sources": [],
-   "notes": "informed estimate; informed estimate"
+   "notes": "informed estimate; informed estimate; informed estimate"
   },
   "tires": "Goodyear 18-in single lug",
   "spec_rules": "spec parts",
@@ -1899,7 +1899,7 @@
    "sources": [
     "src:search-cup-cost"
    ],
-   "notes": "Hamlin estimate: ~$225k initially, ~$350k complete; Hamlin estimate: ~$225k initially, ~$350k complete"
+   "notes": "Hamlin estimate: ~$225k initially, ~$350k complete; Hamlin estimate: ~$225k initially, ~$350k complete; Hamlin estimate: ~$225k initially, ~$350k complete"
   },
   "used_car_cost_usd": null,
   "notes": null,
@@ -1921,7 +1921,7 @@
    "unit": "hp",
    "confidence": "low",
    "sources": [],
-   "notes": "informed estimate, not fetched; informed estimate, not fetched"
+   "notes": "informed estimate, not fetched; informed estimate, not fetched; informed estimate, not fetched"
   },
   "weight_lb": {
    "min": 3400,
@@ -1929,7 +1929,7 @@
    "unit": "lb",
    "confidence": "low",
    "sources": [],
-   "notes": "informed estimate; informed estimate"
+   "notes": "informed estimate; informed estimate; informed estimate"
   },
   "tires": "Goodyear (~$2,300/set in 2014)",
   "spec_rules": "NASCAR",
@@ -1954,7 +1954,7 @@
    "unit": "hp",
    "confidence": "low",
    "sources": [],
-   "notes": "informed estimate; informed estimate"
+   "notes": "informed estimate; informed estimate; informed estimate"
   },
   "weight_lb": {
    "min": 3200,
@@ -1962,7 +1962,7 @@
    "unit": "lb",
    "confidence": "low",
    "sources": [],
-   "notes": "informed estimate; informed estimate"
+   "notes": "informed estimate; informed estimate; informed estimate"
   },
   "tires": "Goodyear (~$2,500/set)",
   "spec_rules": "NASCAR",
@@ -1994,7 +1994,7 @@
    "unit": "hp",
    "confidence": "low",
    "sources": [],
-   "notes": "estimate for 410 non-wing; estimate for 410 non-wing"
+   "notes": "estimate for 410 non-wing; estimate for 410 non-wing; estimate for 410 non-wing"
   },
   "weight_lb": {
    "min": 1400,
@@ -2002,7 +2002,7 @@
    "unit": "lb",
    "confidence": "low",
    "sources": [],
-   "notes": "estimate; estimate"
+   "notes": "estimate; estimate; estimate"
   },
   "tires": "Hoosier",
   "spec_rules": "USAC rules",
@@ -2084,7 +2084,7 @@
    "sources": [
     "src:search-pro-vs-super"
    ],
-   "notes": "~2,800 lb base; ~2,800 lb base"
+   "notes": "~2,800 lb base; ~2,800 lb base; ~2,800 lb base"
   },
   "tires": "spec",
   "spec_rules": "crate sealed",
@@ -2094,7 +2094,7 @@
    "unit": "USD",
    "confidence": "low",
    "sources": [],
-   "notes": "estimate: SLM chassis with cheaper engine; estimate: SLM chassis with cheaper engine"
+   "notes": "estimate: SLM chassis with cheaper engine; estimate: SLM chassis with cheaper engine; estimate: SLM chassis with cheaper engine"
   },
   "used_car_cost_usd": {
    "min": 20000,
@@ -2102,7 +2102,7 @@
    "unit": "USD",
    "confidence": "low",
    "sources": [],
-   "notes": "estimate; estimate"
+   "notes": "estimate; estimate; estimate"
   },
   "notes": "Engine commitment ~US$15k vs $25-30k for SLM; functions as development class.",
   "confidence": "medium",
@@ -2126,7 +2126,7 @@
    "sources": [
     "src:wiki-quarter-midget"
    ],
-   "notes": "informed estimate by engine family; speeds ~30mph rookie to 45+ mph; informed estimate by engine family; speeds ~30mph rookie to 45+ mph"
+   "notes": "informed estimate by engine family; speeds ~30mph rookie to 45+ mph; informed estimate by engine family; speeds ~30mph rookie to 45+ mph; informed estimate by engine family; speeds ~30mph rookie to 45+ mph"
   },
   "weight_lb": {
    "unit": "lb",
@@ -2145,7 +2145,7 @@
    "sources": [
     "src:vastqm-faq"
    ],
-   "notes": "new car with required equipment, search snippet; new car with required equipment, search snippet"
+   "notes": "new car with required equipment, search snippet; new car with required equipment, search snippet; new car with required equipment, search snippet"
   },
   "used_car_cost_usd": {
    "min": 3000,
@@ -2156,7 +2156,7 @@
    "sources": [
     "src:vastqm-faq"
    ],
-   "notes": "used beginner setup; used beginner setup"
+   "notes": "used beginner setup; used beginner setup; used beginner setup"
   },
   "notes": "Engine ~US$1,600 race-ready Honda 120.",
   "confidence": "medium",
@@ -2179,7 +2179,7 @@
    "sources": [
     "src:silver-crown-search"
    ],
-   "notes": "800+ hp; 800+ hp"
+   "notes": "800+ hp; 800+ hp; 800+ hp"
   },
   "weight_lb": {
    "value": 1650,
@@ -2188,7 +2188,7 @@
    "sources": [
     "src:silver-crown-search"
    ],
-   "notes": "1,650 lb; 1,650 lb"
+   "notes": "1,650 lb; 1,650 lb; 1,650 lb"
   },
   "tires": "Hoosier",
   "spec_rules": "USAC",
@@ -2215,7 +2215,7 @@
    "sources": [
     "src:stafford-sk"
    ],
-   "notes": "estimate; SK Light uses crate; estimate; SK Light uses crate"
+   "notes": "estimate; SK Light uses crate; estimate; SK Light uses crate; estimate; SK Light uses crate"
   },
   "weight_lb": {
    "unit": "lb",
@@ -2278,7 +2278,7 @@
    "sources": [
     "src:wiki-spec-miata"
    ],
-   "notes": "top builds ~120-125; top builds ~120-125; top builds ~120-125"
+   "notes": "top builds ~120-125; top builds ~120-125; top builds ~120-125; top builds ~120-125"
   },
   "weight_lb": {
    "min": 2275,
@@ -2301,7 +2301,7 @@
    "sources": [
     "src:nomoneymotorsports-sm"
    ],
-   "notes": "sub-10k midpack regional; 20k+ front-running; sub-10k midpack regional; 20k+ front-running; sub-10k midpack regional; 20k+ front-running"
+   "notes": "sub-10k midpack regional; 20k+ front-running; sub-10k midpack regional; 20k+ front-running; sub-10k midpack regional; 20k+ front-running; sub-10k midpack regional; 20k+ front-running"
   },
   "notes": "Most popular club racing class in the US.",
   "confidence": "high",
@@ -2326,7 +2326,7 @@
    "sources": [
     "src:informed-estimate"
    ],
-   "notes": "informed estimate; informed estimate; informed estimate"
+   "notes": "informed estimate; informed estimate; informed estimate; informed estimate"
   },
   "weight_lb": null,
   "tires": "spec",
@@ -2365,7 +2365,7 @@
     "src:imca-rules",
     "src:dirtcar-the-cars"
    ],
-   "notes": "602 crate ~350-375 hp; 602 crate ~350-375 hp"
+   "notes": "602 crate ~350-375 hp; 602 crate ~350-375 hp; 602 crate ~350-375 hp"
   },
   "weight_lb": {
    "min": 2450,
@@ -2375,7 +2375,7 @@
    "sources": [
     "src:imca-rules"
    ],
-   "notes": "2,500 claim / 2,450 crate with driver; 2,500 claim / 2,450 crate with driver"
+   "notes": "2,500 claim / 2,450 crate with driver; 2,500 claim / 2,450 crate with driver; 2,500 claim / 2,450 crate with driver"
   },
   "tires": "spec",
   "spec_rules": "claim/crate",
@@ -2391,7 +2391,7 @@
    "unit": "USD",
    "confidence": "low",
    "sources": [],
-   "notes": "estimate; estimate"
+   "notes": "estimate; estimate; estimate"
   },
   "notes": "Minimum age 14.",
   "confidence": "medium",
@@ -2414,7 +2414,7 @@
    "sources": [
     "src:search-streetstock"
    ],
-   "notes": "pure/factory 275-350; street stock 360-450; pure/factory 275-350; street stock 360-450"
+   "notes": "pure/factory 275-350; street stock 360-450; pure/factory 275-350; street stock 360-450; pure/factory 275-350; street stock 360-450"
   },
   "weight_lb": {
    "min": 3000,
@@ -2425,7 +2425,7 @@
     "src:search-streetstock",
     "src:imca-rules"
    ],
-   "notes": "street stock min ~3,200 lb in one rulebook; street stock min ~3,200 lb in one rulebook"
+   "notes": "street stock min ~3,200 lb in one rulebook; street stock min ~3,200 lb in one rulebook; street stock min ~3,200 lb in one rulebook"
   },
   "tires": "spec or treaded DOT/Hoosier",
   "spec_rules": "Claim rules / sealed crate options",
@@ -2437,7 +2437,7 @@
    "sources": [
     "src:search-streetstock"
    ],
-   "notes": "new turnkey; new turnkey"
+   "notes": "new turnkey; new turnkey; new turnkey"
   },
   "used_car_cost_usd": {
    "min": 3500,
@@ -2447,7 +2447,7 @@
    "sources": [
     "src:search-streetstock"
    ],
-   "notes": "hobby $3.5-10k, competitive used street stock $5-15k; hobby $3.5-10k, competitive used street stock $5-15k"
+   "notes": "hobby $3.5-10k, competitive used street stock $5-15k; hobby $3.5-10k, competitive used street stock $5-15k; hobby $3.5-10k, competitive used street stock $5-15k"
   },
   "notes": "Same family used on dirt (IMCA Hobby Stock, USRA Hobby/Factory) and asphalt.",
   "confidence": "low",
@@ -2472,7 +2472,7 @@
     "src:woo-lm-car",
     "src:wiki-lucas"
    ],
-   "notes": "over 800 hp; over 800 hp"
+   "notes": "over 800 hp; over 800 hp; over 800 hp"
   },
   "weight_lb": {
    "value": 2350,
@@ -2481,7 +2481,7 @@
    "sources": [
     "src:woo-lm-car"
    ],
-   "notes": "2,350 lb; 2,350 lb"
+   "notes": "2,350 lb; 2,350 lb; 2,350 lb"
   },
   "tires": "Hoosier",
   "spec_rules": "WoO/Lucas rules",
@@ -2494,7 +2494,7 @@
     "src:jj-dlm-cost",
     "src:floracing-dlm-cost"
    ],
-   "notes": "roller ~$42.5k each (2 cars $85k) + engine $36-60k; roller ~$42.5k each (2 cars $85k) + engine $36-60k"
+   "notes": "roller ~$42.5k each (2 cars $85k) + engine $36-60k; roller ~$42.5k each (2 cars $85k) + engine $36-60k; roller ~$42.5k each (2 cars $85k) + engine $36-60k"
   },
   "used_car_cost_usd": {
    "min": 25000,
@@ -2504,7 +2504,7 @@
    "sources": [
     "src:jj-dlm-cost"
    ],
-   "notes": "estimate from $25-100k range; estimate from $25-100k range"
+   "notes": "estimate from $25-100k range; estimate from $25-100k range; estimate from $25-100k range"
   },
   "notes": "Engine ~$50k (2018), 'super motor'.",
   "confidence": "high",
@@ -2531,7 +2531,7 @@
     "src:sts-slm-vs-lms",
     "src:wiki-late-model"
    ],
-   "notes": "~630 hp; ~630 hp"
+   "notes": "~630 hp; ~630 hp; ~630 hp"
   },
   "weight_lb": {
    "min": 2750,
@@ -2542,7 +2542,7 @@
     "src:sts-slm-vs-lms",
     "src:search-pro-vs-super"
    ],
-   "notes": "~2,800 lb; ~2,800 lb"
+   "notes": "~2,800 lb; ~2,800 lb; ~2,800 lb"
   },
   "tires": "spec Hoosier/American Racer",
   "spec_rules": "tour-specific (ASA STARS, PASS, Midwest Tour)",
@@ -2556,7 +2556,7 @@
     "src:sts-slm-vs-lms",
     "src:crateinsider-lmsc"
    ],
-   "notes": "turnkey ~$100k; one touring program $198k; turnkey ~$100k; one touring program $198k"
+   "notes": "turnkey ~$100k; one touring program $198k; turnkey ~$100k; one touring program $198k; turnkey ~$100k; one touring program $198k"
   },
   "used_car_cost_usd": {
    "min": 30000,
@@ -2564,7 +2564,7 @@
    "unit": "USD",
    "confidence": "low",
    "sources": [],
-   "notes": "estimate; estimate"
+   "notes": "estimate; estimate; estimate"
   },
   "notes": "Engine $25-30k (local spec) up to ~$80k fresh top-tier touring engine (one snippet).",
   "confidence": "medium",
@@ -2589,7 +2589,7 @@
     "src:iracing-fandom-tatuus",
     "src:usfpro2000-series"
    ],
-   "notes": "~275hp PM-18 + ~10hp 2025 upgrade; ~275hp PM-18 + ~10hp 2025 upgrade; ~275hp PM-18 + ~10hp 2025 upgrade"
+   "notes": "~275hp PM-18 + ~10hp 2025 upgrade; ~275hp PM-18 + ~10hp 2025 upgrade; ~275hp PM-18 + ~10hp 2025 upgrade; ~275hp PM-18 + ~10hp 2025 upgrade"
   },
   "weight_lb": {
    "value": 1102,
@@ -2635,7 +2635,7 @@
    "sources": [
     "src:iracing-fandom-tatuus"
    ],
-   "notes": "sim-wiki figure; sim-wiki figure; sim-wiki figure"
+   "notes": "sim-wiki figure; sim-wiki figure; sim-wiki figure; sim-wiki figure"
   },
   "tires": "Continental",
   "spec_rules": "spec",
@@ -2664,7 +2664,7 @@
     "src:iracing-fandom-tatuus",
     "src:wiki-usf2000-2025"
    ],
-   "notes": "~175hp base; 2025 +20hp on road/street; ~175hp base; 2025 +20hp on road/street; ~175hp base; 2025 +20hp on road/street"
+   "notes": "~175hp base; 2025 +20hp on road/street; ~175hp base; 2025 +20hp on road/street; ~175hp base; 2025 +20hp on road/street; ~175hp base; 2025 +20hp on road/street"
   },
   "weight_lb": {
    "value": 1102,
@@ -2702,7 +2702,7 @@
    "sources": [
     "src:informed-estimate"
    ],
-   "notes": "informed estimate of TCR spec; informed estimate of TCR spec; informed estimate of TCR spec"
+   "notes": "informed estimate of TCR spec; informed estimate of TCR spec; informed estimate of TCR spec; informed estimate of TCR spec"
   },
   "weight_lb": null,
   "tires": "Michelin (IMSA)",
@@ -2730,7 +2730,7 @@
    "sources": [
     "src:search-thunder-babygrand"
    ],
-   "notes": "~200 hp; ~200 hp"
+   "notes": "~200 hp; ~200 hp; ~200 hp"
   },
   "weight_lb": {
    "value": 1500,
@@ -2739,7 +2739,7 @@
    "sources": [
     "src:search-thunder-babygrand"
    ],
-   "notes": "~1,500 lb; ~1,500 lb"
+   "notes": "~1,500 lb; ~1,500 lb; ~1,500 lb"
   },
   "tires": "spec",
   "spec_rules": null,
@@ -2752,7 +2752,7 @@
    "sources": [
     "src:search-thunder-babygrand"
    ],
-   "notes": "used listings; used listings"
+   "notes": "used listings; used listings; used listings"
   },
   "notes": null,
   "confidence": "low",
@@ -2865,7 +2865,7 @@
    "sources": [
     "src:dirtcar-the-cars"
    ],
-   "notes": "750+ hp; 750+ hp"
+   "notes": "750+ hp; 750+ hp; 750+ hp"
   },
   "weight_lb": {
    "value": 2400,
@@ -2874,7 +2874,7 @@
    "sources": [
     "src:dirtcar-the-cars"
    ],
-   "notes": "2,400 lb; 2,400 lb"
+   "notes": "2,400 lb; 2,400 lb; 2,400 lb"
   },
   "tires": "spec",
   "spec_rules": "",
@@ -2899,7 +2899,7 @@
    "unit": "hp",
    "confidence": "low",
    "sources": [],
-   "notes": "informed estimate; informed estimate"
+   "notes": "informed estimate; informed estimate; informed estimate"
   },
   "weight_lb": null,
   "tires": "spec",

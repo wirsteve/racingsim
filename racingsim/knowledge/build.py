@@ -253,3 +253,94 @@ def _s(v):
         return v.get("category") or v.get("value") if isinstance(v.get("category") or v.get("value"), str) \
             else json.dumps(v)
     return json.dumps(v, ensure_ascii=False)
+
+
+RESULTS_SCHEMA = """
+CREATE TABLE IF NOT EXISTS race_info(source TEXT, year INTEGER, round INTEGER, date TEXT, race TEXT, track TEXT,
+    city TEXT, state TEXT, track_length_mi REAL, surface TEXT, PRIMARY KEY(source, year, round));
+CREATE TABLE IF NOT EXISTS race_result(source TEXT, year INTEGER, round INTEGER, pos INTEGER, start INTEGER,
+    driver TEXT, car_number TEXT, team TEXT, manufacturer TEXT, laps INTEGER, status TEXT, points REAL, led INTEGER);
+CREATE INDEX IF NOT EXISTS race_result_driver ON race_result(driver);
+CREATE INDEX IF NOT EXISTS race_result_race ON race_result(source, year, round);
+"""
+
+
+def build_results(conn: sqlite3.Connection, directory: Path) -> int:
+    """Race-by-race results (``data/results/<source>.jsonl.gz``, one race per line)."""
+    import gzip
+    conn.executescript(RESULTS_SCHEMA)
+    n = 0
+    for f in sorted(directory.glob("*.jsonl.gz")):
+        infos, rows = [], []
+        with gzip.open(f, "rt", encoding="utf-8") as fh:
+            for line in fh:
+                r = json.loads(line)
+                key = (r["source"], r["year"], r["round"])
+                infos.append((*key, r.get("date"), r.get("race"), r.get("track"), r.get("city"), r.get("state"),
+                              r.get("track_length_mi"), r.get("surface")))
+                for x in r.get("results") or []:
+                    rows.append((*key, x.get("pos"), x.get("start"), x.get("driver"), x.get("car_number"),
+                                 x.get("team"), x.get("manufacturer"), x.get("laps"), x.get("status"),
+                                 x.get("points"), x.get("led")))
+        conn.executemany("INSERT OR REPLACE INTO race_info VALUES (?,?,?,?,?,?,?,?,?,?)", infos)
+        conn.executemany("INSERT INTO race_result VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)", rows)
+        n += len(rows)
+    derive_early_seasons(conn)
+    return n
+
+
+# Period names for seasons before the season-file data begins (1995).
+EARLY_NAMES = {
+    "nascar_cup": [(1949, 1949, "NASCAR Strictly Stock Series"), (1950, 1970, "NASCAR Grand National Division"),
+                   (1971, 1985, "NASCAR Winston Cup Grand National Division"), (1986, 2003, "NASCAR Winston Cup Series")],
+    "nascar_xfinity": [(1982, 1983, "NASCAR Budweiser Late Model Sportsman Series"),
+                       (1984, 1994, "NASCAR Busch Grand National Series")],
+}
+
+
+def derive_early_seasons(conn: sqlite3.Connection) -> int:
+    """Season standings for years with race results but no season file (NASCAR before 1995).
+
+    Positions come from summed points (an approximation of each era's official system),
+    so these seasons are marked ``data_level = 'derived_from_results'``. Drivers are
+    linked to their Wikipedia identity when the name maps to exactly one known driver.
+    """
+    have = {(s, y) for s, y in conn.execute("SELECT source, year FROM season")}
+    by_name: dict[str, set] = {}
+    for name, wiki in conn.execute("SELECT DISTINCT name, wiki FROM standing WHERE wiki IS NOT NULL"):
+        by_name.setdefault(_norm_name(name), set()).add(wiki)
+    for wiki, name in conn.execute("SELECT wiki, name FROM driver"):
+        by_name.setdefault(_norm_name(name or ""), set()).add(wiki)
+    seasons = conn.execute("SELECT DISTINCT source, year FROM race_info").fetchall()
+    added = 0
+    for source, year in seasons:
+        if (source, year) in have:
+            continue
+        rows = conn.execute("SELECT driver, COUNT(*), SUM(pos = 1), SUM(pos <= 5), SUM(pos <= 10), "
+                            "COALESCE(SUM(points), 0) FROM race_result WHERE source = ? AND year = ? GROUP BY driver",
+                            (source, year)).fetchall()
+        n_races = conn.execute("SELECT COUNT(*) FROM race_info WHERE source = ? AND year = ?", (source, year)).fetchone()[0]
+        rows.sort(key=lambda r: (-(r[5] or 0), -(r[2] or 0), -(r[1] or 0)))
+        name = next((n for lo, hi, n in EARLY_NAMES.get(source, []) if lo <= year <= hi), None)
+        regulars = sum(1 for r in rows if r[1] >= 0.5 * max(1, n_races))
+        doc = {"series": source, "year": year, "official_name": name, "data_level": "derived_from_results",
+               "teams": [], "standings": [], "schedule": [],
+               "notes": "standings derived from race results (summed points); see race_result"}
+        conn.execute("INSERT INTO season VALUES (?,?,?,?,?,?,?)",
+                     (source, year, name, "derived_from_results", max(regulars, 1), len(rows), json.dumps(doc)))
+        out = []
+        for pos, (driver, starts, wins, top5, top10, points) in enumerate(rows, start=1):
+            wikis = by_name.get(_norm_name(driver), set())
+            out.append((source, year, pos, driver, next(iter(wikis)) if len(wikis) == 1 else None, points,
+                        wins or 0, starts, top5 or 0, top10 or 0, ""))
+        conn.executemany("INSERT INTO standing VALUES (?,?,?,?,?,?,?,?,?,?,?)", out)
+        added += 1
+    return added
+
+
+def _norm_name(name: str) -> str:
+    import re
+    import unicodedata
+    s = unicodedata.normalize("NFKD", name or "").encode("ascii", "ignore").decode().lower()
+    s = s.replace(", jr", " jr").replace("jr.", "jr").replace("sr.", "sr").replace(".", "")
+    return re.sub(r"\s+", " ", s).strip()

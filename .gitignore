@@ -16,3 +16,6 @@ data/*.building
 build/
 dist/
 tools/knowledge/analysis/*.json
+tools/ingest/datasets/cache/
+tools/ingest/datasets/results/
+tools/ingest/datasets/*.json

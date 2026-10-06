@@ -117,5 +117,96 @@
   "reason": "Rate-limited ('too many requests') during first burst (shared with other agents); backed off 30 s + 3 s spacing with exponential retry and completed",
   "checked": "2026-10-06",
   "replacement_source": "same source after backoff"
+ },
+ {
+  "source": "src:racing-reference",
+  "url": "https://www.racing-reference.info/",
+  "reason": "Cloudflare block / scripted access forbidden by project RULES.md",
+  "checked": "2026-10-06",
+  "replacement_source": "src:nascar-data (race-by-race NASCAR 1949-2026)"
+ },
+ {
+  "source": "src:thethirdturn",
+  "url": "https://www.thethirdturn.com/",
+  "reason": "robots.txt Disallow: / (per RULES.md)",
+  "checked": "2026-10-06",
+  "replacement_source": "src:wikidata-racetracks + src:osm-qlever for venues; src:nascar-data for results"
+ },
+ {
+  "source": "src:nascar-com-feeds",
+  "url": "https://cf.nascar.com/",
+  "reason": "www.nascar.com returns a Cloudflare 'Sorry, you have been blocked' page; cf.nascar.com robots.txt returns S3 AccessDenied; feeds are undocumented and not licensed for reuse",
+  "checked": "2026-10-06",
+  "replacement_source": "src:nascar-data"
+ },
+ {
+  "source": "src:indycar-indystats-api",
+  "url": "https://www.indycar.com/Services/IndyStats.svc/SeasonDropDown",
+  "reason": "endpoint used by the GPL indycarpy scraper now redirects to a 404 page (service removed)",
+  "checked": "2026-10-06",
+  "replacement_source": "repo irl_indycar history (Wikipedia per-driver results arrays); src:champcarstats if permission is granted"
+ },
+ {
+  "source": "src:al-kamel-imsa",
+  "url": "https://imsa.results.alkamelcloud.com/",
+  "reason": "terms: data wholly owned by Al Kamel Systems S.L.; distribution without express consent prohibited",
+  "checked": "2026-10-06",
+  "replacement_source": "Wikipedia IMSA season articles (race winners by class); request consent from Al Kamel for official CSVs"
+ },
+ {
+  "source": "src:tobi-imsa-data",
+  "url": "https://github.com/tobi/imsa_data",
+  "reason": "MIT-licensed code but republishes Al Kamel data whose owner forbids redistribution",
+  "checked": "2026-10-06",
+  "replacement_source": "Wikipedia IMSA season articles"
+ },
+ {
+  "source": "src:speedhive-api",
+  "url": "https://eventresults-api.speedhive.com/",
+  "reason": "robots.txt on the API host: Disallow: /  (the HTML site only disallows /LiveTiming and /profile, but results load from this API); no data licence found (mylaps.com/legal/ 404)",
+  "checked": "2026-10-06",
+  "replacement_source": "src:osm-qlever for local-track locations; local track websites for results"
+ },
+ {
+  "source": "src:racemonitor",
+  "url": "https://www.racemonitor.com/",
+  "reason": "TLS certificate verification failed through the agent proxy; not pursued (no licence for reuse in any case)",
+  "checked": "2026-10-06",
+  "replacement_source": "none needed"
+ },
+ {
+  "source": "src:usac-racing",
+  "url": "https://www.usacracing.com/",
+  "reason": "robots.txt explicitly disallows ClaudeBot, ChatGPT-User, GPTBot and other AI agents",
+  "checked": "2026-10-06",
+  "replacement_source": "Wikipedia USAC season articles (being handled by the touring agents)"
+ },
+ {
+  "source": "src:world-of-outlaws",
+  "url": "https://www.worldofoutlaws.com/",
+  "reason": "robots.txt Disallow: /results/*, /sprintcars/results/*, /latemodels/results/*, /api/*",
+  "checked": "2026-10-06",
+  "replacement_source": "Wikipedia World of Outlaws season articles (touring agents)"
+ },
+ {
+  "source": "src:driveraverages",
+  "url": "https://www.driveraverages.com/",
+  "reason": "robots.txt disallows ClaudeBot/CCBot/GPTBot (AI scraping); terms not reviewed",
+  "checked": "2026-10-06",
+  "replacement_source": "src:nascar-data (scraped from DriverAverages with permission)"
+ },
+ {
+  "source": "src:overpass-api-de",
+  "url": "https://overpass-api.de/api/interpreter",
+  "reason": "robots.txt Disallow: /api/; public mirrors (overpass.kumi.systems 504, overpass.private.coffee timeout) were unusable for state-size queries",
+  "checked": "2026-10-06",
+  "replacement_source": "src:osm-qlever (same OSM data, ODbL)"
+ },
+ {
+  "source": "src:kaggle-nascar-2017-2024",
+  "url": "https://www.kaggle.com/datasets/joeah99/nascar-2017-2024-full-race-points-data",
+  "reason": "download requires a Kaggle login/API token; licence not visible",
+  "checked": "2026-10-06",
+  "replacement_source": "src:nascar-data"
  }
 ]

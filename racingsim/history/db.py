@@ -28,8 +28,8 @@ HISTORY_DIR = DATA_DIR / "history"
 
 # template key -> list of (data dir, first year, last year)
 SOURCES = {
-    "cup_series": [("nascar_cup", 1995, 2100)],
-    "stock_national": [("nascar_xfinity", 1995, 2100)],
+    "cup_series": [("nascar_cup", 1949, 2100)],        # before 1995: derived from race results
+    "stock_national": [("nascar_xfinity", 1982, 2100)],
     "truck_series": [("nascar_trucks", 1995, 2100)],
     "open_wheel_top": [("cart_champcar", 1995, 2007), ("irl_indycar", 2008, 2100)],
     "open_wheel_top_irl": [("irl_indycar", 1996, 2007)],
@@ -194,7 +194,10 @@ class HistoryDB:
         return self.raw_season(src, year) if src else None
 
     def years(self) -> list[int]:
-        return [y for (y,) in self.conn.execute("SELECT year FROM season WHERE source='nascar_cup' ORDER BY year")]
+        """Start years with real rosters (season files, not standings derived from results)."""
+        return [y for (y,) in self.conn.execute(
+            "SELECT year FROM season WHERE source='nascar_cup' AND COALESCE(data_level, '') != 'derived_from_results' "
+            "ORDER BY year")]
 
     def bio(self, wiki: Optional[str]) -> dict:
         if not wiki:
