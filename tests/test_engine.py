@@ -26,7 +26,10 @@ def test_race_is_complete_and_consistent(cup):
     assert [x.position for x in f] == list(range(1, len(entries) + 1))
     assert sorted(x.box["start"] for x in f) == list(range(1, len(entries) + 1))
     assert sum(x.box["led"] for x in f) == r.laps                     # every lap had a leader
-    assert all(x.box["laps"] == r.laps for x in f if not x.dnf)
+    assert f[0].box["laps"] == r.laps                                   # the winner ran the distance
+    assert all(x.box["laps"] <= r.laps for x in f)
+    laps = [x.box["laps"] for x in f if not x.dnf]
+    assert laps == sorted(laps, reverse=True)                           # lapped cars finish behind
     assert all(20 <= x.box["rating"] <= 150 for x in f)
     assert f[0].box["status"] == "running" and r.log and len(r.stages) == 2
 
@@ -73,7 +76,7 @@ def test_skills_profile_and_old_drivers(cup):
     assert all(v["pot"] >= v["now"] for v in p["skills"].values())
     d.skills, d.personality, d.track_skill = {}, {}, {}      # a driver from an old save
     S.ensure(d)
-    assert d.skills and d.personality and d.track_skill
+    assert d.skills and d.personality and S.track_skills(d)
     assert len(S.personality_report(d, exact=False)) == len(S.PERSONALITY)
 
 
@@ -97,3 +100,38 @@ def test_real_drivers_rated_from_results(tracks):
     if rusty is None:
         pytest.skip("Rusty Wallace not in this world")
     assert S.track_bonus(rusty, "short") > S.track_bonus(rusty, "superspeedway")
+
+
+def test_cars_go_laps_down_and_get_the_free_pass(cup):
+    w, entries = cup
+    tr = w.tracks.get("martinsville-speedway-va")
+    lapped = passes = 0
+    for seed in range(4):
+        r = E.run(entries, tr, 7, 0.6, random.Random(seed), detail=True, stages=2)
+        lapped += sum(1 for f in r.finishes if not f.dnf and f.box["laps"] < r.laps)
+        passes += sum(1 for _, t in r.log if t.startswith("Free pass"))
+        assert r.margin >= 0
+        assert len(r.stages) == 2
+    assert lapped > 20 and passes > 4
+
+
+def test_track_types_and_name_matching(tracks):
+    from racingsim.history.ratings import name_key
+    rovals = [t for t in tracks if (t.facts.track_type or "") == "roval"]
+    assert rovals and all(S.track_type_of(t) == "road" for t in rovals)
+    assert name_key("A. J. Allmendinger") == name_key("A.J. Allmendinger")
+    assert name_key("Daniel Suárez") == name_key("Daniel Suarez")
+    assert name_key("Dale Earnhardt Jr.") != name_key("Dale Earnhardt")
+
+
+def test_track_experience_follows_the_level_raced(cup):
+    w, _ = cup
+    ds = [w.drivers[d] for t in w.teams_in("cup_series") for d in t.roster if d]
+    assert all(S.track_skills(d)["intermediate"] > 0.3 for d in ds)
+
+
+def test_old_season_results_load():
+    from racingsim.sim.season import SeasonResults
+    r = SeasonResults.__new__(SeasonResults)
+    r.__setstate__({"records": {}})
+    assert r.track_laps == {}

@@ -57,6 +57,9 @@ Each phase is playable on its own and goes in as its own pull request.
 - Calibrated against real data. Remaining calibration gaps:
   - The strongest Cup entry can still win 9–14 races a season (real: 6–9). This is partly world composition: the best driver also has the best team.
   - Coarse-step AI races under-count lead changes.
+  - Laps down come from time gaps: green-flag stops and slow cars lose laps; the free pass gives one back.
+    - In a 36-car Cup field, lead-lap finishers average about 11 at Martinsville and 17 at Charlotte. Both are in the real range.
+    - Talladega averages 16 lead-lap finishers, low against the real 20–28. Our green-flag pit cycle there costs more laps than the draft would.
 
 ### Phase 2: The people around the car
 

@@ -145,7 +145,8 @@ def _lap_seconds(track: "Track", tier: int, tt: str) -> float:
 def _car(e: Entry, tt: str, cw: float, rng: random.Random, discipline: Optional[str] = None) -> Car:
     ds = e.drivers
     lead = ds[0]
-    S.ensure(lead)
+    for d in ds:
+        S.ensure(d)
 
     def avg(fn):
         return sum(fn(d) for d in ds) / len(ds)
@@ -178,6 +179,15 @@ def _stop_time(stop_s: float, rng: random.Random) -> float:
 def _order(cars: list[Car]) -> list[Car]:
     """Running order: laps completed first, then race time."""
     return sorted(cars, key=lambda c: (-c.laps, c.time))
+
+
+def _sync_laps(running: list[Car], completed: int, lap_s: float) -> None:
+    """Laps completed follow from the time gap to the leader: a full lap of time behind is a lap down."""
+    if not running:
+        return
+    lead_t = min(c.time for c in running)
+    for c in running:
+        c.laps = completed - max(0, int((c.time - lead_t) // lap_s))
 
 
 # --------------------------------------------------------------------------- the race
@@ -225,7 +235,8 @@ def run(entries: list[Entry], track: "Track", tier: int, car_weight: float, rng:
     step = 1 if detail else max(1, n_laps // 24)
     stage_ends = []
     if stages:
-        stage_ends = [round(n_laps * f) for f in ((0.25, 0.5) if stages == 2 else (0.33, 0.66))[:stages]]
+        stage_ends = [e for e in (round(n_laps * f) for f in ((0.25, 0.5) if stages == 2 else (0.33, 0.66))[:stages])
+                      if 0 < e < n_laps]
     for c in cars:
         c.fuel_laps = fuel_laps * (1 + c.fuel_save / 200)
         c.stint = rng.gauss(0, CAL["stint_sd"] * c.adjust)
@@ -259,6 +270,8 @@ def run(entries: list[Entry], track: "Track", tier: int, car_weight: float, rng:
         if caution_left <= 0 and n_laps - lap <= max(10, n_laps // 8):
             k = 1 if detail else min(k, 3)   # the run to the flag is fine-grained
         green = caution_left <= 0
+        if green and stage_ends and lap < stage_ends[0]:
+            k = min(k, stage_ends[0] - lap)
         running = [c for c in cars if c.running]
         if not running:
             break
@@ -279,10 +292,10 @@ def run(entries: list[Entry], track: "Track", tier: int, car_weight: float, rng:
                     jitter *= (1.15 - clamp(c.composure / 40, -0.3, 0.3))
                 seg = pace * k + rng.gauss(0, jitter)
                 c.time += seg
-                c.laps += k
                 c.tire_age += k
                 c.fuel_laps -= k
                 c._seg = seg / k  # noqa: SLF001 - per-lap pace this step (fastest-lap credit)
+            _sync_laps(running, lap + k, lap_s)
             # passing: resolve from the front, a car can only gain spots by beating the car ahead
             new: list[Car] = []
             for c in before:
@@ -303,6 +316,12 @@ def run(entries: list[Entry], track: "Track", tier: int, car_weight: float, rng:
                         c.time = ahead.time + 0.05 + rng.random() * 0.1   # stuck behind
                         break
                 new.insert(pos, c)
+            # keep the times in the order the passing produced (a car held up stays behind, but
+            # ahead of anyone it got by in the same step)
+            for i in range(1, len(new)):
+                a, b = new[i - 1], new[i]
+                if a.laps == b.laps and b.time <= a.time:
+                    b.time = a.time + 0.02
             # fastest lap of the step
             fastest = min(running, key=lambda x: x._seg)  # noqa: SLF001
             fastest.fast_laps += k
@@ -351,29 +370,39 @@ def run(entries: list[Entry], track: "Track", tier: int, car_weight: float, rng:
                     if down:
                         down[0].laps += 1
                         say(lap, f"Free pass to {who(down[0])}")
+                stay: set = set(map(id, order))
                 if stops_needed:
                     pitters, stayers = [], []
                     to_go = n_laps - lap
                     for i, c in enumerate(order):
-                        need = c.damage > 0 or c.tire_age > tire_life * 0.45 or c.fuel_laps < min(to_go, fuel_laps * 0.7)
+                        need = c.damage >= 0.3 or c.tire_age > tire_life * 0.45 or c.fuel_laps < min(to_go, fuel_laps * 0.7)
                         gamble = (i < 8 and c.fuel_laps >= to_go and c.tire_age < tire_life * 0.8
                                   and rng.random() < 0.35)
                         (pitters if need and not gamble else stayers).append(c)
                     for c in pitters:
                         c.pits += 1
-                        c.tire_age, c.fuel_laps, c.damage = 0, fuel_laps * (1 + c.fuel_save / 200), c.damage * 0.4
+                        c.tire_age, c.fuel_laps = 0, fuel_laps * (1 + c.fuel_save / 200)
+                        c.damage = c.damage * 0.4 if c.damage * 0.4 >= 0.3 else 0.0   # fixed what they could
                         c._stop = _stop_time(stop_s, rng) + order.index(c) * 0.4  # noqa: SLF001
                         c.stint = rng.gauss(0, CAL["stint_sd"] * c.adjust)
-                    pitters.sort(key=lambda c: c._stop)  # noqa: SLF001
-                    lead_lap = [c for c in pitters if c.laps == leader.laps]
-                    order = stayers + lead_lap + [c for c in pitters if c not in lead_lap]
+                    stay = set(map(id, stayers))
+                    rank = {id(c): i for i, c in enumerate(order)}
+                    # Off pit road in the order the stops finish; cars that stayed out line up ahead
+                    # of them, each lap's cars together (lapped cars stay lapped).
+                    order.sort(key=lambda c: (-c.laps, id(c) not in stay,
+                                              rank[id(c)] if id(c) in stay else c._stop))  # noqa: SLF001
                     if pitters and stayers and order[0] is not leader:
                         say(lap, f"{who(order[0])} stays out and inherits the lead")
-                for i, c in enumerate(order):
-                    c.time = leader.time + i * 0.3
+                # The field bunches up behind the pace car: each lap's cars in a tight line.
+                gap = min(0.3, lap_s * 0.5 / len(order))
+                base, slot = leader.time, {}
+                for c in order:
+                    down = max(0, leader.laps - c.laps)
+                    i = slot.get(down, 0)
+                    slot[down] = i + 1
+                    c.time = base + down * lap_s + i * gap
             k = max(1, min(caution_left, n_laps - lap))   # the whole yellow in one step
             for c in running:
-                c.laps += k
                 c.time += lap_s * 1.6 * k
                 c.fuel_laps -= 0.5 * k
             caution_left -= k
@@ -385,13 +414,16 @@ def run(entries: list[Entry], track: "Track", tier: int, car_weight: float, rng:
                 for _ in range(2 if late_restart else 1):   # late restarts are wilder
                     for i in range(min(12, len(order)) - 1):
                         a, b = order[i], order[i + 1]
+                        if a.laps != b.laps:
+                            break
                         fresh = 0.12 if b.tire_age < a.tire_age - 10 else 0.0   # newer tires launch better
                         if rng.random() < clamp(CAL["restart_swap"] + (b.restart - a.restart) / 40 + fresh
                                                 + draft_chaos * 0.15, 0.02, 0.7):
                             a.time, b.time = b.time, a.time
                             order[i], order[i + 1] = b, a
-                say(lap + 1, f"Green flag: {who(_order(running)[0])} leads the restart")
+                say(lap + k + 1, f"Green flag: {who(_order(running)[0])} leads the restart")
         lap += k
+        _sync_laps([c for c in cars if c.running], lap, lap_s)
         # -------- bookkeeping per step
         order = _order([c for c in cars if c.running])
         if order:
@@ -407,7 +439,8 @@ def run(entries: list[Entry], track: "Track", tier: int, car_weight: float, rng:
                 c.pos_laps += k
                 if i <= 15:
                     c.top15_laps += k
-        if stage_ends and lap >= stage_ends[0] and caution_left <= 0:
+        if stage_ends and lap >= stage_ends[0]:
+            # Scored at the stage lap - under yellow too (then there's no extra caution).
             stage_ends.pop(0)
             top = [c for c in order[:10]]
             stage_results.append([c.entry.drivers[0].id for c in top])
@@ -415,13 +448,15 @@ def run(entries: list[Entry], track: "Track", tier: int, car_weight: float, rng:
                 c.stage_pos.append(i)
             if top:
                 say(lap, f"Stage {len(stage_results)} to {who(top[0])}")
-            caution_left = max(caution_left, 2)   # stage-end caution
-            new_caution = True
-            cautions += 1
+            if caution_left <= 0:
+                caution_left = 2   # stage-end caution
+                new_caution = True
+                cautions += 1
 
     # ---- classification
     final = sorted(cars, key=lambda c: (-c.laps, c.time if c.running else 1e9, -c.out_lap))
-    margin = (final[1].time - final[0].time) if len(final) > 1 and final[1].laps == final[0].laps else 0.0
+    margin = ((final[1].time - final[0].time) if len(final) > 1 and final[0].running and final[1].running
+              and final[1].laps == final[0].laps else 0.0)
     if final:
         say(n_laps, f"{who(final[0])} wins" + (f" by {margin:.3f}s" if margin else ""))
     most_led = max(cars, key=lambda c: c.led)

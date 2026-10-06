@@ -70,7 +70,10 @@ def _seed(d: "Driver", salt: int) -> random.Random:
 
 
 def ensure(d: "Driver") -> None:
-    """Create skill offsets, track skills and personality for drivers that predate them (old saves)."""
+    """Create skill offsets and personality for drivers that predate them (old saves).
+
+    Track-type experience is built later, on first use (``track_skills``): it depends on the
+    level the driver has raced at, which isn't known yet when a driver is created."""
     if d.skills and d.personality:
         return
     rng = _seed(d, 11)
@@ -78,8 +81,13 @@ def ensure(d: "Driver") -> None:
         d.skills = new_offsets(rng)
     if not d.personality:
         d.personality = new_personality(rng, d)
+
+
+def track_skills(d: "Driver") -> dict[str, float]:
+    """Experience by track type (0..1), built from the driver's background the first time it's needed."""
     if not d.track_skill:
-        d.track_skill = initial_track_skill(d, rng)
+        d.track_skill = initial_track_skill(d, _seed(d, 13))
+    return d.track_skill
 
 
 def new_offsets(rng: random.Random) -> dict[str, float]:
@@ -118,10 +126,12 @@ def initial_track_skill(d: "Driver", rng: random.Random) -> dict[str, float]:
     elif disc in ("open_wheel", "sports_car", "touring_car", "club_road", "karting"):
         weights = {"road": 1.0, "short": 0.15, "intermediate": 0.25, "superspeedway": 0.1, "dirt": 0.0}
     else:  # stock cars
-        tier = d.max_tier
+        tier = max(d.max_tier, d.tier if d.series_id else 0)
         weights = {"short": 1.0, "intermediate": min(1.0, 0.15 * tier), "superspeedway": min(1.0, 0.1 * tier),
                    "road": 0.1 + 0.05 * tier, "dirt": 0.1}
-    return {k: round(clamp(base * w * rng.uniform(0.8, 1.15), 0, 1), 3) for k, w in weights.items()}
+    known = d.skills or {}   # experience measured from real results (history/ratings.py)
+    return {k: round(clamp(max(base * w * rng.uniform(0.8, 1.15), known.get(f"exp_{k}", 0.0)), 0, 1), 3)
+            for k, w in weights.items()}
 
 
 # ---------------------------------------------------------------------------------- reading
@@ -154,7 +164,7 @@ def track_bonus(d: "Driver", track_type: str) -> float:
 
 def track_factor(d: "Driver", track_type: str) -> float:
     """Share of ability usable on this kind of track (0.82 .. 1.0) from experience there."""
-    exp = d.track_skill.get(track_type, 0.0) if d.track_skill else 0.3
+    exp = track_skills(d).get(track_type, 0.0)
     return 0.82 + 0.18 * exp
 
 
@@ -168,7 +178,8 @@ def track_type_of(track) -> str:
     surface = (f.surface or "paved").lower()
     if "dirt" in surface or "clay" in surface:
         return "dirt"
-    if f.track_type in ("road", "street", "road_course", "street_circuit") or "road" in (f.track_type or ""):
+    kind = (f.track_type or "").lower()
+    if kind in ("road", "street", "road_course", "street_circuit", "roval", "kart_circuit") or "road" in kind or "roval" in kind:
         return "road"
     length = f.length_mi or 0.5
     if length >= 2.0 and track.sim.drafting_effect >= 60:
@@ -193,6 +204,7 @@ def develop(d: "Driver", age: int, starts: int, rng: random.Random, laps_by_type
         if kind == "savvy":
             # Experience and brains: keeps improving into the mid/late thirties.
             gain = seat * (0.35 + iq / 250) * (1.0 if age < 40 else 0.4)
+            gain *= clamp(1 - o / 25, 0.0, 1.0)   # diminishing returns: savvy tops out
         elif kind == "skill":
             gain = seat * (0.25 + we / 400) * (1.0 if past_peak < 2 else 0.3)
         else:  # physical: little growth after the early twenties, fades past peak
@@ -202,8 +214,9 @@ def develop(d: "Driver", age: int, starts: int, rng: random.Random, laps_by_type
         d.skills[k] = round(clamp(o + gain + rng.gauss(0, 0.35), -25, 25), 2)
     # Track-type skills: laps on a kind of track teach it; intelligence speeds learning.
     if laps_by_type:
+        ts = track_skills(d)
         for tt, laps in laps_by_type.items():
-            cur = d.track_skill.get(tt, 0.0)
+            cur = ts.get(tt, 0.0)
             learn = laps / (laps + 1500) * (0.6 + iq / 125)
             d.track_skill[tt] = round(min(1.0, cur + (1 - cur) * learn), 3)
 
@@ -223,9 +236,12 @@ def profile(d: "Driver", noise: float = 0.0, rng: Optional[random.Random] = None
         g = grade(x + (rng.gauss(0, noise) if noise else 0.0))
         return int(round(g / step) * step)
 
-    skills = {k: {"label": SKILLS[k][0], "now": show(value(d, k)), "pot": show(potential(d, k)),
-                  "about": SKILLS[k][1]} for k in SKILLS}
-    tracks = {k: {"label": v, "exp": round(100 * d.track_skill.get(k, 0.0))} for k, v in TRACK_TYPES.items()}
+    skills = {}
+    for k in SKILLS:
+        now = show(value(d, k))
+        skills[k] = {"label": SKILLS[k][0], "now": now, "pot": max(now, show(potential(d, k))), "about": SKILLS[k][1]}
+    ts = track_skills(d)
+    tracks = {k: {"label": v, "exp": round(100 * ts.get(k, 0.0))} for k, v in TRACK_TYPES.items()}
     return {"skills": skills, "tracks": tracks}
 
 
