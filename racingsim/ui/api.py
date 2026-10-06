@@ -188,7 +188,7 @@ def standings_rows(world: "World", sid: str, limit: Optional[int] = None) -> lis
             pts = round(a.points)
             leader = pts if leader is None else leader
             rows.append({"pos": pos, "driver_id": did, "name": d.name, "is_player": d.is_player,
-                         "team": team_brief(world, a.team_id), "points": pts, "behind": leader - pts,
+                         "team": team_brief(world, a.team_id), "points": pts, "behind": max(0, leader - pts),
                          "starts": a.starts, "wins": a.wins, "top5": a.top5, "top10": max(a.top10, a.top5), "dnq": a.dnq,
                          "winnings": round(a.purse),
                          "playoff": "alive" if did in alive else "out" if did in field_ else None,
@@ -209,7 +209,7 @@ def standings_rows(world: "World", sid: str, limit: Optional[int] = None) -> lis
                          "champion": r.champion, "final": True})
         lead = next((x["points"] for x in rows if x["points"] is not None), None)
         for x in rows:
-            x["behind"] = (lead - x["points"]) if lead is not None and x["points"] is not None else None
+            x["behind"] = max(0, lead - x["points"]) if lead is not None and x["points"] is not None else None
     return rows[:limit] if limit else rows
 
 

@@ -61,7 +61,10 @@ def open_account(world: "World", d: "Driver", series: "Series", cls: CarClass) -
     car = d.car
     car.year = world.year
     if car.account is None:
+        draw = max(0.0, d.savings) * 0.25          # the share of savings available_funding counts
         car.account = d.available_funding()
+        d.savings -= draw                           # ... really leaves the bank
+        car.drawn = draw
         car.winnings = 0.0
         log(car, 0, f"{world.year} season budget ({series.name})", car.account)
     car.races = 0
@@ -117,9 +120,10 @@ def spend(d: "Driver", amount: float) -> bool:
 
 
 # ---------------------------------------------------------------------- race night (player)
-def can_race(d: "Driver", cls: CarClass) -> bool:
+def can_race(d: "Driver", cls: CarClass, travel: float = 0.0) -> bool:
     car = d.car
-    return car is not None and (car.account or 0.0) + d.savings >= cls.per_race_fixed() and car.engine_health > 0
+    return (car is not None and car.engine_health > 0
+            and (car.account or 0.0) + d.savings >= cls.per_race_fixed() + travel)
 
 
 def before_race(world: "World", d: "Driver", cls: CarClass, track, week: int, travel: float,
@@ -136,7 +140,11 @@ def before_race(world: "World", d: "Driver", cls: CarClass, track, week: int, tr
         n -= 1
     over = clamp(have - base - n * cls.tires.usd, 0, overhead)
     cost = base + n * cls.tires.usd
-    spend(d, cost + over)
+    if not spend(d, cost + over):     # can_race() guarantees the base; never race for free
+        over = 0.0
+        if not spend(d, cost):
+            cost = 0.0
+            n = 0
     C.fit_tires(car, n)
     log(car, week, f"{track.name}: entry, pit passes, fuel{', travel' if travel else ''}"
         + (f", {n} new tire{'s' if n > 1 else ''}" if n else ", no new tires"), -cost)
@@ -163,16 +171,22 @@ def after_race(world: "World", d: "Driver", cls: CarClass, track, week: int, fin
         cost = C.repair_cost(cls, dmg)
         notes.append(f"Wrecked: about ${cost:,.0f} of damage")
         if car.auto_repair:
-            repair(world, d, cls, week)
+            msg = repair(world, d, cls, week)
+            if "don't have" in msg:
+                notes.append(msg)
     elif finish.dnf:
         hit = rng.uniform(25, 110)
         car.engine_health = clamp(car.engine_health - hit, 0, 100)
         notes.append("Engine let go" if car.engine_health <= 0 else "Mechanical failure: engine damaged")
         if car.auto_rebuild:
-            rebuild(world, d, cls, week)
+            msg = rebuild(world, d, cls, week)
+            if "don't have" in msg:
+                notes.append(msg)
     opt = cls.engine(car.engine)
-    if car.auto_rebuild and opt and opt.rebuild_races and car.engine_runs >= opt.rebuild_races:
-        rebuild(world, d, cls, week)
+    if car.auto_rebuild and opt and opt.rebuild_races and car.engine_runs >= opt.rebuild_races and car.engine_health > 0:
+        msg = rebuild(world, d, cls, week)
+        if "don't have" in msg:
+            notes.append(msg)
     return notes
 
 
@@ -212,11 +226,13 @@ def close_account(world: "World", d: "Driver") -> None:
     if car is None or car.account is None:
         return
     left = car.account
-    keep = min(max(left, 0.0), car.winnings) + 0.5 * max(0.0, left - car.winnings)
+    own = car.winnings + car.drawn     # winnings and the savings put in come back in full
+    keep = min(max(left, 0.0), own) + 0.5 * max(0.0, left - own)
     d.savings = max(0.0, d.savings + (keep if left >= 0 else left))
     log(car, 99, "Season closed: banked", keep if left >= 0 else left)
     car.account = None
     car.winnings = 0.0
+    car.drawn = 0.0
 
 
 # ---------------------------------------------------------------------- AI wrecks
@@ -248,7 +264,7 @@ def ai_wreck(world: "World", d: "Driver", series: "Series", cls: CarClass, crash
 def travel_per_night(world: "World", d: "Driver", series: "Series") -> float:
     """Tow money the player spends per night (the market's season travel estimate spread over the events)."""
     from ..career.market import season_cost_for
-    events = max(1, len(series.schedule))
+    events = max(1, series.template.events if series.scope == "track" else len(series.schedule))
     total = season_cost_for(world, d, series) - series.template.season_cost
     return max(0.0, total) / events
 
@@ -290,10 +306,18 @@ def _pay(d: "Driver", amount: float) -> bool:
         return True
     if d.car is not None and d.car.account is not None:
         return spend(d, amount)
-    if d.savings + d.available_funding() < amount:
+    if d.savings * 0.75 + d.available_funding() < amount:   # available_funding already counts 25% of savings
         return False
     charge(d, amount)
     return True
+
+
+def _settle(d: "Driver", price: float, trade: float) -> bool:
+    """Pay ``price`` less the trade-in; a trade-in worth more than the price comes back as money."""
+    if trade > price:
+        _refund(d, trade - price)
+        return True
+    return _pay(d, price - trade)
 
 
 def _refund(d: "Driver", amount: float) -> None:
@@ -329,13 +353,13 @@ def garage_action(world: "World", d: "Driver", action: str, key: Optional[str] =
             old = all_class(car.cls)
             trade = C.resale(car, old) if old else 0.0
         price = ch.usd + en.usd + sh.usd
-        account = car.account if car is not None else None
-        ledger = car.ledger if car is not None else []
-        if not _pay(d, max(0.0, price - trade)):
+        if not _settle(d, price, trade):
             return f"That package costs ${price:,.0f} (trade-in ${trade:,.0f}) - more than you have."
         new = C.build(cls, ch, en, sh, car.new_tires if car is not None else cls.tires.typical_new)
-        new.account, new.ledger, new.year = account, ledger, world.year
-        new.winnings = car.winnings if car is not None else 0.0
+        new.year = world.year
+        if car is not None:   # the season's money and history move to the new car (read after paying)
+            for attr in ("account", "ledger", "winnings", "drawn", "races", "auto_rebuild", "auto_repair", "reserve"):
+                setattr(new, attr, getattr(car, attr))
         d.car = new
         log(new, week, f"New car: {ch.label}, {en.label}, {sh.label} shocks"
             + (f" (trade-in ${trade:,.0f})" if trade else ""), -(price - trade))
@@ -349,7 +373,7 @@ def garage_action(world: "World", d: "Driver", action: str, key: Optional[str] =
         old = cls.chassis_opt(car.chassis)
         trade = (old.usd * max(0.15, 0.6 * 0.82 ** max(car.chassis_age - old.age, 0)) * (0.4 + 0.6 * car.condition / 100)
                  ) if old else 0.0
-        if not _pay(d, max(0.0, opt.usd - trade)):
+        if not _settle(d, opt.usd, trade):
             return f"{opt.label} costs ${opt.usd:,.0f} (old chassis fetches ${trade:,.0f})."
         car.chassis, car.chassis_q, car.chassis_age, car.condition = opt.key, opt.quality, opt.age, 100.0
         log(car, week, f"Chassis: {opt.label} (sold old for ${trade:,.0f})", -(opt.usd - trade))
@@ -360,7 +384,7 @@ def garage_action(world: "World", d: "Driver", action: str, key: Optional[str] =
             return "That engine isn't legal this season."
         cur = cls.engine(car.engine)
         trade = (cur.usd * 0.55 * (0.3 + 0.7 * car.engine_health / 100)) if cur else 0.0
-        if not _pay(d, max(0.0, opt.usd - trade)):
+        if not _settle(d, opt.usd, trade):
             return f"{opt.label} costs ${opt.usd:,.0f} (yours fetches ${trade:,.0f})."
         car.engine, car.engine_q, car.engine_runs, car.engine_health = opt.key, opt.quality, 0, 100.0
         log(car, week, f"Engine: {opt.label} (sold old for ${trade:,.0f})", -(opt.usd - trade))

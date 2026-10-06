@@ -15,6 +15,7 @@ from __future__ import annotations
 from typing import TYPE_CHECKING
 
 from ..world.entities import RETIRED, SIDELINED
+from ..rules.garage import target_class
 from . import lifecycle, market, programs, scouting, sponsorship
 
 if TYPE_CHECKING:
@@ -47,7 +48,7 @@ def begin_offseason(world: "World", results: "SeasonResults", summary: "YearSumm
         if 20 <= age <= 50 and d.team_id is None:
             # Working adults' hobby budgets grow with their careers.
             d.family_budget *= world.rng.uniform(1.0, 1.06)
-        if d.team_id is None and d.series_id and d.status != SIDELINED and not (d.is_player and d.car is not None):
+        if d.team_id is None and d.series_id and d.status != SIDELINED and not (d.is_player and target_class(world, d) is not None):
             # Racers in a cheaper class bank the surplus toward a bigger car.
             surplus = d.family_budget - world.series(d.series_id).template.season_cost
             if surplus > 0:
@@ -89,6 +90,8 @@ def _pay_from_savings(world: "World") -> None:
     for d in world.drivers.values():
         if d.status == RETIRED or not d.series_id or d.savings <= 0:
             continue
+        if d.is_player and target_class(world, d) is not None:
+            continue  # the racing account already took the savings it used
         need = market.season_outlay(world, d)
         other = d.family_budget + d.sponsor_money() + d.scholarship
         d.savings -= min(max(0.0, need - other), d.savings * 0.25)

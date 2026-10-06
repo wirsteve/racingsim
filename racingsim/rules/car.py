@@ -58,6 +58,7 @@ class Car:
     reserve: float = 0.0            # AI: money left this season for repairs
     account: Optional[float] = None  # player: this season's racing account (None = closed)
     winnings: float = 0.0           # player: purses and claims banked this season
+    drawn: float = 0.0              # player: savings put into this season's account
     year: int = 0                   # season the ledger is currently writing
     races: int = 0
     ledger: list = field(default_factory=list)  # player: [week, text, amount]

@@ -120,3 +120,38 @@ def test_garage_api_rejects_bad_input(tracks):
         assert server.handle("GET", "/api/knowledge/rules", {}, {})["points"]
     finally:
         server.STATE.game = None
+
+
+def test_garage_money_is_conserved(tracks):
+    """Regressions: buying a car mid-season pays from the account; trade-in surplus is refunded;
+    the savings share in the account really leaves savings and isn't charged twice."""
+    from racingsim.game.session import Game
+    from racingsim.rules.garage import garage_action
+    from racingsim.ui.garage_view import garage
+    g = Game.new("Money", "Check", "IA", 17, "dirt_oval", "comfortable", seed=13, scale=0.12, start_year=2016)
+    p = g.world.player
+    p.savings = 0.0
+    g.sim_week()
+    car = p.car
+    assert car.account is not None
+    before = car.account + p.savings
+    pk = garage(g)["packages"][-1]
+    trade = C.resale(car, all_classes()[car.cls])
+    msg = garage_action(g.world, p, "new_car", pk["key"])
+    assert msg.startswith("Bought")
+    after = p.car.account + p.savings
+    assert after == pytest.approx(before - pk["usd"] + trade, abs=1)
+
+    # Savings drawn into the account leave the bank once, and come back in full if unspent.
+    g2 = Game.new("Save", "Draw", "IA", 17, "dirt_oval", "comfortable", seed=14, scale=0.12, start_year=2016)
+    q = g2.world.player
+    g2.sim_until("season")          # close the first account
+    g2.choose("stay" if any(c["id"] == "stay" for c in g2.menu()["choices"]) else
+              next(c["id"] for c in g2.menu()["choices"] if c.get("current")))
+    q.savings = 100_000.0
+    from racingsim.rules.garage import close_account, open_account, target_class
+    q.car.account = None
+    open_account(g2.world, q, g2.world.series(q.series_id), target_class(g2.world, q))
+    assert q.savings == pytest.approx(75_000.0)
+    close_account(g2.world, q)
+    assert q.savings >= 100_000.0 - 1

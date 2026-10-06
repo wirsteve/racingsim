@@ -111,6 +111,9 @@ def garage(game: "Game") -> dict:
            "track": track.name if track else None, "year": w.year,
            "money": {"savings": round(d.savings), "available": round(d.available_funding())},
            "in_season": d.car is not None and d.car.account is not None}
+    if game.phase == "offseason":
+        out["hint"] = ("Off-season: pick next season's ride on the Off-season page first - the garage shows the class "
+                       "of the ride you've chosen, and a car for the wrong class is sold off when the season starts.")
     if d.car is not None and d.car.cls == cls.key:
         out["car"] = car_info(w, d, cls, track)
     elif d.car is not None:

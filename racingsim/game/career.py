@@ -286,7 +286,7 @@ def apply_action(world: "World", action: str, arg: Optional[str] = None) -> str:
         msg = pitch_for_player(world, d)
     elif action == "coach":
         cost = 5_000 * (1 + d.tier)
-        if d.savings + d.available_funding() < cost:
+        if d.savings * 0.75 + d.available_funding() < cost:
             return "You can't afford a coach right now."
         _spend(d, cost)
         m.player_actions.add("coach")
@@ -300,7 +300,7 @@ def apply_action(world: "World", action: str, arg: Optional[str] = None) -> str:
     elif action == "relocate":
         if not isinstance(arg, str) or arg not in world.geo.regions:
             return "Pick a region to move to."
-        if d.savings + d.available_funding() < 12_000:
+        if d.savings * 0.75 + d.available_funding() < 12_000:
             return "You can't afford the move."
         _spend(d, 12_000)
         r = world.geo.get(arg)

@@ -836,7 +836,7 @@ function renderGarage(g) {
   let carCard = "";
   if (car) {
     const e = car.engine, ch = car.chassis, ti = car.tires;
-    carCard = `<div class="card"><div class="card-head"><h3>Your ${esc(c.label.toLowerCase())}</h3><span>${rating(car.rating, { title: "Car rating at " + (g.track || "an average track") })}</span></div>
+    carCard = `<div class="card"><div class="card-head"><h3>Your ${esc(c.label.toLowerCase())}</h3><span>${rating(car.rating, { title: esc("Car rating at " + (g.track || "an average track")) })}</span></div>
       <p class="muted small" style="margin-top:0">Car rating ${g.track ? "at " + esc(g.track) : "at an average track"}: 50 is a typical competitive car in this class. Share of the car's speed at this track — chassis ${Math.round(ch.weight * 100)}%, engine ${Math.round(e.weight * 100)}%, tires ${Math.round(ti.weight * 100)}%, shocks ${Math.round(car.shocks.weight * 100)}%.</p>
       <dl class="kv">
         <dt>Chassis</dt><dd><b>${esc(ch.label)}</b> · quality ${ch.quality} · ${ch.age} season${ch.age === 1 ? "" : "s"} old<br>condition ${health(ch.condition)} ${ch.condition}%${ch.condition < 100 ? ` <button class="small" data-act="garage" data-a="repair">Repair (${usd(ch.repair_usd)})</button>` : ""}</dd>
@@ -867,6 +867,7 @@ function renderGarage(g) {
       ${car.ledger.length ? `<h4>Ledger</h4><div class="table-wrap" style="max-height:340px;overflow:auto"><table class="tbl"><tbody>${car.ledger.slice().reverse().map((l) => `<tr><td class="muted small nowrap">${l[3] || ""} ${l[0] === 99 ? "end" : l[0] ? "wk " + l[0] : ""}</td><td class="small">${esc(l[1])}</td><td class="num ${l[2] < 0 ? "neg" : "pos"}">${usd(l[2], 1)}</td></tr>`).join("")}</tbody></table></div>` : ""}</div>` : "";
   view(`<h1>Garage <span class="muted small">${esc(g.series.name)}</span></h1>
     ${g.message ? `<div class="callout">${esc(g.message)}</div>` : ""}
+    ${g.hint ? `<div class="callout">${esc(g.hint)}</div>` : ""}
     <div class="grid g-main"><div class="grid">${carCard}${pk}
       ${optTable("chassis", "Chassis", c.chassis, car && car.chassis.label)}
       ${optTable("engines", "Engines (rules " + yr + ")", c.engines, car && car.engine.label)}

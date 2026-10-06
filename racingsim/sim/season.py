@@ -255,7 +255,7 @@ class SeasonRunner:
         st = self.playoffs.get(s.id)
         acc = self.acc
         if st is None:
-            if idx + 1 != start:
+            if idx + 1 < start:
                 return
             rows = self.standings(s.id)
             field_: list[int] = []
@@ -286,7 +286,7 @@ class SeasonRunner:
             alive = set(st["alive"])
             st["final_order"] = [f.entry.drivers[0].id for f in finishes if f.entry.drivers[0].id in alive]
             return
-        if idx + 1 != st["next_cut"] or r >= len(fmt.rounds):
+        if idx + 1 < st["next_cut"] or r >= len(fmt.rounds):
             return
         keep = fmt.rounds[r]
         # Race winners in the round advance; the rest of the spots go on points.
@@ -299,7 +299,7 @@ class SeasonRunner:
             a = acc[d]
             a.points = fmt.base + 1000 * r + (0 if last else fmt.per_win * a.wins)
         st.update(alive=alive, round=r, wins0={d: acc[d].wins for d in alive},
-                  next_cut=st["next_cut"] + (fmt.round_races[r] if r < len(fmt.round_races) else 1))
+                  next_cut=idx + 1 + (fmt.round_races[r] if r < len(fmt.round_races) else 1))
         if self.world.player_id in st["field"]:
             me = self.world.player_id
             self.world.post("player", ("You advance in the playoffs" if me in alive else "You've been eliminated from the playoffs"),
@@ -344,9 +344,11 @@ class SeasonRunner:
                 if d.injury_races > 0:
                     continue
                 if d.is_player:
-                    if cls is not None and d.car is not None and not garage.can_race(d, cls):
-                        world.post("player", f"You couldn't afford to race at {track.name} - the account is empty"
-                                   + (" and the engine is blown" if d.car.engine_health <= 0 else ""),
+                    if cls is not None and d.car is not None and not garage.can_race(
+                            d, cls, garage.travel_per_night(world, d, s)):
+                        why = ("the engine is blown - rebuild or replace it in the Garage" if d.car.engine_health <= 0
+                               else "there isn't enough money left for entry, fuel and travel")
+                        world.post("player", f"You couldn't race at {track.name}: {why}",
                                    driver_id=d.id, series_id=sid, week=self.week, importance=2)
                         continue
                     pool.append(d)
@@ -357,14 +359,18 @@ class SeasonRunner:
                 keep = [d for d in pool if d.is_player]
                 pool = keep + rng.sample([d for d in pool if not d.is_player], cap - len(keep))
             for d in pool:
-                eq, mech = res.equipment[d.id], self.mech.get(d.id)
-                if d.is_player and cls is not None and d.car is not None:
-                    eq = garage.before_race(world, d, cls, track, self.week, garage.travel_per_night(world, d, s),
-                                            C.overhead_per_night(cls, tpl))
-                    mech = C.mech_risk(cls, d.car, track.sim.mechanical_stress)
-                entries.append(Entry([d], eq, mech=mech))
+                entries.append(Entry([d], res.equipment[d.id], mech=self.mech.get(d.id)))
         if len(entries) < 3:
             return None
+        if not tpl.team_based:
+            cls = garage.class_of(s)
+            for e in entries:
+                d = e.drivers[0]
+                if d.is_player and cls is not None and d.car is not None:
+                    # Pay for tonight only once we know the race runs.
+                    e.equipment = garage.before_race(world, d, cls, track, self.week,
+                                                     garage.travel_per_night(world, d, s), C.overhead_per_night(cls, tpl))
+                    e.mech = C.mech_risk(cls, d.car, track.sim.mechanical_stress)
         system = self.system(s)
         purse = self.purse(s)
         heat_pts: dict[int, float] = {}
@@ -617,9 +623,15 @@ def _crown_jewel(world: "World", runner: "SeasonRunner", cj) -> Optional[dict]:
     world.post("jewel", f"{winner.name} wins the {cj.name} at {track.name}", driver_id=winner.id,
                week=runner.week, importance=2)
     for pos, did in enumerate(order[:10], start=1):
+        pay = purse_for(pos, len(order), cj.purse_win) * 0.5
         a = acc.get(did)
         if a is not None:
-            a.purse += purse_for(pos, len(order), cj.purse_win) * 0.5
+            a.purse += pay
+        d = world.drivers[did]
+        if d.is_player and d.car is not None and d.car.account is not None and pay:
+            d.car.account += pay
+            d.car.winnings += pay
+            garage.log(d.car, runner.week, f"{cj.name} purse, P{pos}", pay)
     return runner._log(None, track, finishes, 0, jewel=cj.key, jewel_name=cj.name)
 
 
