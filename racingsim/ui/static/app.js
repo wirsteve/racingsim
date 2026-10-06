@@ -371,6 +371,8 @@ async function driverPage(id) {
       ${r.personality ? `<div class="card"><h3>Personality</h3><dl class="kv">${r.personality.map((p) => `<dt title="${esc(p.about)}">${esc(p.label)}</dt><dd>${p.value != null ? p.value + " · " : ""}${esc(p.word)}</dd>`).join("")}</dl>
         <p class="muted small">${r.exact ? "You know yourself." : "Paddock impressions, not numbers."} Work ethic and intelligence drive development; loyalty, greed and desire to win shape contract decisions; temper shows on track.</p>
         ${r.mood ? `<h4>Mood</h4><dl class="kv"><dt>Morale</dt><dd>${r.mood.morale != null ? r.mood.morale + " · " : ""}${esc(r.mood.word)}</dd>
+          ${r.mood.goal ? `<dt>Owner's goal</dt><dd>${esc(r.mood.goal.label)} <span class="muted small">(${r.mood.goal.year})</span>${r.mood.goal.result ? ` · <b>${esc(r.mood.goal.result)}</b>${r.mood.goal.pos ? ` (P${r.mood.goal.pos})` : ""}` : ""}</dd>` : ""}
+          ${r.mood.security_word ? `<dt>Job security</dt><dd>${r.mood.security != null ? r.mood.security + " · " : ""}${esc(r.mood.security_word)}</dd>` : ""}
           ${r.mood.suspension ? `<dt>Suspended</dt><dd>${r.mood.suspension} race${r.mood.suspension === 1 ? "" : "s"}</dd>` : ""}
           <dt>Rivals</dt><dd>${r.mood.rivals.length ? r.mood.rivals.map((x) => `${driverLink(x.id, x.name)} <span class="muted small">(${esc(x.word)})</span>`).join(", ") : "<span class=\"muted\">none</span>"}</dd></dl>
           <p class="muted small">Confident drivers are a little faster and develop faster. Get wrecked and you remember who did it.</p>` : ""}</div>` : ""}

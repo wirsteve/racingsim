@@ -151,12 +151,15 @@ class Driver:
     rivals: dict[int, float] = field(default_factory=dict)       # driver id -> grudge heat 0-100
     suspension: int = 0                                          # races left on a suspension
     awards: list[str] = field(default_factory=list)              # "2027 Cup Series Rookie of the Year"
+    goal: dict = field(default_factory=dict)                     # this season's owner goal (career/goals.py)
+    job_security: float = 60.0                                   # 0-100: how safe the seat is
 
     def __setstate__(self, state: dict) -> None:
         # Saves from before OOTP-style ratings: per-skill data is created lazily (skills.ensure).
         for k in ("skills", "track_skill", "personality", "rivals"):
             state.setdefault(k, {})
         state.setdefault("awards", [])
+        state.setdefault("goal", {})
         self.__dict__.update(state)
 
     @property

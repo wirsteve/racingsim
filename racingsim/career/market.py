@@ -27,7 +27,7 @@ from ..constants import TIER_STRENGTH
 from ..util import clamp, haversine_mi
 from ..world.entities import ACTIVE, PART_TIME, RETIRED, SIDELINED, Driver, Team
 from ..world.regions import travel_cost
-from . import morale
+from . import goals, morale
 from .scouting import categorize, is_aware, perceived_level, rate_for_team
 
 if TYPE_CHECKING:
@@ -379,6 +379,11 @@ def _tick_contracts(world: "World", queue: list, summary: "YearSummary") -> None
                         coverage.pop(d.id, None)
             elif not release and d.seat_funded and perf < -1.4 and rng.random() < 0.35:
                 release, reason = True, "was released for poor results"
+            elif not release and rng.random() < goals.fire_chance(d):
+                release, reason = True, "was fired after missing the owner's goals"
+                if d.is_player:
+                    world.post("player", f"{team.name} have let you go: the results weren't there", driver_id=d.id,
+                               importance=3)
             if release:
                 if tpl.tier >= 4 and reason:
                     d.log(world.year, f"{reason} at {team.name} ({world.series(team.series_id).name})")

@@ -95,9 +95,12 @@ def scouted(world: "World", d: Driver) -> dict:
 
 def _mood(world: "World", d: Driver, exact: bool) -> dict:
     """Mood is public (the media reports it); the number is only known for your own driver."""
-    from ..career import morale
+    from ..career import goals, morale
+    g = goals.view(d)
     return {"morale": round(morale.morale(d)) if exact else None, "word": morale.word(morale.morale(d)),
-            "rivals": morale.rivals_view(world, d), "suspension": d.suspension}
+            "rivals": morale.rivals_view(world, d), "suspension": d.suspension,
+            "goal": g["goal"] if d.team_id is not None or (g["goal"] or {}).get("result") else None,
+            "security": g["security"] if exact else None, "security_word": g["word"] if d.team_id is not None else None}
 
 
 def driver_row(world: "World", d: Driver) -> dict:
