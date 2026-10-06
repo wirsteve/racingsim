@@ -138,7 +138,8 @@ def close_books(world: "World", results) -> None:
                     gap = seat_gap(t, tpl, seat_role(tpl, slot))
                     brought += max(0.0, gap) * clamp(world.seat_coverage.get(d.id, 1.0), 0, 1)
             charter = t.charters * charter_pay(year, pct) if sid == "cup_series" else 0.0
-            owner = OWNER_SUBSIDY.get(t.owner_type, 0.08) * tpl.season_cost * t.cars
+            # The player's own team: the owner's money is the player's savings (game/owner.py settle).
+            owner = 0.0 if t.player_owned else OWNER_SUBSIDY.get(t.owner_type, 0.08) * tpl.season_cost * t.cars
             sponsors = max(0.05 * raised, raised - charter - owner)
             merch = MERCH_TEAM_PER_FAN * 1000 * sum(d.fans for d in drivers)
             mfr = MANUFACTURER_SHARE * tpl.season_cost * t.cars if (t.manufacturer_id and tpl.tier >= 5) else 0.0
@@ -166,9 +167,14 @@ def close_books(world: "World", results) -> None:
                       + 35 * math.log2(max(t.spend, 0.05) / max(median, 0.05)))
             t.equipment = round(clamp(t.equipment + 0.35 * (target - t.equipment) + rng.gauss(0, 2), 8, 98), 1)
             _sponsors(world, t, tpl, pct, drivers, sponsor_median)
+            if t.player_owned:
+                from ..game import owner as owner_mode
+                owner_mode.settle(world, t, tpl)
             budget = earned + (0.3 * t.cash if t.cash > 0 else 0.4 * t.cash)
+            if t.player_owned:
+                budget *= {"lean": 0.8, "normal": 1.0, "push": 1.25}.get(t.budget_mode, 1.0)
             t.spend = round(clamp((budget - salaries) / max(1.0, tpl.season_cost * t.cars), SPEND_MIN, SPEND_MAX), 3)
-            if t.cash < -0.6 * tpl.season_cost * t.cars:
+            if t.cash < -0.6 * tpl.season_cost * t.cars and not t.player_owned:
                 _sold(world, t, tpl)
     # Drivers' own merchandise money.
     for d in world.drivers.values():

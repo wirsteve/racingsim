@@ -113,6 +113,10 @@ python -m pytest -q                                     # run the tests
   engine builders, driver coaches and medical staff, with ratings, styles and a staff market.
   Morale, rivalries, paybacks with fines and suspensions, team chemistry, and contracts shaped
   by loyalty and ambition.
+* **The economic loop**: every team keeps books (sponsors, Cup charters from 2016, owner
+  money, purses, merchandise from fan bases, manufacturer support) against running costs, staff
+  and salaries; spending buys next year's speed; broke owners sell. Owners set goals and fire
+  drivers on the hot seat. **Owner mode**: start, run and sell your own team, and drive for it.
 * **Long memory**: PAR (positions above replacement, a racing WAR), track-type splits, records
   books, a yearly almanac, awards (Rookie of the Year, Most Popular Driver, Driver of the Year),
   milestones, winners by track and a Hall of Fame.

@@ -205,7 +205,8 @@ def status(game: "Game") -> dict:
         out["player"] = {"id": p.id, "name": p.name, "age": p.age(w.year), "status": p.status,
                          "series": series_brief(w, p.series_id), "team": team_brief(w, p.team_id),
                          "funding": money(p.available_funding()), "reputation": round(p.reputation),
-                         "next_race_week": runner.next_week_for(p) if game.phase == "season" else None}
+                         "next_race_week": runner.next_week_for(p) if game.phase == "season" else None,
+                         "owned_team": team_brief(w, w.__dict__.get("owned_team_id"))}
     return out
 
 

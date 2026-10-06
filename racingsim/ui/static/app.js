@@ -163,7 +163,8 @@ function renderChrome() {
     pc.innerHTML = `<div class="pc"><div class="name">${esc(p.name)}</div>
       <div class="meta">Age ${p.age} · ${statusBadge(p.status)}</div>
       <div class="line">${p.series ? `${tierBadge(p.series.tier, p.series.tier_name)} ${esc(p.series.name)}` : '<span class="meta">No ride</span>'}</div>
-      <div class="line meta">${p.team ? esc(p.team.name) : "Own car"} · ${money(p.funding)} budget</div></div>`;
+      <div class="line meta">${p.team ? esc(p.team.name) : "Own car"} · ${money(p.funding)} budget</div>
+      ${p.owned_team ? `<div class="line meta">Owner: <a class="link" href="#/team/${p.owned_team.id}">${esc(p.owned_team.name)}</a></div>` : ""}</div>`;
   } else pc.innerHTML = "";
 }
 
@@ -437,6 +438,7 @@ function renderOffseason(o) {
   const teams = o.choices.filter((c) => c.kind === "team");
   const selfs = o.choices.filter((c) => c.kind === "self");
   const stay = o.choices.find((c) => c.kind === "stay");
+  const ownSeat = o.choices.find((c) => c.kind === "own_team");
   const s = o.season;
   const me = o.driver;
   const recap = s ? `<div class="callout"><b>${S.status.year} season:</b> P${s.pos} of ${s.field} in the ${esc(s.series.name)} — ${s.wins} wins, ${s.top5} top-5s in ${s.starts} starts (avg finish ${s.avg_finish}).${s.champion ? " <b>Champion!</b> 🏆" : ""}</div>`
@@ -460,6 +462,8 @@ function renderOffseason(o) {
       <div class="grid">
         ${stay ? `<div class="card"><h3>Your contract</h3><p>You're under contract with ${teamLink(stay.team)} in the ${seriesLink(stay.series)} (${stay.contract_years} more season${stay.contract_years > 1 ? "s" : ""}). Only a promotion will pry you loose.</p>
           <button class="primary" data-act="choose" data-id="stay">Stay put</button></div>` : ""}
+        ${ownSeat ? `<div class="card"><h3>Your own team</h3><p>Drive for ${teamLink(ownSeat.team)} in the ${seriesLink(ownSeat.series)}. The car is yours: no salary, and any losses come out of your savings.</p>
+          <button class="primary" data-act="choose" data-id="own_team">Drive my own car</button></div>` : ""}
         <div class="card"><div class="card-head"><h3>Team offers (${teams.length})</h3><span class="muted small">Owners who would pick you over the competition right now</span></div>
           ${teams.length ? `<div class="offers">${teams.map(offerCard).join("")}</div>` : `<div class="empty">No team wants you yet. Win, get seen at crown jewels, bring money, or build connections.</div>`}
         </div>
@@ -482,6 +486,7 @@ function renderOffseason(o) {
         <div class="card"><h3>Off-season actions</h3><p class="muted small">One of each per off-season. Do these before choosing a ride — owners re-evaluate you.</p>
           ${o.actions.map((a) => `<div style="margin:10px 0"><div><b>${esc(a.label)}</b></div><div class="muted small">${esc(a.detail)}</div>
             ${a.id === "relocate" ? `<select id="relocate-to" ${a.used ? "disabled" : ""}>${o.regions.map((r) => `<option value="${r.code}" ${r.code === me.home ? "selected" : ""}>${esc(r.name)}${Object.keys(r.hubs || {}).length ? " ★ hub" : ""}</option>`).join("")}</select>` : ""}
+            ${a.options ? `<select id="act-arg-${esc(a.id)}" ${a.used ? "disabled" : ""}>${a.options.map((x) => `<option value="${esc(x.value)}">${esc(x.label)}</option>`).join("")}</select>` : ""}
             <button class="small" style="margin-top:6px" data-act="action" data-id="${a.id}" ${a.used ? "disabled" : ""}>${a.used ? "Done" : "Do it"}</button></div>`).join("")}
         </div>
         <div class="card"><h3>Where you stand</h3>
@@ -510,7 +515,8 @@ on("retire", async () => {
 });
 on("action", async (el) => {
   const id = el.dataset.id;
-  const arg = id === "relocate" ? $("#relocate-to").value : undefined;
+  const argEl = $("#act-arg-" + id);
+  const arg = id === "relocate" ? $("#relocate-to").value : argEl ? argEl.value : undefined;
   el.classList.add("busy");
   try {
     const r = await api("offseason", { action: id, arg });

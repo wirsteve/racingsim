@@ -216,6 +216,8 @@ class Team:
     spend: float = 0.0          # spending level: 1.0 = the series' full-season cost per car
     charters: int = 0           # Cup charters held (2016 on)
     books: list[dict] = field(default_factory=list)  # one ledger per season
+    player_owned: bool = False  # owner mode (game/owner.py)
+    budget_mode: str = "normal"
 
     def __setstate__(self, state: dict) -> None:
         state.setdefault("books", [])   # saves from before team finances
