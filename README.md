@@ -26,6 +26,7 @@ unpublished project; see [`LICENSING_IP_REVIEW.md`](LICENSING_IP_REVIEW.md).
 | [`LICENSING_IP_REVIEW.md`](LICENSING_IP_REVIEW.md) | IP/licensing notes (personal project — kept as good practice) |
 | [`docs/DATA_PIPELINE.md`](docs/DATA_PIPELINE.md) | **The racing data layer:** what was collected, sources used and skipped, validation, confidence, gaps, commands |
 | [`docs/DATA_MODEL.md`](docs/DATA_MODEL.md) | Schemas: Series, SanctioningBody, Track, CarClass, CareerStage, CareerPath, Transition, AdvancementFactor, Season, Race, HistoricalDriver/Team, provenance |
+| [`docs/OOTP_DEPTH_PLAN.md`](docs/OOTP_DEPTH_PLAN.md) | **The OOTP-depth plan:** OOTP's systems vs ours, the lap-by-lap engine and ratings (phase 1), and the roadmap |
 | [`docs/RULES_AND_MONEY.md`](docs/RULES_AND_MONEY.md) | **Cars, rules and money:** class rules, parts, tires, wear and wrecks, real points systems and playoffs, purses — and the evidence behind them |
 | [`docs/DATA_REPORT.md`](docs/DATA_REPORT.md) | Generated coverage/confidence report (`python -m racingsim data report`) |
 | [`data/CREDITS.md`](data/CREDITS.md) | Data sources and licences |
@@ -102,6 +103,12 @@ python -m pytest -q                                     # run the tests
   Truck Series; CART/Champ Car, IRL/IndyCar, Indy Lights, Star/Pro Mazda and USF2000.
   Rosters, standings and calendars, plus 2,500 driver bios. Built from Wikipedia and
   Wikidata with the scrapers in [`tools/history/`](tools/history/).
+* **Lap-by-lap racing** (`racingsim/sim/engine.py`): qualifying, tire falloff, fuel windows,
+  pit cycles, passing against track difficulty, cautions, superspeedway big ones, restarts,
+  stages, box scores (laps led, average running position, passes, driver rating) and
+  play-by-play, calibrated against real NASCAR data.
+* **OOTP-style driver ratings**: 12 component skills with current/potential, track-type
+  splits, personality, scouted 20–80 display; real drivers rated from their actual results.
 * **Cars built to real rules** (`data/rules/`): 19 car classes from 126 researched rulebook
   records (track house rules and sanctioning rulebooks), 155 part prices and lifespans, 332
   sources. Chassis, engine packages (built, crate, sealed, spec, claimer — legal by year),

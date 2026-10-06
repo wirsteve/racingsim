@@ -135,6 +135,19 @@ research must be recorded in the repository.
 | R11.5 | Purses from published payout sheets, carried across eras with researched drift (weekly purses flat, tour purses ~75% of cost inflation); tow money, points funds. | [x] |
 | R11.6 | Rules evidence browsable in the Encyclopedia ("Rules & money") and checked by `python -m racingsim data validate`. | [x] |
 
+## R12: OOTP-level depth (see `docs/OOTP_DEPTH_PLAN.md`)
+
+| ID | Requirement | Status |
+|----|-------------|--------|
+| R12.1 | Component driver ratings (current/potential), track-type splits, personality; scouted display. | [x] |
+| R12.2 | Real drivers rated from race-by-race results. | [x] |
+| R12.3 | Lap-by-lap race engine with box scores, play-by-play and loop-data stats, calibrated to real data. | [x] |
+| R12.4 | Staff (crew chief, engineer, spotter, pit crew, engine builder, coach) with ratings and styles. | [ ] |
+| R12.5 | Morale, chemistry, contract negotiation driven by personality; on-track feuds and penalties. | [ ] |
+| R12.6 | Splits, value metric, records, almanac, awards, Hall of Fame. | [ ] |
+| R12.7 | Team finances, fan base, owner goals, owner mode. | [ ] |
+| R12.8 | Scouting staff and budgets, development programs, realism settings, weather. | [ ] |
+
 ## Known gaps (tracked for the next iteration)
 
 * Agents/managers are modelled implicitly (an awareness boost for drivers with
