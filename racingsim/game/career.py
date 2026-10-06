@@ -27,7 +27,7 @@ if TYPE_CHECKING:
     from ..world.world import World, YearSummary
 
 BACKGROUNDS = {
-    "modest": ("Working-class family", "Every dollar is hard to find. Cheap classes, used parts.", 4_000),
+    "modest": ("Working-class family", "Every dollar is hard to find. Cheap classes, used parts.", 6_500),
     "middle": ("Middle-class family", "Weekends at the track are the family hobby.", 12_000),
     "comfortable": ("Comfortable family", "Enough to run a competitive local programme.", 35_000),
     "wealthy": ("Wealthy family", "Can fund a serious regional or junior-formula programme.", 150_000),
@@ -55,7 +55,12 @@ def create_player(world: "World", first: str, last: str, region: str, age: int, 
         raise ValueError(f"unknown background {background!r}")
     if discipline not in START_DISCIPLINES:
         raise ValueError(f"unknown discipline {discipline!r}")
-    age = int(clamp(age, 5, 50))
+    age = int(age)
+    lo, hi = entry_ages(world, discipline)
+    if not lo <= age <= hi:
+        raise ValueError(f"{START_DISCIPLINES[discipline].split(' (')[0]} entry classes take drivers aged {lo}-{hi}.")
+    if talent not in TALENTS:
+        raise ValueError(f"unknown talent {talent!r}")
     rng = world.rng
     reg = world.geo.get(region)
     if age < 18:
@@ -84,6 +89,15 @@ def create_player(world: "World", first: str, last: str, region: str, age: int, 
     return d
 
 
+def entry_ages(world: "World", discipline: str) -> tuple[int, int]:
+    """Age range of the entry-level (tier 0-1) self-run classes of a discipline."""
+    tpls = [t for t in world.pyramid.templates.values()
+            if t.discipline == discipline and t.tier <= 1 and not t.team_based]
+    if not tpls:
+        return 5, 50
+    return min(t.min_age for t in tpls), min(50, max(t.max_age or 50 for t in tpls))
+
+
 def _place_entrant(world: "World", d: Driver, discipline: str) -> None:
     from ..career.market import enter_self_run, self_run_options
     # Age for the coming (current) season, not the next one.
@@ -91,15 +105,13 @@ def _place_entrant(world: "World", d: Driver, discipline: str) -> None:
     try:
         options = [o for o in self_run_options(world, d, entrant=True, player_view=True)
                    if o["series"].discipline == discipline]
-        if not options:
-            options = self_run_options(world, d, entrant=True, player_view=True)
     finally:
         d.birth_year -= 1
     if not options:
         del world.drivers[d.id]
         world.player_id = None
-        raise ValueError("No affordable series near that home town for that age. "
-                         "Try a different discipline, age, or family background.")
+        raise ValueError(f"Your family can't stretch to a {START_DISCIPLINES[discipline].split(' (')[0].lower()} "
+                         "season from that home town. Try a cheaper discipline or a different background.")
     # Nearest, cheapest sensible entry: highest value among affordable options.
     # Highest entry class the family can properly afford; cheaper if tied.
     best = max(options, key=lambda o: (o["afford"] >= 0.8, o["series"].tier, -o["cost"]))

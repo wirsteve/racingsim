@@ -199,7 +199,9 @@ async function dashboardPage() {
   const mine = d.my_standing;
   const stRows = standings.slice();
   if (mine && !stRows.find((r) => r.is_player)) stRows.push(mine);
-  const callout = !me.series ? `<div class="callout">You don't have a ride this season. Use the off-season to find one — or pitch sponsors to afford one.</div>` : "";
+  const retired = me.status === "retired";
+  const callout = retired ? `<div class="callout">You've hung up the helmet. The world keeps turning — follow the drivers you raced with, or <a class="link" href="#/new">start a new career</a>.</div>`
+    : !me.series ? `<div class="callout">You don't have a ride this season. Use the off-season to find one — or pitch sponsors to afford one.</div>` : "";
   view(`
     ${callout}
     ${heroCard(me)}
@@ -217,14 +219,14 @@ async function dashboardPage() {
       </div>
       <div class="grid">
         ${(d.advice || []).length ? `<div class="card"><h3>Paddock talk</h3><ul class="timeline">${d.advice.map((a) => `<li>${esc(a)}</li>`).join("")}</ul></div>` : ""}
-        ${d.status.phase === "season" ? `<div class="card"><h3>Combines & shootouts</h3><p class="muted small" style="margin-top:0">Apply now; they run at the end of the season. An application guarantees an invite — you still have to win.</p>
+        ${d.status.phase === "season" && !retired ? `<div class="card"><h3>Combines & shootouts</h3><p class="muted small" style="margin-top:0">Apply now; they run at the end of the season. An application guarantees an invite — you still have to win.</p>
           ${(d.opportunities || []).map((o) => `<div class="news-item"><div style="flex:1"><div><b>${esc(o.name)}</b></div>
             <div class="muted small">${o.winners > 1 ? `Top ${o.winners} each get` : "Winner gets"} ${money(o.award)} toward the ${esc(o.target || "next step")} · ages ${o.min_age}–${o.max_age}</div>
             ${o.eligible ? `<label class="small" style="display:flex;gap:6px;align-items:center;margin-top:4px"><input type="checkbox" data-change="apply" data-key="${o.key}" ${o.applied ? "checked" : ""}> Apply</label>`
               : `<div class="muted small">Needs ${esc(o.why_not)}</div>`}</div></div>`).join("")}</div>` : ""}
         <div class="card"><div class="card-head"><h3>Crown jewels</h3><a class="link small" href="#/jewels">All →</a></div>
           ${(() => { const up = d.jewels.filter((j) => !j.done); const el = up.filter((j) => j.eligible);
-            return jewelList(el.slice(0, 5), true) + (up.length > el.length ? `<div class="muted small" style="margin-top:8px">${up.length - el.length} more this season you can't enter yet.</div>` : ""); })()}</div>
+            return jewelList(el.slice(0, 5), true) + (!retired && up.length > el.length ? `<div class="muted small" style="margin-top:8px">${up.length - el.length} more this season you can't enter yet.</div>` : ""); })()}</div>
         <div class="card"><div class="card-head"><h3>News wire</h3><a class="link small" href="#/news">All →</a></div>${newsList(d.news.slice(0, 14))}</div>
       </div>
     </div>`);
@@ -268,7 +270,7 @@ function scheduleTable(id, rows, series, results) {
   if (results) {
     cols.push({ key: "winner", label: "Winner", render: (r) => (r.winner ? driverLink(r.winner.id, r.winner.name) : "—"), sort: (r) => r.winner?.name });
     cols.push({ key: "player_pos", label: "You", num: true, render: (r) => posCell(r.player_pos) });
-    cols.push({ key: "x", label: "", nosort: true, render: (r) => (r.winner && series ? `<a class="link small" href="#/race/${encodeURIComponent(series.id)}/${r.event}">Results</a>` : "") });
+    cols.push({ key: "x", label: "", nosort: true, render: (r) => (r.winner && r.has_results && series ? `<a class="link small" href="#/race/${encodeURIComponent(series.id)}/${r.event}">Results</a>` : "") });
   }
   return table(id, cols, rows, { empty: results ? "No races yet." : "No more races this season." });
 }
@@ -562,7 +564,7 @@ on("pyr", (el) => { location.hash = el.dataset.single ? `#/series/${encodeURICom
 
 async function instancesPage(key) {
   const rows = await api("instances/" + key);
-  view(`<h1>${esc(rows[0] ? rows[0].name.replace(/^.*? (?=[A-Z][a-z]+ [A-Z])/, "") : key)}</h1>
+  view(`<h1>${esc(rows[0] ? rows[0].type : key)}</h1>
     <p class="muted">${rows.length} championships of this type. Local divisions are named after their real track.</p>
     <div class="toolbar"><input id="inst-q" placeholder="Filter by name or state…" data-change="instq"></div>
     <div class="card flush">${table("inst", [
@@ -596,7 +598,7 @@ async function driversPage() {
       <input type="number" style="width:64px" value="${q.max_age || ""}" placeholder="max" data-change="drvq" data-k="max_age">
     </div>
     <div class="card flush">${driversTable("drivers", res.rows)}
-      <div class="pager"><span class="muted small">${res.total.toLocaleString()} drivers · showing ${q.offset + 1}–${Math.min(q.offset + q.limit, res.total)}</span>
+      <div class="pager"><span class="muted small">${res.total.toLocaleString()} drivers · ${res.total ? `showing ${q.offset + 1}–${Math.min(q.offset + q.limit, res.total)}` : "no matches"}</span>
       <button class="small" data-act="drvpage" data-d="-1" ${q.offset === 0 ? "disabled" : ""}>‹ Prev</button>
       <button class="small" data-act="drvpage" data-d="1" ${q.offset + q.limit >= res.total ? "disabled" : ""}>Next ›</button></div></div>`);
 }
@@ -697,7 +699,7 @@ async function trackPage(id) {
         <h3 style="margin-top:12px">Raced here in this world</h3>
         ${t.jewels.length ? `<div class="chips" style="margin-bottom:8px">${t.jewels.map((j) => `<span class="chip">💎 ${esc(j)}</span>`).join("")}</div>` : ""}
         ${t.series.length ? t.series.slice(0, 20).map((x) => `<div class="small">${tierBadge(x.tier)} ${seriesLink(x)}</div>`).join("") : '<div class="muted">No series in this world race here.</div>'}
-        ${f.lat !== null ? `<div style="margin-top:12px">${mapSvg([{ ...f, id: t.id, name: t.name, type: f.track_type, prestige: p.prestige }], { big: true })}</div>` : ""}</div>
+        ${f.lat !== null && f.lon > -128 && f.lon < -56 && f.lat > 23.5 && f.lat < 56 ? `<div style="margin-top:12px">${mapSvg([{ ...f, id: t.id, name: t.name, type: f.track_type, prestige: p.prestige }], { big: true })}</div>` : ""}</div>
     </div>`);
 }
 
@@ -739,7 +741,10 @@ async function newPage() {
   const reg = st.regions.find((r) => r.code === NEW.region) || st.regions[0];
   const cards = (key, items, label = (i) => i.label, detail = (i) => i.detail) =>
     `<div class="choice-cards">${items.map((i) => `<div class="choice-card ${NEW[key] === i.id ? "on" : ""}" data-act="pick" data-k="${key}" data-v="${i.id}"><div class="t">${esc(label(i))}</div><div class="d">${detail(i)}</div></div>`).join("")}</div>`;
-  const ageHint = NEW.age < 7 ? "Karting and quarter midgets" : NEW.age < 12 ? "Karting, quarter midgets, Bandoleros, micro sprints" : NEW.age < 16 ? "Legends, limited late models, junior classes" : "Street stocks, hobby stocks, club racing";
+  const disc = st.disciplines.find((x) => x.id === NEW.discipline) || st.disciplines[0];
+  const fits = (x) => NEW.age >= x.min_age && NEW.age <= x.max_age;
+  const open = (disc.classes || []).filter((c) => NEW.age >= c.min_age && (c.max_age == null || NEW.age <= c.max_age)).map((c) => c.name);
+  const ageHint = fits(disc) ? `${disc.label.split(" (")[0]} at ${NEW.age}: ${open.join(", ") || "entry classes"}` : `${disc.label.split(" (")[0]} entry classes take ages ${disc.min_age}-${disc.max_age} — pick another discipline or age.`;
   view(`<h1>Start a racing career</h1>
     <p class="muted">Every career starts somewhere. Pick where you grew up, how old you are when you start, and how much money your family can put into it. Talent is hidden unless you choose otherwise.</p>
     <div class="grid g-main">
@@ -750,9 +755,9 @@ async function newPage() {
           <label class="field">Start year<select data-change="newf" data-k="start_year">${st.years.slice().reverse().map((y) => `<option value="${y}" ${Number(NEW.start_year) === y ? "selected" : ""}>${y}${st.history_years.includes(y) ? " · real national rosters" : ""}</option>`).join("")}</select>
             <span class="muted small">Born ${NEW.start_year - NEW.age}. ${st.history_years.includes(Number(NEW.start_year)) ? "The national series start with that season's real teams and drivers." : "National series start with generated drivers."}</span></label>
           <label class="field">Home<select data-change="newf" data-k="region">${st.regions.map((r) => `<option value="${r.code}" ${r.code === NEW.region ? "selected" : ""}>${esc(r.name)}${r.country === "CAN" ? " (Canada)" : ""}</option>`).join("")}</select></label>
-          <label class="field">Starting age: <b>${NEW.age}</b><input type="range" min="5" max="40" value="${NEW.age}" data-change="newf" data-k="age"><span class="muted small">${ageHint}</span></label>
+          <label class="field">Starting age: <b>${NEW.age}</b><input type="range" min="5" max="50" value="${NEW.age}" data-change="newf" data-k="age"><span class="muted small">${ageHint}</span></label>
         </div>
-        <h3 style="margin-top:18px">Where you start racing</h3>${cards("discipline", st.disciplines, (i) => i.label.split(" (")[0], (i) => esc((i.label.match(/\((.*)\)/) || [, ""])[1]))}
+        <h3 style="margin-top:18px">Where you start racing</h3>${cards("discipline", st.disciplines, (i) => i.label.split(" (")[0], (i) => esc((i.label.match(/\((.*)\)/) || [, ""])[1]) + `<br><span class="${fits(i) ? "muted" : "warn-text"}">ages ${i.min_age}-${i.max_age}</span>`)}
         <h3 style="margin-top:18px">Family background</h3>${cards("background", st.backgrounds, (i) => i.label, (i) => `${esc(i.detail)}<br><b>${money(i.budget, st.price_index[NEW.start_year])}</b>/season <span class="muted">(${NEW.start_year} dollars)</span>`)}
         <h3 style="margin-top:18px">Talent</h3>${cards("talent", st.talents, (i) => i.label, (i) => esc(i.detail))}
         <h3 style="margin-top:18px">World</h3>

@@ -222,7 +222,7 @@ def match_track(tracks, name: Optional[str], city: Optional[str], state: Optiona
     n = _norm(name)
     by_name = _name_index(tracks)
     road_hint = any(k in _norm(race) + " " + n for k in ("road course", "roval", "grand prix", "road"))
-    cands = by_name.get(n)
+    cands = [t for t in by_name.get(n, []) if t.facts.available_in(year)] or by_name.get(n)
     if not cands:
         for alias, canon in ALIASES.items():
             if alias in n:
@@ -233,6 +233,8 @@ def match_track(tracks, name: Optional[str], city: Optional[str], state: Optiona
         toks = _tokens(name)
         best, best_score = None, 0.0
         for t in tracks:
+            if not t.facts.available_in(year):
+                continue  # a venue that did not exist (or was idle) that year
             tt = _tokens(t.facts.name) | {x for a in t.facts.aliases for x in _tokens(a)}
             score = len(toks & tt) / max(1, len(toks))
             if city and t.facts.city and _norm(city) == _norm(t.facts.city):

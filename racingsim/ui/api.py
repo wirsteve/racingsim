@@ -210,6 +210,7 @@ def schedule(world: "World", sid: str) -> list[dict]:
         if e:
             wd = world.drivers[e["winner"]]
             item["winner"] = {"id": wd.id, "name": wd.name}
+            item["has_results"] = "results" in e
             if e.get("player"):
                 me = next((r for r in e.get("results", []) if world.drivers[r[0]].is_player
                            or world.player_id in r[4]), None)
@@ -225,7 +226,7 @@ def race_result(world: "World", key: str, event: int, year: Optional[int] = None
     else:
         logs = world.race_logs.get(year, {})
     for e in logs.get(key, []):
-        if e["event"] == event:
+        if e["event"] == event and "results" in e:
             rows = []
             for did, tid, pos, dnf, co in e.get("results", []):
                 d = world.drivers[did]
@@ -445,7 +446,8 @@ def series_instances(world: "World", key: str) -> list[dict]:
         if s.scope == "track":
             t = world.tracks.get(s.region_key)
             region = t.facts.region
-        out.append({"id": s.id, "name": s.name, "drivers": counts[s.id], "region": region or s.region_key})
+        out.append({"id": s.id, "name": s.name, "drivers": counts[s.id], "region": region or s.region_key,
+                    "type": s.template.name.replace("{track} ", "").replace("{region} ", "")})
     out.sort(key=lambda x: (x["region"] or "", x["name"]))
     return out
 
@@ -570,6 +572,20 @@ def regions(world: "World") -> list[dict]:
             for r in sorted(world.geo.regions.values(), key=lambda r: (r.country != "USA", r.name))]
 
 
+def _entry_classes(discipline: str) -> dict:
+    """Entry-level classes of a starting discipline with their age windows (for the wizard)."""
+    from ..world.series import load_templates
+    loaded = load_templates()
+    tpls = loaded[0] if isinstance(loaded, tuple) else loaded
+    tpls = tpls.values() if isinstance(tpls, dict) else tpls
+    entry = [t for t in tpls if t.discipline == discipline and t.tier <= 1 and not t.team_based]
+    if not entry:
+        return {"min_age": 5, "max_age": 50, "classes": []}
+    return {"min_age": min(t.min_age for t in entry), "max_age": min(50, max(t.max_age or 50 for t in entry)),
+            "classes": [{"name": t.name.replace("{track} ", "").replace("{region} ", ""), "min_age": t.min_age,
+                         "max_age": t.max_age, "cost": t.season_cost} for t in sorted(entry, key=lambda t: t.min_age)]}
+
+
 def setup_options() -> dict:
     from ..history.economy import price_index
     from ..world.regions import Geography
@@ -585,7 +601,7 @@ def setup_options() -> dict:
         "history_years": hist_years,
         "backgrounds": [{"id": k, "label": v[0], "detail": v[1], "budget": v[2]} for k, v in career.BACKGROUNDS.items()],
         "talents": [{"id": k, "label": v[0], "detail": v[1]} for k, v in career.TALENTS.items()],
-        "disciplines": [{"id": k, "label": v} for k, v in career.START_DISCIPLINES.items()],
+        "disciplines": [{"id": k, "label": v, **_entry_classes(k)} for k, v in career.START_DISCIPLINES.items()],
         "regions": [{"code": r.code, "name": r.name, "country": r.country, "macro": r.macro_region,
                      "culture": r.culture, "hubs": r.industry_hubs, "description": geo.macro_descriptions.get(r.macro_region)}
                     for r in sorted(geo.regions.values(), key=lambda r: (r.country != "USA", r.name))],

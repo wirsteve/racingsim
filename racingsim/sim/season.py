@@ -243,7 +243,8 @@ class SeasonRunner:
                 [f.entry.drivers[0].id, f.entry.team_id, f.position, f.dnf,
                  [d.id for d in f.entry.drivers[1:]]]
                 for f in finishes]
-            self.race_log[jewel or s.id].append(info)
+        # Weekly local divisions keep just the winner (full results only where someone looks).
+        self.race_log[jewel or s.id].append(info)
         if s is not None and s.tier == 7:
             world.post("race", f"{winner.name} wins the {s.name} race at {track.name}",
                        driver_id=winner.id, series_id=s.id, week=self.week)
