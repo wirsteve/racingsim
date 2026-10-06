@@ -38,7 +38,16 @@
    "dirt oval"
   ],
   "field_size": null,
-  "season_events": null,
+  "season_events": {
+   "min": 50,
+   "max": 60,
+   "unit": "events/season",
+   "confidence": "low",
+   "sources": [
+    "src:mastergassers-woo"
+   ],
+   "notes": "inherited from series:high-limit-racing (same ladder rung); not researched individually"
+  },
   "annual_cost_usd": {
    "min": 200000,
    "max": 500000,
@@ -90,7 +99,10 @@
   ],
   "game_template": "sprint_car_tour",
   "history_source": "all_stars",
-  "prefer_curated_names": false
+  "prefer_curated_names": false,
+  "inherited_from": {
+   "season_events": "series:high-limit-racing"
+  }
  },
  {
   "id": "series:alms",
@@ -98,7 +110,7 @@
   "names_by_year": [],
   "sanctioning_body": "body:imsa",
   "discipline": "sports_car",
-  "car_class": null,
+  "car_class": "class:gtp-lmdh",
   "level": "premier",
   "game_tier": 7,
   "scope": "national",
@@ -110,18 +122,57 @@
    "from": 1999,
    "to": 2013
   },
-  "typical_age": null,
+  "typical_age": {
+   "min": 20,
+   "max": 60,
+   "unit": "years",
+   "confidence": "low",
+   "sources": [
+    "src:informed-estimate"
+   ],
+   "notes": "inherited from series:imsa-weathertech (same ladder rung); not researched individually"
+  },
   "entry_age": null,
   "exit_age": null,
   "experience_level": null,
-  "race_length": null,
+  "race_length": {
+   "min": 2.67,
+   "max": 24,
+   "unit": "hours",
+   "confidence": "low",
+   "sources": [
+    "src:wiki-imsa-sportscar"
+   ],
+   "notes": "inherited from series:imsa-weathertech (same ladder rung); not researched individually"
+  },
   "track_types": [
    "road_course",
    "street"
   ],
   "field_size": null,
-  "season_events": null,
-  "annual_cost_usd": null,
+  "season_events": {
+   "min": 9,
+   "max": 11,
+   "unit": "races",
+   "confidence": "low",
+   "sources": [
+    "src:wiki-imsa-sportscar"
+   ],
+   "notes": "inherited from series:imsa-weathertech (same ladder rung); not researched individually"
+  },
+  "annual_cost_usd": {
+   "min": 2000000,
+   "max": 12000000,
+   "unit": "USD per car per season",
+   "year_basis": 2024,
+   "confidence": "low",
+   "sources": [
+    "src:dailysportscar-gt3-costs",
+    "src:sportscar365-lmp2-bronze",
+    "src:endurance-info-lmdh-cost"
+   ],
+   "notes": "inherited from series:imsa-weathertech (same ladder rung); not researched individually"
+  },
   "seat_cost_usd": null,
   "win_purse_usd": null,
   "points_fund_usd": null,
@@ -144,7 +195,14 @@
    "src:mazda-star-mazda-history"
   ],
   "game_template": "prototype_endurance",
-  "history_source": null
+  "history_source": null,
+  "inherited_from": {
+   "annual_cost_usd": "series:imsa-weathertech",
+   "typical_age": "series:imsa-weathertech",
+   "season_events": "series:imsa-weathertech",
+   "race_length": "series:imsa-weathertech",
+   "car_class": "series:imsa-weathertech"
+  }
  },
  {
   "id": "series:apc-united-late-model",
@@ -171,7 +229,63 @@
   "notes": null,
   "game_template": "late_model_tour",
   "game_tier": 3,
-  "prefer_curated_names": false
+  "prefer_curated_names": false,
+  "annual_cost_usd": {
+   "min": 100000,
+   "max": 300000,
+   "unit": "USD/season",
+   "year_basis": 2025,
+   "confidence": "low",
+   "sources": [
+    "src:crateinsider-lmsc"
+   ],
+   "notes": "inherited from series:cars-tour-lmsc (same ladder rung); not researched individually"
+  },
+  "inherited_from": {
+   "annual_cost_usd": "series:cars-tour-lmsc",
+   "typical_age": "series:cars-tour-lmsc",
+   "field_size": "series:cars-tour-lmsc",
+   "season_events": "series:cars-tour-lmsc",
+   "race_length": "series:cars-tour-lmsc",
+   "car_class": "series:cars-tour-lmsc"
+  },
+  "typical_age": {
+   "min": 15,
+   "max": 40,
+   "unit": "years",
+   "confidence": "low",
+   "sources": [
+    "src:wiki-driver-bios"
+   ],
+   "notes": "inherited from series:cars-tour-lmsc (same ladder rung); not researched individually"
+  },
+  "field_size": {
+   "min": 20,
+   "max": 35,
+   "unit": "cars",
+   "confidence": "low",
+   "sources": [
+    "src:wiki-cars-tour"
+   ],
+   "notes": "inherited from series:cars-tour-lmsc (same ladder rung); not researched individually"
+  },
+  "season_events": {
+   "min": 12,
+   "max": 18,
+   "unit": "events/season",
+   "confidence": "low",
+   "sources": [],
+   "notes": "inherited from series:cars-tour-lmsc (same ladder rung); not researched individually"
+  },
+  "race_length": {
+   "min": 100,
+   "max": 300,
+   "unit": "laps",
+   "confidence": "low",
+   "sources": [],
+   "notes": "inherited from series:cars-tour-lmsc (same ladder rung); not researched individually"
+  },
+  "car_class": "class:late-model-stock"
  },
  {
   "id": "series:arca-menards",
@@ -747,7 +861,63 @@
   "notes": null,
   "game_template": "late_model_tour",
   "game_tier": 3,
-  "prefer_curated_names": false
+  "prefer_curated_names": false,
+  "annual_cost_usd": {
+   "min": 100000,
+   "max": 300000,
+   "unit": "USD/season",
+   "year_basis": 2025,
+   "confidence": "low",
+   "sources": [
+    "src:crateinsider-lmsc"
+   ],
+   "notes": "inherited from series:cars-tour-lmsc (same ladder rung); not researched individually"
+  },
+  "inherited_from": {
+   "annual_cost_usd": "series:cars-tour-lmsc",
+   "typical_age": "series:cars-tour-lmsc",
+   "field_size": "series:cars-tour-lmsc",
+   "season_events": "series:cars-tour-lmsc",
+   "race_length": "series:cars-tour-lmsc",
+   "car_class": "series:cars-tour-lmsc"
+  },
+  "typical_age": {
+   "min": 15,
+   "max": 40,
+   "unit": "years",
+   "confidence": "low",
+   "sources": [
+    "src:wiki-driver-bios"
+   ],
+   "notes": "inherited from series:cars-tour-lmsc (same ladder rung); not researched individually"
+  },
+  "field_size": {
+   "min": 20,
+   "max": 35,
+   "unit": "cars",
+   "confidence": "low",
+   "sources": [
+    "src:wiki-cars-tour"
+   ],
+   "notes": "inherited from series:cars-tour-lmsc (same ladder rung); not researched individually"
+  },
+  "season_events": {
+   "min": 12,
+   "max": 18,
+   "unit": "events/season",
+   "confidence": "low",
+   "sources": [],
+   "notes": "inherited from series:cars-tour-lmsc (same ladder rung); not researched individually"
+  },
+  "race_length": {
+   "min": 100,
+   "max": 300,
+   "unit": "laps",
+   "confidence": "low",
+   "sources": [],
+   "notes": "inherited from series:cars-tour-lmsc (same ladder rung); not researched individually"
+  },
+  "car_class": "class:late-model-stock"
  },
  {
   "id": "series:asa-cra-super-series",
@@ -790,12 +960,35 @@
   "entry_age": null,
   "exit_age": null,
   "experience_level": "advanced amateur / semi-pro",
-  "race_length": null,
+  "race_length": {
+   "min": 100,
+   "max": 300,
+   "unit": "laps",
+   "confidence": "low",
+   "sources": [],
+   "notes": "inherited from series:cars-tour-lmsc (same ladder rung); not researched individually"
+  },
   "track_types": [
    "short oval (Anderson, Salem high banks, Winchester)"
   ],
-  "field_size": null,
-  "season_events": null,
+  "field_size": {
+   "min": 20,
+   "max": 35,
+   "unit": "cars",
+   "confidence": "low",
+   "sources": [
+    "src:wiki-cars-tour"
+   ],
+   "notes": "inherited from series:cars-tour-lmsc (same ladder rung); not researched individually"
+  },
+  "season_events": {
+   "min": 12,
+   "max": 18,
+   "unit": "events/season",
+   "confidence": "low",
+   "sources": [],
+   "notes": "inherited from series:cars-tour-lmsc (same ladder rung); not researched individually"
+  },
   "annual_cost_usd": {
    "min": 50000,
    "max": 200000,
@@ -836,7 +1029,12 @@
   ],
   "game_template": "late_model_tour",
   "history_source": "cra_super_series",
-  "prefer_curated_names": false
+  "prefer_curated_names": false,
+  "inherited_from": {
+   "field_size": "series:cars-tour-lmsc",
+   "season_events": "series:cars-tour-lmsc",
+   "race_length": "series:cars-tour-lmsc"
+  }
  },
  {
   "id": "series:asa-late-model-challenge",
@@ -863,7 +1061,63 @@
   "notes": null,
   "game_template": "late_model_tour",
   "game_tier": 3,
-  "prefer_curated_names": false
+  "prefer_curated_names": false,
+  "annual_cost_usd": {
+   "min": 100000,
+   "max": 300000,
+   "unit": "USD/season",
+   "year_basis": 2025,
+   "confidence": "low",
+   "sources": [
+    "src:crateinsider-lmsc"
+   ],
+   "notes": "inherited from series:cars-tour-lmsc (same ladder rung); not researched individually"
+  },
+  "inherited_from": {
+   "annual_cost_usd": "series:cars-tour-lmsc",
+   "typical_age": "series:cars-tour-lmsc",
+   "field_size": "series:cars-tour-lmsc",
+   "season_events": "series:cars-tour-lmsc",
+   "race_length": "series:cars-tour-lmsc",
+   "car_class": "series:cars-tour-lmsc"
+  },
+  "typical_age": {
+   "min": 15,
+   "max": 40,
+   "unit": "years",
+   "confidence": "low",
+   "sources": [
+    "src:wiki-driver-bios"
+   ],
+   "notes": "inherited from series:cars-tour-lmsc (same ladder rung); not researched individually"
+  },
+  "field_size": {
+   "min": 20,
+   "max": 35,
+   "unit": "cars",
+   "confidence": "low",
+   "sources": [
+    "src:wiki-cars-tour"
+   ],
+   "notes": "inherited from series:cars-tour-lmsc (same ladder rung); not researched individually"
+  },
+  "season_events": {
+   "min": 12,
+   "max": 18,
+   "unit": "events/season",
+   "confidence": "low",
+   "sources": [],
+   "notes": "inherited from series:cars-tour-lmsc (same ladder rung); not researched individually"
+  },
+  "race_length": {
+   "min": 100,
+   "max": 300,
+   "unit": "laps",
+   "confidence": "low",
+   "sources": [],
+   "notes": "inherited from series:cars-tour-lmsc (same ladder rung); not researched individually"
+  },
+  "car_class": "class:late-model-stock"
  },
  {
   "id": "series:asa-late-model-north",
@@ -890,7 +1144,63 @@
   "notes": null,
   "game_template": "late_model_tour",
   "game_tier": 3,
-  "prefer_curated_names": false
+  "prefer_curated_names": false,
+  "annual_cost_usd": {
+   "min": 100000,
+   "max": 300000,
+   "unit": "USD/season",
+   "year_basis": 2025,
+   "confidence": "low",
+   "sources": [
+    "src:crateinsider-lmsc"
+   ],
+   "notes": "inherited from series:cars-tour-lmsc (same ladder rung); not researched individually"
+  },
+  "inherited_from": {
+   "annual_cost_usd": "series:cars-tour-lmsc",
+   "typical_age": "series:cars-tour-lmsc",
+   "field_size": "series:cars-tour-lmsc",
+   "season_events": "series:cars-tour-lmsc",
+   "race_length": "series:cars-tour-lmsc",
+   "car_class": "series:cars-tour-lmsc"
+  },
+  "typical_age": {
+   "min": 15,
+   "max": 40,
+   "unit": "years",
+   "confidence": "low",
+   "sources": [
+    "src:wiki-driver-bios"
+   ],
+   "notes": "inherited from series:cars-tour-lmsc (same ladder rung); not researched individually"
+  },
+  "field_size": {
+   "min": 20,
+   "max": 35,
+   "unit": "cars",
+   "confidence": "low",
+   "sources": [
+    "src:wiki-cars-tour"
+   ],
+   "notes": "inherited from series:cars-tour-lmsc (same ladder rung); not researched individually"
+  },
+  "season_events": {
+   "min": 12,
+   "max": 18,
+   "unit": "events/season",
+   "confidence": "low",
+   "sources": [],
+   "notes": "inherited from series:cars-tour-lmsc (same ladder rung); not researched individually"
+  },
+  "race_length": {
+   "min": 100,
+   "max": 300,
+   "unit": "laps",
+   "confidence": "low",
+   "sources": [],
+   "notes": "inherited from series:cars-tour-lmsc (same ladder rung); not researched individually"
+  },
+  "car_class": "class:late-model-stock"
  },
  {
   "id": "series:asa-late-model-south",
@@ -917,7 +1227,63 @@
   "notes": null,
   "game_template": "late_model_tour",
   "game_tier": 3,
-  "prefer_curated_names": false
+  "prefer_curated_names": false,
+  "annual_cost_usd": {
+   "min": 100000,
+   "max": 300000,
+   "unit": "USD/season",
+   "year_basis": 2025,
+   "confidence": "low",
+   "sources": [
+    "src:crateinsider-lmsc"
+   ],
+   "notes": "inherited from series:cars-tour-lmsc (same ladder rung); not researched individually"
+  },
+  "inherited_from": {
+   "annual_cost_usd": "series:cars-tour-lmsc",
+   "typical_age": "series:cars-tour-lmsc",
+   "field_size": "series:cars-tour-lmsc",
+   "season_events": "series:cars-tour-lmsc",
+   "race_length": "series:cars-tour-lmsc",
+   "car_class": "series:cars-tour-lmsc"
+  },
+  "typical_age": {
+   "min": 15,
+   "max": 40,
+   "unit": "years",
+   "confidence": "low",
+   "sources": [
+    "src:wiki-driver-bios"
+   ],
+   "notes": "inherited from series:cars-tour-lmsc (same ladder rung); not researched individually"
+  },
+  "field_size": {
+   "min": 20,
+   "max": 35,
+   "unit": "cars",
+   "confidence": "low",
+   "sources": [
+    "src:wiki-cars-tour"
+   ],
+   "notes": "inherited from series:cars-tour-lmsc (same ladder rung); not researched individually"
+  },
+  "season_events": {
+   "min": 12,
+   "max": 18,
+   "unit": "events/season",
+   "confidence": "low",
+   "sources": [],
+   "notes": "inherited from series:cars-tour-lmsc (same ladder rung); not researched individually"
+  },
+  "race_length": {
+   "min": 100,
+   "max": 300,
+   "unit": "laps",
+   "confidence": "low",
+   "sources": [],
+   "notes": "inherited from series:cars-tour-lmsc (same ladder rung); not researched individually"
+  },
+  "car_class": "class:late-model-stock"
  },
  {
   "id": "series:asa-midwest-tour",
@@ -964,11 +1330,27 @@
   "entry_age": null,
   "exit_age": null,
   "experience_level": "semi-pro",
-  "race_length": null,
+  "race_length": {
+   "min": 100,
+   "max": 300,
+   "unit": "laps",
+   "confidence": "low",
+   "sources": [],
+   "notes": "inherited from series:cars-tour-lmsc (same ladder rung); not researched individually"
+  },
   "track_types": [
    "short oval (Madison, La Crosse, Elko, Slinger)"
   ],
-  "field_size": null,
+  "field_size": {
+   "min": 20,
+   "max": 35,
+   "unit": "cars",
+   "confidence": "low",
+   "sources": [
+    "src:wiki-cars-tour"
+   ],
+   "notes": "inherited from series:cars-tour-lmsc (same ladder rung); not researched individually"
+  },
   "season_events": {
    "min": 10,
    "max": 12,
@@ -1019,7 +1401,11 @@
   ],
   "game_template": "late_model_tour",
   "history_source": "arca_midwest",
-  "prefer_curated_names": false
+  "prefer_curated_names": false,
+  "inherited_from": {
+   "field_size": "series:cars-tour-lmsc",
+   "race_length": "series:cars-tour-lmsc"
+  }
  },
  {
   "id": "series:asa-national-tour",
@@ -1046,7 +1432,43 @@
   "notes": null,
   "game_template": "late_model_national",
   "game_tier": 4,
-  "prefer_curated_names": false
+  "prefer_curated_names": false,
+  "annual_cost_usd": {
+   "min": 150000,
+   "max": 400000,
+   "unit": "USD/season",
+   "year_basis": 2025,
+   "confidence": "low",
+   "sources": [
+    "src:crateinsider-lmsc"
+   ],
+   "notes": "inherited from series:asa-stars-national (same ladder rung); not researched individually"
+  },
+  "inherited_from": {
+   "annual_cost_usd": "series:asa-stars-national",
+   "typical_age": "series:asa-stars-national",
+   "season_events": "series:asa-stars-national",
+   "car_class": "series:asa-stars-national"
+  },
+  "typical_age": {
+   "min": 16,
+   "max": 45,
+   "unit": "years",
+   "confidence": "low",
+   "sources": [
+    "src:wiki-driver-bios"
+   ],
+   "notes": "inherited from series:asa-stars-national (same ladder rung); not researched individually"
+  },
+  "season_events": {
+   "min": 8,
+   "max": 14,
+   "unit": "events/season",
+   "confidence": "low",
+   "sources": [],
+   "notes": "inherited from series:asa-stars-national (same ladder rung); not researched individually"
+  },
+  "car_class": "class:super-late-model"
  },
  {
   "id": "series:asa-southern-super-series",
@@ -1087,12 +1509,35 @@
   "entry_age": null,
   "exit_age": null,
   "experience_level": "semi-pro",
-  "race_length": null,
+  "race_length": {
+   "min": 100,
+   "max": 300,
+   "unit": "laps",
+   "confidence": "low",
+   "sources": [],
+   "notes": "inherited from series:cars-tour-lmsc (same ladder rung); not researched individually"
+  },
   "track_types": [
    "short oval (Mobile, Five Flags, Cordele)"
   ],
-  "field_size": null,
-  "season_events": null,
+  "field_size": {
+   "min": 20,
+   "max": 35,
+   "unit": "cars",
+   "confidence": "low",
+   "sources": [
+    "src:wiki-cars-tour"
+   ],
+   "notes": "inherited from series:cars-tour-lmsc (same ladder rung); not researched individually"
+  },
+  "season_events": {
+   "min": 12,
+   "max": 18,
+   "unit": "events/season",
+   "confidence": "low",
+   "sources": [],
+   "notes": "inherited from series:cars-tour-lmsc (same ladder rung); not researched individually"
+  },
   "annual_cost_usd": {
    "min": 80000,
    "max": 250000,
@@ -1141,7 +1586,12 @@
   ],
   "game_template": "late_model_tour",
   "history_source": "southern_super_series",
-  "prefer_curated_names": false
+  "prefer_curated_names": false,
+  "inherited_from": {
+   "field_size": "series:cars-tour-lmsc",
+   "season_events": "series:cars-tour-lmsc",
+   "race_length": "series:cars-tour-lmsc"
+  }
  },
  {
   "id": "series:asa-stars-national",
@@ -1434,7 +1884,16 @@
   "entry_age": null,
   "exit_age": null,
   "experience_level": "national pro feeder",
-  "race_length": null,
+  "race_length": {
+   "min": 30,
+   "max": 45,
+   "unit": "minutes",
+   "confidence": "low",
+   "sources": [
+    "src:informed-estimate"
+   ],
+   "notes": "inherited from series:usf-pro-2000 (same ladder rung); not researched individually"
+  },
   "track_types": [
    "road_course",
    "street",
@@ -1450,7 +1909,17 @@
    ],
    "notes": "~30 in 2007 after cost cuts"
   },
-  "season_events": null,
+  "season_events": {
+   "min": 12,
+   "max": 18,
+   "unit": "races",
+   "confidence": "low",
+   "sources": [
+    "src:racingsim-history-analysis",
+    "src:usfpro2000-series"
+   ],
+   "notes": "inherited from series:usf-pro-2000 (same ladder rung); not researched individually"
+  },
   "annual_cost_usd": {
    "min": 500000,
    "max": 600000,
@@ -1508,7 +1977,11 @@
    "src:wiki-danica"
   ],
   "game_template": "formula_pro",
-  "history_source": null
+  "history_source": null,
+  "inherited_from": {
+   "season_events": "series:usf-pro-2000",
+   "race_length": "series:usf-pro-2000"
+  }
  },
  {
   "id": "series:baby-grand",
@@ -1596,7 +2069,7 @@
   ],
   "sanctioning_body": "body:skip-barber",
   "discipline": "open_wheel",
-  "car_class": null,
+  "car_class": "class:tatuus-usf2000",
   "level": "national",
   "game_tier": 3,
   "scope": "national",
@@ -1620,14 +2093,53 @@
   "entry_age": null,
   "exit_age": null,
   "experience_level": "pro-am spec series",
-  "race_length": null,
+  "race_length": {
+   "min": 25,
+   "max": 40,
+   "unit": "minutes",
+   "confidence": "low",
+   "sources": [
+    "src:informed-estimate"
+   ],
+   "notes": "inherited from series:usf2000 (same ladder rung); not researched individually"
+  },
   "track_types": [
    "road_course",
    "street"
   ],
-  "field_size": null,
-  "season_events": null,
-  "annual_cost_usd": null,
+  "field_size": {
+   "min": 26,
+   "max": 36,
+   "unit": "drivers scored per season",
+   "confidence": "low",
+   "sources": [
+    "src:racingsim-history-analysis"
+   ],
+   "notes": "inherited from series:usf2000 (same ladder rung); not researched individually"
+  },
+  "season_events": {
+   "min": 14,
+   "max": 18,
+   "unit": "races",
+   "confidence": "low",
+   "sources": [
+    "src:racingsim-history-analysis",
+    "src:wiki-usf2000-2025"
+   ],
+   "notes": "inherited from series:usf2000 (same ladder rung); not researched individually"
+  },
+  "annual_cost_usd": {
+   "min": 300000,
+   "max": 450000,
+   "unit": "USD/season",
+   "year_basis": 2025,
+   "confidence": "low",
+   "sources": [
+    "src:racer-usf-2025-scholarships",
+    "src:trackforum-usf2000-cost"
+   ],
+   "notes": "inherited from series:usf2000 (same ladder rung); not researched individually"
+  },
   "seat_cost_usd": null,
   "win_purse_usd": null,
   "points_fund_usd": null,
@@ -1659,7 +2171,14 @@
    "src:wiki-allmendinger"
   ],
   "game_template": "formula_2000",
-  "history_source": null
+  "history_source": null,
+  "inherited_from": {
+   "annual_cost_usd": "series:usf2000",
+   "field_size": "series:usf2000",
+   "season_events": "series:usf2000",
+   "race_length": "series:usf2000",
+   "car_class": "series:usf2000"
+  }
  },
  {
   "id": "series:busch-all-star-tour",
@@ -1686,7 +2205,30 @@
   "notes": null,
   "game_template": "dirt_late_model_tour",
   "game_tier": 3,
-  "prefer_curated_names": false
+  "prefer_curated_names": false,
+  "annual_cost_usd": {
+   "min": 80000,
+   "max": 250000,
+   "unit": "USD/season",
+   "year_basis": 2025,
+   "confidence": "low",
+   "sources": [],
+   "notes": "inherited from series:southern-all-stars-dirt (same ladder rung); not researched individually"
+  },
+  "inherited_from": {
+   "annual_cost_usd": "series:southern-all-stars-dirt",
+   "typical_age": "series:southern-all-stars-dirt",
+   "car_class": "series:southern-all-stars-dirt"
+  },
+  "typical_age": {
+   "min": 17,
+   "max": 55,
+   "unit": "years",
+   "confidence": "low",
+   "sources": [],
+   "notes": "inherited from series:southern-all-stars-dirt (same ladder rung); not researched individually"
+  },
+  "car_class": "class:super-dirt-late-model"
  },
  {
   "id": "series:cars-tour-lmsc",
@@ -1881,7 +2423,14 @@
   "entry_age": null,
   "exit_age": null,
   "experience_level": "development",
-  "race_length": null,
+  "race_length": {
+   "min": 100,
+   "max": 300,
+   "unit": "laps",
+   "confidence": "low",
+   "sources": [],
+   "notes": "inherited from series:cars-tour-lmsc (same ladder rung); not researched individually"
+  },
   "track_types": [
    "short oval"
   ],
@@ -1954,7 +2503,10 @@
   ],
   "game_template": "late_model_tour",
   "history_source": "cars_slm",
-  "prefer_curated_names": true
+  "prefer_curated_names": true,
+  "inherited_from": {
+   "race_length": "series:cars-tour-lmsc"
+  }
  },
  {
   "id": "series:cart-champcar",
@@ -1983,7 +2535,7 @@
   ],
   "sanctioning_body": "body:cart-champcar",
   "discipline": "open_wheel",
-  "car_class": null,
+  "car_class": "class:indycar-dallara-ir18",
   "level": "premier",
   "game_tier": 7,
   "scope": "international",
@@ -2013,7 +2565,16 @@
   "entry_age": null,
   "exit_age": null,
   "experience_level": "premier professional",
-  "race_length": null,
+  "race_length": {
+   "min": 150,
+   "max": 500,
+   "unit": "miles",
+   "confidence": "low",
+   "sources": [
+    "src:informed-estimate"
+   ],
+   "notes": "inherited from series:indycar (same ladder rung); not researched individually"
+  },
   "track_types": [
    "road_course",
    "street",
@@ -2030,8 +2591,28 @@
    ],
    "notes": "standings rows 22-54 (1995-2007), shrinking late Champ Car"
   },
-  "season_events": null,
-  "annual_cost_usd": null,
+  "season_events": {
+   "min": 14,
+   "max": 18,
+   "unit": "races",
+   "confidence": "low",
+   "sources": [
+    "src:racingsim-history-analysis",
+    "src:wiki-indycar-series"
+   ],
+   "notes": "inherited from series:indycar (same ladder rung); not researched individually"
+  },
+  "annual_cost_usd": {
+   "min": 8000000,
+   "max": 13000000,
+   "unit": "USD per car per season (team budget)",
+   "year_basis": 2025,
+   "confidence": "low",
+   "sources": [
+    "src:racer-indycar-budgets-2025"
+   ],
+   "notes": "inherited from series:indycar (same ladder rung); not researched individually"
+  },
   "seat_cost_usd": null,
   "win_purse_usd": null,
   "points_fund_usd": null,
@@ -2068,7 +2649,13 @@
    "src:wiki-allmendinger"
   ],
   "game_template": "open_wheel_top",
-  "history_source": "cart_champcar"
+  "history_source": "cart_champcar",
+  "inherited_from": {
+   "annual_cost_usd": "series:indycar",
+   "season_events": "series:indycar",
+   "race_length": "series:indycar",
+   "car_class": "series:indycar"
+  }
  },
  {
   "id": "series:cascar-super-series",
@@ -2095,7 +2682,55 @@
   "notes": null,
   "game_template": "stock_regional_dev",
   "game_tier": 4,
-  "prefer_curated_names": false
+  "prefer_curated_names": false,
+  "annual_cost_usd": {
+   "min": 300000,
+   "max": 1000000,
+   "unit": "USD/season",
+   "year_basis": 2025,
+   "confidence": "low",
+   "sources": [
+    "src:sai-arca-path"
+   ],
+   "notes": "inherited from series:arca-menards-east (same ladder rung); not researched individually"
+  },
+  "inherited_from": {
+   "annual_cost_usd": "series:arca-menards-east",
+   "typical_age": "series:arca-menards-east",
+   "field_size": "series:arca-menards-east",
+   "season_events": "series:arca-menards-east",
+   "car_class": "series:arca-menards-east"
+  },
+  "typical_age": {
+   "min": 15,
+   "max": 25,
+   "unit": "years",
+   "confidence": "low",
+   "sources": [
+    "src:arca-rulebook-2025",
+    "src:wiki-driver-bios"
+   ],
+   "notes": "inherited from series:arca-menards-east (same ladder rung); not researched individually"
+  },
+  "field_size": {
+   "min": 15,
+   "max": 25,
+   "unit": "cars",
+   "confidence": "low",
+   "sources": [],
+   "notes": "inherited from series:arca-menards-east (same ladder rung); not researched individually"
+  },
+  "season_events": {
+   "min": 6,
+   "max": 14,
+   "unit": "events/season",
+   "confidence": "low",
+   "sources": [
+    "src:wiki-driver-bios"
+   ],
+   "notes": "inherited from series:arca-menards-east (same ladder rung); not researched individually"
+  },
+  "car_class": "class:arca-stock-car"
  },
  {
   "id": "series:club-karting",
@@ -2266,7 +2901,55 @@
   "notes": null,
   "game_template": "dirt_modified_tour",
   "game_tier": 3,
-  "prefer_curated_names": false
+  "prefer_curated_names": false,
+  "annual_cost_usd": {
+   "min": 150000,
+   "max": 400000,
+   "unit": "USD/season",
+   "year_basis": 2025,
+   "confidence": "low",
+   "sources": [],
+   "notes": "inherited from series:super-dirtcar-series (same ladder rung); not researched individually"
+  },
+  "inherited_from": {
+   "annual_cost_usd": "series:super-dirtcar-series",
+   "typical_age": "series:super-dirtcar-series",
+   "season_events": "series:super-dirtcar-series",
+   "race_length": "series:super-dirtcar-series",
+   "car_class": "series:super-dirtcar-series"
+  },
+  "typical_age": {
+   "min": 18,
+   "max": 65,
+   "unit": "years",
+   "confidence": "low",
+   "sources": [
+    "src:wiki-super-dirtcar",
+    "src:wiki-driver-bios"
+   ],
+   "notes": "inherited from series:super-dirtcar-series (same ladder rung); not researched individually"
+  },
+  "season_events": {
+   "min": 25,
+   "max": 35,
+   "unit": "events/season",
+   "confidence": "low",
+   "sources": [
+    "src:superdirtcar-101"
+   ],
+   "notes": "inherited from series:super-dirtcar-series (same ladder rung); not researched individually"
+  },
+  "race_length": {
+   "min": 25,
+   "max": 200,
+   "unit": "laps",
+   "confidence": "low",
+   "sources": [
+    "src:superdirtcar-101"
+   ],
+   "notes": "inherited from series:super-dirtcar-series (same ladder rung); not researched individually"
+  },
+  "car_class": "class:big-block-modified"
  },
  {
   "id": "series:european-fia-ladder",
@@ -2274,7 +2957,7 @@
   "names_by_year": [],
   "sanctioning_body": "body:fia",
   "discipline": "open_wheel",
-  "car_class": null,
+  "car_class": "class:dallara-il15",
   "level": "international",
   "game_tier": 5,
   "scope": "international",
@@ -2298,10 +2981,37 @@
   "entry_age": null,
   "exit_age": null,
   "experience_level": "pro feeder to F1",
-  "race_length": null,
+  "race_length": {
+   "min": 35,
+   "max": 100,
+   "unit": "miles",
+   "confidence": "low",
+   "sources": [
+    "src:informed-estimate"
+   ],
+   "notes": "inherited from series:indy-nxt (same ladder rung); not researched individually"
+  },
   "track_types": [],
-  "field_size": null,
-  "season_events": null,
+  "field_size": {
+   "min": 12,
+   "max": 28,
+   "unit": "drivers scored per season",
+   "confidence": "low",
+   "sources": [
+    "src:racingsim-history-analysis"
+   ],
+   "notes": "inherited from series:indy-nxt (same ladder rung); not researched individually"
+  },
+  "season_events": {
+   "min": 14,
+   "max": 20,
+   "unit": "races",
+   "confidence": "low",
+   "sources": [
+    "src:racingsim-history-analysis"
+   ],
+   "notes": "inherited from series:indy-nxt (same ladder rung); not researched individually"
+  },
   "annual_cost_usd": {
    "min": 1000000,
    "max": 3000000,
@@ -2349,7 +3059,13 @@
    "src:wiki-herta"
   ],
   "game_template": "formula_lights",
-  "history_source": null
+  "history_source": null,
+  "inherited_from": {
+   "field_size": "series:indy-nxt",
+   "season_events": "series:indy-nxt",
+   "race_length": "series:indy-nxt",
+   "car_class": "series:indy-nxt"
+  }
  },
  {
   "id": "series:f1600-championship",
@@ -2381,12 +3097,40 @@
   "entry_age": null,
   "exit_age": null,
   "experience_level": "semi-pro / pro-am",
-  "race_length": null,
+  "race_length": {
+   "min": 20,
+   "max": 30,
+   "unit": "minutes",
+   "confidence": "low",
+   "sources": [
+    "src:informed-estimate"
+   ],
+   "notes": "inherited from series:f4-us (same ladder rung); not researched individually"
+  },
   "track_types": [
    "road_course"
   ],
-  "field_size": null,
-  "season_events": null,
+  "field_size": {
+   "min": 10,
+   "max": 35,
+   "unit": "drivers per season",
+   "confidence": "low",
+   "sources": [
+    "src:wiki-f4-us-2025"
+   ],
+   "notes": "inherited from series:f4-us (same ladder rung); not researched individually"
+  },
+  "season_events": {
+   "min": 18,
+   "max": 21,
+   "unit": "races",
+   "confidence": "low",
+   "sources": [
+    "src:wiki-f4-us-2025",
+    "src:wiki-scca-pro-racing"
+   ],
+   "notes": "inherited from series:f4-us (same ladder rung); not researched individually"
+  },
   "annual_cost_usd": {
    "min": 50000,
    "max": 120000,
@@ -2431,7 +3175,12 @@
    "src:usfjuniors-licensing"
   ],
   "game_template": "junior_formula",
-  "history_source": null
+  "history_source": null,
+  "inherited_from": {
+   "field_size": "series:f4-us",
+   "season_events": "series:f4-us",
+   "race_length": "series:f4-us"
+  }
  },
  {
   "id": "series:f4-us",
@@ -2615,11 +3364,29 @@
   "entry_age": null,
   "exit_age": null,
   "experience_level": "gentleman amateur",
-  "race_length": null,
+  "race_length": {
+   "min": 40,
+   "max": 45,
+   "unit": "minutes",
+   "confidence": "low",
+   "sources": [
+    "src:informed-estimate"
+   ],
+   "notes": "inherited from series:porsche-carrera-cup-na (same ladder rung); not researched individually"
+  },
   "track_types": [
    "road_course"
   ],
-  "field_size": null,
+  "field_size": {
+   "min": 20,
+   "max": 30,
+   "unit": "cars",
+   "confidence": "low",
+   "sources": [
+    "src:imsa-pccna-2026-preview"
+   ],
+   "notes": "inherited from series:porsche-carrera-cup-na (same ladder rung); not researched individually"
+  },
   "season_events": {
    "min": 6,
    "max": 7,
@@ -2669,7 +3436,11 @@
    "src:manofmany-lambo-ferrari"
   ],
   "game_template": "one_make_gt_cup",
-  "history_source": null
+  "history_source": null,
+  "inherited_from": {
+   "field_size": "series:porsche-carrera-cup-na",
+   "race_length": "series:porsche-carrera-cup-na"
+  }
  },
  {
   "id": "series:florida-winter-tour",
@@ -2829,7 +3600,7 @@
   ],
   "sanctioning_body": null,
   "discipline": "open_wheel",
-  "car_class": null,
+  "car_class": "class:fia-f4",
   "level": "national",
   "game_tier": 2,
   "scope": "national",
@@ -2855,14 +3626,53 @@
   "entry_age": null,
   "exit_age": null,
   "experience_level": "first-car junior formula",
-  "race_length": null,
+  "race_length": {
+   "min": 20,
+   "max": 30,
+   "unit": "minutes",
+   "confidence": "low",
+   "sources": [
+    "src:informed-estimate"
+   ],
+   "notes": "inherited from series:f4-us (same ladder rung); not researched individually"
+  },
   "track_types": [
    "road_course",
    "street"
   ],
-  "field_size": null,
-  "season_events": null,
-  "annual_cost_usd": null,
+  "field_size": {
+   "min": 10,
+   "max": 35,
+   "unit": "drivers per season",
+   "confidence": "low",
+   "sources": [
+    "src:wiki-f4-us-2025"
+   ],
+   "notes": "inherited from series:f4-us (same ladder rung); not researched individually"
+  },
+  "season_events": {
+   "min": 18,
+   "max": 21,
+   "unit": "races",
+   "confidence": "low",
+   "sources": [
+    "src:wiki-f4-us-2025",
+    "src:wiki-scca-pro-racing"
+   ],
+   "notes": "inherited from series:f4-us (same ladder rung); not researched individually"
+  },
+  "annual_cost_usd": {
+   "min": 130000,
+   "max": 195000,
+   "unit": "USD/season",
+   "year_basis": 2025,
+   "confidence": "low",
+   "sources": [
+    "src:f4us-getting-started",
+    "src:wiki-f4-us"
+   ],
+   "notes": "inherited from series:f4-us (same ladder rung); not researched individually"
+  },
   "seat_cost_usd": null,
   "win_purse_usd": null,
   "points_fund_usd": null,
@@ -2896,7 +3706,14 @@
    "src:wiki-formula-bmw-usa"
   ],
   "game_template": "junior_formula",
-  "history_source": null
+  "history_source": null,
+  "inherited_from": {
+   "annual_cost_usd": "series:f4-us",
+   "field_size": "series:f4-us",
+   "season_events": "series:f4-us",
+   "race_length": "series:f4-us",
+   "car_class": "series:f4-us"
+  }
  },
  {
   "id": "series:formula-pro-usa",
@@ -2928,13 +3745,52 @@
   "entry_age": null,
   "exit_age": null,
   "experience_level": "regional junior formula (F3 and F4 classes)",
-  "race_length": null,
+  "race_length": {
+   "min": 20,
+   "max": 30,
+   "unit": "minutes",
+   "confidence": "low",
+   "sources": [
+    "src:informed-estimate"
+   ],
+   "notes": "inherited from series:f4-us (same ladder rung); not researched individually"
+  },
   "track_types": [
    "road_course"
   ],
-  "field_size": null,
-  "season_events": null,
-  "annual_cost_usd": null,
+  "field_size": {
+   "min": 10,
+   "max": 35,
+   "unit": "drivers per season",
+   "confidence": "low",
+   "sources": [
+    "src:wiki-f4-us-2025"
+   ],
+   "notes": "inherited from series:f4-us (same ladder rung); not researched individually"
+  },
+  "season_events": {
+   "min": 18,
+   "max": 21,
+   "unit": "races",
+   "confidence": "low",
+   "sources": [
+    "src:wiki-f4-us-2025",
+    "src:wiki-scca-pro-racing"
+   ],
+   "notes": "inherited from series:f4-us (same ladder rung); not researched individually"
+  },
+  "annual_cost_usd": {
+   "min": 130000,
+   "max": 195000,
+   "unit": "USD/season",
+   "year_basis": 2025,
+   "confidence": "low",
+   "sources": [
+    "src:f4us-getting-started",
+    "src:wiki-f4-us"
+   ],
+   "notes": "inherited from series:f4-us (same ladder rung); not researched individually"
+  },
   "seat_cost_usd": null,
   "win_purse_usd": null,
   "points_fund_usd": null,
@@ -2967,7 +3823,13 @@
    "src:wiki-formula-pro-usa"
   ],
   "game_template": "junior_formula",
-  "history_source": null
+  "history_source": null,
+  "inherited_from": {
+   "annual_cost_usd": "series:f4-us",
+   "field_size": "series:f4-us",
+   "season_events": "series:f4-us",
+   "race_length": "series:f4-us"
+  }
  },
  {
   "id": "series:formula-regional-americas",
@@ -3024,7 +3886,16 @@
   "track_types": [
    "road_course"
   ],
-  "field_size": null,
+  "field_size": {
+   "min": 19,
+   "max": 32,
+   "unit": "drivers scored per season",
+   "confidence": "low",
+   "sources": [
+    "src:racingsim-history-analysis"
+   ],
+   "notes": "inherited from series:usf-pro-2000 (same ladder rung); not researched individually"
+  },
   "season_events": {
    "min": 18,
    "max": 21,
@@ -3089,7 +3960,10 @@
    "src:usfjuniors-licensing"
   ],
   "game_template": "formula_pro",
-  "history_source": null
+  "history_source": null,
+  "inherited_from": {
+   "field_size": "series:usf-pro-2000"
+  }
  },
  {
   "id": "series:grand-am-rolex",
@@ -3097,7 +3971,7 @@
   "names_by_year": [],
   "sanctioning_body": "body:grand-am",
   "discipline": "sports_car",
-  "car_class": null,
+  "car_class": "class:gtp-lmdh",
   "level": "premier",
   "game_tier": 7,
   "scope": "national",
@@ -3108,17 +3982,56 @@
    "from": 2000,
    "to": 2013
   },
-  "typical_age": null,
+  "typical_age": {
+   "min": 20,
+   "max": 60,
+   "unit": "years",
+   "confidence": "low",
+   "sources": [
+    "src:informed-estimate"
+   ],
+   "notes": "inherited from series:imsa-weathertech (same ladder rung); not researched individually"
+  },
   "entry_age": null,
   "exit_age": null,
   "experience_level": null,
-  "race_length": null,
+  "race_length": {
+   "min": 2.67,
+   "max": 24,
+   "unit": "hours",
+   "confidence": "low",
+   "sources": [
+    "src:wiki-imsa-sportscar"
+   ],
+   "notes": "inherited from series:imsa-weathertech (same ladder rung); not researched individually"
+  },
   "track_types": [
    "road_course"
   ],
   "field_size": null,
-  "season_events": null,
-  "annual_cost_usd": null,
+  "season_events": {
+   "min": 9,
+   "max": 11,
+   "unit": "races",
+   "confidence": "low",
+   "sources": [
+    "src:wiki-imsa-sportscar"
+   ],
+   "notes": "inherited from series:imsa-weathertech (same ladder rung); not researched individually"
+  },
+  "annual_cost_usd": {
+   "min": 2000000,
+   "max": 12000000,
+   "unit": "USD per car per season",
+   "year_basis": 2024,
+   "confidence": "low",
+   "sources": [
+    "src:dailysportscar-gt3-costs",
+    "src:sportscar365-lmp2-bronze",
+    "src:endurance-info-lmdh-cost"
+   ],
+   "notes": "inherited from series:imsa-weathertech (same ladder rung); not researched individually"
+  },
   "seat_cost_usd": null,
   "win_purse_usd": null,
   "points_fund_usd": null,
@@ -3141,7 +4054,14 @@
    "src:wiki-jordan-taylor"
   ],
   "game_template": "prototype_endurance",
-  "history_source": null
+  "history_source": null,
+  "inherited_from": {
+   "annual_cost_usd": "series:imsa-weathertech",
+   "typical_age": "series:imsa-weathertech",
+   "season_events": "series:imsa-weathertech",
+   "race_length": "series:imsa-weathertech",
+   "car_class": "series:imsa-weathertech"
+  }
  },
  {
   "id": "series:gt-america",
@@ -3160,18 +4080,54 @@
    "from": 2021,
    "to": null
   },
-  "typical_age": null,
+  "typical_age": {
+   "min": 18,
+   "max": 60,
+   "unit": "years",
+   "confidence": "low",
+   "sources": [
+    "src:informed-estimate"
+   ],
+   "notes": "inherited from series:imsa-pilot-challenge (same ladder rung); not researched individually"
+  },
   "entry_age": null,
   "exit_age": null,
   "experience_level": "single-driver amateur (Bronze-focused) GT",
-  "race_length": null,
+  "race_length": {
+   "min": 2,
+   "max": 4,
+   "unit": "hours",
+   "confidence": "low",
+   "sources": [
+    "src:wiki-pilot-challenge"
+   ],
+   "notes": "inherited from series:imsa-pilot-challenge (same ladder rung); not researched individually"
+  },
   "track_types": [
    "road_course",
    "street"
   ],
   "field_size": null,
-  "season_events": null,
-  "annual_cost_usd": null,
+  "season_events": {
+   "min": 9,
+   "max": 10,
+   "unit": "races",
+   "confidence": "low",
+   "sources": [
+    "src:wiki-pilot-challenge"
+   ],
+   "notes": "inherited from series:imsa-pilot-challenge (same ladder rung); not researched individually"
+  },
+  "annual_cost_usd": {
+   "min": 500000,
+   "max": 1000000,
+   "unit": "USD per car per season",
+   "confidence": "low",
+   "sources": [
+    "src:search-gt4-imsa-costs"
+   ],
+   "notes": "inherited from series:imsa-pilot-challenge (same ladder rung); not researched individually"
+  },
   "seat_cost_usd": null,
   "win_purse_usd": null,
   "points_fund_usd": null,
@@ -3202,7 +4158,13 @@
    "src:wiki-gtwc-america"
   ],
   "game_template": "endurance_challenge",
-  "history_source": null
+  "history_source": null,
+  "inherited_from": {
+   "annual_cost_usd": "series:imsa-pilot-challenge",
+   "typical_age": "series:imsa-pilot-challenge",
+   "season_events": "series:imsa-pilot-challenge",
+   "race_length": "series:imsa-pilot-challenge"
+  }
  },
  {
   "id": "series:gt-world-challenge-america",
@@ -3358,7 +4320,16 @@
    "street"
   ],
   "field_size": null,
-  "season_events": null,
+  "season_events": {
+   "min": 9,
+   "max": 10,
+   "unit": "races",
+   "confidence": "low",
+   "sources": [
+    "src:wiki-pilot-challenge"
+   ],
+   "notes": "inherited from series:imsa-pilot-challenge (same ladder rung); not researched individually"
+  },
   "annual_cost_usd": {
    "min": 300000,
    "max": 700000,
@@ -3403,7 +4374,10 @@
    "src:wiki-gtwc-america"
   ],
   "game_template": "endurance_challenge",
-  "history_source": null
+  "history_source": null,
+  "inherited_from": {
+   "season_events": "series:imsa-pilot-challenge"
+  }
  },
  {
   "id": "series:high-limit-racing",
@@ -3558,11 +4532,25 @@
   "entry_age": null,
   "exit_age": null,
   "experience_level": "advanced amateur",
-  "race_length": null,
+  "race_length": {
+   "min": 15,
+   "max": 40,
+   "unit": "laps",
+   "confidence": "low",
+   "sources": [],
+   "notes": "inherited from series:local-crate-late-model (same ladder rung); not researched individually"
+  },
   "track_types": [
    "dirt oval"
   ],
-  "field_size": null,
+  "field_size": {
+   "min": 15,
+   "max": 30,
+   "unit": "cars",
+   "confidence": "low",
+   "sources": [],
+   "notes": "inherited from series:local-crate-late-model (same ladder rung); not researched individually"
+  },
   "season_events": {
    "min": 30,
    "max": 40,
@@ -3610,7 +4598,11 @@
    "src:gazette-iowa-costs"
   ],
   "game_template": "local_dirt_late_model",
-  "history_source": null
+  "history_source": null,
+  "inherited_from": {
+   "field_size": "series:local-crate-late-model",
+   "race_length": "series:local-crate-late-model"
+  }
  },
  {
   "id": "series:imca-modified",
@@ -3847,12 +4839,35 @@
   "entry_age": null,
   "exit_age": null,
   "experience_level": "novice/intermediate",
-  "race_length": null,
+  "race_length": {
+   "min": 15,
+   "max": 30,
+   "unit": "laps",
+   "confidence": "low",
+   "sources": [],
+   "notes": "inherited from series:imca-modified (same ladder rung); not researched individually"
+  },
   "track_types": [
    "dirt oval"
   ],
-  "field_size": null,
-  "season_events": null,
+  "field_size": {
+   "min": 15,
+   "max": 40,
+   "unit": "cars",
+   "confidence": "low",
+   "sources": [],
+   "notes": "inherited from series:imca-modified (same ladder rung); not researched individually"
+  },
+  "season_events": {
+   "min": 30,
+   "max": 80,
+   "unit": "events/season",
+   "confidence": "low",
+   "sources": [
+    "src:gazette-iowa-costs"
+   ],
+   "notes": "inherited from series:imca-modified (same ladder rung); not researched individually"
+  },
   "annual_cost_usd": {
    "min": 10000,
    "max": 30000,
@@ -3897,7 +4912,12 @@
    "src:imca-rules"
   ],
   "game_template": "local_dirt_modified",
-  "history_source": null
+  "history_source": null,
+  "inherited_from": {
+   "field_size": "series:imca-modified",
+   "season_events": "series:imca-modified",
+   "race_length": "series:imca-modified"
+  }
  },
  {
   "id": "series:imca-stock-car",
@@ -3935,12 +4955,33 @@
   "entry_age": null,
   "exit_age": null,
   "experience_level": "novice/intermediate",
-  "race_length": null,
+  "race_length": {
+   "min": 12,
+   "max": 25,
+   "unit": "laps",
+   "confidence": "low",
+   "sources": [],
+   "notes": "inherited from series:local-dirt-hobby-stock (same ladder rung); not researched individually"
+  },
   "track_types": [
    "dirt oval"
   ],
-  "field_size": null,
-  "season_events": null,
+  "field_size": {
+   "min": 10,
+   "max": 30,
+   "unit": "cars",
+   "confidence": "low",
+   "sources": [],
+   "notes": "inherited from series:local-dirt-hobby-stock (same ladder rung); not researched individually"
+  },
+  "season_events": {
+   "min": 15,
+   "max": 50,
+   "unit": "events/season",
+   "confidence": "low",
+   "sources": [],
+   "notes": "inherited from series:local-dirt-hobby-stock (same ladder rung); not researched individually"
+  },
   "annual_cost_usd": {
    "min": 10000,
    "max": 30000,
@@ -3979,7 +5020,12 @@
    "src:dirtcar-the-cars"
   ],
   "game_template": "local_hobby_dirt",
-  "history_source": null
+  "history_source": null,
+  "inherited_from": {
+   "field_size": "series:local-dirt-hobby-stock",
+   "season_events": "series:local-dirt-hobby-stock",
+   "race_length": "series:local-dirt-hobby-stock"
+  }
  },
  {
   "id": "series:imsa-pilot-challenge",
@@ -4149,17 +5195,53 @@
    "from": 2006,
    "to": 2022
   },
-  "typical_age": null,
+  "typical_age": {
+   "min": 18,
+   "max": 60,
+   "unit": "years",
+   "confidence": "low",
+   "sources": [
+    "src:informed-estimate"
+   ],
+   "notes": "inherited from series:imsa-pilot-challenge (same ladder rung); not researched individually"
+  },
   "entry_age": null,
   "exit_age": null,
   "experience_level": "development",
-  "race_length": null,
+  "race_length": {
+   "min": 2,
+   "max": 4,
+   "unit": "hours",
+   "confidence": "low",
+   "sources": [
+    "src:wiki-pilot-challenge"
+   ],
+   "notes": "inherited from series:imsa-pilot-challenge (same ladder rung); not researched individually"
+  },
   "track_types": [
    "road_course"
   ],
   "field_size": null,
-  "season_events": null,
-  "annual_cost_usd": null,
+  "season_events": {
+   "min": 9,
+   "max": 10,
+   "unit": "races",
+   "confidence": "low",
+   "sources": [
+    "src:wiki-pilot-challenge"
+   ],
+   "notes": "inherited from series:imsa-pilot-challenge (same ladder rung); not researched individually"
+  },
+  "annual_cost_usd": {
+   "min": 500000,
+   "max": 1000000,
+   "unit": "USD per car per season",
+   "confidence": "low",
+   "sources": [
+    "src:search-gt4-imsa-costs"
+   ],
+   "notes": "inherited from series:imsa-pilot-challenge (same ladder rung); not researched individually"
+  },
   "seat_cost_usd": null,
   "win_purse_usd": null,
   "points_fund_usd": null,
@@ -4191,7 +5273,13 @@
    "src:wiki-imsa-prototype-challenge"
   ],
   "game_template": "endurance_challenge",
-  "history_source": null
+  "history_source": null,
+  "inherited_from": {
+   "annual_cost_usd": "series:imsa-pilot-challenge",
+   "typical_age": "series:imsa-pilot-challenge",
+   "season_events": "series:imsa-pilot-challenge",
+   "race_length": "series:imsa-pilot-challenge"
+  }
  },
  {
   "id": "series:imsa-vp-racing-challenge",
@@ -4236,7 +5324,16 @@
    "road_course"
   ],
   "field_size": null,
-  "season_events": null,
+  "season_events": {
+   "min": 9,
+   "max": 10,
+   "unit": "races",
+   "confidence": "low",
+   "sources": [
+    "src:wiki-pilot-challenge"
+   ],
+   "notes": "inherited from series:imsa-pilot-challenge (same ladder rung); not researched individually"
+  },
   "annual_cost_usd": {
    "min": 150000,
    "max": 400000,
@@ -4282,7 +5379,10 @@
    "src:imsa-vp-challenge"
   ],
   "game_template": "endurance_challenge",
-  "history_source": null
+  "history_source": null,
+  "inherited_from": {
+   "season_events": "series:imsa-pilot-challenge"
+  }
  },
  {
   "id": "series:imsa-weathertech",
@@ -5146,12 +6246,33 @@
   "entry_age": null,
   "exit_age": null,
   "experience_level": "intermediate hobby",
-  "race_length": null,
+  "race_length": {
+   "min": 15,
+   "max": 50,
+   "unit": "laps",
+   "confidence": "low",
+   "sources": [],
+   "notes": "inherited from series:inex-legends (same ladder rung); not researched individually"
+  },
   "track_types": [
    "short oval"
   ],
-  "field_size": null,
-  "season_events": null,
+  "field_size": {
+   "min": 15,
+   "max": 30,
+   "unit": "cars",
+   "confidence": "low",
+   "sources": [],
+   "notes": "inherited from series:inex-legends (same ladder rung); not researched individually"
+  },
+  "season_events": {
+   "min": 10,
+   "max": 40,
+   "unit": "events/season",
+   "confidence": "low",
+   "sources": [],
+   "notes": "inherited from series:inex-legends (same ladder rung); not researched individually"
+  },
   "annual_cost_usd": {
    "min": 5000,
    "max": 20000,
@@ -5188,7 +6309,12 @@
    "src:search-thunder-babygrand"
   ],
   "game_template": "legends_regional",
-  "history_source": null
+  "history_source": null,
+  "inherited_from": {
+   "field_size": "series:inex-legends",
+   "season_events": "series:inex-legends",
+   "race_length": "series:inex-legends"
+  }
  },
  {
   "id": "series:jegs-cra-all-stars",
@@ -5222,7 +6348,63 @@
   "notes": null,
   "game_template": "late_model_tour",
   "game_tier": 3,
-  "prefer_curated_names": false
+  "prefer_curated_names": false,
+  "annual_cost_usd": {
+   "min": 100000,
+   "max": 300000,
+   "unit": "USD/season",
+   "year_basis": 2025,
+   "confidence": "low",
+   "sources": [
+    "src:crateinsider-lmsc"
+   ],
+   "notes": "inherited from series:cars-tour-lmsc (same ladder rung); not researched individually"
+  },
+  "inherited_from": {
+   "annual_cost_usd": "series:cars-tour-lmsc",
+   "typical_age": "series:cars-tour-lmsc",
+   "field_size": "series:cars-tour-lmsc",
+   "season_events": "series:cars-tour-lmsc",
+   "race_length": "series:cars-tour-lmsc",
+   "car_class": "series:cars-tour-lmsc"
+  },
+  "typical_age": {
+   "min": 15,
+   "max": 40,
+   "unit": "years",
+   "confidence": "low",
+   "sources": [
+    "src:wiki-driver-bios"
+   ],
+   "notes": "inherited from series:cars-tour-lmsc (same ladder rung); not researched individually"
+  },
+  "field_size": {
+   "min": 20,
+   "max": 35,
+   "unit": "cars",
+   "confidence": "low",
+   "sources": [
+    "src:wiki-cars-tour"
+   ],
+   "notes": "inherited from series:cars-tour-lmsc (same ladder rung); not researched individually"
+  },
+  "season_events": {
+   "min": 12,
+   "max": 18,
+   "unit": "events/season",
+   "confidence": "low",
+   "sources": [],
+   "notes": "inherited from series:cars-tour-lmsc (same ladder rung); not researched individually"
+  },
+  "race_length": {
+   "min": 100,
+   "max": 300,
+   "unit": "laps",
+   "confidence": "low",
+   "sources": [],
+   "notes": "inherited from series:cars-tour-lmsc (same ladder rung); not researched individually"
+  },
+  "car_class": "class:late-model-stock"
  },
  {
   "id": "series:lamborghini-super-trofeo-na",
@@ -5266,8 +6448,26 @@
   "track_types": [
    "road_course"
   ],
-  "field_size": null,
-  "season_events": null,
+  "field_size": {
+   "min": 20,
+   "max": 30,
+   "unit": "cars",
+   "confidence": "low",
+   "sources": [
+    "src:imsa-pccna-2026-preview"
+   ],
+   "notes": "inherited from series:porsche-carrera-cup-na (same ladder rung); not researched individually"
+  },
+  "season_events": {
+   "min": 14,
+   "max": 16,
+   "unit": "races",
+   "confidence": "low",
+   "sources": [
+    "src:pccna-series-info"
+   ],
+   "notes": "inherited from series:porsche-carrera-cup-na (same ladder rung); not researched individually"
+  },
   "annual_cost_usd": {
    "min": 400000,
    "max": 800000,
@@ -5311,7 +6511,11 @@
    "src:manofmany-lambo-ferrari"
   ],
   "game_template": "one_make_gt_cup",
-  "history_source": null
+  "history_source": null,
+  "inherited_from": {
+   "field_size": "series:porsche-carrera-cup-na",
+   "season_events": "series:porsche-carrera-cup-na"
+  }
  },
  {
   "id": "series:ligier-jfc",
@@ -5351,13 +6555,52 @@
   },
   "exit_age": null,
   "experience_level": "first car after karting",
-  "race_length": null,
+  "race_length": {
+   "min": 20,
+   "max": 30,
+   "unit": "minutes",
+   "confidence": "low",
+   "sources": [
+    "src:informed-estimate"
+   ],
+   "notes": "inherited from series:f4-us (same ladder rung); not researched individually"
+  },
   "track_types": [
    "road_course"
   ],
-  "field_size": null,
-  "season_events": null,
-  "annual_cost_usd": null,
+  "field_size": {
+   "min": 10,
+   "max": 35,
+   "unit": "drivers per season",
+   "confidence": "low",
+   "sources": [
+    "src:wiki-f4-us-2025"
+   ],
+   "notes": "inherited from series:f4-us (same ladder rung); not researched individually"
+  },
+  "season_events": {
+   "min": 18,
+   "max": 21,
+   "unit": "races",
+   "confidence": "low",
+   "sources": [
+    "src:wiki-f4-us-2025",
+    "src:wiki-scca-pro-racing"
+   ],
+   "notes": "inherited from series:f4-us (same ladder rung); not researched individually"
+  },
+  "annual_cost_usd": {
+   "min": 130000,
+   "max": 195000,
+   "unit": "USD/season",
+   "year_basis": 2025,
+   "confidence": "low",
+   "sources": [
+    "src:f4us-getting-started",
+    "src:wiki-f4-us"
+   ],
+   "notes": "inherited from series:f4-us (same ladder rung); not researched individually"
+  },
   "seat_cost_usd": null,
   "win_purse_usd": null,
   "points_fund_usd": null,
@@ -5391,7 +6634,13 @@
    "src:racingamerica-pmh"
   ],
   "game_template": "junior_formula",
-  "history_source": null
+  "history_source": null,
+  "inherited_from": {
+   "annual_cost_usd": "series:f4-us",
+   "field_size": "series:f4-us",
+   "season_events": "series:f4-us",
+   "race_length": "series:f4-us"
+  }
  },
  {
   "id": "series:local-305-sprint",
@@ -5509,12 +6758,35 @@
   "entry_age": null,
   "exit_age": null,
   "experience_level": "intermediate/advanced",
-  "race_length": null,
+  "race_length": {
+   "min": 15,
+   "max": 30,
+   "unit": "laps",
+   "confidence": "low",
+   "sources": [],
+   "notes": "inherited from series:imca-modified (same ladder rung); not researched individually"
+  },
   "track_types": [
    "dirt oval 1/4-5/8 mi"
   ],
-  "field_size": null,
-  "season_events": null,
+  "field_size": {
+   "min": 15,
+   "max": 40,
+   "unit": "cars",
+   "confidence": "low",
+   "sources": [],
+   "notes": "inherited from series:imca-modified (same ladder rung); not researched individually"
+  },
+  "season_events": {
+   "min": 30,
+   "max": 80,
+   "unit": "events/season",
+   "confidence": "low",
+   "sources": [
+    "src:gazette-iowa-costs"
+   ],
+   "notes": "inherited from series:imca-modified (same ladder rung); not researched individually"
+  },
   "annual_cost_usd": {
    "min": 20000,
    "max": 80000,
@@ -5551,7 +6823,12 @@
    "src:wiki-driver-bios"
   ],
   "game_template": "local_dirt_modified",
-  "history_source": null
+  "history_source": null,
+  "inherited_from": {
+   "field_size": "series:imca-modified",
+   "season_events": "series:imca-modified",
+   "race_length": "series:imca-modified"
+  }
  },
  {
   "id": "series:local-360-sprint",
@@ -5775,12 +7052,33 @@
   "entry_age": null,
   "exit_age": null,
   "experience_level": "intermediate",
-  "race_length": null,
+  "race_length": {
+   "min": 25,
+   "max": 100,
+   "unit": "laps",
+   "confidence": "low",
+   "sources": [],
+   "notes": "inherited from series:local-limited-late-model (same ladder rung); not researched individually"
+  },
   "track_types": [
    "short oval"
   ],
-  "field_size": null,
-  "season_events": null,
+  "field_size": {
+   "min": 10,
+   "max": 25,
+   "unit": "cars",
+   "confidence": "low",
+   "sources": [],
+   "notes": "inherited from series:local-limited-late-model (same ladder rung); not researched individually"
+  },
+  "season_events": {
+   "min": 10,
+   "max": 25,
+   "unit": "events/season",
+   "confidence": "low",
+   "sources": [],
+   "notes": "inherited from series:local-limited-late-model (same ladder rung); not researched individually"
+  },
   "annual_cost_usd": {
    "min": 15000,
    "max": 40000,
@@ -5816,7 +7114,12 @@
    "src:wiki-nascar-weekly"
   ],
   "game_template": "local_limited_late",
-  "history_source": null
+  "history_source": null,
+  "inherited_from": {
+   "field_size": "series:local-limited-late-model",
+   "season_events": "series:local-limited-late-model",
+   "race_length": "series:local-limited-late-model"
+  }
  },
  {
   "id": "series:local-big-block-modified",
@@ -5855,12 +7158,35 @@
   "entry_age": null,
   "exit_age": null,
   "experience_level": "advanced amateur / semi-pro",
-  "race_length": null,
+  "race_length": {
+   "min": 15,
+   "max": 30,
+   "unit": "laps",
+   "confidence": "low",
+   "sources": [],
+   "notes": "inherited from series:imca-modified (same ladder rung); not researched individually"
+  },
   "track_types": [
    "dirt oval 1/4-5/8 mi"
   ],
-  "field_size": null,
-  "season_events": null,
+  "field_size": {
+   "min": 15,
+   "max": 40,
+   "unit": "cars",
+   "confidence": "low",
+   "sources": [],
+   "notes": "inherited from series:imca-modified (same ladder rung); not researched individually"
+  },
+  "season_events": {
+   "min": 30,
+   "max": 80,
+   "unit": "events/season",
+   "confidence": "low",
+   "sources": [
+    "src:gazette-iowa-costs"
+   ],
+   "notes": "inherited from series:imca-modified (same ladder rung); not researched individually"
+  },
   "annual_cost_usd": {
    "min": 60000,
    "max": 200000,
@@ -5898,7 +7224,12 @@
    "src:wiki-driver-bios"
   ],
   "game_template": "local_dirt_modified",
-  "history_source": null
+  "history_source": null,
+  "inherited_from": {
+   "field_size": "series:imca-modified",
+   "season_events": "series:imca-modified",
+   "race_length": "series:imca-modified"
+  }
  },
  {
   "id": "series:local-crate-late-model",
@@ -6354,12 +7685,33 @@
   "entry_age": null,
   "exit_age": null,
   "experience_level": "intermediate/advanced",
-  "race_length": null,
+  "race_length": {
+   "min": 15,
+   "max": 40,
+   "unit": "laps",
+   "confidence": "low",
+   "sources": [],
+   "notes": "inherited from series:local-crate-late-model (same ladder rung); not researched individually"
+  },
   "track_types": [
    "dirt oval"
   ],
-  "field_size": null,
-  "season_events": null,
+  "field_size": {
+   "min": 15,
+   "max": 30,
+   "unit": "cars",
+   "confidence": "low",
+   "sources": [],
+   "notes": "inherited from series:local-crate-late-model (same ladder rung); not researched individually"
+  },
+  "season_events": {
+   "min": 20,
+   "max": 50,
+   "unit": "events/season",
+   "confidence": "low",
+   "sources": [],
+   "notes": "inherited from series:local-crate-late-model (same ladder rung); not researched individually"
+  },
   "annual_cost_usd": {
    "min": 30000,
    "max": 80000,
@@ -6394,7 +7746,12 @@
   "confidence": "low",
   "sources": [],
   "game_template": "local_dirt_late_model",
-  "history_source": null
+  "history_source": null,
+  "inherited_from": {
+   "field_size": "series:local-crate-late-model",
+   "season_events": "series:local-crate-late-model",
+   "race_length": "series:local-crate-late-model"
+  }
  },
  {
   "id": "series:local-limited-late-model",
@@ -6888,12 +8245,33 @@
   "entry_age": null,
   "exit_age": null,
   "experience_level": "novice",
-  "race_length": null,
+  "race_length": {
+   "min": 20,
+   "max": 50,
+   "unit": "laps",
+   "confidence": "low",
+   "sources": [],
+   "notes": "inherited from series:local-street-stock (same ladder rung); not researched individually"
+  },
   "track_types": [
    "short oval"
   ],
-  "field_size": null,
-  "season_events": null,
+  "field_size": {
+   "min": 10,
+   "max": 25,
+   "unit": "cars",
+   "confidence": "low",
+   "sources": [],
+   "notes": "inherited from series:local-street-stock (same ladder rung); not researched individually"
+  },
+  "season_events": {
+   "min": 10,
+   "max": 25,
+   "unit": "events/season",
+   "confidence": "low",
+   "sources": [],
+   "notes": "inherited from series:local-street-stock (same ladder rung); not researched individually"
+  },
   "annual_cost_usd": {
    "min": 5000,
    "max": 15000,
@@ -6930,7 +8308,12 @@
    "src:search-streetstock"
   ],
   "game_template": "local_street_stock",
-  "history_source": null
+  "history_source": null,
+  "inherited_from": {
+   "field_size": "series:local-street-stock",
+   "season_events": "series:local-street-stock",
+   "race_length": "series:local-street-stock"
+  }
  },
  {
   "id": "series:local-sk-modified",
@@ -7663,7 +9046,30 @@
   "notes": null,
   "game_template": "dirt_late_model_tour",
   "game_tier": 3,
-  "prefer_curated_names": false
+  "prefer_curated_names": false,
+  "annual_cost_usd": {
+   "min": 80000,
+   "max": 250000,
+   "unit": "USD/season",
+   "year_basis": 2025,
+   "confidence": "low",
+   "sources": [],
+   "notes": "inherited from series:busch-all-star-tour (same ladder rung); not researched individually"
+  },
+  "inherited_from": {
+   "annual_cost_usd": "series:busch-all-star-tour",
+   "typical_age": "series:busch-all-star-tour",
+   "car_class": "series:busch-all-star-tour"
+  },
+  "typical_age": {
+   "min": 17,
+   "max": 55,
+   "unit": "years",
+   "confidence": "low",
+   "sources": [],
+   "notes": "inherited from series:busch-all-star-tour (same ladder rung); not researched individually"
+  },
+  "car_class": "class:super-dirt-late-model"
  },
  {
   "id": "series:mars-modified",
@@ -7690,7 +9096,55 @@
   "notes": null,
   "game_template": "dirt_modified_tour",
   "game_tier": 3,
-  "prefer_curated_names": false
+  "prefer_curated_names": false,
+  "annual_cost_usd": {
+   "min": 150000,
+   "max": 400000,
+   "unit": "USD/season",
+   "year_basis": 2025,
+   "confidence": "low",
+   "sources": [],
+   "notes": "inherited from series:super-dirtcar-series (same ladder rung); not researched individually"
+  },
+  "inherited_from": {
+   "annual_cost_usd": "series:super-dirtcar-series",
+   "typical_age": "series:super-dirtcar-series",
+   "season_events": "series:super-dirtcar-series",
+   "race_length": "series:super-dirtcar-series",
+   "car_class": "series:super-dirtcar-series"
+  },
+  "typical_age": {
+   "min": 18,
+   "max": 65,
+   "unit": "years",
+   "confidence": "low",
+   "sources": [
+    "src:wiki-super-dirtcar",
+    "src:wiki-driver-bios"
+   ],
+   "notes": "inherited from series:super-dirtcar-series (same ladder rung); not researched individually"
+  },
+  "season_events": {
+   "min": 25,
+   "max": 35,
+   "unit": "events/season",
+   "confidence": "low",
+   "sources": [
+    "src:superdirtcar-101"
+   ],
+   "notes": "inherited from series:super-dirtcar-series (same ladder rung); not researched individually"
+  },
+  "race_length": {
+   "min": 25,
+   "max": 200,
+   "unit": "laps",
+   "confidence": "low",
+   "sources": [
+    "src:superdirtcar-101"
+   ],
+   "notes": "inherited from series:super-dirtcar-series (same ladder rung); not researched individually"
+  },
+  "car_class": "class:big-block-modified"
  },
  {
   "id": "series:micro-sprints",
@@ -7987,7 +9441,16 @@
    "from": 2006,
    "to": null
   },
-  "typical_age": null,
+  "typical_age": {
+   "min": 16,
+   "max": 75,
+   "unit": "years",
+   "confidence": "low",
+   "sources": [
+    "src:informed-estimate"
+   ],
+   "notes": "inherited from series:scca-runoffs (same ladder rung); not researched individually"
+  },
   "entry_age": null,
   "exit_age": null,
   "experience_level": null,
@@ -7995,7 +9458,16 @@
   "track_types": [
    "road_course"
   ],
-  "field_size": null,
+  "field_size": {
+   "min": 10,
+   "max": 60,
+   "unit": "cars per class",
+   "confidence": "low",
+   "sources": [
+    "src:scca-runoffs-2025"
+   ],
+   "notes": "inherited from series:scca-runoffs (same ladder rung); not researched individually"
+  },
   "season_events": {
    "value": 1,
    "unit": "event (annual)",
@@ -8005,7 +9477,16 @@
    ],
    "notes": null
   },
-  "annual_cost_usd": null,
+  "annual_cost_usd": {
+   "min": 20000,
+   "max": 80000,
+   "unit": "USD/season",
+   "confidence": "low",
+   "sources": [
+    "src:informed-estimate"
+   ],
+   "notes": "inherited from series:scca-majors-super-tour (same ladder rung); not researched individually"
+  },
   "seat_cost_usd": null,
   "win_purse_usd": null,
   "points_fund_usd": null,
@@ -8037,7 +9518,12 @@
    "src:wiki-nasa"
   ],
   "game_template": "club_national",
-  "history_source": null
+  "history_source": null,
+  "inherited_from": {
+   "annual_cost_usd": "series:scca-majors-super-tour",
+   "typical_age": "series:scca-runoffs",
+   "field_size": "series:scca-runoffs"
+  }
  },
  {
   "id": "series:nasa-club",
@@ -8069,12 +9555,39 @@
   "entry_age": null,
   "exit_age": null,
   "experience_level": "novice to amateur",
-  "race_length": null,
+  "race_length": {
+   "min": 20,
+   "max": 45,
+   "unit": "minutes",
+   "confidence": "low",
+   "sources": [
+    "src:informed-estimate"
+   ],
+   "notes": "inherited from series:scca-regional (same ladder rung); not researched individually"
+  },
   "track_types": [
    "road_course"
   ],
-  "field_size": null,
-  "season_events": null,
+  "field_size": {
+   "min": 10,
+   "max": 60,
+   "unit": "cars per run group",
+   "confidence": "low",
+   "sources": [
+    "src:informed-estimate"
+   ],
+   "notes": "inherited from series:scca-regional (same ladder rung); not researched individually"
+  },
+  "season_events": {
+   "min": 4,
+   "max": 12,
+   "unit": "weekends",
+   "confidence": "low",
+   "sources": [
+    "src:informed-estimate"
+   ],
+   "notes": "inherited from series:scca-regional (same ladder rung); not researched individually"
+  },
   "annual_cost_usd": {
    "min": 8000,
    "max": 30000,
@@ -8115,7 +9628,12 @@
    "src:wiki-nasa"
   ],
   "game_template": "club_regional",
-  "history_source": null
+  "history_source": null,
+  "inherited_from": {
+   "field_size": "series:scca-regional",
+   "season_events": "series:scca-regional",
+   "race_length": "series:scca-regional"
+  }
  },
  {
   "id": "series:nascar-all-pro-southeast",
@@ -8182,7 +9700,63 @@
   "notes": "Slim Jim All Pro Series and NASCAR Southeast Series are the same lineage (All Pro 1991-2002, Kodak Southeast 2003, AutoZone Elite Division Southeast 2004-2006).",
   "game_template": "late_model_tour",
   "game_tier": 3,
-  "prefer_curated_names": false
+  "prefer_curated_names": false,
+  "annual_cost_usd": {
+   "min": 100000,
+   "max": 300000,
+   "unit": "USD/season",
+   "year_basis": 2025,
+   "confidence": "low",
+   "sources": [
+    "src:crateinsider-lmsc"
+   ],
+   "notes": "inherited from series:cars-tour-lmsc (same ladder rung); not researched individually"
+  },
+  "inherited_from": {
+   "annual_cost_usd": "series:cars-tour-lmsc",
+   "typical_age": "series:cars-tour-lmsc",
+   "field_size": "series:cars-tour-lmsc",
+   "season_events": "series:cars-tour-lmsc",
+   "race_length": "series:cars-tour-lmsc",
+   "car_class": "series:cars-tour-lmsc"
+  },
+  "typical_age": {
+   "min": 15,
+   "max": 40,
+   "unit": "years",
+   "confidence": "low",
+   "sources": [
+    "src:wiki-driver-bios"
+   ],
+   "notes": "inherited from series:cars-tour-lmsc (same ladder rung); not researched individually"
+  },
+  "field_size": {
+   "min": 20,
+   "max": 35,
+   "unit": "cars",
+   "confidence": "low",
+   "sources": [
+    "src:wiki-cars-tour"
+   ],
+   "notes": "inherited from series:cars-tour-lmsc (same ladder rung); not researched individually"
+  },
+  "season_events": {
+   "min": 12,
+   "max": 18,
+   "unit": "events/season",
+   "confidence": "low",
+   "sources": [],
+   "notes": "inherited from series:cars-tour-lmsc (same ladder rung); not researched individually"
+  },
+  "race_length": {
+   "min": 100,
+   "max": 300,
+   "unit": "laps",
+   "confidence": "low",
+   "sources": [],
+   "notes": "inherited from series:cars-tour-lmsc (same ladder rung); not researched individually"
+  },
+  "car_class": "class:late-model-stock"
  },
  {
   "id": "series:nascar-autozone-elite-division",
@@ -8421,7 +9995,63 @@
   "notes": null,
   "game_template": "late_model_tour",
   "game_tier": 3,
-  "prefer_curated_names": false
+  "prefer_curated_names": false,
+  "annual_cost_usd": {
+   "min": 100000,
+   "max": 300000,
+   "unit": "USD/season",
+   "year_basis": 2025,
+   "confidence": "low",
+   "sources": [
+    "src:crateinsider-lmsc"
+   ],
+   "notes": "inherited from series:cars-tour-lmsc (same ladder rung); not researched individually"
+  },
+  "inherited_from": {
+   "annual_cost_usd": "series:cars-tour-lmsc",
+   "typical_age": "series:cars-tour-lmsc",
+   "field_size": "series:cars-tour-lmsc",
+   "season_events": "series:cars-tour-lmsc",
+   "race_length": "series:cars-tour-lmsc",
+   "car_class": "series:cars-tour-lmsc"
+  },
+  "typical_age": {
+   "min": 15,
+   "max": 40,
+   "unit": "years",
+   "confidence": "low",
+   "sources": [
+    "src:wiki-driver-bios"
+   ],
+   "notes": "inherited from series:cars-tour-lmsc (same ladder rung); not researched individually"
+  },
+  "field_size": {
+   "min": 20,
+   "max": 35,
+   "unit": "cars",
+   "confidence": "low",
+   "sources": [
+    "src:wiki-cars-tour"
+   ],
+   "notes": "inherited from series:cars-tour-lmsc (same ladder rung); not researched individually"
+  },
+  "season_events": {
+   "min": 12,
+   "max": 18,
+   "unit": "events/season",
+   "confidence": "low",
+   "sources": [],
+   "notes": "inherited from series:cars-tour-lmsc (same ladder rung); not researched individually"
+  },
+  "race_length": {
+   "min": 100,
+   "max": 300,
+   "unit": "laps",
+   "confidence": "low",
+   "sources": [],
+   "notes": "inherited from series:cars-tour-lmsc (same ladder rung); not researched individually"
+  },
+  "car_class": "class:late-model-stock"
  },
  {
   "id": "series:nascar-midwest-series",
@@ -8471,7 +10101,63 @@
   "notes": null,
   "game_template": "late_model_tour",
   "game_tier": 3,
-  "prefer_curated_names": false
+  "prefer_curated_names": false,
+  "annual_cost_usd": {
+   "min": 100000,
+   "max": 300000,
+   "unit": "USD/season",
+   "year_basis": 2025,
+   "confidence": "low",
+   "sources": [
+    "src:crateinsider-lmsc"
+   ],
+   "notes": "inherited from series:cars-tour-lmsc (same ladder rung); not researched individually"
+  },
+  "inherited_from": {
+   "annual_cost_usd": "series:cars-tour-lmsc",
+   "typical_age": "series:cars-tour-lmsc",
+   "field_size": "series:cars-tour-lmsc",
+   "season_events": "series:cars-tour-lmsc",
+   "race_length": "series:cars-tour-lmsc",
+   "car_class": "series:cars-tour-lmsc"
+  },
+  "typical_age": {
+   "min": 15,
+   "max": 40,
+   "unit": "years",
+   "confidence": "low",
+   "sources": [
+    "src:wiki-driver-bios"
+   ],
+   "notes": "inherited from series:cars-tour-lmsc (same ladder rung); not researched individually"
+  },
+  "field_size": {
+   "min": 20,
+   "max": 35,
+   "unit": "cars",
+   "confidence": "low",
+   "sources": [
+    "src:wiki-cars-tour"
+   ],
+   "notes": "inherited from series:cars-tour-lmsc (same ladder rung); not researched individually"
+  },
+  "season_events": {
+   "min": 12,
+   "max": 18,
+   "unit": "events/season",
+   "confidence": "low",
+   "sources": [],
+   "notes": "inherited from series:cars-tour-lmsc (same ladder rung); not researched individually"
+  },
+  "race_length": {
+   "min": 100,
+   "max": 300,
+   "unit": "laps",
+   "confidence": "low",
+   "sources": [],
+   "notes": "inherited from series:cars-tour-lmsc (same ladder rung); not researched individually"
+  },
+  "car_class": "class:late-model-stock"
  },
  {
   "id": "series:nascar-northwest-tour",
@@ -8513,7 +10199,63 @@
   "notes": null,
   "game_template": "late_model_tour",
   "game_tier": 3,
-  "prefer_curated_names": false
+  "prefer_curated_names": false,
+  "annual_cost_usd": {
+   "min": 100000,
+   "max": 300000,
+   "unit": "USD/season",
+   "year_basis": 2025,
+   "confidence": "low",
+   "sources": [
+    "src:crateinsider-lmsc"
+   ],
+   "notes": "inherited from series:cars-tour-lmsc (same ladder rung); not researched individually"
+  },
+  "inherited_from": {
+   "annual_cost_usd": "series:cars-tour-lmsc",
+   "typical_age": "series:cars-tour-lmsc",
+   "field_size": "series:cars-tour-lmsc",
+   "season_events": "series:cars-tour-lmsc",
+   "race_length": "series:cars-tour-lmsc",
+   "car_class": "series:cars-tour-lmsc"
+  },
+  "typical_age": {
+   "min": 15,
+   "max": 40,
+   "unit": "years",
+   "confidence": "low",
+   "sources": [
+    "src:wiki-driver-bios"
+   ],
+   "notes": "inherited from series:cars-tour-lmsc (same ladder rung); not researched individually"
+  },
+  "field_size": {
+   "min": 20,
+   "max": 35,
+   "unit": "cars",
+   "confidence": "low",
+   "sources": [
+    "src:wiki-cars-tour"
+   ],
+   "notes": "inherited from series:cars-tour-lmsc (same ladder rung); not researched individually"
+  },
+  "season_events": {
+   "min": 12,
+   "max": 18,
+   "unit": "events/season",
+   "confidence": "low",
+   "sources": [],
+   "notes": "inherited from series:cars-tour-lmsc (same ladder rung); not researched individually"
+  },
+  "race_length": {
+   "min": 100,
+   "max": 300,
+   "unit": "laps",
+   "confidence": "low",
+   "sources": [],
+   "notes": "inherited from series:cars-tour-lmsc (same ladder rung); not researched individually"
+  },
+  "car_class": "class:late-model-stock"
  },
  {
   "id": "series:nascar-pintys",
@@ -8569,7 +10311,55 @@
   "notes": null,
   "game_template": "stock_regional_dev",
   "game_tier": 4,
-  "prefer_curated_names": false
+  "prefer_curated_names": false,
+  "annual_cost_usd": {
+   "min": 300000,
+   "max": 1000000,
+   "unit": "USD/season",
+   "year_basis": 2025,
+   "confidence": "low",
+   "sources": [
+    "src:sai-arca-path"
+   ],
+   "notes": "inherited from series:arca-menards-east (same ladder rung); not researched individually"
+  },
+  "inherited_from": {
+   "annual_cost_usd": "series:arca-menards-east",
+   "typical_age": "series:arca-menards-east",
+   "field_size": "series:arca-menards-east",
+   "season_events": "series:arca-menards-east",
+   "car_class": "series:arca-menards-east"
+  },
+  "typical_age": {
+   "min": 15,
+   "max": 25,
+   "unit": "years",
+   "confidence": "low",
+   "sources": [
+    "src:arca-rulebook-2025",
+    "src:wiki-driver-bios"
+   ],
+   "notes": "inherited from series:arca-menards-east (same ladder rung); not researched individually"
+  },
+  "field_size": {
+   "min": 15,
+   "max": 25,
+   "unit": "cars",
+   "confidence": "low",
+   "sources": [],
+   "notes": "inherited from series:arca-menards-east (same ladder rung); not researched individually"
+  },
+  "season_events": {
+   "min": 6,
+   "max": 14,
+   "unit": "events/season",
+   "confidence": "low",
+   "sources": [
+    "src:wiki-driver-bios"
+   ],
+   "notes": "inherited from series:arca-menards-east (same ladder rung); not researched individually"
+  },
+  "car_class": "class:arca-stock-car"
  },
  {
   "id": "series:nascar-southwest-tour",
@@ -8613,7 +10403,63 @@
   "notes": null,
   "game_template": "late_model_tour",
   "game_tier": 3,
-  "prefer_curated_names": false
+  "prefer_curated_names": false,
+  "annual_cost_usd": {
+   "min": 100000,
+   "max": 300000,
+   "unit": "USD/season",
+   "year_basis": 2025,
+   "confidence": "low",
+   "sources": [
+    "src:crateinsider-lmsc"
+   ],
+   "notes": "inherited from series:cars-tour-lmsc (same ladder rung); not researched individually"
+  },
+  "inherited_from": {
+   "annual_cost_usd": "series:cars-tour-lmsc",
+   "typical_age": "series:cars-tour-lmsc",
+   "field_size": "series:cars-tour-lmsc",
+   "season_events": "series:cars-tour-lmsc",
+   "race_length": "series:cars-tour-lmsc",
+   "car_class": "series:cars-tour-lmsc"
+  },
+  "typical_age": {
+   "min": 15,
+   "max": 40,
+   "unit": "years",
+   "confidence": "low",
+   "sources": [
+    "src:wiki-driver-bios"
+   ],
+   "notes": "inherited from series:cars-tour-lmsc (same ladder rung); not researched individually"
+  },
+  "field_size": {
+   "min": 20,
+   "max": 35,
+   "unit": "cars",
+   "confidence": "low",
+   "sources": [
+    "src:wiki-cars-tour"
+   ],
+   "notes": "inherited from series:cars-tour-lmsc (same ladder rung); not researched individually"
+  },
+  "season_events": {
+   "min": 12,
+   "max": 18,
+   "unit": "events/season",
+   "confidence": "low",
+   "sources": [],
+   "notes": "inherited from series:cars-tour-lmsc (same ladder rung); not researched individually"
+  },
+  "race_length": {
+   "min": 100,
+   "max": 300,
+   "unit": "laps",
+   "confidence": "low",
+   "sources": [],
+   "notes": "inherited from series:cars-tour-lmsc (same ladder rung); not researched individually"
+  },
+  "car_class": "class:late-model-stock"
  },
  {
   "id": "series:nascar-sportsman-division",
@@ -9123,7 +10969,66 @@
   "notes": null,
   "game_template": "modified_tour",
   "game_tier": 3,
-  "prefer_curated_names": false
+  "prefer_curated_names": false,
+  "annual_cost_usd": {
+   "min": 150000,
+   "max": 400000,
+   "unit": "USD/season",
+   "year_basis": 2025,
+   "confidence": "low",
+   "sources": [
+    "src:floracing-mod-cost"
+   ],
+   "notes": "inherited from series:nascar-whelen-modified-tour (same ladder rung); not researched individually"
+  },
+  "inherited_from": {
+   "annual_cost_usd": "series:nascar-whelen-modified-tour",
+   "typical_age": "series:nascar-whelen-modified-tour",
+   "field_size": "series:nascar-whelen-modified-tour",
+   "season_events": "series:nascar-whelen-modified-tour",
+   "race_length": "series:nascar-whelen-modified-tour",
+   "car_class": "series:nascar-whelen-modified-tour"
+  },
+  "typical_age": {
+   "min": 18,
+   "max": 60,
+   "unit": "years",
+   "confidence": "low",
+   "sources": [
+    "src:wiki-wmt",
+    "src:wiki-driver-bios"
+   ],
+   "notes": "inherited from series:nascar-whelen-modified-tour (same ladder rung); not researched individually"
+  },
+  "field_size": {
+   "min": 20,
+   "max": 32,
+   "unit": "cars",
+   "confidence": "low",
+   "sources": [],
+   "notes": "inherited from series:nascar-whelen-modified-tour (same ladder rung); not researched individually"
+  },
+  "season_events": {
+   "min": 14,
+   "max": 18,
+   "unit": "events/season",
+   "confidence": "low",
+   "sources": [
+    "src:wiki-driver-bios"
+   ],
+   "notes": "inherited from series:nascar-whelen-modified-tour (same ladder rung); not researched individually"
+  },
+  "race_length": {
+   "min": 100,
+   "max": 300,
+   "unit": "laps",
+   "confidence": "low",
+   "sources": [
+    "src:wiki-driver-bios"
+   ],
+   "notes": "inherited from series:nascar-whelen-modified-tour (same ladder rung); not researched individually"
+  },
+  "car_class": "class:asphalt-tour-modified"
  },
  {
   "id": "series:nascar-xfinity",
@@ -9345,12 +11250,33 @@
    "notes": null
   },
   "experience_level": "novice youth",
-  "race_length": null,
+  "race_length": {
+   "min": 10,
+   "max": 50,
+   "unit": "laps",
+   "confidence": "low",
+   "sources": [],
+   "notes": "inherited from series:qma-quarter-midgets (same ladder rung); not researched individually"
+  },
   "track_types": [
    "1/20-mile oval"
   ],
-  "field_size": null,
-  "season_events": null,
+  "field_size": {
+   "min": 4,
+   "max": 12,
+   "unit": "cars",
+   "confidence": "low",
+   "sources": [],
+   "notes": "inherited from series:qma-quarter-midgets (same ladder rung); not researched individually"
+  },
+  "season_events": {
+   "min": 15,
+   "max": 40,
+   "unit": "events/season",
+   "confidence": "low",
+   "sources": [],
+   "notes": "inherited from series:qma-quarter-midgets (same ladder rung); not researched individually"
+  },
   "annual_cost_usd": {
    "min": 5000,
    "max": 20000,
@@ -9389,7 +11315,12 @@
    "src:wiki-quarter-midget"
   ],
   "game_template": "quarter_midget",
-  "history_source": null
+  "history_source": null,
+  "inherited_from": {
+   "field_size": "series:qma-quarter-midgets",
+   "season_events": "series:qma-quarter-midgets",
+   "race_length": "series:qma-quarter-midgets"
+  }
  },
  {
   "id": "series:national-sprint-tour",
@@ -9416,7 +11347,41 @@
   "notes": null,
   "game_template": "sprint_car_tour",
   "game_tier": 4,
-  "prefer_curated_names": false
+  "prefer_curated_names": false,
+  "annual_cost_usd": {
+   "min": 200000,
+   "max": 500000,
+   "unit": "USD/season",
+   "year_basis": 2025,
+   "confidence": "low",
+   "sources": [],
+   "notes": "inherited from series:all-star-circuit-of-champions (same ladder rung); not researched individually"
+  },
+  "inherited_from": {
+   "annual_cost_usd": "series:all-star-circuit-of-champions",
+   "typical_age": "series:all-star-circuit-of-champions",
+   "season_events": "series:all-star-circuit-of-champions",
+   "car_class": "series:all-star-circuit-of-champions"
+  },
+  "typical_age": {
+   "min": 16,
+   "max": 50,
+   "unit": "years",
+   "confidence": "low",
+   "sources": [],
+   "notes": "inherited from series:all-star-circuit-of-champions (same ladder rung); not researched individually"
+  },
+  "season_events": {
+   "min": 50,
+   "max": 60,
+   "unit": "events/season",
+   "confidence": "low",
+   "sources": [
+    "src:mastergassers-woo"
+   ],
+   "notes": "inherited from series:all-star-circuit-of-champions (same ladder rung); not researched individually"
+  },
+  "car_class": "class:410-sprint"
  },
  {
   "id": "series:oscaar-modified",
@@ -9443,7 +11408,66 @@
   "notes": null,
   "game_template": "modified_tour",
   "game_tier": 3,
-  "prefer_curated_names": false
+  "prefer_curated_names": false,
+  "annual_cost_usd": {
+   "min": 150000,
+   "max": 400000,
+   "unit": "USD/season",
+   "year_basis": 2025,
+   "confidence": "low",
+   "sources": [
+    "src:floracing-mod-cost"
+   ],
+   "notes": "inherited from series:nascar-whelen-modified-tour (same ladder rung); not researched individually"
+  },
+  "inherited_from": {
+   "annual_cost_usd": "series:nascar-whelen-modified-tour",
+   "typical_age": "series:nascar-whelen-modified-tour",
+   "field_size": "series:nascar-whelen-modified-tour",
+   "season_events": "series:nascar-whelen-modified-tour",
+   "race_length": "series:nascar-whelen-modified-tour",
+   "car_class": "series:nascar-whelen-modified-tour"
+  },
+  "typical_age": {
+   "min": 18,
+   "max": 60,
+   "unit": "years",
+   "confidence": "low",
+   "sources": [
+    "src:wiki-wmt",
+    "src:wiki-driver-bios"
+   ],
+   "notes": "inherited from series:nascar-whelen-modified-tour (same ladder rung); not researched individually"
+  },
+  "field_size": {
+   "min": 20,
+   "max": 32,
+   "unit": "cars",
+   "confidence": "low",
+   "sources": [],
+   "notes": "inherited from series:nascar-whelen-modified-tour (same ladder rung); not researched individually"
+  },
+  "season_events": {
+   "min": 14,
+   "max": 18,
+   "unit": "events/season",
+   "confidence": "low",
+   "sources": [
+    "src:wiki-driver-bios"
+   ],
+   "notes": "inherited from series:nascar-whelen-modified-tour (same ladder rung); not researched individually"
+  },
+  "race_length": {
+   "min": 100,
+   "max": 300,
+   "unit": "laps",
+   "confidence": "low",
+   "sources": [
+    "src:wiki-driver-bios"
+   ],
+   "notes": "inherited from series:nascar-whelen-modified-tour (same ladder rung); not researched individually"
+  },
+  "car_class": "class:asphalt-tour-modified"
  },
  {
   "id": "series:oscaar-super-late-model",
@@ -9470,7 +11494,63 @@
   "notes": null,
   "game_template": "late_model_tour",
   "game_tier": 3,
-  "prefer_curated_names": false
+  "prefer_curated_names": false,
+  "annual_cost_usd": {
+   "min": 100000,
+   "max": 300000,
+   "unit": "USD/season",
+   "year_basis": 2025,
+   "confidence": "low",
+   "sources": [
+    "src:crateinsider-lmsc"
+   ],
+   "notes": "inherited from series:cars-tour-lmsc (same ladder rung); not researched individually"
+  },
+  "inherited_from": {
+   "annual_cost_usd": "series:cars-tour-lmsc",
+   "typical_age": "series:cars-tour-lmsc",
+   "field_size": "series:cars-tour-lmsc",
+   "season_events": "series:cars-tour-lmsc",
+   "race_length": "series:cars-tour-lmsc",
+   "car_class": "series:cars-tour-lmsc"
+  },
+  "typical_age": {
+   "min": 15,
+   "max": 40,
+   "unit": "years",
+   "confidence": "low",
+   "sources": [
+    "src:wiki-driver-bios"
+   ],
+   "notes": "inherited from series:cars-tour-lmsc (same ladder rung); not researched individually"
+  },
+  "field_size": {
+   "min": 20,
+   "max": 35,
+   "unit": "cars",
+   "confidence": "low",
+   "sources": [
+    "src:wiki-cars-tour"
+   ],
+   "notes": "inherited from series:cars-tour-lmsc (same ladder rung); not researched individually"
+  },
+  "season_events": {
+   "min": 12,
+   "max": 18,
+   "unit": "events/season",
+   "confidence": "low",
+   "sources": [],
+   "notes": "inherited from series:cars-tour-lmsc (same ladder rung); not researched individually"
+  },
+  "race_length": {
+   "min": 100,
+   "max": 300,
+   "unit": "laps",
+   "confidence": "low",
+   "sources": [],
+   "notes": "inherited from series:cars-tour-lmsc (same ladder rung); not researched individually"
+  },
+  "car_class": "class:late-model-stock"
  },
  {
   "id": "series:pass-north",
@@ -9497,7 +11577,63 @@
   "notes": null,
   "game_template": "late_model_tour",
   "game_tier": 3,
-  "prefer_curated_names": false
+  "prefer_curated_names": false,
+  "annual_cost_usd": {
+   "min": 100000,
+   "max": 300000,
+   "unit": "USD/season",
+   "year_basis": 2025,
+   "confidence": "low",
+   "sources": [
+    "src:crateinsider-lmsc"
+   ],
+   "notes": "inherited from series:cars-tour-lmsc (same ladder rung); not researched individually"
+  },
+  "inherited_from": {
+   "annual_cost_usd": "series:cars-tour-lmsc",
+   "typical_age": "series:cars-tour-lmsc",
+   "field_size": "series:cars-tour-lmsc",
+   "season_events": "series:cars-tour-lmsc",
+   "race_length": "series:cars-tour-lmsc",
+   "car_class": "series:cars-tour-lmsc"
+  },
+  "typical_age": {
+   "min": 15,
+   "max": 40,
+   "unit": "years",
+   "confidence": "low",
+   "sources": [
+    "src:wiki-driver-bios"
+   ],
+   "notes": "inherited from series:cars-tour-lmsc (same ladder rung); not researched individually"
+  },
+  "field_size": {
+   "min": 20,
+   "max": 35,
+   "unit": "cars",
+   "confidence": "low",
+   "sources": [
+    "src:wiki-cars-tour"
+   ],
+   "notes": "inherited from series:cars-tour-lmsc (same ladder rung); not researched individually"
+  },
+  "season_events": {
+   "min": 12,
+   "max": 18,
+   "unit": "events/season",
+   "confidence": "low",
+   "sources": [],
+   "notes": "inherited from series:cars-tour-lmsc (same ladder rung); not researched individually"
+  },
+  "race_length": {
+   "min": 100,
+   "max": 300,
+   "unit": "laps",
+   "confidence": "low",
+   "sources": [],
+   "notes": "inherited from series:cars-tour-lmsc (same ladder rung); not researched individually"
+  },
+  "car_class": "class:late-model-stock"
  },
  {
   "id": "series:pass-south",
@@ -9524,7 +11660,63 @@
   "notes": null,
   "game_template": "late_model_tour",
   "game_tier": 3,
-  "prefer_curated_names": false
+  "prefer_curated_names": false,
+  "annual_cost_usd": {
+   "min": 100000,
+   "max": 300000,
+   "unit": "USD/season",
+   "year_basis": 2025,
+   "confidence": "low",
+   "sources": [
+    "src:crateinsider-lmsc"
+   ],
+   "notes": "inherited from series:cars-tour-lmsc (same ladder rung); not researched individually"
+  },
+  "inherited_from": {
+   "annual_cost_usd": "series:cars-tour-lmsc",
+   "typical_age": "series:cars-tour-lmsc",
+   "field_size": "series:cars-tour-lmsc",
+   "season_events": "series:cars-tour-lmsc",
+   "race_length": "series:cars-tour-lmsc",
+   "car_class": "series:cars-tour-lmsc"
+  },
+  "typical_age": {
+   "min": 15,
+   "max": 40,
+   "unit": "years",
+   "confidence": "low",
+   "sources": [
+    "src:wiki-driver-bios"
+   ],
+   "notes": "inherited from series:cars-tour-lmsc (same ladder rung); not researched individually"
+  },
+  "field_size": {
+   "min": 20,
+   "max": 35,
+   "unit": "cars",
+   "confidence": "low",
+   "sources": [
+    "src:wiki-cars-tour"
+   ],
+   "notes": "inherited from series:cars-tour-lmsc (same ladder rung); not researched individually"
+  },
+  "season_events": {
+   "min": 12,
+   "max": 18,
+   "unit": "events/season",
+   "confidence": "low",
+   "sources": [],
+   "notes": "inherited from series:cars-tour-lmsc (same ladder rung); not researched individually"
+  },
+  "race_length": {
+   "min": 100,
+   "max": 300,
+   "unit": "laps",
+   "confidence": "low",
+   "sources": [],
+   "notes": "inherited from series:cars-tour-lmsc (same ladder rung); not researched individually"
+  },
+  "car_class": "class:late-model-stock"
  },
  {
   "id": "series:pass-super-late-model",
@@ -9564,12 +11756,35 @@
   "entry_age": null,
   "exit_age": null,
   "experience_level": "semi-pro",
-  "race_length": null,
+  "race_length": {
+   "min": 100,
+   "max": 300,
+   "unit": "laps",
+   "confidence": "low",
+   "sources": [],
+   "notes": "inherited from series:cars-tour-lmsc (same ladder rung); not researched individually"
+  },
   "track_types": [
    "short oval (Oxford Plains, Beech Ridge, White Mountain)"
   ],
-  "field_size": null,
-  "season_events": null,
+  "field_size": {
+   "min": 20,
+   "max": 35,
+   "unit": "cars",
+   "confidence": "low",
+   "sources": [
+    "src:wiki-cars-tour"
+   ],
+   "notes": "inherited from series:cars-tour-lmsc (same ladder rung); not researched individually"
+  },
+  "season_events": {
+   "min": 12,
+   "max": 18,
+   "unit": "events/season",
+   "confidence": "low",
+   "sources": [],
+   "notes": "inherited from series:cars-tour-lmsc (same ladder rung); not researched individually"
+  },
   "annual_cost_usd": {
    "min": 60000,
    "max": 200000,
@@ -9619,7 +11834,12 @@
   ],
   "game_template": "late_model_tour",
   "history_source": "pass_national",
-  "prefer_curated_names": false
+  "prefer_curated_names": false,
+  "inherited_from": {
+   "field_size": "series:cars-tour-lmsc",
+   "season_events": "series:cars-tour-lmsc",
+   "race_length": "series:cars-tour-lmsc"
+  }
  },
  {
   "id": "series:porsche-carrera-cup-na",
@@ -9787,11 +12007,29 @@
   "entry_age": null,
   "exit_age": null,
   "experience_level": "amateur / gentleman",
-  "race_length": null,
+  "race_length": {
+   "min": 40,
+   "max": 45,
+   "unit": "minutes",
+   "confidence": "low",
+   "sources": [
+    "src:informed-estimate"
+   ],
+   "notes": "inherited from series:porsche-carrera-cup-na (same ladder rung); not researched individually"
+  },
   "track_types": [
    "road_course"
   ],
-  "field_size": null,
+  "field_size": {
+   "min": 20,
+   "max": 30,
+   "unit": "cars",
+   "confidence": "low",
+   "sources": [
+    "src:imsa-pccna-2026-preview"
+   ],
+   "notes": "inherited from series:porsche-carrera-cup-na (same ladder rung); not researched individually"
+  },
   "season_events": {
    "min": 12,
    "max": 16,
@@ -9843,7 +12081,11 @@
    "src:wiki-porsche-sprint-challenge"
   ],
   "game_template": "one_make_gt_cup",
-  "history_source": null
+  "history_source": null,
+  "inherited_from": {
+   "field_size": "series:porsche-carrera-cup-na",
+   "race_length": "series:porsche-carrera-cup-na"
+  }
  },
  {
   "id": "series:powri-national-midget",
@@ -9953,7 +12195,32 @@
   "notes": null,
   "game_template": "regional_midget",
   "game_tier": 3,
-  "prefer_curated_names": false
+  "prefer_curated_names": false,
+  "annual_cost_usd": {
+   "min": 100000,
+   "max": 200000,
+   "unit": "USD/season",
+   "year_basis": 2025,
+   "confidence": "low",
+   "sources": [
+    "src:search-midget-cost"
+   ],
+   "notes": "inherited from series:powri-national-midget (same ladder rung); not researched individually"
+  },
+  "inherited_from": {
+   "annual_cost_usd": "series:powri-national-midget",
+   "typical_age": "series:powri-national-midget",
+   "car_class": "series:powri-national-midget"
+  },
+  "typical_age": {
+   "min": 14,
+   "max": 40,
+   "unit": "years",
+   "confidence": "low",
+   "sources": [],
+   "notes": "inherited from series:powri-national-midget (same ladder rung); not researched individually"
+  },
+  "car_class": "class:midget"
  },
  {
   "id": "series:qma-quarter-midgets",
@@ -10266,8 +12533,25 @@
   "track_types": [
    "road_course"
   ],
-  "field_size": null,
-  "season_events": null,
+  "field_size": {
+   "min": 10,
+   "max": 60,
+   "unit": "cars per class",
+   "confidence": "low",
+   "sources": [
+    "src:scca-runoffs-2025"
+   ],
+   "notes": "inherited from series:scca-runoffs (same ladder rung); not researched individually"
+  },
+  "season_events": {
+   "value": 1,
+   "unit": "event (annual)",
+   "confidence": "low",
+   "sources": [
+    "src:wiki-scca-runoffs"
+   ],
+   "notes": "inherited from series:scca-runoffs (same ladder rung); not researched individually"
+  },
   "annual_cost_usd": {
    "min": 20000,
    "max": 80000,
@@ -10309,7 +12593,11 @@
    "src:scca-i-want-to-road-race"
   ],
   "game_template": "club_national",
-  "history_source": null
+  "history_source": null,
+  "inherited_from": {
+   "field_size": "series:scca-runoffs",
+   "season_events": "series:scca-runoffs"
+  }
  },
  {
   "id": "series:scca-regional",
@@ -10505,7 +12793,16 @@
    ],
    "notes": null
   },
-  "annual_cost_usd": null,
+  "annual_cost_usd": {
+   "min": 20000,
+   "max": 80000,
+   "unit": "USD/season",
+   "confidence": "low",
+   "sources": [
+    "src:informed-estimate"
+   ],
+   "notes": "inherited from series:scca-majors-super-tour (same ladder rung); not researched individually"
+  },
   "seat_cost_usd": null,
   "win_purse_usd": null,
   "points_fund_usd": null,
@@ -10539,7 +12836,10 @@
    "src:scca-runoffs-2025"
   ],
   "game_template": "club_national",
-  "history_source": null
+  "history_source": null,
+  "inherited_from": {
+   "annual_cost_usd": "series:scca-majors-super-tour"
+  }
  },
  {
   "id": "series:short-track-super-series",
@@ -10576,7 +12876,55 @@
   "notes": null,
   "game_template": "dirt_modified_tour",
   "game_tier": 3,
-  "prefer_curated_names": false
+  "prefer_curated_names": false,
+  "annual_cost_usd": {
+   "min": 150000,
+   "max": 400000,
+   "unit": "USD/season",
+   "year_basis": 2025,
+   "confidence": "low",
+   "sources": [],
+   "notes": "inherited from series:super-dirtcar-series (same ladder rung); not researched individually"
+  },
+  "inherited_from": {
+   "annual_cost_usd": "series:super-dirtcar-series",
+   "typical_age": "series:super-dirtcar-series",
+   "season_events": "series:super-dirtcar-series",
+   "race_length": "series:super-dirtcar-series",
+   "car_class": "series:super-dirtcar-series"
+  },
+  "typical_age": {
+   "min": 18,
+   "max": 65,
+   "unit": "years",
+   "confidence": "low",
+   "sources": [
+    "src:wiki-super-dirtcar",
+    "src:wiki-driver-bios"
+   ],
+   "notes": "inherited from series:super-dirtcar-series (same ladder rung); not researched individually"
+  },
+  "season_events": {
+   "min": 25,
+   "max": 35,
+   "unit": "events/season",
+   "confidence": "low",
+   "sources": [
+    "src:superdirtcar-101"
+   ],
+   "notes": "inherited from series:super-dirtcar-series (same ladder rung); not researched individually"
+  },
+  "race_length": {
+   "min": 25,
+   "max": 200,
+   "unit": "laps",
+   "confidence": "low",
+   "sources": [
+    "src:superdirtcar-101"
+   ],
+   "notes": "inherited from series:super-dirtcar-series (same ladder rung); not researched individually"
+  },
+  "car_class": "class:big-block-modified"
  },
  {
   "id": "series:short-track-super-series-north",
@@ -10687,12 +13035,40 @@
    "notes": null
   },
   "experience_level": "novice to intermediate (arrive-and-drive)",
-  "race_length": null,
+  "race_length": {
+   "min": 20,
+   "max": 30,
+   "unit": "minutes",
+   "confidence": "low",
+   "sources": [
+    "src:informed-estimate"
+   ],
+   "notes": "inherited from series:f4-us (same ladder rung); not researched individually"
+  },
   "track_types": [
    "road_course"
   ],
-  "field_size": null,
-  "season_events": null,
+  "field_size": {
+   "min": 10,
+   "max": 35,
+   "unit": "drivers per season",
+   "confidence": "low",
+   "sources": [
+    "src:wiki-f4-us-2025"
+   ],
+   "notes": "inherited from series:f4-us (same ladder rung); not researched individually"
+  },
+  "season_events": {
+   "min": 18,
+   "max": 21,
+   "unit": "races",
+   "confidence": "low",
+   "sources": [
+    "src:wiki-f4-us-2025",
+    "src:wiki-scca-pro-racing"
+   ],
+   "notes": "inherited from series:f4-us (same ladder rung); not researched individually"
+  },
   "annual_cost_usd": {
    "min": 30000,
    "max": 80000,
@@ -10747,7 +13123,12 @@
    "src:wiki-newgarden"
   ],
   "game_template": "junior_formula",
-  "history_source": null
+  "history_source": null,
+  "inherited_from": {
+   "field_size": "series:f4-us",
+   "season_events": "series:f4-us",
+   "race_length": "series:f4-us"
+  }
  },
  {
   "id": "series:skusa-pro-tour",
@@ -10930,7 +13311,16 @@
   },
   "exit_age": null,
   "experience_level": "elite youth and pro karters",
-  "race_length": null,
+  "race_length": {
+   "min": 10,
+   "max": 25,
+   "unit": "laps per final",
+   "confidence": "low",
+   "sources": [
+    "src:informed-estimate"
+   ],
+   "notes": "inherited from series:skusa-pro-tour (same ladder rung); not researched individually"
+  },
   "track_types": [
    "kart_track",
    "temporary_kart_circuit"
@@ -10954,7 +13344,18 @@
    ],
    "notes": null
   },
-  "annual_cost_usd": null,
+  "annual_cost_usd": {
+   "min": 30000,
+   "max": 100000,
+   "unit": "USD/season",
+   "year_basis": 2025,
+   "confidence": "low",
+   "sources": [
+    "src:search-karting-national-costs",
+    "src:skusa-pricing-2026"
+   ],
+   "notes": "inherited from series:skusa-pro-tour (same ladder rung); not researched individually"
+  },
   "seat_cost_usd": null,
   "win_purse_usd": null,
   "points_fund_usd": null,
@@ -10990,7 +13391,11 @@
    "src:wiki-de-phillippi"
   ],
   "game_template": "national_karting",
-  "history_source": null
+  "history_source": null,
+  "inherited_from": {
+   "annual_cost_usd": "series:skusa-pro-tour",
+   "race_length": "series:skusa-pro-tour"
+  }
  },
  {
   "id": "series:smart-modified-tour",
@@ -11027,7 +13432,66 @@
   "notes": null,
   "game_template": "modified_tour",
   "game_tier": 3,
-  "prefer_curated_names": false
+  "prefer_curated_names": false,
+  "annual_cost_usd": {
+   "min": 150000,
+   "max": 400000,
+   "unit": "USD/season",
+   "year_basis": 2025,
+   "confidence": "low",
+   "sources": [
+    "src:floracing-mod-cost"
+   ],
+   "notes": "inherited from series:nascar-whelen-modified-tour (same ladder rung); not researched individually"
+  },
+  "inherited_from": {
+   "annual_cost_usd": "series:nascar-whelen-modified-tour",
+   "typical_age": "series:nascar-whelen-modified-tour",
+   "field_size": "series:nascar-whelen-modified-tour",
+   "season_events": "series:nascar-whelen-modified-tour",
+   "race_length": "series:nascar-whelen-modified-tour",
+   "car_class": "series:nascar-whelen-modified-tour"
+  },
+  "typical_age": {
+   "min": 18,
+   "max": 60,
+   "unit": "years",
+   "confidence": "low",
+   "sources": [
+    "src:wiki-wmt",
+    "src:wiki-driver-bios"
+   ],
+   "notes": "inherited from series:nascar-whelen-modified-tour (same ladder rung); not researched individually"
+  },
+  "field_size": {
+   "min": 20,
+   "max": 32,
+   "unit": "cars",
+   "confidence": "low",
+   "sources": [],
+   "notes": "inherited from series:nascar-whelen-modified-tour (same ladder rung); not researched individually"
+  },
+  "season_events": {
+   "min": 14,
+   "max": 18,
+   "unit": "events/season",
+   "confidence": "low",
+   "sources": [
+    "src:wiki-driver-bios"
+   ],
+   "notes": "inherited from series:nascar-whelen-modified-tour (same ladder rung); not researched individually"
+  },
+  "race_length": {
+   "min": 100,
+   "max": 300,
+   "unit": "laps",
+   "confidence": "low",
+   "sources": [
+    "src:wiki-driver-bios"
+   ],
+   "notes": "inherited from series:nascar-whelen-modified-tour (same ladder rung); not researched individually"
+  },
+  "car_class": "class:asphalt-tour-modified"
  },
  {
   "id": "series:southern-all-stars-dirt",
@@ -11146,7 +13610,16 @@
   "entry_age": null,
   "exit_age": null,
   "experience_level": "amateur",
-  "race_length": null,
+  "race_length": {
+   "min": 20,
+   "max": 45,
+   "unit": "minutes",
+   "confidence": "low",
+   "sources": [
+    "src:informed-estimate"
+   ],
+   "notes": "inherited from series:scca-regional (same ladder rung); not researched individually"
+  },
   "track_types": [
    "road_course"
   ],
@@ -11160,7 +13633,16 @@
    ],
    "notes": "29 at 2025 Runoffs; regional grids vary"
   },
-  "season_events": null,
+  "season_events": {
+   "min": 4,
+   "max": 12,
+   "unit": "weekends",
+   "confidence": "low",
+   "sources": [
+    "src:informed-estimate"
+   ],
+   "notes": "inherited from series:scca-regional (same ladder rung); not researched individually"
+  },
   "annual_cost_usd": {
    "min": 10000,
    "max": 40000,
@@ -11205,7 +13687,11 @@
    "src:scca-runoffs-2025"
   ],
   "game_template": "club_regional",
-  "history_source": null
+  "history_source": null,
+  "inherited_from": {
+   "season_events": "series:scca-regional",
+   "race_length": "series:scca-regional"
+  }
  },
  {
   "id": "series:super-dirtcar-series",
@@ -11450,7 +13936,30 @@
   "notes": null,
   "game_template": "dirt_late_model_tour",
   "game_tier": 3,
-  "prefer_curated_names": false
+  "prefer_curated_names": false,
+  "annual_cost_usd": {
+   "min": 80000,
+   "max": 250000,
+   "unit": "USD/season",
+   "year_basis": 2025,
+   "confidence": "low",
+   "sources": [],
+   "notes": "inherited from series:busch-all-star-tour (same ladder rung); not researched individually"
+  },
+  "inherited_from": {
+   "annual_cost_usd": "series:busch-all-star-tour",
+   "typical_age": "series:busch-all-star-tour",
+   "car_class": "series:busch-all-star-tour"
+  },
+  "typical_age": {
+   "min": 17,
+   "max": 55,
+   "unit": "years",
+   "confidence": "low",
+   "sources": [],
+   "notes": "inherited from series:busch-all-star-tour (same ladder rung); not researched individually"
+  },
+  "car_class": "class:super-dirt-late-model"
  },
  {
   "id": "series:tc-america",
@@ -11469,7 +13978,16 @@
    "from": 2019,
    "to": null
   },
-  "typical_age": null,
+  "typical_age": {
+   "min": 20,
+   "max": 65,
+   "unit": "years",
+   "confidence": "low",
+   "sources": [
+    "src:informed-estimate"
+   ],
+   "notes": "inherited from series:trans-am-ta (same ladder rung); not researched individually"
+  },
   "entry_age": null,
   "exit_age": null,
   "experience_level": null,
@@ -11530,7 +14048,10 @@
    "src:wiki-tc-america"
   ],
   "game_template": "touring_national",
-  "history_source": null
+  "history_source": null,
+  "inherited_from": {
+   "typical_age": "series:trans-am-ta"
+  }
  },
  {
   "id": "series:toyota-gr-cup",
@@ -11570,7 +14091,16 @@
   },
   "exit_age": null,
   "experience_level": "national pro-am development",
-  "race_length": null,
+  "race_length": {
+   "min": 40,
+   "max": 45,
+   "unit": "minutes",
+   "confidence": "low",
+   "sources": [
+    "src:informed-estimate"
+   ],
+   "notes": "inherited from series:mx5-cup (same ladder rung); not researched individually"
+  },
   "track_types": [
    "road_course",
    "street"
@@ -11640,7 +14170,10 @@
    "src:wiki-grcup-2026"
   ],
   "game_template": "spec_roadster_cup",
-  "history_source": null
+  "history_source": null,
+  "inherited_from": {
+   "race_length": "series:mx5-cup"
+  }
  },
  {
   "id": "series:trans-am-ta",
@@ -11683,7 +14216,15 @@
   "entry_age": null,
   "exit_age": null,
   "experience_level": "pro-am",
-  "race_length": null,
+  "race_length": {
+   "value": 40,
+   "unit": "minutes (two sprints per weekend)",
+   "confidence": "low",
+   "sources": [
+    "src:wiki-tc-america"
+   ],
+   "notes": "inherited from series:tc-america (same ladder rung); not researched individually"
+  },
   "track_types": [
    "road_course",
    "street"
@@ -11732,7 +14273,10 @@
    "src:wiki-scca-pro-racing"
   ],
   "game_template": "touring_national",
-  "history_source": null
+  "history_source": null,
+  "inherited_from": {
+   "race_length": "series:tc-america"
+  }
  },
  {
   "id": "series:trans-am-ta2",
@@ -11764,7 +14308,15 @@
   "entry_age": null,
   "exit_age": null,
   "experience_level": "pro-am",
-  "race_length": null,
+  "race_length": {
+   "value": 40,
+   "unit": "minutes (two sprints per weekend)",
+   "confidence": "low",
+   "sources": [
+    "src:wiki-tc-america"
+   ],
+   "notes": "inherited from series:trans-am-ta (same ladder rung); not researched individually"
+  },
   "track_types": [
    "road_course",
    "street"
@@ -11813,7 +14365,10 @@
    "src:motorsportmag-transam"
   ],
   "game_template": "touring_national",
-  "history_source": null
+  "history_source": null,
+  "inherited_from": {
+   "race_length": "series:trans-am-ta"
+  }
  },
  {
   "id": "series:ump-dirtcar-modified",
@@ -11849,12 +14404,35 @@
   "entry_age": null,
   "exit_age": null,
   "experience_level": "advanced amateur",
-  "race_length": null,
+  "race_length": {
+   "min": 15,
+   "max": 30,
+   "unit": "laps",
+   "confidence": "low",
+   "sources": [],
+   "notes": "inherited from series:imca-modified (same ladder rung); not researched individually"
+  },
   "track_types": [
    "dirt oval"
   ],
-  "field_size": null,
-  "season_events": null,
+  "field_size": {
+   "min": 15,
+   "max": 40,
+   "unit": "cars",
+   "confidence": "low",
+   "sources": [],
+   "notes": "inherited from series:imca-modified (same ladder rung); not researched individually"
+  },
+  "season_events": {
+   "min": 30,
+   "max": 80,
+   "unit": "events/season",
+   "confidence": "low",
+   "sources": [
+    "src:gazette-iowa-costs"
+   ],
+   "notes": "inherited from series:imca-modified (same ladder rung); not researched individually"
+  },
   "annual_cost_usd": {
    "min": 30000,
    "max": 90000,
@@ -11893,7 +14471,12 @@
    "src:racingnews-crate"
   ],
   "game_template": "local_dirt_modified",
-  "history_source": null
+  "history_source": null,
+  "inherited_from": {
+   "field_size": "series:imca-modified",
+   "season_events": "series:imca-modified",
+   "race_length": "series:imca-modified"
+  }
  },
  {
   "id": "series:usac-cra-sprint",
@@ -11923,7 +14506,41 @@
   "notes": null,
   "game_template": "sprint_car_tour",
   "game_tier": 3,
-  "prefer_curated_names": false
+  "prefer_curated_names": false,
+  "annual_cost_usd": {
+   "min": 200000,
+   "max": 500000,
+   "unit": "USD/season",
+   "year_basis": 2025,
+   "confidence": "low",
+   "sources": [],
+   "notes": "inherited from series:all-star-circuit-of-champions (same ladder rung); not researched individually"
+  },
+  "inherited_from": {
+   "annual_cost_usd": "series:all-star-circuit-of-champions",
+   "typical_age": "series:all-star-circuit-of-champions",
+   "season_events": "series:all-star-circuit-of-champions",
+   "car_class": "series:all-star-circuit-of-champions"
+  },
+  "typical_age": {
+   "min": 16,
+   "max": 50,
+   "unit": "years",
+   "confidence": "low",
+   "sources": [],
+   "notes": "inherited from series:all-star-circuit-of-champions (same ladder rung); not researched individually"
+  },
+  "season_events": {
+   "min": 50,
+   "max": 60,
+   "unit": "events/season",
+   "confidence": "low",
+   "sources": [
+    "src:mastergassers-woo"
+   ],
+   "notes": "inherited from series:all-star-circuit-of-champions (same ladder rung); not researched individually"
+  },
+  "car_class": "class:410-sprint"
  },
  {
   "id": "series:usac-national-midget",
@@ -12223,7 +14840,7 @@
   "names_by_year": [],
   "sanctioning_body": "body:usac",
   "discipline": "sports_car",
-  "car_class": null,
+  "car_class": "class:gtp-lmdh",
   "level": "premier",
   "game_tier": 7,
   "scope": "national",
@@ -12234,17 +14851,56 @@
    "from": 1958,
    "to": 1962
   },
-  "typical_age": null,
+  "typical_age": {
+   "min": 20,
+   "max": 60,
+   "unit": "years",
+   "confidence": "low",
+   "sources": [
+    "src:informed-estimate"
+   ],
+   "notes": "inherited from series:imsa-weathertech (same ladder rung); not researched individually"
+  },
   "entry_age": null,
   "exit_age": null,
   "experience_level": "professional sports car",
-  "race_length": null,
+  "race_length": {
+   "min": 2.67,
+   "max": 24,
+   "unit": "hours",
+   "confidence": "low",
+   "sources": [
+    "src:wiki-imsa-sportscar"
+   ],
+   "notes": "inherited from series:imsa-weathertech (same ladder rung); not researched individually"
+  },
   "track_types": [
    "road_course"
   ],
   "field_size": null,
-  "season_events": null,
-  "annual_cost_usd": null,
+  "season_events": {
+   "min": 9,
+   "max": 11,
+   "unit": "races",
+   "confidence": "low",
+   "sources": [
+    "src:wiki-imsa-sportscar"
+   ],
+   "notes": "inherited from series:imsa-weathertech (same ladder rung); not researched individually"
+  },
+  "annual_cost_usd": {
+   "min": 2000000,
+   "max": 12000000,
+   "unit": "USD per car per season",
+   "year_basis": 2024,
+   "confidence": "low",
+   "sources": [
+    "src:dailysportscar-gt3-costs",
+    "src:sportscar365-lmp2-bronze",
+    "src:endurance-info-lmdh-cost"
+   ],
+   "notes": "inherited from series:imsa-weathertech (same ladder rung); not researched individually"
+  },
   "seat_cost_usd": null,
   "win_purse_usd": null,
   "points_fund_usd": null,
@@ -12266,7 +14922,14 @@
    "src:wiki-usac-road-racing"
   ],
   "game_template": "prototype_endurance",
-  "history_source": null
+  "history_source": null,
+  "inherited_from": {
+   "annual_cost_usd": "series:imsa-weathertech",
+   "typical_age": "series:imsa-weathertech",
+   "season_events": "series:imsa-weathertech",
+   "race_length": "series:imsa-weathertech",
+   "car_class": "series:imsa-weathertech"
+  }
  },
  {
   "id": "series:usac-silver-crown",
@@ -12430,7 +15093,32 @@
   "notes": null,
   "game_template": "regional_midget",
   "game_tier": 3,
-  "prefer_curated_names": false
+  "prefer_curated_names": false,
+  "annual_cost_usd": {
+   "min": 100000,
+   "max": 200000,
+   "unit": "USD/season",
+   "year_basis": 2025,
+   "confidence": "low",
+   "sources": [
+    "src:search-midget-cost"
+   ],
+   "notes": "inherited from series:powri-national-midget (same ladder rung); not researched individually"
+  },
+  "inherited_from": {
+   "annual_cost_usd": "series:powri-national-midget",
+   "typical_age": "series:powri-national-midget",
+   "car_class": "series:powri-national-midget"
+  },
+  "typical_age": {
+   "min": 14,
+   "max": 40,
+   "unit": "years",
+   "confidence": "low",
+   "sources": [],
+   "notes": "inherited from series:powri-national-midget (same ladder rung); not researched individually"
+  },
+  "car_class": "class:midget"
  },
  {
   "id": "series:usar-pro-cup",
@@ -12489,7 +15177,63 @@
   "notes": "2001-2008: separate Northern and Southern Division regular seasons (race names suffixed '(Northern Division)' / '(Southern Division)') followed by the Four Champions Championship Series that decided the overall champion; divisions merged 2009.",
   "game_template": "late_model_tour",
   "game_tier": 3,
-  "prefer_curated_names": false
+  "prefer_curated_names": false,
+  "annual_cost_usd": {
+   "min": 100000,
+   "max": 300000,
+   "unit": "USD/season",
+   "year_basis": 2025,
+   "confidence": "low",
+   "sources": [
+    "src:crateinsider-lmsc"
+   ],
+   "notes": "inherited from series:cars-tour-lmsc (same ladder rung); not researched individually"
+  },
+  "inherited_from": {
+   "annual_cost_usd": "series:cars-tour-lmsc",
+   "typical_age": "series:cars-tour-lmsc",
+   "field_size": "series:cars-tour-lmsc",
+   "season_events": "series:cars-tour-lmsc",
+   "race_length": "series:cars-tour-lmsc",
+   "car_class": "series:cars-tour-lmsc"
+  },
+  "typical_age": {
+   "min": 15,
+   "max": 40,
+   "unit": "years",
+   "confidence": "low",
+   "sources": [
+    "src:wiki-driver-bios"
+   ],
+   "notes": "inherited from series:cars-tour-lmsc (same ladder rung); not researched individually"
+  },
+  "field_size": {
+   "min": 20,
+   "max": 35,
+   "unit": "cars",
+   "confidence": "low",
+   "sources": [
+    "src:wiki-cars-tour"
+   ],
+   "notes": "inherited from series:cars-tour-lmsc (same ladder rung); not researched individually"
+  },
+  "season_events": {
+   "min": 12,
+   "max": 18,
+   "unit": "events/season",
+   "confidence": "low",
+   "sources": [],
+   "notes": "inherited from series:cars-tour-lmsc (same ladder rung); not researched individually"
+  },
+  "race_length": {
+   "min": 100,
+   "max": 300,
+   "unit": "laps",
+   "confidence": "low",
+   "sources": [],
+   "notes": "inherited from series:cars-tour-lmsc (same ladder rung); not researched individually"
+  },
+  "car_class": "class:late-model-stock"
  },
  {
   "id": "series:usf-juniors",
@@ -13072,7 +15816,16 @@
   "entry_age": null,
   "exit_age": null,
   "experience_level": "semi-pro",
-  "race_length": null,
+  "race_length": {
+   "min": 25,
+   "max": 200,
+   "unit": "laps",
+   "confidence": "low",
+   "sources": [
+    "src:superdirtcar-101"
+   ],
+   "notes": "inherited from series:super-dirtcar-series (same ladder rung); not researched individually"
+  },
   "track_types": [
    "dirt oval"
   ],
@@ -13138,7 +15891,10 @@
   ],
   "game_template": "dirt_modified_tour",
   "history_source": "usmts",
-  "prefer_curated_names": false
+  "prefer_curated_names": false,
+  "inherited_from": {
+   "race_length": "series:super-dirtcar-series"
+  }
  },
  {
   "id": "series:uspks",
@@ -13315,12 +16071,35 @@
   "entry_age": null,
   "exit_age": null,
   "experience_level": "novice/intermediate",
-  "race_length": null,
+  "race_length": {
+   "min": 15,
+   "max": 30,
+   "unit": "laps",
+   "confidence": "low",
+   "sources": [],
+   "notes": "inherited from series:imca-modified (same ladder rung); not researched individually"
+  },
   "track_types": [
    "dirt oval"
   ],
-  "field_size": null,
-  "season_events": null,
+  "field_size": {
+   "min": 15,
+   "max": 40,
+   "unit": "cars",
+   "confidence": "low",
+   "sources": [],
+   "notes": "inherited from series:imca-modified (same ladder rung); not researched individually"
+  },
+  "season_events": {
+   "min": 30,
+   "max": 80,
+   "unit": "events/season",
+   "confidence": "low",
+   "sources": [
+    "src:gazette-iowa-costs"
+   ],
+   "notes": "inherited from series:imca-modified (same ladder rung); not researched individually"
+  },
   "annual_cost_usd": {
    "min": 10000,
    "max": 30000,
@@ -13356,7 +16135,12 @@
    "src:usra-search"
   ],
   "game_template": "local_dirt_modified",
-  "history_source": null
+  "history_source": null,
+  "inherited_from": {
+   "field_size": "series:imca-modified",
+   "season_events": "series:imca-modified",
+   "race_length": "series:imca-modified"
+  }
  },
  {
   "id": "series:wka-national",
@@ -13565,7 +16349,14 @@
   "entry_age": null,
   "exit_age": null,
   "experience_level": "professional",
-  "race_length": null,
+  "race_length": {
+   "min": 40,
+   "max": 100,
+   "unit": "laps",
+   "confidence": "low",
+   "sources": [],
+   "notes": "inherited from series:lucas-oil-lmds (same ladder rung); not researched individually"
+  },
   "track_types": [
    "dirt oval",
    "Charlotte/Talladega dirt specials"
@@ -13649,7 +16440,10 @@
   ],
   "game_template": "dirt_late_national",
   "history_source": "woo_late_model",
-  "prefer_curated_names": false
+  "prefer_curated_names": false,
+  "inherited_from": {
+   "race_length": "series:lucas-oil-lmds"
+  }
  },
  {
   "id": "series:woo-sprint",
@@ -13989,14 +16783,41 @@
    "notes": "Hamlin to mini stocks at 16; Majeski karted to 15"
   },
   "experience_level": "novice youth",
-  "race_length": null,
+  "race_length": {
+   "min": 8,
+   "max": 20,
+   "unit": "laps per final",
+   "confidence": "low",
+   "sources": [
+    "src:informed-estimate"
+   ],
+   "notes": "inherited from series:club-karting (same ladder rung); not researched individually"
+  },
   "track_types": [
    "dirt oval kart tracks",
    "asphalt kart ovals",
    "indoor"
   ],
-  "field_size": null,
-  "season_events": null,
+  "field_size": {
+   "min": 5,
+   "max": 100,
+   "unit": "karts per class",
+   "confidence": "low",
+   "sources": [
+    "src:musiccity-lo206"
+   ],
+   "notes": "inherited from series:club-karting (same ladder rung); not researched individually"
+  },
+  "season_events": {
+   "min": 8,
+   "max": 14,
+   "unit": "race days",
+   "confidence": "low",
+   "sources": [
+    "src:kartpulse-cost"
+   ],
+   "notes": "inherited from series:club-karting (same ladder rung); not researched individually"
+  },
   "annual_cost_usd": {
    "min": 3000,
    "max": 20000,
@@ -14034,6 +16855,11 @@
    "src:wiki-driver-bios"
   ],
   "game_template": "youth_karting",
-  "history_source": null
+  "history_source": null,
+  "inherited_from": {
+   "field_size": "series:club-karting",
+   "season_events": "series:club-karting",
+   "race_length": "series:club-karting"
+  }
  }
 ]

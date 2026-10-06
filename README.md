@@ -24,6 +24,10 @@ unpublished project; see [`LICENSING_IP_REVIEW.md`](LICENSING_IP_REVIEW.md).
 | [`docs/research/`](docs/research/) | Detailed research briefs with full source lists |
 | [`docs/CAREER_SYSTEM_DESIGN.md`](docs/CAREER_SYSTEM_DESIGN.md) | How research becomes game systems |
 | [`LICENSING_IP_REVIEW.md`](LICENSING_IP_REVIEW.md) | IP/licensing notes (personal project — kept as good practice) |
+| [`docs/DATA_PIPELINE.md`](docs/DATA_PIPELINE.md) | **The racing data layer:** what was collected, sources used and skipped, validation, confidence, gaps, commands |
+| [`docs/DATA_MODEL.md`](docs/DATA_MODEL.md) | Schemas: Series, SanctioningBody, Track, CarClass, CareerStage, CareerPath, Transition, AdvancementFactor, Season, Race, HistoricalDriver/Team, provenance |
+| [`docs/DATA_REPORT.md`](docs/DATA_REPORT.md) | Generated coverage/confidence report (`python -m racingsim data report`) |
+| [`data/CREDITS.md`](data/CREDITS.md) | Data sources and licences |
 
 ## Play
 
@@ -79,11 +83,20 @@ python -m pytest -q                                     # run the tests
 
 ## What's implemented
 
-* **Track database**: 371 real venues (100 local, 151 regional, 91 national, 29 international,
-  including 59 historic venues such as Nazareth, Pikes Peak and the Milwaukee Mile's
-  idle years) stored as sourced facts with opening/closing years and dormant
-  periods, plus separately derived game profiles and simulation ratings, persisted
-  to SQLite.
+* **Track database**: 1,147 real venues (731 local, 212 regional, 170 national, 34 international;
+  USA, Canada, Mexico plus international stops), including historic venues, opening/closing
+  years and dormant periods. Sourced facts are kept separate from the game's derived
+  profiles and simulation ratings.
+* **Racing knowledge layer** (`data/knowledge/` → SQLite): 148 researched series profiles, 40
+  sanctioning bodies, 68 car classes, 21 career paths, 71 transitions, 15 advancement factors
+  with per-tier weights (used by team owners), economics, and a provenance ledger of 3,000+
+  findings from 324 sources. Every number carries a range, a confidence and its sources.
+  Browse it in the game's **Encyclopedia**.
+* **Touring and grassroots history**: 2,535 seasons and 12,163 races across 101 series:
+  ARCA and its East/West lineages, modified tours, CARS, ASA, PASS, Pro Cup, the NASCAR regional
+  divisions (All Pro, Southwest, Northwest, Midwest), Dash, World of Outlaws, Lucas Oil, USAC,
+  All Stars, ASCS, USMTS, Super DIRTcar, MARS, POWRi and 35 crown-jewel events. Real tours replace
+  the generic regional tours for the years they existed. Also 182,760 race-by-race NASCAR results since 1949.
 * **Historical database** (`data/history/`, 1995–2026): NASCAR Cup, Busch/Xfinity and
   Truck Series; CART/Champ Car, IRL/IndyCar, Indy Lights, Star/Pro Mazda and USF2000.
   Rosters, standings and calendars, plus 2,500 driver bios. Built from Wikipedia and

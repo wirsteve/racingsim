@@ -57,8 +57,12 @@ def confidence_by_category(conn) -> dict[str, Counter]:
 
 def gaps(conn) -> list[str]:
     out = []
+    n = _count(conn, "SELECT COUNT(*) FROM series_info s WHERE s.car_class IS NULL OR NOT EXISTS (SELECT 1 FROM fact f "
+                     "WHERE f.entity_id = s.car_class AND f.attribute = 'horsepower')")
+    if n:
+        out.append(f"{n} series profiles have no car class with a horsepower fact")
     for attr, label in (("annual_cost_usd", "annual cost"), ("typical_age", "typical age"),
-                        ("field_size", "field size"), ("horsepower", "horsepower")):
+                        ("field_size", "field size")):
         n = _count(conn, f"SELECT COUNT(*) FROM series_info s WHERE NOT EXISTS (SELECT 1 FROM fact f "
                          f"WHERE f.entity_id = s.id AND (f.attribute = '{attr}' OR f.attribute LIKE '%.{attr}'))")
         if n:

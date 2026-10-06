@@ -36,3 +36,4 @@ if os.path.exists(os.path.join(census, "tracks_new.json")):
 if os.path.exists(os.path.join(DATASETS, "datasets.json")):
     staging.append(DATASETS)
 run(os.path.join(T, "knowledge", "merge.py"), *staging)
+run(os.path.join(T, "knowledge", "fill_gaps.py"))

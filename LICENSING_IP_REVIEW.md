@@ -104,6 +104,19 @@ deliberately **not** scraped, because its terms restrict automated collection. R
 people appear under their real names, with results-derived ratings that are
 clearly the game's model, not a judgment of the person.
 
+### 2.0b Data sources added for the knowledge layer (2026-10)
+- **nascaR.data** race results: GPL-3; the data are used with permission from DriverAverages.com.
+  Credited in `data/CREDITS.md`. A public release would need GPL-compatible handling of that file.
+- **OpenStreetMap** coordinates for some venues: ODbL. Those coordinates remain under ODbL; credited.
+- **Track census**: IMCA/WISSOTA directories, MyRacePass track profiles, Wikipedia/Wikidata. Facts only,
+  robots.txt checked for each site.
+- **Touring history**: Wikipedia/Wikidata; schedules and champions from series sites that allow automated
+  access; Ultimate Racing History, RacingCalendar.net and the Crittenden Automotive Library for the
+  1995–2006 NASCAR regional divisions and Pro Cup.
+- **Never accessed by scripts**: Racing-Reference (Cloudflare block), The Third Turn (robots.txt),
+  USAC and World of Outlaws results (robots.txt), Speedhive, nascar.com, Al Kamel (licence).
+  All are logged with replacements in `data/knowledge/unavailable.json`.
+
 ### 2.4 Series, sanctioning bodies and events
 - **Decision:** fictional names for every championship ("Premier Stock Car Cup",
   "Formula Lights Championship", "Outlaw 410 Sprint Car Tour") and for crown-jewel

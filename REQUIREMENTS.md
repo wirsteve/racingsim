@@ -107,12 +107,29 @@ research must be recorded in the repository.
 | R9.6 | History data built from Wikipedia/Wikidata with re-runnable scrapers (`tools/history/`); Racing-Reference not scraped (terms). | [x] |
 | R9.7 | Grassroots (local/regional) racing remains generated; local tracks and their divisions are real places. | [x] |
 
+---
+
+## R10 — Racing knowledge/data layer
+
+| ID | Requirement | Status |
+|----|-------------|--------|
+| R10.1 | Normalized schemas for Series, SanctioningBody, Track, CarClass, DriverCareerStage, CareerPath (with detailed steps), Transition, AdvancementFactor, Season, Race, HistoricalDriver, HistoricalTeam (`docs/DATA_MODEL.md`). | [x] |
+| R10.2 | Every fact carries provenance and confidence. Unknown precision is stored as ranges or categories, never invented. | [x] |
+| R10.3 | Research ledger (source, URL, info, date, reliability, confidence, notes, entities) and a log of sources skipped for access restrictions, each with its replacement. | [x] |
+| R10.4 | Source fallback: official bodies, series and tracks, then results archives, Wikipedia/Wikidata, public databases, news, PDFs, secondary sources. Never bypass robots.txt, CAPTCHAs, Cloudflare or rate limits. | [x] |
+| R10.5 | Public datasets evaluated for coverage, accuracy, licence, update frequency and usefulness; permitted ones ingested (nascaR.data, Wikidata, OSM). | [x] |
+| R10.6 | Ingestion scripts, deduplication and entity matching, idempotent merging with a conflict log, cross-source validation and gap filling. | [x] |
+| R10.7 | Multiple career paths across stock car, dirt, open wheel, sports car, modified, sprint/midget and road racing, including crossovers and dead ends. | [x] |
+| R10.8 | Career advancement driven by research-weighted factors (talent, results, money, sponsorship, connections, programs, age, marketability …), not "win and advance". | [x] |
+| R10.9 | One command re-runs and updates the whole pipeline (`python -m racingsim data update`); the game database is compiled SQLite shipped inside the app. | [x] |
+| R10.10 | Stand-alone app for Windows, macOS and Linux with no Python install needed, built on every push. | [x] |
+
 ## Known gaps (tracked for the next iteration)
 
 * Agents/managers are modelled implicitly (an awareness boost for drivers with
   means or reputation), not as entities (R1.3, R2.1 "connections").
 * International ladders beyond the North American pyramid (overseas drivers arrive as imports) (R4.1, R6.2).
-* Historical data for ARCA, sports cars (IMSA/ALMS/Grand-Am), sprint-car and late-model tours; the 1995–2006 Star Mazda and several early USF2000 seasons list only the champion.
+* Sports-car (IMSA/ALMS/Grand-Am) season history; many dirt/short-track seasons are champion-only (see `docs/DATA_PIPELINE.md` §8); the 1995–2006 Star Mazda and several early USF2000 seasons list only the champion.
 * Drivers becoming owners/promoters after retirement.
 * Calibration deviations recorded in `MOTORSPORTS_RESEARCH.md` §12.
 
