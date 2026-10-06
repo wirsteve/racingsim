@@ -140,3 +140,18 @@ def test_1996_start_has_the_real_cup_grid(tracks):
     assert w.drivers[w.real_drivers["Jimmie_Johnson"]].age(1996) == 21
     kb = w.real_drivers.get("Kyle_Busch")
     assert kb is None or w.drivers[kb].max_tier < 7
+
+
+def test_save_load_round_trip_with_history(tmp_path, monkeypatch):
+    import racingsim.game.session as session
+    from racingsim.game.session import Game
+    monkeypatch.setattr(session, "SAVE_DIR", tmp_path)
+    g = Game.new("Save", "Test", "NC", 14, "stock_car", "comfortable", seed=6, scale=0.15, start_year=1998)
+    g.sim_week()
+    path = g.save("round trip")
+    assert path.read_bytes()[:2] == b"\x1f\x8b"  # gzip
+    g2 = Game.load("round trip")
+    assert g2.world.year == 1998 and g2.world.history is not None
+    assert g2.world.history.season("cup_series", 1998) is not None
+    g2.sim_until("season")
+    assert g2.phase == "offseason"

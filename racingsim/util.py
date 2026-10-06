@@ -10,7 +10,7 @@ from typing import Iterable, Sequence, TypeVar
 
 T = TypeVar("T")
 
-DATA_DIR = Path(__file__).resolve().parent.parent / "data"
+from .paths import DATA_DIR  # noqa: E402  (re-exported)
 
 
 def load_json(relative: str):

@@ -15,12 +15,14 @@ from __future__ import annotations
 
 import json
 import re
+import sqlite3
 import unicodedata
 from functools import lru_cache
 from pathlib import Path
 from typing import Optional
 
 from ..util import DATA_DIR
+from . import store
 
 HISTORY_DIR = DATA_DIR / "history"
 
@@ -90,51 +92,98 @@ def _tokens(s: str) -> set[str]:
 
 
 class HistoryDB:
-    def __init__(self, seasons: dict[str, dict[int, dict]], drivers: dict[str, dict]):
-        self.seasons = seasons          # data dir -> year -> season dict
-        self.drivers = drivers          # wiki title -> bio
+    """Read access to the compiled history database (see ``store.py``)."""
+
+    def __init__(self, conn: sqlite3.Connection, path: Optional[Path] = None, source_dir: Optional[Path] = None):
+        self.conn = conn
+        self.path = path              # compiled file, or None for an in-memory build
+        self.source_dir = source_dir  # JSON sources (in-memory builds re-create from these)
+        self._reset()
+
+    def _reset(self) -> None:
         self._sched_cache: dict = {}
+        self._season_cache: dict = {}
         self._careers: Optional[dict] = None
+        self._bios: Optional[dict] = None
+        row = self.conn.execute("SELECT value FROM meta WHERE key='tracks_matched'").fetchone()
+        self._matched = bool(row and row[0] == "1")
+
+    # A world (and so every save game) holds a reference: pickle the location, not the connection.
+    def __getstate__(self) -> dict:
+        return {"path": str(self.path) if self.path else None,
+                "source_dir": str(self.source_dir) if self.source_dir else None}
+
+    def __setstate__(self, state: dict) -> None:
+        path = Path(state["path"]) if state.get("path") else None
+        if path is not None and path.exists():
+            self.__init__(store.open_db(path), path=path)
+            return
+        if state.get("source_dir") and Path(state["source_dir"]).exists():
+            other = HistoryDB.load(Path(state["source_dir"]))
+        else:
+            other = HistoryDB.load_default()  # e.g. the app moved: use the copy that ships with it
+        if other is None:
+            raise RuntimeError("history database not found")
+        self.__init__(other.conn, path=other.path, source_dir=other.source_dir)
 
     # ------------------------------------------------------------------ loading
     @classmethod
-    def load(cls, directory: Path = HISTORY_DIR) -> Optional["HistoryDB"]:
-        if not directory.exists():
+    def load(cls, directory: Path = HISTORY_DIR, tracks=None) -> Optional["HistoryDB"]:
+        """Build an in-memory database straight from a folder of JSON files."""
+        if not directory.exists() or not store._season_dirs(directory):
             return None
-        seasons: dict[str, dict[int, dict]] = {}
-        for sub in sorted(p for p in directory.iterdir() if p.is_dir()):
-            for f in sorted(sub.glob("*.json")):
-                try:
-                    year = int(f.stem)
-                except ValueError:
-                    continue
-                with open(f, encoding="utf-8") as fh:
-                    seasons.setdefault(sub.name, {})[year] = json.load(fh)
-        drivers: dict[str, dict] = {}
-        for f in sorted(directory.glob("drivers*.json")):
-            with open(f, encoding="utf-8") as fh:
-                for k, v in json.load(fh).items():
-                    drivers.setdefault(k, v)
-        if not seasons:
-            return None
-        return cls(seasons, drivers)
+        return cls(store.build(directory, ":memory:", tracks), source_dir=directory)
+
+    @classmethod
+    def open(cls, path: Path) -> "HistoryDB":
+        return cls(store.open_db(path), path=path)
 
     @classmethod
     def load_default(cls) -> Optional["HistoryDB"]:
         return _cached_default()
 
     # ------------------------------------------------------------------ queries
-    def season(self, template_key: str, year: int) -> Optional[dict]:
+    @property
+    def seasons(self) -> dict[str, list[int]]:
+        out: dict[str, list[int]] = {}
+        for src, year in self.conn.execute("SELECT source, year FROM season ORDER BY source, year"):
+            out.setdefault(src, []).append(year)
+        return out
+
+    def _source_for(self, template_key: str, year: int) -> Optional[str]:
         for d, lo, hi in SOURCES.get(template_key, []):
-            if lo <= year <= hi and year in self.seasons.get(d, {}):
-                return self.seasons[d][year]
+            if lo <= year <= hi and self._has(d, year):
+                return d
         return None
 
+    def _has(self, source: str, year: int) -> bool:
+        key = ("has", source, year)
+        if key not in self._season_cache:
+            self._season_cache[key] = self.conn.execute(
+                "SELECT 1 FROM season WHERE source=? AND year=?", (source, year)).fetchone() is not None
+        return self._season_cache[key]
+
+    def raw_season(self, source: str, year: int) -> Optional[dict]:
+        key = (source, year)
+        if key not in self._season_cache:
+            row = self.conn.execute("SELECT doc FROM season WHERE source=? AND year=?", key).fetchone()
+            self._season_cache[key] = json.loads(row[0]) if row else None
+        return self._season_cache[key]
+
+    def season(self, template_key: str, year: int) -> Optional[dict]:
+        src = self._source_for(template_key, year)
+        return self.raw_season(src, year) if src else None
+
     def years(self) -> list[int]:
-        return sorted(self.seasons.get("nascar_cup", {}))
+        return [y for (y,) in self.conn.execute("SELECT year FROM season WHERE source='nascar_cup' ORDER BY year")]
 
     def bio(self, wiki: Optional[str]) -> dict:
-        return self.drivers.get(wiki or "", {}) if wiki else {}
+        if not wiki:
+            return {}
+        if self._bios is None:
+            self._bios = {w: {"name": n, "qid": q, "birth_date": b, "birth_place": bp, "state": st, "country": c}
+                          for w, n, q, b, bp, st, c in self.conn.execute("SELECT * FROM driver")}
+        return self._bios.get(wiki, {})
 
     def birth_year(self, wiki: Optional[str]) -> Optional[int]:
         b = self.bio(wiki).get("birth_date")
@@ -148,17 +197,19 @@ class HistoryDB:
         key = (template_key, year)
         if key in self._sched_cache:
             return self._sched_cache[key]
-        season = self.season(template_key, year)
+        src = self._source_for(template_key, year)
         out = None
-        if season and season.get("schedule"):
+        if src:
+            rows = self.conn.execute(
+                "SELECT track_id, track, city, state, race FROM race WHERE source=? AND year=? AND cancelled=0 "
+                "ORDER BY round", (src, year)).fetchall()
             ids = []
-            races = [r for r in season["schedule"] if not r.get("cancelled")]
-            for race in races:
-                tid = match_track(tracks, race.get("track"), race.get("city"), race.get("state"),
-                                  race.get("race") or "", year)
+            for tid, name, city, state, race in rows:
+                if not self._matched or (tid and tid not in tracks):
+                    tid = match_track(tracks, name, city, state, race or "", year)
                 if tid:
                     ids.append(tid)
-            if len(ids) >= max(3, 0.6 * len(races)):
+            if rows and len(ids) >= max(3, 0.6 * len(rows)):
                 out = ids
         self._sched_cache[key] = out
         return out
@@ -168,31 +219,25 @@ class HistoryDB:
         """wiki title -> list of seasons {year, template, tier, pos, n, wins, starts, team} (all series)."""
         if self._careers is not None:
             return self._careers
+        meta = {(src, y): (name, n, field) for src, y, name, n, field in
+                self.conn.execute("SELECT source, year, official_name, n_regulars, field FROM season")}
+        rows_by_source: dict[str, list] = {}
+        for row in self.conn.execute("SELECT source, year, pos, wiki, points, wins, starts, top5, top10, team "
+                                     "FROM standing WHERE wiki IS NOT NULL"):
+            rows_by_source.setdefault(row[0], []).append(row)
         out: dict[str, list[dict]] = {}
         for tpl, sources in SOURCES.items():
             for d, lo, hi in sources:
-                for year, season in self.seasons.get(d, {}).items():
+                for src, year, pos, w, points, wins, starts, top5, top10, team in rows_by_source.get(d, []):
                     if not (lo <= year <= hi):
                         continue
-                    st = season.get("standings") or []
-                    team_of = {}
-                    for t in season.get("teams") or []:
-                        for c in t.get("cars", []):
-                            for dr in c.get("drivers", []):
-                                if dr.get("wiki") and (c.get("full_time") or dr["wiki"] not in team_of):
-                                    team_of[dr["wiki"]] = t.get("team") or ""
-                    regulars = [r for r in st if (r.get("starts") or 0) >= 0.5 * max(1, len(season.get("schedule") or [])) ]
-                    n = max(len(regulars), 1)
-                    for r in st:
-                        w = r.get("wiki")
-                        if not w:
-                            continue
-                        out.setdefault(w, []).append({
-                            "year": year, "template": tpl, "tier": TEMPLATE_TIER[tpl], "pos": r.get("pos"),
-                            "n": n, "field": len(st), "wins": r.get("wins") or 0, "starts": r.get("starts"),
-                            "top5": r.get("top5"), "top10": r.get("top10"), "points": r.get("points"),
-                            "series_name": season.get("official_name"), "team": team_of.get(w, ""),
-                        })
+                    name, n, field = meta[(src, year)]
+                    out.setdefault(w, []).append({
+                        "year": year, "template": tpl, "tier": TEMPLATE_TIER[tpl], "pos": pos,
+                        "n": n, "field": field, "wins": wins or 0, "starts": starts,
+                        "top5": top5, "top10": top10, "points": points,
+                        "series_name": name, "team": team or "",
+                    })
         for w in out:
             out[w].sort(key=lambda x: (x["year"], -x["tier"]))
         self._careers = out
@@ -201,7 +246,27 @@ class HistoryDB:
 
 @lru_cache(maxsize=1)
 def _cached_default() -> Optional[HistoryDB]:
-    return HistoryDB.load(HISTORY_DIR)
+    """The compiled database, rebuilt from the JSON sources when they changed (source checkouts only)."""
+    from ..paths import DB_PATH, FROZEN
+    if FROZEN:
+        return HistoryDB.open(DB_PATH) if DB_PATH.exists() else None
+    if not HISTORY_DIR.exists():
+        return None
+    stamp = store.inputs_stamp(HISTORY_DIR, _code_and_track_inputs())
+    if store.stored_stamp(DB_PATH) != stamp:
+        from ..tracks.database import TrackDatabase
+        try:
+            with store._LOCK:
+                store.build(HISTORY_DIR, DB_PATH, TrackDatabase.load(), stamp=stamp).close()
+        except OSError:  # read-only checkout: fall back to memory
+            return HistoryDB.load(HISTORY_DIR, TrackDatabase.load())
+    return HistoryDB.open(DB_PATH)
+
+
+def _code_and_track_inputs() -> list[Path]:
+    here = Path(__file__).resolve().parent
+    return ([here / "db.py", here / "store.py", DATA_DIR / "track_years.json", DATA_DIR / "track_rating_overrides.json"]
+            + sorted((DATA_DIR / "tracks").glob("*.json")))
 
 
 _INDEX: dict = {}

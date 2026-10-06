@@ -2,18 +2,20 @@
 
 from __future__ import annotations
 
+import gzip
+import os
 import pickle
 import re
 from pathlib import Path
 from typing import Optional
 
 from ..career.offseason import begin_offseason, complete_offseason
+from ..paths import SAVE_DIR
 from ..sim.season import SEASON_WEEKS, SeasonRunner
 from ..world.entities import RETIRED
 from ..world.world import World, WorldConfig, YearSummary
 from . import career
 
-SAVE_DIR = Path(__file__).resolve().parent.parent.parent / "saves"
 SAVE_VERSION = 1
 
 
@@ -114,16 +116,20 @@ class Game:
 
     # ------------------------------------------------------------------ persistence
     def save(self, name: str) -> Path:
-        SAVE_DIR.mkdir(exist_ok=True)
+        SAVE_DIR.mkdir(parents=True, exist_ok=True)
         path = SAVE_DIR / f"{_safe(name)}.rsim"
-        with open(path, "wb") as fh:
+        tmp = path.with_suffix(".tmp")
+        with gzip.open(tmp, "wb", compresslevel=5) as fh:  # saves are ~8x smaller compressed
             pickle.dump(self, fh, protocol=pickle.HIGHEST_PROTOCOL)
+        os.replace(tmp, path)  # never leave a half-written save behind
         return path
 
     @staticmethod
     def load(name: str) -> "Game":
         path = SAVE_DIR / f"{_safe(name)}.rsim"
         with open(path, "rb") as fh:
+            compressed = fh.read(2) == b"\x1f\x8b"
+        with (gzip.open(path, "rb") if compressed else open(path, "rb")) as fh:
             return pickle.load(fh)
 
     @staticmethod

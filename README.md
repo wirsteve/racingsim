@@ -27,11 +27,31 @@ unpublished project; see [`LICENSING_IP_REVIEW.md`](LICENSING_IP_REVIEW.md).
 
 ## Play
 
-Requires Python 3.10+ (standard library only — nothing to install).
+**No Python needed.** Download the app for your computer from the repository's
+**Actions → Build app** run (artifacts at the bottom of the run page) or from
+**Releases** once a version is tagged:
+
+| OS | File | Start it |
+|---|---|---|
+| Windows | `racingsim-windows.zip` | unzip, double-click `racingsim.exe` (SmartScreen: *More info → Run anyway*) |
+| macOS (Apple Silicon) | `racingsim-macos-apple-silicon.zip` | unzip, right-click `racingsim` → *Open* (first time only) |
+| Linux | `racingsim-linux.tar.gz` | `tar -xzf … && ./racingsim` |
+
+Your browser opens the game; close the small console window to quit. Saves are kept
+in your user folder (`%APPDATA%\racingsim`, `~/Library/Application Support/racingsim`,
+`~/.local/share/racingsim`). Instructions also ship in `PLAY.txt`.
+
+From source (Python 3.10+, standard library only):
 
 ```bash
 python -m racingsim serve        # opens http://127.0.0.1:8765 in your browser
+python tools/build_app.py        # build the stand-alone app for this OS (needs: pip install pyinstaller)
 ```
+
+**Data.** Reference data is compiled into one SQLite database (`data/racingsim.db`)
+from the JSON sources in `data/`. It is built automatically on first run from
+source and ships prebuilt inside the app. No database server is involved: SQLite
+is a file, and it comes with Python.
 
 1. **New Career** — pick the **start year** (1995–2026), your name, home
    state/province, starting age, where you start racing (karting, asphalt ovals,

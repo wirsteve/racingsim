@@ -16,9 +16,10 @@ from typing import Optional
 from urllib.parse import parse_qs, unquote, urlparse
 
 from ..game.session import Game
+from ..paths import STATIC_DIR
 from . import api
 
-STATIC = Path(__file__).resolve().parent / "static"
+STATIC = STATIC_DIR
 
 
 class AppState:
