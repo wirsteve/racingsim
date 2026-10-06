@@ -1,4 +1,14 @@
 {
+ "src:arca-2025-schedule": {
+  "id": "src:arca-2025-schedule",
+  "name": "ARCA: 2025 ARCA Menards Series schedule released",
+  "url": "https://www.arcaracing.com/2024/09/27/2025-arca-menards-series-schedule-released/",
+  "kind": "official_series",
+  "reliability": "high",
+  "license": null,
+  "accessed": "2026-10-06",
+  "notes": "via search snippet"
+ },
  "src:arca-awards-guide-2023": {
   "name": "ARCA 2023 Race Event and Year-End Awards Guide / membership application (PDF)",
   "url": "https://www.arcaracing.com/wp-content/uploads/sites/36/2023/02/08/ARCA-Awards-Guide-2023-V2.pdf",
@@ -7,6 +17,56 @@
   "license": null,
   "accessed": "2026-10-06",
   "notes": "values taken from search-result summary of the official PDF"
+ },
+ "src:arca-daytona-entry-blank": {
+  "id": "src:arca-daytona-entry-blank",
+  "name": "ARCA Daytona ARCA 200 entry blank 2024 (PDF), via search snippet",
+  "url": "https://www.arcaracing.com/wp-content/uploads/sites/36/2024/01/31/24-AMS01-ENTRY-BLANK-DAYTONA.pdf",
+  "kind": "pdf",
+  "reliability": "medium",
+  "license": null,
+  "accessed": "2026-10-06",
+  "notes": "snippet only"
+ },
+ "src:arca-rulebook-2025": {
+  "id": "src:arca-rulebook-2025",
+  "name": "NASCAR/ARCA Rules 2025 (PDF) and ARCA minor participant bulletins, via search snippet",
+  "url": "https://www.arcaracing.com/wp-content/uploads/sites/36/2025/01/24/NASCAR-ARCA-Rules-2025.pdf",
+  "kind": "pdf",
+  "reliability": "high",
+  "license": null,
+  "accessed": "2026-10-06",
+  "notes": "arcaracing.com returned 403 to WebFetch; facts taken from search-indexed snippet only"
+ },
+ "src:asa-stars-official": {
+  "id": "src:asa-stars-official",
+  "name": "ASA STARS National Tour official site releases",
+  "url": "https://starsnationaltour.com/asa-stars-national-tour-releases-huge-bonus-package-for-full-time-teams-platinum-program-presented-by-rackley-roofing-valued-at-655000/",
+  "kind": "official_series",
+  "reliability": "high",
+  "license": null,
+  "accessed": "2026-10-06",
+  "notes": "via search snippets"
+ },
+ "src:ascs-2026": {
+  "id": "src:ascs-2026",
+  "name": "American Sprint Car Series official news (2026 schedule, points fund)",
+  "url": "https://ascsracing.com/news/2026-schedule-american-sprint-car-series-visits-new-venues-returning-favorites-in-35th-season/",
+  "kind": "official_series",
+  "reliability": "high",
+  "license": null,
+  "accessed": "2026-10-06",
+  "notes": "via search snippets"
+ },
+ "src:autopian-xfinity": {
+  "id": "src:autopian-xfinity",
+  "name": "The Autopian: An extraordinarily detailed accounting of how much it really costs to race in NASCAR (Nov 2025)",
+  "url": "https://www.theautopian.com/an-extraordinarily-detailed-accounting-of-how-much-it-really-costs-to-race-in-nascar/",
+  "kind": "news",
+  "reliability": "medium",
+  "license": null,
+  "accessed": "2026-10-06",
+  "notes": "Xfinity mid-pack team model"
  },
  "src:autopian-xfinity-costs-2025": {
   "name": "The Autopian: An extraordinarily detailed accounting of how much it really costs to race in NASCAR (Aedan McHugh, ex-Xfinity crew chief, 2025)",
@@ -24,6 +84,16 @@
   "reliability": "medium",
   "license": null,
   "accessed": "2026-10-06"
+ },
+ "src:bandolero-retail": {
+  "id": "src:bandolero-retail",
+  "name": "Bandolero retail pricing (impelmotorsports.com, gomotorsportsshop.com) and Wikipedia Bandolero racing, via search snippet",
+  "url": "https://en.wikipedia.org/wiki/Bandolero_racing",
+  "kind": "secondary",
+  "reliability": "medium",
+  "license": null,
+  "accessed": "2026-10-06",
+  "notes": null
  },
  "src:bell-2016-jqas-f1": {
   "name": "Bell, Smith, Sabel & Jones (2016) Formula for success: multilevel modelling of F1 driver and constructor performance 1950-2014, JQAS 12(2)",
@@ -59,6 +129,16 @@
   "accessed": "2026-10-06",
   "notes": "mixed reliability"
  },
+ "src:charter-sales": {
+  "id": "src:charter-sales",
+  "name": "FanBuzz/court documents and BlackBook Motorsport on Cup charter prices and 2025 charter agreement",
+  "url": "https://fanbuzz.com/racing/nascar/court-documents-reveal-stewart-haas-charter-prices-23xi-racing-front-row-motorsports/",
+  "kind": "news",
+  "reliability": "medium",
+  "license": null,
+  "accessed": "2026-10-06",
+  "notes": "via search snippets; also blackbookmotorsport.com"
+ },
  "src:charter-trial-2025": {
   "name": "ESPN / Jayski / FOX Sports: 23XI & Front Row v. NASCAR trial documents (2025)",
   "url": "https://www.foxsports.com/stories/nascar/nascar-financials-revealed-profits-losses",
@@ -67,6 +147,36 @@
   "license": null,
   "accessed": "2026-10-06",
   "notes": "court-record figures via news summaries"
+ },
+ "src:chili-bowl-news": {
+  "id": "src:chili-bowl-news",
+  "name": "FloRacing / MyRacePass / Racing America: Chili Bowl entries and purse",
+  "url": "https://www.myracepass.com/latest-news/article/26557/record-watch-chili-bowl-entry-list-again-nearing-300",
+  "kind": "news",
+  "reliability": "medium",
+  "license": null,
+  "accessed": "2026-10-06",
+  "notes": "via search snippets"
+ },
+ "src:cra-news": {
+  "id": "src:cra-news",
+  "name": "Racing America / CrateInsider: ASA/CRA Super Series and JEGS/CRA All-Stars Tour",
+  "url": "https://www.racingamerica.com/news/late-models/asa-cra-super-series-powered-by-jegs-2025-schedule-released",
+  "kind": "news",
+  "reliability": "medium",
+  "license": null,
+  "accessed": "2026-10-06",
+  "notes": "via search snippets"
+ },
+ "src:crateinsider-lmsc": {
+  "id": "src:crateinsider-lmsc",
+  "name": "CrateInsider: CARS Late Model Stock Tour rules + web snippets on LMSC costs",
+  "url": "https://crateinsider.com/cars-late-model-stock-tour/",
+  "kind": "secondary",
+  "reliability": "low",
+  "license": null,
+  "accessed": "2026-10-06",
+  "notes": null
  },
  "src:dailysportscar-gt3-budgets-2020": {
   "name": "DailySportscar: So you want to go GT3 racing? Part 2 (2020-06-23)",
@@ -100,6 +210,26 @@
   "reliability": "high",
   "license": null,
   "accessed": "2026-10-06"
+ },
+ "src:dirtcar-the-cars": {
+  "id": "src:dirtcar-the-cars",
+  "name": "DIRTcar: The Cars (class overview)",
+  "url": "https://about.dirtcar.com/the-cars",
+  "kind": "official_sanctioning",
+  "reliability": "high",
+  "license": null,
+  "accessed": "2026-10-06",
+  "notes": "late model weight figure (2925+) conflicts with WoO page (2,350); treated as error"
+ },
+ "src:dtd-dlm-regionals": {
+  "id": "src:dtd-dlm-regionals",
+  "name": "Dirt Track Digest / Xtreme DIRTcar / sasdirt.com on regional DLM tours",
+  "url": "https://www.dirttrackdigest.com/late-model-series-news/2019/10/16/xtreme-dirtcar-series-returns-as-winter-late-model-tour/",
+  "kind": "news",
+  "reliability": "medium",
+  "license": null,
+  "accessed": "2026-10-06",
+  "notes": "via search snippets"
  },
  "src:endurance-info-lmdh-cost": {
   "name": "Endurance-Info: How much does an LMDh cost?",
@@ -167,6 +297,16 @@
   "accessed": "2026-10-06",
   "notes": "posted purses as released by NASCAR"
  },
+ "src:floracing-cars-purse": {
+  "id": "src:floracing-cars-purse",
+  "name": "FloRacing/Short Track Scene: CARS Tour purse articles (Throwback Classic, Anderson double purse) 2025",
+  "url": "https://www.shorttrackscene.com/late-model-stock-cars/cars-late-model-stock-tour/cars-tour-to-offer-double-purse-bonus-at-anderson/",
+  "kind": "news",
+  "reliability": "medium",
+  "license": null,
+  "accessed": "2026-10-06",
+  "notes": "via search snippets"
+ },
  "src:floracing-dlm-budget-2017": {
   "name": "FloRacing: All it takes to run a national tour is guts, talent and a half-million (2017)",
   "url": "https://www.floracing.com/articles/5065706-all-it-takes-to-run-a-national-tour-is-guts-talent-and-a-half-million",
@@ -176,6 +316,26 @@
   "accessed": "2026-10-06",
   "notes": "dirt late model national tour"
  },
+ "src:floracing-dlm-cost": {
+  "id": "src:floracing-dlm-cost",
+  "name": "FloRacing: All it takes to run a national tour is guts, talent and a half-million",
+  "url": "https://www.floracing.com/articles/5065706-all-it-takes-to-run-a-national-tour-is-guts-talent-and-a-half-million",
+  "kind": "news",
+  "reliability": "medium",
+  "license": null,
+  "accessed": "2026-10-06",
+  "notes": "national dirt late model tour, ~2016-2017 article"
+ },
+ "src:floracing-mod-cost": {
+  "id": "src:floracing-mod-cost",
+  "name": "FloRacing: The cost of racing a national Modified tour",
+  "url": "https://www.floracing.com/articles/5967477-the-cost-of-racing-a-national-modified-tour",
+  "kind": "news",
+  "reliability": "medium",
+  "license": null,
+  "accessed": "2026-10-06",
+  "notes": "dirt modified (USMTS-type) national tour"
+ },
  "src:floracing-modified-budget-2017": {
   "name": "FloRacing: The cost of racing a national modified tour (2017)",
   "url": "https://www.floracing.com/articles/5967477-the-cost-of-racing-a-national-modified-tour",
@@ -183,6 +343,16 @@
   "reliability": "medium",
   "license": null,
   "accessed": "2026-10-06"
+ },
+ "src:floracing-snowball-2025": {
+  "id": "src:floracing-snowball-2025",
+  "name": "FloRacing: 2025 Snowball Derby purse",
+  "url": "https://www.floracing.com/articles/14858427-everyone-loves-money-heres-the-2025-snowball-derby-purse",
+  "kind": "news",
+  "reliability": "medium",
+  "license": null,
+  "accessed": "2026-10-06",
+  "notes": "via search snippet"
  },
  "src:flowracers-sponsorship": {
   "name": "Flow Racers: How much does it cost to sponsor a NASCAR car or driver",
@@ -234,6 +404,26 @@
   "license": null,
   "accessed": "2026-10-06"
  },
+ "src:gazette-iowa-costs": {
+  "id": "src:gazette-iowa-costs",
+  "name": "The Gazette (Cedar Rapids): Motorsport drivers spend more than most make in a year to compete",
+  "url": "https://www.thegazette.com/sports/motorsport-drivers-spend-more-than-most-make-in-a-year-to-compete/",
+  "kind": "news",
+  "reliability": "medium",
+  "license": null,
+  "accessed": "2026-10-06",
+  "notes": "IMCA late model / modified costs in eastern Iowa; article year not confirmed (assumed ~2022-2023)"
+ },
+ "src:gluck-martins-2017": {
+  "id": "src:gluck-martins-2017",
+  "name": "Jeff Gluck: Tommy Joe Martins on NASCAR TV revenue model for small teams (2017)",
+  "url": "https://jeffgluck.com/tommy-joe-martins-nascar-tv-revenue-model-small-teams/",
+  "kind": "news",
+  "reliability": "medium",
+  "license": null,
+  "accessed": "2026-10-06",
+  "notes": "team-owner insider numbers, 2014-2016 basis"
+ },
  "src:groothuis-2008-nepotism": {
   "name": "Groothuis & Groothuis (2008) Nepotism or family tradition? A study of NASCAR drivers, J. Sports Economics",
   "url": "https://journals.sagepub.com/doi/abs/10.1177/1527002507309990",
@@ -251,6 +441,26 @@
   "license": null,
   "accessed": "2026-10-06"
  },
+ "src:heavy-purses": {
+  "id": "src:heavy-purses",
+  "name": "Heavy.com: NASCAR purse articles 2025-2026",
+  "url": "https://heavy.com/sports/nascar/bristol-purse-2026/",
+  "kind": "news",
+  "reliability": "medium",
+  "license": null,
+  "accessed": "2026-10-06",
+  "notes": "via search snippets"
+ },
+ "src:highlimit-allstars": {
+  "id": "src:highlimit-allstars",
+  "name": "FloRacing / High Limit Racing: High Limit acquires All Star Circuit of Champions",
+  "url": "https://www.floracing.com/articles/11345545-high-limit-sprint-car-series-acquires-all-star-circuit-of-champions",
+  "kind": "news",
+  "reliability": "medium",
+  "license": null,
+  "accessed": "2026-10-06",
+  "notes": "via search snippets"
+ },
  "src:honda-racing-ir18": {
   "name": "Honda Racing / Wikipedia: IndyCar Dallara IR-18 specs",
   "url": "https://honda.racing/indy-car-series/machines/car-specifications",
@@ -266,6 +476,26 @@
   "reliability": "high",
   "license": null,
   "accessed": "2026-10-06"
+ },
+ "src:hyperracing-micro": {
+  "id": "src:hyperracing-micro",
+  "name": "Hyper Racing: What is a micro sprint?",
+  "url": "https://www.hyperracing.com/What_Is_a_Micro_Sprint",
+  "kind": "secondary",
+  "reliability": "medium",
+  "license": null,
+  "accessed": "2026-10-06",
+  "notes": "chassis manufacturer"
+ },
+ "src:imca-rules": {
+  "id": "src:imca-rules",
+  "name": "IMCA rules PDFs 2025-2026 (Northern SportMod, Hobby Stock, general rules), via search snippets",
+  "url": "https://www.imca.com/wp-content/uploads/2025/11/2026-Northern-SportMod-Rules.pdf",
+  "kind": "official_sanctioning",
+  "reliability": "high",
+  "license": null,
+  "accessed": "2026-10-06",
+  "notes": null
  },
  "src:imsa-ferrari-challenge-2025": {
   "name": "IMSA news / Ferrari: Ferrari Challenge North America 2025",
@@ -390,6 +620,16 @@
   "license": null,
   "accessed": "2026-10-06"
  },
+ "src:inex-divisions": {
+  "id": "src:inex-divisions",
+  "name": "INEX: Divisions",
+  "url": "https://www.inexseries.com/about/divisions/",
+  "kind": "official_sanctioning",
+  "reliability": "high",
+  "license": null,
+  "accessed": "2026-10-06",
+  "notes": null
+ },
  "src:informed-estimate": {
   "name": "Agent informed estimate (no direct source found; domain knowledge, flagged low confidence)",
   "url": "about:blank",
@@ -423,6 +663,16 @@
   "accessed": "2026-10-06",
   "notes": "written by a Truck/Xfinity team owner-driver"
  },
+ "src:jj-dlm-cost": {
+  "id": "src:jj-dlm-cost",
+  "name": "J J Motorsports blog: How much does a dirt late model cost",
+  "url": "https://jj-motorsports.com/blog/how-much-does-a-dirt-late-model-cost/",
+  "kind": "secondary",
+  "reliability": "low",
+  "license": null,
+  "accessed": "2026-10-06",
+  "notes": "via search snippet"
+ },
  "src:karting-cost-aggregators": {
   "name": "Karting cost guides (sportsgeardaily, senndit, myracingpath) incl. Reuters 2015 survey citation",
   "url": "https://sportsgeardaily.com/guides/how-much-does-go-karting-cost",
@@ -440,6 +690,16 @@
   "license": null,
   "accessed": "2026-10-06"
  },
+ "src:kkm-news": {
+  "id": "src:kkm-news",
+  "name": "SPEED SPORT / Racing America / MRN on Keith Kunz Motorsports and Toyota development",
+  "url": "https://www.racingamerica.com/news/dirt-cars/keith-kunz-as-motivated-as-ever-to-produce-champions-stars",
+  "kind": "news",
+  "reliability": "medium",
+  "license": null,
+  "accessed": "2026-10-06",
+  "notes": "via search snippets"
+ },
  "src:kurt-busch-retirement-2023": {
   "name": "NASCAR.com: Kurt Busch announces retirement (2023-08-26)",
   "url": "https://www.nascar.com/news-media/2023/08/26/kurt-busch-announces-retirement-ending-career-with-34-cup-series-victories/",
@@ -455,6 +715,16 @@
   "reliability": "high",
   "license": null,
   "accessed": "2026-10-06"
+ },
+ "src:lucas-2025": {
+  "id": "src:lucas-2025",
+  "name": "Lucas Oil Late Model Dirt Series 2025 schedule/points fund releases (lucasdirt.com, speedsport.com)",
+  "url": "https://speedsport.com/short-track/dirt-late-models/58-events-for-2025-lucas-late-model-campaign/",
+  "kind": "official_series",
+  "reliability": "high",
+  "license": null,
+  "accessed": "2026-10-06",
+  "notes": "via search snippets"
  },
  "src:manofmany-lambo-ferrari": {
   "name": "Search aggregate: Lamborghini Super Trofeo EVO2 and Ferrari 296 Challenge prices / season costs",
@@ -472,6 +742,16 @@
   "license": null,
   "accessed": "2026-10-06",
   "notes": "fan analysis"
+ },
+ "src:mastergassers-woo": {
+  "id": "src:mastergassers-woo",
+  "name": "Master Gassers: High Limit vs World of Outlaws, a financial breakdown (Nov 2023)",
+  "url": "https://mastergassers.com/2023/11/28/high-limit-vs-world-of-outlaws-a-financial-breakdown/",
+  "kind": "secondary",
+  "reliability": "medium",
+  "license": null,
+  "accessed": "2026-10-06",
+  "notes": null
  },
  "src:mazda-mx5cup-scholarship": {
   "name": "Mazda Motorsports: Idemitsu MX-5 Cup / Mazda Road to 24",
@@ -619,6 +899,26 @@
   "license": null,
   "accessed": "2026-10-06"
  },
+ "src:nascar-vtc-2025": {
+  "id": "src:nascar-vtc-2025",
+  "name": "NASCAR.com / SPEED SPORT: Virginia Triple Crown purse",
+  "url": "https://www.nascar.com/news-media/2026/05/07/virginia-triple-crown-purse-2026/",
+  "kind": "official_sanctioning",
+  "reliability": "high",
+  "license": null,
+  "accessed": "2026-10-06",
+  "notes": "via search snippet"
+ },
+ "src:nascar-wmt-payouts": {
+  "id": "src:nascar-wmt-payouts",
+  "name": "NASCAR.com / RaceDayCT / Short Track Scene: Whelen Modified Tour payouts 2021-2025",
+  "url": "https://www.nascar.com/news-media/2022/02/02/nascar-whelen-modified-tour-awards-1-3-million-in-2021-payouts-figure-to-rise-in-2022/",
+  "kind": "official_sanctioning",
+  "reliability": "high",
+  "license": null,
+  "accessed": "2026-10-06",
+  "notes": "via search snippets"
+ },
  "src:nbcsports-drivers-edge-2019": {
   "name": "NBC Sports: JR Motorsports, GMS Racing partner on driver development program (2019)",
   "url": "https://www.nbcsports.com/nascar/news/jr-motorsports-gms-racing-partner-on-driver-development-program",
@@ -693,6 +993,26 @@
   "reliability": "high",
   "license": null,
   "accessed": "2026-10-06"
+ },
+ "src:powri-wiki": {
+  "id": "src:powri-wiki",
+  "name": "Wikipedia: POWRi Midget Racing + SPEED SPORT POWRi 410 schedule, via search snippets",
+  "url": "https://en.wikipedia.org/wiki/POWRi_Midget_Racing",
+  "kind": "wiki",
+  "reliability": "medium",
+  "license": "CC BY-SA",
+  "accessed": "2026-10-06",
+  "notes": null
+ },
+ "src:qma-rulebook": {
+  "id": "src:qma-rulebook",
+  "name": "QMA rulebook 2025 and QMA FAQ pages, via search snippet",
+  "url": "https://quartermidgets.org/wp-content/uploads/2025/02/2025-QMA-Rulebook-Final-1.pdf",
+  "kind": "pdf",
+  "reliability": "medium",
+  "license": null,
+  "accessed": "2026-10-06",
+  "notes": "snippet: QMA allows drivers up to 17"
  },
  "src:racer-indycar-budgets-2025": {
   "name": "RACER: Why do IndyCar team budgets keep climbing? (Feb 2025)",
@@ -776,6 +1096,26 @@
   "license": null,
   "accessed": "2026-10-06"
  },
+ "src:racingamerica-sss": {
+  "id": "src:racingamerica-sss",
+  "name": "Racing America / SPEED SPORT: ASA Southern Super Series reports",
+  "url": "https://www.racingamerica.com/news/late-models/bubba-pollard-adds-another-southern-super-series-win-at-cordele",
+  "kind": "news",
+  "reliability": "medium",
+  "license": null,
+  "accessed": "2026-10-06",
+  "notes": "via search snippets"
+ },
+ "src:racingnews-crate": {
+  "id": "src:racingnews-crate",
+  "name": "Racing News: Crate late model economics (2018)",
+  "url": "https://racingnews.co/2018/01/18/crate-late-model-economics/",
+  "kind": "news",
+  "reliability": "medium",
+  "license": null,
+  "accessed": "2026-10-06",
+  "notes": null
+ },
  "src:racingnews-hamlin-costs-2024": {
   "name": "Racing News: Denny Hamlin says it costs $18M to run a NASCAR team (2024-07-27)",
   "url": "https://racingnews.co/2024/07/27/denny-hamlin-says-is-costs-18m-to-run-a-nascar-team/",
@@ -835,6 +1175,26 @@
   "accessed": "2026-10-06",
   "notes": "sponsorship agency blog; price bands not audited"
  },
+ "src:rtrsports-sponsorship": {
+  "id": "src:rtrsports-sponsorship",
+  "name": "RTR Sports / Flow Racers: NASCAR series sponsorship cost guides",
+  "url": "https://rtrsports.com/en/blog/nascar-series/",
+  "kind": "secondary",
+  "reliability": "low",
+  "license": null,
+  "accessed": "2026-10-06",
+  "notes": "marketing-agency estimates"
+ },
+ "src:sai-arca-path": {
+  "id": "src:sai-arca-path",
+  "name": "Speedway Action Images: How the ARCA Menards Series helps short track racers get to NASCAR (2025)",
+  "url": "https://speedwayactionimages.com/2025/01/19/how-the-arca-menards-series-helps-short-track-racers-get-to-nascar/",
+  "kind": "secondary",
+  "reliability": "medium",
+  "license": null,
+  "accessed": "2026-10-06",
+  "notes": null
+ },
  "src:salary-estimates-indycar": {
   "name": "Front Office Sports / NBC Sports: IndyCar salaries (Herta, O'Ward)",
   "url": "https://www.nbcsports.com/motor-sports/news/indycar-reacts-to-pato-owards-10-million-salary-revelation-its-great-for-the-driver-market",
@@ -876,6 +1236,36 @@
   "license": null,
   "accessed": "2026-10-06"
  },
+ "src:search-410-cost": {
+  "id": "src:search-410-cost",
+  "name": "Web snippets on 410/WoO sprint team costs (traxion.gg, bbcboards forum)",
+  "url": "https://www.bbcboards.net/showthread.php?t=1205431",
+  "kind": "search",
+  "reliability": "low",
+  "license": null,
+  "accessed": "2026-10-06",
+  "notes": null
+ },
+ "src:search-crate-engines": {
+  "id": "src:search-crate-engines",
+  "name": "Crate engine retail/forum prices (Dirt Track Digest forum, KillerCrate, Speedway Motors), via search snippets",
+  "url": "https://killercrate.com/KillerCrate-Race-Ready-602-Crate-Engine-p125890569",
+  "kind": "search",
+  "reliability": "low",
+  "license": null,
+  "accessed": "2026-10-06",
+  "notes": null
+ },
+ "src:search-cup-cost": {
+  "id": "src:search-cup-cost",
+  "name": "Sportsnaut / EssentiallySports / Sportskeeda: Cup team costs (Hamlin ~$20M per car)",
+  "url": "https://sportsnaut.com/nascar/how-much-does-a-nascar-team-spend-on-each-race",
+  "kind": "secondary",
+  "reliability": "low",
+  "license": null,
+  "accessed": "2026-10-06",
+  "notes": null
+ },
  "src:search-gt4-imsa-costs": {
   "name": "Rennlist forum + search aggregate: IMSA GT4 / GT4 America costs",
   "url": "https://rennlist.com/forums/porsche-cup-cars/1204484-imsa-gt3-cup-vs-gt4-america-racing-cost.html",
@@ -900,6 +1290,86 @@
   "license": null,
   "accessed": "2026-10-06"
  },
+ "src:search-micro-ages": {
+  "id": "src:search-micro-ages",
+  "name": "Web search snippets on micro sprint classes/ages (asmsportstech, bbracechassis, track rules)",
+  "url": "https://bbracechassis.com/blogs/blog-categories/what-is-a-micro-sprint-race-car",
+  "kind": "search",
+  "reliability": "low",
+  "license": null,
+  "accessed": "2026-10-06",
+  "notes": null
+ },
+ "src:search-midget-cost": {
+  "id": "src:search-midget-cost",
+  "name": "Indiana Open Wheel forum + 4 Piston Racing engine listing (USAC midget costs), via search snippet",
+  "url": "https://www.indianaopenwheel.com/showthread.php?t=11599&styleid=1",
+  "kind": "search",
+  "reliability": "low",
+  "license": null,
+  "accessed": "2026-10-06",
+  "notes": null
+ },
+ "src:search-ministock": {
+  "id": "src:search-ministock",
+  "name": "Search snippets on mini stock / sport compact / pure stock classes (Wikipedia Production car racing, track pages)",
+  "url": "https://en.wikipedia.org/wiki/Production_car_racing",
+  "kind": "search",
+  "reliability": "low",
+  "license": null,
+  "accessed": "2026-10-06",
+  "notes": null
+ },
+ "src:search-nascar-age": {
+  "id": "src:search-nascar-age",
+  "name": "Web search snippets on NASCAR age rules (flowracers, trackside.media, si.com, autoracing1)",
+  "url": "https://trackside.media/stories/nascar-lets-veteran-cup-drivers-run-more-lower-series-races-lowers-ages",
+  "kind": "search",
+  "reliability": "medium",
+  "license": null,
+  "accessed": "2026-10-06",
+  "notes": null
+ },
+ "src:search-pro-vs-super": {
+  "id": "src:search-pro-vs-super",
+  "name": "MyRacePass/SportsRush: Pro vs Super Late Model, via search snippet",
+  "url": "https://www.myracepass.com/tracks/1534/news/2022/article/115800/pro-vs-super-late-model-what-s-the-diff",
+  "kind": "search",
+  "reliability": "low",
+  "license": null,
+  "accessed": "2026-10-06",
+  "notes": null
+ },
+ "src:search-sprint-classes": {
+  "id": "src:search-sprint-classes",
+  "name": "Speedway Motors Toolbox / Engine Builder: 410 vs 360 vs 305 sprint classes, via search snippet",
+  "url": "https://www.speedwaymotors.com/the-toolbox/sprint-car-racing-classes-410-vs-305-vs-360-explained/145949",
+  "kind": "search",
+  "reliability": "low",
+  "license": null,
+  "accessed": "2026-10-06",
+  "notes": "WebFetch returned empty content; used snippet"
+ },
+ "src:search-streetstock": {
+  "id": "src:search-streetstock",
+  "name": "Search snippets on street/hobby stock costs (Speedway Motors toolbox, buildyourownracecar)",
+  "url": "https://www.speedwaymotors.com/the-toolbox/how-to-get-into-stock-car-racing-dirt-track-style-rules-and-tips/145856",
+  "kind": "search",
+  "reliability": "low",
+  "license": null,
+  "accessed": "2026-10-06",
+  "notes": null
+ },
+ "src:search-thunder-babygrand": {
+  "id": "src:search-thunder-babygrand",
+  "name": "Search snippets on Thunder Roadster, Baby Grand, Dwarf cars (racingjunk, grassrootsmotorsports)",
+  "url": "https://grassrootsmotorsports.com/forum/grm/tiny-racecar-talk-baby-grand-vs-dwarf-legends-vs/128241/page1/",
+  "kind": "search",
+  "reliability": "low",
+  "license": null,
+  "accessed": "2026-10-06",
+  "notes": null
+ },
  "src:seriouslyfast-arca-2025": {
   "name": "Seriously Fast Motorsports: The Broken Ladder - ARCA's financial model (2025-11-06)",
   "url": "https://seriouslyfastmotorsports.com/2025/11/06/the-broken-ladder-how-arcas-financial-model-exploits-underfunded-drivers/",
@@ -916,6 +1386,16 @@
   "reliability": "medium",
   "license": null,
   "accessed": "2026-10-06"
+ },
+ "src:silver-crown-search": {
+  "id": "src:silver-crown-search",
+  "name": "iRacing C&R Silver Crown car page + Wikipedia USAC Silver Crown season articles",
+  "url": "https://www.iracing.com/cars/cr-racing-silver-crown-car/",
+  "kind": "secondary",
+  "reliability": "medium",
+  "license": null,
+  "accessed": "2026-10-06",
+  "notes": null
  },
  "src:skipbarber-wiki": {
   "name": "Wikipedia: Skip Barber Racing School / Barber Pro Series",
@@ -975,6 +1455,36 @@
   "license": null,
   "accessed": "2026-10-06"
  },
+ "src:speedsport-knoxville-2025": {
+  "id": "src:speedsport-knoxville-2025",
+  "name": "SPEED SPORT / WoO: Ryan Timms wins $195,000 Knoxville Nationals (2025)",
+  "url": "https://speedsport.com/sprints-midgets/its-all-ryan-timms-in-195000-knoxville-score/",
+  "kind": "news",
+  "reliability": "high",
+  "license": null,
+  "accessed": "2026-10-06",
+  "notes": null
+ },
+ "src:speedsport-usac-midget": {
+  "id": "src:speedsport-usac-midget",
+  "name": "SPEED SPORT: It's 28 races for USAC National Midgets",
+  "url": "https://speedsport.com/sprints-midgets/its-28-races-for-usac-national-midgets/",
+  "kind": "news",
+  "reliability": "medium",
+  "license": null,
+  "accessed": "2026-10-06",
+  "notes": "via search snippet; year not confirmed"
+ },
+ "src:speedsport-woo-90": {
+  "id": "src:speedsport-woo-90",
+  "name": "SPEED SPORT: 90 dates for World of Outlaws Sprint Cars (2025)",
+  "url": "https://speedsport.com/sprints-midgets/90-dates-for-world-of-outlaws-sprint-cars/",
+  "kind": "news",
+  "reliability": "high",
+  "license": null,
+  "accessed": "2026-10-06",
+  "notes": "via search snippet"
+ },
  "src:speedwayactionimages-arca-2025": {
   "name": "Speedway Action Images: How the ARCA Menards Series helps short track racers get to NASCAR (2025-01-19)",
   "url": "https://speedwayactionimages.com/2025/01/19/how-the-arca-menards-series-helps-short-track-racers-get-to-nascar/",
@@ -1032,6 +1542,56 @@
   "license": null,
   "accessed": "2026-10-06"
  },
+ "src:stafford-sk": {
+  "id": "src:stafford-sk",
+  "name": "Stafford Speedway SK / SK Light rulebooks, via search snippets",
+  "url": "https://staffordmotorspeedway.com/wp-content/uploads/2025/10/2026-SK-Light-Rules.pdf",
+  "kind": "official_track",
+  "reliability": "medium",
+  "license": null,
+  "accessed": "2026-10-06",
+  "notes": null
+ },
+ "src:sts-asa-stars-fund": {
+  "id": "src:sts-asa-stars-fund",
+  "name": "Short Track Scene / ASA STARS official: points fund and purse minimums",
+  "url": "https://www.shorttrackscene.com/super-late-models/asa-stars-reveals-national-championship-points-fund/",
+  "kind": "news",
+  "reliability": "medium",
+  "license": null,
+  "accessed": "2026-10-06",
+  "notes": "via search snippets; plus starsnationaltour.com Platinum Program release"
+ },
+ "src:sts-pass": {
+  "id": "src:sts-pass",
+  "name": "Short Track Scene: PASS race reports (Memorial Day Clash $10k etc.), via search snippets",
+  "url": "https://www.shorttrackscene.com/super-late-models/pro-all-stars-series/doiron-scores-big-in-inaugural-pass-memorial-day-clash/",
+  "kind": "news",
+  "reliability": "medium",
+  "license": null,
+  "accessed": "2026-10-06",
+  "notes": null
+ },
+ "src:sts-slm-vs-lms": {
+  "id": "src:sts-slm-vs-lms",
+  "name": "Short Track Scene: What's the difference between a Super Late Model and a Late Model Stock",
+  "url": "https://www.shorttrackscene.com/commentary/whats-the-difference-between-a-super-late-model-and-a-late-model-stock/",
+  "kind": "news",
+  "reliability": "medium",
+  "license": null,
+  "accessed": "2026-10-06",
+  "notes": null
+ },
+ "src:superdirtcar-101": {
+  "id": "src:superdirtcar-101",
+  "name": "Super DIRTcar Series: DIRT 101",
+  "url": "https://superdirtcarseries.com/about/dirt-101/",
+  "kind": "official_series",
+  "reliability": "high",
+  "license": null,
+  "accessed": "2026-10-06",
+  "notes": null
+ },
  "src:the-race-lights-prize-2022": {
   "name": "The Race: Dramatic Indy Lights prize reduction has huge consequences (2022)",
   "url": "https://www.the-race.com/indycar/dramatic-indy-lights-prize-reduction-has-huge-consequences/",
@@ -1039,6 +1599,16 @@
   "reliability": "high",
   "license": null,
   "accessed": "2026-10-06"
+ },
+ "src:thedrive-legend": {
+  "id": "src:thedrive-legend",
+  "name": "The Drive: Driving a $17,500 Legend Car",
+  "url": "https://www.thedrive.com/new-cars/legend-car-review-at-17500-affordable-racing-is-alive-and-well",
+  "kind": "news",
+  "reliability": "medium",
+  "license": null,
+  "accessed": "2026-10-06",
+  "notes": "via search snippet"
  },
  "src:thedrive-mx5-budget": {
   "name": "The Drive: Global Mazda MX-5 Cup - racing on a budget",
@@ -1065,6 +1635,16 @@
   "license": null,
   "accessed": "2026-10-06"
  },
+ "src:theracingexperts-age-2026": {
+  "id": "src:theracingexperts-age-2026",
+  "name": "The Racing Experts: NASCAR changes minimum age rule for national series drivers",
+  "url": "https://theracingexperts.com/nascar-changes-minimum-age-rule-for-national-series-drivers/",
+  "kind": "news",
+  "reliability": "medium",
+  "license": null,
+  "accessed": "2026-10-06",
+  "notes": "2026 age rules; corroborated by search snippets from flowracers.com, trackside.media, si.com"
+ },
  "src:toyota-keelan-harvick-2026": {
   "name": "AP via ABC/FOX: TRD signs 13-year-old Keelan Harvick to long-term deal (2026)",
   "url": "https://www.foxsports.com/articles/motor/toyota-racing-development-signs-13yearold-keelan-harvick-to-a-longterm-driver-deal",
@@ -1088,6 +1668,26 @@
   "reliability": "high",
   "license": null,
   "accessed": "2026-10-06"
+ },
+ "src:usac-age": {
+  "id": "src:usac-age",
+  "name": "USAC: rule changes / licensing (minimum age 15), via search snippet",
+  "url": "https://trans.usacracing.com/news/item/5093-rule-changes-greet-usac-s-silver-crown-sprint-midget-divisions-in-2016",
+  "kind": "official_sanctioning",
+  "reliability": "medium",
+  "license": null,
+  "accessed": "2026-10-06",
+  "notes": null
+ },
+ "src:usac-sprint-2025": {
+  "id": "src:usac-sprint-2025",
+  "name": "USAC: Cummins' Crown! 2025 USAC AMSOIL National Sprint Car season review",
+  "url": "https://www.usacracing.com/news/2025-usac-sprint-car-season-review",
+  "kind": "official_sanctioning",
+  "reliability": "high",
+  "license": null,
+  "accessed": "2026-10-06",
+  "notes": "via search snippet"
  },
  "src:usf-licensing-2026": {
   "name": "USF Pro Championships: 2026 licensing and credential guidelines; Indy NXT 2026 rulebook",
@@ -1113,6 +1713,16 @@
   "license": null,
   "accessed": "2026-10-06"
  },
+ "src:uslci-age-2022": {
+  "id": "src:uslci-age-2022",
+  "name": "US Legend Cars Intl: Age requirements lowered for Bandoleros and Legend Cars (2022)",
+  "url": "https://www.uslegendcars.com/media/age-requirements-lowered-for-racing-bandoleros-legend-cars.html",
+  "kind": "official_series",
+  "reliability": "high",
+  "license": null,
+  "accessed": "2026-10-06",
+  "notes": "via search snippet; corroborated by performanceracing.com"
+ },
  "src:uslegendcars-start": {
   "name": "US Legend Cars International / Wikipedia Legends car racing",
   "url": "https://en.wikipedia.org/wiki/Legends_car_racing",
@@ -1120,6 +1730,16 @@
   "reliability": "medium",
   "license": "CC BY-SA",
   "accessed": "2026-10-06"
+ },
+ "src:usmts-2024": {
+  "id": "src:usmts-2024",
+  "name": "USMTS news releases (2024 schedule/points fund)",
+  "url": "https://usmts.com/news/news_article.asp?NewsID=110206",
+  "kind": "official_series",
+  "reliability": "high",
+  "license": null,
+  "accessed": "2026-10-06",
+  "notes": "via search snippets"
  },
  "src:usopenwheelnation-indynxt-costs-2025": {
   "name": "US Open Wheel Nation: Indy NXT's rising costs put scholarships and ladder to the test (2025-05-06)",
@@ -1146,6 +1766,26 @@
   "license": null,
   "accessed": "2026-10-06"
  },
+ "src:usra-search": {
+  "id": "src:usra-search",
+  "name": "USRA official news (classes, track count), via search snippets",
+  "url": "https://usraracing.com/news/news_article.asp?NewsID=6946",
+  "kind": "official_sanctioning",
+  "reliability": "medium",
+  "license": null,
+  "accessed": "2026-10-06",
+  "notes": null
+ },
+ "src:valleystar-300": {
+  "id": "src:valleystar-300",
+  "name": "Martinsville ValleyStar Credit Union 300 purse/results (yourgv.com, shorttrackscene, floracing)",
+  "url": "https://www.yourgv.com/sports/racing/valleystar-credit-union-300-purse-set-at-125-000/article_93aa9ae8-790b-11ef-855e-a7e628ca118e.html",
+  "kind": "news",
+  "reliability": "medium",
+  "license": null,
+  "accessed": "2026-10-06",
+  "notes": "via search snippets"
+ },
  "src:vankesteren-bergkamp-f1-2023": {
   "name": "van Kesteren & Bergkamp (2023) Bayesian analysis of Formula One race results (J. Quant. Anal. Sports / PMC10660124)",
   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10660124/",
@@ -1154,6 +1794,16 @@
   "license": "open access",
   "accessed": "2026-10-06",
   "notes": "peer-reviewed"
+ },
+ "src:vastqm-faq": {
+  "id": "src:vastqm-faq",
+  "name": "VAST Quarter Midgets FAQ / engine retailers, via search snippet",
+  "url": "https://vastqm.com/pages/faq",
+  "kind": "secondary",
+  "reliability": "low",
+  "license": null,
+  "accessed": "2026-10-06",
+  "notes": null
  },
  "src:wiki-accus": {
   "name": "Wikipedia: Automobile Competition Committee for the United States",
@@ -1179,6 +1829,26 @@
   "license": "CC BY-SA 4.0",
   "accessed": "2026-10-06"
  },
+ "src:wiki-arca": {
+  "id": "src:wiki-arca",
+  "name": "Wikipedia: ARCA Menards Series",
+  "url": "https://en.wikipedia.org/wiki/ARCA_Menards_Series",
+  "kind": "wiki",
+  "reliability": "medium",
+  "license": "CC BY-SA",
+  "accessed": "2026-10-06",
+  "notes": null
+ },
+ "src:wiki-asa-midwest": {
+  "id": "src:wiki-asa-midwest",
+  "name": "Wikipedia: ASA Midwest Tour",
+  "url": "https://en.wikipedia.org/wiki/ASA_Midwest_Tour",
+  "kind": "wiki",
+  "reliability": "medium",
+  "license": "CC BY-SA",
+  "accessed": "2026-10-06",
+  "notes": null
+ },
  "src:wiki-atlantic": {
   "name": "Wikipedia: Atlantic Championship",
   "url": "https://en.wikipedia.org/wiki/Atlantic_Championship",
@@ -1194,6 +1864,16 @@
   "reliability": "medium",
   "license": "CC BY-SA 4.0",
   "accessed": "2026-10-06"
+ },
+ "src:wiki-cars-tour": {
+  "id": "src:wiki-cars-tour",
+  "name": "Wikipedia: CARS Tour",
+  "url": "https://en.wikipedia.org/wiki/CARS_Tour",
+  "kind": "wiki",
+  "reliability": "medium",
+  "license": "CC BY-SA",
+  "accessed": "2026-10-06",
+  "notes": null
  },
  "src:wiki-cart": {
   "name": "Wikipedia: Championship Auto Racing Teams / Champ Car World Series",
@@ -1234,6 +1914,16 @@
   "reliability": "medium",
   "license": "CC BY-SA 4.0",
   "accessed": "2026-10-06"
+ },
+ "src:wiki-driver-bios": {
+  "id": "src:wiki-driver-bios",
+  "name": "Wikipedia driver biographies via MediaWiki API (Larson, Bell, Briscoe, K. Busch, Hamlin, Chastain, Wallace, Davenport, Schatz, Coby, Byron, Preece, Logano, Elliott, Kahne, Stewart, Majeski, Hocevar, Sweet, Stenhouse, Allgaier, Heim, Zilisch, Gibbs, Bloomquist, Abreu, Kofoid, A. Dillon, Newman, Gordon, Caruth, Pierce, Suarez, Seavey, Bonsignore, Gravel, Hearn, McCreadie, Harvick, Kenseth, Bowyer)",
+  "url": "https://en.wikipedia.org/w/api.php",
+  "kind": "wiki",
+  "reliability": "medium",
+  "license": "CC BY-SA",
+  "accessed": "2026-10-06",
+  "notes": "extracts fetched 2026-10-06 with rate-limit backoff"
  },
  "src:wiki-f1600-series": {
   "name": "Wikipedia: F1600 Championship Series",
@@ -1387,6 +2077,26 @@
   "license": "CC BY-SA 4.0",
   "accessed": "2026-10-06"
  },
+ "src:wiki-late-model": {
+  "id": "src:wiki-late-model",
+  "name": "Wikipedia: Late model",
+  "url": "https://en.wikipedia.org/wiki/Late_model",
+  "kind": "wiki",
+  "reliability": "medium",
+  "license": "CC BY-SA",
+  "accessed": "2026-10-06",
+  "notes": null
+ },
+ "src:wiki-legends": {
+  "id": "src:wiki-legends",
+  "name": "Wikipedia: Legends car racing / US Legend Cars",
+  "url": "https://en.wikipedia.org/wiki/Legends_car_racing",
+  "kind": "wiki",
+  "reliability": "medium",
+  "license": "CC BY-SA",
+  "accessed": "2026-10-06",
+  "notes": null
+ },
  "src:wiki-lola-t97-20": {
   "name": "Wikipedia: Lola T97/20 (Indy Lights 1997-2001)",
   "url": "https://en.wikipedia.org/wiki/Lola_T97/20",
@@ -1394,6 +2104,16 @@
   "reliability": "medium",
   "license": "CC BY-SA 4.0",
   "accessed": "2026-10-06"
+ },
+ "src:wiki-lucas": {
+  "id": "src:wiki-lucas",
+  "name": "Wikipedia: Lucas Oil Late Model Dirt Series",
+  "url": "https://en.wikipedia.org/wiki/Lucas_Oil_Late_Model_Dirt_Series",
+  "kind": "wiki",
+  "reliability": "medium",
+  "license": "CC BY-SA",
+  "accessed": "2026-10-06",
+  "notes": null
  },
  "src:wiki-mclaughlin": {
   "name": "Wikipedia: Scott McLaughlin",
@@ -1403,6 +2123,16 @@
   "license": "CC BY-SA 4.0",
   "accessed": "2026-10-06"
  },
+ "src:wiki-midget": {
+  "id": "src:wiki-midget",
+  "name": "Wikipedia: Midget car racing",
+  "url": "https://en.wikipedia.org/wiki/Midget_car_racing",
+  "kind": "wiki",
+  "reliability": "medium",
+  "license": "CC BY-SA",
+  "accessed": "2026-10-06",
+  "notes": null
+ },
  "src:wiki-nasa": {
   "name": "Wikipedia / drivenasa.com: National Auto Sport Association",
   "url": "https://en.wikipedia.org/wiki/National_Auto_Sport_Association",
@@ -1410,6 +2140,16 @@
   "reliability": "medium",
   "license": "CC BY-SA 4.0",
   "accessed": "2026-10-06"
+ },
+ "src:wiki-nascar-weekly": {
+  "id": "src:wiki-nascar-weekly",
+  "name": "Wikipedia: NASCAR Advance Auto Parts Weekly Series (NASCAR Local Racing Series)",
+  "url": "https://en.wikipedia.org/wiki/NASCAR_Advance_Auto_Parts_Weekly_Series",
+  "kind": "wiki",
+  "reliability": "medium",
+  "license": "CC BY-SA",
+  "accessed": "2026-10-06",
+  "notes": null
  },
  "src:wiki-newgarden": {
   "name": "Wikipedia: Josef Newgarden",
@@ -1426,6 +2166,16 @@
   "reliability": "medium",
   "license": "CC BY-SA 4.0",
   "accessed": "2026-10-06"
+ },
+ "src:wiki-pass": {
+  "id": "src:wiki-pass",
+  "name": "Wikipedia: Pro All Stars Series",
+  "url": "https://en.wikipedia.org/wiki/Pro_All_Stars_Series",
+  "kind": "wiki",
+  "reliability": "medium",
+  "license": "CC BY-SA",
+  "accessed": "2026-10-06",
+  "notes": null
  },
  "src:wiki-pilot-challenge": {
   "name": "Wikipedia / IMSA: Michelin Pilot Challenge",
@@ -1450,6 +2200,16 @@
   "reliability": "medium",
   "license": "CC BY-SA 4.0",
   "accessed": "2026-10-06"
+ },
+ "src:wiki-quarter-midget": {
+  "id": "src:wiki-quarter-midget",
+  "name": "Wikipedia: Quarter midget racing",
+  "url": "https://en.wikipedia.org/wiki/Quarter_midget_racing",
+  "kind": "wiki",
+  "reliability": "medium",
+  "license": "CC BY-SA",
+  "accessed": "2026-10-06",
+  "notes": null
  },
  "src:wiki-road-course-ringer": {
   "name": "Wikipedia / motorsport.com: Road course ringer",
@@ -1506,6 +2266,26 @@
   "reliability": "medium",
   "license": "CC BY-SA 4.0",
   "accessed": "2026-10-06"
+ },
+ "src:wiki-sprint-car": {
+  "id": "src:wiki-sprint-car",
+  "name": "Wikipedia: Sprint car racing",
+  "url": "https://en.wikipedia.org/wiki/Sprint_car_racing",
+  "kind": "wiki",
+  "reliability": "medium",
+  "license": "CC BY-SA",
+  "accessed": "2026-10-06",
+  "notes": null
+ },
+ "src:wiki-super-dirtcar": {
+  "id": "src:wiki-super-dirtcar",
+  "name": "Wikipedia: Super DIRTcar Series",
+  "url": "https://en.wikipedia.org/wiki/Super_DIRTcar_Series",
+  "kind": "wiki",
+  "reliability": "medium",
+  "license": "CC BY-SA",
+  "accessed": "2026-10-06",
+  "notes": null
  },
  "src:wiki-tc-america": {
   "name": "Wikipedia / SRO: TC America Series",
@@ -1588,6 +2368,16 @@
   "license": "CC BY-SA 4.0",
   "accessed": "2026-10-06"
  },
+ "src:wiki-wmt": {
+  "id": "src:wiki-wmt",
+  "name": "Wikipedia: NASCAR Whelen Modified Tour",
+  "url": "https://en.wikipedia.org/wiki/NASCAR_Whelen_Modified_Tour",
+  "kind": "wiki",
+  "reliability": "medium",
+  "license": "CC BY-SA",
+  "accessed": "2026-10-06",
+  "notes": null
+ },
  "src:wikidata": {
   "name": "Wikidata",
   "url": "https://www.wikidata.org/",
@@ -1613,6 +2403,36 @@
   "reliability": "medium",
   "license": "CC BY-SA 4.0",
   "accessed": "2026-10-06"
+ },
+ "src:woo-lm-2025": {
+  "id": "src:woo-lm-2025",
+  "name": "World of Outlaws: 2025 Late Model schedule, over $1 million points fund",
+  "url": "https://worldofoutlaws.com/latemodels/2025-schedule-over-1-million-points-fund-bigger-payouts-marquee-events-highlight-new-world-of-outlaws-late-model-season/",
+  "kind": "official_series",
+  "reliability": "high",
+  "license": null,
+  "accessed": "2026-10-06",
+  "notes": "via search snippet"
+ },
+ "src:woo-lm-car": {
+  "id": "src:woo-lm-car",
+  "name": "World of Outlaws Fan 101: The Late Model car",
+  "url": "https://about.worldofoutlaws.com/the-car-late-model",
+  "kind": "official_series",
+  "reliability": "high",
+  "license": null,
+  "accessed": "2026-10-06",
+  "notes": null
+ },
+ "src:woo-sprint-2025-review": {
+  "id": "src:woo-sprint-2025-review",
+  "name": "World of Outlaws: 2025 year in review / David Gravel Wikipedia",
+  "url": "https://worldofoutlaws.com/sprintcars/looking-back-2025-world-of-outlaws-year-in-review/",
+  "kind": "official_series",
+  "reliability": "medium",
+  "license": null,
+  "accessed": "2026-10-06",
+  "notes": "via search snippet: Gravel 2024-2025 champion"
  },
  "src:yahoo-baldwin-costs-2026": {
   "name": "Yahoo Sports: Tommy Baldwin reveals cost of competing each race in Truck Series, O'Reilly Series (2026)",

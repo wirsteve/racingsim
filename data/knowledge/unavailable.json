@@ -75,5 +75,47 @@
   "reason": "HTTP 429 Too Many Requests on direct fetch; stopped using racer.com for direct fetches, used search-result snippets only.",
   "checked": "2026-10-06",
   "replacement_source": "src:medium-indycar-economics; src:racer-leaders-circle-2025 (snippets)"
+ },
+ {
+  "source": "racing-reference.info",
+  "url": "https://www.racing-reference.info/",
+  "reason": "Cloudflare block / scripted access disallowed per project RULES; not fetched",
+  "checked": "2026-10-06",
+  "replacement_source": "src:racingsim-history-analysis (repo history data from Wikipedia/Wikidata) and Wikipedia season articles"
+ },
+ {
+  "source": "thethirdturn.com",
+  "url": "https://www.thethirdturn.com/wiki/Series_Database:POWRi",
+  "reason": "robots.txt Disallow: / (per RULES); appeared in search results for POWRi/regional series history but not fetched",
+  "checked": "2026-10-06",
+  "replacement_source": "src:powri-wiki (Wikipedia POWRi Midget Racing) and series official news"
+ },
+ {
+  "source": "jayski.com",
+  "url": "https://www.jayski.com/2025/11/01/nascar-to-allow-cup-drivers-to-run-more-lower-series-races/",
+  "reason": "HTTP 403 Forbidden to WebFetch",
+  "checked": "2026-10-06",
+  "replacement_source": "src:theracingexperts-age-2026, src:search-nascar-age"
+ },
+ {
+  "source": "arcaracing.com (PDF uploads)",
+  "url": "https://www.arcaracing.com/wp-content/uploads/sites/36/2026/02/09/ARCA-Awards-Guide-2026-FINAL.pdf",
+  "reason": "HTTP 403 Forbidden to WebFetch; ARCA points-fund/award amounts therefore not obtained",
+  "checked": "2026-10-06",
+  "replacement_source": "search-indexed snippets (src:arca-rulebook-2025, src:arca-daytona-entry-blank), src:wiki-arca"
+ },
+ {
+  "source": "speedwaymotors.com toolbox",
+  "url": "https://www.speedwaymotors.com/the-toolbox/sprint-car-racing-classes-410-vs-305-vs-360-explained/145949",
+  "reason": "WebFetch returned no extractable page content (client-rendered); not a block",
+  "checked": "2026-10-06",
+  "replacement_source": "src:search-sprint-classes (search snippet), src:dirtcar-the-cars"
+ },
+ {
+  "source": "en.wikipedia.org API (temporary)",
+  "url": "https://en.wikipedia.org/w/api.php",
+  "reason": "Rate-limited ('too many requests') during first burst (shared with other agents); backed off 30 s + 3 s spacing with exponential retry and completed",
+  "checked": "2026-10-06",
+  "replacement_source": "same source after backoff"
  }
 ]

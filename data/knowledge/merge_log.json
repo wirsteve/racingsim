@@ -1,1 +1,23 @@
-[]
+[
+ {
+  "entity": "body:usac",
+  "attribute": "founded",
+  "kept": 1955,
+  "other": 1956,
+  "reason": "different text values"
+ },
+ {
+  "entity": "body:usac",
+  "attribute": "scope",
+  "kept": "national; oval midget/sprint/Silver Crown plus sanctioning of road-racing series run by promoters",
+  "other": "national open-wheel short track (midget, sprint, Silver Crown) + regional",
+  "reason": "different text values"
+ },
+ {
+  "entity": "body:usac",
+  "attribute": "notes",
+  "kept": "Sanctioned Indy/Champ cars until CART split (1979); ran the professional USAC Road Racing Championship 1958-1962; today sanctions the USF Pro Championships, SRO America series (GT World Challenge America, GT4 America, TC America; since 2017) and Porsche Sprint Challenge NA. ACCUS member club.",
+  "other": "National sprint car title dates to 1956; minimum license age 15; formerly sanctioned USAC .25 quarter midgets (now NASCAR Youth Series per Wikipedia).",
+  "reason": "different text values"
+ }
+]

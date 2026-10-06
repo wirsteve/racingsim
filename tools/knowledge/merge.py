@@ -193,7 +193,7 @@ def _union(a, b) -> list:
 
 def merge_entities(groups: dict[str, list[list[dict]]], merger: Merger) -> tuple[dict, dict]:
     """groups: file -> list of item lists. Returns (file -> merged items, alias map)."""
-    alias: dict[str, str] = {}
+    alias: dict[str, str] = dict(load(KDIR / "aliases.json") or {})  # curated id equivalences
     merged: dict[str, dict[str, dict]] = {}
     for fname, lists in groups.items():
         by_id: dict[str, dict] = {}
