@@ -190,9 +190,23 @@ def track_type_of(track) -> str:
 
 
 # ---------------------------------------------------------------------------------- development
+FOCUS: dict[str, tuple[str, tuple]] = {
+    "pace": ("Raw pace", ("speed", "qualifying", "car_control", "fitness")),
+    "racecraft": ("Racecraft", ("defending", "restarts", "composure")),
+    "management": ("Tires and fuel", ("tire_management", "fuel_saving")),
+    "feedback": ("Working with the crew", ("feedback",)),
+}
+FOCUS.update({f"tt_{k}": (f"Learn {v.lower()}", ()) for k, v in TRACK_TYPES.items()})
+
+
 def develop(d: "Driver", age: int, starts: int, rng: random.Random, laps_by_type: Optional[dict] = None) -> None:
-    """Yearly per-skill development on top of overall ability (lifecycle.develop moves ability)."""
+    """Yearly per-skill development on top of overall ability (lifecycle.develop moves ability).
+    A development focus (the player's off-season choice for the coming season) speeds the chosen
+    skills by half and slows the rest a little. (A track-type focus is applied when it's chosen:
+    game/career.py.)"""
     ensure(d)
+    focus = getattr(d, "dev_focus", "") or ""
+    chosen = FOCUS.get(focus, ("", ()))[1]
     we = trait(d, "work_ethic")
     iq = trait(d, "intelligence")
     seat = min(1.0, starts / 18)
@@ -211,6 +225,8 @@ def develop(d: "Driver", age: int, starts: int, rng: random.Random, laps_by_type
             gain = (0.3 if age < 23 else 0.0) * (0.5 + we / 200)
             if past_peak > 0:
                 gain -= (0.25 + 0.06 * past_peak) * (1.3 - we / 150)
+        if focus and gain > 0:
+            gain *= 1.5 if k in chosen else 0.9
         d.skills[k] = round(clamp(o + gain + rng.gauss(0, 0.35), -25, 25), 2)
     # Track-type skills: laps on a kind of track teach it; intelligence speeds learning.
     if laps_by_type:

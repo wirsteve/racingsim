@@ -146,7 +146,7 @@ research must be recorded in the repository.
 | R12.5 | Morale, chemistry, contract decisions driven by personality; on-track feuds and penalties. | [x] (negotiation terms - bonuses, clauses, buyouts - come with Phase 5) |
 | R12.6 | Splits, value metric, records, almanac, awards, Hall of Fame. | [x] |
 | R12.7 | Team finances, fan base, owner goals, owner mode. | [x] (owner mode up to the national level) |
-| R12.8 | Scouting staff and budgets, development programs, realism settings, weather. | [ ] |
+| R12.8 | Scouting staff and budgets, development programs, realism settings, weather. | [x] (a scouting budget rather than individual scouts) |
 
 ## Known gaps (tracked for the next iteration)
 

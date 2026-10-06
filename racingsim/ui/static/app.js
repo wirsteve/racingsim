@@ -530,7 +530,7 @@ async function seriesPage(id, tab = "standings") {
   const s = await api("series/" + encodeURIComponent(id));
   const t = s.template;
   const chip = (l, v) => `<span class="chip">${l} <b>${v}</b></span>`;
-  const tabs = [["standings", "Standings"], ["schedule", "Schedule & results"], ["field", s.template.team_based ? "Teams" : "Field"], ["champions", "Champions"], ["about", "About"]];
+  const tabs = [["standings", "Standings"], ["schedule", "Schedule & results"], ["field", s.template.team_based ? "Teams" : "Field"], ["power", "Power rankings"], ["champions", "Champions"], ["about", "About"]];
   const body = {
     standings: () => `<div class="card flush">${table("ser-st", standingCols(), s.standings, { rowClass: (r) => (r.is_player ? "me" : ""), empty: "No standings yet." })}</div>`,
     schedule: () => `<div class="card flush">${scheduleTable("ser-sch", s.schedule, s, true)}</div>`,
@@ -540,6 +540,13 @@ async function seriesPage(id, tab = "standings") {
           ${tm.roster.length ? tm.roster.map((r) => `<div class="small" style="margin-top:4px">${driverLink(r.id, r.name, r.is_player)} <span class="muted">(${r.age})</span> ${rating(r.overall)} ${r.funded ? "" : '<span class="badge warn">pay</span>'}</div>`).join("") : '<div class="muted small">Empty seat</div>'}
         </div>`).join("")}</div>`
       : `<div class="card flush">${driversTable("ser-field", s.drivers)}</div>`,
+    power: () => `<div class="card flush">${table("ser-pw", [
+        { key: "rank", label: "#", num: true }, { key: "name", label: "Driver", render: (r) => driverLink(r.id, r.name, r.is_player, r.real) },
+        { key: "team", label: "Team", render: (r) => teamLink(r.team), sort: (r) => r.team?.name || "" },
+        { key: "media", label: "Media rating", num: true, render: (r) => rating(r.media) },
+        { key: "form", label: "Form", num: true, render: (r) => (r.form == null ? "—" : r.form + "%") },
+        { key: "reputation", label: "Rep", num: true }], s.power || [], { empty: "Nobody to rank yet." })}
+      <p class="muted small" style="padding:0 16px 12px">The media's view: results shown, name and this season's form. Everyone sees this; your scouts' reports are on each driver's page.</p></div>`,
     champions: () => `<div class="card flush">${table("ser-ch", [{ key: "year", label: "Year", num: true }, { key: "name", label: "Champion", render: (c) => driverLink(c.driver_id, c.name) }], s.champions, { empty: "No champions crowned yet in this save." })}</div>`,
     about: () => `<div class="card"><p>${esc(t.note || "")}</p><p class="muted small">Series names are fictional abstractions of real-world ladders. See MOTORSPORTS_RESEARCH.md for the research behind each rung.</p></div>`,
   };
@@ -596,7 +603,7 @@ async function racePage(key, ev, year) {
     ]),
   ];
   view(`<h1>${esc(r.jewel || (r.series && r.series.name) || "Race")}</h1>
-    <p class="sub">${trackLink(r.track_id, r.track)} · ${esc(r.label)}${rc ? ` · ${rc.laps} laps · ${rc.cautions} caution${rc.cautions === 1 ? "" : "s"} for ${rc.caution_laps} laps · ${rc.lead_changes} lead change${rc.lead_changes === 1 ? "" : "s"} among ${rc.leaders} leader${rc.leaders === 1 ? "" : "s"}${rc.margin ? ` · margin ${rc.margin.toFixed(3)}s` : ""}` : ""}</p>
+    <p class="sub">${trackLink(r.track_id, r.track)} · ${esc(r.label)}${rc ? ` · ${rc.laps}${rc.scheduled && rc.scheduled > rc.laps ? ` of ${rc.scheduled}` : ""} laps${rc.weather ? ` · ${esc(rc.weather)}` : ""} · ${rc.cautions} caution${rc.cautions === 1 ? "" : "s"} for ${rc.caution_laps} laps · ${rc.lead_changes} lead change${rc.lead_changes === 1 ? "" : "s"} among ${rc.leaders} leader${rc.leaders === 1 ? "" : "s"}${rc.margin ? ` · margin ${rc.margin.toFixed(3)}s` : ""}` : ""}</p>
     <div class="card flush">${table("race", cols, r.results, { rowClass: (x) => (x.is_player ? "me" : "") })}</div>
     ${r.log && r.log.length ? `<div class="card" style="margin-top:16px"><h3>Lap by lap</h3><ul class="timeline">${r.log.map((l) => `<li><b>Lap ${l[0]}</b> ${esc(l[1])}</li>`).join("")}</ul></div>` : ""}`);
 }
@@ -845,6 +852,32 @@ async function almanacPage(year) {
       <div class="card"><h3>Milestones</h3>${list(a.milestones, (x) => esc(x.text))}</div>
     </div>`);
 }
+async function settingsPage() {
+  const r = await api("settings");
+  const row = (x) => `<div style="margin:14px 0"><div><b>${esc(x.label)}</b> <span class="muted small">${esc(x.about)}</span></div>
+    <input type="range" min="${x.min}" max="${x.max}" step="0.05" value="${x.value}" data-setting="${esc(x.key)}" style="width:320px">
+    <span class="num" id="set-${esc(x.key)}">${x.value.toFixed(2)}×</span></div>`;
+  view(`<div class="card hero"><div><h1>Settings</h1><div class="sub">Realism: 1.00× is the calibrated default. Changes apply from the next race.</div></div></div>
+    <div class="card" style="margin-top:16px">${r.settings.map(row).join("")}
+      <button class="primary" data-act="save-settings">Save settings</button> <button data-act="reset-settings">Defaults</button></div>`);
+}
+document.addEventListener("input", (e) => {
+  const k = e.target.dataset && e.target.dataset.setting;
+  if (k) $("#set-" + k).textContent = Number(e.target.value).toFixed(2) + "×";
+});
+on("save-settings", async () => {
+  const values = {};
+  $$("[data-setting]").forEach((el) => { values[el.dataset.setting] = Number(el.value); });
+  await api("settings", { values });
+  settingsPage();
+});
+on("reset-settings", async () => {
+  const values = {};
+  $$("[data-setting]").forEach((el) => { values[el.dataset.setting] = 1; });
+  await api("settings", { values });
+  settingsPage();
+});
+
 async function hofPage() {
   const h = await api("hof");
   view(`<div class="card hero"><div><h1>Hall of Fame</h1><div class="sub">Drivers become eligible ${h.wait} seasons after their last; the strongest cases are inducted each winter (at most three).</div></div></div>
@@ -1064,6 +1097,7 @@ const ROUTES = [
   [/^#\/records(?:\/(.+))?$/, (m) => recordsPage(m[1] && decodeURIComponent(m[1])), true],
   [/^#\/almanac(?:\/(\d+))?$/, (m) => almanacPage(m[1]), true],
   [/^#\/hof$/, () => hofPage(), true],
+  [/^#\/settings$/, () => settingsPage(), true],
   [/^#\/encyclopedia(?:\/([a-z]+))?(?:\/(.+))?$/, (m) => encyclopediaPage(m[1] || "overview", m[2] && decodeURIComponent(m[2])), false],
   [/^#\/saves$/, () => savesPage(), false],
   [/^#\/new$/, () => newPage(), false],

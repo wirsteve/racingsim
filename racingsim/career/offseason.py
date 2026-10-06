@@ -32,6 +32,7 @@ def begin_offseason(world: "World", results: "SeasonResults", summary: "YearSumm
     staff.record_season(world, results)
     annals.season_end(world, results)
     world.player_crew = {}   # freelance crew was hired for the season just run; hires from now are for next year
+    world.scouting_level = "standard"   # the scouting budget is set (and paid) each winter
     morale.season_update(world, results)   # before contracts: unhappy drivers are harder to keep
     goals.review(world, results)           # the owners' verdicts: job security for the market
     fans.season_update(world, results)     # who people came to see
@@ -45,6 +46,8 @@ def begin_offseason(world: "World", results: "SeasonResults", summary: "YearSumm
     programs.award_champion_scholarships(world, results)
     # 3. People age, learn, and some walk away (or step back to grassroots racing).
     lifecycle.develop(world, results)
+    if world.player is not None:
+        world.player.dev_focus = ""      # a focus was for the season just run; choose again for the next
     lifecycle.retirements(world, results, summary)
     annals.hall_of_fame(world)
     # 4. Sponsors renew, walk, or collapse; new local/regional/national deals form.

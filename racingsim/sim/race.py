@@ -74,11 +74,12 @@ def _paces(entries: list[Entry], track: Track, discipline: str, cw: float) -> li
 
 
 def heats(entries: list[Entry], track: Track, discipline: str, tier: int, car_weight: float,
-          rng: random.Random, per_heat: int = 9) -> tuple[list[Entry], list[list[Entry]]]:
+          rng: random.Random, per_heat: int = 9, luck_scale: float = 1.0) -> tuple[list[Entry], list[list[Entry]]]:
     """Heat races: cars are drawn into heats; returns (overall order by heat performance, heats in finishing order).
 
     Short heats with inverted starts are mostly luck plus pace, so the noise is larger than in a feature."""
     cw, luck = _factors(track, tier, car_weight)
+    luck *= luck_scale
     paces = _paces(entries, track, discipline, cw)
     score = {id(e): p + rng.gauss(0, luck * 1.3) for e, p in zip(entries, paces)}
     drawn = list(entries)
@@ -90,11 +91,21 @@ def heats(entries: list[Entry], track: Track, discipline: str, tier: int, car_we
 
 
 def run_race(entries: list[Entry], track: Track, discipline: str, tier: int,
-             car_weight: float, rng: random.Random, injury_scale: float = 1.0) -> list[Finish]:
+             car_weight: float, rng: random.Random, injury_scale: float = 1.0,
+             realism: Optional[dict] = None, weather: Optional[dict] = None) -> list[Finish]:
     if not entries:
         return []
+    real = dict(realism or {})
+    wx = (weather or {}).get("kind")
+    if wx == "wet":      # a wet road course: more mistakes, more luck
+        real["crashes"] = real.get("crashes", 1.0) * 1.4
+        real["luck"] = real.get("luck", 1.0) * 1.3
+    elif wx == "hot":
+        real["luck"] = real.get("luck", 1.0) * 1.1
     s = track.sim
     cw, luck = _factors(track, tier, car_weight)
+    luck *= real.get("luck", 1.0)
+    injury_scale *= real.get("injuries", 1.0)
     paces = _paces(entries, track, discipline, cw)
 
     # Expected finishing order from equipment alone (what a scout would "expect").
@@ -106,9 +117,10 @@ def run_race(entries: list[Entry], track: Track, discipline: str, tier: int,
         score = paces[i] + rng.gauss(0, luck)
         lead = e.drivers[0]
         # Incidents: aggressive/inconsistent drivers crash more; crash-prone venues amplify it.
-        crash_p = 0.012 + 0.05 * (s.caution_probability / 100) * (0.6 + (lead.aggression - lead.consistency + 100) / 200)
-        mech_p = e.mech if e.mech is not None else ((0.01 + 0.04 * (s.mechanical_stress / 100) * (1 - e.equipment / 130))
-                                                    * (e.crew or {}).get("mech", 1.0))
+        crash_p = (0.012 + 0.05 * (s.caution_probability / 100) * (0.6 + (lead.aggression - lead.consistency + 100) / 200)) \
+            * real.get("crashes", 1.0)
+        mech_p = (e.mech if e.mech is not None else ((0.01 + 0.04 * (s.mechanical_stress / 100) * (1 - e.equipment / 130))
+                                                     * (e.crew or {}).get("mech", 1.0))) * real.get("failures", 1.0)
         crashed = rng.random() < crash_p
         mech = (not crashed) and rng.random() < mech_p
         dnf = crashed or mech

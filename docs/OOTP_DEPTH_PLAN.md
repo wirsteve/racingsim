@@ -29,10 +29,10 @@ From the research. These are OOTP's design rules, translated to racing.
 
 | System | OOTP | racingsim | Status |
 |---|---|---|---|
-| Game engine | Pitch by pitch, park factors, weather, box scores, play-by-play | **Lap-by-lap engine** (`sim/engine.py`): qualifying, tire falloff, fuel windows, green and caution pit cycles, passing vs track difficulty, crashes and big ones, mechanical failures (car model), free pass, restarts, stages, box score, play-by-play. Calibrated to real NASCAR data. Weekly local divisions use the fast result-level model, as OOTP does for leagues you don't watch | ✅ Phase 1. Weather and rain still to come |
+| Game engine | Pitch by pitch, park factors, weather, box scores, play-by-play | **Lap-by-lap engine** (`sim/engine.py`): qualifying, tire falloff, fuel windows, green and caution pit cycles, passing vs track difficulty, crashes and big ones, mechanical failures (car model), free pass, restarts, stages, box score, play-by-play. Calibrated to real NASCAR data. Weekly local divisions use the fast result-level model, as OOTP does for leagues you don't watch | ✅ Phases 1 and 6: race-day weather (rain-outs at weekly tracks, rain-shortened ovals, wet road courses, hot days) |
 | Ratings | ~30 ratings, current/potential, L/R splits, OVR/POT stars | 12 component skills (current/potential), 5 track-type experience and talent splits, OVR/POT on 20–80 | ✅ Phase 1. Stars relative to series level still to come |
 | Ratings from history | Historical stats → ratings | Real NASCAR drivers rated from race-by-race results: qualifying vs race, laps led, positions gained, crash rate, track specialties | ✅ Phase 1 |
-| Scouting | Scout director ratings, budget, accuracy by age/region, league baseline | Error shrinks with the driver's exposure; 5-point steps; personality shown only as impressions | ◐ No scout staff, budget or media rankings yet |
+| Scouting | Scout director ratings, budget, accuracy by age/region, league baseline | Error shrinks with the driver's exposure; 5-point steps; personality shown only as impressions | ✅ Phase 6: a scouting budget (none, standard, extended, elite) and media power rankings as the public baseline. No individual scouts yet |
 | Development and aging | Weighted random, coaching, playing time, personality, focus, development lab | Ability plus per-skill development: seat time, work ethic, intelligence; physical skills fade, savvy keeps growing; track types learned from laps; off-season coaching | ◐ No competition-level effect, focus sliders or off-season programs yet |
 | Personality | 6 traits; morale; chemistry | 7 traits; morale (race by race and season); rivalries from wrecks, paybacks with points, fines and suspensions; team chemistry; loyalty, desire to win and morale in contract decisions | ✅ Phase 3. Greed waits for negotiation (Phase 5) |
 | Injuries | Types, body areas, proneness, re-injury, trainers | Races out, severity, durability; team medical staff speed recovery and soften injuries | ◐ No injury types, concussion history or racing hurt |
@@ -43,7 +43,7 @@ From the research. These are OOTP's design rules, translated to racing.
 | Career / GM | GM mode, reputation, firing, job offers | Driver career; reputation; team offers; owner goals, job security and firing; owner mode (start, run and sell a team, drive for it) | ◐ No crew-chief career |
 | League / history | Historical leagues, expansion | 1995–2026 real series, rosters, calendars, 12k+ touring races, real rules and points by era | ✅ Exact replay mode still to come |
 | News / storylines / awards | Inbox, storylines, awards, milestones | News wire; Rookie of the Year, Most Popular Driver, Most Valuable Driver, Driver of the Year; first wins and start/win milestones; Hall of Fame inductions; rivalries and paybacks | ◐ No multi-season storylines yet |
-| Settings | Everything tunable | World size, start year | ❌ Phase 6 |
+| Settings | Everything tunable | World size, start year; realism multipliers for crashes, failures, injuries, development speed, scouting accuracy, race luck and weather, changeable any time | ✅ Phase 6 |
 
 ## Roadmap
 
@@ -104,7 +104,7 @@ Numbers and sources: [`research/team_economics.md`](research/team_economics.md).
 - Owner and sponsor goals; job security; getting fired.
 - **Owner mode:** run a team from a local late model operation up to a Cup charter.
 
-### Phase 6: Scouting, development tools and settings
+### Phase 6: Scouting, development tools and settings ✅ (individual scouts with specialties still to come)
 
 - **Scouting staff:** scouts with specialties (ovals, road, dirt, karting) and a scouting budget per ladder tier. Media power rankings serve as the public baseline (OOTP's OSA).
 - **Off-season programs:** a "development lab" with sim and testing programs, plus focus sliders.

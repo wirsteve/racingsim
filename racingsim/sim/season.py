@@ -23,6 +23,8 @@ from ..util import clamp
 from ..world.entities import ACTIVE, PART_TIME, RETIRED, SIDELINED, Driver, SeasonRecord
 from ..world.skills import track_type_of as skill_track_type
 from ..world import annals
+from ..world import settings as world_settings
+from . import weather as weather_mod
 from ..world import staff as staff_mod
 from ..career import goals
 from ..career import morale as morale_mod
@@ -82,10 +84,12 @@ class SeasonResults:
     track_laps: dict[int, dict] = field(default_factory=dict)  # driver -> {track type: laps run}
 
     par_fit: dict[str, list] = field(default_factory=dict)     # series -> [n, sum eq, sum pct, sum eq*pct, sum eq^2]
+    events_held: dict[str, int] = field(default_factory=dict)  # series -> races actually run (rain-outs aren't)
 
     def __setstate__(self, state: dict) -> None:
         state.setdefault("track_laps", {})   # mid-season saves from before the lap-by-lap engine
         state.setdefault("par_fit", {})
+        state.setdefault("events_held", {})
         self.__dict__.update(state)
 
 
@@ -349,6 +353,14 @@ class SeasonRunner:
         track_id = s.schedule[event_idx]
         track = world.tracks.get(track_id)
         drivers = self.by_series[sid]
+        realism = world_settings.all_settings(world)
+        wx = weather_mod.roll(track, tpl.tier, rng, realism["weather"])
+        if wx is not None and wx["kind"] == "rainout":
+            # The night is lost: no race, no purse (the player hears about it).
+            if any(d.is_player for d in drivers):
+                world.post("player", f"Rained out at {track.name} ({s.name})", driver_id=world.player_id,
+                           series_id=sid, week=self.week, importance=1)
+            return None
         entries: list[Entry] = []
         suspended: list[Driver] = []     # serve the race only if it actually runs
         if tpl.team_based:
@@ -424,7 +436,8 @@ class SeasonRunner:
         dnq: list[Entry] = []
         if not tpl.team_based and (len(entries) > tpl.field_size or system.heat):
             # Heat races set the feature field (and pay heat points where the track does).
-            order, groups = heats(entries, track, tpl.discipline, tpl.tier, tpl.car_weight, rng)
+            order, groups = heats(entries, track, tpl.discipline, tpl.tier, tpl.car_weight, rng,
+                                  luck_scale=realism["luck"])
             if system.heat:
                 for g in groups:
                     heat_pts.update(heat_points(system, [e.drivers[0].id for e in g]))
@@ -437,13 +450,15 @@ class SeasonRunner:
             # Tours, national series and any race the player is in run lap by lap.
             player_in = any(d.is_player for e in entries for d in e.drivers)
             rr = engine.run(entries, track, tpl.tier, tpl.car_weight, rng, detail=player_in,
-                            stages=system.stages, free_pass=world.year >= 2003, discipline=tpl.discipline)
+                            stages=system.stages, free_pass=world.year >= 2003, discipline=tpl.discipline,
+                            realism=realism, weather=wx)
             finishes = rr.finishes
             pts = score_box(system, finishes)
         else:
-            finishes = run_race(entries, track, tpl.discipline, tpl.tier, tpl.car_weight, rng)
+            finishes = run_race(entries, track, tpl.discipline, tpl.tier, tpl.car_weight, rng, realism=realism, weather=wx)
             pts = score_race(system, [(f.entry.drivers[0].id, f.pace) for f in finishes], rng)
         _tally(world, res, self.acc, finishes, s, pts, purse, heat_pts, dnq, system, track)
+        res.events_held[sid] = res.events_held.get(sid, 0) + 1
         self._personal(finishes, rr, tpl.tier, s.name, track.name, s.id)
         self._after_race(s, track, finishes, dnq, purse)
         self._playoff_step(s, event_idx, finishes)
@@ -532,7 +547,9 @@ class SeasonRunner:
                 for f in finishes]
             if race is not None:
                 info["race"] = {"laps": race.laps, "cautions": race.cautions, "caution_laps": race.caution_laps,
-                                "lead_changes": race.lead_changes, "leaders": race.leaders, "margin": race.margin}
+                                "lead_changes": race.lead_changes, "leaders": race.leaders, "margin": race.margin,
+                                "scheduled": race.scheduled or race.laps,
+                                "weather": (race.weather or {}).get("text")}
                 if player_in:
                     info["log"] = race.log[-400:]
         # Weekly local divisions keep just the winner (full results only where someone looks).
@@ -753,9 +770,11 @@ def _crown_jewel(world: "World", runner: "SeasonRunner", cj) -> Optional[dict]:
         if d.is_player:
             charge(d, jewel_entry_cost(d, track))
     entries = [Entry([d], _jewel_equipment(world, res, d, cj, rng)) for d in field_drivers]
+    realism = world_settings.all_settings(world)
+    wx = weather_mod.roll(track, max(cj.max_tier - 1, 3), rng, realism["weather"])   # big events wait out the rain
     rr = engine.run(entries, track, max(cj.max_tier - 1, 2), 0.45, rng,
                     detail=any(d.is_player for d in field_drivers), free_pass=world.year >= 2003,
-                    discipline=cj.discipline)
+                    discipline=cj.discipline, realism=realism, weather=wx)
     finishes = rr.finishes
     morale_mod.incidents(world, rr.incidents)
     for att, tgt in rr.paybacks:
@@ -875,7 +894,8 @@ def _finalise_records(world: "World", res: SeasonResults, acc: dict[int, _Acc], 
         by_series[a.series_id].append((did, a))
     for sid, rows in by_series.items():
         s = world.series(sid)
-        events = len(s.schedule)
+        # Rained-out or cancelled nights don't count against the 60% a champion must start.
+        events = res.events_held.get(sid) or len(s.schedule)
         # Same order as the live standings (playoff formats included).
         rows.sort(key=runner.rank_key(sid) if runner else (lambda r: (-r[1].points, -r[1].wins)))
         purse = runner.purse(s) if runner else Purse(s.template, world.year)

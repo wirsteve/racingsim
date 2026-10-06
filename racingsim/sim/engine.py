@@ -134,6 +134,8 @@ class RaceResult:
     stages: list = field(default_factory=list)    # [[driver ids top 10], ...]
     incidents: list = field(default_factory=list)  # [(instigator id, [collected ids], big one?)]
     paybacks: list = field(default_factory=list)   # [(retaliator id, target id)]
+    weather: Optional[dict] = None                 # sim/weather.py: hot, wet, rain-shortened, delay
+    scheduled: int = 0                             # laps scheduled (a rain-shortened race runs fewer)
 
 
 def race_laps(track: "Track", tier: int) -> int:
@@ -210,7 +212,14 @@ def _sync_laps(running: list[Car], completed: int, lap_s: float) -> None:
 # --------------------------------------------------------------------------- the race
 def run(entries: list[Entry], track: "Track", tier: int, car_weight: float, rng: random.Random,
         detail: bool = False, stages: int = 0, free_pass: bool = True, injury_scale: float = 1.0,
-        laps: Optional[int] = None, name_of=None, discipline: Optional[str] = None) -> RaceResult:
+        laps: Optional[int] = None, name_of=None, discipline: Optional[str] = None,
+        realism: Optional[dict] = None, weather: Optional[dict] = None) -> RaceResult:
+    """One race. ``realism`` holds the world's settings multipliers (crashes, failures, injuries, luck);
+    ``weather`` comes from sim/weather.py."""
+    real = realism or {}
+    crash_x, fail_x, luck_x = real.get("crashes", 1.0), real.get("failures", 1.0), real.get("luck", 1.0)
+    injury_scale *= real.get("injuries", 1.0)
+    wx = (weather or {}).get("kind")
     tt = S.track_type_of(track)
     s = track.sim
     n_laps = laps or race_laps(track, tier)
@@ -223,11 +232,23 @@ def run(entries: list[Entry], track: "Track", tier: int, car_weight: float, rng:
     log: list = []
     say = (lambda lap, text: log.append([lap, text])) if detail else (lambda lap, text: None)
     who = name_of or (lambda c: c.entry.drivers[0].name)
+    if wx == "wet":
+        # Rain on a road course: car control is everything, and the mistakes multiply.
+        for c in cars:
+            cc = S.offset(c.entry.drivers[0], "car_control")
+            c.perf += 0.3 * cc
+            c.risk = clamp(c.risk * clamp(1.45 - cc / 30, 0.9, 1.9), 0.2, 3.0)
+        say(0, "Rain: the race starts on a wet track")
+    elif wx == "hot":
+        say(0, "A hot, slick track: tires will go away and drivers will feel it")
+    elif wx == "delay":
+        say(0, "A rain delay before the start; the track is dry for the race")
 
     # ---- qualifying (or heat-based lineup noise for short local races)
-    q_noise = lap_s * CAL["noise"] * CAL["qual_noise"] * (1.6 if tier <= 2 else 1.0)
+    q_noise = lap_s * CAL["noise"] * CAL["qual_noise"] * (1.6 if tier <= 2 else 1.0) * luck_x
     for c in cars:
         base_mech = c.entry.mech if c.entry.mech is not None else 0.03 * (c.entry.crew or {}).get("mech", 1.0)
+        base_mech = min(0.95, base_mech * fail_x)
         c.mech_lap = 1 - (1 - base_mech) ** (1 / n_laps)
         c.time = -(c.qual - 50) * CAL["spread_per_point"] * lap_s + rng.gauss(0, q_noise)
     grid = sorted(cars, key=lambda c: c.time)
@@ -244,9 +265,11 @@ def run(entries: list[Entry], track: "Track", tier: int, car_weight: float, rng:
     stop_s = CAL["stop_s"] * (1.0 + 0.12 * (7 - tier_f))
     stops_needed = n_laps > fuel_laps * 0.95 or n_laps > tire_life * 1.4
     exp_cautions = CAL["cautions"][tt] * (1 + 0.06 * (7 - tier_f)) * min(1.6, (n_laps / max(race_laps(track, 7), 1)) ** 0.5)
-    caution_hazard = exp_cautions / n_laps
-    falloff = CAL["falloff"] * (0.4 + 1.2 * s.tire_degradation / 100) * lap_s
-    noise = CAL["noise"] * lap_s * (1 + CAL["draft_noise"] * (s.drafting_effect / 100) ** 2)
+    crash_share = 0.72 * crash_x / (0.72 * crash_x + 0.28)       # share of cautions that are crashes
+    caution_hazard = exp_cautions / n_laps * (0.28 + 0.72 * crash_x) * (1.5 if wx == "wet" else 1.0)
+    falloff = CAL["falloff"] * (0.4 + 1.2 * s.tire_degradation / 100) * lap_s * (1.25 if wx == "hot" else 1.0)
+    noise = (CAL["noise"] * lap_s * (1 + CAL["draft_noise"] * (s.drafting_effect / 100) ** 2) * luck_x
+             * (1.5 if wx == "wet" else 1.0))
     pass_threshold = lap_s * 0.0013 * (0.3 + 1.4 * s.passing_difficulty / 100)
     draft_chaos = s.drafting_effect / 100
     # Races you watch run a lap at a time; the rest of the world in ~16 steps (same model, coarser).
@@ -259,6 +282,10 @@ def run(entries: list[Entry], track: "Track", tier: int, car_weight: float, rng:
         c.fuel_laps = fuel_laps * (1 + c.fuel_save / 200)
         c.stint = rng.gauss(0, CAL["stint_sd"] * c.adjust)
 
+    scheduled = n_laps
+    if wx == "rain_short":
+        # The rain comes: the race goes the distance it can, and it's official.
+        n_laps = max(1, round(n_laps * weather.get("share", 0.75)))
     lap = 0
     caution_left = 0
     cautions = caution_laps = lead_changes = 0
@@ -317,7 +344,8 @@ def run(entries: list[Entry], track: "Track", tier: int, car_weight: float, rng:
                 wear = falloff * (1.25 - 0.5 * c.tire_mgmt) * (ok_tires + k / 2)
                 if c.tire_age > tire_life:
                     wear += falloff * 4 * (c.tire_age - tire_life)
-                tired = max(0.0, -c.fitness) * 0.002 * lap_s * (lap / n_laps) * (n_laps > 150)
+                tired = (max(0.0, -c.fitness) * 0.002 * lap_s * (lap / n_laps)
+                         * (2.0 if wx == "hot" else 1.0 if n_laps > 150 else 0.0))
                 pace = (lap_s * (1 - (c.perf + c.stint - 50) * CAL["spread_per_point"] - c.damage * 0.01)
                         + wear + tired)
                 jitter = noise * (1.4 - (c.perf - 30) / 100) * math.sqrt(k)
@@ -362,7 +390,7 @@ def run(entries: list[Entry], track: "Track", tier: int, car_weight: float, rng:
             if rng.random() < 1 - (1 - caution_hazard) ** k:
                 big = tt == "superspeedway" and rng.random() < CAL["big_one_share"]
                 cause = rng.random()
-                if cause < 0.72 or big:
+                if cause < crash_share or big:
                     involved = incident(lap + k, big)
                     sev = track.sim.crash_severity / 100
                     for c in involved:
@@ -522,6 +550,8 @@ def run(entries: list[Entry], track: "Track", tier: int, car_weight: float, rng:
     margin = ((final[1].time - final[0].time) if len(final) > 1 and final[0].running and final[1].running
               and final[1].laps == final[0].laps else 0.0)
     if final:
+        if n_laps < scheduled:
+            say(n_laps, f"Rain! The race is called after {n_laps} of {scheduled} laps")
         say(n_laps, f"{who(final[0])} wins" + (f" by {margin:.3f}s" if margin else ""))
     most_led = max(cars, key=lambda c: c.led)
     finishes = []
@@ -548,7 +578,7 @@ def run(entries: list[Entry], track: "Track", tier: int, car_weight: float, rng:
         finishes[i].expected_position = rank
     return RaceResult(finishes=finishes, laps=n_laps, cautions=cautions, caution_laps=caution_laps,
                       lead_changes=lead_changes, leaders=len(leader_ids), margin=round(margin, 3),
-                      log=log, stages=stage_results, incidents=incidents, paybacks=paybacks)
+                      log=log, stages=stage_results, incidents=incidents, paybacks=paybacks, weather=weather, scheduled=scheduled)
 
 
 def driver_rating(pos: int, n: int, box: dict, laps: int) -> float:

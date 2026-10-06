@@ -117,6 +117,10 @@ python -m pytest -q                                     # run the tests
   money, purses, merchandise from fan bases, manufacturer support) against running costs, staff
   and salaries; spending buys next year's speed; broke owners sell. Owners set goals and fire
   drivers on the hot seat. **Owner mode**: start, run and sell your own team, and drive for it.
+* **Settings and weather**: realism multipliers (crashes, failures, injuries, development
+  speed, scouting accuracy, race luck, weather) on a Settings page; rain-outs, rain-shortened
+  races, wet road courses and hot days; a development focus and a scouting budget each
+  off-season; media power rankings for every series.
 * **Long memory**: PAR (positions above replacement, a racing WAR), track-type splits, records
   books, a yearly almanac, awards (Rookie of the Year, Most Popular Driver, Driver of the Year),
   milestones, winners by track and a Hall of Fame.
