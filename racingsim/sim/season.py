@@ -706,7 +706,7 @@ def _finalise_records(world: "World", res: SeasonResults, acc: dict[int, _Acc], 
                 avg_finish=a.finish_sum / a.starts if a.starts else float(s.template.field_size),
                 expected_finish=a.expected_sum / a.starts if a.starts else float(s.template.field_size),
                 championship_pos=pos, field_size=n, champion=champion, series_name=s.name,
-                points=round(a.points, 1), top10=a.top10, winnings=round(a.purse), dnq=a.dnq,
+                points=round(a.points, 1), top10=max(a.top10, a.top5), winnings=round(a.purse), dnq=a.dnq,
             )
             st = max(a.starts, 1)  # a season of DNQs: no feature starts at all
             rec.note = f"{a.fin_pct_sum / st:.3f}|{a.exp_pct_sum / st:.3f}"
