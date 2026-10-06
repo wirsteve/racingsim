@@ -120,7 +120,8 @@ def make_real_driver(world: "World", hist: HistoryDB, wiki: Optional[str], name:
         rec = SeasonRecord(year=r["year"], series_id=series_id, tier=r["tier"], discipline=TEMPLATE_DISCIPLINE[r["template"]],
                            team_id=None, starts=r.get("starts") or 0, wins=r.get("wins") or 0, top5=r.get("top5") or 0,
                            avg_finish=0.0, expected_finish=0.0, championship_pos=r.get("pos") or r["field"],
-                           field_size=r["field"], champion=r.get("pos") == 1, series_name=r.get("series_name") or "")
+                           field_size=r["field"], champion=r.get("pos") == 1, series_name=r.get("series_name") or "",
+                           team_name=r.get("team") or "")
         rec.note = f"{pct:.3f}|{pct:.3f}"
         d.history.append(rec)
         d.career_starts += rec.starts

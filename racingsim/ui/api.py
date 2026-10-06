@@ -111,8 +111,10 @@ def driver_detail(world: "World", did: int) -> dict:
         history.append({
             "year": r.year, "age": r.year - d.birth_year, "series": series_brief(world, r.series_id),
             "series_name": r.series_name or (s.name if s else r.series_id), "tier": r.tier, "discipline": r.discipline,
-            "team": team_brief(world, r.team_id), "starts": r.starts, "wins": r.wins, "top5": r.top5,
-            "avg_finish": round(r.avg_finish, 1), "pos": r.championship_pos, "field": r.field_size,
+            "team": team_brief(world, r.team_id) or (
+                {"id": None, "name": r.team_name} if getattr(r, "team_name", "") else None),
+            "starts": r.starts, "wins": r.wins, "top5": r.top5,
+            "avg_finish": round(r.avg_finish, 1) if r.avg_finish else None, "pos": r.championship_pos, "field": r.field_size,
             "champion": r.champion, "jewels": r.crown_jewel_wins,
         })
     connections = []
@@ -188,9 +190,11 @@ def standings_rows(world: "World", sid: str, limit: Optional[int] = None) -> lis
                 if r.series_id == sid and r.year == _last_season(world)]
         recs.sort(key=lambda x: x[1].championship_pos)
         for d, r in recs:
+            team = team_brief(world, r.team_id) or (
+                {"id": None, "name": r.team_name} if getattr(r, "team_name", "") else None)
             rows.append({"pos": r.championship_pos, "driver_id": d.id, "name": d.name, "is_player": d.is_player,
-                         "team": team_brief(world, r.team_id), "points": None, "starts": r.starts,
-                         "wins": r.wins, "top5": r.top5, "avg_finish": round(r.avg_finish, 1),
+                         "team": team, "points": None, "starts": r.starts,
+                         "wins": r.wins, "top5": r.top5, "avg_finish": round(r.avg_finish, 1) if r.avg_finish else None,
                          "champion": r.champion, "final": True})
     return rows[:limit] if limit else rows
 

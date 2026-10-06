@@ -38,6 +38,7 @@ class SeasonRecord:
     crown_jewel_wins: list[str] = field(default_factory=list)
     note: str = ""
     series_name: str = ""       # the series' name that season (names change by era)
+    team_name: str = ""         # for real (imported) seasons, where no Team entity exists
 
 
 @dataclass

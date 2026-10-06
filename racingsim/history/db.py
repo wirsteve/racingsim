@@ -175,6 +175,12 @@ class HistoryDB:
                     if not (lo <= year <= hi):
                         continue
                     st = season.get("standings") or []
+                    team_of = {}
+                    for t in season.get("teams") or []:
+                        for c in t.get("cars", []):
+                            for dr in c.get("drivers", []):
+                                if dr.get("wiki") and (c.get("full_time") or dr["wiki"] not in team_of):
+                                    team_of[dr["wiki"]] = t.get("team") or ""
                     regulars = [r for r in st if (r.get("starts") or 0) >= 0.5 * max(1, len(season.get("schedule") or [])) ]
                     n = max(len(regulars), 1)
                     for r in st:
@@ -185,7 +191,7 @@ class HistoryDB:
                             "year": year, "template": tpl, "tier": TEMPLATE_TIER[tpl], "pos": r.get("pos"),
                             "n": n, "field": len(st), "wins": r.get("wins") or 0, "starts": r.get("starts"),
                             "top5": r.get("top5"), "top10": r.get("top10"), "points": r.get("points"),
-                            "series_name": season.get("official_name"),
+                            "series_name": season.get("official_name"), "team": team_of.get(w, ""),
                         })
         for w in out:
             out[w].sort(key=lambda x: (x["year"], -x["tier"]))

@@ -51,7 +51,7 @@ function rating(v, opts = {}) {
 }
 const driverLink = (id, name, me, real) => `<a class="link" href="#/driver/${id}">${esc(name)}</a>${me ? ' <span class="badge warn">YOU</span>' : ""}${real ? ' <span class="badge" title="Real driver">R</span>' : ""}`;
 const seriesLink = (s) => s ? `<a class="link" href="#/series/${encodeURIComponent(s.id)}">${esc(s.name)}</a>` : `<span class="muted">—</span>`;
-const teamLink = (t) => t ? `<a class="link" href="#/team/${t.id}">${esc(t.name)}</a>` : `<span class="muted">own car</span>`;
+const teamLink = (t) => t ? (t.id == null ? esc(t.name) : `<a class="link" href="#/team/${t.id}">${esc(t.name)}</a>`) : `<span class="muted">own car</span>`;
 const trackLink = (id, name) => `<a class="link" href="#/track/${encodeURIComponent(id)}">${esc(name)}</a>`;
 function posCell(p, field) {
   if (!p) return "—";
@@ -508,7 +508,7 @@ async function seriesPage(id, tab = "standings") {
   };
   view(`<div class="card"><div class="hero"><div><h1>${esc(s.name)}</h1>
       <div class="sub">${tierBadge(s.tier, s.tier_name)} ${esc(s.tier_name)} · ${discBadge(s.discipline)} · ${esc(s.scope === "track" ? "weekly track division" : s.scope === "region" ? "regional series" : "national series")}</div></div></div>
-    <div class="chips" style="margin-top:12px">${chip("Season cost", money(t.cost))}${chip("Events", t.events)}${chip("Field", t.field)}
+    <div class="chips" style="margin-top:12px">${chip("Season cost", money(t.cost))}${chip("Events", s.dormant ? t.events : (s.schedule || []).length || t.events)}${chip("Field", t.field)}
       ${chip("Prestige", t.prestige)}${chip("Scout visibility", t.visibility)}${chip("Min age", t.min_age)}${t.max_age ? chip("Max age", t.max_age) : ""}
       ${t.full_age ? chip("Big-oval age", t.full_age) : ""}${t.purse_win ? chip("Purse to win", money(t.purse_win)) : ""}
       ${t.scholarship ? chip("Champion scholarship", money(t.scholarship)) : ""}${t.team_based ? chip("Seats", "team-based") : chip("Cars", "self-run")}
