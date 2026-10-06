@@ -2571,33 +2571,5 @@
   ],
   "notes": "Bowyer street stocks -> modified championships 2000-01.",
   "id": null
- },
- {
-  "from": "series:club-karting",
-  "to": "series:local-late-model-stock",
-  "frequency": "common",
-  "share_of_movers": null,
-  "typical_age": {
-   "min": 12,
-   "max": 18,
-   "unit": "years",
-   "confidence": "low",
-   "sources": [
-    "src:informed-estimate"
-   ]
-  },
-  "gating": {
-   "talent": 0.35,
-   "money": 0.45,
-   "connections": 0.2
-  },
-  "examples": [
-   "driver:Kevin_Harvick"
-  ],
-  "confidence": "low",
-  "sources": [
-   "src:search-karting-to-nascar"
-  ],
-  "id": null
  }
 ]

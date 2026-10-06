@@ -96,5 +96,65 @@
    "python",
    "ingest_wikidata_tracks.py"
   ]
+ },
+ {
+  "name": "touring:existing-tracks",
+  "cwd": ".",
+  "cmd": [
+   "python",
+   "tools/touring/export_existing_tracks.py"
+  ]
+ },
+ {
+  "name": "touring:asphalt",
+  "cwd": "tools/touring/asphalt",
+  "cmd": [
+   "python",
+   "scraper.py"
+  ],
+  "timeout": 14400
+ },
+ {
+  "name": "touring:asphalt-validate",
+  "cwd": "tools/touring/asphalt",
+  "cmd": [
+   "python",
+   "validate.py"
+  ]
+ },
+ {
+  "name": "touring:dirt",
+  "cwd": "tools/touring/dirt/scraper",
+  "cmd": [
+   "python",
+   "build.py"
+  ],
+  "timeout": 14400
+ },
+ {
+  "name": "touring:nascar-divisions",
+  "cwd": "tools/touring/nascar_touring",
+  "cmd": [
+   "python",
+   "build.py"
+  ],
+  "timeout": 14400
+ },
+ {
+  "name": "tracks:census",
+  "cwd": "tools/tracks_census",
+  "cmd": [
+   "python",
+   "run_all.py"
+  ],
+  "timeout": 21600
+ },
+ {
+  "name": "knowledge:rebuild",
+  "cwd": ".",
+  "cmd": [
+   "python",
+   "tools/knowledge/rebuild.py"
+  ]
  }
 ]
