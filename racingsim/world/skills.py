@@ -131,16 +131,20 @@ def offset(d: "Driver", key: str) -> float:
     return d.skills.get(key, 0.0)
 
 
-def value(d: "Driver", key: str) -> float:
-    """Current skill, 0-100 (same scale as ability)."""
-    return clamp(d.ability + offset(d, key), 1, 99)
+def base(d: "Driver", discipline: Optional[str] = None) -> float:
+    """Usable ability in a discipline (experience in that kind of car scales raw ability)."""
+    return d.effective_ability(discipline or d.primary_discipline)
+
+
+def value(d: "Driver", key: str, discipline: Optional[str] = None) -> float:
+    """Current skill, 0-100 (same scale as ability), in the driver's own discipline by default."""
+    return clamp(base(d, discipline) + offset(d, key), 1, 99)
 
 
 def potential(d: "Driver", key: str) -> float:
     """Ceiling for this skill. Physical tools are near their ceiling early; savvy keeps headroom."""
-    room = max(0.0, d.potential - d.ability)
     extra = {"physical": 0.0, "skill": 1.5, "savvy": 4.0}[SKILLS[key][2]]
-    return clamp(d.ability + room + offset(d, key) + extra, value(d, key), 99)
+    return clamp(d.potential + offset(d, key) + extra, value(d, key), 99)
 
 
 def track_bonus(d: "Driver", track_type: str) -> float:

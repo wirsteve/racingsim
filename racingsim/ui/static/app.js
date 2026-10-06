@@ -575,7 +575,7 @@ async function racePage(key, ev, year) {
     ]),
   ];
   view(`<h1>${esc(r.jewel || (r.series && r.series.name) || "Race")}</h1>
-    <p class="sub">${trackLink(r.track_id, r.track)} · ${esc(r.label)}${rc ? ` · ${rc.laps} laps · ${rc.cautions} cautions for ${rc.caution_laps} laps · ${rc.lead_changes} lead changes among ${rc.leaders} leaders${rc.margin ? ` · margin ${rc.margin.toFixed(3)}s` : ""}` : ""}</p>
+    <p class="sub">${trackLink(r.track_id, r.track)} · ${esc(r.label)}${rc ? ` · ${rc.laps} laps · ${rc.cautions} caution${rc.cautions === 1 ? "" : "s"} for ${rc.caution_laps} laps · ${rc.lead_changes} lead change${rc.lead_changes === 1 ? "" : "s"} among ${rc.leaders} leader${rc.leaders === 1 ? "" : "s"}${rc.margin ? ` · margin ${rc.margin.toFixed(3)}s` : ""}` : ""}</p>
     <div class="card flush">${table("race", cols, r.results, { rowClass: (x) => (x.is_player ? "me" : "") })}</div>
     ${r.log && r.log.length ? `<div class="card" style="margin-top:16px"><h3>Lap by lap</h3><ul class="timeline">${r.log.map((l) => `<li><b>Lap ${l[0]}</b> ${esc(l[1])}</li>`).join("")}</ul></div>` : ""}`);
 }

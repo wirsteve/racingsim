@@ -401,7 +401,7 @@ class SeasonRunner:
             # Tours, national series and any race the player is in run lap by lap.
             player_in = any(d.is_player for e in entries for d in e.drivers)
             rr = engine.run(entries, track, tpl.tier, tpl.car_weight, rng, detail=player_in,
-                            stages=system.stages, free_pass=world.year >= 2003)
+                            stages=system.stages, free_pass=world.year >= 2003, discipline=tpl.discipline)
             finishes = rr.finishes
             pts = score_box(system, finishes)
         else:
@@ -659,7 +659,8 @@ def _crown_jewel(world: "World", runner: "SeasonRunner", cj) -> Optional[dict]:
             charge(d, jewel_entry_cost(d, track))
     entries = [Entry([d], _jewel_equipment(world, res, d, cj, rng)) for d in field_drivers]
     rr = engine.run(entries, track, max(cj.max_tier - 1, 2), 0.45, rng,
-                    detail=any(d.is_player for d in field_drivers), free_pass=world.year >= 2003)
+                    detail=any(d.is_player for d in field_drivers), free_pass=world.year >= 2003,
+                    discipline=cj.discipline)
     finishes = rr.finishes
     order = [f.entry.drivers[0].id for f in finishes]
     res.crown_jewel_results.append((cj.key, order))

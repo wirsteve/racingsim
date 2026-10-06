@@ -71,7 +71,7 @@ CAL = {
     "setup_sd": 3.0,
     "qual_noise": 2.6,       # one-lap qualifying luck (track evolution, draw, a bobble) vs race noise
     "draft_noise": 2.2,      # extra pack-racing randomness at full drafting effect
-    "stint_sd": 2.2,
+    "stint_sd": 2.6,
     "restart_swap": 0.28,    # chance two cars side by side on a restart trade places         # each run the car gets better or worse (adjustments, track evolution), points
     "pit_sd": 1.6,           # seconds of pit-stop variation (fumbles, loose wheels in the tail)
     "loose_wheel": 0.012,    # chance a stop goes badly wrong (extra 10-25 s)
@@ -142,14 +142,14 @@ def _lap_seconds(track: "Track", tier: int, tt: str) -> float:
 
 
 # --------------------------------------------------------------------------- setup
-def _car(e: Entry, tt: str, cw: float, rng: random.Random) -> Car:
+def _car(e: Entry, tt: str, cw: float, rng: random.Random, discipline: Optional[str] = None) -> Car:
     ds = e.drivers
     lead = ds[0]
     S.ensure(lead)
 
     def avg(fn):
         return sum(fn(d) for d in ds) / len(ds)
-    drv = avg(lambda d: d.ability * S.track_factor(d, tt) + S.track_bonus(d, tt)
+    drv = avg(lambda d: S.base(d, discipline) * S.track_factor(d, tt) + S.track_bonus(d, tt)
               + 0.5 * S.offset(d, "speed") + 0.15 * S.offset(d, "consistency"))
     perf = (1 - cw) * drv + cw * e.equipment
     # This weekend's setup: feedback (and the crew) narrow the miss.
@@ -183,14 +183,14 @@ def _order(cars: list[Car]) -> list[Car]:
 # --------------------------------------------------------------------------- the race
 def run(entries: list[Entry], track: "Track", tier: int, car_weight: float, rng: random.Random,
         detail: bool = False, stages: int = 0, free_pass: bool = True, injury_scale: float = 1.0,
-        laps: Optional[int] = None, name_of=None) -> RaceResult:
+        laps: Optional[int] = None, name_of=None, discipline: Optional[str] = None) -> RaceResult:
     tt = S.track_type_of(track)
     s = track.sim
     n_laps = laps or race_laps(track, tier)
     lap_s = _lap_seconds(track, tier, tt)
     cw = clamp(car_weight * (0.75 + 0.5 * (s.horsepower_importance + s.aero_importance) / 200)
                * (1.0 - 0.35 * (s.drafting_effect / 100)), 0.1, 0.8)
-    cars = [_car(e, tt, cw, rng) for e in entries]
+    cars = [_car(e, tt, cw, rng, discipline) for e in entries]
     if len(cars) < 2:
         return RaceResult([], n_laps)
     log: list = []
