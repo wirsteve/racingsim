@@ -242,20 +242,21 @@ def apply_choice(world: "World", summary: "YearSummary", option_id: str) -> str:
         return f"Signed with {team.name} for the {s.name}."
     if kind == "self":
         s = world.series(choice["series_id"])
+        _vacate(world, d)
         enter_self_run(world, d, s, choice["_afford"])
         return f"You'll run your own car in the {s.name}" + (" (part-time - money is tight)." if choice["part_time"] else ".")
     if kind == "stay":
         return "Staying put for another season."
     if kind == "sit_out":
-        release_seat(world, d)
+        _vacate(world, d)
         d.series_id = None
         d.status = SIDELINED
         d.seasons_sidelined += 1
         d.log(world.year + 1, "sat out the season")
         return "You'll sit out next season."
     if kind == "retire":
+        _vacate(world, d)
         retire(world, d, summary)
-        d.log(world.year, f"retired from driving at {d.age(world.year)}")
         return "You hang up the helmet."
     return "OK"
 
@@ -273,7 +274,7 @@ def apply_action(world: "World", action: str, arg: Optional[str] = None) -> str:
         msg = pitch_for_player(world, d)
     elif action == "coach":
         cost = 5_000 * (1 + d.tier)
-        if d.savings + d.family_budget < cost:
+        if d.savings + d.available_funding() < cost:
             return "You can't afford a coach right now."
         _spend(d, cost)
         m.player_actions.add("coach")
@@ -285,13 +286,14 @@ def apply_action(world: "World", action: str, arg: Optional[str] = None) -> str:
         msg = "Long winter of coaching and sim sessions. You feel sharper." if gain > 0.4 else \
               "The coach says you're close to what you can be."
     elif action == "relocate":
-        if not arg or arg not in world.geo.regions:
+        if not isinstance(arg, str) or arg not in world.geo.regions:
             return "Pick a region to move to."
-        if d.savings + d.family_budget < 12_000:
+        if d.savings + d.available_funding() < 12_000:
             return "You can't afford the move."
         _spend(d, 12_000)
         r = world.geo.get(arg)
         d.home_region = r.code
+        d.country = r.country
         d.lat, d.lon = r.lat + world.rng.uniform(-0.3, 0.3), r.lon + world.rng.uniform(-0.3, 0.3)
         m.player_actions.add("relocate")
         d.log(world.year, f"moved to {r.name}")
@@ -303,6 +305,15 @@ def apply_action(world: "World", action: str, arg: Optional[str] = None) -> str:
 
 
 def _spend(d: Driver, amount: float) -> None:
-    from_savings = min(d.savings, amount)
-    d.savings -= from_savings
-    d.family_budget = max(0.0, d.family_budget - (amount - from_savings))
+    """Savings first; the rest comes out of next season's racing money, not the family's yearly budget."""
+    from ..sim.season import charge
+    charge(d, amount)
+
+
+def _vacate(world: "World", d: Driver) -> None:
+    """Walking away from a team seat puts it back on the market for the AI to fill."""
+    from ..career.market import _push, release_seat
+    old = release_seat(world, d)
+    if old is not None:
+        team, slot = old
+        _push(world.market.queue, team, slot, world.series(team.series_id).template)

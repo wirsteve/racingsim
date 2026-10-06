@@ -53,15 +53,21 @@ def handle(method: str, path: str, query: dict, body: dict):
         return api.setup_options()
     if head == "saves":
         return Game.saves()
+    if method == "POST" and not isinstance(body, dict):
+        raise ApiError("request body must be a JSON object")
     if head == "new" and method == "POST":
+        if not isinstance(body.get("region"), str):
+            raise ApiError("pick a home region")
         STATE.game = Game.new(
             first=body.get("first", ""), last=body.get("last", ""), region=body["region"],
             age=int(body.get("age", 10)), discipline=body.get("discipline", "karting"),
             background=body.get("background", "middle"), talent=body.get("talent", "unknown"),
-            seed=int(body.get("seed") or 2026), scale=float(body.get("scale") or 0.6),
+            seed=int(body.get("seed") or 2026), scale=min(1.5, max(0.1, float(body.get("scale") or 0.6))),
             start_year=int(body.get("start_year") or 2026))
         return api.status(STATE.game)
     if head == "load" and method == "POST":
+        if not isinstance(body.get("name"), str):
+            raise ApiError("save name required")
         try:
             STATE.game = Game.load(body["name"])
         except FileNotFoundError:
@@ -75,15 +81,15 @@ def handle(method: str, path: str, query: dict, body: dict):
     g = _game()
     w = g.world
     if head == "save" and method == "POST":
-        path = g.save(body.get("name") or f"{w.player.last_name if w.player else 'world'}_{w.year}")
+        path = g.save(str(body.get("name") or "") or f"{w.player.last_name if w.player else 'world'}_{w.year}")
         return {"saved": path.stem}
     if head == "sim" and method == "POST":
-        ran = g.sim_until(body.get("until", "week"))
+        ran = g.sim_until(str(body.get("until", "week")))
         return {"status": api.status(g), "races": len(ran)}
     if head == "dashboard":
         return api.dashboard(g)
     if head == "news":
-        return api.news(w, limit=int(query.get("limit", 100)), kind=query.get("kind") or None)
+        return api.news(w, limit=max(1, min(500, int(query.get("limit", 100)))), kind=query.get("kind") or None)
     if head == "drivers":
         return api.drivers_query(w, query)
     if head == "driver" and len(route) > 1:
@@ -96,6 +102,8 @@ def handle(method: str, path: str, query: dict, body: dict):
     if head == "pyramid":
         return api.pyramid(w)
     if head == "instances" and len(route) > 1:
+        if route[1] not in w.pyramid.templates:
+            raise ApiError("no such series type", 404)
         return api.series_instances(w, route[1])
     if head == "series" and len(route) > 1:
         if route[1] not in w.pyramid.series:
@@ -107,6 +115,8 @@ def handle(method: str, path: str, query: dict, body: dict):
             raise ApiError("no result recorded for that race", 404)
         return res
     if head == "team" and len(route) > 1:
+        if not route[1].isdigit() or int(route[1]) not in w.teams:
+            raise ApiError("no such team", 404)
         return api.team_detail(w, int(route[1]))
     if head == "tracks":
         return api.tracks_query(w, query)
@@ -116,7 +126,9 @@ def handle(method: str, path: str, query: dict, body: dict):
         return api.track_detail(w, route[1])
     if head == "jewels":
         if method == "POST":
-            key = body["key"]
+            key = body.get("key")
+            if key not in {cj.key for cj in w.pyramid.crown_jewels}:
+                raise ApiError("no such crown jewel", 404)
             if body.get("enter"):
                 from ..sim.season import MAX_JEWELS_PER_SEASON
                 if len(w.player_jewels) >= MAX_JEWELS_PER_SEASON and key not in w.player_jewels:
@@ -126,6 +138,8 @@ def handle(method: str, path: str, query: dict, body: dict):
                 w.player_jewels.discard(key)
         return api.jewels(g)
     if head == "apply" and method == "POST":
+        if body.get("key") not in {so["key"] for so in w.shootouts}:
+            raise ApiError("no such program", 404)
         if body.get("apply"):
             w.player_applications.add(body["key"])
         else:
@@ -134,9 +148,9 @@ def handle(method: str, path: str, query: dict, body: dict):
     if head == "offseason":
         if method == "POST":
             if body.get("action"):
-                msg = g.act(body["action"], body.get("arg"))
+                msg = g.act(str(body["action"]), body.get("arg"))
                 return {"message": msg, **api.offseason(g)}
-            msg = g.choose(body["choice"])
+            msg = g.choose(str(body.get("choice")))
             return {"message": msg, "status": api.status(g)}
         return api.offseason(g)
     if head == "regions":
@@ -167,11 +181,14 @@ class Handler(BaseHTTPRequestHandler):
         if url.path.startswith("/api/"):
             query = {k: v[-1] for k, v in parse_qs(url.query).items()}
             body = {}
-            if method == "POST":
-                n = int(self.headers.get("Content-Length") or 0)
-                if n:
-                    body = json.loads(self.rfile.read(n) or b"{}")
             try:
+                if method == "POST":
+                    n = int(self.headers.get("Content-Length") or 0)
+                    if n:
+                        try:
+                            body = json.loads(self.rfile.read(n) or b"{}")
+                        except (json.JSONDecodeError, UnicodeDecodeError):
+                            raise ApiError("malformed JSON body")
                 with STATE.lock:
                     out = handle(method, url.path, query, body)
                 self._json(200, out)
@@ -186,6 +203,9 @@ class Handler(BaseHTTPRequestHandler):
         rel = url.path.lstrip("/") or "index.html"
         f = (STATIC / rel).resolve()
         if not str(f).startswith(str(STATIC)) or not f.is_file():
+            if "." in rel.rsplit("/", 1)[-1]:  # a missing asset, not a client-side route
+                self._send(404, b"not found", "text/plain")
+                return
             f = STATIC / "index.html"
         ctype = mimetypes.guess_type(str(f))[0] or "application/octet-stream"
         self._send(200, f.read_bytes(), ctype)

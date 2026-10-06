@@ -79,6 +79,20 @@ def season_cost_for(world: "World", d: Driver, series: "Series") -> float:
     return cost + travel
 
 
+def season_outlay(world: "World", d: Driver) -> float:
+    """What the driver had to bring this season (self-run budget or pay-seat gap)."""
+    series = world.pyramid.series.get(d.series_id) if d.series_id else None
+    if series is None:
+        return 0.0
+    team = world.teams.get(d.team_id) if d.team_id is not None else None
+    if team is None:
+        return season_cost_for(world, d, series)
+    if d.seat_funded or d.id not in team.roster:
+        return 0.0
+    slot = team.roster.index(d.id)
+    return max(0.0, seat_gap(team, series.template, seat_role(series.template, slot)))
+
+
 def release_seat(world: "World", d: Driver) -> Optional[tuple[Team, int]]:
     if d.team_id is None:
         return None
@@ -222,7 +236,7 @@ def choose_self_run(world: "World", d: Driver, entrant: bool = False) -> bool:
     """Pick next season's self-funded program. Returns False if the driver is sidelined."""
     options = self_run_options(world, d, entrant=entrant)
     if not options:
-        if d.series_id is not None or entrant:
+        if d.status != RETIRED:
             d.status = SIDELINED
         d.series_id = None
         d.seasons_sidelined += 1
@@ -304,7 +318,7 @@ def _tick_contracts(world: "World", queue: list, summary: "YearSummary") -> None
                     release, reason = True, "lost the ride when the money ran out"
             if not release and d.contract_years <= 0:
                 age = d.age(world.year) + 1
-                if perf > 0.8 and age < 34 and rng.random() < 0.85:
+                if perf > 0.8 and age < 34 and rng.random() < 0.85 and _eligible(world, d, tpl, role):
                     # Stars are locked up before their deal runs out.
                     d.contract_years = rng.randint(2, 3)
                 else:

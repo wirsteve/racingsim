@@ -28,6 +28,7 @@ NEWSWORTHY = ("won the", "development program", "Shootout", "Combine", "first pr
 def begin_offseason(world: "World", results: "SeasonResults", summary: "YearSummary") -> None:
     world.market.event_marks = {d.id: len(d.events) for d in world.drivers.values()}
     _season_news(world, results)
+    _pay_from_savings(world)
     # 1. The paddock digests the season: demonstrated level, exposure, reputation.
     scouting.update_after_season(world, results)
     # 2. Money from last year's vouchers is spent; new vouchers are earned.
@@ -54,6 +55,7 @@ def begin_offseason(world: "World", results: "SeasonResults", summary: "YearSumm
     # 5. Talent pipelines: manufacturer programs, shootouts, combines.
     programs.manufacturer_programs(world, summary)
     programs.run_shootouts(world, summary)
+    world.player_applications = set()
     # 6a. The calendar turns: series renamed, rungs appear or go dormant, venues open/close.
     world.advance_pyramid(world.year + 1)
     # 6b. Silly season opens: contracts tick, open seats go on the market.
@@ -80,6 +82,16 @@ def complete_offseason(world: "World", summary: "YearSummary") -> None:
 def run_offseason(world: "World", results: "SeasonResults", summary: "YearSummary") -> None:
     begin_offseason(world, results, summary)
     complete_offseason(world, summary)
+
+
+def _pay_from_savings(world: "World") -> None:
+    """The savings that went into this season's budget are gone."""
+    for d in world.drivers.values():
+        if d.status == RETIRED or not d.series_id or d.savings <= 0:
+            continue
+        need = market.season_outlay(world, d)
+        other = d.family_budget + d.sponsor_money() + d.scholarship
+        d.savings -= min(max(0.0, need - other), d.savings * 0.25)
 
 
 def _season_news(world: "World", results: "SeasonResults") -> None:

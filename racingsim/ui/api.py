@@ -13,7 +13,7 @@ from typing import TYPE_CHECKING, Optional
 
 from ..career.scouting import categorize, estimated_potential
 from ..game import career
-from ..sim.season import SEASON_WEEKS, jewel_eligible, jewel_entry_cost
+from ..sim.season import SEASON_WEEKS, jewel_block_reasons, jewel_eligible, jewel_entry_cost
 from ..util import clamp
 from ..world.entities import DISCIPLINES, RETIRED, Driver
 
@@ -167,6 +167,12 @@ def status(game: "Game") -> dict:
     return out
 
 
+def _last_season(world: "World") -> int:
+    """The most recently completed season (the off-season sits before the year rolls over)."""
+    runner = world.season
+    return world.year if runner is not None and runner.finished else world.year - 1
+
+
 def standings_rows(world: "World", sid: str, limit: Optional[int] = None) -> list[dict]:
     runner = world.season
     rows = []
@@ -179,7 +185,7 @@ def standings_rows(world: "World", sid: str, limit: Optional[int] = None) -> lis
                          "avg_finish": round(a.finish_sum / a.starts, 1) if a.starts else None})
     else:
         recs = [(d, r) for d in world.drivers.values() for r in d.history[-1:]
-                if r.series_id == sid and r.year == world.year - 1]
+                if r.series_id == sid and r.year == _last_season(world)]
         recs.sort(key=lambda x: x[1].championship_pos)
         for d, r in recs:
             rows.append({"pos": r.championship_pos, "driver_id": d.id, "name": d.name, "is_player": d.is_player,
@@ -334,13 +340,7 @@ def jewels(game: "Game") -> list[dict]:
             item["eligible"] = jewel_eligible(w, p, cj)
             item["cost"] = round(jewel_entry_cost(p, t))
             if not item["eligible"]:
-                why = []
-                if p.age(w.year) < 14:
-                    why.append("age 14+")
-                if not (cj.min_tier - 1 <= p.tier <= cj.max_tier):
-                    why.append(f"tier {cj.min_tier}-{cj.max_tier}")
-                if p.primary_discipline != cj.discipline and not any(r.discipline == cj.discipline for r in p.history[-5:]):
-                    why.append(DISC_LABEL[cj.discipline].lower() + " experience")
+                why = jewel_block_reasons(w, p, cj, t)
                 item["why_not"] = ", ".join(why) or "not eligible"
         if res:
             wd = w.drivers[res[0]]
@@ -405,7 +405,7 @@ def drivers_query(world: "World", q: dict) -> dict:
         rows.sort(key=lambda d: -d.reputation)
         rows = rows[:3000]
     rows.sort(key=keyf)
-    offset, limit = int(q.get("offset") or 0), min(int(q.get("limit") or 100), 500)
+    offset, limit = max(0, int(q.get("offset") or 0)), max(1, min(int(q.get("limit") or 100), 500))
     return {"total": total, "rows": [driver_row(world, d) for d in rows[offset:offset + limit]]}
 
 
@@ -460,7 +460,13 @@ def series_detail(world: "World", sid: str) -> dict:
                       "funding_per_seat": money(t.sponsor_funding)})
     teams.sort(key=lambda t: -t["equipment"])
     champs = []
+    runner = world.season
+    if runner is not None and runner.finished and runner.res.champions.get(sid) is not None:
+        did = runner.res.champions[sid]
+        champs.append({"year": world.year, "driver_id": did, "name": world.drivers[did].name})
     for summ in reversed(world.summaries):
+        if summ.year == world.year and champs:
+            continue
         did = summ.champions.get(sid)
         if did is not None:
             champs.append({"year": summ.year, "driver_id": did, "name": world.drivers[did].name})

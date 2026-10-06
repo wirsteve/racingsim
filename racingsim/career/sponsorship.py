@@ -78,7 +78,7 @@ def update(world: "World", results: "SeasonResults") -> None:
                 continue
             collapse = SPONSOR_COLLAPSE_NATIONAL if sponsor.scope == "national" else SPONSOR_COLLAPSE_BASE
             if d.status in (RETIRED, SIDELINED) or rng.random() < collapse:
-                sponsor.committed -= deal.amount
+                sponsor.committed = max(0.0, sponsor.committed - deal.amount)
                 if deal.amount >= 100_000 and d.status != RETIRED:
                     d.log(world.year, f"lost backing from {sponsor.name}")
                 continue
@@ -89,9 +89,11 @@ def update(world: "World", results: "SeasonResults") -> None:
                 p_renew = sponsor.loyalty * (1.0 if ok else 0.55) * (0.7 + d.marketability / 160)
                 if rng.random() < p_renew:
                     deal.years_left = rng.randint(1, 3)
+                    old = deal.amount
                     deal.amount *= rng.uniform(0.9, 1.25) if ok else rng.uniform(0.7, 1.0)
+                    sponsor.committed += deal.amount - old
                 else:
-                    sponsor.committed -= deal.amount
+                    sponsor.committed = max(0.0, sponsor.committed - deal.amount)
                     continue
             kept.append(deal)
         d.sponsors = kept

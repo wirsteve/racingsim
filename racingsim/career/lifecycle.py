@@ -106,6 +106,14 @@ def retirements(world: "World", results: "SeasonResults", summary: "YearSummary"
     return retired
 
 
+def release_sponsors(world: "World", d: Driver) -> None:
+    for deal in d.sponsors:
+        sp = world.sponsors.get(deal.sponsor_id)
+        if sp is not None:
+            sp.committed = max(0.0, sp.committed - deal.amount)
+    d.sponsors.clear()
+
+
 def retire(world: "World", d: Driver, summary: "YearSummary") -> None:
     if d.team_id is not None:
         team = world.teams.get(d.team_id)
@@ -118,9 +126,9 @@ def retire(world: "World", d: Driver, summary: "YearSummary") -> None:
     d.status = RETIRED
     d.series_id = None
     d.team_id = None
-    d.sponsors.clear()
+    release_sponsors(world, d)
     summary.retirements += 1
-    if d.max_tier >= 4:
+    if d.max_tier >= 4 or d.is_player:
         d.log(world.year, f"retired from driving at {d.age(world.year)}")
 
 

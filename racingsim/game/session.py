@@ -55,6 +55,10 @@ class Game:
 
     def sim_until(self, target: str) -> list[dict]:
         """target: 'week', 'race' (until the player's next race has run) or 'season'."""
+        if target not in ("week", "race", "season"):
+            raise ValueError(f"unknown sim target {target!r}")
+        if self.phase != "season":
+            return []  # the off-season waits for the player's decision
         if target == "week":
             return self.sim_week()
         ran: list[dict] = []

@@ -279,8 +279,6 @@ class World:
         summary.drivers_by_tier = self.tier_counts()
         self.summaries.append(summary)
         self.year += 1
-        self.player_jewels = set()
-        self.player_applications = set()
         return summary
 
     def post(self, kind: str, text: str, driver_id: Optional[int] = None,

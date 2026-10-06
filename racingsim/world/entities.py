@@ -121,6 +121,7 @@ class Driver:
     # ---- health ----
     injury_races: int = 0
     injury_history: int = 0
+    season_spend: float = 0.0   # one-off costs this season beyond savings (coaching, entries)
 
     @property
     def name(self) -> str:
@@ -135,7 +136,8 @@ class Driver:
     def available_funding(self) -> float:
         """Money the driver can bring to a ride this season."""
         savings_draw = self.savings * 0.25
-        return self.family_budget + self.sponsor_money() + savings_draw + self.scholarship
+        return max(0.0, self.family_budget + self.sponsor_money() + savings_draw + self.scholarship
+                   - self.season_spend)
 
     def effective_ability(self, discipline: str) -> float:
         return self.ability * (0.55 + 0.45 * self.proficiency.get(discipline, 0.0))

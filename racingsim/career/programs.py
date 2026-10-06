@@ -157,10 +157,22 @@ def run_shootouts(world: "World", summary: "YearSummary") -> None:
             winner.reputation = clamp(winner.reputation + 10)
             winner.connections[f"target:{so['target_template']}"] = 1.0
             verb = "won the" if n_win == 1 else "was selected by the"
-            winner.log(year, f"{verb} {so['name']} (${so['award']:,.0f} toward the {target.name if target else 'next step'})")
+            winner.log(year, f"{verb} {so['name']} (${so['award']:,.0f} toward the {_target_name(world, target, winner)})")
             summary.signings.append(f"{winner.name} wins {so['name']}")
         for d in ranked[n_win:n_win + 2]:
             d.exposure = clamp(d.exposure + 8)
         if applicant is not None and applicant in invited and applicant not in ranked[:n_win]:
             pos = ranked.index(applicant) + 1
             applicant.log(year, f"finished {pos} of {len(ranked)} at the {so['name']}")
+
+
+def _target_name(world: "World", target, d: Driver) -> str:
+    """The concrete series a voucher points at (the winner's own regional tour, if regional)."""
+    if target is None:
+        return "next step"
+    instances = [s for s in world.pyramid.active() if s.template.key == target.key]
+    if not instances:
+        return target.name.replace("{region} ", "").replace("{track} ", "")
+    macro = world.geo.get(d.home_region).macro_region if d.home_region in world.geo.regions else None
+    mine = [s for s in instances if s.region_key == macro]
+    return (mine or instances)[0].name

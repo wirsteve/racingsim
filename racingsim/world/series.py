@@ -335,6 +335,9 @@ def _make_regional(tpl: SeriesTemplate, tracks: TrackDatabase, macro: str, sched
 
 def _national_schedule(tpl: SeriesTemplate, tracks: TrackDatabase, rng: random.Random, year: int) -> list[str]:
     pool = _eligible(tpl, tracks, year=year)
+    # North American championships: the odd border crossing, never a European tour.
+    home = [t for t in pool if t.facts.country in ("USA", "CAN")]
+    pool = home if len(home) >= min(tpl.events, 8) else [t for t in pool if t.facts.country in ("USA", "CAN", "MEX")]
     pool.sort(key=lambda t: (-t.profile.prestige, t.id))
     top = pool[: max(tpl.events, 8)]
     schedule = [top[i % len(top)].id for i in range(tpl.events)] if top else []
