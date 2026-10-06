@@ -1,0 +1,1864 @@
+{
+ "series": "cup_series",
+ "year": 2023,
+ "official_name": "NASCAR Cup Series",
+ "teams": [
+  {
+   "team": "Hendrick Motorsports",
+   "team_wiki": "Hendrick_Motorsports",
+   "owner": null,
+   "manufacturer": "Chevrolet",
+   "cars": [
+    {
+     "number": "5",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Kyle Larson",
+       "wiki": "Kyle_Larson"
+      }
+     ]
+    },
+    {
+     "number": "9",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Chase Elliott",
+       "wiki": "Chase_Elliott",
+       "races": 29,
+       "rounds": "1–2, 9–14, 16–36"
+      },
+      {
+       "name": "Josh Berry",
+       "wiki": "Josh_Berry",
+       "races": 5,
+       "rounds": "3–5, 7–8"
+      },
+      {
+       "name": "Jordan Taylor",
+       "wiki": "Jordan_Taylor_(racing_driver)",
+       "races": 1,
+       "rounds": "6"
+      },
+      {
+       "name": "Corey LaJoie",
+       "wiki": "Corey_LaJoie",
+       "races": 1,
+       "rounds": "15"
+      }
+     ]
+    },
+    {
+     "number": "24",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "William Byron",
+       "wiki": "William_Byron_(racing_driver)"
+      }
+     ]
+    },
+    {
+     "number": "48",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Alex Bowman",
+       "wiki": "Alex_Bowman",
+       "races": 33,
+       "rounds": "1–10, 14–36"
+      },
+      {
+       "name": "Josh Berry",
+       "wiki": "Josh_Berry",
+       "races": 3,
+       "rounds": "11–13"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "JTG Daugherty Racing",
+   "team_wiki": "JTG_Daugherty_Racing",
+   "owner": null,
+   "manufacturer": "Chevrolet",
+   "cars": [
+    {
+     "number": "47",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Ricky Stenhouse Jr.",
+       "wiki": "Ricky_Stenhouse_Jr."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Kaulig Racing",
+   "team_wiki": "Kaulig_Racing",
+   "owner": null,
+   "manufacturer": "Chevrolet",
+   "cars": [
+    {
+     "number": "16",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "A. J. Allmendinger",
+       "wiki": "A._J._Allmendinger"
+      }
+     ]
+    },
+    {
+     "number": "31",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Justin Haley",
+       "wiki": "Justin_Haley_(racing_driver)"
+      }
+     ]
+    },
+    {
+     "number": "13",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Chandler Smith",
+       "wiki": "Chandler_Smith",
+       "races": 4,
+       "rounds": "1, 7, 26, 31"
+      },
+      {
+       "name": "Jonathan Davenport",
+       "wiki": "Jonathan_Davenport",
+       "races": 1,
+       "rounds": "8"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Legacy Motor Club",
+   "team_wiki": "Legacy_Motor_Club",
+   "owner": null,
+   "manufacturer": "Chevrolet",
+   "cars": [
+    {
+     "number": "42",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Noah Gragson",
+       "wiki": "Noah_Gragson",
+       "races": 21,
+       "rounds": "1–15, 17–22"
+      },
+      {
+       "name": "Grant Enfinger",
+       "wiki": "Grant_Enfinger",
+       "races": 1,
+       "rounds": "16"
+      },
+      {
+       "name": "Josh Berry",
+       "wiki": "Josh_Berry",
+       "races": 2,
+       "rounds": "23, 26"
+      },
+      {
+       "name": "Mike Rockenfeller",
+       "wiki": "Mike_Rockenfeller",
+       "races": 3,
+       "rounds": "24–25, 32"
+      },
+      {
+       "name": "Carson Hocevar",
+       "wiki": "Carson_Hocevar",
+       "races": 8,
+       "rounds": "27–31, 33, 35–36"
+      },
+      {
+       "name": "John Hunter Nemechek",
+       "wiki": "John_Hunter_Nemechek",
+       "races": 1,
+       "rounds": "34"
+      }
+     ]
+    },
+    {
+     "number": "43",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Erik Jones",
+       "wiki": "Erik_Jones"
+      }
+     ]
+    },
+    {
+     "number": "84",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Jimmie Johnson",
+       "wiki": "Jimmie_Johnson",
+       "races": 3,
+       "rounds": "1, 6, 14"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Live Fast Motorsports",
+   "team_wiki": "Live_Fast_Motorsports",
+   "owner": null,
+   "manufacturer": "Chevrolet",
+   "cars": [
+    {
+     "number": "78",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "B. J. McLeod",
+       "wiki": "B._J._McLeod",
+       "races": 23,
+       "rounds": "1–5, 8, 10–11, 13–15, 19–22, 26–27, 29–31, 33, 35–36"
+      },
+      {
+       "name": "Josh Bilicki",
+       "wiki": "Josh_Bilicki",
+       "races": 10,
+       "rounds": "6, 12, 16–18, 23–25, 32, 34"
+      },
+      {
+       "name": "Anthony Alfredo",
+       "wiki": "Anthony_Alfredo",
+       "races": 2,
+       "rounds": "7, 9"
+      },
+      {
+       "name": "Sheldon Creed",
+       "wiki": "Sheldon_Creed",
+       "races": 1,
+       "rounds": "28"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Richard Childress Racing",
+   "team_wiki": "Richard_Childress_Racing",
+   "owner": null,
+   "manufacturer": "Chevrolet",
+   "cars": [
+    {
+     "number": "3",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Austin Dillon",
+       "wiki": "Austin_Dillon"
+      }
+     ]
+    },
+    {
+     "number": "8",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Kyle Busch",
+       "wiki": "Kyle_Busch"
+      }
+     ]
+    },
+    {
+     "number": "33",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Brodie Kostecki",
+       "wiki": "Brodie_Kostecki",
+       "races": 1,
+       "rounds": "24"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Spire Motorsports",
+   "team_wiki": "Spire_Motorsports",
+   "owner": null,
+   "manufacturer": "Chevrolet",
+   "cars": [
+    {
+     "number": "7",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Corey LaJoie",
+       "wiki": "Corey_LaJoie",
+       "races": 35,
+       "rounds": "1–14, 16–36"
+      },
+      {
+       "name": "Carson Hocevar",
+       "wiki": "Carson_Hocevar",
+       "races": 1,
+       "rounds": "15"
+      }
+     ]
+    },
+    {
+     "number": "77",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Ty Dillon",
+       "wiki": "Ty_Dillon"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Trackhouse Racing",
+   "team_wiki": "Trackhouse_Racing",
+   "owner": null,
+   "manufacturer": "Chevrolet",
+   "cars": [
+    {
+     "number": "1",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Ross Chastain",
+       "wiki": "Ross_Chastain"
+      }
+     ]
+    },
+    {
+     "number": "99",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Daniel Suárez",
+       "wiki": "Daniel_Suárez"
+      }
+     ]
+    },
+    {
+     "number": "91",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Kimi Räikkönen",
+       "wiki": "Kimi_Räikkönen",
+       "races": 1,
+       "rounds": "6"
+      },
+      {
+       "name": "Shane van Gisbergen",
+       "wiki": "Shane_van_Gisbergen",
+       "races": 2,
+       "rounds": "18, 24"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Front Row Motorsports",
+   "team_wiki": "Front_Row_Motorsports",
+   "owner": null,
+   "manufacturer": "Ford",
+   "cars": [
+    {
+     "number": "34",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Michael McDowell",
+       "wiki": "Michael_McDowell_(racing_driver)"
+      }
+     ]
+    },
+    {
+     "number": "38",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Todd Gilliland",
+       "wiki": "Todd_Gilliland",
+       "races": 30,
+       "rounds": "1–3, 5–9, 11–13, 15, 17–29, 31, 33–36"
+      },
+      {
+       "name": "Zane Smith",
+       "wiki": "Zane_Smith",
+       "races": 6,
+       "rounds": "4, 10, 14, 16, 30, 32"
+      }
+     ]
+    },
+    {
+     "number": "36",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Zane Smith",
+       "wiki": "Zane_Smith",
+       "races": 1,
+       "rounds": "1"
+      },
+      {
+       "name": "Todd Gilliland",
+       "wiki": "Todd_Gilliland",
+       "races": 1,
+       "rounds": "10"
+      },
+      {
+       "name": "Riley Herbst",
+       "wiki": "Riley_Herbst",
+       "races": 2,
+       "rounds": "26, 31"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "RFK Racing",
+   "team_wiki": "RFK_Racing",
+   "owner": null,
+   "manufacturer": "Ford",
+   "cars": [
+    {
+     "number": "6",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Brad Keselowski",
+       "wiki": "Brad_Keselowski"
+      }
+     ]
+    },
+    {
+     "number": "17",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Chris Buescher",
+       "wiki": "Chris_Buescher"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Rick Ware Racing",
+   "team_wiki": "Rick_Ware_Racing",
+   "owner": null,
+   "manufacturer": "Ford",
+   "cars": [
+    {
+     "number": "15",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Riley Herbst",
+       "wiki": "Riley_Herbst",
+       "races": 2,
+       "rounds": "1, 10"
+      },
+      {
+       "name": "J. J. Yeley",
+       "wiki": "J._J._Yeley",
+       "races": 18,
+       "rounds": "2–3, 5, 7–9, 14, 19, 21–23, 27–30, 34–36"
+      },
+      {
+       "name": "Todd Gilliland",
+       "wiki": "Todd_Gilliland",
+       "races": 1,
+       "rounds": "4"
+      },
+      {
+       "name": "Jenson Button",
+       "wiki": "Jenson_Button",
+       "races": 3,
+       "rounds": "6, 18, 24"
+      },
+      {
+       "name": "Brennan Poole",
+       "wiki": "Brennan_Poole",
+       "races": 7,
+       "rounds": "11–13, 17, 26, 31, 33"
+      },
+      {
+       "name": "Gray Gaulding",
+       "wiki": "Gray_Gaulding",
+       "races": 1,
+       "rounds": "15"
+      },
+      {
+       "name": "Andy Lally",
+       "wiki": "Andy_Lally",
+       "races": 3,
+       "rounds": "16, 25, 32"
+      },
+      {
+       "name": "Ryan Newman",
+       "wiki": "Ryan_Newman_(racing_driver)",
+       "races": 1,
+       "rounds": "20"
+      }
+     ]
+    },
+    {
+     "number": "51",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Cody Ware",
+       "wiki": "Cody_Ware",
+       "races": 7,
+       "rounds": "1–7"
+      },
+      {
+       "name": "Matt Crafton",
+       "wiki": "Matt_Crafton",
+       "races": 1,
+       "rounds": "8"
+      },
+      {
+       "name": "Zane Smith",
+       "wiki": "Zane_Smith",
+       "races": 1,
+       "rounds": "9"
+      },
+      {
+       "name": "J. J. Yeley",
+       "wiki": "J._J._Yeley",
+       "races": 8,
+       "rounds": "10–12, 15, 17, 26, 31, 33"
+      },
+      {
+       "name": "Ryan Newman",
+       "wiki": "Ryan_Newman_(racing_driver)",
+       "races": 7,
+       "rounds": "13, 22, 27, 29, 34–36"
+      },
+      {
+       "name": "Todd Gilliland",
+       "wiki": "Todd_Gilliland",
+       "races": 4,
+       "rounds": "14, 16, 30, 32"
+      },
+      {
+       "name": "Andy Lally",
+       "wiki": "Andy_Lally",
+       "races": 2,
+       "rounds": "18, 24"
+      },
+      {
+       "name": "Cole Custer",
+       "wiki": "Cole_Custer",
+       "races": 6,
+       "rounds": "19–21, 23, 25, 28"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Stewart–Haas Racing",
+   "team_wiki": "Stewart–Haas_Racing",
+   "owner": null,
+   "manufacturer": "Ford",
+   "cars": [
+    {
+     "number": "4",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Kevin Harvick",
+       "wiki": "Kevin_Harvick"
+      }
+     ]
+    },
+    {
+     "number": "10",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Aric Almirola",
+       "wiki": "Aric_Almirola"
+      }
+     ]
+    },
+    {
+     "number": "14",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Chase Briscoe",
+       "wiki": "Chase_Briscoe"
+      }
+     ]
+    },
+    {
+     "number": "41",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Ryan Preece",
+       "wiki": "Ryan_Preece"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Team Penske",
+   "team_wiki": "NASCAR_operations_of_Team_Penske",
+   "owner": null,
+   "manufacturer": "Ford",
+   "cars": [
+    {
+     "number": "2",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Austin Cindric",
+       "wiki": "Austin_Cindric"
+      }
+     ]
+    },
+    {
+     "number": "12",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Ryan Blaney",
+       "wiki": "Ryan_Blaney"
+      }
+     ]
+    },
+    {
+     "number": "22",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Joey Logano",
+       "wiki": "Joey_Logano"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Wood Brothers Racing",
+   "team_wiki": "Wood_Brothers_Racing",
+   "owner": null,
+   "manufacturer": "Ford",
+   "cars": [
+    {
+     "number": "21",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Harrison Burton",
+       "wiki": "Harrison_Burton"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "23XI Racing",
+   "team_wiki": "23XI_Racing",
+   "owner": null,
+   "manufacturer": "Toyota",
+   "cars": [
+    {
+     "number": "23",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Bubba Wallace",
+       "wiki": "Bubba_Wallace"
+      }
+     ]
+    },
+    {
+     "number": "45",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Tyler Reddick",
+       "wiki": "Tyler_Reddick"
+      }
+     ]
+    },
+    {
+     "number": "67",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Travis Pastrana",
+       "wiki": "Travis_Pastrana",
+       "races": 1,
+       "rounds": "1"
+      },
+      {
+       "name": "Kamui Kobayashi",
+       "wiki": "Kamui_Kobayashi",
+       "races": 1,
+       "rounds": "24"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Joe Gibbs Racing",
+   "team_wiki": "Joe_Gibbs_Racing",
+   "owner": null,
+   "manufacturer": "Toyota",
+   "cars": [
+    {
+     "number": "11",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Denny Hamlin",
+       "wiki": "Denny_Hamlin"
+      }
+     ]
+    },
+    {
+     "number": "19",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Martin Truex Jr.",
+       "wiki": "Martin_Truex_Jr."
+      }
+     ]
+    },
+    {
+     "number": "20",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Christopher Bell",
+       "wiki": "Christopher_Bell_(racing_driver)"
+      }
+     ]
+    },
+    {
+     "number": "54",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Ty Gibbs",
+       "wiki": "Ty_Gibbs"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Beard Motorsports",
+   "team_wiki": "Beard_Motorsports",
+   "owner": null,
+   "manufacturer": "Chevrolet",
+   "cars": [
+    {
+     "number": "62",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Austin Hill",
+       "wiki": "Austin_Hill",
+       "races": 6,
+       "rounds": "1, 10, 19, 23, 26, 32"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "The Money Team Racing",
+   "team_wiki": "The_Money_Team_Racing",
+   "owner": null,
+   "manufacturer": "Chevrolet",
+   "cars": [
+    {
+     "number": "50",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Conor Daly",
+       "wiki": "Conor_Daly",
+       "races": 2,
+       "rounds": "1, 6"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "standings": [
+  {
+   "pos": 1,
+   "name": "Ryan Blaney",
+   "wiki": "Ryan_Blaney",
+   "points": 5035,
+   "wins": 3,
+   "top5": 8,
+   "top10": 18,
+   "starts": 36
+  },
+  {
+   "pos": 2,
+   "name": "Kyle Larson",
+   "wiki": "Kyle_Larson",
+   "points": 5034,
+   "wins": 4,
+   "top5": 15,
+   "top10": 18,
+   "starts": 36
+  },
+  {
+   "pos": 3,
+   "name": "William Byron",
+   "wiki": "William_Byron_(racing_driver)",
+   "points": 5033,
+   "wins": 6,
+   "top5": 15,
+   "top10": 21,
+   "starts": 36
+  },
+  {
+   "pos": 4,
+   "name": "Christopher Bell",
+   "wiki": "Christopher_Bell_(racing_driver)",
+   "points": 5001,
+   "wins": 2,
+   "top5": 10,
+   "top10": 19,
+   "starts": 36
+  },
+  {
+   "pos": 5,
+   "name": "Denny Hamlin",
+   "wiki": "Denny_Hamlin",
+   "points": 2383,
+   "wins": 3,
+   "top5": 14,
+   "top10": 19,
+   "starts": 36
+  },
+  {
+   "pos": 6,
+   "name": "Tyler Reddick",
+   "wiki": "Tyler_Reddick",
+   "points": 2344,
+   "wins": 2,
+   "top5": 10,
+   "top10": 16,
+   "starts": 36
+  },
+  {
+   "pos": 7,
+   "name": "Chris Buescher",
+   "wiki": "Chris_Buescher",
+   "points": 2310,
+   "wins": 3,
+   "top5": 9,
+   "top10": 17,
+   "starts": 36
+  },
+  {
+   "pos": 8,
+   "name": "Brad Keselowski",
+   "wiki": "Brad_Keselowski",
+   "points": 2302,
+   "wins": 0,
+   "top5": 7,
+   "top10": 16,
+   "starts": 36
+  },
+  {
+   "pos": 9,
+   "name": "Ross Chastain",
+   "wiki": "Ross_Chastain",
+   "points": 2299,
+   "wins": 2,
+   "top5": 10,
+   "top10": 14,
+   "starts": 36
+  },
+  {
+   "pos": 10,
+   "name": "Bubba Wallace",
+   "wiki": "Bubba_Wallace",
+   "points": 2279,
+   "wins": 0,
+   "top5": 5,
+   "top10": 10,
+   "starts": 36
+  },
+  {
+   "pos": 11,
+   "name": "Martin Truex Jr.",
+   "wiki": "Martin_Truex_Jr.",
+   "points": 2269,
+   "wins": 3,
+   "top5": 9,
+   "top10": 17,
+   "starts": 36
+  },
+  {
+   "pos": 12,
+   "name": "Joey Logano",
+   "wiki": "Joey_Logano",
+   "points": 2258,
+   "wins": 1,
+   "top5": 11,
+   "top10": 17,
+   "starts": 36
+  },
+  {
+   "pos": 13,
+   "name": "Kevin Harvick",
+   "wiki": "Kevin_Harvick",
+   "points": 2241,
+   "wins": 0,
+   "top5": 6,
+   "top10": 14,
+   "starts": 36
+  },
+  {
+   "pos": 14,
+   "name": "Kyle Busch",
+   "wiki": "Kyle_Busch",
+   "points": 2232,
+   "wins": 3,
+   "top5": 10,
+   "top10": 17,
+   "starts": 36
+  },
+  {
+   "pos": 15,
+   "name": "Michael McDowell",
+   "wiki": "Michael_McDowell_(racing_driver)",
+   "points": 2185,
+   "wins": 1,
+   "top5": 2,
+   "top10": 8,
+   "starts": 36
+  },
+  {
+   "pos": 16,
+   "name": "Ricky Stenhouse Jr.",
+   "wiki": "Ricky_Stenhouse_Jr.",
+   "points": 2168,
+   "wins": 1,
+   "top5": 2,
+   "top10": 9,
+   "starts": 36
+  },
+  {
+   "pos": 17,
+   "name": "Chase Elliott",
+   "wiki": "Chase_Elliott",
+   "points": 820,
+   "wins": 0,
+   "top5": 7,
+   "top10": 15,
+   "starts": 29
+  },
+  {
+   "pos": 18,
+   "name": "Ty Gibbs",
+   "wiki": "Ty_Gibbs",
+   "points": 771,
+   "wins": 0,
+   "top5": 4,
+   "top10": 10,
+   "starts": 36
+  },
+  {
+   "pos": 19,
+   "name": "Daniel Suárez",
+   "wiki": "Daniel_Suárez",
+   "points": 756,
+   "wins": 0,
+   "top5": 3,
+   "top10": 10,
+   "starts": 36
+  },
+  {
+   "pos": 20,
+   "name": "Alex Bowman",
+   "wiki": "Alex_Bowman",
+   "points": 701,
+   "wins": 0,
+   "top5": 4,
+   "top10": 10,
+   "starts": 33
+  },
+  {
+   "pos": 21,
+   "name": "A. J. Allmendinger",
+   "wiki": "A._J._Allmendinger",
+   "points": 692,
+   "wins": 1,
+   "top5": 4,
+   "top10": 7,
+   "starts": 36
+  },
+  {
+   "pos": 22,
+   "name": "Aric Almirola",
+   "wiki": "Aric_Almirola",
+   "points": 675,
+   "wins": 0,
+   "top5": 2,
+   "top10": 5,
+   "starts": 36
+  },
+  {
+   "pos": 23,
+   "name": "Ryan Preece",
+   "wiki": "Ryan_Preece",
+   "points": 637,
+   "wins": 0,
+   "top5": 1,
+   "top10": 2,
+   "starts": 36
+  },
+  {
+   "pos": 24,
+   "name": "Austin Cindric",
+   "wiki": "Austin_Cindric",
+   "points": 626,
+   "wins": 0,
+   "top5": 1,
+   "top10": 5,
+   "starts": 36
+  },
+  {
+   "pos": 25,
+   "name": "Corey LaJoie",
+   "wiki": "Corey_LaJoie",
+   "points": 603,
+   "wins": 0,
+   "top5": 2,
+   "top10": 3,
+   "starts": 36
+  },
+  {
+   "pos": 26,
+   "name": "Justin Haley",
+   "wiki": "Justin_Haley_(racing_driver)",
+   "points": 593,
+   "wins": 0,
+   "top5": 1,
+   "top10": 6,
+   "starts": 36
+  },
+  {
+   "pos": 27,
+   "name": "Erik Jones",
+   "wiki": "Erik_Jones",
+   "points": 578,
+   "wins": 0,
+   "top5": 1,
+   "top10": 7,
+   "starts": 36
+  },
+  {
+   "pos": 28,
+   "name": "Todd Gilliland",
+   "wiki": "Todd_Gilliland",
+   "points": 554,
+   "wins": 0,
+   "top5": 0,
+   "top10": 4,
+   "starts": 36
+  },
+  {
+   "pos": 29,
+   "name": "Austin Dillon",
+   "wiki": "Austin_Dillon",
+   "points": 545,
+   "wins": 0,
+   "top5": 1,
+   "top10": 7,
+   "starts": 36
+  },
+  {
+   "pos": 30,
+   "name": "Chase Briscoe",
+   "wiki": "Chase_Briscoe",
+   "points": 534,
+   "wins": 0,
+   "top5": 4,
+   "top10": 8,
+   "starts": 36
+  },
+  {
+   "pos": 31,
+   "name": "Harrison Burton",
+   "wiki": "Harrison_Burton",
+   "points": 452,
+   "wins": 0,
+   "top5": 0,
+   "top10": 2,
+   "starts": 36
+  },
+  {
+   "pos": 32,
+   "name": "Ty Dillon",
+   "wiki": "Ty_Dillon",
+   "points": 364,
+   "wins": 0,
+   "top5": 0,
+   "top10": 0,
+   "starts": 36
+  },
+  {
+   "pos": 33,
+   "name": "Noah Gragson",
+   "wiki": "Noah_Gragson",
+   "points": 199,
+   "wins": 0,
+   "top5": 0,
+   "top10": 0,
+   "starts": 21
+  },
+  {
+   "pos": 34,
+   "name": "Cody Ware",
+   "wiki": "Cody_Ware",
+   "points": 65,
+   "wins": 0,
+   "top5": 0,
+   "top10": 0,
+   "starts": 7
+  },
+  {
+   "pos": 35,
+   "name": "Jenson Button",
+   "wiki": "Jenson_Button",
+   "points": 45,
+   "wins": 0,
+   "top5": 0,
+   "top10": 0,
+   "starts": 3
+  },
+  {
+   "pos": 36,
+   "name": "Mike Rockenfeller",
+   "wiki": "Mike_Rockenfeller",
+   "points": 39,
+   "wins": 0,
+   "top5": 0,
+   "top10": 0,
+   "starts": 3
+  },
+  {
+   "pos": 37,
+   "name": "Travis Pastrana",
+   "wiki": "Travis_Pastrana",
+   "points": 26,
+   "wins": 0,
+   "top5": 0,
+   "top10": 0,
+   "starts": 1
+  },
+  {
+   "pos": 38,
+   "name": "Brodie Kostecki",
+   "wiki": "Brodie_Kostecki",
+   "points": 15,
+   "wins": 0,
+   "top5": 0,
+   "top10": 0,
+   "starts": 1
+  },
+  {
+   "pos": 39,
+   "name": "Jimmie Johnson",
+   "wiki": "Jimmie_Johnson",
+   "points": 12,
+   "wins": 0,
+   "top5": 0,
+   "top10": 0,
+   "starts": 3
+  },
+  {
+   "pos": 40,
+   "name": "Kimi Räikkönen",
+   "wiki": "Kimi_Räikkönen",
+   "points": 8,
+   "wins": 0,
+   "top5": 0,
+   "top10": 0,
+   "starts": 1
+  },
+  {
+   "pos": 41,
+   "name": "Jonathan Davenport",
+   "wiki": "Jonathan_Davenport",
+   "points": 1,
+   "wins": 0,
+   "top5": 0,
+   "top10": 0,
+   "starts": 1
+  },
+  {
+   "pos": null,
+   "name": "Shane van Gisbergen",
+   "wiki": "Shane_van_Gisbergen",
+   "points": null,
+   "wins": 1,
+   "top5": 1,
+   "top10": 2,
+   "starts": 2
+  },
+  {
+   "pos": null,
+   "name": "Josh Berry",
+   "wiki": "Josh_Berry",
+   "points": null,
+   "wins": 0,
+   "top5": 1,
+   "top10": 3,
+   "starts": 10
+  },
+  {
+   "pos": null,
+   "name": "J. J. Yeley",
+   "wiki": "J._J._Yeley",
+   "points": null,
+   "wins": 0,
+   "top5": 0,
+   "top10": 1,
+   "starts": 26
+  },
+  {
+   "pos": null,
+   "name": "Riley Herbst",
+   "wiki": "Riley_Herbst",
+   "points": null,
+   "wins": 0,
+   "top5": 0,
+   "top10": 2,
+   "starts": 4
+  },
+  {
+   "pos": null,
+   "name": "Zane Smith",
+   "wiki": "Zane_Smith",
+   "points": null,
+   "wins": 0,
+   "top5": 0,
+   "top10": 1,
+   "starts": 8
+  },
+  {
+   "pos": null,
+   "name": "Chandler Smith",
+   "wiki": "Chandler_Smith",
+   "points": null,
+   "wins": 0,
+   "top5": 0,
+   "top10": 0,
+   "starts": 3
+  },
+  {
+   "pos": null,
+   "name": "Carson Hocevar",
+   "wiki": "Carson_Hocevar",
+   "points": null,
+   "wins": 0,
+   "top5": 0,
+   "top10": 0,
+   "starts": 9
+  },
+  {
+   "pos": null,
+   "name": "Austin Hill",
+   "wiki": "Austin_Hill",
+   "points": null,
+   "wins": 0,
+   "top5": 0,
+   "top10": 0,
+   "starts": 5
+  },
+  {
+   "pos": null,
+   "name": "B. J. McLeod",
+   "wiki": "B._J._McLeod",
+   "points": null,
+   "wins": 0,
+   "top5": 0,
+   "top10": 0,
+   "starts": 23
+  },
+  {
+   "pos": null,
+   "name": "Josh Bilicki",
+   "wiki": "Josh_Bilicki",
+   "points": null,
+   "wins": 0,
+   "top5": 0,
+   "top10": 0,
+   "starts": 10
+  },
+  {
+   "pos": null,
+   "name": "Cole Custer",
+   "wiki": "Cole_Custer",
+   "points": null,
+   "wins": 0,
+   "top5": 0,
+   "top10": 0,
+   "starts": 6
+  },
+  {
+   "pos": null,
+   "name": "Jordan Taylor",
+   "wiki": "Jordan_Taylor_(racing_driver)",
+   "points": null,
+   "wins": 0,
+   "top5": 0,
+   "top10": 0,
+   "starts": 1
+  },
+  {
+   "pos": null,
+   "name": "Andy Lally",
+   "wiki": "Andy_Lally",
+   "points": null,
+   "wins": 0,
+   "top5": 0,
+   "top10": 0,
+   "starts": 5
+  },
+  {
+   "pos": null,
+   "name": "Ryan Newman",
+   "wiki": "Ryan_Newman_(racing_driver)",
+   "points": null,
+   "wins": 0,
+   "top5": 0,
+   "top10": 0,
+   "starts": 8
+  },
+  {
+   "pos": null,
+   "name": "Grant Enfinger",
+   "wiki": "Grant_Enfinger",
+   "points": null,
+   "wins": 0,
+   "top5": 0,
+   "top10": 0,
+   "starts": 1
+  },
+  {
+   "pos": null,
+   "name": "Brennan Poole",
+   "wiki": "Brennan_Poole",
+   "points": null,
+   "wins": 0,
+   "top5": 0,
+   "top10": 0,
+   "starts": 7
+  },
+  {
+   "pos": null,
+   "name": "Conor Daly",
+   "wiki": "Conor_Daly",
+   "points": null,
+   "wins": 0,
+   "top5": 0,
+   "top10": 0,
+   "starts": 2
+  },
+  {
+   "pos": null,
+   "name": "Gray Gaulding",
+   "wiki": "Gray_Gaulding",
+   "points": null,
+   "wins": 0,
+   "top5": 0,
+   "top10": 0,
+   "starts": 1
+  },
+  {
+   "pos": null,
+   "name": "Sheldon Creed",
+   "wiki": "Sheldon_Creed",
+   "points": null,
+   "wins": 0,
+   "top5": 0,
+   "top10": 0,
+   "starts": 1
+  },
+  {
+   "pos": null,
+   "name": "John Hunter Nemechek",
+   "wiki": "John_Hunter_Nemechek",
+   "points": null,
+   "wins": 0,
+   "top5": 0,
+   "top10": 0,
+   "starts": 1
+  },
+  {
+   "pos": null,
+   "name": "Anthony Alfredo",
+   "wiki": "Anthony_Alfredo",
+   "points": null,
+   "wins": 0,
+   "top5": 0,
+   "top10": 0,
+   "starts": 2
+  },
+  {
+   "pos": null,
+   "name": "Kamui Kobayashi",
+   "wiki": "Kamui_Kobayashi",
+   "points": null,
+   "wins": 0,
+   "top5": 0,
+   "top10": 0,
+   "starts": 1
+  },
+  {
+   "pos": null,
+   "name": "Matt Crafton",
+   "wiki": "Matt_Crafton",
+   "points": null,
+   "wins": 0,
+   "top5": 0,
+   "top10": 0,
+   "starts": 1
+  }
+ ],
+ "schedule": [
+  {
+   "round": 1,
+   "date": "2023-02-19",
+   "race": "Daytona 500",
+   "track": "Daytona International Speedway",
+   "city": "Daytona Beach",
+   "state": "FL",
+   "country": "USA",
+   "winner": "Ricky Stenhouse Jr.",
+   "winner_wiki": "Ricky_Stenhouse_Jr."
+  },
+  {
+   "round": 2,
+   "date": "2023-02-26",
+   "race": "Pala Casino 400",
+   "track": "Auto Club Speedway",
+   "city": "Fontana",
+   "state": "CA",
+   "country": "USA",
+   "winner": "Kyle Busch",
+   "winner_wiki": "Kyle_Busch"
+  },
+  {
+   "round": 3,
+   "date": "2023-03-05",
+   "race": "Pennzoil 400",
+   "track": "Las Vegas Motor Speedway",
+   "city": "Las Vegas",
+   "state": "NV",
+   "country": "USA",
+   "winner": "William Byron",
+   "winner_wiki": "William_Byron_(racing_driver)"
+  },
+  {
+   "round": 4,
+   "date": "2023-03-12",
+   "race": "United Rentals Work United 500",
+   "track": "Phoenix Raceway",
+   "city": "Avondale",
+   "state": "AZ",
+   "country": "USA",
+   "winner": "William Byron",
+   "winner_wiki": "William_Byron_(racing_driver)"
+  },
+  {
+   "round": 5,
+   "date": "2023-03-19",
+   "race": "Ambetter Health 400",
+   "track": "Atlanta Motor Speedway",
+   "city": "Hampton",
+   "state": "GA",
+   "country": "USA",
+   "winner": "Joey Logano",
+   "winner_wiki": "Joey_Logano"
+  },
+  {
+   "round": 6,
+   "date": "2023-03-26",
+   "race": "EchoPark Automotive Grand Prix",
+   "track": "Circuit of the Americas",
+   "city": "Austin",
+   "state": "TX",
+   "country": "USA",
+   "winner": "Tyler Reddick",
+   "winner_wiki": "Tyler_Reddick"
+  },
+  {
+   "round": 7,
+   "date": "2023-04-02",
+   "race": "Toyota Owners 400",
+   "track": "Richmond Raceway",
+   "city": "Richmond",
+   "state": "VA",
+   "country": "USA",
+   "winner": "Kyle Larson",
+   "winner_wiki": "Kyle_Larson"
+  },
+  {
+   "round": 8,
+   "date": "2023-04-09",
+   "race": "Food City Dirt Race",
+   "track": "Bristol Motor Speedway (Dirt Course)",
+   "city": "Bristol",
+   "state": "TN",
+   "country": "USA",
+   "winner": "Christopher Bell",
+   "winner_wiki": "Christopher_Bell_(racing_driver)"
+  },
+  {
+   "round": 9,
+   "date": "2023-04-16",
+   "race": "NOCO 400",
+   "track": "Martinsville Speedway",
+   "city": "Ridgeway",
+   "state": "VA",
+   "country": "USA",
+   "winner": "Kyle Larson",
+   "winner_wiki": "Kyle_Larson"
+  },
+  {
+   "round": 10,
+   "date": "2023-04-23",
+   "race": "GEICO 500",
+   "track": "Talladega Superspeedway",
+   "city": "Lincoln",
+   "state": "AL",
+   "country": "USA",
+   "winner": "Kyle Busch",
+   "winner_wiki": "Kyle_Busch"
+  },
+  {
+   "round": 11,
+   "date": "2023-05-01",
+   "race": "Würth 400",
+   "track": "Dover Motor Speedway",
+   "city": "Dover",
+   "state": "DE",
+   "country": "USA",
+   "winner": "Martin Truex Jr.",
+   "winner_wiki": "Martin_Truex_Jr."
+  },
+  {
+   "round": 12,
+   "date": "2023-05-07",
+   "race": "AdventHealth 400",
+   "track": "Kansas Speedway",
+   "city": "Kansas City",
+   "state": "KS",
+   "country": "USA",
+   "winner": "Denny Hamlin",
+   "winner_wiki": "Denny_Hamlin"
+  },
+  {
+   "round": 13,
+   "date": "2023-05-14",
+   "race": "Goodyear 400",
+   "track": "Darlington Raceway",
+   "city": "Darlington",
+   "state": "SC",
+   "country": "USA",
+   "winner": "William Byron",
+   "winner_wiki": "William_Byron_(racing_driver)"
+  },
+  {
+   "round": 14,
+   "date": "2023-05-29",
+   "race": "Coca-Cola 600",
+   "track": "Charlotte Motor Speedway",
+   "city": "Concord",
+   "state": "NC",
+   "country": "USA",
+   "winner": "Ryan Blaney",
+   "winner_wiki": "Ryan_Blaney"
+  },
+  {
+   "round": 15,
+   "date": "2023-06-04",
+   "race": "Enjoy Illinois 300",
+   "track": "World Wide Technology Raceway",
+   "city": "Madison",
+   "state": "IL",
+   "country": "USA",
+   "winner": "Kyle Busch",
+   "winner_wiki": "Kyle_Busch"
+  },
+  {
+   "round": 16,
+   "date": "2023-06-11",
+   "race": "Toyota/Save Mart 350",
+   "track": "Sonoma Raceway",
+   "city": "Sonoma",
+   "state": "CA",
+   "country": "USA",
+   "winner": "Martin Truex Jr.",
+   "winner_wiki": "Martin_Truex_Jr."
+  },
+  {
+   "round": 17,
+   "date": "2023-06-25",
+   "race": "Ally 400",
+   "track": "Nashville Superspeedway",
+   "city": "Lebanon",
+   "state": "TN",
+   "country": "USA",
+   "winner": "Ross Chastain",
+   "winner_wiki": "Ross_Chastain"
+  },
+  {
+   "round": 18,
+   "date": "2023-07-02",
+   "race": "Grant Park 220",
+   "track": "Chicago Street Course",
+   "city": "Chicago",
+   "state": "IL",
+   "country": "USA",
+   "winner": "Shane van Gisbergen",
+   "winner_wiki": "Shane_van_Gisbergen"
+  },
+  {
+   "round": 19,
+   "date": "2023-07-09",
+   "race": "Quaker State 400",
+   "track": "Atlanta Motor Speedway",
+   "city": "Hampton",
+   "state": "GA",
+   "country": "USA",
+   "winner": "William Byron",
+   "winner_wiki": "William_Byron_(racing_driver)"
+  },
+  {
+   "round": 20,
+   "date": "2023-07-17",
+   "race": "Crayon 301",
+   "track": "New Hampshire Motor Speedway",
+   "city": "Loudon",
+   "state": "NH",
+   "country": "USA",
+   "winner": "Martin Truex Jr.",
+   "winner_wiki": "Martin_Truex_Jr."
+  },
+  {
+   "round": 21,
+   "date": "2023-07-23",
+   "race": "HighPoint.com 400",
+   "track": "Pocono Raceway",
+   "city": "Long Pond",
+   "state": "PA",
+   "country": "USA",
+   "winner": "Denny Hamlin",
+   "winner_wiki": "Denny_Hamlin"
+  },
+  {
+   "round": 22,
+   "date": "2023-07-30",
+   "race": "Cook Out 400",
+   "track": "Richmond Raceway",
+   "city": "Richmond",
+   "state": "VA",
+   "country": "USA",
+   "winner": "Chris Buescher",
+   "winner_wiki": "Chris_Buescher"
+  },
+  {
+   "round": 23,
+   "date": "2023-08-06",
+   "race": "FireKeepers Casino 400",
+   "track": "Michigan International Speedway",
+   "city": "Brooklyn",
+   "state": "MI",
+   "country": "USA",
+   "winner": "Chris Buescher",
+   "winner_wiki": "Chris_Buescher"
+  },
+  {
+   "round": 24,
+   "date": "2023-08-13",
+   "race": "Verizon 200 at the Brickyard",
+   "track": "Indianapolis Motor Speedway (Road Course)",
+   "city": "Speedway",
+   "state": "IN",
+   "country": "USA",
+   "winner": "Michael McDowell",
+   "winner_wiki": "Michael_McDowell_(racing_driver)"
+  },
+  {
+   "round": 25,
+   "date": "2023-08-20",
+   "race": "Go Bowling at The Glen",
+   "track": "Watkins Glen International",
+   "city": "Watkins Glen",
+   "state": "NY",
+   "country": "USA",
+   "winner": "William Byron",
+   "winner_wiki": "William_Byron_(racing_driver)"
+  },
+  {
+   "round": 26,
+   "date": "2023-08-26",
+   "race": "Coke Zero Sugar 400",
+   "track": "Daytona International Speedway",
+   "city": "Daytona Beach",
+   "state": "FL",
+   "country": "USA",
+   "winner": "Chris Buescher",
+   "winner_wiki": "Chris_Buescher"
+  },
+  {
+   "round": 27,
+   "date": "2023-09-03",
+   "race": "Cook Out Southern 500",
+   "track": "Darlington Raceway",
+   "city": "Darlington",
+   "state": "SC",
+   "country": "USA",
+   "winner": "Kyle Larson",
+   "winner_wiki": "Kyle_Larson"
+  },
+  {
+   "round": 28,
+   "date": "2023-09-10",
+   "race": "Hollywood Casino 400",
+   "track": "Kansas Speedway",
+   "city": "Kansas City",
+   "state": "KS",
+   "country": "USA",
+   "winner": "Tyler Reddick",
+   "winner_wiki": "Tyler_Reddick"
+  },
+  {
+   "round": 29,
+   "date": "2023-09-16",
+   "race": "Bass Pro Shops Night Race",
+   "track": "Bristol Motor Speedway",
+   "city": "Bristol",
+   "state": "TN",
+   "country": "USA",
+   "winner": "Denny Hamlin",
+   "winner_wiki": "Denny_Hamlin"
+  },
+  {
+   "round": 30,
+   "date": "2023-09-24",
+   "race": "Autotrader EchoPark Automotive 400",
+   "track": "Texas Motor Speedway",
+   "city": "Fort Worth",
+   "state": "TX",
+   "country": "USA",
+   "winner": "William Byron",
+   "winner_wiki": "William_Byron_(racing_driver)"
+  },
+  {
+   "round": 31,
+   "date": "2023-10-01",
+   "race": "YellaWood 500",
+   "track": "Talladega Superspeedway",
+   "city": "Lincoln",
+   "state": "AL",
+   "country": "USA",
+   "winner": "Ryan Blaney",
+   "winner_wiki": "Ryan_Blaney"
+  },
+  {
+   "round": 32,
+   "date": "2023-10-08",
+   "race": "Bank of America Roval 400",
+   "track": "Charlotte Motor Speedway (Roval)",
+   "city": "Concord",
+   "state": "NC",
+   "country": "USA",
+   "winner": "A. J. Allmendinger",
+   "winner_wiki": "A._J._Allmendinger"
+  },
+  {
+   "round": 33,
+   "date": "2023-10-15",
+   "race": "South Point 400",
+   "track": "Las Vegas Motor Speedway",
+   "city": "Las Vegas",
+   "state": "NV",
+   "country": "USA",
+   "winner": "Kyle Larson",
+   "winner_wiki": "Kyle_Larson"
+  },
+  {
+   "round": 34,
+   "date": "2023-10-22",
+   "race": "4EVER 400",
+   "track": "Homestead–Miami Speedway",
+   "city": "Homestead",
+   "state": "FL",
+   "country": "USA",
+   "winner": "Christopher Bell",
+   "winner_wiki": "Christopher_Bell_(racing_driver)"
+  },
+  {
+   "round": 35,
+   "date": "2023-10-29",
+   "race": "Xfinity 500",
+   "track": "Martinsville Speedway",
+   "city": "Ridgeway",
+   "state": "VA",
+   "country": "USA",
+   "winner": "Ryan Blaney",
+   "winner_wiki": "Ryan_Blaney"
+  },
+  {
+   "round": 36,
+   "date": "2023-11-05",
+   "race": "NASCAR Cup Series Championship Race",
+   "track": "Phoenix Raceway",
+   "city": "Avondale",
+   "state": "AZ",
+   "country": "USA",
+   "winner": "Ross Chastain",
+   "winner_wiki": "Ross_Chastain"
+  }
+ ],
+ "sources": [
+  "https://en.wikipedia.org/wiki/2023_NASCAR_Cup_Series"
+ ]
+}

@@ -41,7 +41,7 @@ def row_level(row: dict) -> float:
 
 
 def _split_name(name: str) -> tuple[str, str]:
-    parts = name.replace("Jr.", "Jr").split()
+    parts = name.replace(", Jr", " Jr").replace("Jr.", "Jr").replace(",", " ").split()
     if len(parts) == 1:
         return parts[0], ""
     if parts[-1] in ("Jr", "Sr", "II", "III", "IV") and len(parts) > 2:
@@ -231,6 +231,12 @@ def seed_prospects(world: "World", hist: HistoryDB) -> int:
     for wiki, rows, by in pending:
         age = year - by
         disc = TEMPLATE_DISCIPLINE[rows[0]["template"]]
+        if is_import(hist, wiki):
+            # Raised abroad: they arrive in North American racing the year before their debut.
+            arrival = rows[0]["year"] - 1
+            if arrival > year:
+                world.history_entrants.setdefault(arrival, []).append(wiki)
+                continue
         if age < 8:
             world.history_entrants.setdefault(by + 8, []).append(wiki)
             continue
@@ -248,6 +254,8 @@ def place_prospect(world: "World", hist: HistoryDB, wiki: str, rows: list[dict],
     d = make_real_driver(world, hist, wiki, name, disc, year)
     age = d.age(year)
     peak = max(row_level(r) for r in rows)
+    if is_import(hist, wiki) and age >= 16:
+        return _place_import(world, wiki, d, rows, disc, peak)
     # Before their national career they are developing: ability by age, ceiling = what they became.
     d.ability = clamp(min(d.ability, TIER_STRENGTH[0] + max(0, age - 8) * 2.4 + world.rng.gauss(0, 3)), 15, peak)
     d.potential = clamp(peak + world.rng.uniform(-1.5, 2.5), d.ability, 98)
@@ -267,6 +275,34 @@ def place_prospect(world: "World", hist: HistoryDB, wiki: str, rows: list[dict],
     world.drivers[d.id] = d
     d.status = ACTIVE
     if not choose_self_run(world, d, entrant=age < 14):
+        del world.drivers[d.id]
+        return None
+    world.real_drivers[wiki] = d.id
+    return d
+
+
+def is_import(hist: HistoryDB, wiki: str) -> bool:
+    return (hist.bio(wiki).get("country") or "USA") not in ("USA", "CAN")
+
+
+def _place_import(world: "World", wiki: str, d: Driver, rows: list[dict], disc: str, peak: float) -> Optional[Driver]:
+    """A driver who made their name abroad (F1 feeders, Supercars, ...) arrives with a reputation."""
+    from ..career.market import choose_self_run
+    debut = row_level(rows[0])
+    d.ability = clamp(debut - 2 + world.rng.gauss(0, 2), 15, peak)
+    d.potential = clamp(peak + world.rng.uniform(-1.5, 2.0), d.ability, 98)
+    d.demonstrated = d.ability
+    d.history.clear()
+    d.titles.clear()
+    d.career_starts = d.career_wins = 0
+    d.max_tier = max(0, rows[0]["tier"] - 2)
+    d.reputation = clamp(15 + d.max_tier * 7)
+    d.exposure = clamp(20 + d.max_tier * 8)
+    d.family_budget = max(d.family_budget, world.rng.lognormvariate(math.log(150_000), 0.6))
+    d.events.append(f"{world.year}: arrived from overseas racing")
+    world.drivers[d.id] = d
+    d.status = ACTIVE
+    if not choose_self_run(world, d, entrant=False):
         del world.drivers[d.id]
         return None
     world.real_drivers[wiki] = d.id

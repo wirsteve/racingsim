@@ -59,6 +59,7 @@ class TrackFacts:
     aliases: list[str] = field(default_factory=list)  # former / naming-rights names (search only)
     closed: Optional[int] = None      # last year the venue held racing (None = still open / unknown)
     history: list[dict] = field(default_factory=list)  # [{year, change}] reconfigurations since 1995
+    dormant: list[list[int]] = field(default_factory=list)  # [[first, last]] seasons with no (national) racing
 
     @property
     def is_active(self) -> bool:
@@ -68,6 +69,8 @@ class TrackFacts:
     def available_in(self, year: int) -> bool:
         """Did the venue host racing in ``year``? (opened/closed years; unknown = assume yes)."""
         if self.opened is not None and self.opened > year:
+            return False
+        if any(lo <= year <= hi for lo, hi in self.dormant):
             return False
         if self.closed is not None:
             return year <= self.closed

@@ -47,15 +47,25 @@ class TrackDatabase:
         if years_path.exists():
             with open(years_path, encoding="utf-8") as fh:
                 years = json.load(fh)
-            by_name = {f.name: f for f in facts.values()}
-            for name, info in years.items():
-                f = by_name.get(name)
+            by_key = {(f.name, f.region): f for f in facts.values()}
+            by_name: dict[str, list[TrackFacts]] = {}
+            for f in facts.values():
+                by_name.setdefault(f.name, []).append(f)
+            for key, info in years.items():
+                m = info.get("match") or {}
+                name = m.get("name") or key
+                f = by_key.get((name, m.get("region")))
+                if f is None and len(by_name.get(name, [])) == 1:
+                    f = by_name[name][0]
                 if f is None:
                     continue
-                if info.get("opened") and f.opened is None:
+                # A corrected opening year (``opened_db_value`` records what the research file had).
+                if info.get("opened") and (f.opened is None or "opened_db_value" in info):
                     f.opened = info["opened"]
                 if info.get("closed"):
                     f.closed = info["closed"]
+                if info.get("dormant"):
+                    f.dormant = [list(span) for span in info["dormant"]]
                 f.history = info.get("history", [])
         return cls(build_track(f, overrides) for f in facts.values())
 
@@ -122,11 +132,12 @@ class TrackDatabase:
             for t in self._tracks.values():
                 f = t.facts
                 cur.execute(
-                    "INSERT OR REPLACE INTO track_facts VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)",
+                    "INSERT OR REPLACE INTO track_facts VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)",
                     (f.id, f.name, f.city, f.region, f.country, f.track_type, f.surface,
                      f.length_mi, f.configuration, f.turns, f.banking_deg_turns,
                      f.banking_deg_straights, f.opened, None if f.active is None else int(f.active), json.dumps(f.disciplines),
-                     f.level, f.notable_note, json.dumps([f.lat, f.lon]), json.dumps(f.sources), json.dumps(f.aliases)),
+                     f.level, f.notable_note, json.dumps([f.lat, f.lon]), json.dumps(f.sources), json.dumps(f.aliases),
+                     f.closed, json.dumps(f.dormant), json.dumps(f.history)),
                 )
                 p = t.profile
                 cur.execute(
@@ -153,7 +164,7 @@ CREATE TABLE IF NOT EXISTS track_facts (
     track_type TEXT NOT NULL, surface TEXT, length_mi REAL, configuration TEXT,
     turns INTEGER, banking_deg_turns REAL, banking_deg_straights REAL, opened INTEGER,
     active INTEGER, disciplines TEXT, level TEXT, notable_note TEXT, latlon TEXT,
-    sources TEXT, aliases TEXT
+    sources TEXT, aliases TEXT, closed INTEGER, dormant TEXT, history TEXT
 );
 CREATE TABLE IF NOT EXISTS track_profile (
     id TEXT PRIMARY KEY REFERENCES track_facts(id), size_class TEXT, prestige INTEGER,

@@ -248,6 +248,11 @@ def match_track(tracks, name: Optional[str], city: Optional[str], state: Optiona
         family += [t for t in tracks if t.facts.city == c.facts.city and t.facts.region == c.facts.region
                    and _tokens(t.facts.name) & _tokens(c.facts.name)]
     family = family or cands
+    dirt_hint = "dirt" in _norm(race) + " " + n
+    family = [t for t in family if t.facts.is_dirt == dirt_hint] or family
+    family = [t for t in family if t.facts.available_in(year)] or family
+    # The named venue itself first, then its sister layouts.
+    family.sort(key=lambda t: (t not in cands, -(t.profile.prestige or 0)))
     if road_hint:
         roads = [t for t in family if t.facts.is_road]
         if roads:

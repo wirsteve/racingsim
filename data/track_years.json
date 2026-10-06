@@ -1,0 +1,6366 @@
+{
+ "Daytona International Speedway": {
+  "opened": 1959,
+  "closed": null,
+  "history": [
+   {
+    "year": 2010,
+    "change": "Complete repave of the 2.5-mi tri-oval (first since 1978), finished before the 2011 Daytona 500"
+   },
+   {
+    "year": 2016,
+    "change": "\"Daytona Rising\" frontstretch rebuild completed; backstretch grandstands removed (racing surface unchanged)"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Daytona_International_Speedway"
+  ],
+  "match": {
+   "name": "Daytona International Speedway",
+   "region": "FL",
+   "files": [
+    "major_venues.json"
+   ]
+  }
+ },
+ "Daytona International Speedway Road Course": {
+  "opened": 1959,
+  "closed": null,
+  "history": [
+   {
+    "year": 2010,
+    "change": "Oval sections repaved together with the tri-oval"
+   },
+   {
+    "year": 2020,
+    "change": "NASCAR-specific 3.61-mi variant (extra backstretch chicane) used by Cup/Xfinity/Truck races 2020-2021; IMSA continues on the 3.56-mi sports car course"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Daytona_International_Speedway"
+  ],
+  "match": {
+   "name": "Daytona International Speedway Road Course",
+   "region": "FL",
+   "files": [
+    "major_venues.json"
+   ]
+  },
+  "note": "Sports car course layout (3.56 mi) unchanged since 1985 apart from the NASCAR variant"
+ },
+ "Talladega Superspeedway": {
+  "opened": 1969,
+  "closed": null,
+  "history": [
+   {
+    "year": 2006,
+    "change": "Complete repave (first since 1979), completed before the October 2006 race"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Talladega_Superspeedway"
+  ],
+  "match": {
+   "name": "Talladega Superspeedway",
+   "region": "AL",
+   "files": [
+    "major_venues.json"
+   ]
+  }
+ },
+ "Atlanta Motor Speedway": {
+  "opened": 1960,
+  "closed": null,
+  "history": [
+   {
+    "year": 1997,
+    "change": "Reconfigured from a 1.522-mi oval to the 1.54-mi quad-oval; start/finish line moved to former backstretch (first race on new layout Nov 1997)"
+   },
+   {
+    "year": 2022,
+    "change": "Repaved and reprofiled: turn banking raised from 24 to 28 degrees and racing surface narrowed, producing superspeedway-style pack racing"
+   },
+   {
+    "year": 2025,
+    "change": "Renamed EchoPark Speedway (naming rights, May 2025)"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Atlanta_Motor_Speedway"
+  ],
+  "match": {
+   "name": "Atlanta Motor Speedway",
+   "region": "GA",
+   "files": [
+    "major_venues.json"
+   ]
+  }
+ },
+ "Bristol Motor Speedway": {
+  "opened": 1961,
+  "closed": null,
+  "history": [
+   {
+    "year": 2007,
+    "change": "Concrete resurfaced with variable/progressive banking (about 24-28 degrees), creating multiple grooves; first race on new surface August 2007"
+   },
+   {
+    "year": 2021,
+    "change": "Temporary dirt laid over the concrete for spring NASCAR races 2021-2023 (separate record); concrete used again from 2024"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Bristol_Motor_Speedway"
+  ],
+  "match": {
+   "name": "Bristol Motor Speedway",
+   "region": "TN",
+   "files": [
+    "major_venues.json"
+   ]
+  }
+ },
+ "Bristol Motor Speedway Dirt Track": {
+  "opened": 2000,
+  "closed": 2023,
+  "history": [
+   {
+    "year": 2000,
+    "change": "First temporary dirt surface laid over the concrete for dirt races (World of Outlaws sprint cars, dirt late models) in 2000 and 2001"
+   },
+   {
+    "year": 2002,
+    "change": "Dirt events dropped after 2001 because of lengthy clean-up"
+   },
+   {
+    "year": 2021,
+    "change": "Dirt returned for the NASCAR Cup and Truck spring race (progressive 16-19 degree banking)"
+   },
+   {
+    "year": 2023,
+    "change": "Final dirt race; concrete restored for 2024"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Bristol_Motor_Speedway"
+  ],
+  "match": {
+   "name": "Bristol Motor Speedway Dirt Track",
+   "region": "TN",
+   "files": [
+    "major_venues.json"
+   ]
+  },
+  "note": "opened corrected from 2021 to 2000: first temporary dirt events were in 2000-2001",
+  "opened_db_value": 2021
+ },
+ "Martinsville Speedway": {
+  "opened": 1947,
+  "closed": null,
+  "history": [
+   {
+    "year": 2004,
+    "change": "Concrete turns and asphalt straights fully resurfaced after concrete broke loose in the spring race; SAFER barriers added"
+   },
+   {
+    "year": 2017,
+    "change": "Permanent LED lights installed, enabling night racing (layout unchanged)"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Martinsville_Speedway"
+  ],
+  "match": {
+   "name": "Martinsville Speedway",
+   "region": "VA",
+   "files": [
+    "major_venues.json"
+   ]
+  }
+ },
+ "Richmond Raceway": {
+  "opened": 1946,
+  "closed": null,
+  "history": [
+   {
+    "year": 2004,
+    "change": "First full repave since the 1988 rebuild into a 0.75-mi D-oval"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Richmond_Raceway"
+  ],
+  "match": {
+   "name": "Richmond Raceway",
+   "region": "VA",
+   "files": [
+    "major_venues.json"
+   ]
+  }
+ },
+ "North Wilkesboro Speedway": {
+  "opened": 1947,
+  "closed": null,
+  "history": [
+   {
+    "year": 1996,
+    "change": "Final NASCAR Cup race (September 1996); dates moved to New Hampshire and Texas"
+   },
+   {
+    "year": 1997,
+    "change": "Facility closed (January 1997)"
+   },
+   {
+    "year": 2010,
+    "change": "Briefly reopened for regional series racing (2010-2011)"
+   },
+   {
+    "year": 2011,
+    "change": "Closed again (May 2011); abandoned until 2022"
+   },
+   {
+    "year": 2022,
+    "change": "Reopened for grassroots racing (including temporary dirt events)"
+   },
+   {
+    "year": 2023,
+    "change": "NASCAR All-Star Race and Truck Series return on the original worn surface"
+   },
+   {
+    "year": 2024,
+    "change": "Complete repave finished March 2024"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/North_Wilkesboro_Speedway"
+  ],
+  "match": {
+   "name": "North Wilkesboro Speedway",
+   "region": "NC",
+   "files": [
+    "major_venues.json"
+   ]
+  },
+  "note": "Treat as unavailable for national racing 1997-2022",
+  "dormant": [
+   [
+    1997,
+    2009
+   ],
+   [
+    2012,
+    2021
+   ]
+  ]
+ },
+ "Charlotte Motor Speedway": {
+  "opened": 1960,
+  "closed": null,
+  "history": [
+   {
+    "year": 2005,
+    "change": "Surface \"levigated\" (ground smooth), causing tire problems"
+   },
+   {
+    "year": 2006,
+    "change": "Complete repave"
+   },
+   {
+    "year": 2018,
+    "change": "Fall NASCAR race moved to the infield roval (separate record)"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Charlotte_Motor_Speedway"
+  ],
+  "match": {
+   "name": "Charlotte Motor Speedway",
+   "region": "NC",
+   "files": [
+    "major_venues.json"
+   ]
+  }
+ },
+ "Charlotte Motor Speedway Roval": {
+  "opened": 2018,
+  "closed": null,
+  "history": [
+   {
+    "year": 2000,
+    "change": "Older 2.25-mi roval (1971-2014 layout) hosted the ALMS Grand Prix of Charlotte; this is not the current NASCAR roval"
+   },
+   {
+    "year": 2018,
+    "change": "Current NASCAR 2.28-mi roval debuts (Bank of America Roval 400)"
+   },
+   {
+    "year": 2019,
+    "change": "Backstretch chicane modified"
+   },
+   {
+    "year": 2024,
+    "change": "Chicanes revised; layout now listed at 2.32 mi"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Charlotte_Motor_Speedway"
+  ],
+  "match": {
+   "name": "Charlotte Motor Speedway Roval",
+   "region": "NC",
+   "files": [
+    "major_venues.json"
+   ]
+  },
+  "note": "opened 2018 refers to the current NASCAR roval layout"
+ },
+ "Darlington Raceway": {
+  "opened": 1950,
+  "closed": null,
+  "history": [
+   {
+    "year": 1997,
+    "change": "Start/finish line moved to the former backstretch (frontstretch and backstretch swapped)"
+   },
+   {
+    "year": 2008,
+    "change": "Complete repave; infield tunnel added"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Darlington_Raceway"
+  ],
+  "match": {
+   "name": "Darlington Raceway",
+   "region": "SC",
+   "files": [
+    "major_venues.json"
+   ]
+  }
+ },
+ "Dover Motor Speedway": {
+  "opened": 1969,
+  "closed": null,
+  "history": [
+   {
+    "year": 1995,
+    "change": "Asphalt surface replaced with concrete (first concrete races 1995)"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Dover_Motor_Speedway"
+  ],
+  "match": {
+   "name": "Dover Motor Speedway",
+   "region": "DE",
+   "files": [
+    "major_venues.json"
+   ]
+  }
+ },
+ "Pocono Raceway": {
+  "opened": 1971,
+  "closed": null,
+  "history": [
+   {
+    "year": 1996,
+    "change": "Tri-oval completely repaved for the first time since opening"
+   },
+   {
+    "year": 2008,
+    "change": "Turn 3 repaved"
+   },
+   {
+    "year": 2012,
+    "change": "Complete repave"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Pocono_Raceway"
+  ],
+  "match": {
+   "name": "Pocono Raceway",
+   "region": "PA",
+   "files": [
+    "major_venues.json"
+   ]
+  },
+  "note": "opened corrected 1969 -> 1971: the facility opened in 1969 with a 3/4-mile oval; the 2.5-mi tri-oval opened July 1971",
+  "opened_db_value": 1969
+ },
+ "Michigan International Speedway": {
+  "opened": 1968,
+  "closed": null,
+  "history": [
+   {
+    "year": 1996,
+    "change": "Surface repaved over the winter of 1995-96; renamed Michigan Speedway 1996-2000s"
+   },
+   {
+    "year": 2012,
+    "change": "Complete repave"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Michigan_International_Speedway"
+  ],
+  "match": {
+   "name": "Michigan International Speedway",
+   "region": "MI",
+   "files": [
+    "major_venues.json"
+   ]
+  }
+ },
+ "Kansas Speedway": {
+  "opened": 2001,
+  "closed": null,
+  "history": [
+   {
+    "year": 2012,
+    "change": "Repaved and reconfigured with progressive banking (17-20 degrees); infield road course added"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Kansas_Speedway"
+  ],
+  "match": {
+   "name": "Kansas Speedway",
+   "region": "KS",
+   "files": [
+    "major_venues.json"
+   ]
+  }
+ },
+ "Las Vegas Motor Speedway": {
+  "opened": 1996,
+  "closed": null,
+  "history": [
+   {
+    "year": 2006,
+    "change": "Reconfigured: turn banking raised from 12 to 20 degrees (progressive) and surface narrowed; first races on new layout March 2007"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Las_Vegas_Motor_Speedway"
+  ],
+  "match": {
+   "name": "Las Vegas Motor Speedway",
+   "region": "NV",
+   "files": [
+    "major_venues.json"
+   ]
+  },
+  "note": "First race September 1996 (NASCAR Trucks)"
+ },
+ "Phoenix Raceway": {
+  "opened": 1964,
+  "closed": null,
+  "history": [
+   {
+    "year": 2011,
+    "change": "Reconfigured and repaved: dogleg widened and moved outward, progressive banking added"
+   },
+   {
+    "year": 2018,
+    "change": "Start/finish line moved to the dogleg side; pit road and infield rebuilt"
+   },
+   {
+    "year": 2020,
+    "change": "Became NASCAR championship venue (replacing Homestead)"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Phoenix_Raceway"
+  ],
+  "match": {
+   "name": "Phoenix Raceway",
+   "region": "AZ",
+   "files": [
+    "major_venues.json"
+   ]
+  }
+ },
+ "Homestead-Miami Speedway": {
+  "opened": 1995,
+  "closed": null,
+  "history": [
+   {
+    "year": 1997,
+    "change": "Rebuilt from the original 1.527-mi rectangular \"quad-oval\" into a 1.5-mi oval (6 degree banking)"
+   },
+   {
+    "year": 2003,
+    "change": "Reprofiled with variable banking (18-20 degrees in the turns)"
+   },
+   {
+    "year": 2020,
+    "change": "Lost NASCAR championship weekend to Phoenix"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Homestead%E2%80%93Miami_Speedway"
+  ],
+  "match": {
+   "name": "Homestead-Miami Speedway",
+   "region": "FL",
+   "files": [
+    "major_venues.json"
+   ]
+  },
+  "note": "First race November 1995 (NASCAR Busch Series)"
+ },
+ "Texas Motor Speedway": {
+  "opened": 1996,
+  "closed": null,
+  "history": [
+   {
+    "year": 1997,
+    "change": "First major races (NASCAR Cup, April 1997); track completed 1996"
+   },
+   {
+    "year": 2017,
+    "change": "Repaved; turns 1-2 widened and banking reduced from 24 to 20 degrees"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Texas_Motor_Speedway"
+  ],
+  "match": {
+   "name": "Texas Motor Speedway",
+   "region": "TX",
+   "files": [
+    "major_venues.json"
+   ]
+  }
+ },
+ "Nashville Superspeedway": {
+  "opened": 2001,
+  "closed": null,
+  "history": [
+   {
+    "year": 2011,
+    "change": "Last NASCAR/IndyCar races; track closed after 2011"
+   },
+   {
+    "year": 2021,
+    "change": "Reopened for NASCAR Cup Series (first Cup race June 2021)"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Nashville_Superspeedway"
+  ],
+  "match": {
+   "name": "Nashville Superspeedway",
+   "region": "TN",
+   "files": [
+    "major_venues.json"
+   ]
+  },
+  "note": "Unavailable 2012-2020",
+  "dormant": [
+   [
+    2012,
+    2020
+   ]
+  ]
+ },
+ "Gateway Motorsports Park": {
+  "opened": 1997,
+  "closed": null,
+  "history": [
+   {
+    "year": 1997,
+    "change": "1.25-mi oval opened (May 1997) on the site of the 1985-1995 road course"
+   },
+   {
+    "year": 2010,
+    "change": "Closed by Dover Motorsports after the 2010 season (last NASCAR races 2010)"
+   },
+   {
+    "year": 2012,
+    "change": "Reopened under new local ownership (announced Sept 2011)"
+   },
+   {
+    "year": 2014,
+    "change": "NASCAR Truck Series returns"
+   },
+   {
+    "year": 2017,
+    "change": "IndyCar returns"
+   },
+   {
+    "year": 2019,
+    "change": "Second infield road course added"
+   },
+   {
+    "year": 2022,
+    "change": "NASCAR Cup Series debut"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Gateway_Motorsports_Park"
+  ],
+  "match": {
+   "name": "Gateway Motorsports Park",
+   "region": "IL",
+   "files": [
+    "major_venues.json"
+   ]
+  },
+  "note": "Unavailable 2011; opened 1997 refers to the oval",
+  "dormant": [
+   [
+    2011,
+    2011
+   ]
+  ]
+ },
+ "Iowa Speedway": {
+  "opened": 2006,
+  "closed": null,
+  "history": [
+   {
+    "year": 2025,
+    "change": "Last IndyCar race (series dropped Iowa after 2025)"
+   },
+   {
+    "year": 2026,
+    "change": "$20M renovation announced August 2026 incl. resurfacing before 2027 races"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Iowa_Speedway"
+  ],
+  "match": {
+   "name": "Iowa Speedway",
+   "region": "IA",
+   "files": [
+    "major_venues.json"
+   ]
+  }
+ },
+ "Indianapolis Motor Speedway": {
+  "opened": 1909,
+  "closed": null,
+  "history": [
+   {
+    "year": 2002,
+    "change": "SAFER barriers installed (first track to use them)"
+   },
+   {
+    "year": 2004,
+    "change": "Oval repaved (diamond-ground)"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Indianapolis_Motor_Speedway"
+  ],
+  "match": {
+   "name": "Indianapolis Motor Speedway",
+   "region": "IN",
+   "files": [
+    "major_venues.json"
+   ]
+  },
+  "note": "2004 repave from general knowledge; not confirmed in fetched text"
+ },
+ "Indianapolis Motor Speedway Road Course": {
+  "opened": 2000,
+  "closed": null,
+  "history": [
+   {
+    "year": 2000,
+    "change": "2.605-mi Formula One road course opened (F1 2000-2007)"
+   },
+   {
+    "year": 2008,
+    "change": "Revised layout for MotoGP (2008-2015)"
+   },
+   {
+    "year": 2014,
+    "change": "Revised 2.439-mi road course for IndyCar Grand Prix of Indianapolis"
+   },
+   {
+    "year": 2020,
+    "change": "NASCAR Cup/Xfinity races moved to the road course (2020-2023)"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Indianapolis_Motor_Speedway"
+  ],
+  "match": {
+   "name": "Indianapolis Motor Speedway Road Course",
+   "region": "IN",
+   "files": [
+    "major_venues.json"
+   ]
+  }
+ },
+ "New Hampshire Motor Speedway": {
+  "opened": 1990,
+  "closed": null,
+  "history": [
+   {
+    "year": 1995,
+    "change": "Repaved over winter 1994-95"
+   },
+   {
+    "year": 2002,
+    "change": "Repaved; turns widened and banking reduced from 12 degrees to variable 2-7 degrees"
+   },
+   {
+    "year": 2003,
+    "change": "Turns repaved again after surface problems"
+   },
+   {
+    "year": 2008,
+    "change": "Sold to Speedway Motorsports; renamed from New Hampshire International Speedway"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/New_Hampshire_Motor_Speedway"
+  ],
+  "match": {
+   "name": "New Hampshire Motor Speedway",
+   "region": "NH",
+   "files": [
+    "major_venues.json"
+   ]
+  }
+ },
+ "Watkins Glen International": {
+  "opened": 1956,
+  "closed": null,
+  "history": [
+   {
+    "year": 2015,
+    "change": "Entire course repaved"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Watkins_Glen_International"
+  ],
+  "match": {
+   "name": "Watkins Glen International",
+   "region": "NY",
+   "files": [
+    "major_venues.json"
+   ]
+  }
+ },
+ "Sonoma Raceway": {
+  "opened": 1969,
+  "closed": null,
+  "history": [
+   {
+    "year": 1998,
+    "change": "\"The Chute\" built for the NASCAR layout, bypassing the Carousel (turns 5-6)"
+   },
+   {
+    "year": 1999,
+    "change": "Chute modified (turn 7 made a hard 90-degree corner)"
+   },
+   {
+    "year": 2002,
+    "change": "Renamed Infineon Raceway (to 2011); long circuit revised"
+   },
+   {
+    "year": 2012,
+    "change": "IndyCar circuit revised; renamed Sonoma Raceway"
+   },
+   {
+    "year": 2024,
+    "change": "First complete repave in 20+ years (Dec 2023 - Feb 2024)"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Sonoma_Raceway"
+  ],
+  "match": {
+   "name": "Sonoma Raceway",
+   "region": "CA",
+   "files": [
+    "major_venues.json"
+   ]
+  }
+ },
+ "Circuit of the Americas": {
+  "opened": 2012,
+  "closed": null,
+  "history": [
+   {
+    "year": 2025,
+    "change": "Shortened 2.4-mi \"NASCAR circuit\" variant introduced for NASCAR races"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Circuit_of_the_Americas"
+  ],
+  "match": {
+   "name": "Circuit of the Americas",
+   "region": "TX",
+   "files": [
+    "major_venues.json"
+   ]
+  }
+ },
+ "Chicagoland Speedway": {
+  "opened": 2001,
+  "closed": null,
+  "history": [
+   {
+    "year": 2019,
+    "change": "Last NASCAR races before dormancy (2020 race cancelled)"
+   },
+   {
+    "year": 2026,
+    "change": "NASCAR Cup Series returned (2026-2027 agreement)"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Chicagoland_Speedway"
+  ],
+  "match": {
+   "name": "Chicagoland Speedway",
+   "region": "IL",
+   "files": [
+    "major_venues.json"
+   ]
+  },
+  "note": "Unavailable for national racing 2020-2025",
+  "dormant": [
+   [
+    2020,
+    2025
+   ]
+  ]
+ },
+ "Rockingham Speedway": {
+  "opened": 1965,
+  "closed": null,
+  "history": [
+   {
+    "year": 2004,
+    "change": "Final NASCAR Cup race (February 2004)"
+   },
+   {
+    "year": 2008,
+    "change": "Revived for ARCA racing under Andy Hillenburg; 0.526-mi \"Little Rock\" short track added"
+   },
+   {
+    "year": 2012,
+    "change": "NASCAR Truck Series races (2012-2013)"
+   },
+   {
+    "year": 2014,
+    "change": "Track idle/abandoned (2014-2021)"
+   },
+   {
+    "year": 2022,
+    "change": "Repaved October-December 2022 under new ownership"
+   },
+   {
+    "year": 2025,
+    "change": "NASCAR Xfinity and Truck Series return"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Rockingham_Speedway"
+  ],
+  "match": {
+   "name": "Rockingham Speedway",
+   "region": "NC",
+   "files": [
+    "major_venues.json"
+   ]
+  },
+  "dormant": [
+   [
+    2014,
+    2021
+   ]
+  ]
+ },
+ "Lime Rock Park": {
+  "opened": 1957,
+  "closed": null,
+  "history": [
+   {
+    "year": 2008,
+    "change": "Repaved; two new corner complexes added"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Lime_Rock_Park"
+  ],
+  "match": {
+   "name": "Lime Rock Park",
+   "region": "CT",
+   "files": [
+    "major_venues.json"
+   ]
+  }
+ },
+ "Milwaukee Mile": {
+  "opened": 1903,
+  "closed": null,
+  "history": [
+   {
+    "year": 1996,
+    "change": "Resurfaced after the 1995 season"
+   },
+   {
+    "year": 2004,
+    "change": "Repaved"
+   },
+   {
+    "year": 2010,
+    "change": "No NASCAR or IndyCar races in 2010; NASCAR national series left after 2009"
+   },
+   {
+    "year": 2011,
+    "change": "IndyCar returned (2011, 2013-2015)"
+   },
+   {
+    "year": 2016,
+    "change": "No major professional racing 2016-2020"
+   },
+   {
+    "year": 2021,
+    "change": "ARCA returned (2021-2024); NASCAR Trucks 2023-2024"
+   },
+   {
+    "year": 2024,
+    "change": "IndyCar returned"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Milwaukee_Mile"
+  ],
+  "match": {
+   "name": "Milwaukee Mile",
+   "region": "WI",
+   "files": [
+    "major_venues.json"
+   ]
+  },
+  "dormant": [
+   [
+    2016,
+    2020
+   ]
+  ]
+ },
+ "Mid-Ohio Sports Car Course": {
+  "opened": 1962,
+  "closed": null,
+  "history": [
+   {
+    "year": 2023,
+    "change": "Fully repaved after the 2023 season"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Mid-Ohio_Sports_Car_Course"
+  ],
+  "match": {
+   "name": "Mid-Ohio Sports Car Course",
+   "region": "OH",
+   "files": [
+    "major_venues.json"
+   ]
+  }
+ },
+ "Portland International Raceway": {
+  "opened": 1961,
+  "closed": null,
+  "history": [
+   {
+    "year": 2008,
+    "change": "Circuit rebuilt/revised and reopened February 2008 (current layout)"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Portland_International_Raceway"
+  ],
+  "match": {
+   "name": "Portland International Raceway",
+   "region": "OR",
+   "files": [
+    "major_venues.json"
+   ]
+  }
+ },
+ "Kentucky Speedway": {
+  "opened": 2000,
+  "closed": 2020,
+  "history": [
+   {
+    "year": 2016,
+    "change": "Repaved; turns 1-2 banking increased from 14 to 17 degrees and narrowed"
+   },
+   {
+    "year": 2020,
+    "change": "Last NASCAR races; facility since used only for testing/storage"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Kentucky_Speedway"
+  ],
+  "match": {
+   "name": "Kentucky Speedway",
+   "region": "KY",
+   "files": [
+    "major_venues.json"
+   ]
+  }
+ },
+ "California Speedway": {
+  "opened": 1997,
+  "closed": 2023,
+  "history": [
+   {
+    "year": 2001,
+    "change": "Infield road course and sports car course added (Grand-Am 2002-2005)"
+   },
+   {
+    "year": 2008,
+    "change": "Renamed Auto Club Speedway (naming rights)"
+   },
+   {
+    "year": 2023,
+    "change": "Final NASCAR race February 2023; demolition of part of the facility began October 2023 for planned short track"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Auto_Club_Speedway"
+  ],
+  "match": {
+   "name": "California Speedway",
+   "region": "CA",
+   "files": [
+    "major_venues.json"
+   ]
+  }
+ },
+ "Bowman Gray Stadium": {
+  "opened": 1938,
+  "closed": null,
+  "history": [
+   {
+    "year": 2021,
+    "change": "Track repaved and regraded (completed 2021; project completed April 2022)"
+   },
+   {
+    "year": 2022,
+    "change": "Repaved again after deterioration in 2022"
+   },
+   {
+    "year": 2025,
+    "change": "NASCAR Clash moved here; new lights, SAFER barriers and catchfence installed"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Bowman_Gray_Stadium",
+   "https://en.wikipedia.org/wiki/Wheatley_Vodka_Clash"
+  ],
+  "match": {
+   "name": "Bowman Gray Stadium",
+   "region": "NC",
+   "files": [
+    "major_venues.json"
+   ]
+  },
+  "note": "Stadium opened 1938; NASCAR weekly racing began 1949"
+ },
+ "Los Angeles Memorial Coliseum (temporary oval)": {
+  "opened": 2022,
+  "closed": 2024,
+  "history": [
+   {
+    "year": 2022,
+    "change": "Temporary quarter-mile oval built inside the stadium for the NASCAR Clash"
+   },
+   {
+    "year": 2024,
+    "change": "Final Clash at the Coliseum; event moved to Bowman Gray Stadium for 2025"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Los_Angeles_Memorial_Coliseum"
+  ],
+  "match": {
+   "name": "Los Angeles Memorial Coliseum (temporary oval)",
+   "region": "CA",
+   "files": [
+    "major_venues.json"
+   ]
+  }
+ },
+ "Autodromo Hermanos Rodriguez": {
+  "opened": 1959,
+  "closed": null,
+  "history": [
+   {
+    "year": 2002,
+    "change": "CART/Champ Car layout (2002-2007) using the Peraltada"
+   },
+   {
+    "year": 2005,
+    "change": "NASCAR road course variant used (NASCAR Busch 2005-2008)"
+   },
+   {
+    "year": 2015,
+    "change": "Rebuilt for F1 return: Peraltada bypassed through the stadium section"
+   },
+   {
+    "year": 2025,
+    "change": "NASCAR Cup Series race on the Grand Prix circuit"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Aut%C3%B3dromo_Hermanos_Rodr%C3%ADguez"
+  ],
+  "match": {
+   "name": "Autodromo Hermanos Rodriguez",
+   "region": null,
+   "files": [
+    "major_venues.json"
+   ]
+  }
+ },
+ "Chicago Street Course": {
+  "opened": 2023,
+  "closed": 2025,
+  "history": [
+   {
+    "year": 2023,
+    "change": "First NASCAR Cup street race"
+   },
+   {
+    "year": 2025,
+    "change": "Final race; Chicago date moved to Chicagoland Speedway for 2026"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Chicago_Street_Course"
+  ],
+  "match": {
+   "name": "Chicago Street Course",
+   "region": "IL",
+   "files": [
+    "major_venues.json"
+   ]
+  }
+ },
+ "Coronado Street Course": {
+  "opened": 2026,
+  "closed": null,
+  "history": [
+   {
+    "year": 2026,
+    "change": "First NASCAR Cup/Truck races on Naval Base Coronado (June 2026)"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Coronado_Street_Course"
+  ],
+  "match": {
+   "name": "Coronado Street Course",
+   "region": "CA",
+   "files": [
+    "major_venues.json"
+   ]
+  }
+ },
+ "Indianapolis Raceway Park": {
+  "opened": 1960,
+  "closed": null,
+  "history": [
+   {
+    "year": 2006,
+    "change": "Renamed O'Reilly Raceway Park (later Lucas Oil Raceway 2011-2021)"
+   },
+   {
+    "year": 2011,
+    "change": "Last NASCAR Nationwide/Truck races before a decade-long absence"
+   },
+   {
+    "year": 2022,
+    "change": "NASCAR Truck Series returned"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Lucas_Oil_Indianapolis_Raceway_Park",
+   "https://www.thethirdturn.com/wiki/Lucas_Oil_Indianapolis_Raceway_Park"
+  ],
+  "match": {
+   "name": "Indianapolis Raceway Park",
+   "region": "IN",
+   "files": [
+    "major_venues.json"
+   ]
+  }
+ },
+ "Knoxville Raceway": {
+  "opened": 1901,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Knoxville_Raceway"
+  ],
+  "match": {
+   "name": "Knoxville Raceway",
+   "region": "IA",
+   "files": [
+    "major_venues.json"
+   ]
+  },
+  "note": "opened corrected 1878 -> 1901: 1878 is the horse track; first automobile race 1901; weekly racing since 1954",
+  "opened_db_value": 1878
+ },
+ "Road America": {
+  "opened": 1955,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Road_America"
+  ],
+  "match": {
+   "name": "Road America",
+   "region": "WI",
+   "files": [
+    "major_venues.json"
+   ]
+  }
+ },
+ "Long Beach Street Circuit": {
+  "opened": 1975,
+  "closed": null,
+  "history": [
+   {
+    "year": 1999,
+    "change": "Layout revised"
+   },
+   {
+    "year": 2000,
+    "change": "Current 1.968-mi layout adopted"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Long_Beach_Street_Circuit"
+  ],
+  "match": {
+   "name": "Long Beach Street Circuit",
+   "region": "CA",
+   "files": [
+    "major_venues.json"
+   ]
+  }
+ },
+ "St. Petersburg Street Circuit": {
+  "opened": 1985,
+  "closed": null,
+  "history": [
+   {
+    "year": 2003,
+    "change": "Current downtown/airport layout adopted (Champ Car 2003, IndyCar from 2005)"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/St._Petersburg_Street_Circuit"
+  ],
+  "match": {
+   "name": "St. Petersburg Street Circuit",
+   "region": "FL",
+   "files": [
+    "major_venues.json"
+   ]
+  }
+ },
+ "Barber Motorsports Park": {
+  "opened": 2003,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Barber_Motorsports_Park"
+  ],
+  "match": {
+   "name": "Barber Motorsports Park",
+   "region": "AL",
+   "files": [
+    "major_venues.json"
+   ]
+  }
+ },
+ "Laguna Seca Raceway": {
+  "opened": 1957,
+  "closed": null,
+  "history": [
+   {
+    "year": 1996,
+    "change": "Current 2.238-mi layout"
+   },
+   {
+    "year": 2006,
+    "change": "Turn 1 runoff expanded"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Laguna_Seca"
+  ],
+  "match": {
+   "name": "Laguna Seca Raceway",
+   "region": "CA",
+   "files": [
+    "major_venues.json"
+   ]
+  }
+ },
+ "Toronto Street Circuit": {
+  "opened": 1986,
+  "closed": 2025,
+  "history": [
+   {
+    "year": 1996,
+    "change": "Layout revised (configuration used 1996-2025)"
+   },
+   {
+    "year": 2025,
+    "change": "Final race (July 2025); event moved to the Markham Street Circuit for 2026"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Toronto_Street_Circuit"
+  ],
+  "match": {
+   "name": "Toronto Street Circuit",
+   "region": "ON",
+   "files": [
+    "major_venues.json"
+   ]
+  }
+ },
+ "Markham Street Circuit": {
+  "opened": 2026,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Markham_Street_Circuit"
+  ],
+  "match": {
+   "name": "Markham Street Circuit",
+   "region": "ON",
+   "files": [
+    "major_venues.json"
+   ]
+  }
+ },
+ "Detroit Street Circuit": {
+  "opened": 1982,
+  "closed": null,
+  "history": [
+   {
+    "year": 1991,
+    "change": "Downtown circuit last used; Detroit Grand Prix moved to Belle Isle 1992-2022 (Belle Isle is a separate venue)"
+   },
+   {
+    "year": 2023,
+    "change": "Returned downtown on a shortened 1.645-mi layout"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Detroit_Street_Circuit"
+  ],
+  "match": {
+   "name": "Detroit Street Circuit",
+   "region": "MI",
+   "files": [
+    "major_venues.json"
+   ]
+  },
+  "note": "Not in use 1992-2022",
+  "dormant": [
+   [
+    1992,
+    2006
+   ],
+   [
+    2009,
+    2011
+   ]
+  ]
+ },
+ "The Thermal Club": {
+  "opened": 2012,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Thermal_Club"
+  ],
+  "match": {
+   "name": "The Thermal Club",
+   "region": "CA",
+   "files": [
+    "major_venues.json"
+   ]
+  }
+ },
+ "Nashville Street Circuit": {
+  "opened": 2021,
+  "closed": 2023,
+  "history": [
+   {
+    "year": 2021,
+    "change": "First IndyCar race"
+   },
+   {
+    "year": 2023,
+    "change": "Final race; event moved to Nashville Superspeedway in 2024"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Music_City_Grand_Prix",
+   "https://en.wikipedia.org/wiki/Nissan_Stadium_(Nashville)"
+  ],
+  "match": {
+   "name": "Nashville Street Circuit",
+   "region": "TN",
+   "files": [
+    "major_venues.json"
+   ]
+  }
+ },
+ "Arlington Street Circuit": {
+  "opened": 2026,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Arlington_Street_Circuit"
+  ],
+  "match": {
+   "name": "Arlington Street Circuit",
+   "region": "TX",
+   "files": [
+    "major_venues.json"
+   ]
+  }
+ },
+ "Washington Street Circuit": {
+  "opened": 2026,
+  "closed": 2026,
+  "history": [
+   {
+    "year": 2026,
+    "change": "One-off IndyCar race, August 2026"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Washington_Street_Circuit"
+  ],
+  "match": {
+   "name": "Washington Street Circuit",
+   "region": "DC",
+   "files": [
+    "major_venues.json"
+   ]
+  }
+ },
+ "Sebring International Raceway": {
+  "opened": 1950,
+  "closed": null,
+  "history": [
+   {
+    "year": 1996,
+    "change": "7th layout variation (1996-1998)"
+   },
+   {
+    "year": 1999,
+    "change": "Current 3.741-mi layout (8th variation)"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Sebring_International_Raceway"
+  ],
+  "match": {
+   "name": "Sebring International Raceway",
+   "region": "FL",
+   "files": [
+    "major_venues.json"
+   ]
+  }
+ },
+ "Road Atlanta": {
+  "opened": 1970,
+  "closed": null,
+  "history": [
+   {
+    "year": 1998,
+    "change": "Grand Prix circuit revised (2.52 -> 2.54 mi)"
+   },
+   {
+    "year": 2007,
+    "change": "Entire surface repaved"
+   },
+   {
+    "year": 2008,
+    "change": "Turns 4 and 12 reconfigured (mainly for motorcycles)"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Road_Atlanta"
+  ],
+  "match": {
+   "name": "Road Atlanta",
+   "region": "GA",
+   "files": [
+    "major_venues.json"
+   ]
+  }
+ },
+ "Virginia International Raceway": {
+  "opened": 1957,
+  "closed": null,
+  "history": [
+   {
+    "year": 2000,
+    "change": "Reopened in March 2000 after being closed since 1974"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Virginia_International_Raceway"
+  ],
+  "match": {
+   "name": "Virginia International Raceway",
+   "region": "VA",
+   "files": [
+    "major_venues.json"
+   ]
+  },
+  "note": "Closed 1974-1999: unavailable at a 1995-1999 career start",
+  "dormant": [
+   [
+    1974,
+    1999
+   ]
+  ]
+ },
+ "Mosport Park": {
+  "opened": 1961,
+  "closed": null,
+  "history": [
+   {
+    "year": 2001,
+    "change": "Entire circuit repaved to FIA specification"
+   },
+   {
+    "year": 2012,
+    "change": "Renamed Canadian Tire Motorsport Park"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Canadian_Tire_Motorsport_Park"
+  ],
+  "match": {
+   "name": "Mosport Park",
+   "region": "ON",
+   "files": [
+    "major_venues.json"
+   ]
+  }
+ },
+ "NOLA Motorsports Park": {
+  "opened": 2011,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://en.wikipedia.org/wiki/NOLA_Motorsports_Park",
+   "https://www.thethirdturn.com/wiki/NOLA_Motorsports_Park"
+  ],
+  "match": {
+   "name": "NOLA Motorsports Park",
+   "region": "LA",
+   "files": [
+    "major_venues.json"
+   ]
+  }
+ },
+ "Pittsburgh International Race Complex": {
+  "opened": 2002,
+  "closed": 2025,
+  "history": [
+   {
+    "year": 2017,
+    "change": "North and South tracks repaved"
+   },
+   {
+    "year": 2025,
+    "change": "Closed after November 2025 when the property was sold"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Pittsburgh_International_Race_Complex",
+   "https://www.thethirdturn.com/wiki/Pittsburgh_International_Race_Complex"
+  ],
+  "match": {
+   "name": "Pittsburgh International Race Complex",
+   "region": "PA",
+   "files": [
+    "major_venues.json"
+   ]
+  }
+ },
+ "Thompson Speedway Motorsports Park": {
+  "opened": 1940,
+  "closed": null,
+  "history": [
+   {
+    "year": 2014,
+    "change": "New road course opened"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Thompson_Speedway_Motorsports_Park",
+   "https://www.thethirdturn.com/wiki/Thompson_Speedway_Motorsports_Park"
+  ],
+  "match": {
+   "name": "Thompson Speedway Motorsports Park",
+   "region": "CT",
+   "files": [
+    "major_venues.json"
+   ]
+  }
+ },
+ "Eldora Speedway": {
+  "opened": 1954,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Eldora_Speedway"
+  ],
+  "match": {
+   "name": "Eldora Speedway",
+   "region": "OH",
+   "files": [
+    "major_venues.json"
+   ]
+  }
+ },
+ "Williams Grove Speedway": {
+  "opened": 1939,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Williams_Grove_Speedway"
+  ],
+  "match": {
+   "name": "Williams Grove Speedway",
+   "region": "PA",
+   "files": [
+    "major_venues.json"
+   ]
+  }
+ },
+ "Port Royal Speedway": {
+  "opened": 1938,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Port_Royal_Speedway",
+   "https://www.thethirdturn.com/wiki/Port_Royal_Speedway"
+  ],
+  "match": {
+   "name": "Port Royal Speedway",
+   "region": "PA",
+   "files": [
+    "major_venues.json"
+   ]
+  }
+ },
+ "Lincoln Speedway": {
+  "opened": 1953,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Abbottstown,_Pennsylvania"
+  ],
+  "match": {
+   "name": "Lincoln Speedway",
+   "region": "PA",
+   "files": [
+    "major_venues.json"
+   ]
+  }
+ },
+ "Lernerville Speedway": {
+  "opened": 1968,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Lernerville_Speedway",
+   "https://www.thethirdturn.com/wiki/Lernerville_Speedway"
+  ],
+  "match": {
+   "name": "Lernerville Speedway",
+   "region": "PA",
+   "files": [
+    "major_venues.json"
+   ]
+  }
+ },
+ "Volusia Speedway Park": {
+  "opened": 1968,
+  "closed": null,
+  "history": [
+   {
+    "year": 1997,
+    "change": "Half-mile converted back to dirt after being paved 1989-1997 (paved at a 1995 start)"
+   },
+   {
+    "year": 2005,
+    "change": "Sold to DIRT Motorsports (later World Racing Group)"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Volusia_Speedway_Park",
+   "https://www.thethirdturn.com/wiki/Volusia_Speedway_Park"
+  ],
+  "match": {
+   "name": "Volusia Speedway Park",
+   "region": "FL",
+   "files": [
+    "major_venues.json"
+   ]
+  }
+ },
+ "Tulsa Expo Raceway": {
+  "opened": 1966,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Expo_Square_Pavilion",
+   "https://www.thethirdturn.com/wiki/Tulsa_Expo_Raceway"
+  ],
+  "match": {
+   "name": "Tulsa Expo Raceway",
+   "region": "OK",
+   "files": [
+    "major_venues.json"
+   ]
+  },
+  "note": "opened filled from thethirdturn (1966); Chili Bowl Nationals held since 1987",
+  "opened_db_value": null
+ },
+ "Lucas Oil Speedway": {
+  "opened": 2001,
+  "closed": null,
+  "history": [
+   {
+    "year": 2004,
+    "change": "Purchased by Lucas Oil and rebuilt"
+   },
+   {
+    "year": 2006,
+    "change": "Reopened as Lucas Oil Speedway"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Lucas_Oil_Speedway"
+  ],
+  "match": {
+   "name": "Lucas Oil Speedway",
+   "region": "MO",
+   "files": [
+    "major_venues.json"
+   ]
+  }
+ },
+ "Fairbury Speedway": {
+  "opened": 1946,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Fairbury,_Illinois",
+   "https://en.wikipedia.org/wiki/List_of_dirt_track_ovals_in_the_United_States",
+   "https://www.thethirdturn.com/wiki/Fairbury_Speedway"
+  ],
+  "match": {
+   "name": "Fairbury Speedway",
+   "region": "IL",
+   "files": [
+    "major_venues.json"
+   ]
+  },
+  "opened_db_value": null
+ },
+ "Tri-City Speedway": {
+  "opened": null,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Pontoon_Beach,_Illinois"
+  ],
+  "match": {
+   "name": "Tri-City Speedway",
+   "region": "IL",
+   "files": [
+    "major_venues.json"
+   ]
+  }
+ },
+ "Ocala Speedway": {
+  "opened": 1952,
+  "closed": null,
+  "history": [
+   {
+    "year": 1996,
+    "change": "Oval paved (asphalt 1996-2007)"
+   },
+   {
+    "year": 2008,
+    "change": "Returned to dirt"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Ocala,_Florida",
+   "https://www.thethirdturn.com/wiki/Ocala_Speedway"
+  ],
+  "match": {
+   "name": "Ocala Speedway",
+   "region": "FL",
+   "files": [
+    "major_venues.json"
+   ]
+  }
+ },
+ "Perris Auto Speedway": {
+  "opened": 1996,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Perris_Auto_Speedway",
+   "https://www.thethirdturn.com/wiki/Perris_Auto_Speedway"
+  ],
+  "match": {
+   "name": "Perris Auto Speedway",
+   "region": "CA",
+   "files": [
+    "major_venues.json"
+   ]
+  }
+ },
+ "Skagit Speedway": {
+  "opened": 1954,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Alger,_Washington",
+   "https://en.wikipedia.org/wiki/List_of_dirt_track_ovals_in_the_United_States",
+   "https://www.thethirdturn.com/wiki/Skagit_Speedway"
+  ],
+  "match": {
+   "name": "Skagit Speedway",
+   "region": "WA",
+   "files": [
+    "major_venues.json",
+    "local_regional_venues.json"
+   ]
+  },
+  "opened_db_value": null
+ },
+ "Huset's Speedway": {
+  "opened": 1954,
+  "closed": null,
+  "history": [
+   {
+    "year": 2017,
+    "change": "Closed (then Badlands Motor Speedway)"
+   },
+   {
+    "year": 2020,
+    "change": "Reopened as Huset's Speedway"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Huset%27s_Speedway",
+   "https://www.thethirdturn.com/wiki/Huset%27s_Speedway"
+  ],
+  "match": {
+   "name": "Huset's Speedway",
+   "region": "SD",
+   "files": [
+    "major_venues.json"
+   ]
+  },
+  "dormant": [
+   [
+    2018,
+    2019
+   ]
+  ]
+ },
+ "Jackson Motorplex": {
+  "opened": 1934,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Jackson,_Minnesota",
+   "https://www.thethirdturn.com/wiki/Jackson_Motorplex"
+  ],
+  "match": {
+   "name": "Jackson Motorplex",
+   "region": "MN",
+   "files": [
+    "major_venues.json"
+   ]
+  },
+  "note": "thethirdturn lists 1934 for the fairgrounds track",
+  "opened_db_value": null
+ },
+ "Kokomo Speedway": {
+  "opened": 1947,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Kokomo_Speedway",
+   "https://www.thethirdturn.com/wiki/Kokomo_Speedway"
+  ],
+  "match": {
+   "name": "Kokomo Speedway",
+   "region": "IN",
+   "files": [
+    "major_venues.json"
+   ]
+  }
+ },
+ "Bloomington Speedway": {
+  "opened": 1923,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Bloomington,_Indiana",
+   "https://en.wikipedia.org/wiki/List_of_dirt_track_ovals_in_the_United_States",
+   "https://www.thethirdturn.com/wiki/Bloomington_Speedway"
+  ],
+  "match": {
+   "name": "Bloomington Speedway",
+   "region": "IN",
+   "files": [
+    "major_venues.json",
+    "local_regional_venues.json"
+   ]
+  },
+  "opened_db_value": null
+ },
+ "Lawrenceburg Speedway": {
+  "opened": 1950,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Lawrenceburg,_Indiana"
+  ],
+  "match": {
+   "name": "Lawrenceburg Speedway",
+   "region": "IN",
+   "files": [
+    "major_venues.json"
+   ]
+  }
+ },
+ "Terre Haute Action Track": {
+  "opened": 1952,
+  "closed": null,
+  "history": [
+   {
+    "year": 2007,
+    "change": "Closed in May 2007 for the rest of the season after curfew violations"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Terre_Haute_Action_Track"
+  ],
+  "match": {
+   "name": "Terre Haute Action Track",
+   "region": "IN",
+   "files": [
+    "major_venues.json"
+   ]
+  }
+ },
+ "Brownstown Speedway": {
+  "opened": 1952,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Brownstown,_Indiana",
+   "https://en.wikipedia.org/wiki/List_of_dirt_track_ovals_in_the_United_States"
+  ],
+  "match": {
+   "name": "Brownstown Speedway",
+   "region": "IN",
+   "files": [
+    "major_venues.json"
+   ]
+  }
+ },
+ "Florence Speedway": {
+  "opened": 1955,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Union,_Kentucky",
+   "https://www.thethirdturn.com/wiki/Florence_Speedway"
+  ],
+  "match": {
+   "name": "Florence Speedway",
+   "region": "KY",
+   "files": [
+    "major_venues.json",
+    "local_regional_venues.json"
+   ]
+  },
+  "opened_db_value": null
+ },
+ "Attica Raceway Park": {
+  "opened": 1988,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Attica,_Ohio",
+   "https://www.thethirdturn.com/wiki/Attica_Raceway_Park"
+  ],
+  "match": {
+   "name": "Attica Raceway Park",
+   "region": "OH",
+   "files": [
+    "major_venues.json"
+   ]
+  }
+ },
+ "I-55 Raceway": {
+  "opened": 1974,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://en.wikipedia.org/wiki/I-55_Raceway",
+   "https://www.thethirdturn.com/wiki/Federated_Auto_Parts_Raceway_at_I-55"
+  ],
+  "match": {
+   "name": "I-55 Raceway",
+   "region": "MO",
+   "files": [
+    "major_venues.json"
+   ]
+  }
+ },
+ "Selinsgrove Speedway": {
+  "opened": 1946,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Selinsgrove_Speedway",
+   "https://www.thethirdturn.com/wiki/Selinsgrove_Speedway"
+  ],
+  "match": {
+   "name": "Selinsgrove Speedway",
+   "region": "PA",
+   "files": [
+    "major_venues.json"
+   ]
+  }
+ },
+ "Wilmot Raceway": {
+  "opened": 1951,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Wilmot_Raceway",
+   "https://www.thethirdturn.com/wiki/Wilmot_Raceway"
+  ],
+  "match": {
+   "name": "Wilmot Raceway",
+   "region": "WI",
+   "files": [
+    "major_venues.json"
+   ]
+  }
+ },
+ "Cedar Lake Speedway": {
+  "opened": 1957,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Cedar_Lake_Speedway",
+   "https://www.thethirdturn.com/wiki/Cedar_Lake_Speedway"
+  ],
+  "match": {
+   "name": "Cedar Lake Speedway",
+   "region": "WI",
+   "files": [
+    "major_venues.json"
+   ]
+  }
+ },
+ "Hickory Motor Speedway": {
+  "opened": 1952,
+  "closed": null,
+  "history": [
+   {
+    "year": 1998,
+    "change": "Last NASCAR Busch Series race (series raced here through 1998)"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Hickory_Motor_Speedway",
+   "https://www.thethirdturn.com/wiki/Hickory_Motor_Speedway"
+  ],
+  "match": {
+   "name": "Hickory Motor Speedway",
+   "region": "NC",
+   "files": [
+    "major_venues.json"
+   ]
+  },
+  "note": "From general knowledge; Busch races at Hickory ended late 1990s"
+ },
+ "South Boston Speedway": {
+  "opened": 1957,
+  "closed": null,
+  "history": [
+   {
+    "year": 2000,
+    "change": "Last NASCAR Busch Series race"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/South_Boston_Speedway",
+   "https://www.thethirdturn.com/wiki/South_Boston_Speedway"
+  ],
+  "match": {
+   "name": "South Boston Speedway",
+   "region": "VA",
+   "files": [
+    "major_venues.json"
+   ]
+  }
+ },
+ "Five Flags Speedway": {
+  "opened": 1953,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Five_Flags_Speedway",
+   "https://www.thethirdturn.com/wiki/Five_Flags_Speedway"
+  ],
+  "match": {
+   "name": "Five Flags Speedway",
+   "region": "FL",
+   "files": [
+    "major_venues.json"
+   ]
+  }
+ },
+ "Winchester Speedway (IN)": {
+  "opened": 1916,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Winchester_Speedway",
+   "https://www.thethirdturn.com/wiki/Winchester_Speedway_%28IN%29"
+  ],
+  "match": {
+   "name": "Winchester Speedway",
+   "region": "IN",
+   "files": [
+    "major_venues.json"
+   ]
+  }
+ },
+ "Berlin Raceway": {
+  "opened": 1951,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Berlin_Raceway",
+   "https://www.thethirdturn.com/wiki/Berlin_Raceway"
+  ],
+  "match": {
+   "name": "Berlin Raceway",
+   "region": "MI",
+   "files": [
+    "major_venues.json"
+   ]
+  }
+ },
+ "Stafford Motor Speedway": {
+  "opened": 1870,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Stafford_Motor_Speedway",
+   "https://www.thethirdturn.com/wiki/Stafford_Motor_Speedway"
+  ],
+  "match": {
+   "name": "Stafford Motor Speedway",
+   "region": "CT",
+   "files": [
+    "major_venues.json"
+   ]
+  }
+ },
+ "Oswego Speedway": {
+  "opened": 1951,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Oswego_Speedway",
+   "https://www.thethirdturn.com/wiki/Oswego_Speedway"
+  ],
+  "match": {
+   "name": "Oswego Speedway",
+   "region": "NY",
+   "files": [
+    "major_venues.json"
+   ]
+  }
+ },
+ "Irwindale Speedway": {
+  "opened": 1999,
+  "closed": 2024,
+  "history": [
+   {
+    "year": 2011,
+    "change": "Closed after the 2011 season"
+   },
+   {
+    "year": 2013,
+    "change": "Reopened as Irwindale Event Center"
+   },
+   {
+    "year": 2014,
+    "change": "Inner quarter-mile oval added"
+   },
+   {
+    "year": 2024,
+    "change": "Closed December 2024; razed 2025"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Irwindale_Event_Center",
+   "https://www.thethirdturn.com/wiki/Irwindale_Speedway"
+  ],
+  "match": {
+   "name": "Irwindale Speedway",
+   "region": "CA",
+   "files": [
+    "major_venues.json"
+   ]
+  },
+  "dormant": [
+   [
+    2012,
+    2012
+   ]
+  ]
+ },
+ "Delaware Speedway": {
+  "opened": 1952,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Delaware_Speedway",
+   "https://www.thethirdturn.com/wiki/Delaware_Speedway"
+  ],
+  "match": {
+   "name": "Delaware Speedway",
+   "region": "ON",
+   "files": [
+    "major_venues.json"
+   ]
+  }
+ },
+ "Mount Panorama Circuit": {
+  "opened": 1938,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Mount_Panorama_Circuit"
+  ],
+  "match": {
+   "name": "Mount Panorama Circuit",
+   "region": "NSW",
+   "files": [
+    "major_venues.json"
+   ]
+  }
+ },
+ "Phillip Island Grand Prix Circuit": {
+  "opened": 1952,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Phillip_Island_Grand_Prix_Circuit"
+  ],
+  "match": {
+   "name": "Phillip Island Grand Prix Circuit",
+   "region": "VIC",
+   "files": [
+    "major_venues.json"
+   ]
+  }
+ },
+ "Sandown Raceway": {
+  "opened": 1962,
+  "closed": null,
+  "history": [
+   {
+    "year": 2001,
+    "change": "International (2.4-mi) circuit retired; National circuit only"
+   },
+   {
+    "year": 2013,
+    "change": "Repaved with FIA safety upgrades"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Sandown_Raceway"
+  ],
+  "match": {
+   "name": "Sandown Raceway",
+   "region": "VIC",
+   "files": [
+    "major_venues.json"
+   ]
+  }
+ },
+ "Silverstone Circuit": {
+  "opened": 1948,
+  "closed": null,
+  "history": [
+   {
+    "year": 1996,
+    "change": "Bridge GP circuit revised"
+   },
+   {
+    "year": 2010,
+    "change": "\"Arena\" Grand Prix layout introduced"
+   },
+   {
+    "year": 2011,
+    "change": "New \"Wing\" pit complex; start line moved"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Silverstone_Circuit"
+  ],
+  "match": {
+   "name": "Silverstone Circuit",
+   "region": null,
+   "files": [
+    "major_venues.json"
+   ]
+  }
+ },
+ "Brands Hatch": {
+  "opened": 1950,
+  "closed": null,
+  "history": [
+   {
+    "year": 1999,
+    "change": "Grand Prix circuit revised"
+   },
+   {
+    "year": 2003,
+    "change": "Current Grand Prix / Indy circuit configuration"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Brands_Hatch"
+  ],
+  "match": {
+   "name": "Brands Hatch",
+   "region": null,
+   "files": [
+    "major_venues.json"
+   ]
+  }
+ },
+ "Donington Park": {
+  "opened": 1931,
+  "closed": null,
+  "history": [
+   {
+    "year": 2009,
+    "change": "Circuit closed for failed F1 redevelopment"
+   },
+   {
+    "year": 2010,
+    "change": "Reopened with realigned Goddards chicane"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Donington_Park"
+  ],
+  "match": {
+   "name": "Donington Park",
+   "region": null,
+   "files": [
+    "major_venues.json"
+   ]
+  }
+ },
+ "Circuit de Spa-Francorchamps": {
+  "opened": 1921,
+  "closed": null,
+  "history": [
+   {
+    "year": 2004,
+    "change": "Bus Stop chicane revised"
+   },
+   {
+    "year": 2007,
+    "change": "New Bus Stop chicane and pit complex; current 4.352-mi layout"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Circuit_de_Spa-Francorchamps"
+  ],
+  "match": {
+   "name": "Circuit de Spa-Francorchamps",
+   "region": null,
+   "files": [
+    "major_venues.json"
+   ]
+  }
+ },
+ "Circuit de la Sarthe": {
+  "opened": 1923,
+  "closed": null,
+  "history": [
+   {
+    "year": 2002,
+    "change": "Run to the Esses reconfigured with Bugatti Circuit renovations"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Circuit_de_la_Sarthe"
+  ],
+  "match": {
+   "name": "Circuit de la Sarthe",
+   "region": null,
+   "files": [
+    "major_venues.json"
+   ]
+  }
+ },
+ "Nurburgring Grand Prix Circuit": {
+  "opened": 1984,
+  "closed": null,
+  "history": [
+   {
+    "year": 1995,
+    "change": "F1 chicane variant (1995-2001)"
+   },
+   {
+    "year": 2002,
+    "change": "Mercedes-Arena section added; current 3.199-mi layout"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/N%C3%BCrburgring"
+  ],
+  "match": {
+   "name": "Nurburgring Grand Prix Circuit",
+   "region": null,
+   "files": [
+    "major_venues.json"
+   ]
+  }
+ },
+ "Nurburgring Nordschleife": {
+  "opened": 1927,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://en.wikipedia.org/wiki/N%C3%BCrburgring"
+  ],
+  "match": {
+   "name": "Nurburgring Nordschleife",
+   "region": null,
+   "files": [
+    "major_venues.json"
+   ]
+  }
+ },
+ "Monza Circuit": {
+  "opened": 1922,
+  "closed": null,
+  "history": [
+   {
+    "year": 1996,
+    "change": "Chicanes revised"
+   },
+   {
+    "year": 2000,
+    "change": "First chicane (Variante del Rettifilo) rebuilt; current layout"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Monza_Circuit"
+  ],
+  "match": {
+   "name": "Monza Circuit",
+   "region": null,
+   "files": [
+    "major_venues.json"
+   ]
+  }
+ },
+ "Suzuka Circuit": {
+  "opened": 1962,
+  "closed": null,
+  "history": [
+   {
+    "year": 2003,
+    "change": "Final chicane and 130R revised"
+   },
+   {
+    "year": 2008,
+    "change": "Closed for renovation (Nov 2007 - April 2009)"
+   },
+   {
+    "year": 2009,
+    "change": "Reopened"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Suzuka_Circuit"
+  ],
+  "match": {
+   "name": "Suzuka Circuit",
+   "region": null,
+   "files": [
+    "major_venues.json"
+   ]
+  }
+ },
+ "Interlagos Circuit": {
+  "opened": 1940,
+  "closed": null,
+  "history": [
+   {
+    "year": 1996,
+    "change": "4th layout variation"
+   },
+   {
+    "year": 1999,
+    "change": "Current layout (5th variation)"
+   },
+   {
+    "year": 2014,
+    "change": "Pit entry chicane added"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Interlagos_Circuit"
+  ],
+  "match": {
+   "name": "Interlagos Circuit",
+   "region": null,
+   "files": [
+    "major_venues.json"
+   ]
+  }
+ },
+ "Circuit Gilles Villeneuve": {
+  "opened": 1978,
+  "closed": null,
+  "history": [
+   {
+    "year": 1996,
+    "change": "Layout revised"
+   },
+   {
+    "year": 2002,
+    "change": "Current layout; pit exit changed"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Circuit_Gilles_Villeneuve"
+  ],
+  "match": {
+   "name": "Circuit Gilles Villeneuve",
+   "region": "QC",
+   "files": [
+    "major_venues.json"
+   ]
+  }
+ },
+ "Langley Speedway": {
+  "opened": 1950,
+  "closed": null,
+  "history": [
+   {
+    "year": 2014,
+    "change": "Repaved (third paved configuration, 0.396 mi)"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Langley_Speedway_%28Virginia%29",
+   "https://www.thethirdturn.com/wiki/Langley_Speedway"
+  ],
+  "match": {
+   "name": "Langley Speedway",
+   "region": "VA",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Southern National Motorsports Park": {
+  "opened": 1993,
+  "closed": null,
+  "history": [
+   {
+    "year": 2009,
+    "change": "Effectively closed (one event in 2009)"
+   },
+   {
+    "year": 2012,
+    "change": "Reopened as Southern National Motorsports Park"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Southern_National_Motorsports_Park",
+   "https://www.thethirdturn.com/wiki/Southern_National_Motorsports_Park"
+  ],
+  "match": {
+   "name": "Southern National Motorsports Park",
+   "region": "NC",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  },
+  "dormant": [
+   [
+    2010,
+    2011
+   ]
+  ]
+ },
+ "Ace Speedway": {
+  "opened": 1956,
+  "closed": null,
+  "history": [
+   {
+    "year": 1999,
+    "change": "Reconfigured/repaved from 0.375-mi to 0.4-mi oval (TT: 3/8 paved 1990-1998)"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Ace_Speedway",
+   "https://www.thethirdturn.com/wiki/Ace_Speedway"
+  ],
+  "match": {
+   "name": "Ace Speedway",
+   "region": "NC",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Orange County Speedway": {
+  "opened": 1966,
+  "closed": null,
+  "history": [
+   {
+    "year": 2003,
+    "change": "Closed after 2003"
+   },
+   {
+    "year": 2006,
+    "change": "Reopened March 2006"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Orange_County_Speedway",
+   "https://www.thethirdturn.com/wiki/Orange_County_Speedway"
+  ],
+  "match": {
+   "name": "Orange County Speedway",
+   "region": "NC",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  },
+  "dormant": [
+   [
+    2004,
+    2005
+   ]
+  ]
+ },
+ "Caraway Speedway": {
+  "opened": 1966,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Caraway_Speedway",
+   "https://www.thethirdturn.com/wiki/Caraway_Speedway"
+  ],
+  "match": {
+   "name": "Caraway Speedway",
+   "region": "NC",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Florence Motor Speedway": {
+  "opened": 1982,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://www.thethirdturn.com/wiki/Florence_Motor_Speedway"
+  ],
+  "match": {
+   "name": "Florence Motor Speedway",
+   "region": "SC",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Myrtle Beach Speedway": {
+  "opened": 1958,
+  "closed": 2020,
+  "history": [
+   {
+    "year": 2000,
+    "change": "Last NASCAR Busch Series race (late 1990s/2000)"
+   },
+   {
+    "year": 2020,
+    "change": "Final race August 2020; razed"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Myrtle_Beach_Speedway",
+   "https://www.thethirdturn.com/wiki/Myrtle_Beach_Speedway"
+  ],
+  "match": {
+   "name": "Myrtle Beach Speedway",
+   "region": "SC",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Greenville-Pickens Speedway": {
+  "opened": 1946,
+  "closed": 2022,
+  "history": [
+   {
+    "year": 1995,
+    "change": "Repaved"
+   },
+   {
+    "year": 2022,
+    "change": "Last racing season; no events scheduled from 2023"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Greenville-Pickens_Speedway",
+   "https://www.thethirdturn.com/wiki/Greenville-Pickens_Speedway"
+  ],
+  "match": {
+   "name": "Greenville-Pickens Speedway",
+   "region": "SC",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "New Smyrna Speedway": {
+  "opened": 1967,
+  "closed": null,
+  "history": [
+   {
+    "year": 2007,
+    "change": "Repaved January 2007"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/New_Smyrna_Speedway",
+   "https://www.thethirdturn.com/wiki/New_Smyrna_Speedway"
+  ],
+  "match": {
+   "name": "New Smyrna Speedway",
+   "region": "FL",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Montgomery Motor Speedway": {
+  "opened": 1953,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Montgomery_Motor_Speedway",
+   "https://www.thethirdturn.com/wiki/Montgomery_Motor_Speedway"
+  ],
+  "match": {
+   "name": "Montgomery Motor Speedway",
+   "region": "AL",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Mobile International Speedway": {
+  "opened": 1965,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Mobile_International_Speedway",
+   "https://www.thethirdturn.com/wiki/Mobile_International_Speedway"
+  ],
+  "match": {
+   "name": "Mobile International Speedway",
+   "region": "AL",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Nashville Fairgrounds Speedway": {
+  "opened": 1904,
+  "closed": null,
+  "history": [
+   {
+    "year": 1996,
+    "change": "Repaved between 1995 and 1996 seasons"
+   },
+   {
+    "year": 2000,
+    "change": "Last NASCAR Busch/Truck races (Busch through 2000)"
+   },
+   {
+    "year": 2003,
+    "change": "Renamed Music City Motorplex (2003-2009)"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Nashville_Fairgrounds_Speedway",
+   "https://www.thethirdturn.com/wiki/Nashville_Fairgrounds_Speedway"
+  ],
+  "match": {
+   "name": "Nashville Fairgrounds Speedway",
+   "region": "TN",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Anderson Motor Speedway": {
+  "opened": 1963,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Anderson_Motor_Speedway",
+   "https://www.thethirdturn.com/wiki/Anderson_Motor_Speedway"
+  ],
+  "match": {
+   "name": "Anderson Motor Speedway",
+   "region": "SC",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Wake County Speedway": {
+  "opened": 1962,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Wake_County_Speedway",
+   "https://www.thethirdturn.com/wiki/Wake_County_Speedway"
+  ],
+  "match": {
+   "name": "Wake County Speedway",
+   "region": "NC",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Pulaski County Motorsports Park": {
+  "opened": 1952,
+  "closed": null,
+  "history": [
+   {
+    "year": 2017,
+    "change": "Oval racing discontinued after 2017"
+   },
+   {
+    "year": 2019,
+    "change": "Reopened under NASCAR sanction"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Motor_Mile_Speedway",
+   "https://www.thethirdturn.com/wiki/Pulaski_County_Motorsports_Park"
+  ],
+  "match": {
+   "name": "Pulaski County Motorsports Park",
+   "region": "VA",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Dominion Raceway": {
+  "opened": 2016,
+  "closed": null,
+  "history": [
+   {
+    "year": 2012,
+    "change": "Predecessor Old Dominion Speedway oval held its final race"
+   },
+   {
+    "year": 2016,
+    "change": "New 0.4-mi Dominion Raceway opened at Thornburg"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Dominion_Raceway",
+   "https://www.thethirdturn.com/wiki/Dominion_Raceway"
+  ],
+  "match": {
+   "name": "Dominion Raceway",
+   "region": "VA",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Huntsville Speedway": {
+  "opened": 1959,
+  "closed": null,
+  "history": [
+   {
+    "year": 2013,
+    "change": "Shut down early 2013"
+   },
+   {
+    "year": 2016,
+    "change": "Reopened April 2016"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Huntsville_Speedway",
+   "https://www.thethirdturn.com/wiki/Huntsville_Speedway"
+  ],
+  "match": {
+   "name": "Huntsville Speedway",
+   "region": "AL",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Citrus County Speedway": {
+  "opened": 1955,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://www.thethirdturn.com/wiki/Citrus_County_Speedway"
+  ],
+  "match": {
+   "name": "Citrus County Speedway",
+   "region": "FL",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Lanier Speedway": {
+  "opened": 1982,
+  "closed": null,
+  "history": [
+   {
+    "year": 2012,
+    "change": "Renamed Lanier Raceplex"
+   },
+   {
+    "year": 2016,
+    "change": "Reopened January 2016 with karting, legends and drift events"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Caffeine_and_Octane%27s_Lanier_Raceway",
+   "https://www.thethirdturn.com/wiki/Lanier_Raceplex"
+  ],
+  "match": {
+   "name": "Lanier Speedway",
+   "region": "GA",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Kentucky Motor Speedway": {
+  "opened": 1960,
+  "closed": null,
+  "history": [
+   {
+    "year": 2005,
+    "change": "Idle 2005-2008 (bankruptcy)"
+   },
+   {
+    "year": 2009,
+    "change": "Reopened April 2009"
+   },
+   {
+    "year": 2022,
+    "change": "Idle 2022-2023"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Kentucky_Motor_Speedway_%28short_track%29",
+   "https://www.thethirdturn.com/wiki/Kentucky_Motor_Speedway"
+  ],
+  "match": {
+   "name": "Kentucky Motor Speedway",
+   "region": "KY",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Ona Speedway": {
+  "opened": 1963,
+  "closed": null,
+  "history": [
+   {
+    "year": 1995,
+    "change": "Repaved and reopened"
+   },
+   {
+    "year": 2025,
+    "change": "Partial repave"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Ona_Speedway",
+   "https://www.thethirdturn.com/wiki/Ona_Speedway"
+  ],
+  "match": {
+   "name": "Ona Speedway",
+   "region": "WV",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Concord Speedway": {
+  "opened": 1981,
+  "closed": 2019,
+  "history": [
+   {
+    "year": 1999,
+    "change": "Repaved"
+   },
+   {
+    "year": 2019,
+    "change": "Closed July 2019, sold to Copart; razed 2021"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Concord_Speedway",
+   "https://www.thethirdturn.com/wiki/Concord_Speedway"
+  ],
+  "match": {
+   "name": "Concord Speedway",
+   "region": "NC",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  },
+  "note": "thethirdturn gives 1981 opening (dirt), paved 1986; Wikipedia says 1982",
+  "opened_db_value": 1982
+ },
+ "Slinger Speedway": {
+  "opened": 1948,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Slinger_Speedway",
+   "https://www.thethirdturn.com/wiki/Slinger_Speedway"
+  ],
+  "match": {
+   "name": "Slinger Speedway",
+   "region": "WI",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Madison International Speedway": {
+  "opened": 1969,
+  "closed": null,
+  "history": [
+   {
+    "year": 1992,
+    "change": "Reopened under Slinger owner Wayne Erickson after a closure"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Madison_International_Speedway",
+   "https://www.thethirdturn.com/wiki/Madison_International_Speedway"
+  ],
+  "match": {
+   "name": "Madison International Speedway",
+   "region": "WI",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "La Crosse Fairgrounds Speedway": {
+  "opened": 1957,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://en.wikipedia.org/wiki/La_Crosse_Fairgrounds_Speedway"
+  ],
+  "match": {
+   "name": "La Crosse Fairgrounds Speedway",
+   "region": "WI",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Dells Raceway Park": {
+  "opened": 1958,
+  "closed": null,
+  "history": [
+   {
+    "year": 2006,
+    "change": "Closed mid-season"
+   },
+   {
+    "year": 2007,
+    "change": "Reopened under new owners"
+   },
+   {
+    "year": 2024,
+    "change": "Took over the National Short Track Championship from Rockford"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Dells_Raceway_Park",
+   "https://www.thethirdturn.com/wiki/Dells_Raceway_Park"
+  ],
+  "match": {
+   "name": "Dells Raceway Park",
+   "region": "WI",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Wisconsin International Raceway": {
+  "opened": 1964,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Wisconsin_International_Raceway",
+   "https://www.thethirdturn.com/wiki/Wisconsin_International_Raceway"
+  ],
+  "match": {
+   "name": "Wisconsin International Raceway",
+   "region": "WI",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Rockford Speedway": {
+  "opened": 1948,
+  "closed": 2023,
+  "history": [
+   {
+    "year": 2023,
+    "change": "Final season; razed 2024"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Rockford_Speedway",
+   "https://www.thethirdturn.com/wiki/Rockford_Speedway"
+  ],
+  "match": {
+   "name": "Rockford Speedway",
+   "region": "IL",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Toledo Speedway": {
+  "opened": 1960,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Toledo_Speedway",
+   "https://www.thethirdturn.com/wiki/Toledo_Speedway"
+  ],
+  "match": {
+   "name": "Toledo Speedway",
+   "region": "OH",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Flat Rock Speedway": {
+  "opened": 1953,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Flat_Rock_Speedway",
+   "https://www.thethirdturn.com/wiki/Flat_Rock_Speedway"
+  ],
+  "match": {
+   "name": "Flat Rock Speedway",
+   "region": "MI",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Kalamazoo Speedway": {
+  "opened": 1950,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://www.thethirdturn.com/wiki/Kalamazoo_Speedway"
+  ],
+  "match": {
+   "name": "Kalamazoo Speedway",
+   "region": "MI",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Anderson Speedway": {
+  "opened": 1948,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Anderson_Speedway",
+   "https://www.thethirdturn.com/wiki/Anderson_Speedway"
+  ],
+  "match": {
+   "name": "Anderson Speedway",
+   "region": "IN",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Salem Speedway": {
+  "opened": 1947,
+  "closed": null,
+  "history": [
+   {
+    "year": 1995,
+    "change": "Closed May 1995 after owner bankruptcy"
+   },
+   {
+    "year": 1996,
+    "change": "Reopened under new owners"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Salem_Speedway",
+   "https://www.thethirdturn.com/wiki/Salem_Speedway"
+  ],
+  "match": {
+   "name": "Salem Speedway",
+   "region": "IN",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  },
+  "note": "Closed for most of 1995",
+  "dormant": [
+   [
+    1995,
+    1995
+   ]
+  ]
+ },
+ "Elko Speedway": {
+  "opened": 1965,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Elko_Speedway",
+   "https://www.thethirdturn.com/wiki/Elko_Speedway"
+  ],
+  "match": {
+   "name": "Elko Speedway",
+   "region": "MN",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Hawkeye Downs Speedway": {
+  "opened": 1925,
+  "closed": null,
+  "history": [
+   {
+    "year": 2025,
+    "change": "Quarter-mile oval temporarily converted for dirt racing"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Hawkeye_Downs_Speedway",
+   "https://www.thethirdturn.com/wiki/Hawkeye_Downs_Speedway"
+  ],
+  "match": {
+   "name": "Hawkeye Downs Speedway",
+   "region": "IA",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Owosso Speedway": {
+  "opened": 1939,
+  "closed": null,
+  "history": [
+   {
+    "year": 2023,
+    "change": "Repaved under new owner"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Owosso_Speedway",
+   "https://www.thethirdturn.com/wiki/Owosso_Speedway"
+  ],
+  "match": {
+   "name": "Owosso Speedway",
+   "region": "MI",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Marshfield Motor Speedway": {
+  "opened": 1977,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Marshfield_Motor_Speedway",
+   "https://www.thethirdturn.com/wiki/Marshfield_Motor_Speedway"
+  ],
+  "match": {
+   "name": "Marshfield Motor Speedway",
+   "region": "WI",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  },
+  "opened_db_value": null
+ },
+ "Darana Raceway": {
+  "opened": 1951,
+  "closed": null,
+  "history": [
+   {
+    "year": 2025,
+    "change": "Purchased by IHRA (May 2025) and renamed from Kil-Kare Raceway (September 2025)"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Kil-Kare_Raceway",
+   "https://www.thethirdturn.com/wiki/Kil-Kare_Speedway"
+  ],
+  "match": {
+   "name": "Darana Raceway",
+   "region": "OH",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Lorain County Speedway": {
+  "opened": 1949,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Lorain_County_Speedway",
+   "https://www.thethirdturn.com/wiki/Lorain_Raceway_Park"
+  ],
+  "match": {
+   "name": "Lorain County Speedway",
+   "region": "OH",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Illiana Motor Speedway": {
+  "opened": 1947,
+  "closed": 2016,
+  "history": [
+   {
+    "year": 2000,
+    "change": "Repaved for first time in ~40 years"
+   },
+   {
+    "year": 2016,
+    "change": "Closed"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Illiana_Motor_Speedway",
+   "https://www.thethirdturn.com/wiki/Illiana_Motor_Speedway"
+  ],
+  "match": {
+   "name": "Illiana Motor Speedway",
+   "region": "IN",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Lebanon I-44 Speedway": {
+  "opened": 1983,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Lebanon_I-44_Speedway",
+   "https://www.thethirdturn.com/wiki/Lebanon_I-44_Speedway"
+  ],
+  "match": {
+   "name": "Lebanon I-44 Speedway",
+   "region": "MO",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Seekonk Speedway": {
+  "opened": 1946,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Seekonk_Speedway",
+   "https://www.thethirdturn.com/wiki/Seekonk_Speedway"
+  ],
+  "match": {
+   "name": "Seekonk Speedway",
+   "region": "MA",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Oxford Plains Speedway": {
+  "opened": 1950,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Oxford_Plains_Speedway",
+   "https://www.thethirdturn.com/wiki/Oxford_Plains_Speedway"
+  ],
+  "match": {
+   "name": "Oxford Plains Speedway",
+   "region": "ME",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Beech Ridge Motor Speedway": {
+  "opened": 1949,
+  "closed": 2021,
+  "history": [
+   {
+    "year": 2021,
+    "change": "Last race September 26, 2021"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Beech_Ridge_Motor_Speedway",
+   "https://www.thethirdturn.com/wiki/Beech_Ridge_Motor_Speedway"
+  ],
+  "match": {
+   "name": "Beech Ridge Motor Speedway",
+   "region": "ME",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Lee USA Speedway": {
+  "opened": 1964,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Lee_USA_Speedway",
+   "https://www.thethirdturn.com/wiki/Lee_USA_Speedway"
+  ],
+  "match": {
+   "name": "Lee USA Speedway",
+   "region": "NH",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Star Speedway": {
+  "opened": 1966,
+  "closed": null,
+  "history": [
+   {
+    "year": 2010,
+    "change": "Closed for most of 2010 season"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Star_Speedway",
+   "https://www.thethirdturn.com/wiki/Star_Speedway"
+  ],
+  "match": {
+   "name": "Star Speedway",
+   "region": "NH",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "White Mountain Motorsports Park": {
+  "opened": 1993,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://www.thethirdturn.com/wiki/White_Mountain_Motorsports_Park"
+  ],
+  "match": {
+   "name": "White Mountain Motorsports Park",
+   "region": "NH",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Thunder Road International Speedbowl": {
+  "opened": 1960,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Thunder_Road_International_SpeedBowl"
+  ],
+  "match": {
+   "name": "Thunder Road International Speedbowl",
+   "region": "VT",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Riverhead Raceway": {
+  "opened": 1951,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Riverhead_Raceway",
+   "https://www.thethirdturn.com/wiki/Riverhead_Raceway"
+  ],
+  "match": {
+   "name": "Riverhead Raceway",
+   "region": "NY",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Wall Stadium": {
+  "opened": 1950,
+  "closed": null,
+  "history": [
+   {
+    "year": 2008,
+    "change": "Closed March 2008"
+   },
+   {
+    "year": 2009,
+    "change": "Reopened"
+   },
+   {
+    "year": 2010,
+    "change": "Closed September 2010"
+   },
+   {
+    "year": 2011,
+    "change": "Racing resumed under new management"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Wall_Stadium",
+   "https://www.thethirdturn.com/wiki/Wall_Stadium_Speedway"
+  ],
+  "match": {
+   "name": "Wall Stadium",
+   "region": "NJ",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  },
+  "dormant": [
+   [
+    2011,
+    2011
+   ]
+  ]
+ },
+ "New London-Waterford Speedbowl": {
+  "opened": 1951,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Waterford_Speedbowl",
+   "https://www.thethirdturn.com/wiki/New_London-Waterford_Speedbowl"
+  ],
+  "match": {
+   "name": "New London-Waterford Speedbowl",
+   "region": "CT",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Monadnock Speedway": {
+  "opened": 1971,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Monadnock_Speedway",
+   "https://www.thethirdturn.com/wiki/Monadnock_Speedway"
+  ],
+  "match": {
+   "name": "Monadnock Speedway",
+   "region": "NH",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Lake Erie Speedway": {
+  "opened": 2002,
+  "closed": null,
+  "history": [
+   {
+    "year": 2002,
+    "change": "Opened; hosted ARCA (2003-2005) and Busch East (2003-2006)"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Lake_Erie_Speedway",
+   "https://www.thethirdturn.com/wiki/Lake_Erie_Speedway"
+  ],
+  "match": {
+   "name": "Lake Erie Speedway",
+   "region": "PA",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Jennerstown Speedway": {
+  "opened": 1927,
+  "closed": null,
+  "history": [
+   {
+    "year": 2004,
+    "change": "Repaved with polymer surface"
+   },
+   {
+    "year": 2009,
+    "change": "Closed 2009-2013"
+   },
+   {
+    "year": 2014,
+    "change": "Reopened May 2014"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Jennerstown_Speedway_Complex",
+   "https://www.thethirdturn.com/wiki/Jennerstown_Speedway"
+  ],
+  "match": {
+   "name": "Jennerstown Speedway",
+   "region": "PA",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  },
+  "opened_db_value": null,
+  "dormant": [
+   [
+    2010,
+    2013
+   ]
+  ]
+ },
+ "Chemung Speedrome": {
+  "opened": 1951,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Chemung_Speedrome",
+   "https://www.thethirdturn.com/wiki/Chemung_Speedrome"
+  ],
+  "match": {
+   "name": "Chemung Speedrome",
+   "region": "NY",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Kevin Harvick's Kern Raceway": {
+  "opened": 2013,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Kevin_Harvick%27s_Kern_Raceway"
+  ],
+  "match": {
+   "name": "Kevin Harvick's Kern Raceway",
+   "region": "CA",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Madera Speedway": {
+  "opened": 1972,
+  "closed": null,
+  "history": [
+   {
+    "year": 2006,
+    "change": "Taken over by Kenny Shepherd and renovated amid closure threats"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Madera_Speedway",
+   "https://www.thethirdturn.com/wiki/Madera_Speedway"
+  ],
+  "match": {
+   "name": "Madera Speedway",
+   "region": "CA",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "All American Speedway": {
+  "opened": 1955,
+  "closed": null,
+  "history": [
+   {
+    "year": 2007,
+    "change": "Track reconfigured"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/All_American_Speedway",
+   "https://www.thethirdturn.com/wiki/All_American_Speedway"
+  ],
+  "match": {
+   "name": "All American Speedway",
+   "region": "CA",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Stockton 99 Speedway": {
+  "opened": 1947,
+  "closed": null,
+  "history": [
+   {
+    "year": 2006,
+    "change": "Closed after sale to developer"
+   },
+   {
+    "year": 2009,
+    "change": "Reopened under lease"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Stockton_99_Speedway",
+   "https://www.thethirdturn.com/wiki/Stockton_99_Speedway"
+  ],
+  "match": {
+   "name": "Stockton 99 Speedway",
+   "region": "CA",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  },
+  "dormant": [
+   [
+    2007,
+    2008
+   ]
+  ]
+ },
+ "Tucson Speedway": {
+  "opened": 1968,
+  "closed": null,
+  "history": [
+   {
+    "year": 2013,
+    "change": "Reopened as Tucson Speedway (formerly Tucson Raceway Park, a NASCAR Truck venue 1995-1997)"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Tucson_Speedway",
+   "https://www.thethirdturn.com/wiki/Tucson_Speedway"
+  ],
+  "match": {
+   "name": "Tucson Speedway",
+   "region": "AZ",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Meridian Speedway": {
+  "opened": 1951,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Meridian_Speedway_%28Idaho%29",
+   "https://www.thethirdturn.com/wiki/Meridian_Speedway"
+  ],
+  "match": {
+   "name": "Meridian Speedway",
+   "region": "ID",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Evergreen Speedway": {
+  "opened": 1955,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Evergreen_Speedway",
+   "https://www.thethirdturn.com/wiki/Evergreen_Speedway"
+  ],
+  "match": {
+   "name": "Evergreen Speedway",
+   "region": "WA",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Stateline Speedway (ID)": {
+  "opened": 1974,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://www.thethirdturn.com/wiki/Stateline_Speedway"
+  ],
+  "match": {
+   "name": "Stateline Speedway",
+   "region": "ID",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Qlispe Raceway Park": {
+  "opened": 1974,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Qlisp%C3%A9_Raceway_Park",
+   "https://www.thethirdturn.com/wiki/Spokane_Super_Oval"
+  ],
+  "match": {
+   "name": "Qlispe Raceway Park",
+   "region": "WA",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Colorado National Speedway": {
+  "opened": 1965,
+  "closed": null,
+  "history": [
+   {
+    "year": 2019,
+    "change": "Repaved"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Colorado_National_Speedway",
+   "https://www.thethirdturn.com/wiki/Colorado_National_Speedway"
+  ],
+  "match": {
+   "name": "Colorado National Speedway",
+   "region": "CO",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "The Bullring at Las Vegas Motor Speedway": {
+  "opened": 1985,
+  "closed": null,
+  "history": [
+   {
+    "year": 2000,
+    "change": "Oval modified and renamed \"The Bullring\""
+   },
+   {
+    "year": 2026,
+    "change": "Major renovation incl. repave"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/The_Bullring_at_Las_Vegas_Motor_Speedway"
+  ],
+  "match": {
+   "name": "The Bullring at Las Vegas Motor Speedway",
+   "region": "NV",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "South Sound Speedway": {
+  "opened": 1970,
+  "closed": null,
+  "history": [
+   {
+    "year": 2001,
+    "change": "Repaved; backstretch wall moved back"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/South_Sound_Speedway",
+   "https://www.thethirdturn.com/wiki/South_Sound_Speedway"
+  ],
+  "match": {
+   "name": "South Sound Speedway",
+   "region": "WA",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  },
+  "opened_db_value": null
+ },
+ "Tri-City Raceway": {
+  "opened": 1968,
+  "closed": null,
+  "history": [
+   {
+    "year": 2004,
+    "change": "Closed for auto racing after 2004"
+   },
+   {
+    "year": 2021,
+    "change": "Reopened October 2021 as Red Mountain Event Center"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Tri-City_Raceway",
+   "https://www.thethirdturn.com/wiki/Tri-City_Raceway"
+  ],
+  "match": {
+   "name": "Tri-City Raceway",
+   "region": "WA",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  },
+  "note": "Closed 2005-2020",
+  "dormant": [
+   [
+    2005,
+    2020
+   ]
+  ]
+ },
+ "Grandview Speedway": {
+  "opened": 1963,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Grandview_Speedway",
+   "https://www.thethirdturn.com/wiki/Grandview_Speedway"
+  ],
+  "match": {
+   "name": "Grandview Speedway",
+   "region": "PA",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Hagerstown Speedway": {
+  "opened": 1948,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Hagerstown_Speedway",
+   "https://www.thethirdturn.com/wiki/Hagerstown_Speedway"
+  ],
+  "match": {
+   "name": "Hagerstown Speedway",
+   "region": "MD",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "BAPS Motor Speedway": {
+  "opened": 1954,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://www.thethirdturn.com/wiki/BAPS_Motor_Speedway"
+  ],
+  "match": {
+   "name": "BAPS Motor Speedway",
+   "region": "PA",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Potomac Speedway": {
+  "opened": 1973,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Potomac_Speedway",
+   "https://www.thethirdturn.com/wiki/Potomac_Speedway"
+  ],
+  "match": {
+   "name": "Potomac Speedway",
+   "region": "MD",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Georgetown Speedway": {
+  "opened": 1949,
+  "closed": null,
+  "history": [
+   {
+    "year": 2006,
+    "change": "Reopened May 2006 after sitting idle for years"
+   },
+   {
+    "year": 2015,
+    "change": "Slightly shortened by reconfiguring turns 1-2"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Georgetown_Speedway",
+   "https://www.thethirdturn.com/wiki/Georgetown_Speedway"
+  ],
+  "match": {
+   "name": "Georgetown Speedway",
+   "region": "DE",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Bridgeport Motorsports Park": {
+  "opened": 2020,
+  "closed": null,
+  "history": [
+   {
+    "year": 2018,
+    "change": "Original 5/8-mile Bridgeport Speedway oval closed for reconfiguration"
+   },
+   {
+    "year": 2020,
+    "change": "Reopened as 0.4-mi Bridgeport Motorsports Park"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Bridgeport_Motorsports_Park",
+   "https://www.thethirdturn.com/wiki/Bridgeport_Motorsports_Park"
+  ],
+  "match": {
+   "name": "Bridgeport Motorsports Park",
+   "region": "NJ",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  },
+  "note": "opened refers to current reconfigured oval; predecessor Bridgeport Speedway raced on a 5/8-mile oval before 2018",
+  "opened_db_value": null
+ },
+ "Fonda Speedway": {
+  "opened": 1953,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Fonda_Speedway",
+   "https://www.thethirdturn.com/wiki/Fonda_Speedway"
+  ],
+  "match": {
+   "name": "Fonda Speedway",
+   "region": "NY",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Weedsport Speedway": {
+  "opened": 1955,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Weedsport_Speedway",
+   "https://www.thethirdturn.com/wiki/Weedsport_Speedway"
+  ],
+  "match": {
+   "name": "Weedsport Speedway",
+   "region": "NY",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Utica-Rome Speedway": {
+  "opened": 1961,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Utica-Rome_Speedway",
+   "https://www.thethirdturn.com/wiki/Utica-Rome_Speedway"
+  ],
+  "match": {
+   "name": "Utica-Rome Speedway",
+   "region": "NY",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Lebanon Valley Speedway": {
+  "opened": 1953,
+  "closed": null,
+  "history": [
+   {
+    "year": 1995,
+    "change": "Temporary 0.2-mi paved oval removed (May 1995)"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Lebanon_Valley_Speedway",
+   "https://www.thethirdturn.com/wiki/Lebanon_Valley_Speedway"
+  ],
+  "match": {
+   "name": "Lebanon Valley Speedway",
+   "region": "NY",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Orange County Fair Speedway": {
+  "opened": 1919,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Orange_County_Fair_Speedway",
+   "https://www.thethirdturn.com/wiki/Orange_County_Fair_Speedway"
+  ],
+  "match": {
+   "name": "Orange County Fair Speedway",
+   "region": "NY",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Ransomville Speedway": {
+  "opened": 1958,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Ransomville_Speedway",
+   "https://www.thethirdturn.com/wiki/Ransomville_Speedway"
+  ],
+  "match": {
+   "name": "Ransomville Speedway",
+   "region": "NY",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Brewerton Speedway": {
+  "opened": 1949,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Brewerton_Speedway",
+   "https://www.thethirdturn.com/wiki/Brewerton_Speedway"
+  ],
+  "match": {
+   "name": "Brewerton Speedway",
+   "region": "NY",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Can-Am Speedway": {
+  "opened": 1974,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Can-Am_Speedway",
+   "https://www.thethirdturn.com/wiki/Can-Am_Motorsports_Park"
+  ],
+  "match": {
+   "name": "Can-Am Speedway",
+   "region": "NY",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Land of Legends Raceway": {
+  "opened": 1953,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Land_of_Legends_Raceway",
+   "https://www.thethirdturn.com/wiki/Land_of_Legends_Raceway"
+  ],
+  "match": {
+   "name": "Land of Legends Raceway",
+   "region": "NY",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Stateline Speedway (NY)": {
+  "opened": 1956,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Stateline_Speedway",
+   "https://www.thethirdturn.com/wiki/New_Stateline_Speedway"
+  ],
+  "match": {
+   "name": "Stateline Speedway",
+   "region": "NY",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Devil's Bowl Speedway": {
+  "opened": 1967,
+  "closed": null,
+  "history": [
+   {
+    "year": 2010,
+    "change": "Paved (asphalt 2010-2017)"
+   },
+   {
+    "year": 2018,
+    "change": "Converted back to clay"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Devil%27s_Bowl_Speedway",
+   "https://www.thethirdturn.com/wiki/Devil%27s_Bowl_Speedway_%28VT%29"
+  ],
+  "match": {
+   "name": "Devil's Bowl Speedway",
+   "region": "VT",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Sharon Speedway": {
+  "opened": 1929,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Sharon_Speedway",
+   "https://www.thethirdturn.com/wiki/Sharon_Speedway"
+  ],
+  "match": {
+   "name": "Sharon Speedway",
+   "region": "OH",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Limaland Motorsports Park": {
+  "opened": 1935,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://www.thethirdturn.com/wiki/Limaland_Motorsports_Park"
+  ],
+  "match": {
+   "name": "Limaland Motorsports Park",
+   "region": "OH",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Fremont Speedway": {
+  "opened": 1951,
+  "closed": null,
+  "history": [
+   {
+    "year": 2000,
+    "change": "Reopened with improvements under new owner"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Fremont_Speedway",
+   "https://www.thethirdturn.com/wiki/Fremont_Speedway"
+  ],
+  "match": {
+   "name": "Fremont Speedway",
+   "region": "OH",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Portsmouth Raceway Park": {
+  "opened": 1990,
+  "closed": null,
+  "history": [
+   {
+    "year": 2000,
+    "change": "Lengthened from 1/3 mile to 3/8 mile"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Portsmouth_Raceway_Park",
+   "https://www.thethirdturn.com/wiki/Portsmouth_Raceway_Park"
+  ],
+  "match": {
+   "name": "Portsmouth Raceway Park",
+   "region": "OH",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Mansfield Speedway": {
+  "opened": 1959,
+  "closed": null,
+  "history": [
+   {
+    "year": 1999,
+    "change": "Reopened as paved Mansfield Motorsports Park (0.44-mi asphalt)"
+   },
+   {
+    "year": 2004,
+    "change": "NASCAR Truck Series races 2004-2008; ARCA 2009-2010"
+   },
+   {
+    "year": 2010,
+    "change": "Closed"
+   },
+   {
+    "year": 2017,
+    "change": "Converted from asphalt to dirt"
+   },
+   {
+    "year": 2019,
+    "change": "Closed after the 2019 Dirt Million"
+   },
+   {
+    "year": 2026,
+    "change": "Reopened (dirt) under Matt Tifft"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Mansfield_Speedway",
+   "https://www.thethirdturn.com/wiki/Mansfield_Motor_Speedway"
+  ],
+  "match": {
+   "name": "Mansfield Speedway",
+   "region": "OH",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  },
+  "note": "Paved 1999-2016; dirt before 1997 and from 2017. Dormant 2011-2016 and 2020-2025",
+  "dormant": [
+   [
+    2011,
+    2016
+   ],
+   [
+    2020,
+    2025
+   ]
+  ]
+ },
+ "Gas City I-69 Speedway": {
+  "opened": null,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://www.thethirdturn.com/wiki/Gas_City_I-69_Speedway"
+  ],
+  "match": {
+   "name": "Gas City I-69 Speedway",
+   "region": "IN",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Tri-State Speedway": {
+  "opened": 1957,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Tri-State_Speedway_%28Indiana%29",
+   "https://www.thethirdturn.com/wiki/Tri-State_Speedway_%28IN%29"
+  ],
+  "match": {
+   "name": "Tri-State Speedway",
+   "region": "IN",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Macon Speedway": {
+  "opened": 1946,
+  "closed": null,
+  "history": [
+   {
+    "year": 2006,
+    "change": "Season ended early due to costs"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Macon_Speedway",
+   "https://www.thethirdturn.com/wiki/Macon_Speedway"
+  ],
+  "match": {
+   "name": "Macon Speedway",
+   "region": "IL",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Peoria Speedway": {
+  "opened": 1948,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://www.thethirdturn.com/wiki/Peoria_Speedway"
+  ],
+  "match": {
+   "name": "Peoria Speedway",
+   "region": "IL",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Boone Speedway": {
+  "opened": 1967,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Boone_Speedway",
+   "https://www.thethirdturn.com/wiki/Boone_Speedway"
+  ],
+  "match": {
+   "name": "Boone Speedway",
+   "region": "IA",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Davenport Speedway": {
+  "opened": 1902,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Davenport_Speedway",
+   "https://www.thethirdturn.com/wiki/Davenport_Speedway"
+  ],
+  "match": {
+   "name": "Davenport Speedway",
+   "region": "IA",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  },
+  "opened_db_value": null
+ },
+ "34 Raceway": {
+  "opened": 1966,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://www.thethirdturn.com/wiki/34_Raceway"
+  ],
+  "match": {
+   "name": "34 Raceway",
+   "region": "IA",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Deer Creek Speedway": {
+  "opened": 1996,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://www.thethirdturn.com/wiki/Deer_Creek_Speedway"
+  ],
+  "match": {
+   "name": "Deer Creek Speedway",
+   "region": "MN",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Ogilvie Raceway": {
+  "opened": 2009,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Ogilvie_Raceway",
+   "https://www.thethirdturn.com/wiki/Ogilvie_Raceway"
+  ],
+  "match": {
+   "name": "Ogilvie Raceway",
+   "region": "MN",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Angell Park Speedway": {
+  "opened": 1936,
+  "closed": null,
+  "history": [
+   {
+    "year": 2020,
+    "change": "Season cancelled (COVID-19)"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Angell_Park_Speedway",
+   "https://www.thethirdturn.com/wiki/Angell_Park_Speedway"
+  ],
+  "match": {
+   "name": "Angell Park Speedway",
+   "region": "WI",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Missouri State Fair Speedway": {
+  "opened": 1914,
+  "closed": null,
+  "history": [
+   {
+    "year": 1998,
+    "change": "Mile oval abandoned; half-mile remains"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Missouri_State_Fair_Speedway",
+   "https://www.thethirdturn.com/wiki/Missouri_State_Fair_Speedway"
+  ],
+  "match": {
+   "name": "Missouri State Fair Speedway",
+   "region": "MO",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Dodge City Raceway Park": {
+  "opened": 2000,
+  "closed": null,
+  "history": [
+   {
+    "year": 2004,
+    "change": "Converted from pavement (2000-2003) to dirt"
+   }
+  ],
+  "sources": [
+   "https://www.thethirdturn.com/wiki/Dodge_City_Raceway_Park"
+  ],
+  "match": {
+   "name": "Dodge City Raceway Park",
+   "region": "KS",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Belleville High Banks": {
+  "opened": 1910,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Belleville_High_Banks",
+   "https://www.thethirdturn.com/wiki/Belleville_High_Banks"
+  ],
+  "match": {
+   "name": "Belleville High Banks",
+   "region": "KS",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "81 Speedway": {
+  "opened": 1954,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://www.thethirdturn.com/wiki/81_Speedway"
+  ],
+  "match": {
+   "name": "81 Speedway",
+   "region": "KS",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Lakeside Speedway": {
+  "opened": 1989,
+  "closed": null,
+  "history": [
+   {
+    "year": 2000,
+    "change": "Converted from 0.5-mi paved to high-banked 0.4-mi dirt"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Lakeside_Speedway",
+   "https://www.thethirdturn.com/wiki/Lakeside_Speedway"
+  ],
+  "match": {
+   "name": "Lakeside Speedway",
+   "region": "KS",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Eagle Raceway": {
+  "opened": 1963,
+  "closed": null,
+  "history": [
+   {
+    "year": 2006,
+    "change": "Closed after 2005 season, then leased and reopened for 2006"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Eagle_Raceway",
+   "https://www.thethirdturn.com/wiki/Eagle_Raceway"
+  ],
+  "match": {
+   "name": "Eagle Raceway",
+   "region": "NE",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Junction Motor Speedway": {
+  "opened": 2003,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Junction_Motor_Speedway",
+   "https://www.thethirdturn.com/wiki/Junction_Motor_Speedway"
+  ],
+  "match": {
+   "name": "Junction Motor Speedway",
+   "region": "NE",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Creek County Speedway": {
+  "opened": 1986,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://www.thethirdturn.com/wiki/Creek_County_Speedway"
+  ],
+  "match": {
+   "name": "Creek County Speedway",
+   "region": "OK",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Cotton Bowl Speedway": {
+  "opened": 2012,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://www.thethirdturn.com/wiki/Cotton_Bowl_Speedway"
+  ],
+  "match": {
+   "name": "Cotton Bowl Speedway",
+   "region": "TX",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Battleground Speedway": {
+  "opened": 1984,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://www.thethirdturn.com/wiki/Battleground_Speedway"
+  ],
+  "match": {
+   "name": "Battleground Speedway",
+   "region": "TX",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Dixie Speedway": {
+  "opened": 1968,
+  "closed": null,
+  "history": [
+   {
+    "year": 2020,
+    "change": "Closed (COVID-19 / ownership)"
+   },
+   {
+    "year": 2024,
+    "change": "Reopened April 2024"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Dixie_Speedway",
+   "https://www.thethirdturn.com/wiki/Dixie_Speedway"
+  ],
+  "match": {
+   "name": "Dixie Speedway",
+   "region": "GA",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  },
+  "dormant": [
+   [
+    2021,
+    2023
+   ]
+  ]
+ },
+ "Senoia Raceway": {
+  "opened": 1969,
+  "closed": null,
+  "history": [
+   {
+    "year": 2010,
+    "change": "Converted back to dirt (paved 1989-2009)"
+   }
+  ],
+  "sources": [
+   "https://www.thethirdturn.com/wiki/Senoia_Raceway"
+  ],
+  "match": {
+   "name": "Senoia Raceway",
+   "region": "GA",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Smoky Mountain Speedway": {
+  "opened": 1962,
+  "closed": null,
+  "history": [
+   {
+    "year": 2023,
+    "change": "Track shortened"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Smoky_Mountain_Speedway",
+   "https://www.thethirdturn.com/wiki/Smoky_Mountain_Speedway"
+  ],
+  "match": {
+   "name": "Smoky Mountain Speedway",
+   "region": "TN",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Volunteer Speedway": {
+  "opened": 1974,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Volunteer_Speedway",
+   "https://www.thethirdturn.com/wiki/Volunteer_Speedway"
+  ],
+  "match": {
+   "name": "Volunteer Speedway",
+   "region": "TN",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "411 Motor Speedway": {
+  "opened": 1969,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://www.thethirdturn.com/wiki/411_Motor_Speedway"
+  ],
+  "match": {
+   "name": "411 Motor Speedway",
+   "region": "TN",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Cherokee Speedway": {
+  "opened": 1957,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://www.thethirdturn.com/wiki/Cherokee_Speedway"
+  ],
+  "match": {
+   "name": "Cherokee Speedway",
+   "region": "SC",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Lavonia Speedway": {
+  "opened": 1971,
+  "closed": null,
+  "history": [
+   {
+    "year": 1996,
+    "change": "Returned to dirt (paved 1990-1995)"
+   },
+   {
+    "year": 2010,
+    "change": "Closed"
+   },
+   {
+    "year": 2013,
+    "change": "Reopened"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Lavonia_Speedway",
+   "https://www.thethirdturn.com/wiki/Lavonia_Speedway"
+  ],
+  "match": {
+   "name": "Lavonia Speedway",
+   "region": "GA",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  },
+  "dormant": [
+   [
+    2011,
+    2012
+   ]
+  ]
+ },
+ "Magnolia Motor Speedway": {
+  "opened": 2004,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://www.thethirdturn.com/wiki/Magnolia_Motor_Speedway"
+  ],
+  "match": {
+   "name": "Magnolia Motor Speedway",
+   "region": "MS",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "North Alabama Speedway": {
+  "opened": 1977,
+  "closed": null,
+  "history": [
+   {
+    "year": 1995,
+    "change": "Reopened (previously ran 1990-1993)"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/North_Alabama_Speedway",
+   "https://www.thethirdturn.com/wiki/North_Alabama_Speedway"
+  ],
+  "match": {
+   "name": "North Alabama Speedway",
+   "region": "AL",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Batesville Motor Speedway": {
+  "opened": 1971,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://www.thethirdturn.com/wiki/Batesville_Motor_Speedway"
+  ],
+  "match": {
+   "name": "Batesville Motor Speedway",
+   "region": "AR",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Boothill Speedway": {
+  "opened": 1973,
+  "closed": null,
+  "history": [
+   {
+    "year": 2010,
+    "change": "Reduced from 3/8-mile to 1/4-mile dirt oval"
+   }
+  ],
+  "sources": [
+   "https://www.thethirdturn.com/wiki/Boothill_Speedway"
+  ],
+  "match": {
+   "name": "Boothill Speedway",
+   "region": "LA",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "311 Speedway": {
+  "opened": 1965,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://www.thethirdturn.com/wiki/311_Motor_Speedway"
+  ],
+  "match": {
+   "name": "311 Speedway",
+   "region": "NC",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Winchester Speedway (VA)": {
+  "opened": 1936,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://www.thethirdturn.com/wiki/Winchester_Speedway_%28VA%29"
+  ],
+  "match": {
+   "name": "Winchester Speedway",
+   "region": "VA",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Tyler County Speedway": {
+  "opened": 1974,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Tyler_County_Speedway",
+   "https://www.thethirdturn.com/wiki/Tyler_County_Speedway"
+  ],
+  "match": {
+   "name": "Tyler County Speedway",
+   "region": "WV",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Placerville Speedway": {
+  "opened": 1965,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Placerville_Speedway",
+   "https://www.thethirdturn.com/wiki/Placerville_Speedway"
+  ],
+  "match": {
+   "name": "Placerville Speedway",
+   "region": "CA",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Ventura Raceway": {
+  "opened": 1969,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Ventura_Raceway",
+   "https://www.thethirdturn.com/wiki/Ventura_Raceway"
+  ],
+  "match": {
+   "name": "Ventura Raceway",
+   "region": "CA",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Watsonville Speedway": {
+  "opened": 1960,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Watsonville_Speedway",
+   "https://www.thethirdturn.com/wiki/Ocean_Speedway"
+  ],
+  "match": {
+   "name": "Watsonville Speedway",
+   "region": "CA",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Santa Maria Speedway": {
+  "opened": 1964,
+  "closed": null,
+  "history": [
+   {
+    "year": 2022,
+    "change": "Closed November 2022"
+   },
+   {
+    "year": 2024,
+    "change": "Reopened May 2024 under new ownership"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Santa_Maria_Speedway",
+   "https://www.thethirdturn.com/wiki/Santa_Maria_Raceway"
+  ],
+  "match": {
+   "name": "Santa Maria Speedway",
+   "region": "CA",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  },
+  "dormant": [
+   [
+    2023,
+    2023
+   ]
+  ]
+ },
+ "Willamette Speedway": {
+  "opened": 1965,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://www.thethirdturn.com/wiki/Willamette_Speedway"
+  ],
+  "match": {
+   "name": "Willamette Speedway",
+   "region": "OR",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Southern Oregon Speedway": {
+  "opened": 1996,
+  "closed": null,
+  "history": [
+   {
+    "year": 2024,
+    "change": "Revived under new management after dormancy"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Southern_Oregon_Speedway",
+   "https://www.thethirdturn.com/wiki/Southern_Oregon_Speedway"
+  ],
+  "match": {
+   "name": "Southern Oregon Speedway",
+   "region": "OR",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "I-76 Speedway": {
+  "opened": 1968,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://www.thethirdturn.com/wiki/I-76_Speedway"
+  ],
+  "match": {
+   "name": "I-76 Speedway",
+   "region": "CO",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Summit Point Motorsports Park": {
+  "opened": 1969,
+  "closed": null,
+  "history": [
+   {
+    "year": 2017,
+    "change": "Main circuit repaved"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Summit_Point_Motorsports_Park",
+   "https://www.thethirdturn.com/wiki/Summit_Point_Motorsports_Park"
+  ],
+  "match": {
+   "name": "Summit Point Motorsports Park",
+   "region": "WV",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "GingerMan Raceway": {
+  "opened": 1996,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Gingerman_Raceway"
+  ],
+  "match": {
+   "name": "GingerMan Raceway",
+   "region": "MI",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Blackhawk Farms Raceway": {
+  "opened": 1967,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Blackhawk_Farms_Raceway",
+   "https://www.thethirdturn.com/wiki/Blackhawk_Farms_Raceway"
+  ],
+  "match": {
+   "name": "Blackhawk Farms Raceway",
+   "region": "IL",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Autobahn Country Club": {
+  "opened": 2004,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Autobahn_Country_Club",
+   "https://www.thethirdturn.com/wiki/Autobahn_Country_Club"
+  ],
+  "match": {
+   "name": "Autobahn Country Club",
+   "region": "IL",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Hallett Motor Racing Circuit": {
+  "opened": 1976,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Hallett_Motor_Racing_Circuit"
+  ],
+  "match": {
+   "name": "Hallett Motor Racing Circuit",
+   "region": "OK",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Thunderhill Raceway Park": {
+  "opened": 1993,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Thunderhill_Raceway_Park",
+   "https://www.thethirdturn.com/wiki/Thunderhill_Raceway_Park"
+  ],
+  "match": {
+   "name": "Thunderhill Raceway Park",
+   "region": "CA",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Buttonwillow Raceway Park": {
+  "opened": 1995,
+  "closed": null,
+  "history": [
+   {
+    "year": 2014,
+    "change": "Repaved July 2014"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Buttonwillow_Raceway_Park",
+   "https://www.thethirdturn.com/wiki/Buttonwillow_Raceway_Park"
+  ],
+  "match": {
+   "name": "Buttonwillow Raceway Park",
+   "region": "CA",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Willow Springs International Raceway": {
+  "opened": 1953,
+  "closed": null,
+  "history": [
+   {
+    "year": 2021,
+    "change": "Repaved late 2021"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Willow_Springs_International_Motorsports_Park",
+   "https://www.thethirdturn.com/wiki/Willow_Springs_International_Raceway"
+  ],
+  "match": {
+   "name": "Willow Springs International Raceway",
+   "region": "CA",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Pacific Raceways": {
+  "opened": 1960,
+  "closed": null,
+  "history": [
+   {
+    "year": 2002,
+    "change": "Circuit revised (2002-present layout)"
+   },
+   {
+    "year": 2002,
+    "change": "Renamed from Seattle International Raceways"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Pacific_Raceways",
+   "https://www.thethirdturn.com/wiki/Pacific_Raceways"
+  ],
+  "match": {
+   "name": "Pacific Raceways",
+   "region": "WA",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Ridge Motorsports Park": {
+  "opened": 2012,
+  "closed": null,
+  "history": [],
+  "sources": [],
+  "match": {
+   "name": "Ridge Motorsports Park",
+   "region": "WA",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Oregon Raceway Park": {
+  "opened": 2008,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Oregon_Raceway_Park"
+  ],
+  "match": {
+   "name": "Oregon Raceway Park",
+   "region": "OR",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "NCM Motorsports Park": {
+  "opened": 2014,
+  "closed": null,
+  "history": [],
+  "sources": [],
+  "match": {
+   "name": "NCM Motorsports Park",
+   "region": "KY",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Carolina Motorsports Park": {
+  "opened": 1999,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Carolina_Motorsports_Park"
+  ],
+  "match": {
+   "name": "Carolina Motorsports Park",
+   "region": "SC",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Roebling Road Raceway": {
+  "opened": 1959,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Roebling_Road_Raceway"
+  ],
+  "match": {
+   "name": "Roebling Road Raceway",
+   "region": "GA",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Atlanta Motorsports Park": {
+  "opened": 2013,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Atlanta_Motorsports_Park"
+  ],
+  "match": {
+   "name": "Atlanta Motorsports Park",
+   "region": "GA",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Harris Hill Raceway": {
+  "opened": 2008,
+  "closed": null,
+  "history": [
+   {
+    "year": 2020,
+    "change": "Repaved; section between turns 6-7 moved for FM 110 construction"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Harris_Hill_Raceway"
+  ],
+  "match": {
+   "name": "Harris Hill Raceway",
+   "region": "TX",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "MSR Houston": {
+  "opened": 2005,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://en.wikipedia.org/wiki/MSR_Houston",
+   "https://www.thethirdturn.com/wiki/MSR_Houston"
+  ],
+  "match": {
+   "name": "MSR Houston",
+   "region": "TX",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Eagles Canyon Raceway": {
+  "opened": 2007,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Eagles_Canyon_Raceway",
+   "https://www.thethirdturn.com/wiki/Eagles_Canyon_Raceway"
+  ],
+  "match": {
+   "name": "Eagles Canyon Raceway",
+   "region": "TX",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "MotorSport Ranch": {
+  "opened": 1999,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://en.wikipedia.org/wiki/MotorSport_Ranch"
+  ],
+  "match": {
+   "name": "MotorSport Ranch",
+   "region": "TX",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "High Plains Raceway": {
+  "opened": 2009,
+  "closed": null,
+  "history": [],
+  "sources": [],
+  "match": {
+   "name": "High Plains Raceway",
+   "region": "CO",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Motorsport Park Hastings": {
+  "opened": 2006,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Motorsport_Park_Hastings"
+  ],
+  "match": {
+   "name": "Motorsport Park Hastings",
+   "region": "NE",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Brainerd International Raceway": {
+  "opened": 1968,
+  "closed": null,
+  "history": [
+   {
+    "year": 2003,
+    "change": "Completely resurfaced"
+   },
+   {
+    "year": 2008,
+    "change": "2.5-mi Competition road course introduced (3.1-mi Donnybrooke course retained)"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Brainerd_International_Raceway",
+   "https://www.thethirdturn.com/wiki/Brainerd_International_Raceway"
+  ],
+  "match": {
+   "name": "Brainerd International Raceway",
+   "region": "MN",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Heartland Motorsports Park": {
+  "opened": 1989,
+  "closed": null,
+  "history": [
+   {
+    "year": 2004,
+    "change": "Road course revised"
+   },
+   {
+    "year": 2016,
+    "change": "Full repave"
+   },
+   {
+    "year": 2023,
+    "change": "Closed"
+   },
+   {
+    "year": 2026,
+    "change": "Announced reopening in 2026"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Heartland_Motorsports_Park",
+   "https://www.thethirdturn.com/wiki/Heartland_Motorsports_Park"
+  ],
+  "match": {
+   "name": "Heartland Motorsports Park",
+   "region": "KS",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  },
+  "note": "Formerly Heartland Park Topeka; hosted NASCAR Truck races on the road course in the 1990s (general knowledge)",
+  "dormant": [
+   [
+    2024,
+    2025
+   ]
+  ]
+ },
+ "Grattan Raceway": {
+  "opened": 1962,
+  "closed": null,
+  "history": [],
+  "sources": [],
+  "match": {
+   "name": "Grattan Raceway",
+   "region": "MI",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Waterford Hills Road Racing": {
+  "opened": 1958,
+  "closed": null,
+  "history": [],
+  "sources": [],
+  "match": {
+   "name": "Waterford Hills Road Racing",
+   "region": "MI",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "New Jersey Motorsports Park": {
+  "opened": 2008,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://en.wikipedia.org/wiki/New_Jersey_Motorsports_Park",
+   "https://www.thethirdturn.com/wiki/New_Jersey_Motorsports_Park"
+  ],
+  "match": {
+   "name": "New Jersey Motorsports Park",
+   "region": "NJ",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Palmer Motorsports Park": {
+  "opened": 2015,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Palmer_Motorsports_Park"
+  ],
+  "match": {
+   "name": "Palmer Motorsports Park",
+   "region": "MA",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Club Motorsports": {
+  "opened": null,
+  "closed": null,
+  "history": [],
+  "sources": [],
+  "match": {
+   "name": "Club Motorsports",
+   "region": "NH",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Utah Motorsports Campus": {
+  "opened": 2006,
+  "closed": null,
+  "history": [
+   {
+    "year": 2015,
+    "change": "Renamed from Miller Motorsports Park"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Utah_Motorsports_Campus",
+   "https://www.thethirdturn.com/wiki/Utah_Motorsports_Campus"
+  ],
+  "match": {
+   "name": "Utah Motorsports Campus",
+   "region": "UT",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Nelson Ledges Road Course": {
+  "opened": 1962,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Nelson_Ledges_Road_Course",
+   "https://www.thethirdturn.com/wiki/Nelson_Ledges_Road_Course"
+  ],
+  "match": {
+   "name": "Nelson Ledges Road Course",
+   "region": "OH",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  },
+  "note": "Wikipedia: 1958 dirt track, 1962 paved road course",
+  "opened_db_value": null
+ },
+ "Putnam Park Road Course": {
+  "opened": null,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://www.thethirdturn.com/wiki/Putnam_Park_Road_Course"
+  ],
+  "match": {
+   "name": "Putnam Park Road Course",
+   "region": "IN",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Arroyo Seco Raceway": {
+  "opened": null,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Arroyo_Seco_Raceway"
+  ],
+  "match": {
+   "name": "Arroyo Seco Raceway",
+   "region": "NM",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Chuckwalla Valley Raceway": {
+  "opened": 2010,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Chuckwalla_Valley_Raceway"
+  ],
+  "match": {
+   "name": "Chuckwalla Valley Raceway",
+   "region": "CA",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Spring Mountain Motor Resort": {
+  "opened": 2004,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Spring_Mountain_Motorsports_Ranch"
+  ],
+  "match": {
+   "name": "Spring Mountain Motor Resort",
+   "region": "NV",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Monticello Motor Club": {
+  "opened": 2008,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Monticello_Motor_Club"
+  ],
+  "match": {
+   "name": "Monticello Motor Club",
+   "region": "NY",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Raceway Park of the Midlands": {
+  "opened": 2002,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Mid-America_Motorplex",
+   "https://www.thethirdturn.com/wiki/Raceway_Park_of_the_Midlands"
+  ],
+  "match": {
+   "name": "Raceway Park of the Midlands",
+   "region": "IA",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Firebird Motorsports Park": {
+  "opened": 1983,
+  "closed": null,
+  "history": [
+   {
+    "year": 2013,
+    "change": "Closed (Firebird International Raceway)"
+   },
+   {
+    "year": 2014,
+    "change": "Reopened February 2014 as Wild Horse Pass Motorsports Park"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Firebird_Motorsports_Park"
+  ],
+  "match": {
+   "name": "Firebird Motorsports Park",
+   "region": "AZ",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Ozarks International Raceway": {
+  "opened": 2022,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Ozarks_International_Raceway"
+  ],
+  "match": {
+   "name": "Ozarks International Raceway",
+   "region": "MO",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "New Castle Motorsports Park": {
+  "opened": null,
+  "closed": null,
+  "history": [],
+  "sources": [],
+  "match": {
+   "name": "New Castle Motorsports Park",
+   "region": "IN",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Trackhouse Motorplex": {
+  "opened": null,
+  "closed": null,
+  "history": [],
+  "sources": [],
+  "match": {
+   "name": "Trackhouse Motorplex",
+   "region": "NC",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Orlando Kart Center": {
+  "opened": null,
+  "closed": null,
+  "history": [],
+  "sources": [],
+  "match": {
+   "name": "Orlando Kart Center",
+   "region": "FL",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Washington Quarter Midget Association Track": {
+  "opened": null,
+  "closed": null,
+  "history": [],
+  "sources": [],
+  "match": {
+   "name": "Washington Quarter Midget Association Track",
+   "region": "WA",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "North Carolina Quarter Midget Association Track": {
+  "opened": null,
+  "closed": null,
+  "history": [],
+  "sources": [],
+  "match": {
+   "name": "North Carolina Quarter Midget Association Track",
+   "region": "NC",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Tri-Valley Quarter Midget Association Track": {
+  "opened": null,
+  "closed": null,
+  "history": [],
+  "sources": [],
+  "match": {
+   "name": "Tri-Valley Quarter Midget Association Track",
+   "region": "CA",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Keystone State Quarter Midget Racing Club Track": {
+  "opened": null,
+  "closed": null,
+  "history": [],
+  "sources": [],
+  "match": {
+   "name": "Keystone State Quarter Midget Racing Club Track",
+   "region": "PA",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Sunset Speedway": {
+  "opened": 1968,
+  "closed": 2025,
+  "history": [
+   {
+    "year": 2015,
+    "change": "Took over NASCAR weekly sanction after Barrie Speedway closed"
+   },
+   {
+    "year": 2025,
+    "change": "Listed as closed"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Sunset_Speedway_%28Ontario%29",
+   "https://www.thethirdturn.com/wiki/Sunset_Speedway"
+  ],
+  "match": {
+   "name": "Sunset Speedway",
+   "region": "ON",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Flamboro Speedway": {
+  "opened": 1962,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Flamboro_Speedway",
+   "https://www.thethirdturn.com/wiki/Flamboro_Speedway"
+  ],
+  "match": {
+   "name": "Flamboro Speedway",
+   "region": "ON",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Jukasa Motor Speedway": {
+  "opened": 1966,
+  "closed": 2021,
+  "history": [
+   {
+    "year": 2009,
+    "change": "Closed July 2009 as Cayuga Speedway"
+   },
+   {
+    "year": 2017,
+    "change": "Rebuilt and reopened as Jukasa Motor Speedway"
+   },
+   {
+    "year": 2021,
+    "change": "Closed November 2021"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Jukasa_Motor_Speedway",
+   "https://www.thethirdturn.com/wiki/Jukasa_Motor_Speedway"
+  ],
+  "match": {
+   "name": "Jukasa Motor Speedway",
+   "region": "ON",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  },
+  "note": "Unavailable 2010-2016",
+  "dormant": [
+   [
+    2010,
+    2016
+   ]
+  ]
+ },
+ "Autodrome Chaudiere": {
+  "opened": 1992,
+  "closed": null,
+  "history": [
+   {
+    "year": 2005,
+    "change": "Converted from dirt to asphalt"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Autodrome_Chaudi%C3%A8re",
+   "https://www.thethirdturn.com/wiki/Autodrome_Chaudiere"
+  ],
+  "match": {
+   "name": "Autodrome Chaudiere",
+   "region": "QC",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Riverside International Speedway": {
+  "opened": 1969,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Riverside_International_Speedway",
+   "https://www.thethirdturn.com/wiki/Riverside_International_Speedway_%28NS%29"
+  ],
+  "match": {
+   "name": "Riverside International Speedway",
+   "region": "NS",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Scotia Speedworld": {
+  "opened": 1987,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Scotia_Speedworld",
+   "https://www.thethirdturn.com/wiki/Scotia_Speedworld"
+  ],
+  "match": {
+   "name": "Scotia Speedworld",
+   "region": "NS",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  },
+  "note": "Confirmed racing in 2022 (35th season); current status unverified"
+ },
+ "Edmonton International Raceway": {
+  "opened": 1967,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Edmonton_International_Raceway",
+   "https://www.thethirdturn.com/wiki/Edmonton_International_Raceway"
+  ],
+  "match": {
+   "name": "Edmonton International Raceway",
+   "region": "AB",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Ohsweken Speedway": {
+  "opened": 1996,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Ohsweken_Speedway",
+   "https://www.thethirdturn.com/wiki/Ohsweken_Speedway"
+  ],
+  "match": {
+   "name": "Ohsweken Speedway",
+   "region": "ON",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Petty International Raceway": {
+  "opened": 1983,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://www.thethirdturn.com/wiki/Petty_International_Raceway"
+  ],
+  "match": {
+   "name": "Petty International Raceway",
+   "region": "NB",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Oyster Bed Speedway": {
+  "opened": 1966,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://www.thethirdturn.com/wiki/Oyster_Bed_Speedway"
+  ],
+  "match": {
+   "name": "Oyster Bed Speedway",
+   "region": "PE",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Autodrome Granby": {
+  "opened": 1964,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://www.thethirdturn.com/wiki/Autodrome_Granby"
+  ],
+  "match": {
+   "name": "Autodrome Granby",
+   "region": "QC",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Circuit Riverside Speedway Ste-Croix": {
+  "opened": 1971,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Circuit_Riverside_Speedway_Ste-Croix",
+   "https://www.thethirdturn.com/wiki/Circuit_Riverside_Speedway"
+  ],
+  "match": {
+   "name": "Circuit Riverside Speedway Ste-Croix",
+   "region": "QC",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Merrittville Speedway": {
+  "opened": 1952,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Merrittville_Speedway",
+   "https://www.thethirdturn.com/wiki/Merrittville_Speedway"
+  ],
+  "match": {
+   "name": "Merrittville Speedway",
+   "region": "ON",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "RAD Torque Raceway": {
+  "opened": 1991,
+  "closed": null,
+  "history": [
+   {
+    "year": 1998,
+    "change": "Reopened under local ownership"
+   },
+   {
+    "year": 2021,
+    "change": "Renamed RAD Torque Raceway"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/RAD_Torque_Raceway",
+   "https://www.thethirdturn.com/wiki/Castrol_Raceway"
+  ],
+  "match": {
+   "name": "RAD Torque Raceway",
+   "region": "AB",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Kings Park Speedway": {
+  "opened": 1967,
+  "closed": null,
+  "history": [
+   {
+    "year": 2007,
+    "change": "Repaved"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Kings_Park_Speedway",
+   "https://www.thethirdturn.com/wiki/Kings_Park_Speedway"
+  ],
+  "match": {
+   "name": "Kings Park Speedway",
+   "region": "SK",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Speedway Miramichi": {
+  "opened": 1968,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Speedway_Miramichi",
+   "https://www.thethirdturn.com/wiki/Speedway_Miramichi"
+  ],
+  "match": {
+   "name": "Speedway Miramichi",
+   "region": "NB",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  },
+  "opened_db_value": null
+ },
+ "Calabogie Motorsports Park": {
+  "opened": 2006,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Calabogie_Motorsports_Park",
+   "https://www.thethirdturn.com/wiki/Calabogie_Motorsports_Park"
+  ],
+  "match": {
+   "name": "Calabogie Motorsports Park",
+   "region": "ON",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Shannonville Motorsport Park": {
+  "opened": 1974,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Shannonville_Motorsport_Park"
+  ],
+  "match": {
+   "name": "Shannonville Motorsport Park",
+   "region": "ON",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Atlantic Motorsport Park": {
+  "opened": 1974,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Atlantic_Motorsport_Park"
+  ],
+  "match": {
+   "name": "Atlantic Motorsport Park",
+   "region": "NS",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Area 27 Motorsports Park": {
+  "opened": 2016,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Area_27_Motorsports_Park"
+  ],
+  "match": {
+   "name": "Area 27 Motorsports Park",
+   "region": "BC",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Mission Raceway Park": {
+  "opened": 1992,
+  "closed": null,
+  "history": [
+   {
+    "year": 2010,
+    "change": "Road course reconfigured for motorcycles"
+   },
+   {
+    "year": 2022,
+    "change": "Road course renamed Speed-Fanatics Motorsports Circuit"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Mission_Raceway_Park"
+  ],
+  "match": {
+   "name": "Mission Raceway Park",
+   "region": "BC",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Circuit Mont-Tremblant": {
+  "opened": 1964,
+  "closed": null,
+  "history": [
+   {
+    "year": 2004,
+    "change": "Rebuilt circuit (2.621 mi) replacing the 2.65-mi 1965-2003 layout; North and South courses created"
+   }
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Circuit_Mont-Tremblant",
+   "https://www.thethirdturn.com/wiki/Circuit_Mont-Tremblant"
+  ],
+  "match": {
+   "name": "Circuit Mont-Tremblant",
+   "region": "QC",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Circuit ICAR": {
+  "opened": 2008,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Circuit_ICAR",
+   "https://www.thethirdturn.com/wiki/Circuit_ICAR"
+  ],
+  "match": {
+   "name": "Circuit ICAR",
+   "region": "QC",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ },
+ "Circuit Trois-Rivieres": {
+  "opened": 1967,
+  "closed": null,
+  "history": [],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Circuit_Trois-Rivi%C3%A8res"
+  ],
+  "match": {
+   "name": "Circuit Trois-Rivieres",
+   "region": "QC",
+   "files": [
+    "local_regional_venues.json"
+   ]
+  }
+ }
+}
