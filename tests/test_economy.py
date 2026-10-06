@@ -34,6 +34,7 @@ def test_charter_money_by_era_and_results():
     assert FI.charter_pay(2015, 0.5) == 0
     assert FI.charter_pay(2020, 0.9) > FI.charter_pay(2020, 0.1)
     assert FI.charter_pay(2026, 0.0) > 0
+    assert 9e6 < FI.charter_pay(2020, 0.5) < 13e6 and FI.charter_pay(2026, 0.5) == 12.5e6
 
 
 def test_money_buys_speed_and_broke_owners_sell(world):

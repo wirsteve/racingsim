@@ -50,8 +50,11 @@ if TYPE_CHECKING:
 TEAM_PURSE_SHARE = 0.65
 CHARTERS = 36
 CHARTER_START = 2016
-# (average, last-placed) charter money per car per year, nominal dollars of the era (research 2.2).
-CHARTER_PAY = ((2016, 9.0e6, 4.5e6), (2025, 12.5e6, 8.5e6))
+# (average, last-placed) charter money per car per year (research 2.2: ~$9M / $4-5M nominal 2016-24,
+# ~$12.5M / ~$8.5M from 2025). Given here in 2025 dollars with general inflation (~1.25x for the 2016-24
+# deal, EST): TV money didn't grow with the motorsport cost index the rest of the model uses for eras.
+CHARTER_PAY = ((2016, 11.25e6, 5.6e6), (2025, 12.5e6, 8.5e6))
+CHARTER_INSIDE = 0.5        # share of charter money already counted in what the team raises (the rest is new)
 MERCH_TEAM_PER_FAN = 1.35   # $ per fan per season to the team (3% of an EST ~$45 a fan)
 MERCH_DRIVER_PER_FAN = 1.35  # $ per fan per season to the driver (3% of an EST ~$45 a fan)
 MANUFACTURER_SHARE = 0.08    # of the season cost, tier 5+ factory-aligned teams (EST, low)
@@ -62,18 +65,12 @@ SPEND_EFFECT = 9.0           # equipment points per doubling of spend over the s
 OPTIMISM = (0.93, 1.15)      # owners plan next year's budget a little above or below what came in
 
 
-def _price(year: int) -> float:
-    from ..history.economy import price_index
-    return max(price_index(year), 0.05)
-
-
 def charter_pay(year: int, results_pct: float) -> float:
     """Charter money for one car this season, 2025 dollars; results_pct 0 (last) .. 1 (best)."""
     if year < CHARTER_START:
         return 0.0
     avg, low = CHARTER_PAY[0][1:] if year < CHARTER_PAY[1][0] else CHARTER_PAY[1][1:]
-    nominal = low + (avg - low) * 2 * clamp(results_pct, 0, 1)
-    return nominal / _price(year)
+    return low + (avg - low) * 2 * clamp(results_pct, 0, 1)
 
 
 def assign_charters(world: "World", announce: bool = True) -> None:
@@ -157,7 +154,9 @@ def close_books(world: "World", results) -> None:
             charter = t.charters * charter_pay(year, pct) if sid == "cup_series" else 0.0
             # The player's own team: the owner's money is the player's savings (game/owner.py settle).
             owner = 0.0 if t.player_owned else OWNER_SUBSIDY.get(t.owner_type, 0.08) * tpl.season_cost * t.cars
-            sponsors = max(0.05 * raised, raised - charter - owner)
+            # Charters (2016) came with the TV money that used to reach teams through purses and
+            # deals; half is treated as part of what the team was already raising, half as new money.
+            sponsors = max(0.05 * raised, raised - CHARTER_INSIDE * charter - owner)
             merch = MERCH_TEAM_PER_FAN * 1000 * sum(d.fans for d in drivers)
             mfr = MANUFACTURER_SHARE * tpl.season_cost * t.cars if (t.manufacturer_id and tpl.tier >= 5) else 0.0
             running = tpl.season_cost * t.cars * t.spend
