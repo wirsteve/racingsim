@@ -159,6 +159,20 @@ def handle(method: str, path: str, query: dict, body: dict):
         return api.offseason(g)
     if head == "regions":
         return api.regions(w)
+    if head == "staff":
+        from . import staff_view
+        if len(route) > 1:
+            if not route[1].isdigit():
+                raise ApiError("no such staff member", 404)
+            out = staff_view.staff_detail(w, int(route[1]))
+            if out is None:
+                raise ApiError("no such staff member", 404)
+            return out
+        role = query.get("role") or None
+        from ..world.staff import ROLES
+        if role is not None and role not in ROLES:
+            raise ApiError("unknown role")
+        return staff_view.directory(w, role)
     if head == "garage":
         from . import garage_view
         if method == "POST":

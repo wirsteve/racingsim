@@ -16,6 +16,7 @@ from typing import TYPE_CHECKING
 
 from ..world.entities import RETIRED, SIDELINED
 from ..rules.garage import target_class
+from ..world import staff
 from . import lifecycle, market, programs, scouting, sponsorship
 
 if TYPE_CHECKING:
@@ -28,6 +29,7 @@ NEWSWORTHY = ("won the", "development program", "Shootout", "Combine", "first pr
 
 def begin_offseason(world: "World", results: "SeasonResults", summary: "YearSummary") -> None:
     world.market.event_marks = {d.id: len(d.events) for d in world.drivers.values()}
+    staff.record_season(world, results)
     _season_news(world, results)
     _pay_from_savings(world)
     # 1. The paddock digests the season: demonstrated level, exposure, reputation.
@@ -66,6 +68,9 @@ def begin_offseason(world: "World", results: "SeasonResults", summary: "YearSumm
 def complete_offseason(world: "World", summary: "YearSummary") -> None:
     # 6b. Seats fill top-down, then everyone else picks a self-run programme.
     market.close_market(world, summary)
+    # 6c. Staff: contracts tick, poor results cost crew chiefs their jobs, the best teams hire first.
+    for line in staff.offseason(world, summary):
+        world.post("staff", line, importance=1)
     # 7. A new cohort arrives to replace those who left.
     active = sum(1 for d in world.drivers.values() if d.status != RETIRED)
     target = world.target_population or active

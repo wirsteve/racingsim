@@ -22,6 +22,7 @@ from ..constants import SUBSTITUTE_BREAKOUT_FINISH_PCT
 from ..util import clamp
 from ..world.entities import ACTIVE, PART_TIME, RETIRED, SIDELINED, Driver, SeasonRecord
 from ..world.skills import track_type_of as skill_track_type
+from ..world import staff as staff_mod
 from ..rules import car as C
 from ..rules import garage
 from ..rules.payouts import Purse
@@ -123,6 +124,9 @@ class SeasonRunner:
         self.purses: dict[str, Purse] = {}
         self.playoffs: dict[str, dict] = {}       # series -> Chase / playoff state
         self.player_notes: list[str] = []
+        self.crews: dict = {}
+        if not world.staff:              # a save from before staff existed: hire everyone now
+            staff_mod.seed_staff(world)
         rng = world.rng
         res = self.res
 
@@ -166,6 +170,7 @@ class SeasonRunner:
         state.setdefault("purses", {})
         state.setdefault("playoffs", {})
         state.setdefault("player_notes", [])
+        state.setdefault("crews", {})
         self.__dict__.update(state)
 
     # ------------------------------------------------------------------ stepping
@@ -346,8 +351,14 @@ class SeasonRunner:
                             continue
                         car_drivers.append(d)
                     if car_drivers:
-                        # The car is the team's, whoever drives it.
-                        entries.append(Entry(car_drivers, car_eq, team_id=team.id, car_key=f"{team.id}:{car}"))
+                        # The car is the team's, whoever drives it - and so are the people around it.
+                        crew = self.crew(team.id, car, car_drivers[0])
+                        eq = car_eq + (crew["development"] * 2.0 * self.week / SEASON_WEEKS if crew else 0.0)
+                        mech = None
+                        if crew:
+                            mech = 0.03 * crew["mech"]
+                        entries.append(Entry(car_drivers, eq, team_id=team.id, car_key=f"{team.id}:{car}",
+                                             mech=mech, crew=crew))
         else:
             cls = garage.class_of(s)
             pool = []
@@ -370,7 +381,8 @@ class SeasonRunner:
                 keep = [d for d in pool if d.is_player]
                 pool = keep + rng.sample([d for d in pool if not d.is_player], cap - len(keep))
             for d in pool:
-                entries.append(Entry([d], res.equipment[d.id], mech=self.mech.get(d.id)))
+                entries.append(Entry([d], res.equipment[d.id], mech=self.mech.get(d.id),
+                                     crew=staff_mod.player_effects(world, d) if d.is_player else None))
         if len(entries) < 3:
             return None
         if not tpl.team_based:
@@ -411,6 +423,17 @@ class SeasonRunner:
         self._after_race(s, track, finishes, dnq, purse)
         self._playoff_step(s, event_idx, finishes)
         return self._log(s, track, finishes, event_idx, race=rr)
+
+    def crew(self, team_id: int, car: int, driver: Driver) -> Optional[dict]:
+        """Race-day effects of this car's crew chief, spotter, pit crew, engine shop and doctor (cached per
+        season and driver: staff don't change jobs mid-season)."""
+        key = (team_id, car, driver.id)
+        if key not in self.crews:
+            eff = staff_mod.crew_effects(self.world, team_id, car, driver)
+            if eff is not None:
+                eff["injury"] = staff_mod.medical(self.world, driver)[0]
+            self.crews[key] = eff
+        return self.crews[key]
 
     def lap_by_lap(self, s: "Series", entries: list[Entry]) -> bool:
         return s.tier >= 3 or any(d.is_player for e in entries for d in e.drivers)
@@ -565,6 +588,7 @@ def _tally(world: "World", res: SeasonResults, acc: dict[int, _Acc], finishes: l
             d = world.drivers[did]
             severe = world.rng.random() < 0.12
             races = world.rng.randint(8, 30) if severe else world.rng.randint(1, 5)
+            races = max(1, round(races / staff_mod.medical(world, d)[1] * (1.15 - d.durability / 330)))
             d.injury_races = max(d.injury_races, races)
             d.injury_history += 1
             res.injuries.append((did, races))

@@ -30,6 +30,7 @@ class Entry:
     team_id: Optional[int] = None
     car_key: str = ""
     mech: Optional[float] = None   # this car's mechanical-failure chance (own cars: engine freshness/health)
+    crew: Optional[dict] = None    # race-day effects of the car's people (world/staff.crew_effects)
 
 
 @dataclass

@@ -136,4 +136,31 @@ def garage(game: "Game") -> dict:
                                             tire_wear=C.steady_wear(cls, cls.tires.typical_new, track)))})
     seen = set()
     out["packages"] = [p for p in pk if not (p["key"] in seen or seen.add(p["key"]))]
+    out["crew"] = crew_market(w, d, s.tier)
     return out
+
+
+def crew_market(w, d, tier: int) -> dict:
+    """Your freelance crew for the season and who is available to hire."""
+    from ..world import staff as ST
+    from .staff_view import brief
+    hired = ST.player_crew(w)
+    taken = set(w.player_crew.values())
+    roles = []
+    for role in ST.PLAYER_ROLES:
+        free = sorted((x for x in w.staff.values() if x.role == role and x.team_id is None and not x.retired
+                       and x.id not in taken), key=lambda x: -x.overall())
+        # A spread: the best few plus affordable locals.
+        picks = free[:3] + free[len(free) // 2: len(free) // 2 + 3] + free[-2:]
+        seen, cands = set(), []
+        for x in picks:
+            if x.id in seen:
+                continue
+            seen.add(x.id)
+            b = brief(w, x, exact=False)
+            b["cost"] = ST.hire_cost(w, x, tier)
+            cands.append(b)
+        cur = hired.get(role)
+        roles.append({"role": role, "label": ST.ROLES[role][0], "about": ST.ROLES[role][3],
+                      "hired": brief(w, cur, exact=True) if cur else None, "candidates": cands})
+    return {"roles": roles}

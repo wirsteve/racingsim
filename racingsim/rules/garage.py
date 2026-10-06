@@ -407,6 +407,28 @@ def garage_action(world: "World", d: "Driver", action: str, key: Optional[str] =
         return rebuild(world, d, cls, week)
     if action == "repair":
         return repair(world, d, cls, week)
+    if action == "hire":
+        from ..world import staff as ST
+        s = world.staff.get(int(key)) if key and key.isdigit() else None
+        if s is None or s.retired or s.team_id is not None or s.role not in ST.PLAYER_ROLES:
+            return "That person isn't available."
+        if s.id in world.player_crew.values():
+            return f"{s.name} already works for you."
+        tier = world.series(d.series_id).tier
+        cost = ST.hire_cost(world, s, tier)
+        if not _pay(d, cost):
+            return f"{s.name} wants ${cost:,.0f} for the season - more than you have."
+        world.player_crew[s.role] = s.id
+        if d.car is not None:
+            log(d.car, week, f"Hired {s.name} ({ST.ROLES[s.role][0].lower()}) for the season", -cost)
+        return f"{s.name} joins your crew as {ST.ROLES[s.role][0].lower()} for the season."
+    if action == "release":
+        from ..world import staff as ST
+        if key not in world.player_crew:
+            return "Nobody in that role."
+        sid = world.player_crew.pop(key)
+        s = world.staff.get(sid)
+        return f"{s.name if s else 'They'} is off the crew (no refund)."
     if action in ("auto_rebuild", "auto_repair"):
         setattr(car, action, bool(value))
         return f"{'Automatic engine freshens' if action == 'auto_rebuild' else 'Automatic crash repairs'} " \

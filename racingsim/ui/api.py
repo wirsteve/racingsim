@@ -533,6 +533,8 @@ def team_detail(world: "World", tid: int) -> dict:
                             "money": round(t.w_money, 2), "marketability": round(t.w_marketability, 2)},
                 "roster": [driver_row(world, world.drivers[x]) for x in t.roster if x is not None],
                 "reputation": round(t.reputation)})
+    from .staff_view import team_staff
+    out["staff"] = team_staff(world, tid)
     return out
 
 
