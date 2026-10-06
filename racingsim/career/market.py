@@ -27,6 +27,7 @@ from ..constants import TIER_STRENGTH
 from ..util import clamp, haversine_mi
 from ..world.entities import ACTIVE, PART_TIME, RETIRED, SIDELINED, Driver, Team
 from ..world.regions import travel_cost
+from . import morale
 from .scouting import categorize, is_aware, perceived_level, rate_for_team
 
 if TYPE_CHECKING:
@@ -361,10 +362,15 @@ def _tick_contracts(world: "World", queue: list, summary: "YearSummary") -> None
                     release, reason = True, "lost the ride when the money ran out"
             if not release and d.contract_years <= 0:
                 age = d.age(world.year) + 1
-                if perf > 0.8 and age < 34 and rng.random() < 0.85 and _eligible(world, d, tpl, role):
-                    # Stars are locked up before their deal runs out.
+                star = perf > 0.8 and age < 34 and _eligible(world, d, tpl, role)
+                if star and rng.random() < morale.resign_chance(d):
+                    # Stars are locked up before their deal runs out (happy, loyal ones most readily).
                     d.contract_years = rng.randint(2, 3)
                 else:
+                    if star and tpl.tier >= 5:
+                        world.post("market", f"{d.name} doesn't re-sign with {team.name} and tests the market"
+                                   + (f" ({morale.word(morale.morale(d))})" if morale.morale(d) < 50 else ""),
+                                   driver_id=d.id, series_id=team.series_id, importance=2)
                     # Expiring deal = open seat. The incumbent stays a candidate (with the
                     # team-relationship bonus) but has to beat whoever else is available.
                     world.market.expired[d.id] = team.id
@@ -426,7 +432,8 @@ def _would_accept(world: "World", d: Driver, team: Team, tpl: "SeriesTemplate") 
     if tpl.tier == cur_tier:
         cur_team = world.teams.get(d.team_id) if d.team_id else None
         cur_eq = cur_team.equipment if cur_team else 50
-        return d.series_id is None or team.equipment > cur_eq + 5
+        # Loyal drivers need a clearly better car to leave; hungry or unhappy ones go for less.
+        return d.series_id is None or team.equipment > cur_eq + morale.switch_margin(d)
     # A step down: veterans take it to keep racing professionally.
     return d.series_id is None and (cur_tier - tpl.tier) <= 2
 

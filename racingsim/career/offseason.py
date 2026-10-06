@@ -17,7 +17,7 @@ from typing import TYPE_CHECKING
 from ..world.entities import RETIRED, SIDELINED
 from ..rules.garage import target_class
 from ..world import staff
-from . import lifecycle, market, programs, scouting, sponsorship
+from . import lifecycle, market, morale, programs, scouting, sponsorship
 
 if TYPE_CHECKING:
     from ..sim.season import SeasonResults
@@ -30,6 +30,7 @@ NEWSWORTHY = ("won the", "development program", "Shootout", "Combine", "first pr
 def begin_offseason(world: "World", results: "SeasonResults", summary: "YearSummary") -> None:
     world.market.event_marks = {d.id: len(d.events) for d in world.drivers.values()}
     staff.record_season(world, results)
+    morale.season_update(world, results)   # before contracts: unhappy drivers are harder to keep
     _season_news(world, results)
     _pay_from_savings(world)
     # 1. The paddock digests the season: demonstrated level, exposure, reputation.

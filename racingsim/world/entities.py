@@ -140,10 +140,14 @@ class Driver:
     track_skill: dict[str, float] = field(default_factory=dict)  # track type -> experience 0..1
     personality: dict[str, float] = field(default_factory=dict)  # work_ethic, intelligence, ... 0-100
     durability: float = 50.0                                     # high = rarely injured, heals fast
+    # ---- personality in action (racingsim/career/morale.py) ----
+    morale: float = 60.0                                         # 0-100
+    rivals: dict[int, float] = field(default_factory=dict)       # driver id -> grudge heat 0-100
+    suspension: int = 0                                          # races left on a suspension
 
     def __setstate__(self, state: dict) -> None:
         # Saves from before OOTP-style ratings: per-skill data is created lazily (skills.ensure).
-        for k in ("skills", "track_skill", "personality"):
+        for k in ("skills", "track_skill", "personality", "rivals"):
             state.setdefault(k, {})
         self.__dict__.update(state)
 

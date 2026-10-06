@@ -366,7 +366,11 @@ async function driverPage(id) {
         <p class="muted small" style="margin:10px 0 0">20–80 scale (50 = average at the top level). ${r.exact ? "Your own driver: you know exactly where you stand." : "Scouts' view: 5-point steps, and only as accurate as how much they've seen of this driver."}</p>
       </div>
       ${r.personality ? `<div class="card"><h3>Personality</h3><dl class="kv">${r.personality.map((p) => `<dt title="${esc(p.about)}">${esc(p.label)}</dt><dd>${p.value != null ? p.value + " · " : ""}${esc(p.word)}</dd>`).join("")}</dl>
-        <p class="muted small">${r.exact ? "You know yourself." : "Paddock impressions, not numbers."} Work ethic and intelligence drive development; loyalty, greed and desire to win shape contract decisions; temper shows on track.</p></div>` : ""}
+        <p class="muted small">${r.exact ? "You know yourself." : "Paddock impressions, not numbers."} Work ethic and intelligence drive development; loyalty, greed and desire to win shape contract decisions; temper shows on track.</p>
+        ${r.mood ? `<h4>Mood</h4><dl class="kv"><dt>Morale</dt><dd>${r.mood.morale != null ? r.mood.morale + " · " : ""}${esc(r.mood.word)}</dd>
+          ${r.mood.suspension ? `<dt>Suspended</dt><dd>${r.mood.suspension} race${r.mood.suspension === 1 ? "" : "s"}</dd>` : ""}
+          <dt>Rivals</dt><dd>${r.mood.rivals.length ? r.mood.rivals.map((x) => `${driverLink(x.id, x.name)} <span class="muted small">(${esc(x.word)})</span>`).join(", ") : "<span class=\"muted\">none</span>"}</dd></dl>
+          <p class="muted small">Confident drivers are a little faster and develop faster. Get wrecked and you remember who did it.</p>` : ""}</div>` : ""}
       <div class="card"><h3>Profile</h3>
         <dl class="kv">
           <dt>Born</dt><dd>${d.birth_year} (age ${d.age})</dd>

@@ -74,6 +74,7 @@ def scouted(world: "World", d: Driver) -> dict:
         out.update({k: scale(getattr(d, k)) for k in TRAITS})
         out.update(skills.profile(d))
         out["personality"] = skills.personality_report(d, exact=True)
+        out["mood"] = _mood(world, d, exact=True)
         return out
     rng = random.Random(d.id * 92821 + world.year * 31)
     sd = 2 + 12 * (1 - d.exposure / 100)
@@ -88,7 +89,15 @@ def scouted(world: "World", d: Driver) -> dict:
     # Component ratings through the same scouts: 5-point steps, error shrinking with exposure.
     out.update(skills.profile(d, noise=sd, rng=random.Random(d.id * 7919 + world.year), step=5))
     out["personality"] = skills.personality_report(d, exact=False)
+    out["mood"] = _mood(world, d, exact=False)
     return out
+
+
+def _mood(world: "World", d: Driver, exact: bool) -> dict:
+    """Mood is public (the media reports it); the number is only known for your own driver."""
+    from ..career import morale
+    return {"morale": round(morale.morale(d)) if exact else None, "word": morale.word(morale.morale(d)),
+            "rivals": morale.rivals_view(world, d), "suspension": d.suspension}
 
 
 def driver_row(world: "World", d: Driver) -> dict:

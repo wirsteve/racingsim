@@ -23,6 +23,7 @@ from ..util import clamp
 from ..world.entities import ACTIVE, PART_TIME, RETIRED, SIDELINED, Driver, SeasonRecord
 from ..world.skills import track_type_of as skill_track_type
 from ..world import staff as staff_mod
+from ..career import morale as morale_mod
 from ..rules import car as C
 from ..rules import garage
 from ..rules.payouts import Purse
@@ -341,7 +342,7 @@ class SeasonRunner:
                         if d is None or d.status == RETIRED:
                             continue
                         car_eq = res.equipment.get(d.id, car_eq)
-                        if (d.injury_races > 0 or not tpl.age_allows_track(d.age(world.year), track)
+                        if (d.injury_races > 0 or _sits_out(d) or not tpl.age_allows_track(d.age(world.year), track)
                                 or rng.random() > self.attendance.get(d.id, 1.0)):
                             sub = _pick_substitute(world, self.sub_pool, s, track, team, self.busy)
                             if sub is not None:
@@ -363,7 +364,7 @@ class SeasonRunner:
             cls = garage.class_of(s)
             pool = []
             for d in drivers:
-                if d.injury_races > 0:
+                if d.injury_races > 0 or _sits_out(d):
                     continue
                 if d.is_player:
                     if cls is not None and d.car is not None and not garage.can_race(
@@ -420,9 +421,22 @@ class SeasonRunner:
             finishes = run_race(entries, track, tpl.discipline, tpl.tier, tpl.car_weight, rng)
             pts = score_race(system, [(f.entry.drivers[0].id, f.pace) for f in finishes], rng)
         _tally(world, res, self.acc, finishes, s, pts, purse, heat_pts, dnq, system, track)
+        self._personal(finishes, rr, tpl.tier, s.name, track.name)
         self._after_race(s, track, finishes, dnq, purse)
         self._playoff_step(s, event_idx, finishes)
         return self._log(s, track, finishes, event_idx, race=rr)
+
+    def _personal(self, finishes: list[Finish], rr, tier: int, series_name: str, track_name: str) -> None:
+        """Morale after the race; grudges from wrecks; the sanctioning body's answer to paybacks."""
+        n = len(finishes)
+        for f in finishes:
+            for d in f.entry.drivers:
+                morale_mod.after_race(d, f.position, n, f.expected_position or f.position, f.dnf, f.crashed)
+        if rr is None:
+            return
+        morale_mod.incidents(self.world, rr.incidents)
+        for att, tgt in rr.paybacks:
+            morale_mod.payback(self.world, att, tgt, tier, series_name, track_name, self.week, self.acc)
 
     def crew(self, team_id: int, car: int, driver: Driver) -> Optional[dict]:
         """Race-day effects of this car's crew chief, spotter, pit crew, engine shop and doctor (cached per
@@ -432,6 +446,10 @@ class SeasonRunner:
             eff = staff_mod.crew_effects(self.world, team_id, car, driver)
             if eff is not None:
                 eff["injury"] = staff_mod.medical(self.world, driver)[0]
+                team = self.world.teams.get(team_id)
+                chem = morale_mod.chemistry(self.world, team) if team else 0.0
+                eff["team_chemistry"] = chem
+                eff["setup_mean"] += chem * 0.6     # a shop that works together finds speed
             self.crews[key] = eff
         return self.crews[key]
 
@@ -611,6 +629,14 @@ def _tally(world: "World", res: SeasonResults, acc: dict[int, _Acc], finishes: l
         a.purse += purses.dnq()
 
 
+def _sits_out(d: Driver) -> bool:
+    """A suspended driver misses this race (and serves one race of the suspension)."""
+    if d.suspension > 0:
+        d.suspension -= 1
+        return True
+    return False
+
+
 def _substitute_pool(world: "World") -> list[Driver]:
     pool = []
     for d in world.drivers.values():
@@ -629,7 +655,7 @@ def _pick_substitute(world: "World", pool: list[Driver], s: "Series", track, tea
     best, best_score = None, -1e9
     sample = rng.sample(pool, min(60, len(pool))) if pool else []
     for d in sample:
-        if d.id in busy or d.injury_races > 0 or d.status == RETIRED or d.is_player:
+        if d.id in busy or d.injury_races > 0 or d.suspension > 0 or d.status == RETIRED or d.is_player:
             continue
         age = d.age(world.year)
         if age < tpl.min_age or not tpl.age_allows_track(age, track):
@@ -655,7 +681,7 @@ def _crown_jewel(world: "World", runner: "SeasonRunner", cj) -> Optional[dict]:
     candidates = []
     forced = []
     for d in world.drivers.values():
-        if d.status not in (ACTIVE, PART_TIME) or d.injury_races > 0:
+        if d.status not in (ACTIVE, PART_TIME) or d.injury_races > 0 or d.suspension > 0:
             continue
         if d.is_player:
             # The player chooses which crown jewels to enter (UI); the AI never enters for them.
@@ -686,6 +712,9 @@ def _crown_jewel(world: "World", runner: "SeasonRunner", cj) -> Optional[dict]:
                     detail=any(d.is_player for d in field_drivers), free_pass=world.year >= 2003,
                     discipline=cj.discipline)
     finishes = rr.finishes
+    morale_mod.incidents(world, rr.incidents)
+    for att, tgt in rr.paybacks:
+        morale_mod.payback(world, att, tgt, max(cj.max_tier - 1, 2), cj.name, track.name, runner.week)
     order = [f.entry.drivers[0].id for f in finishes]
     res.crown_jewel_results.append((cj.key, order))
     winner = world.drivers[order[0]]
