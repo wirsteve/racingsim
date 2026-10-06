@@ -6,6 +6,7 @@ from typing import TYPE_CHECKING
 
 from ..constants import GRASSROOTS_RETURN_PROB, QUIT_HAZARD_BY_TIER, TIER_STRENGTH
 from ..util import clamp, weighted_choice
+from ..world import skills
 from ..world.entities import ACTIVE, PART_TIME, RETIRED, SIDELINED, Driver
 
 if TYPE_CHECKING:
@@ -36,6 +37,7 @@ def develop(world: "World", results: "SeasonResults") -> None:
             decline = 0.18 * (age - d.peak_age) + rng.gauss(0, 0.5)
             d.ability = clamp(d.ability - max(0.0, decline), 1, 99)
             d.potential = min(d.potential, d.ability + 1)
+        skills.develop(d, age, starts, rng, results.track_laps.get(d.id))
         if rec is not None:
             disc = rec.discipline
             prof = d.proficiency.get(disc, 0.0)

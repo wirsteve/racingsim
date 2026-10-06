@@ -15,6 +15,7 @@ from ..career.scouting import categorize, estimated_potential
 from ..game import career
 from ..sim.season import SEASON_WEEKS, jewel_block_reasons, jewel_eligible, jewel_entry_cost
 from ..util import clamp
+from ..world import skills
 from ..world.entities import DISCIPLINES, RETIRED, Driver
 
 if TYPE_CHECKING:
@@ -71,6 +72,8 @@ def scouted(world: "World", d: Driver) -> dict:
         ovr = d.effective_ability(d.primary_discipline)
         out = {"overall": scale(ovr), "potential": scale(d.potential), "exact": True}
         out.update({k: scale(getattr(d, k)) for k in TRAITS})
+        out.update(skills.profile(d))
+        out["personality"] = skills.personality_report(d, exact=True)
         return out
     rng = random.Random(d.id * 92821 + world.year * 31)
     sd = 2 + 12 * (1 - d.exposure / 100)
@@ -82,6 +85,9 @@ def scouted(world: "World", d: Driver) -> dict:
            "potential": blur(max(d.ability, estimated_potential(d, world.year))), "exact": False,
            "confidence": "high" if sd < 5 else "medium" if sd < 9 else "low"}
     out.update({k: blur(getattr(d, k)) for k in TRAITS})
+    # Component ratings through the same scouts: 5-point steps, error shrinking with exposure.
+    out.update(skills.profile(d, noise=sd, rng=random.Random(d.id * 7919 + world.year), step=5))
+    out["personality"] = skills.personality_report(d, exact=False)
     return out
 
 
@@ -116,6 +122,9 @@ def driver_detail(world: "World", did: int) -> dict:
             "starts": r.starts, "wins": r.wins, "top5": r.top5,
             "avg_finish": round(r.avg_finish, 1) if r.avg_finish else None, "pos": r.championship_pos, "field": r.field_size,
             "champion": r.champion, "jewels": r.crown_jewel_wins,
+            "top10": getattr(r, "top10", 0), "poles": getattr(r, "poles", 0), "laps_led": getattr(r, "laps_led", 0),
+            "dnfs": getattr(r, "dnfs", 0), "avg_start": getattr(r, "avg_start", None), "rating": getattr(r, "rating", None),
+            "points": getattr(r, "points", None), "winnings": round(getattr(r, "winnings", 0.0)) or None,
         })
     connections = []
     for key, v in sorted(d.connections.items(), key=lambda kv: -kv[1]):
@@ -246,14 +255,17 @@ def race_result(world: "World", key: str, event: int, year: Optional[int] = None
     for e in logs.get(key, []):
         if e["event"] == event and "results" in e:
             rows = []
-            for did, tid, pos, dnf, co in e.get("results", []):
+            for row in e.get("results", []):
+                did, tid, pos, dnf, co = row[:5]
+                box = row[5] if len(row) > 5 else None
                 d = world.drivers[did]
                 rows.append({"pos": pos, "driver_id": did, "name": d.name, "is_player": d.is_player or
                              world.player_id in co, "team": team_brief(world, tid), "dnf": dnf,
                              "co_drivers": [{"id": c, "name": world.drivers[c].name} for c in co],
-                             "tier": d.tier})
+                             "tier": d.tier, "box": box})
             return {"track": e["track"], "track_id": e["track_id"], "week": e["week"], "label": week_label(e["week"]),
-                    "series": series_brief(world, e["series_id"]), "jewel": e.get("jewel_name"), "results": rows}
+                    "series": series_brief(world, e["series_id"]), "jewel": e.get("jewel_name"), "results": rows,
+                    "race": e.get("race"), "log": e.get("log")}
     return None
 
 

@@ -99,6 +99,8 @@ def make_driver(world: "World", *, discipline: str, age: int, region: "Region",
         d.proficiency[disc] = round(base * world.transfer(discipline, disc) * (0.8 if disc != discipline else 1.0), 3)
     d.proficiency[discipline] = round(base, 3)
     d.demonstrated = clamp(ability + rng.gauss(0, 5), 5, 95)
+    from .skills import ensure
+    ensure(d)  # skills/personality are seeded from the driver id: world generation is unchanged
     return d
 
 

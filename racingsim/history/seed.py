@@ -62,6 +62,18 @@ def _home(world: "World", bio: dict, discipline: str, fallback: Optional[str] = 
     return world.geo.get(hub), country
 
 
+def _rate_from_results(hist: HistoryDB, d: Driver, name: str, year: int) -> None:
+    """Skill profile from the driver's real race-by-race results, where we have them."""
+    from ..world import skills
+    from .ratings import apply, profile
+    skills.ensure(d)
+    if hist.path is None:
+        return
+    prof = profile(str(hist.path), name, year - 1)
+    if prof is not None:
+        apply(d, prof)
+
+
 def make_real_driver(world: "World", hist: HistoryDB, wiki: Optional[str], name: str, discipline: str,
                      year: int, *, team_equipment: float = 60.0, default_age: int = 28,
                      home: Optional[str] = None) -> Driver:
@@ -116,6 +128,7 @@ def make_real_driver(world: "World", hist: HistoryDB, wiki: Optional[str], name:
     d.proficiency[discipline] = 0.92
     d.real = True
     d.wiki = wiki
+    _rate_from_results(hist, d, name, year)
     d.demonstrated = sum(row_level(r) for r in near) / len(near) if near else ability
     for r in past:
         series_id = r["template"] if r["template"] in world.pyramid.series else r["template"]
