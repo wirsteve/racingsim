@@ -49,6 +49,12 @@ class SeasonRecord:
     dnfs: int = 0
     avg_start: Optional[float] = None
     rating: Optional[float] = None  # average NASCAR-style driver rating (lap-by-lap races)
+    par: Optional[float] = None     # positions above replacement (sim/season.py)
+    splits: dict = field(default_factory=dict)  # track type -> [starts, wins, top5, finish sum, laps led]
+
+    def __setstate__(self, state: dict) -> None:
+        state.setdefault("splits", {})   # records saved before splits existed
+        self.__dict__.update(state)
 
 
 @dataclass
@@ -144,11 +150,13 @@ class Driver:
     morale: float = 60.0                                         # 0-100
     rivals: dict[int, float] = field(default_factory=dict)       # driver id -> grudge heat 0-100
     suspension: int = 0                                          # races left on a suspension
+    awards: list[str] = field(default_factory=list)              # "2027 Cup Series Rookie of the Year"
 
     def __setstate__(self, state: dict) -> None:
         # Saves from before OOTP-style ratings: per-skill data is created lazily (skills.ensure).
         for k in ("skills", "track_skill", "personality", "rivals"):
             state.setdefault(k, {})
+        state.setdefault("awards", [])
         self.__dict__.update(state)
 
     @property

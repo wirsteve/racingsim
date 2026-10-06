@@ -157,6 +157,15 @@ def handle(method: str, path: str, query: dict, body: dict):
             msg = g.choose(str(body.get("choice")))
             return {"message": msg, "status": api.status(g)}
         return api.offseason(g)
+    if head in ("records", "almanac", "hof"):
+        from . import annals_view
+        if head == "records":
+            return annals_view.records(w, route[1] if len(route) > 1 else None)
+        if head == "almanac":
+            if len(route) > 1 and not route[1].isdigit():
+                raise ApiError("year must be a number")
+            return annals_view.almanac(w, int(route[1]) if len(route) > 1 else None)
+        return annals_view.hall_of_fame(w)
     if head == "regions":
         return api.regions(w)
     if head == "staff":

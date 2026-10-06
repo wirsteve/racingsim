@@ -121,6 +121,8 @@ document.addEventListener("change", (e) => {
 
 function view(html) { $("#view").innerHTML = html; window.scrollTo(0, 0); }
 function on(name, fn) { S.handlers[name] = fn; }
+on("records", (el) => { location.hash = "#/records/" + encodeURIComponent(el.value); });
+on("almanac", (el) => { location.hash = "#/almanac/" + el.value; });
 
 // ---------------------------------------------------------------- chrome
 async function refreshStatus() {
@@ -348,6 +350,7 @@ async function driverPage(id) {
     { key: "avg_start", label: "Avg st", num: true, render: (h) => h.avg_start ?? "" },
     { key: "avg_finish", label: "Avg fin", num: true },
     { key: "rating", label: "Rating", num: true, render: (h) => h.rating ?? "" },
+    { key: "par", label: "PAR", num: true, render: (h) => (h.par == null ? "" : (h.par > 0 ? "+" : "") + h.par.toFixed(1)) },
     { key: "pos", label: "Pos", num: true, render: (h) => `${posCell(h.pos, h.field)}${h.champion ? " 🏆" : ""}` },
   ];
   view(`
@@ -402,9 +405,14 @@ async function driverPage(id) {
       </div>
     </div>
     <div class="grid g-main" style="margin-top:16px">
-      <div class="card flush"><h3>Career history</h3>${table("hist", histCols, d.history.slice().reverse(), { empty: "No completed seasons yet." })}</div>
+      <div class="grid"><div class="card flush"><h3>Career history</h3>${table("hist", histCols, d.history.slice().reverse(), { empty: "No completed seasons yet." })}
+        <p class="muted small" style="padding:0 16px 12px">PAR: positions above replacement - how much better they finished than a replacement-level driver would in the same cars (1 PAR ≈ 80 positions over a season in a 40-car field). A solid regular is worth 3-5; a great season 8-10.</p></div>
+        ${(d.splits || []).length ? `<div class="card flush"><h3>By track type <span class="muted small">(touring and national)</span></h3>${table("splits", [
+          { key: "type", label: "Track type" }, { key: "starts", label: "St", num: true }, { key: "wins", label: "W", num: true },
+          { key: "top5", label: "T5", num: true }, { key: "avg_finish", label: "Avg fin", num: true }, { key: "laps_led", label: "Led", num: true }], d.splits)}</div>` : ""}</div>
       <div class="grid"><div class="card"><h3>Career log</h3>
         ${d.titles_list.length ? `<div class="chips" style="margin-bottom:10px">${d.titles_list.map((t) => `<span class="chip">🏆 ${esc(t)}</span>`).join("")}</div>` : ""}
+        ${(d.awards || []).length ? `<div class="chips" style="margin-bottom:10px">${d.awards.map((t) => `<span class="chip">🏅 ${esc(t)}</span>`).join("")}</div>` : ""}
         ${d.jewels_list.length ? `<div class="chips" style="margin-bottom:10px">${d.jewels_list.map((t) => `<span class="chip">💎 ${esc(t)}</span>`).join("")}</div>` : ""}
         ${d.events.length ? `<ul class="timeline">${d.events.slice(0, 40).map((e) => `<li>${esc(e)}</li>`).join("")}</ul>` : '<div class="muted">Nothing notable yet.</div>'}
       </div>
@@ -777,8 +785,45 @@ async function trackPage(id) {
         <h3 style="margin-top:12px">Raced here in this world</h3>
         ${t.jewels.length ? `<div class="chips" style="margin-bottom:8px">${t.jewels.map((j) => `<span class="chip">💎 ${esc(j)}</span>`).join("")}</div>` : ""}
         ${t.series.length ? t.series.slice(0, 20).map((x) => `<div class="small">${tierBadge(x.tier)} ${seriesLink(x)}</div>`).join("") : '<div class="muted">No series in this world race here.</div>'}
+        ${(t.winners || []).length ? `<h3 style="margin-top:12px">Winners here</h3>${t.winners.slice(0, 20).map((x) => `<div class="small"><b>${x.year}</b> ${driverLink(x.id, x.name)} <span class="muted">${esc(x.event)}</span></div>`).join("")}` : ""}
         ${f.lat !== null && f.lon > -128 && f.lon < -56 && f.lat > 23.5 && f.lat < 56 ? `<div style="margin-top:12px">${mapSvg([{ ...f, id: t.id, name: t.name, type: f.track_type, prestige: p.prestige }], { big: true })}</div>` : ""}</div>
     </div>`);
+}
+
+// ---------------------------------------------------------------- long memory: records, almanac, Hall of Fame
+const who = (x) => driverLink(x.id, x.name, x.me, x.real);
+async function recordsPage(sid) {
+  const r = await api("records" + (sid ? "/" + encodeURIComponent(sid) : ""));
+  if (!r.series.length) { view('<div class="card empty">No touring or national seasons have been completed yet. Records start after the first season.</div>'); return; }
+  const cur = r.series.find((x) => x.id === r.current);
+  const pick = `<select data-change="records">${r.series.map((x) => `<option value="${esc(x.id)}" ${x.id === r.current ? "selected" : ""}>${esc(x.name)}</option>`).join("")}</select>`;
+  const box = (b, season) => `<div class="card"><h3>${esc(b.label)}</h3>${b.rows.length ? `<ol class="small" style="margin:0;padding-left:20px">${b.rows.map((x) => `<li>${who(x)} <b>${typeof x.value === "number" && !Number.isInteger(x.value) ? x.value.toFixed(1) : x.value}</b>${season ? ` <span class="muted">${x.year}</span>` : ""}</li>`).join("")}</ol>` : '<div class="muted">—</div>'}</div>`;
+  view(`<div class="card hero"><div><h1>Records book</h1><div class="sub">${cur ? tierBadge(cur.tier) + " " + esc(cur.name) : ""}</div></div><div>${pick}</div></div>
+    <h2 style="margin:16px 0 8px">Career</h2><div class="grid g3">${Object.values(r.career).map((b) => box(b, false)).join("")}</div>
+    <h2 style="margin:16px 0 8px">Single season</h2><div class="grid g3">${Object.values(r.season).map((b) => box(b, true)).join("")}</div>`);
+}
+async function almanacPage(year) {
+  const a = await api("almanac" + (year ? "/" + year : ""));
+  if (!a.years.length) { view('<div class="card empty">The almanac starts after the first completed season.</div>'); return; }
+  const years = `<select data-change="almanac">${a.years.map((y) => `<option ${y === a.year ? "selected" : ""}>${y}</option>`).join("")}</select>`;
+  const list = (rows, fn) => rows.length ? `<ul class="timeline">${rows.map((x) => `<li>${fn(x)}</li>`).join("")}</ul>` : '<div class="muted">—</div>';
+  view(`<div class="card hero"><div><h1>${a.year} almanac</h1><div class="sub">Champions, awards and milestones</div></div><div>${years}</div></div>
+    <div class="grid g3" style="margin-top:16px">
+      <div class="card"><h3>Champions</h3>${list(a.champions, (x) => `${tierBadge(x.tier)} ${esc(x.series)}: ${who(x)}`)}</div>
+      <div class="card"><h3>Awards</h3>${list(a.awards, (x) => `<b>${esc(x.award)}</b> <span class="muted">${esc(x.series)}</span>: ${who(x)}${x.note ? ` <span class="muted small">${esc(x.note)}</span>` : ""}`)}</div>
+      <div class="card"><h3>Most valuable (PAR, national level)</h3>${list(a.par, (x) => `${who(x)} <b>${x.par > 0 ? "+" : ""}${x.par.toFixed(1)}</b> <span class="muted small">${esc(x.series)}</span>`)}</div>
+      <div class="card"><h3>Crown jewels</h3>${list(a.jewels, (x) => `💎 ${esc(x.event)}: ${who(x)}`)}</div>
+      <div class="card"><h3>Hall of Fame class</h3>${list(a.hof, (x) => who(x))}</div>
+      <div class="card"><h3>Milestones</h3>${list(a.milestones, (x) => esc(x.text))}</div>
+    </div>`);
+}
+async function hofPage() {
+  const h = await api("hof");
+  view(`<div class="card hero"><div><h1>Hall of Fame</h1><div class="sub">Drivers become eligible ${h.wait} seasons after their last; the strongest cases are inducted each winter (at most three).</div></div></div>
+    <div class="card flush" style="margin-top:16px">${table("hof", [
+      { key: "year", label: "Class", num: true }, { key: "name", label: "Driver", render: (x) => who(x) },
+      { key: "career", label: "Career" }, { key: "case", label: "The case" }, { key: "score", label: "Score", num: true }], h.inductees,
+      { empty: "Nobody has been inducted yet. The first ballots come a few seasons into a world." })}</div>`);
 }
 
 async function newsPage(kind = "") {
@@ -988,6 +1033,9 @@ const ROUTES = [
   [/^#\/tracks$/, () => tracksPage(), true],
   [/^#\/track\/(.+)$/, (m) => trackPage(decodeURIComponent(m[1])), true],
   [/^#\/news$/, () => newsPage(), true],
+  [/^#\/records(?:\/(.+))?$/, (m) => recordsPage(m[1] && decodeURIComponent(m[1])), true],
+  [/^#\/almanac(?:\/(\d+))?$/, (m) => almanacPage(m[1]), true],
+  [/^#\/hof$/, () => hofPage(), true],
   [/^#\/encyclopedia(?:\/([a-z]+))?(?:\/(.+))?$/, (m) => encyclopediaPage(m[1] || "overview", m[2] && decodeURIComponent(m[2])), false],
   [/^#\/saves$/, () => savesPage(), false],
   [/^#\/new$/, () => newPage(), false],
