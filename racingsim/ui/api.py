@@ -134,6 +134,7 @@ def driver_detail(world: "World", did: int) -> dict:
             "top10": getattr(r, "top10", 0), "poles": getattr(r, "poles", 0), "laps_led": getattr(r, "laps_led", 0),
             "dnfs": getattr(r, "dnfs", 0), "avg_start": getattr(r, "avg_start", None), "rating": getattr(r, "rating", None),
             "points": getattr(r, "points", None), "winnings": round(getattr(r, "winnings", 0.0)) or None,
+            "par": getattr(r, "par", None),
         })
     connections = []
     for key, v in sorted(d.connections.items(), key=lambda kv: -kv[1]):
@@ -165,8 +166,20 @@ def driver_detail(world: "World", did: int) -> dict:
         "titles_list": d.titles, "jewels_list": d.crown_jewels,
         "proficiency": {DISC_LABEL[k]: round(v * 100) for k, v in d.proficiency.items() if v >= 0.05},
         "veteran": d.grassroots_veteran,
+        "awards": list(getattr(d, "awards", [])),
+        "splits": _splits(d),
     })
     return row
+
+
+def _splits(d: Driver) -> list[dict]:
+    from ..world import annals
+    from ..world.skills import TRACK_TYPES
+    out = []
+    for tt, (st, wins, top5, fin, led) in sorted(annals.career_splits(d).items(), key=lambda kv: -kv[1][0]):
+        out.append({"type": TRACK_TYPES.get(tt, tt), "starts": st, "wins": wins, "top5": top5,
+                    "avg_finish": round(fin / st, 1) if st else None, "laps_led": led})
+    return out
 
 
 # ------------------------------------------------------------------------ status / dashboard
@@ -585,8 +598,13 @@ def track_detail(world: "World", tid: str) -> dict:
     hosted = sorted({(s.tier, s.name, s.id) for s in world.pyramid.active() if tid in s.schedule},
                     reverse=True)
     jewels_here = [cj.name for cj in world.pyramid.crown_jewels if cj.track_id == tid]
+    winners = []
+    for year, event, did in reversed(world.__dict__.get("annals", {}).get("track_winners", {}).get(tid, [])[-40:]):
+        w = world.drivers.get(did)
+        winners.append({"year": year, "event": event, "id": did, "name": w.name if w else "?"})
     return {"id": t.id, "name": t.display_name, "facts": d["facts"], "profile": d["profile"], "sim": d["sim"],
-            "series": [{"tier": a, "name": b, "id": c} for a, b, c in hosted], "jewels": jewels_here}
+            "series": [{"tier": a, "name": b, "id": c} for a, b, c in hosted], "jewels": jewels_here,
+            "winners": winners}
 
 
 def offseason(game: "Game") -> dict:

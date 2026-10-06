@@ -16,7 +16,7 @@ from typing import TYPE_CHECKING
 
 from ..world.entities import RETIRED, SIDELINED
 from ..rules.garage import target_class
-from ..world import staff
+from ..world import annals, staff
 from . import lifecycle, market, morale, programs, scouting, sponsorship
 
 if TYPE_CHECKING:
@@ -30,6 +30,7 @@ NEWSWORTHY = ("won the", "development program", "Shootout", "Combine", "first pr
 def begin_offseason(world: "World", results: "SeasonResults", summary: "YearSummary") -> None:
     world.market.event_marks = {d.id: len(d.events) for d in world.drivers.values()}
     staff.record_season(world, results)
+    annals.season_end(world, results)
     world.player_crew = {}   # freelance crew was hired for the season just run; hires from now are for next year
     morale.season_update(world, results)   # before contracts: unhappy drivers are harder to keep
     _season_news(world, results)
@@ -42,6 +43,7 @@ def begin_offseason(world: "World", results: "SeasonResults", summary: "YearSumm
     # 3. People age, learn, and some walk away (or step back to grassroots racing).
     lifecycle.develop(world, results)
     lifecycle.retirements(world, results, summary)
+    annals.hall_of_fame(world)
     # 4. Sponsors renew, walk, or collapse; new local/regional/national deals form.
     sponsorship.update(world, results)
     for d in world.drivers.values():

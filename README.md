@@ -109,6 +109,13 @@ python -m pytest -q                                     # run the tests
   play-by-play, calibrated against real NASCAR data.
 * **OOTP-style driver ratings**: 12 component skills with current/potential, track-type
   splits, personality, scouted 20–80 display; real drivers rated from their actual results.
+* **The people around the car**: crew chiefs, spotters, pit crews, technical directors,
+  engine builders, driver coaches and medical staff, with ratings, styles and a staff market.
+  Morale, rivalries, paybacks with fines and suspensions, team chemistry, and contracts shaped
+  by loyalty and ambition.
+* **Long memory**: PAR (positions above replacement, a racing WAR), track-type splits, records
+  books, a yearly almanac, awards (Rookie of the Year, Most Popular Driver, Driver of the Year),
+  milestones, winners by track and a Hall of Fame.
 * **Cars built to real rules** (`data/rules/`): 19 car classes from 126 researched rulebook
   records (track house rules and sanctioning rulebooks), 155 part prices and lifespans, 332
   sources. Chassis, engine packages (built, crate, sealed, spec, claimer — legal by year),

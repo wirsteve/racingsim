@@ -36,13 +36,13 @@ From the research. These are OOTP's design rules, translated to racing.
 | Development and aging | Weighted random, coaching, playing time, personality, focus, development lab | Ability plus per-skill development: seat time, work ethic, intelligence; physical skills fade, savvy keeps growing; track types learned from laps; off-season coaching | ◐ No competition-level effect, focus sliders or off-season programs yet |
 | Personality | 6 traits; morale; chemistry | 7 traits; morale (race by race and season); rivalries from wrecks, paybacks with points, fines and suspensions; team chemistry; loyalty, desire to win and morale in contract decisions | ✅ Phase 3. Greed waits for negotiation (Phase 5) |
 | Injuries | Types, body areas, proneness, re-injury, trainers | Races out, severity, durability; team medical staff speed recovery and soften injuries | ◐ No injury types, concussion history or racing hurt |
-| Stats | Every stat, splits, logs, WAR | Per race: start, laps, laps led, status, ARP, passes, quality passes, fastest laps, pits, driver rating. Per season: poles, laps led, DNFs, average start/finish, rating, winnings, points | ◐ No track-type splits, value metric, records, almanac or HOF |
+| Stats | Every stat, splits, logs, WAR | Per race: start, laps, laps led, status, ARP, passes, quality passes, fastest laps, pits, driver rating. Per season: poles, laps led, DNFs, average start/finish, rating, winnings, points, track-type splits and PAR (positions above replacement, a racing WAR); records books by series; a yearly almanac; winners by track; a Hall of Fame | ✅ Phase 4. Split by season and opponent strength still to come |
 | Team management / staff | Coaches, scouts, trainers with ratings | Crew chiefs, spotters, pit crews, technical directors, engine builders, driver coaches, medical: ratings, styles, contracts, aging, firings, a staff market; retired drivers become staff; the player hires their own crew | ✅ Phase 2. Scouts come in Phase 6 |
 | Transactions | Trades, FA, contracts, options, waivers, draft | Silly-season market, pay seats, salaries, contract years, development programs, shootouts | ◐ No negotiation, bonuses, release clauses, development loans or buyouts |
 | Finances | Gate, media, merch, budgets, owner | The player's own car: real costs, purses, points funds; sponsors | ◐ No team finances, fan base or merchandise |
 | Career / GM | GM mode, reputation, firing, job offers | Driver career; reputation; team offers | ◐ No owner or crew-chief careers, no goals or firing |
 | League / history | Historical leagues, expansion | 1995–2026 real series, rosters, calendars, 12k+ touring races, real rules and points by era | ✅ Exact replay mode still to come |
-| News / storylines / awards | Inbox, storylines, awards, milestones | News wire | ◐ No storylines, awards or milestones |
+| News / storylines / awards | Inbox, storylines, awards, milestones | News wire; Rookie of the Year, Most Popular Driver, Most Valuable Driver, Driver of the Year; first wins and start/win milestones; Hall of Fame inductions; rivalries and paybacks | ◐ No multi-season storylines yet |
 | Settings | Everything tunable | World size, start year | ❌ Phase 6 |
 
 ## Roadmap
@@ -81,7 +81,11 @@ Each phase is playable on its own and goes in as its own pull request.
 - **Contract negotiation:** drivers weigh money (greed), car quality and team results (desire to win), loyalty, and location. Contracts add performance bonuses, release clauses and buyouts. Teams can make development-contract loans down the ladder.
 - **Temper on track:** payback incidents, pit-road confrontations, fines and penalties, rivalries that persist.
 
-### Phase 4: Stats and long memory
+### Phase 4: Stats and long memory ✅
+
+Known gaps:
+- Records and Rookie of the Year follow the series id. A real-history era with its own id (e.g. the IRL years of IndyCar) keeps its own records book.
+- Drivers generated with a career already behind them have no records from before the world began. They aren't counted as rookies or first-time winners, and their Hall of Fame case counts only the seasons played in this world.
 
 - **Splits:** by track type and by season.
 - **A value metric:** Positions Above Replacement, finishes against what the car's equipment should deliver (a racing WAR).

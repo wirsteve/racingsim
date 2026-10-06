@@ -22,6 +22,7 @@ from ..constants import SUBSTITUTE_BREAKOUT_FINISH_PCT
 from ..util import clamp
 from ..world.entities import ACTIVE, PART_TIME, RETIRED, SIDELINED, Driver, SeasonRecord
 from ..world.skills import track_type_of as skill_track_type
+from ..world import annals
 from ..world import staff as staff_mod
 from ..career import morale as morale_mod
 from ..rules import car as C
@@ -60,6 +61,13 @@ class _Acc:
     rating_sum: float = 0.0
     rated: int = 0
     fast_laps: int = 0
+    eq_sum: float = 0.0          # the cars they drove (PAR baseline)
+    splits: dict = field(default_factory=dict)   # track type -> [starts, wins, top5, finish sum, laps led]
+
+    def __setstate__(self, state: dict) -> None:
+        state.setdefault("eq_sum", 0.0)
+        state.setdefault("splits", {})
+        self.__dict__.update(state)
 
 
 @dataclass
@@ -72,8 +80,11 @@ class SeasonResults:
     equipment: dict[int, float] = field(default_factory=dict)
     track_laps: dict[int, dict] = field(default_factory=dict)  # driver -> {track type: laps run}
 
+    par_fit: dict[str, list] = field(default_factory=dict)     # series -> [n, sum eq, sum pct, sum eq*pct, sum eq^2]
+
     def __setstate__(self, state: dict) -> None:
         state.setdefault("track_laps", {})   # mid-season saves from before the lap-by-lap engine
+        state.setdefault("par_fit", {})
         self.__dict__.update(state)
 
 
@@ -522,6 +533,12 @@ class SeasonRunner:
                     info["log"] = race.log[-400:]
         # Weekly local divisions keep just the winner (full results only where someone looks).
         self.race_log[jewel or s.id].append(info)
+        if jewel is not None or (s is not None and s.tier >= 3):
+            annals.note_race(world, track.id, jewel_name or s.name, winner.id)
+        if s is not None:
+            a = self.acc.get(winner.id)
+            if a is not None and a.series_id == s.id:
+                annals.first_win(world, winner, s, a.wins, track.name, self.week)
         if s is not None and s.tier == 7:
             world.post("race", f"{winner.name} wins the {s.name} race at {track.name}",
                        driver_id=winner.id, series_id=s.id, week=self.week)
@@ -590,6 +607,21 @@ def _tally(world: "World", res: SeasonResults, acc: dict[int, _Acc], finishes: l
             a.top5 += f.position <= 5
             a.fin_pct_sum += pct
             a.exp_pct_sum += exp_pct
+            eq = f.entry.equipment
+            a.eq_sum += eq
+            fit = res.par_fit.setdefault(s.id, [0, 0.0, 0.0, 0.0, 0.0])
+            fit[0] += 1
+            fit[1] += eq
+            fit[2] += pct
+            fit[3] += eq * pct
+            fit[4] += eq * eq
+            if tt is not None:
+                sp = a.splits.setdefault(tt, [0, 0, 0, 0, 0])
+                sp[0] += 1
+                sp[1] += f.position == 1
+                sp[2] += f.position <= 5
+                sp[3] += f.position
+                sp[4] += f.box["led"] if f.box else 0
             a.finish_sum += f.position
             a.expected_sum += f.expected_position
             a.field_sum += n
@@ -799,6 +831,39 @@ def jewel_entry_cost(d: Driver, track) -> float:
     return 2500 + dist * 4
 
 
+def positions_above_replacement(fit: Optional[list], rows: list[tuple[int, _Acc]]) -> dict[int, float]:
+    """PAR, a racing WAR: how much better a driver finished than a replacement-level driver would have
+    in the same cars.
+
+    Per series and season: finishing percentile (1 = win, 0 = last) is regressed on the car's equipment
+    across every start, which says what each car should do. A driver's edge is their average finish
+    against that line. Replacement level is the 20th percentile of the regulars' edges - the kind of
+    driver a team can always find. PAR = (edge - replacement) x starts, scaled to a 30-race season
+    and halved: one PAR is about two last-to-first swings (some 80 positions in a 40-car field).
+    Like baseball's WAR, a solid regular is worth 2-4 a season and a great season 6-9, whether the
+    series runs 10 races or 80.
+    """
+    if not fit or fit[0] < 10 or fit[0] != sum(a.starts for _, a in rows):
+        return {}      # (a mid-season save from before PAR existed: this season's data is incomplete)
+    n, sx, sy, sxy, sxx = fit
+    var = sxx - sx * sx / n
+    b = (sxy - sx * sy / n) / var if var > 1e-6 else 0.0
+    a0 = (sy - b * sx) / n
+    edge = {}
+    for did, a in rows:
+        if a.starts:
+            edge[did] = a.fin_pct_sum / a.starts - (a0 + b * a.eq_sum / a.starts)
+    most = max((a.starts for _, a in rows), default=0)
+    regular = sorted(edge[did] for did, a in rows if did in edge and a.starts >= max(2, most / 3))
+    if len(regular) < 5:
+        return {}
+    repl = regular[len(regular) // 5]
+    # Scaled to a 30-race season so an 80-race sprint-car tour and a 10-race sports-car season compare.
+    events = max(a.starts for _, a in rows)
+    scale = min(2.0, max(0.4, 30 / max(events, 1))) / 2
+    return {did: round((e - repl) * a.starts * scale, 1) for did, a in rows if (e := edge.get(did)) is not None}
+
+
 def _finalise_records(world: "World", res: SeasonResults, acc: dict[int, _Acc], summary,
                       runner: Optional["SeasonRunner"] = None) -> None:
     by_series: dict[str, list[tuple[int, _Acc]]] = defaultdict(list)
@@ -811,6 +876,7 @@ def _finalise_records(world: "World", res: SeasonResults, acc: dict[int, _Acc], 
         rows.sort(key=runner.rank_key(sid) if runner else (lambda r: (-r[1].points, -r[1].wins)))
         purse = runner.purse(s) if runner else Purse(s.template, world.year)
         n = len(rows)
+        par = positions_above_replacement(res.par_fit.get(sid), rows)
         for pos, (did, a) in enumerate(rows, start=1):
             d = world.drivers[did]
             fund = purse.points_fund(pos) if a.starts else 0.0
@@ -835,6 +901,9 @@ def _finalise_records(world: "World", res: SeasonResults, acc: dict[int, _Acc], 
             )
             st = max(a.starts, 1)  # a season of DNQs: no feature starts at all
             rec.note = f"{a.fin_pct_sum / st:.3f}|{a.exp_pct_sum / st:.3f}"
+            rec.par = par.get(did)
+            if s.tier >= 3 or d.is_player:
+                rec.splits = {k: list(v) for k, v in a.splits.items()}
             d.history.append(rec)
             d.career_starts += a.starts
             d.career_wins += a.wins

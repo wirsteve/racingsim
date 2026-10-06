@@ -91,6 +91,7 @@ class World:
         self.history_entrants: dict[int, list] = {}  # year -> real drivers who start racing then
         self.staff: dict = {}                       # staff id -> Staff (crew chiefs, spotters, ...)
         self.player_crew: dict = {}                 # role -> staff id the player hired for their own car
+        self.annals: dict = {}                      # almanac, track winners, Hall of Fame (world/annals.py)
 
     # Derived indexes are rebuilt on demand: keep them out of save games.
     def __getstate__(self) -> dict:
@@ -101,6 +102,7 @@ class World:
     def __setstate__(self, state: dict) -> None:
         state.setdefault("staff", {})   # saves from before staff existed are staffed on the next season
         state.setdefault("player_crew", {})
+        state.setdefault("annals", {})
         self.__dict__.update(state)
 
     # ----------------------------------------------------------------- helpers
