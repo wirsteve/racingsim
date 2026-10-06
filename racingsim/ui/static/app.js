@@ -680,15 +680,16 @@ const FIN_LABELS = { sponsors: "Sponsors", charter: "Charter money", owner: "Own
   running: "Running the cars", staff: "Staff", driver_salaries: "Driver salaries" };
 function financeCard(t) {
   const f = t.finance, b = f.last;
-  const rows = (o) => Object.entries(o).filter(([, v]) => v).map(([k, v]) => `<dt>${esc(FIN_LABELS[k] || k)}</dt><dd>${money(v)}</dd>`).join("");
+  const ix = (x) => (x && x.idx) || undefined;        // each season's books in that season's dollars
+  const rows = (o) => Object.entries(o).filter(([, v]) => v).map(([k, v]) => `<dt>${esc(FIN_LABELS[k] || k)}</dt><dd>${money(v, ix(b))}</dd>`).join("");
   const sum = (o) => Object.values(o).reduce((a, x) => a + x, 0);
   return `<div class="grid g3" style="margin-top:16px">
-    <div class="card"><h3>${b.year} revenue</h3><dl class="kv">${rows(b.revenue)}<dt><b>Total</b></dt><dd><b>${money(sum(b.revenue))}</b></dd></dl></div>
-    <div class="card"><h3>${b.year} costs</h3><dl class="kv">${rows(b.costs)}<dt><b>Total</b></dt><dd><b>${money(sum(b.costs))}</b></dd></dl>
+    <div class="card"><h3>${b.year} revenue</h3><dl class="kv">${rows(b.revenue)}<dt><b>Total</b></dt><dd><b>${money(sum(b.revenue), ix(b))}</b></dd></dl></div>
+    <div class="card"><h3>${b.year} costs</h3><dl class="kv">${rows(b.costs)}<dt><b>Total</b></dt><dd><b>${money(sum(b.costs), ix(b))}</b></dd></dl>
       <p class="muted small">Spending level ${Math.round(b.spend * 100)}% of the series' full-season cost per car. What a team spends this year is next year's speed.</p></div>
-    <div class="card"><h3>The owner's books</h3><dl class="kv"><dt>Result</dt><dd style="color:var(${b.net < 0 ? "--bad" : "--good"})">${money(b.net)}</dd><dt>Cash</dt><dd>${money(f.cash)}</dd>
+    <div class="card"><h3>The owner's books</h3><dl class="kv"><dt>Result</dt><dd style="color:var(${b.net < 0 ? "--bad" : "--good"})">${money(b.net, ix(b))}</dd><dt>Cash</dt><dd>${money(f.cash)}</dd>
       ${f.charters ? `<dt>Charters</dt><dd>${f.charters}</dd>` : ""}<dt>Fans (drivers)</dt><dd>${esc(t.fans)}</dd></dl>
-      ${f.history.length > 1 ? `<h4>Seasons</h4><ul class="timeline">${f.history.slice().reverse().slice(0, 8).map((h) => `<li><b>${h.year}</b> revenue ${money(h.revenue)} · result ${money(h.net)}</li>`).join("")}</ul>` : ""}
+      ${f.history.length > 1 ? `<h4>Seasons</h4><ul class="timeline">${f.history.slice().reverse().slice(0, 8).map((h) => `<li><b>${h.year}</b> revenue ${money(h.revenue, ix(h))} · result ${money(h.net, ix(h))}</li>`).join("")}</ul>` : ""}
       <p class="muted small">Most teams lose money; owners cover part of it. Run dry and the team changes hands.</p></div></div>`;
 }
 

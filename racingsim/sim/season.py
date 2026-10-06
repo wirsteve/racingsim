@@ -145,6 +145,8 @@ class SeasonRunner:
         if not world.staff:              # a save from before staff existed: hire everyone now
             staff_mod.seed_staff(world)
         goals.set_goals(world)
+        from ..world import fans as fans_mod
+        fans_mod.ensure(world)           # (saves from before fan bases: seeded before any award is decided)
         rng = world.rng
         res = self.res
 

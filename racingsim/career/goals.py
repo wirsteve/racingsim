@@ -56,9 +56,12 @@ def set_goals(world: "World") -> None:
                 d = world.drivers.get(did) if did is not None else None
                 if d is None:
                     continue
-                target = int(clamp(round(rank * 1.15 + 1), 1, field))
+                # Points positions count drivers: with two or three drivers sharing a car, a car's rank
+                # covers that many places in the standings.
+                per = max(1, t.drivers_per_car)
+                target = int(clamp(round((rank * 1.15 + 1) * per), 1, field * per))
                 if rank <= 2:
-                    target, label = 3, "Contend for the championship (top 3)"
+                    target, label = 3 * per, f"Contend for the championship (top {3 * per})"
                 elif rank <= 6:
                     label = f"Win races and finish top {target} in points"
                 else:
@@ -75,6 +78,10 @@ def review(world: "World", results) -> None:
         rec = results.records.get(d.id)
         if rec is None or rec.series_id != g["series_id"] or rec.starts == 0:
             g["result"] = "did not race"
+            continue
+        events = len(world.series(rec.series_id).schedule) or rec.starts
+        if rec.starts < 0.6 * events:
+            g.update(result="part season", pos=rec.championship_pos)   # injured or replaced: not judged
             continue
         target, pos = g["target"], rec.championship_pos
         margin = (target - pos) / max(target, 3)            # + = beat the goal

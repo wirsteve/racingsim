@@ -217,6 +217,7 @@ class Team:
     charters: int = 0           # Cup charters held (2016 on)
     books: list[dict] = field(default_factory=list)  # one ledger per season
     player_owned: bool = False  # owner mode (game/owner.py)
+    funding_anchor: float = 0.0  # what the organisation raised when its books opened (sponsors drift back to it)
     budget_mode: str = "normal"
 
     def __setstate__(self, state: dict) -> None:

@@ -52,3 +52,22 @@ def test_owner_verdicts_move_job_security(world):
     slump.seat_funded = False                                # paid seats aren't fired for results
     assert G.fire_chance(slump) == 0.0
     assert G.security_word(10) == "on the hot seat" and G.security_word(90) == "untouchable"
+
+
+def test_shared_cars_part_seasons_and_new_teams(world):
+    from racingsim.sim.season import SeasonResults
+    # Two drivers to a car: the target counts drivers, not cars.
+    t = next(t for t in world.teams.values() if t.drivers_per_car > 1 and any(t.roster) and not world.series(t.series_id).dormant)
+    d = world.drivers[next(i for i in t.roster if i)]
+    G.set_goals(world)
+    assert d.goal["target"] >= 3 * t.drivers_per_car       # top 3 cars = top 6 drivers with two to a car
+    # A part season (injury, replaced) isn't judged.
+    cars = _cup(world)
+    hurt = cars[0][1]
+    hurt.job_security = 60.0
+    res = SeasonResults()
+    rec = _rec(world, hurt, 31)
+    rec.starts = 10
+    res.records[hurt.id] = rec
+    G.review(world, res)
+    assert hurt.goal["result"] == "part season" and hurt.job_security == 60.0
