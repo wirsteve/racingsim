@@ -1,21 +1,10 @@
 {
- "src:wikipedia": {
-  "name": "Wikipedia (English) season and venue articles",
-  "url": "https://en.wikipedia.org/",
-  "kind": "wiki",
+ "src:motorsports-research-md": {
+  "name": "MOTORSPORTS_RESEARCH.md research synthesis (with per-claim citations in docs/research/)",
+  "url": "MOTORSPORTS_RESEARCH.md",
+  "kind": "secondary",
   "reliability": "medium",
-  "license": "CC BY-SA 4.0 (facts extracted only)",
-  "accessed": "2026-10-05",
-  "notes": "Season articles for NASCAR Cup/Xfinity/Trucks, CART/IRL/IndyCar, Indy Lights, Pro Mazda, USF2000; venue articles"
- },
- "src:wikidata": {
-  "name": "Wikidata",
-  "url": "https://www.wikidata.org/",
-  "kind": "wiki",
-  "reliability": "medium",
-  "license": "CC0",
-  "accessed": "2026-10-05",
-  "notes": "driver birth dates/places, coordinates"
+  "accessed": "2026-10-05"
  },
  "src:racingsim-history-analysis": {
   "name": "Analysis of the repository's own historical season data",
@@ -26,11 +15,22 @@
   "accessed": "2026-10-06",
   "notes": "computed statistics (ages, transitions, turnover)"
  },
- "src:motorsports-research-md": {
-  "name": "MOTORSPORTS_RESEARCH.md research synthesis (with per-claim citations in docs/research/)",
-  "url": "MOTORSPORTS_RESEARCH.md",
-  "kind": "secondary",
+ "src:wikidata": {
+  "name": "Wikidata",
+  "url": "https://www.wikidata.org/",
+  "kind": "wiki",
   "reliability": "medium",
-  "accessed": "2026-10-05"
+  "license": "CC0",
+  "accessed": "2026-10-05",
+  "notes": "driver birth dates/places, coordinates"
+ },
+ "src:wikipedia": {
+  "name": "Wikipedia (English) season and venue articles",
+  "url": "https://en.wikipedia.org/",
+  "kind": "wiki",
+  "reliability": "medium",
+  "license": "CC BY-SA 4.0 (facts extracted only)",
+  "accessed": "2026-10-05",
+  "notes": "Season articles for NASCAR Cup/Xfinity/Trucks, CART/IRL/IndyCar, Indy Lights, Pro Mazda, USF2000; venue articles"
  }
 }

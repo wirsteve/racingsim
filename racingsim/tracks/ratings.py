@@ -91,9 +91,19 @@ def _season_window(facts: TrackFacts, climate: str) -> tuple[int, int]:
     return window
 
 
+BANKING_CATEGORY_DEG = {"flat": 6.0, "moderate": 12.0, "high": 20.0}
+
+
+def effective_banking(facts: TrackFacts):
+    """Turn banking in degrees; a documented category stands in when the degrees are unknown."""
+    if facts.banking_deg_turns is not None:
+        return facts.banking_deg_turns
+    return BANKING_CATEGORY_DEG.get(getattr(facts, "banking_category", None) or "")
+
+
 def size_class(facts: TrackFacts) -> str:
     length = facts.length_mi or 0.4
-    banking = facts.banking_deg_turns or 0
+    banking = effective_banking(facts) or 0
     if facts.track_type == "kart_circuit":
         return "kart_circuit"
     if facts.track_type == "figure_eight":
@@ -114,7 +124,7 @@ def size_class(facts: TrackFacts) -> str:
         return "intermediate_oval" if banking >= 14 else "flat_intermediate"
     if length >= 0.75:
         return "short_oval"
-    if facts.banking_deg_turns is None:
+    if effective_banking(facts) is None:
         return "short_oval"  # banking undocumented: treat as a neutral short oval
     return "bullring" if banking >= 18 else "flat_short_oval" if banking < 13 else "short_oval"
 
@@ -192,8 +202,8 @@ def derive_profile(facts: TrackFacts, prestige_bonus: int = 0) -> TrackProfile:
 def derive_sim_ratings(facts: TrackFacts) -> TrackSimRatings:
     sc = size_class(facts)
     length = facts.length_mi or 0.4
-    banking = facts.banking_deg_turns if facts.banking_deg_turns is not None else (
-        8 if facts.is_oval else 0)
+    eb = effective_banking(facts)
+    banking = eb if eb is not None else (8 if facts.is_oval else 0)
 
     r = {
         "passing_difficulty": 50, "tire_degradation": 50, "mechanical_stress": 50,
@@ -222,10 +232,10 @@ def derive_sim_ratings(facts: TrackFacts) -> TrackSimRatings:
     elif sc in ("short_oval", "flat_short_oval", "bullring") and not facts.is_dirt:
         # Blend flat-paperclip and high-banked-bullring behaviour by banking;
         # undocumented banking sits in the middle.
-        if facts.banking_deg_turns is None:
+        if eb is None:
             hb = 0.5
         else:
-            hb = clamp((facts.banking_deg_turns - 12) / 8, 0, 1)
+            hb = clamp((eb - 12) / 8, 0, 1)
 
         def mix(flat: float, high: float) -> float:
             return flat + (high - flat) * hb

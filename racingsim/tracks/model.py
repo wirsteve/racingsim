@@ -60,6 +60,10 @@ class TrackFacts:
     closed: Optional[int] = None      # last year the venue held racing (None = still open / unknown)
     history: list[dict] = field(default_factory=list)  # [{year, change}] reconfigurations since 1995
     dormant: list[list[int]] = field(default_factory=list)  # [[first, last]] seasons with no (national) racing
+    major_series: list[str] = field(default_factory=list)   # notable series hosted (facts, for display/prestige)
+    banking_category: Optional[str] = None  # flat | moderate | high (when degrees are unknown)
+    prestige_category: Optional[str] = None  # low | medium | high | iconic (research judgement, see sources)
+    confidence: Optional[str] = None        # high | medium | low for the record as a whole
 
     @property
     def is_active(self) -> bool:
