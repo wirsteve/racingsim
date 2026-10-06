@@ -5,12 +5,14 @@ development, and development is next year's speed. Every team-run team keeps boo
 (2025 dollars, like the rest of the model):
 
 Revenue
+  * the money the organisation raises itself (``Team.sponsor_funding`` per seat, the figure the
+    driver market already uses), itemised as Cup charter money (2016 on: guaranteed per chartered
+    car, part fixed, part by results), the owner's own money (most teams lose money and owners
+    cover part of it) and sponsors (the rest)
+  * what pay drivers bring to their seat
   * purses and points-fund money (the team keeps about 65%; the driver gets the rest)
-  * the team's own sponsors, plus what pay drivers bring to their seat
-  * Cup charters (2016 on): guaranteed money per chartered car, part fixed, part by results
   * merchandise from the drivers' fan bases
   * manufacturer support for factory-aligned teams at the national level
-  * the owner's own money: most teams lose money and owners cover part of it
 Costs
   * running the cars (the series' full-season cost per car, scaled by how hard the team spends)
   * staff salaries (inside the running cost) and driver salaries
@@ -128,7 +130,7 @@ def close_books(world: "World", results) -> None:
             pct = sum(pcts) / len(pcts) if pcts else 0.3
             drivers = [world.drivers[i] for i in t.roster if i is not None and i in world.drivers]
             purse = TEAM_PURSE_SHARE * sum(r.winnings for _, r in rows)
-            own = t.sponsor_funding * t.seats
+            raised = t.sponsor_funding * t.seats      # charters + owner money + sponsors, as the market sees it
             brought = 0.0
             for slot, did in enumerate(t.roster):
                 d = world.drivers.get(did) if did is not None else None
@@ -136,19 +138,20 @@ def close_books(world: "World", results) -> None:
                     gap = seat_gap(t, tpl, seat_role(tpl, slot))
                     brought += max(0.0, gap) * clamp(world.seat_coverage.get(d.id, 1.0), 0, 1)
             charter = t.charters * charter_pay(year, pct) if sid == "cup_series" else 0.0
+            owner = OWNER_SUBSIDY.get(t.owner_type, 0.08) * tpl.season_cost * t.cars
+            sponsors = max(0.05 * raised, raised - charter - owner)
             merch = MERCH_TEAM_PER_FAN * 1000 * sum(d.fans for d in drivers)
             mfr = MANUFACTURER_SHARE * tpl.season_cost * t.cars if (t.manufacturer_id and tpl.tier >= 5) else 0.0
             running = tpl.season_cost * t.cars * t.spend
             staff_pay = sum(m.salary for m in team_staff(world, t.id))
             salaries = sum(d.salary for d in drivers if d.seat_funded)
-            owner = OWNER_SUBSIDY.get(t.owner_type, 0.08) * running
-            revenue = {"purse": purse, "sponsors": own, "pay_drivers": brought, "charter": charter,
-                       "merchandise": merch, "manufacturer": mfr, "owner": owner}
+            revenue = {"sponsors": sponsors, "charter": charter, "owner": owner, "pay_drivers": brought,
+                       "purse": purse, "merchandise": merch, "manufacturer": mfr}
             costs = {"running": running - min(staff_pay, running * 0.6), "staff": min(staff_pay, running * 0.6),
                      "driver_salaries": salaries}
             net = sum(revenue.values()) - sum(costs.values())
             t.cash = round(t.cash + net)
-            ledgers.append((t, pct, drivers, sum(revenue.values()) - owner, salaries))
+            ledgers.append((t, pct, drivers, sum(revenue.values()), salaries))
             t.books.append({"year": year, "revenue": {k: round(v) for k, v in revenue.items()},
                             "costs": {k: round(v) for k, v in costs.items()}, "net": round(net),
                             "cash": t.cash, "spend": t.spend, "result_pct": round(pct, 3)})
@@ -156,12 +159,14 @@ def close_books(world: "World", results) -> None:
         # Next year: equipment from what this year's money built, relative to the series.
         levels = sorted(t.spend for t, *_ in ledgers)
         median = levels[len(levels) // 2] if levels else 1.0
+        sponsor_median = sorted(t.sponsor_funding for t in teams)[len(teams) // 2]
         for t, pct, drivers, earned, salaries in ledgers:
-            target = mean_eq + 28 * math.log2(max(t.spend, 0.05) / max(median, 0.05))
+            # An organisation keeps most of its know-how; money moves it from there.
+            target = (mean_eq + 0.75 * (t.equipment - mean_eq)
+                      + 35 * math.log2(max(t.spend, 0.05) / max(median, 0.05)))
             t.equipment = round(clamp(t.equipment + 0.35 * (target - t.equipment) + rng.gauss(0, 2), 8, 98), 1)
-            _sponsors(world, t, tpl, pct, drivers)
-            budget = earned + OWNER_SUBSIDY.get(t.owner_type, 0.08) * tpl.season_cost * t.cars * t.spend
-            budget += 0.3 * t.cash if t.cash > 0 else 0.4 * t.cash
+            _sponsors(world, t, tpl, pct, drivers, sponsor_median)
+            budget = earned + (0.3 * t.cash if t.cash > 0 else 0.4 * t.cash)
             t.spend = round(clamp((budget - salaries) / max(1.0, tpl.season_cost * t.cars), SPEND_MIN, SPEND_MAX), 3)
             if t.cash < -0.6 * tpl.season_cost * t.cars:
                 _sold(world, t, tpl)
@@ -171,15 +176,15 @@ def close_books(world: "World", results) -> None:
             d.savings += MERCH_DRIVER_PER_FAN * 1000 * d.fans
 
 
-def _sponsors(world: "World", t: "Team", tpl, pct: float, drivers: list) -> None:
-    """Sponsors follow results and fans (and drift back toward what the series normally raises)."""
+def _sponsors(world: "World", t: "Team", tpl, pct: float, drivers: list, median: float) -> None:
+    """Sponsors follow results and fans (a mid-field team with an ordinary following holds steady),
+    and drift slowly back toward what the series' teams typically raise."""
     fans = sum(d.fans for d in drivers)
     reach = F.TIER_FANS[min(tpl.tier, 7)] * max(1, len(drivers))
-    factor = (0.85 + 0.3 * pct) * (1 + 0.1 * math.log10(1 + fans / max(reach, 0.01)))
+    factor = (0.85 + 0.3 * pct) * (1 + 0.05 * math.log10(max(fans, 0.01) / max(reach, 0.01)))
     per_seat = tpl.season_cost / max(1, tpl.drivers_per_car)
-    norm = 0.35 * per_seat
     new = t.sponsor_funding * clamp(factor + world.rng.gauss(0, 0.05), 0.85, 1.15)
-    t.sponsor_funding = round(clamp(0.85 * new + 0.15 * norm, 0.0, 1.2 * per_seat))
+    t.sponsor_funding = round(clamp(0.95 * new + 0.05 * median, 0.0, 1.35 * per_seat))
 
 
 def _sold(world: "World", t: "Team", tpl) -> None:

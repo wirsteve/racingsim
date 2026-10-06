@@ -29,7 +29,7 @@ if TYPE_CHECKING:
 TIER_FANS = {0: 0.05, 1: 0.4, 2: 1.5, 3: 6.0, 4: 20.0, 5: 60.0, 6: 120.0, 7: 400.0}
 # Cup TV audience relative to 2025 (2.48M): research section 8; before 2010 interpolated (EST).
 AUDIENCE = {1995: 2.0, 2000: 2.6, 2005: 2.6, 2010: 2.4, 2015: 2.05, 2019: 1.25, 2021: 1.18, 2025: 1.0}
-RETAIN = 0.85          # share of last year's fans who stay
+RETAIN = 0.85          # share of last year's fans who stay (a following settles near 6-7 seasons of gains)
 RETAIN_RETIRED = 0.7
 
 
@@ -49,8 +49,8 @@ def initial(d: "Driver", rng: random.Random) -> float:
     """A starting following for drivers who arrive with a career behind them."""
     tier = min(7, max(d.max_tier, d.tier if d.series_id else 0))
     wins = d.career_wins + 3 * len(d.titles)
-    base = TIER_FANS[tier] * (0.4 + d.marketability / 80) * (0.5 + d.reputation / 100) * (1 + wins / 20)
-    return round(base * math.exp(rng.gauss(0, 0.35)) * 2.5, 2)
+    base = TIER_FANS[tier] * (0.4 + d.marketability / 80) * (0.5 + d.reputation / 100) * (1 + wins / 40)
+    return round(base * math.exp(rng.gauss(0, 0.35)), 2)
 
 
 def ensure(world: "World") -> None:
@@ -67,7 +67,7 @@ def ensure(world: "World") -> None:
 def season_update(world: "World", results) -> None:
     """Fans after a season: results where people watch, charisma, and time."""
     ensure(world)
-    view = audience(world.year)
+    view = audience(world.year) ** 0.5
     for d in world.drivers.values():
         rec = results.records.get(d.id)
         if d.status == "retired":
@@ -78,7 +78,7 @@ def season_update(world: "World", results) -> None:
             reach = TIER_FANS[min(rec.tier, 7)] * (view if rec.tier >= 5 else 1.0)
             show = (0.15 + 0.05 * rec.top5 + 0.25 * rec.wins + (2.0 if rec.champion else 0.0)
                     + 0.5 * len(rec.crown_jewel_wins))
-            gain = reach * show * (0.5 + d.marketability / 100)
+            gain = 0.2 * reach * show * (0.5 + d.marketability / 100)
         d.fans = round(clamp(d.fans * RETAIN + gain, 0.0, 20_000.0), 2)
 
 

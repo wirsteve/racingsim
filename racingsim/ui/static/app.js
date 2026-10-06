@@ -383,6 +383,7 @@ async function driverPage(id) {
           <dt>Category</dt><dd>${esc(d.category)} <span class="muted small">(sports-car rating)</span></dd>
           <dt>Best level</dt><dd>${tierBadge(d.max_tier)}</dd>
           <dt>Starts / wins</dt><dd>${d.starts} / ${d.wins}</dd>
+          ${d.fans ? `<dt>Fans</dt><dd>${esc(d.fans.label)}${d.fans.rank ? ` <span class="muted small">(#${d.fans.rank})</span>` : ""}</dd>` : ""}
           <dt>Momentum</dt><dd>${d.momentum > 5 ? "📈 hot" : d.momentum < -5 ? "📉 cold" : "steady"} (${d.momentum})</dd>
           ${d.program ? `<dt>Program</dt><dd><span class="badge good">${esc(d.program)} development</span></dd>` : ""}
           ${d.contract_years !== null && d.contract_years !== undefined ? `<dt>Contract</dt><dd>${d.contract_years} yr left · ${d.funded ? "funded seat" : "driver-funded"}</dd>` : ""}
@@ -665,7 +666,24 @@ async function teamPage(id) {
         ${Object.entries(t.weights).map(([k, v]) => `<div class="culture"><span>${k}</span><span class="b"><i style="width:${v * 100}%;background:var(--accent)"></i></span></div>`).join("")}
         <p class="muted small">Teams that raise less money themselves lean on drivers who bring it.</p></div>
     </div>
-    ${(t.staff || []).length ? `<div class="card flush" style="margin-top:16px"><h3 style="padding:14px 16px 0">The people</h3>${staffTable("team-staff", t.staff, true)}</div>` : ""}`);
+    ${(t.staff || []).length ? `<div class="card flush" style="margin-top:16px"><h3 style="padding:14px 16px 0">The people</h3>${staffTable("team-staff", t.staff, true)}</div>` : ""}
+    ${t.finance ? financeCard(t) : ""}`);
+}
+const FIN_LABELS = { sponsors: "Sponsors", charter: "Charter money", owner: "Owner's money", pay_drivers: "Drivers' money",
+  purse: "Purses and points fund", merchandise: "Merchandise", manufacturer: "Manufacturer support",
+  running: "Running the cars", staff: "Staff", driver_salaries: "Driver salaries" };
+function financeCard(t) {
+  const f = t.finance, b = f.last;
+  const rows = (o) => Object.entries(o).filter(([, v]) => v).map(([k, v]) => `<dt>${esc(FIN_LABELS[k] || k)}</dt><dd>${money(v)}</dd>`).join("");
+  const sum = (o) => Object.values(o).reduce((a, x) => a + x, 0);
+  return `<div class="grid g3" style="margin-top:16px">
+    <div class="card"><h3>${b.year} revenue</h3><dl class="kv">${rows(b.revenue)}<dt><b>Total</b></dt><dd><b>${money(sum(b.revenue))}</b></dd></dl></div>
+    <div class="card"><h3>${b.year} costs</h3><dl class="kv">${rows(b.costs)}<dt><b>Total</b></dt><dd><b>${money(sum(b.costs))}</b></dd></dl>
+      <p class="muted small">Spending level ${Math.round(b.spend * 100)}% of the series' full-season cost per car. What a team spends this year is next year's speed.</p></div>
+    <div class="card"><h3>The owner's books</h3><dl class="kv"><dt>Result</dt><dd style="color:var(${b.net < 0 ? "--bad" : "--good"})">${money(b.net)}</dd><dt>Cash</dt><dd>${money(f.cash)}</dd>
+      ${f.charters ? `<dt>Charters</dt><dd>${f.charters}</dd>` : ""}<dt>Fans (drivers)</dt><dd>${esc(t.fans)}</dd></dl>
+      ${f.history.length > 1 ? `<h4>Seasons</h4><ul class="timeline">${f.history.slice().reverse().slice(0, 8).map((h) => `<li><b>${h.year}</b> revenue ${money(h.revenue)} · result ${money(h.net)}</li>`).join("")}</ul>` : ""}
+      <p class="muted small">Most teams lose money; owners cover part of it. Run dry and the team changes hands.</p></div></div>`;
 }
 
 // ---- staff (crew chiefs, spotters, pit crews, ...)

@@ -170,9 +170,15 @@ def driver_detail(world: "World", did: int) -> dict:
         "proficiency": {DISC_LABEL[k]: round(v * 100) for k, v in d.proficiency.items() if v >= 0.05},
         "veteran": d.grassroots_veteran,
         "awards": list(getattr(d, "awards", [])),
+        "fans": _fans(world, d),
         "splits": _splits(d),
     })
     return row
+
+
+def _fans(world: "World", d: Driver) -> dict:
+    from ..world import fans
+    return {"label": fans.label(d.fans), "rank": fans.rank(world, d) if d.fans >= 1 else None}
 
 
 def _splits(d: Driver) -> list[dict]:
@@ -559,7 +565,10 @@ def team_detail(world: "World", tid: int) -> dict:
                 "roster": [driver_row(world, world.drivers[x]) for x in t.roster if x is not None],
                 "reputation": round(t.reputation)})
     from .staff_view import team_staff
+    from ..world import fans, finance
     out["staff"] = team_staff(world, tid)
+    out["finance"] = finance.team_view(world, t)
+    out["fans"] = fans.label(sum(world.drivers[x].fans for x in t.roster if x is not None and x in world.drivers))
     return out
 
 
