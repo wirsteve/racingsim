@@ -15,7 +15,9 @@ if TYPE_CHECKING:
 
 
 def develop(world: "World", results: "SeasonResults") -> None:
+    from ..world.settings import get as setting
     rng = world.rng
+    speed = setting(world, "development")
     for d in world.drivers.values():
         if d.status == RETIRED:
             continue
@@ -27,7 +29,7 @@ def develop(world: "World", results: "SeasonResults") -> None:
             rate = 0.22 if age < 15 else 0.20 if age < 19 else 0.15 if age < 24 else 0.08
             coaching = (1 + 0.035 * d.tier) * staff.coach_bonus(world, d)  # the team's driver coach
             drive = (0.75 + d.determination / 250 + d.professionalism / 500) * (0.88 + d.morale / 500)
-            growth = (d.potential - d.ability) * rate * (0.35 + 0.65 * seat_time) * coaching * drive
+            growth = (d.potential - d.ability) * rate * (0.35 + 0.65 * seat_time) * coaching * drive * speed
             d.ability = clamp(d.ability + growth + rng.gauss(0, 1.0), 1, d.potential + 1)
             # Rare late breakthroughs (research C 5.5 "late window")
             if 24 <= age <= 33 and rng.random() < 0.015:

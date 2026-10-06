@@ -23,6 +23,8 @@ from ..util import clamp
 from ..world.entities import ACTIVE, PART_TIME, RETIRED, SIDELINED, Driver, SeasonRecord
 from ..world.skills import track_type_of as skill_track_type
 from ..world import annals
+from ..world import settings as world_settings
+from . import weather as weather_mod
 from ..world import staff as staff_mod
 from ..career import goals
 from ..career import morale as morale_mod
@@ -349,6 +351,14 @@ class SeasonRunner:
         track_id = s.schedule[event_idx]
         track = world.tracks.get(track_id)
         drivers = self.by_series[sid]
+        realism = world_settings.all_settings(world)
+        wx = weather_mod.roll(track, tpl.tier, rng, realism["weather"])
+        if wx is not None and wx["kind"] == "rainout":
+            # The night is lost: no race, no purse (the player hears about it).
+            if any(d.is_player for d in drivers):
+                world.post("player", f"Rained out at {track.name} ({s.name})", driver_id=world.player_id,
+                           series_id=sid, week=self.week, importance=1)
+            return None
         entries: list[Entry] = []
         suspended: list[Driver] = []     # serve the race only if it actually runs
         if tpl.team_based:
@@ -437,11 +447,12 @@ class SeasonRunner:
             # Tours, national series and any race the player is in run lap by lap.
             player_in = any(d.is_player for e in entries for d in e.drivers)
             rr = engine.run(entries, track, tpl.tier, tpl.car_weight, rng, detail=player_in,
-                            stages=system.stages, free_pass=world.year >= 2003, discipline=tpl.discipline)
+                            stages=system.stages, free_pass=world.year >= 2003, discipline=tpl.discipline,
+                            realism=realism, weather=wx)
             finishes = rr.finishes
             pts = score_box(system, finishes)
         else:
-            finishes = run_race(entries, track, tpl.discipline, tpl.tier, tpl.car_weight, rng)
+            finishes = run_race(entries, track, tpl.discipline, tpl.tier, tpl.car_weight, rng, realism=realism)
             pts = score_race(system, [(f.entry.drivers[0].id, f.pace) for f in finishes], rng)
         _tally(world, res, self.acc, finishes, s, pts, purse, heat_pts, dnq, system, track)
         self._personal(finishes, rr, tpl.tier, s.name, track.name, s.id)
@@ -532,7 +543,9 @@ class SeasonRunner:
                 for f in finishes]
             if race is not None:
                 info["race"] = {"laps": race.laps, "cautions": race.cautions, "caution_laps": race.caution_laps,
-                                "lead_changes": race.lead_changes, "leaders": race.leaders, "margin": race.margin}
+                                "lead_changes": race.lead_changes, "leaders": race.leaders, "margin": race.margin,
+                                "scheduled": race.scheduled or race.laps,
+                                "weather": (race.weather or {}).get("text")}
                 if player_in:
                     info["log"] = race.log[-400:]
         # Weekly local divisions keep just the winner (full results only where someone looks).
@@ -753,9 +766,11 @@ def _crown_jewel(world: "World", runner: "SeasonRunner", cj) -> Optional[dict]:
         if d.is_player:
             charge(d, jewel_entry_cost(d, track))
     entries = [Entry([d], _jewel_equipment(world, res, d, cj, rng)) for d in field_drivers]
+    realism = world_settings.all_settings(world)
+    wx = weather_mod.roll(track, max(cj.max_tier - 1, 3), rng, realism["weather"])   # big events wait out the rain
     rr = engine.run(entries, track, max(cj.max_tier - 1, 2), 0.45, rng,
                     detail=any(d.is_player for d in field_drivers), free_pass=world.year >= 2003,
-                    discipline=cj.discipline)
+                    discipline=cj.discipline, realism=realism, weather=wx)
     finishes = rr.finishes
     morale_mod.incidents(world, rr.incidents)
     for att, tgt in rr.paybacks:

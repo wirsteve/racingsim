@@ -32,6 +32,7 @@ def begin_offseason(world: "World", results: "SeasonResults", summary: "YearSumm
     staff.record_season(world, results)
     annals.season_end(world, results)
     world.player_crew = {}   # freelance crew was hired for the season just run; hires from now are for next year
+    world.scouting_level = "standard"   # the scouting budget is set (and paid) each winter
     morale.season_update(world, results)   # before contracts: unhappy drivers are harder to keep
     goals.review(world, results)           # the owners' verdicts: job security for the market
     fans.season_update(world, results)     # who people came to see

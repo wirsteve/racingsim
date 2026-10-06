@@ -66,6 +66,10 @@ def team_brief(world: "World", tid: Optional[int]) -> Optional[dict]:
             "manufacturer": m.name if m else None, "series_id": t.series_id}
 
 
+# Player scouting budgets: (error multiplier, cost per season = base x max(1, the player's tier)).
+SCOUTING_LEVELS = {"none": (1.35, 0), "standard": (1.0, 0), "extended": (0.75, 10_000), "elite": (0.5, 30_000)}
+
+
 def scouted(world: "World", d: Driver) -> dict:
     """Ratings as the player's scouts see them (exact for the player's own driver)."""
     if d.is_player:
@@ -76,8 +80,13 @@ def scouted(world: "World", d: Driver) -> dict:
         out["personality"] = skills.personality_report(d, exact=True)
         out["mood"] = _mood(world, d, exact=True)
         return out
+    from ..world.settings import get as setting
     rng = random.Random(d.id * 92821 + world.year * 31)
-    sd = 2 + 12 * (1 - d.exposure / 100)
+    # Scouts' error: less for drivers who've been seen a lot; the player's scouting budget and the
+    # realism setting sharpen or blur every report.
+    sd = (2 + 12 * (1 - d.exposure / 100)) * SCOUTING_LEVELS.get(world.__dict__.get("scouting_level", "standard"),
+                                                                  SCOUTING_LEVELS["standard"])[0]
+    sd /= max(0.25, setting(world, "scouting"))
 
     def blur(x: float) -> int:
         return int(round(scale(x + rng.gauss(0, sd)) / 5) * 5)
@@ -553,7 +562,29 @@ def series_detail(world: "World", sid: str) -> dict:
             "drivers_per_car": tpl.drivers_per_car},
         "schedule": schedule(world, sid), "standings": standings_rows(world, sid), "teams": teams,
         "drivers": sorted(drivers, key=lambda r: -r["overall"]), "champions": champs[:25],
+        "power": power_rankings(world, sid),
     }
+
+
+def power_rankings(world: "World", sid: str, limit: int = 25) -> list[dict]:
+    """The media's view of a series (OOTP's public scouting baseline): what drivers have shown in
+    results, their name, and this season's form. Everyone can see it; it isn't the truth."""
+    runner = world.season
+    form: dict[int, float] = {}
+    if runner is not None:
+        rows = runner.standings(sid) if any(a.series_id == sid for a in runner.acc.values()) else []
+        n = len(rows)
+        form = {did: 1 - i / max(1, n - 1) for i, (did, _) in enumerate(rows)}
+    out = []
+    for d in world.drivers.values():
+        if d.series_id != sid or d.status == RETIRED:
+            continue
+        score = d.demonstrated * 0.75 + d.reputation * 0.15 + 12 * form.get(d.id, 0.3)
+        out.append((score, d))
+    out.sort(key=lambda x: (-x[0], x[1].id))
+    return [{"rank": i, "id": d.id, "name": d.name, "media": scale(d.demonstrated), "reputation": round(d.reputation),
+             "form": round(100 * form[d.id]) if d.id in form else None, "is_player": d.is_player, "real": d.real,
+             "team": team_brief(world, d.team_id)} for i, (_, d) in enumerate(out[:limit], start=1)]
 
 
 def team_detail(world: "World", tid: int) -> dict:

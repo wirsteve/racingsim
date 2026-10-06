@@ -157,6 +157,16 @@ def handle(method: str, path: str, query: dict, body: dict):
             msg = g.choose(str(body.get("choice")))
             return {"message": msg, "status": api.status(g)}
         return api.offseason(g)
+    if head == "settings":
+        from ..world import settings as world_settings
+        if method == "POST":
+            if not isinstance(body.get("values"), dict):
+                raise ApiError("values required")
+            try:
+                world_settings.update(w, body["values"])
+            except ValueError as e:
+                raise ApiError(str(e))
+        return {"settings": world_settings.view(w)}
     if head in ("records", "almanac", "hof"):
         from . import annals_view
         if head == "records":

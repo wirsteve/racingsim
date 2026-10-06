@@ -154,6 +154,7 @@ class Driver:
     goal: dict = field(default_factory=dict)                     # this season's owner goal (career/goals.py)
     fans: float = 0.0                                            # fan base, thousands (world/fans.py)
     job_security: float = 60.0                                   # 0-100: how safe the seat is
+    dev_focus: str = ""                                          # player's development focus (world/skills.py FOCUS)
 
     def __setstate__(self, state: dict) -> None:
         # Saves from before OOTP-style ratings: per-skill data is created lazily (skills.ensure).
