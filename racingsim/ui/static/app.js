@@ -338,7 +338,7 @@ async function driverPage(id) {
   const histCols = [
     { key: "year", label: "Year", num: true },
     { key: "age", label: "Age", num: true },
-    { key: "series_name", label: "Series", render: (h) => `${tierBadge(h.tier)} ${h.series ? seriesLink(h.series) : esc(h.series_name)}` },
+    { key: "series_name", label: "Series", render: (h) => `<span style="display:inline-block;min-width:170px">${tierBadge(h.tier)} ${h.series ? seriesLink(h.series) : esc(h.series_name)}</span>` },
     { key: "team", label: "Team", render: (h) => teamLink(h.team), sort: (h) => h.team?.name || "" },
     { key: "starts", label: "St", num: true },
     { key: "wins", label: "W", num: true },
@@ -799,8 +799,9 @@ async function recordsPage(sid) {
   const pick = `<select data-change="records">${r.series.map((x) => `<option value="${esc(x.id)}" ${x.id === r.current ? "selected" : ""}>${esc(x.name)}</option>`).join("")}</select>`;
   const box = (b, season) => `<div class="card"><h3>${esc(b.label)}</h3>${b.rows.length ? `<ol class="small" style="margin:0;padding-left:20px">${b.rows.map((x) => `<li>${who(x)} <b>${typeof x.value === "number" && !Number.isInteger(x.value) ? x.value.toFixed(1) : x.value}</b>${season ? ` <span class="muted">${x.year}</span>` : ""}</li>`).join("")}</ol>` : '<div class="muted">—</div>'}</div>`;
   view(`<div class="card hero"><div><h1>Records book</h1><div class="sub">${cur ? tierBadge(cur.tier) + " " + esc(cur.name) : ""}</div></div><div>${pick}</div></div>
-    <h2 style="margin:16px 0 8px">Career</h2><div class="grid g3">${Object.values(r.career).map((b) => box(b, false)).join("")}</div>
-    <h2 style="margin:16px 0 8px">Single season</h2><div class="grid g3">${Object.values(r.season).map((b) => box(b, true)).join("")}</div>`);
+    <h2 style="margin:16px 0 8px">Career</h2><div class="grid g3">${Object.values(r.career).filter((b) => b.rows.length).map((b) => box(b, false)).join("")}</div>
+    <h2 style="margin:16px 0 8px">Single season</h2><div class="grid g3">${Object.values(r.season).filter((b) => b.rows.length).map((b) => box(b, true)).join("")}</div>
+    <p class="muted small">Seasons imported from real history carry wins, top fives, starts and titles; poles, laps led, ratings and PAR are kept from the seasons simulated in this world.</p>`);
 }
 async function almanacPage(year) {
   const a = await api("almanac" + (year ? "/" + year : ""));

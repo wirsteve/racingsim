@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import re
 from typing import TYPE_CHECKING, Optional
 
 from ..world import annals
@@ -25,7 +26,8 @@ def records_index(world: "World") -> list[dict]:
             cur = seen.get(r.series_id)
             if cur is None or r.year > cur["year"]:
                 s = world.pyramid.series.get(r.series_id)
-                seen[r.series_id] = {"id": r.series_id, "name": r.series_name or (s.name if s else r.series_id),
+                name = s.name if s is not None else (r.series_name or r.series_id)
+                seen[r.series_id] = {"id": r.series_id, "name": re.sub(r"^\d{4} ", "", name),   # "2007 IndyCar Series"
                                      "tier": r.tier, "year": r.year}
     return sorted(seen.values(), key=lambda x: (-x["tier"], x["name"]))
 
@@ -34,8 +36,10 @@ def records(world: "World", series_id: Optional[str]) -> dict:
     index = records_index(world)
     if not index:
         return {"series": [], "current": None, "career": {}, "season": {}}
-    if series_id is None or not any(x["id"] == series_id for x in index):
-        series_id = index[0]["id"]
+    ids = {x["id"] for x in index}
+    if series_id not in ids:
+        mine = world.player.series_id if world.player is not None else None
+        series_id = mine if mine in ids else "cup_series" if "cup_series" in ids else index[0]["id"]
     book = annals.records(world, series_id)
     career = {k: {"label": v["label"], "rows": [{"value": val, **_who(world, did)} for val, did in v["rows"]]}
               for k, v in book["career"].items()}

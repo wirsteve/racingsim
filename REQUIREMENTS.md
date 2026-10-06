@@ -144,7 +144,7 @@ research must be recorded in the repository.
 | R12.3 | Lap-by-lap race engine with box scores, play-by-play and loop-data stats, calibrated to real data. | [x] |
 | R12.4 | Staff (crew chief, engineer, spotter, pit crew, engine builder, coach) with ratings and styles. | [x] |
 | R12.5 | Morale, chemistry, contract decisions driven by personality; on-track feuds and penalties. | [x] (negotiation terms - bonuses, clauses, buyouts - come with Phase 5) |
-| R12.6 | Splits, value metric, records, almanac, awards, Hall of Fame. | [ ] |
+| R12.6 | Splits, value metric, records, almanac, awards, Hall of Fame. | [x] |
 | R12.7 | Team finances, fan base, owner goals, owner mode. | [ ] |
 | R12.8 | Scouting staff and budgets, development programs, realism settings, weather. | [ ] |
 
