@@ -28,6 +28,11 @@ def test_settings_validate_and_clamp(world):
     assert out["crashes"] == 2.0 and out["weather"] == 0.0
     with pytest.raises(ValueError):
         ST.update(world, {"nonsense": 1})
+    for bad in (float("nan"), float("inf"), True, "1"):
+        with pytest.raises(ValueError):
+            ST.update(world, {"luck": bad})
+    world.settings = {"luck": float("nan")}          # a bad value from an old save is ignored
+    assert ST.get(world, "luck") == 1.0
     ST.update(world, {k: 1.0 for k in ST.DEFAULTS})
     assert {x["key"] for x in ST.view(world)} == set(ST.DEFAULTS)
 
@@ -92,10 +97,6 @@ def test_development_focus(world):
         S.develop(plain, age, 30, random.Random(age))
         S.develop(focused, age, 30, random.Random(age))
     assert focused.skills["tire_management"] - t0 > plain.skills["tire_management"] - t0
-    learner = fresh("tt_road")
-    before = S.track_skills(learner)["road"]
-    S.develop(learner, 20, 0, random.Random(1))
-    assert S.track_skills(learner)["road"] > before
 
 
 def test_scouting_budget_sharpens_reports(world):
@@ -104,7 +105,7 @@ def test_scouting_budget_sharpens_reports(world):
     def err(level):
         world.scouting_level = level
         return statistics.mean(abs(scouted(world, d)["overall"] - scale(d.effective_ability(d.primary_discipline))) for d in ds)
-    blind, elite = err("none"), err("elite")
+    blind, elite = err("standard"), err("elite")
     world.scouting_level = "standard"
     assert elite < blind
 
@@ -124,3 +125,4 @@ def test_power_rankings_and_rainouts_in_a_season(world):
     ran = sum(len(r.race_log.get(sid, [])) for sid in local)
     scheduled = sum(len(w.series(sid).schedule) for sid in local)
     assert 0.75 * scheduled < ran < scheduled            # some weekly nights are rained out (or short of cars)
+    assert all(r.res.events_held.get(sid, 0) == len(r.race_log.get(sid, [])) for sid in local)

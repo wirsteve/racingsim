@@ -84,10 +84,12 @@ class SeasonResults:
     track_laps: dict[int, dict] = field(default_factory=dict)  # driver -> {track type: laps run}
 
     par_fit: dict[str, list] = field(default_factory=dict)     # series -> [n, sum eq, sum pct, sum eq*pct, sum eq^2]
+    events_held: dict[str, int] = field(default_factory=dict)  # series -> races actually run (rain-outs aren't)
 
     def __setstate__(self, state: dict) -> None:
         state.setdefault("track_laps", {})   # mid-season saves from before the lap-by-lap engine
         state.setdefault("par_fit", {})
+        state.setdefault("events_held", {})
         self.__dict__.update(state)
 
 
@@ -434,7 +436,8 @@ class SeasonRunner:
         dnq: list[Entry] = []
         if not tpl.team_based and (len(entries) > tpl.field_size or system.heat):
             # Heat races set the feature field (and pay heat points where the track does).
-            order, groups = heats(entries, track, tpl.discipline, tpl.tier, tpl.car_weight, rng)
+            order, groups = heats(entries, track, tpl.discipline, tpl.tier, tpl.car_weight, rng,
+                                  luck_scale=realism["luck"])
             if system.heat:
                 for g in groups:
                     heat_pts.update(heat_points(system, [e.drivers[0].id for e in g]))
@@ -452,9 +455,10 @@ class SeasonRunner:
             finishes = rr.finishes
             pts = score_box(system, finishes)
         else:
-            finishes = run_race(entries, track, tpl.discipline, tpl.tier, tpl.car_weight, rng, realism=realism)
+            finishes = run_race(entries, track, tpl.discipline, tpl.tier, tpl.car_weight, rng, realism=realism, weather=wx)
             pts = score_race(system, [(f.entry.drivers[0].id, f.pace) for f in finishes], rng)
         _tally(world, res, self.acc, finishes, s, pts, purse, heat_pts, dnq, system, track)
+        res.events_held[sid] = res.events_held.get(sid, 0) + 1
         self._personal(finishes, rr, tpl.tier, s.name, track.name, s.id)
         self._after_race(s, track, finishes, dnq, purse)
         self._playoff_step(s, event_idx, finishes)
@@ -890,7 +894,8 @@ def _finalise_records(world: "World", res: SeasonResults, acc: dict[int, _Acc], 
         by_series[a.series_id].append((did, a))
     for sid, rows in by_series.items():
         s = world.series(sid)
-        events = len(s.schedule)
+        # Rained-out or cancelled nights don't count against the 60% a champion must start.
+        events = res.events_held.get(sid) or len(s.schedule)
         # Same order as the live standings (playoff formats included).
         rows.sort(key=runner.rank_key(sid) if runner else (lambda r: (-r[1].points, -r[1].wins)))
         purse = runner.purse(s) if runner else Purse(s.template, world.year)

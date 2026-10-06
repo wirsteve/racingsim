@@ -79,7 +79,8 @@ def review(world: "World", results) -> None:
         if rec is None or rec.series_id != g["series_id"] or rec.starts == 0:
             g["result"] = "did not race"
             continue
-        events = len(world.series(rec.series_id).schedule) or rec.starts
+        events = (getattr(results, "events_held", {}).get(rec.series_id)
+                  or len(world.series(rec.series_id).schedule) or rec.starts)
         if rec.starts < 0.6 * events:
             g.update(result="part season", pos=rec.championship_pos)   # injured or replaced: not judged
             continue

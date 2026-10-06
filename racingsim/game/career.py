@@ -236,14 +236,14 @@ def offseason_menu(world: "World") -> dict:
     from ..ui.api import SCOUTING_LEVELS
     from ..world.skills import FOCUS
     cur_focus = d.dev_focus or ""
-    actions.append({"id": "focus", "label": "Development focus",
-                    "detail": "What you work on this winter and next season: the chosen skills grow half again as "
-                              "fast, the rest a little slower. A track-type focus is a winter of sim and test days.",
+    actions.append({"id": "focus", "label": "Development focus", "used": "focus" in m.player_actions,
+                    "detail": "What you work on next season: the chosen skills grow half again as fast, the rest a "
+                              "little slower. A track-type focus is a winter of sim and test days on that kind of track.",
                     "options": [{"value": "", "label": "Balanced", "selected": not cur_focus}]
                     + [{"value": k, "label": v[0], "selected": k == cur_focus} for k, v in FOCUS.items()]})
     tier_mult = max(1, d.tier if d.series_id else 1)
     level = world.__dict__.get("scouting_level", "standard")
-    actions.append({"id": "scouting", "label": "Scouting budget",
+    actions.append({"id": "scouting", "label": "Scouting budget", "used": "scouting" in m.player_actions,
                     "detail": "How well you can read other drivers next season: better scouting means sharper reports "
                               "on rivals, teammates and the drivers you might hire.",
                     "options": [{"value": k, "label": f"{k.title()}" + (f" (${v[1] * tier_mult:,.0f})" if v[1] else ""),
@@ -306,6 +306,8 @@ def apply_action(world: "World", action: str, arg: Optional[str] = None) -> str:
         return "No active career."
     if action in m.player_actions:
         return "You've already done that this off-season."
+    if arg is not None and not isinstance(arg, str):
+        return "That isn't a valid choice."
     from . import owner
     if action in ("found_team", "team_budget", "team_priority", "sell_team"):
         msg = owner.act(world, d, action, arg)
@@ -318,6 +320,12 @@ def apply_action(world: "World", action: str, arg: Optional[str] = None) -> str:
             return "Pick a focus."
         d.dev_focus = arg or ""
         m.player_actions.add("focus")
+        if d.dev_focus.startswith("tt_"):
+            from ..world.skills import track_skills
+            ts = track_skills(d)
+            tt = d.dev_focus[3:]
+            cur = ts.get(tt, 0.0)
+            ts[tt] = round(min(1.0, cur + (1 - cur) * 0.15), 3)   # a winter of sim and test days, now
         return f"Focus: {FOCUS[arg][0].lower()}." if arg else "A balanced program: no special focus."
     if action == "scouting":
         from ..ui.api import SCOUTING_LEVELS

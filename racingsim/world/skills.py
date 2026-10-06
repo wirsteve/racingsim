@@ -201,8 +201,9 @@ FOCUS.update({f"tt_{k}": (f"Learn {v.lower()}", ()) for k, v in TRACK_TYPES.item
 
 def develop(d: "Driver", age: int, starts: int, rng: random.Random, laps_by_type: Optional[dict] = None) -> None:
     """Yearly per-skill development on top of overall ability (lifecycle.develop moves ability).
-    A development focus (the player's off-season choice) speeds the chosen skills by half and slows
-    the rest a little; a track-type focus (sim and test days) teaches that kind of track."""
+    A development focus (the player's off-season choice for the coming season) speeds the chosen
+    skills by half and slows the rest a little. (A track-type focus is applied when it's chosen:
+    game/career.py.)"""
     ensure(d)
     focus = getattr(d, "dev_focus", "") or ""
     chosen = FOCUS.get(focus, ("", ()))[1]
@@ -228,11 +229,6 @@ def develop(d: "Driver", age: int, starts: int, rng: random.Random, laps_by_type
             gain *= 1.5 if k in chosen else 0.9
         d.skills[k] = round(clamp(o + gain + rng.gauss(0, 0.35), -25, 25), 2)
     # Track-type skills: laps on a kind of track teach it; intelligence speeds learning.
-    if focus.startswith("tt_"):
-        tt = focus[3:]
-        ts = track_skills(d)
-        cur = ts.get(tt, 0.0)
-        ts[tt] = round(min(1.0, cur + (1 - cur) * 0.15), 3)   # a winter of sim and test days
     if laps_by_type:
         ts = track_skills(d)
         for tt, laps in laps_by_type.items():

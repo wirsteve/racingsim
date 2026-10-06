@@ -67,7 +67,7 @@ def team_brief(world: "World", tid: Optional[int]) -> Optional[dict]:
 
 
 # Player scouting budgets: (error multiplier, cost per season = base x max(1, the player's tier)).
-SCOUTING_LEVELS = {"none": (1.35, 0), "standard": (1.0, 0), "extended": (0.75, 10_000), "elite": (0.5, 30_000)}
+SCOUTING_LEVELS = {"standard": (1.0, 0), "extended": (0.75, 10_000), "elite": (0.5, 30_000)}
 
 
 def scouted(world: "World", d: Driver) -> dict:

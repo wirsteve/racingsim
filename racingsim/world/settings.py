@@ -6,6 +6,7 @@ changed at any time from the Settings page and apply from the next race or off-s
 
 from __future__ import annotations
 
+import math
 from typing import TYPE_CHECKING
 
 from ..util import clamp
@@ -36,7 +37,8 @@ RANGE = (0.0, 2.0)
 
 def get(world: "World", key: str) -> float:
     s = world.__dict__.get("settings") or {}
-    return float(s.get(key, DEFAULTS[key]))
+    v = s.get(key, DEFAULTS[key])
+    return float(v) if isinstance(v, (int, float)) and not isinstance(v, bool) and math.isfinite(v) else DEFAULTS[key]
 
 
 def all_settings(world: "World") -> dict:
@@ -48,8 +50,8 @@ def update(world: "World", values: dict) -> dict:
     for k, v in values.items():
         if k not in DEFAULTS:
             raise ValueError(f"unknown setting {k}")
-        if not isinstance(v, (int, float)):
-            raise ValueError(f"{k} must be a number")
+        if isinstance(v, bool) or not isinstance(v, (int, float)) or not math.isfinite(v):
+            raise ValueError(f"{k} must be a finite number")
         lo = 0.0 if k == "weather" else 0.25
         cur[k] = round(clamp(float(v), lo, RANGE[1]), 2)
     world.settings = cur

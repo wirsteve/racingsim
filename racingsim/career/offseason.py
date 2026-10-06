@@ -46,6 +46,8 @@ def begin_offseason(world: "World", results: "SeasonResults", summary: "YearSumm
     programs.award_champion_scholarships(world, results)
     # 3. People age, learn, and some walk away (or step back to grassroots racing).
     lifecycle.develop(world, results)
+    if world.player is not None:
+        world.player.dev_focus = ""      # a focus was for the season just run; choose again for the next
     lifecycle.retirements(world, results, summary)
     annals.hall_of_fame(world)
     # 4. Sponsors renew, walk, or collapse; new local/regional/national deals form.

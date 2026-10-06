@@ -74,11 +74,12 @@ def _paces(entries: list[Entry], track: Track, discipline: str, cw: float) -> li
 
 
 def heats(entries: list[Entry], track: Track, discipline: str, tier: int, car_weight: float,
-          rng: random.Random, per_heat: int = 9) -> tuple[list[Entry], list[list[Entry]]]:
+          rng: random.Random, per_heat: int = 9, luck_scale: float = 1.0) -> tuple[list[Entry], list[list[Entry]]]:
     """Heat races: cars are drawn into heats; returns (overall order by heat performance, heats in finishing order).
 
     Short heats with inverted starts are mostly luck plus pace, so the noise is larger than in a feature."""
     cw, luck = _factors(track, tier, car_weight)
+    luck *= luck_scale
     paces = _paces(entries, track, discipline, cw)
     score = {id(e): p + rng.gauss(0, luck * 1.3) for e, p in zip(entries, paces)}
     drawn = list(entries)
@@ -91,10 +92,16 @@ def heats(entries: list[Entry], track: Track, discipline: str, tier: int, car_we
 
 def run_race(entries: list[Entry], track: Track, discipline: str, tier: int,
              car_weight: float, rng: random.Random, injury_scale: float = 1.0,
-             realism: Optional[dict] = None) -> list[Finish]:
+             realism: Optional[dict] = None, weather: Optional[dict] = None) -> list[Finish]:
     if not entries:
         return []
-    real = realism or {}
+    real = dict(realism or {})
+    wx = (weather or {}).get("kind")
+    if wx == "wet":      # a wet road course: more mistakes, more luck
+        real["crashes"] = real.get("crashes", 1.0) * 1.4
+        real["luck"] = real.get("luck", 1.0) * 1.3
+    elif wx == "hot":
+        real["luck"] = real.get("luck", 1.0) * 1.1
     s = track.sim
     cw, luck = _factors(track, tier, car_weight)
     luck *= real.get("luck", 1.0)
