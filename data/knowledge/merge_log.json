@@ -133,6 +133,188 @@
   "reason": "different text values"
  },
  {
+  "entity": "series:lucas-oil-lmds",
+  "attribute": "history_source",
+  "kept": "lolmds",
+  "other": null,
+  "reason": "different text values"
+ },
+ {
+  "entity": null,
+  "attribute": "years.from",
+  "kept": 1988,
+  "other": null,
+  "reason": "different text values"
+ },
+ {
+  "entity": null,
+  "attribute": "years.to",
+  "kept": 2025,
+  "other": null,
+  "reason": "different text values"
+ },
+ {
+  "entity": "series:woo-late-model",
+  "attribute": "history_source",
+  "kept": "woo_late_model",
+  "other": null,
+  "reason": "different text values"
+ },
+ {
+  "entity": null,
+  "attribute": "years.from",
+  "kept": 1999,
+  "other": null,
+  "reason": "different text values"
+ },
+ {
+  "entity": "series:usmts",
+  "attribute": "game_template",
+  "kept": "dirt_modified_tour",
+  "other": "modified_tour",
+  "reason": "different text values"
+ },
+ {
+  "entity": "series:usmts",
+  "attribute": "history_source",
+  "kept": "usmts",
+  "other": null,
+  "reason": "different text values"
+ },
+ {
+  "entity": null,
+  "attribute": "years.to",
+  "kept": 2025,
+  "other": null,
+  "reason": "different text values"
+ },
+ {
+  "entity": "series:super-dirtcar-series",
+  "attribute": "game_template",
+  "kept": "dirt_modified_tour",
+  "other": "modified_tour",
+  "reason": "different text values"
+ },
+ {
+  "entity": "series:super-dirtcar-series",
+  "attribute": "history_source",
+  "kept": "super_dirtcar",
+  "other": null,
+  "reason": "different text values"
+ },
+ {
+  "entity": null,
+  "attribute": "years.to",
+  "kept": 2025,
+  "other": null,
+  "reason": "different text values"
+ },
+ {
+  "entity": "series:ascs-national",
+  "attribute": "history_source",
+  "kept": "ascs_national",
+  "other": null,
+  "reason": "different text values"
+ },
+ {
+  "entity": null,
+  "attribute": "years.to",
+  "kept": 2025,
+  "other": null,
+  "reason": "different text values"
+ },
+ {
+  "entity": "series:all-star-circuit-of-champions",
+  "attribute": "history_source",
+  "kept": "all_stars",
+  "other": null,
+  "reason": "different text values"
+ },
+ {
+  "entity": null,
+  "attribute": "years.to",
+  "kept": 2023,
+  "other": null,
+  "reason": "different text values"
+ },
+ {
+  "entity": "series:powri-national-midget",
+  "attribute": "history_source",
+  "kept": "powri_midget",
+  "other": null,
+  "reason": "different text values"
+ },
+ {
+  "entity": null,
+  "attribute": "years.to",
+  "kept": 2025,
+  "other": null,
+  "reason": "different text values"
+ },
+ {
+  "entity": "series:usac-national-midget",
+  "attribute": "history_source",
+  "kept": "usac_midget",
+  "other": null,
+  "reason": "different text values"
+ },
+ {
+  "entity": null,
+  "attribute": "years.to",
+  "kept": 2025,
+  "other": null,
+  "reason": "different text values"
+ },
+ {
+  "entity": "series:usac-national-sprint",
+  "attribute": "history_source",
+  "kept": "usac_sprint",
+  "other": null,
+  "reason": "different text values"
+ },
+ {
+  "entity": null,
+  "attribute": "years.from",
+  "kept": 1971,
+  "other": null,
+  "reason": "different text values"
+ },
+ {
+  "entity": "series:usac-silver-crown",
+  "attribute": "history_source",
+  "kept": "usac_silver_crown",
+  "other": null,
+  "reason": "different text values"
+ },
+ {
+  "entity": null,
+  "attribute": "years.to",
+  "kept": 2025,
+  "other": null,
+  "reason": "different text values"
+ },
+ {
+  "entity": "series:woo-sprint",
+  "attribute": "history_source",
+  "kept": "woo_sprint",
+  "other": null,
+  "reason": "different text values"
+ },
+ {
+  "entity": "series:high-limit-racing",
+  "attribute": "game_template",
+  "kept": "sprint_car_tour",
+  "other": "outlaw_sprint",
+  "reason": "different text values"
+ },
+ {
+  "entity": "series:high-limit-racing",
+  "attribute": "history_source",
+  "kept": "high_limit",
+  "other": null,
+  "reason": "different text values"
+ },
+ {
   "entity": "series:arca-menards",
   "attribute": "history_source",
   "kept": "arca",
@@ -540,13 +722,6 @@
  },
  {
   "entity": "series:high-limit-racing",
-  "attribute": "game_template",
-  "kept": "outlaw_sprint",
-  "other": "sprint_car_tour",
-  "reason": "different text values"
- },
- {
-  "entity": "series:high-limit-racing",
   "attribute": "game_tier",
   "kept": 5,
   "other": 4,
@@ -578,13 +753,6 @@
   "attribute": "notes",
   "kept": "Founded 1972 (Glenn Donnelly); WRG since 2003; Matt Sheppard 10 titles; Brett Hearn 141 series wins.",
   "other": null,
-  "reason": "different text values"
- },
- {
-  "entity": "series:super-dirtcar-series",
-  "attribute": "game_template",
-  "kept": "modified_tour",
-  "other": "dirt_modified_tour",
   "reason": "different text values"
  },
  {
@@ -655,13 +823,6 @@
   "attribute": "notes",
   "kept": "2024: 39 chassis and 45 engine builders represented.",
   "other": null,
-  "reason": "different text values"
- },
- {
-  "entity": "series:usmts",
-  "attribute": "game_template",
-  "kept": "modified_tour",
-  "other": "dirt_modified_tour",
   "reason": "different text values"
  },
  {
@@ -773,6 +934,41 @@
   "entity": "xtreme-speedway-al",
   "attribute": "notes",
   "kept": "coordinates from OSM feature https://www.openstreetmap.org/node/10136543824 (leisure/sports_centre) matched by name",
+  "other": null,
+  "reason": "different text values"
+ },
+ {
+  "entity": "nebraska-raceway-park-ne",
+  "attribute": "opened",
+  "kept": 1994,
+  "other": null,
+  "reason": "different text values"
+ },
+ {
+  "entity": "nebraska-raceway-park-ne",
+  "attribute": "closed",
+  "kept": 2023,
+  "other": null,
+  "reason": "different text values"
+ },
+ {
+  "entity": "nebraska-raceway-park-ne",
+  "attribute": "active",
+  "kept": false,
+  "other": null,
+  "reason": "different text values"
+ },
+ {
+  "entity": "albany-saratoga-speedway-ny",
+  "attribute": "opened",
+  "kept": 1965,
+  "other": null,
+  "reason": "different text values"
+ },
+ {
+  "entity": "bedford-speedway-pa",
+  "attribute": "opened",
+  "kept": 1936,
   "other": null,
   "reason": "different text values"
  },
@@ -2265,6 +2461,13 @@
   "attribute": "lon",
   "kept": -88.59444,
   "other": -88.593297,
+  "reason": "different text values"
+ },
+ {
+  "entity": null,
+  "attribute": "region",
+  "kept": "WA",
+  "other": null,
   "reason": "different text values"
  }
 ]

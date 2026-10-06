@@ -2179,8 +2179,7 @@
  },
  "virginia-international-raceway-va": {
   "aliases": [
-   "Virginia International Raceway",
-   "Virginia Motor Speedway"
+   "Virginia International Raceway"
   ],
   "name": "Virginia International Raceway",
   "match_basis": [
@@ -2209,7 +2208,9 @@
   "disciplines_add": [
    "stock_car"
   ],
-  "confidence": "high"
+  "confidence": "high",
+  "banking_category": "moderate",
+  "prestige_category": "low"
  },
  "road-atlanta-ga": {
   "aliases": [
@@ -5121,7 +5122,8 @@
   ],
   "banking_category": "moderate",
   "banking_category_basis": "derived from existing banking_deg_turns",
-  "confidence": "high"
+  "confidence": "high",
+  "aliases": []
  },
  "angell-park-speedway-wi": {
   "name": "Angell Park Speedway",
@@ -5191,7 +5193,8 @@
    "Grand Prix of Arlington",
    "American championship car racing (AAA/USAC/CART/Champ Car)"
   ],
-  "confidence": "high"
+  "confidence": "high",
+  "aliases": []
  },
  "arroyo-seco-raceway-nm": {
   "name": "Arroyo Seco Raceway",
@@ -5208,7 +5211,8 @@
   ],
   "banking_category": "flat",
   "opened": 1998,
-  "confidence": "high"
+  "confidence": "high",
+  "aliases": []
  },
  "atlanta-motorsports-park-ga": {
   "name": "Atlanta Motorsports Park",
@@ -5230,7 +5234,8 @@
    "Sports Car Club of America",
    "ChampCar Endurance Series"
   ],
-  "confidence": "high"
+  "confidence": "high",
+  "aliases": []
  },
  "atlantic-motorsport-park-ns": {
   "name": "Atlantic Motorsport Park",
@@ -5248,7 +5253,8 @@
   "major_series": [
    "Atlantic Championship"
   ],
-  "confidence": "high"
+  "confidence": "high",
+  "aliases": []
  },
  "attica-raceway-park-oh": {
   "name": "Attica Raceway Park",
@@ -5288,7 +5294,8 @@
   "disciplines_add": [
    "street_stock"
   ],
-  "confidence": "medium"
+  "confidence": "medium",
+  "aliases": []
  },
  "autobahn-country-club-il": {
   "name": "Autobahn Country Club",
@@ -5313,7 +5320,8 @@
    "IMSA SportsCar Championship (and predecessors)",
    "Sports Car Club of America"
   ],
-  "confidence": "high"
+  "confidence": "high",
+  "aliases": []
  },
  "autodrome-granby-qc": {
   "name": "Autodrome Granby",
@@ -5371,7 +5379,8 @@
   "disciplines_add": [
    "late_model"
   ],
-  "confidence": "high"
+  "confidence": "high",
+  "aliases": []
  },
  "autodrome-saint-eustache-qc": {
   "name": "Autodrome Saint-Eustache",
@@ -5462,7 +5471,8 @@
   "confidence": "medium",
   "major_series": [
    "American championship car racing (AAA/USAC/CART/Champ Car)"
-  ]
+  ],
+  "aliases": []
  },
  "baps-motor-speedway-pa": {
   "name": "BAPS Motor Speedway",
@@ -5545,7 +5555,8 @@
   ],
   "banking_category": "moderate",
   "closed": 2014,
-  "confidence": "high"
+  "confidence": "high",
+  "aliases": []
  },
  "batesville-motor-speedway-ar": {
   "name": "Batesville Motor Speedway",
@@ -5593,7 +5604,8 @@
    "https://www.myracepass.com/tracks/1128"
   ],
   "banking_category": "moderate",
-  "confidence": "medium"
+  "confidence": "medium",
+  "aliases": []
  },
  "beaver-dam-raceway-wi": {
   "name": "Beaver Dam Raceway",
@@ -5720,7 +5732,8 @@
   "major_series": [
    "Sports Car Club of America"
   ],
-  "confidence": "high"
+  "confidence": "high",
+  "aliases": []
  },
  "bloomington-speedway-in": {
   "name": "Bloomington Speedway",
@@ -5779,7 +5792,8 @@
    "dirt_late_model",
    "sprint_car"
   ],
-  "confidence": "high"
+  "confidence": "high",
+  "aliases": []
  },
  "boothill-speedway-la": {
   "name": "Boothill Speedway",
@@ -5933,7 +5947,8 @@
   "major_series": [
    "Sports Car Club of America"
   ],
-  "confidence": "high"
+  "confidence": "high",
+  "aliases": []
  },
  "can-am-speedway-ny": {
   "name": "Can-Am Speedway",
@@ -5995,7 +6010,8 @@
   "disciplines_add": [
    "open_wheel"
   ],
-  "confidence": "high"
+  "confidence": "high",
+  "aliases": []
  },
  "cedar-lake-speedway-wi": {
   "name": "Cedar Lake Speedway",
@@ -6162,7 +6178,8 @@
    "NASCAR Cup Series (2023–2025)"
   ],
   "closed": 2025,
-  "confidence": "high"
+  "confidence": "high",
+  "aliases": []
  },
  "circuit-mont-tremblant-qc": {
   "name": "Circuit Mont-Tremblant",
@@ -6229,7 +6246,8 @@
    "ChampCar Endurance Series",
    "American championship car racing (AAA/USAC/CART/Champ Car) (2019)"
   ],
-  "confidence": "high"
+  "confidence": "high",
+  "aliases": []
  },
  "circuit-riverside-speedway-ste-croix-qc": {
   "name": "Circuit Riverside Speedway Ste-Croix",
@@ -6255,7 +6273,8 @@
    "sports_car",
    "stock_car"
   ],
-  "confidence": "high"
+  "confidence": "high",
+  "aliases": []
  },
  "club-motorsports-nh": {
   "name": "Club Motorsports",
@@ -6271,7 +6290,8 @@
    "https://www.openstreetmap.org/way/1294877773"
   ],
   "opened": 2017,
-  "confidence": "medium"
+  "confidence": "medium",
+  "aliases": []
  },
  "coastal-plains-raceway-nc": {
   "name": "Coastal Plains Raceway",
@@ -6319,7 +6339,8 @@
    "Mazda MX-5 Cup",
    "NASCAR O'Reilly Series"
   ],
-  "confidence": "high"
+  "confidence": "high",
+  "aliases": []
  },
  "cotton-bowl-speedway-tx": {
   "name": "Cotton Bowl Speedway",
@@ -6440,7 +6461,8 @@
   "disciplines_add": [
    "open_wheel"
   ],
-  "confidence": "high"
+  "confidence": "high",
+  "aliases": []
  },
  "davenport-speedway-ia": {
   "name": "Davenport Speedway",
@@ -6519,7 +6541,8 @@
   "major_series": [
    "American championship car racing (AAA/USAC/CART/Champ Car)"
   ],
-  "confidence": "medium"
+  "confidence": "medium",
+  "aliases": []
  },
  "detroit-street-circuit-mi": {
   "name": "Detroit Street Circuit",
@@ -6545,7 +6568,8 @@
    "American championship car racing (AAA/USAC/CART/Champ Car)",
    "Formula Atlantic"
   ],
-  "confidence": "high"
+  "confidence": "high",
+  "aliases": []
  },
  "dillon-motor-speedway-sc": {
   "name": "Dillon Motor Speedway",
@@ -6568,7 +6592,8 @@
   "disciplines_add": [
    "dirt_late_model"
   ],
-  "confidence": "medium"
+  "confidence": "medium",
+  "aliases": []
  },
  "dixie-speedway-ga": {
   "name": "Dixie Speedway",
@@ -6722,7 +6747,8 @@
    "Sports Car Club of America",
    "LATAM Challenge Series"
   ],
-  "confidence": "high"
+  "confidence": "high",
+  "aliases": []
  },
  "east-carolina-motor-speedway-nc": {
   "name": "East Carolina Motor Speedway",
@@ -6776,7 +6802,8 @@
    "legends",
    "street_stock"
   ],
-  "confidence": "medium"
+  "confidence": "medium",
+  "aliases": []
  },
  "eldora-speedway-oh": {
   "name": "Eldora Speedway",
@@ -6967,7 +6994,8 @@
    "https://www.myracepass.com/tracks/1558"
   ],
   "confidence": "medium",
-  "banking_category": "high"
+  "banking_category": "high",
+  "aliases": []
  },
  "fremont-speedway-oh": {
   "name": "Fremont Speedway",
@@ -7015,7 +7043,8 @@
    "legends",
    "street_stock"
   ],
-  "confidence": "medium"
+  "confidence": "medium",
+  "aliases": []
  },
  "fundidora-park-street-circuit-mex": {
   "name": "Fundidora Park Street Circuit",
@@ -7108,7 +7137,8 @@
    "Sports Car Club of America",
    "ChampCar Endurance Series"
   ],
-  "confidence": "high"
+  "confidence": "high",
+  "aliases": []
  },
  "grandview-speedway-pa": {
   "name": "Grandview Speedway",
@@ -7168,7 +7198,8 @@
    "stock_car",
    "street_stock"
   ],
-  "confidence": "medium"
+  "confidence": "medium",
+  "aliases": []
  },
  "hagerstown-speedway-md": {
   "name": "Hagerstown Speedway",
@@ -7214,7 +7245,8 @@
   "major_series": [
    "Sports Car Club of America"
   ],
-  "confidence": "high"
+  "confidence": "high",
+  "aliases": []
  },
  "harris-hill-raceway-tx": {
   "name": "Harris Hill Raceway",
@@ -7233,7 +7265,8 @@
    "Sports Car Club of America",
    "ChampCar Endurance Series"
   ],
-  "confidence": "high"
+  "confidence": "high",
+  "aliases": []
  },
  "havasu-95-speedway-az": {
   "name": "Havasu 95 Speedway",
@@ -7252,7 +7285,8 @@
   ],
   "banking_category": "moderate",
   "banking_category_basis": "derived from existing banking_deg_turns",
-  "confidence": "high"
+  "confidence": "high",
+  "aliases": []
  },
  "hialeah-speedway-fl": {
   "name": "Hialeah Speedway",
@@ -7267,7 +7301,8 @@
   ],
   "banking_category": "flat",
   "banking_category_basis": "derived from existing banking_deg_turns",
-  "confidence": "medium"
+  "confidence": "medium",
+  "aliases": []
  },
  "high-plains-raceway-co": {
   "name": "High Plains Raceway",
@@ -7285,7 +7320,8 @@
   "major_series": [
    "Sports Car Club of America"
   ],
-  "confidence": "medium"
+  "confidence": "medium",
+  "aliases": []
  },
  "holland-international-speedway-ny": {
   "name": "Holland International Speedway",
@@ -7399,7 +7435,8 @@
    "motorcycle",
    "stock_car"
   ],
-  "confidence": "high"
+  "confidence": "high",
+  "aliases": []
  },
  "huset-s-speedway-sd": {
   "name": "Huset's Speedway",
@@ -7524,7 +7561,8 @@
    "midget",
    "sprint_car"
   ],
-  "confidence": "medium"
+  "confidence": "medium",
+  "aliases": []
  },
  "i-94-speedway-mn": {
   "name": "I-94 Speedway",
@@ -7548,7 +7586,8 @@
    "modified",
    "street_stock"
   ],
-  "confidence": "medium"
+  "confidence": "medium",
+  "aliases": []
  },
  "indianapolis-motor-speedway-in": {
   "name": "Indianapolis Motor Speedway",
@@ -7653,7 +7692,8 @@
    "https://www.openstreetmap.org/way/518865303"
   ],
   "banking_category": "moderate",
-  "confidence": "medium"
+  "confidence": "medium",
+  "aliases": []
  },
  "junction-motor-speedway-ne": {
   "name": "Junction Motor Speedway",
@@ -7711,7 +7751,8 @@
   "disciplines_add": [
    "late_model"
   ],
-  "confidence": "high"
+  "confidence": "high",
+  "aliases": []
  },
  "kentucky-motor-speedway-ky": {
   "name": "Kentucky Motor Speedway",
@@ -7735,7 +7776,8 @@
   "disciplines_add": [
    "stock_car"
   ],
-  "confidence": "high"
+  "confidence": "high",
+  "aliases": []
  },
  "keystone-state-quarter-midget-racing-club-track-pa": {
   "name": "Keystone State Quarter Midget Racing Club Track",
@@ -7784,7 +7826,8 @@
    "stock_car",
    "street_stock"
   ],
-  "confidence": "medium"
+  "confidence": "medium",
+  "aliases": []
  },
  "knoxville-raceway-ia": {
   "name": "Knoxville Raceway",
@@ -7915,7 +7958,8 @@
    "stock_car",
    "street_stock"
   ],
-  "confidence": "high"
+  "confidence": "high",
+  "aliases": []
  },
  "land-of-legends-raceway-ny": {
   "name": "Land of Legends Raceway",
@@ -8003,7 +8047,8 @@
   "major_series": [
    "American championship car racing (AAA/USAC/CART/Champ Car) (2007)"
   ],
-  "confidence": "medium"
+  "confidence": "medium",
+  "aliases": []
  },
  "lavonia-speedway-ga": {
   "name": "Lavonia Speedway",
@@ -8143,7 +8188,8 @@
   "disciplines_add": [
    "street_stock"
   ],
-  "confidence": "medium"
+  "confidence": "medium",
+  "aliases": []
  },
  "lincoln-park-speedway-in": {
   "name": "Lincoln Park Speedway",
@@ -8241,7 +8287,8 @@
   "disciplines_add": [
    "club_road"
   ],
-  "confidence": "high"
+  "confidence": "high",
+  "aliases": []
  },
  "lorain-county-speedway-oh": {
   "name": "Lorain County Speedway",
@@ -8316,7 +8363,8 @@
   "major_series": [
    "NASCAR Xfinity Series (1988–1989)"
   ],
-  "confidence": "high"
+  "confidence": "high",
+  "aliases": []
  },
  "lucas-oil-speedway-mo": {
   "name": "Lucas Oil Speedway",
@@ -8416,7 +8464,8 @@
   "disciplines_add": [
    "stock_car"
   ],
-  "confidence": "high"
+  "confidence": "high",
+  "aliases": []
  },
  "merrittville-speedway-on": {
   "name": "Merrittville Speedway",
@@ -8528,7 +8577,8 @@
   "disciplines_add": [
    "late_model"
   ],
-  "confidence": "high"
+  "confidence": "high",
+  "aliases": []
  },
  "monticello-motor-club-ny": {
   "name": "Monticello Motor Club",
@@ -8548,7 +8598,8 @@
   "major_series": [
    "Mazda MX-5 Cup"
   ],
-  "confidence": "high"
+  "confidence": "high",
+  "aliases": []
  },
  "motoplex-speedway-bc": {
   "name": "Motoplex Speedway",
@@ -8571,7 +8622,8 @@
   ],
   "banking_category": "flat",
   "banking_category_basis": "derived from existing banking_deg_turns",
-  "confidence": "high"
+  "confidence": "high",
+  "aliases": []
  },
  "motordrome-speedway-pa": {
   "name": "Motordrome Speedway",
@@ -8589,7 +8641,8 @@
    "https://www.myracepass.com/tracks/2167"
   ],
   "closed": 2015,
-  "confidence": "high"
+  "confidence": "high",
+  "aliases": []
  },
  "motorsport-park-hastings-ne": {
   "name": "Motorsport Park Hastings",
@@ -8630,7 +8683,8 @@
   "major_series": [
    "Sports Car Club of America"
   ],
-  "confidence": "high"
+  "confidence": "high",
+  "aliases": []
  },
  "msr-houston-tx": {
   "name": "MSR Houston",
@@ -8648,7 +8702,8 @@
   "major_series": [
    "Sports Car Club of America"
   ],
-  "confidence": "high"
+  "confidence": "high",
+  "aliases": []
  },
  "nashville-street-circuit-tn": {
   "name": "Nashville Street Circuit",
@@ -8666,7 +8721,8 @@
   "major_series": [
    "American championship car racing (AAA/USAC/CART/Champ Car)"
   ],
-  "confidence": "medium"
+  "confidence": "medium",
+  "aliases": []
  },
  "nazareth-speedway-pa": {
   "name": "Nazareth Speedway",
@@ -8723,7 +8779,8 @@
    "Sports Car Club of America",
    "ChampCar Endurance Series"
   ],
-  "confidence": "medium"
+  "confidence": "medium",
+  "aliases": []
  },
  "nelson-ledges-road-course-oh": {
   "name": "Nelson Ledges Road Course",
@@ -8745,7 +8802,8 @@
    "ChampCar Endurance Series"
   ],
   "opened": 1958,
-  "confidence": "high"
+  "confidence": "high",
+  "aliases": []
  },
  "new-asheville-speedway-nc": {
   "name": "New Asheville Speedway",
@@ -8765,7 +8823,8 @@
   "major_series": [
    "NASCAR Xfinity Series (1962–1982)"
   ],
-  "confidence": "medium"
+  "confidence": "medium",
+  "aliases": []
  },
  "newport-speedway-tn": {
   "name": "Newport Speedway",
@@ -8821,7 +8880,8 @@
   "disciplines_add": [
    "open_wheel"
   ],
-  "confidence": "high"
+  "confidence": "high",
+  "aliases": []
  },
  "north-alabama-speedway-al": {
   "name": "North Alabama Speedway",
@@ -8978,7 +9038,8 @@
    "modified",
    "stock_car"
   ],
-  "confidence": "high"
+  "confidence": "high",
+  "aliases": []
  },
  "orange-county-fair-speedway-ny": {
   "name": "Orange County Fair Speedway",
@@ -9030,7 +9091,8 @@
   ],
   "banking_category": "moderate",
   "banking_category_basis": "derived from existing banking_deg_turns",
-  "confidence": "high"
+  "confidence": "high",
+  "aliases": []
  },
  "oregon-raceway-park-or": {
   "name": "Oregon Raceway Park",
@@ -9047,7 +9109,8 @@
   ],
   "banking_category": "moderate",
   "banking_category_basis": "derived from existing banking_deg_turns",
-  "confidence": "high"
+  "confidence": "high",
+  "aliases": []
  },
  "oyster-bed-speedway-pe": {
   "name": "Oyster Bed Speedway",
@@ -9064,7 +9127,8 @@
    "Maritime Pro Stock Tour"
   ],
   "banking_category": "high",
-  "confidence": "medium"
+  "confidence": "medium",
+  "aliases": []
  },
  "ozarks-international-raceway-mo": {
   "name": "Ozarks International Raceway",
@@ -9084,7 +9148,8 @@
    "Sports Car Club of America",
    "GT World Challenge America"
   ],
-  "confidence": "high"
+  "confidence": "high",
+  "aliases": []
  },
  "pacific-raceways-wa": {
   "name": "Pacific Raceways",
@@ -9147,7 +9212,8 @@
    "open_wheel",
    "sports_car"
   ],
-  "confidence": "high"
+  "confidence": "high",
+  "aliases": []
  },
  "palmer-motorsports-park-ma": {
   "name": "Palmer Motorsports Park",
@@ -9165,7 +9231,8 @@
   "major_series": [
    "Sports Car Club of America"
   ],
-  "confidence": "high"
+  "confidence": "high",
+  "aliases": []
  },
  "peoria-speedway-il": {
   "name": "Peoria Speedway",
@@ -9234,7 +9301,8 @@
   "major_series": [
    "Maritime Pro Stock Tour"
   ],
-  "confidence": "medium"
+  "confidence": "medium",
+  "aliases": []
  },
  "pittsburgh-international-race-complex-pa": {
   "name": "Pittsburgh International Race Complex",
@@ -9256,7 +9324,8 @@
    "ChampCar Endurance Series"
   ],
   "closed": 2025,
-  "confidence": "high"
+  "confidence": "high",
+  "aliases": []
  },
  "placerville-speedway-ca": {
   "name": "Placerville Speedway",
@@ -9368,7 +9437,8 @@
   "disciplines_add": [
    "sprint_car"
   ],
-  "confidence": "high"
+  "confidence": "high",
+  "aliases": []
  },
  "putnam-park-road-course-in": {
   "name": "Putnam Park Road Course",
@@ -9387,7 +9457,8 @@
    "Sports Car Club of America"
   ],
   "opened": 1992,
-  "confidence": "medium"
+  "confidence": "medium",
+  "aliases": []
  },
  "raceway-park-mn": {
   "name": "Raceway Park",
@@ -9407,7 +9478,8 @@
   "disciplines_add": [
    "stock_car"
   ],
-  "confidence": "high"
+  "confidence": "high",
+  "aliases": []
  },
  "raceway-park-of-the-midlands-ia": {
   "name": "Raceway Park of the Midlands",
@@ -9572,7 +9644,8 @@
   "disciplines_add": [
    "stock_car"
   ],
-  "confidence": "high"
+  "confidence": "high",
+  "aliases": []
  },
  "roebling-road-raceway-ga": {
   "name": "Roebling Road Raceway",
@@ -9592,7 +9665,8 @@
   "major_series": [
    "Sports Car Club of America"
   ],
-  "confidence": "high"
+  "confidence": "high",
+  "aliases": []
  },
  "san-jose-street-circuit-ca": {
   "name": "San Jose Street Circuit",
@@ -9608,7 +9682,8 @@
   "major_series": [
    "American championship car racing (AAA/USAC/CART/Champ Car)"
   ],
-  "confidence": "medium"
+  "confidence": "medium",
+  "aliases": []
  },
  "sandia-speedway-nm": {
   "name": "Sandia Speedway",
@@ -9628,7 +9703,8 @@
   "banking_category": "flat",
   "banking_category_basis": "derived from existing banking_deg_turns",
   "opened": 2000,
-  "confidence": "high"
+  "confidence": "high",
+  "aliases": []
  },
  "santa-maria-speedway-ca": {
   "name": "Santa Maria Speedway",
@@ -9690,7 +9766,8 @@
   ],
   "banking_category": "moderate",
   "banking_category_basis": "derived from existing banking_deg_turns",
-  "confidence": "high"
+  "confidence": "high",
+  "aliases": []
  },
  "sebring-international-raceway-fl": {
   "name": "Sebring International Raceway",
@@ -9721,7 +9798,8 @@
   "disciplines_add": [
    "open_wheel"
   ],
-  "confidence": "high"
+  "confidence": "high",
+  "aliases": []
  },
  "selinsgrove-speedway-pa": {
   "name": "Selinsgrove Speedway",
@@ -9800,7 +9878,8 @@
   "disciplines_add": [
    "stock_car"
   ],
-  "confidence": "high"
+  "confidence": "high",
+  "aliases": []
  },
  "sharon-speedway-oh": {
   "name": "Sharon Speedway",
@@ -9859,7 +9938,8 @@
    "modified",
    "street_stock"
   ],
-  "confidence": "high"
+  "confidence": "high",
+  "aliases": []
  },
  "silver-dollar-speedway-ca": {
   "name": "Silver Dollar Speedway",
@@ -10029,7 +10109,8 @@
    "dirt_late_model",
    "sprint_car"
   ],
-  "confidence": "high"
+  "confidence": "high",
+  "aliases": []
  },
  "speedway-miramichi-nb": {
   "name": "Speedway Miramichi",
@@ -10080,7 +10161,8 @@
    "stock_car",
    "street_stock"
   ],
-  "confidence": "high"
+  "confidence": "high",
+  "aliases": []
  },
  "spring-mountain-motor-resort-nv": {
   "name": "Spring Mountain Motor Resort",
@@ -10132,7 +10214,8 @@
   "disciplines_add": [
    "stock_car"
   ],
-  "confidence": "high"
+  "confidence": "high",
+  "aliases": []
  },
  "star-speedway-nh": {
   "name": "Star Speedway",
@@ -10164,7 +10247,8 @@
    "legends",
    "stock_car"
   ],
-  "confidence": "high"
+  "confidence": "high",
+  "aliases": []
  },
  "state-park-speedway-wi": {
   "name": "State Park Speedway",
@@ -10180,7 +10264,8 @@
    "https://www.myracepass.com/tracks/2629"
   ],
   "banking_category": "flat",
-  "confidence": "medium"
+  "confidence": "medium",
+  "aliases": []
  },
  "stateline-speedway-ny": {
   "name": "Stateline Speedway",
@@ -10276,7 +10361,8 @@
    "late_model",
    "street_stock"
   ],
-  "confidence": "high"
+  "confidence": "high",
+  "aliases": []
  },
  "terre-haute-action-track-in": {
   "name": "Terre Haute Action Track",
@@ -10325,7 +10411,8 @@
   ],
   "banking_category": "moderate",
   "banking_category_basis": "derived from existing banking_deg_turns",
-  "confidence": "medium"
+  "confidence": "medium",
+  "aliases": []
  },
  "texas-world-speedway-tx": {
   "name": "Texas World Speedway",
@@ -10357,7 +10444,8 @@
   "disciplines_add": [
    "open_wheel"
   ],
-  "confidence": "high"
+  "confidence": "high",
+  "aliases": []
  },
  "the-thermal-club-ca": {
   "name": "The Thermal Club",
@@ -10459,7 +10547,8 @@
    "Sports Car Club of America",
    "25 Hours of Thunderhill"
   ],
-  "confidence": "high"
+  "confidence": "high",
+  "aliases": []
  },
  "toronto-street-circuit-on": {
   "name": "Toronto Street Circuit",
@@ -10582,7 +10671,8 @@
   "disciplines_add": [
    "sprint_car"
   ],
-  "confidence": "medium"
+  "confidence": "medium",
+  "aliases": []
  },
  "tyler-county-speedway-wv": {
   "name": "Tyler County Speedway",
@@ -10811,7 +10901,8 @@
   ],
   "banking_category": "moderate",
   "banking_category_basis": "derived from existing banking_deg_turns",
-  "confidence": "high"
+  "confidence": "high",
+  "aliases": []
  },
  "washington-street-circuit-dc": {
   "name": "Washington Street Circuit",
@@ -10829,7 +10920,8 @@
    "Freedom 250 Grand Prix"
   ],
   "closed": 2026,
-  "confidence": "high"
+  "confidence": "high",
+  "aliases": []
  },
  "watsonville-speedway-ca": {
   "name": "Watsonville Speedway",
@@ -10908,7 +11000,8 @@
    "modified",
    "street_stock"
   ],
-  "confidence": "medium"
+  "confidence": "medium",
+  "aliases": []
  },
  "willamette-speedway-or": {
   "name": "Willamette Speedway",
@@ -11076,7 +11169,8 @@
    "legends",
    "modified"
   ],
-  "confidence": "medium"
+  "confidence": "medium",
+  "aliases": []
  },
  "carteret-county-speedway-nc": {
   "aliases": [],

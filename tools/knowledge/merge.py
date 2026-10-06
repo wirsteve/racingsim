@@ -144,7 +144,7 @@ class Merger:
             out["min"], out["max"] = min(a_lo, b_lo), max(a_hi, b_hi)
             out.pop("value", None) if out["min"] != out["max"] else None
         out["sources"] = _union(a.get("sources"), b.get("sources"))
-        out["notes"] = "; ".join(x for x in (a.get("notes"), b.get("notes")) if x) or None
+        out["notes"] = _join_notes(a.get("notes"), b.get("notes"))
         return out
 
     def merge_entity(self, a: dict, b: dict, path: str = "") -> dict:
@@ -174,6 +174,16 @@ class Merger:
                     self.log.append({"entity": a.get("id"), "attribute": key, "kept": va, "other": vb,
                                      "reason": "different text values"})
         return out
+
+
+def _join_notes(*notes) -> str | None:
+    """Combine notes keeping each distinct part once (re-merging must not repeat them)."""
+    parts: list[str] = []
+    for n in notes:
+        for p in str(n or "").split("; "):
+            if p and p not in parts:
+                parts.append(p)
+    return "; ".join(parts) or None
 
 
 def _bounds(f: dict):
@@ -329,7 +339,8 @@ def merge_tracks(candidates: list[dict], existing: list[dict], merger: Merger) -
             # A coordinate match alone must also agree on what kind of track it is (a quarter-midget
             # or kart track beside an oval is a different venue).
             same_kind = (_type_of(t) == _type_of(c) and _surf(t) == _surf(c) and _len_ok(t, c))
-            if (names & tnames and (same_state or near)) or (near and toks & ttoks and same_kind):
+            far = t.get("lat") is not None and _km(t, c) > 5  # same name, different place
+            if (names & tnames and (same_state or near) and not far) or (near and toks & ttoks and same_kind):
                 if (t.get("surface") or "asphalt") == (c.get("surface") or t.get("surface") or "asphalt") \
                         or (names & tnames):
                     match = t
@@ -378,6 +389,10 @@ def main(staging: list[Path]) -> int:
         for name in ("tracks_new.json", "venues.json", "tracks_wikidata.json", "tracks_osm_new.json"):
             track_candidates += items(load(d / name))
         track_enrich_in += items(load(d / "tracks_enrich.json"))
+    blocked = {(b["id"], norm_text(b["alias"])) for b in load(KDIR / "alias_blocklist.json") or []}
+    for e in track_enrich_in:
+        tid = e.get("id") or e.get("existing_id")
+        e["aliases"] = [a for a in e.get("aliases") or [] if (tid, norm_text(a)) not in blocked]
     merged, alias = merge_entities(groups, merger)
     # Curated field overrides (persisted): e.g. which game rung / history source a series uses.
     overrides = load(KDIR / "overrides.json") or {}
@@ -427,6 +442,8 @@ def main(staging: list[Path]) -> int:
                                           ensure_ascii=False), encoding="utf-8")
         enrich_path = ROOT / "data" / "track_enrich.json"
         old = json.loads(enrich_path.read_text()) if enrich_path.exists() else {}
+        for tid, e in old.items():
+            e["aliases"] = [a for a in e.get("aliases") or [] if (tid, norm_text(a)) not in blocked]
         for e in track_enrich_in:
             tid = e.get("id") or e.get("existing_id")
             if tid:

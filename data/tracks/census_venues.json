@@ -76,32 +76,6 @@
   "aliases": []
  },
  {
-  "name": "Perth Motorplex",
-  "city": null,
-  "region": "WA",
-  "country": "AUS",
-  "track_type": "oval",
-  "surface": "dirt",
-  "length_mi": null,
-  "banking_deg_turns": null,
-  "opened": null,
-  "closed": null,
-  "active": null,
-  "disciplines": [
-   "sprint_car"
-  ],
-  "level": "national",
-  "lat": -32.2159,
-  "lon": 115.78934,
-  "sources": [
-   "https://en.wikipedia.org/w/index.php?title=Perth_Motorplex&oldid=1378724642",
-   "https://www.wikidata.org/wiki/Q7170876",
-   "https://www.highlimitracing.com/schedules/2024",
-   "https://www.highlimitracing.com/schedules/2026"
-  ],
-  "aliases": []
- },
- {
   "name": "Valley Speedway",
   "city": null,
   "region": null,
@@ -5438,6 +5412,33 @@
    "https://www.myracepass.com/tracks/1210"
   ],
   "notes": null
+ },
+ {
+  "name": "Bubba Raceway Park",
+  "city": "Ocala",
+  "region": "FL",
+  "country": "USA",
+  "track_type": "oval",
+  "surface": "dirt",
+  "length_mi": null,
+  "banking_deg_turns": null,
+  "opened": null,
+  "closed": null,
+  "active": null,
+  "disciplines": [
+   "dirt_late_model",
+   "sprint_car"
+  ],
+  "level": "national",
+  "lat": 29.28257,
+  "lon": -82.187443,
+  "sources": [
+   "https://en.wikipedia.org/w/index.php?title=2018_Lucas_Oil_Late_Model_Dirt_Series&oldid=1324417440",
+   "https://en.wikipedia.org/w/index.php?title=2018_USAC_AMSOIL_National_Sprint_Car_Championship&oldid=1374336412",
+   "https://en.wikipedia.org/w/index.php?title=2021_Lucas_Oil_Late_Model_Dirt_Series&oldid=1375993424",
+   "https://www.openstreetmap.org/way/1028577929 (ODbL)"
+  ],
+  "aliases": []
  },
  {
   "id": "callahan-speedway-fl",
@@ -32654,6 +32655,32 @@
    "https://www.myracepass.com/tracks/3769"
   ],
   "notes": null
+ },
+ {
+  "name": "Perth Motorplex",
+  "city": null,
+  "region": "WA",
+  "country": "AUS",
+  "track_type": "oval",
+  "surface": "dirt",
+  "length_mi": null,
+  "banking_deg_turns": null,
+  "opened": null,
+  "closed": null,
+  "active": null,
+  "disciplines": [
+   "sprint_car"
+  ],
+  "level": "national",
+  "lat": -32.2159,
+  "lon": 115.78934,
+  "sources": [
+   "https://en.wikipedia.org/w/index.php?title=Perth_Motorplex&oldid=1378724642",
+   "https://www.wikidata.org/wiki/Q7170876",
+   "https://www.highlimitracing.com/schedules/2024",
+   "https://www.highlimitracing.com/schedules/2026"
+  ],
+  "aliases": []
  },
  {
   "id": "rainbow-road-speedway-test-wa",
