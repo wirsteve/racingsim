@@ -18,6 +18,8 @@ python -m racingsim data report            # counts + confidence by category -> 
 | `touring/nascar_touring/` | NASCAR regional divisions 1995–2006, Goody's Dash, Hooters Pro Cup | Wikipedia, Ultimate Racing History, RacingCalendar.net, Crittenden Automotive Library |
 | `tracks_census/` | North American track census | IMCA/WISSOTA directories, MyRacePass track profiles, Wikipedia/Wikidata, Nominatim |
 | `ingest/datasets/` | Public datasets: nascaR.data race results (GPL-3), Wikidata/OSM track lists | see `data/CREDITS.md` |
+| `knowledge/rules_import.py` | Folds staged rules research (class rules, parts, points, payouts, race formats) into `data/rules/research.json` + `sources.json` | track house rules & sanctioning rulebook PDFs, tire/engine price lists, series sites (robots.txt respected) |
+| `knowledge/rules_classes.py` | Curated car classes → `data/rules/classes.json` (edit values here, cite research source ids) | `data/rules/research.json` |
 | `knowledge/` | `import_touring.py`, `geocode_venues.py`, `merge.py` (dedupe, entity matching, conflict log), `rebuild.py` (runs all three), `analysis/` (statistics computed from the history) | — |
 
 Every scraper caches its downloads, checks robots.txt for non-Wikimedia sites, rate-limits itself and

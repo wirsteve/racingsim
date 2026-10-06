@@ -69,11 +69,14 @@ def test_champion_matches_live_standings_order(tracks):
     for sid in {a.series_id for a in runner.acc.values()}:
         rows = runner.standings(sid)
         leaders[sid] = rows[0][0]
-    # Re-sorting the final week must keep the live tie-break (points, then wins).
+    # The champion is whoever tops the live standings after the final week: points then wins,
+    # or - in Chase/playoff formats - the playoff order (finale decided by finishing order).
     runner.step()
     for sid, did in runner.res.champions.items():
-        top = max((a for a in runner.acc.values() if a.series_id == sid), key=lambda a: (a.points, a.wins))
-        assert runner.acc[did].points == top.points and runner.acc[did].wins == top.wins
+        assert runner.standings(sid)[0][0] == did
+        if sid not in runner.playoffs:
+            top = max((a for a in runner.acc.values() if a.series_id == sid), key=lambda a: (a.points, a.wins))
+            assert runner.acc[did].points == top.points and runner.acc[did].wins == top.wins
 
 
 def test_sidelined_player_cannot_enter_crown_jewels(tracks):

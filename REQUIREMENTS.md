@@ -124,6 +124,17 @@ research must be recorded in the repository.
 | R10.9 | One command re-runs and updates the whole pipeline (`python -m racingsim data update`); the game database is compiled SQLite shipped inside the app. | [x] |
 | R10.10 | Stand-alone app for Windows, macOS and Linux with no Python install needed, built on every push. | [x] |
 
+## R11 — Cars, rules and money
+
+| ID | Requirement | Status |
+|----|-------------|--------|
+| R11.1 | Car classes built to real class rules (track house rules, sanctioning rulebooks): chassis, engine packages legal by year (built, crate, sealed, spec, claimer), shocks, tire rules, minimum weight, claim rules, with sources and confidence (`data/rules/`). | [x] |
+| R11.2 | Cars are bought, aged, freshened and repaired with real prices; engines lose power and fail when overdue; tires wear by track; wrecks cost money; claim rules can take an engine. AI racers use the same options. | [x] |
+| R11.3 | The player's racing money is explicit: a season account, per-night entry/fuel/tires/travel/programme costs, purses and points funds, and a ledger (Garage page). | [x] |
+| R11.4 | Points systems by era and sanctioning body (NASCAR Latford through 2026, IMCA, DIRTcar, WISSOTA, weekly asphalt styles, tours), Chase and elimination playoffs, heats, DNQs and show-up points; standings laid out like real sheets. | [x] |
+| R11.5 | Purses from published payout sheets, carried across eras with researched drift (weekly purses flat, tour purses ~75% of cost inflation); tow money, points funds. | [x] |
+| R11.6 | Rules evidence browsable in the Encyclopedia ("Rules & money") and checked by `python -m racingsim data validate`. | [x] |
+
 ## Known gaps (tracked for the next iteration)
 
 * Agents/managers are modelled implicitly (an awareness boost for drivers with
@@ -131,6 +142,8 @@ research must be recorded in the repository.
 * International ladders beyond the North American pyramid (overseas drivers arrive as imports) (R4.1, R6.2).
 * Sports-car (IMSA/ALMS/Grand-Am) season history; many dirt/short-track seasons are champion-only (see `docs/DATA_PIPELINE.md` §8); the 1995–2006 Star Mazda and several early USF2000 seasons list only the champion.
 * Drivers becoming owners/promoters after retirement.
+* Rules evidence before 2005 is thin; several tour points tables (CRA, USAC, Whelen Modified Tour, ASCS) and most mid-pack tour payouts are not published and are approximated (`docs/RULES_AND_MONEY.md`).
+* Team-run series keep a single team equipment rating (no parts model for pro teams).
 * Calibration deviations recorded in `MOTORSPORTS_RESEARCH.md` §12.
 
 ## Traceability

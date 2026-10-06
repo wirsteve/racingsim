@@ -1,0 +1,1354 @@
+{
+ "_comment": "Points systems and championship formats. Tables are points by finishing position as published; see data/rules/research.json for the evidence records. 'assign' maps game series templates (and, for weekly dirt tracks, home states = sanctioning body territory) to a system and format by season.",
+ "systems": {
+  "nascar_latford": {
+   "label": "NASCAR Latford system (1975-2003)",
+   "table": [
+    175,
+    170,
+    165,
+    160,
+    155,
+    150,
+    146,
+    142,
+    138,
+    134,
+    130,
+    127,
+    124,
+    121,
+    118,
+    115,
+    112,
+    109,
+    106,
+    103,
+    100,
+    97,
+    94,
+    91,
+    88,
+    85,
+    82,
+    79,
+    76,
+    73,
+    70,
+    67,
+    64,
+    61,
+    58,
+    55,
+    52,
+    49,
+    46,
+    43,
+    40,
+    37,
+    34
+   ],
+   "beyond": 34,
+   "led_lap": 5,
+   "most_led": 5,
+   "note": "175 to win; -5 per position to 6th, -4 to 11th, -3 thereafter; +5 led a lap, +5 most laps led (max 185).",
+   "sources": [
+    "src:wiki-nascar-points"
+   ],
+   "confidence": "high"
+  },
+  "nascar_2004": {
+   "label": "NASCAR points (2004-2006)",
+   "table": [
+    180,
+    170,
+    165,
+    160,
+    155,
+    150,
+    146,
+    142,
+    138,
+    134,
+    130,
+    127,
+    124,
+    121,
+    118,
+    115,
+    112,
+    109,
+    106,
+    103,
+    100,
+    97,
+    94,
+    91,
+    88,
+    85,
+    82,
+    79,
+    76,
+    73,
+    70,
+    67,
+    64,
+    61,
+    58,
+    55,
+    52,
+    49,
+    46,
+    43,
+    40,
+    37,
+    34
+   ],
+   "beyond": 34,
+   "led_lap": 5,
+   "most_led": 5,
+   "note": "Win raised to 180 with the Chase.",
+   "sources": [
+    "src:wiki-nascar-points"
+   ],
+   "confidence": "high"
+  },
+  "nascar_2007": {
+   "label": "NASCAR points (2007-2010)",
+   "table": [
+    185,
+    170,
+    165,
+    160,
+    155,
+    150,
+    146,
+    142,
+    138,
+    134,
+    130,
+    127,
+    124,
+    121,
+    118,
+    115,
+    112,
+    109,
+    106,
+    103,
+    100,
+    97,
+    94,
+    91,
+    88,
+    85,
+    82,
+    79,
+    76,
+    73,
+    70,
+    67,
+    64,
+    61,
+    58,
+    55,
+    52,
+    49,
+    46,
+    43,
+    40,
+    37,
+    34
+   ],
+   "beyond": 34,
+   "led_lap": 5,
+   "most_led": 5,
+   "note": "Win raised to 185 (15-point gap to 2nd).",
+   "sources": [
+    "src:wiki-nascar-points"
+   ],
+   "confidence": "high"
+  },
+  "nascar_2011": {
+   "label": "NASCAR one-point system (2011-2016)",
+   "table": [
+    43,
+    42,
+    41,
+    40,
+    39,
+    38,
+    37,
+    36,
+    35,
+    34,
+    33,
+    32,
+    31,
+    30,
+    29,
+    28,
+    27,
+    26,
+    25,
+    24,
+    23,
+    22,
+    21,
+    20,
+    19,
+    18,
+    17,
+    16,
+    15,
+    14,
+    13,
+    12,
+    11,
+    10,
+    9,
+    8,
+    7,
+    6,
+    5,
+    4,
+    3,
+    2,
+    1
+   ],
+   "beyond": 1,
+   "win_bonus": 3,
+   "led_lap": 1,
+   "most_led": 1,
+   "note": "43 to win down to 1; +3 win bonus, +1 led a lap, +1 most laps led (max 48). 40-car Cup fields from 2016.",
+   "sources": [
+    "src:wiki-nascar-points"
+   ],
+   "confidence": "high"
+  },
+  "nascar_2017": {
+   "label": "NASCAR stage racing (2017-2025)",
+   "table": [
+    40,
+    35,
+    34,
+    33,
+    32,
+    31,
+    30,
+    29,
+    28,
+    27,
+    26,
+    25,
+    24,
+    23,
+    22,
+    21,
+    20,
+    19,
+    18,
+    17,
+    16,
+    15,
+    14,
+    13,
+    12,
+    11,
+    10,
+    9,
+    8,
+    7,
+    6,
+    5,
+    4,
+    3,
+    2,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "beyond": 1,
+   "stage": [
+    10,
+    9,
+    8,
+    7,
+    6,
+    5,
+    4,
+    3,
+    2,
+    1
+   ],
+   "stages": 2,
+   "note": "40 to win, 35 for 2nd, -1 per position; top 10 at the end of stages 1 and 2 score 10-1.",
+   "sources": [
+    "src:wiki-nascar-points"
+   ],
+   "confidence": "high"
+  },
+  "nascar_2026": {
+   "label": "NASCAR points (2026)",
+   "table": [
+    55,
+    35,
+    34,
+    33,
+    32,
+    31,
+    30,
+    29,
+    28,
+    27,
+    26,
+    25,
+    24,
+    23,
+    22,
+    21,
+    20,
+    19,
+    18,
+    17,
+    16,
+    15,
+    14,
+    13,
+    12,
+    11,
+    10,
+    9,
+    8,
+    7,
+    6,
+    5,
+    4,
+    3,
+    2,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "beyond": 1,
+   "stage": [
+    10,
+    9,
+    8,
+    7,
+    6,
+    5,
+    4,
+    3,
+    2,
+    1
+   ],
+   "stages": 2,
+   "note": "Win worth 55 points; playoff points dropped.",
+   "sources": [
+    "src:search-chase-2026"
+   ],
+   "confidence": "medium"
+  },
+  "imca_weekly": {
+   "label": "IMCA weekly points",
+   "table": [
+    40,
+    39,
+    38,
+    37,
+    36,
+    35,
+    34,
+    33,
+    32,
+    31,
+    30,
+    29,
+    28,
+    27,
+    26,
+    25,
+    24,
+    23,
+    22,
+    21,
+    20,
+    19,
+    18,
+    17
+   ],
+   "beyond": 17,
+   "dnq": 13,
+   "note": "40 to win, -1 per position to 17 at 24th; B-feature non-transfers 16 down to 11; no show-up points. Applies to all IMCA divisions.",
+   "sources": [
+    "src:imca-gp-2026",
+    "src:imca-gp-2015"
+   ],
+   "confidence": "high"
+  },
+  "dirtcar_weekly": {
+   "label": "DIRTcar / UMP weekly points",
+   "table": [
+    75,
+    70,
+    65,
+    60,
+    55,
+    50,
+    48,
+    46,
+    44,
+    42,
+    40,
+    39,
+    38,
+    37,
+    36,
+    35,
+    34,
+    33,
+    32,
+    31,
+    30,
+    29,
+    28,
+    27,
+    26
+   ],
+   "beyond": 20,
+   "dnq": 10,
+   "note": "75 to win down to 26 at 25th; every participant at least 10; +1 per car over 25 entered (max 5).",
+   "sources": [
+    "src:dirtcar_fs_2026",
+    "src:dirtcar-pts-explain",
+    "src:thundermtn-points"
+   ],
+   "confidence": "high"
+  },
+  "wissota_weekly": {
+   "label": "WISSOTA weekly points",
+   "table": [
+    35,
+    33,
+    32,
+    31,
+    30,
+    29,
+    28,
+    27,
+    26,
+    25,
+    24,
+    23,
+    22,
+    21,
+    20,
+    19,
+    18,
+    17,
+    16,
+    15,
+    14,
+    13,
+    12,
+    11
+   ],
+   "beyond": 11,
+   "show_up": 13,
+   "heat": [
+    10,
+    9,
+    8,
+    7,
+    6,
+    5,
+    4,
+    3,
+    2,
+    2
+   ],
+   "note": "13 show-up + heat (10 down to 2) + feature (35 down to 11): a perfect night is 58.",
+   "sources": [
+    "src:wissota-rb-2026"
+   ],
+   "confidence": "high"
+  },
+  "asphalt_weekly_50": {
+   "label": "Weekly track points (50, -2 per position)",
+   "step": {
+    "first": 50,
+    "step": 2,
+    "min": 2
+   },
+   "dnq": 1,
+   "note": "Stafford-style: 50 to win, 2 fewer per position; a car that signs in but misses the feature gets 1.",
+   "sources": [
+    "src:search-stafford-points"
+   ],
+   "confidence": "high"
+  },
+  "asphalt_weekly_100": {
+   "label": "Weekly track points (100, -2, heat points)",
+   "step": {
+    "first": 100,
+    "step": 2,
+    "min": 2
+   },
+   "heat": [
+    10,
+    8,
+    6,
+    4,
+    2,
+    1
+   ],
+   "note": "Spud Speedway style: winner 100, -2 per position; heats 10-8-6-4-2-1.",
+   "sources": [
+    "src:spud-2025"
+   ],
+   "confidence": "high"
+  },
+  "michigan_weekly": {
+   "label": "Weekly track points (Galesburg style)",
+   "table": [
+    110,
+    100,
+    95,
+    90,
+    85,
+    80,
+    75,
+    70,
+    68,
+    66,
+    64,
+    62,
+    60,
+    58,
+    56,
+    54,
+    52,
+    50,
+    48,
+    46,
+    44,
+    42
+   ],
+   "beyond": 40,
+   "heat": [
+    4,
+    3,
+    2,
+    1
+   ],
+   "note": "Feature 110 for the win; heat and dash 4-3-2-1; qualifying points not modelled.",
+   "sources": [
+    "src:galesburg-points"
+   ],
+   "confidence": "high"
+  },
+  "from_last_2": {
+   "label": "2 points per car beaten (NASCAR weekly style)",
+   "from_last": 2,
+   "note": "Points counted from last: 2 per position (24 cars = 48 to win), as at Hickory's Grand Slam and in NASCAR's national weekly formula.",
+   "sources": [
+    "src:hms-grandslam-2025",
+    "src:racedayct-2013-waas"
+   ],
+   "confidence": "high"
+  },
+  "dirt_weekly_100": {
+   "label": "Weekly dirt points (100, -2, heats, show-up)",
+   "table": [
+    100,
+    98,
+    96,
+    94,
+    92,
+    90,
+    88,
+    86,
+    84,
+    82,
+    80,
+    78,
+    76,
+    74,
+    72,
+    70,
+    68,
+    66,
+    64,
+    62,
+    60,
+    58,
+    56,
+    54
+   ],
+   "beyond": 52,
+   "heat": [
+    20,
+    19,
+    18,
+    17,
+    16,
+    15,
+    14,
+    13,
+    12,
+    11,
+    10,
+    9,
+    8,
+    7,
+    6,
+    5,
+    4,
+    3,
+    2,
+    1
+   ],
+   "show_up": 10,
+   "note": "Florence Speedway (KY) style: feature 100 down by 2, heat 20 down to 1, 10 show-up points.",
+   "sources": [
+    "src:florence-points"
+   ],
+   "confidence": "high"
+  },
+  "lucas_oil_lmds": {
+   "label": "Lucas Oil Late Model Dirt Series",
+   "table": [
+    200,
+    180,
+    170,
+    160,
+    155,
+    150,
+    145,
+    140,
+    135,
+    130,
+    125,
+    120,
+    115,
+    110,
+    105,
+    100,
+    95,
+    90,
+    85,
+    80,
+    75
+   ],
+   "beyond": 75,
+   "dnq": 50,
+   "note": "200 to win; B-main non-transfers 70 down to 25 (modelled as 50); participant points not modelled separately.",
+   "sources": [
+    "src:lucas-rb-2024",
+    "src:lolmds_2025"
+   ],
+   "confidence": "medium"
+  },
+  "woo_150": {
+   "label": "World of Outlaws style (150 to win)",
+   "table": [
+    150,
+    146,
+    144,
+    142,
+    140,
+    138,
+    136,
+    134,
+    132,
+    130,
+    128,
+    126,
+    124,
+    122,
+    120,
+    118,
+    116,
+    114,
+    112,
+    110,
+    108,
+    106,
+    104,
+    102,
+    100
+   ],
+   "beyond": 100,
+   "dnq": 90,
+   "note": "1st 150, 2nd 146, then -2 per position (10th 130); non-qualifiers 90 show-up points (100 in the Late Model Series).",
+   "sources": [
+    "src:woo_sprint_rules",
+    "src:woo_lm_rules",
+    "src:sds_rules"
+   ],
+   "confidence": "medium"
+  },
+  "all_star_50": {
+   "label": "All Star Circuit of Champions",
+   "step": {
+    "first": 50,
+    "step": 1,
+    "min": 25
+   },
+   "dnq": 25,
+   "note": "A-main 50 to win, -1 per position; non-transfers 25.",
+   "sources": [
+    "src:allstar_2025"
+   ],
+   "confidence": "high"
+  },
+  "indycar": {
+   "label": "IndyCar points",
+   "table": [
+    50,
+    40,
+    35,
+    32,
+    30,
+    28,
+    26,
+    24,
+    22,
+    20,
+    19,
+    18,
+    17,
+    16,
+    15,
+    14,
+    13,
+    12,
+    11,
+    10,
+    9,
+    8,
+    7,
+    6,
+    5
+   ],
+   "beyond": 5,
+   "led_lap": 1,
+   "most_led": 2,
+   "note": "50-40-35-32-30 ... 5; +1 led a lap, +2 most laps led (pole point not modelled). Published system from general knowledge; not re-verified against a source this session.",
+   "confidence": "medium"
+  },
+  "cart": {
+   "label": "CART points (1995-2003)",
+   "table": [
+    20,
+    16,
+    14,
+    12,
+    10,
+    8,
+    6,
+    5,
+    4,
+    3,
+    2,
+    1
+   ],
+   "beyond": 0,
+   "most_led": 1,
+   "note": "20-16-14-12-10-8-6-5-4-3-2-1; +1 most laps led (pole point not modelled). Published system from general knowledge; not re-verified against a source this session.",
+   "confidence": "medium"
+  },
+  "champcar": {
+   "label": "Champ Car points (2004-2007)",
+   "table": [
+    31,
+    27,
+    25,
+    23,
+    21,
+    19,
+    17,
+    15,
+    13,
+    11,
+    10,
+    9,
+    8,
+    7,
+    6,
+    5,
+    4,
+    3,
+    2,
+    1
+   ],
+   "beyond": 0,
+   "led_lap": 1,
+   "most_led": 1,
+   "note": "31 to win down to 1 at 20th; bonus points for leading. Published system from general knowledge; not re-verified against a source this session.",
+   "confidence": "low"
+  }
+ },
+ "formats": {
+  "chase_2004": {
+   "label": "Chase for the Cup (2004-2006)",
+   "kind": "chase",
+   "drivers": 10,
+   "races": 10,
+   "base": 5000,
+   "seed_steps": [
+    50,
+    45,
+    40,
+    35,
+    30,
+    25,
+    20,
+    15,
+    10,
+    5
+   ],
+   "note": "Top 10 after 26 races reset to 5,050 for the leader down by 5. (The 'within 400 points' clause is not modelled.)",
+   "sources": [
+    "src:wiki-nascar-points"
+   ],
+   "confidence": "high"
+  },
+  "chase_2007": {
+   "label": "Chase for the Cup (2007-2010)",
+   "kind": "chase",
+   "drivers": 12,
+   "races": 10,
+   "base": 5000,
+   "per_win": 10,
+   "note": "Top 12 reset to 5,000 plus 10 per win.",
+   "sources": [
+    "src:wiki-nascar-points"
+   ],
+   "confidence": "high"
+  },
+  "chase_2011": {
+   "label": "Chase for the Cup (2011-2013)",
+   "kind": "chase",
+   "drivers": 12,
+   "races": 10,
+   "base": 2000,
+   "per_win": 3,
+   "note": "Top 10 plus two wildcards (modelled as the next two in points) reset to 2,000 plus 3 per win.",
+   "sources": [
+    "src:wiki-nascar-points"
+   ],
+   "confidence": "medium"
+  },
+  "playoffs_2014": {
+   "label": "Elimination Chase (2014-2016)",
+   "kind": "elimination",
+   "drivers": 16,
+   "races": 10,
+   "base": 2000,
+   "per_win": 3,
+   "win_in": true,
+   "rounds": [
+    12,
+    8,
+    4
+   ],
+   "round_races": [
+    3,
+    3,
+    3,
+    1
+   ],
+   "finale": true,
+   "note": "16 drivers, win and you're in; cut to 12, 8, then a winner-take-all Championship 4.",
+   "sources": [
+    "src:wiki-nascar-points"
+   ],
+   "confidence": "high"
+  },
+  "playoffs_2017": {
+   "label": "NASCAR Playoffs (2017-2025)",
+   "kind": "elimination",
+   "drivers": 16,
+   "races": 10,
+   "base": 2000,
+   "per_win": 5,
+   "seed_steps": [
+    15,
+    10,
+    8,
+    7,
+    6,
+    5,
+    4,
+    3,
+    2,
+    1
+   ],
+   "win_in": true,
+   "rounds": [
+    12,
+    8,
+    4
+   ],
+   "round_races": [
+    3,
+    3,
+    3,
+    1
+   ],
+   "finale": true,
+   "note": "Playoff points: 5 per win, 15-1 for the regular-season top 10 (stage wins not modelled).",
+   "sources": [
+    "src:wiki-nascar-points"
+   ],
+   "confidence": "high"
+  },
+  "chase_2026": {
+   "label": "The Chase (2026)",
+   "kind": "chase",
+   "drivers": 16,
+   "races": 10,
+   "base": 2000,
+   "seed_steps": [
+    100,
+    75,
+    65,
+    60,
+    55,
+    50,
+    45,
+    40,
+    35,
+    30,
+    25,
+    20,
+    15,
+    10,
+    5,
+    0
+   ],
+   "note": "Top 16 on points only, seeded 2,100 down to 2,000, no eliminations.",
+   "sources": [
+    "src:search-chase-2026"
+   ],
+   "confidence": "medium"
+  },
+  "playoffs_xfinity": {
+   "label": "Xfinity Playoffs (2016-2025)",
+   "kind": "elimination",
+   "drivers": 12,
+   "races": 7,
+   "base": 2000,
+   "per_win": 5,
+   "win_in": true,
+   "rounds": [
+    8,
+    4
+   ],
+   "round_races": [
+    3,
+    3,
+    1
+   ],
+   "finale": true,
+   "note": "12 drivers, cut to 8, then a Championship 4. 2026 format not verified: kept as 2025.",
+   "confidence": "low"
+  },
+  "playoffs_truck": {
+   "label": "Truck Playoffs (2016-2022)",
+   "kind": "elimination",
+   "drivers": 8,
+   "races": 7,
+   "base": 2000,
+   "per_win": 5,
+   "win_in": true,
+   "rounds": [
+    6,
+    4
+   ],
+   "round_races": [
+    3,
+    3,
+    1
+   ],
+   "finale": true,
+   "note": "8 drivers, cut to 6, then a Championship 4.",
+   "confidence": "low"
+  },
+  "playoffs_truck_10": {
+   "label": "Truck Playoffs (2023-2025)",
+   "kind": "elimination",
+   "drivers": 10,
+   "races": 7,
+   "base": 2000,
+   "per_win": 5,
+   "win_in": true,
+   "rounds": [
+    8,
+    4
+   ],
+   "round_races": [
+    3,
+    3,
+    1
+   ],
+   "finale": true,
+   "note": "10 drivers, cut to 8, then a Championship 4. 2026 format not verified: kept as 2025.",
+   "confidence": "low"
+  }
+ },
+ "assign": [
+  {
+   "templates": [
+    "cup_series"
+   ],
+   "from": 1975,
+   "to": 2003,
+   "system": "nascar_latford"
+  },
+  {
+   "templates": [
+    "cup_series"
+   ],
+   "from": 2004,
+   "to": 2006,
+   "system": "nascar_2004",
+   "format": "chase_2004"
+  },
+  {
+   "templates": [
+    "cup_series"
+   ],
+   "from": 2007,
+   "to": 2010,
+   "system": "nascar_2007",
+   "format": "chase_2007"
+  },
+  {
+   "templates": [
+    "cup_series"
+   ],
+   "from": 2011,
+   "to": 2013,
+   "system": "nascar_2011",
+   "format": "chase_2011"
+  },
+  {
+   "templates": [
+    "cup_series"
+   ],
+   "from": 2014,
+   "to": 2016,
+   "system": "nascar_2011",
+   "format": "playoffs_2014"
+  },
+  {
+   "templates": [
+    "cup_series"
+   ],
+   "from": 2017,
+   "to": 2025,
+   "system": "nascar_2017",
+   "format": "playoffs_2017"
+  },
+  {
+   "templates": [
+    "cup_series"
+   ],
+   "from": 2026,
+   "to": 9999,
+   "system": "nascar_2026",
+   "format": "chase_2026"
+  },
+  {
+   "templates": [
+    "stock_national",
+    "truck_series"
+   ],
+   "from": 1975,
+   "to": 2003,
+   "system": "nascar_latford"
+  },
+  {
+   "templates": [
+    "stock_national",
+    "truck_series"
+   ],
+   "from": 2004,
+   "to": 2006,
+   "system": "nascar_2004"
+  },
+  {
+   "templates": [
+    "stock_national",
+    "truck_series"
+   ],
+   "from": 2007,
+   "to": 2010,
+   "system": "nascar_2007"
+  },
+  {
+   "templates": [
+    "stock_national",
+    "truck_series"
+   ],
+   "from": 2011,
+   "to": 2015,
+   "system": "nascar_2011"
+  },
+  {
+   "templates": [
+    "stock_national"
+   ],
+   "from": 2016,
+   "to": 2016,
+   "system": "nascar_2011",
+   "format": "playoffs_xfinity"
+  },
+  {
+   "templates": [
+    "truck_series"
+   ],
+   "from": 2016,
+   "to": 2016,
+   "system": "nascar_2011",
+   "format": "playoffs_truck"
+  },
+  {
+   "templates": [
+    "stock_national"
+   ],
+   "from": 2017,
+   "to": 9999,
+   "system": "nascar_2017",
+   "format": "playoffs_xfinity"
+  },
+  {
+   "templates": [
+    "truck_series"
+   ],
+   "from": 2017,
+   "to": 2022,
+   "system": "nascar_2017",
+   "format": "playoffs_truck"
+  },
+  {
+   "templates": [
+    "truck_series"
+   ],
+   "from": 2023,
+   "to": 9999,
+   "system": "nascar_2017",
+   "format": "playoffs_truck_10"
+  },
+  {
+   "templates": [
+    "stock_national_dev",
+    "stock_regional_dev"
+   ],
+   "from": 2011,
+   "to": 9999,
+   "system": "nascar_2011"
+  },
+  {
+   "templates": [
+    "stock_national_dev",
+    "stock_regional_dev"
+   ],
+   "from": 1975,
+   "to": 2010,
+   "system": "nascar_latford"
+  },
+  {
+   "templates": [
+    "open_wheel_top"
+   ],
+   "from": 1995,
+   "to": 2003,
+   "system": "cart"
+  },
+  {
+   "templates": [
+    "open_wheel_top"
+   ],
+   "from": 2004,
+   "to": 2007,
+   "system": "champcar"
+  },
+  {
+   "templates": [
+    "open_wheel_top",
+    "open_wheel_top_irl"
+   ],
+   "from": 2008,
+   "to": 9999,
+   "system": "indycar"
+  },
+  {
+   "templates": [
+    "open_wheel_top_irl"
+   ],
+   "from": 2002,
+   "to": 2007,
+   "system": "indycar"
+  },
+  {
+   "templates": [
+    "outlaw_sprint",
+    "late_model_national"
+   ],
+   "from": 1995,
+   "to": 9999,
+   "system": "woo_150"
+  },
+  {
+   "templates": [
+    "dirt_late_national"
+   ],
+   "from": 1995,
+   "to": 9999,
+   "system": "lucas_oil_lmds"
+  },
+  {
+   "templates": [
+    "sprint_car_tour"
+   ],
+   "from": 1995,
+   "to": 9999,
+   "system": "all_star_50"
+  },
+  {
+   "templates": [
+    "local_dirt_modified",
+    "local_hobby_dirt",
+    "local_sport_compact",
+    "local_dirt_late_model",
+    "local_sprint",
+    "dirt_modified_tour"
+   ],
+   "states": [
+    "IA",
+    "NE",
+    "KS",
+    "TX",
+    "AZ",
+    "CA",
+    "NM",
+    "OK",
+    "CO",
+    "SD",
+    "OR",
+    "WA",
+    "NV",
+    "UT",
+    "ID",
+    "MO"
+   ],
+   "system": "imca_weekly"
+  },
+  {
+   "templates": [
+    "local_dirt_modified",
+    "local_hobby_dirt",
+    "local_sport_compact",
+    "local_dirt_late_model",
+    "local_sprint"
+   ],
+   "states": [
+    "MN",
+    "ND",
+    "WI",
+    "MT",
+    "MB"
+   ],
+   "system": "wissota_weekly"
+  },
+  {
+   "templates": [
+    "local_dirt_modified",
+    "local_hobby_dirt",
+    "local_sport_compact",
+    "local_dirt_late_model",
+    "local_sprint"
+   ],
+   "states": [
+    "KY"
+   ],
+   "system": "dirt_weekly_100"
+  },
+  {
+   "templates": [
+    "local_dirt_modified",
+    "local_hobby_dirt",
+    "local_sport_compact",
+    "local_dirt_late_model",
+    "local_sprint",
+    "dirt_modified_tour",
+    "dirt_late_model_tour"
+   ],
+   "system": "dirtcar_weekly"
+  },
+  {
+   "templates": [
+    "local_late_model",
+    "local_limited_late",
+    "local_street_stock",
+    "local_mini_stock"
+   ],
+   "states": [
+    "VA",
+    "NC",
+    "SC",
+    "GA",
+    "TN",
+    "AL",
+    "FL",
+    "MS",
+    "LA",
+    "WV",
+    "MD",
+    "DE"
+   ],
+   "system": "from_last_2"
+  },
+  {
+   "templates": [
+    "local_late_model",
+    "local_limited_late",
+    "local_street_stock",
+    "local_mini_stock"
+   ],
+   "states": [
+    "ME"
+   ],
+   "system": "asphalt_weekly_100"
+  },
+  {
+   "templates": [
+    "local_late_model",
+    "local_limited_late",
+    "local_street_stock",
+    "local_mini_stock"
+   ],
+   "states": [
+    "MI"
+   ],
+   "system": "michigan_weekly"
+  },
+  {
+   "templates": [
+    "local_late_model",
+    "local_limited_late",
+    "local_street_stock",
+    "local_mini_stock"
+   ],
+   "system": "asphalt_weekly_50"
+  }
+ ]
+}

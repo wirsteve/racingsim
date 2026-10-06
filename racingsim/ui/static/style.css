@@ -290,3 +290,7 @@ p, .field, .small { overflow-wrap: anywhere; }
 .gating { display: flex; flex-wrap: wrap; gap: 4px 12px; margin-top: 6px; font-size: .75rem; color: var(--muted); }
 .gating span { display: inline-flex; align-items: center; gap: 4px; }
 .gating i { display: inline-block; height: 5px; max-width: 60px; background: var(--accent); border-radius: 3px; }
+/* garage ledger */
+td.neg { color: var(--bad); }
+td.pos { color: var(--good); }
+h4 { margin: 14px 0 6px; font-size: 13px; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); }

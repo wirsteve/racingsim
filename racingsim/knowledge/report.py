@@ -104,10 +104,33 @@ def markdown(conn) -> str:
                 continue
             seen.add((src, reason))
             lines.append(f"| {src} ({url or ''}) | {reason} | {repl or ''} |")
+    lines += rules_section()
     g = gaps(conn)
     if g:
         lines += ["", "## Known gaps", ""] + [f"* {x}" for x in g]
     return "\n".join(lines) + "\n"
+
+
+def rules_section() -> list[str]:
+    """Rules & money evidence (data/rules, read directly by the game)."""
+    from ..rules.classes import all_classes
+    from ..rules.payouts import tables
+    from ..rules.points import formats, systems
+    from ..rules.research import evidence, source_registry
+    ev = evidence()
+    if not ev:
+        return []
+    out = ["", "## Rules & money (data/rules)", "",
+           "| Item | Count |", "|---|---|"]
+    for k in ("class_rules", "parts", "points_systems", "payouts", "race_formats", "history"):
+        out.append(f"| researched {k.replace('_', ' ')} | {len(ev.get(k, [])):,} |")
+    out += [f"| rule sources | {len(source_registry()):,} |", f"| game car classes | {len(all_classes())} |",
+            f"| points systems / championship formats | {len(systems())} / {len(formats())} |",
+            f"| purse tables | {len(tables())} |", "", "| Car class | Confidence | Evidence records |", "|---|---|---|"]
+    by = Counter(r.get("class") for k in ("class_rules", "parts", "payouts") for r in ev.get(k, []))
+    for c in all_classes().values():
+        out.append(f"| {c.label} | {c.confidence} | {sum(by.get(k, 0) for k in c.evidence_keys())} |")
+    return out
 
 
 def tracks_by(conn, column: str) -> Counter:

@@ -1,0 +1,2565 @@
+{
+ "_comment": "Car classes: what racers buy and run under each class's rules. Money in 2025 USD; 'facts' carry the researched ranges with sources and confidence (data/rules/research.json holds the full evidence). Option 'quality' is a 0-100 design value: competitive speed of that part within the class after rules balancing.",
+ "classes": {
+  "quarter_midget": {
+   "label": "Quarter midget",
+   "discipline": "asphalt_oval",
+   "templates": [
+    "quarter_midget"
+   ],
+   "spread": 0.6,
+   "chassis": [
+    {
+     "key": "used",
+     "label": "Used quarter midget",
+     "usd": 2500,
+     "quality": 45,
+     "age": 3
+    },
+    {
+     "key": "new",
+     "label": "New chassis (Stanley/Bullrider-type)",
+     "usd": 6000,
+     "quality": 72,
+     "age": 0
+    }
+   ],
+   "engines": [
+    {
+     "key": "honda120",
+     "label": "Honda 120 / Briggs Animal (class spec)",
+     "usd": 900,
+     "quality": 60,
+     "rebuild_usd": 250,
+     "rebuild_races": 20,
+     "note": "Class-spec engines; frequent freshens keep them legal"
+    }
+   ],
+   "shocks": [
+    {
+     "key": "stock",
+     "label": "Stock shocks",
+     "usd": 0,
+     "quality": 50
+    },
+    {
+     "key": "tuned",
+     "label": "Tuned shock package",
+     "usd": 600,
+     "quality": 65
+    }
+   ],
+   "tires": {
+    "usd": 175,
+    "typical_new": 1,
+    "max_new": null,
+    "life_races": 5,
+    "spec": "Hoosier Little Car LC series",
+    "rule": "Hoosier little-car compounds by class"
+   },
+   "chassis_life": 6,
+   "entry_usd": 60,
+   "fuel_usd": 15,
+   "misc_usd": 60,
+   "repair_frac": 0.08,
+   "rules": [
+    "Ages 5-16, classes by engine and age",
+    "Club-run racing on 1/20-mile ovals"
+   ],
+   "facts": {
+    "tire_usd": {
+     "min": 175,
+     "max": 175,
+     "unit": "USD per tire",
+     "confidence": "high",
+     "sources": [
+      "src:hoosier_midatl_asphalt_2026"
+     ]
+    }
+   },
+   "sources": [
+    "src:hoosier_midatl_asphalt_2026"
+   ],
+   "confidence": "low",
+   "notes": "Only the tire price is sourced; chassis and engine costs are estimates."
+  },
+  "bandolero": {
+   "label": "Bandolero",
+   "discipline": "asphalt_oval",
+   "templates": [
+    "bandolero"
+   ],
+   "spread": 0.5,
+   "chassis": [
+    {
+     "key": "used",
+     "label": "Used Bandolero",
+     "usd": 6000,
+     "quality": 55,
+     "age": 3
+    },
+    {
+     "key": "new",
+     "label": "New Bandolero (INEX)",
+     "usd": 11000,
+     "quality": 70,
+     "age": 0
+    }
+   ],
+   "engines": [
+    {
+     "key": "vanguard",
+     "label": "Briggs & Stratton Vanguard (sealed, INEX spec)",
+     "usd": 1500,
+     "quality": 65,
+     "rebuild_usd": 400,
+     "rebuild_races": 30,
+     "sealed": true
+    }
+   ],
+   "shocks": [
+    {
+     "key": "spec",
+     "label": "INEX spec shocks",
+     "usd": 0,
+     "quality": 60
+    }
+   ],
+   "tires": {
+    "usd": 140,
+    "typical_new": 1,
+    "max_new": 2,
+    "life_races": 6,
+    "spec": "Hoosier Bandolero Edition",
+    "rule": "As delivered by INEX/USLCI; minimum durometer 62; no soaking or siping"
+   },
+   "chassis_life": 8,
+   "entry_usd": 75,
+   "fuel_usd": 15,
+   "misc_usd": 80,
+   "repair_frac": 0.08,
+   "min_weight_lb": 750,
+   "rules": [
+    "Spec car from INEX: sealed Briggs Vanguard engine",
+    "Minimum weight 750 lb with driver",
+    "Ages 8-16"
+   ],
+   "facts": {
+    "min_weight_lb": {
+     "min": 750,
+     "max": 750,
+     "unit": "lb",
+     "confidence": "high",
+     "sources": [
+      "src:inex_rulebook_2025"
+     ]
+    }
+   },
+   "sources": [
+    "src:inex_rulebook_2025",
+    "src:inex_summer_tires_2024"
+   ],
+   "confidence": "medium",
+   "notes": "Tire and car prices are estimates; rules from the INEX rulebook."
+  },
+  "legends": {
+   "label": "Legend car",
+   "discipline": "asphalt_oval",
+   "templates": [
+    "legends_regional"
+   ],
+   "spread": 0.55,
+   "chassis": [
+    {
+     "key": "used_old",
+     "label": "Used Legend car (well raced)",
+     "usd": 9000,
+     "quality": 45,
+     "age": 5
+    },
+    {
+     "key": "used",
+     "label": "Used Legend car (1-2 yrs)",
+     "usd": 14000,
+     "quality": 60,
+     "age": 2
+    },
+    {
+     "key": "new",
+     "label": "New INEX Legend car",
+     "usd": 19000,
+     "quality": 72,
+     "age": 0
+    }
+   ],
+   "engines": [
+    {
+     "key": "yamaha1200",
+     "label": "Yamaha FJ1200 / XJR1250 (sealed spec)",
+     "usd": 3500,
+     "quality": 65,
+     "rebuild_usd": 1500,
+     "rebuild_races": 30,
+     "sealed": true
+    },
+    {
+     "key": "fz09",
+     "label": "Yamaha FZ09 / MT09 (newer spec option)",
+     "usd": 6000,
+     "quality": 67,
+     "rebuild_usd": 1500,
+     "rebuild_races": 40,
+     "sealed": true,
+     "weight_break_lb": -50,
+     "years": [
+      2020,
+      2100
+     ],
+     "note": "Rules dropped 50 lb on FZ09 cars"
+    }
+   ],
+   "shocks": [
+    {
+     "key": "spec",
+     "label": "Spec shocks",
+     "usd": 0,
+     "quality": 55
+    },
+    {
+     "key": "built",
+     "label": "Built spec-legal shocks",
+     "usd": 1200,
+     "quality": 65
+    }
+   ],
+   "tires": {
+    "usd": 150,
+    "typical_new": 2,
+    "max_new": null,
+    "life_races": 4,
+    "spec": "Hoosier (USLCI-marked)",
+    "rule": "USLCI-marked Hoosiers only; minimum durometer 61; national events impound 4-6 new tires"
+   },
+   "chassis_life": 7,
+   "entry_usd": 90,
+   "fuel_usd": 30,
+   "misc_usd": 180,
+   "repair_frac": 0.1,
+   "min_weight_lb": 1300,
+   "rules": [
+    "5/8-scale spec car from INEX",
+    "Sealed Yamaha motorcycle engines; teardown protest fee $2,000",
+    "No tire treatment; durometer checks"
+   ],
+   "facts": {
+    "min_weight_lb": {
+     "min": 1230,
+     "max": 1300,
+     "unit": "lb",
+     "confidence": "high",
+     "sources": [
+      "src:inex_rulebook_2025"
+     ]
+    },
+    "protest_fee": {
+     "min": 2000,
+     "max": 2000,
+     "unit": "USD",
+     "confidence": "high",
+     "sources": [
+      "src:inex_rulebook_2025"
+     ]
+    }
+   },
+   "sources": [
+    "src:inex_rulebook_2025",
+    "src:inex_summer_tires_2024",
+    "src:inex_asphnat_tires_2024",
+    "src:usl_tt_tires_2025"
+   ],
+   "confidence": "medium"
+  },
+  "mini_stock": {
+   "label": "Mini stock / 4-cylinder",
+   "discipline": "asphalt_oval",
+   "templates": [
+    "local_mini_stock"
+   ],
+   "spread": 0.7,
+   "chassis": [
+    {
+     "key": "junker",
+     "label": "Converted street car",
+     "usd": 1500,
+     "quality": 40,
+     "age": 0
+    },
+    {
+     "key": "built",
+     "label": "Built 4-cylinder racer",
+     "usd": 4000,
+     "quality": 60,
+     "age": 1
+    },
+    {
+     "key": "top",
+     "label": "Top-built mini stock",
+     "usd": 7500,
+     "quality": 72,
+     "age": 0
+    }
+   ],
+   "engines": [
+    {
+     "key": "stock",
+     "label": "Stock 4-cylinder",
+     "usd": 600,
+     "quality": 55,
+     "rebuild_usd": 300,
+     "rebuild_races": 30
+    },
+    {
+     "key": "fresh",
+     "label": "Freshened stock-spec 4-cylinder",
+     "usd": 1800,
+     "quality": 65,
+     "rebuild_usd": 500,
+     "rebuild_races": 30
+    }
+   ],
+   "shocks": [
+    {
+     "key": "oe",
+     "label": "OE replacement shocks/struts",
+     "usd": 200,
+     "quality": 50
+    }
+   ],
+   "tires": {
+    "usd": 110,
+    "typical_new": 1,
+    "max_new": null,
+    "life_races": 6,
+    "spec": "DOT street tires",
+    "rule": "DOT street tires (e.g. treadwear 200+ and $135 retail cap at LVMS; 400+ treadwear at Wiscasset)"
+   },
+   "chassis_life": 6,
+   "entry_usd": 50,
+   "fuel_usd": 20,
+   "misc_usd": 20,
+   "repair_frac": 0.2,
+   "min_weight_lb": 2300,
+   "rules": [
+    "Stock front-wheel-drive 3/4-cylinder cars",
+    "OE-type non-adjustable shocks",
+    "No tire softeners"
+   ],
+   "facts": {
+    "min_weight_lb": {
+     "min": 2000,
+     "max": 2600,
+     "unit": "lb",
+     "confidence": "high",
+     "sources": [
+      "src:lvms_mini_2025",
+      "src:wisc_t4_2025",
+      "src:langley_ucar_2025"
+     ]
+    },
+    "tire_cap_usd": {
+     "min": 0,
+     "max": 135,
+     "unit": "USD per tire",
+     "confidence": "high",
+     "sources": [
+      "src:lvms_mini_2025"
+     ]
+    }
+   },
+   "sources": [
+    "src:lvms_mini_2025",
+    "src:wisc_t4_2025",
+    "src:langley_ucar_2025",
+    "src:galesburg-burg-pay"
+   ],
+   "confidence": "medium"
+  },
+  "street_stock": {
+   "label": "Street stock",
+   "discipline": "asphalt_oval",
+   "templates": [
+    "local_street_stock"
+   ],
+   "spread": 0.8,
+   "chassis": [
+    {
+     "key": "used_old",
+     "label": "Old street stock",
+     "usd": 3500,
+     "quality": 40,
+     "age": 6
+    },
+    {
+     "key": "used",
+     "label": "Used race-ready street stock",
+     "usd": 7500,
+     "quality": 58,
+     "age": 2
+    },
+    {
+     "key": "new",
+     "label": "New-built street stock",
+     "usd": 15000,
+     "quality": 74,
+     "age": 0
+    }
+   ],
+   "engines": [
+    {
+     "key": "built350",
+     "label": "Built stock-production 350/351",
+     "usd": 4500,
+     "quality": 62,
+     "rebuild_usd": 2000,
+     "rebuild_races": 30
+    },
+    {
+     "key": "crate602",
+     "label": "GM 602 sealed crate (~350 hp)",
+     "usd": 7800,
+     "quality": 66,
+     "rebuild_usd": 2500,
+     "rebuild_races": 50,
+     "sealed": true,
+     "years": [
+      2002,
+      2100
+     ],
+     "note": "Many tracks allow the 602 as a cost-control option"
+    }
+   ],
+   "shocks": [
+    {
+     "key": "oe",
+     "label": "Over-the-counter shocks",
+     "usd": 300,
+     "quality": 50,
+     "claim_usd": 100
+    },
+    {
+     "key": "spec",
+     "label": "Listed race shocks (AFCO/Pro)",
+     "usd": 520,
+     "quality": 62,
+     "claim_usd": 130
+    }
+   ],
+   "tires": {
+    "usd": 150,
+    "typical_new": 1,
+    "max_new": 2,
+    "life_races": 5,
+    "spec": "Hoosier 700/790/F-45 track tire",
+    "rule": "Official track tire bought and impounded at the track; no conditioners"
+   },
+   "chassis_life": 7,
+   "entry_usd": 80,
+   "fuel_usd": 40,
+   "misc_usd": 40,
+   "repair_frac": 0.18,
+   "min_weight_lb": 3200,
+   "claims": [
+    "Shocks claimable ($50-200 per shock depending on track)"
+   ],
+   "rules": [
+    "Stock-production V8 or GM 602 crate",
+    "Official spec tire bought at the track",
+    "Non-adjustable listed shocks"
+   ],
+   "facts": {
+    "min_weight_lb": {
+     "min": 2900,
+     "max": 3260,
+     "unit": "lb",
+     "confidence": "high",
+     "sources": [
+      "src:wisc_strictly_2025",
+      "src:hickory_street_2022",
+      "src:nss_superstock_2026"
+     ]
+    },
+    "crate602_usd": {
+     "min": 7300,
+     "max": 8300,
+     "unit": "USD",
+     "confidence": "medium",
+     "sources": [
+      "src:slashgear_602_2025",
+      "src:racingnews_crate_2018"
+     ]
+    },
+    "shock_claim_usd": {
+     "min": 50,
+     "max": 200,
+     "unit": "USD per shock",
+     "confidence": "high",
+     "sources": [
+      "src:wisc_strictly_2025",
+      "src:hickory_street_2022",
+      "src:nss_superstock_2026"
+     ]
+    }
+   },
+   "sources": [
+    "src:wisc_strictly_2025",
+    "src:wisc_superstreet_2025",
+    "src:hickory_street_2022",
+    "src:nss_superstock_2026",
+    "src:slashgear_602_2025",
+    "src:galesburg-ss-pay"
+   ],
+   "confidence": "medium",
+   "evidence": [
+    "street_stock",
+    "pure_stock",
+    "truck_class"
+   ]
+  },
+  "limited_late_model": {
+   "label": "Limited late model (crate)",
+   "discipline": "asphalt_oval",
+   "templates": [
+    "local_limited_late"
+   ],
+   "spread": 0.85,
+   "chassis": [
+    {
+     "key": "used_old",
+     "label": "Old late model chassis",
+     "usd": 9000,
+     "quality": 42,
+     "age": 5
+    },
+    {
+     "key": "used",
+     "label": "Used late model (1-2 yrs)",
+     "usd": 22000,
+     "quality": 60,
+     "age": 2
+    },
+    {
+     "key": "new",
+     "label": "New chassis, regional builder",
+     "usd": 38000,
+     "quality": 74,
+     "age": 0
+    },
+    {
+     "key": "top",
+     "label": "New chassis, top builder",
+     "usd": 50000,
+     "quality": 84,
+     "age": 0
+    }
+   ],
+   "engines": [
+    {
+     "key": "built",
+     "label": "Built 'little motor' (iron head 350/351)",
+     "usd": 9000,
+     "quality": 60,
+     "rebuild_usd": 3500,
+     "rebuild_races": 25,
+     "years": [
+      1995,
+      2100
+     ]
+    },
+    {
+     "key": "crate602",
+     "label": "GM 602 sealed crate",
+     "usd": 7800,
+     "quality": 64,
+     "rebuild_usd": 2500,
+     "rebuild_races": 60,
+     "sealed": true,
+     "weight_break_lb": -50,
+     "years": [
+      2002,
+      2100
+     ]
+    },
+    {
+     "key": "crate604",
+     "label": "GM 604 sealed crate (~400 hp)",
+     "usd": 9500,
+     "quality": 70,
+     "rebuild_usd": 3500,
+     "rebuild_races": 50,
+     "sealed": true,
+     "years": [
+      2002,
+      2100
+     ]
+    },
+    {
+     "key": "d347sr",
+     "label": "Ford D347SR sealed crate",
+     "usd": 11000,
+     "quality": 70,
+     "rebuild_usd": 3500,
+     "rebuild_races": 50,
+     "sealed": true,
+     "years": [
+      2010,
+      2100
+     ]
+    }
+   ],
+   "shocks": [
+    {
+     "key": "budget",
+     "label": "Non-adjustable listed shocks",
+     "usd": 1000,
+     "quality": 50
+    },
+    {
+     "key": "claimer",
+     "label": "Claimer-legal race shocks",
+     "usd": 2400,
+     "quality": 66,
+     "claim_usd": 600
+    }
+   ],
+   "tires": {
+    "usd": 200,
+    "typical_new": 2,
+    "max_new": 2,
+    "life_races": 3,
+    "spec": "Hoosier F-45 / 880 or American Racer",
+    "rule": "Track-bought tires, usually a 2-new-tire rule; must start the feature on qualifying tires"
+   },
+   "chassis_life": 6,
+   "entry_usd": 150,
+   "fuel_usd": 90,
+   "misc_usd": 420,
+   "repair_frac": 0.12,
+   "min_weight_lb": 3100,
+   "claims": [
+    "Shocks claimable ($250-600 each) by cars finishing ahead"
+   ],
+   "rules": [
+    "Sealed GM 602/604 or Ford crate engines; broken seals are illegal",
+    "Weight breaks between engine packages (25-125 lb)",
+    "Two new tires per night is common",
+    "Claimable shocks keep shock budgets down"
+   ],
+   "history": [
+    {
+     "year": 2002,
+     "fact": "GM circle-track crate engines arrive; tracks start crate late model classes"
+    }
+   ],
+   "facts": {
+    "min_weight_lb": {
+     "min": 2625,
+     "max": 3100,
+     "unit": "lb",
+     "confidence": "high",
+     "sources": [
+      "src:hickory_llms_2025",
+      "src:stafford_llm_2025",
+      "src:langley_llm_2025",
+      "src:slinger_lm_2026",
+      "src:owosso_lms"
+     ]
+    },
+    "crate604_usd": {
+     "min": 6000,
+     "max": 10300,
+     "unit": "USD",
+     "confidence": "medium",
+     "sources": [
+      "src:racingnews_crate_2018",
+      "src:speedtalk_604_snip"
+     ]
+    },
+    "crate_refresh_usd": {
+     "min": 1800,
+     "max": 5000,
+     "unit": "USD",
+     "confidence": "low",
+     "sources": [
+      "src:speedtalk_604_snip"
+     ]
+    },
+    "shock_claim_usd": {
+     "min": 250,
+     "max": 600,
+     "unit": "USD per shock",
+     "confidence": "high",
+     "sources": [
+      "src:hickory_llms_2025",
+      "src:langley_llm_2025"
+     ]
+    }
+   },
+   "sources": [
+    "src:hickory_llms_2025",
+    "src:stafford_llm_2025",
+    "src:langley_llm_2025",
+    "src:slinger_lm_2026",
+    "src:owosso_lms",
+    "src:racingnews_crate_2018",
+    "src:act_lm_2025"
+   ],
+   "confidence": "medium",
+   "evidence": [
+    "limited_late_model",
+    "pro_late_model"
+   ]
+  },
+  "late_model_stock": {
+   "label": "Late model (weekly top division)",
+   "discipline": "asphalt_oval",
+   "templates": [
+    "local_late_model"
+   ],
+   "spread": 0.9,
+   "chassis": [
+    {
+     "key": "used_old",
+     "label": "Old late model",
+     "usd": 15000,
+     "quality": 42,
+     "age": 5
+    },
+    {
+     "key": "used",
+     "label": "Used late model (1-2 yrs)",
+     "usd": 35000,
+     "quality": 60,
+     "age": 2
+    },
+    {
+     "key": "new",
+     "label": "New car, regional builder",
+     "usd": 55000,
+     "quality": 74,
+     "age": 0
+    },
+    {
+     "key": "top",
+     "label": "New car, top builder",
+     "usd": 70000,
+     "quality": 85,
+     "age": 0
+    }
+   ],
+   "engines": [
+    {
+     "key": "crate604",
+     "label": "GM 604 sealed crate",
+     "usd": 9500,
+     "quality": 64,
+     "rebuild_usd": 3500,
+     "rebuild_races": 50,
+     "claim_usd": 10000,
+     "sealed": true,
+     "years": [
+      2002,
+      2100
+     ]
+    },
+    {
+     "key": "d347sr",
+     "label": "Ford D347SR sealed crate",
+     "usd": 11000,
+     "quality": 66,
+     "rebuild_usd": 3500,
+     "rebuild_races": 50,
+     "claim_usd": 12000,
+     "sealed": true,
+     "years": [
+      2010,
+      2100
+     ]
+    },
+    {
+     "key": "built",
+     "label": "Built late model stock engine (NASCAR LMSC rules)",
+     "usd": 22000,
+     "quality": 82,
+     "rebuild_usd": 6000,
+     "rebuild_races": 20
+    },
+    {
+     "key": "spec",
+     "label": "Harrington Enforcer spec engine",
+     "usd": 16000,
+     "quality": 76,
+     "rebuild_usd": 4500,
+     "rebuild_races": 30,
+     "years": [
+      2016,
+      2100
+     ]
+    }
+   ],
+   "shocks": [
+    {
+     "key": "listed",
+     "label": "Approved non-adjustable shocks",
+     "usd": 1600,
+     "quality": 52
+    },
+    {
+     "key": "top",
+     "label": "Top shock package (single-adjustable)",
+     "usd": 4000,
+     "quality": 70
+    }
+   ],
+   "tires": {
+    "usd": 200,
+    "typical_new": 4,
+    "max_new": 4,
+    "life_races": 2,
+    "spec": "Hoosier F-45 (track-bought)",
+    "rule": "Up to 4 race tires per event bought day-of, scanned and impounded"
+   },
+   "chassis_life": 5,
+   "entry_usd": 200,
+   "fuel_usd": 120,
+   "misc_usd": 800,
+   "repair_frac": 0.12,
+   "min_weight_lb": 3100,
+   "claims": [
+    "Crate engines claimable at some tracks (GM 604 $10,000, Ford D347SR $12,000)",
+    "Carburetor claim $1,200"
+   ],
+   "rules": [
+    "Late Model Stock: built engines, sealed crates or the Harrington spec engine, with weight adjustments",
+    "Track-bought Hoosier tires, impounded",
+    "Steel bodies (or approved composite), 3,100 lb minimum"
+   ],
+   "history": [
+    {
+     "year": 1995,
+     "fact": "Mid-1990s LMS engine ~$10-15k; Hoosier tires ~$100-120 mounted"
+    },
+    {
+     "year": 2018,
+     "fact": "LMS tire ~$200; a competitive car turns over a set a week"
+    }
+   ],
+   "facts": {
+    "min_weight_lb": {
+     "min": 3050,
+     "max": 3150,
+     "unit": "lb",
+     "confidence": "high",
+     "sources": [
+      "src:hickory_lms_2024",
+      "src:cars_rulebook_2025_snippet"
+     ]
+    },
+    "turnkey_car_usd": {
+     "min": 70000,
+     "max": 70000,
+     "unit": "USD",
+     "confidence": "medium",
+     "sources": [
+      "src:sts_slm_vs_lms"
+     ]
+    },
+    "tire_usd_2018": {
+     "min": 200,
+     "max": 200,
+     "unit": "USD per tire",
+     "confidence": "medium",
+     "sources": [
+      "src:sts_dalejr_2018"
+     ]
+    },
+    "tire_usd_1995": {
+     "min": 100,
+     "max": 120,
+     "unit": "USD per tire (nominal)",
+     "confidence": "medium",
+     "sources": [
+      "src:sobo_2021_costs"
+     ]
+    },
+    "engine_claim_usd": {
+     "min": 10000,
+     "max": 12000,
+     "unit": "USD",
+     "confidence": "high",
+     "sources": [
+      "src:hickory_lms_2024"
+     ]
+    }
+   },
+   "sources": [
+    "src:hickory_lms_2024",
+    "src:cars_rulebook_2025_snippet",
+    "src:sts_slm_vs_lms",
+    "src:sts_dalejr_2018",
+    "src:sobo_2021_costs",
+    "src:search-cars-2024"
+   ],
+   "confidence": "medium",
+   "evidence": [
+    "late_model_stock",
+    "limited_late_model",
+    "pro_late_model"
+   ]
+  },
+  "super_late_model": {
+   "label": "Super late model",
+   "discipline": "asphalt_oval",
+   "templates": [
+    "late_model_tour",
+    "late_model_national"
+   ],
+   "spread": 1.0,
+   "chassis": [
+    {
+     "key": "used",
+     "label": "Used super late model",
+     "usd": 40000,
+     "quality": 55,
+     "age": 2
+    },
+    {
+     "key": "new",
+     "label": "New car, regional builder",
+     "usd": 75000,
+     "quality": 72,
+     "age": 0
+    },
+    {
+     "key": "top",
+     "label": "New car, top builder (turnkey)",
+     "usd": 100000,
+     "quality": 86,
+     "age": 0
+    }
+   ],
+   "engines": [
+    {
+     "key": "built",
+     "label": "Built open/9:1 engine (~630 hp)",
+     "usd": 30000,
+     "quality": 84,
+     "rebuild_usd": 9000,
+     "rebuild_races": 12,
+     "years": [
+      1995,
+      2100
+     ]
+    },
+    {
+     "key": "ct525",
+     "label": "GM CT525 sealed crate",
+     "usd": 11500,
+     "quality": 68,
+     "rebuild_usd": 4000,
+     "rebuild_races": 40,
+     "sealed": true,
+     "years": [
+      2014,
+      2100
+     ]
+    },
+    {
+     "key": "sealed",
+     "label": "SEAL sealed engine (Hamner/McGunegill)",
+     "usd": 24000,
+     "quality": 82,
+     "rebuild_usd": 7000,
+     "rebuild_races": 20,
+     "sealed": true,
+     "years": [
+      2008,
+      2100
+     ]
+    },
+    {
+     "key": "sspe",
+     "label": "Southern Super Parts Engine (SSPE)",
+     "usd": 26000,
+     "quality": 86,
+     "rebuild_usd": 7000,
+     "rebuild_races": 15,
+     "claim_usd": 26000,
+     "years": [
+      2015,
+      2100
+     ],
+     "note": "Claimable for about $26,000 in ASA southern rules"
+    }
+   ],
+   "shocks": [
+    {
+     "key": "budget",
+     "label": "Twin-tube non-adjustables",
+     "usd": 800,
+     "quality": 50
+    },
+    {
+     "key": "mid",
+     "label": "Single-adjustable package",
+     "usd": 4000,
+     "quality": 68
+    },
+    {
+     "key": "top",
+     "label": "Top shock program",
+     "usd": 9000,
+     "quality": 84
+    }
+   ],
+   "tires": {
+    "usd": 242,
+    "typical_new": 4,
+    "max_new": null,
+    "life_races": 1.5,
+    "spec": "Hoosier ST/F-45 27.0x10.0-15",
+    "rule": "Event tires marked and impounded; crown jewels allot a fixed stack (Snowball Derby: 28 tires per car)"
+   },
+   "chassis_life": 4,
+   "entry_usd": 350,
+   "fuel_usd": 200,
+   "misc_usd": 1600,
+   "repair_frac": 0.12,
+   "min_weight_lb": 2800,
+   "claims": [
+    "SSPE engines claimable (~$21,000-26,000 by series)"
+   ],
+   "rules": [
+    "Engine menu: built/9:1, sealed (SEAL), CT525 crate, SSPE - balanced with weight",
+    "Max 56-58% left side",
+    "Event tires marked; must start the feature on qualifying tires",
+    "MSRP caps on calipers ($850) and clutches ($1,600) in unified rules"
+   ],
+   "history": [
+    {
+     "year": 2008,
+     "fact": "Sealed 'SEAL' engine programs spread to cut engine costs"
+    },
+    {
+     "year": 2014,
+     "fact": "GM CT525 crate becomes an option in super late model rules"
+    }
+   ],
+   "facts": {
+    "min_weight_lb": {
+     "min": 2675,
+     "max": 2850,
+     "unit": "lb",
+     "confidence": "high",
+     "sources": [
+      "src:fiveflags_slm_2025",
+      "src:uma_slm_2026",
+      "src:big5_slm_2025",
+      "src:lvms_slm_2020"
+     ]
+    },
+    "tire_usd": {
+     "min": 242,
+     "max": 242,
+     "unit": "USD per tire",
+     "confidence": "high",
+     "sources": [
+      "src:hoosier_midatl_asphalt_2026"
+     ]
+    },
+    "built_engine_usd": {
+     "min": 25000,
+     "max": 30000,
+     "unit": "USD",
+     "confidence": "medium",
+     "sources": [
+      "src:sts_slm_vs_lms"
+     ]
+    },
+    "turnkey_car_usd": {
+     "min": 100000,
+     "max": 100000,
+     "unit": "USD",
+     "confidence": "medium",
+     "sources": [
+      "src:sts_slm_vs_lms"
+     ]
+    },
+    "sspe_claim_usd": {
+     "min": 21000,
+     "max": 26500,
+     "unit": "USD",
+     "confidence": "high",
+     "sources": [
+      "src:fiveflags_slm_2025",
+      "src:big5_slm_2025",
+      "src:srl_2022"
+     ]
+    },
+    "snowball_tires": {
+     "min": 28,
+     "max": 28,
+     "unit": "tires per car",
+     "confidence": "high",
+     "sources": [
+      "src:snowball_tire_2025"
+     ]
+    }
+   },
+   "sources": [
+    "src:fiveflags_slm_2025",
+    "src:uma_slm_2026",
+    "src:big5_slm_2025",
+    "src:lvms_slm_2020",
+    "src:evergreen_slm_2016",
+    "src:hoosier_midatl_asphalt_2026",
+    "src:sts_slm_vs_lms",
+    "src:snowball_tire_2025",
+    "src:srl_2022"
+   ],
+   "confidence": "medium",
+   "evidence": [
+    "super_late_model",
+    "pro_late_model"
+   ]
+  },
+  "asphalt_modified": {
+   "label": "Asphalt modified (SK / tour type)",
+   "discipline": "asphalt_oval",
+   "templates": [
+    "modified_tour"
+   ],
+   "spread": 0.95,
+   "chassis": [
+    {
+     "key": "used",
+     "label": "Used modified (Troyer/Chassis Dynamics-type)",
+     "usd": 30000,
+     "quality": 55,
+     "age": 2
+    },
+    {
+     "key": "new",
+     "label": "New modified chassis",
+     "usd": 55000,
+     "quality": 72,
+     "age": 0
+    },
+    {
+     "key": "top",
+     "label": "New car, top builder",
+     "usd": 75000,
+     "quality": 85,
+     "age": 0
+    }
+   ],
+   "engines": [
+    {
+     "key": "sk_spec",
+     "label": "SK spec engine (Chevy 350, spec parts)",
+     "usd": 18000,
+     "quality": 70,
+     "rebuild_usd": 5000,
+     "rebuild_races": 20
+    },
+    {
+     "key": "crate604",
+     "label": "GM 604 sealed crate (SK Light / 604 Modified)",
+     "usd": 9500,
+     "quality": 60,
+     "rebuild_usd": 3500,
+     "rebuild_races": 50,
+     "sealed": true,
+     "years": [
+      2008,
+      2100
+     ]
+    },
+    {
+     "key": "nascar_spec",
+     "label": "NASCAR spec engine (Whelen Modified Tour)",
+     "usd": 32000,
+     "quality": 80,
+     "rebuild_usd": 8000,
+     "rebuild_races": 12,
+     "years": [
+      2015,
+      2100
+     ]
+    },
+    {
+     "key": "built",
+     "label": "Built steel-block small-block (355-368 ci)",
+     "usd": 40000,
+     "quality": 86,
+     "rebuild_usd": 10000,
+     "rebuild_races": 10
+    }
+   ],
+   "shocks": [
+    {
+     "key": "listed",
+     "label": "Listed coil-overs (capped price)",
+     "usd": 2000,
+     "quality": 58
+    },
+    {
+     "key": "top",
+     "label": "Top shock program",
+     "usd": 6000,
+     "quality": 78
+    }
+   ],
+   "tires": {
+    "usd": 175,
+    "typical_new": 4,
+    "max_new": null,
+    "life_races": 2,
+    "spec": "Hoosier (American Racer from 2026 on the Whelen Mod Tour)",
+    "rule": "Sole-supplier tires bought at the track; tour limits race tires per event (e.g. 10 purchasable, 7 usable)"
+   },
+   "chassis_life": 5,
+   "entry_usd": 300,
+   "fuel_usd": 180,
+   "misc_usd": 900,
+   "repair_frac": 0.15,
+   "min_weight_lb": 2645,
+   "rules": [
+    "Open-wheel asphalt modifieds: spec SK engines weekly, built engines on tour",
+    "Coil-over shocks from a published list",
+    "Tour tire limits per event"
+   ],
+   "facts": {
+    "min_weight_lb": {
+     "min": 2525,
+     "max": 2660,
+     "unit": "lb",
+     "confidence": "high",
+     "sources": [
+      "src:stafford_sk_2025",
+      "src:speedbowl_sk_2025",
+      "src:thompson_sklite_2025"
+     ]
+    },
+    "tour_tire_usd": {
+     "min": 150,
+     "max": 190,
+     "unit": "USD per tire",
+     "confidence": "medium",
+     "sources": [
+      "src:aarn_wmt_tires_2015"
+     ]
+    },
+    "engine_usd": {
+     "min": 24000,
+     "max": 40000,
+     "unit": "USD",
+     "confidence": "medium",
+     "sources": [
+      "src:racedayct_wmt_engines_2015"
+     ]
+    },
+    "shock_cap_usd": {
+     "min": 500,
+     "max": 500,
+     "unit": "USD per shock",
+     "confidence": "high",
+     "sources": [
+      "src:speedbowl_sk_2025"
+     ]
+    }
+   },
+   "sources": [
+    "src:stafford_sk_2025",
+    "src:speedbowl_sk_2025",
+    "src:thompson_sklite_2025",
+    "src:aarn_wmt_tires_2015",
+    "src:racedayct_wmt_engines_2015",
+    "src:racedayct_ar_wmt_2026"
+   ],
+   "confidence": "medium",
+   "evidence": [
+    "asphalt_modified",
+    "asphalt_modified_sk"
+   ]
+  },
+  "sport_compact": {
+   "label": "Sport compact",
+   "discipline": "dirt_oval",
+   "templates": [
+    "local_sport_compact"
+   ],
+   "spread": 0.65,
+   "chassis": [
+    {
+     "key": "junker",
+     "label": "Converted front-drive compact",
+     "usd": 1200,
+     "quality": 45,
+     "age": 0
+    },
+    {
+     "key": "built",
+     "label": "Well-built compact",
+     "usd": 3500,
+     "quality": 65,
+     "age": 1
+    }
+   ],
+   "engines": [
+    {
+     "key": "stock",
+     "label": "Stock OEM 4-cylinder",
+     "usd": 500,
+     "quality": 60,
+     "rebuild_usd": 250,
+     "rebuild_races": 40
+    }
+   ],
+   "shocks": [
+    {
+     "key": "oe",
+     "label": "OE shocks",
+     "usd": 150,
+     "quality": 50
+    }
+   ],
+   "tires": {
+    "usd": 80,
+    "typical_new": 0,
+    "max_new": null,
+    "life_races": 8,
+    "spec": "DOT passenger tires",
+    "rule": "Any DOT passenger tire, 60 series or taller"
+   },
+   "chassis_life": 5,
+   "entry_usd": 50,
+   "fuel_usd": 20,
+   "misc_usd": 35,
+   "repair_frac": 0.25,
+   "claims": [
+    "Whole car claimable for $1,500 cash (or $500 plus exchange) - IMCA Sport Compact"
+   ],
+   "rules": [
+    "Stock front-wheel-drive 3/4-cylinder cars",
+    "Complete-car claim rule caps spending"
+   ],
+   "facts": {
+    "car_claim_usd": {
+     "min": 1500,
+     "max": 1500,
+     "unit": "USD",
+     "confidence": "high",
+     "sources": [
+      "src:imca_spc_2026"
+     ]
+    }
+   },
+   "sources": [
+    "src:imca_spc_2026"
+   ],
+   "confidence": "medium"
+  },
+  "hobby_stock": {
+   "label": "Hobby / factory stock",
+   "discipline": "dirt_oval",
+   "templates": [
+    "local_hobby_dirt"
+   ],
+   "spread": 0.75,
+   "chassis": [
+    {
+     "key": "oem",
+     "label": "OEM-frame hobby stock",
+     "usd": 3500,
+     "quality": 45,
+     "age": 3
+    },
+    {
+     "key": "built",
+     "label": "Well-built OEM-frame car",
+     "usd": 8000,
+     "quality": 62,
+     "age": 1
+    },
+    {
+     "key": "roller",
+     "label": "New roller (Charger-type)",
+     "usd": 18000,
+     "quality": 75,
+     "age": 0
+    }
+   ],
+   "engines": [
+    {
+     "key": "claim",
+     "label": "Claim engine (stock 350)",
+     "usd": 2500,
+     "quality": 60,
+     "rebuild_usd": 1000,
+     "rebuild_races": 40,
+     "claim_usd": 550
+    },
+    {
+     "key": "crate602",
+     "label": "GM 602 sealed crate",
+     "usd": 7300,
+     "quality": 66,
+     "rebuild_usd": 2500,
+     "rebuild_races": 60,
+     "sealed": true,
+     "years": [
+      2002,
+      2100
+     ]
+    }
+   ],
+   "shocks": [
+    {
+     "key": "stock",
+     "label": "Stock-type shocks",
+     "usd": 200,
+     "quality": 50,
+     "claim_usd": 50
+    }
+   ],
+   "tires": {
+    "usd": 90,
+    "typical_new": 1,
+    "max_new": null,
+    "life_races": 6,
+    "spec": "DOT passenger tires (IMCA) / Hoosier (UMP)",
+    "rule": "DOT 205/70-75 passenger tires (IMCA)"
+   },
+   "chassis_life": 6,
+   "entry_usd": 60,
+   "fuel_usd": 35,
+   "misc_usd": 60,
+   "repair_frac": 0.2,
+   "claims": [
+    "Engine claim $550, shocks $50 each, carburetor $100 (IMCA Hobby Stock)",
+    "UMP Factory Stock: whole car claim $1,000"
+   ],
+   "rules": [
+    "Stock frames and stock-appearing engines",
+    "Claim rules keep engines cheap"
+   ],
+   "history": [
+    {
+     "year": 1997,
+     "fact": "IMCA engine claim price $325 (1989-97); about $550 today for most divisions"
+    }
+   ],
+   "facts": {
+    "engine_claim_usd": {
+     "min": 550,
+     "max": 550,
+     "unit": "USD",
+     "confidence": "high",
+     "sources": [
+      "src:imca_hs_2026"
+     ]
+    },
+    "roller_usd": {
+     "min": 3995,
+     "max": 19995,
+     "unit": "USD",
+     "confidence": "high",
+     "sources": [
+      "src:charger_2026"
+     ]
+    },
+    "build_usd": {
+     "min": 3500,
+     "max": 10000,
+     "unit": "USD",
+     "confidence": "low",
+     "sources": [
+      "src:dirttrackhq_cost"
+     ]
+    }
+   },
+   "sources": [
+    "src:imca_hs_2026",
+    "src:dirtcar_fs_2026",
+    "src:charger_2026",
+    "src:dirttrackhq_cost",
+    "src:verdegan_1997"
+   ],
+   "confidence": "medium",
+   "evidence": [
+    "hobby_stock",
+    "dirt_stock_car"
+   ]
+  },
+  "dirt_modified": {
+   "label": "Dirt modified (IMCA/UMP type)",
+   "discipline": "dirt_oval",
+   "templates": [
+    "local_dirt_modified",
+    "dirt_modified_tour"
+   ],
+   "spread": 0.85,
+   "chassis": [
+    {
+     "key": "used_old",
+     "label": "Old modified",
+     "usd": 6000,
+     "quality": 42,
+     "age": 5
+    },
+    {
+     "key": "used",
+     "label": "Used modified (1-2 yrs)",
+     "usd": 12000,
+     "quality": 60,
+     "age": 2
+    },
+    {
+     "key": "new",
+     "label": "New roller",
+     "usd": 22000,
+     "quality": 74,
+     "age": 0
+    },
+    {
+     "key": "top",
+     "label": "New roller, top builder",
+     "usd": 27000,
+     "quality": 84,
+     "age": 0
+    }
+   ],
+   "engines": [
+    {
+     "key": "claim_budget",
+     "label": "Claim engine (budget build)",
+     "usd": 4500,
+     "quality": 58,
+     "rebuild_usd": 2000,
+     "rebuild_races": 30,
+     "claim_usd": 1050,
+     "years": [
+      1995,
+      2100
+     ]
+    },
+    {
+     "key": "claim_strong",
+     "label": "Claim engine (strong build)",
+     "usd": 12000,
+     "quality": 76,
+     "rebuild_usd": 4000,
+     "rebuild_races": 25,
+     "claim_usd": 1050,
+     "years": [
+      1995,
+      2100
+     ],
+     "note": "Worth far more than the claim price: a target if you win"
+    },
+    {
+     "key": "crate604",
+     "label": "GM 604 sealed crate",
+     "usd": 9500,
+     "quality": 70,
+     "rebuild_usd": 3500,
+     "rebuild_races": 60,
+     "sealed": true,
+     "years": [
+      2013,
+      2100
+     ]
+    },
+    {
+     "key": "imca_spec",
+     "label": "IMCA spec engine",
+     "usd": 13100,
+     "quality": 74,
+     "rebuild_usd": 4000,
+     "rebuild_races": 40,
+     "years": [
+      2025,
+      2100
+     ]
+    }
+   ],
+   "shocks": [
+    {
+     "key": "steel",
+     "label": "Steel non-adjustable shocks",
+     "usd": 600,
+     "quality": 55,
+     "claim_usd": 100
+    },
+    {
+     "key": "top",
+     "label": "Top non-adjustable package",
+     "usd": 1200,
+     "quality": 68,
+     "claim_usd": 100
+    }
+   ],
+   "tires": {
+    "usd": 180,
+    "typical_new": 1,
+    "max_new": null,
+    "life_races": 4,
+    "spec": "Hoosier G60-15 IMCA-stamped (spec)",
+    "rule": "IMCA spec tire (Hoosier since 2005); grooving allowed since 2021"
+   },
+   "chassis_life": 5,
+   "entry_usd": 110,
+   "fuel_usd": 70,
+   "misc_usd": 420,
+   "repair_frac": 0.12,
+   "min_weight_lb": 2450,
+   "claims": [
+    "Engine claim $1,050 (IMCA Modified; $550 UMP, winner only)",
+    "Shocks $100 each (IMCA), $350 (UMP)"
+   ],
+   "rules": [
+    "Steel non-adjustable shocks, one per wheel (IMCA)",
+    "Claim engine or sealed 604 crate; IMCA spec engine from 2025",
+    "Spec Hoosier tire; 2,450 lb minimum"
+   ],
+   "history": [
+    {
+     "year": 1997,
+     "fact": "IMCA engine claim $325; Wisconsin claimer engines cost $1,200-4,500 to build"
+    },
+    {
+     "year": 2005,
+     "fact": "Hoosier becomes IMCA's spec tire supplier"
+    },
+    {
+     "year": 2013,
+     "fact": "IMCA allows the GM 604 crate in Modifieds"
+    },
+    {
+     "year": 2025,
+     "fact": "IMCA adds a spec engine option"
+    }
+   ],
+   "facts": {
+    "min_weight_lb": {
+     "min": 2400,
+     "max": 2500,
+     "unit": "lb",
+     "confidence": "high",
+     "sources": [
+      "src:imca_mod_2026",
+      "src:dirtcar_ump_mod_2026",
+      "src:wissota_mod_2026",
+      "src:usra_mod_2025"
+     ]
+    },
+    "tire_usd": {
+     "min": 165,
+     "max": 197,
+     "unit": "USD per tire",
+     "confidence": "medium",
+     "sources": [
+      "src:hoosier_g60_retail"
+     ]
+    },
+    "crate604_usd": {
+     "min": 8000,
+     "max": 12300,
+     "unit": "USD",
+     "confidence": "medium",
+     "sources": [
+      "src:crate_prices_2025"
+     ]
+    },
+    "spec_engine_usd": {
+     "min": 13000,
+     "max": 13200,
+     "unit": "USD",
+     "confidence": "medium",
+     "sources": [
+      "src:imca_spec_2025"
+     ]
+    },
+    "engine_claim_usd": {
+     "min": 550,
+     "max": 1050,
+     "unit": "USD",
+     "confidence": "high",
+     "sources": [
+      "src:imca_mod_2026",
+      "src:dirtcar_ump_mod_2026"
+     ]
+    },
+    "roller_usd": {
+     "min": 20000,
+     "max": 25000,
+     "unit": "USD",
+     "confidence": "low",
+     "sources": [
+      "src:vc_mod_chassis",
+      "src:dirttrackhq_cost"
+     ]
+    }
+   },
+   "sources": [
+    "src:imca_mod_2026",
+    "src:imca_mod_2024",
+    "src:dirtcar_ump_mod_2026",
+    "src:wissota_mod_2026",
+    "src:usra_mod_2025",
+    "src:hoosier_g60_retail",
+    "src:crate_prices_2025",
+    "src:imca_spec_2025",
+    "src:verdegan_1997",
+    "src:vc_mod_chassis"
+   ],
+   "confidence": "medium",
+   "evidence": [
+    "dirt_modified",
+    "sport_mod"
+   ]
+  },
+  "dirt_late_model": {
+   "label": "Dirt late model",
+   "discipline": "dirt_oval",
+   "templates": [
+    "local_dirt_late_model",
+    "dirt_late_model_tour"
+   ],
+   "spread": 1.05,
+   "chassis": [
+    {
+     "key": "used",
+     "label": "Used late model",
+     "usd": 25000,
+     "quality": 55,
+     "age": 2
+    },
+    {
+     "key": "new",
+     "label": "New car, regional builder",
+     "usd": 45000,
+     "quality": 72,
+     "age": 0
+    },
+    {
+     "key": "top",
+     "label": "New car, top builder (Longhorn/Rocket-type)",
+     "usd": 60000,
+     "quality": 86,
+     "age": 0
+    }
+   ],
+   "engines": [
+    {
+     "key": "crate604",
+     "label": "GM 604 sealed crate",
+     "usd": 9500,
+     "quality": 55,
+     "rebuild_usd": 3500,
+     "rebuild_races": 50,
+     "sealed": true,
+     "years": [
+      2002,
+      2100
+     ]
+    },
+    {
+     "key": "ct525",
+     "label": "GM CT525 sealed crate",
+     "usd": 11500,
+     "quality": 66,
+     "rebuild_usd": 4000,
+     "rebuild_races": 40,
+     "sealed": true,
+     "years": [
+      2014,
+      2100
+     ]
+    },
+    {
+     "key": "open",
+     "label": "Open aluminum engine (800-900 hp)",
+     "usd": 55000,
+     "quality": 90,
+     "rebuild_usd": 11000,
+     "rebuild_races": 15
+    }
+   ],
+   "shocks": [
+    {
+     "key": "budget",
+     "label": "Budget mono-tubes",
+     "usd": 2500,
+     "quality": 52
+    },
+    {
+     "key": "top",
+     "label": "Top shock program",
+     "usd": 12000,
+     "quality": 82
+    }
+   ],
+   "tires": {
+    "usd": 240,
+    "typical_new": 2,
+    "max_new": null,
+    "life_races": 1.5,
+    "spec": "Hoosier NLMT2/3/4 (LCB/VCB)",
+    "rule": "Spec Hoosier list; track or series picks the right-rear compound"
+   },
+   "chassis_life": 3,
+   "entry_usd": 200,
+   "fuel_usd": 180,
+   "misc_usd": 1400,
+   "repair_frac": 0.12,
+   "min_weight_lb": 2350,
+   "rules": [
+    "Open engines (cam-in-block, single 4-bbl) or sealed crates, balanced by weight",
+    "2,350 lb minimum (WoO/Lucas/DIRTcar)",
+    "Spec Hoosier tires"
+   ],
+   "history": [
+    {
+     "year": 2014,
+     "fact": "CT525 sealed crate becomes a low-cost late model option"
+    }
+   ],
+   "facts": {
+    "min_weight_lb": {
+     "min": 2300,
+     "max": 2350,
+     "unit": "lb",
+     "confidence": "high",
+     "sources": [
+      "src:dirtcar_lm_2026",
+      "src:woo_lm_rules",
+      "src:lolmds_2025",
+      "src:los_lm"
+     ]
+    },
+    "open_engine_usd": {
+     "min": 40000,
+     "max": 70000,
+     "unit": "USD",
+     "confidence": "medium",
+     "sources": [
+      "src:jj_dlm_engines",
+      "src:lolmds_2025"
+     ]
+    },
+    "engine_life_laps": {
+     "min": 800,
+     "max": 1200,
+     "unit": "laps",
+     "confidence": "medium",
+     "sources": [
+      "src:lolmds_2025"
+     ]
+    },
+    "tire_usd": {
+     "min": 230,
+     "max": 249,
+     "unit": "USD per tire",
+     "confidence": "medium",
+     "sources": [
+      "src:hoosier_nlmt_retail"
+     ]
+    },
+    "complete_car_usd": {
+     "min": 25000,
+     "max": 100000,
+     "unit": "USD",
+     "confidence": "low",
+     "sources": [
+      "src:jj_dlm_cost"
+     ]
+    }
+   },
+   "sources": [
+    "src:dirtcar_lm_2026",
+    "src:woo_lm_rules",
+    "src:lolmds_2025",
+    "src:los_lm",
+    "src:jj_dlm_engines",
+    "src:hoosier_nlmt_retail",
+    "src:jj_dlm_cost",
+    "src:flo_summernats_2017"
+   ],
+   "confidence": "medium",
+   "evidence": [
+    "dirt_late_model",
+    "crate_late_model"
+   ]
+  },
+  "sprint_360": {
+   "label": "360 sprint car",
+   "discipline": "dirt_oval",
+   "templates": [
+    "local_sprint",
+    "sprint_car_tour"
+   ],
+   "spread": 1.0,
+   "chassis": [
+    {
+     "key": "used",
+     "label": "Used sprint car",
+     "usd": 12000,
+     "quality": 55,
+     "age": 1
+    },
+    {
+     "key": "new",
+     "label": "New roller",
+     "usd": 25000,
+     "quality": 76,
+     "age": 0
+    },
+    {
+     "key": "top",
+     "label": "New roller, top builder",
+     "usd": 32000,
+     "quality": 86,
+     "age": 0
+    }
+   ],
+   "engines": [
+    {
+     "key": "built360",
+     "label": "360 steel-block (budget build)",
+     "usd": 25000,
+     "quality": 70,
+     "rebuild_usd": 6000,
+     "rebuild_races": 15
+    },
+    {
+     "key": "top360",
+     "label": "Top 360 (700-750 hp)",
+     "usd": 40000,
+     "quality": 86,
+     "rebuild_usd": 9000,
+     "rebuild_races": 12
+    }
+   ],
+   "shocks": [
+    {
+     "key": "std",
+     "label": "Standard shocks",
+     "usd": 1500,
+     "quality": 55
+    },
+    {
+     "key": "top",
+     "label": "Top shock program",
+     "usd": 5000,
+     "quality": 80
+    }
+   ],
+   "tires": {
+    "usd": 300,
+    "typical_new": 1,
+    "max_new": null,
+    "life_races": 1.5,
+    "spec": "Hoosier 105/16-15 right rear",
+    "rule": "Spec Hoosier list"
+   },
+   "chassis_life": 1.5,
+   "entry_usd": 150,
+   "fuel_usd": 120,
+   "misc_usd": 1000,
+   "repair_frac": 0.18,
+   "min_weight_lb": 1475,
+   "rules": [
+    "360 ci steel block",
+    "Sprint chassis are often replaced within a season after crashes"
+   ],
+   "facts": {
+    "min_weight_lb": {
+     "min": 1475,
+     "max": 1500,
+     "unit": "lb",
+     "confidence": "high",
+     "sources": [
+      "src:ascs_2024",
+      "src:ascs_2025_news"
+     ]
+    },
+    "engine_usd": {
+     "min": 25000,
+     "max": 40000,
+     "unit": "USD",
+     "confidence": "low",
+     "sources": [
+      "src:ascs_2024"
+     ]
+    }
+   },
+   "sources": [
+    "src:ascs_2024",
+    "src:ascs_2025_news",
+    "src:hoosier_gp_sprint"
+   ],
+   "confidence": "low",
+   "evidence": [
+    "sprint_360",
+    "sprint_305",
+    "sprint_410"
+   ]
+  },
+  "midget": {
+   "label": "Midget",
+   "discipline": "dirt_oval",
+   "templates": [
+    "regional_midget"
+   ],
+   "spread": 1.0,
+   "chassis": [
+    {
+     "key": "used",
+     "label": "Used midget",
+     "usd": 15000,
+     "quality": 55,
+     "age": 2
+    },
+    {
+     "key": "new",
+     "label": "New midget chassis",
+     "usd": 30000,
+     "quality": 78,
+     "age": 0
+    }
+   ],
+   "engines": [
+    {
+     "key": "used_engine",
+     "label": "Used 4-cylinder midget engine",
+     "usd": 20000,
+     "quality": 65,
+     "rebuild_usd": 8000,
+     "rebuild_races": 20
+    },
+    {
+     "key": "trd",
+     "label": "Toyota TRD / Stanton SR-11x",
+     "usd": 52000,
+     "quality": 86,
+     "rebuild_usd": 22000,
+     "rebuild_races": 25
+    }
+   ],
+   "shocks": [
+    {
+     "key": "std",
+     "label": "Standard shocks",
+     "usd": 1500,
+     "quality": 55
+    },
+    {
+     "key": "top",
+     "label": "Top shock program",
+     "usd": 4500,
+     "quality": 78
+    }
+   ],
+   "tires": {
+    "usd": 260,
+    "typical_new": 1,
+    "max_new": null,
+    "life_races": 2,
+    "spec": "Hoosier SP3 right rear",
+    "rule": "Spec Hoosier SP3 RR; LR D-12 or harder"
+   },
+   "chassis_life": 3,
+   "entry_usd": 150,
+   "fuel_usd": 80,
+   "misc_usd": 1600,
+   "repair_frac": 0.15,
+   "min_weight_lb": 1035,
+   "rules": [
+    "1,035 lb minimum with driver",
+    "4-cylinder engines (Toyota/Stanton/Esslinger/Honda)"
+   ],
+   "facts": {
+    "min_weight_lb": {
+     "min": 1035,
+     "max": 1035,
+     "unit": "lb",
+     "confidence": "high",
+     "sources": [
+      "src:usac_midget_2025",
+      "src:powri_midget",
+      "src:xtreme_midget"
+     ]
+    },
+    "engine_usd": {
+     "min": 45000,
+     "max": 60000,
+     "unit": "USD",
+     "confidence": "low",
+     "sources": [
+      "src:midget_cost_snip"
+     ]
+    },
+    "season_usd": {
+     "min": 150000,
+     "max": 400000,
+     "unit": "USD",
+     "confidence": "low",
+     "sources": [
+      "src:midget_cost_snip"
+     ]
+    }
+   },
+   "sources": [
+    "src:usac_midget_2025",
+    "src:powri_midget",
+    "src:xtreme_midget",
+    "src:midget_cost_snip"
+   ],
+   "confidence": "low"
+  },
+  "micro_sprint": {
+   "label": "Micro sprint (600cc)",
+   "discipline": "dirt_oval",
+   "templates": [
+    "micro_sprint"
+   ],
+   "spread": 0.85,
+   "chassis": [
+    {
+     "key": "used",
+     "label": "Used micro",
+     "usd": 5000,
+     "quality": 55,
+     "age": 2
+    },
+    {
+     "key": "new",
+     "label": "New micro sprint",
+     "usd": 12000,
+     "quality": 76,
+     "age": 0
+    }
+   ],
+   "engines": [
+    {
+     "key": "600",
+     "label": "600cc motorcycle engine",
+     "usd": 5000,
+     "quality": 70,
+     "rebuild_usd": 1200,
+     "rebuild_races": 25
+    },
+    {
+     "key": "600_top",
+     "label": "Top-built 600cc",
+     "usd": 11000,
+     "quality": 82,
+     "rebuild_usd": 2000,
+     "rebuild_races": 20
+    }
+   ],
+   "shocks": [
+    {
+     "key": "std",
+     "label": "Standard shocks",
+     "usd": 800,
+     "quality": 55
+    },
+    {
+     "key": "top",
+     "label": "Top shocks",
+     "usd": 2000,
+     "quality": 75
+    }
+   ],
+   "tires": {
+    "usd": 175,
+    "typical_new": 1,
+    "max_new": null,
+    "life_races": 3,
+    "spec": "Hoosier (spec stamps)",
+    "rule": "Spec right-rear stamps"
+   },
+   "chassis_life": 3,
+   "entry_usd": 80,
+   "fuel_usd": 30,
+   "misc_usd": 300,
+   "repair_frac": 0.15,
+   "min_weight_lb": 740,
+   "facts": {
+    "min_weight_lb": {
+     "min": 725,
+     "max": 750,
+     "unit": "lb",
+     "confidence": "high",
+     "sources": [
+      "src:powri_micro"
+     ]
+    },
+    "season_usd": {
+     "min": 15000,
+     "max": 35000,
+     "unit": "USD",
+     "confidence": "low",
+     "sources": [
+      "src:powri_micro"
+     ]
+    }
+   },
+   "rules": [
+    "600cc 4-cylinder motorcycle engines",
+    "725-750 lb with driver"
+   ],
+   "sources": [
+    "src:powri_micro"
+   ],
+   "confidence": "low"
+  },
+  "kart_junior": {
+   "label": "Kart (junior/club)",
+   "discipline": "karting",
+   "templates": [
+    "youth_karting"
+   ],
+   "spread": 0.65,
+   "chassis": [
+    {
+     "key": "used",
+     "label": "Used kart chassis",
+     "usd": 1500,
+     "quality": 50,
+     "age": 2
+    },
+    {
+     "key": "new",
+     "label": "New kart chassis",
+     "usd": 4500,
+     "quality": 75,
+     "age": 0
+    }
+   ],
+   "engines": [
+    {
+     "key": "lo206",
+     "label": "Briggs LO206 (factory sealed)",
+     "usd": 800,
+     "quality": 62,
+     "rebuild_usd": 250,
+     "rebuild_races": 30,
+     "sealed": true,
+     "years": [
+      2010,
+      2100
+     ]
+    },
+    {
+     "key": "ka100",
+     "label": "IAME KA100 (100cc)",
+     "usd": 3000,
+     "quality": 72,
+     "rebuild_usd": 1000,
+     "rebuild_races": 8,
+     "years": [
+      2017,
+      2100
+     ]
+    },
+    {
+     "key": "kt100",
+     "label": "Yamaha KT100",
+     "usd": 1500,
+     "quality": 64,
+     "rebuild_usd": 500,
+     "rebuild_races": 8,
+     "years": [
+      1995,
+      2016
+     ]
+    }
+   ],
+   "shocks": [
+    {
+     "key": "none",
+     "label": "Kart (no shocks)",
+     "usd": 0,
+     "quality": 60
+    }
+   ],
+   "tires": {
+    "usd": 65,
+    "typical_new": 2,
+    "max_new": null,
+    "life_races": 2,
+    "spec": "Spec kart tires (Evinco/MG/Vega)",
+    "rule": "Spec tire per series; sets included in entry at national events"
+   },
+   "chassis_life": 2,
+   "entry_usd": 120,
+   "fuel_usd": 20,
+   "misc_usd": 150,
+   "repair_frac": 0.08,
+   "rules": [
+    "Spec engines with hour-based rebuilds (KA100 top end every 10-12 hours)",
+    "Spec tires"
+   ],
+   "facts": {
+    "lo206_usd": {
+     "min": 759,
+     "max": 848,
+     "unit": "USD",
+     "confidence": "medium",
+     "sources": [
+      "src:lo206_snippets"
+     ]
+    },
+    "ka100_rebuild_usd": {
+     "min": 575,
+     "max": 1555,
+     "unit": "USD",
+     "confidence": "medium",
+     "sources": [
+      "src:iame_service_snippets"
+     ]
+    }
+   },
+   "sources": [
+    "src:skusa_protour_2026_pricing",
+    "src:iame_service_snippets",
+    "src:lo206_snippets",
+    "src:kt100_snippets",
+    "src:wordracing_costs"
+   ],
+   "confidence": "medium"
+  },
+  "kart_senior": {
+   "label": "Kart (national TaG)",
+   "discipline": "karting",
+   "templates": [
+    "national_karting"
+   ],
+   "spread": 0.8,
+   "chassis": [
+    {
+     "key": "used",
+     "label": "Used chassis",
+     "usd": 2000,
+     "quality": 55,
+     "age": 1
+    },
+    {
+     "key": "new",
+     "label": "New chassis",
+     "usd": 5500,
+     "quality": 78,
+     "age": 0
+    }
+   ],
+   "engines": [
+    {
+     "key": "x30",
+     "label": "IAME X30 125cc TaG",
+     "usd": 4500,
+     "quality": 76,
+     "rebuild_usd": 1000,
+     "rebuild_races": 6,
+     "years": [
+      2012,
+      2100
+     ]
+    },
+    {
+     "key": "rotax",
+     "label": "Rotax Senior MAX",
+     "usd": 3600,
+     "quality": 74,
+     "rebuild_usd": 900,
+     "rebuild_races": 8,
+     "sealed": true
+    },
+    {
+     "key": "yamaha",
+     "label": "Yamaha KT100 (pre-TaG era)",
+     "usd": 1500,
+     "quality": 70,
+     "rebuild_usd": 500,
+     "rebuild_races": 6,
+     "years": [
+      1995,
+      2011
+     ]
+    }
+   ],
+   "shocks": [
+    {
+     "key": "none",
+     "label": "Kart (no shocks)",
+     "usd": 0,
+     "quality": 60
+    }
+   ],
+   "tires": {
+    "usd": 70,
+    "typical_new": 4,
+    "max_new": null,
+    "life_races": 1.5,
+    "spec": "Evinco / Mojo spec",
+    "rule": "2 race sets included in the event entry at national events"
+   },
+   "chassis_life": 1.5,
+   "entry_usd": 900,
+   "fuel_usd": 60,
+   "misc_usd": 900,
+   "repair_frac": 0.08,
+   "rules": [
+    "X30 configuration frozen since 2014",
+    "Spec tires included in entry"
+   ],
+   "facts": {
+    "x30_usd": {
+     "min": 4000,
+     "max": 4900,
+     "unit": "USD",
+     "confidence": "medium",
+     "sources": [
+      "src:iame_service_snippets"
+     ]
+    },
+    "tire_set_usd": {
+     "min": 262,
+     "max": 274,
+     "unit": "USD per set",
+     "confidence": "high",
+     "sources": [
+      "src:skusa_protour_2026_pricing"
+     ]
+    }
+   },
+   "sources": [
+    "src:skusa_protour_2026_pricing",
+    "src:skusa_protour_2026_purse",
+    "src:rotax_service_snippets",
+    "src:iame_service_snippets"
+   ],
+   "confidence": "medium"
+  },
+  "club_spec_miata": {
+   "label": "Club road racer (Spec Miata type)",
+   "discipline": "road",
+   "templates": [
+    "club_regional",
+    "club_national"
+   ],
+   "spread": 0.6,
+   "chassis": [
+    {
+     "key": "budget",
+     "label": "Budget Spec Miata",
+     "usd": 8000,
+     "quality": 48,
+     "age": 10
+    },
+    {
+     "key": "good",
+     "label": "Good Spec Miata",
+     "usd": 22000,
+     "quality": 65,
+     "age": 5
+    },
+    {
+     "key": "top",
+     "label": "Pro-built Spec Miata",
+     "usd": 55000,
+     "quality": 82,
+     "age": 1
+    }
+   ],
+   "engines": [
+    {
+     "key": "stock",
+     "label": "Stock-spec engine",
+     "usd": 3000,
+     "quality": 60,
+     "rebuild_usd": 3000,
+     "rebuild_races": 15
+    },
+    {
+     "key": "pro",
+     "label": "Pro-built spec engine",
+     "usd": 6000,
+     "quality": 75,
+     "rebuild_usd": 5500,
+     "rebuild_races": 18
+    }
+   ],
+   "shocks": [
+    {
+     "key": "spec",
+     "label": "Spec shocks",
+     "usd": 1200,
+     "quality": 60
+    }
+   ],
+   "tires": {
+    "usd": 215,
+    "typical_new": 2,
+    "max_new": null,
+    "life_races": 3,
+    "spec": "Hoosier SM7.5 / Toyo RR",
+    "rule": "Spec DOT tire; 10-20 heat cycles"
+   },
+   "chassis_life": 12,
+   "entry_usd": 450,
+   "fuel_usd": 150,
+   "misc_usd": 300,
+   "repair_frac": 0.1,
+   "min_weight_lb": 2400,
+   "rules": [
+    "Production MX-5 with the Spec Miata kit",
+    "Spec tire"
+   ],
+   "facts": {
+    "season_usd": {
+     "min": 6660,
+     "max": 30000,
+     "unit": "USD",
+     "confidence": "medium",
+     "sources": [
+      "src:nomoney_sm_2023",
+      "src:sm_cost_snippets"
+     ]
+    },
+    "tire_usd": {
+     "min": 200,
+     "max": 230,
+     "unit": "USD per tire",
+     "confidence": "medium",
+     "sources": [
+      "src:sm_cost_snippets"
+     ]
+    }
+   },
+   "sources": [
+    "src:nomoney_sm_2023",
+    "src:sm_cost_snippets",
+    "src:wiki_specmiata"
+   ],
+   "confidence": "medium",
+   "evidence": [
+    "club_spec_miata",
+    "spec_racer_ford",
+    "formula_f"
+   ]
+  }
+ }
+}

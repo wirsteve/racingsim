@@ -26,6 +26,7 @@ unpublished project; see [`LICENSING_IP_REVIEW.md`](LICENSING_IP_REVIEW.md).
 | [`LICENSING_IP_REVIEW.md`](LICENSING_IP_REVIEW.md) | IP/licensing notes (personal project — kept as good practice) |
 | [`docs/DATA_PIPELINE.md`](docs/DATA_PIPELINE.md) | **The racing data layer:** what was collected, sources used and skipped, validation, confidence, gaps, commands |
 | [`docs/DATA_MODEL.md`](docs/DATA_MODEL.md) | Schemas: Series, SanctioningBody, Track, CarClass, CareerStage, CareerPath, Transition, AdvancementFactor, Season, Race, HistoricalDriver/Team, provenance |
+| [`docs/RULES_AND_MONEY.md`](docs/RULES_AND_MONEY.md) | **Cars, rules and money:** class rules, parts, tires, wear and wrecks, real points systems and playoffs, purses — and the evidence behind them |
 | [`docs/DATA_REPORT.md`](docs/DATA_REPORT.md) | Generated coverage/confidence report (`python -m racingsim data report`) |
 | [`data/CREDITS.md`](data/CREDITS.md) | Data sources and licences |
 
@@ -101,6 +102,16 @@ python -m pytest -q                                     # run the tests
   Truck Series; CART/Champ Car, IRL/IndyCar, Indy Lights, Star/Pro Mazda and USF2000.
   Rosters, standings and calendars, plus 2,500 driver bios. Built from Wikipedia and
   Wikidata with the scrapers in [`tools/history/`](tools/history/).
+* **Cars built to real rules** (`data/rules/`): 19 car classes from 126 researched rulebook
+  records (track house rules and sanctioning rulebooks), 155 part prices and lifespans, 332
+  sources. Chassis, engine packages (built, crate, sealed, spec, claimer — legal by year),
+  shocks and tire rules; engines need freshening, tires wear, wrecks cost money, claim rules
+  bite. Your **Garage** shows the car, the class rules and a race-by-race money ledger.
+* **Real points and purses**: era-correct NASCAR points (Latford, 2004/2007, one-point,
+  stages, 2026) with the Chase and elimination playoffs; weekly tracks score like their
+  sanctioning body (IMCA, DIRTcar, WISSOTA, Hickory-style, Stafford-style …), with heats,
+  DNQs and show-up points; purses from published payout sheets that lag inflation the way
+  real weekly purses do.
 * **Racing pyramid**: 8 tiers and 43 series templates instantiated onto real tracks (about 800 championships),
   with era names and rungs that appear or go dormant by year:
   weekly divisions at local tracks, regional tours, national ladders in stock cars,

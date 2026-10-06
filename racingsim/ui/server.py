@@ -159,12 +159,38 @@ def handle(method: str, path: str, query: dict, body: dict):
         return api.offseason(g)
     if head == "regions":
         return api.regions(w)
+    if head == "garage":
+        from . import garage_view
+        if method == "POST":
+            from ..rules.garage import garage_action
+            if w.player is None:
+                raise ApiError("no driver", 409)
+            action = body.get("action")
+            if not isinstance(action, str):
+                raise ApiError("action required")
+            key = body.get("key")
+            value = body.get("value")
+            if key is not None and not isinstance(key, str):
+                raise ApiError("key must be a string")
+            if value is not None and not isinstance(value, (int, bool)):
+                raise ApiError("value must be a number")
+            msg = garage_action(w, w.player, action, key, int(value) if value is not None else None)
+            return {"message": msg, **garage_view.garage(g)}
+        return garage_view.garage(g)
     raise ApiError("not found", 404)
 
 
 def _knowledge(route: list[str]):
     """Encyclopedia: the racing knowledge layer (series, ladders, sources). Works without a game loaded."""
     from ..knowledge.api import Knowledge
+    if route and route[0] == "rules":
+        from ..rules import research
+        if len(route) > 1:
+            out = research.class_detail(route[1])
+            if out is None:
+                raise ApiError("no such class", 404)
+            return out
+        return research.overview()
     k = Knowledge.default()
     if k is None:
         raise ApiError("knowledge database not available", 404)

@@ -35,6 +35,7 @@ def main() -> int:
     for f in sorted((ROOT / "data").glob("*.json")):
         data_args += ["--add-data", f"{f}{sep}data"]
     data_args += ["--add-data", f"{ROOT / 'data' / 'tracks'}{sep}data/tracks"]
+    data_args += ["--add-data", f"{ROOT / 'data' / 'rules'}{sep}data/rules"]
     data_args += ["--add-data", f"{db}{sep}data"]
     data_args += ["--add-data", f"{ROOT / 'racingsim' / 'ui' / 'static'}{sep}racingsim/ui/static"]
     name = "racingsim"

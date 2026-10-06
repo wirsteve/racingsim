@@ -29,6 +29,7 @@ class Entry:
     equipment: float               # 0-100
     team_id: Optional[int] = None
     car_key: str = ""
+    mech: Optional[float] = None   # this car's mechanical-failure chance (own cars: engine freshness/health)
 
 
 @dataclass
@@ -51,10 +52,7 @@ def _driver_pace(d: Driver, discipline: str, track: Track) -> float:
     return base + craft + manage
 
 
-def run_race(entries: list[Entry], track: Track, discipline: str, tier: int,
-             car_weight: float, rng: random.Random, injury_scale: float = 1.0) -> list[Finish]:
-    if not entries:
-        return []
+def _factors(track: Track, tier: int, car_weight: float) -> tuple[float, float]:
     s = track.sim
     # Equipment matters more on power/aero tracks; at superspeedways the draft equalises cars.
     cw = car_weight * (0.75 + 0.5 * (s.horsepower_importance + s.aero_importance) / 200)
@@ -62,12 +60,40 @@ def run_race(entries: list[Entry], track: Track, discipline: str, tier: int,
     cw = clamp(cw, 0.1, 0.8)
     # Luck: drafting packs, cautions and lower-tier variance (less prep, more mechanical gremlins).
     luck = 5.0 + 9.0 * (s.drafting_effect / 100) + 4.0 * (s.caution_probability / 100) + 1.2 * max(0, 4 - tier)
+    return cw, luck
 
+
+def _paces(entries: list[Entry], track: Track, discipline: str, cw: float) -> list[float]:
     paces = []
     for e in entries:
         dpace = sum(_driver_pace(d, discipline, track) for d in e.drivers) / len(e.drivers)
-        pace = (1 - cw) * dpace + cw * e.equipment
-        paces.append(pace)
+        paces.append((1 - cw) * dpace + cw * e.equipment)
+    return paces
+
+
+def heats(entries: list[Entry], track: Track, discipline: str, tier: int, car_weight: float,
+          rng: random.Random, per_heat: int = 9) -> tuple[list[Entry], list[list[Entry]]]:
+    """Heat races: cars are drawn into heats; returns (overall order by heat performance, heats in finishing order).
+
+    Short heats with inverted starts are mostly luck plus pace, so the noise is larger than in a feature."""
+    cw, luck = _factors(track, tier, car_weight)
+    paces = _paces(entries, track, discipline, cw)
+    score = {id(e): p + rng.gauss(0, luck * 1.3) for e, p in zip(entries, paces)}
+    drawn = list(entries)
+    rng.shuffle(drawn)
+    n = max(1, -(-len(drawn) // per_heat))
+    groups = [sorted(drawn[i::n], key=lambda e: -score[id(e)]) for i in range(n)]
+    overall = sorted(entries, key=lambda e: -score[id(e)])
+    return overall, groups
+
+
+def run_race(entries: list[Entry], track: Track, discipline: str, tier: int,
+             car_weight: float, rng: random.Random, injury_scale: float = 1.0) -> list[Finish]:
+    if not entries:
+        return []
+    s = track.sim
+    cw, luck = _factors(track, tier, car_weight)
+    paces = _paces(entries, track, discipline, cw)
 
     # Expected finishing order from equipment alone (what a scout would "expect").
     equip_order = sorted(range(len(entries)), key=lambda i: -entries[i].equipment)
@@ -79,7 +105,7 @@ def run_race(entries: list[Entry], track: Track, discipline: str, tier: int,
         lead = e.drivers[0]
         # Incidents: aggressive/inconsistent drivers crash more; crash-prone venues amplify it.
         crash_p = 0.012 + 0.05 * (s.caution_probability / 100) * (0.6 + (lead.aggression - lead.consistency + 100) / 200)
-        mech_p = 0.01 + 0.04 * (s.mechanical_stress / 100) * (1 - e.equipment / 130)
+        mech_p = e.mech if e.mech is not None else 0.01 + 0.04 * (s.mechanical_stress / 100) * (1 - e.equipment / 130)
         crashed = rng.random() < crash_p
         mech = (not crashed) and rng.random() < mech_p
         dnf = crashed or mech

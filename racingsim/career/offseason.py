@@ -47,7 +47,7 @@ def begin_offseason(world: "World", results: "SeasonResults", summary: "YearSumm
         if 20 <= age <= 50 and d.team_id is None:
             # Working adults' hobby budgets grow with their careers.
             d.family_budget *= world.rng.uniform(1.0, 1.06)
-        if d.team_id is None and d.series_id and d.status != SIDELINED:
+        if d.team_id is None and d.series_id and d.status != SIDELINED and not (d.is_player and d.car is not None):
             # Racers in a cheaper class bank the surplus toward a bigger car.
             surplus = d.family_budget - world.series(d.series_id).template.season_cost
             if surplus > 0:

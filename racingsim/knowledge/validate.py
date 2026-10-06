@@ -29,6 +29,80 @@ def validate(conn: sqlite3.Connection) -> list[Issue]:
     out += _history(conn)
     out += _tracks(conn)
     out += _conflicts(conn)
+    out += rules_issues()
+    return out
+
+
+def rules_issues() -> list[Issue]:
+    """data/rules: classes, points and payouts must reference real templates, systems and sources."""
+    from ..rules.classes import all_classes
+    from ..rules.payouts import _data as pay_data
+    from ..rules.payouts import tables
+    from ..rules.points import _data as pts_data
+    from ..rules.points import formats, systems
+    from ..util import load_json
+    out: list[Issue] = []
+    try:
+        templates = {t["key"] for t in load_json("series.json")["series"]}
+        sources = load_json("rules/sources.json")
+    except FileNotFoundError:
+        return [Issue("warning", "rules", "data/rules", "rules data missing")]
+    seen_tpl: dict[str, str] = {}
+
+    def cite(entity: str, ids) -> None:
+        for sid in ids or []:
+            if sid not in sources:
+                out.append(Issue("error", "rules-source", entity, f"unknown source {sid}"))
+
+    for c in all_classes().values():
+        ent = f"class:{c.key}"
+        if c.confidence not in CONFIDENCE:
+            out.append(Issue("error", "rules", ent, f"bad confidence {c.confidence!r}"))
+        for t in c.templates:
+            if t not in templates:
+                out.append(Issue("error", "rules", ent, f"unknown template {t}"))
+            if t in seen_tpl:
+                out.append(Issue("error", "rules", ent, f"template {t} also mapped to {seen_tpl[t]}"))
+            seen_tpl[t] = c.key
+        if not c.chassis or not c.engines:
+            out.append(Issue("error", "rules", ent, "needs chassis and engine options"))
+        for o in c.chassis + c.engines + c.shocks:
+            if not 0 <= o.quality <= 100 or o.usd < 0:
+                out.append(Issue("error", "rules", ent, f"option {o.key}: quality/price out of range"))
+            if o.rebuild_races < 0 or (o.rebuild_races and o.rebuild_usd <= 0):
+                out.append(Issue("warning", "rules", ent, f"option {o.key}: rebuild interval without a cost"))
+        for y in range(1995, 2027):
+            if not any(e.available(y) for e in c.engines):
+                out.append(Issue("error", "rules", ent, f"no legal engine in {y}"))
+                break
+        cite(ent, c.sources)
+        for k, f in c.facts.items():
+            cite(f"{ent}.{k}", f.get("sources"))
+            if f.get("confidence") not in CONFIDENCE:
+                out.append(Issue("error", "rules", f"{ent}.{k}", "fact without confidence"))
+    for k, sy in systems().items():
+        cite(f"points:{k}", sy.sources)
+        if not (sy.table or sy.step or sy.from_last):
+            out.append(Issue("error", "rules", f"points:{k}", "no table, step or from-last rule"))
+    for k, f in formats().items():
+        cite(f"format:{k}", f.sources)
+        if f.kind == "elimination" and (len(f.round_races) != len(f.rounds) + (1 if f.finale else 0)
+                                        or sum(f.round_races) != f.races):
+            out.append(Issue("error", "rules", f"format:{k}", "rounds and round_races don't add up"))
+    for a in pts_data().get("assign", []):
+        if a["system"] not in systems() or (a.get("format") and a["format"] not in formats()):
+            out.append(Issue("error", "rules", "points.assign", f"unknown system/format in {a}"))
+        for t in a.get("templates", []):
+            if t not in templates:
+                out.append(Issue("error", "rules", "points.assign", f"unknown template {t}"))
+    for k, t in tables().items():
+        cite(f"payout:{k}", t.sources)
+    for a in pay_data().get("assign", []):
+        if a["table"] not in tables():
+            out.append(Issue("error", "rules", "payouts.assign", f"unknown table {a['table']}"))
+        for t in a.get("templates", []):
+            if t not in templates:
+                out.append(Issue("error", "rules", "payouts.assign", f"unknown template {t}"))
     return out
 
 

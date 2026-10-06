@@ -51,6 +51,8 @@ jobs:
           curl -sf -X POST http://127.0.0.1:8765/api/new -d '{"first":"CI","last":"Test","region":"NC","age":13,"discipline":"stock_car","background":"comfortable","start_year":1996,"scale":0.2}' > /dev/null
           curl -sf -X POST http://127.0.0.1:8765/api/sim -d '{"until":"week"}' > /dev/null
           curl -sf http://127.0.0.1:8765/api/series/cup_series | grep -q "Winston Cup"
+          curl -sf http://127.0.0.1:8765/api/knowledge/rules | grep -q "Latford"
+          curl -sf http://127.0.0.1:8765/api/garage | grep -q '"available"'
           echo "smoke test passed"
       - name: Package
         shell: bash

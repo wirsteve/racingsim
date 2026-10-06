@@ -115,6 +115,8 @@ def release_sponsors(world: "World", d: Driver) -> None:
 
 
 def retire(world: "World", d: Driver, summary: "YearSummary") -> None:
+    if d.car is not None and not d.is_player:
+        d.car = None  # the car is sold; it goes back into the used market
     if d.team_id is not None:
         team = world.teams.get(d.team_id)
         if team:

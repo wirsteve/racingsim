@@ -258,8 +258,11 @@ const standingCols = () => [
   { key: "starts", label: "St", num: true },
   { key: "wins", label: "W", num: true },
   { key: "top5", label: "T5", num: true },
+  { key: "top10", label: "T10", num: true },
   { key: "avg_finish", label: "Avg", num: true },
-  { key: "points", label: "Pts", num: true, render: (r) => (r.points ?? (r.champion ? "🏆" : "—")) },
+  { key: "winnings", label: "Won", num: true, render: (r) => (r.winnings ? money(r.winnings) : "—") },
+  { key: "points", label: "Pts", num: true, render: (r) => `${r.points ?? "—"}${r.champion ? " 🏆" : ""}${r.playoff === "alive" ? ' <span class="badge good" title="Alive in the playoffs">P</span>' : r.playoff === "out" ? ' <span class="badge" title="Eliminated from the playoffs">E</span>' : ""}` },
+  { key: "behind", label: "Behind", num: true, render: (r) => (r.behind ? "−" + r.behind : r.behind === 0 ? "—" : "") },
 ];
 
 function scheduleTable(id, rows, series, results) {
@@ -792,6 +795,98 @@ on("start", async (el) => {
   } catch (e) { toast(e.message, true); $("#new-msg").textContent = ""; el.classList.remove("busy"); }
 });
 
+// ---------------------------------------------------------------- garage (own car, class rules, money)
+function usd(x, idx) {
+  if (x === null || x === undefined) return "—";
+  const k = idx !== undefined ? idx : (S.status && S.status.price_index) || 1;
+  const v = Math.round(x * k);
+  return (v < 0 ? "−$" : "$") + Math.abs(v).toLocaleString();
+}
+const bar = (v, color) => `<span class="statbar" style="display:inline-block;width:90px;vertical-align:middle"><i style="width:${Math.max(0, Math.min(100, v))}%;${color ? `background:${color}` : ""}"></i></span>`;
+const health = (v) => bar(v, v >= 75 ? "var(--good)" : v >= 45 ? "var(--warn)" : "var(--bad)");
+function srcLinks(list) {
+  return (list || []).map((s) => s.url ? `<a class="link small" target="_blank" rel="noopener" href="${esc(s.url)}">${esc(s.name)} ↗</a>` : `<span class="small">${esc(s.name)}</span>`).join(" · ");
+}
+async function garagePage() { renderGarage(await api("garage")); }
+function renderGarage(g) {
+  if (!g.available) { view(`<h1>Garage</h1><div class="card empty">${esc(g.why || "No garage.")}</div>`); return; }
+  const c = g.class, car = g.car, yr = g.year;
+  const optRow = (kind, o, current) => `<tr class="${current ? "me" : ""}"><td>${esc(o.label)}${o.sealed ? ' <span class="badge">sealed</span>' : ""}${o.claim_usd ? ` <span class="badge warn" title="Claim rule">claim ${usd(o.claim_usd)}</span>` : ""}${!o.legal ? ' <span class="badge bad">not legal ' + yr + "</span>" : ""}
+      ${o.note ? `<div class="muted small">${esc(o.note)}</div>` : ""}</td>
+    <td class="num">${usd(o.usd)}</td><td class="num">${o.quality}</td>
+    <td class="num small">${kind === "engines" ? (o.rebuild_races ? `${usd(o.rebuild_usd)} / ${o.rebuild_races} races` : "—") : kind === "chassis" ? (o.age ? `${o.age} yrs old` : "new") : ""}</td>
+    <td>${car && !current && o.legal ? `<button class="small" data-act="garage" data-a="${kind === "engines" ? "engine" : kind}" data-k="${esc(o.key)}">Buy</button>` : current ? '<span class="badge good">fitted</span>' : ""}</td></tr>`;
+  const optTable = (kind, title, list, cur) => list.length ? `<div class="card flush"><h3 style="padding:14px 16px 0">${title}</h3><div class="table-wrap"><table class="tbl"><thead><tr><th>Option</th><th class="num">Price</th><th class="num">Quality</th><th class="num">Upkeep</th><th></th></tr></thead>
+    <tbody>${list.map((o) => optRow(kind, o, cur === o.key || cur === o.label)).join("")}</tbody></table></div></div>` : "";
+  const t = c.tires;
+  const rulesCard = `<div class="card"><div class="card-head"><h3>Class rules · ${esc(c.label)}</h3>${CONF(c.confidence)}</div>
+    <dl class="kv">
+      ${c.min_weight_lb ? `<dt>Minimum weight</dt><dd>${Math.round(c.min_weight_lb).toLocaleString()} lb</dd>` : ""}
+      <dt>Tires</dt><dd>${esc(t.spec || "—")} · ${usd(t.usd)} each · ${t.max_new != null ? `max ${t.max_new} new per night` : "no limit on new tires"} · ~${t.life_races} nights of life</dd>
+      ${t.rule ? `<dt>Tire rule</dt><dd>${esc(t.rule)}</dd>` : ""}
+      <dt>Per night</dt><dd>entry & pit passes ${usd(c.per_race.entry)} · fuel ${usd(c.per_race.fuel)} · consumables ${usd(c.per_race.misc)}</dd>
+      <dt>Chassis life</dt><dd>~${c.chassis_life} seasons · typical wreck ≈ ${Math.round(c.repair_frac * 100)}% of a new chassis</dd>
+      <dt>Rules spread</dt><dd>${c.spread < 0.7 ? "Tight spec class: money buys little speed" : c.spread < 0.95 ? "Controlled class: parts rules limit spending" : "Open class: money buys speed"}</dd>
+    </dl>
+    ${c.rules.length ? `<ul class="timeline">${c.rules.map((r) => `<li>${esc(r)}</li>`).join("")}</ul>` : ""}
+    ${c.claims.length ? `<h4>Claim rules</h4><ul class="timeline">${c.claims.map((r) => `<li>${esc(r)}</li>`).join("")}</ul>` : ""}
+    ${c.history.length ? `<h4>How the rules got here</h4><ul class="timeline">${c.history.map((h) => `<li><b>${h.year}</b> ${esc(h.fact)}</li>`).join("")}</ul>` : ""}
+    ${c.notes ? `<p class="muted small">${esc(c.notes)}</p>` : ""}
+    <div class="muted small" style="margin-top:8px">Sources: ${srcLinks(c.sources) || "—"}</div></div>`;
+  let carCard = "";
+  if (car) {
+    const e = car.engine, ch = car.chassis, ti = car.tires;
+    carCard = `<div class="card"><div class="card-head"><h3>Your ${esc(c.label.toLowerCase())}</h3><span>${rating(car.rating, { title: "Car rating at " + (g.track || "an average track") })}</span></div>
+      <p class="muted small" style="margin-top:0">Car rating ${g.track ? "at " + esc(g.track) : "at an average track"}: 50 is a typical competitive car in this class. Share of the car's speed at this track — chassis ${Math.round(ch.weight * 100)}%, engine ${Math.round(e.weight * 100)}%, tires ${Math.round(ti.weight * 100)}%, shocks ${Math.round(car.shocks.weight * 100)}%.</p>
+      <dl class="kv">
+        <dt>Chassis</dt><dd><b>${esc(ch.label)}</b> · quality ${ch.quality} · ${ch.age} season${ch.age === 1 ? "" : "s"} old<br>condition ${health(ch.condition)} ${ch.condition}%${ch.condition < 100 ? ` <button class="small" data-act="garage" data-a="repair">Repair (${usd(ch.repair_usd)})</button>` : ""}</dd>
+        <dt>Engine</dt><dd><b>${esc(e.label)}</b> · quality ${e.quality}${e.sealed ? ' · <span class="badge">sealed</span>' : ""}<br>
+          ${e.interval ? `${e.runs}/${e.interval} races since freshen ${bar(100 * Math.min(1, e.runs / e.interval), e.runs > e.interval ? "var(--bad)" : e.runs > 0.8 * e.interval ? "var(--warn)" : "var(--good)")}` : `${e.runs} races`}
+          · health ${health(e.health)} ${e.health}%
+          <button class="small" data-act="garage" data-a="rebuild">${e.health <= 0 ? "Rebuild" : "Freshen"} (${usd(e.rebuild_usd)}${e.health < 100 ? "+" : ""})</button></dd>
+        <dt>Shocks</dt><dd><b>${esc(car.shocks.label)}</b> · quality ${car.shocks.quality}</dd>
+        <dt>Tires</dt><dd>set wear ${bar(100 - ti.wear * 100)} ${Math.round(ti.wear * 100)}% worn · each night wears ~${Math.round(ti.wear_per_race * 100)}%<br>
+          New tires each night: <select data-change="tires">${Array.from({ length: ti.max_new + 1 }, (_, i) => `<option ${i === ti.new_per_night ? "selected" : ""}>${i}</option>`).join("")}</select>
+          <span class="muted small">(${usd(t.usd)} each; rating with this policy ≈ ${car.rating_fresh_tires})</span></dd>
+        <dt>Automatic</dt><dd><label class="small"><input type="checkbox" data-change="auto" data-k="auto_rebuild" ${car.auto_rebuild ? "checked" : ""}> freshen engine at interval</label>
+          <label class="small" style="margin-left:10px"><input type="checkbox" data-change="auto" data-k="auto_repair" ${car.auto_repair ? "checked" : ""}> repair wrecks</label></dd>
+        <dt>Resale value</dt><dd>${usd(car.resale)}</dd>
+      </dl></div>`;
+  } else {
+    carCard = `<div class="card"><h3>You need a car</h3><p>${g.old_car ? `Your ${esc(g.old_car.class)} isn't legal here; it trades in for about ${usd(g.old_car.resale)}.` : "You don't own a car for this class yet."} Pick a package (or the season will start with the best car the budget allows).</p></div>`;
+  }
+  const pk = `<div class="card"><h3>${car ? "Replace the whole car" : "Car packages"}</h3><div class="offers">${g.packages.map((p) => `<div class="offer">
+      <div class="top"><div class="team">${esc(p.label)}</div><div>${rating(p.rating)}</div></div>
+      <div class="small">${p.parts.map(esc).join("<br>")}</div><div><b>${usd(p.usd)}</b></div>
+      <button class="small" data-act="garage" data-a="new_car" data-k="${esc(p.key)}">Buy package</button></div>`).join("")}</div></div>`;
+  const money = car ? `<div class="card"><h3>Racing money</h3><dl class="kv">
+      ${car.account !== null ? `<dt>Racing account</dt><dd><b>${usd(car.account)}</b></dd>` : `<dt>Next season's budget</dt><dd><b>${usd(g.money.available)}</b></dd>`}
+      <dt>Savings</dt><dd>${usd(g.money.savings)}</dd>
+      <dt>Each night</dt><dd>${usd(car.night_cost)} entry, fuel & tires + engine wear ${usd(car.engine_wear_per_race)}${car.overhead_per_night ? ` + crew, hauler, practice & spares ${usd(car.overhead_per_night)}` : ""}</dd>
+      <dt>${car.remaining_races} races left</dt><dd>≈ ${usd(car.season_running)} running costs (before travel, wrecks and purses)</dd></dl>
+      ${car.ledger.length ? `<h4>Ledger</h4><div class="table-wrap" style="max-height:340px;overflow:auto"><table class="tbl"><tbody>${car.ledger.slice().reverse().map((l) => `<tr><td class="muted small nowrap">${l[3] || ""} ${l[0] === 99 ? "end" : l[0] ? "wk " + l[0] : ""}</td><td class="small">${esc(l[1])}</td><td class="num ${l[2] < 0 ? "neg" : "pos"}">${usd(l[2], 1)}</td></tr>`).join("")}</tbody></table></div>` : ""}</div>` : "";
+  view(`<h1>Garage <span class="muted small">${esc(g.series.name)}</span></h1>
+    ${g.message ? `<div class="callout">${esc(g.message)}</div>` : ""}
+    <div class="grid g-main"><div class="grid">${carCard}${pk}
+      ${optTable("chassis", "Chassis", c.chassis, car && car.chassis.label)}
+      ${optTable("engines", "Engines (rules " + yr + ")", c.engines, car && car.engine.label)}
+      ${optTable("shocks", "Shocks", c.shocks, car && car.shocks.label)}</div>
+      <div class="grid">${money}${rulesCard}</div></div>`);
+}
+on("tires", async (el) => {
+  try { const r = await api("garage", { action: "tires", value: parseInt(el.value, 10) }); renderGarage(r); toast(r.message); }
+  catch (e) { toast(e.message, true); }
+});
+on("auto", async (el) => {
+  try { const r = await api("garage", { action: el.dataset.k, value: el.checked ? 1 : 0 }); renderGarage(r); toast(r.message); }
+  catch (e) { toast(e.message, true); }
+});
+on("garage", async (el) => {
+  el.classList.add("busy");
+  try { const r = await api("garage", { action: el.dataset.a, key: el.dataset.k }); renderGarage(r); toast(r.message); refreshStatus(); }
+  catch (e) { toast(e.message, true); el.classList.remove("busy"); }
+});
+
 // ---------------------------------------------------------------- router
 const ROUTES = [
   [/^#?\/?$/, () => dashboardPage(), true],
@@ -802,6 +897,7 @@ const ROUTES = [
   [/^#\/series\/(.+)$/, (m) => seriesPage(decodeURIComponent(m[1])), true],
   [/^#\/race\/([^/]+)\/(\d+)(?:\/(\d+))?$/, (m) => racePage(decodeURIComponent(m[1]), m[2], m[3]), true],
   [/^#\/jewels$/, () => jewelsPage(), true],
+  [/^#\/garage$/, () => garagePage(), true],
   [/^#\/pyramid$/, () => pyramidPage(), true],
   [/^#\/instances\/(.+)$/, (m) => instancesPage(m[1]), true],
   [/^#\/drivers$/, () => driversPage(), true],
@@ -856,7 +952,7 @@ function factText(f) {
   const v = f.value ?? f.min ?? f.max;
   return v == null ? "—" : `${typeof v === "object" ? esc(JSON.stringify(v)) : n(v)}${unit}`;
 }
-const KTABS = [["overview", "Overview"], ["series", "Series"], ["paths", "Career paths"], ["bodies", "Sanctioning bodies"], ["classes", "Car classes"], ["factors", "What drives careers"], ["sources", "Sources"]];
+const KTABS = [["overview", "Overview"], ["series", "Series"], ["paths", "Career paths"], ["bodies", "Sanctioning bodies"], ["classes", "Car classes"], ["rules", "Rules & money"], ["factors", "What drives careers"], ["sources", "Sources"]];
 async function encyclopediaPage(tab = "overview", arg) {
   const tabs = `<div class="tabs">${KTABS.map(([k, l]) => `<button class="${k === tab ? "on" : ""}" data-act="ktab" data-tab="${k}">${l}</button>`).join("")}</div>`;
   const head = `<h1>Racing Encyclopedia</h1><p class="muted">The real-world racing ladder the game is built on: researched series, career paths, money and sources. Every number carries a confidence level and its sources.</p>${tabs}`;
@@ -909,6 +1005,38 @@ async function encyclopediaPage(tab = "overview", arg) {
     view(`${head}<div class="card flush">${table("kb", cols, rows, { tall: true })}</div>`);
     return;
   }
+  if (tab === "rules" && arg) return rulesClassPage(arg, head);
+  if (tab === "rules") {
+    const r = await api("knowledge/rules");
+    const pointsLine = (p) => p.table && p.table.length ? p.table.join(", ") + (p.table.length >= 12 ? " …" : "")
+      : p.step ? `${p.step.first} to win, −${p.step.step} per position (min ${p.step.min})` : "—";
+    view(`${head}<p class="muted">What racers actually build, buy and race for: researched class rules (track house rules and sanctioning rulebooks), part prices and lifespans, points systems, purses and fees. The game's garage, points and payouts are built from these records.</p>
+      <div class="card"><div class="kpis" style="flex-wrap:wrap">${Object.entries(r.counts).map(([k, v]) => `<div class="kpi"><div class="v">${v}</div><div class="l">${esc(k.replace(/_/g, " "))}</div></div>`).join("")}<div class="kpi"><div class="v">${r.sources}</div><div class="l">sources</div></div></div></div>
+      <div class="card flush" style="margin-top:16px"><h3>Car classes in the game</h3>${table("rcl", [
+        { key: "label", label: "Class", render: (c) => `<a class="link" href="#/encyclopedia/rules/${encodeURIComponent(c.key)}">${esc(c.label)}</a>` },
+        { key: "discipline", label: "Discipline" }, { key: "records", label: "Research records", num: true },
+        { key: "confidence", label: "Confidence", render: (c) => CONF(c.confidence) }], r.classes)}</div>
+      <div class="card flush" style="margin-top:16px"><h3>Points systems</h3>${table("rpts", [
+        { key: "label", label: "System", render: (p) => `<b>${esc(p.label)}</b>${p.note ? `<div class="muted small">${esc(p.note)}</div>` : ""}` },
+        { key: "table", label: "Feature points", nosort: true, render: (p) => `<span class="small">${esc(pointsLine(p))}</span>` },
+        { key: "bonus", label: "Bonuses", nosort: true, render: (p) => `<span class="small">${[p.win_bonus && `win +${p.win_bonus}`, p.led_lap && `led a lap +${p.led_lap}`, p.most_led && `most laps led +${p.most_led}`, p.stages && `${p.stages} stages (${p.stage.join("-")})`, p.heat && p.heat.length && `heats ${p.heat.join("-")}`, p.show_up && `show-up ${p.show_up}`].filter(Boolean).join(" · ") || "—"}</span>` },
+        { key: "confidence", label: "Conf.", render: (p) => CONF(p.confidence) },
+        { key: "src", label: "Sources", nosort: true, render: (p) => srcLinks(p.sources) }], r.points)}</div>
+      <div class="card flush" style="margin-top:16px"><h3>Championship formats</h3>${table("rfmt", [
+        { key: "label", label: "Format", render: (f) => `<b>${esc(f.label)}</b>${f.note ? `<div class="muted small">${esc(f.note)}</div>` : ""}` },
+        { key: "kind", label: "Kind" }, { key: "drivers", label: "Drivers", num: true }, { key: "races", label: "Races", num: true },
+        { key: "confidence", label: "Conf.", render: (f) => CONF(f.confidence) }, { key: "src", label: "Sources", nosort: true, render: (f) => srcLinks(f.sources) }], r.formats)}</div>
+      <div class="card flush" style="margin-top:16px"><h3>Purses</h3>${table("rpay", [
+        { key: "label", label: "Payout", render: (t) => `<b>${esc(t.label)}</b>${t.note ? `<div class="muted small">${esc(t.note)}</div>` : ""}` },
+        { key: "year", label: "Year", num: true },
+        { key: "win", label: "To win", num: true, sort: (t) => t.by_position[0] || 0, render: (t) => t.by_position.length ? "$" + Math.round(t.by_position[0]).toLocaleString() : "—" },
+        { key: "top", label: "Top 10", nosort: true, render: (t) => `<span class="small">${t.by_position.map((x) => "$" + Math.round(x).toLocaleString()).join(", ")}</span>` },
+        { key: "to_start", label: "To start", num: true, render: (t) => t.to_start ? "$" + Math.round(t.to_start).toLocaleString() : "—" },
+        { key: "confidence", label: "Conf.", render: (t) => CONF(t.confidence) }, { key: "src", label: "Sources", nosort: true, render: (t) => srcLinks(t.sources) }], r.payouts)}
+        <p class="muted small" style="padding:0 16px 12px">Purses are shown in the dollars of the year they were published. In the game, weekly purses keep most of their nominal value across eras, as they did in real life, while costs rise.</p></div>
+      <div class="card" style="margin-top:16px"><h3>How the rules changed</h3><ul class="timeline">${r.history.slice().sort((a, b) => (a.year || 0) - (b.year || 0)).map((h) => `<li><b>${h.year || ""}</b> ${esc(h.topic || "")}: ${esc(h.fact || "")} ${CONF(h.confidence)} ${srcLinks(h.sources)}</li>`).join("")}</ul></div>`);
+    return;
+  }
   if (tab === "factors") {
     const [factors, stages] = await Promise.all([api("knowledge/factors"), api("knowledge/stages")]);
     const tiers = [0, 1, 2, 3, 4, 5, 6, 7];
@@ -930,6 +1058,34 @@ async function encyclopediaPage(tab = "overview", arg) {
       <div class="card flush" style="margin-top:16px"><h3>Sources skipped (automated access restricted)</h3>${table("kun", [{ key: "source", label: "Source" }, { key: "reason", label: "Reason" }, { key: "replacement", label: "Replaced by" }, { key: "checked", label: "Checked" }], k.unavailable)}</div>
       <div class="card flush" style="margin-top:16px"><h3>Public datasets evaluated</h3>${table("kds", [{ key: "name", label: "Dataset", render: (r) => (r.url ? `<a class="link" href="${esc(r.url)}" target="_blank" rel="noopener">${esc(r.name)}</a>` : esc(r.name)) }, { key: "coverage", label: "Coverage" }, { key: "license", label: "License" }, { key: "usefulness", label: "Usefulness" }, { key: "decision", label: "Decision" }], k.datasets, { tall: true })}</div>`);
   }
+}
+async function rulesClassPage(key, head) {
+  const r = await api("knowledge/rules/" + encodeURIComponent(key));
+  const c = r.class, ev = r.evidence;
+  const rng = (x) => (x && typeof x === "object" ? factText(x) : esc(x ?? "—"));
+  const recs = ev.class_rules.map((x) => `<div class="card" style="margin-bottom:12px"><div class="card-head"><h3>${esc(x.body || "")} <span class="muted small">${esc(x.region || "")} · ${x.year || ""}</span></h3>${CONF(x.confidence)}</div>
+    <dl class="kv">${x.min_weight_lb ? `<dt>Min weight</dt><dd>${rng(x.min_weight_lb)}${x.weight_notes ? ` <span class="muted small">${esc(x.weight_notes)}</span>` : ""}</dd>` : ""}
+      ${(x.engines || []).map((e) => `<dt>Engine</dt><dd><b>${esc(e.name)}</b> <span class="badge">${esc(e.type || "")}</span> ${e.hp ? "· " + rng(e.hp) : ""} ${e.purchase_usd ? "· buy " + rng(e.purchase_usd) : ""} ${e.rebuild_usd ? "· rebuild " + rng(e.rebuild_usd) : ""} ${e.rebuild_interval ? "every " + rng(e.rebuild_interval) : ""} ${e.claim_usd ? "· claim " + rng(e.claim_usd) : ""}${e.notes ? `<div class="muted small">${esc(e.notes)}</div>` : ""}</dd>`).join("")}
+      ${x.tires ? `<dt>Tires</dt><dd>${esc([x.tires.brand, x.tires.compound].filter(Boolean).join(" "))} ${x.tires.rule ? "· " + esc(x.tires.rule) : ""} ${x.tires.per_tire_usd ? "· " + rng(x.tires.per_tire_usd) + " each" : ""} ${x.tires.new_per_night ? "· new per night " + rng(x.tires.new_per_night) : ""}${x.tires.notes ? `<div class="muted small">${esc(x.tires.notes)}</div>` : ""}</dd>` : ""}
+      ${x.chassis && x.chassis.rule ? `<dt>Chassis</dt><dd>${esc(x.chassis.rule)} ${x.chassis.purchase_usd ? "· " + rng(x.chassis.purchase_usd) : ""}</dd>` : ""}
+      ${x.shocks && x.shocks.rule ? `<dt>Shocks</dt><dd>${esc(x.shocks.rule)}</dd>` : ""}
+      ${x.fuel ? `<dt>Fuel</dt><dd>${esc(x.fuel)}</dd>` : ""}
+      ${(x.claims || []).map((cl) => `<dt>Claim</dt><dd>${esc(cl.item || "")} ${rng(cl.usd)} ${cl.notes ? `<span class="muted small">${esc(cl.notes)}</span>` : ""}</dd>`).join("")}
+      ${x.season_cost_usd ? `<dt>Season cost</dt><dd>${rng(x.season_cost_usd)}</dd>` : ""}</dl>
+    ${(x.other || []).length ? `<ul class="timeline">${x.other.map((o) => `<li>${esc(o)}</li>`).join("")}</ul>` : ""}
+    <div class="muted small">${srcLinks(x.sources)}</div></div>`).join("");
+  view(`${head}<h2>${esc(c ? c.label : key)}</h2>
+    <div class="grid g-main"><div>${recs || '<div class="card empty">No rulebook records for this class yet.</div>'}</div>
+    <div class="grid">${c ? `<div class="card"><h3>In the game</h3><dl class="kv"><dt>Tires</dt><dd>${esc(c.tires.spec)} · $${Math.round(c.tires.usd)} · ${c.tires.max_new != null ? "max " + c.tires.max_new + " new/night" : "open"}</dd>
+      <dt>Engines</dt><dd>${c.engines.map((e) => `${esc(e.label)} ($${Math.round(e.usd).toLocaleString()}${e.years ? `, ${e.years[0]}–${e.years[1] > 2030 ? "" : e.years[1]}` : ""})`).join("<br>")}</dd>
+      <dt>Chassis</dt><dd>${c.chassis.map((o) => `${esc(o.label)} ($${Math.round(o.usd).toLocaleString()})`).join("<br>")}</dd>
+      <dt>Per night</dt><dd>$${Math.round(c.per_race.entry + c.per_race.fuel + c.per_race.misc)} before tires</dd></dl>
+      <p class="muted small">Game values are 2025 dollars, taken from the research ranges at left.</p></div>` : ""}
+      ${ev.parts.length ? `<div class="card flush"><h3>Parts & prices</h3>${table("rparts", [{ key: "part", label: "Part" }, { key: "item", label: "Item", render: (p) => `<span class="small">${esc(p.item)}</span>` }, { key: "usd", label: "Price", sort: (p) => p.usd?.min, render: (p) => rng(p.usd) }, { key: "life", label: "Life", nosort: true, render: (p) => rng(p.life) }, { key: "src", label: "", nosort: true, render: (p) => srcLinks(p.sources) }], ev.parts)}</div>` : ""}
+      ${ev.payouts.length ? `<div class="card"><h3>Purses</h3><ul class="timeline">${ev.payouts.map((p) => `<li><b>${esc(p.body || "")}</b> ${p.year || ""} ${p.to_win_usd ? "· to win " + rng(p.to_win_usd) : ""} ${p.to_start_usd ? "· to start " + rng(p.to_start_usd) : ""} ${p.entry_fee_usd ? "· entry " + rng(p.entry_fee_usd) : ""} ${srcLinks(p.sources)}</li>`).join("")}</ul></div>` : ""}
+      ${ev.points_systems.length ? `<div class="card"><h3>Points</h3><ul class="timeline">${ev.points_systems.map((p) => `<li><b>${esc(p.body || "")}</b> ${p.year || ""}: ${esc(typeof p.feature_points === "string" ? p.feature_points : JSON.stringify(p.feature_points))} ${srcLinks(p.sources)}</li>`).join("")}</ul></div>` : ""}
+      ${ev.race_formats.length ? `<div class="card"><h3>Race night</h3><ul class="timeline">${ev.race_formats.map((f) => `<li><b>${esc(f.body || "")}</b>: ${esc(f.format || "")} ${srcLinks(f.sources)}</li>`).join("")}</ul></div>` : ""}
+    </div></div>`);
 }
 async function knowledgeSeriesPage(id, head) {
   const s = await api("knowledge/series/" + encodeURIComponent(id));

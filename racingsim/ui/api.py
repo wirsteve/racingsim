@@ -179,11 +179,19 @@ def standings_rows(world: "World", sid: str, limit: Optional[int] = None) -> lis
     runner = world.season
     rows = []
     if runner is not None and not runner.finished and any(a.series_id == sid for a in runner.acc.values()):
+        st = runner.playoffs.get(sid)
+        alive = set(st["alive"]) if st else set()
+        field_ = set(st["field"]) if st else set()
+        leader = None
         for pos, (did, a) in enumerate(runner.standings(sid), start=1):
             d = world.drivers[did]
+            pts = round(a.points)
+            leader = pts if leader is None else leader
             rows.append({"pos": pos, "driver_id": did, "name": d.name, "is_player": d.is_player,
-                         "team": team_brief(world, a.team_id), "points": a.points, "starts": a.starts,
-                         "wins": a.wins, "top5": a.top5,
+                         "team": team_brief(world, a.team_id), "points": pts, "behind": leader - pts,
+                         "starts": a.starts, "wins": a.wins, "top5": a.top5, "top10": a.top10, "dnq": a.dnq,
+                         "winnings": round(a.purse),
+                         "playoff": "alive" if did in alive else "out" if did in field_ else None,
                          "avg_finish": round(a.finish_sum / a.starts, 1) if a.starts else None})
     else:
         recs = [(d, r) for d in world.drivers.values() for r in d.history[-1:]
@@ -192,10 +200,16 @@ def standings_rows(world: "World", sid: str, limit: Optional[int] = None) -> lis
         for d, r in recs:
             team = team_brief(world, r.team_id) or (
                 {"id": None, "name": r.team_name} if getattr(r, "team_name", "") else None)
+            pts = getattr(r, "points", None)
             rows.append({"pos": r.championship_pos, "driver_id": d.id, "name": d.name, "is_player": d.is_player,
-                         "team": team, "points": None, "starts": r.starts,
-                         "wins": r.wins, "top5": r.top5, "avg_finish": round(r.avg_finish, 1) if r.avg_finish else None,
+                         "team": team, "points": round(pts) if pts is not None else None, "starts": r.starts,
+                         "wins": r.wins, "top5": r.top5, "top10": getattr(r, "top10", 0), "dnq": getattr(r, "dnq", 0),
+                         "winnings": round(getattr(r, "winnings", 0.0)) or None,
+                         "avg_finish": round(r.avg_finish, 1) if r.avg_finish else None,
                          "champion": r.champion, "final": True})
+        lead = next((x["points"] for x in rows if x["points"] is not None), None)
+        for x in rows:
+            x["behind"] = (lead - x["points"]) if lead is not None and x["points"] is not None else None
     return rows[:limit] if limit else rows
 
 

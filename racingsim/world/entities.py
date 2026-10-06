@@ -39,6 +39,10 @@ class SeasonRecord:
     note: str = ""
     series_name: str = ""       # the series' name that season (names change by era)
     team_name: str = ""         # for real (imported) seasons, where no Team entity exists
+    points: Optional[float] = None  # championship points under that season's real system
+    top10: int = 0
+    winnings: float = 0.0       # purses + points fund (2025 USD)
+    dnq: int = 0                # nights the car missed the feature
 
 
 @dataclass
@@ -123,6 +127,7 @@ class Driver:
     injury_races: int = 0
     injury_history: int = 0
     season_spend: float = 0.0   # one-off costs this season beyond savings (coaching, entries)
+    car: Optional[object] = None  # own car (racingsim.rules.car.Car) when racing a self-run class
 
     @property
     def name(self) -> str:
