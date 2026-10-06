@@ -1,0 +1,1559 @@
+{
+ "series": "formula_pro",
+ "year": 2023,
+ "official_name": "2023 USF Pro 2000 Championship",
+ "data_level": "full",
+ "teams_source": "teams_table",
+ "teams": [
+  {
+   "team": "DEForce Racing",
+   "team_wiki": "DEForce_Racing",
+   "owner": null,
+   "manufacturer": "Mazda",
+   "chassis": null,
+   "cars": [
+    {
+     "number": "7",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Bijoy Garg",
+       "wiki": "Bijoy_Garg",
+       "rounds": "1–13, 16–18",
+       "nat": "USA"
+      },
+      {
+       "name": "Mac Clark",
+       "wiki": "Mac_Clark",
+       "rounds": "14–15",
+       "nat": "CAN"
+      }
+     ]
+    },
+    {
+     "number": "8",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Jorge Garciarce",
+       "wiki": "Jorge_Garciarce",
+       "rounds": "14–15",
+       "nat": "MEX"
+      }
+     ]
+    },
+    {
+     "number": "12",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Kiko Porto",
+       "wiki": "Kiko_Porto",
+       "rounds": "All",
+       "nat": "BRA"
+      }
+     ]
+    }
+   ],
+   "manufacturer_note": "spec engine (from page text)"
+  },
+  {
+   "team": "Exclusive Autosport",
+   "team_wiki": null,
+   "owner": null,
+   "manufacturer": "Mazda",
+   "chassis": null,
+   "cars": [
+    {
+     "number": "90",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Yuven Sundaramoorthy",
+       "wiki": "Yuven_Sundaramoorthy",
+       "rounds": "1–13",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "91",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Salvador de Alba",
+       "wiki": "Salvador_de_Alba",
+       "rounds": "All",
+       "nat": "MEX"
+      }
+     ]
+    },
+    {
+     "number": "92",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Joel Granfors",
+       "wiki": "Joel_Granfors",
+       "rounds": "1–13",
+       "nat": "SWE"
+      }
+     ]
+    },
+    {
+     "number": "93",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Lindsay Brewer",
+       "wiki": "Lindsay_Brewer",
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "95",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Avery Towns",
+       "wiki": null,
+       "rounds": "14–18",
+       "nat": "USA"
+      }
+     ]
+    }
+   ],
+   "manufacturer_note": "spec engine (from page text)"
+  },
+  {
+   "team": "FatBoy Racing!",
+   "team_wiki": null,
+   "owner": null,
+   "manufacturer": "Mazda",
+   "chassis": null,
+   "cars": [
+    {
+     "number": "83",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Charles Finelli",
+       "wiki": null,
+       "rounds": "5–6, 8–9",
+       "nat": "USA"
+      }
+     ]
+    }
+   ],
+   "manufacturer_note": "spec engine (from page text)"
+  },
+  {
+   "team": "Jay Howard Driver Development",
+   "team_wiki": "Jay_Howard_Driver_Development",
+   "owner": null,
+   "manufacturer": "Mazda",
+   "chassis": null,
+   "cars": [
+    {
+     "number": "4",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Ricardo Escotto",
+       "wiki": "Ricardo_Escotto",
+       "rounds": "All",
+       "nat": "MEX"
+      }
+     ]
+    },
+    {
+     "number": "6",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Reece Ushijima",
+       "wiki": "Reece_Ushijima",
+       "rounds": "1–11",
+       "nat": "USA"
+      },
+      {
+       "name": "Frankie Mossman",
+       "wiki": "Frankie_Mossman",
+       "rounds": "14–18",
+       "nat": "USA"
+      }
+     ]
+    }
+   ],
+   "manufacturer_note": "spec engine (from page text)"
+  },
+  {
+   "team": "Miller Vinatieri Motorsports",
+   "team_wiki": "Jack_Miller_(racing_driver)",
+   "owner": null,
+   "manufacturer": "Mazda",
+   "chassis": null,
+   "cars": [
+    {
+     "number": "40",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Jack William Miller",
+       "wiki": "Jack_William_Miller",
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    }
+   ],
+   "manufacturer_note": "spec engine (from page text)"
+  },
+  {
+   "team": "NeoTech Motorsport",
+   "team_wiki": null,
+   "owner": null,
+   "manufacturer": "Mazda",
+   "chassis": null,
+   "cars": [
+    {
+     "number": "81",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Nicholas Monteiro",
+       "wiki": "Nicholas_Monteiro",
+       "rounds": "1–15",
+       "nat": "BRA"
+      }
+     ]
+    }
+   ],
+   "manufacturer_note": "spec engine (from page text)"
+  },
+  {
+   "team": "Pabst Racing with Force Indy",
+   "team_wiki": "Pabst_Racing",
+   "owner": null,
+   "manufacturer": "Mazda",
+   "chassis": null,
+   "cars": [
+    {
+     "number": "99",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Myles Rowe",
+       "wiki": "Myles_Rowe",
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    }
+   ],
+   "manufacturer_note": "spec engine (from page text)"
+  },
+  {
+   "team": "Pabst Racing",
+   "team_wiki": "Pabst_Racing",
+   "owner": null,
+   "manufacturer": "Mazda",
+   "chassis": null,
+   "cars": [
+    {
+     "number": "19",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Jordan Missig",
+       "wiki": "Jordan_Missig",
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "20",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Jace Denmark",
+       "wiki": "Jace_Denmark",
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    }
+   ],
+   "manufacturer_note": "spec engine (from page text)"
+  },
+  {
+   "team": "TJ Speed Motorsports",
+   "team_wiki": null,
+   "owner": null,
+   "manufacturer": "Mazda",
+   "chassis": null,
+   "cars": [
+    {
+     "number": "10",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Lirim Zendeli",
+       "wiki": "Lirim_Zendeli",
+       "rounds": "1–6, 8–18",
+       "nat": "ALB"
+      }
+     ]
+    },
+    {
+     "number": "32",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Christian Weir",
+       "wiki": "Christian_Weir",
+       "rounds": "1–13",
+       "nat": "USA"
+      },
+      {
+       "name": "Nicholas Monteiro",
+       "wiki": "Nicholas_Monteiro",
+       "rounds": "16–18",
+       "nat": "BRA"
+      }
+     ]
+    },
+    {
+     "number": "55",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Francesco Pizzi",
+       "wiki": "Francesco_Pizzi",
+       "rounds": "All",
+       "nat": "ITA"
+      }
+     ]
+    }
+   ],
+   "manufacturer_note": "spec engine (from page text)"
+  },
+  {
+   "team": "Turn 3 Motorsport",
+   "team_wiki": "Turn_3_Motorsport",
+   "owner": null,
+   "manufacturer": "Mazda",
+   "chassis": null,
+   "cars": [
+    {
+     "number": "1",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Michael d'Orlando",
+       "wiki": "Michael_d'Orlando",
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "2",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Jonathan Browne",
+       "wiki": "Jonathan_Browne_(racing_driver)",
+       "rounds": "All",
+       "nat": "IRE"
+      }
+     ]
+    },
+    {
+     "number": "3",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Christian Brooks",
+       "wiki": "Christian_Brooks",
+       "rounds": "1–2",
+       "nat": "USA"
+      },
+      {
+       "name": "Louka St-Jean",
+       "wiki": null,
+       "rounds": "8–18",
+       "nat": "CAN"
+      }
+     ]
+    },
+    {
+     "number": "44",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Christian Brooks",
+       "wiki": "Christian_Brooks",
+       "rounds": "12–13",
+       "nat": "USA"
+      },
+      {
+       "name": "Danny Dyszelski",
+       "wiki": "Danny_Dyszelski",
+       "rounds": "16–18",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "47",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Jackson Lee",
+       "wiki": "Jackson_Lee_(racing_driver)",
+       "rounds": "1–11",
+       "nat": "USA"
+      }
+     ]
+    }
+   ],
+   "manufacturer_note": "spec engine (from page text)"
+  },
+  {
+   "team": "Velocity Racing Development",
+   "team_wiki": "Velocity_Racing_Development",
+   "owner": null,
+   "manufacturer": "Mazda",
+   "chassis": null,
+   "cars": [
+    {
+     "number": "17",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Nikita Johnson",
+       "wiki": "Nikita_Johnson",
+       "rounds": "14–18",
+       "nat": "USA"
+      }
+     ]
+    }
+   ],
+   "manufacturer_note": "spec engine (from page text)"
+  }
+ ],
+ "standings": [
+  {
+   "pos": 1,
+   "name": "Myles Rowe",
+   "wiki": "Myles_Rowe",
+   "points": 391,
+   "wins": 5,
+   "podiums": 9,
+   "top5": 13,
+   "starts": 18,
+   "nat": "USA",
+   "results": [
+    3,
+    1,
+    1,
+    1,
+    18,
+    5,
+    5,
+    2,
+    4,
+    11,
+    1,
+    7,
+    1,
+    4,
+    6,
+    2,
+    3,
+    10
+   ]
+  },
+  {
+   "pos": 2,
+   "name": "Kiko Porto",
+   "wiki": "Kiko_Porto",
+   "points": 327,
+   "wins": 2,
+   "podiums": 8,
+   "top5": 11,
+   "starts": 18,
+   "nat": "BRA",
+   "results": [
+    2,
+    2,
+    19,
+    3,
+    7,
+    11,
+    10,
+    5,
+    2,
+    19,
+    2,
+    5,
+    7,
+    1,
+    2,
+    1,
+    5,
+    17
+   ]
+  },
+  {
+   "pos": 3,
+   "name": "Salvador de Alba",
+   "wiki": "Salvador_de_Alba",
+   "points": 291,
+   "wins": 1,
+   "podiums": 4,
+   "top5": 7,
+   "starts": 18,
+   "nat": "MEX",
+   "results": [
+    7,
+    17,
+    7,
+    16,
+    6,
+    2,
+    1,
+    14,
+    10,
+    10,
+    4,
+    2,
+    5,
+    8,
+    5,
+    10,
+    11,
+    2
+   ]
+  },
+  {
+   "pos": 4,
+   "name": "Michael d'Orlando",
+   "wiki": "Michael_d'Orlando",
+   "points": 288,
+   "wins": 4,
+   "podiums": 6,
+   "top5": 7,
+   "starts": 18,
+   "nat": "USA",
+   "results": [
+    18,
+    11,
+    16,
+    11,
+    3,
+    14,
+    6,
+    1,
+    20,
+    1,
+    3,
+    1,
+    14,
+    17,
+    7,
+    7,
+    1,
+    5
+   ]
+  },
+  {
+   "pos": 5,
+   "name": "Francesco Pizzi",
+   "wiki": "Francesco_Pizzi",
+   "points": 259,
+   "wins": 0,
+   "podiums": 1,
+   "top5": 5,
+   "starts": 18,
+   "nat": "ITA",
+   "results": [
+    4,
+    5,
+    3,
+    7,
+    10,
+    7,
+    4,
+    6,
+    5,
+    15,
+    17,
+    6,
+    6,
+    16,
+    9,
+    6,
+    10,
+    6
+   ]
+  },
+  {
+   "pos": 6,
+   "name": "Lirim Zendeli",
+   "wiki": "Lirim_Zendeli",
+   "points": 258,
+   "wins": 1,
+   "podiums": 4,
+   "top5": 8,
+   "starts": 17,
+   "nat": "ALB",
+   "results": [
+    16,
+    4,
+    6,
+    2,
+    13,
+    10,
+    null,
+    19,
+    1,
+    6,
+    10,
+    3,
+    2,
+    5,
+    4,
+    11,
+    4,
+    18
+   ]
+  },
+  {
+   "pos": 7,
+   "name": "Jace Denmark",
+   "wiki": "Jace_Denmark",
+   "points": 252,
+   "wins": 0,
+   "podiums": 3,
+   "top5": 8,
+   "starts": 18,
+   "nat": "USA",
+   "results": [
+    5,
+    3,
+    4,
+    17,
+    16,
+    3,
+    18,
+    7,
+    7,
+    2,
+    5,
+    9,
+    16,
+    18,
+    8,
+    4,
+    6,
+    4
+   ]
+  },
+  {
+   "pos": 8,
+   "name": "Jonathan Browne",
+   "wiki": "Jonathan_Browne_(racing_driver)",
+   "points": 230,
+   "wins": 0,
+   "podiums": 2,
+   "top5": 5,
+   "starts": 18,
+   "nat": "IRE",
+   "results": [
+    10,
+    12,
+    12,
+    8,
+    4,
+    4,
+    7,
+    4,
+    3,
+    17,
+    15,
+    15,
+    10,
+    10,
+    13,
+    13,
+    9,
+    3
+   ]
+  },
+  {
+   "pos": 9,
+   "name": "Jack William Miller",
+   "wiki": "Jack_William_Miller",
+   "points": 212,
+   "wins": 0,
+   "podiums": 2,
+   "top5": 3,
+   "starts": 18,
+   "nat": "USA",
+   "results": [
+    14,
+    9,
+    11,
+    6,
+    5,
+    15,
+    3,
+    16,
+    11,
+    3,
+    12,
+    18,
+    13,
+    7,
+    10,
+    12,
+    8,
+    14
+   ]
+  },
+  {
+   "pos": 10,
+   "name": "Joel Granfors",
+   "wiki": "Joel_Granfors",
+   "points": 206,
+   "wins": 1,
+   "podiums": 3,
+   "top5": 5,
+   "starts": 13,
+   "nat": "SWE",
+   "results": [
+    9,
+    8,
+    2,
+    9,
+    20,
+    1,
+    2,
+    15,
+    6,
+    4,
+    9,
+    4,
+    19,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 11,
+   "name": "Jordan Missig",
+   "wiki": "Jordan_Missig",
+   "points": 179,
+   "wins": 0,
+   "podiums": 2,
+   "top5": 3,
+   "starts": 18,
+   "nat": "USA",
+   "results": [
+    20,
+    7,
+    5,
+    19,
+    19,
+    8,
+    8,
+    3,
+    17,
+    20,
+    18,
+    10,
+    3,
+    19,
+    12,
+    8,
+    13,
+    7
+   ]
+  },
+  {
+   "pos": 12,
+   "name": "Bijoy Garg",
+   "wiki": "Bijoy_Garg",
+   "points": 154,
+   "wins": 0,
+   "podiums": 1,
+   "top5": 2,
+   "starts": 16,
+   "nat": "USA",
+   "results": [
+    12,
+    14,
+    14,
+    12,
+    17,
+    13,
+    14,
+    18,
+    19,
+    5,
+    8,
+    17,
+    9,
+    null,
+    null,
+    3,
+    7,
+    13
+   ]
+  },
+  {
+   "pos": 13,
+   "name": "Ricardo Escotto",
+   "wiki": "Ricardo_Escotto",
+   "points": 153,
+   "wins": 1,
+   "podiums": 1,
+   "top5": 1,
+   "starts": 18,
+   "nat": "MEX",
+   "results": [
+    15,
+    18,
+    18,
+    10,
+    1,
+    17,
+    15,
+    11,
+    9,
+    9,
+    11,
+    13,
+    15,
+    6,
+    18,
+    16,
+    19,
+    16
+   ]
+  },
+  {
+   "pos": 14,
+   "name": "Reece Ushijima",
+   "wiki": "Reece_Ushijima",
+   "points": 140,
+   "wins": 0,
+   "podiums": 1,
+   "top5": 2,
+   "starts": 11,
+   "nat": "USA",
+   "results": [
+    6,
+    19,
+    8,
+    4,
+    2,
+    9,
+    11,
+    13,
+    8,
+    18,
+    6,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 15,
+   "name": "Yuven Sundaramoorthy",
+   "wiki": "Yuven_Sundaramoorthy",
+   "points": 121,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 13,
+   "nat": "USA",
+   "results": [
+    8,
+    20,
+    9,
+    14,
+    15,
+    12,
+    9,
+    10,
+    13,
+    13,
+    13,
+    14,
+    8,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 16,
+   "name": "Christian Weir",
+   "wiki": "Christian_Weir",
+   "points": 119,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 13,
+   "nat": "USA",
+   "results": [
+    17,
+    10,
+    10,
+    13,
+    8,
+    6,
+    17,
+    9,
+    15,
+    8,
+    14,
+    12,
+    17,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 17,
+   "name": "Nikita Johnson",
+   "wiki": "Nikita_Johnson",
+   "points": 118,
+   "wins": 2,
+   "podiums": 4,
+   "top5": 4,
+   "starts": 5,
+   "nat": "USA",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    3,
+    1,
+    14,
+    2,
+    1
+   ]
+  },
+  {
+   "pos": 18,
+   "name": "Lindsay Brewer",
+   "wiki": "Lindsay_Brewer",
+   "points": 108,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 18,
+   "nat": "USA",
+   "results": [
+    13,
+    16,
+    15,
+    18,
+    11,
+    19,
+    16,
+    12,
+    14,
+    16,
+    19,
+    16,
+    12,
+    14,
+    19,
+    18,
+    15,
+    11
+   ]
+  },
+  {
+   "pos": 19,
+   "name": "Nicholas Monteiro",
+   "wiki": "Nicholas_Monteiro",
+   "points": 106,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 18,
+   "nat": "BRA",
+   "results": [
+    19,
+    13,
+    17,
+    15,
+    14,
+    16,
+    13,
+    20,
+    12,
+    12,
+    16,
+    11,
+    11,
+    15,
+    16,
+    19,
+    18,
+    19
+   ]
+  },
+  {
+   "pos": 20,
+   "name": "Louka St-Jean",
+   "wiki": null,
+   "points": 101,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 1,
+   "starts": 11,
+   "nat": "CAN",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    8,
+    16,
+    7,
+    7,
+    19,
+    18,
+    13,
+    15,
+    5,
+    14,
+    8
+   ]
+  },
+  {
+   "pos": 21,
+   "name": "Jackson Lee",
+   "wiki": "Jackson_Lee_(racing_driver)",
+   "points": 84,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 1,
+   "starts": 11,
+   "nat": "USA",
+   "results": [
+    11,
+    15,
+    13,
+    5,
+    9,
+    18,
+    12,
+    17,
+    18,
+    14,
+    20,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 22,
+   "name": "Christian Brooks",
+   "wiki": "Christian_Brooks",
+   "points": 79,
+   "wins": 1,
+   "podiums": 1,
+   "top5": 2,
+   "starts": 4,
+   "nat": "USA",
+   "results": [
+    1,
+    6,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    8,
+    4,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 23,
+   "name": "Mac Clark",
+   "wiki": "Mac_Clark",
+   "points": 50,
+   "wins": 0,
+   "podiums": 2,
+   "top5": 2,
+   "starts": 2,
+   "nat": "CAN",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    2,
+    3,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 24,
+   "name": "Avery Towns",
+   "wiki": null,
+   "points": 39,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 5,
+   "nat": "USA",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    12,
+    17,
+    9,
+    16,
+    12
+   ]
+  },
+  {
+   "pos": 25,
+   "name": "Frankie Mossman",
+   "wiki": "Frankie_Mossman",
+   "points": 37,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 5,
+   "nat": "USA",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    9,
+    11,
+    17,
+    17,
+    15
+   ]
+  },
+  {
+   "pos": 26,
+   "name": "Danny Dyszelski",
+   "wiki": "Danny_Dyszelski",
+   "points": 27,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 3,
+   "nat": "USA",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    15,
+    12,
+    9
+   ]
+  },
+  {
+   "pos": 27,
+   "name": "Jorge Garciarce",
+   "wiki": "Jorge_Garciarce",
+   "points": 17,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 2,
+   "nat": "MEX",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    11,
+    14,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 28,
+   "name": "Charles Finelli",
+   "wiki": null,
+   "points": 12,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 4,
+   "nat": "USA",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    12,
+    20,
+    null,
+    21,
+    21,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  }
+ ],
+ "schedule": [
+  {
+   "round": 1,
+   "date": "2023-03-04",
+   "race": "Discount Tire Grand Prix of St. Petersburg",
+   "track": "Streets of St. Petersburg",
+   "city": "St. Petersburg",
+   "state": "FL",
+   "country": "USA",
+   "winner": "Christian Brooks",
+   "winner_wiki": "Christian_Brooks",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 2,
+   "date": "2023-03-04",
+   "race": "Andersen Interior Contracting Grand Prix of St. Petersburg",
+   "track": "Streets of St. Petersburg",
+   "city": "St. Petersburg",
+   "state": "FL",
+   "country": "USA",
+   "winner": "Myles Rowe",
+   "winner_wiki": "Myles_Rowe",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 3,
+   "date": "2023-03-25",
+   "race": "Cooper Tires Grand Prix of Sebring",
+   "track": "Sebring International Raceway",
+   "city": "Sebring",
+   "state": "FL",
+   "country": "USA",
+   "winner": "Myles Rowe",
+   "winner_wiki": "Myles_Rowe",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 4,
+   "date": "2023-03-25",
+   "race": "Cooper Tires Grand Prix of Sebring",
+   "track": "Sebring International Raceway",
+   "city": "Sebring",
+   "state": "FL",
+   "country": "USA",
+   "winner": "Myles Rowe",
+   "winner_wiki": "Myles_Rowe",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 5,
+   "date": "2023-05-12",
+   "race": "USF Pro 2000 Discount Tire Grand Prix of Indianapolis",
+   "track": "Indianapolis Motor Speedway Road Course",
+   "city": "Speedway",
+   "state": "IN",
+   "country": "USA",
+   "winner": "Ricardo Escotto",
+   "winner_wiki": "Ricardo_Escotto",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 6,
+   "date": "2023-05-12",
+   "race": "USF Pro 2000 Discount Tire Grand Prix of Indianapolis",
+   "track": "Indianapolis Motor Speedway Road Course",
+   "city": "Speedway",
+   "state": "IN",
+   "country": "USA",
+   "winner": "Joel Granfors",
+   "winner_wiki": "Joel_Granfors",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 7,
+   "date": "2023-05-27",
+   "race": "USF Pro 2000 Cooper Tires Freedom 90",
+   "track": "Lucas Oil Indianapolis Raceway Park",
+   "city": "Brownsburg",
+   "state": "IN",
+   "country": "USA",
+   "winner": "Salvador de Alba",
+   "winner_wiki": "Salvador_de_Alba",
+   "track_type": "oval",
+   "cancelled": false
+  },
+  {
+   "round": 8,
+   "date": "2023-06-17",
+   "race": "L&W Supply Grand Prix of Road America",
+   "track": "Road America",
+   "city": "Elkhart Lake",
+   "state": "WI",
+   "country": "USA",
+   "winner": "Michael d'Orlando",
+   "winner_wiki": "Michael_d'Orlando",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 9,
+   "date": "2023-06-17",
+   "race": "L&W Supply Grand Prix of Road America",
+   "track": "Road America",
+   "city": "Elkhart Lake",
+   "state": "WI",
+   "country": "USA",
+   "winner": "Lirim Zendeli",
+   "winner_wiki": "Lirim_Zendeli",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 10,
+   "date": "2023-07-01",
+   "race": "Cooper Tires Grand Prix of Mid-Ohio",
+   "track": "Mid-Ohio Sports Car Course",
+   "city": "Lexington",
+   "state": "OH",
+   "country": "USA",
+   "winner": "Michael d'Orlando",
+   "winner_wiki": "Michael_d'Orlando",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 11,
+   "date": "2023-07-01",
+   "race": "Cooper Tires Grand Prix of Mid-Ohio",
+   "track": "Mid-Ohio Sports Car Course",
+   "city": "Lexington",
+   "state": "OH",
+   "country": "USA",
+   "winner": "Myles Rowe",
+   "winner_wiki": "Myles_Rowe",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 12,
+   "date": "2023-07-15",
+   "race": "Cooper Tires Grand Prix of Toronto",
+   "track": "Exhibition Place",
+   "city": "Toronto",
+   "state": "ON",
+   "country": "CAN",
+   "winner": "Michael d'Orlando",
+   "winner_wiki": "Michael_d'Orlando",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 13,
+   "date": "2023-07-15",
+   "race": "Cooper Tires Grand Prix of Toronto",
+   "track": "Exhibition Place",
+   "city": "Toronto",
+   "state": "ON",
+   "country": "CAN",
+   "winner": "Myles Rowe",
+   "winner_wiki": "Myles_Rowe",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 14,
+   "date": "2023-08-26",
+   "race": "Discount Tire Circuit of The Americas Grand Prix",
+   "track": "Circuit of the Americas",
+   "city": "Austin",
+   "state": "TX",
+   "country": "USA",
+   "winner": "Kiko Porto",
+   "winner_wiki": "Kiko_Porto",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 15,
+   "date": "2023-08-26",
+   "race": "Discount Tire Circuit of The Americas Grand Prix",
+   "track": "Circuit of the Americas",
+   "city": "Austin",
+   "state": "TX",
+   "country": "USA",
+   "winner": "Nikita Johnson",
+   "winner_wiki": "Nikita_Johnson",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 16,
+   "date": "2023-09-02",
+   "race": "VP Racing Fuels Grand Prix of Portland",
+   "track": "Portland International Raceway",
+   "city": "Portland",
+   "state": "OR",
+   "country": "USA",
+   "winner": "Kiko Porto",
+   "winner_wiki": "Kiko_Porto",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 17,
+   "date": "2023-09-02",
+   "race": "VP Racing Fuels Grand Prix of Portland",
+   "track": "Portland International Raceway",
+   "city": "Portland",
+   "state": "OR",
+   "country": "USA",
+   "winner": "Michael d'Orlando",
+   "winner_wiki": "Michael_d'Orlando",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 18,
+   "date": "2023-09-02",
+   "race": "VP Racing Fuels Grand Prix of Portland",
+   "track": "Portland International Raceway",
+   "city": "Portland",
+   "state": "OR",
+   "country": "USA",
+   "winner": "Nikita Johnson",
+   "winner_wiki": "Nikita_Johnson",
+   "track_type": "road",
+   "cancelled": false
+  }
+ ],
+ "sources": [
+  "https://en.wikipedia.org/wiki/2023_USF_Pro_2000_Championship",
+  "https://www.wikidata.org (driver bios)"
+ ]
+}

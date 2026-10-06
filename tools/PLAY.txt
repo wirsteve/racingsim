@@ -1,0 +1,18 @@
+racingsim
+=========
+
+Windows: double-click racingsim.exe. If Windows SmartScreen says "Windows protected
+your PC", click "More info" -> "Run anyway" (the app isn't code-signed).
+
+macOS: unzip, then right-click racingsim -> Open -> Open (first time only; the app
+isn't signed by Apple). If macOS still refuses, run once in Terminal:
+    xattr -d com.apple.quarantine ~/Downloads/racingsim
+and double-click again.
+
+Linux: tar -xzf racingsim-linux.tar.gz && ./racingsim
+
+Your browser opens the game. A small window stays open while it runs - close it to
+quit. Save games live in:
+    Windows  %APPDATA%\racingsim\saves
+    macOS    ~/Library/Application Support/racingsim/saves
+    Linux    ~/.local/share/racingsim/saves

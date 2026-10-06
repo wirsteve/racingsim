@@ -1,0 +1,1655 @@
+{
+ "series": "formula_2000",
+ "year": 2021,
+ "official_name": "2021 USF2000 Championship",
+ "data_level": "full",
+ "teams_source": "teams_table",
+ "teams": [
+  {
+   "team": "Cape Motorsports",
+   "team_wiki": "Cape_Motorsports",
+   "owner": null,
+   "manufacturer": null,
+   "chassis": null,
+   "cars": [
+    {
+     "number": "2",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Thomas Nepveu",
+       "wiki": "Thomas_Nepveu",
+       "rounds": "All",
+       "nat": "CAN"
+      }
+     ]
+    },
+    {
+     "number": "3",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Evan Stamer",
+       "wiki": "Evan_Stamer",
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "4",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Michael d'Orlando",
+       "wiki": "Michael_d'Orlando",
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "5",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Spike Kohlbecker",
+       "wiki": "Spike_Kohlbecker",
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "DEForce Racing",
+   "team_wiki": "DEForce_Racing",
+   "owner": null,
+   "manufacturer": null,
+   "chassis": null,
+   "cars": [
+    {
+     "number": "1",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Ely Navarro",
+       "wiki": "Ely_Navarro",
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "10",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Nolan Siegel",
+       "wiki": "Nolan_Siegel",
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "11",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Prescott Campbell",
+       "wiki": "Prescott_Campbell",
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "12",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Kiko Porto",
+       "wiki": "Kiko_Porto",
+       "rounds": "All",
+       "nat": "BRA"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Exclusive Autosport",
+   "team_wiki": null,
+   "owner": null,
+   "manufacturer": null,
+   "chassis": null,
+   "cars": [
+    {
+     "number": "44",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Christian Brooks",
+       "wiki": "Christian_Brooks",
+       "rounds": "1–16",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "90",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Grant Palmer",
+       "wiki": "Grant_Palmer_(racing_driver)",
+       "rounds": "1–7",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "91",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Billy Frazer",
+       "wiki": "Billy_Frazer",
+       "rounds": "All",
+       "nat": "NZL"
+      }
+     ]
+    },
+    {
+     "number": "92",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Matthew Round-Garrido",
+       "wiki": "Matthew_Round-Garrido",
+       "rounds": "1−13",
+       "nat": "GBR"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Force Indy",
+   "team_wiki": null,
+   "owner": null,
+   "manufacturer": null,
+   "chassis": null,
+   "cars": [
+    {
+     "number": "99",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Myles Rowe",
+       "wiki": "Myles_Rowe",
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Jay Howard Driver Development",
+   "team_wiki": "Jay_Howard_Driver_Development",
+   "owner": null,
+   "manufacturer": null,
+   "chassis": null,
+   "cars": [
+    {
+     "number": "6",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Bijoy Garg",
+       "wiki": "Bijoy_Garg",
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "7",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Chase Hyland",
+       "wiki": null,
+       "rounds": "11–13",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "8",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Jackson Lee",
+       "wiki": "Jackson_Lee_(racing_driver)",
+       "rounds": "1−13, 17–18",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "9",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Peter Vodanovich",
+       "wiki": "Peter_Vodanovich",
+       "rounds": "1–16",
+       "nat": "NZL"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Joe Dooling Autosports",
+   "team_wiki": null,
+   "owner": null,
+   "manufacturer": null,
+   "chassis": null,
+   "cars": [
+    {
+     "number": "63",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Trey Burke",
+       "wiki": "Trey_Burke_(racing_driver)",
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Michael Myers Racing",
+   "team_wiki": null,
+   "owner": null,
+   "manufacturer": null,
+   "chassis": null,
+   "cars": [
+    {
+     "number": "42",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Michael Myers",
+       "wiki": "Michael_Myers_(racing_driver)",
+       "rounds": "3−18",
+       "nat": "USA"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Miller Vinatieri Motorsports",
+   "team_wiki": "Dr._Jack_Miller",
+   "owner": null,
+   "manufacturer": null,
+   "chassis": null,
+   "cars": [
+    {
+     "number": "16",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Kent Vaccaro",
+       "wiki": null,
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Legacy Autosport",
+   "team_wiki": null,
+   "owner": null,
+   "manufacturer": null,
+   "chassis": null,
+   "cars": [
+    {
+     "number": "19",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Andre Castro",
+       "wiki": "Andre_Castro_(racing_driver)",
+       "rounds": "1–4, 17–18",
+       "nat": "USA"
+      },
+      {
+       "name": "Simon Sikes",
+       "wiki": "Simon_Sikes",
+       "rounds": "5–7, 9–13",
+       "nat": "USA"
+      },
+      {
+       "name": "Nathan Byrd",
+       "wiki": "Nathan_Byrd",
+       "rounds": "8",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "20",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Nathan Byrd",
+       "wiki": "Nathan_Byrd",
+       "rounds": "11–16",
+       "nat": "USA"
+      },
+      {
+       "name": "Simon Sikes",
+       "wiki": "Simon_Sikes",
+       "rounds": "1–2",
+       "nat": "USA"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Pabst Racing",
+   "team_wiki": null,
+   "owner": null,
+   "manufacturer": null,
+   "chassis": null,
+   "cars": [
+    {
+     "number": "22",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Yuven Sundaramoorthy",
+       "wiki": "Yuven_Sundaramoorthy",
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "23",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Jace Denmark",
+       "wiki": "Jace_Denmark",
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "24",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Josh Pierson",
+       "wiki": "Josh_Pierson",
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Turn 3 Motorsport",
+   "team_wiki": "Turn_3_Motorsport",
+   "owner": null,
+   "manufacturer": null,
+   "chassis": null,
+   "cars": [
+    {
+     "number": "32",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Christian Weir",
+       "wiki": "Christian_Weir",
+       "rounds": "11–18",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "33",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Josh Green",
+       "wiki": "Josh_Green_(racing_driver)",
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "34",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Dylan Christie",
+       "wiki": "Dylan_Christie",
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Velocity Racing Development",
+   "team_wiki": "Velocity_Racing_Development",
+   "owner": null,
+   "manufacturer": null,
+   "chassis": null,
+   "cars": [
+    {
+     "number": "29",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Erik Evans",
+       "wiki": "Erik_Evans",
+       "rounds": "1–7, 9–13",
+       "nat": "USA"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "standings": [
+  {
+   "pos": 1,
+   "name": "Kiko Porto",
+   "wiki": "Kiko_Porto",
+   "points": 413,
+   "wins": 4,
+   "podiums": 10,
+   "top5": 15,
+   "starts": 18,
+   "nat": "BRA",
+   "results": [
+    10,
+    4,
+    5,
+    2,
+    7,
+    3,
+    1,
+    4,
+    1,
+    5,
+    2,
+    1,
+    5,
+    1,
+    2,
+    8,
+    3,
+    3
+   ]
+  },
+  {
+   "pos": 2,
+   "name": "Michael d'Orlando",
+   "wiki": "Michael_d'Orlando",
+   "points": 365,
+   "wins": 3,
+   "podiums": 8,
+   "top5": 14,
+   "starts": 18,
+   "nat": "USA",
+   "results": [
+    4,
+    9,
+    20,
+    3,
+    2,
+    4,
+    4,
+    1,
+    2,
+    22,
+    1,
+    2,
+    1,
+    5,
+    18,
+    4,
+    2,
+    4
+   ]
+  },
+  {
+   "pos": 3,
+   "name": "Yuven Sundaramoorthy",
+   "wiki": "Yuven_Sundaramoorthy",
+   "points": 329,
+   "wins": 4,
+   "podiums": 9,
+   "top5": 9,
+   "starts": 18,
+   "nat": "USA",
+   "results": [
+    1,
+    10,
+    3,
+    24,
+    1,
+    1,
+    3,
+    6,
+    8,
+    6,
+    10,
+    14,
+    3,
+    2,
+    20,
+    3,
+    1,
+    19
+   ]
+  },
+  {
+   "pos": 4,
+   "name": "Josh Pierson",
+   "wiki": "Josh_Pierson",
+   "points": 291,
+   "wins": 0,
+   "podiums": 5,
+   "top5": 7,
+   "starts": 18,
+   "nat": "USA",
+   "results": [
+    3,
+    3,
+    7,
+    10,
+    4,
+    2,
+    2,
+    8,
+    9,
+    3,
+    8,
+    12,
+    11,
+    6,
+    11,
+    5,
+    11,
+    6
+   ]
+  },
+  {
+   "pos": 5,
+   "name": "Josh Green",
+   "wiki": "Josh_Green_(racing_driver)",
+   "points": 279,
+   "wins": 1,
+   "podiums": 2,
+   "top5": 8,
+   "starts": 18,
+   "nat": "USA",
+   "results": [
+    9,
+    7,
+    18,
+    5,
+    5,
+    6,
+    8,
+    7,
+    10,
+    4,
+    9,
+    10,
+    21,
+    4,
+    4,
+    2,
+    4,
+    1
+   ]
+  },
+  {
+   "pos": 6,
+   "name": "Christian Brooks",
+   "wiki": "Christian_Brooks",
+   "points": 257,
+   "wins": 2,
+   "podiums": 4,
+   "top5": 9,
+   "starts": 16,
+   "nat": "USA",
+   "results": [
+    5,
+    5,
+    1,
+    1,
+    3,
+    5,
+    "DSQ",
+    5,
+    5,
+    20,
+    11,
+    8,
+    6,
+    3,
+    10,
+    17,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 7,
+   "name": "Spike Kohlbecker",
+   "wiki": "Spike_Kohlbecker",
+   "points": 235,
+   "wins": 0,
+   "podiums": 1,
+   "top5": 1,
+   "starts": 18,
+   "nat": "USA",
+   "results": [
+    7,
+    11,
+    6,
+    6,
+    6,
+    7,
+    7,
+    11,
+    3,
+    8,
+    14,
+    11,
+    10,
+    10,
+    7,
+    11,
+    10,
+    7
+   ]
+  },
+  {
+   "pos": 8,
+   "name": "Nolan Siegel",
+   "wiki": "Nolan_Siegel",
+   "points": 227,
+   "wins": 1,
+   "podiums": 4,
+   "top5": 6,
+   "starts": 18,
+   "nat": "USA",
+   "results": [
+    11,
+    2,
+    26,
+    21,
+    23,
+    24,
+    14,
+    9,
+    4,
+    23,
+    5,
+    6,
+    19,
+    8,
+    3,
+    1,
+    6,
+    2
+   ]
+  },
+  {
+   "pos": 9,
+   "name": "Thomas Nepveu",
+   "wiki": "Thomas_Nepveu",
+   "points": 220,
+   "wins": 1,
+   "podiums": 1,
+   "top5": 3,
+   "starts": 18,
+   "nat": "CAN",
+   "results": [
+    13,
+    8,
+    11,
+    7,
+    9,
+    8,
+    5,
+    15,
+    11,
+    1,
+    13,
+    5,
+    9,
+    16,
+    13,
+    15,
+    7,
+    8
+   ]
+  },
+  {
+   "pos": 10,
+   "name": "Prescott Campbell",
+   "wiki": "Prescott_Campbell",
+   "points": 215,
+   "wins": 1,
+   "podiums": 3,
+   "top5": 4,
+   "starts": 18,
+   "nat": "USA",
+   "results": [
+    2,
+    1,
+    16,
+    9,
+    22,
+    9,
+    6,
+    2,
+    12,
+    24,
+    27,
+    13,
+    27,
+    11,
+    6,
+    9,
+    21,
+    5
+   ]
+  },
+  {
+   "pos": 11,
+   "name": "Jace Denmark",
+   "wiki": "Jace_Denmark",
+   "points": 210,
+   "wins": 0,
+   "podiums": 1,
+   "top5": 2,
+   "starts": 18,
+   "nat": "USA",
+   "results": [
+    8,
+    12,
+    15,
+    11,
+    10,
+    20,
+    15,
+    3,
+    6,
+    7,
+    7,
+    9,
+    7,
+    7,
+    5,
+    7,
+    20,
+    15
+   ]
+  },
+  {
+   "pos": 12,
+   "name": "Billy Frazer",
+   "wiki": "Billy_Frazer",
+   "points": 192,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 2,
+   "starts": 18,
+   "nat": "NZL",
+   "results": [
+    6,
+    13,
+    4,
+    12,
+    12,
+    16,
+    12,
+    13,
+    25,
+    13,
+    4,
+    7,
+    15,
+    9,
+    12,
+    10,
+    8,
+    9
+   ]
+  },
+  {
+   "pos": 13,
+   "name": "Myles Rowe",
+   "wiki": "Myles_Rowe",
+   "points": 137,
+   "wins": 1,
+   "podiums": 1,
+   "top5": 2,
+   "starts": 18,
+   "nat": "USA",
+   "results": [
+    24,
+    6,
+    8,
+    23,
+    21,
+    10,
+    23,
+    12,
+    20,
+    10,
+    28,
+    16,
+    28,
+    13,
+    1,
+    16,
+    5,
+    21
+   ]
+  },
+  {
+   "pos": 14,
+   "name": "Simon Sikes",
+   "wiki": "Simon_Sikes",
+   "points": 136,
+   "wins": 0,
+   "podiums": 4,
+   "top5": 4,
+   "starts": 10,
+   "nat": "USA",
+   "results": [
+    16,
+    17,
+    null,
+    null,
+    11,
+    14,
+    21,
+    null,
+    7,
+    2,
+    3,
+    3,
+    2,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 15,
+   "name": "Dylan Christie",
+   "wiki": "Dylan_Christie",
+   "points": 121,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 18,
+   "nat": "USA",
+   "results": [
+    21,
+    20,
+    9,
+    13,
+    8,
+    11,
+    24,
+    10,
+    15,
+    9,
+    20,
+    25,
+    26,
+    15,
+    14,
+    13,
+    12,
+    14
+   ]
+  },
+  {
+   "pos": 16,
+   "name": "Matthew Round-Garrido",
+   "wiki": "Matthew_Round-Garrido",
+   "points": 116,
+   "wins": 0,
+   "podiums": 1,
+   "top5": 4,
+   "starts": 13,
+   "nat": "GBR",
+   "results": [
+    25,
+    22,
+    2,
+    4,
+    25,
+    12,
+    20,
+    24,
+    13,
+    19,
+    12,
+    4,
+    4,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 17,
+   "name": "Ely Navarro",
+   "wiki": "Ely_Navarro",
+   "points": 105,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 18,
+   "nat": "USA",
+   "results": [
+    18,
+    18,
+    13,
+    16,
+    15,
+    18,
+    13,
+    14,
+    19,
+    14,
+    19,
+    18,
+    17,
+    14,
+    8,
+    12,
+    13,
+    18
+   ]
+  },
+  {
+   "pos": 18,
+   "name": "Jackson Lee",
+   "wiki": "Jackson_Lee_(racing_driver)",
+   "points": 73,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 14,
+   "nat": "USA",
+   "results": [
+    12,
+    14,
+    14,
+    18,
+    26,
+    "DNS",
+    9,
+    18,
+    23,
+    18,
+    18,
+    26,
+    13,
+    null,
+    null,
+    null,
+    18,
+    12
+   ]
+  },
+  {
+   "pos": 19,
+   "name": "Evan Stamer",
+   "wiki": "Evan_Stamer",
+   "points": 65,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 18,
+   "nat": "USA",
+   "results": [
+    19,
+    21,
+    23,
+    20,
+    17,
+    23,
+    19,
+    16,
+    18,
+    11,
+    16,
+    15,
+    24,
+    18,
+    16,
+    20,
+    22,
+    11
+   ]
+  },
+  {
+   "pos": 20,
+   "name": "Peter Vodanovich",
+   "wiki": "Peter_Vodanovich",
+   "points": 63,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 16,
+   "nat": "NZL",
+   "results": [
+    23,
+    23,
+    21,
+    15,
+    19,
+    15,
+    16,
+    23,
+    16,
+    15,
+    15,
+    28,
+    8,
+    17,
+    19,
+    22,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 21,
+   "name": "Christian Weir",
+   "wiki": "Christian_Weir",
+   "points": 57,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 8,
+   "nat": "USA",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    17,
+    19,
+    20,
+    12,
+    9,
+    6,
+    9,
+    20
+   ]
+  },
+  {
+   "pos": 22,
+   "name": "Erik Evans",
+   "wiki": "Erik_Evans",
+   "points": 54,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 12,
+   "nat": "USA",
+   "results": [
+    15,
+    16,
+    22,
+    14,
+    16,
+    13,
+    10,
+    null,
+    22,
+    25,
+    25,
+    21,
+    14,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 23,
+   "name": "Trey Burke",
+   "wiki": "Trey_Burke_(racing_driver)",
+   "points": 54,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 18,
+   "nat": "USA",
+   "results": [
+    20,
+    26,
+    24,
+    19,
+    18,
+    21,
+    18,
+    22,
+    17,
+    17,
+    22,
+    17,
+    25,
+    23,
+    15,
+    14,
+    17,
+    13
+   ]
+  },
+  {
+   "pos": 24,
+   "name": "Kent Vaccaro",
+   "wiki": null,
+   "points": 48,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 17,
+   "nat": "USA",
+   "results": [
+    17,
+    25,
+    25,
+    "DNS",
+    20,
+    19,
+    17,
+    17,
+    24,
+    16,
+    21,
+    22,
+    16,
+    19,
+    21,
+    18,
+    16,
+    16
+   ]
+  },
+  {
+   "pos": 25,
+   "name": "Andre Castro",
+   "wiki": "Andre_Castro_(racing_driver)",
+   "points": 45,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 6,
+   "nat": "USA",
+   "results": [
+    22,
+    19,
+    10,
+    8,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    14,
+    10
+   ]
+  },
+  {
+   "pos": 26,
+   "name": "Michael Myers",
+   "wiki": "Michael_Myers_(racing_driver)",
+   "points": 45,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 15,
+   "nat": "USA",
+   "results": [
+    null,
+    null,
+    17,
+    22,
+    13,
+    "DNS",
+    11,
+    19,
+    21,
+    21,
+    24,
+    20,
+    12,
+    21,
+    23,
+    21,
+    19,
+    22
+   ]
+  },
+  {
+   "pos": 27,
+   "name": "Bijoy Garg",
+   "wiki": "Bijoy_Garg",
+   "points": 43,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 17,
+   "nat": "USA",
+   "results": [
+    "DSQ",
+    25,
+    19,
+    "DNS",
+    24,
+    22,
+    25,
+    20,
+    14,
+    12,
+    6,
+    27,
+    18,
+    20,
+    22,
+    19,
+    15,
+    17
+   ]
+  },
+  {
+   "pos": 28,
+   "name": "Grant Palmer",
+   "wiki": "Grant_Palmer_(racing_driver)",
+   "points": 38,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 7,
+   "nat": "USA",
+   "results": [
+    14,
+    15,
+    12,
+    17,
+    14,
+    17,
+    22,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 29,
+   "name": "Nathan Byrd",
+   "wiki": "Nathan_Byrd",
+   "points": 11,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 7,
+   "nat": "USA",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    21,
+    null,
+    null,
+    23,
+    24,
+    22,
+    22,
+    17,
+    23,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 30,
+   "name": "Chase Hyland",
+   "wiki": null,
+   "points": 3,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 3,
+   "nat": "USA",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    26,
+    23,
+    23,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  }
+ ],
+ "schedule": [
+  {
+   "round": 1,
+   "date": "2021-04-17",
+   "race": "Cooper Tires USF2000 Grand Prix of Barber Motorsports Park",
+   "track": "Barber Motorsports Park",
+   "city": "Birmingham",
+   "state": "AL",
+   "country": "USA",
+   "winner": "Yuven Sundaramoorthy",
+   "winner_wiki": "Yuven_Sundaramoorthy",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 2,
+   "date": "2021-04-17",
+   "race": "Cooper Tires USF2000 Grand Prix of Barber Motorsports Park",
+   "track": "Barber Motorsports Park",
+   "city": "Birmingham",
+   "state": "AL",
+   "country": "USA",
+   "winner": "Prescott Campbell",
+   "winner_wiki": "Prescott_Campbell",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 3,
+   "date": "2021-04-24",
+   "race": "USF2000 Grand Prix of St. Petersburg Presented by Andersen RacePark",
+   "track": "Streets of St. Petersburg",
+   "city": "St. Petersburg",
+   "state": "FL",
+   "country": "USA",
+   "winner": "Christian Brooks",
+   "winner_wiki": "Christian_Brooks",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 4,
+   "date": "2021-04-24",
+   "race": "USF2000 Grand Prix of St. Petersburg Presented by Andersen Interior Contracting",
+   "track": "Streets of St. Petersburg",
+   "city": "St. Petersburg",
+   "state": "FL",
+   "country": "USA",
+   "winner": "Christian Brooks",
+   "winner_wiki": "Christian_Brooks",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 5,
+   "date": "2021-05-14",
+   "race": "USF2000 Grand Prix of Indianapolis Presented by Cooper Tires",
+   "track": "Indianapolis Motor Speedway Road Course",
+   "city": "Speedway",
+   "state": "IN",
+   "country": "USA",
+   "winner": "Yuven Sundaramoorthy",
+   "winner_wiki": "Yuven_Sundaramoorthy",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 6,
+   "date": "2021-05-14",
+   "race": "USF2000 Grand Prix of Indianapolis Presented by Cooper Tires",
+   "track": "Indianapolis Motor Speedway Road Course",
+   "city": "Speedway",
+   "state": "IN",
+   "country": "USA",
+   "winner": "Yuven Sundaramoorthy",
+   "winner_wiki": "Yuven_Sundaramoorthy",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 7,
+   "date": "2021-05-14",
+   "race": "USF2000 Grand Prix of Indianapolis Presented by Cooper Tires",
+   "track": "Indianapolis Motor Speedway Road Course",
+   "city": "Speedway",
+   "state": "IN",
+   "country": "USA",
+   "winner": "Kiko Porto",
+   "winner_wiki": "Kiko_Porto",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 8,
+   "date": "2021-05-29",
+   "race": "Cooper Tires Freedom 75",
+   "track": "Lucas Oil Raceway",
+   "city": "Brownsburg",
+   "state": "IN",
+   "country": "USA",
+   "winner": "Michael d'Orlando",
+   "winner_wiki": "Michael_d'Orlando",
+   "track_type": "oval",
+   "cancelled": false
+  },
+  {
+   "round": 9,
+   "date": "2021-06-19",
+   "race": "Cooper Tires USF2000 Championship Grand Prix of Road America",
+   "track": "Road America",
+   "city": "Elkhart Lake",
+   "state": "WI",
+   "country": "USA",
+   "winner": "Kiko Porto",
+   "winner_wiki": "Kiko_Porto",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 10,
+   "date": "2021-06-19",
+   "race": "Cooper Tires USF2000 Championship Grand Prix of Road America",
+   "track": "Road America",
+   "city": "Elkhart Lake",
+   "state": "WI",
+   "country": "USA",
+   "winner": "Thomas Nepveu",
+   "winner_wiki": "Thomas_Nepveu",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 11,
+   "date": "2021-07-03",
+   "race": "Cooper Tires USF2000 Grand Prix of Mid-Ohio",
+   "track": "Mid-Ohio Sports Car Course",
+   "city": "Lexington",
+   "state": "OH",
+   "country": "USA",
+   "winner": "Michael d'Orlando",
+   "winner_wiki": "Michael_d'Orlando",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 12,
+   "date": "2021-07-03",
+   "race": "Cooper Tires USF2000 Grand Prix of Mid-Ohio",
+   "track": "Mid-Ohio Sports Car Course",
+   "city": "Lexington",
+   "state": "OH",
+   "country": "USA",
+   "winner": "Kiko Porto",
+   "winner_wiki": "Kiko_Porto",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 13,
+   "date": "2021-07-03",
+   "race": "Cooper Tires USF2000 Grand Prix of Mid-Ohio",
+   "track": "Mid-Ohio Sports Car Course",
+   "city": "Lexington",
+   "state": "OH",
+   "country": "USA",
+   "winner": "Michael d'Orlando",
+   "winner_wiki": "Michael_d'Orlando",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 14,
+   "date": "2021-08-28",
+   "race": "Cooper Tires USF2000 Grand Prix",
+   "track": "New Jersey Motorsports Park",
+   "city": "Millville",
+   "state": "NJ",
+   "country": "USA",
+   "winner": "Kiko Porto",
+   "winner_wiki": "Kiko_Porto",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 15,
+   "date": "2021-08-28",
+   "race": "Cooper Tires USF2000 Grand Prix",
+   "track": "New Jersey Motorsports Park",
+   "city": "Millville",
+   "state": "NJ",
+   "country": "USA",
+   "winner": "Myles Rowe",
+   "winner_wiki": "Myles_Rowe",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 16,
+   "date": "2021-08-28",
+   "race": "Cooper Tires USF2000 Grand Prix",
+   "track": "New Jersey Motorsports Park",
+   "city": "Millville",
+   "state": "NJ",
+   "country": "USA",
+   "winner": "Nolan Siegel",
+   "winner_wiki": "Nolan_Siegel",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 17,
+   "date": "2021-10-03",
+   "race": "VP Racing Fuels Champhionship Weekend Presented By Cooper Tires",
+   "track": "Mid-Ohio Sports Car Course",
+   "city": "Lexington",
+   "state": "OH",
+   "country": "USA",
+   "winner": "Yuven Sundaramoorthy",
+   "winner_wiki": "Yuven_Sundaramoorthy",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 18,
+   "date": "2021-10-03",
+   "race": "VP Racing Fuels Champhionship Weekend Presented By Cooper Tires",
+   "track": "Mid-Ohio Sports Car Course",
+   "city": "Lexington",
+   "state": "OH",
+   "country": "USA",
+   "winner": "Josh Green",
+   "winner_wiki": "Josh_Green_(racing_driver)",
+   "track_type": "road",
+   "cancelled": false
+  }
+ ],
+ "sources": [
+  "https://en.wikipedia.org/wiki/2021_USF2000_Championship",
+  "https://www.wikidata.org (driver bios)"
+ ]
+}

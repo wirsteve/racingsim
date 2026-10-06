@@ -1,0 +1,1203 @@
+[
+ {
+  "series": "all",
+  "crash_budget_share": {
+   "min": 0.05,
+   "max": 0.15,
+   "unit": "share of season budget",
+   "year_basis": 2024,
+   "confidence": "low",
+   "sources": [],
+   "notes": "informed estimate for game balance; no direct source found"
+  },
+  "topic": "crash_damage",
+  "level": "all",
+  "id": "econ:crash-damage-all"
+ },
+ {
+  "series": "series:nascar-cup",
+  "wall_hit": {
+   "min": 30000,
+   "max": 100000,
+   "unit": "USD/incident",
+   "year_basis": 2024,
+   "confidence": "low",
+   "sources": [
+    "src:speedwaydigest-crash-costs"
+   ],
+   "notes": null
+  },
+  "total_loss": {
+   "min": 250000,
+   "max": 500000,
+   "unit": "USD/incident",
+   "year_basis": 2024,
+   "confidence": "low",
+   "sources": [
+    "src:speedwaydigest-crash-costs",
+    "src:racingnews-hamlin-costs-2024"
+   ],
+   "notes": "Next Gen car ~$350k complete"
+  },
+  "topic": "crash_damage",
+  "level": "series:nascar-cup",
+  "id": "econ:crash-damage-nascar-cup"
+ },
+ {
+  "series": "series:nascar-xfinity",
+  "total_loss": {
+   "min": 100000,
+   "max": 150000,
+   "unit": "USD/incident",
+   "year_basis": 2021,
+   "confidence": "medium",
+   "sources": [
+    "src:nbcsports-road-america-wreck"
+   ],
+   "notes": "one wreck cost three teams ~$250k"
+  },
+  "topic": "crash_damage",
+  "level": "series:nascar-xfinity",
+  "id": "econ:crash-damage-nascar-xfinity"
+ },
+ {
+  "flow": "Cup team payouts total",
+  "value": {
+   "min": 333000000,
+   "max": 431000000,
+   "unit": "USD/season",
+   "year_basis": 2025,
+   "confidence": "high",
+   "sources": [
+    "src:charter-trial-2025"
+   ],
+   "notes": "2024 -> 2025"
+  },
+  "topic": "money_flows",
+  "level": null,
+  "id": "econ:money-flows-cup-team-payouts-total"
+ },
+ {
+  "flow": "sponsor exposure value by result (Cup)",
+  "value": {
+   "win": 6310000,
+   "p2_5": 2510000,
+   "p6_10": 1650000,
+   "unit": "USD value of time on camera per race-season aggregate",
+   "confidence": "medium",
+   "sources": [
+    "src:rotthoff-2014-nascar-camera"
+   ]
+  },
+  "topic": "money_flows",
+  "level": null,
+  "id": "econ:money-flows-sponsor-exposure-value-by-result-cup"
+ },
+ {
+  "flow": "TV money to teams",
+  "share": {
+   "value": 0.25,
+   "unit": "share of NASCAR TV deal",
+   "year_basis": 2014,
+   "confidence": "medium",
+   "sources": [
+    "src:jeffgluck-tjmartins-2017"
+   ],
+   "notes": null
+  },
+  "split": {
+   "cup": 0.9375,
+   "xfinity": 0.0575,
+   "trucks": 0.005
+  },
+  "notes": "2015 restructure raised Trucks to ~2%",
+  "topic": "money_flows",
+  "level": null,
+  "id": "econ:money-flows-tv-money-to-teams"
+ },
+ {
+  "series": "series:arca-menards",
+  "price": {
+   "min": 1000000,
+   "max": 1400000,
+   "unit": "USD/season",
+   "year_basis": 2025,
+   "confidence": "low",
+   "sources": [
+    "src:speedwayactionimages-arca-2025",
+    "src:seriouslyfast-arca-2025"
+   ],
+   "notes": "top team; one-off Daytona rides at small teams ~$30k reported (forum)"
+  },
+  "topic": "pay_seat_prices",
+  "level": "series:arca-menards",
+  "id": "econ:pay-seat-prices-arca-menards"
+ },
+ {
+  "series": "series:imsa-weathertech",
+  "class": "GTD bronze/silver seat",
+  "price": {
+   "min": 330000,
+   "max": 1100000,
+   "unit": "USD/season",
+   "year_basis": 2024,
+   "confidence": "low",
+   "sources": [
+    "src:imsa-gtd-bronze-funding"
+   ],
+   "notes": "EUR 300k-1M quoted for gentleman drivers sharing with a pro"
+  },
+  "topic": "pay_seat_prices",
+  "level": "series:imsa-weathertech",
+  "id": "econ:pay-seat-prices-imsa-weathertech"
+ },
+ {
+  "series": "series:indy-nxt",
+  "price": {
+   "min": 1200000,
+   "max": 1500000,
+   "unit": "USD/season",
+   "year_basis": 2024,
+   "confidence": "medium",
+   "sources": [
+    "src:usopenwheelnation-indynxt-costs-2025"
+   ],
+   "notes": null
+  },
+  "topic": "pay_seat_prices",
+  "level": "series:indy-nxt",
+  "id": "econ:pay-seat-prices-indy-nxt"
+ },
+ {
+  "series": "series:indycar",
+  "price": {
+   "min": 1800000,
+   "max": 10000000,
+   "unit": "USD/season",
+   "year_basis": 2025,
+   "confidence": "low",
+   "sources": [
+    "src:sportskeeda-daly-jhr-2025"
+   ],
+   "notes": "budget-team pay seats; full sponsorship sought $8-10M"
+  },
+  "topic": "pay_seat_prices",
+  "level": "series:indycar",
+  "id": "econ:pay-seat-prices-indycar"
+ },
+ {
+  "series": "series:nascar-cup",
+  "price": {
+   "min": 6000000,
+   "max": 8000000,
+   "unit": "USD/season",
+   "year_basis": 2023,
+   "confidence": "medium",
+   "sources": [
+    "src:speedsport-kbusch-money-game-2023"
+   ],
+   "notes": "money an Xfinity graduate must bring for a Cup seat"
+  },
+  "topic": "pay_seat_prices",
+  "level": "series:nascar-cup",
+  "id": "econ:pay-seat-prices-nascar-cup"
+ },
+ {
+  "series": "series:nascar-trucks",
+  "price": {
+   "min": 1500000,
+   "max": 3500000,
+   "unit": "USD/season",
+   "year_basis": 2026,
+   "confidence": "medium",
+   "sources": [
+    "src:yahoo-baldwin-costs-2026",
+    "src:espn-kbm-boston-2015",
+    "src:rtrsports-nascar-sponsorship-2026"
+   ],
+   "notes": "good ride ~$130k x 24-25 races; KBM 2015 deal $3.2M; small teams accept $15-50k/race primaries"
+  },
+  "topic": "pay_seat_prices",
+  "level": "series:nascar-trucks",
+  "id": "econ:pay-seat-prices-nascar-trucks"
+ },
+ {
+  "series": "series:nascar-xfinity",
+  "price": {
+   "min": 650000,
+   "max": 5000000,
+   "unit": "USD/season",
+   "year_basis": 2025,
+   "confidence": "medium",
+   "sources": [
+    "src:racingnews-mbm-xfinity-ride-2020",
+    "src:yahoo-baldwin-costs-2026",
+    "src:nbcsports-ibj-lilly-xfinity-2015"
+   ],
+   "notes": "$650k back-marker (2021) .. $4.3-5.3M competitive ($130-160k/race x 33); Lilly paid Roush ~$5M (2015)"
+  },
+  "topic": "pay_seat_prices",
+  "level": "series:nascar-xfinity",
+  "id": "econ:pay-seat-prices-nascar-xfinity"
+ },
+ {
+  "series": "series:usf-pro-2000",
+  "price": {
+   "min": 650000,
+   "max": 1000000,
+   "unit": "USD/season",
+   "year_basis": 2024,
+   "confidence": "low",
+   "sources": [
+    "src:youarecurrent-usf2000-2019"
+   ],
+   "notes": null
+  },
+  "topic": "pay_seat_prices",
+  "level": "series:usf-pro-2000",
+  "id": "econ:pay-seat-prices-usf-pro-2000"
+ },
+ {
+  "series": "series:usf2000",
+  "price": {
+   "min": 300000,
+   "max": 550000,
+   "unit": "USD/season",
+   "year_basis": 2024,
+   "confidence": "low",
+   "sources": [
+    "src:youarecurrent-usf2000-2019"
+   ],
+   "notes": null
+  },
+  "topic": "pay_seat_prices",
+  "level": "series:usf2000",
+  "id": "econ:pay-seat-prices-usf2000"
+ },
+ {
+  "series": "series:arca-menards",
+  "win_purse": {
+   "min": 5000,
+   "max": 10000,
+   "unit": "USD/race",
+   "year_basis": 2025,
+   "confidence": "low",
+   "sources": [
+    "src:seriouslyfast-arca-2025"
+   ],
+   "notes": "~$10k national, ~$5k East/West"
+  },
+  "points_fund": {
+   "value": 375000,
+   "unit": "USD/season",
+   "year_basis": 2023,
+   "confidence": "medium",
+   "sources": [
+    "src:arca-awards-guide-2023"
+   ],
+   "notes": null
+  },
+  "topic": "purses_and_funds",
+  "level": "series:arca-menards",
+  "id": "econ:purses-and-funds-arca-menards"
+ },
+ {
+  "series": "series:high-limit",
+  "points_fund": {
+   "value": 1000000,
+   "unit": "USD/season",
+   "year_basis": 2024,
+   "confidence": "low",
+   "sources": [
+    "src:mastergassers-410-2023"
+   ],
+   "notes": "$250k to champion"
+  },
+  "topic": "purses_and_funds",
+  "level": "series:high-limit",
+  "id": "econ:purses-and-funds-high-limit"
+ },
+ {
+  "series": "series:indycar",
+  "leaders_circle": {
+   "value": 910000,
+   "unit": "USD/entry/season",
+   "year_basis": 2023,
+   "confidence": "high",
+   "sources": [
+    "src:racer-leaders-circle-2023"
+   ],
+   "notes": null
+  },
+  "indy500_purse": {
+   "value": 13078065,
+   "unit": "USD",
+   "year_basis": 2018,
+   "confidence": "medium",
+   "sources": [
+    "src:racer-miller-payday-2018"
+   ],
+   "notes": null
+  },
+  "topic": "purses_and_funds",
+  "level": "series:indycar",
+  "id": "econ:purses-and-funds-indycar"
+ },
+ {
+  "series": "series:nascar-cup",
+  "race_purse": {
+   "min": 9800000,
+   "max": 13650000,
+   "unit": "USD/race",
+   "year_basis": 2025,
+   "confidence": "medium",
+   "sources": [
+    "src:fansided-nascar-purses-2025"
+   ],
+   "notes": "Daytona 500 $30.33M; finale $12.39M"
+  },
+  "winner_share_of_purse": {
+   "min": 0.08,
+   "max": 0.1,
+   "unit": "share",
+   "year_basis": 2025,
+   "confidence": "low",
+   "sources": [
+    "src:fansided-nascar-purses-2025"
+   ],
+   "notes": null
+  },
+  "charter_payment_per_race": {
+   "min": 185000,
+   "max": 500000,
+   "unit": "USD/race/car",
+   "year_basis": 2025,
+   "confidence": "high",
+   "sources": [
+    "src:charter-trial-2025"
+   ],
+   "notes": "base ~$185k, average ~$330k"
+  },
+  "topic": "purses_and_funds",
+  "level": "series:nascar-cup",
+  "id": "econ:purses-and-funds-nascar-cup"
+ },
+ {
+  "series": "series:nascar-trucks",
+  "race_purse": {
+   "min": 782900,
+   "max": 1160400,
+   "unit": "USD/race",
+   "year_basis": 2025,
+   "confidence": "medium",
+   "sources": [
+    "src:fansided-nascar-purses-2025"
+   ],
+   "notes": null
+  },
+  "small_team_prize_per_race": {
+   "value": 14000,
+   "unit": "USD/race",
+   "year_basis": 2015,
+   "confidence": "medium",
+   "sources": [
+    "src:jeffgluck-tjmartins-2017"
+   ],
+   "notes": null
+  },
+  "tv_share_per_team_race": {
+   "value": 1000,
+   "unit": "USD/race/team",
+   "year_basis": 2014,
+   "confidence": "medium",
+   "sources": [
+    "src:jeffgluck-tjmartins-2017"
+   ],
+   "notes": "Trucks got 0.5% of team TV money in 2014; ~2% after 2015 restructure"
+  },
+  "topic": "purses_and_funds",
+  "level": "series:nascar-trucks",
+  "id": "econ:purses-and-funds-nascar-trucks"
+ },
+ {
+  "series": "series:nascar-xfinity",
+  "race_purse": {
+   "min": 1651939,
+   "max": 2151939,
+   "unit": "USD/race",
+   "year_basis": 2025,
+   "confidence": "medium",
+   "sources": [
+    "src:autopian-xfinity-costs-2025"
+   ],
+   "notes": "Daytona opener $3.76M; season $57.6M"
+  },
+  "avg_team_purse_per_race": {
+   "value": 45952,
+   "unit": "USD/race/team",
+   "year_basis": 2025,
+   "confidence": "medium",
+   "sources": [
+    "src:autopian-xfinity-costs-2025"
+   ],
+   "notes": null
+  },
+  "bonus_dash4cash": {
+   "value": 100000,
+   "unit": "USD/race",
+   "year_basis": 2024,
+   "confidence": "low",
+   "sources": [
+    "src:essentiallysports-xfinity-prize"
+   ],
+   "notes": null
+  },
+  "topic": "purses_and_funds",
+  "level": "series:nascar-xfinity",
+  "id": "econ:purses-and-funds-nascar-xfinity"
+ },
+ {
+  "series": "series:world-of-outlaws-sprint",
+  "standard_purse": {
+   "min": 58000,
+   "max": 70000,
+   "unit": "USD/race",
+   "year_basis": 2024,
+   "confidence": "low",
+   "sources": [
+    "src:mastergassers-410-2023"
+   ],
+   "notes": null
+  },
+  "points_fund": {
+   "value": 1600000,
+   "unit": "USD/season",
+   "year_basis": 2023,
+   "confidence": "low",
+   "sources": [
+    "src:mastergassers-410-2023"
+   ],
+   "notes": null
+  },
+  "tow_money_per_team": {
+   "min": 60000,
+   "max": 80000,
+   "unit": "USD/season",
+   "year_basis": 2024,
+   "confidence": "low",
+   "sources": [
+    "src:mastergassers-410-2023"
+   ],
+   "notes": null
+  },
+  "topic": "purses_and_funds",
+  "level": "series:world-of-outlaws-sprint",
+  "id": "econ:purses-and-funds-world-of-outlaws-sprint"
+ },
+ {
+  "series": "series:indycar",
+  "typical": {
+   "min": 250000,
+   "max": 1200000,
+   "unit": "USD/season",
+   "year_basis": 2024,
+   "confidence": "low",
+   "sources": [
+    "src:salary-estimates-indycar",
+    "src:racer-miller-payday-2018"
+   ],
+   "notes": "2018: 20 full-timers < $20M combined"
+  },
+  "star": {
+   "min": 3000000,
+   "max": 7000000,
+   "unit": "USD/season",
+   "year_basis": 2024,
+   "confidence": "medium",
+   "sources": [
+    "src:salary-estimates-indycar"
+   ],
+   "notes": null
+  },
+  "pay_driver": {
+   "value": 0,
+   "unit": "USD/season",
+   "year_basis": 2024,
+   "confidence": "medium",
+   "sources": [
+    "src:salary-estimates-indycar"
+   ],
+   "notes": "pay drivers earn nothing / bring money"
+  },
+  "topic": "salaries",
+  "level": "series:indycar",
+  "id": "econ:salaries-indycar"
+ },
+ {
+  "series": "series:nascar-cup",
+  "rookie_or_backmarker": {
+   "min": 500000,
+   "max": 2000000,
+   "unit": "USD/season",
+   "year_basis": 2024,
+   "confidence": "low",
+   "sources": [
+    "src:salary-estimates-nascar-2024"
+   ],
+   "notes": null
+  },
+  "mid_tier": {
+   "min": 1000000,
+   "max": 3000000,
+   "unit": "USD/season",
+   "year_basis": 2024,
+   "confidence": "low",
+   "sources": [
+    "src:salary-estimates-nascar-2024"
+   ],
+   "notes": null
+  },
+  "star": {
+   "min": 8000000,
+   "max": 17000000,
+   "unit": "USD/season",
+   "year_basis": 2024,
+   "confidence": "low",
+   "sources": [
+    "src:salary-estimates-nascar-2024"
+   ],
+   "notes": "includes endorsements"
+  },
+  "topic": "salaries",
+  "level": "series:nascar-cup",
+  "id": "econ:salaries-nascar-cup"
+ },
+ {
+  "series": "series:nascar-trucks",
+  "typical": {
+   "min": 0,
+   "max": 300000,
+   "unit": "USD/season",
+   "year_basis": 2024,
+   "confidence": "low",
+   "sources": [
+    "src:sportskeeda-truck-salaries",
+    "src:champion-ride-struggles"
+   ],
+   "notes": "Sheldon Creed (2020 champion) described not being paid to drive until a later deal"
+  },
+  "topic": "salaries",
+  "level": "series:nascar-trucks",
+  "id": "econ:salaries-nascar-trucks"
+ },
+ {
+  "series": "series:nascar-xfinity",
+  "typical": {
+   "min": 0,
+   "max": 500000,
+   "unit": "USD/season",
+   "year_basis": 2025,
+   "confidence": "low",
+   "sources": [
+    "src:speedsport-kbusch-money-game-2023",
+    "src:champion-ride-struggles"
+   ],
+   "notes": "informed estimate: most drivers bring funding; paid seats at top teams only"
+  },
+  "topic": "salaries",
+  "level": "series:nascar-xfinity",
+  "id": "econ:salaries-nascar-xfinity",
+  "crew": {
+   "crew_chief": {
+    "min": 100000,
+    "max": 150000,
+    "unit": "USD/yr",
+    "year_basis": 2025,
+    "confidence": "medium",
+    "sources": [
+     "src:autopian-xfinity-costs-2025"
+    ],
+    "notes": null
+   },
+   "car_chief": {
+    "min": 80000,
+    "max": 100000,
+    "unit": "USD/yr",
+    "year_basis": 2025,
+    "confidence": "medium",
+    "sources": [
+     "src:autopian-xfinity-costs-2025"
+    ],
+    "notes": null
+   },
+   "mechanic": {
+    "min": 50000,
+    "max": 70000,
+    "unit": "USD/yr",
+    "year_basis": 2025,
+    "confidence": "medium",
+    "sources": [
+     "src:autopian-xfinity-costs-2025"
+    ],
+    "notes": null
+   },
+   "spotter": {
+    "min": 26000,
+    "max": 33000,
+    "unit": "USD/yr",
+    "year_basis": 2025,
+    "confidence": "medium",
+    "sources": [
+     "src:autopian-xfinity-costs-2025"
+    ],
+    "notes": null
+   }
+  }
+ },
+ {
+  "series": "series:world-of-outlaws-sprint",
+  "driver_earnings": {
+   "min": 150000,
+   "max": 1400000,
+   "unit": "USD/season",
+   "year_basis": 2023,
+   "confidence": "low",
+   "sources": [
+    "src:mastergassers-410-2023"
+   ],
+   "notes": "winnings-based"
+  },
+  "topic": "salaries",
+  "level": "series:world-of-outlaws-sprint",
+  "id": "econ:salaries-world-of-outlaws-sprint"
+ },
+ {
+  "series": "series:f4-us",
+  "champion": {
+   "value": 100000,
+   "unit": "USD",
+   "year_basis": 2018,
+   "confidence": "medium",
+   "sources": [
+    "src:f4-us-costs"
+   ],
+   "notes": null
+  },
+  "topic": "scholarships",
+  "level": "series:f4-us",
+  "id": "econ:scholarships-f4-us"
+ },
+ {
+  "series": "series:indy-nxt",
+  "champion": {
+   "min": 500000,
+   "max": 1300000,
+   "unit": "USD",
+   "year_basis": 2024,
+   "confidence": "high",
+   "sources": [
+    "src:indynxt-prizes-2023",
+    "src:the-race-lights-prize-2022"
+   ],
+   "notes": "2021 ~$1.2-1.3M with 3 guaranteed races; 2022 $500k; 2023+ $850k (+$125k P2, $65k P3)"
+  },
+  "topic": "scholarships",
+  "level": "series:indy-nxt",
+  "id": "econ:scholarships-indy-nxt"
+ },
+ {
+  "series": "series:mx5-cup",
+  "champion": {
+   "value": 200000,
+   "unit": "USD",
+   "year_basis": 2024,
+   "confidence": "high",
+   "sources": [
+    "src:mazda-mx5cup-scholarship"
+   ],
+   "notes": "Mazda Road to 24"
+  },
+  "topic": "scholarships",
+  "level": "series:mx5-cup",
+  "id": "econ:scholarships-mx5-cup"
+ },
+ {
+  "series": "series:usf-juniors",
+  "champion": {
+   "min": 241890,
+   "max": 263700,
+   "unit": "USD",
+   "year_basis": 2024,
+   "confidence": "high",
+   "sources": [
+    "src:indymotorspeedway-ladder",
+    "src:midohio-usf-scholarships-2024"
+   ],
+   "notes": "2023 / 2024 values, toward USF2000"
+  },
+  "topic": "scholarships",
+  "level": "series:usf-juniors",
+  "id": "econ:scholarships-usf-juniors"
+ },
+ {
+  "series": "series:usf-pro-2000",
+  "champion": {
+   "min": 546500,
+   "max": 681500,
+   "unit": "USD",
+   "year_basis": 2026,
+   "confidence": "high",
+   "sources": [
+    "src:midohio-usf-scholarships-2024",
+    "src:usopenwheelnation-indynxt-costs-2025",
+    "src:wiki-usf-pro-2000-2026"
+   ],
+   "notes": "2024 $681.5k; 2026 $593k; toward Indy NXT"
+  },
+  "topic": "scholarships",
+  "level": "series:usf-pro-2000",
+  "id": "econ:scholarships-usf-pro-2000"
+ },
+ {
+  "series": "series:usf2000",
+  "champion": {
+   "min": 433200,
+   "max": 458400,
+   "unit": "USD",
+   "year_basis": 2024,
+   "confidence": "high",
+   "sources": [
+    "src:indymotorspeedway-ladder",
+    "src:midohio-usf-scholarships-2024"
+   ],
+   "notes": "toward USF Pro 2000"
+  },
+  "topic": "scholarships",
+  "level": "series:usf2000",
+  "id": "econ:scholarships-usf2000"
+ },
+ {
+  "tier": 1,
+  "level": "local entry",
+  "examples": [
+   "street/hobby stock",
+   "Legends",
+   "IMCA sport compact"
+  ],
+  "budget": {
+   "min": 8000,
+   "max": 40000,
+   "unit": "USD/season",
+   "year_basis": 2024,
+   "confidence": "low",
+   "sources": [
+    "src:uslegendcars-start",
+    "src:thegazette-iowa-costs-2017"
+   ],
+   "notes": "informed estimate: new Legends car $17.5k; IMCA Modified $30-70k sits at the top of this range"
+  },
+  "car_new": {
+   "min": 17500,
+   "max": 17500,
+   "unit": "USD",
+   "year_basis": 2022,
+   "confidence": "medium",
+   "sources": [
+    "src:uslegendcars-start"
+   ],
+   "notes": "Legends car"
+  },
+  "topic": "season_budgets_by_tier",
+  "id": "econ:season-budgets-by-tier-1"
+ },
+ {
+  "tier": 2,
+  "level": "local top / advanced amateur",
+  "examples": [
+   "IMCA late model",
+   "IMCA modified",
+   "Late Model Stock (asphalt)"
+  ],
+  "budget": {
+   "min": 30000,
+   "max": 200000,
+   "unit": "USD/season",
+   "year_basis": 2018,
+   "confidence": "medium",
+   "sources": [
+    "src:thegazette-iowa-costs-2017",
+    "src:shorttrackscene-lms-costs-2018"
+   ],
+   "notes": "IMCA modified $30-70k; IMCA late model $60-74k for 40 races (2017); Late Model Stock $150-200k (2018)"
+  },
+  "typical_net_loss": {
+   "min": 30000,
+   "max": 50000,
+   "unit": "USD/season",
+   "year_basis": 2017,
+   "confidence": "medium",
+   "sources": [
+    "src:thegazette-iowa-costs-2017"
+   ],
+   "notes": null
+  },
+  "topic": "season_budgets_by_tier",
+  "id": "econ:season-budgets-by-tier-2"
+ },
+ {
+  "tier": 3,
+  "level": "regional",
+  "examples": [
+   "national/regional dirt late model tour",
+   "modified tour",
+   "USF2000",
+   "F4 US"
+  ],
+  "budget": {
+   "min": 150000,
+   "max": 550000,
+   "unit": "USD/season",
+   "year_basis": 2017,
+   "confidence": "medium",
+   "sources": [
+    "src:floracing-dlm-budget-2017",
+    "src:floracing-modified-budget-2017",
+    "src:f4-us-costs",
+    "src:youarecurrent-usf2000-2019"
+   ],
+   "notes": "DLM national tour $500-550k ground-up ($200-250k added car); modified tour ~$170k excl. rig; F4 US $130-195k; USF2000 ~$350k (2019)"
+  },
+  "usf2000_seat": {
+   "min": 300000,
+   "max": 550000,
+   "unit": "USD/season",
+   "year_basis": 2024,
+   "confidence": "low",
+   "sources": [
+    "src:youarecurrent-usf2000-2019",
+    "src:midohio-usf-scholarships-2024"
+   ],
+   "notes": "2019 ~$350k; 2024 Juniors->USF2000 scholarship $263.7k is widely described as covering roughly half; estimate"
+  },
+  "topic": "season_budgets_by_tier",
+  "id": "econ:season-budgets-by-tier-3"
+ },
+ {
+  "tier": 4,
+  "level": "national development",
+  "examples": [
+   "ARCA Menards",
+   "USF Pro 2000",
+   "USAC national midget"
+  ],
+  "arca_top_team": {
+   "min": 1000000,
+   "max": 1400000,
+   "unit": "USD/season",
+   "year_basis": 2025,
+   "confidence": "low",
+   "sources": [
+    "src:speedwayactionimages-arca-2025",
+    "src:seriouslyfast-arca-2025"
+   ],
+   "notes": "~$100k/race at Venturini; ~$1.2M full season (snippet)"
+  },
+  "usf_pro_2000_seat": {
+   "min": 650000,
+   "max": 1000000,
+   "unit": "USD/season",
+   "year_basis": 2024,
+   "confidence": "low",
+   "sources": [
+    "src:youarecurrent-usf2000-2019",
+    "src:midohio-usf-scholarships-2024"
+   ],
+   "notes": "~$700k in 2019; 2024 champion scholarship to NXT $681.5k; estimate"
+  },
+  "usac_midget": {
+   "min": 200000,
+   "max": 400000,
+   "unit": "USD/season",
+   "year_basis": 2024,
+   "confidence": "low",
+   "sources": [
+    "src:indianaopenwheel-midget-2008"
+   ],
+   "notes": "~$200k at retail in 2008 (forum); inflated estimate"
+  },
+  "topic": "season_budgets_by_tier",
+  "id": "econ:season-budgets-by-tier-4"
+ },
+ {
+  "tier": 5,
+  "level": "national pro feeder",
+  "examples": [
+   "NASCAR Trucks",
+   "Indy NXT",
+   "IMSA Pilot Challenge"
+  ],
+  "trucks_team_cost_per_truck": {
+   "min": 3000000,
+   "max": 4500000,
+   "unit": "USD/season",
+   "year_basis": 2017,
+   "confidence": "medium",
+   "sources": [
+    "src:foxsports-kbusch-truck-costs-2017"
+   ],
+   "notes": "KBM $3.2M; Keselowski ~$4.5M"
+  },
+  "trucks_good_ride_per_race": {
+   "min": 130000,
+   "max": 130000,
+   "unit": "USD/race",
+   "year_basis": 2026,
+   "confidence": "medium",
+   "sources": [
+    "src:yahoo-baldwin-costs-2026"
+   ],
+   "notes": null
+  },
+  "indy_nxt_seat": {
+   "min": 1200000,
+   "max": 1500000,
+   "unit": "USD/season",
+   "year_basis": 2024,
+   "confidence": "medium",
+   "sources": [
+    "src:usopenwheelnation-indynxt-costs-2025"
+   ],
+   "notes": null
+  },
+  "imsa_pilot_challenge_entry_fees": {
+   "min": 48930,
+   "max": 49076,
+   "unit": "USD/season",
+   "year_basis": 2023,
+   "confidence": "high",
+   "sources": [
+    "src:imsa-impc-fees-2023"
+   ],
+   "notes": "entry fees only; car/team budget not found"
+  },
+  "topic": "season_budgets_by_tier",
+  "id": "econ:season-budgets-by-tier-5"
+ },
+ {
+  "tier": 6,
+  "level": "second national tier",
+  "examples": [
+   "NASCAR Xfinity/O'Reilly",
+   "IMSA GTD",
+   "WoO 410 sprint"
+  ],
+  "xfinity_midpack_team_cost": {
+   "min": 3350000,
+   "max": 4000000,
+   "unit": "USD/season",
+   "year_basis": 2025,
+   "confidence": "medium",
+   "sources": [
+    "src:autopian-xfinity-costs-2025"
+   ],
+   "notes": "$101.6k/race operating; $4M sustainable minimum"
+  },
+  "xfinity_good_ride_per_race": {
+   "min": 130000,
+   "max": 160000,
+   "unit": "USD/race",
+   "year_basis": 2026,
+   "confidence": "medium",
+   "sources": [
+    "src:yahoo-baldwin-costs-2026"
+   ],
+   "notes": null
+  },
+  "imsa_gtd_per_car": {
+   "min": 3000000,
+   "max": 5000000,
+   "unit": "USD/season",
+   "year_basis": 2020,
+   "confidence": "medium",
+   "sources": [
+    "src:dailysportscar-gt3-budgets-2020"
+   ],
+   "notes": "sprint rounds only ~$2M"
+  },
+  "topic": "season_budgets_by_tier",
+  "id": "econ:season-budgets-by-tier-6"
+ },
+ {
+  "tier": 7,
+  "level": "premier",
+  "examples": [
+   "NASCAR Cup",
+   "IndyCar"
+  ],
+  "cup_per_car": {
+   "min": 18000000,
+   "max": 20000000,
+   "unit": "USD/season",
+   "year_basis": 2024,
+   "confidence": "medium",
+   "sources": [
+    "src:racingnews-hamlin-costs-2024",
+    "src:nbcsports-ibj-lilly-xfinity-2015"
+   ],
+   "notes": "excl. driver salary"
+  },
+  "cup_revenue_per_car": {
+   "min": 8200000,
+   "max": 43000000,
+   "unit": "USD/season",
+   "year_basis": 2024,
+   "confidence": "high",
+   "sources": [
+    "src:charter-trial-2025"
+   ],
+   "notes": "2020-24 range across a dozen teams; average loss ~$2.2M/car"
+  },
+  "indycar_sponsorship_target_per_car": {
+   "min": 8000000,
+   "max": 10000000,
+   "unit": "USD/season",
+   "year_basis": 2025,
+   "confidence": "low",
+   "sources": [
+    "src:sportskeeda-daly-jhr-2025"
+   ],
+   "notes": null
+  },
+  "topic": "season_budgets_by_tier",
+  "id": "econ:season-budgets-by-tier-7"
+ },
+ {
+  "tier": 0,
+  "level": "youth / entry",
+  "examples": [
+   "quarter midget (local club)",
+   "regional junior karting",
+   "national junior karting"
+  ],
+  "budget": {
+   "min": 3000,
+   "max": 15000,
+   "unit": "USD/season",
+   "year_basis": 2024,
+   "confidence": "low",
+   "sources": [
+    "src:ncqma-qa"
+   ],
+   "notes": "quarter midget club racing: car $1-5k, engine ~$400, entries $35-125/event; estimate"
+  },
+  "budget_national_karting": {
+   "min": 50000,
+   "max": 120000,
+   "unit": "USD/season",
+   "year_basis": 2015,
+   "confidence": "low",
+   "sources": [
+    "src:karting-cost-aggregators"
+   ],
+   "notes": "national-level junior karting (Reuters 2015 figure, second-hand)"
+  },
+  "topic": "season_budgets_by_tier",
+  "id": "econ:season-budgets-by-tier-youth-entry"
+ },
+ {
+  "series": "series:nascar-cup",
+  "full_season_primary": {
+   "min": 5000000,
+   "max": 35000000,
+   "unit": "USD/season",
+   "year_basis": 2015,
+   "confidence": "medium",
+   "sources": [
+    "src:jeffgluck-tjmartins-2017",
+    "src:nbcsports-ibj-lilly-xfinity-2015"
+   ],
+   "notes": "contenders sought $18-20M/yr (2015); modern seasons patchworked across sponsors"
+  },
+  "fortune500_share_of_primaries": {
+   "min": 0.2,
+   "max": 0.6,
+   "unit": "share",
+   "year_basis": 2025,
+   "confidence": "medium",
+   "sources": [
+    "src:frontstretch-sponsor-decline"
+   ],
+   "notes": "~60% in 2005 -> ~20% recently"
+  },
+  "topic": "sponsorship_deal_sizes",
+  "level": "series:nascar-cup",
+  "id": "econ:sponsorship-deal-sizes-nascar-cup"
+ },
+ {
+  "series": "series:nascar-trucks",
+  "primary_per_race": {
+   "min": 15000,
+   "max": 130000,
+   "unit": "USD/race",
+   "year_basis": 2026,
+   "confidence": "low",
+   "sources": [
+    "src:rtrsports-nascar-sponsorship-2026"
+   ],
+   "notes": null
+  },
+  "primary_full_season": {
+   "min": 540000,
+   "max": 1800000,
+   "unit": "USD/season",
+   "year_basis": 2026,
+   "confidence": "low",
+   "sources": [
+    "src:rtrsports-nascar-sponsorship-2026"
+   ],
+   "notes": null
+  },
+  "topic": "sponsorship_deal_sizes",
+  "level": "series:nascar-trucks",
+  "id": "econ:sponsorship-deal-sizes-nascar-trucks"
+ },
+ {
+  "series": "series:nascar-xfinity",
+  "primary_per_race": {
+   "min": 75000,
+   "max": 300000,
+   "unit": "USD/race",
+   "year_basis": 2025,
+   "confidence": "low",
+   "sources": [
+    "src:flowracers-sponsorship",
+    "src:autopian-xfinity-costs-2025"
+   ],
+   "notes": null
+  },
+  "associate_per_race": {
+   "min": 5000,
+   "max": 20000,
+   "unit": "USD/race",
+   "year_basis": 2025,
+   "confidence": "low",
+   "sources": [
+    "src:flowracers-sponsorship"
+   ],
+   "notes": null
+  },
+  "full_program_example": {
+   "value": 10000000,
+   "unit": "USD/season",
+   "year_basis": 2015,
+   "confidence": "medium",
+   "sources": [
+    "src:nbcsports-ibj-lilly-xfinity-2015"
+   ],
+   "notes": "Eli Lilly: ~$5M to team + ~$5M activation"
+  },
+  "topic": "sponsorship_deal_sizes",
+  "level": "series:nascar-xfinity",
+  "id": "econ:sponsorship-deal-sizes-nascar-xfinity"
+ }
+]

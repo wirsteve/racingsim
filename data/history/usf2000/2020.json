@@ -1,0 +1,1428 @@
+{
+ "series": "formula_2000",
+ "year": 2020,
+ "official_name": "2020 U.S. F2000 National Championship",
+ "data_level": "full",
+ "teams_source": "teams_table",
+ "teams": [
+  {
+   "team": "Cape Motorsports",
+   "team_wiki": "Cape_Motorsports",
+   "owner": null,
+   "manufacturer": null,
+   "chassis": null,
+   "cars": [
+    {
+     "number": "2",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Josh Green",
+       "wiki": "Josh_Green_(racing_driver)",
+       "rounds": "C, All",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "3",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Reece Gold",
+       "wiki": "Reece_Gold",
+       "rounds": "C, All",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "4",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Michael d'Orlando",
+       "wiki": "Michael_d'Orlando",
+       "rounds": "C, All",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "8",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Kyle Dupell",
+       "wiki": null,
+       "rounds": "C, All",
+       "nat": "USA"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "DEForce Racing",
+   "team_wiki": "DEForce_Racing",
+   "owner": null,
+   "manufacturer": null,
+   "chassis": null,
+   "cars": [
+    {
+     "number": "10",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Mathias Ramirez",
+       "wiki": null,
+       "rounds": "C",
+       "nat": "USA"
+      },
+      {
+       "name": "Nico Christodoulou",
+       "wiki": "Nico_Christodoulou",
+       "rounds": "1–2",
+       "nat": "CAN"
+      },
+      {
+       "name": "Cameron Shields",
+       "wiki": "Cameron_Shields",
+       "rounds": "7–17",
+       "nat": "AUS"
+      }
+     ]
+    },
+    {
+     "number": "11",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Josh Sarchet",
+       "wiki": null,
+       "rounds": "10–12",
+       "nat": "USA"
+      },
+      {
+       "name": "Nico Christodoulou",
+       "wiki": "Nico_Christodoulou",
+       "rounds": "13–15",
+       "nat": "CAN"
+      },
+      {
+       "name": "Gil Molina",
+       "wiki": null,
+       "rounds": "16–17",
+       "nat": "MEX"
+      }
+     ]
+    },
+    {
+     "number": "12",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Kiko Porto",
+       "wiki": "Kiko_Porto",
+       "rounds": "C, 3–12, 16–17",
+       "nat": "BRA"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Exclusive Autosport",
+   "team_wiki": null,
+   "owner": null,
+   "manufacturer": null,
+   "chassis": null,
+   "cars": [
+    {
+     "number": "1",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Prescott Campbell",
+       "wiki": "Prescott_Campbell",
+       "rounds": "C, All",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "16",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Josh Pierson",
+       "wiki": "Josh_Pierson",
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "44",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Christian Brooks",
+       "wiki": "Christian_Brooks",
+       "rounds": "C, All",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "91",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Manuel Cabrera",
+       "wiki": null,
+       "rounds": "C",
+       "nat": "MEX"
+      }
+     ],
+     "full_time_source": "standings_starts"
+    }
+   ]
+  },
+  {
+   "team": "Jay Howard Driver Development",
+   "team_wiki": "Jay_Howard_Driver_Development",
+   "owner": null,
+   "manufacturer": null,
+   "chassis": null,
+   "cars": [
+    {
+     "number": "5",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Wyatt Brichacek",
+       "wiki": "Wyatt_Brichacek",
+       "rounds": "C, All",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "6",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Christian Rasmussen",
+       "wiki": "Christian_Rasmussen_(racing_driver)",
+       "rounds": "C, All",
+       "nat": "DNK"
+      }
+     ]
+    },
+    {
+     "number": "7",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Christian Bogle",
+       "wiki": "Christian_Bogle",
+       "rounds": "C, All",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "9",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Nolan Siegel",
+       "wiki": "Nolan_Siegel",
+       "rounds": "C, All",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "18",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Bijoy Garg",
+       "wiki": "Bijoy_Garg",
+       "rounds": "1–9, 16–17",
+       "nat": "USA"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Legacy Autosport",
+   "team_wiki": null,
+   "owner": null,
+   "manufacturer": null,
+   "chassis": null,
+   "cars": [
+    {
+     "number": "20",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Cameron Shields",
+       "wiki": "Cameron_Shields",
+       "rounds": "C, 1–6",
+       "nat": "AUS"
+      },
+      {
+       "name": "Simon Sikes",
+       "wiki": "Simon_Sikes",
+       "rounds": "7–12, 16–17",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "24",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Michael Myers",
+       "wiki": "Michael_Myers_(racing_driver)",
+       "rounds": "7–12, 16–17",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "27",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Ayrton Ori",
+       "wiki": "Ayrton_Ori",
+       "rounds": "C, 1–5",
+       "nat": "USA"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Miller Vinatieri Motorsports",
+   "team_wiki": "Dr._Jack_Miller",
+   "owner": null,
+   "manufacturer": null,
+   "chassis": null,
+   "cars": [
+    {
+     "number": "40",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Jack William Miller",
+       "wiki": "Jack_William_Miller",
+       "rounds": "C, All",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "41",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Max Kaeser",
+       "wiki": "Max_Kaeser",
+       "rounds": "C, 1–12",
+       "nat": "USA"
+      },
+      {
+       "name": "Kent Vaccaro",
+       "wiki": null,
+       "rounds": "13–15",
+       "nat": "USA"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Newman Wachs Racing",
+   "team_wiki": "Newman_Wachs_Racing",
+   "owner": null,
+   "manufacturer": null,
+   "chassis": null,
+   "cars": [
+    {
+     "number": "38",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Jordan Missig",
+       "wiki": "Jordan_Missig",
+       "rounds": "C",
+       "nat": "USA"
+      }
+     ],
+     "full_time_source": "standings_starts"
+    }
+   ]
+  },
+  {
+   "team": "Pabst Racing",
+   "team_wiki": "Pabst_Racing",
+   "owner": null,
+   "manufacturer": null,
+   "chassis": null,
+   "cars": [
+    {
+     "number": "21",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Yuven Sundaramoorthy",
+       "wiki": "Yuven_Sundaramoorthy",
+       "rounds": "C, All",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "22",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Eduardo Barrichello",
+       "wiki": "Eduardo_Barrichello",
+       "rounds": "C, All",
+       "nat": "BRA"
+      }
+     ]
+    },
+    {
+     "number": "23",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Matthew Round-Garrido",
+       "wiki": "Matthew_Round-Garrido",
+       "rounds": "C, All",
+       "nat": "GBR"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "standings": [
+  {
+   "pos": 1,
+   "name": "Christian Rasmussen",
+   "wiki": "Christian_Rasmussen_(racing_driver)",
+   "points": 394,
+   "wins": 9,
+   "podiums": 10,
+   "top5": 12,
+   "starts": 17,
+   "nat": "DNK",
+   "results": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    6,
+    5,
+    21,
+    14,
+    20,
+    1,
+    2,
+    1,
+    1,
+    19,
+    5
+   ]
+  },
+  {
+   "pos": 2,
+   "name": "Eduardo Barrichello",
+   "wiki": "Eduardo_Barrichello",
+   "points": 353,
+   "wins": 3,
+   "podiums": 9,
+   "top5": 11,
+   "starts": 17,
+   "nat": "BRA",
+   "results": [
+    3,
+    5,
+    2,
+    11,
+    6,
+    10,
+    1,
+    1,
+    5,
+    10,
+    2,
+    7,
+    1,
+    3,
+    7,
+    2,
+    3
+   ]
+  },
+  {
+   "pos": 3,
+   "name": "Reece Gold",
+   "wiki": "Reece_Gold",
+   "points": 341,
+   "wins": 2,
+   "podiums": 10,
+   "top5": 10,
+   "starts": 17,
+   "nat": "USA",
+   "results": [
+    19,
+    7,
+    3,
+    2,
+    3,
+    2,
+    2,
+    7,
+    1,
+    2,
+    1,
+    3,
+    15,
+    6,
+    9,
+    3,
+    9
+   ]
+  },
+  {
+   "pos": 4,
+   "name": "Michael d'Orlando",
+   "wiki": "Michael_d'Orlando",
+   "points": 295,
+   "wins": 1,
+   "podiums": 5,
+   "top5": 11,
+   "starts": 17,
+   "nat": "USA",
+   "results": [
+    5,
+    2,
+    4,
+    10,
+    2,
+    4,
+    20,
+    6,
+    19,
+    1,
+    7,
+    2,
+    3,
+    4,
+    17,
+    5,
+    4
+   ]
+  },
+  {
+   "pos": 5,
+   "name": "Christian Brooks",
+   "wiki": "Christian_Brooks",
+   "points": 284,
+   "wins": 1,
+   "podiums": 3,
+   "top5": 10,
+   "starts": 17,
+   "nat": "USA",
+   "results": [
+    8,
+    20,
+    6,
+    5,
+    4,
+    5,
+    9,
+    3,
+    2,
+    4,
+    4,
+    8,
+    4,
+    7,
+    5,
+    20,
+    1
+   ]
+  },
+  {
+   "pos": 6,
+   "name": "Josh Green",
+   "wiki": "Josh_Green_(racing_driver)",
+   "points": 245,
+   "wins": 0,
+   "podiums": 3,
+   "top5": 6,
+   "starts": 17,
+   "nat": "USA",
+   "results": [
+    2,
+    3,
+    17,
+    8,
+    7,
+    6,
+    4,
+    11,
+    6,
+    5,
+    19,
+    9,
+    18,
+    9,
+    2,
+    4,
+    11
+   ]
+  },
+  {
+   "pos": 7,
+   "name": "Matthew Round-Garrido",
+   "wiki": "Matthew_Round-Garrido",
+   "points": 228,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 5,
+   "starts": 17,
+   "nat": "GBR",
+   "results": [
+    4,
+    4,
+    5,
+    4,
+    19,
+    7,
+    7,
+    14,
+    9,
+    8,
+    5,
+    6,
+    8,
+    17,
+    14,
+    7,
+    6
+   ]
+  },
+  {
+   "pos": 8,
+   "name": "Jack William Miller",
+   "wiki": "Jack_William_Miller",
+   "points": 215,
+   "wins": 0,
+   "podiums": 2,
+   "top5": 4,
+   "starts": 17,
+   "nat": "USA",
+   "results": [
+    18,
+    13,
+    16,
+    17,
+    5,
+    3,
+    21,
+    2,
+    4,
+    15,
+    6,
+    10,
+    7,
+    8,
+    11,
+    6,
+    7
+   ]
+  },
+  {
+   "pos": 9,
+   "name": "Cameron Shields",
+   "wiki": "Cameron_Shields",
+   "points": 214,
+   "wins": 0,
+   "podiums": 2,
+   "top5": 3,
+   "starts": 16,
+   "nat": "AUS",
+   "results": [
+    7,
+    6,
+    9,
+    9,
+    "DNS",
+    12,
+    11,
+    13,
+    7,
+    6,
+    3,
+    5,
+    6,
+    2,
+    6,
+    18,
+    19
+   ]
+  },
+  {
+   "pos": 10,
+   "name": "Kiko Porto",
+   "wiki": "Kiko_Porto",
+   "points": 198,
+   "wins": 1,
+   "podiums": 4,
+   "top5": 5,
+   "starts": 12,
+   "nat": "BRA",
+   "results": [
+    null,
+    null,
+    8,
+    18,
+    11,
+    14,
+    3,
+    4,
+    3,
+    7,
+    8,
+    11,
+    null,
+    null,
+    null,
+    1,
+    2
+   ]
+  },
+  {
+   "pos": 11,
+   "name": "Prescott Campbell",
+   "wiki": "Prescott_Campbell",
+   "points": 167,
+   "wins": 0,
+   "podiums": 1,
+   "top5": 2,
+   "starts": 17,
+   "nat": "USA",
+   "results": [
+    10,
+    12,
+    11,
+    12,
+    18,
+    13,
+    14,
+    16,
+    10,
+    21,
+    10,
+    15,
+    5,
+    11,
+    3,
+    12,
+    8
+   ]
+  },
+  {
+   "pos": 12,
+   "name": "Yuven Sundaramoorthy",
+   "wiki": "Yuven_Sundaramoorthy",
+   "points": 165,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 1,
+   "starts": 16,
+   "nat": "USA",
+   "results": [
+    9,
+    8,
+    20,
+    6,
+    9,
+    9,
+    8,
+    9,
+    14,
+    9,
+    14,
+    16,
+    10,
+    5,
+    12,
+    21,
+    "DNS"
+   ]
+  },
+  {
+   "pos": 13,
+   "name": "Nolan Siegel",
+   "wiki": "Nolan_Siegel",
+   "points": 158,
+   "wins": 0,
+   "podiums": 2,
+   "top5": 3,
+   "starts": 17,
+   "nat": "USA",
+   "results": [
+    20,
+    14,
+    18,
+    3,
+    14,
+    11,
+    5,
+    8,
+    20,
+    3,
+    9,
+    19,
+    9,
+    18,
+    18,
+    14,
+    12
+   ]
+  },
+  {
+   "pos": 14,
+   "name": "Kyle Dupell",
+   "wiki": null,
+   "points": 147,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 1,
+   "starts": 17,
+   "nat": "USA",
+   "results": [
+    14,
+    10,
+    7,
+    7,
+    8,
+    8,
+    18,
+    21,
+    18,
+    20,
+    21,
+    12,
+    17,
+    13,
+    4,
+    9,
+    14
+   ]
+  },
+  {
+   "pos": 15,
+   "name": "Christian Bogle",
+   "wiki": "Christian_Bogle",
+   "points": 144,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 17,
+   "nat": "USA",
+   "results": [
+    6,
+    9,
+    19,
+    14,
+    13,
+    16,
+    15,
+    15,
+    15,
+    11,
+    11,
+    13,
+    11,
+    12,
+    8,
+    10,
+    18
+   ]
+  },
+  {
+   "pos": 16,
+   "name": "Wyatt Brichacek",
+   "wiki": "Wyatt_Brichacek",
+   "points": 113,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 17,
+   "nat": "USA",
+   "results": [
+    16,
+    17,
+    12,
+    20,
+    12,
+    18,
+    12,
+    17,
+    13,
+    12,
+    12,
+    14,
+    14,
+    15,
+    16,
+    16,
+    10
+   ]
+  },
+  {
+   "pos": 17,
+   "name": "Bijoy Garg",
+   "wiki": "Bijoy_Garg",
+   "points": 86,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 11,
+   "nat": "USA",
+   "results": [
+    11,
+    15,
+    10,
+    13,
+    10,
+    17,
+    13,
+    19,
+    11,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    11,
+    17
+   ]
+  },
+  {
+   "pos": 18,
+   "name": "Max Kaeser",
+   "wiki": "Max_Kaeser",
+   "points": 79,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 12,
+   "nat": "USA",
+   "results": [
+    15,
+    18,
+    14,
+    15,
+    16,
+    15,
+    10,
+    10,
+    8,
+    18,
+    17,
+    21,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 19,
+   "name": "Simon Sikes",
+   "wiki": "Simon_Sikes",
+   "points": 70,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 1,
+   "starts": 8,
+   "nat": "USA",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    16,
+    12,
+    16,
+    13,
+    18,
+    4,
+    null,
+    null,
+    null,
+    8,
+    13
+   ]
+  },
+  {
+   "pos": 20,
+   "name": "Josh Pierson",
+   "wiki": "Josh_Pierson",
+   "points": 57,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 16,
+   "nat": "USA",
+   "results": [
+    13,
+    19,
+    15,
+    16,
+    17,
+    19,
+    17,
+    18,
+    12,
+    17,
+    16,
+    18,
+    13,
+    10,
+    10,
+    15,
+    "DNS"
+   ]
+  },
+  {
+   "pos": 21,
+   "name": "Nico Christodoulou",
+   "wiki": "Nico_Christodoulou",
+   "points": 34,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 5,
+   "nat": "CAN",
+   "results": [
+    17,
+    11,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    12,
+    16,
+    15,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 22,
+   "name": "Ayrton Ori",
+   "wiki": "Ayrton_Ori",
+   "points": 30,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 5,
+   "nat": "USA",
+   "results": [
+    12,
+    16,
+    13,
+    19,
+    15,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 23,
+   "name": "Michael Myers",
+   "wiki": "Michael_Myers_(racing_driver)",
+   "points": 29,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 8,
+   "nat": "USA",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    19,
+    20,
+    17,
+    19,
+    15,
+    17,
+    null,
+    null,
+    null,
+    17,
+    15
+   ]
+  },
+  {
+   "pos": 24,
+   "name": "Kent Vaccaro",
+   "wiki": null,
+   "points": 20,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 3,
+   "nat": "USA",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    16,
+    14,
+    13,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 25,
+   "name": "Josh Sarchet",
+   "wiki": null,
+   "points": 14,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 3,
+   "nat": "USA",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    16,
+    13,
+    20,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 26,
+   "name": "Gil Molina",
+   "wiki": null,
+   "points": 13,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 2,
+   "nat": "MEX",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    13,
+    16
+   ]
+  }
+ ],
+ "schedule": [
+  {
+   "round": 1,
+   "date": "2020-07-09",
+   "race": "USF2000 Grand Prix of Road America Presented by Cooper Tires Honoring First Responders",
+   "track": "Road America",
+   "city": "Elkhart Lake",
+   "state": "WI",
+   "country": "USA",
+   "winner": "Christian Rasmussen",
+   "winner_wiki": "Christian_Rasmussen_(racing_driver)",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 2,
+   "date": "2020-07-09",
+   "race": "USF2000 Grand Prix of Road America Presented by Cooper Tires Honoring First Responders",
+   "track": "Road America",
+   "city": "Elkhart Lake",
+   "state": "WI",
+   "country": "USA",
+   "winner": "Christian Rasmussen",
+   "winner_wiki": "Christian_Rasmussen_(racing_driver)",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 3,
+   "date": "2020-07-29",
+   "race": "USF2000 Championship Grand Prix of Mid-Ohio Presented by Cooper Tires Honoring First Responders",
+   "track": "Mid-Ohio Sports Car Course",
+   "city": "Lexington",
+   "state": "OH",
+   "country": "USA",
+   "winner": "Christian Rasmussen",
+   "winner_wiki": "Christian_Rasmussen_(racing_driver)",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 4,
+   "date": "2020-07-29",
+   "race": "USF2000 Championship Grand Prix of Mid-Ohio Presented by Cooper Tires Honoring First Responders",
+   "track": "Mid-Ohio Sports Car Course",
+   "city": "Lexington",
+   "state": "OH",
+   "country": "USA",
+   "winner": "Christian Rasmussen",
+   "winner_wiki": "Christian_Rasmussen_(racing_driver)",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 5,
+   "date": "2020-07-29",
+   "race": "USF2000 Championship Grand Prix of Mid-Ohio Presented by Cooper Tires Honoring First Responders",
+   "track": "Mid-Ohio Sports Car Course",
+   "city": "Lexington",
+   "state": "OH",
+   "country": "USA",
+   "winner": "Christian Rasmussen",
+   "winner_wiki": "Christian_Rasmussen_(racing_driver)",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 6,
+   "date": "2020-08-22",
+   "race": "Cooper Tires Freedom 75",
+   "track": "Lucas Oil Raceway",
+   "city": "Brownsburg",
+   "state": "IN",
+   "country": "USA",
+   "winner": "Christian Rasmussen",
+   "winner_wiki": "Christian_Rasmussen_(racing_driver)",
+   "track_type": "oval",
+   "cancelled": false
+  },
+  {
+   "round": 7,
+   "date": "2020-09-03",
+   "race": "Cooper Tires USF2000 Indy Grand Prix",
+   "track": "Indianapolis Motor Speedway Road Course",
+   "city": "Speedway",
+   "state": "IN",
+   "country": "USA",
+   "winner": "Eduardo Barrichello",
+   "winner_wiki": "Eduardo_Barrichello",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 8,
+   "date": "2020-09-03",
+   "race": "Cooper Tires USF2000 Indy Grand Prix",
+   "track": "Indianapolis Motor Speedway Road Course",
+   "city": "Speedway",
+   "state": "IN",
+   "country": "USA",
+   "winner": "Eduardo Barrichello",
+   "winner_wiki": "Eduardo_Barrichello",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 9,
+   "date": "2020-09-03",
+   "race": "Cooper Tires USF2000 Indy Grand Prix",
+   "track": "Indianapolis Motor Speedway Road Course",
+   "city": "Speedway",
+   "state": "IN",
+   "country": "USA",
+   "winner": "Reece Gold",
+   "winner_wiki": "Reece_Gold",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 10,
+   "date": "2020-09-11",
+   "race": "Cooper Tires USF2000 Grand Prix of Mid-Ohio",
+   "track": "Mid-Ohio Sports Car Course",
+   "city": "Lexington",
+   "state": "OH",
+   "country": "USA",
+   "winner": "Michael d'Orlando",
+   "winner_wiki": "Michael_d'Orlando",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 11,
+   "date": "2020-09-11",
+   "race": "Cooper Tires USF2000 Grand Prix of Mid-Ohio",
+   "track": "Mid-Ohio Sports Car Course",
+   "city": "Lexington",
+   "state": "OH",
+   "country": "USA",
+   "winner": "Reece Gold",
+   "winner_wiki": "Reece_Gold",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 12,
+   "date": "2020-09-11",
+   "race": "Cooper Tires USF2000 Grand Prix of Mid-Ohio",
+   "track": "Mid-Ohio Sports Car Course",
+   "city": "Lexington",
+   "state": "OH",
+   "country": "USA",
+   "winner": "Christian Rasmussen",
+   "winner_wiki": "Christian_Rasmussen_(racing_driver)",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 13,
+   "date": "2020-10-09",
+   "race": "The Andersen Companies USF2000 Grand Prix at New Jersey Motorsports Park",
+   "track": "New Jersey Motorsports Park",
+   "city": "Millville",
+   "state": "NJ",
+   "country": "USA",
+   "winner": "Eduardo Barrichello",
+   "winner_wiki": "Eduardo_Barrichello",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 14,
+   "date": "2020-10-09",
+   "race": "The Andersen Companies USF2000 Grand Prix at New Jersey Motorsports Park",
+   "track": "New Jersey Motorsports Park",
+   "city": "Millville",
+   "state": "NJ",
+   "country": "USA",
+   "winner": "Christian Rasmussen",
+   "winner_wiki": "Christian_Rasmussen_(racing_driver)",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 15,
+   "date": "2020-10-09",
+   "race": "The Andersen Companies USF2000 Grand Prix at New Jersey Motorsports Park",
+   "track": "New Jersey Motorsports Park",
+   "city": "Millville",
+   "state": "NJ",
+   "country": "USA",
+   "winner": "Christian Rasmussen",
+   "winner_wiki": "Christian_Rasmussen_(racing_driver)",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 16,
+   "date": "2020-10-23",
+   "race": "Cooper Tires USF2000 Grand Prix of St. Petersburg Presented by Andersen RacePark",
+   "track": "Streets of St. Petersburg",
+   "city": "St. Petersburg",
+   "state": "FL",
+   "country": "USA",
+   "winner": "Kiko Porto",
+   "winner_wiki": "Kiko_Porto",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 17,
+   "date": "2020-10-23",
+   "race": "Cooper Tires USF2000 Grand Prix of St. Petersburg Presented by Cooper Tires",
+   "track": "Streets of St. Petersburg",
+   "city": "St. Petersburg",
+   "state": "FL",
+   "country": "USA",
+   "winner": "Christian Brooks",
+   "winner_wiki": "Christian_Brooks",
+   "track_type": "road",
+   "cancelled": false
+  }
+ ],
+ "sources": [
+  "https://en.wikipedia.org/wiki/2020_U.S._F2000_National_Championship",
+  "https://www.wikidata.org (driver bios)"
+ ]
+}

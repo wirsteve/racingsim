@@ -1,0 +1,936 @@
+{
+ "series": "formula_lights",
+ "year": 2015,
+ "official_name": "2015 Indy Lights season",
+ "era": "IRL feeder (Infiniti Pro / Indy Pro / Indy Lights / Indy NXT)",
+ "data_level": "full",
+ "teams_source": "teams_table",
+ "teams": [
+  {
+   "team": "8 Star Motorsports",
+   "team_wiki": "8_Star_Motorsports",
+   "owner": null,
+   "manufacturer": "Mazda",
+   "chassis": "Dallara",
+   "cars": [
+    {
+     "number": "8",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Scott Hargrove",
+       "wiki": "Scott_Hargrove",
+       "rounds": "1–2",
+       "nat": "CAN"
+      },
+      {
+       "name": "Sean Rayhall",
+       "wiki": "Sean_Rayhall",
+       "rounds": "4–8, 13–16",
+       "nat": "USA"
+      }
+     ]
+    }
+   ],
+   "manufacturer_note": "spec engine (from page text)",
+   "chassis_note": "spec chassis (from page text)"
+  },
+  {
+   "team": "Andretti Autosport",
+   "team_wiki": "Andretti_Autosport",
+   "owner": null,
+   "manufacturer": "Mazda",
+   "chassis": "Dallara",
+   "cars": [
+    {
+     "number": "51",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Shelby Blackstock",
+       "wiki": "Shelby_Blackstock",
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "83",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Matthew Brabham",
+       "wiki": "Matthew_Brabham",
+       "rounds": "1–3",
+       "nat": "AUS"
+      }
+     ]
+    }
+   ],
+   "manufacturer_note": "spec engine (from page text)",
+   "chassis_note": "spec chassis (from page text)"
+  },
+  {
+   "team": "Belardi Auto Racing",
+   "team_wiki": "Belardi_Auto_Racing",
+   "owner": null,
+   "manufacturer": "Mazda",
+   "chassis": "Dallara",
+   "cars": [
+    {
+     "number": "4",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Félix Serrallés",
+       "wiki": "Félix_Serrallés",
+       "rounds": "All",
+       "nat": "PRI"
+      }
+     ]
+    },
+    {
+     "number": "5",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Juan Piedrahita",
+       "wiki": "Juan_Piedrahita",
+       "rounds": "All",
+       "nat": "COL"
+      }
+     ]
+    }
+   ],
+   "manufacturer_note": "spec engine (from page text)",
+   "chassis_note": "spec chassis (from page text)"
+  },
+  {
+   "team": "Carlin",
+   "team_wiki": "Carlin_Motorsport",
+   "owner": null,
+   "manufacturer": "Mazda",
+   "chassis": "Dallara",
+   "cars": [
+    {
+     "number": "11",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Ed Jones",
+       "wiki": "Ed_Jones_(racing_driver)",
+       "rounds": "All",
+       "nat": "ARE"
+      }
+     ]
+    },
+    {
+     "number": "14",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Max Chilton",
+       "wiki": "Max_Chilton",
+       "rounds": "1–8, 11–16",
+       "nat": "GBR"
+      },
+      {
+       "name": "Nelson Piquet Jr.",
+       "wiki": "Nelson_Piquet_Jr.",
+       "rounds": "9–10",
+       "nat": "BRA"
+      }
+     ]
+    }
+   ],
+   "manufacturer_note": "spec engine (from page text)",
+   "chassis_note": "spec chassis (from page text)"
+  },
+  {
+   "team": "Juncos Racing",
+   "team_wiki": "Juncos_Racing",
+   "owner": null,
+   "manufacturer": "Mazda",
+   "chassis": "Dallara",
+   "cars": [
+    {
+     "number": "12",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Spencer Pigot",
+       "wiki": "Spencer_Pigot",
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "18",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Kyle Kaiser",
+       "wiki": "Kyle_Kaiser",
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    }
+   ],
+   "manufacturer_note": "spec engine (from page text)",
+   "chassis_note": "spec chassis (from page text)"
+  },
+  {
+   "team": "Schmidt Peterson Motorsports",
+   "team_wiki": "Schmidt_Peterson_Motorsports",
+   "owner": null,
+   "manufacturer": "Mazda",
+   "chassis": "Dallara",
+   "cars": [
+    {
+     "number": "7",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "RC Enerson",
+       "wiki": "R._C._Enerson",
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "21",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Heamin Choi",
+       "wiki": "Heamin_Choi",
+       "rounds": "15–16",
+       "nat": "KOR"
+      }
+     ]
+    },
+    {
+     "number": "42",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Jack Harvey",
+       "wiki": "Jack_Harvey_(racing_driver)",
+       "rounds": "All",
+       "nat": "GBR"
+      }
+     ]
+    },
+    {
+     "number": "71",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Ethan Ringel",
+       "wiki": "Ethan_Ringel",
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "77",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Scott Anderson",
+       "wiki": "Scott_Anderson_(racing_driver)",
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    }
+   ],
+   "manufacturer_note": "spec engine (from page text)",
+   "chassis_note": "spec chassis (from page text)"
+  }
+ ],
+ "standings": [
+  {
+   "pos": 1,
+   "name": "Spencer Pigot",
+   "wiki": "Spencer_Pigot",
+   "points": 357,
+   "wins": 6,
+   "podiums": 10,
+   "top5": 10,
+   "starts": 16,
+   "nat": "USA",
+   "results": [
+    3,
+    3,
+    2,
+    1,
+    1,
+    7,
+    12,
+    9,
+    1,
+    1,
+    7,
+    8,
+    8,
+    3,
+    1,
+    1
+   ]
+  },
+  {
+   "pos": 2,
+   "name": "Jack Harvey",
+   "wiki": "Jack_Harvey_(racing_driver)",
+   "points": 330,
+   "wins": 2,
+   "podiums": 8,
+   "top5": 12,
+   "starts": 16,
+   "nat": "GBR",
+   "results": [
+    2,
+    2,
+    10,
+    2,
+    2,
+    1,
+    5,
+    1,
+    2,
+    2,
+    4,
+    5,
+    11,
+    10,
+    5,
+    9
+   ]
+  },
+  {
+   "pos": 3,
+   "name": "Ed Jones",
+   "wiki": "Ed_Jones_(racing_driver)",
+   "points": 324,
+   "wins": 3,
+   "podiums": 7,
+   "top5": 11,
+   "starts": 16,
+   "nat": "ARE",
+   "results": [
+    1,
+    1,
+    1,
+    4,
+    11,
+    3,
+    4,
+    10,
+    5,
+    3,
+    8,
+    2,
+    9,
+    9,
+    3,
+    4
+   ]
+  },
+  {
+   "pos": 4,
+   "name": "RC Enerson",
+   "wiki": "R._C._Enerson",
+   "points": 295,
+   "wins": 1,
+   "podiums": 5,
+   "top5": 10,
+   "starts": 16,
+   "nat": "USA",
+   "results": [
+    9,
+    13,
+    4,
+    3,
+    7,
+    5,
+    2,
+    4,
+    8,
+    5,
+    2,
+    3,
+    1,
+    4,
+    6,
+    6
+   ]
+  },
+  {
+   "pos": 5,
+   "name": "Max Chilton",
+   "wiki": "Max_Chilton",
+   "points": 258,
+   "wins": 1,
+   "podiums": 6,
+   "top5": 10,
+   "starts": 13,
+   "nat": "GBR",
+   "results": [
+    12,
+    4,
+    5,
+    5,
+    3,
+    4,
+    3,
+    "DNS",
+    null,
+    null,
+    6,
+    1,
+    2,
+    2,
+    11,
+    3
+   ]
+  },
+  {
+   "pos": 6,
+   "name": "Kyle Kaiser",
+   "wiki": "Kyle_Kaiser",
+   "points": 237,
+   "wins": 0,
+   "podiums": 2,
+   "top5": 7,
+   "starts": 16,
+   "nat": "USA",
+   "results": [
+    5,
+    5,
+    12,
+    8,
+    12,
+    12,
+    6,
+    5,
+    3,
+    9,
+    9,
+    4,
+    4,
+    11,
+    2,
+    10
+   ]
+  },
+  {
+   "pos": 7,
+   "name": "Félix Serrallés",
+   "wiki": "Félix_Serrallés",
+   "points": 225,
+   "wins": 1,
+   "podiums": 2,
+   "top5": 4,
+   "starts": 16,
+   "nat": "PRI",
+   "results": [
+    13,
+    8,
+    3,
+    6,
+    4,
+    9,
+    11,
+    11,
+    "DSQ",
+    7,
+    1,
+    10,
+    10,
+    5,
+    13,
+    8
+   ]
+  },
+  {
+   "pos": 8,
+   "name": "Juan Piedrahita",
+   "wiki": "Juan_Piedrahita",
+   "points": 223,
+   "wins": 0,
+   "podiums": 1,
+   "top5": 2,
+   "starts": 16,
+   "nat": "COL",
+   "results": [
+    6,
+    9,
+    8,
+    7,
+    8,
+    11,
+    7,
+    7,
+    10,
+    4,
+    3,
+    7,
+    6,
+    12,
+    7,
+    7
+   ]
+  },
+  {
+   "pos": 9,
+   "name": "Scott Anderson",
+   "wiki": "Scott_Anderson_(racing_driver)",
+   "points": 219,
+   "wins": 0,
+   "podiums": 1,
+   "top5": 3,
+   "starts": 16,
+   "nat": "USA",
+   "results": [
+    7,
+    10,
+    6,
+    11,
+    5,
+    6,
+    9,
+    3,
+    9,
+    10,
+    5,
+    6,
+    7,
+    8,
+    9,
+    13
+   ]
+  },
+  {
+   "pos": 10,
+   "name": "Shelby Blackstock",
+   "wiki": "Shelby_Blackstock",
+   "points": 218,
+   "wins": 0,
+   "podiums": 1,
+   "top5": 3,
+   "starts": 16,
+   "nat": "USA",
+   "results": [
+    10,
+    11,
+    9,
+    9,
+    10,
+    8,
+    8,
+    8,
+    4,
+    6,
+    11,
+    9,
+    3,
+    6,
+    8,
+    5
+   ]
+  },
+  {
+   "pos": 11,
+   "name": "Ethan Ringel",
+   "wiki": "Ethan_Ringel",
+   "points": 197,
+   "wins": 0,
+   "podiums": 1,
+   "top5": 1,
+   "starts": 16,
+   "nat": "USA",
+   "results": [
+    8,
+    12,
+    7,
+    10,
+    9,
+    10,
+    10,
+    2,
+    6,
+    11,
+    10,
+    11,
+    12,
+    7,
+    10,
+    12
+   ]
+  },
+  {
+   "pos": 12,
+   "name": "Sean Rayhall",
+   "wiki": "Sean_Rayhall",
+   "points": 188,
+   "wins": 2,
+   "podiums": 4,
+   "top5": 6,
+   "starts": 9,
+   "nat": "USA",
+   "results": [
+    null,
+    null,
+    null,
+    12,
+    6,
+    2,
+    1,
+    6,
+    null,
+    null,
+    null,
+    null,
+    5,
+    1,
+    4,
+    2
+   ]
+  },
+  {
+   "pos": 13,
+   "name": "Matthew Brabham",
+   "wiki": "Matthew_Brabham",
+   "points": 35,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 3,
+   "nat": "AUS",
+   "results": [
+    11,
+    7,
+    11,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 14,
+   "name": "Scott Hargrove",
+   "wiki": "Scott_Hargrove",
+   "points": 34,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 1,
+   "starts": 2,
+   "nat": "CAN",
+   "results": [
+    4,
+    6,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 15,
+   "name": "Nelson Piquet Jr.",
+   "wiki": "Nelson_Piquet_Jr.",
+   "points": 28,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 2,
+   "nat": "BRA",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    7,
+    8,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 16,
+   "name": "Heamin Choi",
+   "wiki": "Heamin_Choi",
+   "points": 19,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 2,
+   "nat": "KOR",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    12,
+    11
+   ]
+  }
+ ],
+ "schedule": [
+  {
+   "round": 1,
+   "date": "2015-03-28",
+   "race": "St. Petersburg 100",
+   "track": "Streets of St. Petersburg",
+   "city": "St. Petersburg",
+   "state": "FL",
+   "country": "USA",
+   "winner": "Ed Jones",
+   "winner_wiki": "Ed_Jones_(racing_driver)",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 2,
+   "date": "2015-03-29",
+   "race": "St. Petersburg 100",
+   "track": "Streets of St. Petersburg",
+   "city": "St. Petersburg",
+   "state": "FL",
+   "country": "USA",
+   "winner": "Ed Jones",
+   "winner_wiki": "Ed_Jones_(racing_driver)",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 3,
+   "date": "2015-04-19",
+   "race": "Long Beach 100",
+   "track": "Streets of Long Beach",
+   "city": "Long Beach",
+   "state": "CA",
+   "country": "USA",
+   "winner": "Ed Jones",
+   "winner_wiki": "Ed_Jones_(racing_driver)",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 4,
+   "date": "2015-04-25",
+   "race": "Legacy Indy Lights 100",
+   "track": "Barber Motorsports Park",
+   "city": "Birmingham",
+   "state": "AL",
+   "country": "USA",
+   "winner": "Spencer Pigot",
+   "winner_wiki": "Spencer_Pigot",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 5,
+   "date": "2015-04-26",
+   "race": "Legacy Indy Lights 100",
+   "track": "Barber Motorsports Park",
+   "city": "Birmingham",
+   "state": "AL",
+   "country": "USA",
+   "winner": "Spencer Pigot",
+   "winner_wiki": "Spencer_Pigot",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 6,
+   "date": "2015-05-08",
+   "race": "Grand Prix of Indianapolis",
+   "track": "Indianapolis Motor Speedway",
+   "city": "Speedway",
+   "state": "IN",
+   "country": "USA",
+   "winner": "Jack Harvey",
+   "winner_wiki": "Jack_Harvey_(racing_driver)",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 7,
+   "date": "2015-05-09",
+   "race": "Grand Prix of Indianapolis",
+   "track": "Indianapolis Motor Speedway",
+   "city": "Speedway",
+   "state": "IN",
+   "country": "USA",
+   "winner": "Sean Rayhall",
+   "winner_wiki": "Sean_Rayhall",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 8,
+   "date": "2015-05-22",
+   "race": "Freedom 100",
+   "track": "Indianapolis Motor Speedway",
+   "city": "Speedway",
+   "state": "IN",
+   "country": "USA",
+   "winner": "Jack Harvey",
+   "winner_wiki": "Jack_Harvey_(racing_driver)",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 9,
+   "date": "2015-06-13",
+   "race": "Grand Prix of Toronto",
+   "track": "Exhibition Place",
+   "city": "Toronto",
+   "state": null,
+   "country": "CAN",
+   "winner": "Spencer Pigot",
+   "winner_wiki": "Spencer_Pigot",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 10,
+   "date": "2015-06-14",
+   "race": "Grand Prix of Toronto",
+   "track": "Exhibition Place",
+   "city": "Toronto",
+   "state": null,
+   "country": "CAN",
+   "winner": "Spencer Pigot",
+   "winner_wiki": "Spencer_Pigot",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 11,
+   "date": "2015-07-12",
+   "race": "Milwaukee Race 100",
+   "track": "Milwaukee Mile",
+   "city": "West Allis",
+   "state": "WI",
+   "country": "USA",
+   "winner": "Félix Serrallés",
+   "winner_wiki": "Félix_Serrallés",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 12,
+   "date": "2015-07-18",
+   "race": "Iowa Corn Indy 100",
+   "track": "Iowa Speedway",
+   "city": "Newton",
+   "state": "IA",
+   "country": "USA",
+   "winner": "Max Chilton",
+   "winner_wiki": "Max_Chilton",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 13,
+   "date": "2015-08-01",
+   "race": "Grand Prix of Mid-Ohio",
+   "track": "Mid-Ohio Sports Car Course",
+   "city": "Lexington",
+   "state": "OH",
+   "country": "USA",
+   "winner": "RC Enerson",
+   "winner_wiki": "R._C._Enerson",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 14,
+   "date": "2015-08-02",
+   "race": "Grand Prix of Mid-Ohio",
+   "track": "Mid-Ohio Sports Car Course",
+   "city": "Lexington",
+   "state": "OH",
+   "country": "USA",
+   "winner": "Sean Rayhall",
+   "winner_wiki": "Sean_Rayhall",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 15,
+   "date": "2015-09-12",
+   "race": "Grand Prix of Monterey",
+   "track": "Mazda Raceway Laguna Seca",
+   "city": "Monterey",
+   "state": "CA",
+   "country": "USA",
+   "winner": "Spencer Pigot",
+   "winner_wiki": "Spencer_Pigot",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 16,
+   "date": "2015-09-13",
+   "race": "Grand Prix of Monterey",
+   "track": "Mazda Raceway Laguna Seca",
+   "city": "Monterey",
+   "state": "CA",
+   "country": "USA",
+   "winner": "Spencer Pigot",
+   "winner_wiki": "Spencer_Pigot",
+   "track_type": null,
+   "cancelled": false
+  }
+ ],
+ "sources": [
+  "https://en.wikipedia.org/wiki/2015_Indy_Lights",
+  "https://www.wikidata.org (driver bios)"
+ ]
+}

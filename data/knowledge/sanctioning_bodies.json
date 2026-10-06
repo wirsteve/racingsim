@@ -1,0 +1,653 @@
+[
+ {
+  "id": "body:accus-fia",
+  "name": "ACCUS (FIA national sporting authority for the USA)",
+  "abbrev": "ACCUS",
+  "country": "USA",
+  "founded": 1957,
+  "defunct": null,
+  "website": null,
+  "scope": "national ASN liaison to the FIA",
+  "notes": "Formed 1957; members IMSA, IndyCar, NASCAR, NHRA, SCCA, USAC. Issues FIA international licences: grade A (<=1 kg/hp cars), B (1-2 kg/hp; age 18+ and ~10 sanctioned races in 2 yrs), C (2-3 kg/hp), D (>3 kg/hp, club/bronze international series). Co-sanctions F4 U.S. and FR Americas for FIA status (super licence points).",
+  "confidence": "high",
+  "sources": [
+   "src:wiki-accus",
+   "src:imsa-fia-license-pdfs",
+   "src:wiki-f4-us"
+  ]
+ },
+ {
+  "id": "body:all-stars",
+  "name": "All Star Circuit of Champions",
+  "abbrev": "All Stars",
+  "country": "USA",
+  "founded": 1970,
+  "defunct": null,
+  "website": null,
+  "scope": "regional/national 410 winged sprint tour (Midwest/East)",
+  "notes": "Owned by Tony Stewart 2015-2023; acquired by High Limit (Larson/Sweet) after 2023; revived 2025 operated by Rich Farmer.",
+  "confidence": "medium",
+  "sources": [
+   "src:highlimit-allstars",
+   "src:wiki-sprint-car"
+  ]
+ },
+ {
+  "id": "body:andersen-promotions",
+  "name": "Andersen Promotions (USF Pro Championships)",
+  "abbrev": "AP",
+  "country": "USA",
+  "founded": 2010,
+  "defunct": null,
+  "website": "https://www.usfpro2000.com",
+  "scope": "national promoter/owner of the USF Pro Championships ladder (USF Juniors, USF2000, USF Pro 2000)",
+  "notes": "Dan Andersen co-founded US F2000 in 1990 and revived it in 2010; took over Star Mazda (renamed Pro Mazda) in Dec 2012. Series are USAC-sanctioned and owned/managed by Andersen Promotions. Ladder formerly branded Road to Indy / Mazda Road to Indy. >USD 29M in scholarships awarded since inception.",
+  "confidence": "high",
+  "sources": [
+   "src:wiki-usf-pro-championships",
+   "src:wiki-usf2000",
+   "src:usfpro2000-series",
+   "src:racer-usf-2025-scholarships"
+  ]
+ },
+ {
+  "id": "body:arca",
+  "name": "Automobile Racing Club of America",
+  "abbrev": "ARCA",
+  "country": "USA",
+  "founded": 1953,
+  "defunct": null,
+  "website": "https://www.arcaracing.com",
+  "scope": "national + regional (East, West)",
+  "notes": "Founded 1953 in Toledo as MARC, renamed ARCA 1964; bought by NASCAR April 2018; from 2020 runs ARCA Menards Series plus East/West (former K&N Pro Series East/West).",
+  "confidence": "high",
+  "sources": [
+   "src:wiki-arca"
+  ]
+ },
+ {
+  "id": "body:asa",
+  "name": "American Speed Association (Track Enterprises era)",
+  "abbrev": "ASA",
+  "country": "USA",
+  "founded": 1968,
+  "defunct": null,
+  "website": "https://starsnationaltour.com",
+  "scope": "regional/national pavement super late model tours (ASA STARS National, ASA Midwest Tour, ASA Southern Super Series, ASA/CRA Super Series)",
+  "notes": "Original ASA dates from 1968 (general knowledge, low); revived brand under Track Enterprises (Bob Sargent) sanctions STARS National Tour from 2023 and aligned regional tours.",
+  "confidence": "medium",
+  "sources": [
+   "src:wiki-asa-midwest",
+   "src:sts-asa-stars-fund",
+   "src:racingamerica-sss",
+   "src:cra-news"
+  ]
+ },
+ {
+  "id": "body:ascs",
+  "name": "American Sprint Car Series",
+  "abbrev": "ASCS",
+  "country": "USA",
+  "founded": 1992,
+  "defunct": null,
+  "website": "https://ascsracing.com",
+  "scope": "national + 9 regional 360/410/non-wing sprint series",
+  "notes": "National Tour 34-35 races/yr; DIRTcar affiliated rules.",
+  "confidence": "high",
+  "sources": [
+   "src:ascs-2026",
+   "src:wiki-sprint-car"
+  ]
+ },
+ {
+  "id": "body:cars",
+  "name": "CARS Racing Tour (Competition Auto Racing Series)",
+  "abbrev": "CARS",
+  "country": "USA",
+  "founded": 2015,
+  "defunct": null,
+  "website": "https://www.carsracingtour.com",
+  "scope": "regional Southeast late model tours (Late Model Stock, Pro Late Model)",
+  "notes": "Lineage from Hooters Pro Cup/USAR (1995); two-division CARS Tour since 2015; owned since 2023 by Dale Earnhardt Jr., Jeff Burton, Kevin Harvick, Trackhouse; Speedway Motorsports joined 2026.",
+  "confidence": "medium",
+  "sources": [
+   "src:wiki-cars-tour"
+  ]
+ },
+ {
+  "id": "body:cart-champcar",
+  "name": "Championship Auto Racing Teams / Champ Car (OWRS)",
+  "abbrev": "CART",
+  "country": "USA",
+  "founded": 1978,
+  "defunct": 2008,
+  "website": null,
+  "scope": "national/international top-level open wheel (historic)",
+  "notes": "Team-owner-run body formed Nov 1978 after split from USAC; sanctioned 1979-2003; Champ Car World Series (Open Wheel Racing Series) 2004-2007; merged into IRL/IndyCar 22 Feb 2008. Ran Indy Lights (to 2001) and used Atlantic as feeder (2002-2008).",
+  "confidence": "high",
+  "sources": [
+   "src:wiki-cart",
+   "src:wiki-atlantic"
+  ]
+ },
+ {
+  "id": "body:cra",
+  "name": "Champion Racing Association",
+  "abbrev": "CRA",
+  "country": "USA",
+  "founded": 1997,
+  "defunct": null,
+  "website": null,
+  "scope": "regional Midwest pavement late models (ASA/CRA Super Series SLM, JEGS/CRA All-Stars crate tour)",
+  "notes": "Super Series began 1997; JEGS/CRA All-Stars crate tour founded 2011 with Chevrolet Performance.",
+  "confidence": "medium",
+  "sources": [
+   "src:cra-news"
+  ]
+ },
+ {
+  "id": "body:fia",
+  "name": "Federation Internationale de l'Automobile",
+  "abbrev": "FIA",
+  "country": "International",
+  "founded": 1904,
+  "defunct": null,
+  "website": "https://www.fia.com",
+  "scope": "international",
+  "notes": "Owns the Driver Categorisation (Platinum/Gold/Silver/Bronze) used by IMSA, SRO and one-make cups to define pro-am lineups; FIA F4/Formula Regional/F3/F2 ladder; super licence points system.",
+  "confidence": "high",
+  "sources": [
+   "src:wiki-fia-categorisation"
+  ]
+ },
+ {
+  "id": "body:grand-am",
+  "name": "Grand American Road Racing Association",
+  "abbrev": "Grand-Am",
+  "country": "USA",
+  "founded": 1999,
+  "defunct": 2013,
+  "website": null,
+  "scope": "national pro sports-car (historic)",
+  "notes": "NASCAR-affiliated sanctioning body of the Rolex Sports Car Series (2000-2013) and Grand-Am Cup/KONI/Continental Tire Challenge; merged with IMSA/ALMS for 2014.",
+  "confidence": "medium",
+  "sources": [
+   "src:wiki-alms-grandam",
+   "src:wiki-pilot-challenge-history",
+   "src:wiki-imsa-body"
+  ]
+ },
+ {
+  "id": "body:high-limit",
+  "name": "High Limit Racing",
+  "abbrev": "High Limit",
+  "country": "USA",
+  "founded": 2022,
+  "defunct": null,
+  "website": "https://www.highlimitracing.com",
+  "scope": "national 410 winged sprint tour",
+  "notes": "Founded by Kyle Larson and Brad Sweet; 2024 points fund $1M, champion $250k.",
+  "confidence": "medium",
+  "sources": [
+   "src:mastergassers-woo",
+   "src:highlimit-allstars"
+  ]
+ },
+ {
+  "id": "body:ikf",
+  "name": "International Kart Federation",
+  "abbrev": "IKF",
+  "country": "USA",
+  "founded": 1957,
+  "defunct": null,
+  "website": "https://www.ikfkarting.com",
+  "scope": "national (historically west-coast) karting",
+  "notes": "First US karting organisation (California, rules published Nov 1957); Grand Nationals; allied with SKUSA in 2018.",
+  "confidence": "high",
+  "sources": [
+   "src:wiki-ikf",
+   "src:wka-history"
+  ]
+ },
+ {
+  "id": "body:imca",
+  "name": "International Motor Contest Association",
+  "abbrev": "IMCA",
+  "country": "USA",
+  "founded": 1915,
+  "defunct": null,
+  "website": "https://www.imca.com",
+  "scope": "weekly dirt track sanction, Midwest/South/West US",
+  "notes": "Classes: Modified, Late Model, SportMod (Northern/Southern), Stock Car, Hobby Stock, Sport Compact, Sprint, Mod Lite. Minimum age 14 in Sport Compact/Hobby/SportMod (14-15 need resume). Founding year 1915 from general knowledge (low).",
+  "confidence": "medium",
+  "sources": [
+   "src:imca-rules",
+   "src:gazette-iowa-costs"
+  ]
+ },
+ {
+  "id": "body:imsa",
+  "name": "International Motor Sports Association",
+  "abbrev": "IMSA",
+  "country": "USA",
+  "founded": 1969,
+  "defunct": null,
+  "website": "https://www.imsa.com",
+  "scope": "national pro sports-car sanctioning body",
+  "notes": "Founded 1969 by John and Peggy Bishop with Bill France Sr. financing; merged with Grand-Am (Sept 2012, effective 2014); owned by NASCAR Holdings. Sanctions WeatherTech SportsCar Championship, Michelin Pilot Challenge, VP Racing SportsCar Challenge, Mazda MX-5 Cup, Porsche Carrera Cup NA, Lamborghini Super Trofeo NA and Ferrari Challenge NA. IMSA driver membership minimum age 17 (15 for MX-5 Cup), reducible by one year at IMSA discretion.",
+  "confidence": "high",
+  "sources": [
+   "src:wiki-imsa-body",
+   "src:wiki-imsa-sportscar",
+   "src:imsa-sporting-regs-2025"
+  ]
+ },
+ {
+  "id": "body:indycar",
+  "name": "INDYCAR LLC (IndyCar / Indy Racing League)",
+  "abbrev": "INDYCAR",
+  "country": "USA",
+  "founded": 1996,
+  "defunct": null,
+  "website": "https://www.indycar.com",
+  "scope": "national (top-level open wheel); sanctions IndyCar Series and Indy NXT",
+  "notes": "Created by IMS owner Tony George as Indy Racing League (first season 1996) to rival CART; absorbed Champ Car in Feb 2008; owned by Penske Entertainment since 2020. Self-sanctions IndyCar and Indy NXT; issues IndyCar licences (new objective licensing criteria from 2027).",
+  "confidence": "high",
+  "sources": [
+   "src:wiki-indycar-series",
+   "src:wiki-cart",
+   "src:motorsport-indycar-licensing-2027"
+  ]
+ },
+ {
+  "id": "body:inex",
+  "name": "INEX (Legends/Bandolero/Thunder Roadster sanctioning)",
+  "abbrev": "INEX",
+  "country": "USA",
+  "founded": null,
+  "defunct": null,
+  "website": "https://www.inexseries.com",
+  "scope": "national/international spec-car sanction (Legends, Bandolero, Thunder Roadster)",
+  "notes": "Sanctioning arm for US Legend Cars International products; divisions Bandits 7-11, Outlaws 12+, Young Lions 10-15, Semi-Pro 16+, Pro, Masters 40+.",
+  "confidence": "high",
+  "sources": [
+   "src:inex-divisions",
+   "src:uslci-age-2022",
+   "src:thedrive-legend"
+  ]
+ },
+ {
+  "id": "body:lucas-oil-dirt",
+  "name": "Lucas Oil Late Model Dirt Series (FloSports)",
+  "abbrev": "LOLMDS",
+  "country": "USA",
+  "founded": 2004,
+  "defunct": null,
+  "website": "https://www.lucasdirt.com",
+  "scope": "national super dirt late model tour",
+  "notes": "Founded 2004 as NARA by Spencer Wilson; Lucas Oil from 2005; FloSports bought end of 2025.",
+  "confidence": "high",
+  "sources": [
+   "src:wiki-lucas",
+   "src:lucas-2025"
+  ]
+ },
+ {
+  "id": "body:nasa",
+  "name": "National Auto Sport Association",
+  "abbrev": "NASA",
+  "country": "USA",
+  "founded": 1991,
+  "defunct": null,
+  "website": "https://drivenasa.com",
+  "scope": "national amateur club racing via regional chapters; HPDE, time trial, wheel-to-wheel racing",
+  "notes": "Founded 1991 around track days; HPDE groups 1-4 lead to a competition licence; National Championships since 2006 (Daytona since 2021). Popular classes Spec Miata, Spec E30, 944 Spec. Membership ~USD 45/yr.",
+  "confidence": "high",
+  "sources": [
+   "src:wiki-nasa"
+  ]
+ },
+ {
+  "id": "body:nascar",
+  "name": "National Association for Stock Car Auto Racing",
+  "abbrev": "NASCAR",
+  "country": "USA",
+  "founded": 1948,
+  "defunct": null,
+  "website": "https://www.nascar.com",
+  "scope": "national + regional + weekly local (NASCAR Local Racing Series, formerly Weekly Series)",
+  "notes": "Sanctions Cup, O'Reilly Auto Parts (ex-Xfinity) and Craftsman Truck national series, the Whelen Modified Tour, ARCA (owned since 2018) and the weekly local track program; also NASCAR Youth Series quarter midgets (ex-USAC .25).",
+  "confidence": "high",
+  "sources": [
+   "src:wiki-arca",
+   "src:wiki-nascar-weekly",
+   "src:wiki-quarter-midget",
+   "src:wiki-wmt"
+  ]
+ },
+ {
+  "id": "body:nascar-youth",
+  "name": "NASCAR Youth Series (formerly USAC .25)",
+  "abbrev": "NYS",
+  "country": "USA",
+  "founded": null,
+  "defunct": null,
+  "website": null,
+  "scope": "national youth quarter midget sanction",
+  "notes": "Per Wikipedia the former USAC .25 quarter midget sanction is now NASCAR Youth Series; transition year not verified.",
+  "confidence": "low",
+  "sources": [
+   "src:wiki-quarter-midget"
+  ]
+ },
+ {
+  "id": "body:parella-speedtour",
+  "name": "Parella Motorsports Holdings / SpeedTour (Racing America)",
+  "abbrev": "PMH",
+  "country": "USA",
+  "founded": null,
+  "defunct": null,
+  "website": "https://speedtour.net",
+  "scope": "national promoter (vintage, Trans Am, junior formula)",
+  "notes": "Owns SVRA, Trans Am, FR Americas, F4 U.S., Ligier Junior Formula Championship and IGT; SpeedTour festivals; acquired Racing America Dec 2025 and rebranded under that name.",
+  "confidence": "medium",
+  "sources": [
+   "src:racingamerica-pmh"
+  ]
+ },
+ {
+  "id": "body:pass",
+  "name": "Pro All Stars Series",
+  "abbrev": "PASS",
+  "country": "USA",
+  "founded": 2001,
+  "defunct": null,
+  "website": "https://proallstarsseries.com",
+  "scope": "regional Northeast + South super late model, NE modifieds",
+  "notes": "Founded 2001 by Tom Mayberry; runs Oxford Plains Speedway (bought 2012) and Oxford 250.",
+  "confidence": "medium",
+  "sources": [
+   "src:wiki-pass"
+  ]
+ },
+ {
+  "id": "body:powri",
+  "name": "Performance Open Wheel Racing, Inc.",
+  "abbrev": "POWRi",
+  "country": "USA",
+  "founded": 2004,
+  "defunct": null,
+  "website": "https://powri.com",
+  "scope": "regional/national dirt midgets, 410/305 sprints, micros",
+  "notes": "National Midget League from 2004 (Gateway Racing Midget Series 2004-05), West Midget 2012, 410 Outlaw Sprint 2022; founded by promoter Kenny Brown.",
+  "confidence": "medium",
+  "sources": [
+   "src:powri-wiki"
+  ]
+ },
+ {
+  "id": "body:qma",
+  "name": "Quarter Midgets of America",
+  "abbrev": "QMA",
+  "country": "USA",
+  "founded": null,
+  "defunct": null,
+  "website": "https://quartermidgets.org",
+  "scope": "national youth quarter midget sanction (club tracks)",
+  "notes": "Ages 5-16 (rulebook allows up to 17); Honda 120 novice class; founding year not verified.",
+  "confidence": "medium",
+  "sources": [
+   "src:wiki-quarter-midget",
+   "src:qma-rulebook"
+  ]
+ },
+ {
+  "id": "body:rok-cup-usa",
+  "name": "ROK Cup USA (Vortex ROK promoter)",
+  "abbrev": "ROK Cup USA",
+  "country": "USA",
+  "founded": null,
+  "defunct": null,
+  "website": "https://rokcupusa.com",
+  "scope": "national one-engine karting promoter",
+  "notes": "Promotes Florida Winter Tour, ROK Cup national events and qualifiers for ROK Vegas and the ROK Superfinal (Italy). Founding year not verified.",
+  "confidence": "medium",
+  "sources": [
+   "src:rokcupusa-fwt"
+  ]
+ },
+ {
+  "id": "body:sas",
+  "name": "Southern All Star Dirt Racing Series",
+  "abbrev": "SAS",
+  "country": "USA",
+  "founded": null,
+  "defunct": null,
+  "website": "https://sasdirt.com",
+  "scope": "regional Southeast super dirt late model tour",
+  "notes": "Described as the longest-running dirt late model tour in America; new ownership Nov 2024.",
+  "confidence": "low",
+  "sources": [
+   "src:dtd-dlm-regionals"
+  ]
+ },
+ {
+  "id": "body:scca",
+  "name": "Sports Car Club of America",
+  "abbrev": "SCCA",
+  "country": "USA",
+  "founded": 1944,
+  "defunct": null,
+  "website": "https://www.scca.com",
+  "scope": "national amateur club racing (regional, Majors/Super Tour, Runoffs), autocross, rally; pro arm SCCA Pro Racing",
+  "notes": "Largest US amateur road-racing club. Licensing ladder: Novice Permit (age 14+) -> driver school credit + 3 successful regional weekends -> Full Competition License (required for Majors/Super Tour/Runoffs). Created Trans-Am (1966). SCCA Enterprises builds spec cars (Spec Racer Ford, FE2). ACCUS member club.",
+  "confidence": "high",
+  "sources": [
+   "src:scca-i-want-to-road-race",
+   "src:wiki-scca-runoffs",
+   "src:wiki-transam",
+   "src:wiki-spec-racer-ford",
+   "src:wiki-accus"
+  ]
+ },
+ {
+  "id": "body:scca-pro-racing",
+  "name": "SCCA Pro Racing",
+  "abbrev": "SCCA Pro",
+  "country": "USA",
+  "founded": 1963,
+  "defunct": null,
+  "website": "https://www.sccaproracing.com",
+  "scope": "national pro sanctioning arm of SCCA",
+  "notes": "Formed 1963; sanctioned Trans-Am 1966-2006, World Challenge (1990-2010s), the Atlantic Championship revival (2012-), F1600/F2000 Championship Series; today sanctions F4 U.S. and Formula Regional Americas (with ACCUS for FIA status).",
+  "confidence": "high",
+  "sources": [
+   "src:wiki-scca-pro-racing",
+   "src:wiki-f4-us",
+   "src:wiki-fr-americas",
+   "src:wiki-f1600-series"
+  ]
+ },
+ {
+  "id": "body:skip-barber",
+  "name": "Skip Barber Racing School",
+  "abbrev": "Skip Barber",
+  "country": "USA",
+  "founded": 1975,
+  "defunct": null,
+  "website": "https://www.skipbarber.com",
+  "scope": "national racing school and entry-level series promoter",
+  "notes": "Founded 1975, 400k+ students; Barber (Dodge) Pro Series 1986-2003; Skip Barber Formula Race Series continues; also runs arrive-and-drive programs (incl. a 2024 Pilot Challenge program).",
+  "confidence": "medium",
+  "sources": [
+   "src:skipbarber-wiki"
+  ]
+ },
+ {
+  "id": "body:skusa",
+  "name": "Superkarts! USA",
+  "abbrev": "SKUSA",
+  "country": "USA",
+  "founded": null,
+  "defunct": null,
+  "website": "https://www.superkartsusa.com",
+  "scope": "national sprint karting (Pro Tour, Winter Series, SuperNationals)",
+  "notes": "Runs the SuperNationals in Las Vegas since Nov 1997 (largest NA karting event, 400+ drivers) and the national Pro Tour; membership USD 150 initial/100 renewal. Alliance with IKF (2018). Founding year not verified (pre-1997).",
+  "confidence": "medium",
+  "sources": [
+   "src:wiki-skusa-supernationals",
+   "src:skusa-pricing-2026",
+   "src:wiki-ikf"
+  ]
+ },
+ {
+  "id": "body:sro-america",
+  "name": "SRO Motorsports America",
+  "abbrev": "SRO America",
+  "country": "USA",
+  "founded": 2018,
+  "defunct": null,
+  "website": "https://www.gt-world-challenge-america.com",
+  "scope": "national pro/pro-am GT and touring promoter (USAC-sanctioned)",
+  "notes": "Stephane Ratel Organisation took majority ownership of World Challenge in May 2018; runs GT World Challenge America, GT4 America, GT America, TC America, McLaren Trophy America and promotes Toyota GR Cup on its weekends. Classes use FIA driver categorisation (Pro/Pro-Am/Am, Silver).",
+  "confidence": "high",
+  "sources": [
+   "src:wiki-gtwc-america",
+   "src:wiki-tc-america",
+   "src:gt4america-explainer",
+   "src:slashgear-grcup"
+  ]
+ },
+ {
+  "id": "body:ump",
+  "name": "UMP (United Midwestern Promoters, part of DIRTcar)",
+  "abbrev": "UMP",
+  "country": "USA",
+  "founded": null,
+  "defunct": null,
+  "website": "https://dirtcar.com",
+  "scope": "weekly + regional Midwest dirt (late models, modifieds, Pro Late Model crate, Sportsman)",
+  "notes": "Integrated into DIRTcar; UMP Modified ~750+hp 420ci, UMP Pro Late Model crate 602/604. Founding year not verified this session.",
+  "confidence": "medium",
+  "sources": [
+   "src:dirtcar-the-cars",
+   "src:racingnews-crate"
+  ]
+ },
+ {
+  "id": "body:usac",
+  "name": "United States Auto Club",
+  "abbrev": "USAC",
+  "country": "USA",
+  "founded": 1955,
+  "defunct": null,
+  "website": "https://www.usacracing.com",
+  "scope": "national; oval midget/sprint/Silver Crown plus sanctioning of road-racing series run by promoters",
+  "notes": "Sanctioned Indy/Champ cars until CART split (1979); ran the professional USAC Road Racing Championship 1958-1962; today sanctions the USF Pro Championships, SRO America series (GT World Challenge America, GT4 America, TC America; since 2017) and Porsche Sprint Challenge NA. ACCUS member club.",
+  "confidence": "high",
+  "sources": [
+   "src:wiki-usac-road-racing",
+   "src:wiki-usf-pro-championships",
+   "src:wiki-gtwc-america",
+   "src:wiki-porsche-sprint-challenge",
+   "src:wiki-accus",
+   "src:wiki-sprint-car",
+   "src:usac-age",
+   "src:wiki-quarter-midget"
+  ]
+ },
+ {
+  "id": "body:uslci",
+  "name": "US Legend Cars International (manufacturer)",
+  "abbrev": "USLCI",
+  "country": "USA",
+  "founded": 1992,
+  "defunct": null,
+  "website": "https://www.uslegendcars.com",
+  "scope": "manufacturer of Legends, Bandolero, Thunder Roadster",
+  "notes": "Manufacturer, sanction via INEX. Founding year general knowledge (low).",
+  "confidence": "low",
+  "sources": [
+   "src:thedrive-legend",
+   "src:uslci-age-2022"
+  ]
+ },
+ {
+  "id": "body:usmts",
+  "name": "United States Modified Touring Series",
+  "abbrev": "USMTS",
+  "country": "USA",
+  "founded": null,
+  "defunct": null,
+  "website": "https://usmts.com",
+  "scope": "national/regional dirt modified tour (Midwest, South, Plains)",
+  "notes": "48 nights in 2024; champion $100k.",
+  "confidence": "medium",
+  "sources": [
+   "src:usmts-2024"
+  ]
+ },
+ {
+  "id": "body:uspks",
+  "name": "United States Pro Kart Series",
+  "abbrev": "USPKS",
+  "country": "USA",
+  "founded": 2013,
+  "defunct": null,
+  "website": "https://www.uspks.com",
+  "scope": "national karting promoter (east/midwest)",
+  "notes": "Founded 2013 by Mark Coats; inaugural event Mooresville NC.",
+  "confidence": "high",
+  "sources": [
+   "src:uspks-home"
+  ]
+ },
+ {
+  "id": "body:usra",
+  "name": "United States Racing Association",
+  "abbrev": "USRA",
+  "country": "USA",
+  "founded": null,
+  "defunct": null,
+  "website": "https://usraracing.com",
+  "scope": "weekly dirt sanction (Midwest, Plains, South)",
+  "notes": "Classes: Modified, B-Mod, Limited Mod, Late Model, Stock Car, Factory Stock, Hobby Stock, Tuners; grew from 28 tracks (2018) to 50+ (2022). Founding year not verified.",
+  "confidence": "medium",
+  "sources": [
+   "src:usra-search"
+  ]
+ },
+ {
+  "id": "body:wka",
+  "name": "World Karting Association",
+  "abbrev": "WKA",
+  "country": "USA",
+  "founded": 1971,
+  "defunct": null,
+  "website": "https://www.worldkarting.com",
+  "scope": "national karting (sprint, road-race/enduro, dirt/speedway)",
+  "notes": "Founded 1971 (Kugler family) as east-coast alternative to IKF; based in Concord NC behind Charlotte Motor Speedway; 50k+ members since founding; Manufacturers Cup national sprint series. F4 U.S. Karting Alliance partner.",
+  "confidence": "high",
+  "sources": [
+   "src:wka-history",
+   "src:f4us-getting-started"
+  ]
+ },
+ {
+  "id": "body:wrg-dirtcar",
+  "name": "World Racing Group (World of Outlaws / DIRTcar)",
+  "abbrev": "WoO/DIRTcar",
+  "country": "USA",
+  "founded": 1978,
+  "defunct": null,
+  "website": "https://worldofoutlaws.com",
+  "scope": "national tours + regional + weekly track sanction (DIRTcar, UMP)",
+  "notes": "World of Outlaws founded 1978 (sprints); also WoO Late Models, Super DIRTcar Series (owned since 2003), DIRTcar UMP late models/modifieds, Xtreme DIRTcar. Founding year refers to WoO sprints.",
+  "confidence": "high",
+  "sources": [
+   "src:wiki-sprint-car",
+   "src:wiki-super-dirtcar",
+   "src:dirtcar-the-cars"
+  ]
+ }
+]

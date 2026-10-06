@@ -1,0 +1,1942 @@
+{
+ "series": "open_wheel_top",
+ "year": 2014,
+ "official_name": "2014 Verizon IndyCar Series",
+ "era": "unified IndyCar Series",
+ "data_level": "full",
+ "teams_source": "teams_table",
+ "teams": [
+  {
+   "team": "A. J. Foyt Enterprises",
+   "team_wiki": "A._J._Foyt_Enterprises",
+   "owner": null,
+   "manufacturer": "Honda",
+   "chassis": "Dallara DW12",
+   "cars": [
+    {
+     "number": "14",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Takuma Sato",
+       "wiki": "Takuma_Sato",
+       "rounds": "All",
+       "nat": "JPN"
+      }
+     ]
+    },
+    {
+     "number": "41",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Martin Plowman",
+       "wiki": "Martin_Plowman",
+       "rounds": "4–5",
+       "nat": "GBR"
+      }
+     ]
+    }
+   ],
+   "chassis_note": "spec chassis (from page text)"
+  },
+  {
+   "team": "Andretti Autosport",
+   "team_wiki": "Andretti_Autosport",
+   "owner": null,
+   "manufacturer": "Honda",
+   "chassis": "Dallara DW12",
+   "cars": [
+    {
+     "number": "25",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Marco Andretti",
+       "wiki": "Marco_Andretti",
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "26",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Franck Montagny",
+       "wiki": "Franck_Montagny",
+       "rounds": "4",
+       "nat": "FRA"
+      },
+      {
+       "name": "Kurt Busch",
+       "wiki": "Kurt_Busch",
+       "rounds": "5",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "27",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "James Hinchcliffe",
+       "wiki": "James_Hinchcliffe",
+       "rounds": "All",
+       "nat": "CAN"
+      }
+     ]
+    },
+    {
+     "number": "28",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Ryan Hunter-Reay",
+       "wiki": "Ryan_Hunter-Reay",
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    }
+   ],
+   "chassis_note": "spec chassis (from page text)"
+  },
+  {
+   "team": "Andretti / HVM",
+   "team_wiki": "Andretti_Autosport",
+   "owner": null,
+   "manufacturer": "Honda",
+   "chassis": "Dallara DW12",
+   "cars": [
+    {
+     "number": "34",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Carlos Muñoz",
+       "wiki": "Carlos_Muñoz_(racing_driver)",
+       "rounds": "All",
+       "nat": "COL"
+      }
+     ]
+    }
+   ],
+   "chassis_note": "spec chassis (from page text)"
+  },
+  {
+   "team": "Bryan Herta Autosport",
+   "team_wiki": "Bryan_Herta_Autosport",
+   "owner": null,
+   "manufacturer": "Honda",
+   "chassis": "Dallara DW12",
+   "cars": [
+    {
+     "number": "98",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Jack Hawksworth",
+       "wiki": "Jack_Hawksworth",
+       "rounds": "All",
+       "nat": "GBR"
+      }
+     ]
+    }
+   ],
+   "chassis_note": "spec chassis (from page text)"
+  },
+  {
+   "team": "Chip Ganassi Racing",
+   "team_wiki": "Chip_Ganassi_Racing",
+   "owner": null,
+   "manufacturer": "Chevrolet",
+   "chassis": "Dallara DW12",
+   "cars": [
+    {
+     "number": "8",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Ryan Briscoe",
+       "wiki": "Ryan_Briscoe",
+       "rounds": "All",
+       "nat": "AUS"
+      }
+     ]
+    },
+    {
+     "number": "9",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Scott Dixon",
+       "wiki": "Scott_Dixon",
+       "rounds": "All",
+       "nat": "NZL"
+      }
+     ]
+    },
+    {
+     "number": "10",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Tony Kanaan",
+       "wiki": "Tony_Kanaan",
+       "rounds": "All",
+       "nat": "BRA"
+      }
+     ]
+    },
+    {
+     "number": "83",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Charlie Kimball",
+       "wiki": "Charlie_Kimball",
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    }
+   ],
+   "chassis_note": "spec chassis (from page text)"
+  },
+  {
+   "team": "Dale Coyne Racing",
+   "team_wiki": "Dale_Coyne_Racing",
+   "owner": null,
+   "manufacturer": "Honda",
+   "chassis": "Dallara DW12",
+   "cars": [
+    {
+     "number": "18",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Carlos Huertas",
+       "wiki": "Carlos_Huertas",
+       "rounds": "All",
+       "nat": "COL"
+      }
+     ]
+    },
+    {
+     "number": "19",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Justin Wilson",
+       "wiki": "Justin_Wilson_(racing_driver)",
+       "rounds": "All",
+       "nat": "GBR"
+      }
+     ]
+    },
+    {
+     "number": "63",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Pippa Mann",
+       "wiki": "Pippa_Mann",
+       "rounds": "5",
+       "nat": "GBR"
+      }
+     ]
+    }
+   ],
+   "chassis_note": "spec chassis (from page text)"
+  },
+  {
+   "team": "Dreyer & Reinbold - Kingdom Racing",
+   "team_wiki": "Dreyer_&_Reinbold_Racing",
+   "owner": null,
+   "manufacturer": "Chevrolet",
+   "chassis": "Dallara DW12",
+   "cars": [
+    {
+     "number": "22",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Sage Karam",
+       "wiki": "Sage_Karam",
+       "rounds": "5",
+       "nat": "USA"
+      }
+     ]
+    }
+   ],
+   "chassis_note": "spec chassis (from page text)"
+  },
+  {
+   "team": "Ed Carpenter Racing",
+   "team_wiki": "Ed_Carpenter_Racing",
+   "owner": null,
+   "manufacturer": "Chevrolet",
+   "chassis": "Dallara DW12",
+   "cars": [
+    {
+     "number": "20",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Mike Conway",
+       "wiki": "Mike_Conway",
+       "rounds": "1–4, 6–7, 9–10, 13–15, 17",
+       "nat": "GBR"
+      },
+      {
+       "name": "Ed Carpenter",
+       "wiki": "Ed_Carpenter_(racing_driver)",
+       "rounds": "5, 8, 11–12, 16, 18",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "21",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "J. R. Hildebrand",
+       "wiki": "J._R._Hildebrand",
+       "rounds": "5",
+       "nat": "USA"
+      }
+     ]
+    }
+   ],
+   "chassis_note": "spec chassis (from page text)"
+  },
+  {
+   "team": "KV Racing Technology",
+   "team_wiki": "KV_Racing_Technology",
+   "owner": null,
+   "manufacturer": "Chevrolet",
+   "chassis": "Dallara DW12",
+   "cars": [
+    {
+     "number": "6",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Townsend Bell",
+       "wiki": "Townsend_Bell",
+       "rounds": "5",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "33",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "James Davison",
+       "wiki": "James_Davison",
+       "rounds": "5",
+       "nat": "AUS"
+      }
+     ]
+    }
+   ],
+   "chassis_note": "spec chassis (from page text)"
+  },
+  {
+   "team": "KVSH Racing",
+   "team_wiki": "KV_Racing_Technology",
+   "owner": null,
+   "manufacturer": "Chevrolet",
+   "chassis": "Dallara DW12",
+   "cars": [
+    {
+     "number": "11",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Sébastien Bourdais",
+       "wiki": "Sébastien_Bourdais",
+       "rounds": "All",
+       "nat": "FRA"
+      }
+     ]
+    }
+   ],
+   "chassis_note": "spec chassis (from page text)"
+  },
+  {
+   "team": "KV AFS Racing",
+   "team_wiki": "KV_Racing_Technology",
+   "owner": null,
+   "manufacturer": "Chevrolet",
+   "chassis": "Dallara DW12",
+   "cars": [
+    {
+     "number": "17",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Sebastián Saavedra",
+       "wiki": "Sebastián_Saavedra",
+       "rounds": "All",
+       "nat": "COL"
+      }
+     ]
+    }
+   ],
+   "chassis_note": "spec chassis (from page text)"
+  },
+  {
+   "team": "Lazier Partners Racing",
+   "team_wiki": "Lazier_Partners_Racing",
+   "owner": null,
+   "manufacturer": "Chevrolet",
+   "chassis": "Dallara DW12",
+   "cars": [
+    {
+     "number": "91",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Buddy Lazier",
+       "wiki": "Buddy_Lazier",
+       "rounds": "5",
+       "nat": "USA"
+      }
+     ]
+    }
+   ],
+   "chassis_note": "spec chassis (from page text)"
+  },
+  {
+   "team": "Rahal Letterman Lanigan Racing",
+   "team_wiki": "Rahal_Letterman_Lanigan_Racing",
+   "owner": null,
+   "manufacturer": "Honda",
+   "chassis": "Dallara DW12",
+   "cars": [
+    {
+     "number": "15",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Graham Rahal",
+       "wiki": "Graham_Rahal",
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "16",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Oriol Servià",
+       "wiki": "Oriol_Servià",
+       "rounds": "2–5",
+       "nat": "ESP"
+      },
+      {
+       "name": "Luca Filippi",
+       "wiki": "Luca_Filippi",
+       "rounds": "9–10, 13–14",
+       "nat": "ITA"
+      }
+     ]
+    }
+   ],
+   "chassis_note": "spec chassis (from page text)"
+  },
+  {
+   "team": "Sarah Fisher Hartman Racing",
+   "team_wiki": "Sarah_Fisher_Hartman_Racing",
+   "owner": null,
+   "manufacturer": "Honda",
+   "chassis": "Dallara DW12",
+   "cars": [
+    {
+     "number": "67",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Josef Newgarden",
+       "wiki": "Josef_Newgarden",
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "68",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Alex Tagliani",
+       "wiki": "Alex_Tagliani",
+       "rounds": "5",
+       "nat": "CAN"
+      }
+     ]
+    }
+   ],
+   "chassis_note": "spec chassis (from page text)"
+  },
+  {
+   "team": "Schmidt Peterson Motorsports",
+   "team_wiki": "Schmidt_Peterson_Motorsports",
+   "owner": null,
+   "manufacturer": "Honda",
+   "chassis": "Dallara DW12",
+   "cars": [
+    {
+     "number": "5",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Jacques Villeneuve",
+       "wiki": "Jacques_Villeneuve",
+       "rounds": "5",
+       "nat": "CAN"
+      }
+     ]
+    },
+    {
+     "number": "7",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Mikhail Aleshin",
+       "wiki": "Mikhail_Aleshin",
+       "rounds": "All",
+       "nat": "RUS"
+      }
+     ]
+    },
+    {
+     "number": "77",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Simon Pagenaud",
+       "wiki": "Simon_Pagenaud",
+       "rounds": "All",
+       "nat": "FRA"
+      }
+     ]
+    }
+   ],
+   "chassis_note": "spec chassis (from page text)"
+  },
+  {
+   "team": "Team Penske",
+   "team_wiki": "Team_Penske",
+   "owner": null,
+   "manufacturer": "Chevrolet",
+   "chassis": "Dallara DW12",
+   "cars": [
+    {
+     "number": "2",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Juan Pablo Montoya",
+       "wiki": "Juan_Pablo_Montoya",
+       "rounds": "All",
+       "nat": "COL"
+      }
+     ]
+    },
+    {
+     "number": "3",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Hélio Castroneves",
+       "wiki": "Hélio_Castroneves",
+       "rounds": "All",
+       "nat": "BRA"
+      }
+     ]
+    },
+    {
+     "number": "12",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Will Power",
+       "wiki": "Will_Power",
+       "rounds": "All",
+       "nat": "AUS"
+      }
+     ]
+    }
+   ],
+   "chassis_note": "spec chassis (from page text)"
+  }
+ ],
+ "standings": [
+  {
+   "pos": 1,
+   "name": "Will Power",
+   "wiki": "Will_Power",
+   "points": 671,
+   "wins": 3,
+   "podiums": 7,
+   "top5": 8,
+   "starts": 18,
+   "nat": "AUS",
+   "results": [
+    1,
+    2,
+    5,
+    8,
+    8,
+    1,
+    2,
+    2,
+    14,
+    11,
+    10,
+    14,
+    9,
+    3,
+    6,
+    1,
+    10,
+    9
+   ]
+  },
+  {
+   "pos": 2,
+   "name": "Hélio Castroneves",
+   "wiki": "Hélio_Castroneves",
+   "points": 609,
+   "wins": 1,
+   "podiums": 6,
+   "top5": 7,
+   "starts": 18,
+   "nat": "BRA",
+   "results": [
+    3,
+    11,
+    19,
+    3,
+    2,
+    5,
+    1,
+    8,
+    9,
+    21,
+    2,
+    8,
+    2,
+    12,
+    19,
+    11,
+    18,
+    14
+   ]
+  },
+  {
+   "pos": 3,
+   "name": "Scott Dixon",
+   "wiki": "Scott_Dixon",
+   "points": 604,
+   "wins": 2,
+   "podiums": 4,
+   "top5": 11,
+   "starts": 18,
+   "nat": "NZL",
+   "results": [
+    4,
+    12,
+    3,
+    15,
+    29,
+    11,
+    4,
+    5,
+    19,
+    18,
+    5,
+    4,
+    5,
+    7,
+    1,
+    4,
+    1,
+    2
+   ]
+  },
+  {
+   "pos": 4,
+   "name": "Juan Pablo Montoya",
+   "wiki": "Juan_Pablo_Montoya",
+   "points": 586,
+   "wins": 1,
+   "podiums": 4,
+   "top5": 8,
+   "starts": 18,
+   "nat": "COL",
+   "results": [
+    15,
+    4,
+    21,
+    16,
+    5,
+    12,
+    13,
+    3,
+    2,
+    7,
+    1,
+    16,
+    18,
+    19,
+    11,
+    2,
+    5,
+    4
+   ]
+  },
+  {
+   "pos": 5,
+   "name": "Simon Pagenaud",
+   "wiki": "Simon_Pagenaud",
+   "points": 565,
+   "wins": 2,
+   "podiums": 3,
+   "top5": 8,
+   "starts": 18,
+   "nat": "FRA",
+   "results": [
+    5,
+    5,
+    4,
+    1,
+    12,
+    22,
+    6,
+    4,
+    16,
+    1,
+    6,
+    11,
+    4,
+    22,
+    9,
+    7,
+    3,
+    20
+   ]
+  },
+  {
+   "pos": 6,
+   "name": "Ryan Hunter-Reay",
+   "wiki": "Ryan_Hunter-Reay",
+   "points": 563,
+   "wins": 3,
+   "podiums": 6,
+   "top5": 6,
+   "starts": 18,
+   "nat": "USA",
+   "results": [
+    2,
+    20,
+    1,
+    2,
+    1,
+    16,
+    19,
+    19,
+    7,
+    6,
+    18,
+    1,
+    21,
+    14,
+    10,
+    21,
+    2,
+    16
+   ]
+  },
+  {
+   "pos": 7,
+   "name": "Tony Kanaan",
+   "wiki": "Tony_Kanaan",
+   "points": 544,
+   "wins": 1,
+   "podiums": 6,
+   "top5": 6,
+   "starts": 18,
+   "nat": "BRA",
+   "results": [
+    6,
+    18,
+    9,
+    10,
+    26,
+    3,
+    9,
+    6,
+    13,
+    10,
+    11,
+    3,
+    3,
+    2,
+    21,
+    3,
+    13,
+    1
+   ]
+  },
+  {
+   "pos": 8,
+   "name": "Carlos Muñoz",
+   "wiki": "Carlos_Muñoz_(racing_driver)",
+   "points": 483,
+   "wins": 0,
+   "podiums": 3,
+   "top5": 5,
+   "starts": 18,
+   "nat": "COL",
+   "results": [
+    17,
+    3,
+    23,
+    24,
+    4,
+    7,
+    8,
+    13,
+    3,
+    22,
+    3,
+    12,
+    17,
+    17,
+    4,
+    22,
+    19,
+    8
+   ]
+  },
+  {
+   "pos": 9,
+   "name": "Marco Andretti",
+   "wiki": "Marco_Andretti",
+   "points": 463,
+   "wins": 0,
+   "podiums": 2,
+   "top5": 2,
+   "starts": 18,
+   "nat": "USA",
+   "results": [
+    22,
+    8,
+    2,
+    14,
+    3,
+    10,
+    16,
+    22,
+    8,
+    9,
+    9,
+    18,
+    16,
+    8,
+    22,
+    13,
+    8,
+    11
+   ]
+  },
+  {
+   "pos": 10,
+   "name": "Sébastien Bourdais",
+   "wiki": "Sébastien_Bourdais",
+   "points": 461,
+   "wins": 1,
+   "podiums": 2,
+   "top5": 5,
+   "starts": 18,
+   "nat": "FRA",
+   "results": [
+    13,
+    14,
+    15,
+    4,
+    7,
+    13,
+    20,
+    20,
+    4,
+    5,
+    16,
+    19,
+    1,
+    9,
+    2,
+    12,
+    11,
+    18
+   ]
+  },
+  {
+   "pos": 11,
+   "name": "Ryan Briscoe",
+   "wiki": "Ryan_Briscoe",
+   "points": 461,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 1,
+   "starts": 18,
+   "nat": "AUS",
+   "results": [
+    10,
+    17,
+    11,
+    6,
+    18,
+    15,
+    10,
+    9,
+    12,
+    8,
+    4,
+    9,
+    12,
+    11,
+    8,
+    6,
+    17,
+    7
+   ]
+  },
+  {
+   "pos": 12,
+   "name": "James Hinchcliffe",
+   "wiki": "James_Hinchcliffe",
+   "points": 456,
+   "wins": 0,
+   "podiums": 1,
+   "top5": 4,
+   "starts": 18,
+   "nat": "CAN",
+   "results": [
+    19,
+    21,
+    7,
+    20,
+    28,
+    6,
+    5,
+    14,
+    5,
+    14,
+    12,
+    6,
+    8,
+    18,
+    3,
+    19,
+    12,
+    5
+   ]
+  },
+  {
+   "pos": 13,
+   "name": "Josef Newgarden",
+   "wiki": "Josef_Newgarden",
+   "points": 406,
+   "wins": 0,
+   "podiums": 1,
+   "top5": 2,
+   "starts": 18,
+   "nat": "USA",
+   "results": [
+    9,
+    19,
+    8,
+    17,
+    30,
+    20,
+    17,
+    11,
+    20,
+    20,
+    8,
+    2,
+    20,
+    13,
+    12,
+    5,
+    6,
+    10
+   ]
+  },
+  {
+   "pos": 14,
+   "name": "Charlie Kimball",
+   "wiki": "Charlie_Kimball",
+   "points": 402,
+   "wins": 0,
+   "podiums": 1,
+   "top5": 4,
+   "starts": 18,
+   "nat": "USA",
+   "results": [
+    20,
+    23,
+    10,
+    5,
+    31,
+    9,
+    3,
+    10,
+    18,
+    4,
+    17,
+    10,
+    7,
+    4,
+    7,
+    16,
+    21,
+    12
+   ]
+  },
+  {
+   "pos": 15,
+   "name": "Justin Wilson",
+   "wiki": "Justin_Wilson_(racing_driver)",
+   "points": 395,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 1,
+   "starts": 18,
+   "nat": "GBR",
+   "results": [
+    8,
+    16,
+    6,
+    11,
+    22,
+    4,
+    12,
+    21,
+    10,
+    12,
+    14,
+    13,
+    10,
+    10,
+    15,
+    17,
+    9,
+    13
+   ]
+  },
+  {
+   "pos": 16,
+   "name": "Mikhail Aleshin",
+   "wiki": "Mikhail_Aleshin",
+   "points": 372,
+   "wins": 0,
+   "podiums": 1,
+   "top5": 1,
+   "starts": 17,
+   "nat": "RUS",
+   "results": [
+    12,
+    6,
+    22,
+    25,
+    21,
+    17,
+    7,
+    7,
+    23,
+    2,
+    7,
+    21,
+    11,
+    23,
+    14,
+    8,
+    7,
+    "DNS"
+   ]
+  },
+  {
+   "pos": 17,
+   "name": "Jack Hawksworth",
+   "wiki": "Jack_Hawksworth",
+   "points": 366,
+   "wins": 0,
+   "podiums": 1,
+   "top5": 1,
+   "starts": 17,
+   "nat": "GBR",
+   "results": [
+    21,
+    15,
+    12,
+    7,
+    20,
+    19,
+    14,
+    15,
+    6,
+    3,
+    "WTH",
+    15,
+    13,
+    6,
+    16,
+    10,
+    15,
+    15
+   ]
+  },
+  {
+   "pos": 18,
+   "name": "Takuma Sato",
+   "wiki": "Takuma_Sato",
+   "points": 350,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 2,
+   "starts": 18,
+   "nat": "JPN",
+   "results": [
+    7,
+    22,
+    13,
+    9,
+    19,
+    18,
+    18,
+    18,
+    22,
+    19,
+    21,
+    22,
+    23,
+    5,
+    18,
+    15,
+    4,
+    6
+   ]
+  },
+  {
+   "pos": 19,
+   "name": "Graham Rahal",
+   "wiki": "Graham_Rahal",
+   "points": 345,
+   "wins": 0,
+   "podiums": 1,
+   "top5": 2,
+   "starts": 18,
+   "nat": "USA",
+   "results": [
+    14,
+    13,
+    17,
+    21,
+    33,
+    2,
+    21,
+    12,
+    11,
+    16,
+    19,
+    7,
+    6,
+    20,
+    5,
+    14,
+    20,
+    19
+   ]
+  },
+  {
+   "pos": 20,
+   "name": "Carlos Huertas",
+   "wiki": "Carlos_Huertas",
+   "points": 314,
+   "wins": 1,
+   "podiums": 1,
+   "top5": 1,
+   "starts": 18,
+   "nat": "COL",
+   "results": [
+    18,
+    10,
+    16,
+    13,
+    17,
+    8,
+    15,
+    16,
+    1,
+    23,
+    20,
+    20,
+    14,
+    15,
+    17,
+    20,
+    22,
+    21
+   ]
+  },
+  {
+   "pos": 21,
+   "name": "Sebastián Saavedra",
+   "wiki": "Sebastián_Saavedra",
+   "points": 291,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 18,
+   "nat": "COL",
+   "results": [
+    11,
+    9,
+    18,
+    23,
+    15,
+    14,
+    22,
+    17,
+    15,
+    17,
+    15,
+    17,
+    19,
+    21,
+    20,
+    18,
+    16,
+    17
+   ]
+  },
+  {
+   "pos": 22,
+   "name": "Ed Carpenter",
+   "wiki": "Ed_Carpenter_(racing_driver)",
+   "points": 262,
+   "wins": 1,
+   "podiums": 2,
+   "top5": 3,
+   "starts": 6,
+   "nat": "USA",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    27,
+    null,
+    null,
+    1,
+    null,
+    null,
+    13,
+    5,
+    null,
+    null,
+    null,
+    9,
+    null,
+    3
+   ]
+  },
+  {
+   "pos": 23,
+   "name": "Mike Conway",
+   "wiki": "Mike_Conway",
+   "points": 252,
+   "wins": 2,
+   "podiums": 2,
+   "top5": 2,
+   "starts": 12,
+   "nat": "GBR",
+   "results": [
+    16,
+    1,
+    14,
+    19,
+    null,
+    21,
+    11,
+    null,
+    17,
+    13,
+    null,
+    null,
+    15,
+    1,
+    13,
+    null,
+    14,
+    null
+   ]
+  },
+  {
+   "pos": 24,
+   "name": "Oriol Servià",
+   "wiki": "Oriol_Servià",
+   "points": 88,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 4,
+   "nat": "ESP",
+   "results": [
+    null,
+    7,
+    20,
+    12,
+    11,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 25,
+   "name": "Kurt Busch",
+   "wiki": "Kurt_Busch",
+   "points": 80,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 1,
+   "nat": "USA",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    6,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 26,
+   "name": "J. R. Hildebrand",
+   "wiki": "J._R._Hildebrand",
+   "points": 66,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 1,
+   "nat": "USA",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    10,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 27,
+   "name": "Sage Karam",
+   "wiki": "Sage_Karam",
+   "points": 57,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 1,
+   "nat": "USA",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    9,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 28,
+   "name": "Luca Filippi",
+   "wiki": "Luca_Filippi",
+   "points": 46,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 4,
+   "nat": "ITA",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    21,
+    15,
+    null,
+    null,
+    22,
+    16,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 29,
+   "name": "James Davison",
+   "wiki": "James_Davison",
+   "points": 34,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 1,
+   "nat": "AUS",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    16,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 30,
+   "name": "Jacques Villeneuve",
+   "wiki": "Jacques_Villeneuve",
+   "points": 29,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 1,
+   "nat": "CAN",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    14,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 31,
+   "name": "Alex Tagliani",
+   "wiki": "Alex_Tagliani",
+   "points": 28,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 1,
+   "nat": "CAN",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    13,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 32,
+   "name": "Townsend Bell",
+   "wiki": "Townsend_Bell",
+   "points": 22,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 1,
+   "nat": "USA",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    25,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 33,
+   "name": "Pippa Mann",
+   "wiki": "Pippa_Mann",
+   "points": 21,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 1,
+   "nat": "GBR",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    24,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 34,
+   "name": "Martin Plowman",
+   "wiki": "Martin_Plowman",
+   "points": 18,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 2,
+   "nat": "GBR",
+   "results": [
+    null,
+    null,
+    null,
+    18,
+    23,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 35,
+   "name": "Buddy Lazier",
+   "wiki": "Buddy_Lazier",
+   "points": 11,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 1,
+   "nat": "USA",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    32,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 36,
+   "name": "Franck Montagny",
+   "wiki": "Franck_Montagny",
+   "points": 8,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 1,
+   "nat": "FRA",
+   "results": [
+    null,
+    null,
+    null,
+    22,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  }
+ ],
+ "schedule": [
+  {
+   "round": 1,
+   "date": "2014-03-30",
+   "race": "Firestone Grand Prix of St. Petersburg",
+   "track": "Streets of St. Petersburg",
+   "city": "St. Petersburg",
+   "state": "FL",
+   "country": "USA",
+   "winner": "Will Power",
+   "winner_wiki": "Will_Power",
+   "track_type": "street",
+   "cancelled": false
+  },
+  {
+   "round": 2,
+   "date": "2014-04-13",
+   "race": "40th Toyota Grand Prix of Long Beach",
+   "track": "Streets of Long Beach",
+   "city": "Long Beach",
+   "state": "CA",
+   "country": "USA",
+   "winner": "Mike Conway",
+   "winner_wiki": "Mike_Conway",
+   "track_type": "street",
+   "cancelled": false
+  },
+  {
+   "round": 3,
+   "date": "2014-04-27",
+   "race": "Honda Indy Grand Prix of Alabama",
+   "track": "Barber Motorsports Park",
+   "city": "Birmingham",
+   "state": "AL",
+   "country": "USA",
+   "winner": "Ryan Hunter-Reay",
+   "winner_wiki": "Ryan_Hunter-Reay",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 4,
+   "date": "2014-05-10",
+   "race": "Grand Prix of Indianapolis",
+   "track": "Indianapolis Motor Speedway Road Course",
+   "city": "Speedway",
+   "state": "IN",
+   "country": "USA",
+   "winner": "Simon Pagenaud",
+   "winner_wiki": "Simon_Pagenaud",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 5,
+   "date": "2014-05-25",
+   "race": "98th Indianapolis 500-Mile Race",
+   "track": "Indianapolis Motor Speedway",
+   "city": "Speedway",
+   "state": "IN",
+   "country": "USA",
+   "winner": "Ryan Hunter-Reay",
+   "winner_wiki": "Ryan_Hunter-Reay",
+   "track_type": "oval",
+   "cancelled": false
+  },
+  {
+   "round": 6,
+   "date": "2014-05-31",
+   "race": "Chevrolet Indy Dual in Detroit presented by Quicken Loans",
+   "track": "Belle Isle",
+   "city": "Detroit",
+   "state": "MI",
+   "country": "USA",
+   "winner": "Will Power",
+   "winner_wiki": "Will_Power",
+   "track_type": "street",
+   "cancelled": false
+  },
+  {
+   "round": 7,
+   "date": "2014-06-01",
+   "race": "Chevrolet Indy Dual in Detroit presented by Quicken Loans",
+   "track": "Belle Isle",
+   "city": "Detroit",
+   "state": "MI",
+   "country": "USA",
+   "winner": "Hélio Castroneves",
+   "winner_wiki": "Hélio_Castroneves",
+   "track_type": "street",
+   "cancelled": false
+  },
+  {
+   "round": 8,
+   "date": "2014-06-07",
+   "race": "Firestone 600K",
+   "track": "Texas Motor Speedway",
+   "city": "Fort Worth",
+   "state": "TX",
+   "country": "USA",
+   "winner": "Ed Carpenter",
+   "winner_wiki": "Ed_Carpenter_(racing_driver)",
+   "track_type": "oval",
+   "cancelled": false
+  },
+  {
+   "round": 9,
+   "date": "2014-06-28",
+   "race": "Shell and Pennzoil Grand Prix of Houston",
+   "track": "Reliant Park",
+   "city": "Houston",
+   "state": "TX",
+   "country": "USA",
+   "winner": "Carlos Huertas",
+   "winner_wiki": "Carlos_Huertas",
+   "track_type": "street",
+   "cancelled": false
+  },
+  {
+   "round": 10,
+   "date": "2014-06-29",
+   "race": "Shell and Pennzoil Grand Prix of Houston",
+   "track": "Reliant Park",
+   "city": "Houston",
+   "state": "TX",
+   "country": "USA",
+   "winner": "Simon Pagenaud",
+   "winner_wiki": "Simon_Pagenaud",
+   "track_type": "street",
+   "cancelled": false
+  },
+  {
+   "round": 11,
+   "date": "2014-07-06",
+   "race": "Pocono IndyCar 500 fueled by Sunoco",
+   "track": "Pocono Raceway",
+   "city": "Long Pond",
+   "state": "PA",
+   "country": "USA",
+   "winner": "Juan Pablo Montoya",
+   "winner_wiki": "Juan_Pablo_Montoya",
+   "track_type": "oval",
+   "cancelled": false
+  },
+  {
+   "round": 12,
+   "date": "2014-07-12",
+   "race": "Iowa Corn Indy 300 presented by DeKalb",
+   "track": "Iowa Speedway",
+   "city": "Newton",
+   "state": "IA",
+   "country": "USA",
+   "winner": "Ryan Hunter-Reay",
+   "winner_wiki": "Ryan_Hunter-Reay",
+   "track_type": "oval",
+   "cancelled": false
+  },
+  {
+   "round": 13,
+   "date": "2014-07-20",
+   "race": "Honda Indy Toronto",
+   "track": "Exhibition Place",
+   "city": "Toronto",
+   "state": "ON",
+   "country": "CAN",
+   "winner": "Sébastien Bourdais",
+   "winner_wiki": "Sébastien_Bourdais",
+   "track_type": "street",
+   "cancelled": false
+  },
+  {
+   "round": 14,
+   "date": "2014-07-20",
+   "race": "Honda Indy Toronto",
+   "track": "Exhibition Place",
+   "city": "Toronto",
+   "state": "ON",
+   "country": "CAN",
+   "winner": "Mike Conway",
+   "winner_wiki": "Mike_Conway",
+   "track_type": "street",
+   "cancelled": false
+  },
+  {
+   "round": 15,
+   "date": "2014-08-03",
+   "race": "Honda Indy 200 at Mid-Ohio",
+   "track": "Mid-Ohio Sports Car Course",
+   "city": "Lexington",
+   "state": "OH",
+   "country": "USA",
+   "winner": "Scott Dixon",
+   "winner_wiki": "Scott_Dixon",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 16,
+   "date": "2014-08-17",
+   "race": "ABC Supply Wisconsin 250",
+   "track": "The Milwaukee Mile",
+   "city": "West Allis",
+   "state": "WI",
+   "country": "USA",
+   "winner": "Will Power",
+   "winner_wiki": "Will_Power",
+   "track_type": "oval",
+   "cancelled": false
+  },
+  {
+   "round": 17,
+   "date": "2014-08-24",
+   "race": "GoPro Grand Prix of Sonoma",
+   "track": "Sonoma Raceway",
+   "city": "Sonoma",
+   "state": "CA",
+   "country": "USA",
+   "winner": "Scott Dixon",
+   "winner_wiki": "Scott_Dixon",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 18,
+   "date": "2014-08-30",
+   "race": "MAVTV 500 IndyCar World Championships",
+   "track": "Auto Club Speedway",
+   "city": "Fontana",
+   "state": "CA",
+   "country": "USA",
+   "winner": "Tony Kanaan",
+   "winner_wiki": "Tony_Kanaan",
+   "track_type": "oval",
+   "cancelled": false
+  }
+ ],
+ "sources": [
+  "https://en.wikipedia.org/wiki/2014_IndyCar_Series",
+  "https://www.wikidata.org (driver bios)"
+ ]
+}

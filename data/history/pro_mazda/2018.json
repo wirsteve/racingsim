@@ -1,0 +1,1167 @@
+{
+ "series": "formula_pro",
+ "year": 2018,
+ "official_name": "2018 Pro Mazda Championship",
+ "data_level": "full",
+ "teams_source": "teams_table",
+ "teams": [
+  {
+   "team": "BN Racing",
+   "team_wiki": "BN_Racing",
+   "owner": null,
+   "manufacturer": null,
+   "chassis": "Tatuus PM-18",
+   "cars": [
+    {
+     "number": "78",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Kris Wright",
+       "wiki": "Kris_Wright",
+       "rounds": "1–6, 10–13",
+       "nat": "USA"
+      },
+      {
+       "name": "Toby Sowery",
+       "wiki": "Toby_Sowery",
+       "rounds": "8–9",
+       "nat": "GBR"
+      }
+     ]
+    },
+    {
+     "number": "79",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "David Malukas",
+       "wiki": "David_Malukas",
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "83",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Charles Finelli",
+       "wiki": null,
+       "rounds": "1–14",
+       "nat": "USA"
+      }
+     ]
+    }
+   ],
+   "chassis_note": "spec chassis (from page text)"
+  },
+  {
+   "team": "Cape Motorsports",
+   "team_wiki": "Cape_Motorsports",
+   "owner": null,
+   "manufacturer": null,
+   "chassis": "Tatuus PM-18",
+   "cars": [
+    {
+     "number": "3",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Oliver Askew",
+       "wiki": "Oliver_Askew",
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "8",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Nikita Lastochkin",
+       "wiki": "Nikita_Lastochkin",
+       "rounds": "All",
+       "nat": "RUS"
+      }
+     ]
+    }
+   ],
+   "chassis_note": "spec chassis (from page text)"
+  },
+  {
+   "team": "DEForce Racing",
+   "team_wiki": "DEForce_Racing",
+   "owner": null,
+   "manufacturer": null,
+   "chassis": "Tatuus PM-18",
+   "cars": [
+    {
+     "number": "11",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Kory Enders",
+       "wiki": null,
+       "rounds": "3–4",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "12",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "James Raven",
+       "wiki": null,
+       "rounds": "1–2",
+       "nat": "GBR"
+      },
+      {
+       "name": "Moisés de la Vara",
+       "wiki": "Moisés_de_la_Vara",
+       "rounds": "12–16",
+       "nat": "MEX"
+      }
+     ]
+    }
+   ],
+   "chassis_note": "spec chassis (from page text)"
+  },
+  {
+   "team": "Exclusive Autosport",
+   "team_wiki": null,
+   "owner": null,
+   "manufacturer": null,
+   "chassis": "Tatuus PM-18",
+   "cars": [
+    {
+     "number": "90",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Parker Thompson",
+       "wiki": "Parker_Thompson",
+       "rounds": "All",
+       "nat": "CAN"
+      }
+     ]
+    },
+    {
+     "number": "91",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Antonio Serravalle",
+       "wiki": "Antonio_Serravalle",
+       "rounds": "1–11",
+       "nat": "CAN"
+      }
+     ]
+    }
+   ],
+   "chassis_note": "spec chassis (from page text)"
+  },
+  {
+   "team": "Juncos Racing",
+   "team_wiki": "Juncos_Racing",
+   "owner": null,
+   "manufacturer": null,
+   "chassis": "Tatuus PM-18",
+   "cars": [
+    {
+     "number": "1",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Carlos Cunha",
+       "wiki": "Carlos_Cunha",
+       "rounds": "1–13",
+       "nat": "BRA"
+      }
+     ]
+    },
+    {
+     "number": "2",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Rinus VeeKay",
+       "wiki": "Rinus_VeeKay",
+       "rounds": "All",
+       "nat": "NLD"
+      }
+     ]
+    },
+    {
+     "number": "9",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Robert Megennis",
+       "wiki": "Robert_Megennis",
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    }
+   ],
+   "chassis_note": "spec chassis (from page text)"
+  },
+  {
+   "team": "RP Motorsport",
+   "team_wiki": "RP_Motorsport",
+   "owner": null,
+   "manufacturer": null,
+   "chassis": "Tatuus PM-18",
+   "cars": [
+    {
+     "number": "10",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Harrison Scott",
+       "wiki": "Harrison_Scott",
+       "rounds": "1–11, 14",
+       "nat": "GBR"
+      },
+      {
+       "name": "Felipe Drugovich",
+       "wiki": "Felipe_Drugovich",
+       "rounds": "12–13",
+       "nat": "BRA"
+      }
+     ]
+    },
+    {
+     "number": "27",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Lodovico Laurini",
+       "wiki": null,
+       "rounds": "1–7",
+       "nat": "ITA"
+      },
+      {
+       "name": "Raúl Guzmán",
+       "wiki": "Raúl_Guzmán_(racing_driver)",
+       "rounds": "8–11",
+       "nat": "MEX"
+      },
+      {
+       "name": "Mathias Soler-Obel",
+       "wiki": null,
+       "rounds": "12–14",
+       "nat": "COL"
+      }
+     ]
+    }
+   ],
+   "chassis_note": "spec chassis (from page text)"
+  },
+  {
+   "team": "Team Pelfrey",
+   "team_wiki": "Team_Pelfrey",
+   "owner": null,
+   "manufacturer": null,
+   "chassis": "Tatuus PM-18",
+   "cars": [
+    {
+     "number": "80",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Rafael Martins",
+       "wiki": null,
+       "rounds": "1–4",
+       "nat": "BRA"
+      }
+     ]
+    },
+    {
+     "number": "81",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Andrés Gutiérrez",
+       "wiki": null,
+       "rounds": "1–6, 8–13",
+       "nat": "MEX"
+      }
+     ]
+    },
+    {
+     "number": "82",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Sting Ray Robb",
+       "wiki": "Sting_Ray_Robb",
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    }
+   ],
+   "chassis_note": "spec chassis (from page text)"
+  }
+ ],
+ "standings": [
+  {
+   "pos": 1,
+   "name": "Rinus VeeKay",
+   "wiki": "Rinus_VeeKay",
+   "points": 412,
+   "wins": 7,
+   "podiums": 10,
+   "top5": 15,
+   "starts": 16,
+   "nat": "NLD",
+   "results": [
+    1,
+    1,
+    5,
+    4,
+    3,
+    14,
+    4,
+    5,
+    5,
+    1,
+    1,
+    1,
+    1,
+    1,
+    2,
+    2
+   ]
+  },
+  {
+   "pos": 2,
+   "name": "Parker Thompson",
+   "wiki": "Parker_Thompson",
+   "points": 345,
+   "wins": 3,
+   "podiums": 6,
+   "top5": 12,
+   "starts": 16,
+   "nat": "CAN",
+   "results": [
+    2,
+    5,
+    1,
+    2,
+    5,
+    1,
+    1,
+    4,
+    4,
+    8,
+    8,
+    5,
+    6,
+    6,
+    3,
+    5
+   ]
+  },
+  {
+   "pos": 3,
+   "name": "Oliver Askew",
+   "wiki": "Oliver_Askew",
+   "points": 303,
+   "wins": 1,
+   "podiums": 5,
+   "top5": 9,
+   "starts": 16,
+   "nat": "USA",
+   "results": [
+    5,
+    6,
+    7,
+    12,
+    2,
+    4,
+    6,
+    9,
+    8,
+    4,
+    2,
+    6,
+    3,
+    5,
+    1,
+    3
+   ]
+  },
+  {
+   "pos": 4,
+   "name": "David Malukas",
+   "wiki": "David_Malukas",
+   "points": 293,
+   "wins": 3,
+   "podiums": 6,
+   "top5": 8,
+   "starts": 16,
+   "nat": "USA",
+   "results": [
+    7,
+    2,
+    3,
+    5,
+    7,
+    10,
+    11,
+    1,
+    1,
+    9,
+    9,
+    2,
+    13,
+    8,
+    4,
+    1
+   ]
+  },
+  {
+   "pos": 5,
+   "name": "Robert Megennis",
+   "wiki": "Robert_Megennis",
+   "points": 269,
+   "wins": 0,
+   "podiums": 6,
+   "top5": 7,
+   "starts": 16,
+   "nat": "USA",
+   "results": [
+    3,
+    16,
+    14,
+    6,
+    14,
+    8,
+    3,
+    8,
+    10,
+    12,
+    3,
+    3,
+    2,
+    2,
+    5,
+    7
+   ]
+  },
+  {
+   "pos": 6,
+   "name": "Carlos Cunha",
+   "wiki": "Carlos_Cunha",
+   "points": 252,
+   "wins": 0,
+   "podiums": 5,
+   "top5": 8,
+   "starts": 13,
+   "nat": "BRA",
+   "results": [
+    4,
+    3,
+    10,
+    3,
+    4,
+    2,
+    2,
+    6,
+    6,
+    2,
+    10,
+    4,
+    12,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 7,
+   "name": "Sting Ray Robb",
+   "wiki": "Sting_Ray_Robb",
+   "points": 231,
+   "wins": 0,
+   "podiums": 1,
+   "top5": 4,
+   "starts": 16,
+   "nat": "USA",
+   "results": [
+    6,
+    4,
+    9,
+    10,
+    13,
+    3,
+    5,
+    11,
+    9,
+    11,
+    7,
+    9,
+    4,
+    9,
+    6,
+    6
+   ]
+  },
+  {
+   "pos": 8,
+   "name": "Harrison Scott",
+   "wiki": "Harrison_Scott",
+   "points": 223,
+   "wins": 2,
+   "podiums": 6,
+   "top5": 6,
+   "starts": 12,
+   "nat": "GBR",
+   "results": [
+    9,
+    12,
+    2,
+    1,
+    1,
+    12,
+    12,
+    3,
+    3,
+    13,
+    14,
+    null,
+    null,
+    3,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 9,
+   "name": "Nikita Lastochkin",
+   "wiki": "Nikita_Lastochkin",
+   "points": 209,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 3,
+   "starts": 16,
+   "nat": "RUS",
+   "results": [
+    8,
+    7,
+    11,
+    11,
+    6,
+    9,
+    9,
+    12,
+    11,
+    5,
+    4,
+    11,
+    8,
+    11,
+    7,
+    4
+   ]
+  },
+  {
+   "pos": 10,
+   "name": "Charles Finelli",
+   "wiki": null,
+   "points": 143,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 13,
+   "nat": "USA",
+   "results": [
+    13,
+    15,
+    15,
+    "DNS",
+    11,
+    7,
+    10,
+    14,
+    13,
+    6,
+    6,
+    14,
+    11,
+    10,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 11,
+   "name": "Andrés Gutiérrez",
+   "wiki": null,
+   "points": 137,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 2,
+   "starts": 11,
+   "nat": "MEX",
+   "results": [
+    14,
+    8,
+    4,
+    7,
+    12,
+    5,
+    null,
+    10,
+    7,
+    10,
+    12,
+    12,
+    "DNS",
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 12,
+   "name": "Kris Wright",
+   "wiki": "Kris_Wright",
+   "points": 110,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 1,
+   "starts": 10,
+   "nat": "USA",
+   "results": [
+    12,
+    14,
+    13,
+    14,
+    10,
+    6,
+    null,
+    null,
+    null,
+    7,
+    5,
+    10,
+    10,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 13,
+   "name": "Antonio Serravalle",
+   "wiki": "Antonio_Serravalle",
+   "points": 92,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 10,
+   "nat": "CAN",
+   "results": [
+    11,
+    13,
+    16,
+    "DNS",
+    9,
+    11,
+    8,
+    13,
+    12,
+    14,
+    11,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 14,
+   "name": "Lodovico Laurini",
+   "wiki": null,
+   "points": 84,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 7,
+   "nat": "ITA",
+   "results": [
+    10,
+    11,
+    12,
+    9,
+    8,
+    13,
+    7,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 15,
+   "name": "Moisés de la Vara",
+   "wiki": "Moisés_de_la_Vara",
+   "points": 75,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 1,
+   "starts": 5,
+   "nat": "MEX",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    13,
+    9,
+    4,
+    8,
+    8
+   ]
+  },
+  {
+   "pos": 16,
+   "name": "Toby Sowery",
+   "wiki": "Toby_Sowery",
+   "points": 51,
+   "wins": 0,
+   "podiums": 2,
+   "top5": 2,
+   "starts": 2,
+   "nat": "GBR",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    2,
+    2,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 17,
+   "name": "Raúl Guzmán",
+   "wiki": "Raúl_Guzmán_(racing_driver)",
+   "points": 51,
+   "wins": 0,
+   "podiums": 1,
+   "top5": 1,
+   "starts": 4,
+   "nat": "MEX",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    7,
+    14,
+    3,
+    13,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 18,
+   "name": "Mathias Soler-Obel",
+   "wiki": null,
+   "points": 48,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 3,
+   "nat": "COL",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    8,
+    7,
+    7,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 19,
+   "name": "Rafael Martins",
+   "wiki": null,
+   "points": 45,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 4,
+   "nat": "BRA",
+   "results": [
+    16,
+    9,
+    6,
+    8,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 20,
+   "name": "Felipe Drugovich",
+   "wiki": "Felipe_Drugovich",
+   "points": 31,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 1,
+   "starts": 2,
+   "nat": "BRA",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    7,
+    5,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 21,
+   "name": "Kory Enders",
+   "wiki": null,
+   "points": 21,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 2,
+   "nat": "USA",
+   "results": [
+    null,
+    null,
+    8,
+    13,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 22,
+   "name": "James Raven",
+   "wiki": null,
+   "points": 17,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 2,
+   "nat": "GBR",
+   "results": [
+    15,
+    10,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  }
+ ],
+ "schedule": [
+  {
+   "round": 1,
+   "date": "2018-03-10",
+   "race": "Honda Grand Prix of St. Petersburg",
+   "track": "Streets of St. Petersburg",
+   "city": "St. Petersburg",
+   "state": "FL",
+   "country": "USA",
+   "winner": "Rinus VeeKay",
+   "winner_wiki": "Rinus_VeeKay",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 2,
+   "date": "2018-03-11",
+   "race": "Honda Grand Prix of St. Petersburg",
+   "track": "Streets of St. Petersburg",
+   "city": "St. Petersburg",
+   "state": "FL",
+   "country": "USA",
+   "winner": "Rinus VeeKay",
+   "winner_wiki": "Rinus_VeeKay",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 3,
+   "date": "2018-04-21",
+   "race": "Indy Grand Prix of Alabama",
+   "track": "Barber Motorsports Park",
+   "city": "Birmingham",
+   "state": "AL",
+   "country": "USA",
+   "winner": "Parker Thompson",
+   "winner_wiki": "Parker_Thompson",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 4,
+   "date": "2018-04-22",
+   "race": "Indy Grand Prix of Alabama",
+   "track": "Barber Motorsports Park",
+   "city": "Birmingham",
+   "state": "AL",
+   "country": "USA",
+   "winner": "Harrison Scott",
+   "winner_wiki": "Harrison_Scott",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 5,
+   "date": "2018-05-11",
+   "race": "Grand Prix of Indianapolis",
+   "track": "Indianapolis Motor Speedway",
+   "city": "Speedway",
+   "state": "IN",
+   "country": "USA",
+   "winner": "Harrison Scott",
+   "winner_wiki": "Harrison_Scott",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 6,
+   "date": "2018-05-12",
+   "race": "Grand Prix of Indianapolis",
+   "track": "Indianapolis Motor Speedway",
+   "city": "Speedway",
+   "state": "IN",
+   "country": "USA",
+   "winner": "Parker Thompson",
+   "winner_wiki": "Parker_Thompson",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 7,
+   "date": "2018-05-25",
+   "race": "Dave Steele Carb Night Classic",
+   "track": "Lucas Oil Raceway",
+   "city": "Clermont",
+   "state": "IN",
+   "country": "USA",
+   "winner": "Parker Thompson",
+   "winner_wiki": "Parker_Thompson",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 8,
+   "date": "2018-06-23",
+   "race": "Grand Prix of Road America",
+   "track": "Road America",
+   "city": "Elkhart Lake",
+   "state": "WI",
+   "country": "USA",
+   "winner": "David Malukas",
+   "winner_wiki": "David_Malukas",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 9,
+   "date": "2018-06-24",
+   "race": "Grand Prix of Road America",
+   "track": "Road America",
+   "city": "Elkhart Lake",
+   "state": "WI",
+   "country": "USA",
+   "winner": "David Malukas",
+   "winner_wiki": "David_Malukas",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 10,
+   "date": "2018-07-14",
+   "race": "Grand Prix of Toronto",
+   "track": "Exhibition Place",
+   "city": "Toronto",
+   "state": "ON",
+   "country": "CAN",
+   "winner": "Rinus VeeKay",
+   "winner_wiki": "Rinus_VeeKay",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 11,
+   "date": "2018-07-15",
+   "race": "Grand Prix of Toronto",
+   "track": "Exhibition Place",
+   "city": "Toronto",
+   "state": "ON",
+   "country": "CAN",
+   "winner": "Rinus VeeKay",
+   "winner_wiki": "Rinus_VeeKay",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 12,
+   "date": "2018-07-28",
+   "race": "Grand Prix of Mid-Ohio",
+   "track": "Mid-Ohio Sports Car Course",
+   "city": "Lexington",
+   "state": "OH",
+   "country": "USA",
+   "winner": "Rinus VeeKay",
+   "winner_wiki": "Rinus_VeeKay",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 13,
+   "date": "2018-07-29",
+   "race": "Grand Prix of Mid-Ohio",
+   "track": "Mid-Ohio Sports Car Course",
+   "city": "Lexington",
+   "state": "OH",
+   "country": "USA",
+   "winner": "Rinus VeeKay",
+   "winner_wiki": "Rinus_VeeKay",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 14,
+   "date": "2018-08-25",
+   "race": "St Louis Pro Mazda Oval Challenge",
+   "track": "Gateway Motorsports Park",
+   "city": "Madison",
+   "state": "IL",
+   "country": "USA",
+   "winner": "Rinus VeeKay",
+   "winner_wiki": "Rinus_VeeKay",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 15,
+   "date": "2018-09-01",
+   "race": "Grand Prix of Portland",
+   "track": "Portland International Raceway",
+   "city": "Portland",
+   "state": "OR",
+   "country": "USA",
+   "winner": "Oliver Askew",
+   "winner_wiki": "Oliver_Askew",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 16,
+   "date": "2018-09-02",
+   "race": "Grand Prix of Portland",
+   "track": "Portland International Raceway",
+   "city": "Portland",
+   "state": "OR",
+   "country": "USA",
+   "winner": "David Malukas",
+   "winner_wiki": "David_Malukas",
+   "track_type": null,
+   "cancelled": false
+  }
+ ],
+ "sources": [
+  "https://en.wikipedia.org/wiki/2018_Pro_Mazda_Championship",
+  "https://www.wikidata.org (driver bios)"
+ ]
+}

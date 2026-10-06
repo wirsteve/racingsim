@@ -1,0 +1,1566 @@
+{
+ "series": "formula_pro",
+ "year": 2026,
+ "official_name": "2026 USF Pro 2000 Championship presented by Continental Tire",
+ "data_level": "full",
+ "teams_source": "teams_table",
+ "teams": [
+  {
+   "team": "Comet/NCMP Racing",
+   "team_wiki": null,
+   "owner": null,
+   "manufacturer": "Mazda",
+   "chassis": null,
+   "cars": [
+    {
+     "number": "21",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Logan Adams",
+       "wiki": null,
+       "rounds": "1–2, 8–10, 15",
+       "nat": "USA"
+      }
+     ]
+    }
+   ],
+   "manufacturer_note": "spec engine (from page text)"
+  },
+  {
+   "team": "Exclusive Autosport",
+   "team_wiki": null,
+   "owner": null,
+   "manufacturer": "Mazda",
+   "chassis": null,
+   "cars": [
+    {
+     "number": "40",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Jack William Miller",
+       "wiki": "Jack_William_Miller",
+       "rounds": "3–4",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "90",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Evan Cooley",
+       "wiki": null,
+       "rounds": "1–2, 15",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "91",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Joey Brienza",
+       "wiki": "Joey_Brienza",
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "92",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Jack Jeffers",
+       "wiki": "Jack_Jeffers",
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "93",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Anthony Martella",
+       "wiki": "Anthony_Martella",
+       "rounds": "1–2, 15–18",
+       "nat": "CAN"
+      }
+     ]
+    },
+    {
+     "number": "95",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Mac Clark",
+       "wiki": "Mac_Clark",
+       "rounds": "1–5",
+       "nat": "CAN"
+      }
+     ]
+    }
+   ],
+   "manufacturer_note": "spec engine (from page text)"
+  },
+  {
+   "team": "FatBoy Racing!",
+   "team_wiki": null,
+   "owner": null,
+   "manufacturer": "Mazda",
+   "chassis": null,
+   "cars": [
+    {
+     "number": "83",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Charles Finelli",
+       "wiki": null,
+       "rounds": "3–5",
+       "nat": "USA"
+      }
+     ]
+    }
+   ],
+   "manufacturer_note": "spec engine (from page text)"
+  },
+  {
+   "team": "JHDD powered by ECR",
+   "team_wiki": "Jay_Howard_Driver_Development",
+   "owner": null,
+   "manufacturer": "Mazda",
+   "chassis": null,
+   "cars": [
+    {
+     "number": "5",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Tanner DeFabis",
+       "wiki": null,
+       "rounds": "1–2, 5, 15",
+       "nat": "USA"
+      },
+      {
+       "name": "Clemente Huerta",
+       "wiki": null,
+       "rounds": "16–18",
+       "nat": "CHL"
+      }
+     ]
+    },
+    {
+     "number": "6",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Andrés Cárdenas",
+       "wiki": "Andrés_Cárdenas",
+       "rounds": "All",
+       "nat": "PER"
+      }
+     ]
+    },
+    {
+     "number": "7",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "JT Hoskins",
+       "wiki": null,
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    }
+   ],
+   "manufacturer_note": "spec engine (from page text)"
+  },
+  {
+   "team": "Pabst Racing",
+   "team_wiki": "Pabst_Racing",
+   "owner": null,
+   "manufacturer": "Mazda",
+   "chassis": null,
+   "cars": [
+    {
+     "number": "18",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "G3 Argyros",
+       "wiki": "G3_Argyros",
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "19",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Jacob Douglas",
+       "wiki": "Jacob_Douglas",
+       "rounds": "1–5",
+       "nat": null
+      },
+      {
+       "name": "Colin Aitken",
+       "wiki": null,
+       "rounds": "11–18",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "20",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Mayer Deonarine",
+       "wiki": null,
+       "rounds": "3–4, 6–7",
+       "nat": "CAN"
+      }
+     ]
+    }
+   ],
+   "manufacturer_note": "spec engine (from page text)"
+  },
+  {
+   "team": "TJ Speed Motorsports",
+   "team_wiki": null,
+   "owner": null,
+   "manufacturer": "Mazda",
+   "chassis": null,
+   "cars": [
+    {
+     "number": "26",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Thomas Schrage",
+       "wiki": null,
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "27",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Christian Cameron",
+       "wiki": null,
+       "rounds": "1–14",
+       "nat": "USA"
+      },
+      {
+       "name": "Jeshua Alianell",
+       "wiki": null,
+       "rounds": "15–18",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "28",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Jeshua Alianell",
+       "wiki": null,
+       "rounds": "6–7",
+       "nat": "USA"
+      },
+      {
+       "name": "Leandro Juncos",
+       "wiki": "Leandro_Juncos",
+       "rounds": "1–2",
+       "nat": "ARG"
+      },
+      {
+       "name": "Tymek Kucharczyk",
+       "wiki": "Tymek_Kucharczyk",
+       "rounds": "5",
+       "nat": "POL"
+      },
+      {
+       "name": "Aidan Schuh",
+       "wiki": null,
+       "rounds": "16–18",
+       "nat": "USA"
+      }
+     ]
+    }
+   ],
+   "manufacturer_note": "spec engine (from page text)"
+  },
+  {
+   "team": "Turn 3 Motorsport",
+   "team_wiki": "Turn_3_Motorsport",
+   "owner": null,
+   "manufacturer": "Mazda",
+   "chassis": null,
+   "cars": [
+    {
+     "number": "2",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Michael Costello",
+       "wiki": "Michael_Costello_(racing_driver)",
+       "rounds": "1–10",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "3",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Tyke Durst",
+       "wiki": null,
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "4",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Leonardo Escorpioni",
+       "wiki": "Leonardo_Escorpioni",
+       "rounds": "1–12, 15–18",
+       "nat": "BRA"
+      }
+     ]
+    },
+    {
+     "number": "22",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Sebastian Manson",
+       "wiki": "Sebastian_Manson",
+       "rounds": "All",
+       "nat": "NZL"
+      }
+     ]
+    },
+    {
+     "number": "44",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Brady Golan",
+       "wiki": "Brady_Golan",
+       "rounds": "1–5, 8–18",
+       "nat": "USA"
+      }
+     ]
+    }
+   ],
+   "manufacturer_note": "spec engine (from page text)"
+  },
+  {
+   "team": "VRD Racing",
+   "team_wiki": "VRD_Racing",
+   "owner": null,
+   "manufacturer": "Mazda",
+   "chassis": null,
+   "cars": [
+    {
+     "number": "11",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Colin Aitken",
+       "wiki": null,
+       "rounds": "1–10",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "25",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Teddy Musella",
+       "wiki": "Teddy_Musella",
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "77",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Frankie Mossman",
+       "wiki": "Frankie_Mossman",
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    }
+   ],
+   "manufacturer_note": "spec engine (from page text)"
+  }
+ ],
+ "standings": [
+  {
+   "pos": 1,
+   "name": "Jack Jeffers",
+   "wiki": "Jack_Jeffers",
+   "points": 430,
+   "wins": 6,
+   "podiums": 10,
+   "top5": 14,
+   "starts": 18,
+   "nat": "USA",
+   "results": [
+    18,
+    1,
+    5,
+    1,
+    6,
+    4,
+    2,
+    2,
+    4,
+    2,
+    14,
+    4,
+    1,
+    2,
+    6,
+    1,
+    1,
+    1
+   ]
+  },
+  {
+   "pos": 2,
+   "name": "Leonardo Escorpioni",
+   "wiki": "Leonardo_Escorpioni",
+   "points": 381,
+   "wins": 5,
+   "podiums": 9,
+   "top5": 12,
+   "starts": 16,
+   "nat": "BRA",
+   "results": [
+    1,
+    8,
+    12,
+    16,
+    2,
+    5,
+    5,
+    1,
+    1,
+    1,
+    8,
+    1,
+    null,
+    null,
+    2,
+    3,
+    2,
+    4
+   ]
+  },
+  {
+   "pos": 3,
+   "name": "G3 Argyros",
+   "wiki": "G3_Argyros",
+   "points": 359,
+   "wins": 3,
+   "podiums": 7,
+   "top5": 12,
+   "starts": 18,
+   "nat": "USA",
+   "results": [
+    11,
+    2,
+    10,
+    15,
+    8,
+    1,
+    1,
+    15,
+    5,
+    4,
+    1,
+    2,
+    2,
+    11,
+    4,
+    5,
+    4,
+    2
+   ]
+  },
+  {
+   "pos": 4,
+   "name": "Thomas Schrage",
+   "wiki": null,
+   "points": 317,
+   "wins": 1,
+   "podiums": 4,
+   "top5": 8,
+   "starts": 18,
+   "nat": "USA",
+   "results": [
+    21,
+    9,
+    8,
+    7,
+    4,
+    6,
+    6,
+    4,
+    6,
+    5,
+    10,
+    6,
+    5,
+    3,
+    1,
+    2,
+    3,
+    14
+   ]
+  },
+  {
+   "pos": 5,
+   "name": "Frankie Mossman",
+   "wiki": "Frankie_Mossman",
+   "points": 289,
+   "wins": 0,
+   "podiums": 5,
+   "top5": 10,
+   "starts": 18,
+   "nat": "USA",
+   "results": [
+    2,
+    3,
+    7,
+    2,
+    20,
+    3,
+    4,
+    3,
+    16,
+    11,
+    12,
+    5,
+    4,
+    7,
+    7,
+    4,
+    7,
+    5
+   ]
+  },
+  {
+   "pos": 6,
+   "name": "Andrés Cárdenas",
+   "wiki": "Andrés_Cárdenas",
+   "points": 279,
+   "wins": 1,
+   "podiums": 6,
+   "top5": 7,
+   "starts": 18,
+   "nat": "PER",
+   "results": [
+    4,
+    13,
+    14,
+    6,
+    12,
+    2,
+    3,
+    7,
+    2,
+    3,
+    11,
+    14,
+    3,
+    1,
+    8,
+    17,
+    17,
+    16
+   ]
+  },
+  {
+   "pos": 7,
+   "name": "Teddy Musella",
+   "wiki": "Teddy_Musella",
+   "points": 228,
+   "wins": 0,
+   "podiums": 1,
+   "top5": 3,
+   "starts": 18,
+   "nat": "USA",
+   "results": [
+    15,
+    18,
+    13,
+    3,
+    7,
+    7,
+    7,
+    5,
+    7,
+    7,
+    13,
+    13,
+    8,
+    5,
+    17,
+    9,
+    6,
+    6
+   ]
+  },
+  {
+   "pos": 8,
+   "name": "Colin Aitken",
+   "wiki": null,
+   "points": 225,
+   "wins": 0,
+   "podiums": 3,
+   "top5": 4,
+   "starts": 18,
+   "nat": "USA",
+   "results": [
+    14,
+    10,
+    9,
+    14,
+    14,
+    11,
+    16,
+    12,
+    14,
+    12,
+    2,
+    3,
+    12,
+    8,
+    11,
+    10,
+    4,
+    3
+   ]
+  },
+  {
+   "pos": 9,
+   "name": "Brady Golan",
+   "wiki": "Brady_Golan",
+   "points": 214,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 2,
+   "starts": 16,
+   "nat": "USA",
+   "results": [
+    6,
+    6,
+    6,
+    12,
+    5,
+    null,
+    null,
+    13,
+    8,
+    6,
+    5,
+    7,
+    6,
+    12,
+    9,
+    15,
+    11,
+    12
+   ]
+  },
+  {
+   "pos": 10,
+   "name": "Sebastian Manson",
+   "wiki": "Sebastian_Manson",
+   "points": 185,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 2,
+   "starts": 18,
+   "nat": "NZL",
+   "results": [
+    22,
+    16,
+    19,
+    4,
+    15,
+    15,
+    10,
+    8,
+    9,
+    9,
+    9,
+    12,
+    7,
+    4,
+    18,
+    6,
+    8,
+    15
+   ]
+  },
+  {
+   "pos": 11,
+   "name": "JT Hoskins",
+   "wiki": null,
+   "points": 183,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 1,
+   "starts": 18,
+   "nat": "USA",
+   "results": [
+    9,
+    5,
+    15,
+    19,
+    17,
+    14,
+    13,
+    16,
+    15,
+    10,
+    6,
+    10,
+    10,
+    9,
+    12,
+    7,
+    9,
+    8
+   ]
+  },
+  {
+   "pos": 12,
+   "name": "Joey Brienza",
+   "wiki": "Joey_Brienza",
+   "points": 182,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 18,
+   "nat": "USA",
+   "results": [
+    10,
+    22,
+    11,
+    17,
+    18,
+    9,
+    9,
+    11,
+    13,
+    8,
+    7,
+    9,
+    9,
+    10,
+    14,
+    8,
+    10,
+    10
+   ]
+  },
+  {
+   "pos": 13,
+   "name": "Michael Costello",
+   "wiki": "Michael_Costello_(racing_driver)",
+   "points": 166,
+   "wins": 1,
+   "podiums": 3,
+   "top5": 4,
+   "starts": 10,
+   "nat": "USA",
+   "results": [
+    3,
+    7,
+    18,
+    5,
+    1,
+    8,
+    12,
+    10,
+    3,
+    13,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 14,
+   "name": "Tyke Durst",
+   "wiki": null,
+   "points": 159,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 1,
+   "starts": 18,
+   "nat": "USA",
+   "results": [
+    12,
+    15,
+    17,
+    18,
+    13,
+    10,
+    14,
+    14,
+    12,
+    15,
+    4,
+    11,
+    11,
+    6,
+    16,
+    14,
+    13,
+    13
+   ]
+  },
+  {
+   "pos": 15,
+   "name": "Christian Cameron",
+   "wiki": null,
+   "points": 144,
+   "wins": 0,
+   "podiums": 1,
+   "top5": 3,
+   "starts": 12,
+   "nat": "USA",
+   "results": [
+    5,
+    20,
+    4,
+    13,
+    11,
+    16,
+    8,
+    6,
+    10,
+    16,
+    3,
+    8,
+    "WTH",
+    "WTH",
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 16,
+   "name": "Jacob Douglas",
+   "wiki": "Jacob_Douglas",
+   "points": 70,
+   "wins": 1,
+   "podiums": 1,
+   "top5": 1,
+   "starts": 5,
+   "nat": null,
+   "results": [
+    16,
+    17,
+    1,
+    9,
+    9,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 17,
+   "name": "Anthony Martella",
+   "wiki": "Anthony_Martella",
+   "points": 70,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 1,
+   "starts": 6,
+   "nat": "CAN",
+   "results": [
+    7,
+    14,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    5,
+    16,
+    15,
+    9
+   ]
+  },
+  {
+   "pos": 18,
+   "name": "Mac Clark",
+   "wiki": "Mac_Clark",
+   "points": 61,
+   "wins": 0,
+   "podiums": 1,
+   "top5": 1,
+   "starts": 5,
+   "nat": "CAN",
+   "results": [
+    17,
+    19,
+    2,
+    8,
+    10,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 19,
+   "name": "Logan Adams",
+   "wiki": null,
+   "points": 60,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 6,
+   "nat": "USA",
+   "results": [
+    8,
+    21,
+    null,
+    null,
+    null,
+    null,
+    null,
+    9,
+    11,
+    14,
+    null,
+    null,
+    null,
+    null,
+    10,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 20,
+   "name": "Jeshua Alianell",
+   "wiki": null,
+   "points": 57,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 6,
+   "nat": "USA",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    12,
+    15,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    15,
+    11,
+    12,
+    7
+   ]
+  },
+  {
+   "pos": 21,
+   "name": "Evan Cooley",
+   "wiki": null,
+   "points": 54,
+   "wins": 0,
+   "podiums": 1,
+   "top5": 2,
+   "starts": 3,
+   "nat": "USA",
+   "results": [
+    19,
+    4,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    3,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 22,
+   "name": "Mayer Deonarine",
+   "wiki": null,
+   "points": 51,
+   "wins": 0,
+   "podiums": 1,
+   "top5": 1,
+   "starts": 4,
+   "nat": "CAN",
+   "results": [
+    null,
+    null,
+    3,
+    10,
+    null,
+    13,
+    11,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 23,
+   "name": "Tymek Kucharczyk",
+   "wiki": "Tymek_Kucharczyk",
+   "points": 33,
+   "wins": 0,
+   "podiums": 1,
+   "top5": 1,
+   "starts": 1,
+   "nat": "POL",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    3,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 24,
+   "name": "Tanner DeFabis",
+   "wiki": null,
+   "points": 31,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 4,
+   "nat": "USA",
+   "results": [
+    20,
+    11,
+    null,
+    null,
+    16,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    13,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 25,
+   "name": "Aidan Schuh",
+   "wiki": null,
+   "points": 26,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 3,
+   "nat": "USA",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    12,
+    14,
+    11
+   ]
+  },
+  {
+   "pos": 26,
+   "name": "Charles Finelli",
+   "wiki": null,
+   "points": 18,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 3,
+   "nat": "USA",
+   "results": [
+    null,
+    null,
+    16,
+    11,
+    19,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 27,
+   "name": "Leandro Juncos",
+   "wiki": "Leandro_Juncos",
+   "points": 17,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 2,
+   "nat": "ARG",
+   "results": [
+    13,
+    12,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 28,
+   "name": "Clemente Huerta",
+   "wiki": null,
+   "points": 17,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 3,
+   "nat": "CHL",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    13,
+    16,
+    17
+   ]
+  },
+  {
+   "pos": 29,
+   "name": "Jack William Miller",
+   "wiki": "Jack_William_Miller",
+   "points": 0,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 0,
+   "nat": "USA",
+   "results": [
+    null,
+    null,
+    "DNS",
+    "DNS",
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  }
+ ],
+ "schedule": [
+  {
+   "round": 1,
+   "date": "2026-03-13",
+   "race": "Andersen Interior Contracting Grand Prix of Arlington",
+   "track": "Streets of Arlington",
+   "city": "Arlington",
+   "state": "TX",
+   "country": "USA",
+   "winner": "Leonardo Escorpioni",
+   "winner_wiki": "Leonardo_Escorpioni",
+   "track_type": "street",
+   "cancelled": false
+  },
+  {
+   "round": 2,
+   "date": "2026-03-13",
+   "race": "Andersen Interior Contracting Grand Prix of Arlington",
+   "track": "Streets of Arlington",
+   "city": "Arlington",
+   "state": "TX",
+   "country": "USA",
+   "winner": "Jack Jeffers",
+   "winner_wiki": "Jack_Jeffers",
+   "track_type": "street",
+   "cancelled": false
+  },
+  {
+   "round": 3,
+   "date": "2026-05-07",
+   "race": "Tatuus USF Pro Championships Indy Grand Prix",
+   "track": "Indianapolis Motor Speedway Road Course",
+   "city": "Speedway",
+   "state": "IN",
+   "country": "USA",
+   "winner": "Jacob Douglas",
+   "winner_wiki": "Jacob_Douglas",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 4,
+   "date": "2026-05-07",
+   "race": "Tatuus USF Pro Championships Indy Grand Prix",
+   "track": "Indianapolis Motor Speedway Road Course",
+   "city": "Speedway",
+   "state": "IN",
+   "country": "USA",
+   "winner": "Jack Jeffers",
+   "winner_wiki": "Jack_Jeffers",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 5,
+   "date": "2026-05-21",
+   "race": "Carb Night Classic presented by Marelli",
+   "track": "Lucas Oil Indianapolis Raceway Park",
+   "city": "Brownsburg",
+   "state": "IN",
+   "country": "USA",
+   "winner": "Michael Costello",
+   "winner_wiki": "Michael_Costello_(racing_driver)",
+   "track_type": "oval",
+   "cancelled": false
+  },
+  {
+   "round": 6,
+   "date": "2026-06-18",
+   "race": "The Andersen Companies Grand Prix of Road America presented by Elite Engines",
+   "track": "Road America",
+   "city": "Elkhart Lake",
+   "state": "WI",
+   "country": "USA",
+   "winner": "G3 Argyros",
+   "winner_wiki": "G3_Argyros",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 7,
+   "date": "2026-06-18",
+   "race": "The Andersen Companies Grand Prix of Road America presented by Elite Engines",
+   "track": "Road America",
+   "city": "Elkhart Lake",
+   "state": "WI",
+   "country": "USA",
+   "winner": "G3 Argyros",
+   "winner_wiki": "G3_Argyros",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 8,
+   "date": "2026-07-02",
+   "race": "USF Pro Patriot 250 Grand Prix of Mid-Ohio",
+   "track": "Mid-Ohio Sports Car Course",
+   "city": "Lexington",
+   "state": "OH",
+   "country": "USA",
+   "winner": "Leonardo Escorpioni",
+   "winner_wiki": "Leonardo_Escorpioni",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 9,
+   "date": "2026-07-02",
+   "race": "USF Pro Patriot 250 Grand Prix of Mid-Ohio",
+   "track": "Mid-Ohio Sports Car Course",
+   "city": "Lexington",
+   "state": "OH",
+   "country": "USA",
+   "winner": "Leonardo Escorpioni",
+   "winner_wiki": "Leonardo_Escorpioni",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 10,
+   "date": "2026-07-02",
+   "race": "USF Pro Patriot 250 Grand Prix of Mid-Ohio",
+   "track": "Mid-Ohio Sports Car Course",
+   "city": "Lexington",
+   "state": "OH",
+   "country": "USA",
+   "winner": "Leonardo Escorpioni",
+   "winner_wiki": "Leonardo_Escorpioni",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 11,
+   "date": "2026-08-06",
+   "race": "Continental Tire Grand Prix of Portland",
+   "track": "Portland International Raceway",
+   "city": "Portland",
+   "state": "OR",
+   "country": "USA",
+   "winner": "G3 Argyros",
+   "winner_wiki": "G3_Argyros",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 12,
+   "date": "2026-08-06",
+   "race": "Continental Tire Grand Prix of Portland",
+   "track": "Portland International Raceway",
+   "city": "Portland",
+   "state": "OR",
+   "country": "USA",
+   "winner": "Leonardo Escorpioni",
+   "winner_wiki": "Leonardo_Escorpioni",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 13,
+   "date": "2026-08-14",
+   "race": "Continental Tire Grand Prix of Markham",
+   "track": "Streets of Markham",
+   "city": "Markham",
+   "state": "ON",
+   "country": "CAN",
+   "winner": "Jack Jeffers",
+   "winner_wiki": "Jack_Jeffers",
+   "track_type": "street",
+   "cancelled": false
+  },
+  {
+   "round": 14,
+   "date": "2026-08-14",
+   "race": "Continental Tire Grand Prix of Markham",
+   "track": "Streets of Markham",
+   "city": "Markham",
+   "state": "ON",
+   "country": "CAN",
+   "winner": "Andrés Cárdenas",
+   "winner_wiki": "Andrés_Cárdenas",
+   "track_type": "street",
+   "cancelled": false
+  },
+  {
+   "round": 15,
+   "date": "2026-08-29",
+   "race": "VP Racing Grand Prix of Milwaukee",
+   "track": "Milwaukee Mile",
+   "city": "West Allis",
+   "state": "WI",
+   "country": "USA",
+   "winner": "Thomas Schrage",
+   "winner_wiki": null,
+   "track_type": "oval",
+   "cancelled": false
+  },
+  {
+   "round": 16,
+   "date": "2026-09-24",
+   "race": "USF Pro Championships Grand Prix of Road America",
+   "track": "Road America",
+   "city": "Elkhart Lake",
+   "state": "WI",
+   "country": "USA",
+   "winner": "Jack Jeffers",
+   "winner_wiki": "Jack_Jeffers",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 17,
+   "date": "2026-09-24",
+   "race": "USF Pro Championships Grand Prix of Road America",
+   "track": "Road America",
+   "city": "Elkhart Lake",
+   "state": "WI",
+   "country": "USA",
+   "winner": "Jack Jeffers",
+   "winner_wiki": "Jack_Jeffers",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 18,
+   "date": "2026-09-24",
+   "race": "USF Pro Championships Grand Prix of Road America",
+   "track": "Road America",
+   "city": "Elkhart Lake",
+   "state": "WI",
+   "country": "USA",
+   "winner": "Jack Jeffers",
+   "winner_wiki": "Jack_Jeffers",
+   "track_type": "road",
+   "cancelled": false
+  }
+ ],
+ "sources": [
+  "https://en.wikipedia.org/wiki/2026_USF_Pro_2000_Championship",
+  "https://www.wikidata.org (driver bios)"
+ ]
+}

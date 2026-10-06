@@ -1,0 +1,859 @@
+{
+ "series": "formula_lights",
+ "year": 2019,
+ "official_name": "2019 Indy Lights season",
+ "era": "IRL feeder (Infiniti Pro / Indy Pro / Indy Lights / Indy NXT)",
+ "data_level": "full",
+ "teams_source": "teams_table",
+ "teams": [
+  {
+   "team": "Andretti Autosport",
+   "team_wiki": "Andretti_Autosport",
+   "owner": null,
+   "manufacturer": null,
+   "chassis": null,
+   "cars": [
+    {
+     "number": "18",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Jarett Andretti",
+       "wiki": "Jarett_Andretti",
+       "rounds": "7",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "27",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Robert Megennis",
+       "wiki": "Robert_Megennis",
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "28",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Oliver Askew",
+       "wiki": "Oliver_Askew",
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "48",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Ryan Norman",
+       "wiki": "Ryan_Norman",
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Belardi Auto Racing",
+   "team_wiki": "Belardi_Auto_Racing",
+   "owner": null,
+   "manufacturer": null,
+   "chassis": null,
+   "cars": [
+    {
+     "number": "4",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Julien Falchero",
+       "wiki": "Julien_Falchero",
+       "rounds": "1–4",
+       "nat": "FRA"
+      },
+      {
+       "name": "Aaron Telitz",
+       "wiki": "Aaron_Telitz",
+       "rounds": "7–13",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "5",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Lucas Kohl",
+       "wiki": "Lucas_Kohl",
+       "rounds": "All",
+       "nat": "BRA"
+      }
+     ]
+    },
+    {
+     "number": "13",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Zachary Claman",
+       "wiki": "Zachary_Claman_DeMelo",
+       "rounds": "1–6",
+       "nat": "CAN"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Belardi Auto Racing with Jonathan Byrd's Racing",
+   "team_wiki": "Belardi_Auto_Racing",
+   "owner": null,
+   "manufacturer": null,
+   "chassis": null,
+   "cars": [
+    {
+     "number": "17",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Chris Windom",
+       "wiki": "Chris_Windom",
+       "rounds": "7",
+       "nat": "USA"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "BN Racing Team Pelfrey HMD Motorsports",
+   "team_wiki": "BN_Racing",
+   "owner": null,
+   "manufacturer": null,
+   "chassis": null,
+   "cars": [
+    {
+     "number": "2",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Toby Sowery",
+       "wiki": "Toby_Sowery",
+       "rounds": "All",
+       "nat": "GBR"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "BN Racing HMD Motorsports",
+   "team_wiki": "BN_Racing",
+   "owner": null,
+   "manufacturer": null,
+   "chassis": null,
+   "cars": [
+    {
+     "number": "79",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "David Malukas",
+       "wiki": "David_Malukas",
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Juncos Racing",
+   "team_wiki": "Juncos_Racing",
+   "owner": null,
+   "manufacturer": null,
+   "chassis": null,
+   "cars": [
+    {
+     "number": "21",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Rinus VeeKay",
+       "wiki": "Rinus_VeeKay",
+       "rounds": "All",
+       "nat": "NLD"
+      }
+     ]
+    },
+    {
+     "number": "67",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Dalton Kellett",
+       "wiki": "Dalton_Kellett",
+       "rounds": "All",
+       "nat": "CAN"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "standings": [
+  {
+   "pos": 1,
+   "name": "Oliver Askew",
+   "wiki": "Oliver_Askew",
+   "points": 486,
+   "wins": 7,
+   "podiums": 15,
+   "top5": 17,
+   "starts": 18,
+   "nat": "USA",
+   "results": [
+    3,
+    10,
+    1,
+    1,
+    2,
+    3,
+    1,
+    5,
+    3,
+    2,
+    1,
+    1,
+    1,
+    1,
+    2,
+    3,
+    4,
+    2
+   ]
+  },
+  {
+   "pos": 2,
+   "name": "Rinus VeeKay",
+   "wiki": "Rinus_VeeKay",
+   "points": 465,
+   "wins": 6,
+   "podiums": 14,
+   "top5": 16,
+   "starts": 18,
+   "nat": "NLD",
+   "results": [
+    5,
+    1,
+    2,
+    4,
+    3,
+    1,
+    3,
+    7,
+    1,
+    3,
+    9,
+    3,
+    3,
+    2,
+    1,
+    2,
+    1,
+    1
+   ]
+  },
+  {
+   "pos": 3,
+   "name": "Toby Sowery",
+   "wiki": "Toby_Sowery",
+   "points": 367,
+   "wins": 1,
+   "podiums": 7,
+   "top5": 13,
+   "starts": 18,
+   "nat": "GBR",
+   "results": [
+    2,
+    3,
+    5,
+    6,
+    7,
+    5,
+    4,
+    4,
+    8,
+    5,
+    2,
+    9,
+    2,
+    8,
+    4,
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "pos": 4,
+   "name": "Ryan Norman",
+   "wiki": "Ryan_Norman",
+   "points": 359,
+   "wins": 1,
+   "podiums": 4,
+   "top5": 11,
+   "starts": 18,
+   "nat": "USA",
+   "results": [
+    7,
+    6,
+    6,
+    8,
+    4,
+    8,
+    2,
+    1,
+    2,
+    4,
+    4,
+    2,
+    4,
+    4,
+    7,
+    4,
+    7,
+    5
+   ]
+  },
+  {
+   "pos": 5,
+   "name": "Robert Megennis",
+   "wiki": "Robert_Megennis",
+   "points": 355,
+   "wins": 1,
+   "podiums": 6,
+   "top5": 12,
+   "starts": 18,
+   "nat": "USA",
+   "results": [
+    6,
+    9,
+    3,
+    2,
+    1,
+    4,
+    8,
+    2,
+    6,
+    6,
+    5,
+    4,
+    9,
+    5,
+    3,
+    5,
+    3,
+    4
+   ]
+  },
+  {
+   "pos": 6,
+   "name": "David Malukas",
+   "wiki": "David_Malukas",
+   "points": 301,
+   "wins": 0,
+   "podiums": 2,
+   "top5": 8,
+   "starts": 18,
+   "nat": "USA",
+   "results": [
+    4,
+    4,
+    10,
+    3,
+    6,
+    6,
+    11,
+    6,
+    4,
+    9,
+    8,
+    5,
+    5,
+    3,
+    6,
+    8,
+    5,
+    7
+   ]
+  },
+  {
+   "pos": 7,
+   "name": "Dalton Kellett",
+   "wiki": "Dalton_Kellett",
+   "points": 275,
+   "wins": 0,
+   "podiums": 1,
+   "top5": 3,
+   "starts": 18,
+   "nat": "CAN",
+   "results": [
+    10,
+    8,
+    9,
+    9,
+    8,
+    7,
+    5,
+    8,
+    7,
+    8,
+    3,
+    7,
+    8,
+    6,
+    5,
+    6,
+    6,
+    6
+   ]
+  },
+  {
+   "pos": 8,
+   "name": "Lucas Kohl",
+   "wiki": "Lucas_Kohl",
+   "points": 253,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 18,
+   "nat": "BRA",
+   "results": [
+    9,
+    7,
+    8,
+    7,
+    9,
+    9,
+    7,
+    9,
+    9,
+    7,
+    7,
+    6,
+    7,
+    7,
+    8,
+    7,
+    8,
+    8
+   ]
+  },
+  {
+   "pos": 9,
+   "name": "Aaron Telitz",
+   "wiki": "Aaron_Telitz",
+   "points": 133,
+   "wins": 1,
+   "podiums": 2,
+   "top5": 3,
+   "starts": 7,
+   "nat": "USA",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    9,
+    3,
+    5,
+    1,
+    6,
+    8,
+    6,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 10,
+   "name": "Zachary Claman",
+   "wiki": "Zachary_Claman_DeMelo",
+   "points": 124,
+   "wins": 1,
+   "podiums": 3,
+   "top5": 4,
+   "starts": 6,
+   "nat": "CAN",
+   "results": [
+    1,
+    2,
+    7,
+    10,
+    5,
+    2,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 11,
+   "name": "Julien Falchero",
+   "wiki": "Julien_Falchero",
+   "points": 66,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 3,
+   "starts": 4,
+   "nat": "FRA",
+   "results": [
+    8,
+    5,
+    4,
+    5,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 12,
+   "name": "Jarett Andretti",
+   "wiki": "Jarett_Andretti",
+   "points": 23,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 1,
+   "nat": "USA",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    6,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 13,
+   "name": "Chris Windom",
+   "wiki": "Chris_Windom",
+   "points": 17,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 1,
+   "nat": "USA",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    10,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  }
+ ],
+ "schedule": [
+  {
+   "round": 1,
+   "date": "2019-03-09",
+   "race": "St. Petersburg Twin 150k",
+   "track": "Streets of St. Petersburg",
+   "city": "St. Petersburg",
+   "state": "FL",
+   "country": "USA",
+   "winner": "Zachary Claman",
+   "winner_wiki": "Zachary_Claman_DeMelo",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 2,
+   "date": "2019-03-10",
+   "race": "St. Petersburg Twin 150k",
+   "track": "Streets of St. Petersburg",
+   "city": "St. Petersburg",
+   "state": "FL",
+   "country": "USA",
+   "winner": "Rinus VeeKay",
+   "winner_wiki": "Rinus_VeeKay",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 3,
+   "date": "2019-03-23",
+   "race": "Indy Lights Classic",
+   "track": "Circuit of the Americas",
+   "city": "Austin",
+   "state": "TX",
+   "country": "USA",
+   "winner": "Oliver Askew",
+   "winner_wiki": "Oliver_Askew",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 4,
+   "date": "2019-03-24",
+   "race": "Indy Lights Classic",
+   "track": "Circuit of the Americas",
+   "city": "Austin",
+   "state": "TX",
+   "country": "USA",
+   "winner": "Oliver Askew",
+   "winner_wiki": "Oliver_Askew",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 5,
+   "date": "2019-05-10",
+   "race": "Indy Lights Grand Prix",
+   "track": "Indianapolis Motor Speedway",
+   "city": "Speedway",
+   "state": "IN",
+   "country": "USA",
+   "winner": "Robert Megennis",
+   "winner_wiki": "Robert_Megennis",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 6,
+   "date": "2019-05-11",
+   "race": "Indy Lights Grand Prix",
+   "track": "Indianapolis Motor Speedway",
+   "city": "Speedway",
+   "state": "IN",
+   "country": "USA",
+   "winner": "Rinus VeeKay",
+   "winner_wiki": "Rinus_VeeKay",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 7,
+   "date": "2019-05-24",
+   "race": "Freedom 100",
+   "track": "Indianapolis Motor Speedway",
+   "city": "Speedway",
+   "state": "IN",
+   "country": "USA",
+   "winner": "Oliver Askew",
+   "winner_wiki": "Oliver_Askew",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 8,
+   "date": "2019-06-22",
+   "race": "Mazda Grand Prix of Road America",
+   "track": "Road America",
+   "city": "Elkhart Lake",
+   "state": "WI",
+   "country": "USA",
+   "winner": "Ryan Norman",
+   "winner_wiki": "Ryan_Norman",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 9,
+   "date": "2019-06-23",
+   "race": "Mazda Grand Prix of Road America",
+   "track": "Road America",
+   "city": "Elkhart Lake",
+   "state": "WI",
+   "country": "USA",
+   "winner": "Rinus VeeKay",
+   "winner_wiki": "Rinus_VeeKay",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 10,
+   "date": "2019-07-13",
+   "race": "Grand Prix of Toronto",
+   "track": "Exhibition Place",
+   "city": "Toronto",
+   "state": "ON",
+   "country": "CAN",
+   "winner": "Aaron Telitz",
+   "winner_wiki": "Aaron_Telitz",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 11,
+   "date": "2019-07-14",
+   "race": "Grand Prix of Toronto",
+   "track": "Exhibition Place",
+   "city": "Toronto",
+   "state": "ON",
+   "country": "CAN",
+   "winner": "Oliver Askew",
+   "winner_wiki": "Oliver_Askew",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 12,
+   "date": "2019-07-27",
+   "race": "Grand Prix of Mid-Ohio",
+   "track": "Mid-Ohio Sports Car Course",
+   "city": "Lexington",
+   "state": "OH",
+   "country": "USA",
+   "winner": "Oliver Askew",
+   "winner_wiki": "Oliver_Askew",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 13,
+   "date": "2019-07-28",
+   "race": "Grand Prix of Mid-Ohio",
+   "track": "Mid-Ohio Sports Car Course",
+   "city": "Lexington",
+   "state": "OH",
+   "country": "USA",
+   "winner": "Oliver Askew",
+   "winner_wiki": "Oliver_Askew",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 14,
+   "date": "2019-08-24",
+   "race": "Illinois 250k",
+   "track": "Gateway Motorsports Park",
+   "city": "Madison",
+   "state": "IL",
+   "country": "USA",
+   "winner": "Oliver Askew",
+   "winner_wiki": "Oliver_Askew",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 15,
+   "date": "2019-08-31",
+   "race": "Grand Prix of Portland",
+   "track": "Portland International Raceway",
+   "city": "Portland",
+   "state": "OR",
+   "country": "USA",
+   "winner": "Rinus VeeKay",
+   "winner_wiki": "Rinus_VeeKay",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 16,
+   "date": "2019-09-01",
+   "race": "Grand Prix of Portland",
+   "track": "Portland International Raceway",
+   "city": "Portland",
+   "state": "OR",
+   "country": "USA",
+   "winner": "Toby Sowery",
+   "winner_wiki": "Toby_Sowery",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 17,
+   "date": "2019-09-21",
+   "race": "Monterey Grand Prix",
+   "track": "WeatherTech Raceway Laguna Seca",
+   "city": "Monterey",
+   "state": "CA",
+   "country": "USA",
+   "winner": "Rinus VeeKay",
+   "winner_wiki": "Rinus_VeeKay",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 18,
+   "date": "2019-09-22",
+   "race": "Monterey Grand Prix",
+   "track": "WeatherTech Raceway Laguna Seca",
+   "city": "Monterey",
+   "state": "CA",
+   "country": "USA",
+   "winner": "Rinus VeeKay",
+   "winner_wiki": "Rinus_VeeKay",
+   "track_type": null,
+   "cancelled": false
+  }
+ ],
+ "sources": [
+  "https://en.wikipedia.org/wiki/2019_Indy_Lights",
+  "https://www.wikidata.org (driver bios)"
+ ]
+}

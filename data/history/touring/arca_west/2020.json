@@ -1,0 +1,1036 @@
+{
+ "series": "arca_west",
+ "year": 2020,
+ "official_name": "ARCA Menards Series West",
+ "data_level": "full",
+ "champion": {
+  "name": "Jesse Love",
+  "wiki": "Jesse Love"
+ },
+ "teams": [
+  {
+   "team": "Sunrise Ford Racing",
+   "manufacturer": "Ford",
+   "cars": [
+    {
+     "number": "6",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Trevor Huddleston",
+       "wiki": "Trevor Huddleston (racing driver)"
+      }
+     ]
+    },
+    {
+     "number": "9",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Blaine Perkins",
+       "wiki": "Blaine Perkins"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Bill McAnally Racing",
+   "manufacturer": "Toyota",
+   "cars": [
+    {
+     "number": "16",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Gio Scelzi",
+       "wiki": "Gio Scelzi"
+      }
+     ]
+    },
+    {
+     "number": "19",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Jesse Love",
+       "wiki": "Jesse Love"
+      }
+     ]
+    },
+    {
+     "number": "99",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Gracie Trotter",
+       "wiki": "Gracie Trotter"
+      }
+     ]
+    },
+    {
+     "number": "12",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Lawless Alan",
+       "wiki": "Lawless Alan"
+      },
+      {
+       "name": "Alex Sedgwick",
+       "wiki": "Alex Sedgwick"
+      }
+     ]
+    },
+    {
+     "number": "50",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Holley Hollan",
+       "wiki": "Holley Hollan"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Central Coast Racing",
+   "manufacturer": "Toyota",
+   "cars": [
+    {
+     "number": "13",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Todd Souza",
+       "wiki": "Todd Souza"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Performance P-1 Motorsports",
+   "manufacturer": "Toyota",
+   "cars": [
+    {
+     "number": "77",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Takuma Koga",
+       "wiki": "Takuma Koga (racing driver)"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Hillis Racing",
+   "manufacturer": "Toyota",
+   "cars": [
+    {
+     "number": "27",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Bobby Hillis Jr.",
+       "wiki": "Bobby Hillis Jr."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Chad Bryant Racing",
+   "manufacturer": "Chevrolet",
+   "cars": [
+    {
+     "number": "22",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Kris Wright",
+       "wiki": "Kris Wright"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Fast Track Racing",
+   "manufacturer": "Chevrolet",
+   "cars": [
+    {
+     "number": "10",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Cody Erickson",
+       "wiki": "Cody Erickson"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "GMS Racing",
+   "manufacturer": "Chevrolet",
+   "cars": [
+    {
+     "number": "21",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Sam Mayer",
+       "wiki": "Sam Mayer"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Kart Idaho Racing",
+   "manufacturer": "Chevrolet",
+   "cars": [
+    {
+     "number": "11",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Chris Lowden",
+       "wiki": "Chris Lowden"
+      },
+      {
+       "name": "Dustin Ash",
+       "wiki": "Dustin Ash"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Legal Limit Motorsports",
+   "manufacturer": "Chevrolet",
+   "cars": [
+    {
+     "number": "80",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Brian Kamisky",
+       "wiki": "Brian Kamisky"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Steve McGowan Motorsports",
+   "manufacturer": "Chevrolet",
+   "cars": [
+    {
+     "number": "17",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Zane Smith",
+       "wiki": "Zane Smith"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Win-Tron Racing",
+   "manufacturer": "Chevrolet",
+   "cars": [
+    {
+     "number": "32",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Howie DiSavino III",
+       "wiki": "Howie DiSavino III"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Zach Telford Racing",
+   "manufacturer": "Chevrolet",
+   "cars": [
+    {
+     "number": "17",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Zach Telford",
+       "wiki": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Borneman Motorsports",
+   "manufacturer": "Ford",
+   "cars": [
+    {
+     "number": "8",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Johnny Borneman III",
+       "wiki": "Johnny Borneman III"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "DGR-Crosley",
+   "manufacturer": "Ford",
+   "cars": [
+    {
+     "number": "4",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "David Gilliland",
+       "wiki": "David Gilliland"
+      }
+     ]
+    },
+    {
+     "number": "17",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Taylor Gray",
+       "wiki": "Taylor Gray (racing driver)"
+      }
+     ]
+    },
+    {
+     "number": "54",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Todd Gilliland",
+       "wiki": "Todd Gilliland"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "JP Racing",
+   "manufacturer": "Ford",
+   "cars": [
+    {
+     "number": "7",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Austin Reed",
+       "wiki": "Austin Reed (racing driver)"
+      },
+      {
+       "name": "Kris Wright",
+       "wiki": "Kris Wright"
+      },
+      {
+       "name": "Devin Dodson",
+       "wiki": "Devin Dodson"
+      },
+      {
+       "name": "Kyle Keller",
+       "wiki": "Kyle Keller (racing driver)"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Rette Jones Racing",
+   "manufacturer": "Ford",
+   "cars": [
+    {
+     "number": "30",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Justin Lofton",
+       "wiki": "Justin Lofton"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Fast Track Racing",
+   "manufacturer": "Toyota",
+   "cars": [
+    {
+     "number": "12",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Chris Hacker",
+       "wiki": "Chris Hacker"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Joe Gibbs Racing",
+   "manufacturer": "Toyota",
+   "cars": [
+    {
+     "number": "18",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Ty Gibbs",
+       "wiki": "Ty Gibbs"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Naake-Klauer Motorsports",
+   "manufacturer": "Toyota",
+   "cars": [
+    {
+     "number": "54",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Joey Iest",
+       "wiki": "Joey Iest"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Velocity Racing",
+   "manufacturer": "Toyota",
+   "cars": [
+    {
+     "number": "78",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Jack Wood",
+       "wiki": "Jack Wood (racing driver)"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Venturini Motorsports",
+   "manufacturer": "Toyota",
+   "cars": [
+    {
+     "number": "15",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Drew Dollar",
+       "wiki": "Drew Dollar"
+      }
+     ]
+    },
+    {
+     "number": "20",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Ryan Repko",
+       "wiki": "Ryan Repko"
+      },
+      {
+       "name": "Corey Heim",
+       "wiki": "Corey Heim"
+      }
+     ]
+    },
+    {
+     "number": "25",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Mason Diaz",
+       "wiki": "Mason Diaz"
+      },
+      {
+       "name": "Keith Rocco",
+       "wiki": "Keith Rocco (racing driver)"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Jefferson Racing",
+   "manufacturer": "Chevrolet",
+   "cars": [
+    {
+     "number": "42",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Will Rodgers",
+       "wiki": "Will Rodgers"
+      },
+      {
+       "name": "Brittney Zamora",
+       "wiki": "Brittney Zamora"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "BMI Racing",
+   "manufacturer": "Chevrolet",
+   "cars": [
+    {
+     "number": "88",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Bridget Burgess",
+       "wiki": "Bridget Burgess"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "standings": [
+  {
+   "pos": 1,
+   "name": "Jesse Love",
+   "wiki": "Jesse Love",
+   "points": 613,
+   "wins": 3,
+   "starts": 11,
+   "top5": 9,
+   "top10": 10
+  },
+  {
+   "pos": 2,
+   "name": "Blaine Perkins",
+   "wiki": "Blaine Perkins",
+   "points": 588,
+   "wins": 3,
+   "starts": 11,
+   "top5": 8,
+   "top10": 9
+  },
+  {
+   "pos": 3,
+   "name": "Gracie Trotter",
+   "wiki": "Gracie Trotter",
+   "points": 582,
+   "wins": 1,
+   "starts": 11,
+   "top5": 7,
+   "top10": 11
+  },
+  {
+   "pos": 4,
+   "name": "Trevor Huddleston",
+   "wiki": "Trevor Huddleston (racing driver)",
+   "points": 572,
+   "wins": 0,
+   "starts": 11,
+   "top5": 7,
+   "top10": 9
+  },
+  {
+   "pos": 5,
+   "name": "Gio Scelzi",
+   "wiki": "Gio Scelzi",
+   "points": 560,
+   "wins": 1,
+   "starts": 11,
+   "top5": 7,
+   "top10": 9
+  },
+  {
+   "pos": 6,
+   "name": "Todd Souza",
+   "wiki": "Todd Souza",
+   "points": 550,
+   "wins": 0,
+   "starts": 11,
+   "top5": 2,
+   "top10": 9
+  },
+  {
+   "pos": 7,
+   "name": "Takuma Koga",
+   "wiki": "Takuma Koga (racing driver)",
+   "points": 509,
+   "wins": 0,
+   "starts": 11,
+   "top5": 0,
+   "top10": 6
+  },
+  {
+   "pos": 8,
+   "name": "Bobby Hillis Jr.",
+   "wiki": "Bobby Hillis Jr.",
+   "points": 499,
+   "wins": 0,
+   "starts": 11,
+   "top5": 0,
+   "top10": 4
+  },
+  {
+   "pos": 9,
+   "name": "Holley Hollan",
+   "wiki": "Holley Hollan",
+   "points": 448,
+   "wins": 0,
+   "starts": 10,
+   "top5": 0,
+   "top10": 7
+  },
+  {
+   "pos": 10,
+   "name": "Bridget Burgess",
+   "wiki": "Bridget Burgess",
+   "points": 383,
+   "wins": 0,
+   "starts": 9,
+   "top5": 0,
+   "top10": 3
+  },
+  {
+   "pos": 11,
+   "name": "Jack Wood",
+   "wiki": "Jack Wood (racing driver)",
+   "points": 319,
+   "wins": 0,
+   "starts": 8,
+   "top5": 1,
+   "top10": 6
+  },
+  {
+   "pos": 12,
+   "name": "Joey Iest",
+   "wiki": "Joey Iest",
+   "points": 176,
+   "wins": 0,
+   "starts": 4,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 13,
+   "name": "Taylor Gray",
+   "wiki": "Taylor Gray (racing driver)",
+   "points": 161,
+   "wins": 1,
+   "starts": 5,
+   "top5": 3,
+   "top10": 4
+  },
+  {
+   "pos": 14,
+   "name": "Kris Wright",
+   "wiki": "Kris Wright",
+   "points": 159,
+   "wins": 0,
+   "starts": 3,
+   "top5": 2,
+   "top10": 2
+  },
+  {
+   "pos": 15,
+   "name": "Lawless Alan",
+   "wiki": "Lawless Alan",
+   "points": 137,
+   "wins": 0,
+   "starts": 4,
+   "top5": 0,
+   "top10": 2
+  },
+  {
+   "pos": 16,
+   "name": "Sam Mayer",
+   "wiki": "Sam Mayer",
+   "points": 122,
+   "wins": 1,
+   "starts": 2,
+   "top5": 1,
+   "top10": 1
+  },
+  {
+   "pos": 17,
+   "name": "Devin Dodson",
+   "wiki": "Devin Dodson",
+   "points": 117,
+   "wins": 0,
+   "starts": 2,
+   "top5": 1,
+   "top10": 1
+  },
+  {
+   "pos": 18,
+   "name": "David Gilliland",
+   "wiki": "David Gilliland",
+   "points": 98,
+   "wins": 1,
+   "starts": 1,
+   "top5": 1,
+   "top10": 1
+  },
+  {
+   "pos": 19,
+   "name": "Ty Gibbs",
+   "wiki": "Ty Gibbs",
+   "points": 94,
+   "wins": 0,
+   "starts": 1,
+   "top5": 1,
+   "top10": 1
+  },
+  {
+   "pos": 20,
+   "name": "Todd Gilliland",
+   "wiki": "Todd Gilliland",
+   "points": 90,
+   "wins": 0,
+   "starts": 1,
+   "top5": 1,
+   "top10": 1
+  },
+  {
+   "pos": 21,
+   "name": "Drew Dollar",
+   "wiki": "Drew Dollar",
+   "points": 89,
+   "wins": 0,
+   "starts": 1,
+   "top5": 1,
+   "top10": 1
+  },
+  {
+   "pos": 22,
+   "name": "Justin Lofton",
+   "wiki": "Justin Lofton",
+   "points": 88,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 1
+  },
+  {
+   "pos": 23,
+   "name": "Corey Heim",
+   "wiki": "Corey Heim",
+   "points": 86,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 1
+  },
+  {
+   "pos": 24,
+   "name": "Keith Rocco",
+   "wiki": "Keith Rocco (racing driver)",
+   "points": 84,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 1
+  },
+  {
+   "pos": 25,
+   "name": "Howie DiSavino III",
+   "wiki": "Howie DiSavino III",
+   "points": 83,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 26,
+   "name": "Alex Sedgwick",
+   "wiki": "Alex Sedgwick",
+   "points": 81,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 27,
+   "name": "Chris Hacker",
+   "wiki": "Chris Hacker",
+   "points": 79,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 28,
+   "name": "Kyle Keller",
+   "wiki": "Kyle Keller (racing driver)",
+   "points": 78,
+   "wins": 0,
+   "starts": 2,
+   "top5": 1,
+   "top10": 2
+  },
+  {
+   "pos": 29,
+   "name": "Mason Diaz",
+   "wiki": "Mason Diaz",
+   "points": 76,
+   "wins": 0,
+   "starts": 2,
+   "top5": 1,
+   "top10": 1
+  },
+  {
+   "pos": 30,
+   "name": "Will Rodgers",
+   "wiki": "Will Rodgers",
+   "points": 75,
+   "wins": 0,
+   "starts": 2,
+   "top5": 1,
+   "top10": 2
+  },
+  {
+   "pos": 31,
+   "name": "Cody Erickson",
+   "wiki": "Cody Erickson",
+   "points": 75,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 32,
+   "name": "Brian Kamisky",
+   "wiki": "Brian Kamisky",
+   "points": 71,
+   "wins": 0,
+   "starts": 2,
+   "top5": 0,
+   "top10": 2
+  },
+  {
+   "pos": 33,
+   "name": "Zane Smith",
+   "wiki": "Zane Smith",
+   "points": 68,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 34,
+   "name": "Johnny Borneman III",
+   "wiki": "Johnny Borneman III",
+   "points": 38,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 1
+  },
+  {
+   "pos": 35,
+   "name": "Dustin Ash",
+   "wiki": "Dustin Ash",
+   "points": 36,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 1
+  },
+  {
+   "pos": 36,
+   "name": "Austin Reed",
+   "wiki": "Austin Reed (racing driver)",
+   "points": 35,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 1
+  },
+  {
+   "pos": 37,
+   "name": "Brittney Zamora",
+   "wiki": "Brittney Zamora",
+   "points": 31,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 38,
+   "name": "Chris Lowden",
+   "wiki": "Chris Lowden",
+   "points": 29,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 39,
+   "name": "Zach Telford",
+   "wiki": null,
+   "points": 28,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 40,
+   "name": "Ryan Repko",
+   "wiki": "Ryan Repko",
+   "points": 28,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  }
+ ],
+ "schedule": [
+  {
+   "round": 1,
+   "date": "2020-02-20",
+   "race": "Star Nursery 150",
+   "track": "Las Vegas Motor Speedway (Bullring)",
+   "city": "Las Vegas",
+   "state": "NV",
+   "winner": "Sam Mayer",
+   "winner_wiki": "Sam Mayer"
+  },
+  {
+   "round": 2,
+   "date": "2020-06-27",
+   "race": "ENEOS/Sunrise Ford Twin 30",
+   "track": "Utah Motorsports Campus",
+   "city": "Grantsville",
+   "state": "UT",
+   "winner": "Jesse Love",
+   "winner_wiki": "Jesse Love"
+  },
+  {
+   "round": 3,
+   "date": "2020-06-27",
+   "race": "ENEOS/Sunrise Ford Twin 30",
+   "track": "Utah Motorsports Campus",
+   "city": "Grantsville",
+   "state": "UT",
+   "winner": "Blaine Perkins",
+   "winner_wiki": "Blaine Perkins"
+  },
+  {
+   "round": 4,
+   "date": "2020-07-04",
+   "race": "ENEOS 125 presented by NAPA Auto Parts",
+   "track": "Irwindale Speedway",
+   "city": "Irwindale",
+   "state": "CA",
+   "winner": "Jesse Love",
+   "winner_wiki": "Jesse Love"
+  },
+  {
+   "round": 5,
+   "date": "2020-08-07",
+   "race": "ENEOS/NAPA Auto Parts 100",
+   "track": "Evergreen Speedway",
+   "city": "Monroe",
+   "state": "WA",
+   "winner": "Blaine Perkins",
+   "winner_wiki": "Blaine Perkins"
+  },
+  {
+   "round": 6,
+   "date": "2020-08-08",
+   "race": "ENEOS/NAPA Auto Parts 150",
+   "track": "Douglas County Speedway",
+   "city": "Roseburg",
+   "state": "OR",
+   "winner": "Blaine Perkins",
+   "winner_wiki": "Blaine Perkins"
+  },
+  {
+   "round": 7,
+   "date": "2020-08-22",
+   "race": "ENEOS 150 presented by NAPA Auto Parts",
+   "track": "Colorado National Speedway",
+   "city": "Dacono",
+   "state": "CO",
+   "winner": "Jesse Love",
+   "winner_wiki": "Jesse Love"
+  },
+  {
+   "round": 8,
+   "date": "2020-09-26",
+   "race": "General Tire 150",
+   "track": "Las Vegas Motor Speedway (Bullring)",
+   "city": "Las Vegas",
+   "state": "NV",
+   "winner": "Gracie Trotter",
+   "winner_wiki": "Gracie Trotter"
+  },
+  {
+   "round": 9,
+   "date": "2020-10-23",
+   "race": "NAPA 125 presented by CashInTheCan.com",
+   "track": "All American Speedway",
+   "city": "Roseville",
+   "state": "CA",
+   "winner": "Gio Scelzi",
+   "winner_wiki": "Gio Scelzi"
+  },
+  {
+   "round": 10,
+   "date": "2020-10-25",
+   "race": "NAPA/ENEOS 125 presented by West Coast Stock Car Hall of Fame",
+   "track": "Kern County Raceway Park",
+   "city": "Bakersfield",
+   "state": "CA",
+   "winner": "Taylor Gray",
+   "winner_wiki": "Taylor Gray (racing driver)"
+  },
+  {
+   "round": 11,
+   "date": "2020-11-07",
+   "race": "Arizona Lottery 100",
+   "track": "ISM Raceway",
+   "city": "Avondale",
+   "state": "AZ",
+   "winner": "David Gilliland",
+   "winner_wiki": "David Gilliland"
+  }
+ ],
+ "sources": [
+  "https://en.wikipedia.org/w/index.php?title=2020_ARCA_Menards_Series_West&oldid=1378310628",
+  "https://en.wikipedia.org/w/index.php?title=ARCA_Menards_Series_West&oldid=1378751108"
+ ]
+}

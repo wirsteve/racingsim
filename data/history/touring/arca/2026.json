@@ -1,0 +1,3338 @@
+{
+ "series": "arca",
+ "year": 2026,
+ "official_name": "ARCA Menards Series",
+ "data_level": "full",
+ "champion": {
+  "name": "Thomas Annunziata",
+  "wiki": "Thomas Annunziata"
+ },
+ "teams": [
+  {
+   "team": "CR7 Motorsports",
+   "manufacturer": "Chevrolet",
+   "cars": [
+    {
+     "number": "97",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Jason Kitzmiller",
+       "wiki": "Jason Kitzmiller"
+      },
+      {
+       "name": "Landon S. Huffman",
+       "wiki": "Landon S. Huffman"
+      }
+     ]
+    },
+    {
+     "number": "9",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Landon S. Huffman",
+       "wiki": "Landon S. Huffman"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Maples Motorsports",
+   "manufacturer": "Chevrolet",
+   "cars": [
+    {
+     "number": "99",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Michael Maples",
+       "wiki": "Michael Maples (racing driver)"
+      }
+     ]
+    },
+    {
+     "number": "34",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Ryan Vargas",
+       "wiki": "Ryan Vargas"
+      }
+     ]
+    },
+    {
+     "number": "19",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Greg Van Alst",
+       "wiki": "Greg Van Alst"
+      },
+      {
+       "name": "Zachary Tinkle",
+       "wiki": "Zachary Tinkle"
+      },
+      {
+       "name": "Matt Kemp",
+       "wiki": "Matt Kemp (racing driver)"
+      },
+      {
+       "name": "Corey Aiken",
+       "wiki": "Corey Aiken"
+      },
+      {
+       "name": "Austin Vaughn",
+       "wiki": "Austin Vaughn"
+      },
+      {
+       "name": "Morgen Baird",
+       "wiki": "Morgen Baird"
+      },
+      {
+       "name": "Kenna Long",
+       "wiki": null
+      },
+      {
+       "name": "Brad Perez",
+       "wiki": "Brad Perez"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Pinnacle Racing Group",
+   "manufacturer": "Chevrolet",
+   "cars": [
+    {
+     "number": "28",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Jack Wood",
+       "wiki": "Jack Wood (racing driver)"
+      },
+      {
+       "name": "Carson Brown",
+       "wiki": "Carson Brown"
+      },
+      {
+       "name": "Connor Mosack",
+       "wiki": "Connor Mosack"
+      },
+      {
+       "name": "Tyler Lupton",
+       "wiki": "Tyler Lupton"
+      },
+      {
+       "name": "Landon S. Huffman",
+       "wiki": "Landon S. Huffman"
+      }
+     ]
+    },
+    {
+     "number": "77",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Taylor Reimer",
+       "wiki": "Taylor Reimer"
+      },
+      {
+       "name": "Tristan McKee",
+       "wiki": "Tristan McKee"
+      },
+      {
+       "name": "Lanie Buice",
+       "wiki": "Lanie Buice"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Brad Smith Motorsports",
+   "manufacturer": "Ford",
+   "cars": [
+    {
+     "number": "48",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Brad Smith",
+       "wiki": "Brad Smith (racing driver)"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Clubb Racing Inc.",
+   "manufacturer": "Ford",
+   "cars": [
+    {
+     "number": "03",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Alex Clubb",
+       "wiki": "Alex Clubb"
+      }
+     ]
+    },
+    {
+     "number": "86",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Logan Misuraca",
+       "wiki": "Logan Misuraca"
+      },
+      {
+       "name": "Jeff Maconi",
+       "wiki": "Jeff Maconi"
+      }
+     ]
+    },
+    {
+     "number": "83",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Nate Moeller",
+       "wiki": "Nate Moeller"
+      },
+      {
+       "name": "Brayton Laster",
+       "wiki": "Brayton Laster"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Fast Track Racing",
+   "manufacturer": "Toyota",
+   "cars": [
+    {
+     "number": "12",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Takuma Koga",
+       "wiki": "Takuma Koga (racing driver)"
+      }
+     ]
+    },
+    {
+     "number": "11",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Bryce Haugeberg",
+       "wiki": "Bryce Haugeberg"
+      },
+      {
+       "name": "Dustin Hillenburg",
+       "wiki": "Dustin Hillenburg"
+      },
+      {
+       "name": "Robbie Kennealy",
+       "wiki": "Robbie Kennealy"
+      },
+      {
+       "name": "Trent Curtis",
+       "wiki": null
+      },
+      {
+       "name": "Matt Kemp",
+       "wiki": "Matt Kemp (racing driver)"
+      },
+      {
+       "name": "Tim Monroe",
+       "wiki": "Tim Monroe"
+      },
+      {
+       "name": "Chase Buscaglia",
+       "wiki": null
+      },
+      {
+       "name": "Tony Cosentino",
+       "wiki": "Tony Cosentino"
+      },
+      {
+       "name": "Mike Basham",
+       "wiki": "Mike Basham (racing driver)"
+      },
+      {
+       "name": "D. L. Wilson",
+       "wiki": "D. L. Wilson"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Joe Gibbs Racing",
+   "manufacturer": "Toyota",
+   "cars": [
+    {
+     "number": "18",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Gio Ruggiero",
+       "wiki": "Gio Ruggiero"
+      },
+      {
+       "name": "Max Reaves",
+       "wiki": "Max Reaves"
+      },
+      {
+       "name": "William Sawalich",
+       "wiki": "William Sawalich"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Nitro Motorsports",
+   "manufacturer": "Toyota",
+   "cars": [
+    {
+     "number": "20",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Jake Bollman",
+       "wiki": "Jake Bollman"
+      }
+     ]
+    },
+    {
+     "number": "25",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Gus Dean",
+       "wiki": "Gus Dean"
+      },
+      {
+       "name": "Julian DaCosta",
+       "wiki": null
+      },
+      {
+       "name": "Gavan Boschele",
+       "wiki": "Gavan Boschele"
+      },
+      {
+       "name": "Wesley Slimp",
+       "wiki": "Wesley Slimp"
+      },
+      {
+       "name": "Will Robinson",
+       "wiki": "Will Robinson (racing driver)"
+      },
+      {
+       "name": "Ty Fredrickson",
+       "wiki": "Ty Fredrickson"
+      },
+      {
+       "name": "Peter Portante",
+       "wiki": "Peter Portante"
+      }
+     ]
+    },
+    {
+     "number": "55",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Isabella Robusto",
+       "wiki": "Isabella Robusto"
+      }
+     ]
+    },
+    {
+     "number": "70",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Thomas Annunziata",
+       "wiki": "Thomas Annunziata"
+      }
+     ]
+    },
+    {
+     "number": "15",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Jake Finch",
+       "wiki": "Jake Finch"
+      },
+      {
+       "name": "Mia Lovell",
+       "wiki": "Mia Lovell"
+      },
+      {
+       "name": "Jade Avedisian",
+       "wiki": "Jade Avedisian"
+      },
+      {
+       "name": "Sam Corry",
+       "wiki": "Sam Corry"
+      },
+      {
+       "name": "Wesley Slimp",
+       "wiki": "Wesley Slimp"
+      },
+      {
+       "name": "Will Robinson",
+       "wiki": "Will Robinson (racing driver)"
+      },
+      {
+       "name": "Ashton Higgins",
+       "wiki": "Ashton Higgins"
+      },
+      {
+       "name": "Landon Brown",
+       "wiki": "Landon Brown (racing driver)"
+      }
+     ]
+    },
+    {
+     "number": "90",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Wesley Slimp",
+       "wiki": "Wesley Slimp"
+      },
+      {
+       "name": "Jade Avedisian",
+       "wiki": "Jade Avedisian"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Fast Track Racing",
+   "manufacturer": "Chevrolet",
+   "cars": [
+    {
+     "number": "10",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Ed Pompa",
+       "wiki": "Ed Pompa"
+      },
+      {
+       "name": "Brad Perez",
+       "wiki": "Brad Perez"
+      },
+      {
+       "name": "Craig Pellegrini Jr.",
+       "wiki": null
+      },
+      {
+       "name": "Dustin Hillenburg",
+       "wiki": "Dustin Hillenburg"
+      },
+      {
+       "name": "John Clagett",
+       "wiki": null
+      },
+      {
+       "name": "Tim Monroe",
+       "wiki": "Tim Monroe"
+      },
+      {
+       "name": "Tony Cosentino",
+       "wiki": "Tony Cosentino"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Maples Motorsports",
+   "manufacturer": "Ford",
+   "cars": [
+    {
+     "number": "91",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Ryan Vargas",
+       "wiki": "Ryan Vargas"
+      },
+      {
+       "name": "Tyler Kicera",
+       "wiki": null
+      },
+      {
+       "name": "Austin Vaughn",
+       "wiki": "Austin Vaughn"
+      },
+      {
+       "name": "Morgen Baird",
+       "wiki": "Morgen Baird"
+      },
+      {
+       "name": "Ty Fredrickson",
+       "wiki": "Ty Fredrickson"
+      },
+      {
+       "name": "Michael Maples",
+       "wiki": "Michael Maples (racing driver)"
+      },
+      {
+       "name": "Shawn Allen Jr.",
+       "wiki": null
+      }
+     ]
+    },
+    {
+     "number": "1",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Tony Cosentino",
+       "wiki": "Tony Cosentino"
+      },
+      {
+       "name": "Nate Moeller",
+       "wiki": "Nate Moeller"
+      },
+      {
+       "name": "Andrew Patterson",
+       "wiki": "Andrew Patterson (racing driver)"
+      },
+      {
+       "name": "Andrew Rocque",
+       "wiki": null
+      },
+      {
+       "name": "Kenna Long",
+       "wiki": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Wayne Peterson Motorsports",
+   "manufacturer": "Chevrolet",
+   "cars": [
+    {
+     "number": "06",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Con Nicolopoulos",
+       "wiki": "Con Nicolopoulos"
+      },
+      {
+       "name": "Bobby Hillis Jr.",
+       "wiki": "Bobby Hillis Jr."
+      },
+      {
+       "name": "Brayton Laster",
+       "wiki": "Brayton Laster"
+      },
+      {
+       "name": "Nate Moeller",
+       "wiki": "Nate Moeller"
+      },
+      {
+       "name": "Jackson McLerran",
+       "wiki": "Jackson McLerran"
+      },
+      {
+       "name": "Ben Peterson",
+       "wiki": "Ben Peterson (racing driver)"
+      },
+      {
+       "name": "Trenton Masters",
+       "wiki": null
+      },
+      {
+       "name": "Daniel Sasnett",
+       "wiki": "Daniel Sasnett"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "1/4 Ley Racing",
+   "manufacturer": "Chevrolet",
+   "cars": [
+    {
+     "number": "32",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Dale Quarterley",
+       "wiki": "Dale Quarterley"
+      }
+     ]
+    },
+    {
+     "number": "44",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Jeff Anton",
+       "wiki": "Jeff Anton"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "ACR Motorsports",
+   "manufacturer": "Chevrolet",
+   "cars": [
+    {
+     "number": "79",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Isaac Kitzmiller",
+       "wiki": "Isaac Kitzmiller"
+      },
+      {
+       "name": "Matt Kemp",
+       "wiki": "Matt Kemp (racing driver)"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Allgaier Motorsports",
+   "manufacturer": "Chevrolet",
+   "cars": [
+    {
+     "number": "16",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Kelly Kovski",
+       "wiki": "Kelly Kovski"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Andrew Patterson Racing",
+   "manufacturer": "Chevrolet",
+   "cars": [
+    {
+     "number": "40",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Andrew Patterson",
+       "wiki": "Andrew Patterson (racing driver)"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Bill McAnally Racing",
+   "manufacturer": "Chevrolet",
+   "cars": [
+    {
+     "number": "16",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Hailie Deegan",
+       "wiki": "Hailie Deegan"
+      }
+     ]
+    },
+    {
+     "number": "81",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Mason Massey",
+       "wiki": "Mason Massey"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Brother-In-Law Racing",
+   "manufacturer": "Chevrolet",
+   "cars": [
+    {
+     "number": "57",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Hunter Deshautelle",
+       "wiki": "Hunter Deshautelle"
+      }
+     ]
+    },
+    {
+     "number": "75",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Bryan Dauzat",
+       "wiki": "Bryan Dauzat"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "CK Motorsports",
+   "manufacturer": "Chevrolet",
+   "cars": [
+    {
+     "number": "72",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Christopher Werth",
+       "wiki": "Christopher Werth"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Costner Motorsports",
+   "manufacturer": "Chevrolet",
+   "cars": [
+    {
+     "number": "93",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Caleb Costner",
+       "wiki": "Caleb Costner"
+      },
+      {
+       "name": "Alli Owens",
+       "wiki": "Alli Owens"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Empire Racing",
+   "manufacturer": "Chevrolet",
+   "cars": [
+    {
+     "number": "8",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Sean Corr",
+       "wiki": "Sean Corr"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Jet Daddy Racing",
+   "manufacturer": "Chevrolet",
+   "cars": [
+    {
+     "number": "00",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "John Kennedy",
+       "wiki": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "KC Motorsports",
+   "manufacturer": "Chevrolet",
+   "cars": [
+    {
+     "number": "81",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Kevin Campbell",
+       "wiki": "Kevin Campbell (racing driver)"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Moyer–Petroniro Racing",
+   "manufacturer": "Chevrolet",
+   "cars": [
+    {
+     "number": "88",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "A. J. Moyer",
+       "wiki": "A. J. Moyer"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Mullins Racing",
+   "manufacturer": "Chevrolet",
+   "cars": [
+    {
+     "number": "34",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Bryce Applegate",
+       "wiki": "Bryce Applegate"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "NDS Motorsports",
+   "manufacturer": "Chevrolet",
+   "cars": [
+    {
+     "number": "53",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Andrew Ranger",
+       "wiki": "Andrew Ranger"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Phoenix Racing",
+   "manufacturer": "Chevrolet",
+   "cars": [
+    {
+     "number": "1",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Jake Finch",
+       "wiki": "Jake Finch"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Rick Ware Racing",
+   "manufacturer": "Chevrolet",
+   "cars": [
+    {
+     "number": "51",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Patrick Staropoli",
+       "wiki": "Patrick Staropoli"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Rise Racing with",
+   "manufacturer": "Chevrolet",
+   "cars": [
+    {
+     "number": "89",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Bobby Dale Earnhardt",
+       "wiki": "Bobby Dale Earnhardt"
+      },
+      {
+       "name": "Brayton Laster",
+       "wiki": "Brayton Laster"
+      },
+      {
+       "name": "Chase Howard",
+       "wiki": "Chase Howard"
+      },
+      {
+       "name": "Quinn Davis",
+       "wiki": "Quinn Davis"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Steve Lewis Racing",
+   "manufacturer": "Chevrolet",
+   "cars": [
+    {
+     "number": "62",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Steve Lewis Jr.",
+       "wiki": "Steve Lewis Jr."
+      }
+     ]
+    },
+    {
+     "number": "79",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Steve Lewis Jr.",
+       "wiki": "Steve Lewis Jr."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Strike Mamba Racing",
+   "manufacturer": "Chevrolet",
+   "cars": [
+    {
+     "number": "51",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Tyler Tomassi",
+       "wiki": "Tyler Tomassi"
+      }
+     ]
+    },
+    {
+     "number": "72",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Cody Dennison",
+       "wiki": "Cody Dennison"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Weslowski Racing",
+   "manufacturer": "Chevrolet",
+   "cars": [
+    {
+     "number": "32",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Charles Weslowski Jr.",
+       "wiki": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "White Motorsports",
+   "manufacturer": "Chevrolet",
+   "cars": [
+    {
+     "number": "22",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Nick White",
+       "wiki": "Nick White (racing driver)"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "City Garage Motorsports",
+   "manufacturer": "Ford",
+   "cars": [
+    {
+     "number": "5",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Michael Clayton",
+       "wiki": null
+      }
+     ]
+    },
+    {
+     "number": "34",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Logan Misuraca",
+       "wiki": "Logan Misuraca"
+      }
+     ]
+    },
+    {
+     "number": "85",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Quinn Davis",
+       "wiki": "Quinn Davis"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Fast Track Racing",
+   "manufacturer": "Ford",
+   "cars": [
+    {
+     "number": "9",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Presley Sorah",
+       "wiki": "Presley Sorah"
+      },
+      {
+       "name": "Nate Moeller",
+       "wiki": "Nate Moeller"
+      }
+     ]
+    },
+    {
+     "number": "01",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "D. L. Wilson",
+       "wiki": "D. L. Wilson"
+      },
+      {
+       "name": "Cody Dennison",
+       "wiki": "Cody Dennison"
+      },
+      {
+       "name": "Craig Pellegrini Jr.",
+       "wiki": null
+      },
+      {
+       "name": "Graham Jacobson",
+       "wiki": null
+      },
+      {
+       "name": "Tony Musolino",
+       "wiki": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "High Point Racing",
+   "manufacturer": "Ford",
+   "cars": [
+    {
+     "number": "50",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Trevor Huddleston",
+       "wiki": "Trevor Huddleston (racing driver)"
+      }
+     ]
+    },
+    {
+     "number": "56",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Andrew Chapman",
+       "wiki": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Jan's Towing Racing",
+   "manufacturer": "Ford",
+   "cars": [
+    {
+     "number": "01",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Cole Denton",
+       "wiki": "Cole Denton"
+      }
+     ]
+    },
+    {
+     "number": "41",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Robbie Kennealy",
+       "wiki": "Robbie Kennealy"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Kimmel Racing",
+   "manufacturer": "Ford",
+   "cars": [
+    {
+     "number": "68",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Alli Owens",
+       "wiki": "Alli Owens"
+      },
+      {
+       "name": "Nate Moeller",
+       "wiki": "Nate Moeller"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "KLAS Motorsports",
+   "manufacturer": "Ford",
+   "cars": [
+    {
+     "number": "07",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Glen Reen",
+       "wiki": "Glen Reen"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Rette Jones Racing",
+   "manufacturer": "Ford",
+   "cars": [
+    {
+     "number": "0",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "George Siciliano",
+       "wiki": "Squirrel McNutt"
+      }
+     ]
+    },
+    {
+     "number": "30",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Garrett Mitchell",
+       "wiki": "Cleetus McFarland"
+      }
+     ]
+    },
+    {
+     "number": "76",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Kole Raz",
+       "wiki": "Kole Raz"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Ryan Huff Motorsports",
+   "manufacturer": "Ford",
+   "cars": [
+    {
+     "number": "36",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Ryan Huff",
+       "wiki": "Ryan Huff"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Central Coast Racing",
+   "manufacturer": "Toyota",
+   "cars": [
+    {
+     "number": "13",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Taylor Reimer",
+       "wiki": "Taylor Reimer"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Intergrity Autosports",
+   "manufacturer": "Toyota",
+   "cars": [
+    {
+     "number": "13",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Rita Goulet",
+       "wiki": "Rita Goulet"
+      },
+      {
+       "name": "Brian Weber",
+       "wiki": "Brian Weber"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Jerry Pitts Racing",
+   "manufacturer": "Toyota",
+   "cars": [
+    {
+     "number": "5",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Eric Johnson Jr.",
+       "wiki": "Eric Johnson Jr."
+      }
+     ]
+    },
+    {
+     "number": "7",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Gavin Ray",
+       "wiki": "Gavin Ray"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "MacZink Racing",
+   "manufacturer": "Toyota",
+   "cars": [
+    {
+     "number": "65",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Jeffery MacZink",
+       "wiki": "Jeffery MacZink"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "MAN Motorsports",
+   "manufacturer": "Toyota",
+   "cars": [
+    {
+     "number": "95",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Jackson McLerran",
+       "wiki": "Jackson McLerran"
+      },
+      {
+       "name": "Hunter Wright",
+       "wiki": "Hunter Wright"
+      }
+     ]
+    },
+    {
+     "number": "96",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Jackson McLerran",
+       "wiki": "Jackson McLerran"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Martin Racing",
+   "manufacturer": "Toyota",
+   "cars": [
+    {
+     "number": "52",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Robert Martin",
+       "wiki": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "MCM Racing Development",
+   "manufacturer": "Toyota",
+   "cars": [
+    {
+     "number": "38",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Esteban Rodríguez",
+       "wiki": "Toro Rodríguez"
+      },
+      {
+       "name": "Gabriel Casagrande",
+       "wiki": "Gabriel Casagrande"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Nascimento Motorsports",
+   "manufacturer": "Toyota",
+   "cars": [
+    {
+     "number": "4",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Monty Tipton",
+       "wiki": "Monty Tipton"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "NEMCO Motorsports",
+   "manufacturer": "Toyota",
+   "cars": [
+    {
+     "number": "29",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Ryan Gemmell",
+       "wiki": "Ryan Gemmell"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "RAFA Racing Team",
+   "manufacturer": "Toyota",
+   "cars": [
+    {
+     "number": "2",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Kyle Steckly",
+       "wiki": "Kyle Steckly"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Shearer Speed Racing",
+   "manufacturer": "Toyota",
+   "cars": [
+    {
+     "number": "98",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Dale Shearer",
+       "wiki": "Dale Shearer (racing driver)"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Shockwave Motorsports",
+   "manufacturer": "Toyota",
+   "cars": [
+    {
+     "number": "05",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "David Smith",
+       "wiki": "David Smith (racing driver)"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Team 36",
+   "manufacturer": "Toyota",
+   "cars": [
+    {
+     "number": "36",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Ty Fredrickson",
+       "wiki": "Ty Fredrickson"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Team 36 with",
+   "manufacturer": "Toyota",
+   "cars": [
+    {
+     "number": "90",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Ty Fredrickson",
+       "wiki": "Ty Fredrickson"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Tim Richmond Racing",
+   "manufacturer": "Toyota",
+   "cars": [
+    {
+     "number": "27",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Tim Richmond",
+       "wiki": "Tim Richmond (racing driver, born 1998)"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Tinkle Family Racing",
+   "manufacturer": "Toyota",
+   "cars": [
+    {
+     "number": "53",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Zachary Tinkle",
+       "wiki": "Zachary Tinkle"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Vanco Racing",
+   "manufacturer": "Toyota",
+   "cars": [
+    {
+     "number": "26",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Ron Vandermeir Jr.",
+       "wiki": "Ron Vandermeir Jr."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "WAV Racing",
+   "manufacturer": "Toyota",
+   "cars": [
+    {
+     "number": "34",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Brian Barbarow",
+       "wiki": null
+      },
+      {
+       "name": "Ivis Earley",
+       "wiki": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "CCM Racing",
+   "manufacturer": "Toyota",
+   "cars": [
+    {
+     "number": "7",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Eric Caudell",
+       "wiki": "Eric Caudell"
+      },
+      {
+       "name": "Kadence Davenport",
+       "wiki": "Kadence Davenport"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Cook Racing Technologies",
+   "manufacturer": "Chevrolet",
+   "cars": [
+    {
+     "number": "17",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Mini Tyrrell",
+       "wiki": "Mini Tyrrell"
+      },
+      {
+       "name": "Taylor Mayhew",
+       "wiki": "Taylor Mayhew"
+      },
+      {
+       "name": "Monty Tipton",
+       "wiki": "Monty Tipton"
+      },
+      {
+       "name": "Kaden Honeycutt",
+       "wiki": "Kaden Honeycutt"
+      },
+      {
+       "name": "Stewart Friesen",
+       "wiki": "Stewart Friesen"
+      }
+     ]
+    },
+    {
+     "number": "42",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Jaiden Reyna",
+       "wiki": "Jaiden Reyna"
+      },
+      {
+       "name": "Dawson Sutton",
+       "wiki": "Dawson Sutton"
+      },
+      {
+       "name": "Taylor Mayhew",
+       "wiki": "Taylor Mayhew"
+      },
+      {
+       "name": "Mike Christopher Jr.",
+       "wiki": "Mike Christopher Jr."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Kimmel Racing",
+   "manufacturer": "Chevrolet",
+   "cars": [
+    {
+     "number": "69",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Nolan Wilson",
+       "wiki": null
+      },
+      {
+       "name": "Will Kimmel",
+       "wiki": "Will Kimmel"
+      },
+      {
+       "name": "Landon Brown",
+       "wiki": "Landon Brown (racing driver)"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "KLAS Motorsports",
+   "manufacturer": "Chevrolet",
+   "cars": [
+    {
+     "number": "71",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Andy Jankowiak",
+       "wiki": "Andy Jankowiak"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "MBM Motorsports",
+   "manufacturer": "Ford",
+   "cars": [
+    {
+     "number": "66",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Derek White",
+       "wiki": "Derek White (racing driver)"
+      },
+      {
+       "name": "Dystany Spurlock",
+       "wiki": "Dystany Spurlock"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Mullins Racing",
+   "manufacturer": "Ford",
+   "cars": [
+    {
+     "number": "3",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Willie Mullins",
+       "wiki": "Willie Mullins (racing driver)"
+      },
+      {
+       "name": "Alex Quarterley",
+       "wiki": "Alex Quarterley"
+      },
+      {
+       "name": "Bryce Applegate",
+       "wiki": "Bryce Applegate"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "SPS Racing",
+   "manufacturer": "Ford",
+   "cars": [
+    {
+     "number": "24",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Daniel Dye",
+       "wiki": "Daniel Dye"
+      },
+      {
+       "name": "Caden Kvapil",
+       "wiki": "Caden Kvapil"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Wayne Peterson Motorsports",
+   "manufacturer": "Toyota",
+   "cars": [
+    {
+     "number": "0",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Nate Moeller",
+       "wiki": "Nate Moeller"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "standings": [
+  {
+   "pos": 1,
+   "name": "Thomas Annunziata",
+   "wiki": "Thomas Annunziata",
+   "points": 947,
+   "wins": 1,
+   "starts": 20,
+   "top5": 11,
+   "top10": 18
+  },
+  {
+   "pos": 2,
+   "name": "Jake Bollman",
+   "wiki": "Jake Bollman",
+   "points": 947,
+   "wins": 0,
+   "starts": 20,
+   "top5": 12,
+   "top10": 18
+  },
+  {
+   "pos": 3,
+   "name": "Isabella Robusto",
+   "wiki": "Isabella Robusto",
+   "points": 814,
+   "wins": 0,
+   "starts": 20,
+   "top5": 3,
+   "top10": 10
+  },
+  {
+   "pos": 4,
+   "name": "Takuma Koga",
+   "wiki": "Takuma Koga (racing driver)",
+   "points": 753,
+   "wins": 0,
+   "starts": 20,
+   "top5": 0,
+   "top10": 1
+  },
+  {
+   "pos": 5,
+   "name": "Jason Kitzmiller",
+   "wiki": "Jason Kitzmiller",
+   "points": 736,
+   "wins": 0,
+   "starts": 19,
+   "top5": 1,
+   "top10": 11
+  },
+  {
+   "pos": 6,
+   "name": "Michael Maples",
+   "wiki": "Michael Maples (racing driver)",
+   "points": 687,
+   "wins": 0,
+   "starts": 20,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 7,
+   "name": "Alex Clubb",
+   "wiki": "Alex Clubb",
+   "points": 686,
+   "wins": 0,
+   "starts": 20,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 8,
+   "name": "Carson Brown",
+   "wiki": "Carson Brown",
+   "points": 600,
+   "wins": 4,
+   "starts": 13,
+   "top5": 11,
+   "top10": 12
+  },
+  {
+   "pos": 9,
+   "name": "Brad Smith",
+   "wiki": "Brad Smith (racing driver)",
+   "points": 600,
+   "wins": 0,
+   "starts": 20,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 10,
+   "name": "Jeff Maconi",
+   "wiki": "Jeff Maconi",
+   "points": 594,
+   "wins": 0,
+   "starts": 19,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 11,
+   "name": "Max Reaves",
+   "wiki": "Max Reaves",
+   "points": 523,
+   "wins": 4,
+   "starts": 13,
+   "top5": 8,
+   "top10": 11
+  },
+  {
+   "pos": 12,
+   "name": "Gavan Boschele",
+   "wiki": "Gavan Boschele",
+   "points": 463,
+   "wins": 0,
+   "starts": 12,
+   "top5": 8,
+   "top10": 10
+  },
+  {
+   "pos": 13,
+   "name": "Bobby Dale Earnhardt",
+   "wiki": "Bobby Dale Earnhardt",
+   "points": 454,
+   "wins": 0,
+   "starts": 15,
+   "top5": 0,
+   "top10": 1
+  },
+  {
+   "pos": 14,
+   "name": "Andy Jankowiak",
+   "wiki": "Andy Jankowiak",
+   "points": 440,
+   "wins": 1,
+   "starts": 12,
+   "top5": 1,
+   "top10": 6
+  },
+  {
+   "pos": 15,
+   "name": "Ryan Vargas",
+   "wiki": "Ryan Vargas",
+   "points": 387,
+   "wins": 0,
+   "starts": 10,
+   "top5": 0,
+   "top10": 6
+  },
+  {
+   "pos": 16,
+   "name": "Isaac Kitzmiller",
+   "wiki": "Isaac Kitzmiller",
+   "points": 385,
+   "wins": 0,
+   "starts": 11,
+   "top5": 4,
+   "top10": 8
+  },
+  {
+   "pos": 17,
+   "name": "Tristan McKee",
+   "wiki": "Tristan McKee",
+   "points": 337,
+   "wins": 3,
+   "starts": 9,
+   "top5": 5,
+   "top10": 7
+  },
+  {
+   "pos": 18,
+   "name": "Gio Ruggiero",
+   "wiki": "Gio Ruggiero",
+   "points": 275,
+   "wins": 4,
+   "starts": 6,
+   "top5": 6,
+   "top10": 6
+  },
+  {
+   "pos": 19,
+   "name": "Nate Moeller",
+   "wiki": "Nate Moeller",
+   "points": 265,
+   "wins": 0,
+   "starts": 14,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 20,
+   "name": "Austin Vaughn",
+   "wiki": "Austin Vaughn",
+   "points": 245,
+   "wins": 0,
+   "starts": 9,
+   "top5": 0,
+   "top10": 2
+  },
+  {
+   "pos": 21,
+   "name": "Taylor Reimer",
+   "wiki": "Taylor Reimer",
+   "points": 222,
+   "wins": 0,
+   "starts": 7,
+   "top5": 3,
+   "top10": 5
+  },
+  {
+   "pos": 22,
+   "name": "Daniel Dye",
+   "wiki": "Daniel Dye",
+   "points": 221,
+   "wins": 0,
+   "starts": 6,
+   "top5": 3,
+   "top10": 5
+  },
+  {
+   "pos": 23,
+   "name": "Lanie Buice",
+   "wiki": "Lanie Buice",
+   "points": 202,
+   "wins": 0,
+   "starts": 5,
+   "top5": 5,
+   "top10": 5
+  },
+  {
+   "pos": 24,
+   "name": "Jade Avedisian",
+   "wiki": "Jade Avedisian",
+   "points": 198,
+   "wins": 0,
+   "starts": 6,
+   "top5": 0,
+   "top10": 5
+  },
+  {
+   "pos": 25,
+   "name": "Ed Pompa",
+   "wiki": "Ed Pompa",
+   "points": 184,
+   "wins": 0,
+   "starts": 7,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 26,
+   "name": "Kevin Campbell",
+   "wiki": "Kevin Campbell (racing driver)",
+   "points": 170,
+   "wins": 0,
+   "starts": 9,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 27,
+   "name": "Matt Kemp",
+   "wiki": "Matt Kemp (racing driver)",
+   "points": 161,
+   "wins": 0,
+   "starts": 7,
+   "top5": 0,
+   "top10": 1
+  },
+  {
+   "pos": 28,
+   "name": "Ty Fredrickson",
+   "wiki": "Ty Fredrickson",
+   "points": 157,
+   "wins": 0,
+   "starts": 5,
+   "top5": 1,
+   "top10": 1
+  },
+  {
+   "pos": 29,
+   "name": "Will Kimmel",
+   "wiki": "Will Kimmel",
+   "points": 147,
+   "wins": 0,
+   "starts": 5,
+   "top5": 1,
+   "top10": 2
+  },
+  {
+   "pos": 30,
+   "name": "Craig Pellegrini Jr.",
+   "wiki": null,
+   "points": 147,
+   "wins": 0,
+   "starts": 6,
+   "top5": 0,
+   "top10": 1
+  },
+  {
+   "pos": 31,
+   "name": "Dale Shearer",
+   "wiki": "Dale Shearer (racing driver)",
+   "points": 145,
+   "wins": 0,
+   "starts": 6,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 32,
+   "name": "Quinn Davis",
+   "wiki": "Quinn Davis",
+   "points": 140,
+   "wins": 0,
+   "starts": 5,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 33,
+   "name": "Brayton Laster",
+   "wiki": "Brayton Laster",
+   "points": 140,
+   "wins": 0,
+   "starts": 7,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 34,
+   "name": "Landon S. Huffman",
+   "wiki": "Landon S. Huffman",
+   "points": 138,
+   "wins": 0,
+   "starts": 4,
+   "top5": 2,
+   "top10": 2
+  },
+  {
+   "pos": 35,
+   "name": "Kaden Honeycutt",
+   "wiki": "Kaden Honeycutt",
+   "points": 136,
+   "wins": 2,
+   "starts": 3,
+   "top5": 3,
+   "top10": 3
+  },
+  {
+   "pos": 36,
+   "name": "Sean Corr",
+   "wiki": "Sean Corr",
+   "points": 133,
+   "wins": 0,
+   "starts": 5,
+   "top5": 0,
+   "top10": 1
+  },
+  {
+   "pos": 37,
+   "name": "Garrett Mitchell",
+   "wiki": "Cleetus McFarland",
+   "points": 132,
+   "wins": 0,
+   "starts": 4,
+   "top5": 1,
+   "top10": 1
+  },
+  {
+   "pos": 38,
+   "name": "Dystany Spurlock",
+   "wiki": "Dystany Spurlock",
+   "points": 131,
+   "wins": 0,
+   "starts": 5,
+   "top5": 0,
+   "top10": 1
+  },
+  {
+   "pos": 39,
+   "name": "Taylor Mayhew",
+   "wiki": "Taylor Mayhew",
+   "points": 124,
+   "wins": 0,
+   "starts": 4,
+   "top5": 0,
+   "top10": 2
+  },
+  {
+   "pos": 40,
+   "name": "Chase Buscaglia",
+   "wiki": null,
+   "points": 119,
+   "wins": 0,
+   "starts": 5,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 41,
+   "name": "Will Robinson",
+   "wiki": "Will Robinson (racing driver)",
+   "points": 105,
+   "wins": 0,
+   "starts": 3,
+   "top5": 0,
+   "top10": 2
+  },
+  {
+   "pos": 42,
+   "name": "Robbie Kennealy",
+   "wiki": "Robbie Kennealy",
+   "points": 105,
+   "wins": 0,
+   "starts": 4,
+   "top5": 0,
+   "top10": 1
+  },
+  {
+   "pos": 43,
+   "name": "Jack Wood",
+   "wiki": "Jack Wood (racing driver)",
+   "points": 100,
+   "wins": 0,
+   "starts": 3,
+   "top5": 0,
+   "top10": 2
+  },
+  {
+   "pos": 44,
+   "name": "Willie Mullins",
+   "wiki": "Willie Mullins (racing driver)",
+   "points": 96,
+   "wins": 0,
+   "starts": 3,
+   "top5": 0,
+   "top10": 1
+  },
+  {
+   "pos": 45,
+   "name": "Kyle Steckly",
+   "wiki": "Kyle Steckly",
+   "points": 96,
+   "wins": 0,
+   "starts": 3,
+   "top5": 0,
+   "top10": 1
+  },
+  {
+   "pos": 46,
+   "name": "Zachary Tinkle",
+   "wiki": "Zachary Tinkle",
+   "points": 92,
+   "wins": 0,
+   "starts": 4,
+   "top5": 0,
+   "top10": 2
+  },
+  {
+   "pos": 47,
+   "name": "Jackson McLerran",
+   "wiki": "Jackson McLerran",
+   "points": 92,
+   "wins": 0,
+   "starts": 4,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 48,
+   "name": "Connor Mosack",
+   "wiki": "Connor Mosack",
+   "points": 90,
+   "wins": 1,
+   "starts": 2,
+   "top5": 2,
+   "top10": 2
+  },
+  {
+   "pos": 49,
+   "name": "Andrew Patterson",
+   "wiki": "Andrew Patterson (racing driver)",
+   "points": 89,
+   "wins": 0,
+   "starts": 3,
+   "top5": 0,
+   "top10": 1
+  },
+  {
+   "pos": 50,
+   "name": "Tony Cosentino",
+   "wiki": "Tony Cosentino",
+   "points": 86,
+   "wins": 0,
+   "starts": 3,
+   "top5": 0,
+   "top10": 1
+  },
+  {
+   "pos": 51,
+   "name": "Dustin Hillenburg",
+   "wiki": "Dustin Hillenburg",
+   "points": 85,
+   "wins": 0,
+   "starts": 4,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 52,
+   "name": "George Siciliano",
+   "wiki": "Squirrel McNutt",
+   "points": 81,
+   "wins": 0,
+   "starts": 3,
+   "top5": 0,
+   "top10": 1
+  },
+  {
+   "pos": 53,
+   "name": "Wesley Slimp",
+   "wiki": "Wesley Slimp",
+   "points": 80,
+   "wins": 0,
+   "starts": 3,
+   "top5": 0,
+   "top10": 2
+  },
+  {
+   "pos": 54,
+   "name": "Tim Monroe",
+   "wiki": "Tim Monroe",
+   "points": 80,
+   "wins": 0,
+   "starts": 3,
+   "top5": 0,
+   "top10": 1
+  },
+  {
+   "pos": 55,
+   "name": "Andrew Ranger",
+   "wiki": "Andrew Ranger",
+   "points": 79,
+   "wins": 0,
+   "starts": 2,
+   "top5": 1,
+   "top10": 2
+  },
+  {
+   "pos": 56,
+   "name": "Kelly Kovski",
+   "wiki": "Kelly Kovski",
+   "points": 78,
+   "wins": 0,
+   "starts": 2,
+   "top5": 1,
+   "top10": 2
+  },
+  {
+   "pos": 57,
+   "name": "Con Nicolopoulos",
+   "wiki": "Con Nicolopoulos",
+   "points": 77,
+   "wins": 0,
+   "starts": 4,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 58,
+   "name": "Bryce Haugeberg",
+   "wiki": "Bryce Haugeberg",
+   "points": 75,
+   "wins": 0,
+   "starts": 3,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 59,
+   "name": "Monty Tipton",
+   "wiki": "Monty Tipton",
+   "points": 74,
+   "wins": 0,
+   "starts": 3,
+   "top5": 0,
+   "top10": 1
+  },
+  {
+   "pos": 60,
+   "name": "Jake Finch",
+   "wiki": "Jake Finch",
+   "points": 74,
+   "wins": 0,
+   "starts": 3,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 61,
+   "name": "Ryan Gemmell",
+   "wiki": "Ryan Gemmell",
+   "points": 73,
+   "wins": 0,
+   "starts": 2,
+   "top5": 0,
+   "top10": 2
+  },
+  {
+   "pos": 62,
+   "name": "Landon Brown",
+   "wiki": "Landon Brown (racing driver)",
+   "points": 72,
+   "wins": 0,
+   "starts": 3,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 63,
+   "name": "Jeff Anton",
+   "wiki": "Jeff Anton",
+   "points": 67,
+   "wins": 0,
+   "starts": 2,
+   "top5": 0,
+   "top10": 1
+  },
+  {
+   "pos": 64,
+   "name": "Tim Richmond",
+   "wiki": "Tim Richmond (racing driver, born 1998)",
+   "points": 66,
+   "wins": 0,
+   "starts": 3,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 65,
+   "name": "Esteban Rodríguez",
+   "wiki": "Toro Rodríguez",
+   "points": 65,
+   "wins": 0,
+   "starts": 2,
+   "top5": 0,
+   "top10": 1
+  },
+  {
+   "pos": 66,
+   "name": "Mike Basham",
+   "wiki": "Mike Basham (racing driver)",
+   "points": 64,
+   "wins": 0,
+   "starts": 2,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 67,
+   "name": "Charles Weslowski Jr.",
+   "wiki": null,
+   "points": 60,
+   "wins": 0,
+   "starts": 3,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 68,
+   "name": "Gus Dean",
+   "wiki": "Gus Dean",
+   "points": 58,
+   "wins": 0,
+   "starts": 2,
+   "top5": 1,
+   "top10": 1
+  },
+  {
+   "pos": 69,
+   "name": "Cody Dennison",
+   "wiki": "Cody Dennison",
+   "points": 56,
+   "wins": 0,
+   "starts": 2,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 70,
+   "name": "D. L. Wilson",
+   "wiki": "D. L. Wilson",
+   "points": 52,
+   "wins": 0,
+   "starts": 2,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 71,
+   "name": "Morgen Baird",
+   "wiki": "Morgen Baird",
+   "points": 52,
+   "wins": 0,
+   "starts": 2,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 72,
+   "name": "Brian Weber",
+   "wiki": "Brian Weber",
+   "points": 52,
+   "wins": 0,
+   "starts": 2,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 73,
+   "name": "Brian Barbarow",
+   "wiki": null,
+   "points": 48,
+   "wins": 0,
+   "starts": 2,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 74,
+   "name": "John Clagett",
+   "wiki": null,
+   "points": 47,
+   "wins": 0,
+   "starts": 2,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 75,
+   "name": "Nick White",
+   "wiki": "Nick White (racing driver)",
+   "points": 45,
+   "wins": 0,
+   "starts": 2,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 76,
+   "name": "Hunter Wright",
+   "wiki": "Hunter Wright",
+   "points": 44,
+   "wins": 0,
+   "starts": 2,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 77,
+   "name": "Bryce Applegate",
+   "wiki": "Bryce Applegate",
+   "points": 44,
+   "wins": 0,
+   "starts": 2,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 78,
+   "name": "Rita Goulet",
+   "wiki": "Rita Goulet",
+   "points": 44,
+   "wins": 0,
+   "starts": 2,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 79,
+   "name": "Ben Peterson",
+   "wiki": "Ben Peterson (racing driver)",
+   "points": 43,
+   "wins": 0,
+   "starts": 2,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 80,
+   "name": "Trevor Huddleston",
+   "wiki": "Trevor Huddleston (racing driver)",
+   "points": 40,
+   "wins": 0,
+   "starts": 1,
+   "top5": 1,
+   "top10": 1
+  },
+  {
+   "pos": 81,
+   "name": "Glen Reen",
+   "wiki": "Glen Reen",
+   "points": 39,
+   "wins": 0,
+   "starts": 1,
+   "top5": 1,
+   "top10": 1
+  },
+  {
+   "pos": 82,
+   "name": "Mason Massey",
+   "wiki": "Mason Massey",
+   "points": 39,
+   "wins": 0,
+   "starts": 1,
+   "top5": 1,
+   "top10": 1
+  },
+  {
+   "pos": 83,
+   "name": "Sam Corry",
+   "wiki": "Sam Corry",
+   "points": 39,
+   "wins": 0,
+   "starts": 1,
+   "top5": 1,
+   "top10": 1
+  },
+  {
+   "pos": 84,
+   "name": "Caden Kvapil",
+   "wiki": "Caden Kvapil",
+   "points": 39,
+   "wins": 0,
+   "starts": 1,
+   "top5": 1,
+   "top10": 1
+  },
+  {
+   "pos": 85,
+   "name": "Tyler Lupton",
+   "wiki": "Tyler Lupton",
+   "points": 38,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 1
+  },
+  {
+   "pos": 86,
+   "name": "Kenna Long",
+   "wiki": null,
+   "points": 38,
+   "wins": 0,
+   "starts": 2,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 87,
+   "name": "Corey Aiken",
+   "wiki": "Corey Aiken",
+   "points": 37,
+   "wins": 0,
+   "starts": 2,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 88,
+   "name": "Ashton Higgins",
+   "wiki": "Ashton Higgins",
+   "points": 36,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 1
+  },
+  {
+   "pos": 89,
+   "name": "Dawson Sutton",
+   "wiki": "Dawson Sutton",
+   "points": 35,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 1
+  },
+  {
+   "pos": 90,
+   "name": "Chase Howard",
+   "wiki": "Chase Howard",
+   "points": 35,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 1
+  },
+  {
+   "pos": 91,
+   "name": "Mike Christopher Jr.",
+   "wiki": "Mike Christopher Jr.",
+   "points": 35,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 1
+  },
+  {
+   "pos": 92,
+   "name": "A. J. Moyer",
+   "wiki": "A. J. Moyer",
+   "points": 35,
+   "wins": 0,
+   "starts": 2,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 93,
+   "name": "Derek White",
+   "wiki": "Derek White (racing driver)",
+   "points": 34,
+   "wins": 0,
+   "starts": 2,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 94,
+   "name": "Hailie Deegan",
+   "wiki": "Hailie Deegan",
+   "points": 33,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 95,
+   "name": "Peter Portante",
+   "wiki": "Peter Portante",
+   "points": 33,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 96,
+   "name": "Shawn Allen Jr.",
+   "wiki": null,
+   "points": 33,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 97,
+   "name": "Ivis Earley",
+   "wiki": null,
+   "points": 33,
+   "wins": 0,
+   "starts": 2,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 98,
+   "name": "Tyler Kicera",
+   "wiki": null,
+   "points": 32,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 99,
+   "name": "John Kennedy",
+   "wiki": null,
+   "points": 32,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 100,
+   "name": "Eric Johnson Jr.",
+   "wiki": "Eric Johnson Jr.",
+   "points": 31,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 101,
+   "name": "Stewart Friesen",
+   "wiki": "Stewart Friesen",
+   "points": 31,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 102,
+   "name": "Jaiden Reyna",
+   "wiki": "Jaiden Reyna",
+   "points": 30,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 103,
+   "name": "Daniel Sasnett",
+   "wiki": "Daniel Sasnett",
+   "points": 30,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 104,
+   "name": "Logan Misuraca",
+   "wiki": "Logan Misuraca",
+   "points": 30,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 105,
+   "name": "Eric Caudell",
+   "wiki": "Eric Caudell",
+   "points": 30,
+   "wins": 0,
+   "starts": 2,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 106,
+   "name": "Kole Raz",
+   "wiki": "Kole Raz",
+   "points": 29,
+   "wins": 0,
+   "starts": 1,
+   "top5": 1,
+   "top10": 1
+  },
+  {
+   "pos": 107,
+   "name": "Andrew Chapman",
+   "wiki": null,
+   "points": 29,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 108,
+   "name": "Gabriel Casagrande",
+   "wiki": "Gabriel Casagrande",
+   "points": 29,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 109,
+   "name": "Graham Jacobson",
+   "wiki": null,
+   "points": 28,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 110,
+   "name": "Jeffery MacZink",
+   "wiki": "Jeffery MacZink",
+   "points": 27,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 111,
+   "name": "Tony Musolino",
+   "wiki": null,
+   "points": 26,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 112,
+   "name": "Hunter Deshautelle",
+   "wiki": "Hunter Deshautelle",
+   "points": 25,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 113,
+   "name": "Andrew Rocque",
+   "wiki": null,
+   "points": 25,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 114,
+   "name": "Alex Quarterley",
+   "wiki": "Alex Quarterley",
+   "points": 23,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 115,
+   "name": "Trenton Masters",
+   "wiki": null,
+   "points": 23,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 116,
+   "name": "Ron Vandermeir Jr.",
+   "wiki": "Ron Vandermeir Jr.",
+   "points": 23,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 117,
+   "name": "Bryan Dauzat",
+   "wiki": "Bryan Dauzat",
+   "points": 23,
+   "wins": 0,
+   "starts": 2,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 118,
+   "name": "Patrick Staropoli",
+   "wiki": "Patrick Staropoli",
+   "points": 22,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 119,
+   "name": "Cole Denton",
+   "wiki": "Cole Denton",
+   "points": 20,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 120,
+   "name": "Trent Curtis",
+   "wiki": null,
+   "points": 20,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 121,
+   "name": "William Sawalich",
+   "wiki": "William Sawalich",
+   "points": 20,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 122,
+   "name": "Brad Perez",
+   "wiki": "Brad Perez",
+   "points": 20,
+   "wins": 0,
+   "starts": 2,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 123,
+   "name": "Ryan Huff",
+   "wiki": "Ryan Huff",
+   "points": 19,
+   "wins": 0,
+   "starts": 2,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 124,
+   "name": "David Smith",
+   "wiki": "David Smith (racing driver)",
+   "points": 18,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 125,
+   "name": "Christopher Werth",
+   "wiki": "Christopher Werth",
+   "points": 18,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 126,
+   "name": "Presley Sorah",
+   "wiki": "Presley Sorah",
+   "points": 17,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 127,
+   "name": "Gavin Ray",
+   "wiki": "Gavin Ray",
+   "points": 15,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 128,
+   "name": "Mia Lovell",
+   "wiki": "Mia Lovell",
+   "points": 14,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 129,
+   "name": "Alli Owens",
+   "wiki": "Alli Owens",
+   "points": 14,
+   "wins": 0,
+   "starts": 2,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 130,
+   "name": "Julian DaCosta",
+   "wiki": null,
+   "points": 13,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 131,
+   "name": "Caleb Costner",
+   "wiki": "Caleb Costner",
+   "points": 12,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 132,
+   "name": "Steve Lewis Jr.",
+   "wiki": "Steve Lewis Jr.",
+   "points": 12,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 133,
+   "name": "Tyler Tomassi",
+   "wiki": "Tyler Tomassi",
+   "points": 11,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 134,
+   "name": "Michael Clayton",
+   "wiki": null,
+   "points": 11,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 135,
+   "name": "Kadence Davenport",
+   "wiki": "Kadence Davenport",
+   "points": 11,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 136,
+   "name": "Mini Tyrrell",
+   "wiki": "Mini Tyrrell",
+   "points": 6,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 137,
+   "name": "Bobby Hillis Jr.",
+   "wiki": "Bobby Hillis Jr.",
+   "points": 6,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": null,
+   "name": "Greg Van Alst",
+   "wiki": "Greg Van Alst",
+   "points": null,
+   "wins": 0,
+   "starts": 0,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": null,
+   "name": "Robert Martin",
+   "wiki": null,
+   "points": null,
+   "wins": 0,
+   "starts": 0,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": null,
+   "name": "Nolan Wilson",
+   "wiki": null,
+   "points": null,
+   "wins": 0,
+   "starts": 0,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": null,
+   "name": "Dale Quarterley",
+   "wiki": "Dale Quarterley",
+   "points": null,
+   "wins": 0,
+   "starts": 0,
+   "top5": 0,
+   "top10": 0
+  }
+ ],
+ "schedule": [
+  {
+   "round": 1,
+   "date": "2026-02-14",
+   "race": "General Tire 200",
+   "track": "Daytona International Speedway",
+   "city": "Daytona Beach",
+   "state": "FL",
+   "winner": "Gio Ruggiero",
+   "winner_wiki": "Gio Ruggiero"
+  },
+  {
+   "round": 2,
+   "date": "2026-03-05",
+   "race": "General Tire 150",
+   "track": "Phoenix Raceway",
+   "city": "Avondale",
+   "state": "AZ",
+   "winner": "Carson Brown",
+   "winner_wiki": "Carson Brown"
+  },
+  {
+   "round": 3,
+   "date": "2026-04-18",
+   "race": "Tide 150",
+   "track": "Kansas Speedway",
+   "city": "Kansas City",
+   "state": "KS",
+   "winner": "Gio Ruggiero",
+   "winner_wiki": "Gio Ruggiero"
+  },
+  {
+   "round": 4,
+   "date": "2026-04-25",
+   "race": "Alabama Manufactured Housing 200",
+   "track": "Talladega Superspeedway",
+   "city": "Lincoln",
+   "state": "AL",
+   "winner": "Andy Jankowiak",
+   "winner_wiki": "Andy Jankowiak"
+  },
+  {
+   "round": 5,
+   "date": "2026-05-08",
+   "race": "General Tire 100 at The Glen",
+   "track": "Watkins Glen International",
+   "city": "Watkins Glen",
+   "state": "NY",
+   "winner": "Kaden Honeycutt",
+   "winner_wiki": "Kaden Honeycutt"
+  },
+  {
+   "round": 6,
+   "date": "2026-05-16",
+   "race": "Owens Corning 200",
+   "track": "Toledo Speedway",
+   "city": "Toledo",
+   "state": "OH",
+   "winner": "Tristan McKee",
+   "winner_wiki": "Tristan McKee"
+  },
+  {
+   "round": 7,
+   "date": "2026-06-05",
+   "race": "Henry Ford Health 200",
+   "track": "Michigan International Speedway",
+   "city": "Brooklyn",
+   "state": "MI",
+   "winner": "Gio Ruggiero",
+   "winner_wiki": "Gio Ruggiero"
+  },
+  {
+   "round": 8,
+   "date": "2026-06-12",
+   "race": "Sunset Hill Shooting Range 150",
+   "track": "Pocono Raceway",
+   "city": "Long Pond",
+   "state": "PA",
+   "winner": "Gio Ruggiero",
+   "winner_wiki": "Gio Ruggiero"
+  },
+  {
+   "round": 9,
+   "date": "2026-06-20",
+   "race": "Herr's Snacks 200",
+   "track": "Berlin Raceway",
+   "city": "Marne",
+   "state": "MI",
+   "winner": "Max Reaves",
+   "winner_wiki": "Max Reaves"
+  },
+  {
+   "round": 10,
+   "date": "2026-06-27",
+   "race": "Shore Lunch 250 Presented By Dutch Boy",
+   "track": "Elko Speedway",
+   "city": "Elko New Market",
+   "state": "MN",
+   "winner": "Max Reaves",
+   "winner_wiki": "Max Reaves"
+  },
+  {
+   "round": 11,
+   "date": "2026-07-03",
+   "race": "Ashley Furniture 150",
+   "track": "Chicagoland Speedway",
+   "city": "Joliet",
+   "state": "IL",
+   "winner": "Connor Mosack",
+   "winner_wiki": "Connor Mosack"
+  },
+  {
+   "round": 12,
+   "date": "2026-07-10",
+   "race": "Lime Rock Park 100",
+   "track": "Lime Rock Park",
+   "city": "Lakeville",
+   "state": "CT",
+   "winner": "Thomas Annunziata",
+   "winner_wiki": "Thomas Annunziata"
+  },
+  {
+   "round": 13,
+   "date": "2026-07-24",
+   "race": "LiUNA! 150 presented by IDEAL Garage Door",
+   "track": "Lucas Oil Indianapolis Raceway Park",
+   "city": "Brownsburg",
+   "state": "IN",
+   "winner": "Kaden Honeycutt",
+   "winner_wiki": "Kaden Honeycutt"
+  },
+  {
+   "round": 14,
+   "date": "2026-08-07",
+   "race": "JR & CO. 150",
+   "track": "Iowa Speedway",
+   "city": "Newton",
+   "state": "IA",
+   "winner": "Tristan McKee",
+   "winner_wiki": "Tristan McKee"
+  },
+  {
+   "round": 15,
+   "date": "2026-08-23",
+   "race": "Calypso 100",
+   "track": "Illinois State Fairgrounds Racetrack",
+   "city": "Springfield",
+   "state": "IL",
+   "winner": "Max Reaves",
+   "winner_wiki": "Max Reaves"
+  },
+  {
+   "round": 16,
+   "date": "2026-08-28",
+   "race": "Atlas 200",
+   "track": "Madison International Speedway",
+   "city": "Rutland",
+   "state": "WI",
+   "winner": "Tristan McKee",
+   "winner_wiki": "Tristan McKee"
+  },
+  {
+   "round": 17,
+   "date": "2026-09-06",
+   "race": "Audubon Park 100",
+   "track": "DuQuoin State Fairgrounds Racetrack",
+   "city": "Du Quoin",
+   "state": "IL",
+   "winner": "Carson Brown",
+   "winner_wiki": "Carson Brown"
+  },
+  {
+   "round": 18,
+   "date": "2026-09-12",
+   "race": "Spruce 212",
+   "track": "Salem Speedway",
+   "city": "Salem",
+   "state": "IN",
+   "winner": "Max Reaves",
+   "winner_wiki": "Max Reaves"
+  },
+  {
+   "round": 19,
+   "date": "2026-09-17",
+   "race": "Bush's Beans 200",
+   "track": "Bristol Motor Speedway",
+   "city": "Bristol",
+   "state": "TN",
+   "winner": "Carson Brown",
+   "winner_wiki": "Carson Brown"
+  },
+  {
+   "round": 20,
+   "date": "2026-09-25",
+   "race": "Menards 150",
+   "track": "Kansas Speedway",
+   "city": "Kansas City",
+   "state": "KS",
+   "winner": "Carson Brown",
+   "winner_wiki": "Carson Brown"
+  }
+ ],
+ "sources": [
+  "https://en.wikipedia.org/w/index.php?title=2026_ARCA_Menards_Series&oldid=1378457860",
+  "https://en.wikipedia.org/w/index.php?title=ARCA_Menards_Series&oldid=1376755876"
+ ]
+}

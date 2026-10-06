@@ -1,0 +1,789 @@
+{
+ "series": "cars_slm",
+ "year": 2024,
+ "official_name": "CARS Tour",
+ "data_level": "full",
+ "champion": {
+  "name": "Kaden Honeycutt",
+  "wiki": "Kaden Honeycutt"
+ },
+ "teams": [],
+ "standings": [
+  {
+   "pos": 1,
+   "name": "Kaden Honeycutt",
+   "wiki": "Kaden Honeycutt",
+   "points": 386,
+   "wins": 3,
+   "starts": 13,
+   "top5": 9,
+   "top10": 13
+  },
+  {
+   "pos": 2,
+   "name": "Spencer Davis",
+   "wiki": "Spencer Davis (racing driver)",
+   "points": 376,
+   "wins": 2,
+   "starts": 13,
+   "top5": 9,
+   "top10": 11
+  },
+  {
+   "pos": 3,
+   "name": "Caden Kvapil",
+   "wiki": "Caden Kvapil",
+   "points": 350,
+   "wins": 2,
+   "starts": 13,
+   "top5": 7,
+   "top10": 9
+  },
+  {
+   "pos": 4,
+   "name": "Jimmy Renfrew Jr.",
+   "wiki": "Jimmy Renfrew Jr.",
+   "points": 346,
+   "wins": 1,
+   "starts": 13,
+   "top5": 7,
+   "top10": 11
+  },
+  {
+   "pos": 5,
+   "name": "Tristan McKee",
+   "wiki": "Tristan McKee",
+   "points": 323,
+   "wins": 2,
+   "starts": 13,
+   "top5": 5,
+   "top10": 7
+  },
+  {
+   "pos": 6,
+   "name": "T. J. DeCaire",
+   "wiki": "T. J. DeCaire",
+   "points": 314,
+   "wins": 0,
+   "starts": 12,
+   "top5": 4,
+   "top10": 10
+  },
+  {
+   "pos": 7,
+   "name": "Jake Bollman",
+   "wiki": "Jake Bollman",
+   "points": 282,
+   "wins": 1,
+   "starts": 11,
+   "top5": 4,
+   "top10": 8
+  },
+  {
+   "pos": 8,
+   "name": "Dylan Garner",
+   "wiki": "Dylan Garner",
+   "points": 232,
+   "wins": 0,
+   "starts": 12,
+   "top5": 0,
+   "top10": 3
+  },
+  {
+   "pos": 9,
+   "name": "Joshua Horniman",
+   "wiki": null,
+   "points": 227,
+   "wins": 0,
+   "starts": 13,
+   "top5": 0,
+   "top10": 3
+  },
+  {
+   "pos": 10,
+   "name": "Brandon Lopez",
+   "wiki": "Brandon Lopez",
+   "points": 223,
+   "wins": 0,
+   "starts": 12,
+   "top5": 0,
+   "top10": 3
+  },
+  {
+   "pos": 11,
+   "name": "Kyle Campbell",
+   "wiki": null,
+   "points": 210,
+   "wins": 2,
+   "starts": 8,
+   "top5": 2,
+   "top10": 5
+  },
+  {
+   "pos": 12,
+   "name": "Conner Jones",
+   "wiki": "Conner Jones",
+   "points": 180,
+   "wins": 0,
+   "starts": 6,
+   "top5": 5,
+   "top10": 6
+  },
+  {
+   "pos": 13,
+   "name": "Nick Loden",
+   "wiki": null,
+   "points": 179,
+   "wins": 0,
+   "starts": 9,
+   "top5": 2,
+   "top10": 2
+  },
+  {
+   "pos": 14,
+   "name": "Max Reaves",
+   "wiki": "Max Reaves",
+   "points": 151,
+   "wins": 0,
+   "starts": 7,
+   "top5": 1,
+   "top10": 3
+  },
+  {
+   "pos": 15,
+   "name": "Ashton Higgins",
+   "wiki": "Ashton Higgins",
+   "points": 144,
+   "wins": 0,
+   "starts": 8,
+   "top5": 1,
+   "top10": 2
+  },
+  {
+   "pos": 16,
+   "name": "Logan Jones",
+   "wiki": "Logan Jones (racing driver)",
+   "points": 126,
+   "wins": 0,
+   "starts": 8,
+   "top5": 0,
+   "top10": 2
+  },
+  {
+   "pos": 17,
+   "name": "Tyler Church",
+   "wiki": null,
+   "points": 121,
+   "wins": 0,
+   "starts": 6,
+   "top5": 0,
+   "top10": 2
+  },
+  {
+   "pos": 18,
+   "name": "Travis Braden",
+   "wiki": "Travis Braden",
+   "points": 119,
+   "wins": 0,
+   "starts": 5,
+   "top5": 0,
+   "top10": 4
+  },
+  {
+   "pos": 19,
+   "name": "Cameron Bolin",
+   "wiki": "Cameron Bolin",
+   "points": 105,
+   "wins": 0,
+   "starts": 4,
+   "top5": 2,
+   "top10": 3
+  },
+  {
+   "pos": 20,
+   "name": "Jonathan Shafer",
+   "wiki": "Jonathan Shafer",
+   "points": 98,
+   "wins": 0,
+   "starts": 4,
+   "top5": 1,
+   "top10": 3
+  },
+  {
+   "pos": 21,
+   "name": "Hudson Bulger",
+   "wiki": "Hudson Bulger",
+   "points": 95,
+   "wins": 0,
+   "starts": 5,
+   "top5": 0,
+   "top10": 1
+  },
+  {
+   "pos": 22,
+   "name": "Katie Hettinger",
+   "wiki": "Katie Hettinger",
+   "points": 93,
+   "wins": 0,
+   "starts": 4,
+   "top5": 1,
+   "top10": 2
+  },
+  {
+   "pos": 23,
+   "name": "Justin Crider",
+   "wiki": null,
+   "points": 90,
+   "wins": 0,
+   "starts": 5,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 24,
+   "name": "Aiden King",
+   "wiki": "Aiden King",
+   "points": 70,
+   "wins": 0,
+   "starts": 3,
+   "top5": 0,
+   "top10": 2
+  },
+  {
+   "pos": 25,
+   "name": "Luke Baldwin",
+   "wiki": "Luke Baldwin",
+   "points": 69,
+   "wins": 0,
+   "starts": 4,
+   "top5": 1,
+   "top10": 1
+  },
+  {
+   "pos": 26,
+   "name": "Tyler Tanner",
+   "wiki": "Tyler Tanner",
+   "points": null,
+   "wins": 0,
+   "starts": 4,
+   "top5": 0,
+   "top10": 1
+  },
+  {
+   "pos": 27,
+   "name": "Dusty Garus",
+   "wiki": null,
+   "points": null,
+   "wins": 0,
+   "starts": 3,
+   "top5": 0,
+   "top10": 1
+  },
+  {
+   "pos": 28,
+   "name": "Jessica Cann",
+   "wiki": null,
+   "points": null,
+   "wins": 0,
+   "starts": 3,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 29,
+   "name": "Amber Lynn",
+   "wiki": null,
+   "points": null,
+   "wins": 0,
+   "starts": 2,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 30,
+   "name": "Cameron Clifford",
+   "wiki": null,
+   "points": null,
+   "wins": 0,
+   "starts": 2,
+   "top5": 0,
+   "top10": 1
+  },
+  {
+   "pos": 31,
+   "name": "George Phillips",
+   "wiki": "George Phillips (racing driver)",
+   "points": null,
+   "wins": 0,
+   "starts": 2,
+   "top5": 0,
+   "top10": 1
+  },
+  {
+   "pos": 32,
+   "name": "Jeff Batten",
+   "wiki": "Jeff Batten",
+   "points": null,
+   "wins": 0,
+   "starts": 2,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 33,
+   "name": "Kris Wright",
+   "wiki": "Kris Wright",
+   "points": null,
+   "wins": 0,
+   "starts": 2,
+   "top5": 0,
+   "top10": 1
+  },
+  {
+   "pos": 34,
+   "name": "Lanie Buice",
+   "wiki": "Lanie Buice",
+   "points": null,
+   "wins": 0,
+   "starts": 2,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 35,
+   "name": "Max Cookson",
+   "wiki": null,
+   "points": null,
+   "wins": 0,
+   "starts": 2,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 36,
+   "name": "Tim Sozio",
+   "wiki": null,
+   "points": null,
+   "wins": 0,
+   "starts": 2,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 37,
+   "name": "Adam Murray",
+   "wiki": null,
+   "points": null,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 38,
+   "name": "Austin Jones",
+   "wiki": null,
+   "points": null,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 39,
+   "name": "Blaise Rutherford",
+   "wiki": null,
+   "points": null,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 40,
+   "name": "Brett Suggs",
+   "wiki": null,
+   "points": null,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 1
+  },
+  {
+   "pos": 41,
+   "name": "Casey Roderick",
+   "wiki": "Casey Roderick",
+   "points": null,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 42,
+   "name": "Chase Pinsonneault",
+   "wiki": "Chase Pinsonneault",
+   "points": null,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 43,
+   "name": "Corey Heim",
+   "wiki": "Corey Heim",
+   "points": null,
+   "wins": 0,
+   "starts": 1,
+   "top5": 1,
+   "top10": 1
+  },
+  {
+   "pos": 44,
+   "name": "Daniel Webster",
+   "wiki": null,
+   "points": null,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 45,
+   "name": "Dustin Bryson",
+   "wiki": null,
+   "points": null,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 46,
+   "name": "Dylan Fetcho",
+   "wiki": "Dylan Fetcho",
+   "points": null,
+   "wins": 0,
+   "starts": 1,
+   "top5": 1,
+   "top10": 1
+  },
+  {
+   "pos": 47,
+   "name": "Edward Cheslak",
+   "wiki": null,
+   "points": null,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 48,
+   "name": "Gio Ruggiero",
+   "wiki": "Gio Ruggiero",
+   "points": null,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 49,
+   "name": "Holden Haddock",
+   "wiki": null,
+   "points": null,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 50,
+   "name": "Jaydn Daniels",
+   "wiki": null,
+   "points": null,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 51,
+   "name": "Kevin Harvick",
+   "wiki": "Kevin Harvick",
+   "points": null,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 1
+  },
+  {
+   "pos": 52,
+   "name": "Kyle Steckly",
+   "wiki": "Kyle Steckly",
+   "points": null,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 1
+  },
+  {
+   "pos": 53,
+   "name": "Mason Lastra",
+   "wiki": null,
+   "points": null,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 54,
+   "name": "Matt Craig",
+   "wiki": "Matt Craig (racing driver)",
+   "points": null,
+   "wins": 0,
+   "starts": 1,
+   "top5": 1,
+   "top10": 1
+  },
+  {
+   "pos": 55,
+   "name": "Michael Toner",
+   "wiki": null,
+   "points": null,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 56,
+   "name": "Mike Hopkins",
+   "wiki": null,
+   "points": null,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 1
+  },
+  {
+   "pos": 57,
+   "name": "Nathan Gregg",
+   "wiki": null,
+   "points": null,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 58,
+   "name": "Ryan Moore",
+   "wiki": "Ryan Moore (racing driver)",
+   "points": null,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 1
+  },
+  {
+   "pos": 59,
+   "name": "Seth Christensen",
+   "wiki": null,
+   "points": null,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 60,
+   "name": "Tate Fogleman",
+   "wiki": "Tate Fogleman",
+   "points": null,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 61,
+   "name": "Terri Crider",
+   "wiki": null,
+   "points": null,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 62,
+   "name": "Tyler Johnson",
+   "wiki": null,
+   "points": null,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 63,
+   "name": "William Hale",
+   "wiki": null,
+   "points": null,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 64,
+   "name": "William Sawalich",
+   "wiki": "William Sawalich",
+   "points": null,
+   "wins": 0,
+   "starts": 1,
+   "top5": 1,
+   "top10": 1
+  }
+ ],
+ "schedule": [
+  {
+   "round": 1,
+   "date": "2024-03-02",
+   "race": null,
+   "track": "Southern National Motorsports Park",
+   "city": "Lucama",
+   "state": "NC",
+   "winner": "Kyle Campbell",
+   "winner_wiki": null
+  },
+  {
+   "round": 2,
+   "date": "2024-04-06",
+   "race": null,
+   "track": "Hickory Motor Speedway",
+   "city": "Hickory",
+   "state": "NC",
+   "winner": "Kyle Campbell",
+   "winner_wiki": null
+  },
+  {
+   "round": 3,
+   "date": "2024-04-20",
+   "race": null,
+   "track": "Orange County Speedway",
+   "city": "Rougemont",
+   "state": "NC",
+   "winner": "Kaden Honeycutt",
+   "winner_wiki": "Kaden Honeycutt"
+  },
+  {
+   "round": 4,
+   "date": "2024-05-03",
+   "race": null,
+   "track": "Ace Speedway",
+   "city": "Altamahaw",
+   "state": "NC",
+   "winner": "Caden Kvapil",
+   "winner_wiki": "Caden Kvapil"
+  },
+  {
+   "round": 5,
+   "date": "2024-05-25",
+   "race": null,
+   "track": "Tri-County Speedway",
+   "city": "Granite Falls",
+   "state": "NC",
+   "winner": "Jake Bollman",
+   "winner_wiki": "Jake Bollman"
+  },
+  {
+   "round": 6,
+   "date": "2024-07-03",
+   "race": null,
+   "track": "Caraway Speedway",
+   "city": "Asheboro",
+   "state": "NC",
+   "winner": "Tristan McKee",
+   "winner_wiki": "Tristan McKee"
+  },
+  {
+   "round": 7,
+   "date": "2024-07-27",
+   "race": null,
+   "track": "Hickory Motor Speedway",
+   "city": "Hickory",
+   "state": "NC",
+   "winner": "Jimmy Renfrew Jr.",
+   "winner_wiki": "Jimmy Renfrew Jr."
+  },
+  {
+   "round": 8,
+   "date": "2024-08-03",
+   "race": null,
+   "track": "North Wilkesboro Speedway",
+   "city": "North Wilkesboro",
+   "state": "NC",
+   "winner": "Tristan McKee",
+   "winner_wiki": "Tristan McKee"
+  },
+  {
+   "round": 9,
+   "date": "2024-08-16",
+   "race": null,
+   "track": "Ace Speedway",
+   "city": "Altamahaw",
+   "state": "NC",
+   "winner": "Caden Kvapil",
+   "winner_wiki": "Caden Kvapil"
+  },
+  {
+   "round": 10,
+   "date": "2024-08-30",
+   "race": null,
+   "track": "Florence Motor Speedway",
+   "city": "Timmonsville",
+   "state": "SC",
+   "winner": "Spencer Davis",
+   "winner_wiki": "Spencer Davis (racing driver)"
+  },
+  {
+   "round": 11,
+   "date": "2024-09-14",
+   "race": null,
+   "track": "South Boston Speedway",
+   "city": "South Boston",
+   "state": "VA",
+   "winner": "Spencer Davis",
+   "winner_wiki": "Spencer Davis (racing driver)"
+  },
+  {
+   "round": 12,
+   "date": "2024-10-12",
+   "race": null,
+   "track": "Tri-County Speedway",
+   "city": "Granite Falls",
+   "state": "NC",
+   "winner": "Kaden Honeycutt",
+   "winner_wiki": "Kaden Honeycutt"
+  },
+  {
+   "round": 13,
+   "date": "2024-10-19",
+   "race": null,
+   "track": "North Wilkesboro Speedway",
+   "city": "North Wilkesboro",
+   "state": "NC",
+   "winner": "Kaden Honeycutt",
+   "winner_wiki": "Kaden Honeycutt"
+  }
+ ],
+ "sources": [
+  "https://en.wikipedia.org/w/index.php?title=2024_CARS_Tour&oldid=1376748934",
+  "https://en.wikipedia.org/w/index.php?title=CARS_Tour&oldid=1378109036"
+ ]
+}

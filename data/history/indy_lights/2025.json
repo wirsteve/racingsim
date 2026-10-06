@@ -1,0 +1,1293 @@
+{
+ "series": "formula_lights",
+ "year": 2025,
+ "official_name": "2025 Firestone Indy NXT Series",
+ "era": "IRL feeder (Infiniti Pro / Indy Pro / Indy Lights / Indy NXT)",
+ "data_level": "full",
+ "teams_source": "teams_table",
+ "teams": [
+  {
+   "team": "Abel Motorsports",
+   "team_wiki": "Abel_Motorsports",
+   "owner": null,
+   "manufacturer": "AER",
+   "chassis": null,
+   "cars": [
+    {
+     "number": "17",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Callum Hedge",
+       "wiki": "Callum_Hedge",
+       "rounds": "All",
+       "nat": "NZL"
+      }
+     ]
+    },
+    {
+     "number": "48",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Jordan Missig",
+       "wiki": "Jordan_Missig",
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    }
+   ],
+   "manufacturer_note": "spec engine (from page text)"
+  },
+  {
+   "team": "Abel Motorsports with Miller Vinatieri Motorsports",
+   "team_wiki": "Abel_Motorsports",
+   "owner": null,
+   "manufacturer": "AER",
+   "chassis": null,
+   "cars": [
+    {
+     "number": "40",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Jack William Miller",
+       "wiki": "Jack_William_Miller",
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    }
+   ],
+   "manufacturer_note": "spec engine (from page text)"
+  },
+  {
+   "team": "Abel Motorsports with Force Indy",
+   "team_wiki": "Abel_Motorsports",
+   "owner": null,
+   "manufacturer": "AER",
+   "chassis": null,
+   "cars": [
+    {
+     "number": "99",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Myles Rowe",
+       "wiki": "Myles_Rowe",
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    }
+   ],
+   "manufacturer_note": "spec engine (from page text)"
+  },
+  {
+   "team": "Andretti Global",
+   "team_wiki": "Andretti_Global",
+   "owner": null,
+   "manufacturer": "AER",
+   "chassis": null,
+   "cars": [
+    {
+     "number": "26",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Lochie Hughes",
+       "wiki": "Lochie_Hughes",
+       "rounds": "All",
+       "nat": "AUS"
+      }
+     ]
+    },
+    {
+     "number": "27",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Salvador de Alba",
+       "wiki": "Salvador_de_Alba",
+       "rounds": "All",
+       "nat": "MEX"
+      }
+     ]
+    },
+    {
+     "number": "28",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Dennis Hauger",
+       "wiki": "Dennis_Hauger",
+       "rounds": "All",
+       "nat": "NOR"
+      }
+     ]
+    },
+    {
+     "number": "29",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "James Roe",
+       "wiki": "James_Roe_(racing_driver)",
+       "rounds": "All",
+       "nat": "IRL"
+      }
+     ]
+    }
+   ],
+   "manufacturer_note": "spec engine (from page text)"
+  },
+  {
+   "team": "Andretti Cape Indy NXT",
+   "team_wiki": "Andretti_Global",
+   "owner": null,
+   "manufacturer": "AER",
+   "chassis": null,
+   "cars": [
+    {
+     "number": "2",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Sebastian Murray",
+       "wiki": "Sebastian_Murray",
+       "rounds": "All",
+       "nat": "GBR"
+      }
+     ]
+    },
+    {
+     "number": "3",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Ricardo Escotto",
+       "wiki": "Ricardo_Escotto",
+       "rounds": "1–9",
+       "nat": "MEX"
+      },
+      {
+       "name": "Michael d'Orlando",
+       "wiki": "Michael_d'Orlando",
+       "rounds": "12–14",
+       "nat": "USA"
+      }
+     ]
+    }
+   ],
+   "manufacturer_note": "spec engine (from page text)"
+  },
+  {
+   "team": "Chip Ganassi Racing",
+   "team_wiki": "Chip_Ganassi_Racing",
+   "owner": null,
+   "manufacturer": "AER",
+   "chassis": null,
+   "cars": [
+    {
+     "number": "9",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Jonathan Browne",
+       "wiki": "Jonathan_Browne_(racing_driver)",
+       "rounds": "1",
+       "nat": "IRL"
+      },
+      {
+       "name": "Bryce Aron",
+       "wiki": "Bryce_Aron",
+       "rounds": "2–14",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "10",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Niels Koolen",
+       "wiki": "Niels_Koolen",
+       "rounds": "All",
+       "nat": "NLD"
+      }
+     ]
+    }
+   ],
+   "manufacturer_note": "spec engine (from page text)"
+  },
+  {
+   "team": "HMD Motorsports",
+   "team_wiki": "HMD_Motorsports",
+   "owner": null,
+   "manufacturer": "AER",
+   "chassis": null,
+   "cars": [
+    {
+     "number": "11",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Nolan Allaer",
+       "wiki": "Nolan_Allaer",
+       "rounds": "1–12, 14",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "14",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Josh Pierson",
+       "wiki": "Josh_Pierson",
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "16",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Tommy Smith",
+       "wiki": "Tommy_Smith_(racing_driver)",
+       "rounds": "All",
+       "nat": "AUS"
+      }
+     ]
+    },
+    {
+     "number": "18",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Nikita Johnson",
+       "wiki": "Nikita_Johnson",
+       "rounds": "1, 3–4",
+       "nat": "USA"
+      },
+      {
+       "name": "Max Taylor",
+       "wiki": "Max_Taylor_(racing_driver)",
+       "rounds": "2, 5, 9–11, 13",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "24",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Sophia Flörsch",
+       "wiki": "Sophia_Flörsch",
+       "rounds": "1",
+       "nat": "DEU"
+      },
+      {
+       "name": "Evagoras Papasavvas",
+       "wiki": "Evagoras_Papasavvas",
+       "rounds": "2–4, 7–8",
+       "nat": "USA"
+      },
+      {
+       "name": "Davey Hamilton Jr.",
+       "wiki": "Davey_Hamilton_Jr.",
+       "rounds": "6, 9, 13–14",
+       "nat": "USA"
+      },
+      {
+       "name": "Nicholas Monteiro",
+       "wiki": "Nicholas_Monteiro",
+       "rounds": "12",
+       "nat": "BRA"
+      }
+     ]
+    },
+    {
+     "number": "30",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Liam Sceats",
+       "wiki": "Liam_Sceats",
+       "rounds": "1–5, 7, 10–11",
+       "nat": "NZL"
+      }
+     ]
+    },
+    {
+     "number": "38",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Hailie Deegan",
+       "wiki": "Hailie_Deegan",
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "39",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Bryce Aron",
+       "wiki": "Bryce_Aron",
+       "rounds": "1",
+       "nat": "USA"
+      },
+      {
+       "name": "Juan Manuel Correa",
+       "wiki": "Juan_Manuel_Correa",
+       "rounds": "3–6, 8–12",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "76",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Caio Collet",
+       "wiki": "Caio_Collet",
+       "rounds": "All",
+       "nat": "BRA"
+      }
+     ]
+    }
+   ],
+   "manufacturer_note": "spec engine (from page text)"
+  }
+ ],
+ "standings": [
+  {
+   "pos": 1,
+   "name": "Dennis Hauger",
+   "wiki": "Dennis_Hauger",
+   "points": 599,
+   "wins": 6,
+   "podiums": 11,
+   "top5": 12,
+   "starts": 14,
+   "nat": "NOR",
+   "results": [
+    1,
+    1,
+    8,
+    1,
+    1,
+    5,
+    2,
+    1,
+    2,
+    2,
+    16,
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "pos": 2,
+   "name": "Caio Collet",
+   "wiki": "Caio_Collet",
+   "points": 527,
+   "wins": 3,
+   "podiums": 9,
+   "top5": 12,
+   "starts": 14,
+   "nat": "BRA",
+   "results": [
+    3,
+    19,
+    2,
+    5,
+    2,
+    3,
+    1,
+    2,
+    4,
+    1,
+    1,
+    2,
+    7,
+    4
+   ]
+  },
+  {
+   "pos": 3,
+   "name": "Lochie Hughes",
+   "wiki": "Lochie_Hughes",
+   "points": 466,
+   "wins": 2,
+   "podiums": 8,
+   "top5": 10,
+   "starts": 14,
+   "nat": "AUS",
+   "results": [
+    2,
+    3,
+    1,
+    2,
+    5,
+    1,
+    3,
+    3,
+    16,
+    6,
+    15,
+    10,
+    3,
+    5
+   ]
+  },
+  {
+   "pos": 4,
+   "name": "Myles Rowe",
+   "wiki": "Myles_Rowe",
+   "points": 458,
+   "wins": 2,
+   "podiums": 6,
+   "top5": 10,
+   "starts": 14,
+   "nat": "USA",
+   "results": [
+    4,
+    4,
+    3,
+    3,
+    18,
+    2,
+    5,
+    10,
+    1,
+    4,
+    8,
+    3,
+    6,
+    1
+   ]
+  },
+  {
+   "pos": 5,
+   "name": "Salvador de Alba",
+   "wiki": "Salvador_de_Alba",
+   "points": 418,
+   "wins": 1,
+   "podiums": 3,
+   "top5": 9,
+   "starts": 14,
+   "nat": "MEX",
+   "results": [
+    5,
+    11,
+    5,
+    4,
+    8,
+    4,
+    8,
+    4,
+    3,
+    19,
+    9,
+    5,
+    1,
+    2
+   ]
+  },
+  {
+   "pos": 6,
+   "name": "Josh Pierson",
+   "wiki": "Josh_Pierson",
+   "points": 378,
+   "wins": 0,
+   "podiums": 2,
+   "top5": 6,
+   "starts": 14,
+   "nat": "USA",
+   "results": [
+    9,
+    5,
+    6,
+    9,
+    4,
+    6,
+    4,
+    5,
+    11,
+    3,
+    2,
+    11,
+    11,
+    9
+   ]
+  },
+  {
+   "pos": 7,
+   "name": "Callum Hedge",
+   "wiki": "Callum_Hedge",
+   "points": 358,
+   "wins": 0,
+   "podiums": 1,
+   "top5": 5,
+   "starts": 14,
+   "nat": "NZL",
+   "results": [
+    8,
+    18,
+    4,
+    10,
+    11,
+    7,
+    6,
+    6,
+    6,
+    5,
+    3,
+    4,
+    4,
+    18
+   ]
+  },
+  {
+   "pos": 8,
+   "name": "Niels Koolen",
+   "wiki": "Niels_Koolen",
+   "points": 288,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 1,
+   "starts": 14,
+   "nat": "NLD",
+   "results": [
+    21,
+    13,
+    18,
+    6,
+    9,
+    10,
+    15,
+    14,
+    5,
+    11,
+    6,
+    6,
+    12,
+    7
+   ]
+  },
+  {
+   "pos": 9,
+   "name": "Jordan Missig",
+   "wiki": "Jordan_Missig",
+   "points": 273,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 14,
+   "nat": "USA",
+   "results": [
+    6,
+    12,
+    11,
+    17,
+    12,
+    11,
+    19,
+    7,
+    8,
+    18,
+    10,
+    8,
+    13,
+    8
+   ]
+  },
+  {
+   "pos": 10,
+   "name": "Jack William Miller",
+   "wiki": "Jack_William_Miller",
+   "points": 266,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 14,
+   "nat": "USA",
+   "results": [
+    16,
+    8,
+    9,
+    19,
+    7,
+    19,
+    7,
+    11,
+    14,
+    7,
+    7,
+    13,
+    17,
+    15
+   ]
+  },
+  {
+   "pos": 11,
+   "name": "Bryce Aron",
+   "wiki": "Bryce_Aron",
+   "points": 260,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 1,
+   "starts": 14,
+   "nat": "USA",
+   "results": [
+    13,
+    15,
+    15,
+    15,
+    10,
+    14,
+    9,
+    12,
+    9,
+    10,
+    19,
+    19,
+    5,
+    6
+   ]
+  },
+  {
+   "pos": 12,
+   "name": "James Roe",
+   "wiki": "James_Roe_(racing_driver)",
+   "points": 235,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 14,
+   "nat": "IRL",
+   "results": [
+    20,
+    10,
+    19,
+    11,
+    13,
+    18,
+    14,
+    13,
+    7,
+    14,
+    13,
+    18,
+    9,
+    10
+   ]
+  },
+  {
+   "pos": 13,
+   "name": "Sebastian Murray",
+   "wiki": "Sebastian_Murray",
+   "points": 230,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 1,
+   "starts": 13,
+   "nat": "GBR",
+   "results": [
+    17,
+    16,
+    12,
+    12,
+    6,
+    12,
+    11,
+    18,
+    "WTH",
+    17,
+    5,
+    16,
+    16,
+    11
+   ]
+  },
+  {
+   "pos": 14,
+   "name": "Hailie Deegan",
+   "wiki": "Hailie_Deegan",
+   "points": 202,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 14,
+   "nat": "USA",
+   "results": [
+    14,
+    17,
+    17,
+    18,
+    16,
+    16,
+    18,
+    17,
+    18,
+    12,
+    11,
+    17,
+    14,
+    13
+   ]
+  },
+  {
+   "pos": 15,
+   "name": "Tommy Smith",
+   "wiki": "Tommy_Smith_(racing_driver)",
+   "points": 202,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 14,
+   "nat": "AUS",
+   "results": [
+    15,
+    14,
+    13,
+    21,
+    17,
+    17,
+    17,
+    15,
+    17,
+    13,
+    12,
+    12,
+    18,
+    17
+   ]
+  },
+  {
+   "pos": 16,
+   "name": "Nolan Allaer",
+   "wiki": "Nolan_Allaer",
+   "points": 192,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 13,
+   "nat": "USA",
+   "results": [
+    19,
+    20,
+    16,
+    20,
+    15,
+    9,
+    16,
+    16,
+    19,
+    9,
+    14,
+    15,
+    null,
+    12
+   ]
+  },
+  {
+   "pos": 17,
+   "name": "Juan Manuel Correa",
+   "wiki": "Juan_Manuel_Correa",
+   "points": 176,
+   "wins": 0,
+   "podiums": 1,
+   "top5": 1,
+   "starts": 9,
+   "nat": "USA",
+   "results": [
+    null,
+    null,
+    21,
+    14,
+    3,
+    8,
+    null,
+    8,
+    12,
+    15,
+    17,
+    9,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 18,
+   "name": "Liam Sceats",
+   "wiki": "Liam_Sceats",
+   "points": 162,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 8,
+   "nat": "NZL",
+   "results": [
+    18,
+    6,
+    7,
+    8,
+    14,
+    null,
+    10,
+    null,
+    null,
+    8,
+    18,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 19,
+   "name": "Ricardo Escotto",
+   "wiki": "Ricardo_Escotto",
+   "points": 144,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 9,
+   "nat": "MEX",
+   "results": [
+    10,
+    9,
+    14,
+    16,
+    20,
+    13,
+    13,
+    19,
+    13,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 20,
+   "name": "Max Taylor",
+   "wiki": "Max_Taylor_(racing_driver)",
+   "points": 123,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 1,
+   "starts": 6,
+   "nat": "USA",
+   "results": [
+    null,
+    7,
+    null,
+    null,
+    19,
+    null,
+    null,
+    null,
+    10,
+    16,
+    4,
+    null,
+    10,
+    null
+   ]
+  },
+  {
+   "pos": 21,
+   "name": "Evagoras Papasavvas",
+   "wiki": "Evagoras_Papasavvas",
+   "points": 117,
+   "wins": 0,
+   "podiums": 1,
+   "top5": 1,
+   "starts": 5,
+   "nat": "USA",
+   "results": [
+    null,
+    2,
+    10,
+    13,
+    null,
+    null,
+    12,
+    9,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 22,
+   "name": "Michael d'Orlando",
+   "wiki": "Michael_d'Orlando",
+   "points": 66,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 3,
+   "nat": "USA",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    7,
+    8,
+    14
+   ]
+  },
+  {
+   "pos": 23,
+   "name": "Davey Hamilton Jr.",
+   "wiki": "Davey_Hamilton_Jr.",
+   "points": 59,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 4,
+   "nat": "USA",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    15,
+    null,
+    null,
+    15,
+    null,
+    null,
+    null,
+    15,
+    16
+   ]
+  },
+  {
+   "pos": 24,
+   "name": "Nikita Johnson",
+   "wiki": "Nikita_Johnson",
+   "points": 55,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 3,
+   "nat": "USA",
+   "results": [
+    11,
+    null,
+    20,
+    7,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 25,
+   "name": "Jonathan Browne",
+   "wiki": "Jonathan_Browne_(racing_driver)",
+   "points": 26,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 1,
+   "nat": "IRL",
+   "results": [
+    7,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 26,
+   "name": "Sophia Flörsch",
+   "wiki": "Sophia_Flörsch",
+   "points": 18,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 1,
+   "nat": "DEU",
+   "results": [
+    12,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 27,
+   "name": "Nicholas Monteiro",
+   "wiki": "Nicholas_Monteiro",
+   "points": 16,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 1,
+   "nat": "BRA",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    14,
+    null,
+    null
+   ]
+  }
+ ],
+ "schedule": [
+  {
+   "round": 1,
+   "date": "2025-03-02",
+   "race": "Indy NXT by Firestone Grand Prix of St. Petersburg",
+   "track": "Streets of St. Petersburg",
+   "city": "St. Petersburg",
+   "state": "FL",
+   "country": "USA",
+   "winner": "Dennis Hauger",
+   "winner_wiki": "Dennis_Hauger",
+   "track_type": "street",
+   "cancelled": false
+  },
+  {
+   "round": 2,
+   "date": "2025-05-04",
+   "race": "Indy NXT by Firestone Grand Prix of Alabama",
+   "track": "Barber Motorsports Park",
+   "city": "Birmingham",
+   "state": "AL",
+   "country": "USA",
+   "winner": "Dennis Hauger",
+   "winner_wiki": "Dennis_Hauger",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 3,
+   "date": "2025-05-09",
+   "race": "Indy NXT by Firestone Indianapolis Grand Prix",
+   "track": "Indianapolis Motor Speedway Road Course",
+   "city": "Speedway",
+   "state": "IN",
+   "country": "USA",
+   "winner": "Lochie Hughes",
+   "winner_wiki": "Lochie_Hughes",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 4,
+   "date": "2025-05-10",
+   "race": "Indy NXT by Firestone Indianapolis Grand Prix",
+   "track": "Indianapolis Motor Speedway Road Course",
+   "city": "Speedway",
+   "state": "IN",
+   "country": "USA",
+   "winner": "Dennis Hauger",
+   "winner_wiki": "Dennis_Hauger",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 5,
+   "date": "2025-06-01",
+   "race": "Indy NXT by Firestone Detroit Grand Prix",
+   "track": "Streets of Detroit",
+   "city": "Detroit",
+   "state": "MI",
+   "country": "USA",
+   "winner": "Dennis Hauger",
+   "winner_wiki": "Dennis_Hauger",
+   "track_type": "street",
+   "cancelled": false
+  },
+  {
+   "round": 6,
+   "date": "2025-06-15",
+   "race": "Indy NXT by Firestone at World Wide Technology Raceway",
+   "track": "World Wide Technology Raceway",
+   "city": "Madison",
+   "state": "IL",
+   "country": "USA",
+   "winner": "Lochie Hughes",
+   "winner_wiki": "Lochie_Hughes",
+   "track_type": "oval",
+   "cancelled": false
+  },
+  {
+   "round": 7,
+   "date": "2025-06-22",
+   "race": "Indy NXT by Firestone Grand Prix at Road America",
+   "track": "Road America",
+   "city": "Elkhart Lake",
+   "state": "WI",
+   "country": "USA",
+   "winner": "Caio Collet",
+   "winner_wiki": "Caio_Collet",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 8,
+   "date": "2025-07-06",
+   "race": "Indy NXT by Firestone Grand Prix at Mid-Ohio",
+   "track": "Mid-Ohio Sports Car Course",
+   "city": "Lexington",
+   "state": "OH",
+   "country": "USA",
+   "winner": "Dennis Hauger",
+   "winner_wiki": "Dennis_Hauger",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 9,
+   "date": "2025-07-12",
+   "race": "Indy NXT by Firestone at Iowa Speedway",
+   "track": "Iowa Speedway",
+   "city": "Newton",
+   "state": "IA",
+   "country": "USA",
+   "winner": "Myles Rowe",
+   "winner_wiki": "Myles_Rowe",
+   "track_type": "oval",
+   "cancelled": false
+  },
+  {
+   "round": 10,
+   "date": "2025-07-26",
+   "race": "Indy NXT by Firestone Grand Prix of Monterey",
+   "track": "WeatherTech Raceway Laguna Seca",
+   "city": "Monterey",
+   "state": "CA",
+   "country": "USA",
+   "winner": "Caio Collet",
+   "winner_wiki": "Caio_Collet",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 11,
+   "date": "2025-07-27",
+   "race": "Indy NXT by Firestone Grand Prix of Monterey",
+   "track": "WeatherTech Raceway Laguna Seca",
+   "city": "Monterey",
+   "state": "CA",
+   "country": "USA",
+   "winner": "Caio Collet",
+   "winner_wiki": "Caio_Collet",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 12,
+   "date": "2025-08-10",
+   "race": "Indy NXT by Firestone Grand Prix of Portland",
+   "track": "Portland International Raceway",
+   "city": "Portland",
+   "state": "OR",
+   "country": "USA",
+   "winner": "Dennis Hauger",
+   "winner_wiki": "Dennis_Hauger",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 13,
+   "date": "2025-08-24",
+   "race": "Indy NXT by Firestone at the Milwaukee Mile",
+   "track": "Milwaukee Mile",
+   "city": "West Allis",
+   "state": "WI",
+   "country": "USA",
+   "winner": "Salvador de Alba",
+   "winner_wiki": "Salvador_de_Alba",
+   "track_type": "oval",
+   "cancelled": false
+  },
+  {
+   "round": 14,
+   "date": "2025-08-31",
+   "race": "Indy NXT by Firestone Music City Grand Prix",
+   "track": "Nashville Superspeedway",
+   "city": "Lebanon",
+   "state": "TN",
+   "country": "USA",
+   "winner": "Myles Rowe",
+   "winner_wiki": "Myles_Rowe",
+   "track_type": "oval",
+   "cancelled": false
+  }
+ ],
+ "sources": [
+  "https://en.wikipedia.org/wiki/2025_Indy_NXT",
+  "https://www.wikidata.org (driver bios)"
+ ]
+}

@@ -1,0 +1,299 @@
+[
+ {
+  "rank": 8,
+  "id": "src:al-kamel-imsa",
+  "name": "Al Kamel Systems IMSA timing results archive",
+  "url": "https://imsa.results.alkamelcloud.com/",
+  "coverage": {
+   "series": [
+    "IMSA WeatherTech, Michelin Pilot Challenge, support series ~2014-2026"
+   ],
+   "granularity": "official results/lap/time-card CSV+JSON per session"
+  },
+  "accuracy": "official timing data",
+  "license": "proprietary: page states the data is wholly owned by Al Kamel Systems S.L. and third-party distribution without consent will lead to legal action",
+  "update_frequency": "per event",
+  "access": "open Apache directory listing; no robots.txt",
+  "usefulness": "high (if allowed)",
+  "decision": "skip",
+  "used": false,
+  "notes": "Terms prohibit redistribution; see unavailable.json. tobi/imsa_data (MIT code) republishes this data and inherits the same problem."
+ },
+ {
+  "rank": 4,
+  "id": "src:champcarstats",
+  "name": "ChampCarStats.com",
+  "url": "http://www.champcarstats.com/",
+  "coverage": {
+   "series": [
+    "AAA/USAC/CART/CCWS/IRL/IndyCar championship 1905-2026",
+    "non-championship races",
+    "ladder series (Indy Lights etc.) per site index"
+   ],
+   "granularity": "per race: finish, start, driver, car #, sponsor/entry name, chassis, engine, laps, status, points"
+  },
+  "accuracy": {
+   "summary": "sample matched perfectly: 2010 season winners 17/17 vs repo; 2010 Indy 500 finishing positions 33/33 vs repo results arrays"
+  },
+  "license": "no open licence; '(c) ChampCarStats.com 2026' footer; donation-supported hobby site",
+  "update_frequency": "updated during the season",
+  "access": "static HTML; robots.txt empty (allowed); only 3 pages fetched for evaluation",
+  "usefulness": "high",
+  "usefulness_reason": "the only found source with full per-race open-wheel results (start, laps, status, chassis/engine) for CART/IRL/IndyCar back to 1905",
+  "decision": "maybe",
+  "used": false,
+  "ingest_script": "ingest_champcarstats.py (permission-gated: parses cache only unless --permission-confirmed)",
+  "outputs": [
+   "results/champcarstats/2010.json (1-race sample)",
+   "validation_champcarstats_sample.json"
+  ],
+  "notes": "Recommend emailing the owner (address on the site) for permission before bulk use; the script is ready."
+ },
+ {
+  "rank": 7,
+  "id": "src:hifld-major-sport-venues",
+  "name": "DHS HIFLD Major Sport Venues",
+  "url": "https://catalog.data.gov/dataset/major-sport-venues",
+  "coverage": {
+   "rows": "~824 venues incl. ~74 'RACETRACKS' (per qacData R package derivative)",
+   "fields": "name, city, state, zip, status, type (+ coordinates in the original GIS layer)"
+  },
+  "accuracy": "not checked",
+  "license": "US government work (public domain) per data.gov",
+  "update_frequency": "last modified 2022-10-24",
+  "access": "data.gov page lists no live download resource (HIFLD Open portal appears retired)",
+  "usefulness": "low",
+  "usefulness_reason": "only major NASCAR/IRL venues, all already in the repo",
+  "decision": "skip",
+  "used": false
+ },
+ {
+  "rank": 9,
+  "id": "src:jolpica-ergast",
+  "name": "Ergast/Jolpica F1 API",
+  "url": "https://github.com/jolpica/jolpica-f1",
+  "coverage": {
+   "series": [
+    "Formula 1 1950-present"
+   ]
+  },
+  "accuracy": "high",
+  "license": "not verified (listed from prior knowledge, not fetched)",
+  "usefulness": "low",
+  "usefulness_reason": "F1 only; no American series. Useful only for crossover drivers",
+  "decision": "skip",
+  "used": false,
+  "notes": "Listed from prior knowledge; not fetched."
+ },
+ {
+  "rank": 6,
+  "id": "src:kaggle-nascar-2017-2024",
+  "name": "Kaggle: NASCAR 2017-2024 Full Race + Points Data (joeah99)",
+  "url": "https://www.kaggle.com/datasets/joeah99/nascar-2017-2024-full-race-points-data",
+  "coverage": {
+   "series": [
+    "NASCAR (per description: race results, stage results, points per race) 2017-2024"
+   ]
+  },
+  "accuracy": "not checked (download requires Kaggle login/API token)",
+  "license": "unclear (page is JS-rendered; licence not visible without login)",
+  "update_frequency": "static",
+  "access": "Kaggle account required",
+  "usefulness": "low",
+  "usefulness_reason": "subset of nascaR.data except full stage finishing orders",
+  "decision": "skip",
+  "used": false,
+  "notes": "Only worth revisiting if full stage orders are needed."
+ },
+ {
+  "rank": 1,
+  "id": "src:nascar-data",
+  "name": "nascaR.data (R package, Kyle Grealis)",
+  "url": "https://github.com/kyleGrealis/nascaR.data",
+  "data_url": "https://nascar.kylegrealis.com/{cup,nxs,truck}_series.parquet",
+  "coverage": {
+   "series": [
+    "NASCAR Cup 1949-2026",
+    "NASCAR Xfinity/NXS 1982-2026",
+    "NASCAR Truck 1995-2026"
+   ],
+   "granularity": "one row per driver per race: finish, start, car, driver, make, team, points, laps, laps led, status, driver rating (2005+), stage finishes S1/S2 (only for stage-point earners, 2017+), track, track length, surface",
+   "rows": {
+    "cup": 101302,
+    "nxs": 55258,
+    "truck": 26200
+   },
+   "races": {
+    "cup": 2853,
+    "nxs": 1432,
+    "truck": 757
+   },
+   "missing": "no race date, city or state; no qualifying speeds or prize money"
+  },
+  "accuracy": {
+   "summary": "excellent: race winners agree with repo history for every overlapping race; season wins/starts/top5/top10 of repo top-10 drivers agree 99%+; independent cross-check vs Neil Paine's Cup data 1972-2025: finish position 99.88%, start 99.79%",
+   "winner_agreement_vs_repo": {
+    "cup": "1126/1126",
+    "nxs": "1046/1046",
+    "truck": "757/757"
+   },
+   "season_stat_checks_vs_repo": {
+    "cup": {
+     "wins_compared": 320,
+     "wins_agree": 320,
+     "starts_compared": 320,
+     "starts_agree": 320,
+     "top5_compared": 320,
+     "top5_agree": 320,
+     "top10_compared": 320,
+     "top10_agree": 318,
+     "top10_abs_diff_sum": 2
+    },
+    "nxs": {
+     "driver_missing": 1,
+     "wins_compared": 319,
+     "wins_agree": 319,
+     "starts_compared": 319,
+     "starts_agree": 319,
+     "top5_compared": 319,
+     "top5_agree": 319,
+     "top10_compared": 319,
+     "top10_agree": 319
+    },
+    "truck": {
+     "wins_compared": 314,
+     "wins_agree": 314,
+     "starts_compared": 314,
+     "starts_agree": 314,
+     "top5_compared": 314,
+     "top5_agree": 314,
+     "top10_compared": 314,
+     "top10_agree": 313,
+     "driver_missing": 6,
+     "top10_abs_diff_sum": 1
+    }
+   },
+   "crosscheck_neilpaine_cup": {
+    "winner": 0.9989,
+    "field_size": 0.9903,
+    "finish_pos": 0.9988,
+    "start_pos": 0.9979,
+    "status": 0.8954
+   }
+  },
+  "license": "GPL (>= 3) per DESCRIPTION/LICENSE.md; data scraped 'with permission' from DriverAverages.com (package README). Underlying facts are not copyrightable in the US; keep attribution to nascaR.data and DriverAverages.com.",
+  "update_frequency": "weekly (Mondays 5 AM ET, Feb-Nov) via GitHub Actions",
+  "access": "plain HTTPS download of 3 parquet files (~1.7 MB total) from public Cloudflare R2; robots.txt on host returns 404 (no restrictions); the CSV URLs in the docs return 404 so parquet is used",
+  "usefulness": "high",
+  "usefulness_reason": "complete race-by-race results for all three national NASCAR series including pre-1995 seasons the repo lacks; enables per-race simulation calibration (start-vs-finish, DNF rates by status, manufacturer/team strength, laps led)",
+  "decision": "use",
+  "used": true,
+  "ingest_script": "ingest_nascar_data.py",
+  "outputs": [
+   "results/nascardata_cup/",
+   "results/nascardata_nxs/",
+   "results/nascardata_truck/",
+   "validation_nascar_data.json"
+  ],
+  "notes": "Car numbers must be read as strings (leading zeros). Driver names use 'Jr.' consistently (repo sometimes omits it). Track names are modern names (e.g. 'Charlotte Motor Speedway' for the Lowe's era)."
+ },
+ {
+  "rank": 5,
+  "id": "src:neilpaine-nascar-data",
+  "name": "Neil Paine NASCAR-data (GitHub)",
+  "url": "https://github.com/Neil-Paine-1/NASCAR-data",
+  "coverage": {
+   "series": [
+    "Cup race results 1972-2025 (with dates, money, sponsor, owner)",
+    "standings Cup/Xfinity/Trucks 1949-2025",
+    "loop data 2005+",
+    "composite win% ratings"
+   ],
+   "granularity": "per driver per race"
+  },
+  "accuracy": {
+   "summary": "agrees with nascaR.data on 99.9% of winners and 99.9% of finishing positions (1973 rounds 27/28 are numbered in the opposite order)"
+  },
+  "license": "MIT on the repository, but the rows were compiled from racing-reference.info pages (URLs embedded), so provenance/rights are unclear",
+  "update_frequency": "irregular (last commit 2025-03-03)",
+  "access": "git clone from GitHub",
+  "usefulness": "medium",
+  "usefulness_reason": "race dates and prize money for 1972-1994 Cup races, loop data; but derived from a source we must not depend on",
+  "decision": "maybe",
+  "used": false,
+  "ingest_script": "validate_crosscheck_neilpaine.py (validation only)",
+  "outputs": [
+   "validation_crosscheck_neilpaine.json"
+  ],
+  "notes": "Used only as an independent accuracy check; not ingested."
+ },
+ {
+  "rank": 2,
+  "id": "src:osm-qlever",
+  "name": "OpenStreetMap motorsport features (via QLever osm-planet SPARQL)",
+  "url": "https://qlever.dev/osm-planet",
+  "coverage": {
+   "region": "USA + Canada",
+   "features": 8702,
+   "venues": 2926,
+   "named_venues": 1830,
+   "fields": "name, centroid lat/lon, surface (where tagged), state/province, sport tags, raceway way lengths, OSM ids, wikidata/website tags"
+  },
+  "accuracy": {
+   "summary": "coordinates excellent; surface good where tagged; length only rough (longest single raceway way, ways are often split)",
+   "coords_vs_repo": {
+    "median": 0.095,
+    "p90": 0.634,
+    "share_within_1km": 0.948
+   },
+   "surface_agreement": 0.931,
+   "length_within_10pct": 0.492,
+   "length_within_25pct": 0.718,
+   "existing_tracks_found": "286/347 North-American existing tracks"
+  },
+  "license": "ODbL 1.0, (c) OpenStreetMap contributors; derived databases must keep attribution and remain ODbL (share-alike)",
+  "update_frequency": "OSM continuous; QLever planet index rebuilt roughly weekly",
+  "access": "2 SPARQL queries per country (tags + name-based facilities), cached; qlever.dev robots.txt 404 (no restrictions). overpass-api.de disallows /api/ in robots.txt and the public Overpass mirrors timed out, so not used",
+  "usefulness": "high",
+  "usefulness_reason": "~1,800 named and ~1,100 unnamed North-American venues (local ovals, dirt tracks, kart tracks, drag strips) with coordinates - the backbone for a local-track layer and for filling lat/lon/surface gaps",
+  "decision": "use",
+  "used": true,
+  "ingest_script": "ingest_osm_tracks.py",
+  "outputs": [
+   "tracks_osm.json"
+  ],
+  "notes": "Unnamed venues are clusters of untagged highway=raceway ways (low confidence). Kinds flag karting/drag. Lengths should not be used as official lap lengths."
+ },
+ {
+  "rank": 3,
+  "id": "src:wikidata-racetracks",
+  "name": "Wikidata racetrack items (USA/Canada)",
+  "url": "https://query.wikidata.org/",
+  "coverage": {
+   "items": 440,
+   "fields": "label, enwiki title, coordinates, state, classes, length (46 items), opening/closing year, banking (few), OSM ids (120), Racing-Reference track ID (218), website"
+  },
+  "accuracy": {
+   "summary": "coordinates excellent; length good where present (85% within 10% of repo)",
+   "coords_vs_repo": {
+    "median": 0.014,
+    "p90": 0.158,
+    "share_within_1km": 0.965
+   },
+   "length_within_10pct": 0.848,
+   "existing_tracks_found": "235/347"
+  },
+  "license": "CC0 1.0",
+  "update_frequency": "continuous",
+  "access": "1 SPARQL query to query.wikidata.org with the RULES.md User-Agent, cached",
+  "usefulness": "medium",
+  "usefulness_reason": "authoritative ids/crosswalks (enwiki, OSM, Racing-Reference IDs) and coordinates for notable tracks; few lengths/surfaces, so OSM + repo remain primary for attributes",
+  "decision": "use",
+  "used": true,
+  "ingest_script": "ingest_wikidata_tracks.py",
+  "outputs": [
+   "tracks_wikidata.json"
+  ],
+  "notes": "Racing-Reference IDs are stored as identifiers only; racing-reference.info is never fetched."
+ }
+]

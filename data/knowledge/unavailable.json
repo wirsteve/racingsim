@@ -1,0 +1,317 @@
+[
+ {
+  "source": "Racing-Reference",
+  "url": "https://www.racing-reference.info/",
+  "reason": "Automated requests blocked by Cloudflare ('Sorry, you have been blocked'); not circumvented",
+  "checked": "2026-10-06",
+  "replacement_source": "Wikipedia season articles + Wikidata (NASCAR national series 1995-2026), official series results pages where robots.txt allows, public datasets (see datasets.json)"
+ },
+ {
+  "source": "The Third Turn",
+  "url": "https://www.thethirdturn.com/",
+  "reason": "robots.txt 'User-agent: * Disallow: /' (only Google/Bing allowed, API path /w/ disallowed for all); not scraped",
+  "checked": "2026-10-06",
+  "replacement_source": "Wikipedia/Wikidata short-track and touring-series articles, official series and track websites, OpenStreetMap/Wikidata for venues"
+ },
+ {
+  "source": "racing-reference.info",
+  "url": "https://www.racing-reference.info/",
+  "reason": "Cloudflare challenge / scripted access not allowed (project rule)",
+  "checked": "2026-10-06",
+  "replacement_source": "src:racingsim-history-analysis (repo season files built from Wikipedia/Wikidata)"
+ },
+ {
+  "source": "thethirdturn.com",
+  "url": "https://www.thethirdturn.com/",
+  "reason": "robots.txt Disallow: / (project rule)",
+  "checked": "2026-10-06",
+  "replacement_source": "src:racingsim-history-analysis; touring-series results gathered by sibling agents in ../touring/"
+ },
+ {
+  "source": "racer.com",
+  "url": "https://racer.com/2025/02/25/why-do-indycar-team-budgets-keep-climbing",
+  "reason": "HTTP 429 Too Many Requests on two fetches (2025-02-25 budgets article; 2026-09-11 licensing article); stopped using",
+  "checked": "2026-10-06",
+  "replacement_source": "search-result snippets only (src:racer-leaders-circle-2023, src:racer-miller-payday-2018); src:usopenwheelnation-indynxt-costs-2025"
+ },
+ {
+  "source": "forbes.com",
+  "url": "https://www.forbes.com/sites/gregengle/2025/10/29/nascar-charter-documents-reveal-how-much-teams-actually-get-paid-per-race/",
+  "reason": "HTTP 403 Forbidden",
+  "checked": "2026-10-06",
+  "replacement_source": "src:charter-trial-2025 (ESPN/Jayski/FOX summaries of the same court documents)"
+ },
+ {
+  "source": "nascar.com gallery pages",
+  "url": "https://www.nascar.com/gallery/drivers-who-missed-time-due-to-injury/",
+  "reason": "HTTP 403 Forbidden",
+  "checked": "2026-10-06",
+  "replacement_source": "src:nascar-injury-history (search snippets), src:kurt-busch-retirement-2023"
+ },
+ {
+  "source": "seriouslyfastmotorsports.com",
+  "url": "https://seriouslyfastmotorsports.com/2025/11/06/the-broken-ladder-how-arcas-financial-model-exploits-underfunded-drivers/",
+  "reason": "HTTP 404 on fetch (article moved or removed)",
+  "checked": "2026-10-06",
+  "replacement_source": "src:speedwayactionimages-arca-2025, src:arca-awards-guide-2023"
+ },
+ {
+  "source": "src:racing-reference",
+  "url": "https://www.racing-reference.info/",
+  "reason": "Excluded by project rules (Cloudflare block / robots.txt Disallow: /); not fetched. Appeared only in search result lists.",
+  "checked": "2026-10-06",
+  "replacement_source": "src:wiki-alms-grandam; src:racingsim-history-analysis"
+ },
+ {
+  "source": "src:thethirdturn",
+  "url": "https://www.thethirdturn.com/",
+  "reason": "Excluded by project rules (robots.txt Disallow: /); pages for USF2000, Star Mazda, Formula BMW USA, Pilot Challenge and Prototype Challenge appeared in search results but were not fetched.",
+  "checked": "2026-10-06",
+  "replacement_source": "src:wiki-usf2000; src:mazda-star-mazda-history; src:wiki-formula-bmw-usa; src:wiki-pilot-challenge-history; src:wiki-imsa-prototype-challenge"
+ },
+ {
+  "source": "src:racer-indycar-budgets-2025",
+  "url": "https://racer.com/2025/02/25/why-do-indycar-team-budgets-keep-climbing",
+  "reason": "HTTP 429 Too Many Requests on direct fetch; stopped using racer.com for direct fetches, used search-result snippets only.",
+  "checked": "2026-10-06",
+  "replacement_source": "src:medium-indycar-economics; src:racer-leaders-circle-2025 (snippets)"
+ },
+ {
+  "source": "racing-reference.info",
+  "url": "https://www.racing-reference.info/",
+  "reason": "Cloudflare block / scripted access disallowed per project RULES; not fetched",
+  "checked": "2026-10-06",
+  "replacement_source": "src:racingsim-history-analysis (repo history data from Wikipedia/Wikidata) and Wikipedia season articles"
+ },
+ {
+  "source": "thethirdturn.com",
+  "url": "https://www.thethirdturn.com/wiki/Series_Database:POWRi",
+  "reason": "robots.txt Disallow: / (per RULES); appeared in search results for POWRi/regional series history but not fetched",
+  "checked": "2026-10-06",
+  "replacement_source": "src:powri-wiki (Wikipedia POWRi Midget Racing) and series official news"
+ },
+ {
+  "source": "jayski.com",
+  "url": "https://www.jayski.com/2025/11/01/nascar-to-allow-cup-drivers-to-run-more-lower-series-races/",
+  "reason": "HTTP 403 Forbidden to WebFetch",
+  "checked": "2026-10-06",
+  "replacement_source": "src:theracingexperts-age-2026, src:search-nascar-age"
+ },
+ {
+  "source": "arcaracing.com (PDF uploads)",
+  "url": "https://www.arcaracing.com/wp-content/uploads/sites/36/2026/02/09/ARCA-Awards-Guide-2026-FINAL.pdf",
+  "reason": "HTTP 403 Forbidden to WebFetch; ARCA points-fund/award amounts therefore not obtained",
+  "checked": "2026-10-06",
+  "replacement_source": "search-indexed snippets (src:arca-rulebook-2025, src:arca-daytona-entry-blank), src:wiki-arca"
+ },
+ {
+  "source": "speedwaymotors.com toolbox",
+  "url": "https://www.speedwaymotors.com/the-toolbox/sprint-car-racing-classes-410-vs-305-vs-360-explained/145949",
+  "reason": "WebFetch returned no extractable page content (client-rendered); not a block",
+  "checked": "2026-10-06",
+  "replacement_source": "src:search-sprint-classes (search snippet), src:dirtcar-the-cars"
+ },
+ {
+  "source": "en.wikipedia.org API (temporary)",
+  "url": "https://en.wikipedia.org/w/api.php",
+  "reason": "Rate-limited ('too many requests') during first burst (shared with other agents); backed off 30 s + 3 s spacing with exponential retry and completed",
+  "checked": "2026-10-06",
+  "replacement_source": "same source after backoff"
+ },
+ {
+  "source": "src:racing-reference",
+  "url": "https://www.racing-reference.info/",
+  "reason": "Cloudflare block / scripted access forbidden by project RULES.md",
+  "checked": "2026-10-06",
+  "replacement_source": "src:nascar-data (race-by-race NASCAR 1949-2026)"
+ },
+ {
+  "source": "src:thethirdturn",
+  "url": "https://www.thethirdturn.com/",
+  "reason": "robots.txt Disallow: / (per RULES.md)",
+  "checked": "2026-10-06",
+  "replacement_source": "src:wikidata-racetracks + src:osm-qlever for venues; src:nascar-data for results"
+ },
+ {
+  "source": "src:nascar-com-feeds",
+  "url": "https://cf.nascar.com/",
+  "reason": "www.nascar.com returns a Cloudflare 'Sorry, you have been blocked' page; cf.nascar.com robots.txt returns S3 AccessDenied; feeds are undocumented and not licensed for reuse",
+  "checked": "2026-10-06",
+  "replacement_source": "src:nascar-data"
+ },
+ {
+  "source": "src:indycar-indystats-api",
+  "url": "https://www.indycar.com/Services/IndyStats.svc/SeasonDropDown",
+  "reason": "endpoint used by the GPL indycarpy scraper now redirects to a 404 page (service removed)",
+  "checked": "2026-10-06",
+  "replacement_source": "repo irl_indycar history (Wikipedia per-driver results arrays); src:champcarstats if permission is granted"
+ },
+ {
+  "source": "src:al-kamel-imsa",
+  "url": "https://imsa.results.alkamelcloud.com/",
+  "reason": "terms: data wholly owned by Al Kamel Systems S.L.; distribution without express consent prohibited",
+  "checked": "2026-10-06",
+  "replacement_source": "Wikipedia IMSA season articles (race winners by class); request consent from Al Kamel for official CSVs"
+ },
+ {
+  "source": "src:tobi-imsa-data",
+  "url": "https://github.com/tobi/imsa_data",
+  "reason": "MIT-licensed code but republishes Al Kamel data whose owner forbids redistribution",
+  "checked": "2026-10-06",
+  "replacement_source": "Wikipedia IMSA season articles"
+ },
+ {
+  "source": "src:speedhive-api",
+  "url": "https://eventresults-api.speedhive.com/",
+  "reason": "robots.txt on the API host: Disallow: /  (the HTML site only disallows /LiveTiming and /profile, but results load from this API); no data licence found (mylaps.com/legal/ 404)",
+  "checked": "2026-10-06",
+  "replacement_source": "src:osm-qlever for local-track locations; local track websites for results"
+ },
+ {
+  "source": "src:racemonitor",
+  "url": "https://www.racemonitor.com/",
+  "reason": "TLS certificate verification failed through the agent proxy; not pursued (no licence for reuse in any case)",
+  "checked": "2026-10-06",
+  "replacement_source": "none needed"
+ },
+ {
+  "source": "src:usac-racing",
+  "url": "https://www.usacracing.com/",
+  "reason": "robots.txt explicitly disallows ClaudeBot, ChatGPT-User, GPTBot and other AI agents",
+  "checked": "2026-10-06",
+  "replacement_source": "Wikipedia USAC season articles (being handled by the touring agents)"
+ },
+ {
+  "source": "src:world-of-outlaws",
+  "url": "https://www.worldofoutlaws.com/",
+  "reason": "robots.txt Disallow: /results/*, /sprintcars/results/*, /latemodels/results/*, /api/*",
+  "checked": "2026-10-06",
+  "replacement_source": "Wikipedia World of Outlaws season articles (touring agents)"
+ },
+ {
+  "source": "src:driveraverages",
+  "url": "https://www.driveraverages.com/",
+  "reason": "robots.txt disallows ClaudeBot/CCBot/GPTBot (AI scraping); terms not reviewed",
+  "checked": "2026-10-06",
+  "replacement_source": "src:nascar-data (scraped from DriverAverages with permission)"
+ },
+ {
+  "source": "src:overpass-api-de",
+  "url": "https://overpass-api.de/api/interpreter",
+  "reason": "robots.txt Disallow: /api/; public mirrors (overpass.kumi.systems 504, overpass.private.coffee timeout) were unusable for state-size queries",
+  "checked": "2026-10-06",
+  "replacement_source": "src:osm-qlever (same OSM data, ODbL)"
+ },
+ {
+  "source": "src:kaggle-nascar-2017-2024",
+  "url": "https://www.kaggle.com/datasets/joeah99/nascar-2017-2024-full-race-points-data",
+  "reason": "download requires a Kaggle login/API token; licence not visible",
+  "checked": "2026-10-06",
+  "replacement_source": "src:nascar-data"
+ },
+ {
+  "source": "NASCAR.com (NASCAR Local Racing Series / Weekly Series member tracks)",
+  "url": "https://www.nascar.com/",
+  "reason": "Cloudflare 'Attention Required' 403 on robots.txt and pages for scripted requests",
+  "checked": "2026-10-06",
+  "replacement_source": "src:wp-nascar-local-racing-series"
+ },
+ {
+  "source": "USRA (United States Racing Association) track list",
+  "url": "https://www.usra.com/",
+  "reason": "bot-check interstitial page (noindex) returned instead of content",
+  "checked": "2026-10-06",
+  "replacement_source": "src:myracepass"
+ },
+ {
+  "source": "NASA (National Auto Sport Association) / drivenasa.com",
+  "url": "https://www.nasaproracing.com/",
+  "reason": "Cloudflare managed challenge ('Just a moment...') 403",
+  "checked": "2026-10-06",
+  "replacement_source": "src:wikipedia (Road courses in the United States category)"
+ },
+ {
+  "source": "INEX (Legends/Bandolero) sanctioned tracks",
+  "url": "https://www.inexracing.com/",
+  "reason": "egress proxy refused CONNECT (502) - host not reachable from this environment",
+  "checked": "2026-10-06",
+  "replacement_source": "src:myracepass (class lists show Legends/Bandolero programs)"
+ },
+ {
+  "source": "Overpass API (OpenStreetMap)",
+  "url": "https://overpass-api.de/api/",
+  "reason": "connection reset / timeouts on overpass-api.de, overpass.kumi.systems, overpass.private.coffee",
+  "checked": "2026-10-06",
+  "replacement_source": "src:nominatim-osm (name lookups only)"
+ },
+ {
+  "source": "DIRTcar / UMP sanctioned tracks",
+  "url": "https://dirtcar.com/tracks/",
+  "reason": "no public track directory (404); site asks Crawl-delay 10 - not crawled further",
+  "checked": "2026-10-06",
+  "replacement_source": "src:myracepass"
+ },
+ {
+  "source": "Quarter Midgets of America track list",
+  "url": "https://quartermidgets.org/tracks/",
+  "reason": "404; the clubs page lists 9 clubs by city only (no track coordinates) - not used for records",
+  "checked": "2026-10-06",
+  "replacement_source": "src:myracepass (quarter-midget club profiles)"
+ },
+ {
+  "source": "racing-reference.info",
+  "url": "https://www.racing-reference.info/",
+  "reason": "Cloudflare block - excluded by project rules (never fetched)",
+  "checked": "2026-10-06",
+  "replacement_source": "src:wp-list-nascar-tracks"
+ },
+ {
+  "source": "thethirdturn.com",
+  "url": "https://www.thethirdturn.com/",
+  "reason": "robots.txt Disallow: / - excluded by project rules (never fetched)",
+  "checked": "2026-10-06",
+  "replacement_source": "src:wikipedia, src:myracepass"
+ },
+ {
+  "source": "Web search (discovery of further sanctioning-body directories: QMA/USAC .25, POWRi, ASCS, USMTS)",
+  "url": "n/a",
+  "reason": "shared per-turn web-search budget exhausted by other agents",
+  "checked": "2026-10-06",
+  "replacement_source": "src:myracepass (hosts most of these bodies' track profiles)"
+ },
+ {
+  "source": "racing-reference.info",
+  "url": "https://www.racing-reference.info/",
+  "reason": "Cloudflare block / project rule: never fetched",
+  "checked": "2026-10-06",
+  "replacement_source": "src:urh, src:racingcalendar, src:crittenden, src:wikipedia"
+ },
+ {
+  "source": "thethirdturn.com",
+  "url": "https://thethirdturn.com/",
+  "reason": "robots.txt Disallow: / ; project rule: never fetched",
+  "checked": "2026-10-06",
+  "replacement_source": "src:urh, src:racingcalendar, src:crittenden, src:wikipedia"
+ },
+ {
+  "source": "stockcarracing.fandom.com (Stock Car Racing Wiki)",
+  "url": "https://stockcarracing.fandom.com/",
+  "reason": "Cloudflare challenge page on robots.txt; also mirrors Third Turn-style 'Central' pages - not used",
+  "checked": "2026-10-06",
+  "replacement_source": "src:urh, src:racingcalendar"
+ },
+ {
+  "source": "jayski.com",
+  "url": "https://www.jayski.com/",
+  "reason": "Cloudflare challenge page",
+  "checked": "2026-10-06",
+  "replacement_source": "src:urh"
+ },
+ {
+  "source": "web.archive.org (defunct usarprocup.com / nascar regional sites)",
+  "url": "https://web.archive.org/",
+  "reason": "HTTP 429 / connection reset through proxy; not retried",
+  "checked": "2026-10-06",
+  "replacement_source": "src:crittenden"
+ }
+]

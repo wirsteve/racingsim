@@ -1,0 +1,958 @@
+{
+ "series": "pinty",
+ "year": 2021,
+ "official_name": "NASCAR Pinty's Series",
+ "data_level": "full",
+ "champion": {
+  "name": "L. P. Dumoulin",
+  "wiki": "Louis-Philippe Dumoulin"
+ },
+ "teams": [
+  {
+   "team": "Jim Bray Motorsports with Mike Curb",
+   "manufacturer": "Chevrolet",
+   "cars": [
+    {
+     "number": "98",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Shantel Kalika",
+       "wiki": null
+      },
+      {
+       "name": "Sam Fellows",
+       "wiki": "Sam Fellows"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Team 3 Red/Ed Hakonson Racing",
+   "manufacturer": "Chevrolet",
+   "cars": [
+    {
+     "number": "3",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Brett Taylor",
+       "wiki": null
+      }
+     ]
+    },
+    {
+     "number": "8",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Shae Gemmell",
+       "wiki": null
+      },
+      {
+       "name": "Ray Courtemanche Jr.",
+       "wiki": "Ray Courtemanche Jr."
+      }
+     ]
+    },
+    {
+     "number": "92",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Dexter Stacey",
+       "wiki": "Dexter Stacey"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Wight Motorsport Inc.",
+   "manufacturer": "Chevrolet",
+   "cars": [
+    {
+     "number": "64",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Mark Dilley",
+       "wiki": "Mark Dilley"
+      },
+      {
+       "name": "Brandon Watson",
+       "wiki": null
+      },
+      {
+       "name": "J. R. Fitzpatrick",
+       "wiki": "J. R. Fitzpatrick"
+      }
+     ]
+    },
+    {
+     "number": "80",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Raphaël Lessard",
+       "wiki": "Raphaël Lessard"
+      },
+      {
+       "name": "Jean-Frédéric Laberge",
+       "wiki": null
+      },
+      {
+       "name": "Donald Theetge",
+       "wiki": "Donald Theetge"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "22 Racing",
+   "manufacturer": "Chevrolet",
+   "cars": [
+    {
+     "number": "18",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Alex Tagliani",
+       "wiki": "Alex Tagliani"
+      }
+     ]
+    },
+    {
+     "number": "20",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Treyten Lapcevich",
+       "wiki": "Treyten Lapcevich"
+      }
+     ]
+    },
+    {
+     "number": "22",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Marc-Antoine Camirand",
+       "wiki": "Marc-Antoine Camirand"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "DJK Racing",
+   "manufacturer": "Dodge",
+   "cars": [
+    {
+     "number": "17",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "D. J. Kennington",
+       "wiki": "D. J. Kennington"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Dumoulin Compétition",
+   "manufacturer": "Dodge",
+   "cars": [
+    {
+     "number": "47",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Louis-Philippe Dumoulin",
+       "wiki": "Louis-Philippe Dumoulin"
+      }
+     ]
+    },
+    {
+     "number": "04",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Jean-François Dumoulin",
+       "wiki": "Jean-François Dumoulin"
+      }
+     ]
+    },
+    {
+     "number": "07",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Louis-Philippe Montour",
+       "wiki": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Lacroix Motorsport",
+   "manufacturer": "Dodge",
+   "cars": [
+    {
+     "number": "74",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Kevin Lacroix",
+       "wiki": "Kevin Lacroix (racing driver)"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Larry Jackson Racing",
+   "manufacturer": "Dodge",
+   "cars": [
+    {
+     "number": "84",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Larry Jackson",
+       "wiki": "Larry Jackson (racing driver)"
+      }
+     ]
+    },
+    {
+     "number": "99",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Matthew Scannell",
+       "wiki": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Rick Ware Racing",
+   "manufacturer": "Dodge",
+   "cars": [
+    {
+     "number": "51",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Andrew Ranger",
+       "wiki": "Andrew Ranger"
+      }
+     ]
+    },
+    {
+     "number": "52",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Alex Guenette",
+       "wiki": "Alex Guenette"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Jacombs Racing",
+   "manufacturer": "Chevrolet",
+   "cars": [
+    {
+     "number": "7",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Peter Shepherd III",
+       "wiki": "Peter Shepherd (racing driver)"
+      },
+      {
+       "name": "Kyle Marcelli",
+       "wiki": "Kyle Marcelli"
+      },
+      {
+       "name": "Matthew Scannell",
+       "wiki": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "JF77 Racing",
+   "manufacturer": "Chevrolet",
+   "cars": [
+    {
+     "number": "77",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Jocelyn Fecteau",
+       "wiki": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Jim Bray Motorsports",
+   "manufacturer": "Chevrolet",
+   "cars": [
+    {
+     "number": "56",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Malcolm Strachan",
+       "wiki": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Luc Lesage Racing",
+   "manufacturer": "Chevrolet",
+   "cars": [
+    {
+     "number": "25",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Luc Lesage",
+       "wiki": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Promotive Racing",
+   "manufacturer": "Chevrolet",
+   "cars": [
+    {
+     "number": "67",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "David Thorndyke",
+       "wiki": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Wight Motorsports Inc.",
+   "manufacturer": "Chevrolet",
+   "cars": [
+    {
+     "number": "2",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "T. J. Rinomato",
+       "wiki": null
+      }
+     ]
+    },
+    {
+     "number": "19",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Jean-Frederic Laberge",
+       "wiki": null
+      },
+      {
+       "name": "Brandon Watson",
+       "wiki": null
+      },
+      {
+       "name": "Glenn Styres",
+       "wiki": "Glenn Styres"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Legendary Motorcar Company",
+   "manufacturer": "Chevrolet",
+   "cars": [
+    {
+     "number": "42",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Peter Klutt",
+       "wiki": null
+      },
+      {
+       "name": "Ryan Klutt",
+       "wiki": null
+      }
+     ]
+    },
+    {
+     "number": "59",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Gary Klutt",
+       "wiki": "Gary Klutt"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Brent Wheller Motorsports",
+   "manufacturer": "Dodge",
+   "cars": [
+    {
+     "number": "61",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Brent Wheller",
+       "wiki": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Jacombs Racing",
+   "manufacturer": "Ford",
+   "cars": [
+    {
+     "number": "36",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Cole Powell",
+       "wiki": "Cole Powell"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "SDV Autosport",
+   "manufacturer": "Ford",
+   "cars": [
+    {
+     "number": "37",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Simon Dion-Viens",
+       "wiki": null
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "standings": [
+  {
+   "pos": 1,
+   "name": "Louis-Philippe Dumoulin",
+   "wiki": "Louis-Philippe Dumoulin",
+   "points": 389,
+   "wins": 1,
+   "starts": 10,
+   "top5": 4,
+   "top10": 9
+  },
+  {
+   "pos": 2,
+   "name": "Andrew Ranger",
+   "wiki": "Andrew Ranger",
+   "points": 381,
+   "wins": 2,
+   "starts": 10,
+   "top5": 7,
+   "top10": 7
+  },
+  {
+   "pos": 3,
+   "name": "D. J. Kennington",
+   "wiki": "D. J. Kennington",
+   "points": 378,
+   "wins": 2,
+   "starts": 10,
+   "top5": 5,
+   "top10": 8
+  },
+  {
+   "pos": 4,
+   "name": "Alex Tagliani",
+   "wiki": "Alex Tagliani",
+   "points": 371,
+   "wins": 1,
+   "starts": 10,
+   "top5": 6,
+   "top10": 7
+  },
+  {
+   "pos": 5,
+   "name": "Treyten Lapcevich",
+   "wiki": "Treyten Lapcevich",
+   "points": 361,
+   "wins": 0,
+   "starts": 10,
+   "top5": 5,
+   "top10": 7
+  },
+  {
+   "pos": 6,
+   "name": "Kevin Lacroix",
+   "wiki": "Kevin Lacroix (racing driver)",
+   "points": 352,
+   "wins": 1,
+   "starts": 10,
+   "top5": 6,
+   "top10": 6
+  },
+  {
+   "pos": 7,
+   "name": "Alex Guenette",
+   "wiki": "Alex Guenette",
+   "points": 347,
+   "wins": 0,
+   "starts": 10,
+   "top5": 2,
+   "top10": 7
+  },
+  {
+   "pos": 8,
+   "name": "Brett Taylor",
+   "wiki": null,
+   "points": 337,
+   "wins": 0,
+   "starts": 10,
+   "top5": 2,
+   "top10": 6
+  },
+  {
+   "pos": 9,
+   "name": "Dexter Stacey",
+   "wiki": "Dexter Stacey",
+   "points": 330,
+   "wins": 0,
+   "starts": 10,
+   "top5": 0,
+   "top10": 7
+  },
+  {
+   "pos": 10,
+   "name": "Larry Jackson",
+   "wiki": "Larry Jackson (racing driver)",
+   "points": 318,
+   "wins": 0,
+   "starts": 10,
+   "top5": 0,
+   "top10": 4
+  },
+  {
+   "pos": 11,
+   "name": "Marc-Antoine Camirand",
+   "wiki": "Marc-Antoine Camirand",
+   "points": 315,
+   "wins": 1,
+   "starts": 10,
+   "top5": 2,
+   "top10": 4
+  },
+  {
+   "pos": 12,
+   "name": "T. J. Rinomato",
+   "wiki": null,
+   "points": 253,
+   "wins": 0,
+   "starts": 9,
+   "top5": 0,
+   "top10": 1
+  },
+  {
+   "pos": 13,
+   "name": "Sam Fellows",
+   "wiki": "Sam Fellows",
+   "points": 241,
+   "wins": 0,
+   "starts": 8,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 14,
+   "name": "Brent Wheller",
+   "wiki": null,
+   "points": 198,
+   "wins": 0,
+   "starts": 7,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 15,
+   "name": "Peter Shepherd III",
+   "wiki": "Peter Shepherd (racing driver)",
+   "points": 195,
+   "wins": 0,
+   "starts": 6,
+   "top5": 2,
+   "top10": 2
+  },
+  {
+   "pos": 16,
+   "name": "Shae Gemmell",
+   "wiki": null,
+   "points": 195,
+   "wins": 0,
+   "starts": 6,
+   "top5": 1,
+   "top10": 3
+  },
+  {
+   "pos": 17,
+   "name": "Mark Dilley",
+   "wiki": "Mark Dilley",
+   "points": 193,
+   "wins": 0,
+   "starts": 6,
+   "top5": 0,
+   "top10": 1
+  },
+  {
+   "pos": 18,
+   "name": "Malcolm Strachan",
+   "wiki": null,
+   "points": 164,
+   "wins": 0,
+   "starts": 6,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 19,
+   "name": "Brandon Watson",
+   "wiki": null,
+   "points": 150,
+   "wins": 0,
+   "starts": 4,
+   "top5": 2,
+   "top10": 3
+  },
+  {
+   "pos": 20,
+   "name": "Donald Theetge",
+   "wiki": "Donald Theetge",
+   "points": 133,
+   "wins": 0,
+   "starts": 4,
+   "top5": 0,
+   "top10": 2
+  },
+  {
+   "pos": 21,
+   "name": "Raphaël Lessard",
+   "wiki": "Raphaël Lessard",
+   "points": 125,
+   "wins": 2,
+   "starts": 3,
+   "top5": 2,
+   "top10": 2
+  },
+  {
+   "pos": 22,
+   "name": "Ray Courtemanche Jr.",
+   "wiki": "Ray Courtemanche Jr.",
+   "points": 119,
+   "wins": 0,
+   "starts": 4,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 23,
+   "name": "Matthew Scannell",
+   "wiki": null,
+   "points": 108,
+   "wins": 0,
+   "starts": 3,
+   "top5": 0,
+   "top10": 3
+  },
+  {
+   "pos": 24,
+   "name": "Jean-Frédéric Laberge",
+   "wiki": null,
+   "points": 102,
+   "wins": 0,
+   "starts": 4,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 25,
+   "name": "Kyle Marcelli",
+   "wiki": "Kyle Marcelli",
+   "points": 92,
+   "wins": 0,
+   "starts": 3,
+   "top5": 1,
+   "top10": 1
+  },
+  {
+   "pos": 26,
+   "name": "Cole Powell",
+   "wiki": "Cole Powell",
+   "points": 87,
+   "wins": 0,
+   "starts": 3,
+   "top5": 1,
+   "top10": 1
+  },
+  {
+   "pos": 27,
+   "name": "Jocelyn Fecteau",
+   "wiki": null,
+   "points": 84,
+   "wins": 0,
+   "starts": 3,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 28,
+   "name": "Gary Klutt",
+   "wiki": "Gary Klutt",
+   "points": 80,
+   "wins": 0,
+   "starts": 2,
+   "top5": 1,
+   "top10": 2
+  },
+  {
+   "pos": 29,
+   "name": "Luc Lesage",
+   "wiki": null,
+   "points": 70,
+   "wins": 0,
+   "starts": 2,
+   "top5": 0,
+   "top10": 2
+  },
+  {
+   "pos": 30,
+   "name": "Shantel Kalika",
+   "wiki": null,
+   "points": 64,
+   "wins": 0,
+   "starts": 2,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 31,
+   "name": "Glenn Styres",
+   "wiki": "Glenn Styres",
+   "points": 60,
+   "wins": 0,
+   "starts": 2,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 32,
+   "name": "David Thorndyke",
+   "wiki": null,
+   "points": 54,
+   "wins": 0,
+   "starts": 2,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 33,
+   "name": "Jean-François Dumoulin",
+   "wiki": "Jean-François Dumoulin",
+   "points": 42,
+   "wins": 0,
+   "starts": 1,
+   "top5": 1,
+   "top10": 1
+  },
+  {
+   "pos": 34,
+   "name": "Simon-Dion Viens",
+   "wiki": null,
+   "points": 38,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 1
+  },
+  {
+   "pos": 35,
+   "name": "Louis-Philippe Mountour",
+   "wiki": null,
+   "points": 36,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 1
+  },
+  {
+   "pos": 36,
+   "name": "J. R. Fitzpatrick",
+   "wiki": "J. R. Fitzpatrick",
+   "points": 35,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 1
+  },
+  {
+   "pos": 37,
+   "name": "Peter Klutt",
+   "wiki": null,
+   "points": 34,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 1
+  },
+  {
+   "pos": 38,
+   "name": "Ryan Klutt",
+   "wiki": null,
+   "points": 30,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  }
+ ],
+ "schedule": [
+  {
+   "round": 1,
+   "date": "2021-08-01",
+   "race": "FrontLine Workers 125",
+   "track": "Sunset Speedway",
+   "city": "Innisfil",
+   "state": "ON",
+   "winner": "Raphaël Lessard",
+   "winner_wiki": "Raphaël Lessard"
+  },
+  {
+   "round": 2,
+   "date": "2021-08-01",
+   "race": "General Tire 125",
+   "track": "Sunset Speedway",
+   "city": "Innisfil",
+   "state": "ON",
+   "winner": "Raphaël Lessard",
+   "winner_wiki": "Raphaël Lessard"
+  },
+  {
+   "round": 3,
+   "date": "2021-08-15",
+   "race": "Guardian Angels 60 Presented by Dermathermes",
+   "track": "Circuit de Trois-Rivieres",
+   "city": "Trois-Rivieres",
+   "state": "QC",
+   "winner": "Alex Tagliani",
+   "winner_wiki": "Alex Tagliani"
+  },
+  {
+   "round": 4,
+   "date": "2021-08-28",
+   "race": "LaFernandiere 75",
+   "track": "Circuit ICAR",
+   "city": "Mirabel",
+   "state": "QC",
+   "winner": "Kevin Lacroix",
+   "winner_wiki": "Kevin Lacroix (racing driver)"
+  },
+  {
+   "round": 5,
+   "date": "2021-09-04",
+   "race": "Olymel Grand Prix of Ontario",
+   "track": "Canadian Tire Motorsports Park",
+   "city": "Bowmanville",
+   "state": "ON",
+   "winner": "Louis-Philippe Dumoulin",
+   "winner_wiki": "Louis-Philippe Dumoulin"
+  },
+  {
+   "round": 6,
+   "date": "2021-09-05",
+   "race": "Clarington 200",
+   "track": "Canadian Tire Motorsports Park",
+   "city": "Bowmanville",
+   "state": "ON",
+   "winner": "Marc-Antoine Camirand",
+   "winner_wiki": "Marc-Antoine Camirand"
+  },
+  {
+   "round": 7,
+   "date": "2021-09-12",
+   "race": "Motomaster Batteries 125",
+   "track": "Flamboro Speedway",
+   "city": "Flamborough",
+   "state": "ON",
+   "winner": "Andrew Ranger",
+   "winner_wiki": "Andrew Ranger"
+  },
+  {
+   "round": 8,
+   "date": "2021-09-24",
+   "race": "Canadian Tire 125",
+   "track": "Delaware Speedway",
+   "city": "Delaware",
+   "state": "ON",
+   "winner": "D. J. Kennington",
+   "winner_wiki": "D. J. Kennington"
+  },
+  {
+   "round": 9,
+   "date": "2021-09-26",
+   "race": "QwickWick 125",
+   "track": "Delaware Speedway",
+   "city": "Delaware",
+   "state": "ON",
+   "winner": "D. J. Kennington",
+   "winner_wiki": "D. J. Kennington"
+  },
+  {
+   "round": 10,
+   "date": "2021-09-26",
+   "race": "Pinty's Fall Brawl",
+   "track": "Delaware Speedway",
+   "city": "Delaware",
+   "state": "ON",
+   "winner": "Andrew Ranger",
+   "winner_wiki": "Andrew Ranger"
+  }
+ ],
+ "sources": [
+  "https://en.wikipedia.org/w/index.php?title=2021_NASCAR_Pinty%27s_Series&oldid=1377100349",
+  "https://en.wikipedia.org/w/index.php?title=NASCAR_Canada_Series&oldid=1374583241"
+ ]
+}

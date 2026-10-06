@@ -1,0 +1,2096 @@
+{
+ "templates": {
+  "youth_karting": {
+   "eras": [
+    {
+     "from": 1995,
+     "to": 2026,
+     "name": "{region} Youth Karting Championship",
+     "real_series": "WKA / IKF regional karting (Cadet, Kid Kart, Junior)",
+     "note": "Regional sprint-kart series existed throughout; IKF and WKA were the main sanctioning bodies in the 1990s-2000s, with SKUSA/USPKS/regional ROK/IAME series added later."
+    }
+   ]
+  },
+  "quarter_midget": {
+   "eras": [
+    {
+     "from": 1995,
+     "to": 2026,
+     "name": "{region} Quarter Midget Series",
+     "real_series": "QMA (Quarter Midgets of America) / USAC .25 regional quarter midget racing",
+     "note": "Continuous; QMA founded 1957. Regional championships run by QMA regions/clubs."
+    }
+   ]
+  },
+  "bandolero": {
+   "eras": [
+    {
+     "from": 1995,
+     "to": 1996,
+     "name": null,
+     "real_series": "US Legend Cars International Bandolero",
+     "note": "Bandolero car not introduced until 1997 (Charlotte); no analog—use quarter midgets/karting for this rung."
+    },
+    {
+     "from": 1997,
+     "to": 2026,
+     "name": "{region} Bandolero Series",
+     "real_series": "INEX Bandolero (US Legend Cars International)",
+     "note": "Introduced 1997 at Charlotte Motor Speedway; national competition from 1998. Regional INEX Bandolero championships."
+    }
+   ]
+  },
+  "micro_sprint": {
+   "eras": [
+    {
+     "from": 1995,
+     "to": 2026,
+     "name": "{region} Youth Micro Sprint Series",
+     "real_series": "Restricted/Junior 600cc micro sprint racing (regional clubs, later POWRi/NOW600 Restricted classes)",
+     "note": "Youth restricted micro sprints existed through the 1990s; NOW600 (2000s) and POWRi 600 regional series later formalised youth divisions."
+    }
+   ]
+  },
+  "local_sport_compact": {
+   "eras": [
+    {
+     "from": 1995,
+     "to": 2008,
+     "name": "{track} Four-Cylinder",
+     "real_series": "Weekly four-cylinder / front-wheel-drive compact class",
+     "note": "'Sport Compact' branding was not yet standard; tracks ran 'Four-Cylinder', 'Hornet', 'Mini' or 'Pure 4' classes."
+    },
+    {
+     "from": 2009,
+     "to": 2026,
+     "name": "{track} Sport Compact",
+     "real_series": "IMCA Sport Compact (sanctioned from 2009) and equivalent track classes",
+     "note": "IMCA added the Sport Compact class in the late 2000s; the name became standard at dirt tracks nationwide."
+    }
+   ]
+  },
+  "local_mini_stock": {
+   "eras": [
+    {
+     "from": 1995,
+     "to": 2026,
+     "name": "{track} Mini Stock",
+     "real_series": "Weekly asphalt four-cylinder Mini Stock class",
+     "note": "Continuous at NASCAR-sanctioned and independent asphalt short tracks."
+    }
+   ]
+  },
+  "local_street_stock": {
+   "eras": [
+    {
+     "from": 1995,
+     "to": 2026,
+     "name": "{track} Street Stock",
+     "real_series": "Weekly asphalt Street Stock / Pure Stock class",
+     "note": "Continuous."
+    }
+   ]
+  },
+  "local_hobby_dirt": {
+   "eras": [
+    {
+     "from": 1995,
+     "to": 2026,
+     "name": "{track} Hobby Stock",
+     "real_series": "IMCA Hobby Stock / UMP Factory Stock / local Hobby Stock",
+     "note": "IMCA Hobby Stock and UMP/DIRTcar Factory/Pure Stock classes ran throughout."
+    }
+   ]
+  },
+  "legends_regional": {
+   "eras": [
+    {
+     "from": 1995,
+     "to": 2026,
+     "name": "{region} Legend Car Series",
+     "real_series": "INEX Legend Cars regional championships (US Legend Cars International)",
+     "note": "Legend car introduced April 1992 at Charlotte; INEX sanctioning body formed 1995."
+    }
+   ]
+  },
+  "club_regional": {
+   "eras": [
+    {
+     "from": 1995,
+     "to": 2026,
+     "name": "{region} SCCA Regional Racing",
+     "real_series": "SCCA Club Racing regional / divisional championships (plus NASA regions)",
+     "note": "NASA (founded 1991) regions coexisted with SCCA regions throughout."
+    }
+   ],
+   "region_names": {
+    "northeast": [
+     {
+      "from": 1995,
+      "to": 2026,
+      "name": "SCCA Northeast Division Regional Racing"
+     }
+    ],
+    "mid_atlantic": [
+     {
+      "from": 1995,
+      "to": 2026,
+      "name": "MARRS (Mid-Atlantic Road Racing Series)",
+      "note": "SCCA Washington DC Region championship"
+     }
+    ],
+    "southeast": [
+     {
+      "from": 1995,
+      "to": 2026,
+      "name": "SARRC (Southeast Atlantic Road Racing Championship)",
+      "note": "SCCA Southeast Division"
+     }
+    ],
+    "midwest_north": [
+     {
+      "from": 1995,
+      "to": 2026,
+      "name": "SCCA Great Lakes Division Regional Racing"
+     }
+    ],
+    "midwest_central": [
+     {
+      "from": 1995,
+      "to": 2026,
+      "name": "SCCA Central Division Regional Racing"
+     }
+    ],
+    "plains": [
+     {
+      "from": 1995,
+      "to": 2026,
+      "name": "SCCA Midwest Division Regional Racing"
+     }
+    ],
+    "south_central": [
+     {
+      "from": 1995,
+      "to": 2026,
+      "name": "SCCA Southwest Division Regional Racing"
+     }
+    ],
+    "mountain": [
+     {
+      "from": 1995,
+      "to": 2026,
+      "name": "SCCA Rocky Mountain Division Regional Racing"
+     }
+    ],
+    "pacific": [
+     {
+      "from": 1995,
+      "to": 2026,
+      "name": "SCCA Southern/Northern Pacific Division Regional Racing"
+     }
+    ],
+    "canada_east": [
+     {
+      "from": 1995,
+      "to": 2026,
+      "name": "CASC-OR Ontario Regional Championship",
+      "note": "Canadian Automobile Sport Clubs - Ontario Region; non-SCCA"
+     }
+    ]
+   }
+  },
+  "local_limited_late": {
+   "eras": [
+    {
+     "from": 1995,
+     "to": 2026,
+     "name": "{track} Limited Late Model",
+     "real_series": "Weekly Limited Late Model / Late Model Sportsman class",
+     "note": "Continuous (NASCAR Weekly Series tracks and independents)."
+    }
+   ]
+  },
+  "local_late_model": {
+   "eras": [
+    {
+     "from": 1995,
+     "to": 2026,
+     "name": "{track} Late Model",
+     "real_series": "Weekly Late Model Stock / Super Late Model division (NASCAR Weekly Series: Winston Racing Series to 2001, Dodge Weekly Series 2002-2005, Whelen All-American Series 2006-2026)",
+     "note": "Track-level name kept generic. Virginia/Carolinas tracks ran 'Late Model Stock Cars'; Midwest/Southeast tracks ran Super Late Models."
+    }
+   ]
+  },
+  "local_dirt_modified": {
+   "eras": [
+    {
+     "from": 1995,
+     "to": 2026,
+     "name": "{track} Modified",
+     "real_series": "IMCA Modified / UMP-DIRTcar Modified / Big-Block DIRT Modified (Northeast)",
+     "note": "Continuous; IMCA Modified the dominant weekly rule set in the plains/midwest."
+    }
+   ]
+  },
+  "local_dirt_late_model": {
+   "eras": [
+    {
+     "from": 1995,
+     "to": 2026,
+     "name": "{track} Dirt Late Model",
+     "real_series": "Weekly dirt Super Late Model / Crate Late Model (UMP/DIRTcar, WISSOTA, IMCA)",
+     "note": "Crate Late Model divisions (602/604) became common from the mid-2000s."
+    }
+   ]
+  },
+  "local_sprint": {
+   "eras": [
+    {
+     "from": 1995,
+     "to": 2026,
+     "name": "{track} Sprint Car",
+     "real_series": "Weekly 305/360/410 winged or non-wing sprint cars",
+     "note": "Class size varies by region (410 in central PA/Knoxville, 360 elsewhere, 305 in Ohio/Iowa)."
+    }
+   ]
+  },
+  "club_national": {
+   "eras": [
+    {
+     "from": 1995,
+     "to": 2026,
+     "name": "SCCA National Championship Runoffs",
+     "real_series": "SCCA Club Racing National Championship (Runoffs) / SCCA Majors (Hoosier Super Tour from 2016)",
+     "note": "Runoffs held at Road Atlanta to 2005, Heartland Park 2006-2008, Road America 2009-2013, Laguna Seca 2014, Daytona 2015, Mid-Ohio 2016, Indianapolis 2017/2021, Sonoma 2018, VIR 2019/2023, Road America 2020/2025, Indianapolis 2022/2024 (approx)."
+    }
+   ]
+  },
+  "national_karting": {
+   "eras": [
+    {
+     "from": 1995,
+     "to": 2009,
+     "name": "WKA Manufacturers Cup National Series",
+     "real_series": "WKA Manufacturers Cup (World Karting Association)",
+     "note": "Leading US national sprint-kart series of the era (SKUSA SuperNationals one-off event from 1997)."
+    },
+    {
+     "from": 2010,
+     "to": 2026,
+     "name": "SKUSA Pro Tour",
+     "real_series": "Superkarts! USA Pro Tour",
+     "note": "Pro Tour began 2010 (SpringNationals at Sonoma); WKA Manufacturers Cup continued in parallel."
+    }
+   ]
+  },
+  "junior_formula": {
+   "eras": [
+    {
+     "from": 1995,
+     "to": 1999,
+     "name": "Skip Barber Racing Series",
+     "real_series": "Skip Barber Racing Series (regional, Formula Dodge cars)",
+     "note": "Closest analog: no national F4-style junior championship; Skip Barber regional series was the entry-level pro-am open-wheel ladder."
+    },
+    {
+     "from": 2000,
+     "to": 2005,
+     "name": "Skip Barber Formula Dodge National Championship",
+     "real_series": "Skip Barber National Championship (Formula Dodge)",
+     "note": "National championship began c.2000 (2004 was its 5th season)."
+    },
+    {
+     "from": 2006,
+     "to": 2015,
+     "name": "Skip Barber National Championship presented by Mazda",
+     "real_series": "Skip Barber National / Summer Series (Mazda)",
+     "note": "Mazda replaced Dodge as partner in 2006 (e.g. 'BFGoodrich/Skip Barber National Presented by Mazda' 2009). From c.2012 run as Skip Barber Summer/Winter Series; F1600 Championship Series was a parallel analog."
+    },
+    {
+     "from": 2016,
+     "to": 2021,
+     "name": "Formula 4 United States Championship",
+     "real_series": "FIA F4 United States Championship (SCCA Pro Racing)",
+     "note": "Inaugural season 2016. Continues to 2026 in parallel with USF Juniors."
+    },
+    {
+     "from": 2022,
+     "to": 2026,
+     "name": "USF Juniors",
+     "real_series": "USF Juniors (Road to Indy, Andersen Promotions/USAC)",
+     "note": "Inaugural season 2022."
+    }
+   ]
+  },
+  "late_model_tour": {
+   "eras": [
+    {
+     "from": 1995,
+     "to": 2026,
+     "name": "{region} Late Model Tour",
+     "real_series": "Regional asphalt late model touring series (see region_names)",
+     "note": "Regional names below override where well known."
+    }
+   ],
+   "region_names": {
+    "southeast": [
+     {
+      "from": 1995,
+      "to": 1996,
+      "name": "Hooters Cup Series",
+      "note": "USAR began as Hooters Cup late model series 1995"
+     },
+     {
+      "from": 1997,
+      "to": 2008,
+      "name": "USAR Hooters Pro Cup Series"
+     },
+     {
+      "from": 2009,
+      "to": 2010,
+      "name": "USARacing Pro Cup Series"
+     },
+     {
+      "from": 2011,
+      "to": 2012,
+      "name": "CARS Pro Cup Series"
+     },
+     {
+      "from": 2013,
+      "to": 2014,
+      "name": "X-1R Pro Cup Series"
+     },
+     {
+      "from": 2015,
+      "to": 2026,
+      "name": "CARS Tour",
+      "note": "zMAX CARS Tour (Late Model Stock + Pro/Super Late Model divisions)"
+     }
+    ],
+    "mid_atlantic": [
+     {
+      "from": 2015,
+      "to": 2026,
+      "name": "CARS Late Model Stock Tour",
+      "note": "Absorbed the UARA-STARS Late Model Series (Carolinas/Virginia) which ran in the 2000s to 2013"
+     }
+    ],
+    "northeast": [
+     {
+      "from": 1995,
+      "to": 2000,
+      "name": "ACT Late Model Tour",
+      "note": "American-Canadian Tour (Vermont/New England/Quebec)"
+     },
+     {
+      "from": 2001,
+      "to": 2026,
+      "name": "PASS North Super Late Model Series",
+      "note": "Pro All Stars Series founded 2001 (Maine)"
+     }
+    ],
+    "midwest_north": [
+     {
+      "from": 1995,
+      "to": 2002,
+      "name": "ASA ACDelco Challenge Series",
+      "note": "American Speed Association national tour (Midwest-based)"
+     },
+     {
+      "from": 2003,
+      "to": 2004,
+      "name": "ASA National Tour",
+      "note": "ASA folded during 2004"
+     },
+     {
+      "from": 2005,
+      "to": 2006,
+      "name": "ASA Late Model Series North"
+     },
+     {
+      "from": 2007,
+      "to": 2012,
+      "name": "ASA Midwest Tour",
+      "note": "Founded by Cars and Stars Promotions"
+     },
+     {
+      "from": 2013,
+      "to": 2022,
+      "name": "ARCA Midwest Tour",
+      "note": "ARCA sanctioned; some sources say 2012"
+     },
+     {
+      "from": 2023,
+      "to": 2026,
+      "name": "ASA Midwest Tour",
+      "note": "ASA revival purchased the Midwest Tour 2023"
+     }
+    ],
+    "midwest_central": [
+     {
+      "from": 1995,
+      "to": 2002,
+      "name": "ASA ACDelco Challenge Series"
+     },
+     {
+      "from": 2003,
+      "to": 2004,
+      "name": "ASA National Tour"
+     },
+     {
+      "from": 2005,
+      "to": 2022,
+      "name": "CRA Super Series",
+      "note": "Founded 1997 (Kendall Late Model Series, Sunoco Super Series, ARCA/CRA Super Series 2000s-2010s)"
+     },
+     {
+      "from": 2023,
+      "to": 2026,
+      "name": "ASA/CRA Super Series",
+      "note": "Co-sanctioned with ASA STARS National Tour from 2023"
+     }
+    ],
+    "pacific": [
+     {
+      "from": 1995,
+      "to": 1997,
+      "name": "NASCAR Featherlite Southwest Tour"
+     },
+     {
+      "from": 1998,
+      "to": 2003,
+      "name": "NASCAR Featherlite Southwest Series"
+     },
+     {
+      "from": 2004,
+      "to": 2005,
+      "name": "NASCAR AutoZone Elite Division, Southwest Series"
+     },
+     {
+      "from": 2006,
+      "to": 2026,
+      "name": "SRL Southwest Tour",
+      "note": "SRL formed 2006 with ASA affiliation; NASCAR Elite Division disbanded after 2006. Northwest equivalent: NASCAR Northwest Tour / Northwest Super Late Model Series"
+     }
+    ],
+    "canada_east": [
+     {
+      "from": 1995,
+      "to": 2006,
+      "name": "CASCAR Super Series"
+     },
+     {
+      "from": 2007,
+      "to": 2015,
+      "name": "NASCAR Canadian Tire Series"
+     },
+     {
+      "from": 2016,
+      "to": 2023,
+      "name": "NASCAR Pinty's Series"
+     },
+     {
+      "from": 2024,
+      "to": 2026,
+      "name": "NASCAR Canada Series",
+      "note": "Rename year approximate"
+     }
+    ]
+   }
+  },
+  "modified_tour": {
+   "eras": [
+    {
+     "from": 1995,
+     "to": 2026,
+     "name": "{region} Modified Tour",
+     "real_series": "Regional asphalt tour-type modified series (see region_names)",
+     "note": ""
+    }
+   ],
+   "region_names": {
+    "northeast": [
+     {
+      "from": 1995,
+      "to": 1997,
+      "name": "NASCAR Featherlite Modified Tour"
+     },
+     {
+      "from": 1998,
+      "to": 2004,
+      "name": "NASCAR Featherlite Modified Series"
+     },
+     {
+      "from": 2005,
+      "to": 2026,
+      "name": "NASCAR Whelen Modified Tour"
+     }
+    ],
+    "southeast": [
+     {
+      "from": 1995,
+      "to": 2004,
+      "name": "SMART Modified Tour",
+      "note": "Southern Modified Auto Racing Teams, founded 1989"
+     },
+     {
+      "from": 2005,
+      "to": 2016,
+      "name": "NASCAR Whelen Southern Modified Tour"
+     },
+     {
+      "from": 2017,
+      "to": 2020,
+      "name": "NASCAR Whelen Modified Tour",
+      "note": "Southern tour merged into the northern tour; no separate southern series"
+     },
+     {
+      "from": 2021,
+      "to": 2026,
+      "name": "SMART Modified Tour",
+      "note": "Revived late 2020 without NASCAR sanction"
+     }
+    ],
+    "mid_atlantic": [
+     {
+      "from": 1995,
+      "to": 2026,
+      "name": "Race of Champions Modified Tour",
+      "note": "ROC (NY/PA); dates approximate"
+     }
+    ]
+   }
+  },
+  "dirt_late_model_tour": {
+   "eras": [
+    {
+     "from": 1995,
+     "to": 2026,
+     "name": "{region} Dirt Late Model Tour",
+     "real_series": "Regional dirt Super Late Model touring series",
+     "note": ""
+    }
+   ],
+   "region_names": {
+    "southeast": [
+     {
+      "from": 1995,
+      "to": 2026,
+      "name": "Southern All Star Dirt Late Model Series"
+     }
+    ],
+    "midwest_central": [
+     {
+      "from": 1995,
+      "to": 2026,
+      "name": "UMP DIRTcar Summernationals",
+      "note": "Summer touring series (Illinois/Indiana/Ohio); later 'DIRTcar Summer Nationals'"
+     }
+    ],
+    "plains": [
+     {
+      "from": 2005,
+      "to": 2026,
+      "name": "Lucas Oil MLRA (Midwest Late Model Racing Association)",
+      "note": "Start year approximate"
+     }
+    ]
+   }
+  },
+  "sprint_car_tour": {
+   "eras": [
+    {
+     "from": 1995,
+     "to": 2026,
+     "name": "{region} 360 Sprint Car Tour",
+     "real_series": "ASCS regional and other 360 winged sprint car tours",
+     "note": ""
+    }
+   ],
+   "region_names": {
+    "south_central": [
+     {
+      "from": 1995,
+      "to": 2026,
+      "name": "ASCS National Tour",
+      "note": "American Sprint Car Series (founded 1992); 'Lucas Oil ASCS' title 2010s"
+     }
+    ],
+    "plains": [
+     {
+      "from": 1995,
+      "to": 2026,
+      "name": "ASCS National Tour"
+     }
+    ],
+    "midwest_central": [
+     {
+      "from": 1995,
+      "to": 2026,
+      "name": "All Star Circuit of Champions",
+      "note": "410 winged (Ohio-based)"
+     }
+    ],
+    "midwest_north": [
+     {
+      "from": 1995,
+      "to": 2026,
+      "name": "IRA Outlaw Sprint Series",
+      "note": "Interstate Racing Association, Wisconsin (410)"
+     }
+    ],
+    "pacific": [
+     {
+      "from": 1995,
+      "to": 2026,
+      "name": "NARC 410 Sprint Car Series",
+      "note": "Northern Auto Racing Club; King of the West branding from 2000s"
+     }
+    ]
+   }
+  },
+  "regional_midget": {
+   "eras": [
+    {
+     "from": 1995,
+     "to": 2026,
+     "name": "{region} Midget Series",
+     "real_series": "Regional midget series (POWRi, BMARA, BCRA, ARDC etc.)",
+     "note": ""
+    }
+   ],
+   "region_names": {
+    "midwest_central": [
+     {
+      "from": 2007,
+      "to": 2026,
+      "name": "POWRi National Midget League",
+      "note": "Start year approximate"
+     }
+    ],
+    "plains": [
+     {
+      "from": 2007,
+      "to": 2026,
+      "name": "POWRi National Midget League",
+      "note": "Start year approximate"
+     }
+    ],
+    "midwest_north": [
+     {
+      "from": 1995,
+      "to": 2026,
+      "name": "Badger Midget Series",
+      "note": "Badger Midget Auto Racing Association"
+     }
+    ],
+    "mid_atlantic": [
+     {
+      "from": 1995,
+      "to": 2026,
+      "name": "ARDC Midgets",
+      "note": "American Racing Drivers Club"
+     }
+    ],
+    "pacific": [
+     {
+      "from": 1995,
+      "to": 2026,
+      "name": "BCRA Midgets",
+      "note": "Bay Cities Racing Association"
+     }
+    ]
+   }
+  },
+  "stock_regional_dev": {
+   "eras": [
+    {
+     "from": 1995,
+     "to": 2007,
+     "name": "NASCAR {region} Touring Series",
+     "real_series": "NASCAR Busch North/East (east) and Winston West/NASCAR West (west)",
+     "note": "Generic fallback; see region_names (southeast = East lineage, pacific = West lineage)."
+    },
+    {
+     "from": 2008,
+     "to": 2009,
+     "name": "NASCAR Camping World {region} Series",
+     "real_series": "NASCAR Camping World East/West Series",
+     "note": ""
+    },
+    {
+     "from": 2010,
+     "to": 2019,
+     "name": "NASCAR K&N Pro Series {region}",
+     "real_series": "NASCAR K&N Pro Series East/West",
+     "note": ""
+    },
+    {
+     "from": 2020,
+     "to": 2026,
+     "name": "ARCA Menards Series {region}",
+     "real_series": "ARCA Menards Series East/West",
+     "note": "Rebranded after NASCAR's ARCA purchase."
+    }
+   ],
+   "region_names": {
+    "southeast": [
+     {
+      "from": 1995,
+      "to": 2005,
+      "name": "NASCAR Busch North Series",
+      "note": "New England-based until 2006 southern expansion"
+     },
+     {
+      "from": 2006,
+      "to": 2007,
+      "name": "NASCAR Busch East Series"
+     },
+     {
+      "from": 2008,
+      "to": 2009,
+      "name": "NASCAR Camping World East Series"
+     },
+     {
+      "from": 2010,
+      "to": 2019,
+      "name": "NASCAR K&N Pro Series East"
+     },
+     {
+      "from": 2020,
+      "to": 2026,
+      "name": "ARCA Menards Series East"
+     }
+    ],
+    "pacific": [
+     {
+      "from": 1995,
+      "to": 2003,
+      "name": "NASCAR Winston West Series"
+     },
+     {
+      "from": 2004,
+      "to": 2005,
+      "name": "NASCAR West Series"
+     },
+     {
+      "from": 2006,
+      "to": 2006,
+      "name": "NASCAR AutoZone West Series"
+     },
+     {
+      "from": 2007,
+      "to": 2007,
+      "name": "NASCAR West Series"
+     },
+     {
+      "from": 2008,
+      "to": 2009,
+      "name": "NASCAR Camping World West Series"
+     },
+     {
+      "from": 2010,
+      "to": 2019,
+      "name": "NASCAR K&N Pro Series West"
+     },
+     {
+      "from": 2020,
+      "to": 2026,
+      "name": "ARCA Menards Series West"
+     }
+    ]
+   }
+  },
+  "formula_2000": {
+   "eras": [
+    {
+     "from": 1995,
+     "to": 2006,
+     "name": "U.S. F2000 National Championship",
+     "real_series": "U.S. F2000 National Championship (original era, 1990-2006)",
+     "note": "Founded 1990; sold to Primus Racing 2001; folded after 2006."
+    },
+    {
+     "from": 2007,
+     "to": 2007,
+     "name": "Formula BMW USA",
+     "real_series": "Formula BMW USA",
+     "note": "Closest analog during the USF2000 hiatus."
+    },
+    {
+     "from": 2008,
+     "to": 2009,
+     "name": "Formula BMW Americas",
+     "real_series": "Formula BMW Americas",
+     "note": "Closest analog during the USF2000 hiatus; series cancelled July 2009."
+    },
+    {
+     "from": 2010,
+     "to": 2026,
+     "name": "USF2000 Championship",
+     "real_series": "USF2000 Championship (Road to Indy)",
+     "note": "Revived 2010 by Dan Andersen ('USF2000 Championship presented by Continental Tire'; later Cooper Tires)."
+    }
+   ]
+  },
+  "spec_roadster_cup": {
+   "eras": [
+    {
+     "from": 1995,
+     "to": 2002,
+     "name": null,
+     "real_series": "(none)",
+     "note": "No professional spec-Miata/roadster championship; Spec Miata existed only as an SCCA club class (regional from 2000)."
+    },
+    {
+     "from": 2003,
+     "to": 2005,
+     "name": "Mazdaspeed Miata Cup",
+     "real_series": "Mazdaspeed Miata Cup (Pacific and Atlantic championships)",
+     "note": "Pro series launched 2003 under SCCA Pro Racing."
+    },
+    {
+     "from": 2006,
+     "to": 2026,
+     "name": "Mazda MX-5 Cup",
+     "real_series": "Mazda MX-5 Cup (SCCA Pro 2006-2016 incl. 'Playboy Mazda MX-5 Cup'; IndyCar/Andersen 2017-2020 as 'Global MX-5 Cup'; IMSA from 2021)",
+     "note": "Unified national championship from 2006."
+    }
+   ]
+  },
+  "stock_national_dev": {
+   "eras": [
+    {
+     "from": 1995,
+     "to": 2000,
+     "name": "ARCA Bondo/Mar-Hyde Series",
+     "real_series": "ARCA Menards Series",
+     "note": ""
+    },
+    {
+     "from": 2001,
+     "to": 2009,
+     "name": "ARCA Re/Max Series",
+     "real_series": "ARCA Menards Series",
+     "note": ""
+    },
+    {
+     "from": 2010,
+     "to": 2010,
+     "name": "ARCA Racing Series presented by RE/MAX and Menards",
+     "real_series": "ARCA Menards Series",
+     "note": ""
+    },
+    {
+     "from": 2011,
+     "to": 2018,
+     "name": "ARCA Racing Series presented by Menards",
+     "real_series": "ARCA Menards Series",
+     "note": ""
+    },
+    {
+     "from": 2019,
+     "to": 2026,
+     "name": "ARCA Menards Series",
+     "real_series": "ARCA Menards Series",
+     "note": "NASCAR bought ARCA in 2018; full integration from 2020."
+    }
+   ]
+  },
+  "formula_pro": {
+   "eras": [
+    {
+     "from": 1995,
+     "to": 2012,
+     "name": "Star Mazda Championship",
+     "real_series": "Star Mazda (national series since 1991)",
+     "note": ""
+    },
+    {
+     "from": 2013,
+     "to": 2018,
+     "name": "Pro Mazda Championship",
+     "real_series": "Pro Mazda Championship (Mazda Road to Indy)",
+     "note": ""
+    },
+    {
+     "from": 2019,
+     "to": 2022,
+     "name": "Indy Pro 2000 Championship",
+     "real_series": "Indy Pro 2000 Championship presented by Cooper Tires",
+     "note": "Mazda ended Road to Indy sponsorship after 2018."
+    },
+    {
+     "from": 2023,
+     "to": 2026,
+     "name": "USF Pro 2000 Championship",
+     "real_series": "USF Pro 2000 Championship (USAC-sanctioned)",
+     "note": "Rebrand after Penske bought Indy Lights and lower rungs moved to USAC sanction."
+    }
+   ]
+  },
+  "national_midget": {
+   "eras": [
+    {
+     "from": 1995,
+     "to": 2026,
+     "name": "USAC National Midget Championship",
+     "real_series": "USAC National Midget Series",
+     "note": "Title sponsors varied (e.g. 'USAC NOS Energy Drink National Midget Championship' in the 2010s)."
+    }
+   ]
+  },
+  "national_sprint": {
+   "eras": [
+    {
+     "from": 1995,
+     "to": 2026,
+     "name": "USAC National Sprint Car Championship",
+     "real_series": "USAC National Sprint Car Series (non-wing)",
+     "note": "AMSOIL title sponsorship from the mid-2010s ('USAC AMSOIL National Sprint Car Championship')."
+    }
+   ]
+  },
+  "one_make_gt_cup": {
+   "eras": [
+    {
+     "from": 1995,
+     "to": 2004,
+     "name": "Ferrari Challenge North America",
+     "real_series": "Ferrari Challenge North America",
+     "note": "Closest one-make GT analog before a US Porsche Cup existed (gentleman-driver oriented)."
+    },
+    {
+     "from": 2005,
+     "to": 2020,
+     "name": "Porsche GT3 Cup Challenge USA",
+     "real_series": "IMSA Porsche GT3 Cup Challenge USA by Yokohama",
+     "note": "Inaugural season 2005; 16 seasons."
+    },
+    {
+     "from": 2021,
+     "to": 2026,
+     "name": "Porsche Carrera Cup North America",
+     "real_series": "Porsche Carrera Cup North America (IMSA)",
+     "note": "Replaced GT3 Cup Challenge USA and Canada. Toyota GR Cup North America (2022+) is a parallel option."
+    }
+   ]
+  },
+  "touring_national": {
+   "eras": [
+    {
+     "from": 1995,
+     "to": 1998,
+     "name": "SCCA Pro Racing World Challenge",
+     "real_series": "SCCA World Challenge (Touring Car classes)",
+     "note": ""
+    },
+    {
+     "from": 1999,
+     "to": 2001,
+     "name": "Speedvision World Challenge",
+     "real_series": "SCCA Speedvision World Challenge (Touring Car)",
+     "note": ""
+    },
+    {
+     "from": 2002,
+     "to": 2009,
+     "name": "Speed World Challenge",
+     "real_series": "SCCA Speed World Challenge (Touring Car)",
+     "note": "Name followed Speedvision's rebrand to Speed Channel."
+    },
+    {
+     "from": 2010,
+     "to": 2010,
+     "name": "SCCA Pro Racing World Challenge",
+     "real_series": "World Challenge (Touring Car)",
+     "note": ""
+    },
+    {
+     "from": 2011,
+     "to": 2017,
+     "name": "Pirelli World Challenge",
+     "real_series": "Pirelli World Challenge (TC/TCA/TCB classes)",
+     "note": ""
+    },
+    {
+     "from": 2018,
+     "to": 2026,
+     "name": "TC America",
+     "real_series": "TC America Series (SRO America)",
+     "note": "2018 run as TC classes within Pirelli World Challenge; standalone series from 2019; Skip Barber title sponsor 2026."
+    }
+   ]
+  },
+  "truck_series": {
+   "eras": [
+    {
+     "from": 1995,
+     "to": 1995,
+     "name": "NASCAR SuperTruck Series presented by Craftsman",
+     "real_series": "NASCAR Craftsman Truck Series",
+     "note": "Inaugural season."
+    },
+    {
+     "from": 1996,
+     "to": 2008,
+     "name": "NASCAR Craftsman Truck Series",
+     "real_series": "NASCAR Craftsman Truck Series",
+     "note": ""
+    },
+    {
+     "from": 2009,
+     "to": 2018,
+     "name": "NASCAR Camping World Truck Series",
+     "real_series": "NASCAR Craftsman Truck Series",
+     "note": ""
+    },
+    {
+     "from": 2019,
+     "to": 2019,
+     "name": "NASCAR Gander Outdoors Truck Series",
+     "real_series": "NASCAR Craftsman Truck Series",
+     "note": ""
+    },
+    {
+     "from": 2020,
+     "to": 2020,
+     "name": "NASCAR Gander RV & Outdoors Truck Series",
+     "real_series": "NASCAR Craftsman Truck Series",
+     "note": ""
+    },
+    {
+     "from": 2021,
+     "to": 2022,
+     "name": "NASCAR Camping World Truck Series",
+     "real_series": "NASCAR Craftsman Truck Series",
+     "note": ""
+    },
+    {
+     "from": 2023,
+     "to": 2026,
+     "name": "NASCAR Craftsman Truck Series",
+     "real_series": "NASCAR Craftsman Truck Series",
+     "note": "Craftsman returned as title sponsor."
+    }
+   ]
+  },
+  "formula_lights": {
+   "eras": [
+    {
+     "from": 1995,
+     "to": 1997,
+     "name": "PPG/Firestone Indy Lights Championship",
+     "real_series": "Indy Lights (CART-sanctioned)",
+     "note": "1995 full title '...Powered by Buick'."
+    },
+    {
+     "from": 1998,
+     "to": 1999,
+     "name": "PPG/Dayton Indy Lights Championship",
+     "real_series": "Indy Lights (CART-sanctioned)",
+     "note": ""
+    },
+    {
+     "from": 2000,
+     "to": 2001,
+     "name": "Dayton Indy Lights Championship",
+     "real_series": "Indy Lights (CART-sanctioned)",
+     "note": "Original Indy Lights folded after 2001."
+    },
+    {
+     "from": 2002,
+     "to": 2002,
+     "name": "Infiniti Pro Series",
+     "real_series": "IRL Infiniti Pro Series (now counted as Indy Lights/Indy NXT history)",
+     "note": "IRL's new feeder series."
+    },
+    {
+     "from": 2003,
+     "to": 2005,
+     "name": "Menards Infiniti Pro Series",
+     "real_series": "IRL Infiniti Pro Series",
+     "note": ""
+    },
+    {
+     "from": 2006,
+     "to": 2007,
+     "name": "Indy Pro Series",
+     "real_series": "IRL Indy Pro Series",
+     "note": ""
+    },
+    {
+     "from": 2008,
+     "to": 2013,
+     "name": "Firestone Indy Lights",
+     "real_series": "Indy Lights",
+     "note": "IRL acquired Indy Lights name and history in 2008."
+    },
+    {
+     "from": 2014,
+     "to": 2019,
+     "name": "Indy Lights presented by Cooper Tires",
+     "real_series": "Indy Lights (Mazda Road to Indy)",
+     "note": ""
+    },
+    {
+     "from": 2020,
+     "to": 2020,
+     "name": "Indy Lights presented by Cooper Tires",
+     "real_series": "Indy Lights",
+     "note": "2020 season cancelled (COVID-19). Game may choose to run the 2019/2021 name instead. Real 2020 season cancelled (COVID); the game keeps the rung running."
+    },
+    {
+     "from": 2021,
+     "to": 2022,
+     "name": "Indy Lights",
+     "real_series": "Indy Lights",
+     "note": "2021 'presented by Cooper Tires'; Penske Entertainment took over for 2022."
+    },
+    {
+     "from": 2023,
+     "to": 2026,
+     "name": "INDY NXT by Firestone",
+     "real_series": "Indy NXT",
+     "note": "Rebrand announced Nov 2022."
+    }
+   ]
+  },
+  "endurance_challenge": {
+   "eras": [
+    {
+     "from": 1995,
+     "to": 1996,
+     "name": "IMSA Endurance Championship",
+     "real_series": "IMSA showroom-stock endurance series (successor to Firestone Firehawk Endurance Championship 1985-94; nicknamed 'Toyohawk')",
+     "note": ""
+    },
+    {
+     "from": 1997,
+     "to": 2000,
+     "name": "Motorola Cup",
+     "real_series": "Motorola Cup North American Street Stock Championship (lineage of Michelin Pilot Challenge)",
+     "note": "Some sources give 1998 as first Motorola Cup season; IMSA's Speedvision Cup Endurance Championship ran 1997-98 in parallel."
+    },
+    {
+     "from": 2001,
+     "to": 2006,
+     "name": "Grand-Am Cup",
+     "real_series": "Grand-Am Cup",
+     "note": ""
+    },
+    {
+     "from": 2007,
+     "to": 2008,
+     "name": "KONI Challenge Series",
+     "real_series": "Grand-Am KONI Challenge Series",
+     "note": ""
+    },
+    {
+     "from": 2009,
+     "to": 2009,
+     "name": "KONI Sports Car Challenge",
+     "real_series": "Grand-Am KONI Sports Car Challenge",
+     "note": ""
+    },
+    {
+     "from": 2010,
+     "to": 2013,
+     "name": "Continental Tire Sports Car Challenge",
+     "real_series": "Grand-Am Continental Tire Sports Car Challenge",
+     "note": ""
+    },
+    {
+     "from": 2014,
+     "to": 2018,
+     "name": "IMSA Continental Tire SportsCar Challenge",
+     "real_series": "IMSA Continental Tire SportsCar Challenge",
+     "note": ""
+    },
+    {
+     "from": 2019,
+     "to": 2026,
+     "name": "IMSA Michelin Pilot Challenge",
+     "real_series": "IMSA Michelin Pilot Challenge",
+     "note": "GS (GT4) and TCR classes."
+    }
+   ]
+  },
+  "dirt_late_national": {
+   "eras": [
+    {
+     "from": 1995,
+     "to": 2003,
+     "name": "Hav-A-Tampa Dirt Late Model Series",
+     "real_series": "Hav-A-Tampa Dirt Racing Series",
+     "note": "Premier national DLM tour of the 1990s/early 2000s (STARS and UDTRA were parallel tours)."
+    },
+    {
+     "from": 2004,
+     "to": 2004,
+     "name": "World of Outlaws Late Model Series",
+     "real_series": "World of Outlaws Late Model Series",
+     "note": "WoO Late Models revived 2004 after dormancy since 1989."
+    },
+    {
+     "from": 2005,
+     "to": 2026,
+     "name": "Lucas Oil Late Model Dirt Series",
+     "real_series": "Lucas Oil Late Model Dirt Series",
+     "note": "Lucas Oil bought NARA in March 2005; FloSports acquired it after 2025 with Lucas Oil remaining title sponsor. WoO Late Model Series ran in parallel 2004-2026."
+    }
+   ]
+  },
+  "stock_national": {
+   "eras": [
+    {
+     "from": 1995,
+     "to": 2002,
+     "name": "NASCAR Busch Series, Grand National Division",
+     "real_series": "NASCAR Xfinity Series (now O'Reilly Auto Parts Series)",
+     "note": "Commonly 'Busch Grand National Series'."
+    },
+    {
+     "from": 2003,
+     "to": 2007,
+     "name": "NASCAR Busch Series",
+     "real_series": "NASCAR Xfinity Series",
+     "note": ""
+    },
+    {
+     "from": 2008,
+     "to": 2014,
+     "name": "NASCAR Nationwide Series",
+     "real_series": "NASCAR Xfinity Series",
+     "note": ""
+    },
+    {
+     "from": 2015,
+     "to": 2025,
+     "name": "NASCAR Xfinity Series",
+     "real_series": "NASCAR Xfinity Series",
+     "note": ""
+    },
+    {
+     "from": 2026,
+     "to": 2026,
+     "name": "NASCAR O'Reilly Auto Parts Series",
+     "real_series": "NASCAR O'Reilly Auto Parts Series",
+     "note": "O'Reilly became title sponsor for 2026."
+    }
+   ]
+  },
+  "outlaw_sprint": {
+   "eras": [
+    {
+     "from": 1995,
+     "to": 2026,
+     "name": "World of Outlaws Sprint Car Series",
+     "real_series": "World of Outlaws Sprint Car Series (410 winged)",
+     "note": "Title sponsors varied (e.g. 'World of Outlaws NOS Energy Drink Sprint Car Series' from the mid-2010s)."
+    }
+   ]
+  },
+  "gt_endurance": {
+   "eras": [
+    {
+     "from": 1995,
+     "to": 1997,
+     "name": "IMSA Exxon Supreme GT Series",
+     "real_series": "IMSA GT Championship GT classes (GTS-1/GTS-2)",
+     "note": "Ran alongside the Exxon World SportsCar Championship."
+    },
+    {
+     "from": 1998,
+     "to": 1999,
+     "name": "United States Road Racing Championship",
+     "real_series": "SCCA USRRC (GT classes)",
+     "note": "Revived USRRC acquired the Daytona 24; 1999 season cancelled after three rounds. IMSA's 'Professional SportsCar Racing Championship' GT classes ran in parallel in 1998."
+    },
+    {
+     "from": 2000,
+     "to": 2001,
+     "name": "Grand American Road Racing Championship",
+     "real_series": "Grand-Am (GT classes)",
+     "note": "Grand-Am GT is the direct ancestor of IMSA GTD."
+    },
+    {
+     "from": 2002,
+     "to": 2013,
+     "name": "Rolex Sports Car Series",
+     "real_series": "Grand-Am Rolex Sports Car Series (GT class)",
+     "note": "American Le Mans Series GT2/GTC classes ran in parallel 1999-2013."
+    },
+    {
+     "from": 2014,
+     "to": 2015,
+     "name": "Tudor United SportsCar Championship - GTD",
+     "real_series": "IMSA SportsCar Championship GTD class",
+     "note": "Grand-Am/ALMS merger."
+    },
+    {
+     "from": 2016,
+     "to": 2026,
+     "name": "IMSA WeatherTech SportsCar Championship - GTD",
+     "real_series": "IMSA SportsCar Championship GTD class",
+     "note": "GT3-based from 2022 (GTD and GTD Pro)."
+    }
+   ]
+  },
+  "cup_series": {
+   "eras": [
+    {
+     "from": 1995,
+     "to": 2003,
+     "name": "NASCAR Winston Cup Series",
+     "real_series": "NASCAR Cup Series",
+     "note": ""
+    },
+    {
+     "from": 2004,
+     "to": 2007,
+     "name": "NASCAR Nextel Cup Series",
+     "real_series": "NASCAR Cup Series",
+     "note": ""
+    },
+    {
+     "from": 2008,
+     "to": 2016,
+     "name": "NASCAR Sprint Cup Series",
+     "real_series": "NASCAR Cup Series",
+     "note": ""
+    },
+    {
+     "from": 2017,
+     "to": 2019,
+     "name": "Monster Energy NASCAR Cup Series",
+     "real_series": "NASCAR Cup Series",
+     "note": ""
+    },
+    {
+     "from": 2020,
+     "to": 2026,
+     "name": "NASCAR Cup Series",
+     "real_series": "NASCAR Cup Series",
+     "note": "Tiered premier partners instead of a title sponsor."
+    }
+   ]
+  },
+  "open_wheel_top": {
+   "eras": [
+    {
+     "from": 1995,
+     "to": 1996,
+     "name": "PPG Indy Car World Series",
+     "real_series": "CART",
+     "note": "CART-sanctioned championship."
+    },
+    {
+     "from": 1997,
+     "to": 1997,
+     "name": "CART PPG World Series",
+     "real_series": "CART",
+     "note": ""
+    },
+    {
+     "from": 1998,
+     "to": 2002,
+     "name": "CART FedEx Championship Series",
+     "real_series": "CART",
+     "note": ""
+    },
+    {
+     "from": 2003,
+     "to": 2003,
+     "name": "Champ Car World Series",
+     "real_series": "CART / Champ Car",
+     "note": "'Bridgestone presents the Champ Car World Series powered by Ford'."
+    },
+    {
+     "from": 2004,
+     "to": 2007,
+     "name": "Champ Car World Series",
+     "real_series": "Champ Car (OWRS)",
+     "note": "Same long-form title; CART went bankrupt 2003, series run by Open Wheel Racing Series 2004-2007, merged into IndyCar Feb 2008."
+    },
+    {
+     "from": 2008,
+     "to": 2009,
+     "name": "IndyCar Series",
+     "real_series": "IndyCar Series (unified)",
+     "note": "Reunification of IRL and Champ Car."
+    },
+    {
+     "from": 2010,
+     "to": 2013,
+     "name": "IZOD IndyCar Series",
+     "real_series": "IndyCar Series",
+     "note": ""
+    },
+    {
+     "from": 2014,
+     "to": 2018,
+     "name": "Verizon IndyCar Series",
+     "real_series": "IndyCar Series",
+     "note": ""
+    },
+    {
+     "from": 2019,
+     "to": 2026,
+     "name": "NTT IndyCar Series",
+     "real_series": "IndyCar Series",
+     "note": ""
+    }
+   ]
+  },
+  "open_wheel_top_irl": {
+   "eras": [
+    {
+     "from": 1995,
+     "to": 1995,
+     "name": null,
+     "real_series": "Indy Racing League",
+     "note": "IRL not yet racing (first race Jan 1996)."
+    },
+    {
+     "from": 1996,
+     "to": 1997,
+     "name": "Indy Racing League",
+     "real_series": "Indy Racing League",
+     "note": "1996 short season Jan-May; 1996-97 season ran Aug 1996-Oct 1997."
+    },
+    {
+     "from": 1998,
+     "to": 1999,
+     "name": "Pep Boys Indy Racing League",
+     "real_series": "Indy Racing League",
+     "note": ""
+    },
+    {
+     "from": 2000,
+     "to": 2001,
+     "name": "Indy Racing Northern Light Series",
+     "real_series": "Indy Racing League",
+     "note": ""
+    },
+    {
+     "from": 2002,
+     "to": 2002,
+     "name": "Indy Racing League",
+     "real_series": "Indy Racing League",
+     "note": "No title sponsor."
+    },
+    {
+     "from": 2003,
+     "to": 2007,
+     "name": "IndyCar Series",
+     "real_series": "IRL IndyCar Series",
+     "note": "IRL legally allowed to use 'IndyCar' from 2003."
+    },
+    {
+     "from": 2008,
+     "to": 2026,
+     "name": null,
+     "real_series": "IndyCar Series",
+     "note": "Merged with Champ Car in 2008; unified series is open_wheel_top."
+    }
+   ]
+  },
+  "prototype_endurance": {
+   "eras": [
+    {
+     "from": 1995,
+     "to": 1997,
+     "name": "IMSA Exxon World SportsCar Championship",
+     "real_series": "IMSA GT Championship (WSC prototypes + GTS)",
+     "note": ""
+    },
+    {
+     "from": 1998,
+     "to": 1998,
+     "name": "Professional SportsCar Racing Championship",
+     "real_series": "IMSA GT Championship (final season)",
+     "note": "SCCA's rival USRRC (with the Daytona 24) ran in parallel."
+    },
+    {
+     "from": 1999,
+     "to": 2013,
+     "name": "American Le Mans Series",
+     "real_series": "American Le Mans Series",
+     "note": "Split era: Grand-Am Rolex Sports Car Series (Daytona Prototypes, Rolex 24) ran in parallel 2000-2013."
+    },
+    {
+     "from": 2014,
+     "to": 2015,
+     "name": "Tudor United SportsCar Championship",
+     "real_series": "IMSA SportsCar Championship",
+     "note": "ALMS and Grand-Am merged."
+    },
+    {
+     "from": 2016,
+     "to": 2026,
+     "name": "IMSA WeatherTech SportsCar Championship",
+     "real_series": "IMSA SportsCar Championship",
+     "note": "DPi 2017-2022; GTP (LMDh/LMH) from 2023."
+    }
+   ]
+  },
+  "late_model_national": {
+   "eras": [
+    {
+     "from": 1995,
+     "to": 2004,
+     "name": "ASA National Tour",
+     "real_series": "American Speed Association National Tour",
+     "note": "ASA's national tour ended after 2004."
+    },
+    {
+     "from": 2005,
+     "to": 2022,
+     "name": null,
+     "real_series": null,
+     "note": "No national asphalt late-model tour; regional tours only."
+    },
+    {
+     "from": 2023,
+     "to": 2026,
+     "name": "ASA STARS National Tour",
+     "real_series": "ASA STARS National Tour",
+     "note": "Revived 2023 (Bob Sargent / Track Enterprises)."
+    }
+   ],
+   "region_names": {}
+  },
+  "dirt_modified_tour": {
+   "eras": [
+    {
+     "from": 1995,
+     "to": 2026,
+     "name": "{region} Dirt Modified Tour",
+     "real_series": "Super DIRTcar Series / USMTS / STSS analogs",
+     "note": "generated fallback where no real tour is known"
+    }
+   ],
+   "region_names": {}
+  }
+ },
+ "manufacturers": {
+  "cup_series": [
+   {
+    "from": 1995,
+    "to": 2000,
+    "makes": [
+     "Chevrolet",
+     "Ford",
+     "Pontiac"
+    ]
+   },
+   {
+    "from": 2001,
+    "to": 2003,
+    "makes": [
+     "Chevrolet",
+     "Dodge",
+     "Ford",
+     "Pontiac"
+    ],
+    "note": "Dodge returned 2001; Pontiac withdrew after 2003."
+   },
+   {
+    "from": 2004,
+    "to": 2006,
+    "makes": [
+     "Chevrolet",
+     "Dodge",
+     "Ford"
+    ]
+   },
+   {
+    "from": 2007,
+    "to": 2012,
+    "makes": [
+     "Chevrolet",
+     "Dodge",
+     "Ford",
+     "Toyota"
+    ],
+    "note": "Toyota debuted 2007; Dodge left after 2012."
+   },
+   {
+    "from": 2013,
+    "to": 2026,
+    "makes": [
+     "Chevrolet",
+     "Ford",
+     "Toyota"
+    ]
+   }
+  ],
+  "stock_national": [
+   {
+    "from": 1995,
+    "to": 2001,
+    "makes": [
+     "Chevrolet",
+     "Ford",
+     "Pontiac"
+    ],
+    "note": "Buick/Oldsmobile appeared in small numbers in the mid-1990s."
+   },
+   {
+    "from": 2002,
+    "to": 2004,
+    "makes": [
+     "Chevrolet",
+     "Dodge",
+     "Ford",
+     "Pontiac"
+    ],
+    "note": "Dodge presence limited at first; Pontiac limited after 2003 (start/end years approximate)."
+   },
+   {
+    "from": 2005,
+    "to": 2006,
+    "makes": [
+     "Chevrolet",
+     "Dodge",
+     "Ford"
+    ]
+   },
+   {
+    "from": 2007,
+    "to": 2012,
+    "makes": [
+     "Chevrolet",
+     "Dodge",
+     "Ford",
+     "Toyota"
+    ]
+   },
+   {
+    "from": 2013,
+    "to": 2026,
+    "makes": [
+     "Chevrolet",
+     "Ford",
+     "Toyota"
+    ]
+   }
+  ],
+  "truck_series": [
+   {
+    "from": 1995,
+    "to": 1995,
+    "makes": [
+     "Chevrolet",
+     "Ford"
+    ],
+    "note": "Dodge appeared in limited numbers."
+   },
+   {
+    "from": 1996,
+    "to": 2003,
+    "makes": [
+     "Chevrolet",
+     "Dodge",
+     "Ford"
+    ]
+   },
+   {
+    "from": 2004,
+    "to": 2012,
+    "makes": [
+     "Chevrolet",
+     "Dodge",
+     "Ford",
+     "Toyota"
+    ],
+    "note": "Toyota Tundra debuted 2004; Dodge/Ram factory exit after 2012."
+   },
+   {
+    "from": 2013,
+    "to": 2025,
+    "makes": [
+     "Chevrolet",
+     "Ford",
+     "Toyota"
+    ]
+   },
+   {
+    "from": 2026,
+    "to": 2026,
+    "makes": [
+     "Chevrolet",
+     "Ford",
+     "Toyota",
+     "Dodge"
+    ],
+    "note": "Ram (Stellantis; Dodge lineage) returned with Kaulig Racing in 2026 - display as 'Ram'."
+   }
+  ],
+  "open_wheel_top": [
+   {
+    "from": 1995,
+    "to": 1995,
+    "makes": [
+     "Ford-Cosworth",
+     "Mercedes-Benz/Ilmor",
+     "Honda"
+    ]
+   },
+   {
+    "from": 1996,
+    "to": 2000,
+    "makes": [
+     "Ford-Cosworth",
+     "Mercedes-Benz/Ilmor",
+     "Honda",
+     "Toyota"
+    ]
+   },
+   {
+    "from": 2001,
+    "to": 2002,
+    "makes": [
+     "Ford-Cosworth",
+     "Honda",
+     "Toyota"
+    ]
+   },
+   {
+    "from": 2003,
+    "to": 2007,
+    "makes": [
+     "Ford-Cosworth"
+    ],
+    "note": "Spec Ford-Cosworth XFE (2003-06) / Cosworth (2007)."
+   },
+   {
+    "from": 2008,
+    "to": 2011,
+    "makes": [
+     "Honda"
+    ],
+    "note": "Honda sole supplier."
+   },
+   {
+    "from": 2012,
+    "to": 2012,
+    "makes": [
+     "Chevrolet",
+     "Honda",
+     "Lotus"
+    ]
+   },
+   {
+    "from": 2013,
+    "to": 2026,
+    "makes": [
+     "Chevrolet",
+     "Honda"
+    ]
+   }
+  ],
+  "open_wheel_top_irl": [
+   {
+    "from": 1996,
+    "to": 1996,
+    "makes": [
+     "Ford-Cosworth",
+     "Mercedes-Benz/Ilmor",
+     "Buick"
+    ],
+    "note": "Leftover turbo CART engines (Cosworth/Ilmor) and Menard-Buick V6."
+   },
+   {
+    "from": 1997,
+    "to": 2001,
+    "makes": [
+     "Oldsmobile",
+     "Nissan/Infiniti"
+    ],
+    "note": "Normally aspirated 4.0L formula from 1997."
+   },
+   {
+    "from": 2002,
+    "to": 2002,
+    "makes": [
+     "Chevrolet",
+     "Nissan/Infiniti"
+    ],
+    "note": "Oldsmobile Aurora engines rebadged Chevrolet; Infiniti left after 2002."
+   },
+   {
+    "from": 2003,
+    "to": 2005,
+    "makes": [
+     "Chevrolet",
+     "Honda",
+     "Toyota"
+    ]
+   },
+   {
+    "from": 2006,
+    "to": 2007,
+    "makes": [
+     "Honda"
+    ]
+   }
+  ],
+  "prototype_endurance": [
+   {
+    "from": 1995,
+    "to": 1998,
+    "makes": [
+     "Ferrari",
+     "Oldsmobile",
+     "Ford",
+     "Nissan",
+     "Porsche"
+    ],
+    "note": "WSC: Ferrari 333 SP, Riley & Scott-Oldsmobile/Ford; GTS-1: Nissan 300ZX, Oldsmobile, Porsche."
+   },
+   {
+    "from": 1999,
+    "to": 2005,
+    "makes": [
+     "Audi",
+     "BMW",
+     "Panoz",
+     "Cadillac",
+     "Chevrolet",
+     "Porsche",
+     "Ferrari"
+    ],
+    "note": "ALMS: Audi R8 dominant; Corvette C5-R in GTS."
+   },
+   {
+    "from": 2006,
+    "to": 2013,
+    "makes": [
+     "Audi",
+     "Porsche",
+     "Acura",
+     "Peugeot",
+     "Mazda",
+     "Chevrolet",
+     "BMW",
+     "Ferrari"
+    ],
+    "note": "Parallel Grand-Am DP: Riley/Dallara/Coyote chassis with BMW, Ford, Lexus, Pontiac/Chevrolet, Porsche engines."
+   },
+   {
+    "from": 2014,
+    "to": 2016,
+    "makes": [
+     "Chevrolet",
+     "Ford",
+     "Mazda",
+     "Porsche",
+     "BMW",
+     "Ferrari"
+    ],
+    "note": "Daytona Prototype + GTLM."
+   },
+   {
+    "from": 2017,
+    "to": 2022,
+    "makes": [
+     "Cadillac",
+     "Acura",
+     "Mazda",
+     "Nissan",
+     "Chevrolet",
+     "Porsche",
+     "BMW",
+     "Ford"
+    ],
+    "note": "DPi era; Ford GT (GTLM) to 2019."
+   },
+   {
+    "from": 2023,
+    "to": 2024,
+    "makes": [
+     "Acura",
+     "BMW",
+     "Cadillac",
+     "Porsche",
+     "Lamborghini"
+    ],
+    "note": "GTP (LMDh); Lamborghini from 2024."
+   },
+   {
+    "from": 2025,
+    "to": 2026,
+    "makes": [
+     "Acura",
+     "BMW",
+     "Cadillac",
+     "Porsche",
+     "Aston Martin"
+    ],
+    "note": "Aston Martin Valkyrie from Sebring 2025; Lamborghini absent from 2026 field."
+   }
+  ],
+  "gt_endurance": [
+   {
+    "from": 1995,
+    "to": 1999,
+    "makes": [
+     "Porsche",
+     "BMW",
+     "Nissan",
+     "Mazda",
+     "Chevrolet"
+    ]
+   },
+   {
+    "from": 2000,
+    "to": 2013,
+    "makes": [
+     "Porsche",
+     "BMW",
+     "Mazda",
+     "Chevrolet",
+     "Pontiac",
+     "Ferrari",
+     "Audi",
+     "Aston Martin"
+    ]
+   },
+   {
+    "from": 2014,
+    "to": 2021,
+    "makes": [
+     "Porsche",
+     "BMW",
+     "Audi",
+     "Ferrari",
+     "Lamborghini",
+     "Mercedes-AMG",
+     "Lexus",
+     "Acura",
+     "Aston Martin",
+     "McLaren"
+    ]
+   },
+   {
+    "from": 2022,
+    "to": 2026,
+    "makes": [
+     "Porsche",
+     "BMW",
+     "Audi",
+     "Ferrari",
+     "Lamborghini",
+     "Mercedes-AMG",
+     "Lexus",
+     "Acura",
+     "Aston Martin",
+     "McLaren",
+     "Chevrolet",
+     "Ford"
+    ],
+    "note": "GT3 era; Corvette Z06 GT3.R and Ford Mustang GT3 from 2024."
+   }
+  ]
+ },
+ "price_index": {
+  "1995": 0.325,
+  "1996": 0.34,
+  "1997": 0.352,
+  "1998": 0.36,
+  "1999": 0.372,
+  "2000": 0.391,
+  "2001": 0.408,
+  "2002": 0.417,
+  "2003": 0.432,
+  "2004": 0.449,
+  "2005": 0.472,
+  "2006": 0.495,
+  "2007": 0.516,
+  "2008": 0.546,
+  "2009": 0.544,
+  "2010": 0.557,
+  "2011": 0.584,
+  "2012": 0.602,
+  "2013": 0.615,
+  "2014": 0.63,
+  "2015": 0.631,
+  "2016": 0.643,
+  "2017": 0.664,
+  "2018": 0.688,
+  "2019": 0.707,
+  "2020": 0.72,
+  "2021": 0.772,
+  "2022": 0.866,
+  "2023": 0.92,
+  "2024": 0.961,
+  "2025": 1.0,
+  "2026": 1.042
+ },
+ "price_index_method": "Motorsport price index = (CPI-U[y] / CPI-U[2025]) ^ 1.5, rounded to 3 decimals. CPI-U = BLS US city average all items annual averages (1982-84=100); 2025 = 322.1 (avg of H1 320.229 and H2 ~324.0), 2026 estimated at +2.8% (331.1). The exponent 1.5 means racing costs inflated ~1.5x as fast as general prices in log terms (~3.8%/yr vs ~2.5%/yr CPI over 1995-2025), calibrated so 1995 = ~0.33: a 1990s Late Model Stock program (~$50-60k) vs ~$150-200k today gives 0.28-0.40; tires, fuel, steel/aluminium, engines and transport rose faster than CPI (post-2001 fuel and post-2021 parts spikes). Top-level team budgets grew much faster still (Kulwicki's 1992 title on ~$2M vs ~$20M per Cup car in 2024, roughly 0.10) because of professionalisation, not price alone - apply an extra tier-specific 'arms race' factor for tier 6-7 budgets if desired (e.g. multiply by ~0.6 in 1995 rising linearly to 1.0 by 2015). Usage: nominal_cost(y) = cost_2025_dollars * price_index[y].",
+ "sources": [
+  "https://en.wikipedia.org/wiki/ARCA_Menards_Series",
+  "https://www.thethirdturn.com/wiki/ARCA_Bondo/Mar-Hyde_Series",
+  "https://en.wikipedia.org/wiki/IndyCar_Series",
+  "https://www.thethirdturn.com/wiki/Indy_Racing_League",
+  "https://www.thethirdturn.com/wiki/CART_PPG_World_Series",
+  "https://automobile.fandom.com/wiki/Champ_Car",
+  "https://en.wikipedia.org/wiki/Indy_NXT",
+  "https://racingcalendar.net/championship/indy-nxt/1995",
+  "https://en.wikipedia.org/wiki/1998_Indy_Lights_season",
+  "https://en.wikipedia.org/wiki/2006_Indy_Pro_Series",
+  "https://en.wikipedia.org/wiki/Michelin_Pilot_Challenge",
+  "https://grassrootsmotorsports.com/articles/brief-history-street-stock-endurance-racing-1985-2/",
+  "https://en.wikipedia.org/wiki/1995_IMSA_GT_Championship",
+  "https://en.wikipedia.org/wiki/1998_IMSA_GT_Championship",
+  "https://en.wikipedia.org/wiki/1999_United_States_Road_Racing_Championship",
+  "https://en.wikipedia.org/wiki/Rolex_Sports_Car_Series",
+  "https://en.wikipedia.org/wiki/ARCA_Menards_Series_West",
+  "https://www.thethirdturn.com/wiki/NASCAR_Winston_West_Series",
+  "https://en.wikipedia.org/wiki/ARCA_Menards_Series_East",
+  "https://www.crash.net/nascar/news/87995/1/no-pontiacs-in-2004",
+  "https://racer.com/2025/06/07/ram-returns-to-nascar-craftsman-truck-series-in-2026",
+  "https://en.wikipedia.org/wiki/USF2000_Championship",
+  "https://formulascout.com/pro-mazda-to-be-rebranded-indy-pro-2000-for-2019/47059",
+  "https://en.wikipedia.org/wiki/USF_Pro_2000_Championship",
+  "https://en.wikipedia.org/wiki/Mazda_MX-5_Cup",
+  "https://en.wikipedia.org/wiki/TC_America_Series",
+  "https://en.wikipedia.org/wiki/2002_Speedvision_World_Challenge_season",
+  "https://grassrootsmotorsports.com/articles/history-pirelli-world-challenge/",
+  "https://en.wikipedia.org/wiki/IMSA_GT3_Cup_Challenge",
+  "https://sportscar365.com/imsa/porsche-carrera-cup-na/porsche-carrera-cup-north-america-to-launch-in-2021/",
+  "https://www.superkartsusa.com/national/skusa-pro-tour.html",
+  "https://en.wikipedia.org/wiki/World_Karting_Association",
+  "https://en.wikipedia.org/wiki/2004_Skip_Barber_National_Championship",
+  "https://www.skipbarber.com/2008/12/11/2009-bfgoodrichskip-barber-national-presented-by-mazda-schedule-announced/",
+  "https://en.wikipedia.org/wiki/Formula_4_United_States_Championship",
+  "https://www.press.bmwgroup.com/usa/article/detail/T0021596EN_US/formula-bmw-usa-becomes-formula-bmw-americas?language=en_US",
+  "https://en.wikipedia.org/wiki/2009_Formula_BMW_Americas_season",
+  "https://en.wikipedia.org/wiki/Bandolero_racing",
+  "https://www.uslegendcars.com/about/history/",
+  "https://en.wikipedia.org/wiki/ASA_Midwest_Tour",
+  "https://en.wikipedia.org/wiki/American_Speed_Association",
+  "https://en.wikipedia.org/wiki/ASA_Late_Model_Series",
+  "https://en.wikipedia.org/wiki/CRA_Super_Series",
+  "https://www.thethirdturn.com/wiki/USAR_Hooters_Pro_Cup_Series",
+  "https://en.wikipedia.org/wiki/CARS_Tour",
+  "https://en.wikipedia.org/wiki/NASCAR_Whelen_Modified_Tour",
+  "https://en.wikipedia.org/wiki/SMART_Modified_Tour",
+  "https://en.wikipedia.org/wiki/NASCAR_Whelen_Southern_Modified_Tour",
+  "https://en.wikipedia.org/wiki/NASCAR_AutoZone_Elite_Division,_Southwest_Series",
+  "https://en.wikipedia.org/wiki/SRL_Southwest_Tour",
+  "https://en.wikipedia.org/wiki/NASCAR_Pinty's_Series",
+  "https://en.wikipedia.org/wiki/World_of_Outlaws_Late_Model_Series",
+  "https://www.dirtondirt.com/story_14128.html",
+  "https://www.floracing.com/articles/14926922-flosports-takes-ownership-of-lucas-oil-late-model-dirt-series",
+  "https://www.upi.com/Archives/2002/06/14/Infiniti-engies-out-in-IRL/2011024027200/",
+  "https://www.imsa.com/news/2025/12/03/imsa-gtp-field-nearly-complete-for-2026-entering-december/",
+  "https://data.bls.gov/timeseries/CUUR0000SA0",
+  "https://www.bls.gov/news.release/archives/cpi_01132026.htm",
+  "https://sportsnaut.com/nascar/how-much-does-a-nascar-team-spend-on-each-race",
+  "https://www.nascar.com/news-media/2015/02/20/alan-kulwicki/",
+  "https://www.performanceracing.com/magazine/featured/05-01-2021/special-report-eyes-prize"
+ ]
+}

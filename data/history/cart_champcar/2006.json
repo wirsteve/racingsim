@@ -1,0 +1,1267 @@
+{
+ "series": "open_wheel_top",
+ "year": 2006,
+ "official_name": "2006 Bridgestone Presents the Champ Car World Series Powered by Ford",
+ "data_level": "full",
+ "teams_source": "teams_table",
+ "teams": [
+  {
+   "team": "Conquest Racing",
+   "team_wiki": "Conquest_Racing",
+   "owner": null,
+   "manufacturer": "Ford",
+   "chassis": "Lola B02/00",
+   "cars": [
+    {
+     "number": "27",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Andrew Ranger",
+       "wiki": "Andrew_Ranger",
+       "rounds": "All",
+       "nat": "CAN"
+      }
+     ]
+    },
+    {
+     "number": "34",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Charles Zwolsman Jr.",
+       "wiki": "Charles_Zwolsman_Jr.",
+       "rounds": "All",
+       "nat": "NLD"
+      }
+     ]
+    }
+   ],
+   "manufacturer_note": "spec engine (from page text)",
+   "chassis_note": "spec chassis (from page text)"
+  },
+  {
+   "team": "CTE Racing - HVM",
+   "team_wiki": "HVM_Racing",
+   "owner": null,
+   "manufacturer": "Ford",
+   "chassis": "Lola B02/00",
+   "cars": [
+    {
+     "number": "4",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Nelson Philippe",
+       "wiki": "Nelson_Philippe",
+       "rounds": "All",
+       "nat": "FRA"
+      }
+     ]
+    },
+    {
+     "number": "14",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Dan Clarke",
+       "wiki": "Dan_Clarke",
+       "rounds": "All",
+       "nat": "GBR"
+      }
+     ]
+    }
+   ],
+   "manufacturer_note": "spec engine (from page text)",
+   "chassis_note": "spec chassis (from page text)"
+  },
+  {
+   "team": "Dale Coyne Racing",
+   "team_wiki": "Dale_Coyne_Racing",
+   "owner": null,
+   "manufacturer": "Ford",
+   "chassis": "Lola B02/00",
+   "cars": [
+    {
+     "number": "11",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Jan Heylen",
+       "wiki": "Jan_Heylen",
+       "rounds": "All",
+       "nat": "BEL"
+      }
+     ]
+    },
+    {
+     "number": "19",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Cristiano da Matta",
+       "wiki": "Cristiano_da_Matta",
+       "rounds": "1–4",
+       "nat": "BRA"
+      },
+      {
+       "name": "Mario Domínguez",
+       "wiki": "Mario_Domínguez_(racing_driver)",
+       "rounds": "5–11",
+       "nat": "MEX"
+      },
+      {
+       "name": "Juan Cáceres",
+       "wiki": "Juan_Cáceres_(racing_driver)",
+       "rounds": "12",
+       "nat": "URY"
+      },
+      {
+       "name": "Andreas Wirth",
+       "wiki": "Andreas_Wirth",
+       "rounds": "13–14",
+       "nat": "DEU"
+      }
+     ]
+    }
+   ],
+   "manufacturer_note": "spec engine (from page text)",
+   "chassis_note": "spec chassis (from page text)"
+  },
+  {
+   "team": "Forsythe Championship Racing",
+   "team_wiki": "Forsythe_Championship_Racing",
+   "owner": null,
+   "manufacturer": "Ford",
+   "chassis": "Lola B02/00",
+   "cars": [
+    {
+     "number": "3",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Paul Tracy",
+       "wiki": "Paul_Tracy",
+       "rounds": "1–13",
+       "nat": "CAN"
+      },
+      {
+       "name": "David Martínez",
+       "wiki": "David_Martínez_(racing_driver)",
+       "rounds": "14",
+       "nat": "MEX"
+      }
+     ]
+    },
+    {
+     "number": "7",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Mario Domínguez",
+       "wiki": "Mario_Domínguez_(racing_driver)",
+       "rounds": "1–4",
+       "nat": "MEX"
+      },
+      {
+       "name": "A. J. Allmendinger",
+       "wiki": "A._J._Allmendinger",
+       "rounds": "5–13",
+       "nat": "USA"
+      },
+      {
+       "name": "Buddy Rice",
+       "wiki": "Buddy_Rice",
+       "rounds": "14",
+       "nat": "USA"
+      }
+     ]
+    }
+   ],
+   "manufacturer_note": "spec engine (from page text)",
+   "chassis_note": "spec chassis (from page text)"
+  },
+  {
+   "team": "Newman/Haas Racing",
+   "team_wiki": "Newman/Haas_Racing",
+   "owner": null,
+   "manufacturer": "Ford",
+   "chassis": "Lola B02/00",
+   "cars": [
+    {
+     "number": "1",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Sébastien Bourdais",
+       "wiki": "Sébastien_Bourdais",
+       "rounds": "All",
+       "nat": "FRA"
+      }
+     ]
+    },
+    {
+     "number": "2",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Bruno Junqueira",
+       "wiki": "Bruno_Junqueira",
+       "rounds": "All",
+       "nat": "BRA"
+      }
+     ]
+    }
+   ],
+   "manufacturer_note": "spec engine (from page text)",
+   "chassis_note": "spec chassis (from page text)"
+  },
+  {
+   "team": "PKV Racing",
+   "team_wiki": "KV_Racing_Technology",
+   "owner": null,
+   "manufacturer": "Ford",
+   "chassis": "Lola B02/00",
+   "cars": [
+    {
+     "number": "6",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Oriol Servià",
+       "wiki": "Oriol_Servià",
+       "rounds": "All",
+       "nat": "ESP"
+      }
+     ]
+    },
+    {
+     "number": "12",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Jimmy Vasser",
+       "wiki": "Jimmy_Vasser",
+       "rounds": "1",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "20",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Katherine Legge",
+       "wiki": "Katherine_Legge",
+       "rounds": "All",
+       "nat": "GBR"
+      }
+     ]
+    }
+   ],
+   "manufacturer_note": "spec engine (from page text)",
+   "chassis_note": "spec chassis (from page text)"
+  },
+  {
+   "team": "Rocketsports Racing",
+   "team_wiki": "Rocketsports_Racing",
+   "owner": null,
+   "manufacturer": "Ford",
+   "chassis": "Lola B02/00",
+   "cars": [
+    {
+     "number": "8",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Antônio Pizzonia",
+       "wiki": "Antônio_Pizzonia",
+       "rounds": "1",
+       "nat": "BRA"
+      },
+      {
+       "name": "Nicky Pastorelli",
+       "wiki": "Nicky_Pastorelli",
+       "rounds": "2–6, 8–11",
+       "nat": "NLD"
+      },
+      {
+       "name": "Mario Domínguez",
+       "wiki": "Mario_Domínguez_(racing_driver)",
+       "rounds": "12–14",
+       "nat": "MEX"
+      }
+     ]
+    },
+    {
+     "number": "18",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Tõnis Kasemets",
+       "wiki": "Tõnis_Kasemets",
+       "rounds": "5–8, 12",
+       "nat": "EST"
+      },
+      {
+       "name": "Antônio Pizzonia",
+       "wiki": "Antônio_Pizzonia",
+       "rounds": "11, 13–14",
+       "nat": "BRA"
+      }
+     ]
+    }
+   ],
+   "manufacturer_note": "spec engine (from page text)",
+   "chassis_note": "spec chassis (from page text)"
+  },
+  {
+   "team": "RuSPORT",
+   "team_wiki": "RuSPORT",
+   "owner": null,
+   "manufacturer": "Ford",
+   "chassis": "Lola B02/00",
+   "cars": [
+    {
+     "number": "9",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Justin Wilson",
+       "wiki": "Justin_Wilson_(racing_driver)",
+       "rounds": "All",
+       "nat": "GBR"
+      }
+     ]
+    },
+    {
+     "number": "10",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "A. J. Allmendinger",
+       "wiki": "A._J._Allmendinger",
+       "rounds": "1–4",
+       "nat": "USA"
+      },
+      {
+       "name": "Cristiano da Matta",
+       "wiki": "Cristiano_da_Matta",
+       "rounds": "5–9",
+       "nat": "BRA"
+      },
+      {
+       "name": "Ryan Briscoe",
+       "wiki": "Ryan_Briscoe",
+       "rounds": "13–14",
+       "nat": "AUS"
+      }
+     ]
+    }
+   ],
+   "manufacturer_note": "spec engine (from page text)",
+   "chassis_note": "spec chassis (from page text)"
+  },
+  {
+   "team": "Team Australia",
+   "team_wiki": "Team_Australia",
+   "owner": null,
+   "manufacturer": "Ford",
+   "chassis": "Lola B02/00",
+   "cars": [
+    {
+     "number": "5",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Will Power",
+       "wiki": "Will_Power",
+       "rounds": "All",
+       "nat": "AUS"
+      }
+     ]
+    },
+    {
+     "number": "15",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Alex Tagliani",
+       "wiki": "Alex_Tagliani",
+       "rounds": "All",
+       "nat": "CAN"
+      }
+     ]
+    }
+   ],
+   "manufacturer_note": "spec engine (from page text)",
+   "chassis_note": "spec chassis (from page text)"
+  }
+ ],
+ "standings": [
+  {
+   "pos": 1,
+   "name": "Sébastien Bourdais",
+   "wiki": "Sébastien_Bourdais",
+   "points": 387,
+   "wins": 7,
+   "podiums": 11,
+   "top5": 11,
+   "starts": 14,
+   "nat": "FRA",
+   "results": [
+    1,
+    1,
+    1,
+    1,
+    3,
+    18,
+    3,
+    2,
+    1,
+    7,
+    1,
+    3,
+    8,
+    1
+   ]
+  },
+  {
+   "pos": 2,
+   "name": "Justin Wilson",
+   "wiki": "Justin_Wilson_(racing_driver)",
+   "points": 298,
+   "wins": 1,
+   "podiums": 7,
+   "top5": 10,
+   "starts": 13,
+   "nat": "GBR",
+   "results": [
+    2,
+    5,
+    2,
+    2,
+    2,
+    13,
+    4,
+    1,
+    3,
+    8,
+    14,
+    5,
+    "WTH",
+    2
+   ]
+  },
+  {
+   "pos": 3,
+   "name": "A. J. Allmendinger",
+   "wiki": "A._J._Allmendinger",
+   "points": 285,
+   "wins": 5,
+   "podiums": 7,
+   "top5": 8,
+   "starts": 13,
+   "nat": "USA",
+   "results": [
+    16,
+    8,
+    3,
+    4,
+    1,
+    1,
+    1,
+    3,
+    7,
+    1,
+    17,
+    1,
+    16,
+    null
+   ]
+  },
+  {
+   "pos": 4,
+   "name": "Nelson Philippe",
+   "wiki": "Nelson_Philippe",
+   "points": 231,
+   "wins": 1,
+   "podiums": 3,
+   "top5": 6,
+   "starts": 14,
+   "nat": "FRA",
+   "results": [
+    13,
+    4,
+    17,
+    3,
+    8,
+    10,
+    13,
+    14,
+    4,
+    5,
+    3,
+    14,
+    1,
+    7
+   ]
+  },
+  {
+   "pos": 5,
+   "name": "Bruno Junqueira",
+   "wiki": "Bruno_Junqueira",
+   "points": 219,
+   "wins": 0,
+   "podiums": 3,
+   "top5": 5,
+   "starts": 14,
+   "nat": "BRA",
+   "results": [
+    15,
+    10,
+    10,
+    15,
+    4,
+    2,
+    8,
+    15,
+    17,
+    2,
+    12,
+    2,
+    6,
+    4
+   ]
+  },
+  {
+   "pos": 6,
+   "name": "Will Power",
+   "wiki": "Will_Power",
+   "points": 213,
+   "wins": 0,
+   "podiums": 1,
+   "top5": 3,
+   "starts": 14,
+   "nat": "AUS",
+   "results": [
+    9,
+    7,
+    11,
+    11,
+    18,
+    9,
+    7,
+    6,
+    6,
+    4,
+    5,
+    13,
+    12,
+    3
+   ]
+  },
+  {
+   "pos": 7,
+   "name": "Paul Tracy",
+   "wiki": "Paul_Tracy",
+   "points": 209,
+   "wins": 0,
+   "podiums": 3,
+   "top5": 6,
+   "starts": 13,
+   "nat": "CAN",
+   "results": [
+    17,
+    2,
+    4,
+    16,
+    7,
+    16,
+    2,
+    5,
+    15,
+    6,
+    2,
+    10,
+    4,
+    null
+   ]
+  },
+  {
+   "pos": 8,
+   "name": "Alex Tagliani",
+   "wiki": "Alex_Tagliani",
+   "points": 205,
+   "wins": 0,
+   "podiums": 2,
+   "top5": 5,
+   "starts": 13,
+   "nat": "CAN",
+   "results": [
+    3,
+    11,
+    5,
+    "WTH",
+    11,
+    4,
+    6,
+    12,
+    14,
+    16,
+    7,
+    11,
+    3,
+    5
+   ]
+  },
+  {
+   "pos": 9,
+   "name": "Mario Domínguez",
+   "wiki": "Mario_Domínguez_(racing_driver)",
+   "points": 202,
+   "wins": 0,
+   "podiums": 2,
+   "top5": 4,
+   "starts": 14,
+   "nat": "MEX",
+   "results": [
+    4,
+    3,
+    6,
+    14,
+    14,
+    6,
+    11,
+    8,
+    5,
+    13,
+    10,
+    12,
+    2,
+    17
+   ]
+  },
+  {
+   "pos": 10,
+   "name": "Andrew Ranger",
+   "wiki": "Andrew_Ranger",
+   "points": 200,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 1,
+   "starts": 14,
+   "nat": "CAN",
+   "results": [
+    6,
+    6,
+    7,
+    7,
+    9,
+    11,
+    10,
+    7,
+    13,
+    14,
+    15,
+    8,
+    5,
+    8
+   ]
+  },
+  {
+   "pos": 11,
+   "name": "Oriol Servià",
+   "wiki": "Oriol_Servià",
+   "points": 197,
+   "wins": 0,
+   "podiums": 1,
+   "top5": 4,
+   "starts": 14,
+   "nat": "ESP",
+   "results": [
+    18,
+    12,
+    8,
+    5,
+    10,
+    3,
+    12,
+    4,
+    8,
+    15,
+    16,
+    4,
+    13,
+    6
+   ]
+  },
+  {
+   "pos": 12,
+   "name": "Dan Clarke",
+   "wiki": "Dan_Clarke",
+   "points": 175,
+   "wins": 0,
+   "podiums": 1,
+   "top5": 2,
+   "starts": 14,
+   "nat": "GBR",
+   "results": [
+    11,
+    16,
+    13,
+    8,
+    6,
+    7,
+    17,
+    9,
+    16,
+    3,
+    4,
+    6,
+    17,
+    18
+   ]
+  },
+  {
+   "pos": 13,
+   "name": "Charles Zwolsman Jr.",
+   "wiki": "Charles_Zwolsman_Jr.",
+   "points": 162,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 14,
+   "nat": "NLD",
+   "results": [
+    12,
+    15,
+    12,
+    9,
+    12,
+    15,
+    9,
+    10,
+    9,
+    10,
+    8,
+    7,
+    7,
+    11
+   ]
+  },
+  {
+   "pos": 14,
+   "name": "Jan Heylen",
+   "wiki": "Jan_Heylen",
+   "points": 140,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 1,
+   "starts": 14,
+   "nat": "BEL",
+   "results": [
+    7,
+    13,
+    16,
+    12,
+    15,
+    5,
+    16,
+    16,
+    11,
+    11,
+    9,
+    9,
+    14,
+    13
+   ]
+  },
+  {
+   "pos": 15,
+   "name": "Cristiano da Matta",
+   "wiki": "Cristiano_da_Matta",
+   "points": 134,
+   "wins": 0,
+   "podiums": 1,
+   "top5": 4,
+   "starts": 9,
+   "nat": "BRA",
+   "results": [
+    5,
+    9,
+    9,
+    13,
+    5,
+    14,
+    5,
+    18,
+    2,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 16,
+   "name": "Katherine Legge",
+   "wiki": "Katherine_Legge",
+   "points": 133,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 14,
+   "nat": "GBR",
+   "results": [
+    8,
+    14,
+    14,
+    6,
+    13,
+    8,
+    14,
+    13,
+    12,
+    9,
+    13,
+    16,
+    15,
+    16
+   ]
+  },
+  {
+   "pos": 17,
+   "name": "Nicky Pastorelli",
+   "wiki": "Nicky_Pastorelli",
+   "points": 73,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 9,
+   "nat": "NLD",
+   "results": [
+    null,
+    17,
+    15,
+    10,
+    17,
+    17,
+    null,
+    17,
+    10,
+    12,
+    6,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 18,
+   "name": "Antônio Pizzonia",
+   "wiki": "Antônio_Pizzonia",
+   "points": 43,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 4,
+   "nat": "BRA",
+   "results": [
+    10,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    11,
+    null,
+    10,
+    12
+   ]
+  },
+  {
+   "pos": 19,
+   "name": "Tõnis Kasemets",
+   "wiki": "Tõnis_Kasemets",
+   "points": 34,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 5,
+   "nat": "EST",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    16,
+    12,
+    15,
+    11,
+    null,
+    null,
+    null,
+    17,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 20,
+   "name": "Andreas Wirth",
+   "wiki": "Andreas_Wirth",
+   "points": 19,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 2,
+   "nat": "DEU",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    9,
+    15
+   ]
+  },
+  {
+   "pos": 21,
+   "name": "Ryan Briscoe",
+   "wiki": "Ryan_Briscoe",
+   "points": 17,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 2,
+   "nat": "AUS",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    11,
+    14
+   ]
+  },
+  {
+   "pos": 22,
+   "name": "David Martínez",
+   "wiki": "David_Martínez_(racing_driver)",
+   "points": 13,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 1,
+   "nat": "MEX",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    9
+   ]
+  },
+  {
+   "pos": 23,
+   "name": "Buddy Rice",
+   "wiki": "Buddy_Rice",
+   "points": 11,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 1,
+   "nat": "USA",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    10
+   ]
+  },
+  {
+   "pos": 24,
+   "name": "Jimmy Vasser",
+   "wiki": "Jimmy_Vasser",
+   "points": 7,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 1,
+   "nat": "USA",
+   "results": [
+    14,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 25,
+   "name": "Juan Cáceres",
+   "wiki": "Juan_Cáceres_(racing_driver)",
+   "points": 6,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 1,
+   "nat": "URY",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    15,
+    null,
+    null
+   ]
+  }
+ ],
+ "schedule": [
+  {
+   "round": 1,
+   "date": "2006-04-09",
+   "race": "Toyota Grand Prix of Long Beach",
+   "track": "Streets of Long Beach",
+   "city": "Long Beach",
+   "state": "CA",
+   "country": "USA",
+   "winner": "Sébastien Bourdais",
+   "winner_wiki": "Sébastien_Bourdais",
+   "track_type": "street",
+   "cancelled": false
+  },
+  {
+   "round": 2,
+   "date": "2006-05-13",
+   "race": "Grand Prix of Houston",
+   "track": "Reliant Park",
+   "city": "Houston",
+   "state": "TX",
+   "country": "USA",
+   "winner": "Sébastien Bourdais",
+   "winner_wiki": "Sébastien_Bourdais",
+   "track_type": "street",
+   "cancelled": false
+  },
+  {
+   "round": 3,
+   "date": "2006-05-21",
+   "race": "Tecate Grand Prix of Monterrey",
+   "track": "Fundidora Park",
+   "city": "Monterrey",
+   "state": null,
+   "country": "MEX",
+   "winner": "Sébastien Bourdais",
+   "winner_wiki": "Sébastien_Bourdais",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 4,
+   "date": "2006-06-04",
+   "race": "Time Warner Cable Road Runner 225",
+   "track": "Milwaukee Mile",
+   "city": "West Allis",
+   "state": "WI",
+   "country": "USA",
+   "winner": "Sébastien Bourdais",
+   "winner_wiki": "Sébastien_Bourdais",
+   "track_type": "oval",
+   "cancelled": false
+  },
+  {
+   "round": 5,
+   "date": "2006-06-18",
+   "race": "Grand Prix of Portland",
+   "track": "Portland International Raceway",
+   "city": "Portland",
+   "state": "OR",
+   "country": "USA",
+   "winner": "A. J. Allmendinger",
+   "winner_wiki": "A._J._Allmendinger",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 6,
+   "date": "2006-06-25",
+   "race": "Champ Car Grand Prix of Cleveland",
+   "track": "Cleveland Burke Lakefront Airport",
+   "city": "Cleveland",
+   "state": "OH",
+   "country": "USA",
+   "winner": "A. J. Allmendinger",
+   "winner_wiki": "A._J._Allmendinger",
+   "track_type": "street",
+   "cancelled": false
+  },
+  {
+   "round": 7,
+   "date": "2006-07-09",
+   "race": "Molson Grand Prix of Toronto",
+   "track": "Exhibition Place",
+   "city": "Toronto",
+   "state": "ON",
+   "country": "CAN",
+   "winner": "A. J. Allmendinger",
+   "winner_wiki": "A._J._Allmendinger",
+   "track_type": "street",
+   "cancelled": false
+  },
+  {
+   "round": 8,
+   "date": "2006-07-23",
+   "race": "West Edmonton Mall Grand Prix",
+   "track": "Rexall Speedway",
+   "city": "Edmonton",
+   "state": "AB",
+   "country": "CAN",
+   "winner": "Justin Wilson",
+   "winner_wiki": "Justin_Wilson_(racing_driver)",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 9,
+   "date": "2006-07-30",
+   "race": "Canary Foundation Grand Prix of San José",
+   "track": "Streets of San Jose",
+   "city": "San Jose",
+   "state": "CA",
+   "country": "USA",
+   "winner": "Sébastien Bourdais",
+   "winner_wiki": "Sébastien_Bourdais",
+   "track_type": "street",
+   "cancelled": false
+  },
+  {
+   "round": 10,
+   "date": "2006-08-13",
+   "race": "Grand Prix of Denver",
+   "track": "Denver Civic Center",
+   "city": "Denver",
+   "state": "CO",
+   "country": "USA",
+   "winner": "A. J. Allmendinger",
+   "winner_wiki": "A._J._Allmendinger",
+   "track_type": "street",
+   "cancelled": false
+  },
+  {
+   "round": 11,
+   "date": "2006-08-27",
+   "race": "Champ Car Grand Prix de Montréal",
+   "track": "Circuit Gilles Villeneuve",
+   "city": "Montreal",
+   "state": "QC",
+   "country": "CAN",
+   "winner": "Sébastien Bourdais",
+   "winner_wiki": "Sébastien_Bourdais",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 12,
+   "date": "2006-09-24",
+   "race": "Grand Prix of Road America",
+   "track": "Road America",
+   "city": "Elkhart Lake",
+   "state": "WI",
+   "country": "USA",
+   "winner": "A. J. Allmendinger",
+   "winner_wiki": "A._J._Allmendinger",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 13,
+   "date": "2006-10-22",
+   "race": "Lexmark Indy 300",
+   "track": "Surfers Paradise Street Circuit",
+   "city": "Surfers Paradise",
+   "state": null,
+   "country": "AUS",
+   "winner": "Nelson Philippe",
+   "winner_wiki": "Nelson_Philippe",
+   "track_type": "street",
+   "cancelled": false
+  },
+  {
+   "round": 14,
+   "date": "2006-11-12",
+   "race": "Gran Premio Telmex",
+   "track": "Autódromo Hermanos Rodríguez",
+   "city": "Mexico City",
+   "state": null,
+   "country": "MEX",
+   "winner": "Sébastien Bourdais",
+   "winner_wiki": "Sébastien_Bourdais",
+   "track_type": "road",
+   "cancelled": false
+  }
+ ],
+ "sources": [
+  "https://en.wikipedia.org/wiki/2006_Champ_Car_World_Series",
+  "https://www.wikidata.org (driver bios)"
+ ]
+}

@@ -1,0 +1,1625 @@
+{
+ "generated": "2026-10-06",
+ "method": "scripts ow_scripts/ana.py, ana2.py, ana3.py over /home/user/racingsim/data/history (read-only); full-timer = >=70% of rounds started; age = season year - birth year (+/-1); top tier = irl_indycar + cart_champcar standings",
+ "step_and_champion_rates": {
+  "usf2000_1995_2019": {
+   "series": "usf2000",
+   "years": [
+    1995,
+    2019
+   ],
+   "champions": {
+    "n_drivers": 22,
+    "share_any_top_start": 0.5,
+    "share_fulltime_top_season": 0.227,
+    "age_median": 20.5,
+    "age_p10_p90": [
+     18,
+     24
+    ],
+    "years_to_first_top_start_median": 3
+   },
+   "fulltimers": {
+    "n_drivers": 204,
+    "share_any_top_start": 0.118,
+    "share_fulltime_top_season": 0.078,
+    "age_median": 19,
+    "age_p10_p90": [
+     16,
+     25
+    ],
+    "years_to_first_top_start_median": 4.0
+   },
+   "champion_list": [
+    [
+     1995,
+     "Jeret Schroeder",
+     26,
+     true,
+     false
+    ],
+    [
+     1996,
+     "Steve Knapp",
+     32,
+     true,
+     false
+    ],
+    [
+     1997,
+     "Zak Morioka",
+     19,
+     true,
+     false
+    ],
+    [
+     1998,
+     "David Besnard",
+     21,
+     true,
+     false
+    ],
+    [
+     1999,
+     "Dan Wheldon",
+     21,
+     true,
+     true
+    ],
+    [
+     2000,
+     "Aaron Justus",
+     27,
+     false,
+     false
+    ],
+    [
+     2001,
+     "Jason Lapoint",
+     24,
+     false,
+     false
+    ],
+    [
+     2002,
+     "Bryan Sellers",
+     20,
+     false,
+     false
+    ],
+    [
+     2003,
+     "Jonathan Bomarito",
+     21,
+     false,
+     false
+    ],
+    [
+     2004,
+     "Bobby Wilson",
+     23,
+     false,
+     false
+    ],
+    [
+     2005,
+     "Jay Howard",
+     24,
+     true,
+     false
+    ],
+    [
+     2006,
+     "J.R. Hildebrand",
+     18,
+     true,
+     true
+    ],
+    [
+     2010,
+     "Sage Karam",
+     15,
+     true,
+     true
+    ],
+    [
+     2011,
+     "Petri Suvanto",
+     19,
+     false,
+     false
+    ],
+    [
+     2012,
+     "Matthew Brabham",
+     18,
+     true,
+     false
+    ],
+    [
+     2013,
+     "Scott Hargrove",
+     18,
+     false,
+     false
+    ],
+    [
+     2014,
+     "Florian Latorre",
+     17,
+     false,
+     false
+    ],
+    [
+     2015,
+     "Nico Jamin",
+     20,
+     false,
+     false
+    ],
+    [
+     2016,
+     "Anthony Martin",
+     21,
+     false,
+     false
+    ],
+    [
+     2017,
+     "Oliver Askew",
+     21,
+     true,
+     true
+    ],
+    [
+     2018,
+     "Kyle Kirkwood",
+     20,
+     true,
+     true
+    ],
+    [
+     2019,
+     "Braden Eves",
+     20,
+     false,
+     false
+    ]
+   ]
+  },
+  "usf2000_2010_2019": {
+   "series": "usf2000",
+   "years": [
+    2010,
+    2019
+   ],
+   "champions": {
+    "n_drivers": 10,
+    "share_any_top_start": 0.4,
+    "share_fulltime_top_season": 0.3,
+    "age_median": 19.5,
+    "age_p10_p90": [
+     17,
+     21
+    ],
+    "years_to_first_top_start_median": 4.0
+   },
+   "fulltimers": {
+    "n_drivers": 117,
+    "share_any_top_start": 0.111,
+    "share_fulltime_top_season": 0.085,
+    "age_median": 19.0,
+    "age_p10_p90": [
+     15,
+     23
+    ],
+    "years_to_first_top_start_median": 4
+   },
+   "champion_list": [
+    [
+     2010,
+     "Sage Karam",
+     15,
+     true,
+     true
+    ],
+    [
+     2011,
+     "Petri Suvanto",
+     19,
+     false,
+     false
+    ],
+    [
+     2012,
+     "Matthew Brabham",
+     18,
+     true,
+     false
+    ],
+    [
+     2013,
+     "Scott Hargrove",
+     18,
+     false,
+     false
+    ],
+    [
+     2014,
+     "Florian Latorre",
+     17,
+     false,
+     false
+    ],
+    [
+     2015,
+     "Nico Jamin",
+     20,
+     false,
+     false
+    ],
+    [
+     2016,
+     "Anthony Martin",
+     21,
+     false,
+     false
+    ],
+    [
+     2017,
+     "Oliver Askew",
+     21,
+     true,
+     true
+    ],
+    [
+     2018,
+     "Kyle Kirkwood",
+     20,
+     true,
+     true
+    ],
+    [
+     2019,
+     "Braden Eves",
+     20,
+     false,
+     false
+    ]
+   ]
+  },
+  "promazda_1995_2019": {
+   "series": "pro_mazda",
+   "years": [
+    1995,
+    2019
+   ],
+   "champions": {
+    "n_drivers": 25,
+    "share_any_top_start": 0.36,
+    "share_fulltime_top_season": 0.28,
+    "age_median": 21.0,
+    "age_p10_p90": [
+     18,
+     25
+    ],
+    "years_to_first_top_start_median": 2
+   },
+   "fulltimers": {
+    "n_drivers": 122,
+    "share_any_top_start": 0.156,
+    "share_fulltime_top_season": 0.123,
+    "age_median": 20,
+    "age_p10_p90": [
+     17,
+     23
+    ],
+    "years_to_first_top_start_median": 3
+   },
+   "champion_list": [
+    [
+     1995,
+     "Mark Rodriguez",
+     null,
+     false,
+     false
+    ],
+    [
+     1996,
+     "Rich Stephens",
+     31,
+     false,
+     false
+    ],
+    [
+     1997,
+     "Tony Buffomante",
+     25,
+     false,
+     false
+    ],
+    [
+     1998,
+     "Ian Lacy",
+     null,
+     false,
+     false
+    ],
+    [
+     1999,
+     "Joey Hand",
+     20,
+     false,
+     false
+    ],
+    [
+     2000,
+     "Bernardo Martinez",
+     null,
+     false,
+     false
+    ],
+    [
+     2001,
+     "Scott Bradley",
+     25,
+     false,
+     false
+    ],
+    [
+     2002,
+     "Guy Cosmo",
+     25,
+     false,
+     false
+    ],
+    [
+     2003,
+     "Luis Schiavo",
+     22,
+     false,
+     false
+    ],
+    [
+     2004,
+     "Michael McDowell",
+     20,
+     true,
+     false
+    ],
+    [
+     2005,
+     "Raphael Matos",
+     24,
+     true,
+     true
+    ],
+    [
+     2006,
+     "Adrian Carrio",
+     17,
+     false,
+     false
+    ],
+    [
+     2007,
+     "Dane Cameron",
+     19,
+     false,
+     false
+    ],
+    [
+     2008,
+     "John Edwards",
+     17,
+     false,
+     false
+    ],
+    [
+     2009,
+     "Adam Christodoulou",
+     20,
+     false,
+     false
+    ],
+    [
+     2010,
+     "Conor Daly",
+     19,
+     true,
+     true
+    ],
+    [
+     2011,
+     "Tristan Vautier",
+     22,
+     true,
+     true
+    ],
+    [
+     2012,
+     "Jack Hawksworth",
+     21,
+     true,
+     true
+    ],
+    [
+     2013,
+     "Matthew Brabham",
+     19,
+     true,
+     false
+    ],
+    [
+     2014,
+     "Spencer Pigot",
+     21,
+     true,
+     true
+    ],
+    [
+     2015,
+     "Santiago Urrutia",
+     19,
+     false,
+     false
+    ],
+    [
+     2016,
+     "Aaron Telitz",
+     25,
+     false,
+     false
+    ],
+    [
+     2017,
+     "Victor Franzoni",
+     22,
+     false,
+     false
+    ],
+    [
+     2018,
+     "Rinus VeeKay",
+     18,
+     true,
+     true
+    ],
+    [
+     2019,
+     "Kyle Kirkwood",
+     21,
+     true,
+     true
+    ]
+   ]
+  },
+  "promazda_2007_2019": {
+   "series": "pro_mazda",
+   "years": [
+    2007,
+    2019
+   ],
+   "champions": {
+    "n_drivers": 13,
+    "share_any_top_start": 0.538,
+    "share_fulltime_top_season": 0.462,
+    "age_median": 20,
+    "age_p10_p90": [
+     18,
+     22
+    ],
+    "years_to_first_top_start_median": 2
+   },
+   "fulltimers": {
+    "n_drivers": 122,
+    "share_any_top_start": 0.156,
+    "share_fulltime_top_season": 0.123,
+    "age_median": 20,
+    "age_p10_p90": [
+     17,
+     23
+    ],
+    "years_to_first_top_start_median": 3
+   },
+   "champion_list": [
+    [
+     2007,
+     "Dane Cameron",
+     19,
+     false,
+     false
+    ],
+    [
+     2008,
+     "John Edwards",
+     17,
+     false,
+     false
+    ],
+    [
+     2009,
+     "Adam Christodoulou",
+     20,
+     false,
+     false
+    ],
+    [
+     2010,
+     "Conor Daly",
+     19,
+     true,
+     true
+    ],
+    [
+     2011,
+     "Tristan Vautier",
+     22,
+     true,
+     true
+    ],
+    [
+     2012,
+     "Jack Hawksworth",
+     21,
+     true,
+     true
+    ],
+    [
+     2013,
+     "Matthew Brabham",
+     19,
+     true,
+     false
+    ],
+    [
+     2014,
+     "Spencer Pigot",
+     21,
+     true,
+     true
+    ],
+    [
+     2015,
+     "Santiago Urrutia",
+     19,
+     false,
+     false
+    ],
+    [
+     2016,
+     "Aaron Telitz",
+     25,
+     false,
+     false
+    ],
+    [
+     2017,
+     "Victor Franzoni",
+     22,
+     false,
+     false
+    ],
+    [
+     2018,
+     "Rinus VeeKay",
+     18,
+     true,
+     true
+    ],
+    [
+     2019,
+     "Kyle Kirkwood",
+     21,
+     true,
+     true
+    ]
+   ]
+  },
+  "indylights_1995_2021": {
+   "series": "indy_lights",
+   "years": [
+    1995,
+    2021
+   ],
+   "champions": {
+    "n_drivers": 26,
+    "share_any_top_start": 0.923,
+    "share_fulltime_top_season": 0.769,
+    "age_median": 22.5,
+    "age_p10_p90": [
+     19,
+     26
+    ],
+    "years_to_first_top_start_median": 1.0
+   },
+   "fulltimers": {
+    "n_drivers": 196,
+    "share_any_top_start": 0.469,
+    "share_fulltime_top_season": 0.311,
+    "age_median": 23.0,
+    "age_p10_p90": [
+     19,
+     29
+    ],
+    "years_to_first_top_start_median": 2.0
+   },
+   "champion_list": [
+    [
+     1995,
+     "Greg Moore",
+     20,
+     true,
+     true
+    ],
+    [
+     1996,
+     "David Empringham",
+     33,
+     false,
+     false
+    ],
+    [
+     1997,
+     "Tony Kanaan",
+     23,
+     true,
+     true
+    ],
+    [
+     1998,
+     "Cristiano da Matta",
+     25,
+     true,
+     true
+    ],
+    [
+     1999,
+     "Oriol Servià",
+     25,
+     true,
+     true
+    ],
+    [
+     2000,
+     "Scott Dixon",
+     20,
+     true,
+     true
+    ],
+    [
+     2001,
+     "Townsend Bell",
+     26,
+     true,
+     true
+    ],
+    [
+     2002,
+     "A. J. Foyt IV",
+     18,
+     true,
+     true
+    ],
+    [
+     2003,
+     "Mark Taylor",
+     26,
+     true,
+     true
+    ],
+    [
+     2004,
+     "Thiago Medeiros",
+     22,
+     true,
+     false
+    ],
+    [
+     2005,
+     "Wade Cunningham",
+     21,
+     true,
+     false
+    ],
+    [
+     2006,
+     "Jay Howard",
+     25,
+     true,
+     false
+    ],
+    [
+     2007,
+     "Alex Lloyd",
+     23,
+     true,
+     true
+    ],
+    [
+     2008,
+     "Raphael Matos",
+     27,
+     true,
+     true
+    ],
+    [
+     2009,
+     "J. R. Hildebrand",
+     21,
+     true,
+     true
+    ],
+    [
+     2010,
+     "Jean-Karl Vernay",
+     23,
+     false,
+     false
+    ],
+    [
+     2011,
+     "Josef Newgarden",
+     21,
+     true,
+     true
+    ],
+    [
+     2012,
+     "Tristan Vautier",
+     23,
+     true,
+     true
+    ],
+    [
+     2013,
+     "Sage Karam",
+     18,
+     true,
+     true
+    ],
+    [
+     2014,
+     "Gabby Chaves",
+     21,
+     true,
+     true
+    ],
+    [
+     2015,
+     "Spencer Pigot",
+     22,
+     true,
+     true
+    ],
+    [
+     2016,
+     "Ed Jones",
+     21,
+     true,
+     true
+    ],
+    [
+     2017,
+     "Kyle Kaiser",
+     21,
+     true,
+     false
+    ],
+    [
+     2018,
+     "Patricio O'Ward",
+     19,
+     true,
+     true
+    ],
+    [
+     2019,
+     "Oliver Askew",
+     23,
+     true,
+     true
+    ],
+    [
+     2021,
+     "Kyle Kirkwood",
+     23,
+     true,
+     true
+    ]
+   ]
+  },
+  "indylights_cart_era_1995_2001": {
+   "series": "indy_lights",
+   "years": [
+    1995,
+    2001
+   ],
+   "champions": {
+    "n_drivers": 7,
+    "share_any_top_start": 0.857,
+    "share_fulltime_top_season": 0.857,
+    "age_median": 25,
+    "age_p10_p90": [
+     20,
+     26
+    ],
+    "years_to_first_top_start_median": 1.0
+   },
+   "fulltimers": {
+    "n_drivers": 67,
+    "share_any_top_start": 0.537,
+    "share_fulltime_top_season": 0.358,
+    "age_median": 25.5,
+    "age_p10_p90": [
+     20,
+     31
+    ],
+    "years_to_first_top_start_median": 2.0
+   },
+   "champion_list": [
+    [
+     1995,
+     "Greg Moore",
+     20,
+     true,
+     true
+    ],
+    [
+     1996,
+     "David Empringham",
+     33,
+     false,
+     false
+    ],
+    [
+     1997,
+     "Tony Kanaan",
+     23,
+     true,
+     true
+    ],
+    [
+     1998,
+     "Cristiano da Matta",
+     25,
+     true,
+     true
+    ],
+    [
+     1999,
+     "Oriol Servià",
+     25,
+     true,
+     true
+    ],
+    [
+     2000,
+     "Scott Dixon",
+     20,
+     true,
+     true
+    ],
+    [
+     2001,
+     "Townsend Bell",
+     26,
+     true,
+     true
+    ]
+   ]
+  },
+  "indylights_irl_era_2002_2021": {
+   "series": "indy_lights",
+   "years": [
+    2002,
+    2021
+   ],
+   "champions": {
+    "n_drivers": 19,
+    "share_any_top_start": 0.947,
+    "share_fulltime_top_season": 0.737,
+    "age_median": 22,
+    "age_p10_p90": [
+     18,
+     25
+    ],
+    "years_to_first_top_start_median": 1.0
+   },
+   "fulltimers": {
+    "n_drivers": 132,
+    "share_any_top_start": 0.432,
+    "share_fulltime_top_season": 0.288,
+    "age_median": 22,
+    "age_p10_p90": [
+     19,
+     27
+    ],
+    "years_to_first_top_start_median": 2
+   },
+   "champion_list": [
+    [
+     2002,
+     "A. J. Foyt IV",
+     18,
+     true,
+     true
+    ],
+    [
+     2003,
+     "Mark Taylor",
+     26,
+     true,
+     true
+    ],
+    [
+     2004,
+     "Thiago Medeiros",
+     22,
+     true,
+     false
+    ],
+    [
+     2005,
+     "Wade Cunningham",
+     21,
+     true,
+     false
+    ],
+    [
+     2006,
+     "Jay Howard",
+     25,
+     true,
+     false
+    ],
+    [
+     2007,
+     "Alex Lloyd",
+     23,
+     true,
+     true
+    ],
+    [
+     2008,
+     "Raphael Matos",
+     27,
+     true,
+     true
+    ],
+    [
+     2009,
+     "J. R. Hildebrand",
+     21,
+     true,
+     true
+    ],
+    [
+     2010,
+     "Jean-Karl Vernay",
+     23,
+     false,
+     false
+    ],
+    [
+     2011,
+     "Josef Newgarden",
+     21,
+     true,
+     true
+    ],
+    [
+     2012,
+     "Tristan Vautier",
+     23,
+     true,
+     true
+    ],
+    [
+     2013,
+     "Sage Karam",
+     18,
+     true,
+     true
+    ],
+    [
+     2014,
+     "Gabby Chaves",
+     21,
+     true,
+     true
+    ],
+    [
+     2015,
+     "Spencer Pigot",
+     22,
+     true,
+     true
+    ],
+    [
+     2016,
+     "Ed Jones",
+     21,
+     true,
+     true
+    ],
+    [
+     2017,
+     "Kyle Kaiser",
+     21,
+     true,
+     false
+    ],
+    [
+     2018,
+     "Patricio O'Ward",
+     19,
+     true,
+     true
+    ],
+    [
+     2019,
+     "Oliver Askew",
+     23,
+     true,
+     true
+    ],
+    [
+     2021,
+     "Kyle Kirkwood",
+     23,
+     true,
+     true
+    ]
+   ]
+  },
+  "indylights_2010_2021": {
+   "series": "indy_lights",
+   "years": [
+    2010,
+    2021
+   ],
+   "champions": {
+    "n_drivers": 11,
+    "share_any_top_start": 0.909,
+    "share_fulltime_top_season": 0.818,
+    "age_median": 21,
+    "age_p10_p90": [
+     19,
+     23
+    ],
+    "years_to_first_top_start_median": 1.0
+   },
+   "fulltimers": {
+    "n_drivers": 73,
+    "share_any_top_start": 0.479,
+    "share_fulltime_top_season": 0.356,
+    "age_median": 22,
+    "age_p10_p90": [
+     19,
+     25
+    ],
+    "years_to_first_top_start_median": 1
+   },
+   "champion_list": [
+    [
+     2010,
+     "Jean-Karl Vernay",
+     23,
+     false,
+     false
+    ],
+    [
+     2011,
+     "Josef Newgarden",
+     21,
+     true,
+     true
+    ],
+    [
+     2012,
+     "Tristan Vautier",
+     23,
+     true,
+     true
+    ],
+    [
+     2013,
+     "Sage Karam",
+     18,
+     true,
+     true
+    ],
+    [
+     2014,
+     "Gabby Chaves",
+     21,
+     true,
+     true
+    ],
+    [
+     2015,
+     "Spencer Pigot",
+     22,
+     true,
+     true
+    ],
+    [
+     2016,
+     "Ed Jones",
+     21,
+     true,
+     true
+    ],
+    [
+     2017,
+     "Kyle Kaiser",
+     21,
+     true,
+     false
+    ],
+    [
+     2018,
+     "Patricio O'Ward",
+     19,
+     true,
+     true
+    ],
+    [
+     2019,
+     "Oliver Askew",
+     23,
+     true,
+     true
+    ],
+    [
+     2021,
+     "Kyle Kirkwood",
+     23,
+     true,
+     true
+    ]
+   ]
+  },
+  "step_usf2000_promazda": {
+   "from": "usf2000",
+   "to": "pro_mazda",
+   "years": [
+    2010,
+    2021
+   ],
+   "n_fulltimers": 139,
+   "share_reaching_next": 0.424
+  },
+  "step_promazda_lights": {
+   "from": "pro_mazda",
+   "to": "indy_lights",
+   "years": [
+    2007,
+    2021
+   ],
+   "n_fulltimers": 135,
+   "share_reaching_next": 0.407
+  },
+  "step_usf2000_lights": {
+   "from": "usf2000",
+   "to": "indy_lights",
+   "years": [
+    2010,
+    2020
+   ],
+   "n_fulltimers": 125,
+   "share_reaching_next": 0.32
+  },
+  "ages": {
+   "usf2000": {
+    "n": 201,
+    "median": 19,
+    "p10": 16,
+    "p90": 22
+   },
+   "pro_mazda": {
+    "n": 178,
+    "median": 20.0,
+    "p10": 17,
+    "p90": 23
+   },
+   "indy_lights": {
+    "n": 193,
+    "median": 22,
+    "p10": 19,
+    "p90": 26
+   },
+   "irl_indycar": {
+    "n": 385,
+    "median": 29,
+    "p10": 23,
+    "p90": 40
+   },
+   "cart_champcar": {
+    "n": 268,
+    "median": 29.0,
+    "p10": 24,
+    "p90": 38
+   }
+  },
+  "indycar_debut_age_2008_2026": {
+   "n": 114,
+   "median": 24.0,
+   "p10": 20,
+   "p90": 33
+  },
+  "indycar_debutants_2010_2026": {
+   "n": 101,
+   "share_with_indy_lights": 0.535,
+   "share_with_pro_mazda": 0.257,
+   "share_with_usf2000": 0.188,
+   "share_with_any_ladder": 0.545
+  },
+  "indycar_fulltimers_2020_2026": {
+   "n": 50,
+   "share_with_indy_lights": 0.62,
+   "share_with_any_ladder": 0.62
+  },
+  "field_sizes": {
+   "usf2000": [
+    [
+     2015,
+     26,
+     13,
+     16
+    ],
+    [
+     2016,
+     34,
+     18,
+     16
+    ],
+    [
+     2017,
+     36,
+     13,
+     14
+    ],
+    [
+     2018,
+     34,
+     17,
+     14
+    ],
+    [
+     2019,
+     28,
+     16,
+     15
+    ],
+    [
+     2020,
+     26,
+     18,
+     17
+    ],
+    [
+     2021,
+     30,
+     23,
+     18
+    ],
+    [
+     2022,
+     31,
+     15,
+     18
+    ],
+    [
+     2023,
+     34,
+     17,
+     18
+    ],
+    [
+     2024,
+     28,
+     16,
+     18
+    ],
+    [
+     2025,
+     30,
+     17,
+     18
+    ],
+    [
+     2026,
+     34,
+     17,
+     18
+    ]
+   ],
+   "pro_mazda": [
+    [
+     2015,
+     24,
+     15,
+     16
+    ],
+    [
+     2016,
+     19,
+     6,
+     16
+    ],
+    [
+     2017,
+     20,
+     9,
+     12
+    ],
+    [
+     2018,
+     22,
+     10,
+     16
+    ],
+    [
+     2019,
+     19,
+     11,
+     16
+    ],
+    [
+     2020,
+     21,
+     11,
+     17
+    ],
+    [
+     2021,
+     21,
+     11,
+     18
+    ],
+    [
+     2022,
+     21,
+     13,
+     18
+    ],
+    [
+     2023,
+     28,
+     17,
+     18
+    ],
+    [
+     2024,
+     32,
+     17,
+     18
+    ],
+    [
+     2025,
+     27,
+     16,
+     18
+    ],
+    [
+     2026,
+     29,
+     13,
+     18
+    ]
+   ],
+   "indy_lights": [
+    [
+     2015,
+     16,
+     11,
+     16
+    ],
+    [
+     2016,
+     21,
+     12,
+     18
+    ],
+    [
+     2017,
+     16,
+     14,
+     16
+    ],
+    [
+     2018,
+     12,
+     7,
+     17
+    ],
+    [
+     2019,
+     13,
+     8,
+     18
+    ],
+    [
+     2021,
+     15,
+     12,
+     20
+    ],
+    [
+     2022,
+     17,
+     12,
+     14
+    ],
+    [
+     2023,
+     25,
+     14,
+     14
+    ],
+    [
+     2024,
+     27,
+     16,
+     14
+    ],
+    [
+     2025,
+     27,
+     16,
+     14
+    ],
+    [
+     2026,
+     28,
+     23,
+     17
+    ]
+   ],
+   "irl_indycar": [
+    [
+     2015,
+     41,
+     19,
+     16
+    ],
+    [
+     2016,
+     35,
+     20,
+     16
+    ],
+    [
+     2017,
+     37,
+     20,
+     17
+    ],
+    [
+     2018,
+     42,
+     20,
+     17
+    ],
+    [
+     2019,
+     37,
+     21,
+     17
+    ],
+    [
+     2020,
+     35,
+     21,
+     14
+    ],
+    [
+     2021,
+     43,
+     24,
+     16
+    ],
+    [
+     2022,
+     35,
+     25,
+     17
+    ],
+    [
+     2023,
+     38,
+     25,
+     17
+    ],
+    [
+     2024,
+     43,
+     24,
+     17
+    ],
+    [
+     2025,
+     34,
+     27,
+     17
+    ],
+    [
+     2026,
+     33,
+     25,
+     18
+    ]
+   ]
+  }
+ },
+ "seasons_at_step": {
+  "usf2000_seasons_per_driver": {
+   "n": 168,
+   "median": 1.0,
+   "share_1": 0.589,
+   "share_2": 0.339,
+   "share_3plus": 0.071
+  },
+  "pro_mazda_seasons_per_driver": {
+   "n": 170,
+   "median": 1.0,
+   "share_1": 0.6,
+   "share_2": 0.312,
+   "share_3plus": 0.088
+  },
+  "indy_lights_seasons_per_driver": {
+   "n": 157,
+   "median": 1,
+   "share_1": 0.535,
+   "share_2": 0.331,
+   "share_3plus": 0.134
+  },
+  "indycar_fulltime_seasons_debut_2008_2016": {
+   "n": 57,
+   "median": 1,
+   "share_0": 0.439,
+   "share_1_3": 0.333,
+   "share_4_9": 0.175,
+   "share_10plus": 0.053
+  }
+ },
+ "arrival_ages": {
+  "usf2000->pro_mazda": {
+   "n_movers": 51,
+   "age_at_arrival_median": 20,
+   "p10": 18,
+   "p90": 22,
+   "years_from_first_ft_season_median": 1.0
+  },
+  "pro_mazda->indy_lights": {
+   "n_movers": 54,
+   "age_at_arrival_median": 21.5,
+   "p10": 19,
+   "p90": 24,
+   "years_from_first_ft_season_median": 2.0
+  },
+  "indy_lights->top": {
+   "n_movers": 91,
+   "age_at_arrival_median": 25,
+   "p10": 21,
+   "p90": 32,
+   "years_from_first_ft_season_median": 2.0
+  },
+  "usf2000->top": {
+   "n_movers": 13,
+   "age_at_arrival_median": 23,
+   "p10": 19,
+   "p90": 24,
+   "years_from_first_ft_season_median": 4
+  },
+  "pro_mazda->top": {
+   "n_movers": 19,
+   "age_at_arrival_median": 23,
+   "p10": 19,
+   "p90": 27,
+   "years_from_first_ft_season_median": 3
+  }
+ }
+}

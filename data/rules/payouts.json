@@ -1,0 +1,409 @@
+{
+ "_comment": "Purse tables in the nominal dollars of their year; drift = share of motorsport cost inflation the purse kept pace with (tour/crown-jewel purses ~0.75: World 100 to-win $28k in 1995 -> $72k in 2025; weekly purses ~0.25: Indiana weekly sprints paid $600-1,000 to win in the 1990s). Series without a table use the generic curve from data/series.json.",
+ "tables": {
+  "galesburg_mini": {
+   "label": "Weekly mini stock (Galesburg, MI)",
+   "year": 2024,
+   "by_position": [
+    300,
+    200,
+    175,
+    140,
+    125,
+    100
+   ],
+   "to_start": 90,
+   "dnq": 40,
+   "sources": [
+    "src:galesburg-burg-pay"
+   ],
+   "confidence": "high"
+  },
+  "galesburg_street": {
+   "label": "Weekly street stock (Galesburg, MI)",
+   "year": 2024,
+   "by_position": [
+    700,
+    450,
+    375,
+    325,
+    300,
+    250,
+    200,
+    175,
+    160
+   ],
+   "to_start": 150,
+   "dnq": 60,
+   "sources": [
+    "src:galesburg-ss-pay"
+   ],
+   "confidence": "high",
+   "note": "B-feature pays $120 down to $60."
+  },
+  "galesburg_tlm": {
+   "label": "Weekly limited late model (Galesburg, MI)",
+   "year": 2024,
+   "by_position": [
+    1000,
+    700,
+    500,
+    450,
+    400,
+    350,
+    300,
+    275,
+    250
+   ],
+   "to_start": 200,
+   "dnq": 80,
+   "sources": [
+    "src:galesburg-tlm-pay"
+   ],
+   "confidence": "high"
+  },
+  "sobo_lms": {
+   "label": "Weekly Late Model Stock (South Boston, VA)",
+   "year": 2021,
+   "by_position": [
+    3000,
+    1800,
+    1300,
+    1000,
+    900,
+    800,
+    700,
+    650,
+    600,
+    550
+   ],
+   "to_start": 500,
+   "dnq": 150,
+   "sources": [
+    "src:sobo_2021_costs",
+    "src:birchrun-lic"
+   ],
+   "confidence": "medium",
+   "note": "To-win and to-start published; positions 2-10 interpolated. Track points fund from a NASCAR weekly Division I award sheet.",
+   "points_fund": [
+    3500,
+    2000,
+    1200,
+    1000,
+    800
+   ]
+  },
+  "florence_hobby": {
+   "label": "Weekly hobby stock (Florence, KY)",
+   "year": 2024,
+   "by_position": [
+    200,
+    100,
+    90,
+    85,
+    80,
+    75,
+    70,
+    65,
+    60,
+    55
+   ],
+   "to_start": 50,
+   "dnq": 20,
+   "sources": [
+    "src:florence-purse"
+   ],
+   "confidence": "high"
+  },
+  "florence_mod": {
+   "label": "Weekly modified (Florence, KY)",
+   "year": 2024,
+   "by_position": [
+    1000,
+    500,
+    350,
+    250,
+    225,
+    200,
+    190,
+    180,
+    170,
+    160
+   ],
+   "to_start": 150,
+   "dnq": 50,
+   "sources": [
+    "src:florence-purse"
+   ],
+   "confidence": "high"
+  },
+  "florence_crate_lm": {
+   "label": "Weekly late model (Florence, KY)",
+   "year": 2024,
+   "by_position": [
+    1000,
+    500,
+    350,
+    250,
+    225,
+    200,
+    190,
+    180,
+    170,
+    160
+   ],
+   "to_start": 150,
+   "dnq": 50,
+   "sources": [
+    "src:florence-purse"
+   ],
+   "confidence": "high"
+  },
+  "florence_sportmod": {
+   "label": "Weekly sport mod (Florence, KY)",
+   "year": 2024,
+   "by_position": [
+    600,
+    300,
+    200,
+    180,
+    160,
+    150,
+    140,
+    130,
+    120,
+    110
+   ],
+   "to_start": 100,
+   "dnq": 40,
+   "sources": [
+    "src:florence-purse"
+   ],
+   "confidence": "high"
+  },
+  "florence_legends": {
+   "label": "Weekly legends (Florence, KY)",
+   "year": 2024,
+   "by_position": [
+    175,
+    110,
+    95,
+    90,
+    85,
+    80,
+    75,
+    70,
+    65,
+    55
+   ],
+   "to_start": 45,
+   "dnq": 20,
+   "sources": [
+    "src:florence-purse"
+   ],
+   "confidence": "high"
+  },
+  "asa_stars": {
+   "label": "ASA STARS National Tour",
+   "year": 2024,
+   "by_position": [
+    15000,
+    7500,
+    5000,
+    4000,
+    3500,
+    3000,
+    2750,
+    2500,
+    2250,
+    2000
+   ],
+   "to_start": 1500,
+   "dnq": 500,
+   "sources": [
+    "src:search-asastars-2024"
+   ],
+   "confidence": "medium",
+   "note": "To-win and to-start from search results; positions 2-10 interpolated."
+  },
+  "night_in_america": {
+   "label": "Dirt late model tour (Night in America)",
+   "year": 2024,
+   "by_position": [
+    20000,
+    10000,
+    5000,
+    4000,
+    3500,
+    3000,
+    2500,
+    2200,
+    2000,
+    1800,
+    1500
+   ],
+   "to_start": 1000,
+   "dnq": 300,
+   "sources": [
+    "src:pri-cost-controls-2024",
+    "src:nia_snip"
+   ],
+   "confidence": "medium",
+   "note": "Published $20k/$10k/$5k ... $1,500 (11th); 4th-10th interpolated."
+  },
+  "lucas_oil": {
+   "label": "Lucas Oil Late Model Dirt Series",
+   "year": 2024,
+   "by_position": [
+    10000,
+    5000,
+    3500,
+    3000,
+    2500,
+    2200,
+    2000,
+    1800,
+    1600,
+    1500
+   ],
+   "to_start": 1000,
+   "dnq": 300,
+   "sources": [
+    "src:lucas-rb-2024"
+   ],
+   "confidence": "medium",
+   "note": "Typical $10k-to-win show; 2nd-10th interpolated. Points fund as published.",
+   "points_fund": [
+    200000,
+    150000,
+    125000,
+    100000,
+    75000,
+    60000,
+    50000,
+    45000,
+    40000,
+    35000,
+    30000,
+    25000
+   ]
+  },
+  "woo_sprint": {
+   "label": "World of Outlaws Sprint Car Series",
+   "year": 2024,
+   "by_position": [
+    12000,
+    6000,
+    4000,
+    3000,
+    2600,
+    2400,
+    2200,
+    2000,
+    1800,
+    1600
+   ],
+   "to_start": 1000,
+   "dnq": 400,
+   "sources": [
+    "src:search-woo-sprint-2024",
+    "src:woo-sprint-2023-fund"
+   ],
+   "confidence": "medium",
+   "note": "Standard show ~$12k to win ($70k total); 2nd-10th interpolated. Full-time points fund as published.",
+   "points_fund": [
+    350000,
+    210000,
+    140000,
+    122500,
+    113750,
+    109375,
+    105000,
+    100625,
+    96250,
+    87500,
+    70000,
+    52500
+   ]
+  }
+ },
+ "assign": [
+  {
+   "templates": [
+    "local_mini_stock"
+   ],
+   "table": "galesburg_mini",
+   "drift": 0.25
+  },
+  {
+   "templates": [
+    "local_street_stock"
+   ],
+   "table": "galesburg_street",
+   "drift": 0.25
+  },
+  {
+   "templates": [
+    "local_limited_late"
+   ],
+   "table": "galesburg_tlm",
+   "drift": 0.25
+  },
+  {
+   "templates": [
+    "local_late_model"
+   ],
+   "table": "sobo_lms",
+   "drift": 0.25
+  },
+  {
+   "templates": [
+    "local_hobby_dirt"
+   ],
+   "table": "florence_hobby",
+   "drift": 0.25
+  },
+  {
+   "templates": [
+    "local_dirt_modified"
+   ],
+   "table": "florence_mod",
+   "drift": 0.25
+  },
+  {
+   "templates": [
+    "local_dirt_late_model"
+   ],
+   "table": "florence_crate_lm",
+   "drift": 0.25
+  },
+  {
+   "templates": [
+    "legends_regional"
+   ],
+   "table": "florence_legends",
+   "drift": 0.25
+  },
+  {
+   "templates": [
+    "late_model_national"
+   ],
+   "table": "asa_stars",
+   "drift": 0.75
+  },
+  {
+   "templates": [
+    "dirt_late_national"
+   ],
+   "table": "lucas_oil",
+   "drift": 0.75
+  },
+  {
+   "templates": [
+    "outlaw_sprint"
+   ],
+   "table": "woo_sprint",
+   "drift": 0.75
+  }
+ ]
+}

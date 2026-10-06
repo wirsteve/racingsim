@@ -1,0 +1,1380 @@
+{
+ "series": "open_wheel_top",
+ "year": 2005,
+ "official_name": "2005 Bridgestone Presents the Champ Car World Series Powered by Ford",
+ "data_level": "full",
+ "teams_source": "teams_table",
+ "teams": [
+  {
+   "team": "Newman/Haas Racing",
+   "team_wiki": "Newman/Haas_Racing",
+   "owner": null,
+   "manufacturer": "Ford",
+   "chassis": "Lola B02/00",
+   "cars": [
+    {
+     "number": "1",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Sébastien Bourdais",
+       "wiki": "Sébastien_Bourdais",
+       "rounds": "All",
+       "nat": "FRA"
+      }
+     ]
+    },
+    {
+     "number": "2",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Bruno Junqueira",
+       "wiki": "Bruno_Junqueira",
+       "rounds": "1–2",
+       "nat": "BRA"
+      },
+      {
+       "name": "Oriol Servià",
+       "wiki": "Oriol_Servià",
+       "rounds": "3–13",
+       "nat": "ESP"
+      }
+     ]
+    }
+   ],
+   "manufacturer_note": "spec engine (from page text)",
+   "chassis_note": "spec chassis (from page text)"
+  },
+  {
+   "team": "Forsythe Championship Racing",
+   "team_wiki": "Forsythe/Pettit_Racing",
+   "owner": null,
+   "manufacturer": "Ford",
+   "chassis": "Lola B02/00",
+   "cars": [
+    {
+     "number": "3",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Paul Tracy",
+       "wiki": "Paul_Tracy",
+       "rounds": "All",
+       "nat": "CAN"
+      }
+     ]
+    },
+    {
+     "number": "7",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Mario Domínguez",
+       "wiki": "Mario_Domínguez_(racing_driver)",
+       "rounds": "All",
+       "nat": "MEX"
+      }
+     ]
+    }
+   ],
+   "manufacturer_note": "spec engine (from page text)",
+   "chassis_note": "spec chassis (from page text)"
+  },
+  {
+   "team": "CTE Racing-HVM",
+   "team_wiki": "HVM_Racing",
+   "owner": null,
+   "manufacturer": "Ford",
+   "chassis": "Lola B02/00",
+   "cars": [
+    {
+     "number": "4",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Björn Wirdheim",
+       "wiki": "Björn_Wirdheim",
+       "rounds": "1–11",
+       "nat": "SWE"
+      },
+      {
+       "name": "Fabrizio del Monte",
+       "wiki": "Fabrizio_del_Monte",
+       "rounds": "12",
+       "nat": "ITA"
+      }
+     ]
+    },
+    {
+     "number": "50",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Homero Richards",
+       "wiki": "Homero_Richards",
+       "rounds": "13",
+       "nat": "MEX"
+      }
+     ]
+    },
+    {
+     "number": "55",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Ronnie Bremer",
+       "wiki": "Ronnie_Bremer",
+       "rounds": "1–5",
+       "nat": "DNK"
+      },
+      {
+       "name": "Alex Sperafico",
+       "wiki": "Alex_Sperafico",
+       "rounds": "6–7",
+       "nat": "BRA"
+      },
+      {
+       "name": "Rodolfo Lavín",
+       "wiki": "Rodolfo_Lavín",
+       "rounds": "8–13",
+       "nat": "MEX"
+      }
+     ]
+    }
+   ],
+   "manufacturer_note": "spec engine (from page text)",
+   "chassis_note": "spec chassis (from page text)"
+  },
+  {
+   "team": "Team Australia",
+   "team_wiki": "Team_Australia",
+   "owner": null,
+   "manufacturer": "Ford",
+   "chassis": "Lola B02/00",
+   "cars": [
+    {
+     "number": "5",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Marcus Marshall",
+       "wiki": "Marcus_Marshall",
+       "rounds": "1–12",
+       "nat": "AUS"
+      },
+      {
+       "name": "Will Power",
+       "wiki": "Will_Power",
+       "rounds": "13",
+       "nat": "AUS"
+      }
+     ]
+    },
+    {
+     "number": "25",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Will Power",
+       "wiki": "Will_Power",
+       "rounds": "12",
+       "nat": "AUS"
+      },
+      {
+       "name": "Charles Zwolsman Jr.",
+       "wiki": "Charles_Zwolsman_Jr.",
+       "rounds": "13",
+       "nat": "NLD"
+      }
+     ]
+    },
+    {
+     "number": "15",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Alex Tagliani",
+       "wiki": "Alex_Tagliani",
+       "rounds": "All",
+       "nat": "CAN"
+      }
+     ]
+    }
+   ],
+   "manufacturer_note": "spec engine (from page text)",
+   "chassis_note": "spec chassis (from page text)"
+  },
+  {
+   "team": "Rocketsports Racing",
+   "team_wiki": "Rocketsports_Racing",
+   "owner": null,
+   "manufacturer": "Ford",
+   "chassis": "Lola B02/00",
+   "cars": [
+    {
+     "number": "8",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Timo Glock",
+       "wiki": "Timo_Glock",
+       "rounds": "All",
+       "nat": "DEU"
+      }
+     ]
+    },
+    {
+     "number": "31",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Ryan Hunter-Reay",
+       "wiki": "Ryan_Hunter-Reay",
+       "rounds": "1–11",
+       "nat": "USA"
+      },
+      {
+       "name": "Michael McDowell",
+       "wiki": "Michael_McDowell_(racing_driver)",
+       "rounds": "12–13",
+       "nat": "USA"
+      }
+     ]
+    }
+   ],
+   "manufacturer_note": "spec engine (from page text)",
+   "chassis_note": "spec chassis (from page text)"
+  },
+  {
+   "team": "RuSPORT",
+   "team_wiki": "RuSPORT",
+   "owner": null,
+   "manufacturer": "Ford",
+   "chassis": "Lola B02/00",
+   "cars": [
+    {
+     "number": "9",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Justin Wilson",
+       "wiki": "Justin_Wilson_(racing_driver)",
+       "rounds": "All",
+       "nat": "GBR"
+      }
+     ]
+    },
+    {
+     "number": "10",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "A. J. Allmendinger",
+       "wiki": "A._J._Allmendinger",
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    }
+   ],
+   "manufacturer_note": "spec engine (from page text)",
+   "chassis_note": "spec chassis (from page text)"
+  },
+  {
+   "team": "Dale Coyne Racing",
+   "team_wiki": "Dale_Coyne_Racing",
+   "owner": null,
+   "manufacturer": "Ford",
+   "chassis": "Lola B02/00",
+   "cars": [
+    {
+     "number": "11",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Ricardo Sperafico",
+       "wiki": "Ricardo_Sperafico",
+       "rounds": "All",
+       "nat": "BRA"
+      }
+     ]
+    },
+    {
+     "number": "19",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Oriol Servià",
+       "wiki": "Oriol_Servià",
+       "rounds": "1–2",
+       "nat": "ESP"
+      },
+      {
+       "name": "Michael Valiante",
+       "wiki": "Michael_Valiante",
+       "rounds": "4",
+       "nat": "CAN"
+      },
+      {
+       "name": "Tarso Marques",
+       "wiki": "Tarso_Marques",
+       "rounds": "5",
+       "nat": "BRA"
+      },
+      {
+       "name": "Ryan Dalziel",
+       "wiki": "Ryan_Dalziel",
+       "rounds": "6",
+       "nat": "GBR"
+      },
+      {
+       "name": "Ronnie Bremer",
+       "wiki": "Ronnie_Bremer",
+       "rounds": "7–13",
+       "nat": "DNK"
+      }
+     ]
+    }
+   ],
+   "manufacturer_note": "spec engine (from page text)",
+   "chassis_note": "spec chassis (from page text)"
+  },
+  {
+   "team": "PKV Racing",
+   "team_wiki": "KV_Racing_Technology",
+   "owner": null,
+   "manufacturer": "Ford",
+   "chassis": "Lola B02/00",
+   "cars": [
+    {
+     "number": "12",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Jimmy Vasser",
+       "wiki": "Jimmy_Vasser",
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "21",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Cristiano da Matta",
+       "wiki": "Cristiano_da_Matta",
+       "rounds": "All",
+       "nat": "BRA"
+      }
+     ]
+    },
+    {
+     "number": "52",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Jorge Goeters",
+       "wiki": "Jorge_Goeters",
+       "rounds": "2",
+       "nat": "MEX"
+      }
+     ]
+    }
+   ],
+   "manufacturer_note": "spec engine (from page text)",
+   "chassis_note": "spec chassis (from page text)"
+  },
+  {
+   "team": "Mi-Jack Conquest Racing",
+   "team_wiki": "Conquest_Racing",
+   "owner": null,
+   "manufacturer": "Ford",
+   "chassis": "Lola B02/00",
+   "cars": [
+    {
+     "number": "27",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Andrew Ranger",
+       "wiki": "Andrew_Ranger",
+       "rounds": "All",
+       "nat": "CAN"
+      }
+     ]
+    },
+    {
+     "number": "34",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Nelson Philippe",
+       "wiki": "Nelson_Philippe",
+       "rounds": "All",
+       "nat": "FRA"
+      }
+     ]
+    }
+   ],
+   "manufacturer_note": "spec engine (from page text)",
+   "chassis_note": "spec chassis (from page text)"
+  },
+  {
+   "team": "Jensen MotorSport",
+   "team_wiki": "Jensen_MotorSport",
+   "owner": null,
+   "manufacturer": "Ford",
+   "chassis": "Lola B02/00",
+   "cars": [
+    {
+     "number": "41",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Fabrizio del Monte",
+       "wiki": "Fabrizio_del_Monte",
+       "rounds": "1",
+       "nat": "ITA"
+      }
+     ]
+    }
+   ],
+   "manufacturer_note": "spec engine (from page text)",
+   "chassis_note": "spec chassis (from page text)"
+  }
+ ],
+ "standings": [
+  {
+   "pos": 1,
+   "name": "Sébastien Bourdais",
+   "wiki": "Sébastien_Bourdais",
+   "points": 348,
+   "wins": 6,
+   "podiums": 7,
+   "top5": 11,
+   "starts": 13,
+   "nat": "FRA",
+   "results": [
+    1,
+    5,
+    6,
+    2,
+    5,
+    5,
+    1,
+    1,
+    1,
+    4,
+    1,
+    1,
+    17
+   ]
+  },
+  {
+   "pos": 2,
+   "name": "Oriol Servià",
+   "wiki": "Oriol_Servià",
+   "points": 288,
+   "wins": 1,
+   "podiums": 7,
+   "top5": 10,
+   "starts": 13,
+   "nat": "ESP",
+   "results": [
+    11,
+    9,
+    3,
+    16,
+    3,
+    2,
+    2,
+    3,
+    4,
+    1,
+    2,
+    5,
+    4
+   ]
+  },
+  {
+   "pos": 3,
+   "name": "Justin Wilson",
+   "wiki": "Justin_Wilson_(racing_driver)",
+   "points": 265,
+   "wins": 2,
+   "podiums": 3,
+   "top5": 8,
+   "starts": 13,
+   "nat": "GBR",
+   "results": [
+    4,
+    4,
+    4,
+    17,
+    7,
+    1,
+    4,
+    4,
+    17,
+    3,
+    11,
+    7,
+    1
+   ]
+  },
+  {
+   "pos": 4,
+   "name": "Paul Tracy",
+   "wiki": "Paul_Tracy",
+   "points": 246,
+   "wins": 2,
+   "podiums": 7,
+   "top5": 7,
+   "starts": 13,
+   "nat": "CAN",
+   "results": [
+    2,
+    15,
+    1,
+    3,
+    1,
+    16,
+    3,
+    2,
+    16,
+    8,
+    17,
+    17,
+    3
+   ]
+  },
+  {
+   "pos": 5,
+   "name": "A. J. Allmendinger",
+   "wiki": "A._J._Allmendinger",
+   "points": 227,
+   "wins": 0,
+   "podiums": 5,
+   "top5": 6,
+   "starts": 13,
+   "nat": "USA",
+   "results": [
+    8,
+    10,
+    2,
+    5,
+    2,
+    12,
+    14,
+    17,
+    3,
+    9,
+    13,
+    2,
+    2
+   ]
+  },
+  {
+   "pos": 6,
+   "name": "Jimmy Vasser",
+   "wiki": "Jimmy_Vasser",
+   "points": 217,
+   "wins": 0,
+   "podiums": 2,
+   "top5": 4,
+   "starts": 13,
+   "nat": "USA",
+   "results": [
+    9,
+    14,
+    5,
+    6,
+    6,
+    4,
+    11,
+    11,
+    15,
+    7,
+    3,
+    3,
+    6
+   ]
+  },
+  {
+   "pos": 7,
+   "name": "Alex Tagliani",
+   "wiki": "Alex_Tagliani",
+   "points": 207,
+   "wins": 0,
+   "podiums": 2,
+   "top5": 5,
+   "starts": 13,
+   "nat": "CAN",
+   "results": [
+    15,
+    3,
+    10,
+    18,
+    4,
+    3,
+    7,
+    9,
+    14,
+    5,
+    7,
+    4,
+    8
+   ]
+  },
+  {
+   "pos": 8,
+   "name": "Timo Glock",
+   "wiki": "Timo_Glock",
+   "points": 202,
+   "wins": 0,
+   "podiums": 1,
+   "top5": 2,
+   "starts": 13,
+   "nat": "DEU",
+   "results": [
+    6,
+    11,
+    9,
+    10,
+    10,
+    7,
+    13,
+    6,
+    13,
+    2,
+    8,
+    6,
+    5
+   ]
+  },
+  {
+   "pos": 9,
+   "name": "Mario Domínguez",
+   "wiki": "Mario_Domínguez_(racing_driver)",
+   "points": 198,
+   "wins": 0,
+   "podiums": 1,
+   "top5": 6,
+   "starts": 13,
+   "nat": "MEX",
+   "results": [
+    5,
+    13,
+    7,
+    4,
+    17,
+    13,
+    5,
+    5,
+    2,
+    10,
+    4,
+    18,
+    12
+   ]
+  },
+  {
+   "pos": 10,
+   "name": "Andrew Ranger",
+   "wiki": "Andrew_Ranger",
+   "points": 140,
+   "wins": 0,
+   "podiums": 1,
+   "top5": 1,
+   "starts": 13,
+   "nat": "CAN",
+   "results": [
+    17,
+    2,
+    16,
+    7,
+    8,
+    11,
+    18,
+    16,
+    10,
+    11,
+    14,
+    10,
+    9
+   ]
+  },
+  {
+   "pos": 11,
+   "name": "Cristiano da Matta",
+   "wiki": "Cristiano_da_Matta",
+   "points": 139,
+   "wins": 1,
+   "podiums": 1,
+   "top5": 1,
+   "starts": 13,
+   "nat": "BRA",
+   "results": [
+    10,
+    6,
+    11,
+    1,
+    16,
+    17,
+    17,
+    10,
+    18,
+    6,
+    12,
+    19,
+    14
+   ]
+  },
+  {
+   "pos": 12,
+   "name": "Ronnie Bremer",
+   "wiki": "Ronnie_Bremer",
+   "points": 139,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 12,
+   "nat": "DNK",
+   "results": [
+    7,
+    19,
+    8,
+    8,
+    14,
+    null,
+    6,
+    7,
+    7,
+    17,
+    18,
+    8,
+    19
+   ]
+  },
+  {
+   "pos": 13,
+   "name": "Nelson Philippe",
+   "wiki": "Nelson_Philippe",
+   "points": 117,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 13,
+   "nat": "FRA",
+   "results": [
+    18,
+    12,
+    12,
+    12,
+    13,
+    10,
+    9,
+    15,
+    9,
+    15,
+    16,
+    14,
+    7
+   ]
+  },
+  {
+   "pos": 14,
+   "name": "Björn Wirdheim",
+   "wiki": "Björn_Wirdheim",
+   "points": 115,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 11,
+   "nat": "SWE",
+   "results": [
+    12,
+    8,
+    15,
+    9,
+    15,
+    15,
+    15,
+    8,
+    11,
+    13,
+    6,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 15,
+   "name": "Ryan Hunter-Reay",
+   "wiki": "Ryan_Hunter-Reay",
+   "points": 110,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 11,
+   "nat": "USA",
+   "results": [
+    13,
+    7,
+    17,
+    15,
+    18,
+    6,
+    16,
+    14,
+    6,
+    12,
+    10,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 16,
+   "name": "Marcus Marshall",
+   "wiki": "Marcus_Marshall",
+   "points": 104,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 12,
+   "nat": "AUS",
+   "results": [
+    14,
+    16,
+    13,
+    14,
+    12,
+    14,
+    8,
+    12,
+    12,
+    16,
+    9,
+    11,
+    null
+   ]
+  },
+  {
+   "pos": 17,
+   "name": "Ricardo Sperafico",
+   "wiki": "Ricardo_Sperafico",
+   "points": 92,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 13,
+   "nat": "BRA",
+   "results": [
+    19,
+    17,
+    14,
+    13,
+    9,
+    18,
+    10,
+    18,
+    8,
+    18,
+    15,
+    9,
+    18
+   ]
+  },
+  {
+   "pos": 18,
+   "name": "Rodolfo Lavín",
+   "wiki": "Rodolfo_Lavín",
+   "points": 72,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 2,
+   "starts": 6,
+   "nat": "MEX",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    13,
+    5,
+    14,
+    5,
+    13,
+    15
+   ]
+  },
+  {
+   "pos": 19,
+   "name": "Bruno Junqueira",
+   "wiki": "Bruno_Junqueira",
+   "points": 59,
+   "wins": 1,
+   "podiums": 2,
+   "top5": 2,
+   "starts": 2,
+   "nat": "BRA",
+   "results": [
+    3,
+    1,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 20,
+   "name": "Alex Sperafico",
+   "wiki": "Alex_Sperafico",
+   "points": 24,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 2,
+   "nat": "BRA",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    8,
+    12,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 21,
+   "name": "Michael McDowell",
+   "wiki": "Michael_McDowell_(racing_driver)",
+   "points": 19,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 2,
+   "nat": "USA",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    12,
+    11
+   ]
+  },
+  {
+   "pos": 22,
+   "name": "Will Power",
+   "wiki": "Will_Power",
+   "points": 17,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 2,
+   "nat": "AUS",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    15,
+    10
+   ]
+  },
+  {
+   "pos": 23,
+   "name": "Ryan Dalziel",
+   "wiki": "Ryan_Dalziel",
+   "points": 13,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 1,
+   "nat": "GBR",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    9,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 24,
+   "name": "Tarso Marques",
+   "wiki": "Tarso_Marques",
+   "points": 10,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 1,
+   "nat": "BRA",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    11,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 25,
+   "name": "Michael Valiante",
+   "wiki": "Michael_Valiante",
+   "points": 10,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 1,
+   "nat": "CAN",
+   "results": [
+    null,
+    null,
+    null,
+    11,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 26,
+   "name": "Fabrizio del Monte",
+   "wiki": "Fabrizio_del_Monte",
+   "points": 10,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 2,
+   "nat": "ITA",
+   "results": [
+    16,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    16,
+    null
+   ]
+  },
+  {
+   "pos": 27,
+   "name": "Charles Zwolsman Jr.",
+   "wiki": "Charles_Zwolsman_Jr.",
+   "points": 8,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 1,
+   "nat": "NLD",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    13
+   ]
+  },
+  {
+   "pos": 28,
+   "name": "Homero Richards",
+   "wiki": "Homero_Richards",
+   "points": 5,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 1,
+   "nat": "MEX",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    16
+   ]
+  },
+  {
+   "pos": 29,
+   "name": "Jorge Goeters",
+   "wiki": "Jorge_Goeters",
+   "points": 3,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 1,
+   "nat": "MEX",
+   "results": [
+    null,
+    18,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  }
+ ],
+ "schedule": [
+  {
+   "round": 1,
+   "date": "2005-04-10",
+   "race": "Toyota Grand Prix of Long Beach",
+   "track": "Streets of Long Beach",
+   "city": "Long Beach",
+   "state": "CA",
+   "country": "USA",
+   "winner": "Sébastien Bourdais",
+   "winner_wiki": "Sébastien_Bourdais",
+   "track_type": "street",
+   "cancelled": false
+  },
+  {
+   "round": 2,
+   "date": "2005-05-22",
+   "race": "Tecate/Telmex Grand Prix of Monterrey",
+   "track": "Fundidora Park",
+   "city": "Monterrey",
+   "state": null,
+   "country": "MEX",
+   "winner": "Bruno Junqueira",
+   "winner_wiki": "Bruno_Junqueira",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 3,
+   "date": "2005-06-04",
+   "race": "Time Warner Cable Road Runner 225",
+   "track": "Milwaukee Mile",
+   "city": "West Allis",
+   "state": "WI",
+   "country": "USA",
+   "winner": "Paul Tracy",
+   "winner_wiki": "Paul_Tracy",
+   "track_type": "oval",
+   "cancelled": false
+  },
+  {
+   "round": 4,
+   "date": "2005-06-19",
+   "race": "Champ Car Grand Prix of Portland",
+   "track": "Portland International Raceway",
+   "city": "Portland",
+   "state": "OR",
+   "country": "USA",
+   "winner": "Cristiano da Matta",
+   "winner_wiki": "Cristiano_da_Matta",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 5,
+   "date": "2005-06-26",
+   "race": "Champ Car Grand Prix of Cleveland",
+   "track": "Cleveland Burke Lakefront Airport",
+   "city": "Cleveland",
+   "state": "OH",
+   "country": "USA",
+   "winner": "Paul Tracy",
+   "winner_wiki": "Paul_Tracy",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 6,
+   "date": "2005-07-10",
+   "race": "Molson Indy Toronto",
+   "track": "Exhibition Place",
+   "city": "Toronto",
+   "state": "ON",
+   "country": "CAN",
+   "winner": "Justin Wilson",
+   "winner_wiki": "Justin_Wilson_(racing_driver)",
+   "track_type": "street",
+   "cancelled": false
+  },
+  {
+   "round": 7,
+   "date": "2005-07-17",
+   "race": "West Edmonton Mall Grand Prix of Edmonton",
+   "track": "Edmonton City Centre Airport",
+   "city": "Edmonton",
+   "state": "AB",
+   "country": "CAN",
+   "winner": "Sébastien Bourdais",
+   "winner_wiki": "Sébastien_Bourdais",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 8,
+   "date": "2005-07-31",
+   "race": "Taylor Woodrow Grand Prix of San Jose",
+   "track": "Streets of San Jose",
+   "city": "San Jose",
+   "state": "CA",
+   "country": "USA",
+   "winner": "Sébastien Bourdais",
+   "winner_wiki": "Sébastien_Bourdais",
+   "track_type": "street",
+   "cancelled": false
+  },
+  {
+   "round": 9,
+   "date": "2005-08-14",
+   "race": "Centrix Financial Grand Prix of Denver",
+   "track": "Denver Civic Center",
+   "city": "Denver",
+   "state": "CO",
+   "country": "USA",
+   "winner": "Sébastien Bourdais",
+   "winner_wiki": "Sébastien_Bourdais",
+   "track_type": "street",
+   "cancelled": false
+  },
+  {
+   "round": 10,
+   "date": "2005-08-28",
+   "race": "Molson Indy Montreal",
+   "track": "Circuit Gilles Villeneuve",
+   "city": "Montreal",
+   "state": "QC",
+   "country": "CAN",
+   "winner": "Oriol Servià",
+   "winner_wiki": "Oriol_Servià",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 11,
+   "date": "2005-09-24",
+   "race": "Champ Car Hurricane Relief 400",
+   "track": "Las Vegas Motor Speedway",
+   "city": "Las Vegas",
+   "state": "NV",
+   "country": "USA",
+   "winner": "Sébastien Bourdais",
+   "winner_wiki": "Sébastien_Bourdais",
+   "track_type": "oval",
+   "cancelled": false
+  },
+  {
+   "round": 12,
+   "date": "2005-10-23",
+   "race": "Lexmark Indy 300",
+   "track": "Surfers Paradise Street Circuit",
+   "city": "Surfers Paradise",
+   "state": null,
+   "country": "AUS",
+   "winner": "Sébastien Bourdais",
+   "winner_wiki": "Sébastien_Bourdais",
+   "track_type": "street",
+   "cancelled": false
+  },
+  {
+   "round": 13,
+   "date": "2005-11-06",
+   "race": "Gran Premio Telmex-Tecate",
+   "track": "Autódromo Hermanos Rodríguez",
+   "city": "Mexico City",
+   "state": null,
+   "country": "MEX",
+   "winner": "Justin Wilson",
+   "winner_wiki": "Justin_Wilson_(racing_driver)",
+   "track_type": "road",
+   "cancelled": false
+  }
+ ],
+ "sources": [
+  "https://en.wikipedia.org/wiki/2005_Champ_Car_World_Series",
+  "https://www.wikidata.org (driver bios)"
+ ]
+}

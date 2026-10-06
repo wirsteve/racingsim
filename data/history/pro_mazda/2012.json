@@ -1,0 +1,1604 @@
+{
+ "series": "formula_pro",
+ "year": 2012,
+ "official_name": "2012 Star Mazda Championship",
+ "data_level": "full",
+ "teams_source": "teams_table",
+ "teams": [
+  {
+   "team": "Juncos Racing",
+   "team_wiki": "Juncos_Racing",
+   "owner": null,
+   "manufacturer": null,
+   "chassis": null,
+   "cars": [
+    {
+     "number": "2",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Connor De Phillippi",
+       "wiki": "Connor_De_Phillippi",
+       "rounds": null,
+       "nat": "USA"
+      }
+     ],
+     "full_time_source": "standings_starts"
+    },
+    {
+     "number": "15",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Bruno Palli",
+       "wiki": null,
+       "rounds": null,
+       "nat": "VEN"
+      }
+     ],
+     "full_time_source": "standings_starts"
+    },
+    {
+     "number": "22",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Martin Scuncio",
+       "wiki": null,
+       "rounds": null,
+       "nat": "CHL"
+      }
+     ],
+     "full_time_source": "standings_starts"
+    },
+    {
+     "number": "57",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Diego Ferreira",
+       "wiki": null,
+       "rounds": null,
+       "nat": "VEN"
+      }
+     ],
+     "full_time_source": "standings_starts"
+    }
+   ]
+  },
+  {
+   "team": "JDC MotorSports",
+   "team_wiki": "JDC_MotorSports",
+   "owner": null,
+   "manufacturer": null,
+   "chassis": null,
+   "cars": [
+    {
+     "number": "9",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Juan Piedrahita",
+       "wiki": "Juan_Piedrahita",
+       "rounds": null,
+       "nat": "COL"
+      }
+     ],
+     "full_time_source": "standings_starts"
+    },
+    {
+     "number": "16",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Lloyd Read",
+       "wiki": "Lloyd_Read",
+       "rounds": null,
+       "nat": "USA"
+      },
+      {
+       "name": "Scott Anderson",
+       "wiki": "Scott_Anderson_(racing_driver)",
+       "rounds": null,
+       "nat": "USA"
+      }
+     ],
+     "full_time_source": "standings_starts"
+    },
+    {
+     "number": "19",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Gabby Chaves",
+       "wiki": "Gabby_Chaves",
+       "rounds": null,
+       "nat": "COL"
+      }
+     ],
+     "full_time_source": "standings_starts"
+    },
+    {
+     "number": "91",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Ashley Freiberg",
+       "wiki": "Ashley_Freiberg",
+       "rounds": null,
+       "nat": "USA"
+      }
+     ],
+     "full_time_source": "standings_starts"
+    },
+    {
+     "number": "99",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Stefan Rzadzinski",
+       "wiki": "Stefan_Rzadzinski",
+       "rounds": null,
+       "nat": "CAN"
+      }
+     ],
+     "full_time_source": "standings_starts"
+    }
+   ]
+  },
+  {
+   "team": "The Racing Company",
+   "team_wiki": null,
+   "owner": null,
+   "manufacturer": null,
+   "chassis": null,
+   "cars": [
+    {
+     "number": "10",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Jérimy Daniel",
+       "wiki": null,
+       "rounds": null,
+       "nat": "CAN"
+      }
+     ],
+     "full_time_source": "standings_starts"
+    }
+   ]
+  },
+  {
+   "team": "World Speed Motorsports",
+   "team_wiki": null,
+   "owner": null,
+   "manufacturer": null,
+   "chassis": null,
+   "cars": [
+    {
+     "number": "18",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Kyle Kaiser",
+       "wiki": "Kyle_Kaiser",
+       "rounds": null,
+       "nat": "USA"
+      }
+     ],
+     "full_time_source": "standings_starts"
+    }
+   ]
+  },
+  {
+   "team": "Linares Racing",
+   "team_wiki": null,
+   "owner": null,
+   "manufacturer": null,
+   "chassis": null,
+   "cars": [
+    {
+     "number": "20",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Carlos Linares",
+       "wiki": null,
+       "rounds": null,
+       "nat": "VEN"
+      }
+     ],
+     "full_time_source": "standings_starts"
+    },
+    {
+     "number": "21",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Camilo Schmidt",
+       "wiki": null,
+       "rounds": null,
+       "nat": "VEN"
+      }
+     ],
+     "full_time_source": "standings_starts"
+    }
+   ]
+  },
+  {
+   "team": "AIM Autosport",
+   "team_wiki": null,
+   "owner": null,
+   "manufacturer": null,
+   "chassis": null,
+   "cars": [
+    {
+     "number": "23",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Walt Bowlin",
+       "wiki": null,
+       "rounds": null,
+       "nat": "USA"
+      }
+     ],
+     "full_time_source": "standings_starts"
+    },
+    {
+     "number": "66",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Zack Meyer",
+       "wiki": null,
+       "rounds": null,
+       "nat": "CAN"
+      }
+     ],
+     "full_time_source": "standings_starts"
+    },
+    {
+     "number": "72",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Larry Pegram",
+       "wiki": "Larry_Pegram",
+       "rounds": null,
+       "nat": "USA"
+      }
+     ],
+     "full_time_source": "standings_starts"
+    }
+   ]
+  },
+  {
+   "team": "Team GDT",
+   "team_wiki": null,
+   "owner": null,
+   "manufacturer": null,
+   "chassis": null,
+   "cars": [
+    {
+     "number": "33",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Ryan Tveter",
+       "wiki": "Ryan_Tveter",
+       "rounds": null,
+       "nat": "USA"
+      }
+     ],
+     "full_time_source": "standings_starts"
+    },
+    {
+     "number": "39",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Cory Lewis",
+       "wiki": null,
+       "rounds": null,
+       "nat": "USA"
+      }
+     ],
+     "full_time_source": "standings_starts"
+    },
+    {
+     "number": "51",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Alex Ardoin",
+       "wiki": null,
+       "rounds": null,
+       "nat": "USA"
+      }
+     ],
+     "full_time_source": "standings_starts"
+    },
+    {
+     "number": "53",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Andrés Méndez",
+       "wiki": "Andrés_Méndez",
+       "rounds": null,
+       "nat": "COL"
+      }
+     ],
+     "full_time_source": "standings_starts"
+    },
+    {
+     "number": "65",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "J. W. Roberts",
+       "wiki": null,
+       "rounds": null,
+       "nat": "USA"
+      }
+     ],
+     "full_time_source": "standings_starts"
+    },
+    {
+     "number": "97",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Juan Camilo Acosta",
+       "wiki": null,
+       "rounds": null,
+       "nat": "COL"
+      }
+     ],
+     "full_time_source": "standings_starts"
+    }
+   ]
+  },
+  {
+   "team": "Robertshaw Racing",
+   "team_wiki": null,
+   "owner": null,
+   "manufacturer": null,
+   "chassis": null,
+   "cars": [
+    {
+     "number": "42",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Blair Robertshaw",
+       "wiki": null,
+       "rounds": null,
+       "nat": "CAN"
+      }
+     ],
+     "full_time_source": "standings_starts"
+    }
+   ]
+  },
+  {
+   "team": "Andretti Autosport",
+   "team_wiki": "Andretti_Autosport",
+   "owner": null,
+   "manufacturer": null,
+   "chassis": null,
+   "cars": [
+    {
+     "number": "77",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Zach Veach",
+       "wiki": "Zach_Veach",
+       "rounds": null,
+       "nat": "USA"
+      }
+     ],
+     "full_time_source": "standings_starts"
+    },
+    {
+     "number": "88",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Sage Karam",
+       "wiki": "Sage_Karam",
+       "rounds": null,
+       "nat": "USA"
+      }
+     ],
+     "full_time_source": "standings_starts"
+    }
+   ]
+  },
+  {
+   "team": "Team Pelfrey",
+   "team_wiki": "Team_Pelfrey",
+   "owner": null,
+   "manufacturer": null,
+   "chassis": null,
+   "cars": [
+    {
+     "number": "81",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Petri Suvanto",
+       "wiki": "Petri_Suvanto",
+       "rounds": null,
+       "nat": "FIN"
+      }
+     ],
+     "full_time_source": "standings_starts"
+    },
+    {
+     "number": "82",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Jack Hawksworth",
+       "wiki": "Jack_Hawksworth",
+       "rounds": null,
+       "nat": "GBR"
+      },
+      {
+       "name": "Ryan Tveter",
+       "wiki": "Ryan_Tveter",
+       "rounds": null,
+       "nat": "USA"
+      }
+     ],
+     "full_time_source": "standings_starts"
+    },
+    {
+     "number": "83",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Gustavo Menezes",
+       "wiki": "Gustavo_Menezes",
+       "rounds": null,
+       "nat": "USA"
+      }
+     ],
+     "full_time_source": "standings_starts"
+    }
+   ]
+  }
+ ],
+ "standings": [
+  {
+   "pos": 1,
+   "name": "Jack Hawksworth",
+   "wiki": "Jack_Hawksworth",
+   "points": 397,
+   "wins": 8,
+   "podiums": 12,
+   "top5": 12,
+   "starts": 16,
+   "nat": "GBR",
+   "results": [
+    2,
+    1,
+    1,
+    2,
+    7,
+    15,
+    1,
+    1,
+    7,
+    1,
+    1,
+    12,
+    1,
+    2,
+    1,
+    2,
+    null
+   ]
+  },
+  {
+   "pos": 2,
+   "name": "Gabby Chaves",
+   "wiki": "Gabby_Chaves",
+   "points": 360,
+   "wins": 2,
+   "podiums": 10,
+   "top5": 15,
+   "starts": 17,
+   "nat": "COL",
+   "results": [
+    3,
+    4,
+    3,
+    5,
+    9,
+    5,
+    3,
+    4,
+    3,
+    3,
+    5,
+    2,
+    3,
+    8,
+    2,
+    1,
+    1
+   ]
+  },
+  {
+   "pos": 3,
+   "name": "Sage Karam",
+   "wiki": "Sage_Karam",
+   "points": 325,
+   "wins": 3,
+   "podiums": 10,
+   "top5": 10,
+   "starts": 17,
+   "nat": "USA",
+   "results": [
+    8,
+    7,
+    2,
+    12,
+    2,
+    1,
+    21,
+    3,
+    2,
+    2,
+    2,
+    1,
+    15,
+    1,
+    7,
+    19,
+    2
+   ]
+  },
+  {
+   "pos": 4,
+   "name": "Connor De Phillippi",
+   "wiki": "Connor_De_Phillippi",
+   "points": 325,
+   "wins": 2,
+   "podiums": 10,
+   "top5": 12,
+   "starts": 17,
+   "nat": "USA",
+   "results": [
+    1,
+    5,
+    5,
+    3,
+    1,
+    3,
+    7,
+    16,
+    6,
+    13,
+    3,
+    13,
+    2,
+    3,
+    3,
+    3,
+    3
+   ]
+  },
+  {
+   "pos": 5,
+   "name": "Petri Suvanto",
+   "wiki": "Petri_Suvanto",
+   "points": 271,
+   "wins": 0,
+   "podiums": 1,
+   "top5": 10,
+   "starts": 17,
+   "nat": "FIN",
+   "results": [
+    5,
+    3,
+    6,
+    6,
+    5,
+    4,
+    6,
+    8,
+    19,
+    4,
+    14,
+    4,
+    4,
+    4,
+    5,
+    5,
+    6
+   ]
+  },
+  {
+   "pos": 6,
+   "name": "Diego Ferreira",
+   "wiki": null,
+   "points": 235,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 7,
+   "starts": 17,
+   "nat": "VEN",
+   "results": [
+    7,
+    9,
+    9,
+    7,
+    10,
+    8,
+    5,
+    5,
+    10,
+    11,
+    16,
+    15,
+    5,
+    5,
+    4,
+    4,
+    4
+   ]
+  },
+  {
+   "pos": 7,
+   "name": "Juan Piedrahita",
+   "wiki": "Juan_Piedrahita",
+   "points": 234,
+   "wins": 0,
+   "podiums": 2,
+   "top5": 5,
+   "starts": 17,
+   "nat": "COL",
+   "results": [
+    4,
+    2,
+    8,
+    4,
+    8,
+    14,
+    4,
+    2,
+    8,
+    16,
+    9,
+    11,
+    19,
+    9,
+    8,
+    9,
+    9
+   ]
+  },
+  {
+   "pos": 8,
+   "name": "Martin Scuncio",
+   "wiki": null,
+   "points": 232,
+   "wins": 1,
+   "podiums": 2,
+   "top5": 6,
+   "starts": 16,
+   "nat": "CHL",
+   "results": [
+    6,
+    6,
+    4,
+    1,
+    4,
+    2,
+    17,
+    7,
+    4,
+    15,
+    6,
+    5,
+    18,
+    17,
+    9,
+    11,
+    null
+   ]
+  },
+  {
+   "pos": 9,
+   "name": "Gustavo Menezes",
+   "wiki": "Gustavo_Menezes",
+   "points": 208,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 1,
+   "starts": 17,
+   "nat": "USA",
+   "results": [
+    13,
+    10,
+    7,
+    16,
+    6,
+    13,
+    8,
+    6,
+    13,
+    5,
+    7,
+    6,
+    7,
+    16,
+    6,
+    8,
+    7
+   ]
+  },
+  {
+   "pos": 10,
+   "name": "Zach Veach",
+   "wiki": "Zach_Veach",
+   "points": 199,
+   "wins": 0,
+   "podiums": 2,
+   "top5": 2,
+   "starts": 17,
+   "nat": "USA",
+   "results": [
+    17,
+    11,
+    15,
+    10,
+    3,
+    6,
+    2,
+    17,
+    9,
+    17,
+    8,
+    8,
+    8,
+    6,
+    11,
+    17,
+    8
+   ]
+  },
+  {
+   "pos": 11,
+   "name": "Ashley Freiberg",
+   "wiki": null,
+   "points": 162,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 17,
+   "nat": "USA",
+   "results": [
+    9,
+    19,
+    11,
+    11,
+    15,
+    10,
+    13,
+    13,
+    15,
+    7,
+    12,
+    9,
+    6,
+    10,
+    12,
+    18,
+    11
+   ]
+  },
+  {
+   "pos": 12,
+   "name": "Bruno Palli",
+   "wiki": null,
+   "points": 146,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 1,
+   "starts": 17,
+   "nat": "VEN",
+   "results": [
+    14,
+    15,
+    13,
+    20,
+    14,
+    7,
+    10,
+    15,
+    18,
+    12,
+    10,
+    17,
+    10,
+    7,
+    20,
+    10,
+    5
+   ]
+  },
+  {
+   "pos": 13,
+   "name": "Camilo Schmidt",
+   "wiki": null,
+   "points": 129,
+   "wins": 1,
+   "podiums": 1,
+   "top5": 1,
+   "starts": 15,
+   "nat": "VEN",
+   "results": [
+    12,
+    18,
+    17,
+    9,
+    13,
+    12,
+    19,
+    18,
+    1,
+    9,
+    null,
+    null,
+    17,
+    14,
+    19,
+    6,
+    16
+   ]
+  },
+  {
+   "pos": 14,
+   "name": "Andrés Méndez",
+   "wiki": "Andrés_Méndez",
+   "points": 128,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 17,
+   "nat": "COL",
+   "results": [
+    15,
+    14,
+    14,
+    17,
+    12,
+    11,
+    18,
+    10,
+    11,
+    "DSQ",
+    13,
+    7,
+    12,
+    18,
+    15,
+    15,
+    15
+   ]
+  },
+  {
+   "pos": 15,
+   "name": "Zack Meyer",
+   "wiki": "Zack_Meyer",
+   "points": 114,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 17,
+   "nat": "CAN",
+   "results": [
+    19,
+    13,
+    19,
+    19,
+    16,
+    9,
+    9,
+    9,
+    16,
+    18,
+    15,
+    18,
+    13,
+    15,
+    18,
+    12,
+    10
+   ]
+  },
+  {
+   "pos": 16,
+   "name": "Stefan Rzadzinski",
+   "wiki": "Stefan_Rzadzinski",
+   "points": 108,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 10,
+   "nat": "CAN",
+   "results": [
+    10,
+    8,
+    10,
+    8,
+    null,
+    null,
+    11,
+    12,
+    17,
+    6,
+    null,
+    null,
+    9,
+    11,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 17,
+   "name": "Carlos Linares",
+   "wiki": null,
+   "points": 106,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 15,
+   "nat": "VEN",
+   "results": [
+    20,
+    12,
+    12,
+    14,
+    11,
+    "DNS",
+    15,
+    14,
+    14,
+    8,
+    11,
+    16,
+    16,
+    19,
+    14,
+    20,
+    null
+   ]
+  },
+  {
+   "pos": 18,
+   "name": "Ryan Tveter",
+   "wiki": "Ryan_Tveter",
+   "points": 91,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 1,
+   "starts": 13,
+   "nat": "USA",
+   "results": [
+    21,
+    21,
+    null,
+    null,
+    null,
+    null,
+    20,
+    20,
+    5,
+    10,
+    18,
+    10,
+    11,
+    12,
+    16,
+    14,
+    14
+   ]
+  },
+  {
+   "pos": 19,
+   "name": "Walt Bowlin",
+   "wiki": null,
+   "points": 55,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 11,
+   "nat": "USA",
+   "results": [
+    18,
+    17,
+    18,
+    18,
+    null,
+    null,
+    16,
+    19,
+    null,
+    null,
+    null,
+    null,
+    14,
+    13,
+    17,
+    16,
+    17
+   ]
+  },
+  {
+   "pos": 20,
+   "name": "Jérimy Daniel",
+   "wiki": null,
+   "points": 49,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 8,
+   "nat": "CAN",
+   "results": [
+    11,
+    20,
+    20,
+    15,
+    null,
+    null,
+    14,
+    11,
+    null,
+    null,
+    17,
+    14,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 21,
+   "name": "Larry Pegram",
+   "wiki": null,
+   "points": 23,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 4,
+   "nat": "USA",
+   "results": [
+    16,
+    16,
+    16,
+    13,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 22,
+   "name": "Blair Robertshaw",
+   "wiki": null,
+   "points": 16,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 2,
+   "nat": "CAN",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    12,
+    14,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 23,
+   "name": "J. W. Roberts",
+   "wiki": null,
+   "points": 0,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 0,
+   "nat": "USA",
+   "results": [
+    "DNS",
+    "DNS",
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 24,
+   "name": "Ineligible drivers",
+   "wiki": null,
+   "points": null,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 0,
+   "nat": null,
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 25,
+   "name": "Alex Ardoin",
+   "wiki": null,
+   "points": 0,
+   "wins": 0,
+   "podiums": 1,
+   "top5": 2,
+   "starts": 2,
+   "nat": "USA",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    4,
+    3,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 26,
+   "name": "Lloyd Read",
+   "wiki": "Lloyd_Read",
+   "points": 0,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 2,
+   "nat": "GBR",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    10,
+    7,
+    null
+   ]
+  },
+  {
+   "pos": 27,
+   "name": "Corey Lewis",
+   "wiki": "Corey_Lewis_(racing_driver)",
+   "points": 0,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 2,
+   "nat": "USA",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    12,
+    21,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 28,
+   "name": "Scott Anderson",
+   "wiki": "Scott_Anderson_(racing_driver)",
+   "points": 0,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 1,
+   "nat": "USA",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    12
+   ]
+  },
+  {
+   "pos": 29,
+   "name": "Kyle Kaiser",
+   "wiki": "Kyle_Kaiser",
+   "points": 0,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 2,
+   "nat": "USA",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    13,
+    13,
+    null
+   ]
+  },
+  {
+   "pos": 30,
+   "name": "Juan Camilo Acosta",
+   "wiki": null,
+   "points": 0,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 1,
+   "nat": "COL",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    13
+   ]
+  }
+ ],
+ "schedule": [
+  {
+   "round": 1,
+   "date": "2012-03-24",
+   "race": null,
+   "track": "Streets of St. Petersburg",
+   "city": "St. Petersburg",
+   "state": "FL",
+   "country": "USA",
+   "winner": "Connor De Phillippi",
+   "winner_wiki": "Connor_De_Phillippi",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 2,
+   "date": "2012-03-25",
+   "race": null,
+   "track": "Streets of St. Petersburg",
+   "city": "St. Petersburg",
+   "state": "FL",
+   "country": "USA",
+   "winner": "Jack Hawksworth",
+   "winner_wiki": "Jack_Hawksworth",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 3,
+   "date": "2012-04-01",
+   "race": null,
+   "track": "Barber Motorsports Park",
+   "city": "Birmingham",
+   "state": "AL",
+   "country": "USA",
+   "winner": "Jack Hawksworth",
+   "winner_wiki": "Jack_Hawksworth",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 4,
+   "date": "2012-04-01",
+   "race": null,
+   "track": "Barber Motorsports Park",
+   "city": "Birmingham",
+   "state": "AL",
+   "country": "USA",
+   "winner": "Martin Scuncio",
+   "winner_wiki": null,
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 5,
+   "date": "2012-05-26",
+   "race": null,
+   "track": "Lucas Oil Raceway at Indianapolis",
+   "city": "Brownsburg",
+   "state": "IN",
+   "country": "USA",
+   "winner": "Connor De Phillippi",
+   "winner_wiki": "Connor_De_Phillippi",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 6,
+   "date": "2012-06-23",
+   "race": null,
+   "track": "Iowa Speedway",
+   "city": "Newton",
+   "state": "IA",
+   "country": "USA",
+   "winner": "Sage Karam",
+   "winner_wiki": "Sage_Karam",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 7,
+   "date": "2012-07-07",
+   "race": null,
+   "track": "Streets of Toronto",
+   "city": "Toronto",
+   "state": "ON",
+   "country": "CAN",
+   "winner": "Jack Hawksworth",
+   "winner_wiki": "Jack_Hawksworth",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 8,
+   "date": "2012-07-08",
+   "race": null,
+   "track": "Streets of Toronto",
+   "city": "Toronto",
+   "state": "ON",
+   "country": "CAN",
+   "winner": "Jack Hawksworth",
+   "winner_wiki": "Jack_Hawksworth",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 9,
+   "date": "2012-07-21",
+   "race": null,
+   "track": "Edmonton City Centre Airport",
+   "city": "Edmonton",
+   "state": "AB",
+   "country": "CAN",
+   "winner": "Camilo Schmidt",
+   "winner_wiki": null,
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 10,
+   "date": "2012-07-22",
+   "race": null,
+   "track": "Edmonton City Centre Airport",
+   "city": "Edmonton",
+   "state": "AB",
+   "country": "CAN",
+   "winner": "Jack Hawksworth",
+   "winner_wiki": "Jack_Hawksworth",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 11,
+   "date": "2012-08-04",
+   "race": null,
+   "track": "Circuit Trois-Rivières",
+   "city": "Trois-Rivières",
+   "state": "QC",
+   "country": "CAN",
+   "winner": "Jack Hawksworth",
+   "winner_wiki": "Jack_Hawksworth",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 12,
+   "date": "2012-08-05",
+   "race": null,
+   "track": "Circuit Trois-Rivières",
+   "city": "Trois-Rivières",
+   "state": "QC",
+   "country": "CAN",
+   "winner": "Sage Karam",
+   "winner_wiki": "Sage_Karam",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 13,
+   "date": "2012-09-01",
+   "race": null,
+   "track": "Streets of Baltimore",
+   "city": "Baltimore",
+   "state": "MD",
+   "country": "USA",
+   "winner": "Jack Hawksworth",
+   "winner_wiki": "Jack_Hawksworth",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 14,
+   "date": "2012-09-02",
+   "race": null,
+   "track": "Streets of Baltimore",
+   "city": "Baltimore",
+   "state": "MD",
+   "country": "USA",
+   "winner": "Sage Karam",
+   "winner_wiki": "Sage_Karam",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 15,
+   "date": "2012-09-08",
+   "race": null,
+   "track": "Mazda Raceway Laguna Seca",
+   "city": "Monterey",
+   "state": "CA",
+   "country": "USA",
+   "winner": "Jack Hawksworth",
+   "winner_wiki": "Jack_Hawksworth",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 16,
+   "date": "2012-09-09",
+   "race": null,
+   "track": "Mazda Raceway Laguna Seca",
+   "city": "Monterey",
+   "state": "CA",
+   "country": "USA",
+   "winner": "Gabby Chaves",
+   "winner_wiki": "Gabby_Chaves",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 17,
+   "date": "2012-10-19",
+   "race": null,
+   "track": "Road Atlanta",
+   "city": "Braselton",
+   "state": "GA",
+   "country": "USA",
+   "winner": "Gabby Chaves",
+   "winner_wiki": "Gabby_Chaves",
+   "track_type": null,
+   "cancelled": false
+  }
+ ],
+ "sources": [
+  "https://en.wikipedia.org/wiki/2012_Star_Mazda_Championship",
+  "https://www.wikidata.org (driver bios)"
+ ]
+}

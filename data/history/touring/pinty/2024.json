@@ -1,0 +1,759 @@
+{
+ "series": "pinty",
+ "year": 2024,
+ "official_name": "NASCAR Canada Series",
+ "data_level": "full",
+ "champion": {
+  "name": "Marc-Antoine Camirand",
+  "wiki": "Marc-Antoine Camirand"
+ },
+ "teams": [],
+ "standings": [
+  {
+   "pos": 1,
+   "name": "Marc-Antoine Camirand",
+   "wiki": "Marc-Antoine Camirand",
+   "points": 548,
+   "wins": 4,
+   "starts": 13,
+   "top5": 9,
+   "top10": 12
+  },
+  {
+   "pos": 2,
+   "name": "Kevin Lacroix",
+   "wiki": "Kevin Lacroix (racing driver)",
+   "points": 538,
+   "wins": 6,
+   "starts": 13,
+   "top5": 10,
+   "top10": 11
+  },
+  {
+   "pos": 3,
+   "name": "Andrew Ranger",
+   "wiki": "Andrew Ranger",
+   "points": 513,
+   "wins": 3,
+   "starts": 13,
+   "top5": 7,
+   "top10": 11
+  },
+  {
+   "pos": 4,
+   "name": "D.J. Kennington",
+   "wiki": "D. J. Kennington",
+   "points": 479,
+   "wins": 0,
+   "starts": 13,
+   "top5": 5,
+   "top10": 10
+  },
+  {
+   "pos": 5,
+   "name": "L.P. Dumoulin",
+   "wiki": "Louis-Philippe Dumoulin",
+   "points": 461,
+   "wins": 0,
+   "starts": 13,
+   "top5": 7,
+   "top10": 10
+  },
+  {
+   "pos": 6,
+   "name": "Jason Hathaway",
+   "wiki": "Jason Hathaway",
+   "points": 433,
+   "wins": 0,
+   "starts": 13,
+   "top5": 3,
+   "top10": 6
+  },
+  {
+   "pos": 7,
+   "name": "Larry Jackson",
+   "wiki": "Larry Jackson (racing driver)",
+   "points": 392,
+   "wins": 0,
+   "starts": 12,
+   "top5": 0,
+   "top10": 7
+  },
+  {
+   "pos": 8,
+   "name": "Glenn Styres",
+   "wiki": "Glenn Styres",
+   "points": 372,
+   "wins": 0,
+   "starts": 13,
+   "top5": 0,
+   "top10": 1
+  },
+  {
+   "pos": 9,
+   "name": "Donald Theetge",
+   "wiki": "Donald Theetge",
+   "points": 358,
+   "wins": 0,
+   "starts": 10,
+   "top5": 4,
+   "top10": 7
+  },
+  {
+   "pos": 10,
+   "name": "Thomas Nepveu",
+   "wiki": "Thomas Nepveu",
+   "points": 302,
+   "wins": 0,
+   "starts": 10,
+   "top5": 1,
+   "top10": 3
+  },
+  {
+   "pos": 11,
+   "name": "Alex Labbé",
+   "wiki": "Alex Labbé",
+   "points": 281,
+   "wins": 0,
+   "starts": 8,
+   "top5": 4,
+   "top10": 6
+  },
+  {
+   "pos": 12,
+   "name": "Steve Côté",
+   "wiki": null,
+   "points": 257,
+   "wins": 0,
+   "starts": 8,
+   "top5": 0,
+   "top10": 4
+  },
+  {
+   "pos": 13,
+   "name": "Alex Guenette",
+   "wiki": "Alex Guenette",
+   "points": 214,
+   "wins": 0,
+   "starts": 6,
+   "top5": 4,
+   "top10": 4
+  },
+  {
+   "pos": 14,
+   "name": "J. P. Bergeron",
+   "wiki": "Jean-Philippe Bergeron (racing driver)",
+   "points": 184,
+   "wins": 0,
+   "starts": 6,
+   "top5": 0,
+   "top10": 3
+  },
+  {
+   "pos": 15,
+   "name": "Danny Chisholm",
+   "wiki": null,
+   "points": 150,
+   "wins": 0,
+   "starts": 5,
+   "top5": 1,
+   "top10": 2
+  },
+  {
+   "pos": 16,
+   "name": "Simon Dion-Viens",
+   "wiki": null,
+   "points": 138,
+   "wins": 0,
+   "starts": 4,
+   "top5": 0,
+   "top10": 3
+  },
+  {
+   "pos": 17,
+   "name": "Daniel Bois",
+   "wiki": "Daniel Bois",
+   "points": 135,
+   "wins": 0,
+   "starts": 5,
+   "top5": 0,
+   "top10": 2
+  },
+  {
+   "pos": 18,
+   "name": "Alex Tagliani",
+   "wiki": "Alex Tagliani",
+   "points": 134,
+   "wins": 0,
+   "starts": 4,
+   "top5": 0,
+   "top10": 3
+  },
+  {
+   "pos": 19,
+   "name": "Maxime Gauvreau",
+   "wiki": null,
+   "points": 130,
+   "wins": 0,
+   "starts": 4,
+   "top5": 0,
+   "top10": 1
+  },
+  {
+   "pos": 20,
+   "name": "Dexter Stacey",
+   "wiki": "Dexter Stacey",
+   "points": 123,
+   "wins": 0,
+   "starts": 5,
+   "top5": 0,
+   "top10": 1
+  },
+  {
+   "pos": 21,
+   "name": "Kyle Steckly",
+   "wiki": "Kyle Steckly",
+   "points": 121,
+   "wins": 0,
+   "starts": 3,
+   "top5": 3,
+   "top10": 3
+  },
+  {
+   "pos": 22,
+   "name": "Dave Coursol",
+   "wiki": "Dave Coursol",
+   "points": 117,
+   "wins": 0,
+   "starts": 4,
+   "top5": 0,
+   "top10": 1
+  },
+  {
+   "pos": 23,
+   "name": "Frederik Ladouceur",
+   "wiki": null,
+   "points": 115,
+   "wins": 0,
+   "starts": 4,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 24,
+   "name": "Bryan Cathcart",
+   "wiki": null,
+   "points": 113,
+   "wins": 0,
+   "starts": 4,
+   "top5": 0,
+   "top10": 1
+  },
+  {
+   "pos": 25,
+   "name": "Sam Fellows",
+   "wiki": "Sam Fellows",
+   "points": 108,
+   "wins": 0,
+   "starts": 4,
+   "top5": 1,
+   "top10": 1
+  },
+  {
+   "pos": 26,
+   "name": "Domenic Scrivo",
+   "wiki": "Domenic Scrivo",
+   "points": 103,
+   "wins": 0,
+   "starts": 4,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 27,
+   "name": "Brandon McFarlane",
+   "wiki": null,
+   "points": 100,
+   "wins": 0,
+   "starts": 3,
+   "top5": 0,
+   "top10": 1
+  },
+  {
+   "pos": 28,
+   "name": "Raphaël Lessard",
+   "wiki": "Raphaël Lessard",
+   "points": 99,
+   "wins": 0,
+   "starts": 3,
+   "top5": 1,
+   "top10": 2
+  },
+  {
+   "pos": 29,
+   "name": "Mathieu Kingsbury",
+   "wiki": "Mathieu Kingsbury",
+   "points": 98,
+   "wins": 0,
+   "starts": 3,
+   "top5": 1,
+   "top10": 1
+  },
+  {
+   "pos": 30,
+   "name": "Simon Charbonneau",
+   "wiki": "Simon Charbonneau",
+   "points": 94,
+   "wins": 0,
+   "starts": 4,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 31,
+   "name": "Josh Collins",
+   "wiki": null,
+   "points": 93,
+   "wins": 0,
+   "starts": 3,
+   "top5": 0,
+   "top10": 1
+  },
+  {
+   "pos": 32,
+   "name": "Sara Thorne",
+   "wiki": null,
+   "points": 93,
+   "wins": 0,
+   "starts": 3,
+   "top5": 0,
+   "top10": 1
+  },
+  {
+   "pos": 33,
+   "name": "Louis-Philippe Montour",
+   "wiki": null,
+   "points": 87,
+   "wins": 0,
+   "starts": 3,
+   "top5": 0,
+   "top10": 1
+  },
+  {
+   "pos": 34,
+   "name": "Mark Dilley",
+   "wiki": "Mark Dilley",
+   "points": 87,
+   "wins": 0,
+   "starts": 3,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 35,
+   "name": "Serge Bourdeau",
+   "wiki": null,
+   "points": 84,
+   "wins": 0,
+   "starts": 3,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 36,
+   "name": "Gary Klutt",
+   "wiki": "Gary Klutt",
+   "points": 79,
+   "wins": 0,
+   "starts": 2,
+   "top5": 1,
+   "top10": 2
+  },
+  {
+   "pos": 37,
+   "name": "Benoit Couture",
+   "wiki": null,
+   "points": 72,
+   "wins": 0,
+   "starts": 3,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 38,
+   "name": "Herby Drescher",
+   "wiki": "Herby Drescher",
+   "points": 70,
+   "wins": 0,
+   "starts": 3,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 39,
+   "name": "Cayden Lapcevich",
+   "wiki": "Cayden Lapcevich",
+   "points": 69,
+   "wins": 0,
+   "starts": 2,
+   "top5": 0,
+   "top10": 1
+  },
+  {
+   "pos": 40,
+   "name": "Jamie Krzysik",
+   "wiki": null,
+   "points": 69,
+   "wins": 0,
+   "starts": 2,
+   "top5": 0,
+   "top10": 1
+  },
+  {
+   "pos": 41,
+   "name": "Ryan Klutt",
+   "wiki": null,
+   "points": 67,
+   "wins": 0,
+   "starts": 2,
+   "top5": 0,
+   "top10": 1
+  },
+  {
+   "pos": 42,
+   "name": "Will Larue",
+   "wiki": "Will Larue",
+   "points": 65,
+   "wins": 0,
+   "starts": 2,
+   "top5": 1,
+   "top10": 1
+  },
+  {
+   "pos": 43,
+   "name": "Brent Wheller",
+   "wiki": null,
+   "points": 59,
+   "wins": 0,
+   "starts": 2,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 44,
+   "name": "Peter Klutt",
+   "wiki": null,
+   "points": 58,
+   "wins": 0,
+   "starts": 2,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 45,
+   "name": "Matthew Scannell",
+   "wiki": null,
+   "points": 47,
+   "wins": 0,
+   "starts": 2,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 46,
+   "name": "David Thorndyke",
+   "wiki": null,
+   "points": 43,
+   "wins": 0,
+   "starts": 2,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 47,
+   "name": "Ken Schrader",
+   "wiki": "Ken Schrader",
+   "points": 41,
+   "wins": 0,
+   "starts": 1,
+   "top5": 1,
+   "top10": 1
+  },
+  {
+   "pos": 48,
+   "name": "Chase Briscoe",
+   "wiki": "Chase Briscoe",
+   "points": 40,
+   "wins": 0,
+   "starts": 1,
+   "top5": 1,
+   "top10": 1
+  },
+  {
+   "pos": 49,
+   "name": "Wallace Stacey",
+   "wiki": null,
+   "points": 37,
+   "wins": 0,
+   "starts": 2,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 50,
+   "name": "Justin Arseneau",
+   "wiki": null,
+   "points": 35,
+   "wins": 0,
+   "starts": 2,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 51,
+   "name": "Shantel Kalika",
+   "wiki": null,
+   "points": 34,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 1
+  },
+  {
+   "pos": 52,
+   "name": "Jocelyn Fecteau",
+   "wiki": null,
+   "points": 34,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 1
+  },
+  {
+   "pos": 53,
+   "name": "J. F. Dumoulin",
+   "wiki": "Jean-François Dumoulin",
+   "points": 34,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 54,
+   "name": "Michael Goudie",
+   "wiki": "Mike Goudie",
+   "points": 34,
+   "wins": 0,
+   "starts": 2,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 55,
+   "name": "Matthew Shirley",
+   "wiki": null,
+   "points": 33,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 56,
+   "name": "Trevor Monaghan",
+   "wiki": null,
+   "points": 31,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 57,
+   "name": "Darryl Timmers",
+   "wiki": null,
+   "points": 31,
+   "wins": 0,
+   "starts": 2,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 58,
+   "name": "Malcolm Strachan",
+   "wiki": null,
+   "points": 28,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 59,
+   "name": "Ryan Dyson",
+   "wiki": null,
+   "points": 28,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 60,
+   "name": "Amber Balcaen",
+   "wiki": "Amber Balcaen",
+   "points": 25,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 61,
+   "name": "Martin Goulet Jr.",
+   "wiki": "Martin Goulet Jr.",
+   "points": 22,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  }
+ ],
+ "schedule": [
+  {
+   "round": 1,
+   "date": "2024-05-19",
+   "race": "ASSA ABLOY Accentra 200",
+   "track": "Canadian Tire Motorsport Park",
+   "city": "Bowmanville",
+   "state": "ON",
+   "winner": "Marc-Antoine Camirand",
+   "winner_wiki": "Marc-Antoine Camirand"
+  },
+  {
+   "round": 2,
+   "date": "2024-06-01",
+   "race": "Bud Light 300",
+   "track": "Autodrome Chaudière",
+   "city": "Vallée-Jonction",
+   "state": "QC",
+   "winner": "Andrew Ranger",
+   "winner_wiki": "Andrew Ranger"
+  },
+  {
+   "round": 3,
+   "date": "2024-06-22",
+   "race": "PRO•LINE 250 Presented by NL Chevrolet Dealers",
+   "track": "Eastbound International Speedway",
+   "city": "Avondale",
+   "state": "NL",
+   "winner": "Andrew Ranger",
+   "winner_wiki": "Andrew Ranger"
+  },
+  {
+   "round": 4,
+   "date": "2024-06-29",
+   "race": "PRO•LINE 150",
+   "track": "Riverside International Speedway",
+   "city": "Antigonish",
+   "state": "NS",
+   "winner": "Kevin Lacroix",
+   "winner_wiki": "Kevin Lacroix (racing driver)"
+  },
+  {
+   "round": 5,
+   "date": "2024-06-29",
+   "race": "Choko 150",
+   "track": "Riverside International Speedway",
+   "city": "Antigonish",
+   "state": "NS",
+   "winner": "Kevin Lacroix",
+   "winner_wiki": "Kevin Lacroix (racing driver)"
+  },
+  {
+   "round": 6,
+   "date": "2024-07-11",
+   "race": "Freshtone Dirt Classic",
+   "track": "Ohsweken Speedway",
+   "city": "Ohsweken",
+   "state": "ON",
+   "winner": "Marc-Antoine Camirand",
+   "winner_wiki": "Marc-Antoine Camirand"
+  },
+  {
+   "round": 7,
+   "date": "2024-07-20",
+   "race": "Leland Industries 250",
+   "track": "Sutherland Automotive Speedway",
+   "city": "Saskatoon",
+   "state": "SK",
+   "winner": "Marc-Antoine Camirand",
+   "winner_wiki": "Marc-Antoine Camirand"
+  },
+  {
+   "round": 8,
+   "date": "2024-07-27",
+   "race": "NAPA 300",
+   "track": "Edmonton International Raceway",
+   "city": "Wetaskiwin",
+   "state": "AB",
+   "winner": "Kevin Lacroix",
+   "winner_wiki": "Kevin Lacroix (racing driver)"
+  },
+  {
+   "round": 9,
+   "date": "2024-08-11",
+   "race": "Les 60 Tours Rousseau Metal Presented by Groupe Olivier & Prolon Controls",
+   "track": "Circuit Trois-Rivières",
+   "city": "Trois-Rivières",
+   "state": "QC",
+   "winner": "Marc-Antoine Camirand",
+   "winner_wiki": "Marc-Antoine Camirand"
+  },
+  {
+   "round": 10,
+   "date": "2024-08-24",
+   "race": "Evirum 100",
+   "track": "Circuit ICAR",
+   "city": "Mirabel",
+   "state": "QC",
+   "winner": "Andrew Ranger",
+   "winner_wiki": "Andrew Ranger"
+  },
+  {
+   "round": 11,
+   "date": "2024-09-01",
+   "race": "WeatherTech 200",
+   "track": "Canadian Tire Motorsport Park",
+   "city": "Bowmanville",
+   "state": "ON",
+   "winner": "Kevin Lacroix",
+   "winner_wiki": "Kevin Lacroix (racing driver)"
+  },
+  {
+   "round": 12,
+   "date": "2024-09-08",
+   "race": "NASCAR Canada Series 250",
+   "track": "Delaware Speedway",
+   "city": "Delaware",
+   "state": "ON",
+   "winner": "Kevin Lacroix",
+   "winner_wiki": "Kevin Lacroix (racing driver)"
+  },
+  {
+   "round": 13,
+   "date": "2024-09-22",
+   "race": "XPN 250",
+   "track": "Autodrome Montmagny Speedway",
+   "city": "Montmagny",
+   "state": "QC",
+   "winner": "Kevin Lacroix",
+   "winner_wiki": "Kevin Lacroix (racing driver)"
+  }
+ ],
+ "sources": [
+  "https://en.wikipedia.org/w/index.php?title=2024_NASCAR_Canada_Series&oldid=1377096592",
+  "https://en.wikipedia.org/w/index.php?title=NASCAR_Canada_Series&oldid=1374583241"
+ ]
+}

@@ -1,0 +1,921 @@
+{
+ "series": "formula_lights",
+ "year": 2014,
+ "official_name": "2014 Indy Lights season",
+ "era": "IRL feeder (Infiniti Pro / Indy Pro / Indy Lights / Indy NXT)",
+ "data_level": "full",
+ "teams_source": "teams_table",
+ "teams": [
+  {
+   "team": "Andretti Autosport",
+   "team_wiki": "Andretti_Autosport",
+   "owner": null,
+   "manufacturer": null,
+   "chassis": "Dallara IPS/Infiniti V8",
+   "cars": [
+    {
+     "number": "26",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Zach Veach",
+       "wiki": "Zach_Veach",
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "83",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Matthew Brabham",
+       "wiki": "Matthew_Brabham",
+       "rounds": "All",
+       "nat": "AUS"
+      }
+     ]
+    }
+   ],
+   "chassis_note": "spec chassis (from page text)"
+  },
+  {
+   "team": "Belardi Auto Racing",
+   "team_wiki": "Belardi_Auto_Racing",
+   "owner": null,
+   "manufacturer": null,
+   "chassis": "Dallara IPS/Infiniti V8",
+   "cars": [
+    {
+     "number": "0",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Chase Austin",
+       "wiki": "Chase_Austin",
+       "rounds": "7",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "4",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Alexandre Baron",
+       "wiki": "Alexandre_Baron",
+       "rounds": "1–7, 9",
+       "nat": "FRA"
+      },
+      {
+       "name": "Axcil Jefferies",
+       "wiki": "Axcil_Jefferies",
+       "rounds": "10–11",
+       "nat": "ZWE"
+      },
+      {
+       "name": "Ryan Phinny",
+       "wiki": "Ryan_Phinny",
+       "rounds": "13–14",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "5",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Gabby Chaves",
+       "wiki": "Gabby_Chaves",
+       "rounds": "All",
+       "nat": "COL"
+      }
+     ]
+    }
+   ],
+   "chassis_note": "spec chassis (from page text)"
+  },
+  {
+   "team": "Bryan Herta Autosport Jeffrey Mark Motorsport",
+   "team_wiki": "Bryan_Herta_Autosport",
+   "owner": null,
+   "manufacturer": null,
+   "chassis": "Dallara IPS/Infiniti V8",
+   "cars": [
+    {
+     "number": "28",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Lloyd Read",
+       "wiki": "Lloyd_Read",
+       "rounds": "1–6",
+       "nat": "GBR"
+      },
+      {
+       "name": "Ryan Phinny",
+       "wiki": "Ryan_Phinny",
+       "rounds": "9–11",
+       "nat": "USA"
+      }
+     ]
+    }
+   ],
+   "chassis_note": "spec chassis (from page text)"
+  },
+  {
+   "team": "Fan Force United",
+   "team_wiki": "Fan_Force_United",
+   "owner": null,
+   "manufacturer": null,
+   "chassis": "Dallara IPS/Infiniti V8",
+   "cars": [
+    {
+     "number": "24",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Scott Anderson",
+       "wiki": "Scott_Anderson_(racing_driver)",
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    }
+   ],
+   "chassis_note": "spec chassis (from page text)"
+  },
+  {
+   "team": "MDL Racing",
+   "team_wiki": "MDL_Racing",
+   "owner": null,
+   "manufacturer": null,
+   "chassis": "Dallara IPS/Infiniti V8",
+   "cars": [
+    {
+     "number": "56",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Matthew Di Leo",
+       "wiki": "Matthew_Di_Leo",
+       "rounds": "9",
+       "nat": "CAN"
+      }
+     ]
+    }
+   ],
+   "chassis_note": "spec chassis (from page text)"
+  },
+  {
+   "team": "Schmidt Peterson Motorsports",
+   "team_wiki": "Schmidt_Peterson_Motorsports",
+   "owner": null,
+   "manufacturer": null,
+   "chassis": "Dallara IPS/Infiniti V8",
+   "cars": [
+    {
+     "number": "7",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Luiz Razia",
+       "wiki": "Luiz_Razia",
+       "rounds": "All",
+       "nat": "BRA"
+      }
+     ]
+    },
+    {
+     "number": "10",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Juan Pablo García",
+       "wiki": "Juan_Pablo_García_(racing_driver)",
+       "rounds": "All",
+       "nat": "MEX"
+      }
+     ]
+    },
+    {
+     "number": "42",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Jack Harvey",
+       "wiki": "Jack_Harvey_(racing_driver)",
+       "rounds": "All",
+       "nat": "GBR"
+      }
+     ]
+    },
+    {
+     "number": "77",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Juan Piedrahita",
+       "wiki": "Juan_Piedrahita",
+       "rounds": "All",
+       "nat": "COL"
+      }
+     ]
+    }
+   ],
+   "chassis_note": "spec chassis (from page text)"
+  },
+  {
+   "team": "Team Moore Racing",
+   "team_wiki": "Team_Moore_Racing",
+   "owner": null,
+   "manufacturer": null,
+   "chassis": "Dallara IPS/Infiniti V8",
+   "cars": [
+    {
+     "number": "2",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Zack Meyer",
+       "wiki": "Zack_Meyer",
+       "rounds": "1–7, 9–11, 13–14",
+       "nat": "CAN"
+      }
+     ]
+    },
+    {
+     "number": "22",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Vittorio Ghirelli",
+       "wiki": "Vittorio_Ghirelli",
+       "rounds": "1–4",
+       "nat": "ITA"
+      },
+      {
+       "name": "Jimmy Simpson",
+       "wiki": "Jimmy_Simpson_(racing_driver)",
+       "rounds": "10–11",
+       "nat": "USA"
+      }
+     ]
+    }
+   ],
+   "chassis_note": "spec chassis (from page text)"
+  }
+ ],
+ "standings": [
+  {
+   "pos": 1,
+   "name": "Gabby Chaves",
+   "wiki": "Gabby_Chaves",
+   "points": 547,
+   "wins": 4,
+   "podiums": 11,
+   "top5": 11,
+   "starts": 14,
+   "nat": "COL",
+   "results": [
+    2,
+    1,
+    6,
+    1,
+    11,
+    8,
+    1,
+    1,
+    2,
+    2,
+    3,
+    3,
+    2,
+    2
+   ]
+  },
+  {
+   "pos": 2,
+   "name": "Jack Harvey",
+   "wiki": "Jack_Harvey_(racing_driver)",
+   "points": 547,
+   "wins": 4,
+   "podiums": 10,
+   "top5": 14,
+   "starts": 14,
+   "nat": "GBR",
+   "results": [
+    3,
+    4,
+    3,
+    5,
+    3,
+    2,
+    5,
+    3,
+    3,
+    1,
+    1,
+    5,
+    1,
+    1
+   ]
+  },
+  {
+   "pos": 3,
+   "name": "Zach Veach",
+   "wiki": "Zach_Veach",
+   "points": 520,
+   "wins": 3,
+   "podiums": 9,
+   "top5": 11,
+   "starts": 14,
+   "nat": "USA",
+   "results": [
+    1,
+    2,
+    1,
+    3,
+    9,
+    7,
+    3,
+    2,
+    5,
+    4,
+    2,
+    1,
+    7,
+    3
+   ]
+  },
+  {
+   "pos": 4,
+   "name": "Matthew Brabham",
+   "wiki": "Matthew_Brabham",
+   "points": 424,
+   "wins": 1,
+   "podiums": 4,
+   "top5": 10,
+   "starts": 14,
+   "nat": "AUS",
+   "results": [
+    9,
+    3,
+    4,
+    12,
+    1,
+    4,
+    2,
+    5,
+    4,
+    5,
+    12,
+    2,
+    6,
+    5
+   ]
+  },
+  {
+   "pos": 5,
+   "name": "Luiz Razia",
+   "wiki": "Luiz_Razia",
+   "points": 403,
+   "wins": 1,
+   "podiums": 5,
+   "top5": 10,
+   "starts": 14,
+   "nat": "BRA",
+   "results": [
+    5,
+    5,
+    2,
+    4,
+    2,
+    1,
+    4,
+    8,
+    12,
+    3,
+    11,
+    8,
+    3,
+    4
+   ]
+  },
+  {
+   "pos": 6,
+   "name": "Juan Pablo García",
+   "wiki": "Juan_Pablo_García_(racing_driver)",
+   "points": 372,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 2,
+   "starts": 14,
+   "nat": "MEX",
+   "results": [
+    7,
+    8,
+    7,
+    6,
+    6,
+    6,
+    6,
+    4,
+    8,
+    10,
+    6,
+    7,
+    4,
+    9
+   ]
+  },
+  {
+   "pos": 7,
+   "name": "Juan Piedrahita",
+   "wiki": "Juan_Piedrahita",
+   "points": 337,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 2,
+   "starts": 14,
+   "nat": "COL",
+   "results": [
+    6,
+    7,
+    10,
+    7,
+    8,
+    11,
+    8,
+    7,
+    7,
+    9,
+    5,
+    6,
+    5,
+    7
+   ]
+  },
+  {
+   "pos": 8,
+   "name": "Scott Anderson",
+   "wiki": "Scott_Anderson_(racing_driver)",
+   "points": 309,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 2,
+   "starts": 14,
+   "nat": "USA",
+   "results": [
+    12,
+    9,
+    12,
+    10,
+    7,
+    5,
+    9,
+    6,
+    9,
+    8,
+    9,
+    4,
+    8,
+    10
+   ]
+  },
+  {
+   "pos": 9,
+   "name": "Zack Meyer",
+   "wiki": "Zack_Meyer",
+   "points": 274,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 1,
+   "starts": 12,
+   "nat": "CAN",
+   "results": [
+    8,
+    10,
+    9,
+    8,
+    4,
+    10,
+    10,
+    null,
+    10,
+    7,
+    10,
+    null,
+    9,
+    8
+   ]
+  },
+  {
+   "pos": 10,
+   "name": "Alexandre Baron",
+   "wiki": "Alexandre_Baron",
+   "points": 261,
+   "wins": 1,
+   "podiums": 3,
+   "top5": 5,
+   "starts": 8,
+   "nat": "FRA",
+   "results": [
+    10,
+    6,
+    5,
+    2,
+    5,
+    3,
+    7,
+    null,
+    1,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 11,
+   "name": "Lloyd Read",
+   "wiki": "Lloyd_Read",
+   "points": 101,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 6,
+   "nat": "GBR",
+   "results": [
+    11,
+    11,
+    11,
+    9,
+    10,
+    9,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 12,
+   "name": "Ryan Phinny",
+   "wiki": "Ryan_Phinny",
+   "points": 91,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 5,
+   "nat": "USA",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    11,
+    12,
+    7,
+    null,
+    10,
+    6
+   ]
+  },
+  {
+   "pos": 13,
+   "name": "Vittorio Ghirelli",
+   "wiki": "Vittorio_Ghirelli",
+   "points": 90,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 1,
+   "starts": 4,
+   "nat": "ITA",
+   "results": [
+    4,
+    12,
+    8,
+    11,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 14,
+   "name": "Axcil Jefferies",
+   "wiki": "Axcil_Jefferies",
+   "points": 60,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 1,
+   "starts": 2,
+   "nat": "ZWE",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    6,
+    4,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 15,
+   "name": "Jimmy Simpson",
+   "wiki": "Jimmy_Simpson_(racing_driver)",
+   "points": 42,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 2,
+   "nat": "USA",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    11,
+    8,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 16,
+   "name": "Matthew Di Leo",
+   "wiki": "Matthew_Di_Leo",
+   "points": 28,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 1,
+   "nat": "CAN",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    6,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 17,
+   "name": "Chase Austin",
+   "wiki": "Chase_Austin",
+   "points": 1,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 1,
+   "nat": "USA",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    11,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  }
+ ],
+ "schedule": [
+  {
+   "round": 1,
+   "date": "2014-03-30",
+   "race": "St. Petersburg 100",
+   "track": "Streets of St. Petersburg",
+   "city": "St. Petersburg",
+   "state": "FL",
+   "country": "USA",
+   "winner": "Zach Veach",
+   "winner_wiki": "Zach_Veach",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 2,
+   "date": "2014-04-13",
+   "race": "Long Beach 100",
+   "track": "Streets of Long Beach",
+   "city": "Long Beach",
+   "state": "CA",
+   "country": "USA",
+   "winner": "Gabby Chaves",
+   "winner_wiki": "Gabby_Chaves",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 3,
+   "date": "2014-04-26",
+   "race": "Legacy Indy Lights 100",
+   "track": "Barber Motorsports Park",
+   "city": "Birmingham",
+   "state": "AL",
+   "country": "USA",
+   "winner": "Zach Veach",
+   "winner_wiki": "Zach_Veach",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 4,
+   "date": "2014-04-27",
+   "race": "Legacy Indy Lights 100",
+   "track": "Barber Motorsports Park",
+   "city": "Birmingham",
+   "state": "AL",
+   "country": "USA",
+   "winner": "Gabby Chaves",
+   "winner_wiki": "Gabby_Chaves",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 5,
+   "date": "2014-05-09",
+   "race": "Liberty Challenge",
+   "track": "Indianapolis Motor Speedway",
+   "city": "Speedway",
+   "state": "IN",
+   "country": "USA",
+   "winner": "Matthew Brabham",
+   "winner_wiki": "Matthew_Brabham",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 6,
+   "date": "2014-05-10",
+   "race": "Liberty Challenge",
+   "track": "Indianapolis Motor Speedway",
+   "city": "Speedway",
+   "state": "IN",
+   "country": "USA",
+   "winner": "Luiz Razia",
+   "winner_wiki": "Luiz_Razia",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 7,
+   "date": "2014-05-23",
+   "race": "Freedom 100",
+   "track": "Indianapolis Motor Speedway",
+   "city": "Speedway",
+   "state": "IN",
+   "country": "USA",
+   "winner": "Gabby Chaves",
+   "winner_wiki": "Gabby_Chaves",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 8,
+   "date": "2014-07-06",
+   "race": "Pocono Indy Lights 100",
+   "track": "Pocono Raceway",
+   "city": "Long Pond",
+   "state": "PA",
+   "country": "USA",
+   "winner": "Gabby Chaves",
+   "winner_wiki": "Gabby_Chaves",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 9,
+   "date": "2014-07-20",
+   "race": "Grand Prix of Toronto",
+   "track": "Exhibition Place",
+   "city": "Toronto",
+   "state": "ON",
+   "country": "CAN",
+   "winner": "Alexandre Baron",
+   "winner_wiki": "Alexandre_Baron",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 10,
+   "date": "2014-08-02",
+   "race": "Grand Prix of Mid-Ohio",
+   "track": "Mid-Ohio Sports Car Course",
+   "city": "Lexington",
+   "state": "OH",
+   "country": "USA",
+   "winner": "Jack Harvey",
+   "winner_wiki": "Jack_Harvey_(racing_driver)",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 11,
+   "date": "2014-08-03",
+   "race": "Grand Prix of Mid-Ohio",
+   "track": "Mid-Ohio Sports Car Course",
+   "city": "Lexington",
+   "state": "OH",
+   "country": "USA",
+   "winner": "Jack Harvey",
+   "winner_wiki": "Jack_Harvey_(racing_driver)",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 12,
+   "date": "2014-08-17",
+   "race": "Milwaukee Race",
+   "track": "Milwaukee Mile",
+   "city": "West Allis",
+   "state": "WI",
+   "country": "USA",
+   "winner": "Zach Veach",
+   "winner_wiki": "Zach_Veach",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 13,
+   "date": "2014-08-23",
+   "race": "Grand Prix of Sonoma",
+   "track": "Sonoma Raceway",
+   "city": "Sonoma",
+   "state": "CA",
+   "country": "USA",
+   "winner": "Jack Harvey",
+   "winner_wiki": "Jack_Harvey_(racing_driver)",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 14,
+   "date": "2014-08-24",
+   "race": "Grand Prix of Sonoma",
+   "track": "Sonoma Raceway",
+   "city": "Sonoma",
+   "state": "CA",
+   "country": "USA",
+   "winner": "Jack Harvey",
+   "winner_wiki": "Jack_Harvey_(racing_driver)",
+   "track_type": null,
+   "cancelled": false
+  }
+ ],
+ "sources": [
+  "https://en.wikipedia.org/wiki/2014_Indy_Lights",
+  "https://www.wikidata.org (driver bios)"
+ ]
+}

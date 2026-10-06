@@ -1,0 +1,829 @@
+{
+ "series": "whelen_southern_modified",
+ "year": 2009,
+ "official_name": "NASCAR Whelen Southern Modified Tour",
+ "data_level": "full",
+ "champion": {
+  "name": "George Brunnhoelzl III",
+  "wiki": "George Brunnhoelzl III"
+ },
+ "teams": [],
+ "standings": [
+  {
+   "pos": 1,
+   "name": "George Brunnhoelzl III",
+   "wiki": "George Brunnhoelzl III",
+   "points": 2385,
+   "wins": 4,
+   "starts": 14,
+   "top5": 12,
+   "top10": 13
+  },
+  {
+   "pos": 2,
+   "name": "Andy Seuss",
+   "wiki": "Andy Seuss",
+   "points": 2205,
+   "wins": 4,
+   "starts": 14,
+   "top5": 8,
+   "top10": 9
+  },
+  {
+   "pos": 3,
+   "name": "Burt Myers",
+   "wiki": "Burt Myers",
+   "points": 2138,
+   "wins": 0,
+   "starts": 14,
+   "top5": 7,
+   "top10": 12
+  },
+  {
+   "pos": 4,
+   "name": "Brian Loftin",
+   "wiki": "Brian Loftin (racing driver)",
+   "points": 2090,
+   "wins": 1,
+   "starts": 14,
+   "top5": 7,
+   "top10": 10
+  },
+  {
+   "pos": 5,
+   "name": "Frank Fleming",
+   "wiki": "Frank Fleming (racing driver)",
+   "points": 2044,
+   "wins": 0,
+   "starts": 14,
+   "top5": 4,
+   "top10": 9
+  },
+  {
+   "pos": 6,
+   "name": "Jason Myers",
+   "wiki": "Jason Myers (racing driver)",
+   "points": 2016,
+   "wins": 0,
+   "starts": 14,
+   "top5": 5,
+   "top10": 9
+  },
+  {
+   "pos": 7,
+   "name": "John Smith",
+   "wiki": "John Smith (racing driver, born 1975)",
+   "points": 1823,
+   "wins": 0,
+   "starts": 13,
+   "top5": 3,
+   "top10": 7
+  },
+  {
+   "pos": 8,
+   "name": "Gene Pack",
+   "wiki": null,
+   "points": 1762,
+   "wins": 0,
+   "starts": 13,
+   "top5": 2,
+   "top10": 7
+  },
+  {
+   "pos": 9,
+   "name": "Buddy Emory",
+   "wiki": null,
+   "points": 1602,
+   "wins": 0,
+   "starts": 12,
+   "top5": 1,
+   "top10": 6
+  },
+  {
+   "pos": 10,
+   "name": "L. W. Miller",
+   "wiki": "L. W. Miller",
+   "points": 1457,
+   "wins": 0,
+   "starts": 10,
+   "top5": 4,
+   "top10": 6
+  },
+  {
+   "pos": 11,
+   "name": "Rich Kuiken Jr.",
+   "wiki": null,
+   "points": 1269,
+   "wins": 0,
+   "starts": 10,
+   "top5": 0,
+   "top10": 1
+  },
+  {
+   "pos": 12,
+   "name": "Bryan Dauzat",
+   "wiki": "Bryan Dauzat",
+   "points": 1266,
+   "wins": 0,
+   "starts": 10,
+   "top5": 1,
+   "top10": 2
+  },
+  {
+   "pos": 13,
+   "name": "J. R. Bertuccio",
+   "wiki": "J. R. Bertuccio",
+   "points": 1075,
+   "wins": 0,
+   "starts": 8,
+   "top5": 0,
+   "top10": 4
+  },
+  {
+   "pos": 14,
+   "name": "Tommy Neal",
+   "wiki": "Tommy Neal",
+   "points": 866,
+   "wins": 0,
+   "starts": 7,
+   "top5": 0,
+   "top10": 1
+  },
+  {
+   "pos": 15,
+   "name": "Zach Brewer",
+   "wiki": "Zach Brewer",
+   "points": 735,
+   "wins": 0,
+   "starts": 6,
+   "top5": 0,
+   "top10": 2
+  },
+  {
+   "pos": 16,
+   "name": "Jay Mize",
+   "wiki": null,
+   "points": 624,
+   "wins": 0,
+   "starts": 5,
+   "top5": 0,
+   "top10": 1
+  },
+  {
+   "pos": 17,
+   "name": "Jonathan Brown",
+   "wiki": "Jonathan Brown (racing driver)",
+   "points": 550,
+   "wins": 0,
+   "starts": 4,
+   "top5": 0,
+   "top10": 2
+  },
+  {
+   "pos": 18,
+   "name": "Tim Brown",
+   "wiki": "Tim Brown (racing driver)",
+   "points": 540,
+   "wins": 0,
+   "starts": 5,
+   "top5": 1,
+   "top10": 2
+  },
+  {
+   "pos": 19,
+   "name": "Ted Christopher",
+   "wiki": "Ted Christopher",
+   "points": 506,
+   "wins": 2,
+   "starts": 5,
+   "top5": 3,
+   "top10": 4
+  },
+  {
+   "pos": 20,
+   "name": "Ron Silk",
+   "wiki": "Ron Silk",
+   "points": 454,
+   "wins": 0,
+   "starts": 5,
+   "top5": 3,
+   "top10": 4
+  },
+  {
+   "pos": 21,
+   "name": "Bobby Hutchens",
+   "wiki": "Bobby Hutchens",
+   "points": 413,
+   "wins": 0,
+   "starts": 3,
+   "top5": 0,
+   "top10": 1
+  },
+  {
+   "pos": 22,
+   "name": "Josh Nichols",
+   "wiki": null,
+   "points": 403,
+   "wins": 0,
+   "starts": 3,
+   "top5": 0,
+   "top10": 2
+  },
+  {
+   "pos": 23,
+   "name": "Thomas Stinson",
+   "wiki": null,
+   "points": 393,
+   "wins": 0,
+   "starts": 3,
+   "top5": 0,
+   "top10": 2
+  },
+  {
+   "pos": 24,
+   "name": "Dean Ward",
+   "wiki": "Dean Ward (racing driver)",
+   "points": 368,
+   "wins": 0,
+   "starts": 3,
+   "top5": 0,
+   "top10": 1
+  },
+  {
+   "pos": 25,
+   "name": "Brandon Ward",
+   "wiki": "Brandon Ward (racing driver)",
+   "points": 359,
+   "wins": 0,
+   "starts": 3,
+   "top5": 0,
+   "top10": 1
+  },
+  {
+   "pos": 26,
+   "name": "Greg Butcher",
+   "wiki": null,
+   "points": 356,
+   "wins": 0,
+   "starts": 3,
+   "top5": 0,
+   "top10": 1
+  },
+  {
+   "pos": 27,
+   "name": "Erick Rudolph",
+   "wiki": "Erick Rudolph",
+   "points": 301,
+   "wins": 0,
+   "starts": 4,
+   "top5": 1,
+   "top10": 3
+  },
+  {
+   "pos": 28,
+   "name": "Rowan Pennink",
+   "wiki": "Rowan Pennink",
+   "points": 261,
+   "wins": 0,
+   "starts": 4,
+   "top5": 1,
+   "top10": 2
+  },
+  {
+   "pos": 29,
+   "name": "Jim Willis",
+   "wiki": null,
+   "points": 258,
+   "wins": 0,
+   "starts": 2,
+   "top5": 0,
+   "top10": 1
+  },
+  {
+   "pos": 30,
+   "name": "Mike Norman",
+   "wiki": "Mike Norman",
+   "points": 252,
+   "wins": 0,
+   "starts": 2,
+   "top5": 0,
+   "top10": 1
+  },
+  {
+   "pos": 31,
+   "name": "Jay Foley",
+   "wiki": "Jay Foley",
+   "points": 251,
+   "wins": 0,
+   "starts": 2,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 32,
+   "name": "Scott Rigney",
+   "wiki": null,
+   "points": 248,
+   "wins": 0,
+   "starts": 2,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 33,
+   "name": "Lee Jeffreys",
+   "wiki": "Lee Jeffreys",
+   "points": 245,
+   "wins": 0,
+   "starts": 2,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 34,
+   "name": "Luke Fleming",
+   "wiki": "Luke Fleming",
+   "points": 180,
+   "wins": 1,
+   "starts": 1,
+   "top5": 1,
+   "top10": 1
+  },
+  {
+   "pos": 35,
+   "name": "Randy Butner",
+   "wiki": "Randy Butner",
+   "points": 142,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 1
+  },
+  {
+   "pos": 36,
+   "name": "Bradley Robbins",
+   "wiki": null,
+   "points": 130,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 37,
+   "name": "Tom McCann Jr.",
+   "wiki": null,
+   "points": 127,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 38,
+   "name": "Jay Hedgecock",
+   "wiki": "Jay Hedgecock",
+   "points": 124,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 39,
+   "name": "Junior Miller",
+   "wiki": "Junior Miller (racing driver)",
+   "points": 121,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 40,
+   "name": "Jamie Tomaino",
+   "wiki": "Jamie Tomaino",
+   "points": 109,
+   "wins": 0,
+   "starts": 3,
+   "top5": 0,
+   "top10": 1
+  },
+  {
+   "pos": 41,
+   "name": "Jamie Tomaino Jr.",
+   "wiki": null,
+   "points": 109,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 42,
+   "name": "Brent Elliott",
+   "wiki": null,
+   "points": 103,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 43,
+   "name": "Jason Trinchere",
+   "wiki": null,
+   "points": 88,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": null,
+   "name": "Donny Lia",
+   "wiki": "Donny Lia",
+   "points": null,
+   "wins": 1,
+   "starts": 2,
+   "top5": 1,
+   "top10": 2
+  },
+  {
+   "pos": null,
+   "name": "Mike Stefanik",
+   "wiki": "Mike Stefanik",
+   "points": null,
+   "wins": 1,
+   "starts": 2,
+   "top5": 1,
+   "top10": 1
+  },
+  {
+   "pos": null,
+   "name": "Todd Szegedy",
+   "wiki": "Todd Szegedy",
+   "points": null,
+   "wins": 0,
+   "starts": 2,
+   "top5": 1,
+   "top10": 2
+  },
+  {
+   "pos": null,
+   "name": "Ryan Preece",
+   "wiki": "Ryan Preece",
+   "points": null,
+   "wins": 0,
+   "starts": 2,
+   "top5": 2,
+   "top10": 2
+  },
+  {
+   "pos": null,
+   "name": "Woody Pitkat",
+   "wiki": "Woody Pitkat",
+   "points": null,
+   "wins": 0,
+   "starts": 2,
+   "top5": 1,
+   "top10": 1
+  },
+  {
+   "pos": null,
+   "name": "Kevin Goodale",
+   "wiki": "Kevin Goodale",
+   "points": null,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 1
+  },
+  {
+   "pos": null,
+   "name": "Ed Flemke Jr.",
+   "wiki": "Ed Flemke Jr.",
+   "points": null,
+   "wins": 0,
+   "starts": 2,
+   "top5": 0,
+   "top10": 1
+  },
+  {
+   "pos": null,
+   "name": "Eric Goodale",
+   "wiki": "Eric Goodale",
+   "points": null,
+   "wins": 0,
+   "starts": 2,
+   "top5": 0,
+   "top10": 1
+  },
+  {
+   "pos": null,
+   "name": "James Civali",
+   "wiki": "James Civali",
+   "points": null,
+   "wins": 0,
+   "starts": 2,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": null,
+   "name": "Eric Beers",
+   "wiki": "Eric Beers",
+   "points": null,
+   "wins": 0,
+   "starts": 2,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": null,
+   "name": "Jake Marosz",
+   "wiki": "Jake Marosz",
+   "points": null,
+   "wins": 0,
+   "starts": 2,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": null,
+   "name": "Chris Pasteryak",
+   "wiki": "Chris Pasteryak",
+   "points": null,
+   "wins": 0,
+   "starts": 2,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": null,
+   "name": "Bobby Grigas III",
+   "wiki": "Bobby Grigas III",
+   "points": null,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": null,
+   "name": "Johnny Bush",
+   "wiki": "Johnny Bush (racing driver)",
+   "points": null,
+   "wins": 0,
+   "starts": 2,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": null,
+   "name": "Gary McDonald",
+   "wiki": "Gary McDonald (racing driver)",
+   "points": null,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": null,
+   "name": "Glen Reen",
+   "wiki": "Glen Reen",
+   "points": null,
+   "wins": 0,
+   "starts": 2,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": null,
+   "name": "Ken Heagy",
+   "wiki": "Ken Heagy",
+   "points": null,
+   "wins": 0,
+   "starts": 2,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": null,
+   "name": "Kasey Kahne",
+   "wiki": "Kasey Kahne",
+   "points": null,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": null,
+   "name": "Glenn Tyler",
+   "wiki": "Glenn Tyler",
+   "points": null,
+   "wins": 0,
+   "starts": 2,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": null,
+   "name": "Jimmy Blewett",
+   "wiki": "Jimmy Blewett",
+   "points": null,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": null,
+   "name": "Wade Cole",
+   "wiki": "NASCAR Whelen Modified Tour",
+   "points": null,
+   "wins": 0,
+   "starts": 2,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": null,
+   "name": "Ryan Newman",
+   "wiki": "Ryan Newman (racing driver)",
+   "points": null,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": null,
+   "name": "Matt Hirschman",
+   "wiki": "Matt Hirschman",
+   "points": null,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": null,
+   "name": "Jeremy Stoltz",
+   "wiki": null,
+   "points": null,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  }
+ ],
+ "schedule": [
+  {
+   "round": 1,
+   "date": "2009-03-21",
+   "race": "Capitol Bank 150",
+   "track": "Concord Speedway",
+   "city": "Midland",
+   "state": "NC",
+   "winner": "Ted Christopher",
+   "winner_wiki": "Ted Christopher"
+  },
+  {
+   "round": 2,
+   "date": "2009-04-04",
+   "race": "Whelen Southern Modified Tour 150",
+   "track": "South Boston Speedway",
+   "city": "South Boston",
+   "state": "VA",
+   "winner": "Andy Seuss",
+   "winner_wiki": "Andy Seuss"
+  },
+  {
+   "round": 3,
+   "date": "2009-04-11",
+   "race": "Caraway Speedway 150",
+   "track": "Caraway Speedway",
+   "city": "Asheboro",
+   "state": "NC",
+   "winner": "Ted Christopher",
+   "winner_wiki": "Ted Christopher"
+  },
+  {
+   "round": 4,
+   "date": "2009-04-18",
+   "race": "Lanier 150",
+   "track": "Lanier Speedway",
+   "city": "Braselton",
+   "state": "GA",
+   "winner": "Andy Seuss",
+   "winner_wiki": "Andy Seuss"
+  },
+  {
+   "round": 5,
+   "date": "2009-07-03",
+   "race": "Firecracker 150",
+   "track": "Caraway Speedway",
+   "city": "Asheboro",
+   "state": "NC",
+   "winner": "George Brunnhoelzl III",
+   "winner_wiki": "George Brunnhoelzl III"
+  },
+  {
+   "round": 6,
+   "date": "2009-08-01",
+   "race": "Advance Auto Parts 199",
+   "track": "Bowman Gray Stadium",
+   "city": "Winston-Salem",
+   "state": "NC",
+   "winner": "Luke Fleming",
+   "winner_wiki": "Luke Fleming"
+  },
+  {
+   "round": 7,
+   "date": "2009-08-19",
+   "race": "UNOH Perfect Storm",
+   "track": "Bristol Motor Speedway",
+   "city": "Bristol",
+   "state": "TN",
+   "winner": "Donny Lia",
+   "winner_wiki": "Donny Lia"
+  },
+  {
+   "round": 8,
+   "date": "2009-08-29",
+   "race": "Caraway 150",
+   "track": "Caraway Speedway",
+   "city": "Asheboro",
+   "state": "NC",
+   "winner": "Brian Loftin",
+   "winner_wiki": "Brian Loftin (racing driver)"
+  },
+  {
+   "round": 9,
+   "date": "2009-09-05",
+   "race": "Myrtle Beach 150",
+   "track": "Myrtle Beach Speedway",
+   "city": "Myrtle Beach",
+   "state": "SC",
+   "winner": "Andy Seuss",
+   "winner_wiki": "Andy Seuss"
+  },
+  {
+   "round": 10,
+   "date": "2009-09-12",
+   "race": "Caraway 150",
+   "track": "Caraway Speedway",
+   "city": "Asheboro",
+   "state": "NC",
+   "winner": "George Brunnhoelzl III",
+   "winner_wiki": "George Brunnhoelzl III"
+  },
+  {
+   "round": 11,
+   "date": "2009-09-19",
+   "race": "Caraway Classic 150",
+   "track": "Caraway Speedway",
+   "city": "Asheboro",
+   "state": "NC",
+   "winner": "Andy Seuss",
+   "winner_wiki": "Andy Seuss"
+  },
+  {
+   "round": 12,
+   "date": "2009-09-27",
+   "race": "Made In America Whelen 300",
+   "track": "Martinsville Speedway",
+   "city": "Martinsville",
+   "state": "VA",
+   "winner": "Mike Stefanik",
+   "winner_wiki": "Mike Stefanik"
+  },
+  {
+   "round": 13,
+   "date": "2009-10-02",
+   "race": "Lightning Fast 150",
+   "track": "Ace Speedway",
+   "city": "Altamahaw",
+   "state": "NC",
+   "winner": "George Brunnhoelzl III",
+   "winner_wiki": "George Brunnhoelzl III"
+  },
+  {
+   "round": 14,
+   "date": "2009-10-24",
+   "race": "Fall Classic 150",
+   "track": "Caraway Speedway",
+   "city": "Asheboro",
+   "state": "NC",
+   "winner": "George Brunnhoelzl III",
+   "winner_wiki": "George Brunnhoelzl III"
+  }
+ ],
+ "sources": [
+  "https://en.wikipedia.org/w/index.php?title=2009_NASCAR_Whelen_Southern_Modified_Tour&oldid=1376749102",
+  "https://en.wikipedia.org/w/index.php?title=SMART_Modified_Tour&oldid=1375874989"
+ ]
+}

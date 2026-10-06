@@ -1,0 +1,1809 @@
+{
+ "series": "formula_2000",
+ "year": 2026,
+ "official_name": "2026 USF2000 Championship presented by Continental",
+ "data_level": "full",
+ "teams_source": "teams_table",
+ "teams": [
+  {
+   "team": "DEForce Racing",
+   "team_wiki": "DEForce_Racing",
+   "owner": null,
+   "manufacturer": "Mazda",
+   "chassis": null,
+   "cars": [
+    {
+     "number": "10",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Brady Golan",
+       "wiki": "Brady_Golan",
+       "rounds": "1–2",
+       "nat": "USA"
+      },
+      {
+       "name": "Elias Vignola",
+       "wiki": null,
+       "rounds": "3–5, 7–9, 14–15",
+       "nat": "MEX"
+      }
+     ]
+    },
+    {
+     "number": "12",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Sebastián Garzón",
+       "wiki": "Sebastián_Garzón",
+       "rounds": "All",
+       "nat": "COL"
+      }
+     ]
+    },
+    {
+     "number": "17",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Thomas Nordquist",
+       "wiki": null,
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    }
+   ],
+   "manufacturer_note": "spec engine (from page text)"
+  },
+  {
+   "team": "ENVE Motorsports",
+   "team_wiki": null,
+   "owner": null,
+   "manufacturer": "Mazda",
+   "chassis": null,
+   "cars": [
+    {
+     "number": "46",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Wesley Gundler",
+       "wiki": null,
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    }
+   ],
+   "manufacturer_note": "spec engine (from page text)"
+  },
+  {
+   "team": "Exclusive Autosport",
+   "team_wiki": null,
+   "owner": null,
+   "manufacturer": "Mazda",
+   "chassis": null,
+   "cars": [
+    {
+     "number": "87",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Leonardo Serravalle",
+       "wiki": null,
+       "rounds": "7–9",
+       "nat": "CAN"
+      }
+     ]
+    },
+    {
+     "number": "90",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Evan Cooley",
+       "wiki": null,
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "91",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Kaylee Countryman",
+       "wiki": "Kaylee_Countryman",
+       "rounds": "1–2",
+       "nat": "USA"
+      },
+      {
+       "name": "Connor Aspley",
+       "wiki": null,
+       "rounds": "7–13, 16–18",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "92",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Anthony Martella",
+       "wiki": "Anthony_Martella",
+       "rounds": "1–15",
+       "nat": "CAN"
+      },
+      {
+       "name": "Brenden Cooley",
+       "wiki": null,
+       "rounds": "16–18",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "93",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Gabriel Cahan",
+       "wiki": null,
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "94",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Ayrton Cahan",
+       "wiki": null,
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "95",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Brenden Cooley",
+       "wiki": null,
+       "rounds": "6, 14–15",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "97",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Connor Aspley",
+       "wiki": null,
+       "rounds": "1–2",
+       "nat": "USA"
+      },
+      {
+       "name": "Cole Medeiros",
+       "wiki": null,
+       "rounds": "7–9, 14–15",
+       "nat": "CAN"
+      }
+     ]
+    }
+   ],
+   "manufacturer_note": "spec engine (from page text)"
+  },
+  {
+   "team": "JHDD powered by ECR",
+   "team_wiki": "Jay_Howard_Driver_Development",
+   "owner": null,
+   "manufacturer": "Mazda",
+   "chassis": null,
+   "cars": [
+    {
+     "number": "5",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Kaylee Countryman",
+       "wiki": "Kaylee_Countryman",
+       "rounds": "3–5, 7–9, 12–15",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "6",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Liam Loiacono",
+       "wiki": "Liam_Loiacono",
+       "rounds": "1–13",
+       "nat": "AUS"
+      }
+     ]
+    },
+    {
+     "number": "7",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Naim Saleh",
+       "wiki": null,
+       "rounds": "1–2, 7–18",
+       "nat": "BRA"
+      }
+     ]
+    },
+    {
+     "number": "8",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Erik Holm",
+       "wiki": null,
+       "rounds": "1–6",
+       "nat": "SWE"
+      },
+      {
+       "name": "Max Cuthbert",
+       "wiki": null,
+       "rounds": "12–15",
+       "nat": "GBR"
+      }
+     ]
+    },
+    {
+     "number": "9",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Cal Peter",
+       "wiki": null,
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    }
+   ],
+   "manufacturer_note": "spec engine (from page text)"
+  },
+  {
+   "team": "Olivia Racing",
+   "team_wiki": null,
+   "owner": null,
+   "manufacturer": "Mazda",
+   "chassis": null,
+   "cars": [
+    {
+     "number": "25",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Karol Pasiewicz",
+       "wiki": "Karol_Pasiewicz",
+       "rounds": "12–13",
+       "nat": "POL"
+      }
+     ]
+    }
+   ],
+   "manufacturer_note": "spec engine (from page text)"
+  },
+  {
+   "team": "Pabst Racing",
+   "team_wiki": "Pabst_Racing",
+   "owner": null,
+   "manufacturer": "Mazda",
+   "chassis": null,
+   "cars": [
+    {
+     "number": "22",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Brad Majman",
+       "wiki": "Brad_Majman",
+       "rounds": "All",
+       "nat": "AUS"
+      }
+     ]
+    },
+    {
+     "number": "23",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Eddie Beswick",
+       "wiki": "Eddie_Beswick",
+       "rounds": "All",
+       "nat": "AUS"
+      }
+     ]
+    },
+    {
+     "number": "24",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Lucas Nanji",
+       "wiki": null,
+       "rounds": "All",
+       "nat": "CAN"
+      }
+     ]
+    }
+   ],
+   "manufacturer_note": "spec engine (from page text)"
+  },
+  {
+   "team": "Peterman Fisher Hartman Racing",
+   "team_wiki": "Sarah_Fisher_Hartman_Racing",
+   "owner": null,
+   "manufacturer": "Mazda",
+   "chassis": null,
+   "cars": [
+    {
+     "number": "67",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Wian Boshoff",
+       "wiki": null,
+       "rounds": "All",
+       "nat": "ZAF"
+      }
+     ]
+    }
+   ],
+   "manufacturer_note": "spec engine (from page text)"
+  },
+  {
+   "team": "VRD Racing",
+   "team_wiki": "VRD_Racing",
+   "owner": null,
+   "manufacturer": "Mazda",
+   "chassis": null,
+   "cars": [
+    {
+     "number": "3",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "João Vergara",
+       "wiki": "João_Vergara",
+       "rounds": "All",
+       "nat": "BRA"
+      }
+     ]
+    },
+    {
+     "number": "19",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Colin Aitken",
+       "wiki": null,
+       "rounds": "1–2",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "21",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Dean Pedersen",
+       "wiki": null,
+       "rounds": "14–15",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "25",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Teddy Musella",
+       "wiki": "Teddy_Musella",
+       "rounds": "1–2",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "44",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Ryan Giannetta",
+       "wiki": null,
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "78",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Jack Mohrhardt",
+       "wiki": null,
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "98",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Oliver Wheldon",
+       "wiki": null,
+       "rounds": "3–18",
+       "nat": "USA"
+      }
+     ]
+    }
+   ],
+   "manufacturer_note": "spec engine (from page text)"
+  },
+  {
+   "team": "Zanella Racing",
+   "team_wiki": null,
+   "owner": null,
+   "manufacturer": "Mazda",
+   "chassis": null,
+   "cars": [
+    {
+     "number": "28",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Grant Mitchell",
+       "wiki": null,
+       "rounds": "7–9",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "29",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Maddie Colleran",
+       "wiki": null,
+       "rounds": "7–9",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "55",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Leonardo Escorpioni",
+       "wiki": "Leonardo_Escorpioni",
+       "rounds": "1–2",
+       "nat": "BRA"
+      }
+     ]
+    }
+   ],
+   "manufacturer_note": "spec engine (from page text)"
+  }
+ ],
+ "standings": [
+  {
+   "pos": 1,
+   "name": "Sebastián Garzón",
+   "wiki": "Sebastián_Garzón",
+   "points": 383,
+   "wins": 4,
+   "podiums": 11,
+   "top5": 14,
+   "starts": 18,
+   "nat": "COL",
+   "results": [
+    1,
+    1,
+    2,
+    1,
+    3,
+    3,
+    5,
+    4,
+    3,
+    12,
+    3,
+    14,
+    2,
+    1,
+    15,
+    17,
+    3,
+    4
+   ]
+  },
+  {
+   "pos": 2,
+   "name": "Brad Majman",
+   "wiki": "Brad_Majman",
+   "points": 354,
+   "wins": 3,
+   "podiums": 7,
+   "top5": 13,
+   "starts": 18,
+   "nat": "AUS",
+   "results": [
+    4,
+    4,
+    15,
+    5,
+    1,
+    5,
+    2,
+    2,
+    1,
+    3,
+    4,
+    6,
+    13,
+    2,
+    1,
+    18,
+    13,
+    5
+   ]
+  },
+  {
+   "pos": 3,
+   "name": "Eddie Beswick",
+   "wiki": "Eddie_Beswick",
+   "points": 339,
+   "wins": 4,
+   "podiums": 7,
+   "top5": 11,
+   "starts": 18,
+   "nat": "AUS",
+   "results": [
+    20,
+    2,
+    5,
+    6,
+    5,
+    8,
+    1,
+    5,
+    2,
+    1,
+    15,
+    16,
+    5,
+    7,
+    3,
+    1,
+    12,
+    1
+   ]
+  },
+  {
+   "pos": 4,
+   "name": "Evan Cooley",
+   "wiki": null,
+   "points": 294,
+   "wins": 1,
+   "podiums": 8,
+   "top5": 11,
+   "starts": 18,
+   "nat": "USA",
+   "results": [
+    22,
+    23,
+    3,
+    2,
+    4,
+    1,
+    4,
+    3,
+    23,
+    13,
+    10,
+    15,
+    3,
+    3,
+    4,
+    2,
+    18,
+    3
+   ]
+  },
+  {
+   "pos": 5,
+   "name": "Oliver Wheldon",
+   "wiki": null,
+   "points": 282,
+   "wins": 2,
+   "podiums": 7,
+   "top5": 9,
+   "starts": 16,
+   "nat": "USA",
+   "results": [
+    null,
+    null,
+    20,
+    3,
+    2,
+    13,
+    3,
+    6,
+    4,
+    18,
+    11,
+    1,
+    1,
+    5,
+    2,
+    16,
+    10,
+    2
+   ]
+  },
+  {
+   "pos": 6,
+   "name": "João Vergara",
+   "wiki": "João_Vergara",
+   "points": 257,
+   "wins": 0,
+   "podiums": 3,
+   "top5": 6,
+   "starts": 18,
+   "nat": "BRA",
+   "results": [
+    2,
+    6,
+    7,
+    11,
+    20,
+    6,
+    10,
+    8,
+    6,
+    2,
+    5,
+    4,
+    4,
+    22,
+    9,
+    3,
+    11,
+    16
+   ]
+  },
+  {
+   "pos": 7,
+   "name": "Ryan Giannetta",
+   "wiki": null,
+   "points": 242,
+   "wins": 1,
+   "podiums": 3,
+   "top5": 4,
+   "starts": 18,
+   "nat": "USA",
+   "results": [
+    7,
+    7,
+    16,
+    10,
+    18,
+    10,
+    7,
+    7,
+    22,
+    4,
+    2,
+    3,
+    9,
+    19,
+    7,
+    8,
+    1,
+    11
+   ]
+  },
+  {
+   "pos": 8,
+   "name": "Gabriel Cahan",
+   "wiki": null,
+   "points": 214,
+   "wins": 0,
+   "podiums": 2,
+   "top5": 3,
+   "starts": 18,
+   "nat": "USA",
+   "results": [
+    8,
+    13,
+    8,
+    19,
+    11,
+    2,
+    19,
+    9,
+    17,
+    5,
+    6,
+    19,
+    7,
+    12,
+    17,
+    7,
+    2,
+    9
+   ]
+  },
+  {
+   "pos": 9,
+   "name": "Wesley Gundler",
+   "wiki": null,
+   "points": 213,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 2,
+   "starts": 18,
+   "nat": "USA",
+   "results": [
+    10,
+    11,
+    18,
+    9,
+    8,
+    11,
+    14,
+    15,
+    8,
+    11,
+    8,
+    5,
+    8,
+    6,
+    11,
+    5,
+    9,
+    6
+   ]
+  },
+  {
+   "pos": 10,
+   "name": "Anthony Martella",
+   "wiki": "Anthony_Martella",
+   "points": 209,
+   "wins": 3,
+   "podiums": 4,
+   "top5": 7,
+   "starts": 15,
+   "nat": "CAN",
+   "results": [
+    21,
+    22,
+    1,
+    4,
+    19,
+    18,
+    9,
+    1,
+    5,
+    17,
+    1,
+    2,
+    21,
+    4,
+    14,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 11,
+   "name": "Ayrton Cahan",
+   "wiki": null,
+   "points": 193,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 1,
+   "starts": 18,
+   "nat": "USA",
+   "results": [
+    13,
+    10,
+    6,
+    7,
+    6,
+    12,
+    6,
+    12,
+    7,
+    9,
+    9,
+    11,
+    19,
+    23,
+    8,
+    4,
+    16,
+    18
+   ]
+  },
+  {
+   "pos": 12,
+   "name": "Wian Boshoff",
+   "wiki": null,
+   "points": 167,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 18,
+   "nat": "ZAF",
+   "results": [
+    6,
+    14,
+    10,
+    14,
+    16,
+    7,
+    13,
+    10,
+    10,
+    8,
+    12,
+    8,
+    14,
+    16,
+    12,
+    12,
+    17,
+    17
+   ]
+  },
+  {
+   "pos": 13,
+   "name": "Lucas Nanji",
+   "wiki": null,
+   "points": 158,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 2,
+   "starts": 18,
+   "nat": "CAN",
+   "results": [
+    5,
+    9,
+    19,
+    13,
+    17,
+    17,
+    12,
+    16,
+    21,
+    19,
+    7,
+    7,
+    15,
+    8,
+    16,
+    11,
+    5,
+    8
+   ]
+  },
+  {
+   "pos": 14,
+   "name": "Thomas Nordquist",
+   "wiki": null,
+   "points": 146,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 1,
+   "starts": 18,
+   "nat": "USA",
+   "results": [
+    15,
+    15,
+    17,
+    15,
+    9,
+    9,
+    20,
+    14,
+    20,
+    10,
+    18,
+    18,
+    17,
+    11,
+    6,
+    10,
+    4,
+    12
+   ]
+  },
+  {
+   "pos": 15,
+   "name": "Jack Mohrhardt",
+   "wiki": null,
+   "points": 118,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 18,
+   "nat": "USA",
+   "results": [
+    17,
+    19,
+    13,
+    16,
+    15,
+    16,
+    22,
+    18,
+    13,
+    7,
+    16,
+    12,
+    18,
+    15,
+    10,
+    15,
+    8,
+    15
+   ]
+  },
+  {
+   "pos": 16,
+   "name": "Cal Peter",
+   "wiki": null,
+   "points": 112,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 18,
+   "nat": "USA",
+   "results": [
+    14,
+    24,
+    12,
+    8,
+    14,
+    19,
+    24,
+    23,
+    24,
+    6,
+    17,
+    21,
+    12,
+    20,
+    13,
+    14,
+    6,
+    13
+   ]
+  },
+  {
+   "pos": 17,
+   "name": "Liam Loiacono",
+   "wiki": "Liam_Loiacono",
+   "points": 111,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 2,
+   "starts": 11,
+   "nat": "AUS",
+   "results": [
+    11,
+    18,
+    4,
+    12,
+    7,
+    4,
+    11,
+    24,
+    19,
+    15,
+    14,
+    "WTH",
+    "WTH",
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 18,
+   "name": "Connor Aspley",
+   "wiki": null,
+   "points": 82,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 12,
+   "nat": "USA",
+   "results": [
+    16,
+    21,
+    null,
+    null,
+    null,
+    null,
+    15,
+    11,
+    15,
+    14,
+    19,
+    20,
+    20,
+    null,
+    null,
+    6,
+    7,
+    7
+   ]
+  },
+  {
+   "pos": 19,
+   "name": "Naim Saleh",
+   "wiki": null,
+   "points": 82,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 13,
+   "nat": "BRA",
+   "results": [
+    "DNS",
+    17,
+    null,
+    null,
+    null,
+    null,
+    21,
+    21,
+    12,
+    16,
+    13,
+    13,
+    11,
+    9,
+    21,
+    13,
+    14,
+    14
+   ]
+  },
+  {
+   "pos": 20,
+   "name": "Kaylee Countryman",
+   "wiki": "Kaylee_Countryman",
+   "points": 72,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 12,
+   "nat": "USA",
+   "results": [
+    18,
+    20,
+    9,
+    18,
+    13,
+    null,
+    17,
+    19,
+    14,
+    null,
+    null,
+    10,
+    10,
+    13,
+    19,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 21,
+   "name": "Elias Vignola",
+   "wiki": null,
+   "points": 48,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 8,
+   "nat": "MEX",
+   "results": [
+    null,
+    null,
+    11,
+    17,
+    10,
+    null,
+    16,
+    20,
+    11,
+    null,
+    null,
+    null,
+    null,
+    17,
+    18,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 22,
+   "name": "Brenden Cooley",
+   "wiki": null,
+   "points": 46,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 6,
+   "nat": "USA",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    15,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    14,
+    22,
+    9,
+    15,
+    10
+   ]
+  },
+  {
+   "pos": 23,
+   "name": "Leonardo Escorpioni",
+   "wiki": "Leonardo_Escorpioni",
+   "points": 45,
+   "wins": 0,
+   "podiums": 2,
+   "top5": 2,
+   "starts": 2,
+   "nat": "BRA",
+   "results": [
+    3,
+    3,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 24,
+   "name": "Max Cuthbert",
+   "wiki": null,
+   "points": 45,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 1,
+   "starts": 4,
+   "nat": "GBR",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    9,
+    16,
+    10,
+    5,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 25,
+   "name": "Erik Holm",
+   "wiki": null,
+   "points": 33,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 5,
+   "nat": "SWE",
+   "results": [
+    "DNS",
+    16,
+    14,
+    20,
+    12,
+    14,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 26,
+   "name": "Cole Medeiros",
+   "wiki": null,
+   "points": 30,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 5,
+   "nat": "CAN",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    8,
+    13,
+    16,
+    null,
+    null,
+    null,
+    null,
+    18,
+    20,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 27,
+   "name": "Teddy Musella",
+   "wiki": "Teddy_Musella",
+   "points": 22,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 2,
+   "nat": "USA",
+   "results": [
+    12,
+    8,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 28,
+   "name": "Colin Aitken",
+   "wiki": null,
+   "points": 21,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 2,
+   "nat": "USA",
+   "results": [
+    9,
+    12,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 29,
+   "name": "Brady Golan",
+   "wiki": "Brady_Golan",
+   "points": 19,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 1,
+   "starts": 2,
+   "nat": "USA",
+   "results": [
+    19,
+    5,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 30,
+   "name": "Karol Pasiewicz",
+   "wiki": "Karol_Pasiewicz",
+   "points": 19,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 2,
+   "nat": "POL",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    17,
+    6,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 31,
+   "name": "Grant Mitchell",
+   "wiki": null,
+   "points": 17,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 3,
+   "nat": "USA",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    23,
+    17,
+    9,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 32,
+   "name": "Leonardo Serravalle",
+   "wiki": null,
+   "points": 7,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 3,
+   "nat": "CAN",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    18,
+    22,
+    18,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 33,
+   "name": "Dean Pedersen",
+   "wiki": null,
+   "points": 2,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 2,
+   "nat": "USA",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    21,
+    23,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 34,
+   "name": "Maddie Colleran",
+   "wiki": null,
+   "points": 0,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 0,
+   "nat": "USA",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    "DNS",
+    "DNS",
+    "DNS",
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  }
+ ],
+ "schedule": [
+  {
+   "round": 1,
+   "date": "2026-02-27",
+   "race": "Foundation Building Materials Grand Prix of St. Petersburg",
+   "track": "Streets of St. Petersburg",
+   "city": "St. Petersburg",
+   "state": "FL",
+   "country": "USA",
+   "winner": "Sebastián Garzón",
+   "winner_wiki": "Sebastián_Garzón",
+   "track_type": "street",
+   "cancelled": false
+  },
+  {
+   "round": 2,
+   "date": "2026-02-27",
+   "race": "Andersen Interior Contracting Grand Prix of St. Petersburg",
+   "track": "Streets of St. Petersburg",
+   "city": "St. Petersburg",
+   "state": "FL",
+   "country": "USA",
+   "winner": "Sebastián Garzón",
+   "winner_wiki": "Sebastián_Garzón",
+   "track_type": "street",
+   "cancelled": false
+  },
+  {
+   "round": 3,
+   "date": "2026-05-07",
+   "race": "Tatuus USF Pro Championships Indy Grand Prix",
+   "track": "Indianapolis Motor Speedway Road Course",
+   "city": "Speedway",
+   "state": "IN",
+   "country": "USA",
+   "winner": "Anthony Martella",
+   "winner_wiki": "Anthony_Martella",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 4,
+   "date": "2026-05-07",
+   "race": "Tatuus USF Pro Championships Indy Grand Prix",
+   "track": "Indianapolis Motor Speedway Road Course",
+   "city": "Speedway",
+   "state": "IN",
+   "country": "USA",
+   "winner": "Sebastián Garzón",
+   "winner_wiki": "Sebastián_Garzón",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 5,
+   "date": "2026-05-07",
+   "race": "Tatuus USF Pro Championships Indy Grand Prix",
+   "track": "Indianapolis Motor Speedway Road Course",
+   "city": "Speedway",
+   "state": "IN",
+   "country": "USA",
+   "winner": "Brad Majman",
+   "winner_wiki": "Brad_Majman",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 6,
+   "date": "2026-05-20",
+   "race": "Carb Night Classic presented by Marelli",
+   "track": "Lucas Oil Indianapolis Raceway Park",
+   "city": "Brownsburg",
+   "state": "IN",
+   "country": "USA",
+   "winner": "Evan Cooley",
+   "winner_wiki": null,
+   "track_type": "oval",
+   "cancelled": false
+  },
+  {
+   "round": 7,
+   "date": "2026-06-18",
+   "race": "The Andersen Companies Grand Prix of Road America presented by Elite Engines",
+   "track": "Road America",
+   "city": "Elkhart Lake",
+   "state": "WI",
+   "country": "USA",
+   "winner": "Eddie Beswick",
+   "winner_wiki": "Eddie_Beswick",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 8,
+   "date": "2026-06-18",
+   "race": "The Andersen Companies Grand Prix of Road America presented by Elite Engines",
+   "track": "Road America",
+   "city": "Elkhart Lake",
+   "state": "WI",
+   "country": "USA",
+   "winner": "Anthony Martella",
+   "winner_wiki": "Anthony_Martella",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 9,
+   "date": "2026-06-18",
+   "race": "The Andersen Companies Grand Prix of Road America presented by Elite Engines",
+   "track": "Road America",
+   "city": "Elkhart Lake",
+   "state": "WI",
+   "country": "USA",
+   "winner": "Brad Majman",
+   "winner_wiki": "Brad_Majman",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 10,
+   "date": "2026-07-02",
+   "race": "USF Pro Patriot 250 Grand Prix of Mid-Ohio",
+   "track": "Mid-Ohio Sports Car Course",
+   "city": "Lexington",
+   "state": "OH",
+   "country": "USA",
+   "winner": "Eddie Beswick",
+   "winner_wiki": "Eddie_Beswick",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 11,
+   "date": "2026-07-02",
+   "race": "USF Pro Patriot 250 Grand Prix of Mid-Ohio",
+   "track": "Mid-Ohio Sports Car Course",
+   "city": "Lexington",
+   "state": "OH",
+   "country": "USA",
+   "winner": "Anthony Martella",
+   "winner_wiki": "Anthony_Martella",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 12,
+   "date": "2026-08-06",
+   "race": "Continental Tire Grand Prix of Portland",
+   "track": "Portland International Raceway",
+   "city": "Portland",
+   "state": "OR",
+   "country": "USA",
+   "winner": "Oliver Wheldon",
+   "winner_wiki": null,
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 13,
+   "date": "2026-08-06",
+   "race": "Continental Tire Grand Prix of Portland",
+   "track": "Portland International Raceway",
+   "city": "Portland",
+   "state": "OR",
+   "country": "USA",
+   "winner": "Oliver Wheldon",
+   "winner_wiki": null,
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 14,
+   "date": "2026-08-14",
+   "race": "Continental Tire Grand Prix of Markham",
+   "track": "Streets of Markham",
+   "city": "Markham",
+   "state": "ON",
+   "country": "CAN",
+   "winner": "Sebastián Garzón",
+   "winner_wiki": "Sebastián_Garzón",
+   "track_type": "street",
+   "cancelled": false
+  },
+  {
+   "round": 15,
+   "date": "2026-08-14",
+   "race": "Continental Tire Grand Prix of Markham",
+   "track": "Streets of Markham",
+   "city": "Markham",
+   "state": "ON",
+   "country": "CAN",
+   "winner": "Brad Majman",
+   "winner_wiki": "Brad_Majman",
+   "track_type": "street",
+   "cancelled": false
+  },
+  {
+   "round": 16,
+   "date": "2026-09-24",
+   "race": "USF Pro Championships Grand Prix of Road America",
+   "track": "Road America",
+   "city": "Elkhart Lake",
+   "state": "WI",
+   "country": "USA",
+   "winner": "Eddie Beswick",
+   "winner_wiki": "Eddie_Beswick",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 17,
+   "date": "2026-09-24",
+   "race": "USF Pro Championships Grand Prix of Road America",
+   "track": "Road America",
+   "city": "Elkhart Lake",
+   "state": "WI",
+   "country": "USA",
+   "winner": "Ryan Giannetta",
+   "winner_wiki": null,
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 18,
+   "date": "2026-09-24",
+   "race": "USF Pro Championships Grand Prix of Road America",
+   "track": "Road America",
+   "city": "Elkhart Lake",
+   "state": "WI",
+   "country": "USA",
+   "winner": "Eddie Beswick",
+   "winner_wiki": "Eddie_Beswick",
+   "track_type": "road",
+   "cancelled": false
+  }
+ ],
+ "sources": [
+  "https://en.wikipedia.org/wiki/2026_USF2000_Championship",
+  "https://www.wikidata.org (driver bios)"
+ ]
+}

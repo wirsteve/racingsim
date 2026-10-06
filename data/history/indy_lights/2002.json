@@ -1,0 +1,868 @@
+{
+ "series": "formula_lights",
+ "year": 2002,
+ "official_name": "2002",
+ "era": "IRL feeder (Infiniti Pro / Indy Pro / Indy Lights / Indy NXT)",
+ "data_level": "full",
+ "notes": "IRL-sanctioned Infiniti Pro Series (first season); the CART-era Indy Lights ended after 2001.",
+ "teams_source": "teams_table",
+ "teams": [
+  {
+   "team": "Sinden Racing Service",
+   "team_wiki": null,
+   "owner": null,
+   "manufacturer": "Infiniti",
+   "chassis": null,
+   "cars": [
+    {
+     "number": "2",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Ed Carpenter",
+       "wiki": "Ed_Carpenter_(racing_driver)",
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    }
+   ],
+   "manufacturer_note": "spec engine (from page text)"
+  },
+  {
+   "team": "Brian Stewart Racing",
+   "team_wiki": null,
+   "owner": null,
+   "manufacturer": "Infiniti",
+   "chassis": null,
+   "cars": [
+    {
+     "number": "3",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Marty Roth",
+       "wiki": "Marty_Roth",
+       "rounds": "1–4, 6–7",
+       "nat": "CAN"
+      }
+     ]
+    }
+   ],
+   "manufacturer_note": "spec engine (from page text)"
+  },
+  {
+   "team": "Luyendyk Racing",
+   "team_wiki": "Luyendyk_Racing",
+   "owner": null,
+   "manufacturer": "Infiniti",
+   "chassis": null,
+   "cars": [
+    {
+     "number": "5",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Arie Luyendyk Jr.",
+       "wiki": "Arie_Luyendyk_Jr.",
+       "rounds": "All",
+       "nat": "NLD"
+      }
+     ]
+    }
+   ],
+   "manufacturer_note": "spec engine (from page text)"
+  },
+  {
+   "team": "Kelley Racing",
+   "team_wiki": "Kelley_Racing",
+   "owner": null,
+   "manufacturer": "Infiniti",
+   "chassis": null,
+   "cars": [
+    {
+     "number": "7",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Jason Priestley",
+       "wiki": "Jason_Priestley",
+       "rounds": "1–4",
+       "nat": "CAN"
+      }
+     ]
+    }
+   ],
+   "manufacturer_note": "spec engine (from page text)"
+  },
+  {
+   "team": "REV 1 Racing",
+   "team_wiki": "Ronnie_Johncox",
+   "owner": null,
+   "manufacturer": "Infiniti",
+   "chassis": null,
+   "cars": [
+    {
+     "number": "8",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Ronnie Johncox",
+       "wiki": "Ronnie_Johncox",
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    }
+   ],
+   "manufacturer_note": "spec engine (from page text)"
+  },
+  {
+   "team": "Sam Schmidt Motorsports",
+   "team_wiki": "Arrow_McLaren_SP",
+   "owner": null,
+   "manufacturer": "Infiniti",
+   "chassis": null,
+   "cars": [
+    {
+     "number": "9",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Jeff Tillman",
+       "wiki": null,
+       "rounds": "3",
+       "nat": "USA"
+      },
+      {
+       "name": "Tom Wood",
+       "wiki": null,
+       "rounds": "4, 6–7",
+       "nat": "CAN"
+      },
+      {
+       "name": "Curtis Francois",
+       "wiki": null,
+       "rounds": "5",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "99",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "G. J. Mennen",
+       "wiki": null,
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    }
+   ],
+   "manufacturer_note": "spec engine (from page text)"
+  },
+  {
+   "team": "Roquin Motorsports",
+   "team_wiki": "Rolando_Quintanilla",
+   "owner": null,
+   "manufacturer": "Infiniti",
+   "chassis": null,
+   "cars": [
+    {
+     "number": "11",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Rolando Quintanilla",
+       "wiki": "Rolando_Quintanilla",
+       "rounds": "2–7",
+       "nat": "MEX"
+      }
+     ]
+    }
+   ],
+   "manufacturer_note": "spec engine (from page text)"
+  },
+  {
+   "team": "Beardsley Motorsports",
+   "team_wiki": null,
+   "owner": null,
+   "manufacturer": "Infiniti",
+   "chassis": null,
+   "cars": [
+    {
+     "number": "12",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Matt Beardsley",
+       "wiki": null,
+       "rounds": "2–5, 7",
+       "nat": "USA"
+      }
+     ]
+    }
+   ],
+   "manufacturer_note": "spec engine (from page text)"
+  },
+  {
+   "team": "A. J. Foyt Enterprises",
+   "team_wiki": "A._J._Foyt_Enterprises",
+   "owner": null,
+   "manufacturer": "Infiniti",
+   "chassis": null,
+   "cars": [
+    {
+     "number": "14",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "A. J. Foyt IV",
+       "wiki": "A._J._Foyt_IV",
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    }
+   ],
+   "manufacturer_note": "spec engine (from page text)"
+  },
+  {
+   "team": "Automatic Fire Sprinklers",
+   "team_wiki": "AFS_Racing",
+   "owner": null,
+   "manufacturer": "Infiniti",
+   "chassis": null,
+   "cars": [
+    {
+     "number": "27",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Gary Peterson",
+       "wiki": null,
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    }
+   ],
+   "manufacturer_note": "spec engine (from page text)"
+  },
+  {
+   "team": "Conti-Genoa-Frost Racing",
+   "team_wiki": "O2_Racing_Technology",
+   "owner": null,
+   "manufacturer": "Infiniti",
+   "chassis": null,
+   "cars": [
+    {
+     "number": "34",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Ryan Hampton",
+       "wiki": "Ryan_Hampton_(racing_driver)",
+       "rounds": "3–7",
+       "nat": "USA"
+      }
+     ]
+    }
+   ],
+   "manufacturer_note": "spec engine (from page text)"
+  },
+  {
+   "team": "Bowes Seal Fast Racing",
+   "team_wiki": null,
+   "owner": null,
+   "manufacturer": "Infiniti",
+   "chassis": null,
+   "cars": [
+    {
+     "number": "37",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Mike Koss",
+       "wiki": null,
+       "rounds": "1–4, 6–7",
+       "nat": "USA"
+      },
+      {
+       "name": "Matt Halliday",
+       "wiki": "Matthew_Halliday_(racing_driver)",
+       "rounds": "5",
+       "nat": "NZL"
+      }
+     ]
+    },
+    {
+     "number": "38",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Matt Halliday",
+       "wiki": "Matthew_Halliday_(racing_driver)",
+       "rounds": "1",
+       "nat": "NZL"
+      }
+     ]
+    },
+    {
+     "number": "43",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Dave Steele",
+       "wiki": "Dave_Steele",
+       "rounds": "3",
+       "nat": "USA"
+      },
+      {
+       "name": "Tony Turco",
+       "wiki": null,
+       "rounds": "4–6",
+       "nat": "USA"
+      }
+     ]
+    }
+   ],
+   "manufacturer_note": "spec engine (from page text)"
+  },
+  {
+   "team": "Hemelgarn 91/Johnson Motorsports",
+   "team_wiki": "Hemelgarn_Racing",
+   "owner": null,
+   "manufacturer": "Infiniti",
+   "chassis": null,
+   "cars": [
+    {
+     "number": "91",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Aaron Fike",
+       "wiki": "Aaron_Fike",
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "92",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Cory Witherill",
+       "wiki": "Cory_Witherill",
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    }
+   ],
+   "manufacturer_note": "spec engine (from page text)"
+  }
+ ],
+ "standings": [
+  {
+   "pos": 1,
+   "name": "A. J. Foyt IV",
+   "wiki": "A._J._Foyt_IV",
+   "points": 290,
+   "wins": 4,
+   "podiums": 4,
+   "top5": 5,
+   "starts": 7,
+   "nat": "USA",
+   "results": [
+    1,
+    4,
+    1,
+    1,
+    9,
+    6,
+    1
+   ]
+  },
+  {
+   "pos": 2,
+   "name": "Arie Luyendyk Jr.",
+   "wiki": "Arie_Luyendyk_Jr.",
+   "points": 236,
+   "wins": 0,
+   "podiums": 4,
+   "top5": 4,
+   "starts": 7,
+   "nat": "NLD",
+   "results": [
+    10,
+    2,
+    2,
+    6,
+    2,
+    2,
+    7
+   ]
+  },
+  {
+   "pos": 3,
+   "name": "Ed Carpenter",
+   "wiki": "Ed_Carpenter_(racing_driver)",
+   "points": 226,
+   "wins": 0,
+   "podiums": 3,
+   "top5": 6,
+   "starts": 7,
+   "nat": "USA",
+   "results": [
+    5,
+    5,
+    3,
+    2,
+    3,
+    7,
+    5
+   ]
+  },
+  {
+   "pos": 4,
+   "name": "Cory Witherill",
+   "wiki": "Cory_Witherill",
+   "points": 213,
+   "wins": 1,
+   "podiums": 4,
+   "top5": 4,
+   "starts": 7,
+   "nat": "USA",
+   "results": [
+    3,
+    1,
+    15,
+    3,
+    11,
+    13,
+    2
+   ]
+  },
+  {
+   "pos": 5,
+   "name": "Aaron Fike",
+   "wiki": "Aaron_Fike",
+   "points": 186,
+   "wins": 1,
+   "podiums": 2,
+   "top5": 3,
+   "starts": 7,
+   "nat": "USA",
+   "results": [
+    11,
+    3,
+    4,
+    14,
+    14,
+    1,
+    12
+   ]
+  },
+  {
+   "pos": 6,
+   "name": "Ronnie Johncox",
+   "wiki": "Ronnie_Johncox",
+   "points": 180,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 3,
+   "starts": 7,
+   "nat": "USA",
+   "results": [
+    9,
+    12,
+    5,
+    4,
+    8,
+    5,
+    8
+   ]
+  },
+  {
+   "pos": 7,
+   "name": "Gary Peterson",
+   "wiki": null,
+   "points": 163,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 1,
+   "starts": 6,
+   "nat": "USA",
+   "results": [
+    7,
+    "DNS",
+    10,
+    8,
+    10,
+    8,
+    4
+   ]
+  },
+  {
+   "pos": 8,
+   "name": "G. J. Mennen",
+   "wiki": null,
+   "points": 161,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 1,
+   "starts": 7,
+   "nat": "USA",
+   "results": [
+    8,
+    8,
+    9,
+    15,
+    4,
+    9,
+    9
+   ]
+  },
+  {
+   "pos": 9,
+   "name": "Ryan Hampton",
+   "wiki": "Ryan_Hampton_(racing_driver)",
+   "points": 147,
+   "wins": 1,
+   "podiums": 2,
+   "top5": 2,
+   "starts": 5,
+   "nat": "USA",
+   "results": [
+    null,
+    null,
+    7,
+    12,
+    1,
+    14,
+    3
+   ]
+  },
+  {
+   "pos": 10,
+   "name": "Marty Roth",
+   "wiki": "Marty_Roth",
+   "points": 138,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 1,
+   "starts": 6,
+   "nat": "CAN",
+   "results": [
+    6,
+    9,
+    11,
+    13,
+    null,
+    4,
+    10
+   ]
+  },
+  {
+   "pos": 11,
+   "name": "Rolando Quintanilla",
+   "wiki": "Rolando_Quintanilla",
+   "points": 137,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 6,
+   "nat": "MEX",
+   "results": [
+    null,
+    11,
+    6,
+    7,
+    6,
+    10,
+    14
+   ]
+  },
+  {
+   "pos": 12,
+   "name": "Mike Koss",
+   "wiki": null,
+   "points": 123,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 1,
+   "starts": 6,
+   "nat": "USA",
+   "results": [
+    4,
+    10,
+    16,
+    11,
+    null,
+    11,
+    11
+   ]
+  },
+  {
+   "pos": 13,
+   "name": "Matt Beardsley",
+   "wiki": null,
+   "points": 107,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 1,
+   "starts": 5,
+   "nat": "USA",
+   "results": [
+    null,
+    7,
+    14,
+    5,
+    12,
+    null,
+    13
+   ]
+  },
+  {
+   "pos": 14,
+   "name": "Jason Priestley",
+   "wiki": "Jason_Priestley",
+   "points": 99,
+   "wins": 0,
+   "podiums": 1,
+   "top5": 1,
+   "starts": 3,
+   "nat": "CAN",
+   "results": [
+    2,
+    6,
+    13,
+    "DNS",
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 15,
+   "name": "Tom Wood",
+   "wiki": null,
+   "points": 83,
+   "wins": 0,
+   "podiums": 1,
+   "top5": 1,
+   "starts": 3,
+   "nat": "CAN",
+   "results": [
+    null,
+    null,
+    null,
+    10,
+    null,
+    3,
+    6
+   ]
+  },
+  {
+   "pos": 16,
+   "name": "Tony Turco",
+   "wiki": null,
+   "points": 57,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 3,
+   "nat": "USA",
+   "results": [
+    null,
+    null,
+    null,
+    9,
+    13,
+    12,
+    null
+   ]
+  },
+  {
+   "pos": 17,
+   "name": "Matt Halliday",
+   "wiki": "Matthew_Halliday_(racing_driver)",
+   "points": 44,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 2,
+   "nat": "NZL",
+   "results": [
+    12,
+    null,
+    null,
+    null,
+    7,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 18,
+   "name": "Curtis Francois",
+   "wiki": null,
+   "points": 30,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 1,
+   "starts": 1,
+   "nat": "USA",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    5,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 19,
+   "name": "Dave Steele",
+   "wiki": "Dave_Steele",
+   "points": 24,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 1,
+   "nat": "USA",
+   "results": [
+    null,
+    null,
+    8,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 20,
+   "name": "Jeff Tillman",
+   "wiki": null,
+   "points": 18,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 1,
+   "nat": "USA",
+   "results": [
+    null,
+    null,
+    12,
+    null,
+    null,
+    null,
+    null
+   ]
+  }
+ ],
+ "schedule": [
+  {
+   "round": 1,
+   "date": "2002-07-07",
+   "race": "Kansas 100",
+   "track": "Kansas Speedway",
+   "city": "Kansas City",
+   "state": "KS",
+   "country": "USA",
+   "winner": "A. J. Foyt IV",
+   "winner_wiki": "A._J._Foyt_IV",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 2,
+   "date": "2002-07-20",
+   "race": "Nashville 100",
+   "track": "Nashville Superspeedway",
+   "city": "Lebanon",
+   "state": "TN",
+   "country": "USA",
+   "winner": "Cory Witherill",
+   "winner_wiki": "Cory_Witherill",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 3,
+   "date": "2002-07-28",
+   "race": "Michigan 100",
+   "track": "Michigan International Speedway",
+   "city": "Brooklyn",
+   "state": "MI",
+   "country": "USA",
+   "winner": "A. J. Foyt IV",
+   "winner_wiki": "A._J._Foyt_IV",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 4,
+   "date": "2002-08-11",
+   "race": "Kentucky 100",
+   "track": "Kentucky Speedway",
+   "city": "Sparta",
+   "state": "KY",
+   "country": "USA",
+   "winner": "A. J. Foyt IV",
+   "winner_wiki": "A._J._Foyt_IV",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 5,
+   "date": "2002-08-25",
+   "race": "St. Louis 100",
+   "track": "Gateway International Raceway",
+   "city": "Madison",
+   "state": "IL",
+   "country": "USA",
+   "winner": "Ryan Hampton",
+   "winner_wiki": "Ryan_Hampton_(racing_driver)",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 6,
+   "date": "2002-09-08",
+   "race": "Chicago 100",
+   "track": "Chicagoland Speedway",
+   "city": "Joliet",
+   "state": "IL",
+   "country": "USA",
+   "winner": "Aaron Fike",
+   "winner_wiki": "Aaron_Fike",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 7,
+   "date": "2002-09-14",
+   "race": "BG Products 100",
+   "track": "Texas Motor Speedway",
+   "city": "Fort Worth",
+   "state": "TX",
+   "country": "USA",
+   "winner": "A. J. Foyt IV",
+   "winner_wiki": "A._J._Foyt_IV",
+   "track_type": null,
+   "cancelled": false
+  }
+ ],
+ "sources": [
+  "https://en.wikipedia.org/wiki/2002_Infiniti_Pro_Series",
+  "https://www.wikidata.org (driver bios)"
+ ]
+}

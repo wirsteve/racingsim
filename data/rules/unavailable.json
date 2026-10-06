@@ -1,0 +1,284 @@
+[
+ {
+  "source": "ARCA 2024 Daytona entry blank PDF",
+  "url": "https://www.arcaracing.com/wp-content/uploads/sites/36/2024/01/31/24-AMS01-ENTRY-BLANK-DAYTONA.pdf",
+  "reason": "HTTP 403",
+  "replacement_source": "search snippet: $17,500 to win, $661,689 year-end awards"
+ },
+ {
+  "source": "ARCA Racing site (awards guide, entry blanks, points article)",
+  "url": "https://www.arcaracing.com/wp-content/uploads/sites/36/2024/01/29/ARCA-Awards-Guide-2024-FINAL.pdf",
+  "reason": "Cloudflare 'Attention Required' page / 403; not bypassed",
+  "replacement_source": "src:pri-arca-2020, src:search-arca-2024"
+ },
+ {
+  "source": "CARS Tour official site / rulebook PDFs",
+  "url": "https://www.carsracingtour.com/",
+  "reason": "Cloudflare challenge on robots.txt; not bypassed",
+  "replacement_source": "search snippets (src:search-cars-2024)"
+ },
+ {
+  "source": "CARS Tour website (rulebook PDFs)",
+  "url": "https://www.carsracingtour.com/",
+  "reason": "Cloudflare managed challenge on scripted fetch; not bypassed",
+  "replacement_source": "search-result snippet of 2025 rulebook + Hickory LLMS rules (NASCAR LMSC-based)"
+ },
+ {
+  "source": "Caswell Messenger: South Boston tire rules amid 2022 tire shortage",
+  "url": "https://www.caswellmessenger.com/online_features/article_88a51362-9eed-11ec-9387-236897f1cee6.html",
+  "reason": "HTTP 429 rate-limited; not retried",
+  "replacement_source": "South Boston 2021 cost-cutting release"
+ },
+ {
+  "source": "Dirt Track Digest Fonda purse article",
+  "url": "https://www.dirttrackdigest.com/fonda-speedway/2025/04/02/fonda-mod-purse-grows-weekly-358-bonus-announced/",
+  "reason": "HTTP 403",
+  "replacement_source": "src:myracenews-fonda-2025"
+ },
+ {
+  "source": "Dirt Track Digest STSS article",
+  "url": "https://www.dirttrackdigest.com/modified-track-results/2024/11/15/stss-sets-unified-modified-engine-rules-for-25-season/",
+  "reason": "HTTP 403 to WebFetch",
+  "replacement_source": "search snippets"
+ },
+ {
+  "source": "Dirt-track street stock PDFs found in search (I-75 Raceway Park, Smoky Mountain Speedway, Crate Racin' USA, Winchester VA)",
+  "url": "https://www.smokymountainspeedway.com/2025_Street_Stock_Rules3.pdf",
+  "reason": "Downloaded but excluded: dirt tracks, out of scope for asphalt file (Smoky Mtn street stock: 602 3000 lb, option-2 3100 lb, $200 shock claim, 602 dyno cap 391 hp)",
+  "replacement_source": "Hickory, Wiscasset, New Smyrna street/super stock rules"
+ },
+ {
+  "source": "Engine Builder Magazine (IMCA engines 2011; Speedway spec engine 2025)",
+  "url": "https://www.enginebuildermag.com/2011/11/imca-engines-building-engines-to-modified-racing-rules/",
+  "reason": "HTTP 403 to WebFetch",
+  "replacement_source": "search snippets / IMCA rulebooks"
+ },
+ {
+  "source": "Engine Builder Magazine - Unique engines of ARCA (2014)",
+  "url": "https://www.enginebuildermag.com/2014/11/unique-engines-arca/",
+  "reason": "HTTP 403",
+  "replacement_source": "src:enginelabs_ilmor396"
+ },
+ {
+  "source": "FloSeries / MyRacePass Night in America press pages",
+  "url": "https://www.floseries.com/press/2025/article/183172",
+  "reason": "HTTP 403 to WebFetch; not retried",
+  "replacement_source": "search snippets"
+ },
+ {
+  "source": "Fonda Speedway official site (press and downloads)",
+  "url": "https://www.thefondaspeedway.com/press/article/170190",
+  "reason": "HTTP 403 to fetch tool; not retried",
+  "replacement_source": "src:myracenews-fonda-2025"
+ },
+ {
+  "source": "Houston Motorsports Park points page",
+  "url": "http://www.houstonmotorsportspark.com/POINTS.html",
+  "reason": "HTTP 503",
+  "replacement_source": null
+ },
+ {
+  "source": "Jayski Connor Hall 2024 AAPWS title",
+  "url": "https://www.jayski.com/2024/09/24/connor-hall-wins-second-consecutive-nascar-advance-auto-parts-weekly-series-championship/",
+  "reason": "HTTP 403",
+  "replacement_source": "src:finishline-aapws-2024"
+ },
+ {
+  "source": "Jayski Goodyear Fast Facts pages",
+  "url": "https://www.jayski.com/",
+  "reason": "HTTP 403 on fetch",
+  "replacement_source": "src:goodyear_fastfacts_snippets (search snippets)"
+ },
+ {
+  "source": "KX News: Strand details the cost of an IMCA Modified racecar",
+  "url": "https://www.kxnet.com/news/strand-details-the-cost-of-an-imca-modified-racecar/",
+  "reason": "HTTP 403 to WebFetch",
+  "replacement_source": "dirttrackhq snippet, Charger price list"
+ },
+ {
+  "source": "Kalamazoo Speedway 'What really is a NASCAR home track'",
+  "url": "https://www.kalamazoospeedway.com/what-really-is-a-nascar-home-track/",
+  "reason": "HTTP 405",
+  "replacement_source": "src:sts-nascar-sanction"
+ },
+ {
+  "source": "Lima Land Motorsports Park NASCAR license article",
+  "url": "https://www.limaland.com/press/article/126856",
+  "reason": "HTTP 403",
+  "replacement_source": "src:birchrun-lic"
+ },
+ {
+  "source": "Lucas Oil Speedway USRA points fund article",
+  "url": "https://www.lucasoilspeedway.com/press/article/126952",
+  "reason": "HTTP 403",
+  "replacement_source": null
+ },
+ {
+  "source": "Medium - Hidden economics of IndyCar",
+  "url": "https://medium.com/@jordanstrickler/the-hidden-economics-of-indycar-the-costs-of-going-230-mph-852604ac77fb",
+  "reason": "HTTP 403",
+  "replacement_source": "src:indycar_budget_snippets"
+ },
+ {
+  "source": "MyRacePass track points pages",
+  "url": "https://www.myracepass.com/tracks/2554/points",
+  "reason": "HTTP 405 to fetch tool",
+  "replacement_source": "track sites"
+ },
+ {
+  "source": "NASCAR.com news article on AAPWS 2024 final points weekend",
+  "url": "https://www.nascar.com/news-media/2024/09/19/nascar-national-championships-on-the-line-during-final-points-weekend-for-the-advance-auto-parts-weekly-series/",
+  "reason": "HTTP 403 to fetch tool; only search snippet seen",
+  "replacement_source": "src:sts-aapws-regional-2021, src:wiki-nascar-local"
+ },
+ {
+  "source": "NASCAR.com news pages",
+  "url": "https://www.nascar.com/news-media/",
+  "reason": "HTTP 403 on fetch",
+  "replacement_source": "search snippets"
+ },
+ {
+  "source": "On3 - 23XI trial repair bill article",
+  "url": "https://www.on3.com/pro/news/23xi-frm-trial-bob-jenkins-reveals-shocking-repair-bill-from-nascar-for-non-wrecked-next-gen-cars/",
+  "reason": "HTTP 403",
+  "replacement_source": "search snippet (src:jgr_crash_costs_snippet)"
+ },
+ {
+  "source": "Ontario Late Model Association 2025 rules PDF",
+  "url": "https://www.ontariolatemodelassociation.ca/images/2025-Ontario-Late-Model-Association-Rules.pdf",
+  "reason": "404 Not Found",
+  "replacement_source": "APC United Late Model Series snippets; ACT (Quebec)"
+ },
+ {
+  "source": "Oswego Speedway press pages",
+  "url": "https://www.oswegospeedway.com/press/2024/article/160336",
+  "reason": "HTTP 403 to fetch tool",
+  "replacement_source": "src:myracenews-oswego-2026"
+ },
+ {
+  "source": "Pittsburgh's PA Motor Speedway press pages",
+  "url": "https://www.ppms.com/press/article/163749",
+  "reason": "HTTP 403/405",
+  "replacement_source": null
+ },
+ {
+  "source": "Pro All Stars Series (PASS) rulebooks",
+  "url": "https://proallstarsseries.com/rules/pass-slm-rules",
+  "reason": "robots.txt on proallstarsseries / linkedupradio explicitly disallows anthropic-ai and ChatGPT-User; downloaded PDF was discarded unread out of respect for that signal",
+  "replacement_source": "Thompson 604 Modified (PASS-ACT seals) and Wiscasset/Maine Pro Stock rules"
+ },
+ {
+  "source": "RACER - NASCAR charter sales prices revealed",
+  "url": "https://racer.com/2025/11/24/nascar-charter-sales-prices-revealed-in-latest-lawsuit-document-dump",
+  "reason": "HTTP 429 rate limited; not retried",
+  "replacement_source": "src:racingnews_charters_2025"
+ },
+ {
+  "source": "RUSH Late Model 2025 rules",
+  "url": "https://rushlatemodels.com/2025%20RUSH%20Late%20Model%20Rules.pdf",
+  "reason": "Cloudflare challenge; skipped",
+  "replacement_source": "search snippet: 70 show-up points for drivers who attempt but do not start feature"
+ },
+ {
+  "source": "Race Rotax (racerotax.com) Grand Nationals facts",
+  "url": "https://racerotax.com/media/rotax-grand-nationals-facts/",
+  "reason": "HTTP 403",
+  "replacement_source": "search snippet: entry includes 2 sets slick race tires (+1 L oil, 5 gal fuel at America's Trophy)"
+ },
+ {
+  "source": "Short Track Super Series press + downloads (MyRacePass-hosted)",
+  "url": "https://www.shorttracksuperseries.com/press/article/162768",
+  "reason": "HTTP 403 to WebFetch; not retried",
+  "replacement_source": "search snippets"
+ },
+ {
+  "source": "Skip Barber Race Series 2020 PDF",
+  "url": "https://www.skipbarber.com/wp-content/uploads/2020/03/SBRS-Race-Series-2020.pdf",
+  "reason": "HTTP 520 (server error); not retried",
+  "replacement_source": "src:skipbarber_snippets"
+ },
+ {
+  "source": "Snowball Derby page on thethirdturn.com",
+  "url": "https://thethirdturn.com/wiki/Snowball_Derby",
+  "reason": "Not fetched per brief (robots disallows all bots)",
+  "replacement_source": "src:sts-snowball-2023"
+ },
+ {
+  "source": "Southern Oregon Motorsports IMCA race procedures",
+  "url": "https://www.southernoregonmotorsports.com/downloads/get.aspx?i=631777",
+  "reason": "HTTP 405 to fetch tool",
+  "replacement_source": "src:imca-gp-2026"
+ },
+ {
+  "source": "Speedway Motors product/toolbox pages",
+  "url": "https://www.speedwaymotors.com/the-toolbox/imca-modified-spec-engine-guide-everything-you-need-to-know/145778",
+  "reason": "JS-rendered; WebFetch returned empty content",
+  "replacement_source": "search snippets"
+ },
+ {
+  "source": "Stafford 2026 SK Modified rules PDF",
+  "url": "https://staffordmotorspeedway.com/wp-content/uploads/2026/03/2026-SK-Mod-Rules.pdf",
+  "reason": "returned HTML instead of PDF",
+  "replacement_source": "src:search-stafford-points"
+ },
+ {
+  "source": "Stock Car Racing fandom wiki 2005 Pro Cup",
+  "url": "https://stockcarracing.fandom.com/wiki/2005_Hooters_Pro_Cup_Series,_Southern_Division_Central",
+  "reason": "HTTP 402",
+  "replacement_source": "src:wiki-cars-tour"
+ },
+ {
+  "source": "Sunset Speedway (ON) 2025 Mini Stock Rules",
+  "url": "https://www.sunsetspeedway.ca/wp-content/uploads/2025/03/2025-Mini-Stock-Rules.pdf",
+  "reason": "404 Not Found",
+  "replacement_source": "Wiscasset Thunder Four, LVMS mini stock, Langley UCAR"
+ },
+ {
+  "source": "TrackForum - Cost to run full season in USF2000",
+  "url": "https://www.trackforum.org/forum/motorsports/indy-lights-presented-by-cooper-tires-ladder-series/142955-cost-to-run-full-season-in-usf2000",
+  "reason": "HTTP 403",
+  "replacement_source": "src:usf_budget_snippets"
+ },
+ {
+  "source": "USAC trans site 2016 rule changes",
+  "url": "https://trans.usacracing.com/news/silver-crown/item/5093-rule-changes-greet-usac-s-silver-crown-sprint-midget-divisions-in-2016",
+  "reason": "HTTP 503",
+  "replacement_source": "search snippets"
+ },
+ {
+  "source": "USRA points page usrainfo.org",
+  "url": "http://usrainfo.org/rules_point_system.htm",
+  "reason": "HTTP 503",
+  "replacement_source": "src:search-usra-points"
+ },
+ {
+  "source": "WISSOTA press article on 2025 national points",
+  "url": "https://www.wissota.org/press/2025/article/168695",
+  "reason": "HTTP 403 to fetch tool",
+  "replacement_source": "src:wissota-rb-2026"
+ },
+ {
+  "source": "WebSearch budget",
+  "url": "n/a",
+  "reason": "Session web-search limit (200) reached partway through; remaining work used direct fetches of already-known URLs only",
+  "replacement_source": null
+ },
+ {
+  "source": "racer.com (all pages)",
+  "url": "https://racer.com/",
+  "reason": "HTTP 429 rate limit on first fetch; host avoided afterwards per brief",
+  "replacement_source": "search snippets of RACER articles"
+ },
+ {
+  "source": "thethirdturn.com / Racing-Reference",
+  "url": "https://www.thethirdturn.com/",
+  "reason": "excluded by brief (robots disallow / Cloudflare)",
+  "replacement_source": "n/a"
+ },
+ {
+  "source": "usraracing.com direct PDF",
+  "url": "https://usraracing.com/ClientFiles/Downloads/2025-USRA-Modified-Rules.pdf?v=1.2",
+  "reason": "301 redirect page, not a PDF",
+  "replacement_source": "Lucas Oil Speedway mirror of the same 2025 USRA rulebook"
+ }
+]

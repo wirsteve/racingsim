@@ -1,0 +1,2920 @@
+[
+ {
+  "id": "class:305-sprint",
+  "name": "305 sprint car",
+  "discipline": "sprint",
+  "chassis": "sprint car chassis, winged or non-wing",
+  "drivetrain": "front-engine, direct drive, in/out box",
+  "engine": "305ci V8",
+  "horsepower": {
+   "min": 450,
+   "max": 500,
+   "unit": "hp",
+   "confidence": "low",
+   "sources": [
+    "src:search-sprint-classes"
+   ],
+   "notes": null
+  },
+  "weight_lb": {
+   "min": 1400,
+   "max": 1500,
+   "unit": "lb",
+   "confidence": "low",
+   "sources": [
+    "src:search-sprint-classes"
+   ],
+   "notes": "with driver"
+  },
+  "tires": "Hoosier",
+  "spec_rules": "",
+  "new_car_cost_usd": {
+   "min": 25000,
+   "max": 40000,
+   "unit": "USD",
+   "confidence": "low",
+   "sources": [
+    "src:search-sprint-classes"
+   ],
+   "notes": "race-ready"
+  },
+  "used_car_cost_usd": {
+   "min": 15000,
+   "max": 30000,
+   "unit": "USD",
+   "confidence": "low",
+   "sources": [],
+   "notes": "estimate"
+  },
+  "notes": null,
+  "confidence": "low",
+  "sources": [
+   "src:search-sprint-classes"
+  ]
+ },
+ {
+  "id": "class:358-modified",
+  "name": "358 small-block modified (Northeast dirt)",
+  "discipline": "modified",
+  "chassis": "big-block-style NE modified chassis",
+  "drivetrain": "front-engine RWD",
+  "engine": "350-363ci small-block",
+  "horsepower": {
+   "value": 570,
+   "unit": "hp",
+   "confidence": "medium",
+   "sources": [
+    "src:dirtcar-the-cars"
+   ],
+   "notes": "~570 hp"
+  },
+  "weight_lb": {
+   "value": 2400,
+   "unit": "lb",
+   "confidence": "medium",
+   "sources": [
+    "src:dirtcar-the-cars"
+   ],
+   "notes": "2,400 lb"
+  },
+  "tires": "Hoosier",
+  "spec_rules": "",
+  "new_car_cost_usd": null,
+  "used_car_cost_usd": null,
+  "notes": null,
+  "confidence": "medium",
+  "sources": [
+   "src:dirtcar-the-cars",
+   "src:wiki-super-dirtcar"
+  ]
+ },
+ {
+  "id": "class:360-sprint",
+  "name": "360 sprint car",
+  "discipline": "sprint",
+  "chassis": "sprint car chassis",
+  "drivetrain": "front-engine direct drive",
+  "engine": "360ci V8 methanol",
+  "horsepower": {
+   "min": 700,
+   "max": 775,
+   "unit": "hp",
+   "confidence": "high",
+   "sources": [
+    "src:dirtcar-the-cars",
+    "src:wiki-sprint-car"
+   ],
+   "notes": null
+  },
+  "weight_lb": {
+   "value": 1475,
+   "unit": "lb",
+   "confidence": "high",
+   "sources": [
+    "src:dirtcar-the-cars"
+   ],
+   "notes": "1,475 lb"
+  },
+  "tires": "Hoosier",
+  "spec_rules": "ASCS rules",
+  "new_car_cost_usd": {
+   "min": 35000,
+   "max": 55000,
+   "unit": "USD",
+   "confidence": "low",
+   "sources": [
+    "src:search-sprint-classes"
+   ],
+   "notes": "new"
+  },
+  "used_car_cost_usd": {
+   "min": 20000,
+   "max": 40000,
+   "unit": "USD",
+   "confidence": "low",
+   "sources": [],
+   "notes": "estimate"
+  },
+  "notes": null,
+  "confidence": "medium",
+  "sources": [
+   "src:dirtcar-the-cars",
+   "src:wiki-sprint-car",
+   "src:search-sprint-classes"
+  ]
+ },
+ {
+  "id": "class:410-sprint",
+  "name": "410 winged sprint car",
+  "discipline": "sprint",
+  "chassis": "sprint car chassis with top wing",
+  "drivetrain": "front-engine direct drive",
+  "engine": "410ci methanol-injected V8, ~9,000 rpm",
+  "horsepower": {
+   "min": 900,
+   "max": 950,
+   "unit": "hp",
+   "confidence": "high",
+   "sources": [
+    "src:wiki-sprint-car",
+    "src:dirtcar-the-cars"
+   ],
+   "notes": "900+ hp"
+  },
+  "weight_lb": {
+   "value": 1425,
+   "unit": "lb",
+   "confidence": "high",
+   "sources": [
+    "src:dirtcar-the-cars",
+    "src:wiki-sprint-car"
+   ],
+   "notes": "1,425 lb with driver"
+  },
+  "tires": "Hoosier",
+  "spec_rules": "WoO/High Limit rules",
+  "new_car_cost_usd": {
+   "min": 110000,
+   "max": 140000,
+   "unit": "USD",
+   "confidence": "low",
+   "sources": [
+    "src:search-410-cost"
+   ],
+   "notes": "car w/o engine ~$50k + engine $70k+"
+  },
+  "used_car_cost_usd": {
+   "min": 40000,
+   "max": 80000,
+   "unit": "USD",
+   "confidence": "low",
+   "sources": [],
+   "notes": "estimate"
+  },
+  "notes": null,
+  "confidence": "high",
+  "sources": [
+   "src:wiki-sprint-car",
+   "src:dirtcar-the-cars",
+   "src:search-410-cost"
+  ]
+ },
+ {
+  "id": "class:arca-stock-car",
+  "name": "ARCA Menards stock car",
+  "discipline": "stock_car",
+  "chassis": "steel tube-frame stock car (ex-Cup/Xfinity-type), composite Gen-6-style body",
+  "drivetrain": "front-engine RWD, 4-speed manual",
+  "engine": "ARCA Ilmor 396 spec engine (other engines with intake/rpm restriction)",
+  "horsepower": {
+   "value": 700,
+   "unit": "hp",
+   "confidence": "high",
+   "sources": [
+    "src:wiki-arca"
+   ],
+   "notes": "~700 hp, 530 lb-ft"
+  },
+  "weight_lb": {
+   "min": 3300,
+   "max": 3400,
+   "unit": "lb",
+   "confidence": "high",
+   "sources": [
+    "src:wiki-arca"
+   ],
+   "notes": "without driver"
+  },
+  "tires": "Hoosier/General (series supplier)",
+  "spec_rules": "Spec engine since 2015 era to cut cost",
+  "new_car_cost_usd": {
+   "unit": "USD",
+   "confidence": "low",
+   "sources": [],
+   "notes": "not verified"
+  },
+  "used_car_cost_usd": {
+   "unit": "USD",
+   "confidence": "low",
+   "sources": [],
+   "notes": "not verified"
+  },
+  "notes": "Same cars used in ARCA East/West.",
+  "confidence": "high",
+  "sources": [
+   "src:wiki-arca"
+  ]
+ },
+ {
+  "id": "class:asphalt-tour-modified",
+  "name": "Tour-type asphalt modified (Whelen Modified Tour)",
+  "discipline": "modified",
+  "chassis": "open-wheel modified tube chassis, 107-in wheelbase",
+  "drivetrain": "front-engine RWD",
+  "engine": "355-368ci small-block V8, 4-bbl carb (spec engine options incl. SB2/NASCAR spec)",
+  "horsepower": {
+   "min": 625,
+   "max": 700,
+   "unit": "hp",
+   "confidence": "medium",
+   "sources": [
+    "src:wiki-wmt"
+   ],
+   "notes": null
+  },
+  "weight_lb": {
+   "value": 2610,
+   "unit": "lb",
+   "confidence": "medium",
+   "sources": [
+    "src:wiki-wmt"
+   ],
+   "notes": "minimum 2,610 lb"
+  },
+  "tires": "spec Hoosier",
+  "spec_rules": "NASCAR WMT rules",
+  "new_car_cost_usd": {
+   "min": 80000,
+   "max": 150000,
+   "unit": "USD",
+   "confidence": "low",
+   "sources": [],
+   "notes": "informed estimate"
+  },
+  "used_car_cost_usd": {
+   "min": 30000,
+   "max": 80000,
+   "unit": "USD",
+   "confidence": "low",
+   "sources": [],
+   "notes": "informed estimate"
+  },
+  "notes": null,
+  "confidence": "medium",
+  "sources": [
+   "src:wiki-wmt"
+  ]
+ },
+ {
+  "id": "class:baby-grand",
+  "name": "Baby Grand / Dwarf car",
+  "discipline": "stock_car",
+  "chassis": "scaled stock-car or 5/8-scale fenderless coupe",
+  "drivetrain": "front-engine RWD",
+  "engine": "motorcycle or small 4-cyl (varies by club)",
+  "horsepower": {
+   "unit": "hp",
+   "confidence": "low",
+   "sources": [],
+   "notes": "not verified"
+  },
+  "weight_lb": {
+   "unit": "lb",
+   "confidence": "low",
+   "sources": [],
+   "notes": "not verified"
+  },
+  "tires": "varies",
+  "spec_rules": "Club-dependent; rare regionally",
+  "new_car_cost_usd": null,
+  "used_car_cost_usd": null,
+  "notes": "Baby Grands are scaled-down stock-car shapes; dwarf cars fenderless 1930s coupes.",
+  "confidence": "low",
+  "sources": [
+   "src:search-thunder-babygrand"
+  ]
+ },
+ {
+  "id": "class:bandolero",
+  "name": "Bandolero",
+  "discipline": "youth_oval",
+  "chassis": "spec tube chassis, fiberglass body",
+  "drivetrain": "rear-engine, centrifugal clutch, rear-wheel drive",
+  "engine": "Briggs & Stratton Vanguard 570cc V-twin (~30hp)",
+  "horsepower": {
+   "value": 30,
+   "unit": "hp",
+   "confidence": "medium",
+   "sources": [
+    "src:bandolero-retail"
+   ],
+   "notes": "~30 hp"
+  },
+  "weight_lb": {
+   "unit": "lb",
+   "confidence": "low",
+   "sources": [],
+   "notes": "not verified"
+  },
+  "tires": "spec",
+  "spec_rules": "Spec car built by US Legend Cars; ~70 mph top speed",
+  "new_car_cost_usd": {
+   "min": 9500,
+   "max": 11500,
+   "unit": "USD",
+   "year_basis": 2025,
+   "confidence": "low",
+   "sources": [
+    "src:bandolero-retail"
+   ],
+   "notes": "rolling chassis $6,995 + engine $2,424-4,274 retail"
+  },
+  "used_car_cost_usd": {
+   "min": 3000,
+   "max": 8000,
+   "unit": "USD",
+   "confidence": "low",
+   "sources": [],
+   "notes": "informed estimate"
+  },
+  "notes": "Bandits 7-11, Outlaws 12+.",
+  "confidence": "medium",
+  "sources": [
+   "src:bandolero-retail",
+   "src:inex-divisions"
+  ]
+ },
+ {
+  "id": "class:big-block-modified",
+  "name": "Big-block modified (Northeast dirt, Super DIRTcar)",
+  "discipline": "modified",
+  "chassis": "steel 1018/1020 chassis, 106-110 in wheelbase, center-steer",
+  "drivetrain": "front-engine RWD",
+  "engine": "up to 467ci (DIRTcar page says 480 max) big-block V8, Holley 4-bbl, VP gasoline",
+  "horsepower": {
+   "min": 650,
+   "max": 900,
+   "unit": "hp",
+   "confidence": "high",
+   "sources": [
+    "src:superdirtcar-101",
+    "src:dirtcar-the-cars"
+   ],
+   "notes": "650-800 (series page) / 900 (DIRTcar overview)"
+  },
+  "weight_lb": {
+   "value": 2500,
+   "unit": "lb",
+   "confidence": "high",
+   "sources": [
+    "src:superdirtcar-101",
+    "src:wiki-super-dirtcar"
+   ],
+   "notes": "2,500 lb with driver"
+  },
+  "tires": "Hoosier exclusive",
+  "spec_rules": "Super DIRTcar Series rules",
+  "new_car_cost_usd": {
+   "unit": "USD",
+   "confidence": "low",
+   "sources": [],
+   "notes": "not found"
+  },
+  "used_car_cost_usd": {
+   "unit": "USD",
+   "confidence": "low",
+   "sources": [],
+   "notes": "not found"
+  },
+  "notes": "~160 mph at Syracuse mile.",
+  "confidence": "high",
+  "sources": [
+   "src:superdirtcar-101",
+   "src:wiki-super-dirtcar"
+  ]
+ },
+ {
+  "id": "class:crate-dirt-late-model",
+  "name": "Crate dirt late model (602/604; UMP/DIRTcar Pro Late Model)",
+  "discipline": "dirt_late_model",
+  "chassis": "dirt late model wedge chassis (same builders as super)",
+  "drivetrain": "front-engine RWD",
+  "engine": "sealed GM 602 or 604 crate",
+  "horsepower": {
+   "min": 375,
+   "max": 404,
+   "unit": "hp",
+   "confidence": "high",
+   "sources": [
+    "src:dirtcar-the-cars",
+    "src:racingnews-crate"
+   ],
+   "notes": "602 ~375; 604 ~400"
+  },
+  "weight_lb": {
+   "min": 2300,
+   "max": 2400,
+   "unit": "lb",
+   "confidence": "high",
+   "sources": [
+    "src:dirtcar-the-cars"
+   ],
+   "notes": "2,300-2,400 depending on engine"
+  },
+  "tires": "spec Hoosier",
+  "spec_rules": "sealed crates",
+  "new_car_cost_usd": {
+   "min": 40000,
+   "max": 70000,
+   "unit": "USD",
+   "confidence": "low",
+   "sources": [],
+   "notes": "estimate for new; chassis kit from ~$16k (Rocket 2025)"
+  },
+  "used_car_cost_usd": {
+   "min": 10000,
+   "max": 25000,
+   "unit": "USD",
+   "year_basis": 2018,
+   "confidence": "medium",
+   "sources": [
+    "src:racingnews-crate"
+   ],
+   "notes": "competitive 604 car ~$18,000 bumper to bumper (2018)"
+  },
+  "notes": "602 crate $3.5-4.8k base, sealed race-ready ~$8.5k; 604 ~$6-10.4k.",
+  "confidence": "medium",
+  "sources": [
+   "src:dirtcar-the-cars",
+   "src:racingnews-crate",
+   "src:search-crate-engines"
+  ]
+ },
+ {
+  "id": "class:dallara-il15",
+  "name": "Dallara IL-15 (Indy Lights / Indy NXT 2015-)",
+  "discipline": "open_wheel",
+  "chassis": "Dallara IL-15",
+  "drivetrain": "mid-engine RWD",
+  "engine": "2.0L turbo I4 Mazda-AER",
+  "horsepower": {
+   "min": 450,
+   "max": 500,
+   "unit": "hp",
+   "confidence": "high",
+   "sources": [
+    "src:wiki-dallara-il15",
+    "src:wiki-indy-nxt"
+   ],
+   "notes": "450hp + 50hp push-to-pass"
+  },
+  "weight_lb": {
+   "value": 1400,
+   "unit": "lb dry",
+   "confidence": "high",
+   "sources": [
+    "src:wiki-dallara-il15"
+   ],
+   "notes": null
+  },
+  "tires": "Firestone",
+  "spec_rules": "spec",
+  "new_car_cost_usd": null,
+  "used_car_cost_usd": null,
+  "notes": null,
+  "confidence": "high",
+  "sources": [
+   "src:wiki-dallara-il15",
+   "src:wiki-indy-nxt"
+  ]
+ },
+ {
+  "id": "class:dirt-stock-car",
+  "name": "IMCA/USRA/DIRTcar Stock Car (dirt)",
+  "discipline": "stock_car",
+  "chassis": "production-based full-frame with fabricated parts",
+  "drivetrain": "front-engine RWD",
+  "engine": "GM 602/604 crate",
+  "horsepower": {
+   "value": 350,
+   "unit": "hp",
+   "confidence": "medium",
+   "sources": [
+    "src:dirtcar-the-cars"
+   ],
+   "notes": "~350 hp"
+  },
+  "weight_lb": {
+   "value": 3000,
+   "unit": "lb",
+   "confidence": "medium",
+   "sources": [
+    "src:dirtcar-the-cars"
+   ],
+   "notes": "~3,000 lb"
+  },
+  "tires": "spec",
+  "spec_rules": "crate",
+  "new_car_cost_usd": null,
+  "used_car_cost_usd": {
+   "min": 5000,
+   "max": 20000,
+   "unit": "USD",
+   "confidence": "low",
+   "sources": [],
+   "notes": "estimate"
+  },
+  "notes": null,
+  "confidence": "medium",
+  "sources": [
+   "src:dirtcar-the-cars"
+  ]
+ },
+ {
+  "id": "class:ferrari-296-challenge",
+  "name": "Ferrari 296 Challenge",
+  "discipline": "sports_car",
+  "chassis": "Ferrari 296 Challenge",
+  "drivetrain": "mid-engine RWD",
+  "engine": "3.0L twin-turbo V6 (non-hybrid)",
+  "horsepower": {
+   "min": 680,
+   "max": 700,
+   "unit": "hp",
+   "confidence": "low",
+   "sources": [
+    "src:manofmany-lambo-ferrari"
+   ],
+   "notes": null
+  },
+  "weight_lb": null,
+  "tires": "Pirelli",
+  "spec_rules": "one-make",
+  "new_car_cost_usd": {
+   "value": 420000,
+   "unit": "USD (~EUR 390k)",
+   "confidence": "low",
+   "sources": [
+    "src:manofmany-lambo-ferrari"
+   ],
+   "notes": null
+  },
+  "used_car_cost_usd": null,
+  "notes": null,
+  "confidence": "low",
+  "sources": [
+   "src:manofmany-lambo-ferrari",
+   "src:imsa-ferrari-challenge-2025"
+  ]
+ },
+ {
+  "id": "class:fia-f4",
+  "name": "FIA Formula 4 (Ligier JS F4 / JS F422; earlier Crawford F4-16)",
+  "discipline": "open_wheel",
+  "chassis": "carbon monocoque, halo (Gen 2)",
+  "drivetrain": "mid-engine RWD, paddle-shift sequential",
+  "engine": "2.0L Honda K20 (2016-23, ~160hp); Ligier/Storm engine with JS F422 (2024-)",
+  "horsepower": {
+   "min": 160,
+   "max": 180,
+   "unit": "hp",
+   "confidence": "high",
+   "sources": [
+    "src:wiki-f4-us",
+    "src:wiki-f4-us-2025"
+   ],
+   "notes": null
+  },
+  "weight_lb": {
+   "min": 1250,
+   "max": 1350,
+   "unit": "lb incl. driver",
+   "confidence": "low",
+   "sources": [
+    "src:informed-estimate"
+   ],
+   "notes": "informed estimate from FIA F4 minimum weights"
+  },
+  "tires": "Hankook (F4 US since 2019)",
+  "spec_rules": "FIA F4 regulations, cost-capped parts",
+  "new_car_cost_usd": null,
+  "used_car_cost_usd": null,
+  "notes": "Also used in Ligier Junior Formula Championship (age 14+) and FPUSA-4.",
+  "confidence": "high",
+  "sources": [
+   "src:wiki-f4-us",
+   "src:ligier-jfc"
+  ]
+ },
+ {
+  "id": "class:fia-gt3",
+  "name": "GT3 (FIA GT3 / IMSA GTD & GTD PRO)",
+  "discipline": "sports_car",
+  "chassis": "manufacturer GT3 cars (Porsche 911 GT3 R, Corvette Z06 GT3.R, BMW M4 GT3, Ferrari 296 GT3, Lamborghini Huracan GT3, Mercedes-AMG GT3, Ford Mustang GT3, Acura/Lexus ...)",
+  "drivetrain": "RWD",
+  "engine": "production-derived 3.8-6.2L",
+  "horsepower": {
+   "min": 500,
+   "max": 600,
+   "unit": "hp",
+   "confidence": "low",
+   "sources": [
+    "src:informed-estimate"
+   ],
+   "notes": "informed estimate of BoP range"
+  },
+  "weight_lb": {
+   "min": 2850,
+   "max": 3150,
+   "unit": "lb",
+   "confidence": "low",
+   "sources": [
+    "src:informed-estimate"
+   ],
+   "notes": "informed estimate"
+  },
+  "tires": "Michelin (IMSA) / Pirelli (SRO)",
+  "spec_rules": "Balance of Performance",
+  "new_car_cost_usd": {
+   "min": 500000,
+   "max": 650000,
+   "unit": "USD",
+   "confidence": "low",
+   "sources": [
+    "src:informed-estimate"
+   ],
+   "notes": "informed estimate"
+  },
+  "used_car_cost_usd": null,
+  "notes": "IMSA GTD requires a Bronze in lineup (from 2023); GTD PRO unrestricted.",
+  "confidence": "medium",
+  "sources": [
+   "src:wiki-imsa-sportscar",
+   "src:sportscar365-gtd-bronze",
+   "src:wiki-gtwc-america"
+  ]
+ },
+ {
+  "id": "class:fia-gt4",
+  "name": "GT4 (FIA/SRO GT4)",
+  "discipline": "sports_car",
+  "chassis": "production-based GT (Porsche Cayman GT4 RS CS, BMW M4 GT4, Mustang GT4, Aston Vantage, Mercedes-AMG GT4, McLaren Artura GT4 ...)",
+  "drivetrain": "RWD mostly",
+  "engine": "production-based",
+  "horsepower": {
+   "min": 400,
+   "max": 500,
+   "unit": "hp",
+   "confidence": "low",
+   "sources": [
+    "src:informed-estimate"
+   ],
+   "notes": "informed estimate of BoP range"
+  },
+  "weight_lb": {
+   "min": 3000,
+   "max": 3300,
+   "unit": "lb",
+   "confidence": "low",
+   "sources": [
+    "src:informed-estimate"
+   ],
+   "notes": "informed estimate"
+  },
+  "tires": "Michelin (IMSA) / Pirelli (SRO)",
+  "spec_rules": "Balance of Performance",
+  "new_car_cost_usd": {
+   "min": 200000,
+   "max": 250000,
+   "unit": "USD",
+   "confidence": "low",
+   "sources": [
+    "src:informed-estimate"
+   ],
+   "notes": "informed estimate"
+  },
+  "used_car_cost_usd": null,
+  "notes": "Raced in Pilot Challenge GS, GT4 America, VP Racing SportsCar Challenge GSX.",
+  "confidence": "low",
+  "sources": [
+   "src:wiki-pilot-challenge",
+   "src:gt4america-explainer",
+   "src:imsa-vp-challenge"
+  ]
+ },
+ {
+  "id": "class:formula-atlantic",
+  "name": "Formula Atlantic (pro Toyota Atlantic / Champ Car Atlantic; SCCA FA)",
+  "discipline": "open_wheel",
+  "chassis": "Swift 014/016.a (pro, 2006-09 spec Swift 016.a); various SCCA FA chassis",
+  "drivetrain": "mid-engine RWD",
+  "engine": "Toyota 1.6L (pro to 2005); Mazda-Cosworth MZR 2.3L (2006-09)",
+  "horsepower": {
+   "min": 240,
+   "max": 300,
+   "unit": "hp",
+   "confidence": "medium",
+   "sources": [
+    "src:wiki-atlantic",
+    "src:scca-formula-classes"
+   ],
+   "notes": "SCCA FA up to ~240hp; 2006-09 pro spec ~300bhp"
+  },
+  "weight_lb": null,
+  "tires": null,
+  "spec_rules": "spec in pro series from 2006",
+  "new_car_cost_usd": null,
+  "used_car_cost_usd": null,
+  "notes": "Pro Atlantic folded after 2009; amateur Atlantic Championship revived 2012 under SCCA Pro Racing/FRP.",
+  "confidence": "medium",
+  "sources": [
+   "src:wiki-atlantic",
+   "src:scca-formula-classes"
+  ]
+ },
+ {
+  "id": "class:formula-enterprises-fe2",
+  "name": "Formula Enterprises 2 (FE2)",
+  "discipline": "open_wheel",
+  "chassis": "SCCA Enterprises spec winged formula car",
+  "drivetrain": "mid-engine RWD",
+  "engine": "Mazda MZR 2.0L",
+  "horsepower": {
+   "value": 185,
+   "unit": "hp",
+   "confidence": "medium",
+   "sources": [
+    "src:scca-formula-classes"
+   ],
+   "notes": null
+  },
+  "weight_lb": null,
+  "tires": "spec Hoosier",
+  "spec_rules": "spec (SCCA Enterprises)",
+  "new_car_cost_usd": {
+   "value": 73500,
+   "unit": "USD (kit)",
+   "confidence": "medium",
+   "sources": [
+    "src:scca-formula-classes"
+   ],
+   "notes": null
+  },
+  "used_car_cost_usd": {
+   "min": 15000,
+   "max": 35000,
+   "unit": "USD (used FE1)",
+   "confidence": "medium",
+   "sources": [
+    "src:scca-formula-classes"
+   ],
+   "notes": "+ ~21k conversion to FE2"
+  },
+  "notes": "SCCA national spec formula class.",
+  "confidence": "medium",
+  "sources": [
+   "src:scca-formula-classes"
+  ]
+ },
+ {
+  "id": "class:formula-f1600",
+  "name": "Formula F / F1600 (Formula Ford 1600)",
+  "discipline": "open_wheel",
+  "chassis": "tube-frame FF chassis (Van Diemen, Mygale, Spectrum, etc.)",
+  "drivetrain": "mid-engine RWD, H-pattern/sequential",
+  "engine": "1.6L Ford Kent or Honda Fit",
+  "horsepower": {
+   "min": 110,
+   "max": 125,
+   "unit": "hp",
+   "confidence": "medium",
+   "sources": [
+    "src:scca-formula-classes"
+   ],
+   "notes": "SCCA FF ~120hp"
+  },
+  "weight_lb": {
+   "min": 1080,
+   "max": 1150,
+   "unit": "lb incl. driver",
+   "confidence": "low",
+   "sources": [
+    "src:informed-estimate"
+   ],
+   "notes": "informed estimate of class minimum"
+  },
+  "tires": "treaded/hoosier club tires",
+  "spec_rules": "no wings; SCCA FF/F1600 rules",
+  "new_car_cost_usd": null,
+  "used_car_cost_usd": {
+   "min": 15000,
+   "max": 45000,
+   "unit": "USD",
+   "confidence": "low",
+   "sources": [
+    "src:informed-estimate"
+   ],
+   "notes": "informed estimate of used market"
+  },
+  "notes": "Classic first car; used by Team USA Scholarship (UK Formula Ford Festival/Walter Hayes Trophy) and F1600 Championship Series.",
+  "confidence": "medium",
+  "sources": [
+   "src:scca-formula-classes",
+   "src:wiki-f1600-series",
+   "src:wiki-team-usa-scholarship"
+  ]
+ },
+ {
+  "id": "class:formula-regional-ligier",
+  "name": "Formula Regional (Ligier JS F3)",
+  "discipline": "open_wheel",
+  "chassis": "Ligier JS F3 carbon monocoque, halo",
+  "drivetrain": "mid-engine RWD, paddle-shift",
+  "engine": "Honda K20C1 2.0L NA",
+  "horsepower": {
+   "value": 303,
+   "unit": "hp",
+   "confidence": "high",
+   "sources": [
+    "src:wiki-fr-americas"
+   ],
+   "notes": null
+  },
+  "weight_lb": {
+   "value": 1150,
+   "unit": "lb dry",
+   "confidence": "high",
+   "sources": [
+    "src:wiki-fr-americas"
+   ],
+   "notes": null
+  },
+  "tires": "Hankook",
+  "spec_rules": "FIA Formula Regional",
+  "new_car_cost_usd": null,
+  "used_car_cost_usd": null,
+  "notes": "FR Americas and Formula Pro USA (FPUSA-3).",
+  "confidence": "high",
+  "sources": [
+   "src:wiki-fr-americas",
+   "src:wiki-formula-pro-usa"
+  ]
+ },
+ {
+  "id": "class:gr86-cup",
+  "name": "Toyota GR86 Cup car",
+  "discipline": "sports_car",
+  "chassis": "GR86 with cage",
+  "drivetrain": "front-engine RWD",
+  "engine": "2.4L flat-4",
+  "horsepower": {
+   "value": 228,
+   "unit": "hp",
+   "confidence": "medium",
+   "sources": [
+    "src:slashgear-grcup"
+   ],
+   "notes": null
+  },
+  "weight_lb": null,
+  "tires": "spec",
+  "spec_rules": "spec (TGRNA)",
+  "new_car_cost_usd": {
+   "value": 125000,
+   "unit": "USD",
+   "confidence": "medium",
+   "sources": [
+    "src:slashgear-grcup"
+   ],
+   "notes": null
+  },
+  "used_car_cost_usd": null,
+  "notes": null,
+  "confidence": "medium",
+  "sources": [
+   "src:slashgear-grcup"
+  ]
+ },
+ {
+  "id": "class:gtp-lmdh",
+  "name": "GTP (LMDh hybrid prototype)",
+  "discipline": "sports_car",
+  "chassis": "LMDh spine from Dallara/Multimatic/Oreca/Ligier + manufacturer bodywork & ICE (Porsche 963, Cadillac V-Series.R, BMW M Hybrid V8, Acura ARX-06, Aston Martin Valkyrie LMH)",
+  "drivetrain": "mid-engine RWD + spec hybrid",
+  "engine": "manufacturer ICE + spec Bosch/Williams hybrid",
+  "horsepower": {
+   "min": 670,
+   "max": 700,
+   "unit": "hp (system, BoP-capped)",
+   "confidence": "low",
+   "sources": [
+    "src:informed-estimate"
+   ],
+   "notes": "informed estimate of ~500 kW cap"
+  },
+  "weight_lb": null,
+  "tires": "Michelin",
+  "spec_rules": "LMDh/BoP",
+  "new_car_cost_usd": {
+   "min": 1000000,
+   "max": 2900000,
+   "unit": "USD",
+   "confidence": "medium",
+   "sources": [
+    "src:endurance-info-lmdh-cost"
+   ],
+   "notes": "rolling chassis ~1-1.2M; customer Porsche 963 ~2.9M incl. support"
+  },
+  "used_car_cost_usd": null,
+  "notes": "Factory-only in practice; IMSA top class since 2023.",
+  "confidence": "medium",
+  "sources": [
+   "src:endurance-info-lmdh-cost",
+   "src:wiki-imsa-sportscar"
+  ]
+ },
+ {
+  "id": "class:imca-late-model",
+  "name": "IMCA Late Model",
+  "discipline": "dirt_late_model",
+  "chassis": "dirt late model chassis",
+  "drivetrain": "front-engine RWD",
+  "engine": "IMCA-rules built V8",
+  "horsepower": {
+   "unit": "hp",
+   "confidence": "low",
+   "sources": [],
+   "notes": "not verified"
+  },
+  "weight_lb": {
+   "unit": "lb",
+   "confidence": "low",
+   "sources": [],
+   "notes": "not verified"
+  },
+  "tires": "Hoosier ($135/tire)",
+  "spec_rules": "IMCA",
+  "new_car_cost_usd": {
+   "min": 46000,
+   "max": 66000,
+   "unit": "USD",
+   "confidence": "medium",
+   "sources": [
+    "src:gazette-iowa-costs"
+   ],
+   "notes": "car w/o engine ~$34k + engine $12-32k"
+  },
+  "used_car_cost_usd": null,
+  "notes": null,
+  "confidence": "medium",
+  "sources": [
+   "src:gazette-iowa-costs"
+  ]
+ },
+ {
+  "id": "class:imca-modified",
+  "name": "IMCA / USRA Modified (dirt open modified)",
+  "discipline": "modified",
+  "chassis": "dirt modified tube chassis, open wheels front",
+  "drivetrain": "front-engine RWD",
+  "engine": "crate (602/604) or open claim V8",
+  "horsepower": {
+   "min": 400,
+   "max": 500,
+   "unit": "hp",
+   "confidence": "low",
+   "sources": [],
+   "notes": "estimate; open engine $10-13k"
+  },
+  "weight_lb": {
+   "unit": "lb",
+   "confidence": "low",
+   "sources": [],
+   "notes": "not verified this session"
+  },
+  "tires": "spec Hoosier ($105/tire)",
+  "spec_rules": "IMCA rules; claim engine",
+  "new_car_cost_usd": {
+   "min": 40000,
+   "max": 51000,
+   "unit": "USD",
+   "confidence": "medium",
+   "sources": [
+    "src:gazette-iowa-costs"
+   ],
+   "notes": "car w/o engine $35-38k + engine $5-13k"
+  },
+  "used_car_cost_usd": {
+   "min": 10000,
+   "max": 30000,
+   "unit": "USD",
+   "confidence": "low",
+   "sources": [],
+   "notes": "estimate"
+  },
+  "notes": null,
+  "confidence": "medium",
+  "sources": [
+   "src:gazette-iowa-costs",
+   "src:imca-rules"
+  ]
+ },
+ {
+  "id": "class:indy-lights-dallara-ips",
+  "name": "Dallara IPS (Infiniti Pro Series / Indy Lights 2002-2014)",
+  "discipline": "open_wheel",
+  "chassis": "Dallara IPS",
+  "drivetrain": "mid-engine RWD",
+  "engine": "Infiniti 3.5L V8 (TWR-developed)",
+  "horsepower": {
+   "min": 420,
+   "max": 450,
+   "unit": "hp",
+   "confidence": "medium",
+   "sources": [
+    "src:wiki-dallara-ips"
+   ],
+   "notes": null
+  },
+  "weight_lb": null,
+  "tires": "Firestone",
+  "spec_rules": "spec",
+  "new_car_cost_usd": null,
+  "used_car_cost_usd": null,
+  "notes": null,
+  "confidence": "medium",
+  "sources": [
+   "src:wiki-dallara-ips"
+  ]
+ },
+ {
+  "id": "class:indy-lights-lola",
+  "name": "Indy Lights Lola T97/20 (CART era)",
+  "discipline": "open_wheel",
+  "chassis": "Lola T97/20 (earlier March 85B/86A Wildcat)",
+  "drivetrain": "mid-engine RWD",
+  "engine": "Buick 4.2L V6",
+  "horsepower": {
+   "min": 425,
+   "max": 450,
+   "unit": "hp",
+   "confidence": "medium",
+   "sources": [
+    "src:wiki-lola-t97-20"
+   ],
+   "notes": null
+  },
+  "weight_lb": null,
+  "tires": "Firestone/Dayton",
+  "spec_rules": "spec",
+  "new_car_cost_usd": null,
+  "used_car_cost_usd": null,
+  "notes": "CART Indy Lights 1997-2001.",
+  "confidence": "medium",
+  "sources": [
+   "src:wiki-lola-t97-20",
+   "src:wiki-indy-nxt"
+  ]
+ },
+ {
+  "id": "class:indycar-dallara-ir18",
+  "name": "IndyCar Dallara DW12/IR-18 (2012-)",
+  "discipline": "open_wheel",
+  "chassis": "Dallara DW12 / IR-18 aero kit (spec), aeroscreen since 2020",
+  "drivetrain": "mid-engine RWD",
+  "engine": "2.2L twin-turbo V6 (Honda or Chevrolet); supercapacitor hybrid ERS from Jul 2024",
+  "horsepower": {
+   "min": 550,
+   "max": 800,
+   "unit": "hp",
+   "confidence": "high",
+   "sources": [
+    "src:honda-racing-ir18",
+    "src:racer-indycar-hybrid"
+   ],
+   "notes": "550-700hp by boost level; +~60hp hybrid; up to ~800hp with push-to-pass"
+  },
+  "weight_lb": {
+   "min": 1590,
+   "max": 1630,
+   "unit": "lb dry",
+   "confidence": "medium",
+   "sources": [
+    "src:honda-racing-ir18"
+   ],
+   "notes": "speedway vs road/street configuration"
+  },
+  "tires": "Firestone",
+  "spec_rules": "spec chassis, two engine suppliers",
+  "new_car_cost_usd": null,
+  "used_car_cost_usd": null,
+  "notes": "Engine lease reported >USD 1.5M per car per year.",
+  "confidence": "high",
+  "sources": [
+   "src:honda-racing-ir18",
+   "src:racer-indycar-hybrid",
+   "src:wiki-indycar-series",
+   "src:racer-indycar-budgets-2025"
+  ]
+ },
+ {
+  "id": "class:kart-junior-100cc",
+  "name": "Junior 100-125cc karts (KA100 Junior, X30 Junior, ROK Junior/VLR Junior)",
+  "discipline": "karting",
+  "chassis": "950-1040mm wheelbase kart chassis",
+  "drivetrain": "direct drive",
+  "engine": "IAME KA100 / X30 / Vortex ROK with restrictor or header",
+  "horsepower": {
+   "min": 15,
+   "max": 25,
+   "unit": "hp",
+   "confidence": "low",
+   "sources": [
+    "src:informed-estimate"
+   ],
+   "notes": "informed estimate (no official hp figure found)"
+  },
+  "weight_lb": {
+   "value": 320,
+   "unit": "lb incl. driver",
+   "confidence": "high",
+   "sources": [
+    "src:skusa-classes-2026"
+   ],
+   "notes": null
+  },
+  "tires": "spec tires, 2 sets/event at SKUSA (USD 524)",
+  "spec_rules": "age 12-15",
+  "new_car_cost_usd": null,
+  "used_car_cost_usd": null,
+  "notes": "Main rung where talent is identified for open-wheel scholarships/teams.",
+  "confidence": "medium",
+  "sources": [
+   "src:skusa-classes-2026"
+  ]
+ },
+ {
+  "id": "class:kart-lo206",
+  "name": "Briggs & Stratton LO206 club kart",
+  "discipline": "karting",
+  "chassis": "any sprint chassis",
+  "drivetrain": "direct drive",
+  "engine": "sealed 206cc 4-stroke Briggs LO206",
+  "horsepower": {
+   "min": 8,
+   "max": 10,
+   "unit": "hp",
+   "confidence": "low",
+   "sources": [
+    "src:informed-estimate"
+   ],
+   "notes": "informed estimate"
+  },
+  "weight_lb": null,
+  "tires": "club-spec tires",
+  "spec_rules": "factory-sealed engine; very low running cost",
+  "new_car_cost_usd": null,
+  "used_car_cost_usd": {
+   "min": 2500,
+   "max": 4000,
+   "unit": "USD",
+   "confidence": "medium",
+   "sources": [
+    "src:musiccity-lo206"
+   ],
+   "notes": "competitive used chassis+engine package"
+  },
+  "notes": "Most popular US club karting class; some events >100 karts per class.",
+  "confidence": "medium",
+  "sources": [
+   "src:musiccity-lo206"
+  ]
+ },
+ {
+  "id": "class:kart-micro-mini",
+  "name": "Micro/Mini karts (Micro Swift, Mini Swift, ROK Micro/Mini)",
+  "discipline": "karting",
+  "chassis": "cadet-size kart chassis",
+  "drivetrain": "direct drive, rear axle",
+  "engine": "IAME Swift 60cc 2-stroke (restricted for Micro) or Vortex ROK Mini",
+  "horsepower": {
+   "min": 5,
+   "max": 12,
+   "unit": "hp",
+   "confidence": "low",
+   "sources": [
+    "src:skusa-classes-2026"
+   ],
+   "notes": "informed estimate; official pages give class weights not hp"
+  },
+  "weight_lb": {
+   "min": 220,
+   "max": 245,
+   "unit": "lb incl. driver",
+   "confidence": "high",
+   "sources": [
+    "src:skusa-classes-2026",
+    "src:rokcupusa-fwt"
+   ],
+   "notes": null
+  },
+  "tires": "spec control tires, 1 set/event at SKUSA (USD 262)",
+  "spec_rules": "spec engine sealed; age 7-10 (Micro) and 9-13 (Mini)",
+  "new_car_cost_usd": {
+   "min": 3000,
+   "max": 6000,
+   "unit": "USD",
+   "confidence": "low",
+   "sources": [
+    "src:kartpulse-cost"
+   ],
+   "notes": "informed estimate from general kart pricing"
+  },
+  "used_car_cost_usd": null,
+  "notes": "Entry rung of national karting; Kid Kart (approx 5-7) exists below at club level (not verified here).",
+  "confidence": "medium",
+  "sources": [
+   "src:skusa-classes-2026",
+   "src:rokcupusa-fwt"
+  ]
+ },
+ {
+  "id": "class:kart-senior-125cc",
+  "name": "Senior/Pro TaG karts (Pro X30, KA100 Senior, ROK SV/VLR Senior)",
+  "discipline": "karting",
+  "chassis": "senior kart chassis",
+  "drivetrain": "direct drive",
+  "engine": "IAME X30 125cc / KA100 / Vortex ROK",
+  "horsepower": {
+   "min": 18,
+   "max": 30,
+   "unit": "hp",
+   "confidence": "low",
+   "sources": [
+    "src:informed-estimate"
+   ],
+   "notes": "informed estimate"
+  },
+  "weight_lb": {
+   "min": 355,
+   "max": 360,
+   "unit": "lb incl. driver",
+   "confidence": "high",
+   "sources": [
+    "src:skusa-classes-2026"
+   ],
+   "notes": null
+  },
+  "tires": "spec tires (2 sets/event at SKUSA pro classes, USD 548)",
+  "spec_rules": "age 15+; masters classes 30+/ 45+",
+  "new_car_cost_usd": {
+   "min": 5000,
+   "max": 9000,
+   "unit": "USD",
+   "confidence": "low",
+   "sources": [
+    "src:kartpulse-cost"
+   ],
+   "notes": "used frame ~1.5k + used engine ~2k quoted; new packages higher"
+  },
+  "used_car_cost_usd": {
+   "min": 3500,
+   "max": 5000,
+   "unit": "USD",
+   "confidence": "low",
+   "sources": [
+    "src:kartpulse-cost"
+   ],
+   "notes": null
+  },
+  "notes": "Pro X30 is the headline SKUSA Pro Tour/SuperNationals senior class.",
+  "confidence": "medium",
+  "sources": [
+   "src:skusa-classes-2026",
+   "src:kartpulse-cost"
+  ]
+ },
+ {
+  "id": "class:kart-shifter-kz",
+  "name": "Shifter karts (KZ / Pro Shifter / ROK Shifter)",
+  "discipline": "karting",
+  "chassis": "shifter kart chassis with front brakes",
+  "drivetrain": "six-speed sequential gearbox",
+  "engine": "125cc 2-stroke shifter (KZ)",
+  "horsepower": {
+   "min": 40,
+   "max": 50,
+   "unit": "hp",
+   "confidence": "low",
+   "sources": [
+    "src:informed-estimate"
+   ],
+   "notes": "informed estimate"
+  },
+  "weight_lb": null,
+  "tires": "spec tires",
+  "spec_rules": "senior/masters; Pro Shifter, Master Shifter, KZ Masters",
+  "new_car_cost_usd": null,
+  "used_car_cost_usd": null,
+  "notes": "Fastest sprint karts; common for adult/pro karters.",
+  "confidence": "low",
+  "sources": [
+   "src:skusa-classes-2026",
+   "src:uspks-home",
+   "src:rokcupusa-fwt"
+  ]
+ },
+ {
+  "id": "class:lamborghini-huracan-st",
+  "name": "Lamborghini Huracan Super Trofeo EVO2",
+  "discipline": "sports_car",
+  "chassis": "Huracan Super Trofeo",
+  "drivetrain": "mid-engine RWD",
+  "engine": "5.2L V10",
+  "horsepower": {
+   "min": 600,
+   "max": 620,
+   "unit": "hp",
+   "confidence": "low",
+   "sources": [
+    "src:informed-estimate"
+   ],
+   "notes": "informed estimate"
+  },
+  "weight_lb": null,
+  "tires": "Pirelli",
+  "spec_rules": "one-make",
+  "new_car_cost_usd": {
+   "value": 306000,
+   "unit": "USD (launch)",
+   "confidence": "low",
+   "sources": [
+    "src:manofmany-lambo-ferrari"
+   ],
+   "notes": null
+  },
+  "used_car_cost_usd": {
+   "min": 170000,
+   "max": 280000,
+   "unit": "USD",
+   "confidence": "low",
+   "sources": [
+    "src:manofmany-lambo-ferrari"
+   ],
+   "notes": null
+  },
+  "notes": null,
+  "confidence": "low",
+  "sources": [
+   "src:manofmany-lambo-ferrari",
+   "src:imsa-lst-brochure-2025"
+  ]
+ },
+ {
+  "id": "class:late-model-stock",
+  "name": "Late Model Stock Car (LMSC, NASCAR Weekly Div. I Southeast)",
+  "discipline": "stock_car",
+  "chassis": "perimeter-rail chassis, 3x4 tubing, 47-in roll cage",
+  "drivetrain": "front-engine RWD, 4-speed manual",
+  "engine": "built 'factory-parts' 350 V8 (e.g. Harrington/Hutchens style) or GM 604 crate (CARS allows 604)",
+  "horsepower": {
+   "min": 450,
+   "max": 515,
+   "unit": "hp",
+   "confidence": "medium",
+   "sources": [
+    "src:sts-slm-vs-lms",
+    "src:crateinsider-lmsc"
+   ],
+   "notes": "built engine ~515hp; 604 crate lower"
+  },
+  "weight_lb": {
+   "min": 3050,
+   "max": 3100,
+   "unit": "lb",
+   "confidence": "medium",
+   "sources": [
+    "src:sts-slm-vs-lms"
+   ],
+   "notes": null
+  },
+  "tires": "spec Hoosier/American Racer",
+  "spec_rules": "NASCAR/track template rules (Virginia/Carolinas)",
+  "new_car_cost_usd": {
+   "min": 70000,
+   "max": 100000,
+   "unit": "USD",
+   "year_basis": 2025,
+   "confidence": "medium",
+   "sources": [
+    "src:sts-slm-vs-lms",
+    "src:crateinsider-lmsc"
+   ],
+   "notes": "turnkey"
+  },
+  "used_car_cost_usd": {
+   "min": 20000,
+   "max": 50000,
+   "unit": "USD",
+   "confidence": "low",
+   "sources": [],
+   "notes": "informed estimate"
+  },
+  "notes": "Engine ~US$10,000 (built); dominant in VA/NC/SC; ValleyStar 300 at Martinsville is the crown jewel.",
+  "confidence": "medium",
+  "sources": [
+   "src:sts-slm-vs-lms",
+   "src:crateinsider-lmsc",
+   "src:valleystar-300"
+  ]
+ },
+ {
+  "id": "class:legends",
+  "name": "Legend car (INEX Legends)",
+  "discipline": "stock_car",
+  "chassis": "spec 5/8-scale 1930s-coupe body on tube chassis",
+  "drivetrain": "front-engine, rear-wheel drive, 6-speed sequential (Yamaha)",
+  "engine": "Yamaha FZ-09 847cc inline-3 (since 2018; earlier Yamaha 1200/1250)",
+  "horsepower": {
+   "value": 125,
+   "unit": "hp",
+   "confidence": "medium",
+   "sources": [
+    "src:thedrive-legend"
+   ],
+   "notes": "~125 hp @10,000 rpm"
+  },
+  "weight_lb": {
+   "value": 1250,
+   "unit": "lb",
+   "confidence": "medium",
+   "sources": [
+    "src:thedrive-legend"
+   ],
+   "notes": "minimum 1,250 lb with driver"
+  },
+  "tires": "spec Federal/Hoosier",
+  "spec_rules": "Spec sealed engines; INEX membership ~$175/yr",
+  "new_car_cost_usd": {
+   "min": 17500,
+   "max": 19000,
+   "unit": "USD",
+   "year_basis": 2025,
+   "confidence": "medium",
+   "sources": [
+    "src:thedrive-legend"
+   ],
+   "notes": "turnkey $17,500 (2022) to $18,995 (current)"
+  },
+  "used_car_cost_usd": {
+   "min": 8000,
+   "max": 15000,
+   "unit": "USD",
+   "confidence": "low",
+   "sources": [
+    "src:thedrive-legend"
+   ],
+   "notes": "used listing ~$15,000; lower bound estimate"
+  },
+  "notes": null,
+  "confidence": "medium",
+  "sources": [
+   "src:thedrive-legend",
+   "src:wiki-legends",
+   "src:inex-divisions"
+  ]
+ },
+ {
+  "id": "class:limited-dirt-late-model",
+  "name": "Limited / steel-head dirt late model",
+  "discipline": "dirt_late_model",
+  "chassis": "dirt late model chassis",
+  "drivetrain": "front-engine RWD",
+  "engine": "steel-head built V8 (limited)",
+  "horsepower": {
+   "min": 500,
+   "max": 700,
+   "unit": "hp",
+   "confidence": "low",
+   "sources": [],
+   "notes": "estimate"
+  },
+  "weight_lb": {
+   "min": 2300,
+   "max": 2400,
+   "unit": "lb",
+   "confidence": "low",
+   "sources": [],
+   "notes": "estimate"
+  },
+  "tires": "spec",
+  "spec_rules": "",
+  "new_car_cost_usd": {
+   "unit": "USD",
+   "confidence": "low",
+   "sources": [],
+   "notes": "not verified"
+  },
+  "used_car_cost_usd": {
+   "unit": "USD",
+   "confidence": "low",
+   "sources": [],
+   "notes": "not verified"
+  },
+  "notes": null,
+  "confidence": "low",
+  "sources": []
+ },
+ {
+  "id": "class:limited-late-model",
+  "name": "Limited late model (asphalt)",
+  "discipline": "stock_car",
+  "chassis": "late model chassis with restricted engine/tires",
+  "drivetrain": "front-engine RWD",
+  "engine": "crate 602/604 or limited built V8",
+  "horsepower": {
+   "min": 350,
+   "max": 450,
+   "unit": "hp",
+   "confidence": "low",
+   "sources": [
+    "src:wiki-late-model"
+   ],
+   "notes": "'less horsepower than pro models'; range is estimate"
+  },
+  "weight_lb": {
+   "min": 2800,
+   "max": 3100,
+   "unit": "lb",
+   "confidence": "low",
+   "sources": [],
+   "notes": "estimate"
+  },
+  "tires": "spec Hoosier/American Racer",
+  "spec_rules": "track-specific",
+  "new_car_cost_usd": {
+   "min": 30000,
+   "max": 60000,
+   "unit": "USD",
+   "confidence": "low",
+   "sources": [],
+   "notes": "informed estimate"
+  },
+  "used_car_cost_usd": {
+   "min": 10000,
+   "max": 30000,
+   "unit": "USD",
+   "confidence": "low",
+   "sources": [],
+   "notes": "informed estimate"
+  },
+  "notes": "Many tracks' stepping stone between street stock and late model.",
+  "confidence": "low",
+  "sources": [
+   "src:wiki-late-model"
+  ]
+ },
+ {
+  "id": "class:lmp2-oreca07",
+  "name": "LMP2 (Oreca 07 Gibson)",
+  "discipline": "sports_car",
+  "chassis": "Oreca 07 (also Dallara/Ligier/Multimatic homologated)",
+  "drivetrain": "mid-engine RWD",
+  "engine": "Gibson 4.2L V8 (spec)",
+  "horsepower": {
+   "min": 500,
+   "max": 550,
+   "unit": "hp",
+   "confidence": "low",
+   "sources": [
+    "src:informed-estimate"
+   ],
+   "notes": "informed estimate"
+  },
+  "weight_lb": null,
+  "tires": null,
+  "spec_rules": "ACO LMP2 spec; pro-am in IMSA (Bronze mandatory)",
+  "new_car_cost_usd": {
+   "value": 506000,
+   "unit": "USD (EUR 483k cap, w/o engine)",
+   "confidence": "medium",
+   "sources": [
+    "src:sportscar365-lmp2-bronze"
+   ],
+   "notes": null
+  },
+  "used_car_cost_usd": null,
+  "notes": null,
+  "confidence": "medium",
+  "sources": [
+   "src:sportscar365-lmp2-bronze",
+   "src:wiki-imsa-sportscar"
+  ]
+ },
+ {
+  "id": "class:lmp3",
+  "name": "LMP3 prototype",
+  "discipline": "sports_car",
+  "chassis": "Ligier JS P320 / Duqueine D09 / Ginetta (LMP3 Gen 2-3)",
+  "drivetrain": "mid-engine RWD",
+  "engine": "Nissan VK56 5.6L V8 (spec)",
+  "horsepower": {
+   "min": 450,
+   "max": 470,
+   "unit": "hp",
+   "confidence": "low",
+   "sources": [
+    "src:informed-estimate"
+   ],
+   "notes": "informed estimate"
+  },
+  "weight_lb": null,
+  "tires": null,
+  "spec_rules": "ACO LMP3 spec",
+  "new_car_cost_usd": null,
+  "used_car_cost_usd": null,
+  "notes": "IMSA Prototype Challenge 2017-2022; VP Racing SportsCar Challenge 2023-.",
+  "confidence": "low",
+  "sources": [
+   "src:wiki-imsa-prototype-challenge",
+   "src:imsa-vp-challenge"
+  ]
+ },
+ {
+  "id": "class:micro-sprint",
+  "name": "Micro sprint (600cc / restricted / junior)",
+  "discipline": "sprint",
+  "chassis": "tube-frame mini sprint chassis, often winged",
+  "drivetrain": "side-mounted motorcycle engine, chain drive, no transmission",
+  "engine": "600cc 4-stroke motorcycle (restrictor class 35mm); 270cc/125cc junior classes",
+  "horsepower": {
+   "min": 110,
+   "max": 160,
+   "unit": "hp",
+   "confidence": "medium",
+   "sources": [
+    "src:hyperracing-micro",
+    "src:search-micro-ages"
+   ],
+   "notes": "stock A-class ~110-118hp; outlaw up to 640cc 135-160hp"
+  },
+  "weight_lb": {
+   "min": 750,
+   "max": 800,
+   "unit": "lb",
+   "confidence": "medium",
+   "sources": [
+    "src:hyperracing-micro"
+   ],
+   "notes": "with driver"
+  },
+  "tires": "spec dirt (Hoosier)",
+  "spec_rules": "Restrictor/junior classes for 10-12 year olds",
+  "new_car_cost_usd": {
+   "min": 15000,
+   "max": 25000,
+   "unit": "USD",
+   "confidence": "low",
+   "sources": [],
+   "notes": "informed estimate, no source fetched"
+  },
+  "used_car_cost_usd": {
+   "min": 5000,
+   "max": 15000,
+   "unit": "USD",
+   "confidence": "low",
+   "sources": [],
+   "notes": "informed estimate"
+  },
+  "notes": "70-85 mph on 1/6-1/4 mi tracks.",
+  "confidence": "medium",
+  "sources": [
+   "src:hyperracing-micro",
+   "src:search-micro-ages"
+  ]
+ },
+ {
+  "id": "class:midget",
+  "name": "Midget (USAC/POWRi national)",
+  "discipline": "midget",
+  "chassis": "midget tube chassis, ~900 lb",
+  "drivetrain": "front-engine 4-cyl, direct drive",
+  "engine": "4-cylinder (Toyota TRD, Speedway, Esslinger etc.)",
+  "horsepower": {
+   "min": 300,
+   "max": 400,
+   "unit": "hp",
+   "confidence": "high",
+   "sources": [
+    "src:wiki-midget",
+    "src:powri-wiki"
+   ],
+   "notes": null
+  },
+  "weight_lb": {
+   "value": 900,
+   "unit": "lb",
+   "confidence": "high",
+   "sources": [
+    "src:wiki-midget",
+    "src:powri-wiki"
+   ],
+   "notes": "~900 lb"
+  },
+  "tires": "Hoosier",
+  "spec_rules": "USAC/POWRi",
+  "new_car_cost_usd": {
+   "min": 80000,
+   "max": 110000,
+   "unit": "USD",
+   "confidence": "low",
+   "sources": [
+    "src:search-midget-cost"
+   ],
+   "notes": "car $40-60k + front-running engine $40-50k"
+  },
+  "used_car_cost_usd": {
+   "min": 20000,
+   "max": 50000,
+   "unit": "USD",
+   "confidence": "low",
+   "sources": [],
+   "notes": "estimate"
+  },
+  "notes": "Engine service $6.5-9.5k.",
+  "confidence": "high",
+  "sources": [
+   "src:wiki-midget",
+   "src:powri-wiki",
+   "src:search-midget-cost"
+  ]
+ },
+ {
+  "id": "class:mini-stock",
+  "name": "Mini stock / 4-cylinder / sport compact / Hornet",
+  "discipline": "stock_car",
+  "chassis": "production unibody, stock suspension",
+  "drivetrain": "front-engine, mostly front-wheel drive",
+  "engine": "stock 4-cylinder (Honda/Acura, Neon etc.)",
+  "horsepower": {
+   "min": 100,
+   "max": 200,
+   "unit": "hp",
+   "confidence": "low",
+   "sources": [],
+   "notes": "informed estimate for near-stock 4-cyl"
+  },
+  "weight_lb": {
+   "min": 1900,
+   "max": 2350,
+   "unit": "lb",
+   "confidence": "low",
+   "sources": [
+    "src:search-ministock"
+   ],
+   "notes": "weight by displacement in one track's rules"
+  },
+  "tires": "street-type or spec",
+  "spec_rules": "Stock body/suspension, claim rules common",
+  "new_car_cost_usd": {
+   "unit": "USD",
+   "confidence": "low",
+   "sources": [],
+   "notes": "rarely built new"
+  },
+  "used_car_cost_usd": {
+   "min": 500,
+   "max": 5000,
+   "unit": "USD",
+   "confidence": "low",
+   "sources": [
+    "src:search-ministock"
+   ],
+   "notes": "race-ready from $500-2,000 per snippet; competitive cars higher"
+  },
+  "notes": null,
+  "confidence": "low",
+  "sources": [
+   "src:search-ministock"
+  ]
+ },
+ {
+  "id": "class:mx5-cup-nd",
+  "name": "Mazda MX-5 Cup car (ND, Flis Performance)",
+  "discipline": "sports_car",
+  "chassis": "ND MX-5 Club with 250+ race parts, full cage",
+  "drivetrain": "front-engine RWD",
+  "engine": "sealed Mazda SKYACTIV-G 2.0L",
+  "horsepower": {
+   "min": 155,
+   "max": 185,
+   "unit": "hp",
+   "confidence": "low",
+   "sources": [
+    "src:informed-estimate"
+   ],
+   "notes": "informed estimate; official page gives no hp"
+  },
+  "weight_lb": null,
+  "tires": "Michelin Pilot Sport Competition slicks",
+  "spec_rules": "sealed spec",
+  "new_car_cost_usd": {
+   "min": 58000,
+   "max": 100000,
+   "unit": "USD",
+   "confidence": "medium",
+   "sources": [
+    "src:thedrive-mx5-budget"
+   ],
+   "notes": "~58k at 2016 launch; ~99-100k turnkey reported later"
+  },
+  "used_car_cost_usd": null,
+  "notes": null,
+  "confidence": "medium",
+  "sources": [
+   "src:mx5cup-series",
+   "src:thedrive-mx5-budget"
+  ]
+ },
+ {
+  "id": "class:nascar-cup-nextgen",
+  "name": "NASCAR Cup Next Gen",
+  "discipline": "stock_car",
+  "chassis": "spec Next Gen chassis (single-source parts), independent rear suspension",
+  "drivetrain": "front-engine RWD, 5-speed sequential transaxle",
+  "engine": "pushrod 358ci V8 (670 hp most tracks, 510 hp superspeedways)",
+  "horsepower": {
+   "min": 510,
+   "max": 670,
+   "unit": "hp",
+   "confidence": "low",
+   "sources": [],
+   "notes": "informed estimate from NASCAR package, not fetched"
+  },
+  "weight_lb": {
+   "min": 3400,
+   "max": 3500,
+   "unit": "lb",
+   "confidence": "low",
+   "sources": [],
+   "notes": "informed estimate"
+  },
+  "tires": "Goodyear 18-in single lug",
+  "spec_rules": "spec parts",
+  "new_car_cost_usd": {
+   "min": 225000,
+   "max": 350000,
+   "unit": "USD",
+   "confidence": "low",
+   "sources": [
+    "src:search-cup-cost"
+   ],
+   "notes": "Hamlin estimate: ~$225k initially, ~$350k complete"
+  },
+  "used_car_cost_usd": null,
+  "notes": null,
+  "confidence": "medium",
+  "sources": [
+   "src:search-cup-cost"
+  ]
+ },
+ {
+  "id": "class:nascar-truck",
+  "name": "NASCAR Craftsman Truck",
+  "discipline": "stock_car",
+  "chassis": "steel tube-frame truck chassis, composite body",
+  "drivetrain": "front-engine RWD",
+  "engine": "pushrod V8 (~650-700 hp, tapered spacer)",
+  "horsepower": {
+   "min": 600,
+   "max": 700,
+   "unit": "hp",
+   "confidence": "low",
+   "sources": [],
+   "notes": "informed estimate, not fetched"
+  },
+  "weight_lb": {
+   "min": 3400,
+   "max": 3500,
+   "unit": "lb",
+   "confidence": "low",
+   "sources": [],
+   "notes": "informed estimate"
+  },
+  "tires": "Goodyear (~$2,300/set in 2014)",
+  "spec_rules": "NASCAR",
+  "new_car_cost_usd": null,
+  "used_car_cost_usd": null,
+  "notes": null,
+  "confidence": "low",
+  "sources": [
+   "src:gluck-martins-2017"
+  ]
+ },
+ {
+  "id": "class:nascar-xfinity",
+  "name": "NASCAR O'Reilly Auto Parts / Xfinity car",
+  "discipline": "stock_car",
+  "chassis": "steel tube-frame Gen-6-style chassis",
+  "drivetrain": "front-engine RWD",
+  "engine": "pushrod V8 (leased; ~$800k/season lease)",
+  "horsepower": {
+   "min": 650,
+   "max": 700,
+   "unit": "hp",
+   "confidence": "low",
+   "sources": [],
+   "notes": "informed estimate"
+  },
+  "weight_lb": {
+   "min": 3200,
+   "max": 3300,
+   "unit": "lb",
+   "confidence": "low",
+   "sources": [],
+   "notes": "informed estimate"
+  },
+  "tires": "Goodyear (~$2,500/set)",
+  "spec_rules": "NASCAR",
+  "new_car_cost_usd": {
+   "unit": "USD",
+   "confidence": "low",
+   "sources": [
+    "src:autopian-xfinity"
+   ],
+   "notes": "7 chassis ~$250k total (~$35k each, mid-pack)"
+  },
+  "used_car_cost_usd": null,
+  "notes": null,
+  "confidence": "medium",
+  "sources": [
+   "src:autopian-xfinity"
+  ]
+ },
+ {
+  "id": "class:non-wing-sprint",
+  "name": "Non-wing sprint car (USAC-style)",
+  "discipline": "sprint",
+  "chassis": "sprint chassis without wing",
+  "drivetrain": "front-engine direct drive",
+  "engine": "410ci (USAC national) or 360 (regional)",
+  "horsepower": {
+   "min": 800,
+   "max": 900,
+   "unit": "hp",
+   "confidence": "low",
+   "sources": [],
+   "notes": "estimate for 410 non-wing"
+  },
+  "weight_lb": {
+   "min": 1400,
+   "max": 1500,
+   "unit": "lb",
+   "confidence": "low",
+   "sources": [],
+   "notes": "estimate"
+  },
+  "tires": "Hoosier",
+  "spec_rules": "USAC rules",
+  "new_car_cost_usd": {
+   "unit": "USD",
+   "confidence": "low",
+   "sources": [],
+   "notes": "not verified"
+  },
+  "used_car_cost_usd": null,
+  "notes": "Traditional pre-wing format; harder to control.",
+  "confidence": "medium",
+  "sources": [
+   "src:wiki-sprint-car",
+   "src:usac-sprint-2025"
+  ]
+ },
+ {
+  "id": "class:porsche-911-gt3-cup",
+  "name": "Porsche 911 GT3 Cup (992.1 / 992.2)",
+  "discipline": "sports_car",
+  "chassis": "Porsche 992 GT3 Cup",
+  "drivetrain": "rear-engine RWD",
+  "engine": "4.0L NA flat-6",
+  "horsepower": {
+   "min": 510,
+   "max": 520,
+   "unit": "hp",
+   "confidence": "high",
+   "sources": [
+    "src:pccna-series-info",
+    "src:renndriver-carrera-cup"
+   ],
+   "notes": null
+  },
+  "weight_lb": null,
+  "tires": "Michelin",
+  "spec_rules": "one-make spec",
+  "new_car_cost_usd": {
+   "value": 245000,
+   "unit": "USD (~EUR 225k ex-works)",
+   "confidence": "low",
+   "sources": [
+    "src:renndriver-carrera-cup"
+   ],
+   "notes": null
+  },
+  "used_car_cost_usd": null,
+  "notes": "992.2 debuted in Carrera Cup NA 2026.",
+  "confidence": "medium",
+  "sources": [
+   "src:pccna-series-info",
+   "src:imsa-pccna-2026-preview"
+  ]
+ },
+ {
+  "id": "class:pro-late-model",
+  "name": "Pro Late Model (asphalt)",
+  "discipline": "stock_car",
+  "chassis": "same straight-rail offset chassis/body/brakes as super late model",
+  "drivetrain": "front-engine RWD",
+  "engine": "sealed GM crate (604/CT525-type) with rev limiter",
+  "horsepower": {
+   "min": 425,
+   "max": 450,
+   "unit": "hp",
+   "confidence": "medium",
+   "sources": [
+    "src:sts-slm-vs-lms",
+    "src:search-pro-vs-super"
+   ],
+   "notes": null
+  },
+  "weight_lb": {
+   "min": 2800,
+   "max": 2900,
+   "unit": "lb",
+   "confidence": "low",
+   "sources": [
+    "src:search-pro-vs-super"
+   ],
+   "notes": "~2,800 lb base"
+  },
+  "tires": "spec",
+  "spec_rules": "crate sealed",
+  "new_car_cost_usd": {
+   "min": 60000,
+   "max": 90000,
+   "unit": "USD",
+   "confidence": "low",
+   "sources": [],
+   "notes": "estimate: SLM chassis with cheaper engine"
+  },
+  "used_car_cost_usd": {
+   "min": 20000,
+   "max": 45000,
+   "unit": "USD",
+   "confidence": "low",
+   "sources": [],
+   "notes": "estimate"
+  },
+  "notes": "Engine commitment ~US$15k vs $25-30k for SLM; functions as development class.",
+  "confidence": "medium",
+  "sources": [
+   "src:sts-slm-vs-lms",
+   "src:search-pro-vs-super"
+  ]
+ },
+ {
+  "id": "class:quarter-midget",
+  "name": "Quarter midget",
+  "discipline": "youth_oval",
+  "chassis": "tube-frame 1/4-scale midget, roll cage, solid rear axle",
+  "drivetrain": "single-cylinder engine, chain drive to solid rear axle, no transmission",
+  "engine": "Honda 120/160 (GX), Briggs Animal, World Formula; single-cylinder 4-stroke",
+  "horsepower": {
+   "min": 2,
+   "max": 15,
+   "unit": "hp",
+   "confidence": "low",
+   "sources": [
+    "src:wiki-quarter-midget"
+   ],
+   "notes": "informed estimate by engine family; speeds ~30mph rookie to 45+ mph"
+  },
+  "weight_lb": {
+   "unit": "lb",
+   "confidence": "low",
+   "sources": [],
+   "notes": "class weights include driver; light/heavy split at 100lb driver weight"
+  },
+  "tires": "spec small slicks",
+  "spec_rules": "Class by age (junior 5-8, senior 9-16) and driver weight; 1/20-mile tracks",
+  "new_car_cost_usd": {
+   "min": 8000,
+   "max": 15000,
+   "unit": "USD",
+   "year_basis": 2025,
+   "confidence": "low",
+   "sources": [
+    "src:vastqm-faq"
+   ],
+   "notes": "new car with required equipment, search snippet"
+  },
+  "used_car_cost_usd": {
+   "min": 3000,
+   "max": 8000,
+   "unit": "USD",
+   "year_basis": 2025,
+   "confidence": "low",
+   "sources": [
+    "src:vastqm-faq"
+   ],
+   "notes": "used beginner setup"
+  },
+  "notes": "Engine ~US$1,600 race-ready Honda 120.",
+  "confidence": "medium",
+  "sources": [
+   "src:wiki-quarter-midget",
+   "src:vastqm-faq"
+  ]
+ },
+ {
+  "id": "class:silver-crown",
+  "name": "USAC Silver Crown car",
+  "discipline": "sprint",
+  "chassis": "larger champ-dirt-style car",
+  "drivetrain": "front-engine RWD",
+  "engine": "V8 (~800+hp)",
+  "horsepower": {
+   "value": 800,
+   "unit": "hp",
+   "confidence": "medium",
+   "sources": [
+    "src:silver-crown-search"
+   ],
+   "notes": "800+ hp"
+  },
+  "weight_lb": {
+   "value": 1650,
+   "unit": "lb",
+   "confidence": "medium",
+   "sources": [
+    "src:silver-crown-search"
+   ],
+   "notes": "1,650 lb"
+  },
+  "tires": "Hoosier",
+  "spec_rules": "USAC",
+  "new_car_cost_usd": null,
+  "used_car_cost_usd": null,
+  "notes": "Mix of dirt and pavement miles/half-miles.",
+  "confidence": "medium",
+  "sources": [
+   "src:silver-crown-search"
+  ]
+ },
+ {
+  "id": "class:sk-modified",
+  "name": "SK / SK Light / Sportsman modified (asphalt local)",
+  "discipline": "modified",
+  "chassis": "modified chassis, track spec rules (Stafford SK)",
+  "drivetrain": "front-engine RWD",
+  "engine": "spec small-block (SMS spec engine) or crate",
+  "horsepower": {
+   "min": 400,
+   "max": 550,
+   "unit": "hp",
+   "confidence": "low",
+   "sources": [
+    "src:stafford-sk"
+   ],
+   "notes": "estimate; SK Light uses crate"
+  },
+  "weight_lb": {
+   "unit": "lb",
+   "confidence": "low",
+   "sources": [],
+   "notes": "not verified"
+  },
+  "tires": "spec",
+  "spec_rules": "Stafford-originated SK rules adopted by other tracks to cut cost",
+  "new_car_cost_usd": {
+   "unit": "USD",
+   "confidence": "low",
+   "sources": [],
+   "notes": "not verified"
+  },
+  "used_car_cost_usd": {
+   "unit": "USD",
+   "confidence": "low",
+   "sources": [],
+   "notes": "not verified"
+  },
+  "notes": "Ryan Preece and Doug Coby are SK alumni.",
+  "confidence": "low",
+  "sources": [
+   "src:stafford-sk",
+   "src:wiki-driver-bios"
+  ]
+ },
+ {
+  "id": "class:spec-e30",
+  "name": "Spec E30 (BMW 3 Series E30)",
+  "discipline": "sports_car",
+  "chassis": "production BMW E30",
+  "drivetrain": "front-engine RWD",
+  "engine": "BMW M20 2.5L I6",
+  "horsepower": null,
+  "weight_lb": null,
+  "tires": "spec",
+  "spec_rules": "NASA spec class",
+  "new_car_cost_usd": null,
+  "used_car_cost_usd": null,
+  "notes": "Low-cost NASA entry class.",
+  "confidence": "low",
+  "sources": [
+   "src:wiki-nasa"
+  ]
+ },
+ {
+  "id": "class:spec-miata",
+  "name": "Spec Miata (NA/NB Mazda MX-5)",
+  "discipline": "sports_car",
+  "chassis": "production Mazda Miata 1990-2005 with cage",
+  "drivetrain": "front-engine RWD",
+  "engine": "Mazda 1.6/1.8L I4 (sealed/spec rebuilds)",
+  "horsepower": {
+   "min": 110,
+   "max": 125,
+   "unit": "whp",
+   "confidence": "medium",
+   "sources": [
+    "src:wiki-spec-miata"
+   ],
+   "notes": "top builds ~120-125"
+  },
+  "weight_lb": {
+   "min": 2275,
+   "max": 2450,
+   "unit": "lb incl. driver (min)",
+   "confidence": "high",
+   "sources": [
+    "src:wiki-spec-miata"
+   ],
+   "notes": null
+  },
+  "tires": "spec Toyo/Hoosier-type DOT tires",
+  "spec_rules": "SCCA and NASA spec rules",
+  "new_car_cost_usd": null,
+  "used_car_cost_usd": {
+   "min": 6000,
+   "max": 65000,
+   "unit": "USD",
+   "confidence": "medium",
+   "sources": [
+    "src:nomoneymotorsports-sm"
+   ],
+   "notes": "sub-10k midpack regional; 20k+ front-running"
+  },
+  "notes": "Most popular club racing class in the US.",
+  "confidence": "high",
+  "sources": [
+   "src:wiki-spec-miata",
+   "src:nomoneymotorsports-sm",
+   "src:scca-runoffs-2025"
+  ]
+ },
+ {
+  "id": "class:spec-racer-ford",
+  "name": "Spec Racer Ford Gen3 (SRF3)",
+  "discipline": "sports_car",
+  "chassis": "SCCA Enterprises spec sports-racer",
+  "drivetrain": "mid-engine RWD",
+  "engine": "Ford 1.6L Sigma I4",
+  "horsepower": {
+   "min": 110,
+   "max": 120,
+   "unit": "hp",
+   "confidence": "low",
+   "sources": [
+    "src:informed-estimate"
+   ],
+   "notes": "informed estimate"
+  },
+  "weight_lb": null,
+  "tires": "spec",
+  "spec_rules": "pure spec (SCCA Enterprises)",
+  "new_car_cost_usd": {
+   "min": 45500,
+   "max": 53300,
+   "unit": "USD",
+   "confidence": "medium",
+   "sources": [
+    "src:wiki-spec-racer-ford"
+   ],
+   "notes": null
+  },
+  "used_car_cost_usd": null,
+  "notes": "Largest SCCA class by entries (200+ in 2025).",
+  "confidence": "medium",
+  "sources": [
+   "src:wiki-spec-racer-ford",
+   "src:scca-runoffs-2025"
+  ]
+ },
+ {
+  "id": "class:sportmod",
+  "name": "IMCA SportMod / USRA B-Mod (budget dirt modified)",
+  "discipline": "modified",
+  "chassis": "modified chassis on stock-type frame rules (Northern SportMod)",
+  "drivetrain": "front-engine RWD",
+  "engine": "GM 602 crate or claim engine",
+  "horsepower": {
+   "min": 350,
+   "max": 400,
+   "unit": "hp",
+   "confidence": "low",
+   "sources": [
+    "src:imca-rules",
+    "src:dirtcar-the-cars"
+   ],
+   "notes": "602 crate ~350-375 hp"
+  },
+  "weight_lb": {
+   "min": 2450,
+   "max": 2500,
+   "unit": "lb",
+   "confidence": "high",
+   "sources": [
+    "src:imca-rules"
+   ],
+   "notes": "2,500 claim / 2,450 crate with driver"
+  },
+  "tires": "spec",
+  "spec_rules": "claim/crate",
+  "new_car_cost_usd": {
+   "unit": "USD",
+   "confidence": "low",
+   "sources": [],
+   "notes": "not verified"
+  },
+  "used_car_cost_usd": {
+   "min": 5000,
+   "max": 20000,
+   "unit": "USD",
+   "confidence": "low",
+   "sources": [],
+   "notes": "estimate"
+  },
+  "notes": "Minimum age 14.",
+  "confidence": "medium",
+  "sources": [
+   "src:imca-rules"
+  ]
+ },
+ {
+  "id": "class:street-stock",
+  "name": "Street stock / pure stock / hobby stock / factory stock",
+  "discipline": "stock_car",
+  "chassis": "production steel full-frame (e.g. Monte Carlo/Camaro) with cage",
+  "drivetrain": "front-engine RWD",
+  "engine": "production-block V8 (hobby/pure often near-stock, claim or crate 602)",
+  "horsepower": {
+   "min": 275,
+   "max": 450,
+   "unit": "hp",
+   "confidence": "low",
+   "sources": [
+    "src:search-streetstock"
+   ],
+   "notes": "pure/factory 275-350; street stock 360-450"
+  },
+  "weight_lb": {
+   "min": 3000,
+   "max": 3400,
+   "unit": "lb",
+   "confidence": "low",
+   "sources": [
+    "src:search-streetstock",
+    "src:imca-rules"
+   ],
+   "notes": "street stock min ~3,200 lb in one rulebook"
+  },
+  "tires": "spec or treaded DOT/Hoosier",
+  "spec_rules": "Claim rules / sealed crate options",
+  "new_car_cost_usd": {
+   "min": 20000,
+   "max": 40000,
+   "unit": "USD",
+   "confidence": "low",
+   "sources": [
+    "src:search-streetstock"
+   ],
+   "notes": "new turnkey"
+  },
+  "used_car_cost_usd": {
+   "min": 3500,
+   "max": 15000,
+   "unit": "USD",
+   "confidence": "low",
+   "sources": [
+    "src:search-streetstock"
+   ],
+   "notes": "hobby $3.5-10k, competitive used street stock $5-15k"
+  },
+  "notes": "Same family used on dirt (IMCA Hobby Stock, USRA Hobby/Factory) and asphalt.",
+  "confidence": "low",
+  "sources": [
+   "src:search-streetstock",
+   "src:imca-rules"
+  ]
+ },
+ {
+  "id": "class:super-dirt-late-model",
+  "name": "Super dirt late model",
+  "discipline": "dirt_late_model",
+  "chassis": "purpose-built wedge-body chassis (Rocket, Longhorn, Bloomquist, Barry Wright, MasterSbilt etc.)",
+  "drivetrain": "front-engine RWD (quick-change)",
+  "engine": "aluminum-head V8 400-430ci, no cubic-inch limit",
+  "horsepower": {
+   "min": 800,
+   "max": 900,
+   "unit": "hp",
+   "confidence": "high",
+   "sources": [
+    "src:woo-lm-car",
+    "src:wiki-lucas"
+   ],
+   "notes": "over 800 hp"
+  },
+  "weight_lb": {
+   "value": 2350,
+   "unit": "lb",
+   "confidence": "high",
+   "sources": [
+    "src:woo-lm-car"
+   ],
+   "notes": "2,350 lb"
+  },
+  "tires": "Hoosier",
+  "spec_rules": "WoO/Lucas rules",
+  "new_car_cost_usd": {
+   "min": 60000,
+   "max": 110000,
+   "unit": "USD",
+   "confidence": "low",
+   "sources": [
+    "src:jj-dlm-cost",
+    "src:floracing-dlm-cost"
+   ],
+   "notes": "roller ~$42.5k each (2 cars $85k) + engine $36-60k"
+  },
+  "used_car_cost_usd": {
+   "min": 25000,
+   "max": 60000,
+   "unit": "USD",
+   "confidence": "low",
+   "sources": [
+    "src:jj-dlm-cost"
+   ],
+   "notes": "estimate from $25-100k range"
+  },
+  "notes": "Engine ~$50k (2018), 'super motor'.",
+  "confidence": "high",
+  "sources": [
+   "src:woo-lm-car",
+   "src:wiki-lucas",
+   "src:racingnews-crate",
+   "src:floracing-dlm-cost"
+  ]
+ },
+ {
+  "id": "class:super-late-model",
+  "name": "Super Late Model (asphalt)",
+  "discipline": "stock_car",
+  "chassis": "straight-rail offset chassis (up to 3-in offset), 39-in cage, ABC template body",
+  "drivetrain": "front-engine RWD, 3-speed options",
+  "engine": "purpose-built 'open' small-block V8 (steel or aluminum heads per tour rules)",
+  "horsepower": {
+   "min": 600,
+   "max": 650,
+   "unit": "hp",
+   "confidence": "medium",
+   "sources": [
+    "src:sts-slm-vs-lms",
+    "src:wiki-late-model"
+   ],
+   "notes": "~630 hp"
+  },
+  "weight_lb": {
+   "min": 2750,
+   "max": 2850,
+   "unit": "lb",
+   "confidence": "medium",
+   "sources": [
+    "src:sts-slm-vs-lms",
+    "src:search-pro-vs-super"
+   ],
+   "notes": "~2,800 lb"
+  },
+  "tires": "spec Hoosier/American Racer",
+  "spec_rules": "tour-specific (ASA STARS, PASS, Midwest Tour)",
+  "new_car_cost_usd": {
+   "min": 100000,
+   "max": 200000,
+   "unit": "USD",
+   "year_basis": 2025,
+   "confidence": "medium",
+   "sources": [
+    "src:sts-slm-vs-lms",
+    "src:crateinsider-lmsc"
+   ],
+   "notes": "turnkey ~$100k; one touring program $198k"
+  },
+  "used_car_cost_usd": {
+   "min": 30000,
+   "max": 70000,
+   "unit": "USD",
+   "confidence": "low",
+   "sources": [],
+   "notes": "estimate"
+  },
+  "notes": "Engine $25-30k (local spec) up to ~$80k fresh top-tier touring engine (one snippet).",
+  "confidence": "medium",
+  "sources": [
+   "src:sts-slm-vs-lms",
+   "src:crateinsider-lmsc"
+  ]
+ },
+ {
+  "id": "class:tatuus-ip22-pro2000",
+  "name": "Tatuus PM-18 / IP-22 (USF Pro 2000)",
+  "discipline": "open_wheel",
+  "chassis": "Tatuus carbon monocoque, halo",
+  "drivetrain": "mid-engine RWD",
+  "engine": "Elite race-built Mazda MZR 2.0L (rev limit 8,350 rpm from 2025)",
+  "horsepower": {
+   "min": 275,
+   "max": 290,
+   "unit": "hp",
+   "confidence": "low",
+   "sources": [
+    "src:iracing-fandom-tatuus",
+    "src:usfpro2000-series"
+   ],
+   "notes": "~275hp PM-18 + ~10hp 2025 upgrade"
+  },
+  "weight_lb": {
+   "value": 1102,
+   "unit": "lb (500 kg, likely dry)",
+   "confidence": "low",
+   "sources": [
+    "src:iracing-fandom-tatuus"
+   ],
+   "notes": null
+  },
+  "tires": "Continental",
+  "spec_rules": "spec",
+  "new_car_cost_usd": null,
+  "used_car_cost_usd": null,
+  "notes": "Pre-2018 Star/Pro Mazda used Star Formula Mazda chassis with Mazda rotary engines (~250hp).",
+  "confidence": "medium",
+  "sources": [
+   "src:usfpro2000-series",
+   "src:iracing-fandom-tatuus",
+   "src:mazda-star-mazda-history"
+  ]
+ },
+ {
+  "id": "class:tatuus-jr23",
+  "name": "Tatuus JR-23 (USF Juniors)",
+  "discipline": "open_wheel",
+  "chassis": "Tatuus carbon monocoque (USF-22 derived), halo",
+  "drivetrain": "mid-engine RWD",
+  "engine": "Elite-built Mazda MZR 2.0L with restrictor",
+  "horsepower": {
+   "value": 150,
+   "unit": "hp",
+   "confidence": "medium",
+   "sources": [
+    "src:racer-usf-juniors-jr23"
+   ],
+   "notes": null
+  },
+  "weight_lb": {
+   "value": 1102,
+   "unit": "lb (500 kg, likely dry)",
+   "confidence": "low",
+   "sources": [
+    "src:iracing-fandom-tatuus"
+   ],
+   "notes": "sim-wiki figure"
+  },
+  "tires": "Continental",
+  "spec_rules": "spec",
+  "new_car_cost_usd": null,
+  "used_car_cost_usd": null,
+  "notes": "Replaced Ligier F4 car in USF Juniors from 2023.",
+  "confidence": "medium",
+  "sources": [
+   "src:racer-usf-juniors-jr23",
+   "src:wiki-usf-juniors-2025"
+  ]
+ },
+ {
+  "id": "class:tatuus-usf2000",
+  "name": "Tatuus USF-17 / USF-22 (USF2000)",
+  "discipline": "open_wheel",
+  "chassis": "Tatuus carbon monocoque, halo (USF-22)",
+  "drivetrain": "mid-engine RWD",
+  "engine": "Elite-built Mazda MZR 2.0L",
+  "horsepower": {
+   "min": 175,
+   "max": 195,
+   "unit": "hp",
+   "confidence": "low",
+   "sources": [
+    "src:iracing-fandom-tatuus",
+    "src:wiki-usf2000-2025"
+   ],
+   "notes": "~175hp base; 2025 +20hp on road/street"
+  },
+  "weight_lb": {
+   "value": 1102,
+   "unit": "lb (500 kg, likely dry)",
+   "confidence": "low",
+   "sources": [
+    "src:iracing-fandom-tatuus"
+   ],
+   "notes": null
+  },
+  "tires": "Continental",
+  "spec_rules": "spec",
+  "new_car_cost_usd": null,
+  "used_car_cost_usd": null,
+  "notes": "Earlier eras: Van Diemen/Elan FF2000 with Ford Zetec/Pinto 2.0 (1990-2006), Van Diemen DP08 Mazda (2010-2016).",
+  "confidence": "medium",
+  "sources": [
+   "src:iracing-fandom-tatuus",
+   "src:wiki-usf2000-2025",
+   "src:wiki-usf2000"
+  ]
+ },
+ {
+  "id": "class:tcr",
+  "name": "TCR / TC America touring cars",
+  "discipline": "touring_car",
+  "chassis": "front-drive production hatch/sedan (TCR); BMW M2 CS Racing (TCX)",
+  "drivetrain": "FWD (TCR); RWD (TCX)",
+  "engine": "2.0L turbo I4 (TCR)",
+  "horsepower": {
+   "min": 330,
+   "max": 350,
+   "unit": "hp",
+   "confidence": "low",
+   "sources": [
+    "src:informed-estimate"
+   ],
+   "notes": "informed estimate of TCR spec"
+  },
+  "weight_lb": null,
+  "tires": "Michelin (IMSA)",
+  "spec_rules": "BoP",
+  "new_car_cost_usd": null,
+  "used_car_cost_usd": null,
+  "notes": "IMSA Pilot Challenge TCR class retained through 2028.",
+  "confidence": "low",
+  "sources": [
+   "src:wiki-pilot-challenge",
+   "src:wiki-tc-america"
+  ]
+ },
+ {
+  "id": "class:thunder-roadster",
+  "name": "INEX Thunder Roadster",
+  "discipline": "stock_car",
+  "chassis": "spec tube chassis roadster",
+  "drivetrain": "front-engine RWD",
+  "engine": "Yamaha 1250cc",
+  "horsepower": {
+   "value": 200,
+   "unit": "hp",
+   "confidence": "low",
+   "sources": [
+    "src:search-thunder-babygrand"
+   ],
+   "notes": "~200 hp"
+  },
+  "weight_lb": {
+   "value": 1500,
+   "unit": "lb",
+   "confidence": "low",
+   "sources": [
+    "src:search-thunder-babygrand"
+   ],
+   "notes": "~1,500 lb"
+  },
+  "tires": "spec",
+  "spec_rules": null,
+  "new_car_cost_usd": null,
+  "used_car_cost_usd": {
+   "min": 4000,
+   "max": 9500,
+   "unit": "USD",
+   "confidence": "low",
+   "sources": [
+    "src:search-thunder-babygrand"
+   ],
+   "notes": "used listings"
+  },
+  "notes": null,
+  "confidence": "low",
+  "sources": [
+   "src:search-thunder-babygrand"
+  ]
+ },
+ {
+  "id": "class:trans-am-ta",
+  "name": "Trans Am TA (tube-frame V8)",
+  "discipline": "touring_car",
+  "chassis": "tube-frame silhouette (Mustang/Camaro/Corvette/Challenger bodies)",
+  "drivetrain": "front-engine RWD",
+  "engine": "366ci carbureted pushrod V8",
+  "horsepower": {
+   "min": 850,
+   "max": 860,
+   "unit": "hp",
+   "confidence": "medium",
+   "sources": [
+    "src:motorsportmag-transam"
+   ],
+   "notes": null
+  },
+  "weight_lb": {
+   "min": 2600,
+   "max": 2800,
+   "unit": "lb",
+   "confidence": "medium",
+   "sources": [
+    "src:motorsportmag-transam"
+   ],
+   "notes": null
+  },
+  "tires": null,
+  "spec_rules": "TA/GT1-style rules",
+  "new_car_cost_usd": {
+   "min": 325000,
+   "max": 365000,
+   "unit": "USD",
+   "confidence": "medium",
+   "sources": [
+    "src:motorsportmag-transam"
+   ],
+   "notes": null
+  },
+  "used_car_cost_usd": null,
+  "notes": null,
+  "confidence": "medium",
+  "sources": [
+   "src:motorsportmag-transam"
+  ]
+ },
+ {
+  "id": "class:trans-am-ta2",
+  "name": "Trans Am TA2 (semi-spec muscle car)",
+  "discipline": "touring_car",
+  "chassis": "semi-spec tube chassis (Mustang/Camaro/Challenger bodies)",
+  "drivetrain": "front-engine RWD",
+  "engine": "spec GM/Ford V8 crate",
+  "horsepower": {
+   "min": 480,
+   "max": 500,
+   "unit": "hp",
+   "confidence": "medium",
+   "sources": [
+    "src:motorsportmag-transam"
+   ],
+   "notes": null
+  },
+  "weight_lb": {
+   "value": 2830,
+   "unit": "lb",
+   "confidence": "medium",
+   "sources": [
+    "src:motorsportmag-transam"
+   ],
+   "notes": null
+  },
+  "tires": "spec",
+  "spec_rules": "semi-spec",
+  "new_car_cost_usd": {
+   "min": 111000,
+   "max": 150000,
+   "unit": "USD",
+   "confidence": "medium",
+   "sources": [
+    "src:motorsportmag-transam"
+   ],
+   "notes": null
+  },
+  "used_car_cost_usd": null,
+  "notes": "Popular with NASCAR prospects for road-course practice.",
+  "confidence": "medium",
+  "sources": [
+   "src:motorsportmag-transam"
+  ]
+ },
+ {
+  "id": "class:ump-modified",
+  "name": "UMP / DIRTcar Modified (open)",
+  "discipline": "modified",
+  "chassis": "dirt modified chassis",
+  "drivetrain": "front-engine RWD",
+  "engine": "up to ~420ci open V8",
+  "horsepower": {
+   "value": 750,
+   "unit": "hp",
+   "confidence": "medium",
+   "sources": [
+    "src:dirtcar-the-cars"
+   ],
+   "notes": "750+ hp"
+  },
+  "weight_lb": {
+   "value": 2400,
+   "unit": "lb",
+   "confidence": "medium",
+   "sources": [
+    "src:dirtcar-the-cars"
+   ],
+   "notes": "2,400 lb"
+  },
+  "tires": "spec",
+  "spec_rules": "",
+  "new_car_cost_usd": null,
+  "used_car_cost_usd": null,
+  "notes": null,
+  "confidence": "medium",
+  "sources": [
+   "src:dirtcar-the-cars"
+  ]
+ },
+ {
+  "id": "class:youth-oval-kart",
+  "name": "Oval/dirt kart (junior)",
+  "discipline": "youth_oval",
+  "chassis": "kart chassis (offset for ovals)",
+  "drivetrain": "rear-engine direct/clutch",
+  "engine": "Briggs/Clone/Animal 4-stroke",
+  "horsepower": {
+   "min": 5,
+   "max": 15,
+   "unit": "hp",
+   "confidence": "low",
+   "sources": [],
+   "notes": "informed estimate"
+  },
+  "weight_lb": null,
+  "tires": "spec",
+  "spec_rules": "",
+  "new_car_cost_usd": {
+   "unit": "USD",
+   "confidence": "low",
+   "sources": [],
+   "notes": "not verified"
+  },
+  "used_car_cost_usd": null,
+  "notes": "Most NASCAR/dirt stars began in karts (Larson outlaw karts at 7; Hamlin karts at 7; Stewart WKA).",
+  "confidence": "low",
+  "sources": [
+   "src:wiki-driver-bios"
+  ]
+ }
+]

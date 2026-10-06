@@ -1,0 +1,973 @@
+{
+ "series": "usac_silver_crown",
+ "year": 2014,
+ "official_name": "USAC Traxxas Silver Crown Series",
+ "data_level": "full",
+ "champion": {
+  "name": "Kody Swanson",
+  "wiki": "Kody Swanson"
+ },
+ "teams": [
+  {
+   "team": "Wilson",
+   "manufacturer": null,
+   "cars": [
+    {
+     "number": "07",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Jacob Wilson",
+       "wiki": "Jacob Wilson (racing driver)"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Bowman",
+   "manufacturer": null,
+   "cars": [
+    {
+     "number": "2",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Ryan Newman",
+       "wiki": "Ryan Newman (racing driver)"
+      }
+     ]
+    },
+    {
+     "number": "11",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Tanner Swanson",
+       "wiki": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Lawson",
+   "manufacturer": null,
+   "cars": [
+    {
+     "number": "2",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Patrick Lawson",
+       "wiki": null
+      }
+     ]
+    },
+    {
+     "number": "102",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Patrick Lawson",
+       "wiki": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "RFMS",
+   "manufacturer": null,
+   "cars": [
+    {
+     "number": "3",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "AJ Fike",
+       "wiki": "A. J. Fike"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Andretti",
+   "manufacturer": null,
+   "cars": [
+    {
+     "number": "4",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Jarett Andretti",
+       "wiki": "Jarett Andretti"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Daum",
+   "manufacturer": null,
+   "cars": [
+    {
+     "number": "5",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Zach Daum",
+       "wiki": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Armstrong",
+   "manufacturer": null,
+   "cars": [
+    {
+     "number": "9",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Caleb Armstrong",
+       "wiki": "Caleb Armstrong"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Stewart/Curb-Agajanian",
+   "manufacturer": null,
+   "cars": [
+    {
+     "number": "10",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Bobby East",
+       "wiki": "Bobby East"
+      }
+     ]
+    },
+    {
+     "number": "10k",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Ken Schrader",
+       "wiki": "Ken Schrader"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Swanson",
+   "manufacturer": null,
+   "cars": [
+    {
+     "number": "11",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Tanner Swanson",
+       "wiki": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "McQuinn",
+   "manufacturer": null,
+   "cars": [
+    {
+     "number": "14",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Jarett Andretti",
+       "wiki": "Jarett Andretti"
+      },
+      {
+       "name": "Brady Bacon",
+       "wiki": "Brady Bacon"
+      }
+     ]
+    },
+    {
+     "number": "41",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Steven Russell",
+       "wiki": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Logan",
+   "manufacturer": null,
+   "cars": [
+    {
+     "number": "15",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Dave Darland",
+       "wiki": "Dave Darland"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Lightfoot",
+   "manufacturer": null,
+   "cars": [
+    {
+     "number": "16",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Tracy Hines",
+       "wiki": "Tracy Hines"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "RW/Curb-Agajanian",
+   "manufacturer": null,
+   "cars": [
+    {
+     "number": "17",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Chris Windom",
+       "wiki": "Chris Windom"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Gentry",
+   "manufacturer": null,
+   "cars": [
+    {
+     "number": "18",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Kenny Gentry",
+       "wiki": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Longworth",
+   "manufacturer": null,
+   "cars": [
+    {
+     "number": "19",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Dave Darland",
+       "wiki": "Dave Darland"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Nolen",
+   "manufacturer": null,
+   "cars": [
+    {
+     "number": "20",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Jerry Coons Jr.",
+       "wiki": "Jerry Coons Jr."
+      },
+      {
+       "name": "Bryan Clauson",
+       "wiki": "Bryan Clauson"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Team Six-R",
+   "manufacturer": null,
+   "cars": [
+    {
+     "number": "21",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Christopher Bell",
+       "wiki": "Christopher Bell (racing driver)"
+      },
+      {
+       "name": "CJ Leary",
+       "wiki": null
+      },
+      {
+       "name": "Jack Hewitt",
+       "wiki": "Jack Hewitt"
+      },
+      {
+       "name": "Ryan Litt",
+       "wiki": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Satterhouse",
+   "manufacturer": null,
+   "cars": [
+    {
+     "number": "23",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Terry James",
+       "wiki": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Sachs",
+   "manufacturer": null,
+   "cars": [
+    {
+     "number": "25",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Davey Ray",
+       "wiki": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Pierce",
+   "manufacturer": null,
+   "cars": [
+    {
+     "number": "26",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Aaron Pierce",
+       "wiki": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "RW",
+   "manufacturer": null,
+   "cars": [
+    {
+     "number": "27",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Kyle O'Gara",
+       "wiki": "Kyle O'Gara"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Pierson",
+   "manufacturer": null,
+   "cars": [
+    {
+     "number": "28",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Tim Barber",
+       "wiki": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "King",
+   "manufacturer": null,
+   "cars": [
+    {
+     "number": "30",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Andrew Felker",
+       "wiki": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Simmons",
+   "manufacturer": null,
+   "cars": [
+    {
+     "number": "31",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Jake Simmons",
+       "wiki": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Jackson",
+   "manufacturer": null,
+   "cars": [
+    {
+     "number": "33",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Dakota Jackson",
+       "wiki": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Ferns",
+   "manufacturer": null,
+   "cars": [
+    {
+     "number": "35",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Taylor Ferns",
+       "wiki": "Taylor Ferns"
+      },
+      {
+       "name": "CJ Leary",
+       "wiki": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Miller",
+   "manufacturer": null,
+   "cars": [
+    {
+     "number": "36",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Wes Miller",
+       "wiki": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Byrne",
+   "manufacturer": null,
+   "cars": [
+    {
+     "number": "40",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "David Byrne",
+       "wiki": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Bruce",
+   "manufacturer": null,
+   "cars": [
+    {
+     "number": "50",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Jerry Bruce",
+       "wiki": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Gamester",
+   "manufacturer": null,
+   "cars": [
+    {
+     "number": "51",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Russ Gamester",
+       "wiki": "Russ Gamester"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "SET",
+   "manufacturer": null,
+   "cars": [
+    {
+     "number": "53",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Robbie Ray",
+       "wiki": null
+      },
+      {
+       "name": "Robert Ballou",
+       "wiki": null
+      },
+      {
+       "name": "Steve Buckwalter",
+       "wiki": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Bateman",
+   "manufacturer": null,
+   "cars": [
+    {
+     "number": "55",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Randy Bateman",
+       "wiki": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Foxco",
+   "manufacturer": null,
+   "cars": [
+    {
+     "number": "56",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Jon Stanbrough",
+       "wiki": null
+      },
+      {
+       "name": "Levi Jones",
+       "wiki": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Hamilton",
+   "manufacturer": null,
+   "cars": [
+    {
+     "number": "60",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Davey Hamilton, Jr.",
+       "wiki": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "DePalma",
+   "manufacturer": null,
+   "cars": [
+    {
+     "number": "63",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Kody Swanson",
+       "wiki": "Kody Swanson"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Hardy",
+   "manufacturer": null,
+   "cars": [
+    {
+     "number": "66",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Shane Cockrum",
+       "wiki": "Shane Cockrum"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Urish",
+   "manufacturer": null,
+   "cars": [
+    {
+     "number": "77",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Chris Urish",
+       "wiki": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Williams",
+   "manufacturer": null,
+   "cars": [
+    {
+     "number": "81",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "John Hunt",
+       "wiki": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Burke",
+   "manufacturer": null,
+   "cars": [
+    {
+     "number": "86",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Jackie Burke",
+       "wiki": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Fetter",
+   "manufacturer": null,
+   "cars": [
+    {
+     "number": "88",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Chris Fetter",
+       "wiki": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Bank",
+   "manufacturer": null,
+   "cars": [
+    {
+     "number": "90",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "John Heydenreich",
+       "wiki": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Hunt",
+   "manufacturer": null,
+   "cars": [
+    {
+     "number": "91",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "John Hunt",
+       "wiki": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Thomas",
+   "manufacturer": null,
+   "cars": [
+    {
+     "number": "92",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Cale Thomas",
+       "wiki": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Simpson",
+   "manufacturer": null,
+   "cars": [
+    {
+     "number": "96",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Grant Simpson",
+       "wiki": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "RPM/Gormly",
+   "manufacturer": null,
+   "cars": [
+    {
+     "number": "98",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Jerry Coons, Jr.",
+       "wiki": null
+      },
+      {
+       "name": "Bobby Santos III",
+       "wiki": "Bobby Santos III"
+      }
+     ]
+    },
+    {
+     "number": "99",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Joe Liguori",
+       "wiki": null
+      },
+      {
+       "name": "Chris Phillips",
+       "wiki": null
+      },
+      {
+       "name": "Christopher Bell",
+       "wiki": "Christopher Bell (racing driver)"
+      },
+      {
+       "name": "Stewart Friesen",
+       "wiki": "Stewart Friesen"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Tobias",
+   "manufacturer": null,
+   "cars": [
+    {
+     "number": "117",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Rich Tobias, Jr.",
+       "wiki": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Blondel",
+   "manufacturer": null,
+   "cars": [
+    {
+     "number": "981",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Jarid Blondel",
+       "wiki": null
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "standings": [],
+ "schedule": [
+  {
+   "round": 1,
+   "date": "2014-04-06",
+   "race": "Sumar Classic",
+   "track": "Terre Haute Action Track",
+   "city": "Terre Haute",
+   "state": "IN",
+   "winner": "Kody Swanson",
+   "winner_wiki": "Kody Swanson"
+  },
+  {
+   "round": 2,
+   "date": "2014-05-17",
+   "race": "Hall of Fame Classic",
+   "track": "Lucas Oil Raceway at Indianapolis",
+   "city": "Clermont",
+   "state": "IN",
+   "winner": "Tanner Swanson",
+   "winner_wiki": null
+  },
+  {
+   "round": 3,
+   "date": "2014-05-22",
+   "race": "Hoosier Hundred",
+   "track": "Indiana State Fairgrounds",
+   "city": "Indianapolis",
+   "state": "IN",
+   "winner": "Kody Swanson",
+   "winner_wiki": "Kody Swanson"
+  },
+  {
+   "round": 4,
+   "date": "2014-06-14",
+   "race": "Gateway 100",
+   "track": "Gateway Motorsports Park",
+   "city": "Madison",
+   "state": "IL",
+   "winner": "Bobby Santos III",
+   "winner_wiki": "Bobby Santos III"
+  },
+  {
+   "round": 5,
+   "date": "2014-07-24",
+   "race": "JD Byrider Rich Vogler Classic 100",
+   "track": "Lucas Oil Raceway at Indianapolis",
+   "city": "Clermont",
+   "state": "IN",
+   "winner": "David Byrne",
+   "winner_wiki": null
+  },
+  {
+   "round": 6,
+   "date": "2014-08-01",
+   "race": "Hustle on the High Banks",
+   "track": "Belleville High Banks",
+   "city": "Belleville",
+   "state": "KS",
+   "winner": "Kody Swanson",
+   "winner_wiki": "Kody Swanson"
+  },
+  {
+   "round": 7,
+   "date": "2014-08-31",
+   "race": "Ted Horn Memorial 100",
+   "track": "DuQuoin State Fairgrounds Racetrack",
+   "city": "DuQuoin",
+   "state": "IL",
+   "winner": "Shane Cockrum",
+   "winner_wiki": "Shane Cockrum"
+  },
+  {
+   "round": 8,
+   "date": "2014-09-07",
+   "race": "Bettenhausen 100",
+   "track": "Illinois State Fairgrounds Racetrack",
+   "city": "Springfield",
+   "state": "IL",
+   "winner": "Kody Swanson",
+   "winner_wiki": "Kody Swanson"
+  },
+  {
+   "round": 9,
+   "date": "2014-09-21",
+   "race": "Four Crown Nationals",
+   "track": "Eldora Speedway",
+   "city": "Rossburg",
+   "state": "OH",
+   "winner": "Jerry Coons Jr.",
+   "winner_wiki": "Jerry Coons Jr."
+  },
+  {
+   "round": 10,
+   "date": "2014-10-11",
+   "race": "Salt City 78",
+   "track": "New York State Fairgrounds",
+   "city": "Syracuse",
+   "state": "NY",
+   "winner": "Kody Swanson",
+   "winner_wiki": "Kody Swanson"
+  }
+ ],
+ "sources": [
+  "https://en.wikipedia.org/w/index.php?title=2014_USAC_Traxxas_Silver_Crown_Series&oldid=1316365711",
+  "https://en.wikipedia.org/w/index.php?title=United_States_Auto_Club&oldid=1373901640"
+ ]
+}

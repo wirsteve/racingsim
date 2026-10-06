@@ -1,0 +1,819 @@
+{
+ "series": "cars_lms",
+ "year": 2021,
+ "official_name": "CARS Tour",
+ "data_level": "full",
+ "champion": {
+  "name": "Bobby McCarty",
+  "wiki": "Bobby McCarty"
+ },
+ "teams": [],
+ "standings": [
+  {
+   "pos": 1,
+   "name": "Bobby McCarty",
+   "wiki": "Bobby McCarty",
+   "points": 377,
+   "wins": 3,
+   "starts": 13,
+   "top5": 6,
+   "top10": 12
+  },
+  {
+   "pos": 2,
+   "name": "Kaden Honeycutt",
+   "wiki": "Kaden Honeycutt",
+   "points": 364,
+   "wins": 2,
+   "starts": 13,
+   "top5": 7,
+   "top10": 12
+  },
+  {
+   "pos": 3,
+   "name": "Jared Fryar",
+   "wiki": "Jared Fryar",
+   "points": 344,
+   "wins": 0,
+   "starts": 13,
+   "top5": 8,
+   "top10": 10
+  },
+  {
+   "pos": 4,
+   "name": "Justin Johnson",
+   "wiki": "Justin Johnson (racing driver, born 1987)",
+   "points": 337,
+   "wins": 2,
+   "starts": 13,
+   "top5": 7,
+   "top10": 9
+  },
+  {
+   "pos": 5,
+   "name": "Deac McCaskill",
+   "wiki": "Deac McCaskill",
+   "points": 321,
+   "wins": 1,
+   "starts": 13,
+   "top5": 5,
+   "top10": 9
+  },
+  {
+   "pos": 6,
+   "name": "Sam Yarbrough",
+   "wiki": "Sam Yarbrough",
+   "points": 311,
+   "wins": 0,
+   "starts": 13,
+   "top5": 2,
+   "top10": 9
+  },
+  {
+   "pos": 7,
+   "name": "Jonathan Shafer",
+   "wiki": "Jonathan Shafer",
+   "points": 288,
+   "wins": 0,
+   "starts": 13,
+   "top5": 4,
+   "top10": 6
+  },
+  {
+   "pos": 8,
+   "name": "Brandon Pierce",
+   "wiki": "Brandon Pierce",
+   "points": 287,
+   "wins": 0,
+   "starts": 13,
+   "top5": 2,
+   "top10": 5
+  },
+  {
+   "pos": 9,
+   "name": "Mini Tyrrell",
+   "wiki": "Mini Tyrrell",
+   "points": 285,
+   "wins": 1,
+   "starts": 13,
+   "top5": 2,
+   "top10": 5
+  },
+  {
+   "pos": 10,
+   "name": "Layne Riggs",
+   "wiki": "Layne Riggs",
+   "points": 278,
+   "wins": 1,
+   "starts": 13,
+   "top5": 5,
+   "top10": 5
+  },
+  {
+   "pos": 11,
+   "name": "Conner Jones",
+   "wiki": "Conner Jones",
+   "points": 241,
+   "wins": 0,
+   "starts": 13,
+   "top5": 0,
+   "top10": 3
+  },
+  {
+   "pos": 12,
+   "name": "Daniel Silvestri",
+   "wiki": "Daniel Silvestri",
+   "points": 230,
+   "wins": 1,
+   "starts": 10,
+   "top5": 3,
+   "top10": 5
+  },
+  {
+   "pos": 13,
+   "name": "Mason Diaz",
+   "wiki": "Mason Diaz",
+   "points": 227,
+   "wins": 0,
+   "starts": 11,
+   "top5": 2,
+   "top10": 5
+  },
+  {
+   "pos": 14,
+   "name": "Joe Valento",
+   "wiki": null,
+   "points": 222,
+   "wins": 0,
+   "starts": 13,
+   "top5": 0,
+   "top10": 2
+  },
+  {
+   "pos": 15,
+   "name": "Jonathan Findley",
+   "wiki": "Jonathan Findley",
+   "points": 202,
+   "wins": 0,
+   "starts": 12,
+   "top5": 0,
+   "top10": 3
+  },
+  {
+   "pos": 16,
+   "name": "Mike Looney",
+   "wiki": "Mike Looney",
+   "points": 201,
+   "wins": 0,
+   "starts": 9,
+   "top5": 2,
+   "top10": 4
+  },
+  {
+   "pos": 17,
+   "name": "Sam Butler",
+   "wiki": "Sam Butler (racing driver)",
+   "points": 164,
+   "wins": 0,
+   "starts": 8,
+   "top5": 2,
+   "top10": 4
+  },
+  {
+   "pos": 18,
+   "name": "Tyler Matthews",
+   "wiki": "Tyler Matthews",
+   "points": 133,
+   "wins": 0,
+   "starts": 6,
+   "top5": 2,
+   "top10": 2
+  },
+  {
+   "pos": 19,
+   "name": "Josh Berry",
+   "wiki": "Josh Berry",
+   "points": 108,
+   "wins": 2,
+   "starts": 4,
+   "top5": 2,
+   "top10": 3
+  },
+  {
+   "pos": 20,
+   "name": "Craig Moore",
+   "wiki": null,
+   "points": 79,
+   "wins": 0,
+   "starts": 5,
+   "top5": 0,
+   "top10": 1
+  },
+  {
+   "pos": 21,
+   "name": "William Cox III",
+   "wiki": null,
+   "points": 75,
+   "wins": 0,
+   "starts": 4,
+   "top5": 0,
+   "top10": 1
+  },
+  {
+   "pos": 22,
+   "name": "Connor Mosack",
+   "wiki": "Connor Mosack",
+   "points": 55,
+   "wins": 0,
+   "starts": 3,
+   "top5": 0,
+   "top10": 1
+  },
+  {
+   "pos": 23,
+   "name": "Stephen Nasse",
+   "wiki": "Stephen Nasse",
+   "points": 52,
+   "wins": 0,
+   "starts": 2,
+   "top5": 1,
+   "top10": 2
+  },
+  {
+   "pos": 24,
+   "name": "Mike Darne",
+   "wiki": "Mike Darne",
+   "points": 50,
+   "wins": 0,
+   "starts": 3,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 25,
+   "name": "Carter Langley",
+   "wiki": "Carter Langley",
+   "points": 50,
+   "wins": 0,
+   "starts": 2,
+   "top5": 0,
+   "top10": 2
+  },
+  {
+   "pos": 26,
+   "name": "Timothy Peters",
+   "wiki": "Timothy Peters",
+   "points": 49,
+   "wins": 0,
+   "starts": 3,
+   "top5": 1,
+   "top10": 1
+  },
+  {
+   "pos": 27,
+   "name": "Jessica Cann",
+   "wiki": null,
+   "points": 45,
+   "wins": 0,
+   "starts": 3,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 28,
+   "name": "Trevor Ward",
+   "wiki": "Trevor Ward (racing driver)",
+   "points": 42,
+   "wins": 0,
+   "starts": 2,
+   "top5": 0,
+   "top10": 1
+  },
+  {
+   "pos": 29,
+   "name": "Ronald Hill",
+   "wiki": "Ronald Hill (racing driver)",
+   "points": 37,
+   "wins": 0,
+   "starts": 2,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 30,
+   "name": "Dylan Ward",
+   "wiki": "Dylan Ward",
+   "points": 37,
+   "wins": 0,
+   "starts": 2,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 31,
+   "name": "Terry Carroll",
+   "wiki": null,
+   "points": 36,
+   "wins": 0,
+   "starts": 2,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 32,
+   "name": "Bubba Pollard",
+   "wiki": "Bubba Pollard",
+   "points": 34,
+   "wins": 0,
+   "starts": 2,
+   "top5": 0,
+   "top10": 1
+  },
+  {
+   "pos": 33,
+   "name": "Connor Hall",
+   "wiki": "Connor Hall (racing driver)",
+   "points": 32,
+   "wins": 0,
+   "starts": 1,
+   "top5": 1,
+   "top10": 1
+  },
+  {
+   "pos": 34,
+   "name": "Carson Kvapil",
+   "wiki": "Carson Kvapil",
+   "points": 30,
+   "wins": 0,
+   "starts": 1,
+   "top5": 1,
+   "top10": 1
+  },
+  {
+   "pos": 35,
+   "name": "Rusty Skewes",
+   "wiki": "Rusty Skewes",
+   "points": 28,
+   "wins": 0,
+   "starts": 2,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 36,
+   "name": "Ryan Glenski",
+   "wiki": "Ryan Glenski",
+   "points": 27,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 1
+  },
+  {
+   "pos": 37,
+   "name": "Mitch Walker",
+   "wiki": null,
+   "points": 26,
+   "wins": 0,
+   "starts": 2,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 38,
+   "name": "Kyle Dudley",
+   "wiki": "Kyle Dudley",
+   "points": 26,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 1
+  },
+  {
+   "pos": 39,
+   "name": "Trevor Noles",
+   "wiki": null,
+   "points": 25,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 1
+  },
+  {
+   "pos": 40,
+   "name": "Andrew Grady",
+   "wiki": "Andrew Grady",
+   "points": 24,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 1
+  },
+  {
+   "pos": 41,
+   "name": "Ethan Johnson",
+   "wiki": null,
+   "points": 23,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 1
+  },
+  {
+   "pos": 42,
+   "name": "Grant Thompson",
+   "wiki": null,
+   "points": 21,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 43,
+   "name": "Daniel Vuncannon",
+   "wiki": null,
+   "points": 21,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 44,
+   "name": "Bryant Barnhill",
+   "wiki": "Bryant Barnhill",
+   "points": 21,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 45,
+   "name": "Justin S. Carroll",
+   "wiki": "Justin Carroll",
+   "points": 20,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 46,
+   "name": "Chase Purdy",
+   "wiki": "Chase Purdy",
+   "points": 20,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 47,
+   "name": "Chase Dixon",
+   "wiki": null,
+   "points": 19,
+   "wins": 0,
+   "starts": 2,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 48,
+   "name": "Justin Carroll",
+   "wiki": null,
+   "points": 19,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 49,
+   "name": "Coy Beard",
+   "wiki": null,
+   "points": 18,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 50,
+   "name": "Zack Miracle",
+   "wiki": "Zack Miracle",
+   "points": 18,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 51,
+   "name": "Camden Gullie",
+   "wiki": null,
+   "points": 18,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 52,
+   "name": "Jake Crum",
+   "wiki": "Jake Crum",
+   "points": 18,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 53,
+   "name": "Braden Rogers",
+   "wiki": null,
+   "points": 15,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 54,
+   "name": "Matt Waltz",
+   "wiki": "Matt Waltz",
+   "points": 15,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 55,
+   "name": "Taylor Gray",
+   "wiki": "Taylor Gray (racing driver)",
+   "points": 14,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 56,
+   "name": "Cory Dunn",
+   "wiki": null,
+   "points": 13,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 57,
+   "name": "Sammy Smith",
+   "wiki": "Sammy Smith",
+   "points": 13,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 58,
+   "name": "Landon Huffman",
+   "wiki": "Landon Huffman",
+   "points": 13,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 59,
+   "name": "Michael Bumgarner",
+   "wiki": "Michael Bumgarner (racing driver)",
+   "points": 13,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 60,
+   "name": "Jack Wood",
+   "wiki": "Jack Wood (racing driver)",
+   "points": 13,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 61,
+   "name": "Isaac Bevin",
+   "wiki": null,
+   "points": 12,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 62,
+   "name": "Jason York",
+   "wiki": "Jason York (racing driver)",
+   "points": 12,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 63,
+   "name": "Dillon Houser",
+   "wiki": null,
+   "points": 11,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 64,
+   "name": "Matt Leicht",
+   "wiki": null,
+   "points": 9,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 65,
+   "name": "Austin Thaxton",
+   "wiki": null,
+   "points": 9,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 66,
+   "name": "Ryan Millington",
+   "wiki": "Ryan Millington",
+   "points": 7,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 67,
+   "name": "Zane Smith",
+   "wiki": "Zane Smith",
+   "points": 4,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  }
+ ],
+ "schedule": [
+  {
+   "round": 1,
+   "date": "2021-03-06",
+   "race": null,
+   "track": "Dillon Motor Speedway",
+   "city": "Dillon",
+   "state": "SC",
+   "winner": "Justin Johnson",
+   "winner_wiki": "Justin Johnson (racing driver, born 1987)"
+  },
+  {
+   "round": 2,
+   "date": "2021-03-20",
+   "race": null,
+   "track": "Hickory Motor Speedway",
+   "city": "Hickory",
+   "state": "NC",
+   "winner": "Bobby McCarty",
+   "winner_wiki": "Bobby McCarty"
+  },
+  {
+   "round": 3,
+   "date": "2021-04-25",
+   "race": null,
+   "track": "Orange County Speedway",
+   "city": "Rougemont",
+   "state": "NC",
+   "winner": "Josh Berry",
+   "winner_wiki": "Josh Berry"
+  },
+  {
+   "round": 4,
+   "date": "2021-05-07",
+   "race": null,
+   "track": "Ace Speedway",
+   "city": "Altamahaw",
+   "state": "NC",
+   "winner": "Layne Riggs",
+   "winner_wiki": "Layne Riggs"
+  },
+  {
+   "round": 5,
+   "date": "2021-05-22",
+   "race": null,
+   "track": "Caraway Speedway",
+   "city": "Asheboro",
+   "state": "NC",
+   "winner": "Justin Johnson",
+   "winner_wiki": "Justin Johnson (racing driver, born 1987)"
+  },
+  {
+   "round": 6,
+   "date": "2021-06-05",
+   "race": null,
+   "track": "Langley Speedway",
+   "city": "Hampton",
+   "state": "VA",
+   "winner": "Kaden Honeycutt",
+   "winner_wiki": "Kaden Honeycutt"
+  },
+  {
+   "round": 7,
+   "date": "2021-06-19",
+   "race": null,
+   "track": "Dominion Raceway",
+   "city": "Thornburg",
+   "state": "VA",
+   "winner": "Daniel Silvestri",
+   "winner_wiki": "Daniel Silvestri"
+  },
+  {
+   "round": 8,
+   "date": "2021-07-31",
+   "race": null,
+   "track": "Hickory Motor Speedway",
+   "city": "Hickory",
+   "state": "NC",
+   "winner": "Josh Berry",
+   "winner_wiki": "Josh Berry"
+  },
+  {
+   "round": 9,
+   "date": "2021-08-28",
+   "race": null,
+   "track": "Pulaski County Motorsports Park",
+   "city": "Radford",
+   "state": "VA",
+   "winner": "Bobby McCarty",
+   "winner_wiki": "Bobby McCarty"
+  },
+  {
+   "round": 10,
+   "date": "2021-09-11",
+   "race": null,
+   "track": "Tri-County Motor Speedway",
+   "city": "Hudson",
+   "state": "NC",
+   "winner": "Mini Tyrrell",
+   "winner_wiki": "Mini Tyrrell"
+  },
+  {
+   "round": 11,
+   "date": "2021-10-02",
+   "race": null,
+   "track": "Florence Motor Speedway",
+   "city": "Timmonsville",
+   "state": "SC",
+   "winner": "Kaden Honeycutt",
+   "winner_wiki": "Kaden Honeycutt"
+  },
+  {
+   "round": 12,
+   "date": "2021-10-10",
+   "race": null,
+   "track": "Wake County Speedway",
+   "city": "Raleigh",
+   "state": "NC",
+   "winner": "Deac McCaskill",
+   "winner_wiki": "Deac McCaskill"
+  },
+  {
+   "round": 13,
+   "date": "2021-10-16",
+   "race": null,
+   "track": "South Boston Speedway",
+   "city": "South Boston",
+   "state": "VA",
+   "winner": "Bobby McCarty",
+   "winner_wiki": "Bobby McCarty"
+  }
+ ],
+ "sources": [
+  "https://en.wikipedia.org/w/index.php?title=2021_CARS_Tour&oldid=1374800796",
+  "https://en.wikipedia.org/w/index.php?title=CARS_Tour&oldid=1378109036"
+ ]
+}

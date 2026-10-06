@@ -1,0 +1,1628 @@
+{
+ "series": "pinty",
+ "year": 2014,
+ "official_name": "NASCAR Canadian Tire Series",
+ "data_level": "full",
+ "champion": {
+  "name": "L. P. Dumoulin",
+  "wiki": "Louis-Philippe Dumoulin"
+ },
+ "teams": [
+  {
+   "team": "Derek White",
+   "manufacturer": "Chevrolet",
+   "cars": [
+    {
+     "number": "00",
+     "full_time": null,
+     "drivers": [
+      {
+       "name": "Derek White",
+       "wiki": "Derek White (racing driver)"
+      },
+      {
+       "name": "Dominic Jacques",
+       "wiki": null
+      }
+     ]
+    },
+    {
+     "number": "88",
+     "full_time": null,
+     "drivers": [
+      {
+       "name": "Marc-Antoine Camirand",
+       "wiki": "Marc-Antoine Camirand"
+      },
+      {
+       "name": "Derek White",
+       "wiki": "Derek White (racing driver)"
+      }
+     ]
+    },
+    {
+     "number": "99",
+     "full_time": null,
+     "drivers": [
+      {
+       "name": "Matt Pritiko",
+       "wiki": null
+      },
+      {
+       "name": "Marc-Antoine Camirand",
+       "wiki": "Marc-Antoine Camirand"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Susan Micks",
+   "manufacturer": "Ford",
+   "cars": [
+    {
+     "number": "02",
+     "full_time": null,
+     "drivers": [
+      {
+       "name": "Kerry Micks",
+       "wiki": "Kerry Micks"
+      },
+      {
+       "name": "Mark Dilley",
+       "wiki": "Mark Dilley"
+      }
+     ]
+    },
+    {
+     "number": "9",
+     "full_time": null,
+     "drivers": [
+      {
+       "name": "Russ Bond",
+       "wiki": null
+      },
+      {
+       "name": "Vaughn Gittin Jr.",
+       "wiki": "Vaughn Gittin Jr."
+      },
+      {
+       "name": "Kerry Micks",
+       "wiki": "Kerry Micks"
+      },
+      {
+       "name": "Curtis Fielding",
+       "wiki": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Marc Arseneau",
+   "manufacturer": "Dodge",
+   "cars": [
+    {
+     "number": "03",
+     "full_time": null,
+     "drivers": [
+      {
+       "name": "Elie Arseneau",
+       "wiki": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Ed Hakonson",
+   "manufacturer": "Chevrolet",
+   "cars": [
+    {
+     "number": "3",
+     "full_time": null,
+     "drivers": [
+      {
+       "name": "Jason Hathaway",
+       "wiki": "Jason Hathaway"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Paul Corbeil",
+   "manufacturer": "Dodge",
+   "cars": [
+    {
+     "number": "04",
+     "full_time": null,
+     "drivers": [
+      {
+       "name": "Jean-François Dumoulin",
+       "wiki": "Jean-François Dumoulin"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Kevin Dowler",
+   "manufacturer": "Dodge",
+   "cars": [
+    {
+     "number": "5",
+     "full_time": null,
+     "drivers": [
+      {
+       "name": "Noel Dowler",
+       "wiki": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Kevin Dowler",
+   "manufacturer": "Chevrolet",
+   "cars": [
+    {
+     "number": "5",
+     "full_time": null,
+     "drivers": [
+      {
+       "name": "Noel Dowler",
+       "wiki": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Dave Jacombs",
+   "manufacturer": "Dodge",
+   "cars": [
+    {
+     "number": "7",
+     "full_time": null,
+     "drivers": [
+      {
+       "name": "Jacques Villeneuve",
+       "wiki": "Jacques Villeneuve"
+      }
+     ]
+    },
+    {
+     "number": "72",
+     "full_time": null,
+     "drivers": [
+      {
+       "name": "Erica Thiering",
+       "wiki": null
+      },
+      {
+       "name": "Xavier Coupal",
+       "wiki": null
+      },
+      {
+       "name": "Alex Labbé",
+       "wiki": "Alex Labbé"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Susan Micks",
+   "manufacturer": "Dodge",
+   "cars": [
+    {
+     "number": "9",
+     "full_time": null,
+     "drivers": [
+      {
+       "name": "Kerry Micks",
+       "wiki": "Kerry Micks"
+      },
+      {
+       "name": "Dwayne Baker",
+       "wiki": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Rob McConnell",
+   "manufacturer": "Dodge",
+   "cars": [
+    {
+     "number": "13",
+     "full_time": null,
+     "drivers": [
+      {
+       "name": "Trevor Monaghan",
+       "wiki": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "James Van Domselaar",
+   "manufacturer": "Chevrolet",
+   "cars": [
+    {
+     "number": "14",
+     "full_time": null,
+     "drivers": [
+      {
+       "name": "James Van Domselaar",
+       "wiki": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Bill Mathews",
+   "manufacturer": "Ford",
+   "cars": [
+    {
+     "number": "15",
+     "full_time": null,
+     "drivers": [
+      {
+       "name": "Steve Mathews",
+       "wiki": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Benoit Theetge",
+   "manufacturer": "Chevrolet",
+   "cars": [
+    {
+     "number": "16",
+     "full_time": null,
+     "drivers": [
+      {
+       "name": "Benoit Theetge",
+       "wiki": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Doug Kennington",
+   "manufacturer": "Dodge",
+   "cars": [
+    {
+     "number": "17",
+     "full_time": null,
+     "drivers": [
+      {
+       "name": "D. J. Kennington",
+       "wiki": "D. J. Kennington"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Bronte Tagliani",
+   "manufacturer": "Dodge",
+   "cars": [
+    {
+     "number": "18",
+     "full_time": null,
+     "drivers": [
+      {
+       "name": "Stefan Rzadzinski",
+       "wiki": "Stefan Rzadzinski"
+      },
+      {
+       "name": "Alex Tagliani",
+       "wiki": "Alex Tagliani"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Reginald Arseneault",
+   "manufacturer": "Ford",
+   "cars": [
+    {
+     "number": "19",
+     "full_time": null,
+     "drivers": [
+      {
+       "name": "Brad Graham",
+       "wiki": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Scott Steckly",
+   "manufacturer": "Dodge",
+   "cars": [
+    {
+     "number": "22",
+     "full_time": null,
+     "drivers": [
+      {
+       "name": "Scott Steckly",
+       "wiki": "Scott Steckly"
+      }
+     ]
+    },
+    {
+     "number": "24",
+     "full_time": null,
+     "drivers": [
+      {
+       "name": "Luc Lesage",
+       "wiki": null
+      },
+      {
+       "name": "Ray Courtemanche Jr.",
+       "wiki": "Ray Courtemanche Jr."
+      },
+      {
+       "name": "Stefan Rzadzinski",
+       "wiki": "Stefan Rzadzinski"
+      },
+      {
+       "name": "John Flemming",
+       "wiki": "John Flemming (racing driver)"
+      },
+      {
+       "name": "James White",
+       "wiki": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Bud Morris",
+   "manufacturer": "Dodge",
+   "cars": [
+    {
+     "number": "25",
+     "full_time": null,
+     "drivers": [
+      {
+       "name": "Joey McColm",
+       "wiki": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "D. J. Kennington",
+   "manufacturer": "Dodge",
+   "cars": [
+    {
+     "number": "27",
+     "full_time": null,
+     "drivers": [
+      {
+       "name": "Andrew Ranger",
+       "wiki": "Andrew Ranger"
+      }
+     ]
+    },
+    {
+     "number": "28",
+     "full_time": null,
+     "drivers": [
+      {
+       "name": "Jason White",
+       "wiki": "Jason White (Canadian racing driver)"
+      },
+      {
+       "name": "Jamie Krzysik",
+       "wiki": null
+      },
+      {
+       "name": "Ian Admiraal",
+       "wiki": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "D. J. Kennington",
+   "manufacturer": "Ford",
+   "cars": [
+    {
+     "number": "28",
+     "full_time": null,
+     "drivers": [
+      {
+       "name": "Donald Chisholm",
+       "wiki": "Donald Chisholm (racing driver)"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Ray Courtemanche Jr.",
+   "manufacturer": "Dodge",
+   "cars": [
+    {
+     "number": "29",
+     "full_time": null,
+     "drivers": [
+      {
+       "name": "Ray Courtemanche Jr.",
+       "wiki": "Ray Courtemanche Jr."
+      }
+     ]
+    },
+    {
+     "number": "94",
+     "full_time": null,
+     "drivers": [
+      {
+       "name": "Dave Coursol",
+       "wiki": "Dave Coursol"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Bob DeLorme",
+   "manufacturer": "Chevrolet",
+   "cars": [
+    {
+     "number": "33",
+     "full_time": null,
+     "drivers": [
+      {
+       "name": "Bob DeLorme",
+       "wiki": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Ghislain Labbé",
+   "manufacturer": "Dodge",
+   "cars": [
+    {
+     "number": "36",
+     "full_time": null,
+     "drivers": [
+      {
+       "name": "Alex Labbé",
+       "wiki": "Alex Labbé"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Clement Samson",
+   "manufacturer": "Dodge",
+   "cars": [
+    {
+     "number": "37",
+     "full_time": null,
+     "drivers": [
+      {
+       "name": "Simon Dion-Viens",
+       "wiki": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Jacques Guenette",
+   "manufacturer": "Dodge",
+   "cars": [
+    {
+     "number": "39",
+     "full_time": null,
+     "drivers": [
+      {
+       "name": "Alex Guenette",
+       "wiki": "Alex Guenette"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Peter Klutt",
+   "manufacturer": "Chevrolet",
+   "cars": [
+    {
+     "number": "42",
+     "full_time": null,
+     "drivers": [
+      {
+       "name": "Peter Klutt",
+       "wiki": null
+      }
+     ]
+    },
+    {
+     "number": "59",
+     "full_time": null,
+     "drivers": [
+      {
+       "name": "Ryan Klutt",
+       "wiki": null
+      },
+      {
+       "name": "Gary Klutt",
+       "wiki": "Gary Klutt"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Marc-Andre Bergeron",
+   "manufacturer": "Dodge",
+   "cars": [
+    {
+     "number": "47",
+     "full_time": null,
+     "drivers": [
+      {
+       "name": "Louis-Philippe Dumoulin",
+       "wiki": "Louis-Philippe Dumoulin"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Kevin Kozack",
+   "manufacturer": "Chevrolet",
+   "cars": [
+    {
+     "number": "48",
+     "full_time": null,
+     "drivers": [
+      {
+       "name": "Steve Mathews",
+       "wiki": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Murray Haukaas",
+   "manufacturer": "Dodge",
+   "cars": [
+    {
+     "number": "51",
+     "full_time": null,
+     "drivers": [
+      {
+       "name": "Nick Jewell",
+       "wiki": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Dan Bray",
+   "manufacturer": "Dodge",
+   "cars": [
+    {
+     "number": "56",
+     "full_time": null,
+     "drivers": [
+      {
+       "name": "Matthew Scannell",
+       "wiki": null
+      },
+      {
+       "name": "Larry Jackson",
+       "wiki": "Larry Jackson (racing driver)"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Dennis LaForce",
+   "manufacturer": "Chevrolet",
+   "cars": [
+    {
+     "number": "57",
+     "full_time": null,
+     "drivers": [
+      {
+       "name": "Shania LaForce",
+       "wiki": null
+      },
+      {
+       "name": "Dennis LaForce",
+       "wiki": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Peter Klutt",
+   "manufacturer": "Dodge",
+   "cars": [
+    {
+     "number": "61",
+     "full_time": null,
+     "drivers": [
+      {
+       "name": "Ryan Klutt",
+       "wiki": null
+      },
+      {
+       "name": "Gary Klutt",
+       "wiki": "Gary Klutt"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Fraser Bull",
+   "manufacturer": "Dodge",
+   "cars": [
+    {
+     "number": "66",
+     "full_time": null,
+     "drivers": [
+      {
+       "name": "Robin Buck",
+       "wiki": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "David Thorndyke",
+   "manufacturer": "Chevrolet",
+   "cars": [
+    {
+     "number": "67",
+     "full_time": null,
+     "drivers": [
+      {
+       "name": "David Thorndyke",
+       "wiki": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Patrice Brisebois",
+   "manufacturer": "Dodge",
+   "cars": [
+    {
+     "number": "71",
+     "full_time": null,
+     "drivers": [
+      {
+       "name": "Patrice Brisebois",
+       "wiki": "Patrice Brisebois"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Sherri Lapcevich",
+   "manufacturer": "Dodge",
+   "cars": [
+    {
+     "number": "76",
+     "full_time": null,
+     "drivers": [
+      {
+       "name": "Jeff Lapcevich",
+       "wiki": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Katherine Almeida",
+   "manufacturer": "Dodge",
+   "cars": [
+    {
+     "number": "77",
+     "full_time": null,
+     "drivers": [
+      {
+       "name": "Jocelyn Fecteau",
+       "wiki": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Menno Admiraal",
+   "manufacturer": "Dodge",
+   "cars": [
+    {
+     "number": "83",
+     "full_time": null,
+     "drivers": [
+      {
+       "name": "Bob Attrell",
+       "wiki": null
+      },
+      {
+       "name": "Ian Admiraal",
+       "wiki": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "John Fitzpatrick",
+   "manufacturer": "Chevrolet",
+   "cars": [
+    {
+     "number": "84",
+     "full_time": null,
+     "drivers": [
+      {
+       "name": "J. R. Fitzpatrick",
+       "wiki": "J. R. Fitzpatrick"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Bud Morris",
+   "manufacturer": "Ford",
+   "cars": [
+    {
+     "number": "87",
+     "full_time": null,
+     "drivers": [
+      {
+       "name": "Steve Mathews",
+       "wiki": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Normand Roy",
+   "manufacturer": "Dodge",
+   "cars": [
+    {
+     "number": "90",
+     "full_time": null,
+     "drivers": [
+      {
+       "name": "Paul Jean",
+       "wiki": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Peter Simone",
+   "manufacturer": "Dodge",
+   "cars": [
+    {
+     "number": "95",
+     "full_time": null,
+     "drivers": [
+      {
+       "name": "Anthony Simone",
+       "wiki": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Yvon Vannini",
+   "manufacturer": "Ford",
+   "cars": [
+    {
+     "number": "97",
+     "full_time": null,
+     "drivers": [
+      {
+       "name": "Hugo Vannini",
+       "wiki": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Yvon Vannini",
+   "manufacturer": "Chevrolet",
+   "cars": [
+    {
+     "number": "97",
+     "full_time": null,
+     "drivers": [
+      {
+       "name": "Jason Hankewich",
+       "wiki": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Jim Bray",
+   "manufacturer": "Dodge",
+   "cars": [
+    {
+     "number": "98",
+     "full_time": null,
+     "drivers": [
+      {
+       "name": "Larry Jackson",
+       "wiki": "Larry Jackson (racing driver)"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "standings": [
+  {
+   "pos": 1,
+   "name": "Louis-Philippe Dumoulin",
+   "wiki": "Louis-Philippe Dumoulin",
+   "points": 453,
+   "wins": 2,
+   "starts": 11,
+   "top5": 9,
+   "top10": 11
+  },
+  {
+   "pos": 2,
+   "name": "J. R. Fitzpatrick",
+   "wiki": "J. R. Fitzpatrick",
+   "points": 450,
+   "wins": 3,
+   "starts": 11,
+   "top5": 6,
+   "top10": 11
+  },
+  {
+   "pos": 3,
+   "name": "D. J. Kennington",
+   "wiki": "D. J. Kennington",
+   "points": 402,
+   "wins": 0,
+   "starts": 11,
+   "top5": 5,
+   "top10": 9
+  },
+  {
+   "pos": 4,
+   "name": "Scott Steckly",
+   "wiki": "Scott Steckly",
+   "points": 394,
+   "wins": 1,
+   "starts": 11,
+   "top5": 5,
+   "top10": 7
+  },
+  {
+   "pos": 5,
+   "name": "Jason Hathaway",
+   "wiki": "Jason Hathaway",
+   "points": 393,
+   "wins": 2,
+   "starts": 11,
+   "top5": 5,
+   "top10": 7
+  },
+  {
+   "pos": 6,
+   "name": "Andrew Ranger",
+   "wiki": "Andrew Ranger",
+   "points": 378,
+   "wins": 2,
+   "starts": 11,
+   "top5": 5,
+   "top10": 6
+  },
+  {
+   "pos": 7,
+   "name": "Noel Dowler",
+   "wiki": null,
+   "points": 366,
+   "wins": 0,
+   "starts": 11,
+   "top5": 0,
+   "top10": 7
+  },
+  {
+   "pos": 8,
+   "name": "Joey McColm",
+   "wiki": null,
+   "points": 347,
+   "wins": 0,
+   "starts": 11,
+   "top5": 0,
+   "top10": 5
+  },
+  {
+   "pos": 9,
+   "name": "Alex Tagliani",
+   "wiki": "Alex Tagliani",
+   "points": 273,
+   "wins": 0,
+   "starts": 9,
+   "top5": 2,
+   "top10": 3
+  },
+  {
+   "pos": 10,
+   "name": "Mark Dilley",
+   "wiki": "Mark Dilley",
+   "points": 271,
+   "wins": 0,
+   "starts": 8,
+   "top5": 3,
+   "top10": 4
+  },
+  {
+   "pos": 11,
+   "name": "Jeff Lapcevich",
+   "wiki": null,
+   "points": 255,
+   "wins": 0,
+   "starts": 7,
+   "top5": 4,
+   "top10": 6
+  },
+  {
+   "pos": 12,
+   "name": "Matthew Scannell",
+   "wiki": null,
+   "points": 223,
+   "wins": 0,
+   "starts": 8,
+   "top5": 0,
+   "top10": 3
+  },
+  {
+   "pos": 13,
+   "name": "Steve Mathews",
+   "wiki": null,
+   "points": 218,
+   "wins": 0,
+   "starts": 7,
+   "top5": 1,
+   "top10": 2
+  },
+  {
+   "pos": 14,
+   "name": "Anthony Simone",
+   "wiki": null,
+   "points": 194,
+   "wins": 0,
+   "starts": 7,
+   "top5": 1,
+   "top10": 1
+  },
+  {
+   "pos": 15,
+   "name": "Ray Courtemanche Jr.",
+   "wiki": "Ray Courtemanche Jr.",
+   "points": 170,
+   "wins": 0,
+   "starts": 6,
+   "top5": 0,
+   "top10": 1
+  },
+  {
+   "pos": 16,
+   "name": "Kerry Micks",
+   "wiki": "Kerry Micks",
+   "points": 168,
+   "wins": 0,
+   "starts": 5,
+   "top5": 1,
+   "top10": 2
+  },
+  {
+   "pos": 17,
+   "name": "Alex Guenette",
+   "wiki": "Alex Guenette",
+   "points": 161,
+   "wins": 0,
+   "starts": 4,
+   "top5": 2,
+   "top10": 4
+  },
+  {
+   "pos": 18,
+   "name": "Erica Thiering",
+   "wiki": null,
+   "points": 159,
+   "wins": 0,
+   "starts": 5,
+   "top5": 0,
+   "top10": 2
+  },
+  {
+   "pos": 19,
+   "name": "Larry Jackson",
+   "wiki": "Larry Jackson (racing driver)",
+   "points": 153,
+   "wins": 0,
+   "starts": 5,
+   "top5": 0,
+   "top10": 1
+  },
+  {
+   "pos": 20,
+   "name": "Alex Labbé",
+   "wiki": "Alex Labbé",
+   "points": 139,
+   "wins": 0,
+   "starts": 4,
+   "top5": 2,
+   "top10": 2
+  },
+  {
+   "pos": 21,
+   "name": "Hugo Vannini",
+   "wiki": null,
+   "points": 139,
+   "wins": 0,
+   "starts": 5,
+   "top5": 0,
+   "top10": 1
+  },
+  {
+   "pos": 22,
+   "name": "Marc-Antoine Camirand",
+   "wiki": "Marc-Antoine Camirand",
+   "points": 135,
+   "wins": 0,
+   "starts": 5,
+   "top5": 1,
+   "top10": 1
+  },
+  {
+   "pos": 23,
+   "name": "Stefan Rzadzinski",
+   "wiki": "Stefan Rzadzinski",
+   "points": 129,
+   "wins": 0,
+   "starts": 4,
+   "top5": 0,
+   "top10": 1
+  },
+  {
+   "pos": 24,
+   "name": "James Van Domselaar",
+   "wiki": null,
+   "points": 115,
+   "wins": 0,
+   "starts": 4,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 25,
+   "name": "Gary Klutt",
+   "wiki": "Gary Klutt",
+   "points": 112,
+   "wins": 0,
+   "starts": 4,
+   "top5": 0,
+   "top10": 2
+  },
+  {
+   "pos": 26,
+   "name": "Luc Lesage",
+   "wiki": null,
+   "points": 106,
+   "wins": 0,
+   "starts": 4,
+   "top5": 0,
+   "top10": 1
+  },
+  {
+   "pos": 27,
+   "name": "Jean-François Dumoulin",
+   "wiki": "Jean-François Dumoulin",
+   "points": 102,
+   "wins": 0,
+   "starts": 3,
+   "top5": 1,
+   "top10": 1
+  },
+  {
+   "pos": 28,
+   "name": "Peter Klutt",
+   "wiki": null,
+   "points": 93,
+   "wins": 0,
+   "starts": 4,
+   "top5": 0,
+   "top10": 2
+  },
+  {
+   "pos": 29,
+   "name": "Jocelyn Fecteau",
+   "wiki": null,
+   "points": 89,
+   "wins": 0,
+   "starts": 4,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 30,
+   "name": "Jason White",
+   "wiki": "Jason White (Canadian racing driver)",
+   "points": 84,
+   "wins": 0,
+   "starts": 4,
+   "top5": 0,
+   "top10": 1
+  },
+  {
+   "pos": 31,
+   "name": "Simon Dion-Viens",
+   "wiki": null,
+   "points": 84,
+   "wins": 0,
+   "starts": 3,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 32,
+   "name": "Matt Pritiko",
+   "wiki": null,
+   "points": 83,
+   "wins": 0,
+   "starts": 3,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 33,
+   "name": "Donald Chisholm",
+   "wiki": "Donald Chisholm (racing driver)",
+   "points": 79,
+   "wins": 1,
+   "starts": 2,
+   "top5": 1,
+   "top10": 1
+  },
+  {
+   "pos": 34,
+   "name": "Robin Buck",
+   "wiki": null,
+   "points": 77,
+   "wins": 0,
+   "starts": 2,
+   "top5": 1,
+   "top10": 2
+  },
+  {
+   "pos": 35,
+   "name": "Derek White",
+   "wiki": "Derek White (racing driver)",
+   "points": 71,
+   "wins": 0,
+   "starts": 3,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 36,
+   "name": "Nick Jewell",
+   "wiki": null,
+   "points": 62,
+   "wins": 0,
+   "starts": 2,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 37,
+   "name": "David Thorndyke",
+   "wiki": null,
+   "points": 58,
+   "wins": 0,
+   "starts": 2,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 38,
+   "name": "Ian Admiraal",
+   "wiki": null,
+   "points": 53,
+   "wins": 0,
+   "starts": 2,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 39,
+   "name": "Ryan Klutt",
+   "wiki": null,
+   "points": 51,
+   "wins": 0,
+   "starts": 2,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 40,
+   "name": "Patrice Brisebois",
+   "wiki": "Patrice Brisebois",
+   "points": 45,
+   "wins": 0,
+   "starts": 2,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 41,
+   "name": "Xavier Coupal",
+   "wiki": null,
+   "points": 41,
+   "wins": 0,
+   "starts": 2,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 42,
+   "name": "Elie Arseneau",
+   "wiki": null,
+   "points": 36,
+   "wins": 0,
+   "starts": 2,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 43,
+   "name": "John Flemming",
+   "wiki": null,
+   "points": 35,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 1
+  },
+  {
+   "pos": 44,
+   "name": "Brad Graham",
+   "wiki": null,
+   "points": 35,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 1
+  },
+  {
+   "pos": 45,
+   "name": "James White",
+   "wiki": null,
+   "points": 34,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 1
+  },
+  {
+   "pos": 46,
+   "name": "Dave Coursol",
+   "wiki": "Dave Coursol",
+   "points": 31,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 47,
+   "name": "Paul Jean",
+   "wiki": null,
+   "points": 31,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 48,
+   "name": "Vaughn Gittin Jr.",
+   "wiki": "Vaughn Gittin Jr.",
+   "points": 30,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 49,
+   "name": "Bob Attrell",
+   "wiki": null,
+   "points": 29,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 50,
+   "name": "Bob DeLorme",
+   "wiki": null,
+   "points": 29,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 51,
+   "name": "Jamie Krzysik",
+   "wiki": null,
+   "points": 28,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 52,
+   "name": "Dennis LaForce",
+   "wiki": null,
+   "points": 28,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 53,
+   "name": "Dominic Jacques",
+   "wiki": null,
+   "points": 27,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 54,
+   "name": "Russ Bond",
+   "wiki": null,
+   "points": 26,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 55,
+   "name": "Trevor Monaghan",
+   "wiki": null,
+   "points": 26,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 56,
+   "name": "Jason Hankewich",
+   "wiki": null,
+   "points": 25,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 57,
+   "name": "Shania LaForce",
+   "wiki": null,
+   "points": 24,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 58,
+   "name": "Dwayne Baker",
+   "wiki": null,
+   "points": 24,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 59,
+   "name": "Curtis Fielding",
+   "wiki": null,
+   "points": 21,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 60,
+   "name": "Jacques Villeneuve",
+   "wiki": "Jacques Villeneuve",
+   "points": 20,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 61,
+   "name": "Benoit Theetge",
+   "wiki": null,
+   "points": 18,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  }
+ ],
+ "schedule": [
+  {
+   "round": 1,
+   "date": "2014-05-18",
+   "race": "Pinty's presents the Clarington 200",
+   "track": "Canadian Tire Motorsport Park",
+   "city": "Bowmanville",
+   "state": "ON",
+   "winner": "J. R. Fitzpatrick",
+   "winner_wiki": "J. R. Fitzpatrick"
+  },
+  {
+   "round": 2,
+   "date": "2014-06-15",
+   "race": "Budweiser 300",
+   "track": "Autodrome Chaudière",
+   "city": "Vallée-Jonction",
+   "state": "QC",
+   "winner": "Jason Hathaway",
+   "winner_wiki": "Jason Hathaway"
+  },
+  {
+   "round": 3,
+   "date": "2014-07-06",
+   "race": "Jiffy Lube 100 presented by La Petite Bretonne",
+   "track": "Circuit ICAR",
+   "city": "Mirabel",
+   "state": "QC",
+   "winner": "Andrew Ranger",
+   "winner_wiki": "Andrew Ranger"
+  },
+  {
+   "round": 4,
+   "date": "2014-07-11",
+   "race": "Alberta Has Energy 300",
+   "track": "Edmonton International Raceway",
+   "city": "Wetaskiwin",
+   "state": "AB",
+   "winner": "Andrew Ranger",
+   "winner_wiki": "Andrew Ranger"
+  },
+  {
+   "round": 5,
+   "date": "2014-07-16",
+   "race": "Velocity Prairie Thunder 250",
+   "track": "Auto Clearing Motor Speedway",
+   "city": "Saskatoon",
+   "state": "SK",
+   "winner": "Louis-Philippe Dumoulin",
+   "winner_wiki": "Louis-Philippe Dumoulin"
+  },
+  {
+   "round": 6,
+   "date": "2014-07-26",
+   "race": "National 250",
+   "track": "Autodrome Saint-Eustache",
+   "city": "Saint-Eustache",
+   "state": "QC",
+   "winner": "Scott Steckly",
+   "winner_wiki": "Scott Steckly"
+  },
+  {
+   "round": 7,
+   "date": "2014-08-10",
+   "race": "JuliaWine.com le 50 Tours",
+   "track": "Circuit Trois-Rivières",
+   "city": "Trois-Rivières",
+   "state": "QC",
+   "winner": "Louis-Philippe Dumoulin",
+   "winner_wiki": "Louis-Philippe Dumoulin"
+  },
+  {
+   "round": 8,
+   "date": "2014-08-16",
+   "race": "Wilson Equipment 300",
+   "track": "Riverside International Speedway",
+   "city": "James River",
+   "state": "NS",
+   "winner": "Donald Chisholm",
+   "winner_wiki": "Donald Chisholm (racing driver)"
+  },
+  {
+   "round": 9,
+   "date": "2014-08-31",
+   "race": "Pinty's presents the Clarington 200",
+   "track": "Canadian Tire Motorsport Park",
+   "city": "Bowmanville",
+   "state": "ON",
+   "winner": "J. R. Fitzpatrick",
+   "winner_wiki": "J. R. Fitzpatrick"
+  },
+  {
+   "round": 10,
+   "date": "2014-09-06",
+   "race": "Wahta Springs 300",
+   "track": "Barrie Speedway",
+   "city": "Oro-Medonte",
+   "state": "ON",
+   "winner": "Jason Hathaway",
+   "winner_wiki": "Jason Hathaway"
+  },
+  {
+   "round": 11,
+   "date": "2014-09-20",
+   "race": "Pinty's 250",
+   "track": "Kawartha Speedway",
+   "city": "Cavan Monaghan",
+   "state": "ON",
+   "winner": "J. R. Fitzpatrick",
+   "winner_wiki": "J. R. Fitzpatrick"
+  }
+ ],
+ "sources": [
+  "https://en.wikipedia.org/w/index.php?title=2014_NASCAR_Canadian_Tire_Series&oldid=1377102499",
+  "https://en.wikipedia.org/w/index.php?title=NASCAR_Canada_Series&oldid=1374583241"
+ ]
+}

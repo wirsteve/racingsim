@@ -1,0 +1,2575 @@
+[
+ {
+  "from": "series:usf2000",
+  "to": "series:usf-pro-2000",
+  "frequency": "common",
+  "share_of_movers": {
+   "min": 0.38,
+   "max": 0.46,
+   "unit": "share of USF2000 full-timers (2010-2021) later racing Pro Mazda/USF Pro 2000",
+   "confidence": "high",
+   "sources": [
+    "src:racingsim-history-analysis"
+   ],
+   "notes": "0.424 of n=139"
+  },
+  "typical_age": {
+   "min": 18,
+   "max": 22,
+   "unit": "years at arrival",
+   "confidence": "high",
+   "sources": [
+    "src:racingsim-history-analysis"
+   ],
+   "notes": "median 20 (n=51)"
+  },
+  "gating": {
+   "talent": 0.35,
+   "money": 0.45,
+   "sponsorship": 0.1,
+   "connections": 0.1,
+   "results": 0.0,
+   "age": 0.0
+  },
+  "examples": [
+   "driver:Kyle_Kirkwood",
+   "driver:Rinus_VeeKay",
+   "driver:Christian_Rasmussen"
+  ],
+  "confidence": "high",
+  "sources": [
+   "src:racingsim-history-analysis",
+   "src:racer-usf-2025-scholarships"
+  ],
+  "notes": "gating weights are informed estimates (low); champion scholarship USD 405-458k",
+  "id": null
+ },
+ {
+  "from": "series:usf2000",
+  "to": "series:indy-nxt",
+  "frequency": "common",
+  "share_of_movers": {
+   "min": 0.28,
+   "max": 0.36,
+   "unit": "share of USF2000 full-timers (2010-2020) eventually racing Indy Lights/NXT",
+   "confidence": "high",
+   "sources": [
+    "src:racingsim-history-analysis"
+   ],
+   "notes": "0.32"
+  },
+  "typical_age": null,
+  "gating": {
+   "talent": 0.35,
+   "money": 0.5,
+   "sponsorship": 0.1,
+   "connections": 0.05
+  },
+  "examples": [
+   "driver:Colton_Herta",
+   "driver:Oliver_Askew"
+  ],
+  "confidence": "high",
+  "sources": [
+   "src:racingsim-history-analysis"
+  ],
+  "id": null
+ },
+ {
+  "from": "series:usf2000",
+  "to": "series:indycar",
+  "frequency": "occasional",
+  "share_of_movers": {
+   "min": 0.09,
+   "max": 0.14,
+   "unit": "share of USF2000 full-timers later starting an IndyCar race",
+   "confidence": "high",
+   "sources": [
+    "src:racingsim-history-analysis"
+   ],
+   "notes": "0.111 (2010-2019), 0.118 (1995-2019); full season 0.078"
+  },
+  "typical_age": {
+   "min": 19,
+   "max": 24,
+   "unit": "years at IndyCar debut",
+   "confidence": "medium",
+   "sources": [
+    "src:racingsim-history-analysis"
+   ],
+   "notes": "median 23, ~4 yrs after first USF2000 season"
+  },
+  "gating": {
+   "talent": 0.35,
+   "money": 0.4,
+   "sponsorship": 0.15,
+   "connections": 0.1
+  },
+  "examples": [
+   "driver:J._R._Hildebrand",
+   "driver:Sage_Karam",
+   "driver:Kyle_Kirkwood"
+  ],
+  "confidence": "high",
+  "sources": [
+   "src:racingsim-history-analysis"
+  ],
+  "champions": {
+   "min": 0.4,
+   "max": 0.5,
+   "unit": "share of distinct USF2000 champions later starting IndyCar",
+   "confidence": "high",
+   "sources": [
+    "src:racingsim-history-analysis"
+   ],
+   "notes": "0.5 (n=22, 1995-2019); full season 0.227"
+  },
+  "id": null
+ },
+ {
+  "from": "series:usf-pro-2000",
+  "to": "series:indy-nxt",
+  "frequency": "common",
+  "share_of_movers": {
+   "min": 0.36,
+   "max": 0.45,
+   "unit": "share of Pro Mazda full-timers (2007-2021) later racing Indy Lights/NXT",
+   "confidence": "high",
+   "sources": [
+    "src:racingsim-history-analysis"
+   ],
+   "notes": "0.407 of n=135"
+  },
+  "typical_age": {
+   "min": 19,
+   "max": 24,
+   "unit": "years at arrival",
+   "confidence": "high",
+   "sources": [
+    "src:racingsim-history-analysis"
+   ],
+   "notes": "median 21.5 (n=54)"
+  },
+  "gating": {
+   "talent": 0.35,
+   "money": 0.45,
+   "sponsorship": 0.1,
+   "connections": 0.1
+  },
+  "examples": [
+   "driver:Spencer_Pigot",
+   "driver:Rinus_VeeKay",
+   "driver:Louis_Foster"
+  ],
+  "confidence": "high",
+  "sources": [
+   "src:racingsim-history-analysis",
+   "src:usopenwheelnation-nxt-costs"
+  ],
+  "notes": "champion scholarship USD 547-593k vs NXT budget ~1.2M",
+  "id": null
+ },
+ {
+  "from": "series:usf-pro-2000",
+  "to": "series:indycar",
+  "frequency": "occasional",
+  "share_of_movers": {
+   "min": 0.13,
+   "max": 0.19,
+   "unit": "share of Pro Mazda full-timers later starting an IndyCar race",
+   "confidence": "high",
+   "sources": [
+    "src:racingsim-history-analysis"
+   ],
+   "notes": "0.156; full season 0.123"
+  },
+  "typical_age": {
+   "min": 19,
+   "max": 27,
+   "unit": "years at IndyCar debut",
+   "confidence": "medium",
+   "sources": [
+    "src:racingsim-history-analysis"
+   ],
+   "notes": "median 23"
+  },
+  "gating": {
+   "talent": 0.35,
+   "money": 0.4,
+   "sponsorship": 0.15,
+   "connections": 0.1
+  },
+  "examples": [
+   "driver:Conor_Daly",
+   "driver:Tristan_Vautier",
+   "driver:Jack_Hawksworth"
+  ],
+  "confidence": "high",
+  "sources": [
+   "src:racingsim-history-analysis"
+  ],
+  "champions": {
+   "min": 0.36,
+   "max": 0.54,
+   "unit": "share of champions later starting IndyCar",
+   "confidence": "high",
+   "sources": [
+    "src:racingsim-history-analysis"
+   ],
+   "notes": "1995-2019 0.36 (n=25); 2007-2019 0.538 (n=13)"
+  },
+  "id": null
+ },
+ {
+  "from": "series:indy-nxt",
+  "to": "series:indycar",
+  "frequency": "common",
+  "share_of_movers": {
+   "min": 0.43,
+   "max": 0.54,
+   "unit": "share of Indy Lights/NXT full-timers (1995-2021) later starting an IndyCar/CART race",
+   "confidence": "high",
+   "sources": [
+    "src:racingsim-history-analysis"
+   ],
+   "notes": "0.469 (n=196); full season 0.311; 2010-2021 0.479/0.356"
+  },
+  "typical_age": {
+   "min": 21,
+   "max": 32,
+   "unit": "years at IndyCar debut",
+   "confidence": "high",
+   "sources": [
+    "src:racingsim-history-analysis"
+   ],
+   "notes": "median 25 (n=91); first start median 2.0 yrs after first Lights season"
+  },
+  "gating": {
+   "talent": 0.35,
+   "money": 0.35,
+   "sponsorship": 0.15,
+   "connections": 0.15
+  },
+  "examples": [
+   "driver:Josef_Newgarden",
+   "driver:Pato_O'Ward",
+   "driver:Kyle_Kirkwood",
+   "driver:Louis_Foster"
+  ],
+  "confidence": "high",
+  "sources": [
+   "src:racingsim-history-analysis",
+   "src:motorsport-indycar-licensing-2027"
+  ],
+  "champions": {
+   "min": 0.85,
+   "max": 0.95,
+   "unit": "share of champions later starting IndyCar",
+   "confidence": "high",
+   "sources": [
+    "src:racingsim-history-analysis"
+   ],
+   "notes": "0.923 any; 0.769 full season (n=26)"
+  },
+  "id": null
+ },
+ {
+  "from": "series:european-fia-ladder",
+  "to": "series:indycar",
+  "frequency": "occasional",
+  "share_of_movers": {
+   "min": 0.4,
+   "max": 0.5,
+   "unit": "share of IndyCar debutants 2010-2026 with NO USF/Lights experience (imports from Europe/F1/F2, Supercars, Super Formula, NASCAR, sports cars)",
+   "confidence": "high",
+   "sources": [
+    "src:racingsim-history-analysis"
+   ],
+   "notes": "1 - 0.545 (n=101)"
+  },
+  "typical_age": {
+   "min": 21,
+   "max": 35,
+   "unit": "years at debut",
+   "confidence": "low",
+   "sources": [
+    "src:indycar-palou-coyne",
+    "src:wiki-mclaughlin"
+   ],
+   "notes": null
+  },
+  "gating": {
+   "talent": 0.4,
+   "money": 0.3,
+   "connections": 0.2,
+   "sponsorship": 0.1
+  },
+  "examples": [
+   "driver:Alex_Palou",
+   "driver:Christian_Lundgaard",
+   "driver:Marcus_Armstrong",
+   "driver:Marcus_Ericsson",
+   "driver:Romain_Grosjean"
+  ],
+  "confidence": "medium",
+  "sources": [
+   "src:racingsim-history-analysis",
+   "src:indycar-f2-to-indycar"
+  ],
+  "notes": "share_of_movers is expressed from the IndyCar side (destination share)",
+  "id": null
+ },
+ {
+  "from": "series:european-fia-ladder",
+  "to": "series:indy-nxt",
+  "frequency": "occasional",
+  "share_of_movers": null,
+  "typical_age": {
+   "min": 19,
+   "max": 24,
+   "unit": "years",
+   "confidence": "low",
+   "sources": [
+    "src:informed-estimate"
+   ],
+   "notes": null
+  },
+  "gating": {
+   "talent": 0.35,
+   "money": 0.4,
+   "connections": 0.15,
+   "sponsorship": 0.1
+  },
+  "examples": [
+   "driver:Colton_Herta",
+   "driver:Dennis_Hauger"
+  ],
+  "confidence": "medium",
+  "sources": [
+   "src:wiki-herta",
+   "src:racingsim-history-analysis"
+  ],
+  "id": null
+ },
+ {
+  "from": "series:super-formula",
+  "to": "series:indycar",
+  "frequency": "rare",
+  "share_of_movers": null,
+  "typical_age": {
+   "min": 22,
+   "max": 28,
+   "unit": "years",
+   "confidence": "low",
+   "sources": [
+    "src:indycar-palou-coyne"
+   ],
+   "notes": null
+  },
+  "gating": {
+   "talent": 0.5,
+   "connections": 0.3,
+   "money": 0.2
+  },
+  "examples": [
+   "driver:Alex_Palou"
+  ],
+  "confidence": "medium",
+  "sources": [
+   "src:indycar-palou-coyne"
+  ],
+  "id": null
+ },
+ {
+  "from": "series:supercars",
+  "to": "series:indycar",
+  "frequency": "rare",
+  "share_of_movers": null,
+  "typical_age": {
+   "value": 27,
+   "unit": "years (McLaughlin)",
+   "confidence": "high",
+   "sources": [
+    "src:wiki-mclaughlin"
+   ],
+   "notes": null
+  },
+  "gating": {
+   "talent": 0.5,
+   "connections": 0.4,
+   "manufacturer": 0.1
+  },
+  "examples": [
+   "driver:Scott_McLaughlin"
+  ],
+  "confidence": "medium",
+  "sources": [
+   "src:wiki-mclaughlin"
+  ],
+  "notes": "Penske moved its Supercars champion across",
+  "id": null
+ },
+ {
+  "from": "series:atlantic-championship",
+  "to": "series:cart-champcar",
+  "frequency": "common",
+  "share_of_movers": null,
+  "typical_age": {
+   "min": 20,
+   "max": 26,
+   "unit": "years",
+   "confidence": "low",
+   "sources": [
+    "src:wiki-atlantic",
+    "src:wiki-allmendinger"
+   ],
+   "notes": null
+  },
+  "gating": {
+   "talent": 0.4,
+   "money": 0.3,
+   "sponsorship": 0.15,
+   "connections": 0.15
+  },
+  "examples": [
+   "driver:A._J._Allmendinger",
+   "driver:Simon_Pagenaud"
+  ],
+  "confidence": "medium",
+  "sources": [
+   "src:wiki-atlantic",
+   "src:wiki-atlantic-2007"
+  ],
+  "notes": "2002-2008 the Atlantic champion prize (USD 2M in 2007) funded a Champ Car seat",
+  "id": null
+ },
+ {
+  "from": "series:f4-us",
+  "to": "series:usf2000",
+  "frequency": "common",
+  "share_of_movers": null,
+  "typical_age": {
+   "min": 16,
+   "max": 19,
+   "unit": "years",
+   "confidence": "low",
+   "sources": [
+    "src:wiki-kirkwood"
+   ],
+   "notes": null
+  },
+  "gating": {
+   "talent": 0.4,
+   "money": 0.45,
+   "connections": 0.15
+  },
+  "examples": [
+   "driver:Kyle_Kirkwood"
+  ],
+  "confidence": "medium",
+  "sources": [
+   "src:wiki-kirkwood",
+   "src:usfjuniors-licensing"
+  ],
+  "notes": "12 F4 US races qualify for USF2000 licence",
+  "id": null
+ },
+ {
+  "from": "series:usf-juniors",
+  "to": "series:usf2000",
+  "frequency": "common",
+  "share_of_movers": null,
+  "typical_age": {
+   "min": 15,
+   "max": 17,
+   "unit": "years",
+   "confidence": "medium",
+   "sources": [
+    "src:usfjuniors-licensing"
+   ],
+   "notes": null
+  },
+  "gating": {
+   "talent": 0.4,
+   "money": 0.45,
+   "connections": 0.15
+  },
+  "examples": [],
+  "confidence": "medium",
+  "sources": [
+   "src:usfjuniors-licensing",
+   "src:racer-usf-2025-scholarships"
+  ],
+  "notes": "designed feeder; 8 races w/ 6 top-10s or 12 races qualifies",
+  "id": null
+ },
+ {
+  "from": "series:skusa-pro-tour",
+  "to": "series:usf-juniors",
+  "frequency": "common",
+  "share_of_movers": {
+   "min": 0.05,
+   "max": 0.2,
+   "unit": "share of junior national karters moving to cars",
+   "confidence": "low",
+   "sources": [
+    "src:informed-estimate"
+   ],
+   "notes": null
+  },
+  "typical_age": {
+   "min": 14,
+   "max": 16,
+   "unit": "years",
+   "confidence": "medium",
+   "sources": [
+    "src:usfjuniors-licensing"
+   ],
+   "notes": null
+  },
+  "gating": {
+   "talent": 0.35,
+   "money": 0.5,
+   "connections": 0.15
+  },
+  "examples": [],
+  "confidence": "low",
+  "sources": [
+   "src:usfjuniors-licensing",
+   "src:skusa-classes-2026"
+  ],
+  "id": null
+ },
+ {
+  "from": "series:skip-barber-formula",
+  "to": "series:usf-pro-2000",
+  "frequency": "rare",
+  "share_of_movers": null,
+  "typical_age": {
+   "value": 17,
+   "unit": "years (De Phillippi)",
+   "confidence": "medium",
+   "sources": [
+    "src:wiki-de-phillippi"
+   ],
+   "notes": null
+  },
+  "gating": {
+   "talent": 0.6,
+   "money": 0.2,
+   "connections": 0.2
+  },
+  "examples": [
+   "driver:Connor_De_Phillippi"
+  ],
+  "confidence": "medium",
+  "sources": [
+   "src:wiki-de-phillippi"
+  ],
+  "notes": "via 2009 Skip Barber national title scholarship (MRTI)",
+  "id": null
+ },
+ {
+  "from": "series:usf-pro-2000",
+  "to": "series:porsche-carrera-cup-na",
+  "frequency": "occasional",
+  "share_of_movers": null,
+  "typical_age": {
+   "min": 19,
+   "max": 24,
+   "unit": "years",
+   "confidence": "low",
+   "sources": [
+    "src:wiki-de-phillippi"
+   ],
+   "notes": null
+  },
+  "gating": {
+   "talent": 0.35,
+   "manufacturer": 0.3,
+   "money": 0.25,
+   "connections": 0.1
+  },
+  "examples": [
+   "driver:Connor_De_Phillippi"
+  ],
+  "confidence": "low",
+  "sources": [
+   "src:wiki-de-phillippi",
+   "src:porsche-junior-2026"
+  ],
+  "notes": "De Phillippi went to Carrera Cup Germany as Porsche Junior (2013)",
+  "id": null
+ },
+ {
+  "from": "series:indy-nxt",
+  "to": "series:imsa-weathertech",
+  "frequency": "occasional",
+  "share_of_movers": {
+   "min": 0.1,
+   "max": 0.3,
+   "unit": "share of NXT full-timers who never reach IndyCar but race IMSA pro",
+   "confidence": "low",
+   "sources": [
+    "src:informed-estimate"
+   ],
+   "notes": "informed estimate"
+  },
+  "typical_age": {
+   "min": 21,
+   "max": 28,
+   "unit": "years",
+   "confidence": "low",
+   "sources": [
+    "src:informed-estimate"
+   ],
+   "notes": null
+  },
+  "gating": {
+   "talent": 0.35,
+   "manufacturer": 0.25,
+   "connections": 0.2,
+   "money": 0.2
+  },
+  "examples": [],
+  "confidence": "low",
+  "sources": [
+   "src:racingsim-history-analysis"
+  ],
+  "id": null
+ },
+ {
+  "from": "series:mx5-cup",
+  "to": "series:imsa-pilot-challenge",
+  "frequency": "occasional",
+  "share_of_movers": {
+   "min": 0.1,
+   "max": 0.3,
+   "unit": "share of MX-5 Cup regulars moving to Pilot Challenge/VP Challenge",
+   "confidence": "low",
+   "sources": [
+    "src:informed-estimate"
+   ],
+   "notes": null
+  },
+  "typical_age": {
+   "min": 17,
+   "max": 30,
+   "unit": "years",
+   "confidence": "low",
+   "sources": [
+    "src:informed-estimate"
+   ],
+   "notes": null
+  },
+  "gating": {
+   "talent": 0.35,
+   "money": 0.35,
+   "manufacturer": 0.2,
+   "connections": 0.1
+  },
+  "examples": [],
+  "confidence": "low",
+  "sources": [
+   "src:mx5cup-series"
+  ],
+  "notes": "Mazda scholarship ladder",
+  "id": null
+ },
+ {
+  "from": "series:imsa-vp-racing-challenge",
+  "to": "series:imsa-pilot-challenge",
+  "frequency": "common",
+  "share_of_movers": null,
+  "typical_age": {
+   "min": 17,
+   "max": 30,
+   "unit": "years",
+   "confidence": "low",
+   "sources": [
+    "src:informed-estimate"
+   ],
+   "notes": null
+  },
+  "gating": {
+   "money": 0.45,
+   "talent": 0.3,
+   "manufacturer": 0.15,
+   "connections": 0.1
+  },
+  "examples": [],
+  "confidence": "low",
+  "sources": [
+   "src:imsa-vp-challenge"
+  ],
+  "id": null
+ },
+ {
+  "from": "series:imsa-pilot-challenge",
+  "to": "series:imsa-weathertech",
+  "frequency": "occasional",
+  "share_of_movers": {
+   "min": 0.05,
+   "max": 0.2,
+   "unit": "share of Pilot Challenge pros reaching WeatherTech seats",
+   "confidence": "low",
+   "sources": [
+    "src:informed-estimate"
+   ],
+   "notes": null
+  },
+  "typical_age": {
+   "min": 20,
+   "max": 32,
+   "unit": "years",
+   "confidence": "low",
+   "sources": [
+    "src:informed-estimate"
+   ],
+   "notes": null
+  },
+  "gating": {
+   "talent": 0.3,
+   "manufacturer": 0.3,
+   "money": 0.25,
+   "connections": 0.15
+  },
+  "examples": [],
+  "confidence": "low",
+  "sources": [
+   "src:wiki-pilot-challenge"
+  ],
+  "id": null
+ },
+ {
+  "from": "series:porsche-carrera-cup-na",
+  "to": "series:imsa-weathertech",
+  "frequency": "occasional",
+  "share_of_movers": {
+   "min": 0.1,
+   "max": 0.3,
+   "unit": "share of Pro-class drivers reaching GTD/GTD PRO within 3 yrs",
+   "confidence": "low",
+   "sources": [
+    "src:informed-estimate"
+   ],
+   "notes": null
+  },
+  "typical_age": {
+   "min": 19,
+   "max": 26,
+   "unit": "years",
+   "confidence": "low",
+   "sources": [
+    "src:porsche-junior-2026"
+   ],
+   "notes": null
+  },
+  "gating": {
+   "talent": 0.35,
+   "manufacturer": 0.35,
+   "money": 0.2,
+   "connections": 0.1
+  },
+  "examples": [],
+  "confidence": "low",
+  "sources": [
+   "src:pccna-series-info",
+   "src:porsche-junior-2026"
+  ],
+  "id": null
+ },
+ {
+  "from": "series:gt-world-challenge-america",
+  "to": "series:imsa-weathertech",
+  "frequency": "occasional",
+  "share_of_movers": null,
+  "typical_age": {
+   "min": 22,
+   "max": 40,
+   "unit": "years",
+   "confidence": "low",
+   "sources": [
+    "src:informed-estimate"
+   ],
+   "notes": null
+  },
+  "gating": {
+   "talent": 0.3,
+   "manufacturer": 0.3,
+   "money": 0.3,
+   "connections": 0.1
+  },
+  "examples": [],
+  "confidence": "low",
+  "sources": [
+   "src:wiki-gtwc-america"
+  ],
+  "id": null
+ },
+ {
+  "from": "series:ferrari-challenge-na",
+  "to": "series:imsa-weathertech",
+  "frequency": "occasional",
+  "share_of_movers": null,
+  "typical_age": {
+   "min": 35,
+   "max": 65,
+   "unit": "years",
+   "confidence": "low",
+   "sources": [
+    "src:informed-estimate"
+   ],
+   "notes": null
+  },
+  "gating": {
+   "money": 0.75,
+   "talent": 0.15,
+   "connections": 0.1
+  },
+  "examples": [],
+  "confidence": "low",
+  "sources": [
+   "src:imsa-ferrari-challenge-2025",
+   "src:sportscar365-gtd-bronze"
+  ],
+  "notes": "Bronze gentlemen to GTD (required Bronze slot)",
+  "id": null
+ },
+ {
+  "from": "series:indycar",
+  "to": "series:nascar-cup",
+  "frequency": "rare",
+  "share_of_movers": {
+   "min": 0.02,
+   "max": 0.08,
+   "unit": "share of IndyCar/CART regulars switching to NASCAR",
+   "confidence": "low",
+   "sources": [
+    "src:informed-estimate"
+   ],
+   "notes": null
+  },
+  "typical_age": {
+   "min": 24,
+   "max": 35,
+   "unit": "years",
+   "confidence": "low",
+   "sources": [
+    "src:wiki-danica",
+    "src:wiki-allmendinger"
+   ],
+   "notes": null
+  },
+  "gating": {
+   "talent": 0.3,
+   "sponsorship": 0.35,
+   "connections": 0.25,
+   "manufacturer": 0.1
+  },
+  "examples": [
+   "driver:Tony_Stewart",
+   "driver:Danica_Patrick",
+   "driver:A._J._Allmendinger",
+   "driver:Juan_Pablo_Montoya"
+  ],
+  "confidence": "medium",
+  "sources": [
+   "src:wiki-tony-stewart",
+   "src:wiki-danica",
+   "src:wiki-allmendinger"
+  ],
+  "id": null
+ },
+ {
+  "from": "series:imsa-weathertech",
+  "to": "series:nascar-cup",
+  "frequency": "rare",
+  "share_of_movers": null,
+  "typical_age": {
+   "min": 28,
+   "max": 45,
+   "unit": "years",
+   "confidence": "low",
+   "sources": [
+    "src:wiki-road-course-ringer"
+   ],
+   "notes": null
+  },
+  "gating": {
+   "talent": 0.4,
+   "connections": 0.3,
+   "sponsorship": 0.2,
+   "manufacturer": 0.1
+  },
+  "examples": [
+   "driver:Boris_Said",
+   "driver:Ron_Fellows",
+   "driver:Max_Papis"
+  ],
+  "confidence": "medium",
+  "sources": [
+   "src:wiki-road-course-ringer"
+  ],
+  "notes": "part-time road-course ringers",
+  "id": null
+ },
+ {
+  "from": "series:supercars",
+  "to": "series:nascar-cup",
+  "frequency": "rare",
+  "share_of_movers": null,
+  "typical_age": {
+   "min": 30,
+   "max": 36,
+   "unit": "years",
+   "confidence": "low",
+   "sources": [
+    "src:informed-estimate"
+   ],
+   "notes": null
+  },
+  "gating": {
+   "talent": 0.5,
+   "connections": 0.3,
+   "manufacturer": 0.2
+  },
+  "examples": [
+   "driver:Shane_van_Gisbergen"
+  ],
+  "confidence": "medium",
+  "sources": [
+   "src:wiki-road-course-ringer"
+  ],
+  "id": null
+ },
+ {
+  "from": "series:trans-am-ta2",
+  "to": "series:nascar-xfinity",
+  "frequency": "occasional",
+  "share_of_movers": null,
+  "typical_age": {
+   "min": 16,
+   "max": 25,
+   "unit": "years",
+   "confidence": "low",
+   "sources": [
+    "src:informed-estimate"
+   ],
+   "notes": null
+  },
+  "gating": {
+   "talent": 0.35,
+   "money": 0.35,
+   "connections": 0.2,
+   "sponsorship": 0.1
+  },
+  "examples": [],
+  "confidence": "low",
+  "sources": [
+   "src:motorsportmag-transam"
+  ],
+  "notes": "TA2 used by NASCAR prospects for road-course practice",
+  "id": null
+ },
+ {
+  "from": "series:club-karting",
+  "to": "series:usac-national-midget",
+  "frequency": "common",
+  "share_of_movers": null,
+  "typical_age": {
+   "min": 12,
+   "max": 18,
+   "unit": "years",
+   "confidence": "low",
+   "sources": [
+    "src:wiki-tony-stewart",
+    "src:wiki-kyle-larson"
+   ],
+   "notes": null
+  },
+  "gating": {
+   "talent": 0.4,
+   "money": 0.35,
+   "connections": 0.25
+  },
+  "examples": [
+   "driver:Tony_Stewart",
+   "driver:Kyle_Larson"
+  ],
+  "confidence": "low",
+  "sources": [
+   "src:wiki-tony-stewart",
+   "src:wiki-kyle-larson"
+  ],
+  "notes": "karting -> oval open wheel (dirt) is a mainstream US route",
+  "id": null
+ },
+ {
+  "from": "series:club-karting",
+  "to": "series:local-late-model-stock",
+  "frequency": "common",
+  "share_of_movers": null,
+  "typical_age": {
+   "min": 12,
+   "max": 18,
+   "unit": "years",
+   "confidence": "low",
+   "sources": [
+    "src:informed-estimate"
+   ],
+   "notes": null
+  },
+  "gating": {
+   "talent": 0.35,
+   "money": 0.45,
+   "connections": 0.2
+  },
+  "examples": [
+   "driver:Kevin_Harvick"
+  ],
+  "confidence": "low",
+  "sources": [
+   "src:search-karting-to-nascar"
+  ],
+  "id": null
+ },
+ {
+  "from": "series:nascar-trucks",
+  "to": "series:nascar-xfinity",
+  "frequency": "common",
+  "share_of_movers": {
+   "min": 0.25,
+   "max": 0.304,
+   "unit": "share of first-time full-time Truck drivers reaching full-time Xfinity within 3 / 5 years",
+   "confidence": "high",
+   "notes": "43/172 within 3y; 49/161 within 5y. Era trend (to Xfinity or Cup, 5y): 1996-2005 0.262, 2006-2015 0.339, 2016-2020 0.472.",
+   "sources": []
+  },
+  "typical_age": {
+   "min": 20,
+   "max": 35,
+   "median": 25,
+   "p25": 22,
+   "p75": 28,
+   "n": 49,
+   "unit": "years",
+   "confidence": "high",
+   "notes": "age at first full-time Xfinity season",
+   "sources": []
+  },
+  "gating": {
+   "talent": 0.25,
+   "results": 0.25,
+   "sponsorship": 0.2,
+   "money": 0.1,
+   "connections": 0.1,
+   "age": 0.1
+  },
+  "examples": [
+   "driver:William_Byron_(racing_driver)",
+   "driver:Christopher_Bell_(racing_driver)",
+   "driver:Chase_Briscoe",
+   "driver:Cole_Custer",
+   "driver:Austin_Dillon"
+  ],
+  "confidence": "high",
+  "sources": [
+   "src:racingsim-history-analysis"
+  ],
+  "notes": "Gap from first full-time Truck season: median 2 years (p90 5).",
+  "evidence": {
+   "definition": "Full-time = >=80% of the season's maximum starts; cohort = drivers' first full-time season in the source series (1996-2020 for 5-year windows, 1996-2022 for 3-year); drivers already full-time in the target series earlier are excluded; ages from Wikidata birth dates.",
+   "won_in_first_2_ft_seasons_moved_up_5y": {
+    "eligible": 54,
+    "moved": 32,
+    "share": 0.593
+   },
+   "winless_first_2_ft_seasons_moved_up_5y": {
+    "eligible": 99,
+    "moved": 20,
+    "share": 0.202
+   },
+   "age_le22": {
+    "eligible": 53,
+    "moved": 28,
+    "share": 0.528
+   },
+   "age_23_27": {
+    "eligible": 40,
+    "moved": 14,
+    "share": 0.35
+   },
+   "age_ge28": {
+    "eligible": 60,
+    "moved": 10,
+    "share": 0.167
+   }
+  },
+  "id": null
+ },
+ {
+  "from": "series:nascar-trucks",
+  "to": "series:nascar-cup",
+  "frequency": "occasional",
+  "share_of_movers": {
+   "min": 0.076,
+   "max": 0.188,
+   "unit": "share of first-time full-time Truck drivers reaching full-time Cup within 3 / 5 years",
+   "confidence": "high",
+   "notes": "13/171 within 3y; 30/160 within 5y (most via Xfinity; direct jumps e.g. Blaney, Hocevar, Zane Smith, Gilliland had no full-time Xfinity season)",
+   "sources": []
+  },
+  "typical_age": {
+   "min": 22,
+   "max": 33,
+   "median": 25.0,
+   "p25": 23,
+   "p75": 28,
+   "n": 30,
+   "unit": "years",
+   "confidence": "high",
+   "sources": [],
+   "notes": null
+  },
+  "gating": {
+   "talent": 0.3,
+   "results": 0.25,
+   "sponsorship": 0.2,
+   "connections": 0.15,
+   "age": 0.1
+  },
+  "examples": [
+   "driver:Ryan_Blaney",
+   "driver:Carson_Hocevar",
+   "driver:Zane_Smith",
+   "driver:Todd_Gilliland"
+  ],
+  "confidence": "high",
+  "sources": [
+   "src:racingsim-history-analysis"
+  ],
+  "evidence": {
+   "definition": "Full-time = >=80% of the season's maximum starts; cohort = drivers' first full-time season in the source series (1996-2020 for 5-year windows, 1996-2022 for 3-year); drivers already full-time in the target series earlier are excluded; ages from Wikidata birth dates."
+  },
+  "id": null
+ },
+ {
+  "from": "series:nascar-xfinity",
+  "to": "series:nascar-cup",
+  "frequency": "common",
+  "share_of_movers": {
+   "min": 0.39,
+   "max": 0.474,
+   "unit": "share of first-time full-time Xfinity drivers reaching full-time Cup within 3 / 5 years",
+   "confidence": "high",
+   "notes": "64/164 within 3y; 73/154 within 5y; 5y share stable by era (0.48/0.46/0.47).",
+   "sources": []
+  },
+  "typical_age": {
+   "min": 21,
+   "max": 33,
+   "median": 26,
+   "p25": 24,
+   "p75": 28,
+   "n": 73,
+   "unit": "years",
+   "confidence": "high",
+   "notes": "age at first full-time Cup season",
+   "sources": []
+  },
+  "gating": {
+   "talent": 0.3,
+   "results": 0.3,
+   "sponsorship": 0.2,
+   "connections": 0.1,
+   "age": 0.1
+  },
+  "examples": [
+   "driver:William_Byron_(racing_driver)",
+   "driver:Ty_Gibbs",
+   "driver:Chase_Elliott",
+   "driver:Kyle_Larson"
+  ],
+  "confidence": "high",
+  "sources": [
+   "src:racingsim-history-analysis"
+  ],
+  "notes": "19 of 28 Xfinity champions (seasons to 2022) were full-time in Cup within 3 years; 7 were already Cup regulars.",
+  "evidence": {
+   "definition": "Full-time = >=80% of the season's maximum starts; cohort = drivers' first full-time season in the source series (1996-2020 for 5-year windows, 1996-2022 for 3-year); drivers already full-time in the target series earlier are excluded; ages from Wikidata birth dates.",
+   "won_in_first_2_ft_seasons": {
+    "eligible": 54,
+    "moved": 46,
+    "share": 0.852
+   },
+   "winless_first_2_ft_seasons": {
+    "eligible": 100,
+    "moved": 27,
+    "share": 0.27
+   },
+   "age_le22": {
+    "eligible": 47,
+    "moved": 27,
+    "share": 0.574
+   },
+   "age_23_27": {
+    "eligible": 63,
+    "moved": 34,
+    "share": 0.54
+   },
+   "age_ge28": {
+    "eligible": 44,
+    "moved": 12,
+    "share": 0.273
+   }
+  },
+  "id": null
+ },
+ {
+  "from": "series:nascar-cup",
+  "to": "series:nascar-xfinity",
+  "frequency": "occasional",
+  "share_of_movers": {
+   "min": 0.2,
+   "max": 0.2,
+   "unit": "share of Cup full-timers (last FT season 1996-2022) running full-time Xfinity within 3 years",
+   "confidence": "high",
+   "notes": "22/111",
+   "sources": []
+  },
+  "typical_age": {
+   "min": 27,
+   "max": 46,
+   "median": 38,
+   "p25": 31,
+   "p75": 43,
+   "n": 37,
+   "unit": "years",
+   "confidence": "high",
+   "notes": "age at step-down (Xfinity or Trucks)",
+   "sources": []
+  },
+  "gating": {
+   "talent": 0.3,
+   "sponsorship": 0.35,
+   "connections": 0.25,
+   "age": 0.1
+  },
+  "examples": [
+   "driver:Justin_Allgaier"
+  ],
+  "confidence": "high",
+  "sources": [
+   "src:racingsim-history-analysis"
+  ],
+  "notes": "Veteran step-down; many win in the lower series.",
+  "id": null
+ },
+ {
+  "from": "series:nascar-cup",
+  "to": "series:nascar-trucks",
+  "frequency": "occasional",
+  "share_of_movers": {
+   "min": 0.17,
+   "max": 0.17,
+   "unit": "share of Cup full-timers (last FT 1996-2022) running full-time Trucks within 3 years",
+   "confidence": "high",
+   "notes": "19/111",
+   "sources": []
+  },
+  "typical_age": {
+   "min": 27,
+   "max": 46,
+   "median": 38,
+   "p25": 31,
+   "p75": 43,
+   "n": 37,
+   "unit": "years",
+   "confidence": "high",
+   "sources": [],
+   "notes": null
+  },
+  "gating": {
+   "talent": 0.3,
+   "sponsorship": 0.35,
+   "connections": 0.25,
+   "age": 0.1
+  },
+  "examples": [
+   "driver:Todd_Bodine"
+  ],
+  "confidence": "high",
+  "sources": [
+   "src:racingsim-history-analysis"
+  ],
+  "notes": "Truck champions median age 37: many are ex-Cup veterans (e.g. Todd Bodine 2010).",
+  "id": null
+ },
+ {
+  "from": "series:nascar-trucks",
+  "to": "series:nascar-trucks",
+  "frequency": "common",
+  "share_of_movers": {
+   "min": 0.675,
+   "max": 0.675,
+   "unit": "share of first-time full-time Truck drivers (1996-2015) who never held a full-time Xfinity/Cup seat (through 2025)",
+   "confidence": "high",
+   "notes": "79/117; median full-time Truck tenure 2 seasons (p90 6)",
+   "sources": []
+  },
+  "typical_age": null,
+  "gating": {
+   "talent": 0.3,
+   "sponsorship": 0.4,
+   "money": 0.2,
+   "age": 0.1
+  },
+  "examples": [
+   "driver:Matt_Crafton",
+   "driver:Timothy_Peters"
+  ],
+  "confidence": "high",
+  "sources": [
+   "src:racingsim-history-analysis"
+  ],
+  "notes": "Dead end / careerist outcome rather than a move.",
+  "id": null
+ },
+ {
+  "from": "series:arca-menards",
+  "to": "series:nascar-trucks",
+  "frequency": "common",
+  "share_of_movers": {
+   "min": 0.1,
+   "max": 0.3,
+   "unit": "share of full-time ARCA drivers getting full-time Truck seats within 3 years",
+   "confidence": "low",
+   "notes": "informed estimate; repo lacks ARCA history; ARCA champions frequently promoted",
+   "sources": []
+  },
+  "typical_age": {
+   "min": 16,
+   "max": 21,
+   "unit": "years",
+   "confidence": "medium",
+   "notes": "Truck minimum 16 on <=1.25 mi (2026)",
+   "sources": []
+  },
+  "gating": {
+   "talent": 0.25,
+   "results": 0.2,
+   "money": 0.2,
+   "sponsorship": 0.15,
+   "connections": 0.1,
+   "manufacturer": 0.1
+  },
+  "examples": [
+   "driver:Chase_Briscoe",
+   "driver:Corey_Heim",
+   "driver:Carson_Hocevar"
+  ],
+  "confidence": "low",
+  "sources": [
+   "src:sai-arca-path",
+   "src:wiki-driver-bios"
+  ],
+  "id": null
+ },
+ {
+  "from": "series:arca-menards",
+  "to": "series:nascar-xfinity",
+  "frequency": "occasional",
+  "share_of_movers": {
+   "min": 0.05,
+   "max": 0.15,
+   "unit": "share of full-time ARCA drivers going straight to full-time Xfinity",
+   "confidence": "low",
+   "notes": "informed estimate",
+   "sources": []
+  },
+  "typical_age": {
+   "min": 17,
+   "max": 21,
+   "unit": "years",
+   "confidence": "low",
+   "sources": [],
+   "notes": null
+  },
+  "gating": {
+   "talent": 0.25,
+   "results": 0.2,
+   "money": 0.2,
+   "sponsorship": 0.1,
+   "connections": 0.15,
+   "manufacturer": 0.1
+  },
+  "examples": [
+   "driver:Ty_Gibbs",
+   "driver:Justin_Allgaier"
+  ],
+  "confidence": "low",
+  "sources": [
+   "src:sai-arca-path",
+   "src:wiki-driver-bios"
+  ],
+  "notes": "Gibbs 2021 ARCA champion -> Xfinity 2022; Allgaier 2008 champion -> Penske 2009.",
+  "id": null
+ },
+ {
+  "from": "series:arca-menards-east",
+  "to": "series:arca-menards",
+  "frequency": "common",
+  "share_of_movers": {
+   "min": 0.2,
+   "max": 0.5,
+   "unit": "share of East regulars also running main ARCA within 2 years",
+   "confidence": "low",
+   "notes": "estimate; shared cars/teams make the move cheap",
+   "sources": []
+  },
+  "typical_age": {
+   "min": 15,
+   "max": 19,
+   "unit": "years",
+   "confidence": "low",
+   "sources": [],
+   "notes": null
+  },
+  "gating": {
+   "talent": 0.3,
+   "money": 0.3,
+   "connections": 0.2,
+   "manufacturer": 0.2
+  },
+  "examples": [
+   "driver:Kyle_Larson"
+  ],
+  "confidence": "low",
+  "sources": [
+   "src:wiki-arca",
+   "src:wiki-driver-bios"
+  ],
+  "id": null
+ },
+ {
+  "from": "series:arca-menards-east",
+  "to": "series:nascar-trucks",
+  "frequency": "occasional",
+  "share_of_movers": {
+   "min": 0.05,
+   "max": 0.2,
+   "unit": "share of East full-timers reaching full-time Trucks within 3 years",
+   "confidence": "low",
+   "notes": "estimate",
+   "sources": []
+  },
+  "typical_age": {
+   "min": 16,
+   "max": 20,
+   "unit": "years",
+   "confidence": "low",
+   "sources": [],
+   "notes": null
+  },
+  "gating": {
+   "talent": 0.3,
+   "results": 0.2,
+   "money": 0.2,
+   "connections": 0.15,
+   "manufacturer": 0.15
+  },
+  "examples": [
+   "driver:William_Byron_(racing_driver)",
+   "driver:Bubba_Wallace",
+   "driver:Austin_Dillon"
+  ],
+  "confidence": "low",
+  "sources": [
+   "src:wiki-driver-bios"
+  ],
+  "id": null
+ },
+ {
+  "from": "series:local-late-model-stock",
+  "to": "series:cars-tour-lmsc",
+  "frequency": "common",
+  "share_of_movers": {
+   "min": 0.1,
+   "max": 0.3,
+   "unit": "share of competitive weekly LMSC drivers running CARS events",
+   "confidence": "low",
+   "notes": "estimate",
+   "sources": []
+  },
+  "typical_age": {
+   "min": 14,
+   "max": 30,
+   "unit": "years",
+   "confidence": "low",
+   "sources": [],
+   "notes": null
+  },
+  "gating": {
+   "talent": 0.35,
+   "money": 0.4,
+   "connections": 0.25
+  },
+  "examples": [
+   "driver:Ty_Gibbs"
+  ],
+  "confidence": "low",
+  "sources": [
+   "src:wiki-cars-tour",
+   "src:wiki-driver-bios"
+  ],
+  "id": null
+ },
+ {
+  "from": "series:cars-tour-lmsc",
+  "to": "series:arca-menards-east",
+  "frequency": "occasional",
+  "share_of_movers": {
+   "min": 0.03,
+   "max": 0.15,
+   "unit": "share of CARS LMSC full-timers moving to ARCA East/main within 2 years",
+   "confidence": "low",
+   "notes": "estimate",
+   "sources": []
+  },
+  "typical_age": {
+   "min": 15,
+   "max": 20,
+   "unit": "years",
+   "confidence": "low",
+   "sources": [],
+   "notes": null
+  },
+  "gating": {
+   "talent": 0.3,
+   "money": 0.35,
+   "connections": 0.2,
+   "manufacturer": 0.15
+  },
+  "examples": [
+   "driver:Ty_Gibbs"
+  ],
+  "confidence": "low",
+  "sources": [
+   "src:wiki-driver-bios"
+  ],
+  "id": null
+ },
+ {
+  "from": "series:local-late-model-stock",
+  "to": "series:nascar-trucks",
+  "frequency": "rare",
+  "share_of_movers": {
+   "min": 0.005,
+   "max": 0.03,
+   "unit": "share of LMSC regulars reaching Trucks full-time",
+   "confidence": "low",
+   "notes": "estimate; usually via a development deal",
+   "sources": []
+  },
+  "typical_age": {
+   "min": 17,
+   "max": 24,
+   "unit": "years",
+   "confidence": "low",
+   "sources": [],
+   "notes": null
+  },
+  "gating": {
+   "talent": 0.35,
+   "money": 0.15,
+   "connections": 0.25,
+   "manufacturer": 0.25
+  },
+  "examples": [
+   "driver:Denny_Hamlin"
+  ],
+  "confidence": "low",
+  "sources": [
+   "src:wiki-driver-bios"
+  ],
+  "notes": "Hamlin: LMSC -> JGR development 2004 -> 5 Truck starts 2004 -> Busch 2005.",
+  "id": null
+ },
+ {
+  "from": "series:local-super-late-model",
+  "to": "series:asa-stars-national",
+  "frequency": "occasional",
+  "share_of_movers": {
+   "min": 0.05,
+   "max": 0.2,
+   "unit": "share of strong weekly SLM drivers running STARS events",
+   "confidence": "low",
+   "notes": "estimate",
+   "sources": []
+  },
+  "typical_age": {
+   "min": 16,
+   "max": 35,
+   "unit": "years",
+   "confidence": "low",
+   "sources": [],
+   "notes": null
+  },
+  "gating": {
+   "talent": 0.35,
+   "money": 0.4,
+   "connections": 0.25
+  },
+  "examples": [],
+  "confidence": "low",
+  "sources": [
+   "src:sts-asa-stars-fund"
+  ],
+  "id": null
+ },
+ {
+  "from": "series:local-super-late-model",
+  "to": "series:arca-menards",
+  "frequency": "occasional",
+  "share_of_movers": {
+   "min": 0.01,
+   "max": 0.05,
+   "unit": "share of SLM regulars reaching ARCA full-time",
+   "confidence": "low",
+   "notes": "estimate",
+   "sources": []
+  },
+  "typical_age": {
+   "min": 15,
+   "max": 21,
+   "unit": "years",
+   "confidence": "low",
+   "sources": [],
+   "notes": null
+  },
+  "gating": {
+   "talent": 0.3,
+   "money": 0.35,
+   "connections": 0.2,
+   "manufacturer": 0.15
+  },
+  "examples": [
+   "driver:Carson_Hocevar",
+   "driver:Corey_Heim"
+  ],
+  "confidence": "low",
+  "sources": [
+   "src:wiki-driver-bios"
+  ],
+  "id": null
+ },
+ {
+  "from": "series:inex-legends",
+  "to": "series:local-late-model-stock",
+  "frequency": "common",
+  "share_of_movers": {
+   "min": 0.2,
+   "max": 0.5,
+   "unit": "share of youth Legends front-runners moving to late models",
+   "confidence": "low",
+   "notes": "estimate",
+   "sources": []
+  },
+  "typical_age": {
+   "min": 14,
+   "max": 17,
+   "unit": "years",
+   "confidence": "low",
+   "sources": [],
+   "notes": null
+  },
+  "gating": {
+   "talent": 0.4,
+   "money": 0.4,
+   "connections": 0.2
+  },
+  "examples": [
+   "driver:William_Byron_(racing_driver)",
+   "driver:Corey_Heim"
+  ],
+  "confidence": "low",
+  "sources": [
+   "src:inex-divisions",
+   "src:wiki-driver-bios"
+  ],
+  "notes": "Byron: Legends 2013 -> JRM LMSC 2014.",
+  "id": null
+ },
+ {
+  "from": "series:inex-bandolero",
+  "to": "series:inex-legends",
+  "frequency": "common",
+  "share_of_movers": {
+   "min": 0.3,
+   "max": 0.6,
+   "unit": "share of Bandolero racers moving to Legends",
+   "confidence": "low",
+   "notes": "estimate",
+   "sources": []
+  },
+  "typical_age": {
+   "min": 10,
+   "max": 13,
+   "unit": "years",
+   "confidence": "medium",
+   "notes": "Young Lions eligibility 10-15",
+   "sources": []
+  },
+  "gating": {
+   "talent": 0.35,
+   "money": 0.45,
+   "connections": 0.2
+  },
+  "examples": [
+   "driver:Bubba_Wallace",
+   "driver:Austin_Dillon"
+  ],
+  "confidence": "low",
+  "sources": [
+   "src:inex-divisions",
+   "src:wiki-driver-bios"
+  ],
+  "id": null
+ },
+ {
+  "from": "series:qma-quarter-midgets",
+  "to": "series:inex-legends",
+  "frequency": "occasional",
+  "share_of_movers": {
+   "min": 0.1,
+   "max": 0.3,
+   "unit": "share continuing to Legends",
+   "confidence": "low",
+   "notes": "estimate",
+   "sources": []
+  },
+  "typical_age": {
+   "min": 10,
+   "max": 15,
+   "unit": "years",
+   "confidence": "low",
+   "sources": [],
+   "notes": null
+  },
+  "gating": {
+   "talent": 0.35,
+   "money": 0.45,
+   "connections": 0.2
+  },
+  "examples": [
+   "driver:Carson_Hocevar"
+  ],
+  "confidence": "low",
+  "sources": [
+   "src:wiki-quarter-midget"
+  ],
+  "id": null
+ },
+ {
+  "from": "series:qma-quarter-midgets",
+  "to": "series:micro-sprints",
+  "frequency": "occasional",
+  "share_of_movers": {
+   "min": 0.1,
+   "max": 0.3,
+   "unit": "share continuing to micro sprints",
+   "confidence": "low",
+   "notes": "estimate",
+   "sources": []
+  },
+  "typical_age": {
+   "min": 10,
+   "max": 15,
+   "unit": "years",
+   "confidence": "low",
+   "sources": [],
+   "notes": null
+  },
+  "gating": {
+   "talent": 0.35,
+   "money": 0.45,
+   "connections": 0.2
+  },
+  "examples": [
+   "driver:David_Gravel"
+  ],
+  "confidence": "low",
+  "sources": [
+   "src:wiki-driver-bios"
+  ],
+  "id": null
+ },
+ {
+  "from": "series:micro-sprints",
+  "to": "series:usac-national-midget",
+  "frequency": "occasional",
+  "share_of_movers": {
+   "min": 0.05,
+   "max": 0.2,
+   "unit": "share of top micro racers reaching USAC midgets",
+   "confidence": "low",
+   "notes": "estimate",
+   "sources": []
+  },
+  "typical_age": {
+   "min": 15,
+   "max": 19,
+   "unit": "years",
+   "confidence": "medium",
+   "notes": "USAC min 15",
+   "sources": []
+  },
+  "gating": {
+   "talent": 0.45,
+   "money": 0.25,
+   "connections": 0.2,
+   "manufacturer": 0.1
+  },
+  "examples": [
+   "driver:Christopher_Bell_(racing_driver)"
+  ],
+  "confidence": "low",
+  "sources": [
+   "src:wiki-driver-bios",
+   "src:usac-age"
+  ],
+  "id": null
+ },
+ {
+  "from": "series:usac-national-midget",
+  "to": "series:nascar-trucks",
+  "frequency": "occasional",
+  "share_of_movers": {
+   "min": 0.05,
+   "max": 0.2,
+   "unit": "share of KKM-type midget champions getting Truck starts within 3 years",
+   "confidence": "low",
+   "notes": "Larson, Bell, Kofoid, Seavey all made Truck starts; few full-time",
+   "sources": []
+  },
+  "typical_age": {
+   "min": 17,
+   "max": 22,
+   "unit": "years",
+   "confidence": "low",
+   "sources": [],
+   "notes": null
+  },
+  "gating": {
+   "talent": 0.4,
+   "results": 0.2,
+   "manufacturer": 0.25,
+   "connections": 0.15
+  },
+  "examples": [
+   "driver:Christopher_Bell_(racing_driver)",
+   "driver:Kyle_Larson",
+   "driver:Buddy_Kofoid",
+   "driver:Logan_Seavey"
+  ],
+  "confidence": "low",
+  "sources": [
+   "src:kkm-news",
+   "src:wiki-driver-bios"
+  ],
+  "id": null
+ },
+ {
+  "from": "series:usac-national-midget",
+  "to": "series:woo-sprint",
+  "frequency": "common",
+  "share_of_movers": {
+   "min": 0.1,
+   "max": 0.3,
+   "unit": "share of midget regulars moving to 410 winged sprints",
+   "confidence": "low",
+   "notes": "estimate",
+   "sources": []
+  },
+  "typical_age": {
+   "min": 18,
+   "max": 25,
+   "unit": "years",
+   "confidence": "low",
+   "sources": [],
+   "notes": null
+  },
+  "gating": {
+   "talent": 0.5,
+   "money": 0.2,
+   "connections": 0.3
+  },
+  "examples": [
+   "driver:Rico_Abreu"
+  ],
+  "confidence": "low",
+  "sources": [
+   "src:wiki-driver-bios"
+  ],
+  "id": null
+ },
+ {
+  "from": "series:usac-silver-crown",
+  "to": "series:nascar-xfinity",
+  "frequency": "rare",
+  "share_of_movers": {
+   "min": 0.01,
+   "max": 0.05,
+   "unit": "share of Silver Crown/USAC stars recruited to NASCAR",
+   "confidence": "low",
+   "notes": "historic 1990s-2000s pattern",
+   "sources": []
+  },
+  "typical_age": {
+   "min": 20,
+   "max": 25,
+   "unit": "years",
+   "confidence": "low",
+   "sources": [],
+   "notes": null
+  },
+  "gating": {
+   "talent": 0.5,
+   "results": 0.2,
+   "connections": 0.3
+  },
+  "examples": [
+   "driver:Tony_Stewart",
+   "driver:Ryan_Newman_(racing_driver)",
+   "driver:Kasey_Kahne"
+  ],
+  "confidence": "low",
+  "sources": [
+   "src:wiki-driver-bios"
+  ],
+  "id": null
+ },
+ {
+  "from": "series:local-410-sprint",
+  "to": "series:arca-menards",
+  "frequency": "rare",
+  "share_of_movers": {
+   "min": 0.005,
+   "max": 0.02,
+   "unit": "share of young 410 winners getting stock car development",
+   "confidence": "low",
+   "notes": "estimate",
+   "sources": []
+  },
+  "typical_age": {
+   "min": 17,
+   "max": 22,
+   "unit": "years",
+   "confidence": "low",
+   "sources": [],
+   "notes": null
+  },
+  "gating": {
+   "talent": 0.45,
+   "money": 0.2,
+   "connections": 0.35
+  },
+  "examples": [
+   "driver:Chase_Briscoe"
+  ],
+  "confidence": "low",
+  "sources": [
+   "src:wiki-driver-bios"
+  ],
+  "notes": "Briscoe nearly quit; ARCA test came through Roush connection.",
+  "id": null
+ },
+ {
+  "from": "series:local-360-sprint",
+  "to": "series:local-410-sprint",
+  "frequency": "common",
+  "share_of_movers": {
+   "min": 0.1,
+   "max": 0.3,
+   "unit": "share of 360 regulars moving to 410",
+   "confidence": "low",
+   "notes": "estimate",
+   "sources": []
+  },
+  "typical_age": {
+   "min": 16,
+   "max": 25,
+   "unit": "years",
+   "confidence": "low",
+   "sources": [],
+   "notes": null
+  },
+  "gating": {
+   "talent": 0.4,
+   "money": 0.4,
+   "connections": 0.2
+  },
+  "examples": [
+   "driver:Donny_Schatz"
+  ],
+  "confidence": "low",
+  "sources": [
+   "src:wiki-driver-bios"
+  ],
+  "id": null
+ },
+ {
+  "from": "series:all-star-circuit-of-champions",
+  "to": "series:woo-sprint",
+  "frequency": "occasional",
+  "share_of_movers": {
+   "min": 0.05,
+   "max": 0.2,
+   "unit": "share of All Stars regulars graduating to WoO",
+   "confidence": "low",
+   "notes": "estimate",
+   "sources": []
+  },
+  "typical_age": {
+   "min": 19,
+   "max": 28,
+   "unit": "years",
+   "confidence": "low",
+   "sources": [],
+   "notes": null
+  },
+  "gating": {
+   "talent": 0.5,
+   "money": 0.15,
+   "connections": 0.35
+  },
+  "examples": [
+   "driver:David_Gravel"
+  ],
+  "confidence": "low",
+  "sources": [
+   "src:wiki-driver-bios"
+  ],
+  "id": null
+ },
+ {
+  "from": "series:local-crate-late-model",
+  "to": "series:local-super-dirt-late-model",
+  "frequency": "common",
+  "share_of_movers": {
+   "min": 0.05,
+   "max": 0.2,
+   "unit": "share of crate racers moving to supers within 3 years",
+   "confidence": "low",
+   "notes": "estimate",
+   "sources": []
+  },
+  "typical_age": {
+   "min": 16,
+   "max": 25,
+   "unit": "years",
+   "confidence": "low",
+   "sources": [],
+   "notes": null
+  },
+  "gating": {
+   "talent": 0.4,
+   "money": 0.45,
+   "connections": 0.15
+  },
+  "examples": [
+   "driver:Bobby_Pierce_(racing_driver)"
+  ],
+  "confidence": "low",
+  "sources": [
+   "src:wiki-driver-bios"
+  ],
+  "id": null
+ },
+ {
+  "from": "series:local-super-dirt-late-model",
+  "to": "series:lucas-oil-lmds",
+  "frequency": "occasional",
+  "share_of_movers": {
+   "min": 0.02,
+   "max": 0.1,
+   "unit": "share of weekly super DLM drivers going national",
+   "confidence": "low",
+   "notes": "estimate",
+   "sources": []
+  },
+  "typical_age": {
+   "min": 20,
+   "max": 30,
+   "unit": "years",
+   "confidence": "low",
+   "sources": [],
+   "notes": null
+  },
+  "gating": {
+   "talent": 0.5,
+   "money": 0.3,
+   "sponsorship": 0.1,
+   "connections": 0.1
+  },
+  "examples": [
+   "driver:Jonathan_Davenport"
+  ],
+  "confidence": "low",
+  "sources": [
+   "src:wiki-driver-bios"
+  ],
+  "id": null
+ },
+ {
+  "from": "series:southern-all-stars-dirt",
+  "to": "series:lucas-oil-lmds",
+  "frequency": "occasional",
+  "share_of_movers": {
+   "min": 0.05,
+   "max": 0.2,
+   "unit": "share of regional tour stars moving to national tours",
+   "confidence": "low",
+   "notes": "estimate",
+   "sources": []
+  },
+  "typical_age": {
+   "min": 20,
+   "max": 30,
+   "unit": "years",
+   "confidence": "low",
+   "sources": [],
+   "notes": null
+  },
+  "gating": {
+   "talent": 0.5,
+   "money": 0.3,
+   "sponsorship": 0.1,
+   "connections": 0.1
+  },
+  "examples": [],
+  "confidence": "low",
+  "sources": [
+   "src:dtd-dlm-regionals"
+  ],
+  "id": null
+ },
+ {
+  "from": "series:lucas-oil-lmds",
+  "to": "series:woo-late-model",
+  "frequency": "occasional",
+  "share_of_movers": {
+   "min": 0.05,
+   "max": 0.2,
+   "unit": "share switching national tours in a given year",
+   "confidence": "low",
+   "notes": "estimate; drivers pick tour by points fund/schedule",
+   "sources": []
+  },
+  "typical_age": null,
+  "gating": {
+   "talent": 0.3,
+   "money": 0.4,
+   "sponsorship": 0.2,
+   "connections": 0.1
+  },
+  "examples": [],
+  "confidence": "low",
+  "sources": [
+   "src:lucas-2025",
+   "src:woo-lm-2025"
+  ],
+  "notes": "Sideways move.",
+  "id": null
+ },
+ {
+  "from": "series:woo-late-model",
+  "to": "series:nascar-trucks",
+  "frequency": "rare",
+  "share_of_movers": {
+   "min": 0.0,
+   "max": 0.02,
+   "unit": "share of DLM stars getting Truck one-offs",
+   "confidence": "low",
+   "notes": "Eldora/Bristol dirt Truck races era",
+   "sources": []
+  },
+  "typical_age": null,
+  "gating": {
+   "talent": 0.5,
+   "connections": 0.3,
+   "money": 0.2
+  },
+  "examples": [],
+  "confidence": "low",
+  "sources": [
+   "src:wiki-driver-bios"
+  ],
+  "notes": "Sideways one-offs; virtually no full-time moves.",
+  "id": null
+ },
+ {
+  "from": "series:imca-sportmod",
+  "to": "series:imca-modified",
+  "frequency": "common",
+  "share_of_movers": {
+   "min": 0.1,
+   "max": 0.3,
+   "unit": "share moving to Modified within 3 years",
+   "confidence": "low",
+   "notes": "estimate",
+   "sources": []
+  },
+  "typical_age": {
+   "min": 16,
+   "max": 30,
+   "unit": "years",
+   "confidence": "low",
+   "sources": [],
+   "notes": null
+  },
+  "gating": {
+   "talent": 0.4,
+   "money": 0.5,
+   "connections": 0.1
+  },
+  "examples": [],
+  "confidence": "low",
+  "sources": [
+   "src:imca-rules"
+  ],
+  "id": null
+ },
+ {
+  "from": "series:imca-modified",
+  "to": "series:usmts",
+  "frequency": "occasional",
+  "share_of_movers": {
+   "min": 0.02,
+   "max": 0.1,
+   "unit": "share of IMCA Modified regulars touring with USMTS",
+   "confidence": "low",
+   "notes": "estimate",
+   "sources": []
+  },
+  "typical_age": {
+   "min": 18,
+   "max": 40,
+   "unit": "years",
+   "confidence": "low",
+   "sources": [],
+   "notes": null
+  },
+  "gating": {
+   "talent": 0.45,
+   "money": 0.4,
+   "sponsorship": 0.1,
+   "connections": 0.05
+  },
+  "examples": [],
+  "confidence": "low",
+  "sources": [
+   "src:usmts-2024",
+   "src:floracing-mod-cost"
+  ],
+  "id": null
+ },
+ {
+  "from": "series:local-358-modified",
+  "to": "series:local-big-block-modified",
+  "frequency": "common",
+  "share_of_movers": {
+   "min": 0.1,
+   "max": 0.3,
+   "unit": "share of 358 drivers moving to big-blocks",
+   "confidence": "low",
+   "notes": "estimate",
+   "sources": []
+  },
+  "typical_age": {
+   "min": 17,
+   "max": 30,
+   "unit": "years",
+   "confidence": "low",
+   "sources": [],
+   "notes": null
+  },
+  "gating": {
+   "talent": 0.4,
+   "money": 0.45,
+   "connections": 0.15
+  },
+  "examples": [],
+  "confidence": "low",
+  "sources": [
+   "src:dirtcar-the-cars"
+  ],
+  "id": null
+ },
+ {
+  "from": "series:local-big-block-modified",
+  "to": "series:super-dirtcar-series",
+  "frequency": "occasional",
+  "share_of_movers": {
+   "min": 0.05,
+   "max": 0.2,
+   "unit": "share of weekly big-block drivers following the Super DIRTcar Series",
+   "confidence": "low",
+   "notes": "estimate",
+   "sources": []
+  },
+  "typical_age": {
+   "min": 18,
+   "max": 40,
+   "unit": "years",
+   "confidence": "low",
+   "sources": [],
+   "notes": null
+  },
+  "gating": {
+   "talent": 0.45,
+   "money": 0.35,
+   "connections": 0.2
+  },
+  "examples": [
+   "driver:Matt_Sheppard_(racing_driver)"
+  ],
+  "confidence": "low",
+  "sources": [
+   "src:wiki-super-dirtcar"
+  ],
+  "id": null
+ },
+ {
+  "from": "series:local-358-modified",
+  "to": "series:local-super-dirt-late-model",
+  "frequency": "rare",
+  "share_of_movers": {
+   "min": 0.01,
+   "max": 0.05,
+   "unit": "share switching to DLM",
+   "confidence": "low",
+   "notes": "estimate",
+   "sources": []
+  },
+  "typical_age": {
+   "min": 25,
+   "max": 35,
+   "unit": "years",
+   "confidence": "low",
+   "sources": [],
+   "notes": null
+  },
+  "gating": {
+   "talent": 0.45,
+   "money": 0.35,
+   "connections": 0.2
+  },
+  "examples": [
+   "driver:Tim_McCreadie"
+  ],
+  "confidence": "low",
+  "sources": [
+   "src:wiki-driver-bios"
+  ],
+  "notes": "Crossover.",
+  "id": null
+ },
+ {
+  "from": "series:local-sk-modified",
+  "to": "series:nascar-whelen-modified-tour",
+  "frequency": "occasional",
+  "share_of_movers": {
+   "min": 0.05,
+   "max": 0.2,
+   "unit": "share of SK front-runners reaching WMT regular status",
+   "confidence": "low",
+   "notes": "estimate",
+   "sources": []
+  },
+  "typical_age": {
+   "min": 19,
+   "max": 30,
+   "unit": "years",
+   "confidence": "low",
+   "sources": [],
+   "notes": null
+  },
+  "gating": {
+   "talent": 0.4,
+   "money": 0.3,
+   "connections": 0.3
+  },
+  "examples": [
+   "driver:Doug_Coby",
+   "driver:Ryan_Preece"
+  ],
+  "confidence": "low",
+  "sources": [
+   "src:wiki-driver-bios"
+  ],
+  "id": null
+ },
+ {
+  "from": "series:nascar-whelen-modified-tour",
+  "to": "series:nascar-xfinity",
+  "frequency": "rare",
+  "share_of_movers": {
+   "min": 0.005,
+   "max": 0.03,
+   "unit": "share of WMT regulars reaching Xfinity/Cup full-time",
+   "confidence": "low",
+   "notes": "Preece is the modern example",
+   "sources": []
+  },
+  "typical_age": {
+   "min": 24,
+   "max": 28,
+   "unit": "years",
+   "confidence": "low",
+   "sources": [],
+   "notes": null
+  },
+  "gating": {
+   "talent": 0.4,
+   "money": 0.3,
+   "connections": 0.3
+  },
+  "examples": [
+   "driver:Ryan_Preece"
+  ],
+  "confidence": "low",
+  "sources": [
+   "src:wiki-driver-bios",
+   "src:wiki-wmt"
+  ],
+  "id": null
+ },
+ {
+  "from": "series:nascar-cup",
+  "to": "series:woo-sprint",
+  "frequency": "rare",
+  "share_of_movers": {
+   "min": 0.0,
+   "max": 0.03,
+   "unit": "share of Cup drivers racing WoO/High Limit regularly part-time",
+   "confidence": "low",
+   "notes": "Larson, Bell, Briscoe, Stewart own/drive sprints",
+   "sources": []
+  },
+  "typical_age": null,
+  "gating": {
+   "talent": 0.3,
+   "money": 0.4,
+   "connections": 0.3
+  },
+  "examples": [
+   "driver:Kyle_Larson"
+  ],
+  "confidence": "low",
+  "sources": [
+   "src:wiki-driver-bios"
+  ],
+  "notes": "Sideways hobby/business.",
+  "id": null
+ },
+ {
+  "from": "series:woo-sprint",
+  "to": "series:nascar-trucks",
+  "frequency": "rare",
+  "share_of_movers": {
+   "min": 0.0,
+   "max": 0.02,
+   "unit": "share of WoO drivers attempting NASCAR",
+   "confidence": "low",
+   "notes": "Brad Sweet 2009-2012 example",
+   "sources": []
+  },
+  "typical_age": {
+   "min": 22,
+   "max": 27,
+   "unit": "years",
+   "confidence": "low",
+   "sources": [],
+   "notes": null
+  },
+  "gating": {
+   "talent": 0.4,
+   "money": 0.3,
+   "connections": 0.3
+  },
+  "examples": [
+   "driver:Brad_Sweet"
+  ],
+  "confidence": "low",
+  "sources": [
+   "src:wiki-driver-bios"
+  ],
+  "notes": "Usually returns to sprints.",
+  "id": null
+ },
+ {
+  "from": "series:local-mini-stock",
+  "to": "series:local-late-model-stock",
+  "frequency": "occasional",
+  "share_of_movers": {
+   "min": 0.02,
+   "max": 0.1,
+   "unit": "share of mini stock drivers reaching LMSC",
+   "confidence": "low",
+   "notes": "estimate",
+   "sources": []
+  },
+  "typical_age": {
+   "min": 16,
+   "max": 22,
+   "unit": "years",
+   "confidence": "low",
+   "sources": [],
+   "notes": null
+  },
+  "gating": {
+   "talent": 0.4,
+   "money": 0.45,
+   "connections": 0.15
+  },
+  "examples": [
+   "driver:Denny_Hamlin"
+  ],
+  "confidence": "low",
+  "sources": [
+   "src:wiki-driver-bios"
+  ],
+  "notes": "Hamlin: mini stock 1997 -> Grand Stock 1998 -> LMSC 2000.",
+  "id": null
+ },
+ {
+  "from": "series:local-street-stock",
+  "to": "series:imca-modified",
+  "frequency": "occasional",
+  "share_of_movers": {
+   "min": 0.02,
+   "max": 0.1,
+   "unit": "share switching to dirt modifieds",
+   "confidence": "low",
+   "notes": "estimate",
+   "sources": []
+  },
+  "typical_age": null,
+  "gating": {
+   "talent": 0.4,
+   "money": 0.45,
+   "connections": 0.15
+  },
+  "examples": [
+   "driver:Clint_Bowyer"
+  ],
+  "confidence": "low",
+  "sources": [
+   "src:wiki-driver-bios"
+  ],
+  "notes": "Bowyer street stocks -> modified championships 2000-01.",
+  "id": null
+ }
+]

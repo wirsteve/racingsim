@@ -1,0 +1,1168 @@
+[
+ {
+  "id": "stage:advanced-amateur-regional",
+  "name": "Advanced amateur / regional",
+  "game_tiers": [
+   2,
+   3
+  ],
+  "description": "Local top classes (late models, dirt late models, sprint cars, modifieds) and regional tours (CARS/Super Late Model tours, regional midgets, F2000/F4). Budgets $60k-550k; prodigies pass through in 1-4 seasons, career short-trackers stay for decades.",
+  "age_range": {
+   "min": 14,
+   "max": 45,
+   "confidence": "low",
+   "sources": [
+    "src:nascar-pollard-berry"
+   ],
+   "notes": "prospects 14-20; local heroes often 25-45 (Pollard, Berry)"
+  },
+  "typical_duration_years": {
+   "min": 1,
+   "max": 20,
+   "confidence": "low",
+   "sources": [],
+   "notes": null
+  },
+  "typical_series": [
+   "class:late-model-stock",
+   "class:super-late-model",
+   "class:dirt-late-model",
+   "class:sprint-car",
+   "class:modified",
+   "series:f4-us"
+  ],
+  "exits": [
+   {
+    "outcome": "advance",
+    "share": {
+     "min": 0.08,
+     "max": 0.25,
+     "confidence": "low",
+     "sources": [
+      "src:nascar-next"
+     ],
+     "notes": "to ARCA/USF/USAC national; prospects under 20 advance at several times the rate of adults"
+    }
+   },
+   {
+    "outcome": "stay",
+    "share": {
+     "min": 0.35,
+     "max": 0.55,
+     "confidence": "low",
+     "sources": [
+      "src:speedsport-kbusch-money-game-2023"
+     ],
+     "notes": "local/regional pros (Pollard-type)"
+    }
+   },
+   {
+    "outcome": "sideways",
+    "share": {
+     "min": 0.05,
+     "max": 0.15,
+     "confidence": "low",
+     "sources": [],
+     "notes": "dirt<->asphalt, sports-car amateur"
+    }
+   },
+   {
+    "outcome": "quit",
+    "share": {
+     "min": 0.2,
+     "max": 0.4,
+     "confidence": "low",
+     "sources": [
+      "src:thegazette-iowa-costs-2017",
+      "src:shorttrackscene-lms-costs-2018"
+     ]
+    }
+   }
+  ],
+  "confidence": "low",
+  "sources": [
+   "src:floracing-dlm-budget-2017",
+   "src:thegazette-iowa-costs-2017",
+   "src:shorttrackscene-lms-costs-2018",
+   "src:nascar-next"
+  ]
+ },
+ {
+  "id": "stage:development-pro",
+  "name": "Development pro",
+  "game_tiers": [
+   3,
+   4
+  ],
+  "description": "USF2000 / USF Pro 2000 (Pro Mazda), ARCA, USAC national midgets, F4: the first rung where results are tracked nationally and programs/scholarships pick winners. Short stays: most drivers do 1-2 full seasons.",
+  "age_range": {
+   "min": 15,
+   "max": 23,
+   "confidence": "high",
+   "sources": [
+    "src:racingsim-history-analysis"
+   ],
+   "notes": "USF2000 first full-time season median 18.0 (2020s), Pro Mazda 19.0; p10-p90 ~16-23"
+  },
+  "typical_duration_years": {
+   "min": 1,
+   "max": 3,
+   "confidence": "high",
+   "sources": [
+    "src:racingsim-history-analysis"
+   ],
+   "notes": "KM median full-time seasons: USF2000 1, Pro Mazda 1"
+  },
+  "typical_series": [
+   "series:usf2000",
+   "series:usf-pro-2000",
+   "series:arca-menards",
+   "series:usac-national-midget",
+   "series:f4-us"
+  ],
+  "exits": [
+   {
+    "outcome": "advance",
+    "share": {
+     "min": 0.3,
+     "max": 0.4,
+     "confidence": "high",
+     "sources": [
+      "src:racingsim-history-analysis"
+     ],
+     "notes": "ever full-time at a higher rung: USF2000 33%, Pro Mazda 36%"
+    }
+   },
+   {
+    "outcome": "stay",
+    "share": {
+     "min": 0.0,
+     "max": 0.05,
+     "confidence": "medium",
+     "sources": [
+      "src:racingsim-history-analysis"
+     ],
+     "notes": "almost nobody does 4+ seasons at this level"
+    }
+   },
+   {
+    "outcome": "sideways",
+    "share": {
+     "min": 0.1,
+     "max": 0.25,
+     "confidence": "medium",
+     "sources": [
+      "src:racingsim-history-analysis"
+     ],
+     "notes": "part-time elsewhere then gone (~11%) plus unknown moves to sports cars/Europe/stock cars outside the dataset"
+    }
+   },
+   {
+    "outcome": "quit",
+    "share": {
+     "min": 0.35,
+     "max": 0.55,
+     "confidence": "medium",
+     "sources": [
+      "src:racingsim-history-analysis"
+     ],
+     "notes": "left the dataset within <=3 full seasons without advancing: USF2000 56%, Pro Mazda 52% (includes some sideways moves)"
+    }
+   }
+  ],
+  "annual_outcomes_full_time": {
+   "usf2000": {
+    "n": 303,
+    "stay_ft_same_level": 0.31,
+    "absent_no_return_in_dataset": 0.284,
+    "advance_ft_higher": 0.221,
+    "part_time_same_or_higher": 0.139,
+    "absent_returned_later": 0.043,
+    "other_series_in_dataset": 0.003
+   },
+   "pro_mazda": {
+    "n": 252,
+    "stay_ft_same_level": 0.294,
+    "absent_no_return_in_dataset": 0.27,
+    "part_time_same_or_higher": 0.21,
+    "advance_ft_higher": 0.194,
+    "absent_returned_later": 0.028,
+    "down_to_lower_rung": 0.004
+   }
+  },
+  "confidence": "medium",
+  "sources": [
+   "src:racingsim-history-analysis",
+   "src:midohio-usf-scholarships-2024",
+   "src:usopenwheelnation-indynxt-costs-2025"
+  ]
+ },
+ {
+  "id": "stage:grassroots-comeback",
+  "name": "Grassroots comeback",
+  "game_tiers": [
+   2,
+   3
+  ],
+  "description": "Former national-series drivers returning to late models, dirt, SRX-style or regional events, or prospects who drop back to short tracks after failing to fund a national ride and occasionally re-emerge (Berry, Pollard).",
+  "age_range": {
+   "min": 25,
+   "max": 60,
+   "confidence": "low",
+   "sources": [
+    "src:nascar-pollard-berry"
+   ],
+   "notes": null
+  },
+  "typical_duration_years": {
+   "min": 1,
+   "max": 10,
+   "confidence": "low",
+   "sources": [],
+   "notes": null
+  },
+  "typical_series": [
+   "class:late-model-stock",
+   "class:super-late-model",
+   "class:dirt-late-model",
+   "class:sprint-car"
+  ],
+  "exits": [
+   {
+    "outcome": "advance",
+    "share": {
+     "min": 0.01,
+     "max": 0.05,
+     "confidence": "low",
+     "sources": [
+      "src:nascar-pollard-berry",
+      "src:racingamerica-berry"
+     ],
+     "notes": "rare re-entry to national series via connections (Berry)"
+    }
+   },
+   {
+    "outcome": "stay",
+    "share": {
+     "min": 0.5,
+     "max": 0.75,
+     "confidence": "low",
+     "sources": []
+    }
+   },
+   {
+    "outcome": "sideways",
+    "share": {
+     "min": 0.05,
+     "max": 0.15,
+     "confidence": "low",
+     "sources": [],
+     "notes": "into ownership/coaching"
+    }
+   },
+   {
+    "outcome": "quit",
+    "share": {
+     "min": 0.15,
+     "max": 0.35,
+     "confidence": "low",
+     "sources": []
+    }
+   }
+  ],
+  "notes": "In data, a few departed full-timers reappear later: 'absent but returned later' is 1.6% (Trucks) to 6% (Indy Lights) of full-timers per year.",
+  "confidence": "low",
+  "sources": [
+   "src:nascar-pollard-berry",
+   "src:racingamerica-berry",
+   "src:racingsim-history-analysis"
+  ]
+ },
+ {
+  "id": "stage:local-amateur",
+  "name": "Local amateur",
+  "game_tiers": [
+   1
+  ],
+  "description": "Weekly entry classes (street/hobby/mini stock, sport compact, Legends, club racing). Self- or family-funded hobby racing; very large population, most never move up.",
+  "age_range": {
+   "min": 14,
+   "max": 60,
+   "confidence": "low",
+   "sources": [
+    "src:uslegendcars-start"
+   ],
+   "notes": null
+  },
+  "typical_duration_years": {
+   "min": 1,
+   "max": 15,
+   "confidence": "low",
+   "sources": [],
+   "notes": null
+  },
+  "typical_series": [
+   "class:street-stock",
+   "class:hobby-stock",
+   "class:mini-stock",
+   "class:legends",
+   "class:sport-compact"
+  ],
+  "exits": [
+   {
+    "outcome": "advance",
+    "share": {
+     "min": 0.1,
+     "max": 0.25,
+     "confidence": "low",
+     "sources": [],
+     "notes": "to late models/modifieds/sprints; young drivers with family backing advance far more often"
+    }
+   },
+   {
+    "outcome": "stay",
+    "share": {
+     "min": 0.35,
+     "max": 0.55,
+     "confidence": "low",
+     "sources": [],
+     "notes": "career hobbyists"
+    }
+   },
+   {
+    "outcome": "sideways",
+    "share": {
+     "min": 0.05,
+     "max": 0.15,
+     "confidence": "low",
+     "sources": [],
+     "notes": "other local classes/tracks"
+    }
+   },
+   {
+    "outcome": "quit",
+    "share": {
+     "min": 0.25,
+     "max": 0.45,
+     "confidence": "low",
+     "sources": [
+      "src:thegazette-iowa-costs-2017"
+     ],
+     "notes": "money is the main reason; racers typically run at a loss"
+    }
+   }
+  ],
+  "confidence": "low",
+  "sources": [
+   "src:thegazette-iowa-costs-2017",
+   "src:uslegendcars-start"
+  ]
+ },
+ {
+  "id": "stage:national-pro",
+  "name": "National pro (second national tier)",
+  "game_tiers": [
+   6
+  ],
+  "description": "Xfinity/O'Reilly Series, IMSA GTD Pro / LMP2 pro seats, Outlaw 410 sprint cars. Professional but mostly sponsor-funded; the main gateway to Cup.",
+  "age_range": {
+   "min": 18,
+   "max": 45,
+   "confidence": "high",
+   "sources": [
+    "src:racingsim-history-analysis"
+   ],
+   "notes": "Xfinity first full-time season median 23.0 (2020s), 30.0 in late 1990s"
+  },
+  "typical_duration_years": {
+   "min": 1,
+   "max": 5,
+   "confidence": "high",
+   "sources": [
+    "src:racingsim-history-analysis"
+   ],
+   "notes": "KM median full-time seasons 2"
+  },
+  "typical_series": [
+   "series:nascar-xfinity",
+   "series:imsa-weathertech",
+   "series:world-of-outlaws-sprint"
+  ],
+  "exits": [
+   {
+    "outcome": "advance",
+    "share": {
+     "min": 0.4,
+     "max": 0.5,
+     "confidence": "high",
+     "sources": [
+      "src:racingsim-history-analysis"
+     ],
+     "notes": "ever full-time Cup: 47%; any Cup start ~73%"
+    }
+   },
+   {
+    "outcome": "stay",
+    "share": {
+     "min": 0.1,
+     "max": 0.17,
+     "confidence": "high",
+     "sources": [
+      "src:racingsim-history-analysis"
+     ],
+     "notes": "4+ full seasons without Cup: 14%"
+    }
+   },
+   {
+    "outcome": "sideways",
+    "share": {
+     "min": 0.15,
+     "max": 0.25,
+     "confidence": "medium",
+     "sources": [
+      "src:racingsim-history-analysis"
+     ],
+     "notes": "20% part-time/other series then gone; ~2%/yr drop to Trucks"
+    }
+   },
+   {
+    "outcome": "quit",
+    "share": {
+     "min": 0.12,
+     "max": 0.2,
+     "confidence": "medium",
+     "sources": [
+      "src:racingsim-history-analysis"
+     ],
+     "notes": "16%"
+    }
+   }
+  ],
+  "annual_outcomes_full_time": {
+   "nascar_xfinity": {
+    "n": 758,
+    "stay_ft_same_level": 0.537,
+    "part_time_same_or_higher": 0.234,
+    "advance_ft_higher": 0.186,
+    "absent_no_return_in_dataset": 0.017,
+    "down_to_lower_rung": 0.016,
+    "absent_returned_later": 0.009,
+    "other_series_in_dataset": 0.001
+   }
+  },
+  "confidence": "high",
+  "sources": [
+   "src:racingsim-history-analysis",
+   "src:autopian-xfinity-costs-2025",
+   "src:speedsport-kbusch-money-game-2023"
+  ]
+ },
+ {
+  "id": "stage:national-pro-feeder",
+  "name": "National pro feeder",
+  "game_tiers": [
+   5
+  ],
+  "description": "NASCAR Trucks, Indy NXT/Indy Lights, IMSA GTD/GS-level pro-am. Last gate before the national pro tier; seat price $1-4M/season. Two populations: young prospects (pass through in 1-3 years) and veteran journeymen who stay for a decade.",
+  "age_range": {
+   "min": 17,
+   "max": 45,
+   "confidence": "high",
+   "sources": [
+    "src:racingsim-history-analysis"
+   ],
+   "notes": "first full-time season median: Trucks 22.0 (2020s; p90 ~30.7), Indy Lights 22.0"
+  },
+  "typical_duration_years": {
+   "min": 1,
+   "max": 4,
+   "confidence": "high",
+   "sources": [
+    "src:racingsim-history-analysis"
+   ],
+   "notes": "KM median full-time seasons Trucks 2, Indy Lights 2; Trucks journeymen 4-15 seasons"
+  },
+  "typical_series": [
+   "series:nascar-trucks",
+   "series:indy-nxt",
+   "series:imsa-pilot-challenge"
+  ],
+  "exits": [
+   {
+    "outcome": "advance",
+    "share": {
+     "min": 0.28,
+     "max": 0.38,
+     "confidence": "high",
+     "sources": [
+      "src:racingsim-history-analysis"
+     ],
+     "notes": "ever full-time higher: Trucks 36%, Indy Lights 30%; any premier start Trucks/Lights ~47-49%"
+    }
+   },
+   {
+    "outcome": "stay",
+    "share": {
+     "min": 0.05,
+     "max": 0.18,
+     "confidence": "high",
+     "sources": [
+      "src:racingsim-history-analysis"
+     ],
+     "notes": "journeyman 4+ full seasons without advancing: Trucks 15%, Lights 5%"
+    }
+   },
+   {
+    "outcome": "sideways",
+    "share": {
+     "min": 0.19,
+     "max": 0.3,
+     "confidence": "medium",
+     "sources": [
+      "src:racingsim-history-analysis"
+     ],
+     "notes": "part-time/other series then gone: Trucks 30%, Lights 19%"
+    }
+   },
+   {
+    "outcome": "quit",
+    "share": {
+     "min": 0.17,
+     "max": 0.46,
+     "confidence": "medium",
+     "sources": [
+      "src:racingsim-history-analysis"
+     ],
+     "notes": "left within <=3 full seasons: Trucks 17%, Lights 46% (open-wheel drivers often move to sports cars, not tracked)"
+    }
+   }
+  ],
+  "annual_outcomes_full_time": {
+   "nascar_trucks": {
+    "n": 667,
+    "stay_ft_same_level": 0.613,
+    "part_time_same_or_higher": 0.214,
+    "advance_ft_higher": 0.111,
+    "absent_no_return_in_dataset": 0.045,
+    "absent_returned_later": 0.016
+   },
+   "indy_lights": {
+    "n": 383,
+    "stay_ft_same_level": 0.413,
+    "part_time_same_or_higher": 0.209,
+    "absent_no_return_in_dataset": 0.193,
+    "advance_ft_higher": 0.115,
+    "absent_returned_later": 0.06,
+    "other_series_in_dataset": 0.01
+   }
+  },
+  "confidence": "high",
+  "sources": [
+   "src:racingsim-history-analysis",
+   "src:yahoo-baldwin-costs-2026",
+   "src:usopenwheelnation-indynxt-costs-2025"
+  ]
+ },
+ {
+  "id": "stage:premier",
+  "name": "Premier",
+  "game_tiers": [
+   7
+  ],
+  "description": "NASCAR Cup, IndyCar (CART/Champ Car historically), IMSA GTP factory. Retention depends on results, sponsorship and organisation; careers are long once established.",
+  "age_range": {
+   "min": 19,
+   "max": 50,
+   "confidence": "high",
+   "sources": [
+    "src:racingsim-history-analysis"
+   ],
+   "notes": "first full-time season median Cup 25.0-25.5 (2010s-20s), IndyCar 24.0; last full-time season median Cup 41.0, IndyCar 32.0"
+  },
+  "typical_duration_years": {
+   "min": 3,
+   "max": 15,
+   "confidence": "high",
+   "sources": [
+    "src:racingsim-history-analysis"
+   ],
+   "notes": "KM median full-time seasons Cup 7 (26% last >15), IndyCar 3 (~12% last >15)"
+  },
+  "typical_series": [
+   "series:nascar-cup",
+   "series:indycar",
+   "series:imsa-weathertech"
+  ],
+  "exits": [
+   {
+    "outcome": "advance",
+    "share": {
+     "min": 0.0,
+     "max": 0.05,
+     "confidence": "medium",
+     "sources": [],
+     "notes": "moves to F1 or to a top team count as 'advance within tier'"
+    }
+   },
+   {
+    "outcome": "stay",
+    "share": {
+     "min": 0.8,
+     "max": 0.86,
+     "confidence": "high",
+     "sources": [
+      "src:racingsim-history-analysis"
+     ],
+     "notes": "annual: 84% of full-time Cup and 74% of IndyCar drivers stay full-time next season"
+    }
+   },
+   {
+    "outcome": "sideways",
+    "share": {
+     "min": 0.1,
+     "max": 0.17,
+     "confidence": "high",
+     "sources": [
+      "src:racingsim-history-analysis"
+     ],
+     "notes": "annual: part-time same series 12% (Cup), 16% (IndyCar); drop to lower series full-time 2.5% (Cup)"
+    }
+   },
+   {
+    "outcome": "quit",
+    "share": {
+     "min": 0.01,
+     "max": 0.1,
+     "confidence": "high",
+     "sources": [
+      "src:racingsim-history-analysis"
+     ],
+     "notes": "annual: leave all tracked series ~2% (Cup) to ~9% (IndyCar)"
+    }
+   }
+  ],
+  "career_end_routes": {
+   "nascar_cup": {
+    "n": 118,
+    "part_time_same_series_then_out": {
+     "rate": 0.525,
+     "n": 118,
+     "k": 62,
+     "ci95": [
+      0.436,
+      0.613
+     ],
+     "age_at_last_ft": {
+      "n": 62,
+      "mean": 39.3,
+      "p10": 27.1,
+      "p25": 31.2,
+      "median": 39.5,
+      "p75": 46.0,
+      "p90": 49.9,
+      "min": 23,
+      "max": 56,
+      "sources": [],
+      "notes": null
+     }
+    },
+    "dropped_to_lower_series_full_time": {
+     "rate": 0.305,
+     "n": 118,
+     "k": 36,
+     "ci95": [
+      0.229,
+      0.393
+     ],
+     "age_at_last_ft": {
+      "n": 36,
+      "mean": 36.0,
+      "p10": 26.5,
+      "p25": 29.8,
+      "median": 37.0,
+      "p75": 41.2,
+      "p90": 45.5,
+      "min": 19,
+      "max": 57,
+      "sources": [],
+      "notes": null
+     }
+    },
+    "left_dataset_directly": {
+     "rate": 0.102,
+     "n": 118,
+     "k": 12,
+     "ci95": [
+      0.059,
+      0.169
+     ],
+     "age_at_last_ft": {
+      "n": 12,
+      "mean": 40.9,
+      "p10": 24.9,
+      "p25": 36.0,
+      "median": 43.0,
+      "p75": 48.2,
+      "p90": 50.8,
+      "min": 23,
+      "max": 54,
+      "sources": [],
+      "notes": null
+     }
+    },
+    "part_time_other_series_then_out": {
+     "rate": 0.068,
+     "n": 118,
+     "k": 8,
+     "ci95": [
+      0.035,
+      0.128
+     ],
+     "age_at_last_ft": {
+      "n": 8,
+      "mean": 40.1,
+      "p10": 33.6,
+      "p25": 36.0,
+      "median": 39.0,
+      "p75": 44.0,
+      "p90": 48.8,
+      "min": 28,
+      "max": 53,
+      "sources": [],
+      "notes": null
+     }
+    }
+   },
+   "irl_indycar": {
+    "n": 115,
+    "part_time_same_series_then_out": {
+     "rate": 0.652,
+     "n": 115,
+     "k": 75,
+     "ci95": [
+      0.561,
+      0.733
+     ],
+     "age_at_last_ft": {
+      "n": 74,
+      "mean": 33.2,
+      "p10": 24.0,
+      "p25": 28.0,
+      "median": 33.0,
+      "p75": 38.0,
+      "p90": 41.0,
+      "min": 20,
+      "max": 48,
+      "sources": [],
+      "notes": null
+     }
+    },
+    "left_dataset_directly": {
+     "rate": 0.287,
+     "n": 115,
+     "k": 33,
+     "ci95": [
+      0.212,
+      0.375
+     ],
+     "age_at_last_ft": {
+      "n": 33,
+      "mean": 31.5,
+      "p10": 25.2,
+      "p25": 28.0,
+      "median": 30.0,
+      "p75": 35.0,
+      "p90": 40.0,
+      "min": 21,
+      "max": 50,
+      "sources": [],
+      "notes": null
+     }
+    },
+    "part_time_other_series_then_out": {
+     "rate": 0.052,
+     "n": 115,
+     "k": 6,
+     "ci95": [
+      0.024,
+      0.109
+     ],
+     "age_at_last_ft": {
+      "n": 6,
+      "mean": 31.5,
+      "p10": 25.5,
+      "p25": 26.5,
+      "median": 28.5,
+      "p75": 32.8,
+      "p90": 40.5,
+      "min": 25,
+      "max": 47,
+      "sources": [],
+      "notes": null
+     }
+    },
+    "dropped_to_lower_series_full_time": {
+     "rate": 0.009,
+     "n": 115,
+     "k": 1,
+     "ci95": [
+      0.002,
+      0.048
+     ],
+     "age_at_last_ft": {
+      "n": 1,
+      "mean": 30,
+      "p10": 30.0,
+      "p25": 30.0,
+      "median": 30.0,
+      "p75": 30.0,
+      "p90": 30.0,
+      "min": 30,
+      "max": 30,
+      "sources": [],
+      "notes": null
+     }
+    }
+   }
+  },
+  "confidence": "high",
+  "sources": [
+   "src:racingsim-history-analysis",
+   "src:charter-trial-2025"
+  ]
+ },
+ {
+  "id": "stage:retirement-owner-promoter",
+  "name": "Retirement / owner / promoter",
+  "game_tiers": [],
+  "description": "Leaving driving; some become team owners (Kyle Busch KBM, Harvick KHI, Keselowski BKR/RFK, Earnhardt Jr. JRM, Stewart SHR, Hamlin 23XI), track owners/promoters, coaches, spotters or broadcasters; owner-drivers bridge the two.",
+  "age_range": {
+   "min": 28,
+   "max": 70,
+   "confidence": "medium",
+   "sources": [
+    "src:racingsim-history-analysis"
+   ],
+   "notes": "last full-time season median: Cup 41.0, IndyCar 32.0, Xfinity 32.0, Trucks 33.0, Indy Lights 24.5, USF2000 20.0"
+  },
+  "typical_duration_years": {
+   "min": 0,
+   "max": 30,
+   "confidence": "low",
+   "sources": [],
+   "notes": null
+  },
+  "typical_series": [],
+  "exits": [
+   {
+    "outcome": "stay",
+    "share": {
+     "min": 0.85,
+     "max": 0.97,
+     "confidence": "low",
+     "sources": [],
+     "notes": "permanent for most"
+    }
+   },
+   {
+    "outcome": "sideways",
+    "share": {
+     "min": 0.02,
+     "max": 0.1,
+     "confidence": "low",
+     "sources": [
+      "src:racingsim-history-analysis"
+     ],
+     "notes": "occasional one-off returns / part-time"
+    }
+   },
+   {
+    "outcome": "advance",
+    "share": {
+     "min": 0.0,
+     "max": 0.01,
+     "confidence": "low",
+     "sources": []
+    }
+   },
+   {
+    "outcome": "quit",
+    "share": {
+     "min": 0.0,
+     "max": 0.0,
+     "confidence": "low",
+     "sources": [],
+     "notes": "terminal stage"
+    }
+   }
+  ],
+  "owner_driver_share_ft_seats": {
+   "nascar_trucks": {
+    "1995-2004": {
+     "rate": 0.09,
+     "n": 212,
+     "k": 19,
+     "ci95": [
+      0.058,
+      0.136
+     ]
+    },
+    "2005-2014": {
+     "rate": 0.061,
+     "n": 214,
+     "k": 13,
+     "ci95": [
+      0.036,
+      0.101
+     ]
+    },
+    "2015-2026": {
+     "rate": 0.111,
+     "n": 261,
+     "k": 29,
+     "ci95": [
+      0.078,
+      0.155
+     ]
+    }
+   },
+   "nascar_xfinity": {
+    "1995-2004": {
+     "rate": 0.125,
+     "n": 240,
+     "k": 30,
+     "ci95": [
+      0.089,
+      0.173
+     ]
+    },
+    "2005-2014": {
+     "rate": 0.071,
+     "n": 225,
+     "k": 16,
+     "ci95": [
+      0.044,
+      0.112
+     ]
+    },
+    "2015-2026": {
+     "rate": 0.069,
+     "n": 319,
+     "k": 22,
+     "ci95": [
+      0.046,
+      0.102
+     ]
+    }
+   },
+   "nascar_cup": {
+    "1995-2004": {
+     "rate": 0.088,
+     "n": 377,
+     "k": 33,
+     "ci95": [
+      0.063,
+      0.12
+     ]
+    },
+    "2005-2014": {
+     "rate": 0.054,
+     "n": 370,
+     "k": 20,
+     "ci95": [
+      0.035,
+      0.082
+     ]
+    },
+    "2015-2026": {
+     "rate": 0.024,
+     "n": 420,
+     "k": 10,
+     "ci95": [
+      0.013,
+      0.043
+     ]
+    }
+   }
+  },
+  "confidence": "low",
+  "sources": [
+   "src:racingsim-history-analysis",
+   "src:foxsports-kbusch-truck-costs-2017"
+  ]
+ },
+ {
+  "id": "stage:veteran-journeyman",
+  "name": "Veteran / journeyman",
+  "game_tiers": [
+   5,
+   6,
+   7
+  ],
+  "description": "Experienced drivers who keep racing below their peak level or part-time: ex-Cup drivers in Trucks/Xfinity, owner-drivers, start-and-park/backmarker seats, endurance pro-ams. Sustained by reputation, cheap seats or their own team.",
+  "age_range": {
+   "min": 30,
+   "max": 55,
+   "confidence": "high",
+   "sources": [
+    "src:racingsim-history-analysis"
+   ],
+   "notes": "Cup drivers who dropped to lower-series full-time rides did so at median age 37.0; Trucks last full-time season median 33.0 (p90 48.0)"
+  },
+  "typical_duration_years": {
+   "min": 2,
+   "max": 12,
+   "confidence": "medium",
+   "sources": [
+    "src:racingsim-history-analysis"
+   ],
+   "notes": null
+  },
+  "typical_series": [
+   "series:nascar-trucks",
+   "series:nascar-xfinity",
+   "series:arca-menards",
+   "series:imsa-weathertech"
+  ],
+  "exits": [
+   {
+    "outcome": "advance",
+    "share": {
+     "min": 0.02,
+     "max": 0.08,
+     "confidence": "medium",
+     "sources": [
+      "src:racingsim-history-analysis"
+     ],
+     "notes": "35+ full-timers in Trucks reach a higher rung next year ~4%/yr"
+    }
+   },
+   {
+    "outcome": "stay",
+    "share": {
+     "min": 0.5,
+     "max": 0.7,
+     "confidence": "high",
+     "sources": [
+      "src:racingsim-history-analysis"
+     ],
+     "notes": "annual stay rate of 35+ full-timers: Trucks 67%, Xfinity 52%"
+    }
+   },
+   {
+    "outcome": "sideways",
+    "share": {
+     "min": 0.2,
+     "max": 0.32,
+     "confidence": "high",
+     "sources": [
+      "src:racingsim-history-analysis"
+     ],
+     "notes": "to part-time schedules, typically the last step before retirement"
+    }
+   },
+   {
+    "outcome": "quit",
+    "share": {
+     "min": 0.02,
+     "max": 0.06,
+     "confidence": "medium",
+     "sources": [
+      "src:racingsim-history-analysis"
+     ],
+     "notes": "direct exit from all tracked series per year"
+    }
+   }
+  ],
+  "confidence": "medium",
+  "sources": [
+   "src:racingsim-history-analysis",
+   "src:rotthoff-2014-nascar-camera"
+  ]
+ },
+ {
+  "id": "stage:youth-entry",
+  "name": "Youth / entry",
+  "game_tiers": [
+   0
+  ],
+  "description": "Kid karts, quarter midgets, Bandolero, junior karting, micro sprints. Family decides everything; almost everyone pays.",
+  "age_range": {
+   "min": 5,
+   "max": 16,
+   "confidence": "medium",
+   "sources": [
+    "src:ncqma-qa",
+    "src:usf-licensing-2026"
+   ],
+   "notes": "quarter midgets from age 5; USF Juniors entry at 14 marks the end of the youth stage on the open-wheel path"
+  },
+  "typical_duration_years": {
+   "min": 2,
+   "max": 8,
+   "confidence": "low",
+   "sources": [
+    "src:ncqma-qa"
+   ],
+   "notes": "informed estimate"
+  },
+  "typical_series": [
+   "class:quarter-midget",
+   "class:kart",
+   "class:bandolero",
+   "class:micro-sprint"
+  ],
+  "exits": [
+   {
+    "outcome": "advance",
+    "share": {
+     "min": 0.2,
+     "max": 0.4,
+     "confidence": "low",
+     "sources": [
+      "src:karting-cost-aggregators"
+     ],
+     "notes": "to local/regional cars or junior formula; informed estimate"
+    }
+   },
+   {
+    "outcome": "stay",
+    "share": {
+     "min": 0.05,
+     "max": 0.15,
+     "confidence": "low",
+     "sources": [],
+     "notes": "age out without moving on"
+    }
+   },
+   {
+    "outcome": "sideways",
+    "share": {
+     "min": 0.05,
+     "max": 0.15,
+     "confidence": "low",
+     "sources": [],
+     "notes": "switch discipline e.g. karting -> dirt micro"
+    }
+   },
+   {
+    "outcome": "quit",
+    "share": {
+     "min": 0.4,
+     "max": 0.65,
+     "confidence": "low",
+     "sources": [
+      "src:karting-cost-aggregators"
+     ],
+     "notes": "cost/interest; informed estimate"
+    }
+   }
+  ],
+  "confidence": "low",
+  "sources": [
+   "src:ncqma-qa",
+   "src:karting-cost-aggregators",
+   "src:usf-licensing-2026"
+  ]
+ }
+]

@@ -1,0 +1,585 @@
+{
+ "series": "woo_sprint",
+ "year": 2019,
+ "official_name": "World of Outlaws Craftsman Sprint Car Series",
+ "data_level": "full",
+ "champion": {
+  "name": "Brad Sweet",
+  "wiki": "Brad Sweet"
+ },
+ "teams": [
+  {
+   "team": "Shark Racing",
+   "manufacturer": null,
+   "cars": [
+    {
+     "number": "1A",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Jacob Allen",
+       "wiki": null
+      }
+     ]
+    },
+    {
+     "number": "1S",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Logan Schuchart",
+       "wiki": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Kyle Larson Racing",
+   "manufacturer": null,
+   "cars": [
+    {
+     "number": "2",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Carson Macedo",
+       "wiki": null
+      }
+     ]
+    },
+    {
+     "number": "1K",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Kyle Larson",
+       "wiki": "Kyle Larson"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "CJB Motorsports",
+   "manufacturer": null,
+   "cars": [
+    {
+     "number": "5",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Shane Stewart",
+       "wiki": "Shane Stewart"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Sides Motorsports",
+   "manufacturer": null,
+   "cars": [
+    {
+     "number": "7",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Jason Sides",
+       "wiki": null
+      }
+     ]
+    },
+    {
+     "number": "7S",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Tim Kaeding",
+       "wiki": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Kinser Racing",
+   "manufacturer": null,
+   "cars": [
+    {
+     "number": "11K",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Kraig Kinser",
+       "wiki": "Kraig Kinser"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Tony Stewart/Curb-Agajanian Racing",
+   "manufacturer": null,
+   "cars": [
+    {
+     "number": "15",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Donny Schatz",
+       "wiki": "Donny Schatz"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Stenhouse-Marshall Racing",
+   "manufacturer": null,
+   "cars": [
+    {
+     "number": "17",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Sheldon Haudenschild",
+       "wiki": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "KCP Racing",
+   "manufacturer": null,
+   "cars": [
+    {
+     "number": "18",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Ian Madsen",
+       "wiki": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Brent Marks Racing",
+   "manufacturer": null,
+   "cars": [
+    {
+     "number": "19",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Brent Marks",
+       "wiki": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Jason Johnson Racing",
+   "manufacturer": null,
+   "cars": [
+    {
+     "number": "41",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "David Gravel",
+       "wiki": "David Gravel"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Kasey Kahne Racing",
+   "manufacturer": null,
+   "cars": [
+    {
+     "number": "49",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Brad Sweet",
+       "wiki": "Brad Sweet"
+      }
+     ]
+    },
+    {
+     "number": "9",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Kasey Kahne",
+       "wiki": "Kasey Kahne"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Roth Motorsports",
+   "manufacturer": null,
+   "cars": [
+    {
+     "number": "83",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Daryn Pittman",
+       "wiki": "Daryn Pittman"
+      }
+     ]
+    },
+    {
+     "number": "83JR",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Giovanni Scelzi",
+       "wiki": "Gio Scelzi"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Williams Motorsports",
+   "manufacturer": null,
+   "cars": [
+    {
+     "number": "0",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Bud Kaeding",
+       "wiki": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Brian Brown Racing",
+   "manufacturer": null,
+   "cars": [
+    {
+     "number": "21",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Brian Brown",
+       "wiki": "Brian Brown (racing driver)"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Robbie Price Racing",
+   "manufacturer": null,
+   "cars": [
+    {
+     "number": "21P",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Robbie Price",
+       "wiki": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Rico Abreu Racing",
+   "manufacturer": null,
+   "cars": [
+    {
+     "number": "24",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Rico Abreu",
+       "wiki": "Rico Abreu"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Rudeen Racing",
+   "manufacturer": null,
+   "cars": [
+    {
+     "number": "26",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Cory Eliason",
+       "wiki": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Willie Croft Racing",
+   "manufacturer": null,
+   "cars": [
+    {
+     "number": "29",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Willie Croft",
+       "wiki": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Mason Daniel Racing",
+   "manufacturer": null,
+   "cars": [
+    {
+     "number": "33M",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Mason Daniel",
+       "wiki": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Swindell Speedlab",
+   "manufacturer": null,
+   "cars": [
+    {
+     "number": "39",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Christopher Bell",
+       "wiki": "Christopher Bell (racing driver)"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Danny Dietrich Racing",
+   "manufacturer": null,
+   "cars": [
+    {
+     "number": "48",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Danny Dietrich",
+       "wiki": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Demyan-Rudzik Racing",
+   "manufacturer": null,
+   "cars": [
+    {
+     "number": "49X",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Tim Shaffer",
+       "wiki": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Silva Motorsports",
+   "manufacturer": null,
+   "cars": [
+    {
+     "number": "57",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Kyle Larson",
+       "wiki": "Kyle Larson"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Premier Motorsports",
+   "manufacturer": null,
+   "cars": [
+    {
+     "number": "70",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Brock Zearfoss",
+       "wiki": null
+      }
+     ]
+    },
+    {
+     "number": "70X",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Spencer Bayston",
+       "wiki": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Tom Harris Motorsports",
+   "manufacturer": null,
+   "cars": [
+    {
+     "number": "84",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Tom Harris",
+       "wiki": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Forsberg Racing",
+   "manufacturer": null,
+   "cars": [
+    {
+     "number": "92",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Andy Forsberg",
+       "wiki": null
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "standings": [],
+ "schedule": [
+  {
+   "round": 1,
+   "date": "2019-02-08",
+   "race": "DIRTcar Nationals",
+   "track": "Volusia Speedway Park",
+   "city": "Barberville",
+   "state": "FL",
+   "winner": "Daryn Pittman",
+   "winner_wiki": "Daryn Pittman"
+  },
+  {
+   "round": 2,
+   "date": "2019-02-09",
+   "race": "DIRTcar Nationals",
+   "track": "Volusia Speedway Park",
+   "city": "Barberville",
+   "state": "FL",
+   "winner": "Daryn Pittman",
+   "winner_wiki": "Daryn Pittman"
+  },
+  {
+   "round": 3,
+   "date": "2019-02-27",
+   "race": "FVP Platinum Battery Showdown",
+   "track": "The Dirt Track at Las Vegas Motor Speedway",
+   "city": "Las Vegas",
+   "state": "NV",
+   "winner": "Tim Shaffer",
+   "winner_wiki": null
+  },
+  {
+   "round": 4,
+   "date": "2019-02-28",
+   "race": "FVP Platinum Battery Showdown",
+   "track": "The Dirt Track at Las Vegas Motor Speedway",
+   "city": "Las Vegas",
+   "state": "NV",
+   "winner": "Donny Schatz",
+   "winner_wiki": "Donny Schatz"
+  },
+  {
+   "round": 5,
+   "date": "2019-03-09",
+   "race": null,
+   "track": "Thunderbowl Speedway",
+   "city": "Tulare",
+   "state": "CA",
+   "winner": "Ian Madsen",
+   "winner_wiki": null
+  },
+  {
+   "round": 6,
+   "date": "2019-03-15",
+   "race": "Mini Gold Cup",
+   "track": "Silver Dollar Speedway",
+   "city": "Chico",
+   "state": "CA",
+   "winner": "Carson Macedo",
+   "winner_wiki": null
+  },
+  {
+   "round": 7,
+   "date": "2019-03-16",
+   "race": "FVP Platinum Battery Shootout",
+   "track": "Stockton Dirt Track",
+   "city": "Stockton",
+   "state": "CA",
+   "winner": "Logan Schuchart",
+   "winner_wiki": null
+  },
+  {
+   "round": 8,
+   "date": "2019-03-29",
+   "race": null,
+   "track": "Keller Auto Speedway",
+   "city": "Hanford",
+   "state": "CA",
+   "winner": "David Gravel",
+   "winner_wiki": "David Gravel"
+  },
+  {
+   "round": 9,
+   "date": "2019-03-30",
+   "race": null,
+   "track": "Perris Auto Speedway",
+   "city": "Perris",
+   "state": "CA",
+   "winner": "Aaron Reutzel",
+   "winner_wiki": null
+  }
+ ],
+ "sources": [
+  "https://en.wikipedia.org/w/index.php?title=2019_World_of_Outlaws_Craftsman_Sprint_Car_Series&oldid=1335386029",
+  "https://en.wikipedia.org/w/index.php?title=World_of_Outlaws&oldid=1363743185"
+ ]
+}

@@ -1,0 +1,3025 @@
+[
+ {
+  "name": "Daytona International Speedway",
+  "city": "Daytona Beach",
+  "region": "FL",
+  "country": "USA",
+  "track_type": "oval",
+  "surface": "asphalt",
+  "length_mi": 2.5,
+  "configuration": "tri-oval superspeedway",
+  "turns": 4,
+  "banking_deg_turns": 31,
+  "banking_deg_straights": 3,
+  "opened": 1959,
+  "active": true,
+  "disciplines": [
+   "stock_car",
+   "sports_car",
+   "motorcycle"
+  ],
+  "level": "national",
+  "notable_note": "Superspeedway hosting NASCAR's season-opening 500-mile race; tri-oval banked 18 degrees",
+  "lat": 29.186,
+  "lon": -81.069,
+  "sources": [
+   "https://en.wikipedia.org/wiki/Daytona_International_Speedway"
+  ]
+ },
+ {
+  "name": "Daytona International Speedway Road Course",
+  "city": "Daytona Beach",
+  "region": "FL",
+  "country": "USA",
+  "track_type": "roval",
+  "surface": "asphalt",
+  "length_mi": 3.56,
+  "configuration": "sports car course combining infield road course with banked oval",
+  "turns": 12,
+  "banking_deg_turns": 31,
+  "banking_deg_straights": 3,
+  "opened": 1959,
+  "active": true,
+  "disciplines": [
+   "sports_car",
+   "stock_car",
+   "motorcycle"
+  ],
+  "level": "national",
+  "notable_note": "Sports car course (1985-present layout) hosts the IMSA 24-hour season opener; NASCAR used a 3.57-mi variant 2020-2021",
+  "lat": 29.186,
+  "lon": -81.069,
+  "sources": [
+   "https://en.wikipedia.org/wiki/Daytona_International_Speedway"
+  ]
+ },
+ {
+  "name": "Talladega Superspeedway",
+  "city": "Lincoln",
+  "region": "AL",
+  "country": "USA",
+  "track_type": "oval",
+  "surface": "asphalt",
+  "length_mi": 2.66,
+  "configuration": "tri-oval superspeedway",
+  "turns": 4,
+  "banking_deg_turns": 33,
+  "banking_deg_straights": 2,
+  "opened": 1969,
+  "active": true,
+  "disciplines": [
+   "stock_car"
+  ],
+  "level": "national",
+  "notable_note": "Longest oval on the NASCAR schedule; tri-oval banked 16.5 degrees",
+  "lat": 33.567,
+  "lon": -86.066,
+  "sources": [
+   "https://en.wikipedia.org/wiki/Talladega_Superspeedway"
+  ]
+ },
+ {
+  "name": "Atlanta Motor Speedway",
+  "city": "Hampton",
+  "region": "GA",
+  "country": "USA",
+  "track_type": "oval",
+  "surface": "asphalt",
+  "length_mi": 1.54,
+  "configuration": "quad-oval; reprofiled in 2022 with 28-degree turns",
+  "turns": 4,
+  "banking_deg_turns": 28,
+  "banking_deg_straights": 5,
+  "opened": 1960,
+  "active": true,
+  "disciplines": [
+   "stock_car"
+  ],
+  "level": "national",
+  "notable_note": "Reconfigured for 2022 with steeper banking producing drafting-style racing; renamed in 2025",
+  "lat": 33.383,
+  "lon": -84.318,
+  "sources": [
+   "https://en.wikipedia.org/wiki/Atlanta_Motor_Speedway"
+  ],
+  "aliases": [
+   "EchoPark Speedway (Atlanta Motor Speedway)"
+  ]
+ },
+ {
+  "name": "Bristol Motor Speedway",
+  "city": "Bristol",
+  "region": "TN",
+  "country": "USA",
+  "track_type": "oval",
+  "surface": "concrete",
+  "length_mi": 0.533,
+  "configuration": "high-banked concrete short oval",
+  "turns": 4,
+  "banking_deg_turns": 28,
+  "banking_deg_straights": 8,
+  "opened": 1961,
+  "active": true,
+  "disciplines": [
+   "stock_car",
+   "late_model"
+  ],
+  "level": "national",
+  "notable_note": "Concrete half-mile with variable 24-28 degree banking",
+  "lat": 36.516,
+  "lon": -82.257,
+  "sources": [
+   "https://en.wikipedia.org/wiki/Bristol_Motor_Speedway"
+  ]
+ },
+ {
+  "name": "Bristol Motor Speedway Dirt Track",
+  "city": "Bristol",
+  "region": "TN",
+  "country": "USA",
+  "track_type": "oval",
+  "surface": "clay",
+  "length_mi": 0.533,
+  "configuration": "temporary clay surface laid over the concrete oval",
+  "turns": 4,
+  "banking_deg_turns": 19,
+  "banking_deg_straights": 9,
+  "opened": 2021,
+  "active": false,
+  "disciplines": [
+   "stock_car",
+   "dirt_late_model",
+   "sprint_car"
+  ],
+  "level": "national",
+  "notable_note": "Temporary dirt configuration used for NASCAR spring races 2021-2023, then removed",
+  "lat": 36.516,
+  "lon": -82.257,
+  "sources": [
+   "https://en.wikipedia.org/wiki/Bristol_Motor_Speedway"
+  ]
+ },
+ {
+  "name": "Martinsville Speedway",
+  "city": "Ridgeway",
+  "region": "VA",
+  "country": "USA",
+  "track_type": "oval",
+  "surface": "asphalt_concrete",
+  "length_mi": 0.526,
+  "configuration": "paperclip-shaped short oval; concrete in lower turn lanes, asphalt on straights",
+  "turns": 4,
+  "banking_deg_turns": 12,
+  "banking_deg_straights": 0,
+  "opened": 1947,
+  "active": true,
+  "disciplines": [
+   "stock_car",
+   "late_model",
+   "modified"
+  ],
+  "level": "national",
+  "notable_note": "Oldest track on the NASCAR Cup schedule; flat paperclip layout",
+  "lat": 36.634,
+  "lon": -79.851,
+  "sources": [
+   "https://en.wikipedia.org/wiki/Martinsville_Speedway"
+  ]
+ },
+ {
+  "name": "Richmond Raceway",
+  "city": "Richmond",
+  "region": "VA",
+  "country": "USA",
+  "track_type": "oval",
+  "surface": "asphalt",
+  "length_mi": 0.75,
+  "configuration": "D-shaped short oval",
+  "turns": 4,
+  "banking_deg_turns": 14,
+  "banking_deg_straights": 8,
+  "opened": 1946,
+  "active": true,
+  "disciplines": [
+   "stock_car",
+   "late_model"
+  ],
+  "level": "national",
+  "notable_note": "Three-quarter-mile D-shaped oval; current layout since 1988",
+  "lat": 37.592,
+  "lon": -77.421,
+  "sources": [
+   "https://en.wikipedia.org/wiki/Richmond_Raceway"
+  ]
+ },
+ {
+  "name": "North Wilkesboro Speedway",
+  "city": "North Wilkesboro",
+  "region": "NC",
+  "country": "USA",
+  "track_type": "oval",
+  "surface": "asphalt",
+  "length_mi": 0.625,
+  "configuration": "short oval with downhill backstretch",
+  "turns": 4,
+  "banking_deg_turns": 14,
+  "banking_deg_straights": 3,
+  "opened": 1947,
+  "active": true,
+  "disciplines": [
+   "stock_car",
+   "late_model",
+   "modified"
+  ],
+  "level": "national",
+  "notable_note": "Dormant 1997-2022 (aside from 2010-2011); returned to NASCAR with the 2023 All-Star race",
+  "lat": 36.142,
+  "lon": -81.073,
+  "sources": [
+   "https://en.wikipedia.org/wiki/North_Wilkesboro_Speedway"
+  ]
+ },
+ {
+  "name": "Charlotte Motor Speedway",
+  "city": "Concord",
+  "region": "NC",
+  "country": "USA",
+  "track_type": "oval",
+  "surface": "asphalt",
+  "length_mi": 1.5,
+  "configuration": "quad-oval intermediate",
+  "turns": 4,
+  "banking_deg_turns": 24,
+  "banking_deg_straights": 5,
+  "opened": 1960,
+  "active": true,
+  "disciplines": [
+   "stock_car",
+   "late_model",
+   "legends"
+  ],
+  "level": "national",
+  "notable_note": "Hosts NASCAR's Memorial Day weekend 600-mile race",
+  "lat": 35.352,
+  "lon": -80.683,
+  "sources": [
+   "https://en.wikipedia.org/wiki/Charlotte_Motor_Speedway"
+  ]
+ },
+ {
+  "name": "Charlotte Motor Speedway Roval",
+  "city": "Concord",
+  "region": "NC",
+  "country": "USA",
+  "track_type": "roval",
+  "surface": "asphalt",
+  "length_mi": 2.32,
+  "configuration": "infield road course using portions of the banked oval with chicanes (2024-present layout)",
+  "turns": 17,
+  "banking_deg_turns": 24,
+  "banking_deg_straights": 5,
+  "opened": 2018,
+  "active": true,
+  "disciplines": [
+   "stock_car"
+  ],
+  "level": "national",
+  "notable_note": "Roval layout added to the NASCAR playoffs in 2018; revised 2019 and 2024",
+  "lat": 35.352,
+  "lon": -80.683,
+  "sources": [
+   "https://en.wikipedia.org/wiki/Charlotte_Motor_Speedway"
+  ]
+ },
+ {
+  "name": "Darlington Raceway",
+  "city": "Darlington",
+  "region": "SC",
+  "country": "USA",
+  "track_type": "oval",
+  "surface": "asphalt",
+  "length_mi": 1.366,
+  "configuration": "egg-shaped oval with unequal ends",
+  "turns": 4,
+  "banking_deg_turns": 25,
+  "banking_deg_straights": 6,
+  "opened": 1950,
+  "active": true,
+  "disciplines": [
+   "stock_car"
+  ],
+  "level": "national",
+  "notable_note": "First paved superspeedway; asymmetric ends (turns 1-2 at 25, turns 3-4 at 23 degrees)",
+  "lat": 34.296,
+  "lon": -79.906,
+  "sources": [
+   "https://en.wikipedia.org/wiki/Darlington_Raceway"
+  ]
+ },
+ {
+  "name": "Dover Motor Speedway",
+  "city": "Dover",
+  "region": "DE",
+  "country": "USA",
+  "track_type": "oval",
+  "surface": "concrete",
+  "length_mi": 1.0,
+  "configuration": "high-banked concrete oval",
+  "turns": 4,
+  "banking_deg_turns": 24,
+  "banking_deg_straights": 9,
+  "opened": 1969,
+  "active": true,
+  "disciplines": [
+   "stock_car"
+  ],
+  "level": "national",
+  "notable_note": "Concrete surface since 1995",
+  "lat": 39.19,
+  "lon": -75.53,
+  "sources": [
+   "https://en.wikipedia.org/wiki/Dover_Motor_Speedway"
+  ]
+ },
+ {
+  "name": "Pocono Raceway",
+  "city": "Long Pond",
+  "region": "PA",
+  "country": "USA",
+  "track_type": "oval",
+  "surface": "asphalt",
+  "length_mi": 2.5,
+  "configuration": "triangular tri-oval with three distinct turns",
+  "turns": 3,
+  "banking_deg_turns": 14,
+  "banking_deg_straights": null,
+  "opened": 1969,
+  "active": true,
+  "disciplines": [
+   "stock_car",
+   "open_wheel"
+  ],
+  "level": "national",
+  "notable_note": "Three differently banked turns (14, 8 and 6 degrees); tri-oval opened 1971",
+  "lat": 41.061,
+  "lon": -75.508,
+  "sources": [
+   "https://en.wikipedia.org/wiki/Pocono_Raceway"
+  ]
+ },
+ {
+  "name": "Michigan International Speedway",
+  "city": "Brooklyn",
+  "region": "MI",
+  "country": "USA",
+  "track_type": "oval",
+  "surface": "asphalt",
+  "length_mi": 2.0,
+  "configuration": "D-shaped wide superspeedway",
+  "turns": 4,
+  "banking_deg_turns": 18,
+  "banking_deg_straights": 12,
+  "opened": 1968,
+  "active": true,
+  "disciplines": [
+   "stock_car"
+  ],
+  "level": "national",
+  "notable_note": "Two-mile D-oval; frontstretch banked 12 and backstretch 5 degrees",
+  "lat": 42.066,
+  "lon": -84.241,
+  "sources": [
+   "https://en.wikipedia.org/wiki/Michigan_International_Speedway"
+  ]
+ },
+ {
+  "name": "Kansas Speedway",
+  "city": "Kansas City",
+  "region": "KS",
+  "country": "USA",
+  "track_type": "oval",
+  "surface": "asphalt",
+  "length_mi": 1.5,
+  "configuration": "tri-oval intermediate with variable banking",
+  "turns": 4,
+  "banking_deg_turns": 20,
+  "banking_deg_straights": 10,
+  "opened": 2001,
+  "active": true,
+  "disciplines": [
+   "stock_car"
+  ],
+  "level": "national",
+  "notable_note": "Variable 17-20 degree turn banking; infield road course added 2012",
+  "lat": 39.116,
+  "lon": -94.831,
+  "sources": [
+   "https://en.wikipedia.org/wiki/Kansas_Speedway"
+  ]
+ },
+ {
+  "name": "Las Vegas Motor Speedway",
+  "city": "Las Vegas",
+  "region": "NV",
+  "country": "USA",
+  "track_type": "oval",
+  "surface": "asphalt",
+  "length_mi": 1.5,
+  "configuration": "tri-oval intermediate",
+  "turns": 4,
+  "banking_deg_turns": 20,
+  "banking_deg_straights": 9,
+  "opened": 1996,
+  "active": true,
+  "disciplines": [
+   "stock_car",
+   "late_model"
+  ],
+  "level": "national",
+  "notable_note": "Complex also includes a 3/8-mile Bullring short track; tri-oval opened 1996 (complex dates to 1971)",
+  "lat": 36.271,
+  "lon": -115.011,
+  "sources": [
+   "https://en.wikipedia.org/wiki/Las_Vegas_Motor_Speedway"
+  ]
+ },
+ {
+  "name": "Phoenix Raceway",
+  "city": "Avondale",
+  "region": "AZ",
+  "country": "USA",
+  "track_type": "oval",
+  "surface": "asphalt",
+  "length_mi": 1.022,
+  "configuration": "dogleg oval with flatter turns 1-2",
+  "turns": 4,
+  "banking_deg_turns": 11,
+  "banking_deg_straights": 9,
+  "opened": 1964,
+  "active": true,
+  "disciplines": [
+   "stock_car",
+   "open_wheel"
+  ],
+  "level": "national",
+  "notable_note": "Host of NASCAR's championship finale since 2020",
+  "lat": 33.375,
+  "lon": -112.311,
+  "sources": [
+   "https://en.wikipedia.org/wiki/Phoenix_Raceway"
+  ]
+ },
+ {
+  "name": "Homestead-Miami Speedway",
+  "city": "Homestead",
+  "region": "FL",
+  "country": "USA",
+  "track_type": "oval",
+  "surface": "asphalt",
+  "length_mi": 1.5,
+  "configuration": "oval with progressive variable banking",
+  "turns": 4,
+  "banking_deg_turns": 20,
+  "banking_deg_straights": 4,
+  "opened": 1995,
+  "active": true,
+  "disciplines": [
+   "stock_car"
+  ],
+  "level": "national",
+  "notable_note": "Progressive 18-20 degree banking added in 2003",
+  "lat": 25.452,
+  "lon": -80.409,
+  "sources": [
+   "https://en.wikipedia.org/wiki/Homestead%E2%80%93Miami_Speedway"
+  ]
+ },
+ {
+  "name": "Texas Motor Speedway",
+  "city": "Fort Worth",
+  "region": "TX",
+  "country": "USA",
+  "track_type": "oval",
+  "surface": "asphalt",
+  "length_mi": 1.5,
+  "configuration": "quad-oval intermediate; turns 1-2 reprofiled to 20 degrees in 2017",
+  "turns": 4,
+  "banking_deg_turns": 24,
+  "banking_deg_straights": 5,
+  "opened": 1996,
+  "active": true,
+  "disciplines": [
+   "stock_car",
+   "open_wheel"
+  ],
+  "level": "national",
+  "notable_note": "Turns 1-2 flattened and widened in 2017; length listed as 1.44 or 1.5 mi depending on source",
+  "lat": 33.038,
+  "lon": -97.285,
+  "sources": [
+   "https://en.wikipedia.org/wiki/Texas_Motor_Speedway"
+  ]
+ },
+ {
+  "name": "Nashville Superspeedway",
+  "city": "Lebanon",
+  "region": "TN",
+  "country": "USA",
+  "track_type": "oval",
+  "surface": "concrete",
+  "length_mi": 1.33,
+  "configuration": "concrete tri-oval",
+  "turns": 4,
+  "banking_deg_turns": 14,
+  "banking_deg_straights": 9,
+  "opened": 2001,
+  "active": true,
+  "disciplines": [
+   "stock_car",
+   "open_wheel"
+  ],
+  "level": "national",
+  "notable_note": "Closed 2011-2020; returned to NASCAR in 2021 and IndyCar in 2024",
+  "lat": 36.044,
+  "lon": -86.413,
+  "sources": [
+   "https://en.wikipedia.org/wiki/Nashville_Superspeedway"
+  ]
+ },
+ {
+  "name": "Gateway Motorsports Park",
+  "city": "Madison",
+  "region": "IL",
+  "country": "USA",
+  "track_type": "oval",
+  "surface": "asphalt",
+  "length_mi": 1.25,
+  "configuration": "egg-shaped oval with differently banked ends",
+  "turns": 4,
+  "banking_deg_turns": 11,
+  "banking_deg_straights": null,
+  "opened": 1997,
+  "active": true,
+  "disciplines": [
+   "stock_car",
+   "open_wheel",
+   "club_road"
+  ],
+  "level": "national",
+  "notable_note": "Oval near St. Louis; also has road courses and a drag strip",
+  "lat": 38.651,
+  "lon": -90.135,
+  "sources": [
+   "https://en.wikipedia.org/wiki/Gateway_Motorsports_Park"
+  ],
+  "aliases": [
+   "World Wide Technology Raceway"
+  ]
+ },
+ {
+  "name": "Iowa Speedway",
+  "city": "Newton",
+  "region": "IA",
+  "country": "USA",
+  "track_type": "oval",
+  "surface": "asphalt",
+  "length_mi": 0.875,
+  "configuration": "D-shaped short oval with variable banking",
+  "turns": 4,
+  "banking_deg_turns": 14,
+  "banking_deg_straights": 10,
+  "opened": 2006,
+  "active": true,
+  "disciplines": [
+   "stock_car",
+   "open_wheel",
+   "late_model"
+  ],
+  "level": "national",
+  "notable_note": "IndyCar lists the length as 0.894 mi; joined the NASCAR Cup schedule in 2024",
+  "lat": 41.678,
+  "lon": -93.014,
+  "sources": [
+   "https://en.wikipedia.org/wiki/Iowa_Speedway"
+  ]
+ },
+ {
+  "name": "Indianapolis Motor Speedway",
+  "city": "Speedway",
+  "region": "IN",
+  "country": "USA",
+  "track_type": "oval",
+  "surface": "asphalt",
+  "length_mi": 2.5,
+  "configuration": "rectangular oval with four distinct turns and short chutes; brick start-finish strip",
+  "turns": 4,
+  "banking_deg_turns": 9.2,
+  "banking_deg_straights": 0,
+  "opened": 1909,
+  "active": true,
+  "disciplines": [
+   "open_wheel",
+   "stock_car"
+  ],
+  "level": "national",
+  "notable_note": "Home of the Indianapolis 500; strip of original bricks at the start-finish line",
+  "lat": 39.798,
+  "lon": -86.233,
+  "sources": [
+   "https://en.wikipedia.org/wiki/Indianapolis_Motor_Speedway"
+  ]
+ },
+ {
+  "name": "Indianapolis Motor Speedway Road Course",
+  "city": "Speedway",
+  "region": "IN",
+  "country": "USA",
+  "track_type": "road_course",
+  "surface": "asphalt",
+  "length_mi": 2.439,
+  "configuration": "infield road course using the oval's front stretch and turn 1 (2014-present layout)",
+  "turns": 14,
+  "banking_deg_turns": null,
+  "banking_deg_straights": null,
+  "opened": 2000,
+  "active": true,
+  "disciplines": [
+   "open_wheel",
+   "stock_car",
+   "sports_car",
+   "club_road"
+  ],
+  "level": "national",
+  "notable_note": "Hosts IndyCar's May road race and NASCAR's Xfinity/O'Reilly series; road course first used in 2000",
+  "lat": 39.798,
+  "lon": -86.233,
+  "sources": [
+   "https://en.wikipedia.org/wiki/Indianapolis_Motor_Speedway"
+  ]
+ },
+ {
+  "name": "New Hampshire Motor Speedway",
+  "city": "Loudon",
+  "region": "NH",
+  "country": "USA",
+  "track_type": "oval",
+  "surface": "asphalt",
+  "length_mi": 1.058,
+  "configuration": "flat paperclip-style oval",
+  "turns": 4,
+  "banking_deg_turns": 7,
+  "banking_deg_straights": 1,
+  "opened": 1990,
+  "active": true,
+  "disciplines": [
+   "stock_car",
+   "modified",
+   "open_wheel"
+  ],
+  "level": "national",
+  "notable_note": "Flat oval with 2-7 degree variable banking; known as 'The Magic Mile'",
+  "lat": 43.362,
+  "lon": -71.461,
+  "sources": [
+   "https://en.wikipedia.org/wiki/New_Hampshire_Motor_Speedway"
+  ]
+ },
+ {
+  "name": "Watkins Glen International",
+  "city": "Watkins Glen",
+  "region": "NY",
+  "country": "USA",
+  "track_type": "road_course",
+  "surface": "asphalt",
+  "length_mi": 3.45,
+  "configuration": "Grand Prix circuit with Inner Loop chicane; NASCAR uses 2.45-mi short course",
+  "turns": 11,
+  "banking_deg_turns": null,
+  "banking_deg_straights": null,
+  "opened": 1956,
+  "active": true,
+  "disciplines": [
+   "stock_car",
+   "sports_car",
+   "club_road"
+  ],
+  "level": "national",
+  "notable_note": "Hosted the U.S. Grand Prix 1961-1980; permanent circuit since 1956",
+  "lat": 42.337,
+  "lon": -76.927,
+  "sources": [
+   "https://en.wikipedia.org/wiki/Watkins_Glen_International"
+  ]
+ },
+ {
+  "name": "Sonoma Raceway",
+  "city": "Sonoma",
+  "region": "CA",
+  "country": "USA",
+  "track_type": "road_course",
+  "surface": "asphalt",
+  "length_mi": 2.52,
+  "configuration": "hilly road course (long circuit)",
+  "turns": 12,
+  "banking_deg_turns": null,
+  "banking_deg_straights": null,
+  "opened": 1969,
+  "active": true,
+  "disciplines": [
+   "stock_car",
+   "sports_car",
+   "club_road",
+   "open_wheel"
+  ],
+  "level": "national",
+  "notable_note": "Elevation-change road course in wine country; also has a drag strip",
+  "lat": 38.161,
+  "lon": -122.455,
+  "sources": [
+   "https://en.wikipedia.org/wiki/Sonoma_Raceway"
+  ]
+ },
+ {
+  "name": "Circuit of the Americas",
+  "city": "Austin",
+  "region": "TX",
+  "country": "USA",
+  "track_type": "road_course",
+  "surface": "asphalt",
+  "length_mi": 3.426,
+  "configuration": "Grand Prix circuit; NASCAR uses a 2.4-mi, 17-turn layout from 2025",
+  "turns": 20,
+  "banking_deg_turns": null,
+  "banking_deg_straights": null,
+  "opened": 2012,
+  "active": true,
+  "disciplines": [
+   "sports_car",
+   "stock_car",
+   "open_wheel",
+   "motorcycle",
+   "club_road"
+  ],
+  "level": "international",
+  "notable_note": "Purpose-built F1 venue; hosts the U.S. Grand Prix and MotoGP",
+  "lat": 30.133,
+  "lon": -97.641,
+  "sources": [
+   "https://en.wikipedia.org/wiki/Circuit_of_the_Americas"
+  ]
+ },
+ {
+  "name": "Chicagoland Speedway",
+  "city": "Joliet",
+  "region": "IL",
+  "country": "USA",
+  "track_type": "oval",
+  "surface": "asphalt",
+  "length_mi": 1.52,
+  "configuration": "tri-oval intermediate",
+  "turns": 4,
+  "banking_deg_turns": 18,
+  "banking_deg_straights": 11,
+  "opened": 2001,
+  "active": true,
+  "disciplines": [
+   "stock_car"
+  ],
+  "level": "national",
+  "notable_note": "Dormant after 2019; NASCAR Cup returned in 2026",
+  "lat": 41.475,
+  "lon": -88.057,
+  "sources": [
+   "https://en.wikipedia.org/wiki/Chicagoland_Speedway"
+  ]
+ },
+ {
+  "name": "Rockingham Speedway",
+  "city": "Rockingham",
+  "region": "NC",
+  "country": "USA",
+  "track_type": "oval",
+  "surface": "asphalt",
+  "length_mi": 0.94,
+  "configuration": "D-shaped oval with unequal ends",
+  "turns": 4,
+  "banking_deg_turns": 25,
+  "banking_deg_straights": 8,
+  "opened": 1965,
+  "active": true,
+  "disciplines": [
+   "stock_car"
+  ],
+  "level": "national",
+  "notable_note": "Returned to NASCAR national series in 2025 after leaving the Cup schedule in 2004",
+  "lat": 34.974,
+  "lon": -79.61,
+  "sources": [
+   "https://en.wikipedia.org/wiki/Rockingham_Speedway"
+  ]
+ },
+ {
+  "name": "Lime Rock Park",
+  "city": "Lakeville",
+  "region": "CT",
+  "country": "USA",
+  "track_type": "road_course",
+  "surface": "asphalt",
+  "length_mi": 1.53,
+  "configuration": "short rolling road course",
+  "turns": 7,
+  "banking_deg_turns": null,
+  "banking_deg_straights": null,
+  "opened": 1957,
+  "active": true,
+  "disciplines": [
+   "sports_car",
+   "club_road",
+   "stock_car"
+  ],
+  "level": "national",
+  "notable_note": "Compact natural-terrain circuit in northwest Connecticut",
+  "lat": 41.928,
+  "lon": -73.384,
+  "sources": [
+   "https://en.wikipedia.org/wiki/Lime_Rock_Park"
+  ]
+ },
+ {
+  "name": "Milwaukee Mile",
+  "city": "West Allis",
+  "region": "WI",
+  "country": "USA",
+  "track_type": "oval",
+  "surface": "asphalt",
+  "length_mi": 1.015,
+  "configuration": "flat one-mile oval at State Fair Park",
+  "turns": 4,
+  "banking_deg_turns": 9.25,
+  "banking_deg_straights": 2.5,
+  "opened": 1903,
+  "active": true,
+  "disciplines": [
+   "open_wheel",
+   "stock_car"
+  ],
+  "level": "national",
+  "notable_note": "Oldest operating motor speedway in the world (racing since 1903); IndyCar returned in 2024",
+  "lat": 43.02,
+  "lon": -88.01,
+  "sources": [
+   "https://en.wikipedia.org/wiki/Milwaukee_Mile"
+  ]
+ },
+ {
+  "name": "Mid-Ohio Sports Car Course",
+  "city": "Lexington",
+  "region": "OH",
+  "country": "USA",
+  "track_type": "road_course",
+  "surface": "asphalt",
+  "length_mi": 2.258,
+  "configuration": "rolling road course (1990-present layout)",
+  "turns": 13,
+  "banking_deg_turns": null,
+  "banking_deg_straights": null,
+  "opened": 1962,
+  "active": true,
+  "disciplines": [
+   "open_wheel",
+   "sports_car",
+   "club_road",
+   "motorcycle",
+   "stock_car"
+  ],
+  "level": "national",
+  "notable_note": "Natural-terrain road course; hosts IndyCar and club racing",
+  "lat": 40.69,
+  "lon": -82.636,
+  "sources": [
+   "https://en.wikipedia.org/wiki/Mid-Ohio_Sports_Car_Course"
+  ]
+ },
+ {
+  "name": "Portland International Raceway",
+  "city": "Portland",
+  "region": "OR",
+  "country": "USA",
+  "track_type": "road_course",
+  "surface": "asphalt_concrete",
+  "length_mi": 1.967,
+  "configuration": "flat road course in Delta Park with Festival Curves chicane",
+  "turns": 12,
+  "banking_deg_turns": null,
+  "banking_deg_straights": null,
+  "opened": 1961,
+  "active": true,
+  "disciplines": [
+   "open_wheel",
+   "stock_car",
+   "club_road",
+   "sports_car"
+  ],
+  "level": "national",
+  "notable_note": "City-owned flat circuit; hosts IndyCar and NASCAR Xfinity/O'Reilly series",
+  "lat": 45.597,
+  "lon": -122.696,
+  "sources": [
+   "https://en.wikipedia.org/wiki/Portland_International_Raceway"
+  ]
+ },
+ {
+  "name": "Kentucky Speedway",
+  "city": "Sparta",
+  "region": "KY",
+  "country": "USA",
+  "track_type": "oval",
+  "surface": "asphalt",
+  "length_mi": 1.5,
+  "configuration": "tri-oval intermediate",
+  "turns": 4,
+  "banking_deg_turns": 17,
+  "banking_deg_straights": 10,
+  "opened": 2000,
+  "active": false,
+  "disciplines": [
+   "stock_car"
+  ],
+  "level": "national",
+  "notable_note": "Has not hosted NASCAR since 2020; inactive for major racing",
+  "lat": 38.71,
+  "lon": -84.916,
+  "sources": [
+   "https://en.wikipedia.org/wiki/Kentucky_Speedway"
+  ]
+ },
+ {
+  "name": "California Speedway",
+  "city": "Fontana",
+  "region": "CA",
+  "country": "USA",
+  "track_type": "oval",
+  "surface": "asphalt",
+  "length_mi": 2.0,
+  "configuration": "D-shaped two-mile oval",
+  "turns": 4,
+  "banking_deg_turns": 14,
+  "banking_deg_straights": 11,
+  "opened": 1997,
+  "active": false,
+  "disciplines": [
+   "stock_car",
+   "open_wheel"
+  ],
+  "level": "national",
+  "notable_note": "Closed 2023 for planned short-track conversion; project on hold as of 2025",
+  "lat": 34.089,
+  "lon": -117.5,
+  "sources": [
+   "https://en.wikipedia.org/wiki/Auto_Club_Speedway"
+  ],
+  "aliases": [
+   "Auto Club Speedway"
+  ]
+ },
+ {
+  "name": "Bowman Gray Stadium",
+  "city": "Winston-Salem",
+  "region": "NC",
+  "country": "USA",
+  "track_type": "oval",
+  "surface": "asphalt",
+  "length_mi": 0.25,
+  "configuration": "flat quarter-mile around a football field",
+  "turns": 4,
+  "banking_deg_turns": null,
+  "banking_deg_straights": null,
+  "opened": 1938,
+  "active": true,
+  "disciplines": [
+   "stock_car",
+   "modified"
+  ],
+  "level": "national",
+  "notable_note": "Quarter-mile stadium oval (also listed as 0.253 mi); hosted the NASCAR Cup preseason Clash from 2025",
+  "lat": 36.083,
+  "lon": -80.222,
+  "sources": [
+   "https://en.wikipedia.org/wiki/Bowman_Gray_Stadium",
+   "https://en.wikipedia.org/wiki/Wheatley_Vodka_Clash"
+  ]
+ },
+ {
+  "name": "Los Angeles Memorial Coliseum (temporary oval)",
+  "city": "Los Angeles",
+  "region": "CA",
+  "country": "USA",
+  "track_type": "oval",
+  "surface": "asphalt",
+  "length_mi": 0.25,
+  "configuration": "temporary quarter-mile oval built inside the stadium",
+  "turns": 4,
+  "banking_deg_turns": null,
+  "banking_deg_straights": null,
+  "opened": 2022,
+  "active": false,
+  "disciplines": [
+   "stock_car"
+  ],
+  "level": "national",
+  "notable_note": "Temporary track for NASCAR's preseason Clash 2022-2024",
+  "lat": 34.014,
+  "lon": -118.288,
+  "sources": [
+   "https://en.wikipedia.org/wiki/Los_Angeles_Memorial_Coliseum"
+  ]
+ },
+ {
+  "name": "Autodromo Hermanos Rodriguez",
+  "city": "Mexico City",
+  "region": null,
+  "country": "MEX",
+  "track_type": "road_course",
+  "surface": "asphalt",
+  "length_mi": 2.674,
+  "configuration": "Grand Prix circuit through the Foro Sol stadium section (2015-present)",
+  "turns": 17,
+  "banking_deg_turns": null,
+  "banking_deg_straights": null,
+  "opened": 1959,
+  "active": true,
+  "disciplines": [
+   "open_wheel",
+   "stock_car",
+   "sports_car",
+   "touring_car"
+  ],
+  "level": "international",
+  "notable_note": "High-altitude F1 venue; hosted a NASCAR Cup points race in 2025 on a modified layout",
+  "lat": 19.406,
+  "lon": -99.093,
+  "sources": [
+   "https://en.wikipedia.org/wiki/Aut%C3%B3dromo_Hermanos_Rodr%C3%ADguez"
+  ]
+ },
+ {
+  "name": "Chicago Street Course",
+  "city": "Chicago",
+  "region": "IL",
+  "country": "USA",
+  "track_type": "street_circuit",
+  "surface": "asphalt",
+  "length_mi": 2.14,
+  "configuration": "temporary street circuit around Grant Park",
+  "turns": 12,
+  "banking_deg_turns": null,
+  "banking_deg_straights": null,
+  "opened": 2023,
+  "active": false,
+  "disciplines": [
+   "stock_car"
+  ],
+  "level": "national",
+  "notable_note": "NASCAR's first Cup street race (2023); last held 2025",
+  "lat": 41.876,
+  "lon": -87.621,
+  "sources": [
+   "https://en.wikipedia.org/wiki/Chicago_Street_Course"
+  ]
+ },
+ {
+  "name": "Coronado Street Course",
+  "city": "San Diego",
+  "region": "CA",
+  "country": "USA",
+  "track_type": "street_circuit",
+  "surface": "asphalt",
+  "length_mi": 3.4,
+  "configuration": "temporary circuit on Naval Base Coronado",
+  "turns": 19,
+  "banking_deg_turns": null,
+  "banking_deg_straights": null,
+  "opened": 2026,
+  "active": true,
+  "disciplines": [
+   "stock_car"
+  ],
+  "level": "national",
+  "notable_note": "Hosted NASCAR Cup and Truck races in June 2026 on a naval air station",
+  "lat": 32.699,
+  "lon": -117.215,
+  "sources": [
+   "https://en.wikipedia.org/wiki/Coronado_Street_Course"
+  ]
+ },
+ {
+  "name": "Indianapolis Raceway Park",
+  "city": "Brownsburg",
+  "region": "IN",
+  "country": "USA",
+  "track_type": "oval",
+  "surface": "asphalt",
+  "length_mi": 0.686,
+  "configuration": "short oval; complex also has a road course and drag strip",
+  "turns": 4,
+  "banking_deg_turns": 12,
+  "banking_deg_straights": null,
+  "opened": 1960,
+  "active": true,
+  "disciplines": [
+   "stock_car",
+   "late_model",
+   "midget",
+   "sprint_car"
+  ],
+  "level": "national",
+  "notable_note": "Short oval west of Indianapolis; hosts NASCAR Truck and Xfinity/O'Reilly races",
+  "lat": 39.813,
+  "lon": -86.341,
+  "sources": [
+   "https://en.wikipedia.org/wiki/Lucas_Oil_Indianapolis_Raceway_Park",
+   "https://www.thethirdturn.com/wiki/Lucas_Oil_Indianapolis_Raceway_Park"
+  ],
+  "aliases": [
+   "Lucas Oil Indianapolis Raceway Park"
+  ]
+ },
+ {
+  "name": "Knoxville Raceway",
+  "city": "Knoxville",
+  "region": "IA",
+  "country": "USA",
+  "track_type": "oval",
+  "surface": "dirt",
+  "length_mi": 0.5,
+  "configuration": "semi-banked half-mile dirt oval at the Marion County Fairgrounds",
+  "turns": 4,
+  "banking_deg_turns": 7,
+  "banking_deg_straights": null,
+  "opened": 1878,
+  "active": true,
+  "disciplines": [
+   "sprint_car",
+   "dirt_late_model",
+   "stock_car"
+  ],
+  "level": "national",
+  "notable_note": "Hosts the Knoxville Nationals sprint car race; NASCAR Truck races 2021-2022; site dates to 1878 as a horse track",
+  "lat": 41.327,
+  "lon": -93.112,
+  "sources": [
+   "https://en.wikipedia.org/wiki/Knoxville_Raceway"
+  ]
+ },
+ {
+  "name": "Road America",
+  "city": "Elkhart Lake",
+  "region": "WI",
+  "country": "USA",
+  "track_type": "road_course",
+  "surface": "asphalt",
+  "length_mi": 4.048,
+  "configuration": "long natural-terrain road course",
+  "turns": 14,
+  "banking_deg_turns": null,
+  "banking_deg_straights": null,
+  "opened": 1955,
+  "active": true,
+  "disciplines": [
+   "open_wheel",
+   "sports_car",
+   "stock_car",
+   "motorcycle",
+   "club_road",
+   "karting"
+  ],
+  "level": "national",
+  "notable_note": "Four-mile road course; hosts IndyCar, IMSA and NASCAR Xfinity/O'Reilly series",
+  "lat": 43.797,
+  "lon": -87.994,
+  "sources": [
+   "https://en.wikipedia.org/wiki/Road_America"
+  ]
+ },
+ {
+  "name": "Long Beach Street Circuit",
+  "city": "Long Beach",
+  "region": "CA",
+  "country": "USA",
+  "track_type": "street_circuit",
+  "surface": "asphalt",
+  "length_mi": 1.968,
+  "configuration": "temporary street circuit along Shoreline Drive",
+  "turns": 11,
+  "banking_deg_turns": null,
+  "banking_deg_straights": null,
+  "opened": 1975,
+  "active": true,
+  "disciplines": [
+   "open_wheel",
+   "sports_car"
+  ],
+  "level": "national",
+  "notable_note": "Longest-running major U.S. street race (since 1975)",
+  "lat": 33.766,
+  "lon": -118.193,
+  "sources": [
+   "https://en.wikipedia.org/wiki/Long_Beach_Street_Circuit"
+  ]
+ },
+ {
+  "name": "St. Petersburg Street Circuit",
+  "city": "St. Petersburg",
+  "region": "FL",
+  "country": "USA",
+  "track_type": "street_circuit",
+  "surface": "asphalt_concrete",
+  "length_mi": 1.8,
+  "configuration": "temporary street and airport-runway circuit",
+  "turns": 14,
+  "banking_deg_turns": null,
+  "banking_deg_straights": null,
+  "opened": 1985,
+  "active": true,
+  "disciplines": [
+   "open_wheel",
+   "sports_car"
+  ],
+  "level": "national",
+  "notable_note": "IndyCar season-opening venue using Albert Whitted Airport runway",
+  "lat": 27.766,
+  "lon": -82.629,
+  "sources": [
+   "https://en.wikipedia.org/wiki/St._Petersburg_Street_Circuit"
+  ]
+ },
+ {
+  "name": "Barber Motorsports Park",
+  "city": "Birmingham",
+  "region": "AL",
+  "country": "USA",
+  "track_type": "road_course",
+  "surface": "asphalt",
+  "length_mi": 2.38,
+  "configuration": "hilly parkland road course",
+  "turns": 15,
+  "banking_deg_turns": null,
+  "banking_deg_straights": null,
+  "opened": 2003,
+  "active": true,
+  "disciplines": [
+   "open_wheel",
+   "motorcycle",
+   "sports_car",
+   "club_road"
+  ],
+  "level": "national",
+  "notable_note": "Adjacent to a large vintage motorcycle museum",
+  "lat": 33.532,
+  "lon": -86.619,
+  "sources": [
+   "https://en.wikipedia.org/wiki/Barber_Motorsports_Park"
+  ]
+ },
+ {
+  "name": "Laguna Seca Raceway",
+  "city": "Monterey",
+  "region": "CA",
+  "country": "USA",
+  "track_type": "road_course",
+  "surface": "asphalt",
+  "length_mi": 2.238,
+  "configuration": "hilly road course with the Corkscrew downhill turn",
+  "turns": 11,
+  "banking_deg_turns": null,
+  "banking_deg_straights": null,
+  "opened": 1957,
+  "active": true,
+  "disciplines": [
+   "open_wheel",
+   "sports_car",
+   "motorcycle",
+   "club_road"
+  ],
+  "level": "national",
+  "notable_note": "Known for the Corkscrew elevation drop; county-owned",
+  "lat": 36.584,
+  "lon": -121.754,
+  "sources": [
+   "https://en.wikipedia.org/wiki/Laguna_Seca"
+  ],
+  "aliases": [
+   "WeatherTech Raceway Laguna Seca"
+  ]
+ },
+ {
+  "name": "Toronto Street Circuit",
+  "city": "Toronto",
+  "region": "ON",
+  "country": "CAN",
+  "track_type": "street_circuit",
+  "surface": "asphalt_concrete",
+  "length_mi": 1.755,
+  "configuration": "temporary circuit at Exhibition Place",
+  "turns": 11,
+  "banking_deg_turns": null,
+  "banking_deg_straights": null,
+  "opened": 1986,
+  "active": false,
+  "disciplines": [
+   "open_wheel",
+   "touring_car"
+  ],
+  "level": "national",
+  "notable_note": "IndyCar venue 1986-2025; race moved to Markham in 2026",
+  "lat": 43.637,
+  "lon": -79.416,
+  "sources": [
+   "https://en.wikipedia.org/wiki/Toronto_Street_Circuit"
+  ]
+ },
+ {
+  "name": "Markham Street Circuit",
+  "city": "Markham",
+  "region": "ON",
+  "country": "CAN",
+  "track_type": "street_circuit",
+  "surface": "asphalt_concrete",
+  "length_mi": 2.1,
+  "configuration": "temporary street circuit in Markham Centre (surface inferred: public roads)",
+  "turns": 12,
+  "banking_deg_turns": null,
+  "banking_deg_straights": null,
+  "opened": 2026,
+  "active": true,
+  "disciplines": [
+   "open_wheel"
+  ],
+  "level": "national",
+  "notable_note": "Replaced Toronto on the IndyCar schedule in 2026; surface not documented",
+  "lat": 43.851,
+  "lon": -79.315,
+  "sources": [
+   "https://en.wikipedia.org/wiki/Markham_Street_Circuit"
+  ]
+ },
+ {
+  "name": "Detroit Street Circuit",
+  "city": "Detroit",
+  "region": "MI",
+  "country": "USA",
+  "track_type": "street_circuit",
+  "surface": "asphalt",
+  "length_mi": 1.645,
+  "configuration": "downtown street circuit (2023-present layout)",
+  "turns": 10,
+  "banking_deg_turns": null,
+  "banking_deg_straights": null,
+  "opened": 1982,
+  "active": true,
+  "disciplines": [
+   "open_wheel",
+   "sports_car"
+  ],
+  "level": "national",
+  "notable_note": "Downtown layout replaced the Belle Isle circuit in 2023",
+  "lat": 42.33,
+  "lon": -83.04,
+  "sources": [
+   "https://en.wikipedia.org/wiki/Detroit_Street_Circuit"
+  ]
+ },
+ {
+  "name": "The Thermal Club",
+  "city": "Thermal",
+  "region": "CA",
+  "country": "USA",
+  "track_type": "road_course",
+  "surface": "asphalt",
+  "length_mi": 5.1,
+  "configuration": "private motorsport country club; GT circuit",
+  "turns": 26,
+  "banking_deg_turns": null,
+  "banking_deg_straights": null,
+  "opened": 2012,
+  "active": true,
+  "disciplines": [
+   "open_wheel",
+   "sports_car",
+   "club_road"
+  ],
+  "level": "national",
+  "notable_note": "Private club circuit; hosted an IndyCar points race from 2025",
+  "lat": 33.602,
+  "lon": -116.163,
+  "sources": [
+   "https://en.wikipedia.org/wiki/Thermal_Club"
+  ]
+ },
+ {
+  "name": "Nashville Street Circuit",
+  "city": "Nashville",
+  "region": "TN",
+  "country": "USA",
+  "track_type": "street_circuit",
+  "surface": "asphalt",
+  "length_mi": 2.17,
+  "configuration": "temporary circuit around Nissan Stadium crossing the Cumberland River bridge",
+  "turns": 11,
+  "banking_deg_turns": null,
+  "banking_deg_straights": null,
+  "opened": 2021,
+  "active": false,
+  "disciplines": [
+   "open_wheel"
+  ],
+  "level": "national",
+  "notable_note": "IndyCar street race 2021-2023 before moving to Nashville Superspeedway",
+  "lat": 36.166,
+  "lon": -86.771,
+  "sources": [
+   "https://en.wikipedia.org/wiki/Music_City_Grand_Prix",
+   "https://en.wikipedia.org/wiki/Nissan_Stadium_(Nashville)"
+  ]
+ },
+ {
+  "name": "Arlington Street Circuit",
+  "city": "Arlington",
+  "region": "TX",
+  "country": "USA",
+  "track_type": "street_circuit",
+  "surface": "asphalt_concrete",
+  "length_mi": 2.73,
+  "configuration": "temporary circuit in the Arlington entertainment district (surface inferred: public roads)",
+  "turns": 14,
+  "banking_deg_turns": null,
+  "banking_deg_straights": null,
+  "opened": 2026,
+  "active": true,
+  "disciplines": [
+   "open_wheel"
+  ],
+  "level": "national",
+  "notable_note": "IndyCar street race debuting March 2026; surface not documented",
+  "lat": 32.748,
+  "lon": -97.088,
+  "sources": [
+   "https://en.wikipedia.org/wiki/Arlington_Street_Circuit"
+  ]
+ },
+ {
+  "name": "Washington Street Circuit",
+  "city": "Washington",
+  "region": "DC",
+  "country": "USA",
+  "track_type": "street_circuit",
+  "surface": "asphalt_concrete",
+  "length_mi": 1.7,
+  "configuration": "temporary circuit around the National Mall (surface inferred: public roads)",
+  "turns": 7,
+  "banking_deg_turns": null,
+  "banking_deg_straights": null,
+  "opened": 2026,
+  "active": false,
+  "disciplines": [
+   "open_wheel"
+  ],
+  "level": "national",
+  "notable_note": "One-off IndyCar race in August 2026; surface not documented",
+  "lat": 38.887,
+  "lon": -77.036,
+  "sources": [
+   "https://en.wikipedia.org/wiki/Washington_Street_Circuit"
+  ]
+ },
+ {
+  "name": "Sebring International Raceway",
+  "city": "Sebring",
+  "region": "FL",
+  "country": "USA",
+  "track_type": "road_course",
+  "surface": "asphalt_concrete",
+  "length_mi": 3.741,
+  "configuration": "former airfield circuit mixing asphalt and concrete runway sections",
+  "turns": 17,
+  "banking_deg_turns": null,
+  "banking_deg_straights": null,
+  "opened": 1950,
+  "active": true,
+  "disciplines": [
+   "sports_car",
+   "club_road"
+  ],
+  "level": "national",
+  "notable_note": "Hosts the 12-hour endurance race on a former WWII airbase",
+  "lat": 27.455,
+  "lon": -81.35,
+  "sources": [
+   "https://en.wikipedia.org/wiki/Sebring_International_Raceway"
+  ]
+ },
+ {
+  "name": "Road Atlanta",
+  "city": "Braselton",
+  "region": "GA",
+  "country": "USA",
+  "track_type": "road_course",
+  "surface": "asphalt",
+  "length_mi": 2.54,
+  "configuration": "hilly road course",
+  "turns": 12,
+  "banking_deg_turns": null,
+  "banking_deg_straights": null,
+  "opened": 1970,
+  "active": true,
+  "disciplines": [
+   "sports_car",
+   "club_road",
+   "motorcycle"
+  ],
+  "level": "national",
+  "notable_note": "Hosts the 10-hour IMSA endurance race",
+  "lat": 34.147,
+  "lon": -83.818,
+  "sources": [
+   "https://en.wikipedia.org/wiki/Road_Atlanta"
+  ],
+  "aliases": [
+   "Michelin Raceway Road Atlanta"
+  ]
+ },
+ {
+  "name": "Virginia International Raceway",
+  "city": "Alton",
+  "region": "VA",
+  "country": "USA",
+  "track_type": "road_course",
+  "surface": "asphalt",
+  "length_mi": 3.27,
+  "configuration": "full course; multiple configurations",
+  "turns": 17,
+  "banking_deg_turns": null,
+  "banking_deg_straights": null,
+  "opened": 1957,
+  "active": true,
+  "disciplines": [
+   "sports_car",
+   "club_road",
+   "motorcycle"
+  ],
+  "level": "national",
+  "notable_note": "Closed 1974-2000, then reopened",
+  "lat": 36.562,
+  "lon": -79.205,
+  "sources": [
+   "https://en.wikipedia.org/wiki/Virginia_International_Raceway"
+  ]
+ },
+ {
+  "name": "Mosport Park",
+  "city": "Bowmanville",
+  "region": "ON",
+  "country": "CAN",
+  "track_type": "road_course",
+  "surface": "asphalt",
+  "length_mi": 2.459,
+  "configuration": "fast clockwise Grand Prix circuit",
+  "turns": 10,
+  "banking_deg_turns": null,
+  "banking_deg_straights": null,
+  "opened": 1961,
+  "active": true,
+  "disciplines": [
+   "sports_car",
+   "stock_car",
+   "club_road",
+   "touring_car"
+  ],
+  "level": "national",
+  "notable_note": "Formerly Mosport; hosted the Canadian Grand Prix in the 1960s-70s",
+  "lat": 44.05,
+  "lon": -78.678,
+  "sources": [
+   "https://en.wikipedia.org/wiki/Canadian_Tire_Motorsport_Park"
+  ],
+  "aliases": [
+   "Canadian Tire Motorsport Park"
+  ]
+ },
+ {
+  "name": "NOLA Motorsports Park",
+  "city": "Avondale",
+  "region": "LA",
+  "country": "USA",
+  "track_type": "road_course",
+  "surface": "asphalt",
+  "length_mi": 2.748,
+  "configuration": "flat road course with multiple layouts",
+  "turns": 17,
+  "banking_deg_turns": null,
+  "banking_deg_straights": null,
+  "opened": 2011,
+  "active": true,
+  "disciplines": [
+   "sports_car",
+   "club_road",
+   "karting"
+  ],
+  "level": "regional",
+  "notable_note": "Hosted IndyCar once in 2015",
+  "lat": 29.884,
+  "lon": -90.198,
+  "sources": [
+   "https://en.wikipedia.org/wiki/NOLA_Motorsports_Park",
+   "https://www.thethirdturn.com/wiki/NOLA_Motorsports_Park"
+  ]
+ },
+ {
+  "name": "Pittsburgh International Race Complex",
+  "city": "Wampum",
+  "region": "PA",
+  "country": "USA",
+  "track_type": "road_course",
+  "surface": "asphalt",
+  "length_mi": 2.78,
+  "configuration": "hilly road course (full circuit)",
+  "turns": 19,
+  "banking_deg_turns": null,
+  "banking_deg_straights": null,
+  "opened": 2002,
+  "active": false,
+  "disciplines": [
+   "sports_car",
+   "club_road",
+   "motorcycle",
+   "karting"
+  ],
+  "level": "regional",
+  "notable_note": "Closed after November 2025 when the property was sold",
+  "lat": 40.849,
+  "lon": -80.342,
+  "sources": [
+   "https://en.wikipedia.org/wiki/Pittsburgh_International_Race_Complex",
+   "https://www.thethirdturn.com/wiki/Pittsburgh_International_Race_Complex"
+  ]
+ },
+ {
+  "name": "Thompson Speedway Motorsports Park",
+  "city": "Thompson",
+  "region": "CT",
+  "country": "USA",
+  "track_type": "oval",
+  "surface": "asphalt",
+  "length_mi": 0.625,
+  "configuration": "high-banked short oval; complex also has a road course",
+  "turns": 4,
+  "banking_deg_turns": 26,
+  "banking_deg_straights": null,
+  "opened": 1940,
+  "active": true,
+  "disciplines": [
+   "modified",
+   "late_model",
+   "club_road"
+  ],
+  "level": "regional",
+  "notable_note": "Among the oldest paved ovals in the U.S.; long-time modified venue",
+  "lat": 41.982,
+  "lon": -71.825,
+  "sources": [
+   "https://en.wikipedia.org/wiki/Thompson_Speedway_Motorsports_Park",
+   "https://www.thethirdturn.com/wiki/Thompson_Speedway_Motorsports_Park"
+  ]
+ },
+ {
+  "name": "Eldora Speedway",
+  "city": "New Weston",
+  "region": "OH",
+  "country": "USA",
+  "track_type": "oval",
+  "surface": "clay",
+  "length_mi": 0.5,
+  "configuration": "high-banked half-mile clay oval",
+  "turns": 4,
+  "banking_deg_turns": 24,
+  "banking_deg_straights": 8,
+  "opened": 1954,
+  "active": true,
+  "disciplines": [
+   "sprint_car",
+   "dirt_late_model",
+   "modified",
+   "midget",
+   "stock_car"
+  ],
+  "level": "national",
+  "notable_note": "Hosts major sprint car and dirt late model crown-jewel events; hosted NASCAR Trucks 2013-2019",
+  "lat": 40.319,
+  "lon": -84.634,
+  "sources": [
+   "https://en.wikipedia.org/wiki/Eldora_Speedway"
+  ]
+ },
+ {
+  "name": "Williams Grove Speedway",
+  "city": "Mechanicsburg",
+  "region": "PA",
+  "country": "USA",
+  "track_type": "oval",
+  "surface": "clay",
+  "length_mi": 0.512,
+  "configuration": "half-mile clay oval",
+  "turns": 4,
+  "banking_deg_turns": null,
+  "banking_deg_straights": null,
+  "opened": 1939,
+  "active": true,
+  "disciplines": [
+   "sprint_car",
+   "dirt_late_model"
+  ],
+  "level": "national",
+  "notable_note": "Central Pennsylvania 410 sprint car venue; hosts the National Open",
+  "lat": 40.155,
+  "lon": -77.034,
+  "sources": [
+   "https://en.wikipedia.org/wiki/Williams_Grove_Speedway"
+  ]
+ },
+ {
+  "name": "Port Royal Speedway",
+  "city": "Port Royal",
+  "region": "PA",
+  "country": "USA",
+  "track_type": "oval",
+  "surface": "clay",
+  "length_mi": 0.5,
+  "configuration": "half-mile clay oval at the Juniata County Fairgrounds",
+  "turns": 4,
+  "banking_deg_turns": null,
+  "banking_deg_straights": null,
+  "opened": 1938,
+  "active": true,
+  "disciplines": [
+   "sprint_car",
+   "dirt_late_model"
+  ],
+  "level": "regional",
+  "notable_note": "Central Pennsylvania 410 sprint car venue",
+  "lat": 40.536,
+  "lon": -77.389,
+  "sources": [
+   "https://en.wikipedia.org/wiki/Port_Royal_Speedway",
+   "https://www.thethirdturn.com/wiki/Port_Royal_Speedway"
+  ]
+ },
+ {
+  "name": "Lincoln Speedway",
+  "city": "Abbottstown",
+  "region": "PA",
+  "country": "USA",
+  "track_type": "oval",
+  "surface": "clay",
+  "length_mi": 0.375,
+  "configuration": "high-banked 3/8-mile clay oval",
+  "turns": 4,
+  "banking_deg_turns": null,
+  "banking_deg_straights": null,
+  "opened": 1953,
+  "active": true,
+  "disciplines": [
+   "sprint_car"
+  ],
+  "level": "regional",
+  "notable_note": "Central Pennsylvania sprint car track in the Pigeon Hills; coordinates approximate (town center)",
+  "lat": 39.886,
+  "lon": -76.986,
+  "sources": [
+   "https://en.wikipedia.org/wiki/Abbottstown,_Pennsylvania",
+   "https://lincolnspeedway.com/about/",
+   "https://lincolnspeedway.com/trackinfo/"
+  ]
+ },
+ {
+  "name": "Lernerville Speedway",
+  "city": "Sarver",
+  "region": "PA",
+  "country": "USA",
+  "track_type": "oval",
+  "surface": "dirt",
+  "length_mi": 0.4,
+  "configuration": "semi-banked dirt oval",
+  "turns": 4,
+  "banking_deg_turns": null,
+  "banking_deg_straights": null,
+  "opened": 1968,
+  "active": true,
+  "disciplines": [
+   "sprint_car",
+   "dirt_late_model",
+   "modified"
+  ],
+  "level": "regional",
+  "notable_note": "Western Pennsylvania dirt track; World of Outlaws sprint car stop",
+  "lat": 40.739,
+  "lon": -79.76,
+  "sources": [
+   "https://en.wikipedia.org/wiki/Lernerville_Speedway",
+   "https://www.thethirdturn.com/wiki/Lernerville_Speedway"
+  ]
+ },
+ {
+  "name": "Volusia Speedway Park",
+  "city": "De Leon Springs",
+  "region": "FL",
+  "country": "USA",
+  "track_type": "oval",
+  "surface": "clay",
+  "length_mi": 0.5,
+  "configuration": "half-mile clay oval",
+  "turns": 4,
+  "banking_deg_turns": 14,
+  "banking_deg_straights": null,
+  "opened": 1968,
+  "active": true,
+  "disciplines": [
+   "sprint_car",
+   "dirt_late_model",
+   "modified"
+  ],
+  "level": "national",
+  "notable_note": "Hosts February speedweeks dirt events",
+  "lat": 29.215,
+  "lon": -81.345,
+  "sources": [
+   "https://en.wikipedia.org/wiki/Volusia_Speedway_Park",
+   "https://www.thethirdturn.com/wiki/Volusia_Speedway_Park"
+  ]
+ },
+ {
+  "name": "Tulsa Expo Raceway",
+  "city": "Tulsa",
+  "region": "OK",
+  "country": "USA",
+  "track_type": "oval",
+  "surface": "clay",
+  "length_mi": 0.25,
+  "configuration": "indoor quarter-mile clay oval inside the Expo Square pavilion",
+  "turns": 4,
+  "banking_deg_turns": null,
+  "banking_deg_straights": null,
+  "opened": null,
+  "active": true,
+  "disciplines": [
+   "midget"
+  ],
+  "level": "national",
+  "notable_note": "Indoor home of the Chili Bowl midget race held each January since 1987; building opened 1932",
+  "lat": 36.137,
+  "lon": -95.933,
+  "sources": [
+   "https://en.wikipedia.org/wiki/Expo_Square_Pavilion",
+   "https://chilibowl.com/about/"
+  ]
+ },
+ {
+  "name": "Lucas Oil Speedway",
+  "city": "Wheatland",
+  "region": "MO",
+  "country": "USA",
+  "track_type": "oval",
+  "surface": "dirt",
+  "length_mi": 0.375,
+  "configuration": "banked 3/8-mile dirt oval",
+  "turns": 4,
+  "banking_deg_turns": null,
+  "banking_deg_straights": null,
+  "opened": 2001,
+  "active": true,
+  "disciplines": [
+   "dirt_late_model",
+   "modified",
+   "sprint_car"
+  ],
+  "level": "national",
+  "notable_note": "Opened 2001 as Wheatland Raceway; rebuilt after 2004 purchase",
+  "lat": 37.94,
+  "lon": -93.398,
+  "sources": [
+   "https://en.wikipedia.org/wiki/Lucas_Oil_Speedway",
+   "https://lucasoilspeedway.com/history/"
+  ]
+ },
+ {
+  "name": "Fairbury Speedway",
+  "city": "Fairbury",
+  "region": "IL",
+  "country": "USA",
+  "track_type": "oval",
+  "surface": "dirt",
+  "length_mi": null,
+  "configuration": "dirt oval at the American Legion fairgrounds",
+  "turns": 4,
+  "banking_deg_turns": null,
+  "banking_deg_straights": null,
+  "opened": null,
+  "active": true,
+  "disciplines": [
+   "dirt_late_model",
+   "modified"
+  ],
+  "level": "regional",
+  "notable_note": "Central Illinois dirt late model venue; length unverified; coordinates approximate (town center)",
+  "lat": 40.749,
+  "lon": -88.498,
+  "sources": [
+   "https://en.wikipedia.org/wiki/Fairbury,_Illinois",
+   "https://en.wikipedia.org/wiki/List_of_dirt_track_ovals_in_the_United_States"
+  ]
+ },
+ {
+  "name": "Tri-City Speedway",
+  "city": "Pontoon Beach",
+  "region": "IL",
+  "country": "USA",
+  "track_type": "oval",
+  "surface": "dirt",
+  "length_mi": 0.375,
+  "configuration": "3/8-mile dirt oval measured 20 ft from the outside wall; 70 ft wide",
+  "turns": 4,
+  "banking_deg_turns": 10,
+  "banking_deg_straights": null,
+  "opened": null,
+  "active": true,
+  "disciplines": [
+   "dirt_late_model",
+   "sprint_car",
+   "modified"
+  ],
+  "level": "regional",
+  "notable_note": "Dirt track across the Mississippi River from St. Louis; coordinates approximate (town center)",
+  "lat": 38.739,
+  "lon": -90.062,
+  "sources": [
+   "https://en.wikipedia.org/wiki/Pontoon_Beach,_Illinois",
+   "https://www.tricityspeedway.net/track-info/track-details/"
+  ]
+ },
+ {
+  "name": "Ocala Speedway",
+  "city": "Ocala",
+  "region": "FL",
+  "country": "USA",
+  "track_type": "oval",
+  "surface": "clay",
+  "length_mi": null,
+  "configuration": "clay short oval",
+  "turns": 4,
+  "banking_deg_turns": null,
+  "banking_deg_straights": null,
+  "opened": 1952,
+  "active": true,
+  "disciplines": [
+   "dirt_late_model",
+   "modified",
+   "sprint_car"
+  ],
+  "level": "local",
+  "notable_note": "Claims to be Florida's oldest continuously operating track; clay again since 2008 after 10 years as asphalt; length unverified; coordinates approximate",
+  "lat": 29.177,
+  "lon": -82.151,
+  "sources": [
+   "https://en.wikipedia.org/wiki/Ocala,_Florida",
+   "http://www.ocalaspeedway.com/about/"
+  ]
+ },
+ {
+  "name": "Perris Auto Speedway",
+  "city": "Perris",
+  "region": "CA",
+  "country": "USA",
+  "track_type": "oval",
+  "surface": "clay",
+  "length_mi": 0.5,
+  "configuration": "half-mile clay oval",
+  "turns": 4,
+  "banking_deg_turns": null,
+  "banking_deg_straights": null,
+  "opened": 1996,
+  "active": true,
+  "disciplines": [
+   "sprint_car",
+   "midget",
+   "dirt_late_model"
+  ],
+  "level": "regional",
+  "notable_note": "Southern California sprint car venue at the Riverside County fairgrounds",
+  "lat": 33.849,
+  "lon": -117.202,
+  "sources": [
+   "https://en.wikipedia.org/wiki/Perris_Auto_Speedway",
+   "https://www.thethirdturn.com/wiki/Perris_Auto_Speedway"
+  ]
+ },
+ {
+  "name": "Skagit Speedway",
+  "city": "Alger",
+  "region": "WA",
+  "country": "USA",
+  "track_type": "oval",
+  "surface": "dirt",
+  "length_mi": null,
+  "configuration": "dirt oval",
+  "turns": 4,
+  "banking_deg_turns": null,
+  "banking_deg_straights": null,
+  "opened": null,
+  "active": true,
+  "disciplines": [
+   "sprint_car",
+   "modified"
+  ],
+  "level": "regional",
+  "notable_note": "Pacific Northwest sprint car venue; length unverified; coordinates approximate (town center)",
+  "lat": 48.622,
+  "lon": -122.207,
+  "sources": [
+   "https://en.wikipedia.org/wiki/Alger,_Washington",
+   "https://www.skagitspeedway.com/",
+   "https://en.wikipedia.org/wiki/List_of_dirt_track_ovals_in_the_United_States"
+  ]
+ },
+ {
+  "name": "Huset's Speedway",
+  "city": "Brandon",
+  "region": "SD",
+  "country": "USA",
+  "track_type": "oval",
+  "surface": "dirt",
+  "length_mi": 0.333,
+  "configuration": "high-banked 1/3-mile dirt bullring",
+  "turns": 4,
+  "banking_deg_turns": null,
+  "banking_deg_straights": null,
+  "opened": 1954,
+  "active": true,
+  "disciplines": [
+   "sprint_car",
+   "modified"
+  ],
+  "level": "regional",
+  "notable_note": "Track lists itself as 1/3 mile; Wikipedia lists 0.375 mi",
+  "lat": 43.571,
+  "lon": -96.583,
+  "sources": [
+   "https://en.wikipedia.org/wiki/Huset%27s_Speedway",
+   "https://husetsspeedway.com/about/",
+   "https://www.thethirdturn.com/wiki/Huset%27s_Speedway"
+  ]
+ },
+ {
+  "name": "Jackson Motorplex",
+  "city": "Jackson",
+  "region": "MN",
+  "country": "USA",
+  "track_type": "oval",
+  "surface": "dirt",
+  "length_mi": null,
+  "configuration": "dirt oval",
+  "turns": 4,
+  "banking_deg_turns": null,
+  "banking_deg_straights": null,
+  "opened": null,
+  "active": true,
+  "disciplines": [
+   "sprint_car",
+   "dirt_late_model"
+  ],
+  "level": "regional",
+  "notable_note": "Southern Minnesota sprint car venue; length unverified; coordinates approximate (town center)",
+  "lat": 43.621,
+  "lon": -94.989,
+  "sources": [
+   "https://en.wikipedia.org/wiki/Jackson,_Minnesota",
+   "https://www.jacksonmotorplex.com/"
+  ]
+ },
+ {
+  "name": "Kokomo Speedway",
+  "city": "Kokomo",
+  "region": "IN",
+  "country": "USA",
+  "track_type": "oval",
+  "surface": "dirt",
+  "length_mi": 0.25,
+  "configuration": "quarter-mile dirt oval",
+  "turns": 4,
+  "banking_deg_turns": null,
+  "banking_deg_straights": null,
+  "opened": 1947,
+  "active": true,
+  "disciplines": [
+   "sprint_car",
+   "midget"
+  ],
+  "level": "regional",
+  "notable_note": "Indiana sprint car bullring; Indiana Sprint Week stop",
+  "lat": 40.511,
+  "lon": -86.143,
+  "sources": [
+   "https://en.wikipedia.org/wiki/Kokomo_Speedway",
+   "https://www.thethirdturn.com/wiki/Kokomo_Speedway"
+  ]
+ },
+ {
+  "name": "Bloomington Speedway",
+  "city": "Bloomington",
+  "region": "IN",
+  "country": "USA",
+  "track_type": "oval",
+  "surface": "clay",
+  "length_mi": null,
+  "configuration": "red clay dirt oval",
+  "turns": 4,
+  "banking_deg_turns": null,
+  "banking_deg_straights": null,
+  "opened": null,
+  "active": true,
+  "disciplines": [
+   "sprint_car"
+  ],
+  "level": "regional",
+  "notable_note": "Indiana sprint car track; length unverified; coordinates approximate (town center)",
+  "lat": 39.167,
+  "lon": -86.535,
+  "sources": [
+   "https://en.wikipedia.org/wiki/Bloomington,_Indiana",
+   "https://en.wikipedia.org/wiki/List_of_dirt_track_ovals_in_the_United_States"
+  ]
+ },
+ {
+  "name": "Lawrenceburg Speedway",
+  "city": "Lawrenceburg",
+  "region": "IN",
+  "country": "USA",
+  "track_type": "oval",
+  "surface": "dirt",
+  "length_mi": null,
+  "configuration": "dirt oval",
+  "turns": 4,
+  "banking_deg_turns": null,
+  "banking_deg_straights": null,
+  "opened": 1950,
+  "active": true,
+  "disciplines": [
+   "sprint_car",
+   "modified"
+  ],
+  "level": "regional",
+  "notable_note": "Southeast Indiana sprint car track racing since 1950; length unverified; coordinates approximate",
+  "lat": 39.118,
+  "lon": -84.885,
+  "sources": [
+   "https://en.wikipedia.org/wiki/Lawrenceburg,_Indiana",
+   "https://lawrenceburgspeedway.com/"
+  ]
+ },
+ {
+  "name": "Terre Haute Action Track",
+  "city": "Terre Haute",
+  "region": "IN",
+  "country": "USA",
+  "track_type": "oval",
+  "surface": "dirt",
+  "length_mi": 0.5,
+  "configuration": "half-mile dirt oval at the Wabash Valley Fairgrounds",
+  "turns": 4,
+  "banking_deg_turns": null,
+  "banking_deg_straights": null,
+  "opened": 1952,
+  "active": true,
+  "disciplines": [
+   "sprint_car",
+   "midget"
+  ],
+  "level": "regional",
+  "notable_note": "Half-mile sprint car venue with intermittent closures (1988-1989, 2007)",
+  "lat": 39.42,
+  "lon": -87.421,
+  "sources": [
+   "https://en.wikipedia.org/wiki/Terre_Haute_Action_Track"
+  ]
+ },
+ {
+  "name": "Brownstown Speedway",
+  "city": "Brownstown",
+  "region": "IN",
+  "country": "USA",
+  "track_type": "oval",
+  "surface": "dirt",
+  "length_mi": null,
+  "configuration": "dirt oval",
+  "turns": 4,
+  "banking_deg_turns": null,
+  "banking_deg_straights": null,
+  "opened": 1952,
+  "active": true,
+  "disciplines": [
+   "dirt_late_model",
+   "modified"
+  ],
+  "level": "regional",
+  "notable_note": "Southern Indiana dirt late model venue; length unverified; coordinates approximate",
+  "lat": 38.878,
+  "lon": -86.047,
+  "sources": [
+   "https://en.wikipedia.org/wiki/Brownstown,_Indiana",
+   "https://www.brownstownspeedway.com/",
+   "https://en.wikipedia.org/wiki/List_of_dirt_track_ovals_in_the_United_States"
+  ]
+ },
+ {
+  "name": "Florence Speedway",
+  "city": "Union",
+  "region": "KY",
+  "country": "USA",
+  "track_type": "oval",
+  "surface": "clay",
+  "length_mi": null,
+  "configuration": "clay oval",
+  "turns": 4,
+  "banking_deg_turns": null,
+  "banking_deg_straights": null,
+  "opened": null,
+  "active": true,
+  "disciplines": [
+   "dirt_late_model",
+   "modified"
+  ],
+  "level": "regional",
+  "notable_note": "Northern Kentucky dirt late model venue; length unverified; coordinates approximate",
+  "lat": 38.947,
+  "lon": -84.673,
+  "sources": [
+   "https://en.wikipedia.org/wiki/Union,_Kentucky",
+   "https://florencespeedway.com/"
+  ]
+ },
+ {
+  "name": "Attica Raceway Park",
+  "city": "Attica",
+  "region": "OH",
+  "country": "USA",
+  "track_type": "oval",
+  "surface": "clay",
+  "length_mi": 0.333,
+  "configuration": "1/3-mile banked clay oval at the Attica Fairgrounds",
+  "turns": 4,
+  "banking_deg_turns": null,
+  "banking_deg_straights": null,
+  "opened": 1988,
+  "active": true,
+  "disciplines": [
+   "sprint_car",
+   "dirt_late_model",
+   "modified"
+  ],
+  "level": "regional",
+  "notable_note": "Northern Ohio sprint car venue; coordinates approximate (town center)",
+  "lat": 41.064,
+  "lon": -82.887,
+  "sources": [
+   "https://en.wikipedia.org/wiki/Attica,_Ohio",
+   "https://atticaracewaypark.com/track-info/",
+   "https://www.thethirdturn.com/wiki/Attica_Raceway_Park"
+  ]
+ },
+ {
+  "name": "I-55 Raceway",
+  "city": "Pevely",
+  "region": "MO",
+  "country": "USA",
+  "track_type": "oval",
+  "surface": "dirt",
+  "length_mi": 0.333,
+  "configuration": "1/3-mile banked dirt oval",
+  "turns": 4,
+  "banking_deg_turns": 19,
+  "banking_deg_straights": 10,
+  "opened": 1974,
+  "active": true,
+  "disciplines": [
+   "dirt_late_model",
+   "modified",
+   "sprint_car"
+  ],
+  "level": "regional",
+  "notable_note": "St. Louis-area dirt late model venue",
+  "lat": 38.27,
+  "lon": -90.402,
+  "sources": [
+   "https://en.wikipedia.org/wiki/I-55_Raceway",
+   "https://www.thethirdturn.com/wiki/Federated_Auto_Parts_Raceway_at_I-55"
+  ]
+ },
+ {
+  "name": "Selinsgrove Speedway",
+  "city": "Selinsgrove",
+  "region": "PA",
+  "country": "USA",
+  "track_type": "oval",
+  "surface": "clay",
+  "length_mi": 0.5,
+  "configuration": "half-mile clay oval",
+  "turns": 4,
+  "banking_deg_turns": 9,
+  "banking_deg_straights": 3,
+  "opened": 1946,
+  "active": true,
+  "disciplines": [
+   "sprint_car",
+   "dirt_late_model"
+  ],
+  "level": "regional",
+  "notable_note": "Central Pennsylvania sprint car venue",
+  "lat": 40.787,
+  "lon": -76.87,
+  "sources": [
+   "https://en.wikipedia.org/wiki/Selinsgrove_Speedway",
+   "https://www.thethirdturn.com/wiki/Selinsgrove_Speedway"
+  ]
+ },
+ {
+  "name": "Wilmot Raceway",
+  "city": "Wilmot",
+  "region": "WI",
+  "country": "USA",
+  "track_type": "oval",
+  "surface": "clay",
+  "length_mi": 0.375,
+  "configuration": "3/8-mile banked clay oval at the Kenosha County fairgrounds",
+  "turns": 4,
+  "banking_deg_turns": null,
+  "banking_deg_straights": null,
+  "opened": 1951,
+  "active": true,
+  "disciplines": [
+   "sprint_car",
+   "modified"
+  ],
+  "level": "regional",
+  "notable_note": "World of Outlaws sprint car stop near the Illinois line",
+  "lat": 42.513,
+  "lon": -88.181,
+  "sources": [
+   "https://en.wikipedia.org/wiki/Wilmot_Raceway",
+   "https://www.thethirdturn.com/wiki/Wilmot_Raceway"
+  ]
+ },
+ {
+  "name": "Cedar Lake Speedway",
+  "city": "New Richmond",
+  "region": "WI",
+  "country": "USA",
+  "track_type": "oval",
+  "surface": "clay",
+  "length_mi": 0.375,
+  "configuration": "3/8-mile clay oval",
+  "turns": 4,
+  "banking_deg_turns": null,
+  "banking_deg_straights": null,
+  "opened": 1957,
+  "active": true,
+  "disciplines": [
+   "dirt_late_model",
+   "modified",
+   "sprint_car"
+  ],
+  "level": "regional",
+  "notable_note": "Western Wisconsin dirt late model venue",
+  "lat": 45.19,
+  "lon": -92.588,
+  "sources": [
+   "https://en.wikipedia.org/wiki/Cedar_Lake_Speedway",
+   "https://www.thethirdturn.com/wiki/Cedar_Lake_Speedway"
+  ]
+ },
+ {
+  "name": "Hickory Motor Speedway",
+  "city": "Newton",
+  "region": "NC",
+  "country": "USA",
+  "track_type": "oval",
+  "surface": "asphalt",
+  "length_mi": 0.363,
+  "configuration": "short paved oval",
+  "turns": 4,
+  "banking_deg_turns": null,
+  "banking_deg_straights": null,
+  "opened": 1952,
+  "active": true,
+  "disciplines": [
+   "late_model",
+   "stock_car"
+  ],
+  "level": "regional",
+  "notable_note": "Historic short track; former NASCAR national series venue",
+  "lat": 35.696,
+  "lon": -81.269,
+  "sources": [
+   "https://en.wikipedia.org/wiki/Hickory_Motor_Speedway",
+   "https://www.thethirdturn.com/wiki/Hickory_Motor_Speedway"
+  ]
+ },
+ {
+  "name": "South Boston Speedway",
+  "city": "South Boston",
+  "region": "VA",
+  "country": "USA",
+  "track_type": "oval",
+  "surface": "asphalt",
+  "length_mi": 0.4,
+  "configuration": "short paved oval",
+  "turns": 4,
+  "banking_deg_turns": 12,
+  "banking_deg_straights": 10,
+  "opened": 1957,
+  "active": true,
+  "disciplines": [
+   "late_model",
+   "stock_car"
+  ],
+  "level": "regional",
+  "notable_note": "Virginia late model venue; former NASCAR national series track",
+  "lat": 36.709,
+  "lon": -78.869,
+  "sources": [
+   "https://en.wikipedia.org/wiki/South_Boston_Speedway",
+   "https://www.thethirdturn.com/wiki/South_Boston_Speedway"
+  ]
+ },
+ {
+  "name": "Five Flags Speedway",
+  "city": "Pensacola",
+  "region": "FL",
+  "country": "USA",
+  "track_type": "oval",
+  "surface": "asphalt",
+  "length_mi": 0.5,
+  "configuration": "high-banked half-mile",
+  "turns": 4,
+  "banking_deg_turns": 15,
+  "banking_deg_straights": 9,
+  "opened": 1953,
+  "active": true,
+  "disciplines": [
+   "late_model"
+  ],
+  "level": "regional",
+  "notable_note": "Hosts a long-running December super late model race",
+  "lat": 30.504,
+  "lon": -87.308,
+  "sources": [
+   "https://en.wikipedia.org/wiki/Five_Flags_Speedway",
+   "https://www.thethirdturn.com/wiki/Five_Flags_Speedway"
+  ]
+ },
+ {
+  "name": "Winchester Speedway",
+  "city": "Winchester",
+  "region": "IN",
+  "country": "USA",
+  "track_type": "oval",
+  "surface": "asphalt",
+  "length_mi": 0.5,
+  "configuration": "steeply banked half-mile",
+  "turns": 4,
+  "banking_deg_turns": 37,
+  "banking_deg_straights": null,
+  "opened": 1916,
+  "active": true,
+  "disciplines": [
+   "late_model",
+   "sprint_car"
+  ],
+  "level": "regional",
+  "notable_note": "One of the most steeply banked short tracks in the U.S.",
+  "lat": 40.175,
+  "lon": -85.027,
+  "sources": [
+   "https://en.wikipedia.org/wiki/Winchester_Speedway",
+   "https://www.thethirdturn.com/wiki/Winchester_Speedway_%28IN%29"
+  ]
+ },
+ {
+  "name": "Berlin Raceway",
+  "city": "Marne",
+  "region": "MI",
+  "country": "USA",
+  "track_type": "oval",
+  "surface": "asphalt",
+  "length_mi": 0.438,
+  "configuration": "paved short oval",
+  "turns": 4,
+  "banking_deg_turns": 13,
+  "banking_deg_straights": 9,
+  "opened": 1951,
+  "active": true,
+  "disciplines": [
+   "late_model"
+  ],
+  "level": "regional",
+  "notable_note": "Paved since 1966; former ARCA venue",
+  "lat": 43.036,
+  "lon": -85.835,
+  "sources": [
+   "https://en.wikipedia.org/wiki/Berlin_Raceway",
+   "https://www.thethirdturn.com/wiki/Berlin_Raceway"
+  ]
+ },
+ {
+  "name": "Stafford Motor Speedway",
+  "city": "Stafford Springs",
+  "region": "CT",
+  "country": "USA",
+  "track_type": "oval",
+  "surface": "asphalt",
+  "length_mi": 0.5,
+  "configuration": "paved half-mile",
+  "turns": 4,
+  "banking_deg_turns": 9,
+  "banking_deg_straights": null,
+  "opened": 1870,
+  "active": true,
+  "disciplines": [
+   "modified",
+   "late_model"
+  ],
+  "level": "regional",
+  "notable_note": "Modified racing venue; site dates to an 1870 fairgrounds horse track",
+  "lat": 41.955,
+  "lon": -72.32,
+  "sources": [
+   "https://en.wikipedia.org/wiki/Stafford_Motor_Speedway",
+   "https://www.thethirdturn.com/wiki/Stafford_Motor_Speedway"
+  ]
+ },
+ {
+  "name": "Oswego Speedway",
+  "city": "Oswego",
+  "region": "NY",
+  "country": "USA",
+  "track_type": "oval",
+  "surface": "asphalt",
+  "length_mi": 0.625,
+  "configuration": "paved oval",
+  "turns": 4,
+  "banking_deg_turns": 13,
+  "banking_deg_straights": null,
+  "opened": 1951,
+  "active": true,
+  "disciplines": [
+   "sprint_car",
+   "modified"
+  ],
+  "level": "regional",
+  "notable_note": "Known for winged pavement supermodifieds",
+  "lat": 43.457,
+  "lon": -76.484,
+  "sources": [
+   "https://en.wikipedia.org/wiki/Oswego_Speedway",
+   "https://www.thethirdturn.com/wiki/Oswego_Speedway"
+  ]
+ },
+ {
+  "name": "Irwindale Speedway",
+  "city": "Irwindale",
+  "region": "CA",
+  "country": "USA",
+  "track_type": "oval",
+  "surface": "asphalt",
+  "length_mi": 0.5,
+  "configuration": "half-mile with progressive banking; inner 1/3-mile oval",
+  "turns": 4,
+  "banking_deg_turns": 12,
+  "banking_deg_straights": null,
+  "opened": 1999,
+  "active": false,
+  "disciplines": [
+   "late_model",
+   "stock_car"
+  ],
+  "level": "regional",
+  "notable_note": "Closed December 2024",
+  "lat": 34.109,
+  "lon": -117.988,
+  "sources": [
+   "https://en.wikipedia.org/wiki/Irwindale_Event_Center",
+   "https://www.thethirdturn.com/wiki/Irwindale_Speedway"
+  ]
+ },
+ {
+  "name": "Delaware Speedway",
+  "city": "Delaware",
+  "region": "ON",
+  "country": "CAN",
+  "track_type": "oval",
+  "surface": "asphalt",
+  "length_mi": 0.5,
+  "configuration": "egg-shaped paved oval",
+  "turns": 4,
+  "banking_deg_turns": 7,
+  "banking_deg_straights": null,
+  "opened": 1952,
+  "active": true,
+  "disciplines": [
+   "late_model",
+   "stock_car"
+  ],
+  "level": "regional",
+  "notable_note": "Southwestern Ontario short track; dirt until 1960; banking estimated 5-7 degrees",
+  "lat": 42.93,
+  "lon": -81.418,
+  "sources": [
+   "https://en.wikipedia.org/wiki/Delaware_Speedway",
+   "https://www.thethirdturn.com/wiki/Delaware_Speedway"
+  ]
+ },
+ {
+  "name": "Mount Panorama Circuit",
+  "city": "Bathurst",
+  "region": "NSW",
+  "country": "AUS",
+  "track_type": "street_circuit",
+  "surface": "asphalt",
+  "length_mi": 3.861,
+  "configuration": "public-road mountain circuit with steep climb and descent",
+  "turns": 23,
+  "banking_deg_turns": null,
+  "banking_deg_straights": null,
+  "opened": 1938,
+  "active": true,
+  "disciplines": [
+   "touring_car",
+   "sports_car"
+  ],
+  "level": "international",
+  "notable_note": "Public road circuit hosting Australia's 1000 km touring car race",
+  "lat": -33.447,
+  "lon": 149.556,
+  "sources": [
+   "https://en.wikipedia.org/wiki/Mount_Panorama_Circuit"
+  ]
+ },
+ {
+  "name": "Phillip Island Grand Prix Circuit",
+  "city": "Ventnor",
+  "region": "VIC",
+  "country": "AUS",
+  "track_type": "road_course",
+  "surface": "asphalt",
+  "length_mi": 2.764,
+  "configuration": "fast coastal Grand Prix circuit (1988-present)",
+  "turns": 12,
+  "banking_deg_turns": null,
+  "banking_deg_straights": null,
+  "opened": 1952,
+  "active": true,
+  "disciplines": [
+   "motorcycle",
+   "touring_car",
+   "sports_car"
+  ],
+  "level": "international",
+  "notable_note": "Hosts the Australian motorcycle Grand Prix",
+  "lat": -38.503,
+  "lon": 145.236,
+  "sources": [
+   "https://en.wikipedia.org/wiki/Phillip_Island_Grand_Prix_Circuit"
+  ]
+ },
+ {
+  "name": "Sandown Raceway",
+  "city": "Melbourne",
+  "region": "VIC",
+  "country": "AUS",
+  "track_type": "road_course",
+  "surface": "asphalt",
+  "length_mi": 1.928,
+  "configuration": "National circuit around a horse racecourse",
+  "turns": 13,
+  "banking_deg_turns": null,
+  "banking_deg_straights": null,
+  "opened": 1962,
+  "active": true,
+  "disciplines": [
+   "touring_car",
+   "sports_car"
+  ],
+  "level": "international",
+  "notable_note": "Shares the site with a horse racing course",
+  "lat": -37.951,
+  "lon": 145.167,
+  "sources": [
+   "https://en.wikipedia.org/wiki/Sandown_Raceway"
+  ]
+ },
+ {
+  "name": "Silverstone Circuit",
+  "city": "Silverstone",
+  "region": null,
+  "country": "GBR",
+  "track_type": "road_course",
+  "surface": "asphalt",
+  "length_mi": 3.661,
+  "configuration": "Arena Grand Prix circuit on a former airfield",
+  "turns": 18,
+  "banking_deg_turns": null,
+  "banking_deg_straights": null,
+  "opened": 1948,
+  "active": true,
+  "disciplines": [
+   "open_wheel",
+   "sports_car",
+   "touring_car",
+   "motorcycle"
+  ],
+  "level": "international",
+  "notable_note": "Hosted the first F1 World Championship race in 1950",
+  "lat": 52.071,
+  "lon": -1.016,
+  "sources": [
+   "https://en.wikipedia.org/wiki/Silverstone_Circuit"
+  ]
+ },
+ {
+  "name": "Brands Hatch",
+  "city": "West Kingsdown",
+  "region": null,
+  "country": "GBR",
+  "track_type": "road_course",
+  "surface": "asphalt",
+  "length_mi": 2.433,
+  "configuration": "Grand Prix circuit; shorter Indy circuit also used",
+  "turns": 9,
+  "banking_deg_turns": null,
+  "banking_deg_straights": null,
+  "opened": 1950,
+  "active": true,
+  "disciplines": [
+   "touring_car",
+   "sports_car",
+   "open_wheel",
+   "motorcycle"
+  ],
+  "level": "international",
+  "notable_note": "Natural amphitheatre circuit in Kent",
+  "lat": 51.357,
+  "lon": 0.263,
+  "sources": [
+   "https://en.wikipedia.org/wiki/Brands_Hatch"
+  ]
+ },
+ {
+  "name": "Donington Park",
+  "city": "Castle Donington",
+  "region": null,
+  "country": "GBR",
+  "track_type": "road_course",
+  "surface": "asphalt",
+  "length_mi": 2.498,
+  "configuration": "Grand Prix circuit with Melbourne Loop",
+  "turns": 12,
+  "banking_deg_turns": null,
+  "banking_deg_straights": null,
+  "opened": 1931,
+  "active": true,
+  "disciplines": [
+   "touring_car",
+   "motorcycle",
+   "sports_car"
+  ],
+  "level": "international",
+  "notable_note": "Prewar Grand Prix venue; reopened in 1977",
+  "lat": 52.829,
+  "lon": -1.375,
+  "sources": [
+   "https://en.wikipedia.org/wiki/Donington_Park"
+  ]
+ },
+ {
+  "name": "Circuit de Spa-Francorchamps",
+  "city": "Stavelot",
+  "region": null,
+  "country": "BEL",
+  "track_type": "road_course",
+  "surface": "asphalt",
+  "length_mi": 4.352,
+  "configuration": "long hilly circuit in the Ardennes",
+  "turns": 19,
+  "banking_deg_turns": null,
+  "banking_deg_straights": null,
+  "opened": 1921,
+  "active": true,
+  "disciplines": [
+   "open_wheel",
+   "sports_car",
+   "touring_car"
+  ],
+  "level": "international",
+  "notable_note": "Known for the Eau Rouge-Raidillon climb; hosts a 24-hour GT race",
+  "lat": 50.437,
+  "lon": 5.971,
+  "sources": [
+   "https://en.wikipedia.org/wiki/Circuit_de_Spa-Francorchamps"
+  ]
+ },
+ {
+  "name": "Circuit de la Sarthe",
+  "city": "Le Mans",
+  "region": null,
+  "country": "FRA",
+  "track_type": "road_course",
+  "surface": "asphalt",
+  "length_mi": 8.467,
+  "configuration": "semi-permanent circuit using public roads",
+  "turns": 38,
+  "banking_deg_turns": null,
+  "banking_deg_straights": null,
+  "opened": 1923,
+  "active": true,
+  "disciplines": [
+   "sports_car"
+  ],
+  "level": "international",
+  "notable_note": "Home of the 24 Hours of Le Mans since 1923",
+  "lat": 47.933,
+  "lon": 0.233,
+  "sources": [
+   "https://en.wikipedia.org/wiki/Circuit_de_la_Sarthe"
+  ]
+ },
+ {
+  "name": "Nurburgring Grand Prix Circuit",
+  "city": "Nurburg",
+  "region": null,
+  "country": "DEU",
+  "track_type": "road_course",
+  "surface": "asphalt",
+  "length_mi": 3.199,
+  "configuration": "modern GP-Strecke (2001-present)",
+  "turns": 15,
+  "banking_deg_turns": null,
+  "banking_deg_straights": null,
+  "opened": 1984,
+  "active": true,
+  "disciplines": [
+   "open_wheel",
+   "sports_car",
+   "touring_car"
+  ],
+  "level": "international",
+  "notable_note": "Modern GP circuit opened 1984 next to the Nordschleife",
+  "lat": 50.336,
+  "lon": 6.948,
+  "sources": [
+   "https://en.wikipedia.org/wiki/N%C3%BCrburgring"
+  ]
+ },
+ {
+  "name": "Nurburgring Nordschleife",
+  "city": "Nurburg",
+  "region": null,
+  "country": "DEU",
+  "track_type": "road_course",
+  "surface": "asphalt",
+  "length_mi": 12.944,
+  "configuration": "long mountain circuit through the Eifel forest (1983-present layout)",
+  "turns": 154,
+  "banking_deg_turns": null,
+  "banking_deg_straights": null,
+  "opened": 1927,
+  "active": true,
+  "disciplines": [
+   "sports_car",
+   "touring_car"
+  ],
+  "level": "international",
+  "notable_note": "Hosts a 24-hour race on a combined 15.77-mi layout",
+  "lat": 50.336,
+  "lon": 6.948,
+  "sources": [
+   "https://en.wikipedia.org/wiki/N%C3%BCrburgring"
+  ]
+ },
+ {
+  "name": "Monza Circuit",
+  "city": "Monza",
+  "region": null,
+  "country": "ITA",
+  "track_type": "road_course",
+  "surface": "asphalt",
+  "length_mi": 3.6,
+  "configuration": "high-speed parkland circuit with chicanes",
+  "turns": 11,
+  "banking_deg_turns": null,
+  "banking_deg_straights": null,
+  "opened": 1922,
+  "active": true,
+  "disciplines": [
+   "open_wheel",
+   "sports_car",
+   "touring_car"
+  ],
+  "level": "international",
+  "notable_note": "Historic high-speed F1 venue; remnants of a banked oval remain",
+  "lat": 45.621,
+  "lon": 9.289,
+  "sources": [
+   "https://en.wikipedia.org/wiki/Monza_Circuit"
+  ]
+ },
+ {
+  "name": "Suzuka Circuit",
+  "city": "Suzuka",
+  "region": null,
+  "country": "JPN",
+  "track_type": "road_course",
+  "surface": "asphalt",
+  "length_mi": 3.608,
+  "configuration": "figure-eight Grand Prix circuit",
+  "turns": 18,
+  "banking_deg_turns": null,
+  "banking_deg_straights": null,
+  "opened": 1962,
+  "active": true,
+  "disciplines": [
+   "open_wheel",
+   "motorcycle",
+   "sports_car",
+   "touring_car"
+  ],
+  "level": "international",
+  "notable_note": "Figure-eight layout with a crossover bridge",
+  "lat": 34.842,
+  "lon": 136.539,
+  "sources": [
+   "https://en.wikipedia.org/wiki/Suzuka_Circuit"
+  ]
+ },
+ {
+  "name": "Interlagos Circuit",
+  "city": "Sao Paulo",
+  "region": null,
+  "country": "BRA",
+  "track_type": "road_course",
+  "surface": "asphalt",
+  "length_mi": 2.677,
+  "configuration": "anti-clockwise undulating Grand Prix circuit",
+  "turns": 15,
+  "banking_deg_turns": null,
+  "banking_deg_straights": null,
+  "opened": 1940,
+  "active": true,
+  "disciplines": [
+   "open_wheel",
+   "touring_car",
+   "sports_car",
+   "stock_car"
+  ],
+  "level": "international",
+  "notable_note": "Hosts the Brazilian Grand Prix; anti-clockwise layout",
+  "lat": -23.701,
+  "lon": -46.697,
+  "sources": [
+   "https://en.wikipedia.org/wiki/Interlagos_Circuit"
+  ]
+ },
+ {
+  "name": "Circuit Gilles Villeneuve",
+  "city": "Montreal",
+  "region": "QC",
+  "country": "CAN",
+  "track_type": "street_circuit",
+  "surface": "asphalt",
+  "length_mi": 2.71,
+  "configuration": "semi-permanent island circuit on Ile Notre-Dame",
+  "turns": 14,
+  "banking_deg_turns": null,
+  "banking_deg_straights": null,
+  "opened": 1978,
+  "active": true,
+  "disciplines": [
+   "open_wheel",
+   "touring_car",
+   "stock_car"
+  ],
+  "level": "international",
+  "notable_note": "Semi-permanent park circuit; hosts the Canadian Grand Prix",
+  "lat": 45.501,
+  "lon": -73.522,
+  "sources": [
+   "https://en.wikipedia.org/wiki/Circuit_Gilles_Villeneuve"
+  ]
+ }
+]

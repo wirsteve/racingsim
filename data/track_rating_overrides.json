@@ -1,0 +1,214 @@
+{
+ "_comment": "Hand-tuned GAME ratings layered on top of rule-derived ratings (racingsim/tracks/ratings.py). Keys are track IDs. These are internal simulation choices informed by research and broadcasts' common descriptions, NOT official specifications. Optional display_name renames a venue without touching facts.",
+ "daytona-international-speedway-fl": {
+  "prestige_bonus": 30,
+  "attendance_potential": 100,
+  "sim": {
+   "drafting_effect": 98,
+   "passing_difficulty": 10,
+   "crash_severity": 98,
+   "caution_probability": 80
+  },
+  "rationale": "2.5-mi, 31-deg superspeedway: pack drafting, multi-car crashes; premier event venue."
+ },
+ "talladega-superspeedway-al": {
+  "prestige_bonus": 20,
+  "attendance_potential": 95,
+  "sim": {
+   "drafting_effect": 100,
+   "passing_difficulty": 8,
+   "crash_severity": 98,
+   "caution_probability": 82
+  },
+  "rationale": "Longest, highest-banked oval; strongest draft in the game."
+ },
+ "atlanta-motor-speedway-ga": {
+  "sim": {
+   "drafting_effect": 85,
+   "passing_difficulty": 25,
+   "crash_severity": 88,
+   "caution_probability": 72
+  },
+  "rationale": "Reprofiled in 2022 to 28-deg banking; races like a superspeedway."
+ },
+ "martinsville-speedway-va": {
+  "prestige_bonus": 20,
+  "sim": {
+   "brake_stress": 98,
+   "passing_difficulty": 72,
+   "caution_probability": 75,
+   "groove_width": 20,
+   "horsepower_importance": 25
+  },
+  "rationale": "Flat paperclip: hardest braking zones on the schedule, bump-and-run racing, track position."
+ },
+ "bristol-motor-speedway-tn": {
+  "prestige_bonus": 20,
+  "sim": {
+   "caution_probability": 85,
+   "passing_difficulty": 55,
+   "crash_severity": 50,
+   "tire_degradation": 62,
+   "groove_width": 60
+  },
+  "rationale": "High-banked concrete half mile: high-g, frequent cautions, nowhere to hide from wrecks."
+ },
+ "darlington-raceway-sc": {
+  "prestige_bonus": 18,
+  "sim": {
+   "tire_degradation": 95,
+   "passing_difficulty": 60,
+   "setup_sensitivity": 85,
+   "crash_severity": 75
+  },
+  "rationale": "Egg-shaped, abrasive surface: tire management and wall contact define the race."
+ },
+ "indianapolis-motor-speedway-in": {
+  "prestige_bonus": 35,
+  "attendance_potential": 100,
+  "sim": {
+   "horsepower_importance": 90,
+   "aero_importance": 92,
+   "passing_difficulty": 70,
+   "qualifying_importance": 65
+  },
+  "rationale": "Flat 2.5-mi rectangle; aero and horsepower dominate; most prestigious open-wheel venue."
+ },
+ "richmond-raceway-va": {
+  "sim": {
+   "tire_degradation": 78
+  },
+  "rationale": "Worn D-shaped 0.75 mi: heavy tire falloff."
+ },
+ "pocono-raceway-pa": {
+  "sim": {
+   "setup_sensitivity": 90,
+   "fuel_sensitivity": 85,
+   "passing_difficulty": 55
+  },
+  "rationale": "Three distinct corners: setup compromise and fuel strategy."
+ },
+ "watkins-glen-international-ny": {
+  "prestige_bonus": 12,
+  "sim": {
+   "horsepower_importance": 75,
+   "drafting_effect": 30
+  },
+  "rationale": "Fast road course with long straights."
+ },
+ "road-america-wi": {
+  "prestige_bonus": 15,
+  "sim": {
+   "horsepower_importance": 85,
+   "drafting_effect": 40,
+   "fuel_sensitivity": 80
+  },
+  "rationale": "4-mile high-speed road course; drafting on long straights."
+ },
+ "sonoma-raceway-ca": {
+  "sim": {
+   "tire_degradation": 78,
+   "passing_difficulty": 72
+  },
+  "rationale": "Hilly, low-grip road course; tire falloff."
+ },
+ "sebring-international-raceway-fl": {
+  "prestige_bonus": 25,
+  "sim": {
+   "mechanical_stress": 95,
+   "tire_degradation": 75
+  },
+  "rationale": "Bumpy former airfield; hardest endurance test on equipment."
+ },
+ "eldora-speedway-oh": {
+  "prestige_bonus": 30,
+  "sim": {
+   "crash_severity": 70,
+   "groove_width": 88
+  },
+  "rationale": "High-banked half-mile dirt; crown-jewel dirt venue."
+ },
+ "knoxville-raceway-ia": {
+  "prestige_bonus": 30,
+  "rationale": "Home of the most prestigious 410 sprint car event."
+ },
+ "five-flags-speedway-fl": {
+  "prestige_bonus": 18,
+  "sim": {
+   "tire_degradation": 80
+  },
+  "rationale": "Crown-jewel super late model race is a tire-management test."
+ },
+ "slinger-speedway-wi": {
+  "prestige_bonus": 10,
+  "sim": {
+   "caution_probability": 85,
+   "crash_severity": 50
+  },
+  "rationale": "High-banked quarter mile: fast and frantic."
+ },
+ "bowman-gray-stadium-nc": {
+  "prestige_bonus": 10,
+  "sim": {
+   "passing_difficulty": 85,
+   "caution_probability": 90,
+   "groove_width": 10
+  },
+  "rationale": "Flat quarter-mile around a football field; contact racing."
+ },
+ "homestead-miami-speedway-fl": {
+  "sim": {
+   "groove_width": 88,
+   "tire_degradation": 70
+  },
+  "rationale": "Progressive banking creates multiple grooves; worn surface."
+ },
+ "las-vegas-motor-speedway-nv": {
+  "sim": {
+   "groove_width": 60
+  },
+  "rationale": "Progressive banking (reconfigured 2006)."
+ },
+ "charlotte-motor-speedway-nc": {
+  "prestige_bonus": 15,
+  "rationale": "Industry home track."
+ },
+ "oxford-plains-speedway-me": {
+  "prestige_bonus": 12,
+  "rationale": "Hosts New England's biggest one-day short-track race."
+ },
+ "winchester-speedway-in": {
+  "prestige_bonus": 10,
+  "sim": {
+   "crash_severity": 55,
+   "caution_probability": 78
+  },
+  "rationale": "Very high-banked half mile."
+ },
+ "new-smyrna-speedway-fl": {
+  "prestige_bonus": 10,
+  "rationale": "Winter speedweeks short-track series venue."
+ },
+ "tulsa-expo-raceway-ok": {
+  "prestige_bonus": 25,
+  "sim": {
+   "passing_difficulty": 55,
+   "caution_probability": 80
+  },
+  "rationale": "Indoor 1/5-mile clay oval; premier midget event."
+ },
+ "laguna-seca-raceway-ca": {
+  "sim": {
+   "passing_difficulty": 75,
+   "brake_stress": 78
+  },
+  "rationale": "Short, technical road course with few passing zones."
+ },
+ "road-atlanta-ga": {
+  "prestige_bonus": 15,
+  "sim": {
+   "crash_severity": 60
+  },
+  "rationale": "Fast, hilly road course; endurance crown-jewel venue."
+ }
+}

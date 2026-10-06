@@ -1,0 +1,202 @@
+"""Track database: loads factual records, derives game layers, persists to SQLite.
+
+Factual source files live in ``data/tracks/*.json`` (one JSON array per file).
+Game-derived layers are rebuilt from facts + ``data/track_rating_overrides.json``
+so the factual layer is never polluted by simulation tuning.
+"""
+
+from __future__ import annotations
+
+import json
+import sqlite3
+from dataclasses import asdict
+from pathlib import Path
+from typing import Iterable, Iterator, Optional
+
+from ..util import DATA_DIR, haversine_mi
+from .model import DISCIPLINES, SIM_RATING_FIELDS, Track, TrackFacts
+from .ratings import build_track
+
+
+class TrackDatabase:
+    def __init__(self, tracks: Iterable[Track]):
+        self._tracks: dict[str, Track] = {}
+        for t in tracks:
+            if t.id in self._tracks:
+                raise ValueError(f"duplicate track id {t.id}")
+            self._tracks[t.id] = t
+
+    # ------------------------------------------------------------------ loading
+    @classmethod
+    def load(cls, directory: Optional[Path] = None, overrides: Optional[dict] = None) -> "TrackDatabase":
+        directory = directory or DATA_DIR / "tracks"
+        facts: dict[str, TrackFacts] = {}
+        for path in sorted(directory.glob("*.json")):
+            with open(path, encoding="utf-8") as fh:
+                for raw in json.load(fh):
+                    f = TrackFacts.from_dict(raw)
+                    problems = f.validate()
+                    if problems:
+                        raise ValueError(f"{path.name}: {f.name}: {'; '.join(problems)}")
+                    if f.id in facts:
+                        # Same venue present in two research files: keep the richer record.
+                        if _richness(f) <= _richness(facts[f.id]):
+                            continue
+                    facts[f.id] = f
+        years_path = (directory.parent if directory.name == "tracks" else directory) / "track_years.json"
+        if years_path.exists():
+            with open(years_path, encoding="utf-8") as fh:
+                years = json.load(fh)
+            by_key = {(f.name, f.region): f for f in facts.values()}
+            by_name: dict[str, list[TrackFacts]] = {}
+            for f in facts.values():
+                by_name.setdefault(f.name, []).append(f)
+            for key, info in years.items():
+                m = info.get("match") or {}
+                name = m.get("name") or key
+                f = by_key.get((name, m.get("region")))
+                if f is None and len(by_name.get(name, [])) == 1:
+                    f = by_name[name][0]
+                if f is None:
+                    continue
+                # A corrected opening year (``opened_db_value`` records what the research file had).
+                if info.get("opened") and (f.opened is None or "opened_db_value" in info):
+                    f.opened = info["opened"]
+                if info.get("closed"):
+                    f.closed = info["closed"]
+                if info.get("dormant"):
+                    f.dormant = [list(span) for span in info["dormant"]]
+                f.history = info.get("history", [])
+        enrich_path = (directory.parent if directory.name == "tracks" else directory) / "track_enrich.json"
+        if enrich_path.exists():
+            # Research enrichment (aliases seen in schedules, series hosted, categories); never overrides a fact.
+            with open(enrich_path, encoding="utf-8") as fh:
+                for tid, e in json.load(fh).items():
+                    f = facts.get(tid)
+                    if f is None:
+                        continue
+                    known = {a.lower() for a in f.aliases} | {f.name.lower()}
+                    f.aliases += [a for a in e.get("aliases") or [] if a.lower() not in known]
+                    f.major_series = sorted(set(f.major_series) | set(e.get("major_series") or []))
+                    f.disciplines = list(dict.fromkeys(f.disciplines + [x for x in e.get("disciplines") or []
+                                                                         if x in DISCIPLINES]))
+                    for k in ("banking_category", "prestige_category", "opened", "closed", "active"):
+                        if getattr(f, k) is None and e.get(k) is not None:
+                            setattr(f, k, e[k])
+                    if e.get("sources"):
+                        f.sources = list(dict.fromkeys(f.sources + e["sources"]))
+        return cls(build_track(f, overrides) for f in facts.values())
+
+    # ------------------------------------------------------------------ queries
+    def __len__(self) -> int:
+        return len(self._tracks)
+
+    def __iter__(self) -> Iterator[Track]:
+        return iter(self._tracks.values())
+
+    def __contains__(self, track_id: str) -> bool:
+        return track_id in self._tracks
+
+    def get(self, track_id: str) -> Track:
+        return self._tracks[track_id]
+
+    def active(self) -> list[Track]:
+        return [t for t in self._tracks.values() if t.facts.is_active]
+
+    def suitable(self, venue_key: str, *, levels: Optional[set[str]] = None,
+                 regions: Optional[set[str]] = None, countries: Optional[set[str]] = None,
+                 active_only: bool = True, year: Optional[int] = None) -> list[Track]:
+        out = []
+        for t in self._tracks.values():
+            if year is not None:
+                if not t.facts.available_in(year):
+                    continue
+            elif active_only and not t.facts.is_active:
+                continue
+            if venue_key not in t.profile.series_suitability:
+                continue
+            if levels and t.facts.level not in levels:
+                continue
+            if regions and t.facts.region not in regions:
+                continue
+            if countries and t.facts.country not in countries:
+                continue
+            out.append(t)
+        return out
+
+    def nearest(self, lat: float, lon: float, candidates: Optional[Iterable[Track]] = None,
+                limit: int = 5) -> list[tuple[float, Track]]:
+        pool = candidates if candidates is not None else self.active()
+        scored = [
+            (haversine_mi(lat, lon, t.facts.lat, t.facts.lon), t)
+            for t in pool if t.facts.lat is not None and t.facts.lon is not None
+        ]
+        scored.sort(key=lambda x: x[0])
+        return scored[:limit]
+
+    def by_region(self) -> dict[str, list[Track]]:
+        out: dict[str, list[Track]] = {}
+        for t in self._tracks.values():
+            out.setdefault(f"{t.facts.country}-{t.facts.region}", []).append(t)
+        return out
+
+    # -------------------------------------------------------------- persistence
+    def save_sqlite(self, path: Path) -> None:
+        """Persist as three tables: facts (sourced), profile and sim ratings (game-derived)."""
+        conn = sqlite3.connect(path)
+        try:
+            self.write_sqlite(conn)
+        finally:
+            conn.close()
+
+    def write_sqlite(self, conn: sqlite3.Connection) -> None:
+        """Write the three track tables into an open database (the game database or a standalone file)."""
+        cur = conn.cursor()
+        cur.executescript(_SCHEMA)
+        for t in self._tracks.values():
+            f = t.facts
+            cur.execute(
+                "INSERT OR REPLACE INTO track_facts VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)",
+                (f.id, f.name, f.city, f.region, f.country, f.track_type, f.surface,
+                 f.length_mi, f.configuration, f.turns, f.banking_deg_turns,
+                 f.banking_deg_straights, f.opened, None if f.active is None else int(f.active), json.dumps(f.disciplines),
+                 f.level, f.notable_note, json.dumps([f.lat, f.lon]), json.dumps(f.sources), json.dumps(f.aliases),
+                 f.closed, json.dumps(f.dormant), json.dumps(f.history), json.dumps(f.major_series),
+                 f.banking_category, f.prestige_category, f.confidence),
+            )
+            p = t.profile
+            cur.execute(
+                "INSERT OR REPLACE INTO track_profile VALUES (?,?,?,?,?,?)",
+                (f.id, p.size_class, p.prestige, p.attendance_potential,
+                 json.dumps(asdict(p.weather)), json.dumps(p.series_suitability)),
+            )
+            cur.execute(
+                f"INSERT OR REPLACE INTO track_sim_ratings VALUES ({','.join('?' * (len(SIM_RATING_FIELDS) + 2))})",
+                (f.id, *[getattr(t.sim, k) for k in SIM_RATING_FIELDS], t.sim.derivation),
+            )
+        conn.commit()
+
+
+def _richness(f: TrackFacts) -> int:
+    return sum(v is not None for v in asdict(f).values()) + len(f.sources)
+
+
+_SCHEMA = f"""
+CREATE TABLE IF NOT EXISTS track_facts (
+    id TEXT PRIMARY KEY, name TEXT NOT NULL, city TEXT, region TEXT, country TEXT NOT NULL,
+    track_type TEXT NOT NULL, surface TEXT, length_mi REAL, configuration TEXT,
+    turns INTEGER, banking_deg_turns REAL, banking_deg_straights REAL, opened INTEGER,
+    active INTEGER, disciplines TEXT, level TEXT, notable_note TEXT, latlon TEXT,
+    sources TEXT, aliases TEXT, closed INTEGER, dormant TEXT, history TEXT, major_series TEXT,
+    banking_category TEXT, prestige_category TEXT, confidence TEXT
+);
+CREATE TABLE IF NOT EXISTS track_profile (
+    id TEXT PRIMARY KEY REFERENCES track_facts(id), size_class TEXT, prestige INTEGER,
+    attendance_potential INTEGER, weather TEXT, series_suitability TEXT
+);
+CREATE TABLE IF NOT EXISTS track_sim_ratings (
+    id TEXT PRIMARY KEY REFERENCES track_facts(id),
+    {", ".join(f"{k} INTEGER" for k in SIM_RATING_FIELDS)},
+    derivation TEXT
+);
+"""

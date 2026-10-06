@@ -1,0 +1,629 @@
+{
+ "series": "lolmds",
+ "year": 2021,
+ "official_name": "Lucas Oil Late Model Dirt Series",
+ "data_level": "full",
+ "champion": {
+  "name": "Tim McCreadie",
+  "wiki": "Tim McCreadie"
+ },
+ "teams": [
+  {
+   "team": "Best Performance Motorsports",
+   "manufacturer": null,
+   "cars": [
+    {
+     "number": "1T",
+     "full_time": null,
+     "drivers": [
+      {
+       "name": "Tyler Erb",
+       "wiki": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Clint Bowyer Racing",
+   "manufacturer": null,
+   "cars": [
+    {
+     "number": "14",
+     "full_time": null,
+     "drivers": [
+      {
+       "name": "Josh Richards",
+       "wiki": "Josh Richards (racing driver)"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Ramirez Motorsports",
+   "manufacturer": null,
+   "cars": [
+    {
+     "number": "20",
+     "full_time": null,
+     "drivers": [
+      {
+       "name": "Jimmy Owens",
+       "wiki": "Jimmy Owens (racing driver)"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "SSI Motorsports",
+   "manufacturer": null,
+   "cars": [
+    {
+     "number": "20RT",
+     "full_time": null,
+     "drivers": [
+      {
+       "name": "Ricky Thornton Jr.",
+       "wiki": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Skyline Motorsports",
+   "manufacturer": null,
+   "cars": [
+    {
+     "number": "25",
+     "full_time": null,
+     "drivers": [
+      {
+       "name": "Shane Clanton",
+       "wiki": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Paylor Motorsports",
+   "manufacturer": null,
+   "cars": [
+    {
+     "number": "39",
+     "full_time": null,
+     "drivers": [
+      {
+       "name": "Tim McCreadie",
+       "wiki": "Tim McCreadie"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Kyle Bronson Motorsports",
+   "manufacturer": null,
+   "cars": [
+    {
+     "number": "40B",
+     "full_time": null,
+     "drivers": [
+      {
+       "name": "Kyle Bronson",
+       "wiki": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Double L Motorsports",
+   "manufacturer": null,
+   "cars": [
+    {
+     "number": "49",
+     "full_time": null,
+     "drivers": [
+      {
+       "name": "Jonathan Davenport",
+       "wiki": "Jonathan Davenport"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Double Down Motorsports",
+   "manufacturer": null,
+   "cars": [
+    {
+     "number": "71",
+     "full_time": null,
+     "drivers": [
+      {
+       "name": "Hudson O'Neal",
+       "wiki": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Mike Marlar Racing",
+   "manufacturer": null,
+   "cars": [
+    {
+     "number": "157",
+     "full_time": null,
+     "drivers": [
+      {
+       "name": "Mike Marlar",
+       "wiki": "Mike Marlar"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "standings": [],
+ "schedule": [
+  {
+   "round": 1,
+   "date": "2021-01-23",
+   "race": "General Tire Winter Nationals",
+   "track": "All-Tech Raceway",
+   "city": "Lake City",
+   "state": "FL",
+   "winner": "Kyle Larson",
+   "winner_wiki": "Kyle Larson"
+  },
+  {
+   "round": 2,
+   "date": "2021-01-25",
+   "race": "Winternationals",
+   "track": "East Bay Raceway Park",
+   "city": "Tampa",
+   "state": "FL",
+   "winner": "Hudson O'Neal",
+   "winner_wiki": null
+  },
+  {
+   "round": 3,
+   "date": "2021-01-26",
+   "race": "Winternationals",
+   "track": "East Bay Raceway Park",
+   "city": "Tampa",
+   "state": "FL",
+   "winner": "Tyler Erb",
+   "winner_wiki": null
+  },
+  {
+   "round": 4,
+   "date": "2021-01-27",
+   "race": "Winternationals",
+   "track": "East Bay Raceway Park",
+   "city": "Tampa",
+   "state": "FL",
+   "winner": "Josh Richards",
+   "winner_wiki": "Josh Richards (racing driver)"
+  },
+  {
+   "round": 5,
+   "date": "2021-01-28",
+   "race": "Winternationals",
+   "track": "East Bay Raceway Park",
+   "city": "Tampa",
+   "state": "FL",
+   "winner": "Stormy Scott",
+   "winner_wiki": null
+  },
+  {
+   "round": 6,
+   "date": "2021-01-29",
+   "race": "Winternationals",
+   "track": "East Bay Raceway Park",
+   "city": "Tampa",
+   "state": "FL",
+   "winner": "Brandon Overton",
+   "winner_wiki": null
+  },
+  {
+   "round": 7,
+   "date": "2021-01-30",
+   "race": "Winternationals",
+   "track": "East Bay Raceway Park",
+   "city": "Tampa",
+   "state": "FL",
+   "winner": "Tyler Erb",
+   "winner_wiki": null
+  },
+  {
+   "round": 8,
+   "date": "2021-02-01",
+   "race": "K&N Filters Winter Nationals",
+   "track": "Bubba Raceway Park",
+   "city": "Ocala",
+   "state": "FL",
+   "winner": "Ricky Thornton Jr.",
+   "winner_wiki": null
+  },
+  {
+   "round": 9,
+   "date": "2021-02-02",
+   "race": "K&N Filters Winter Nationals",
+   "track": "Bubba Raceway Park",
+   "city": "Ocala",
+   "state": "FL",
+   "winner": "Shane Clanton",
+   "winner_wiki": null
+  },
+  {
+   "round": 10,
+   "date": "2021-03-21",
+   "race": "Buckeye Spring 50",
+   "track": "Atomic Speedway",
+   "city": "Waverly",
+   "state": "OH",
+   "winner": "Hudson O'Neal",
+   "winner_wiki": null
+  },
+  {
+   "round": 11,
+   "date": "2021-04-17",
+   "race": "Nininger Tribute",
+   "track": "Hagerstown Speedway",
+   "city": "Hagerstown",
+   "state": "MD",
+   "winner": "Tim McCreadie",
+   "winner_wiki": "Tim McCreadie"
+  },
+  {
+   "round": 12,
+   "date": "2021-04-18",
+   "race": "River Valley 40",
+   "track": "Port Royal Speedway",
+   "city": "Port Royal",
+   "state": "PA",
+   "winner": "Jonathan Davenport",
+   "winner_wiki": "Jonathan Davenport"
+  },
+  {
+   "round": 13,
+   "date": "2021-04-30",
+   "race": "John Bradshaw Memorial",
+   "track": "Ponderosa Speedway",
+   "city": "Junction City",
+   "state": "KY",
+   "winner": "Jonathan Davenport",
+   "winner_wiki": "Jonathan Davenport"
+  },
+  {
+   "round": 14,
+   "date": "2021-05-01",
+   "race": "Ralph Latham Memorial",
+   "track": "Florence Speedway",
+   "city": "Union",
+   "state": "KY",
+   "winner": "Josh Rice",
+   "winner_wiki": null
+  },
+  {
+   "round": 15,
+   "date": "2021-05-21",
+   "race": "Truck Country 50",
+   "track": "300 Raceway",
+   "city": "Farley",
+   "state": "IA",
+   "winner": "Mike Marlar",
+   "winner_wiki": "Mike Marlar"
+  },
+  {
+   "round": 16,
+   "date": "2021-05-27",
+   "race": "Cowboy Classic",
+   "track": "Lucas Oil Speedway",
+   "city": "Wheatland",
+   "state": "MO",
+   "winner": "Tim McCreadie",
+   "winner_wiki": "Tim McCreadie"
+  },
+  {
+   "round": 17,
+   "date": "2021-05-28",
+   "race": "Tribute to Don & Billie Gibson",
+   "track": "Lucas Oil Speedway",
+   "city": "Wheatland",
+   "state": "MO",
+   "winner": "Josh Richards",
+   "winner_wiki": "Josh Richards (racing driver)"
+  },
+  {
+   "round": 18,
+   "date": "2021-05-29",
+   "race": "Show-Me 100",
+   "track": "Lucas Oil Speedway",
+   "city": "Wheatland",
+   "state": "MO",
+   "winner": "Hudson O'Neal",
+   "winner_wiki": null
+  },
+  {
+   "round": 19,
+   "date": "2021-06-17",
+   "race": "Clash at the Mag",
+   "track": "Magnolia Motor Speedway",
+   "city": "Columbus",
+   "state": "MS",
+   "winner": "Jonathan Davenport",
+   "winner_wiki": "Jonathan Davenport"
+  },
+  {
+   "round": 20,
+   "date": "2021-06-18",
+   "race": "Clash at the Mag",
+   "track": "Magnolia Motor Speedway",
+   "city": "Columbus",
+   "state": "MS",
+   "winner": "Jonathan Davenport",
+   "winner_wiki": "Jonathan Davenport"
+  },
+  {
+   "round": 21,
+   "date": "2021-07-02",
+   "race": "Independence 50",
+   "track": "Portsmouth Raceway Park",
+   "city": "Portsmouth",
+   "state": "OH",
+   "winner": "Jonathan Davenport",
+   "winner_wiki": "Jonathan Davenport"
+  },
+  {
+   "round": 22,
+   "date": "2021-07-03",
+   "race": "Prime Solutions 50",
+   "track": "Muskingum County Speedway",
+   "city": "Zanesville",
+   "state": "OH",
+   "winner": "Tim McCreadie",
+   "winner_wiki": "Tim McCreadie"
+  },
+  {
+   "round": 23,
+   "date": "2021-07-17",
+   "race": "Diamond Nationals",
+   "track": "Lucas Oil Speedway",
+   "city": "Wheatland",
+   "state": "MO",
+   "winner": "Jonathan Davenport",
+   "winner_wiki": "Jonathan Davenport"
+  },
+  {
+   "round": 24,
+   "date": "2021-07-20",
+   "race": "I-80 Nationals",
+   "track": "I-80 Speedway",
+   "city": "Greenwood",
+   "state": "NE",
+   "winner": "Brandon Overton",
+   "winner_wiki": null
+  },
+  {
+   "round": 25,
+   "date": "2021-07-21",
+   "race": "I-80 Nationals",
+   "track": "I-80 Speedway",
+   "city": "Greenwood",
+   "state": "NE",
+   "winner": "Tyler Erb",
+   "winner_wiki": null
+  },
+  {
+   "round": 26,
+   "date": "2021-07-22",
+   "race": "I-80 Nationals",
+   "track": "I-80 Speedway",
+   "city": "Greenwood",
+   "state": "NE",
+   "winner": "Tyler Erb",
+   "winner_wiki": null
+  },
+  {
+   "round": 27,
+   "date": "2021-07-23",
+   "race": "I-80 Nationals",
+   "track": "I-80 Speedway",
+   "city": "Greenwood",
+   "state": "NE",
+   "winner": "Kyle Bronson",
+   "winner_wiki": null
+  },
+  {
+   "round": 28,
+   "date": "2021-08-12",
+   "race": "North/South Shootout",
+   "track": "Florence Speedway",
+   "city": "Union",
+   "state": "KY",
+   "winner": "Brandon Overton",
+   "winner_wiki": null
+  },
+  {
+   "round": 29,
+   "date": "2021-08-13",
+   "race": "North/South 100",
+   "track": "Florence Speedway",
+   "city": "Union",
+   "state": "KY",
+   "winner": "Brandon Overton",
+   "winner_wiki": null
+  },
+  {
+   "round": 30,
+   "date": "2021-08-20",
+   "race": "Topless 100 Prelims",
+   "track": "Batesville Motor Speedway",
+   "city": "Locust Grove",
+   "state": "AR",
+   "winner": "Jimmy Owens",
+   "winner_wiki": "Jimmy Owens (racing driver)"
+  },
+  {
+   "round": 31,
+   "date": "2021-08-21",
+   "race": "Topless 100",
+   "track": "Batesville Motor Speedway",
+   "city": "Locust Grove",
+   "state": "AR",
+   "winner": "Hudson O'Neal",
+   "winner_wiki": null
+  },
+  {
+   "round": 32,
+   "date": "2021-08-26",
+   "race": "Rumble by the River",
+   "track": "Port Royal Speedway",
+   "city": "Port Royal",
+   "state": "PA",
+   "winner": "Hudson O'Neal",
+   "winner_wiki": null
+  },
+  {
+   "round": 33,
+   "date": "2021-08-27",
+   "race": "Rumble by the River",
+   "track": "Port Royal Speedway",
+   "city": "Port Royal",
+   "state": "PA",
+   "winner": "Tim McCreadie",
+   "winner_wiki": "Tim McCreadie"
+  },
+  {
+   "round": 34,
+   "date": "2021-09-04",
+   "race": "Rumble River Days",
+   "track": "Portsmouth Raceway Park",
+   "city": "Portsmouth",
+   "state": "OH",
+   "winner": "Tim McCreadie",
+   "winner_wiki": "Tim McCreadie"
+  },
+  {
+   "round": 35,
+   "date": "2021-09-16",
+   "race": "Lucas Oil Late Model Knoxville Nationals",
+   "track": "Knoxville Raceway",
+   "city": "Knoxville",
+   "state": "IA",
+   "winner": "Tyler Erb",
+   "winner_wiki": null
+  },
+  {
+   "round": 36,
+   "date": "2021-09-17",
+   "race": "Lucas Oil Late Model Knoxville Nationals",
+   "track": "Knoxville Raceway",
+   "city": "Knoxville",
+   "state": "IA",
+   "winner": "Tyler Erb",
+   "winner_wiki": null
+  },
+  {
+   "round": 37,
+   "date": "2021-09-18",
+   "race": "Lucas Oil Late Model Knoxville Nationals",
+   "track": "Knoxville Raceway",
+   "city": "Knoxville",
+   "state": "IA",
+   "winner": "Mike Marlar",
+   "winner_wiki": "Mike Marlar"
+  },
+  {
+   "round": 38,
+   "date": "2021-09-23",
+   "race": "Indiana Icebreaker",
+   "track": "Brownstown Speedway",
+   "city": "Brownstown",
+   "state": "IN",
+   "winner": "Brandon Sheppard",
+   "winner_wiki": null
+  },
+  {
+   "round": 39,
+   "date": "2021-09-24",
+   "race": "Night Before the Jackson",
+   "track": "Brownstown Speedway",
+   "city": "Brownstown",
+   "state": "IN",
+   "winner": "Tyler Erb",
+   "winner_wiki": null
+  },
+  {
+   "round": 40,
+   "date": "2021-09-25",
+   "race": "Jackson 100",
+   "track": "Brownstown Speedway",
+   "city": "Brownstown",
+   "state": "IN",
+   "winner": "Jimmy Owens",
+   "winner_wiki": "Jimmy Owens (racing driver)"
+  },
+  {
+   "round": 41,
+   "date": "2021-10-01",
+   "race": "Great Lakes 50",
+   "track": "Raceway 7",
+   "city": "Monroe Center",
+   "state": "OH",
+   "winner": "Tim McCreadie",
+   "winner_wiki": "Tim McCreadie"
+  },
+  {
+   "round": 42,
+   "date": "2021-10-02",
+   "race": "Pittsburgher 100",
+   "track": "Pittsburgh's PA Motor Speedway",
+   "city": "Imperial",
+   "state": "PA",
+   "winner": "Hudson O'Neal",
+   "winner_wiki": null
+  },
+  {
+   "round": 43,
+   "date": "2021-10-09",
+   "race": "Dixie Shootout",
+   "track": "Dixie Speedway",
+   "city": "Woodstock",
+   "state": "GA",
+   "winner": "Jonathan Davenport",
+   "winner_wiki": "Jonathan Davenport"
+  },
+  {
+   "round": 44,
+   "date": "2021-10-10",
+   "race": "Rome Showdown",
+   "track": "Rome Speedway",
+   "city": "Rome",
+   "state": "GA",
+   "winner": "Jonathan Davenport",
+   "winner_wiki": "Jonathan Davenport"
+  },
+  {
+   "round": 45,
+   "date": "2021-10-16",
+   "race": "Dirt Track World Championship",
+   "track": "Portsmouth Raceway Park",
+   "city": "Portsmouth",
+   "state": "OH",
+   "winner": "Ricky Thornton Jr.",
+   "winner_wiki": null
+  }
+ ],
+ "sources": [
+  "https://en.wikipedia.org/w/index.php?title=2021_Lucas_Oil_Late_Model_Dirt_Series&oldid=1375993424",
+  "https://en.wikipedia.org/w/index.php?title=Lucas_Oil_Late_Model_Dirt_Series&oldid=1367722822"
+ ]
+}
