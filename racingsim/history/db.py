@@ -243,7 +243,7 @@ class HistoryDB:
             try:
                 rows = self.conn.execute(
                     "SELECT id, name, doc FROM series_info WHERE game_template IS NOT NULL "
-                    "AND history_source IS NOT NULL").fetchall()
+                    "AND history_source IS NOT NULL ORDER BY id").fetchall()
             except sqlite3.OperationalError:  # databases built before the knowledge layer
                 rows = []
             out = []

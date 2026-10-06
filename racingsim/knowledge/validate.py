@@ -122,7 +122,7 @@ def _tracks(conn) -> list[Issue]:
             continue
         if country in ("USA", "CAN") and not (18 <= lat <= 72 and -170 <= lon <= -50):
             out.append(Issue("error", "track", tid, f"coordinates {lat},{lon} outside North America"))
-        pts.append((tid, name, lat, lon, ttype, surface or "asphalt", length))
+        pts.append((tid, name, lat, lon, ttype, surface or f"unknown:{tid}", length))
     grid = defaultdict(list)
     for p in pts:
         grid[(round(p[2], 1), round(p[3], 1))].append(p)

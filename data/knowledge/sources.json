@@ -296,6 +296,14 @@
   "license": null,
   "accessed": "2026-10-06"
  },
+ "src:eswiki": {
+  "name": "Spanish Wikipedia: Categoría:Circuitos de carreras de México",
+  "url": "https://es.wikipedia.org/wiki/Categor%C3%ADa:Circuitos_de_carreras_de_M%C3%A9xico",
+  "kind": "wiki",
+  "reliability": "medium",
+  "license": "CC BY-SA 4.0",
+  "accessed": "2026-10-06"
+ },
  "src:f4-us-costs": {
   "name": "Grassroots Motorsports / RACER: Formula 4 comes to America; F4 US budget",
   "url": "https://grassrootsmotorsports.com/news/formula-4-comes-t0-america/",
@@ -428,6 +436,14 @@
   "license": null,
   "accessed": "2026-10-06"
  },
+ "src:frwiki": {
+  "name": "French Wikipedia: Catégorie:Circuit automobile au Québec / de stock car",
+  "url": "https://fr.wikipedia.org/wiki/Cat%C3%A9gorie:Circuit_automobile_au_Qu%C3%A9bec",
+  "kind": "wiki",
+  "reliability": "medium",
+  "license": "CC BY-SA 4.0",
+  "accessed": "2026-10-06"
+ },
  "src:gazette-iowa-costs": {
   "id": "src:gazette-iowa-costs",
   "name": "The Gazette (Cedar Rapids): Motorsport drivers spend more than most make in a year to compete",
@@ -528,6 +544,14 @@
   "license": null,
   "accessed": "2026-10-06",
   "notes": null
+ },
+ "src:imca-track-directory": {
+  "name": "IMCA official track directory (size & surface, divisions, address, geocoded map marker)",
+  "url": "https://www.imca.com/view/track-directory/",
+  "kind": "official_sanctioning",
+  "reliability": "high",
+  "license": "facts only",
+  "accessed": "2026-10-06"
  },
  "src:imsa-ferrari-challenge-2025": {
   "name": "IMSA news / Ferrari: Ferrari Challenge North America 2025",
@@ -898,6 +922,14 @@
   "license": null,
   "accessed": "2026-10-06"
  },
+ "src:myracepass": {
+  "name": "MyRacePass track profiles (track-maintained size/banking/composition/shape, map location, latest events)",
+  "url": "https://www.myracepass.com/tracks/",
+  "kind": "results_archive",
+  "reliability": "medium",
+  "license": "facts only",
+  "accessed": "2026-10-06"
+ },
  "src:nascar-age-rules": {
   "name": "RACER / Jayski: NASCAR expanding Cup driver eligibility and lowering minimum ages for 2026 (2025-10-31)",
   "url": "https://www.jayski.com/2025/11/01/nascar-to-allow-cup-drivers-to-run-more-lower-series-races/",
@@ -1040,6 +1072,14 @@
   "kind": "dataset",
   "reliability": "medium",
   "license": "MIT (repo); rows derived from racing-reference.info",
+  "accessed": "2026-10-06"
+ },
+ "src:nominatim-osm": {
+  "name": "OpenStreetMap via Nominatim (gazetteer: named race-track features; reverse geocoding of city/state)",
+  "url": "https://nominatim.openstreetmap.org/",
+  "kind": "dataset",
+  "reliability": "medium",
+  "license": "ODbL (c) OpenStreetMap contributors",
   "accessed": "2026-10-06"
  },
  "src:nomoneymotorsports-sm": {
@@ -2578,6 +2618,14 @@
   "accessed": "2026-10-05",
   "notes": "Season articles for NASCAR Cup/Xfinity/Trucks, CART/IRL/IndyCar, Indy Lights, Pro Mazda, USF2000; venue articles"
  },
+ "src:wissota-tracks": {
+  "name": "WISSOTA official current track list",
+  "url": "https://www.wissota.org/Tracks/Current",
+  "kind": "official_sanctioning",
+  "reliability": "high",
+  "license": "facts only",
+  "accessed": "2026-10-06"
+ },
  "src:wka-history": {
   "name": "WKA official / Wikipedia: World Karting Association",
   "url": "https://en.wikipedia.org/wiki/World_Karting_Association",
@@ -2622,6 +2670,78 @@
   "kind": "official_series",
   "reliability": "high",
   "license": "n/a",
+  "accessed": "2026-10-06"
+ },
+ "src:wp-list-canada-dirt-ovals": {
+  "name": "Wikipedia: List of dirt track ovals in Canada",
+  "url": "https://en.wikipedia.org/wiki/List_of_dirt_track_ovals_in_Canada",
+  "kind": "wiki",
+  "reliability": "low",
+  "license": "CC BY-SA 4.0",
+  "accessed": "2026-10-06"
+ },
+ "src:wp-list-canada-tracks": {
+  "name": "Wikipedia: List of auto racing tracks in Canada",
+  "url": "https://en.wikipedia.org/wiki/List_of_auto_racing_tracks_in_Canada",
+  "kind": "wiki",
+  "reliability": "medium",
+  "license": "CC BY-SA 4.0",
+  "accessed": "2026-10-06"
+ },
+ "src:wp-list-champcar-tracks": {
+  "name": "Wikipedia: List of American Championship Car racetracks",
+  "url": "https://en.wikipedia.org/wiki/List_of_American_Championship_Car_racetracks",
+  "kind": "wiki",
+  "reliability": "medium",
+  "license": "CC BY-SA 4.0",
+  "accessed": "2026-10-06"
+ },
+ "src:wp-list-mexico-tracks": {
+  "name": "Wikipedia: List of auto racing tracks in Mexico",
+  "url": "https://en.wikipedia.org/wiki/List_of_auto_racing_tracks_in_Mexico",
+  "kind": "wiki",
+  "reliability": "medium",
+  "license": "CC BY-SA 4.0",
+  "accessed": "2026-10-06"
+ },
+ "src:wp-list-nascar-tracks": {
+  "name": "Wikipedia: List of NASCAR tracks (incl. defunct and one-time venues)",
+  "url": "https://en.wikipedia.org/wiki/List_of_NASCAR_tracks",
+  "kind": "wiki",
+  "reliability": "medium",
+  "license": "CC BY-SA 4.0",
+  "accessed": "2026-10-06"
+ },
+ "src:wp-list-nc-venues": {
+  "name": "Wikipedia: List of sports venues in North Carolina (race tracks section)",
+  "url": "https://en.wikipedia.org/wiki/List_of_sports_venues_in_North_Carolina",
+  "kind": "wiki",
+  "reliability": "medium",
+  "license": "CC BY-SA 4.0",
+  "accessed": "2026-10-06"
+ },
+ "src:wp-list-us-dirt-ovals": {
+  "name": "Wikipedia: List of dirt track ovals in the United States",
+  "url": "https://en.wikipedia.org/wiki/List_of_dirt_track_ovals_in_the_United_States",
+  "kind": "wiki",
+  "reliability": "low",
+  "license": "CC BY-SA 4.0",
+  "accessed": "2026-10-06"
+ },
+ "src:wp-list-us-tracks": {
+  "name": "Wikipedia: List of auto racing tracks in the United States",
+  "url": "https://en.wikipedia.org/wiki/List_of_auto_racing_tracks_in_the_United_States",
+  "kind": "wiki",
+  "reliability": "medium",
+  "license": "CC BY-SA 4.0",
+  "accessed": "2026-10-06"
+ },
+ "src:wp-nascar-local-racing-series": {
+  "name": "Wikipedia: NASCAR Local Racing Series - 2026 tracks list (nascar.com blocked for scripts)",
+  "url": "https://en.wikipedia.org/wiki/NASCAR_Local_Racing_Series",
+  "kind": "wiki",
+  "reliability": "medium",
+  "license": "CC BY-SA 4.0",
   "accessed": "2026-10-06"
  },
  "src:yahoo-baldwin-costs-2026": {

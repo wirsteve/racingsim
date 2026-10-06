@@ -146,11 +146,11 @@ def seed_national(world: "World", hist: HistoryDB) -> set[str]:
     created: dict[str, Driver] = {}
     national = {tpl for tpl, *_ in hist.all_sources()
                 if tpl in world.pyramid.templates and world.pyramid.templates[tpl].scope == "national"}
-    pairs = [(world.pyramid.series.get(k), hist.season(k, year)) for k in national]
+    pairs = [(world.pyramid.series.get(k), hist.season(k, year)) for k in sorted(national)]
     # Team-based real regional tours (e.g. Busch North / K&N East) are seeded the same way.
     pairs += [(x, hist.raw_season(x.source, year)) for x in world.pyramid.active()
               if x.source and x.template.team_based]
-    pairs.sort(key=lambda p: -(p[0].tier if p[0] is not None else 0))
+    pairs.sort(key=lambda p: (-(p[0].tier if p[0] is not None else 0), p[0].id if p[0] is not None else ""))
     for series, season in pairs:
         if series is None or series.dormant or not season:
             continue
@@ -163,14 +163,21 @@ def seed_national(world: "World", hist: HistoryDB) -> set[str]:
         n = max(len(standings), 2)
         n_races = len(season.get("schedule") or []) or tpl.events
         entries = []
+        any_full_time = any(c.get("full_time") for t in season["teams"] for c in t.get("cars", []))
+        # Some sources list every entrant without full-time flags or standings: then the drivers we know
+        # ran up front (race winners, champion) are the ones seeded; the rest of the field is generated.
+        winners = {r.get("winner_wiki") or r.get("winner") for r in season.get("schedule") or [] if r.get("winner")}
+        champ = season.get("champion") or {}
+        winners |= {champ.get("wiki"), champ.get("name")} - {None}
         for t in season["teams"]:
             cars = [c for c in t.get("cars", []) if c.get("drivers")]
-            flagged = [c for c in cars if c.get("full_time")]
-            if any(c.get("full_time") is not None for c in cars):
-                cars = flagged
-            else:  # no flags: regulars = drivers who started at least half the races
+            if any_full_time:
+                cars = [c for c in cars if c.get("full_time")]
+            elif standings:  # no flags: regulars = drivers who started at least half the races
                 cars = [c for c in cars if (standings.get(c["drivers"][0].get("wiki") or c["drivers"][0]["name"], {})
                                             .get("starts") or 0) >= 0.5 * n_races]
+            else:
+                cars = [c for c in cars if {c["drivers"][0].get("wiki"), c["drivers"][0]["name"]} & winners][:1]
             if cars:
                 entries.append((t, cars))
         if not entries:

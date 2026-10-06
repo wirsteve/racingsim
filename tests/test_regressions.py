@@ -155,3 +155,19 @@ def test_save_load_round_trip_with_history(tmp_path, monkeypatch):
     assert g2.world.history.season("cup_series", 1998) is not None
     g2.sim_until("season")
     assert g2.phase == "offseason"
+
+
+def test_world_generation_is_deterministic_across_hash_seeds():
+    """Same seed -> same world, whatever Python's string-hash randomisation does to set ordering."""
+    import os
+    import subprocess
+    import sys
+    code = ("from racingsim.world.world import World, WorldConfig\n"
+            "w = World.generate(WorldConfig(seed=8, start_year=2018, population_scale=0.15))\n"
+            "print(len(w.drivers), sorted((d.name, d.series_id) for d in w.drivers.values() if d.real)[:200])")
+    outs = set()
+    for h in ("1", "2"):
+        env = dict(os.environ, PYTHONHASHSEED=h)
+        outs.add(subprocess.run([sys.executable, "-c", code], capture_output=True, text=True, env=env,
+                                cwd=os.path.dirname(os.path.dirname(__file__)), check=True).stdout)
+    assert len(outs) == 1

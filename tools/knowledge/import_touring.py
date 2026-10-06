@@ -54,7 +54,31 @@ MAPPING = {
     "cra_all_stars": ("series:jegs-cra-all-stars", "late_model_tour"),
     "apc_united": ("series:apc-united-late-model", "late_model_tour"),
     "oscaar_slm": ("series:oscaar-super-late-model", "late_model_tour"),
-    # dirt / sprint / midget (filled in when that scrape lands)
+    # dirt / sprint / midget
+    "woo_sprint": ("series:woo-sprint", "outlaw_sprint"),
+    "high_limit": ("series:high-limit-racing", "sprint_car_tour"),
+    "all_stars": ("series:all-star-circuit-of-champions", "sprint_car_tour"),
+    "ascs_national": ("series:ascs-national", "sprint_car_tour"),
+    "usac_cra_sprint": ("series:usac-cra-sprint", "sprint_car_tour"),
+    "national_sprint_tour": ("series:national-sprint-tour", "sprint_car_tour"),
+    "usac_sprint": ("series:usac-national-sprint", "national_sprint"),
+    "usac_midget": ("series:usac-national-midget", "national_midget"),
+    "usac_silver_crown": ("series:usac-silver-crown", None),
+    "lolmds": ("series:lucas-oil-lmds", "dirt_late_national"),
+    "woo_late_model": ("series:woo-late-model", "dirt_late_national"),
+    "mars_late_model": ("series:mars-late-model", "dirt_late_model_tour"),
+    "supr": ("series:supr", "dirt_late_model_tour"),
+    "busch_all_star_tour": ("series:busch-all-star-tour", "dirt_late_model_tour"),
+    "super_dirtcar": ("series:super-dirtcar-series", "dirt_modified_tour"),
+    "usmts": ("series:usmts", "dirt_modified_tour"),
+    "dirtcar_358": ("series:dirtcar-358-modified", "dirt_modified_tour"),
+    "stss": ("series:short-track-super-series", "dirt_modified_tour"),
+    "stss_north": ("series:short-track-super-series-north", None),
+    "stss_south": ("series:short-track-super-series-south", None),
+    "mars_modified": ("series:mars-modified", "dirt_modified_tour"),
+    "powri_midget": ("series:powri-national-midget", "regional_midget"),
+    "powri_west_midget": ("series:powri-west-midget", "regional_midget"),
+    "usac_western_midget": ("series:usac-western-midget", "regional_midget"),
 }
 # Period names missing from the scraped name lists (curated; medium confidence).
 NAME_FILL = {
@@ -112,6 +136,21 @@ def import_folder(src: Path, mapping: dict, events: set) -> dict:
             entry["game_template"] = template
             entry["game_tier"] = LEVEL_TIER.get(m.get("level"))
             knowledge.append(entry)
+    # Crown-jewel event files ({name, track, city, state, winners: [{year, name, wiki}]}) -> one-race seasons.
+    for ev in sorted((src / "events").glob("*.json")) if (src / "events").is_dir() else []:
+        e = json.loads(ev.read_text(encoding="utf-8"))
+        dst = HIST / ev.stem
+        dst.mkdir(exist_ok=True)
+        for w in e.get("winners") or []:
+            if not w.get("year"):
+                continue
+            season = {"series": ev.stem, "year": w["year"], "official_name": e.get("name"), "data_level": "schedule",
+                      "champion": {"name": w.get("name"), "wiki": w.get("wiki")}, "teams": [], "standings": [],
+                      "schedule": [{"round": 1, "race": e.get("name"), "track": w.get("track") or e.get("track"),
+                                    "city": w.get("city") or e.get("city"), "state": w.get("state") or e.get("state"),
+                                    "winner": w.get("name"), "winner_wiki": w.get("wiki")}],
+                      "sources": e.get("sources") or []}
+            (dst / f"{w['year']}.json").write_text(json.dumps(season, ensure_ascii=False), encoding="utf-8")
     drivers = src / "drivers.json"
     if drivers.exists():
         shutil.copy2(drivers, ROOT / "data" / "history" / f"drivers_touring_{src.name}.json")

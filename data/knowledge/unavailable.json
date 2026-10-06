@@ -208,5 +208,75 @@
   "reason": "download requires a Kaggle login/API token; licence not visible",
   "checked": "2026-10-06",
   "replacement_source": "src:nascar-data"
+ },
+ {
+  "source": "NASCAR.com (NASCAR Local Racing Series / Weekly Series member tracks)",
+  "url": "https://www.nascar.com/",
+  "reason": "Cloudflare 'Attention Required' 403 on robots.txt and pages for scripted requests",
+  "checked": "2026-10-06",
+  "replacement_source": "src:wp-nascar-local-racing-series"
+ },
+ {
+  "source": "USRA (United States Racing Association) track list",
+  "url": "https://www.usra.com/",
+  "reason": "bot-check interstitial page (noindex) returned instead of content",
+  "checked": "2026-10-06",
+  "replacement_source": "src:myracepass"
+ },
+ {
+  "source": "NASA (National Auto Sport Association) / drivenasa.com",
+  "url": "https://www.nasaproracing.com/",
+  "reason": "Cloudflare managed challenge ('Just a moment...') 403",
+  "checked": "2026-10-06",
+  "replacement_source": "src:wikipedia (Road courses in the United States category)"
+ },
+ {
+  "source": "INEX (Legends/Bandolero) sanctioned tracks",
+  "url": "https://www.inexracing.com/",
+  "reason": "egress proxy refused CONNECT (502) - host not reachable from this environment",
+  "checked": "2026-10-06",
+  "replacement_source": "src:myracepass (class lists show Legends/Bandolero programs)"
+ },
+ {
+  "source": "Overpass API (OpenStreetMap)",
+  "url": "https://overpass-api.de/api/",
+  "reason": "connection reset / timeouts on overpass-api.de, overpass.kumi.systems, overpass.private.coffee",
+  "checked": "2026-10-06",
+  "replacement_source": "src:nominatim-osm (name lookups only)"
+ },
+ {
+  "source": "DIRTcar / UMP sanctioned tracks",
+  "url": "https://dirtcar.com/tracks/",
+  "reason": "no public track directory (404); site asks Crawl-delay 10 - not crawled further",
+  "checked": "2026-10-06",
+  "replacement_source": "src:myracepass"
+ },
+ {
+  "source": "Quarter Midgets of America track list",
+  "url": "https://quartermidgets.org/tracks/",
+  "reason": "404; the clubs page lists 9 clubs by city only (no track coordinates) - not used for records",
+  "checked": "2026-10-06",
+  "replacement_source": "src:myracepass (quarter-midget club profiles)"
+ },
+ {
+  "source": "racing-reference.info",
+  "url": "https://www.racing-reference.info/",
+  "reason": "Cloudflare block - excluded by project rules (never fetched)",
+  "checked": "2026-10-06",
+  "replacement_source": "src:wp-list-nascar-tracks"
+ },
+ {
+  "source": "thethirdturn.com",
+  "url": "https://www.thethirdturn.com/",
+  "reason": "robots.txt Disallow: / - excluded by project rules (never fetched)",
+  "checked": "2026-10-06",
+  "replacement_source": "src:wikipedia, src:myracepass"
+ },
+ {
+  "source": "Web search (discovery of further sanctioning-body directories: QMA/USAC .25, POWRi, ASCS, USMTS)",
+  "url": "n/a",
+  "reason": "shared per-turn web-search budget exhausted by other agents",
+  "checked": "2026-10-06",
+  "replacement_source": "src:myracepass (hosts most of these bodies' track profiles)"
  }
 ]

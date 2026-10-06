@@ -90,6 +90,12 @@ class World:
         self.real_drivers: dict[str, int] = {}      # Wikipedia title -> driver id (historical mode)
         self.history_entrants: dict[int, list] = {}  # year -> real drivers who start racing then
 
+    # Derived indexes are rebuilt on demand: keep them out of save games.
+    def __getstate__(self) -> dict:
+        state = dict(self.__dict__)
+        state["cache"] = {}
+        return state
+
     # ----------------------------------------------------------------- helpers
     def next_id(self, kind: str) -> int:
         self._ids[kind] = self._ids.get(kind, 0) + 1
@@ -131,7 +137,10 @@ class World:
         for s in born:
             if s.scope != "track" and s.tier >= 3:
                 self.post("series", f"New for {year}: the {s.name}", series_id=s.id, week=0)
+        local = self.cache.get("travel_local")
         self.cache.clear()
+        if local is not None:
+            self.cache["travel_local"] = local
 
     def schedule_provider(self, template_key: str, year: int):
         """Real national calendars when the historical database has them."""
@@ -253,6 +262,17 @@ class World:
         from ..career.market import seat_gap, seat_role
         if existing:
             teams = self.teams_in(series.id)
+            # Real entry lists can be short (only winners known): top the grid up with generated teams.
+            have = sum(t.cars for t in teams)
+            want = tpl.cars if getattr(tpl, "cars", None) else tpl.field_size
+            if have < want * 0.8:
+                for team in make_teams_for_series(self, series):
+                    if have >= want:
+                        break
+                    team.roster = [None] * team.seats
+                    self.teams[team.id] = team
+                    teams.append(team)
+                    have += team.cars
         else:
             teams = make_teams_for_series(self, series)
             for team in teams:

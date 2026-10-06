@@ -625,6 +625,39 @@
    "purse_win": 8000
   },
   {
+   "key": "dirt_modified_tour",
+   "name": "{region} Dirt Modified Tour",
+   "discipline": "dirt_oval",
+   "tier": 3,
+   "scope": "region",
+   "venues": [
+    "dirt_full_body"
+   ],
+   "season_cost": 120000,
+   "events": 14,
+   "field_size": 26,
+   "prestige": 36,
+   "visibility": 25,
+   "car_weight": 0.45,
+   "min_age": 15,
+   "max_age": null,
+   "typical_age": [
+    18,
+    40
+   ],
+   "macro_regions": [
+    "northeast",
+    "mid_atlantic",
+    "midwest_central",
+    "midwest_north",
+    "plains",
+    "south_central",
+    "canada_east"
+   ],
+   "purse_win": 5000,
+   "note": "Big-block / 358 / USMTS-style dirt modified touring (Super DIRTcar Series, USMTS, Short Track Super Series)."
+  },
+  {
    "key": "sprint_car_tour",
    "name": "{region} 360 Sprint Car Tour",
    "discipline": "dirt_oval",
@@ -1516,7 +1549,8 @@
    "purse_win": 20000,
    "note": "Chili Bowl analog: 300+ entries, open to drivers from every tier.",
    "week": 1,
-   "since": 1987
+   "since": 1987,
+   "history_source": "chili_bowl"
   },
   {
    "key": "sprint_car_nationals",
@@ -1530,7 +1564,8 @@
    "purse_win": 195000,
    "note": "Knoxville Nationals analog.",
    "week": 22,
-   "since": 1961
+   "since": 1961,
+   "history_source": "knoxville_nationals"
   },
   {
    "key": "summer_sprint_royale",
@@ -1544,7 +1579,8 @@
    "purse_win": 200000,
    "note": "Kings Royal analog.",
    "week": 17,
-   "since": 1984
+   "since": 1984,
+   "history_source": "kings_royal"
   },
   {
    "key": "dirt_late_model_dream",
@@ -1558,7 +1594,8 @@
    "purse_win": 100000,
    "note": "Dirt Late Model Dream analog.",
    "week": 13,
-   "since": 1994
+   "since": 1994,
+   "history_source": "dirt_late_model_dream"
   },
   {
    "key": "fall_dirt_late_100",
@@ -1572,7 +1609,8 @@
    "purse_win": 100000,
    "note": "World 100 analog.",
    "week": 24,
-   "since": 1971
+   "since": 1971,
+   "history_source": "world_100"
   },
   {
    "key": "big_block_week",
@@ -1586,7 +1624,8 @@
    "purse_win": 53000,
    "note": "Super DIRT Week; held at the Syracuse Mile until 2015 and Oswego from 2016 (game uses Oswego).",
    "week": 27,
-   "since": 1972
+   "since": 1972,
+   "history_source": "super_dirt_week"
   },
   {
    "key": "northwest_showdown",

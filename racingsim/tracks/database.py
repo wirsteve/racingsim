@@ -14,7 +14,7 @@ from pathlib import Path
 from typing import Iterable, Iterator, Optional
 
 from ..util import DATA_DIR, haversine_mi
-from .model import SIM_RATING_FIELDS, Track, TrackFacts
+from .model import DISCIPLINES, SIM_RATING_FIELDS, Track, TrackFacts
 from .ratings import build_track
 
 
@@ -78,7 +78,9 @@ class TrackDatabase:
                     known = {a.lower() for a in f.aliases} | {f.name.lower()}
                     f.aliases += [a for a in e.get("aliases") or [] if a.lower() not in known]
                     f.major_series = sorted(set(f.major_series) | set(e.get("major_series") or []))
-                    for k in ("banking_category", "prestige_category", "opened", "closed"):
+                    f.disciplines = list(dict.fromkeys(f.disciplines + [x for x in e.get("disciplines") or []
+                                                                         if x in DISCIPLINES]))
+                    for k in ("banking_category", "prestige_category", "opened", "closed", "active"):
                         if getattr(f, k) is None and e.get(k) is not None:
                             setattr(f, k, e[k])
                     if e.get("sources"):

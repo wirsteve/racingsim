@@ -246,6 +246,9 @@ def _tok(name: str) -> set[str]:
     return {t for t in norm_text(name).split() if t not in GENERIC and len(t) > 1}
 
 
+CA_PROVINCES = {"AB", "BC", "MB", "NB", "NL", "NS", "NT", "NU", "ON", "PE", "QC", "SK", "YT"}
+
+
 def _clean_numbers(c: dict) -> None:
     """Numeric facts sometimes arrive as text ("12-24", "0.5 mi"): keep the first number, note the text."""
     for k, cast in (("banking_deg_turns", float), ("banking_deg_straights", float), ("length_mi", float),
@@ -259,6 +262,23 @@ def _clean_numbers(c: dict) -> None:
             c["notable_note"] = "; ".join(x for x in (c.get("notable_note"), f"{k}: {v}") if x)
 
 
+def _type_of(t: dict) -> str:
+    disc = set(t.get("disciplines") or [])
+    if "quarter_midget" in disc and len(disc) == 1:
+        return "quarter_midget"
+    return t.get("track_type") or "oval"
+
+
+def _surf(t: dict) -> str:
+    s = t.get("surface") or "?"
+    return "dirt" if s in ("dirt", "clay") else "paved" if s in ("asphalt", "concrete", "asphalt_concrete") else s
+
+
+def _len_ok(a: dict, b: dict) -> bool:
+    x, y = a.get("length_mi"), b.get("length_mi")
+    return x is None or y is None or abs(x - y) <= 0.3 * max(x, y)
+
+
 def merge_tracks(candidates: list[dict], existing: list[dict], merger: Merger) -> tuple[list[dict], dict]:
     from racingsim.tracks.model import TrackFacts
     ex_index = []
@@ -270,13 +290,29 @@ def merge_tracks(candidates: list[dict], existing: list[dict], merger: Merger) -
     rejected = 0
     for c in candidates:
         c = {k: v for k, v in c.items() if k not in ("existing_id",)}
-        if not c.get("name") or c.get("lat") is None or c.get("lon") is None:
+        if not c.get("name"):
             rejected += 1
             continue
+        if c.get("lat") is None or c.get("lon") is None:
+            # No coordinates: usable only as another name for a known track in the same state.
+            cn = {norm_text(c["name"])} | {norm_text(a) for a in c.get("aliases") or []}
+            hit = next((t for t, tnames, _ in ex_index if cn & tnames and (t.get("region") or "") == (c.get("region") or "")),
+                       None) or next((k for k in kept if cn & {norm_text(k["name"])} and k.get("region") == c.get("region")), None)
+            if hit is not None and hit.get("id"):
+                e = enrich.setdefault(hit["id"], {"aliases": [], "major_series": [], "sources": []})
+                e["major_series"] = _union(e["major_series"], c.get("major_series"))
+            else:
+                rejected += 1
+            continue
         _clean_numbers(c)
-        c.setdefault("country", "USA")
-        c.setdefault("track_type", "oval")
-        c.setdefault("level", "local")
+        if not c.get("country"):
+            c["country"] = "CAN" if (c.get("region") or "") in CA_PROVINCES else "USA"
+        if c["country"] in ("USA", "CAN") and not (15 <= c["lat"] <= 72 and -170 <= c["lon"] <= -50):
+            # Coordinates abroad (e.g. a series' Australian swing): trust the coordinates.
+            c["country"] = "AUS" if c["lat"] < 0 and c["lon"] < 160 else "NZL" if c["lat"] < 0 else c["country"]
+            c["region"] = None if c["country"] != "USA" else c.get("region")
+        c["track_type"] = c.get("track_type") or "oval"
+        c["level"] = c.get("level") or "local"
         if c.get("surface") == "clay":
             c["surface"] = "dirt"
         f = TrackFacts.from_dict(c)
@@ -290,7 +326,10 @@ def merge_tracks(candidates: list[dict], existing: list[dict], merger: Merger) -
         for t, tnames, ttoks in ex_index:
             same_state = (t.get("region") or "") == (c.get("region") or "")
             near = _km(t, c) < 1.5 if t.get("lat") is not None else False
-            if (names & tnames and (same_state or near)) or (near and toks & ttoks):
+            # A coordinate match alone must also agree on what kind of track it is (a quarter-midget
+            # or kart track beside an oval is a different venue).
+            same_kind = (_type_of(t) == _type_of(c) and _surf(t) == _surf(c) and _len_ok(t, c))
+            if (names & tnames and (same_state or near)) or (near and toks & ttoks and same_kind):
                 if (t.get("surface") or "asphalt") == (c.get("surface") or t.get("surface") or "asphalt") \
                         or (names & tnames):
                     match = t
@@ -308,7 +347,8 @@ def merge_tracks(candidates: list[dict], existing: list[dict], merger: Merger) -
             continue
         dup = next((k for k in kept if (names & ({norm_text(k["name"])} | {norm_text(a) for a in k.get("aliases") or []})
                                          and (k.get("region") == c.get("region")))
-                    or (_km(k, c) < 1.5 and toks & _tok(k["name"]) and k.get("surface") == c.get("surface"))), None)
+                    or (_km(k, c) < 1.5 and toks & _tok(k["name"]) and _type_of(k) == _type_of(c)
+                        and _surf(k) == _surf(c) and _len_ok(k, c))), None)
         if dup is not None:
             merged = merger.merge_entity(dup, c)
             kept[kept.index(dup)] = merged
@@ -379,7 +419,8 @@ def main(staging: list[Path]) -> int:
         existing = [dict(id=t.id, name=t.facts.name, region=t.facts.region, lat=t.facts.lat, lon=t.facts.lon,
                          aliases=t.facts.aliases, surface=t.facts.surface, closed=t.facts.closed, active=t.facts.active,
                          opened=t.facts.opened, banking_category=t.facts.banking_category,
-                         prestige_category=t.facts.prestige_category)
+                         prestige_category=t.facts.prestige_category, track_type=t.facts.track_type,
+                         disciplines=t.facts.disciplines, length_mi=t.facts.length_mi)
                     for t in db if t.facts.name not in {p["name"] for p in prior}]
         new, enrich = merge_tracks(prior + track_candidates, existing, merger)
         census_path.write_text(json.dumps(sorted(new, key=lambda t: (t.get("region") or "", t["name"])), indent=1,

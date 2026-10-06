@@ -57,7 +57,8 @@ def season_cost_for(world: "World", d: Driver, series: "Series") -> float:
     """Car budget plus travel from the driver's home for a self-run season."""
     tpl = series.template
     cost = tpl.season_cost
-    cache = world.cache.setdefault("travel", {})
+    # Travel to a fixed weekly track never changes: keep those across seasons.
+    cache = world.cache.setdefault("travel" if tpl.scope != "track" else "travel_local", {})
     key = (d.id, series.id, round(d.lat, 2), round(d.lon, 2))
     if key in cache:
         return cost + cache[key]
@@ -132,10 +133,23 @@ def _region_local_index(world: "World") -> dict[tuple[str, str], list["Series"]]
             for key, series in tpls.items():
                 if not series or series[0].scope != "track":
                     continue
-                ranked = sorted(series, key=lambda s: haversine_mi(region.lat, region.lon, s.anchor_lat, s.anchor_lon))
+                dist = _region_dist(world, code)
+                ranked = sorted(series, key=lambda s: dist.get(s.region_key) or haversine_mi(
+                    region.lat, region.lon, s.anchor_lat, s.anchor_lon))
                 idx[(code, key)] = ranked[:10]
         world.cache["local_index"] = idx
     return idx
+
+
+def _region_dist(world: "World", code: str) -> dict[str, float]:
+    """Miles from a home region's centre to every track (tracks don't move: kept across seasons)."""
+    table = world.cache.setdefault("travel_local", {}).setdefault(("region_dist", code), {})
+    if not table:
+        r = world.geo.get(code)
+        for t in world.tracks:
+            if t.facts.lat is not None:
+                table[t.id] = haversine_mi(r.lat, r.lon, t.facts.lat, t.facts.lon)
+    return table
 
 
 def _self_run_instances(world: "World", d: Driver, tpl: "SeriesTemplate") -> list["Series"]:
@@ -238,6 +252,8 @@ def self_run_options(world: "World", d: Driver, entrant: bool = False,
 
 def choose_self_run(world: "World", d: Driver, entrant: bool = False) -> bool:
     """Pick next season's self-funded program. Returns False if the driver is sidelined."""
+    if not entrant and _settled(world, d):
+        return True  # most weekly racers simply race where they raced last year
     options = self_run_options(world, d, entrant=entrant)
     if not options:
         if d.status != RETIRED:
@@ -248,6 +264,29 @@ def choose_self_run(world: "World", d: Driver, entrant: bool = False) -> bool:
     best = max(options, key=lambda o: o["value"])
     enter_self_run(world, d, best["series"], best["afford"], entrant=entrant)
     _maybe_relocate(world, d)
+    return True
+
+
+def _settled(world: "World", d: Driver) -> bool:
+    """An adult racer who can still afford their current self-run programme usually keeps it without
+    shopping around (research A 14: weekly racers are creatures of habit; the itch to move up comes after
+    a few seasons). Kids, struggling or ambitious racers re-evaluate every option."""
+    if d.is_player or d.team_id is not None or not d.series_id or d.status not in (ACTIVE, PART_TIME):
+        return False
+    s = world.pyramid.series.get(d.series_id)
+    if s is None or s.dormant or s.template.team_based:
+        return False
+    age = d.age(world.year) + 1
+    tpl = s.template
+    if age < 17 or (tpl.max_age is not None and age > tpl.max_age) or age < tpl.min_age:
+        return False
+    afford = d.available_funding() / max(1.0, season_cost_for(world, d, s))
+    if afford < 0.8:
+        return False
+    stay = 0.8 if d.years_at_tier < 2 else 0.55 if age <= 30 else 0.8
+    if world.rng.random() >= stay:
+        return False
+    d.seasons_sidelined = 0
     return True
 
 
@@ -481,6 +520,7 @@ def close_market(world: "World", summary: "YearSummary") -> None:
     m = world.market
     queue, buckets, signed = m.queue, m.buckets, m.signed
     deferred: list = []
+    am_pool = None
 
     while queue:
         neg_tier, _, team_id, slot = heapq.heappop(queue)
@@ -493,8 +533,11 @@ def close_market(world: "World", summary: "YearSummary") -> None:
         gap = seat_gap(team, tpl, role)
         pool = buckets.get(tpl.tier, [])
         if role == "am":
-            pool = [d for d in world.drivers.values()
-                    if d.status != RETIRED and d.available_funding() >= gap * 0.5 and d.age(world.year) >= 25]
+            if am_pool is None:  # wealthy adults, computed once per market
+                am_pool = sorted(((d.available_funding(), d) for d in world.drivers.values()
+                                  if d.status != RETIRED and d.age(world.year) >= 25),
+                                 key=lambda x: -x[0])[:3000]
+            pool = [d for f, d in am_pool if f >= gap * 0.5]
         sample = pool if len(pool) <= 350 else rng.sample(pool, 350)
         best = None
         for d in sample:

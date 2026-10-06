@@ -1,4 +1,16 @@
 {
+ "series:all-star-circuit-of-champions": {
+  "game_template": "sprint_car_tour",
+  "history_source": "all_stars",
+  "names_by_year": [
+   {
+    "from": 1970,
+    "to": 2025,
+    "name": "All Star Circuit of Champions"
+   }
+  ],
+  "prefer_curated_names": false
+ },
  "series:apc-united-late-model": {
   "game_template": "late_model_tour",
   "history_source": "apc_united",
@@ -240,6 +252,30 @@
   ],
   "prefer_curated_names": false
  },
+ "series:ascs-national": {
+  "game_template": "sprint_car_tour",
+  "history_source": "ascs_national",
+  "names_by_year": [
+   {
+    "from": 1992,
+    "to": 2025,
+    "name": "American Sprint Car Series (ASCS) National Tour"
+   }
+  ],
+  "prefer_curated_names": false
+ },
+ "series:busch-all-star-tour": {
+  "game_template": "dirt_late_model_tour",
+  "history_source": "busch_all_star_tour",
+  "names_by_year": [
+   {
+    "from": 1985,
+    "to": 2001,
+    "name": "Busch All-Star Tour"
+   }
+  ],
+  "prefer_curated_names": false
+ },
  "series:cars-tour-lmsc": {
   "game_template": "late_model_tour",
   "history_source": "cars_lms",
@@ -281,6 +317,30 @@
   ],
   "prefer_curated_names": false
  },
+ "series:dirtcar-358-modified": {
+  "game_template": "dirt_modified_tour",
+  "history_source": "dirtcar_358",
+  "names_by_year": [
+   {
+    "from": 1983,
+    "to": 2025,
+    "name": "DIRTcar 358 Modified Series"
+   }
+  ],
+  "prefer_curated_names": false
+ },
+ "series:high-limit-racing": {
+  "game_template": "sprint_car_tour",
+  "history_source": "high_limit",
+  "names_by_year": [
+   {
+    "from": 2022,
+    "to": 2100,
+    "name": "High Limit Racing"
+   }
+  ],
+  "prefer_curated_names": false
+ },
  "series:jegs-cra-all-stars": {
   "game_template": "late_model_tour",
   "history_source": "cra_all_stars",
@@ -289,6 +349,42 @@
     "from": 2011,
     "to": 2025,
     "name": "JEGS/CRA All-Stars Tour"
+   }
+  ],
+  "prefer_curated_names": false
+ },
+ "series:lucas-oil-lmds": {
+  "game_template": "dirt_late_national",
+  "history_source": "lolmds",
+  "names_by_year": [
+   {
+    "from": 2018,
+    "to": 2021,
+    "name": "Lucas Oil Late Model Dirt Series"
+   }
+  ],
+  "prefer_curated_names": false
+ },
+ "series:mars-late-model": {
+  "game_template": "dirt_late_model_tour",
+  "history_source": "mars_late_model",
+  "names_by_year": [
+   {
+    "from": 2000,
+    "to": 2100,
+    "name": "MARS Late Model Championship"
+   }
+  ],
+  "prefer_curated_names": false
+ },
+ "series:mars-modified": {
+  "game_template": "dirt_modified_tour",
+  "history_source": "mars_modified",
+  "names_by_year": [
+   {
+    "from": 2023,
+    "to": 2025,
+    "name": "MARS Modified Championship"
    }
   ],
   "prefer_curated_names": false
@@ -366,6 +462,18 @@
   ],
   "prefer_curated_names": false
  },
+ "series:national-sprint-tour": {
+  "game_template": "sprint_car_tour",
+  "history_source": "national_sprint_tour",
+  "names_by_year": [
+   {
+    "from": 2006,
+    "to": 2006,
+    "name": "National Sprint Tour"
+   }
+  ],
+  "prefer_curated_names": false
+ },
  "series:oscaar-modified": {
   "game_template": "modified_tour",
   "history_source": "oscaar_modified",
@@ -426,6 +534,66 @@
   ],
   "prefer_curated_names": false
  },
+ "series:powri-national-midget": {
+  "game_template": "regional_midget",
+  "history_source": "powri_midget",
+  "names_by_year": [
+   {
+    "from": 2005,
+    "to": 2023,
+    "name": "POWRi National Midget League"
+   }
+  ],
+  "prefer_curated_names": false
+ },
+ "series:powri-west-midget": {
+  "game_template": "regional_midget",
+  "history_source": "powri_west_midget",
+  "names_by_year": [
+   {
+    "from": 2014,
+    "to": 2023,
+    "name": "POWRi West Midget League"
+   }
+  ],
+  "prefer_curated_names": false
+ },
+ "series:short-track-super-series": {
+  "game_template": "dirt_modified_tour",
+  "history_source": "stss",
+  "names_by_year": [
+   {
+    "from": 2014,
+    "to": 2100,
+    "name": "Short Track Super Series (overall / Elite title)"
+   }
+  ],
+  "prefer_curated_names": false
+ },
+ "series:short-track-super-series-north": {
+  "game_template": null,
+  "history_source": "stss_north",
+  "names_by_year": [
+   {
+    "from": 2015,
+    "to": 2025,
+    "name": "Short Track Super Series North Region"
+   }
+  ],
+  "prefer_curated_names": false
+ },
+ "series:short-track-super-series-south": {
+  "game_template": null,
+  "history_source": "stss_south",
+  "names_by_year": [
+   {
+    "from": 2015,
+    "to": 2025,
+    "name": "Short Track Super Series South Region"
+   }
+  ],
+  "prefer_curated_names": false
+ },
  "series:smart-modified-tour": {
   "game_template": "modified_tour",
   "history_source": "smart_modified",
@@ -443,6 +611,120 @@
   ],
   "prefer_curated_names": false
  },
+ "series:super-dirtcar-series": {
+  "game_template": "dirt_modified_tour",
+  "history_source": "super_dirtcar",
+  "names_by_year": [
+   {
+    "from": 2018,
+    "to": 2018,
+    "name": "Super DIRTcar Series"
+   }
+  ],
+  "prefer_curated_names": false
+ },
+ "series:supr": {
+  "game_template": "dirt_late_model_tour",
+  "history_source": "supr",
+  "names_by_year": [
+   {
+    "from": 1990,
+    "to": 2012,
+    "name": "Southern United Professional Racing"
+   }
+  ],
+  "prefer_curated_names": false
+ },
+ "series:usac-cra-sprint": {
+  "game_template": "sprint_car_tour",
+  "history_source": "usac_cra_sprint",
+  "names_by_year": [
+   {
+    "from": 2004,
+    "to": 2023,
+    "name": "USAC/CRA Sprint Car Series"
+   }
+  ],
+  "prefer_curated_names": false
+ },
+ "series:usac-national-midget": {
+  "game_template": "national_midget",
+  "history_source": "usac_midget",
+  "names_by_year": [
+   {
+    "from": 2015,
+    "to": 2015,
+    "name": "USAC Honda National Midgets"
+   },
+   {
+    "from": 2016,
+    "to": 2017,
+    "name": "USAC National Midget Series"
+   },
+   {
+    "from": 2018,
+    "to": 2018,
+    "name": "USAC P1 Insurance National Midget Championship"
+   }
+  ],
+  "prefer_curated_names": false
+ },
+ "series:usac-national-sprint": {
+  "game_template": "national_sprint",
+  "history_source": "usac_sprint",
+  "names_by_year": [
+   {
+    "from": 2018,
+    "to": 2018,
+    "name": "USAC AMSOIL National Sprint Car Championship"
+   }
+  ],
+  "prefer_curated_names": false
+ },
+ "series:usac-silver-crown": {
+  "game_template": null,
+  "history_source": "usac_silver_crown",
+  "names_by_year": [
+   {
+    "from": 2010,
+    "to": 2010,
+    "name": "USAC Silver Crown Series"
+   },
+   {
+    "from": 2011,
+    "to": 2015,
+    "name": "USAC Traxxas Silver Crown Series"
+   },
+   {
+    "from": 2016,
+    "to": 2019,
+    "name": "USAC Silver Crown Series"
+   },
+   {
+    "from": 2022,
+    "to": 2022,
+    "name": "USAC Silver Crown Series"
+   },
+   {
+    "from": 2025,
+    "to": 2026,
+    "name": "USAC Silver Crown Series"
+   }
+  ],
+  "prefer_curated_names": false
+ },
+ "series:usac-western-midget": {
+  "game_template": "regional_midget",
+  "history_source": "usac_western_midget",
+  "names_by_year": [
+   {
+    "from": 1982,
+    "to": 2024,
+    "name": "USAC Western States Midget Series"
+   }
+  ],
+  "prefer_curated_names": false
+ },
  "series:usar-pro-cup": {
   "game_template": "late_model_tour",
   "history_source": "pro_cup",
@@ -451,6 +733,47 @@
     "from": 1997,
     "to": 2014,
     "name": "USAR Hooters Pro Cup Series"
+   }
+  ],
+  "prefer_curated_names": false
+ },
+ "series:usmts": {
+  "game_template": "dirt_modified_tour",
+  "history_source": "usmts",
+  "names_by_year": [
+   {
+    "from": 1999,
+    "to": 2100,
+    "name": "United States Modified Touring Series (USMTS)"
+   }
+  ],
+  "prefer_curated_names": false
+ },
+ "series:woo-late-model": {
+  "game_template": "dirt_late_national",
+  "history_source": "woo_late_model",
+  "names_by_year": [
+   {
+    "from": 2018,
+    "to": 2018,
+    "name": "World of Outlaws Craftsman Late Model Series"
+   }
+  ],
+  "prefer_curated_names": false
+ },
+ "series:woo-sprint": {
+  "game_template": "outlaw_sprint",
+  "history_source": "woo_sprint",
+  "names_by_year": [
+   {
+    "from": 2015,
+    "to": 2015,
+    "name": "World of Outlaws Sprint Car Series"
+   },
+   {
+    "from": 2016,
+    "to": 2019,
+    "name": "World of Outlaws Craftsman Sprint Car Series"
    }
   ],
   "prefer_curated_names": false

@@ -1,0 +1,3053 @@
+{
+ "series": "woo_sprint",
+ "year": 2018,
+ "official_name": "World of Outlaws Craftsman Sprint Car Series",
+ "data_level": "full",
+ "champion": {
+  "name": "Donny Schatz",
+  "wiki": "Donny Schatz"
+ },
+ "teams": [
+  {
+   "team": "Williams Motorsports",
+   "manufacturer": "Maxim",
+   "cars": [
+    {
+     "number": "0",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Bud Kaeding",
+       "wiki": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": null,
+   "manufacturer": null,
+   "cars": [
+    {
+     "number": "0",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Andy McElhannon",
+       "wiki": null
+      }
+     ]
+    },
+    {
+     "number": "1AJ",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Trevor Mell",
+       "wiki": null
+      }
+     ]
+    },
+    {
+     "number": "1J",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Danny Jennings",
+       "wiki": null
+      }
+     ]
+    },
+    {
+     "number": "1M",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "James Moughan",
+       "wiki": null
+      },
+      {
+       "name": "Phillip Mock",
+       "wiki": null
+      }
+     ]
+    },
+    {
+     "number": "1x",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Scott Hunter",
+       "wiki": null
+      }
+     ]
+    },
+    {
+     "number": "2A",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Austin Pierce",
+       "wiki": null
+      }
+     ]
+    },
+    {
+     "number": "2b",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Billy Chester",
+       "wiki": null
+      }
+     ]
+    },
+    {
+     "number": "2ks",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Austin McCarl",
+       "wiki": null
+      }
+     ]
+    },
+    {
+     "number": "2s",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Nathan Skaggs",
+       "wiki": null
+      }
+     ]
+    },
+    {
+     "number": "2W",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Scotty Neitzel",
+       "wiki": null
+      }
+     ]
+    },
+    {
+     "number": "2X",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Brian Smith",
+       "wiki": "Brian Smith (racing driver)"
+      }
+     ]
+    },
+    {
+     "number": "3",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Sammy Swindell",
+       "wiki": "Sammy Swindell"
+      },
+      {
+       "name": "Jac Haudenschild",
+       "wiki": "Jac Haudenschild"
+      },
+      {
+       "name": "Dakota Jackson",
+       "wiki": null
+      },
+      {
+       "name": "Tim Kaeding",
+       "wiki": null
+      }
+     ]
+    },
+    {
+     "number": "3P",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Sawyer Phillips",
+       "wiki": null
+      }
+     ]
+    },
+    {
+     "number": "4B",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Steve Butler",
+       "wiki": "Steve Butler"
+      }
+     ]
+    },
+    {
+     "number": "4k",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Kody Kinser",
+       "wiki": null
+      }
+     ]
+    },
+    {
+     "number": "4s",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Danny Smith",
+       "wiki": null
+      }
+     ]
+    },
+    {
+     "number": "4x",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Eric Schulz",
+       "wiki": null
+      }
+     ]
+    },
+    {
+     "number": "5A",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Justin Barger",
+       "wiki": null
+      }
+     ]
+    },
+    {
+     "number": "5H",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Michael \"Buddy\" Kofoid",
+       "wiki": null
+      },
+      {
+       "name": "Andy Teunessen",
+       "wiki": null
+      }
+     ]
+    },
+    {
+     "number": "5J",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Jeremy Schultz",
+       "wiki": null
+      }
+     ]
+    },
+    {
+     "number": "5QB",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Quentin Blonde",
+       "wiki": null
+      }
+     ]
+    },
+    {
+     "number": "5x",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Kory Bates",
+       "wiki": null
+      },
+      {
+       "name": "Justin Peck",
+       "wiki": null
+      }
+     ]
+    },
+    {
+     "number": "6N",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Greg Nikitenko",
+       "wiki": null
+      }
+     ]
+    },
+    {
+     "number": "7",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "John Carney",
+       "wiki": null
+      },
+      {
+       "name": "Carson McCarl",
+       "wiki": null
+      }
+     ]
+    },
+    {
+     "number": "7W",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Tasker Phillips",
+       "wiki": null
+      }
+     ]
+    },
+    {
+     "number": "7X",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Critter Malone",
+       "wiki": null
+      }
+     ]
+    },
+    {
+     "number": "8",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Jack Croaker",
+       "wiki": null
+      }
+     ]
+    },
+    {
+     "number": "8H",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Jade Hastings",
+       "wiki": null
+      }
+     ]
+    },
+    {
+     "number": "8s",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Steve Short",
+       "wiki": null
+      }
+     ]
+    },
+    {
+     "number": "9JR",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Derek Hagar",
+       "wiki": null
+      }
+     ]
+    },
+    {
+     "number": "9N",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Wade Nygaard",
+       "wiki": null
+      }
+     ]
+    },
+    {
+     "number": "9P",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Rager Phillips",
+       "wiki": null
+      }
+     ]
+    },
+    {
+     "number": "9X",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Paul Nienhiser",
+       "wiki": null
+      }
+     ]
+    },
+    {
+     "number": "01",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Matt Vandervere",
+       "wiki": null
+      }
+     ]
+    },
+    {
+     "number": "05",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Colin Smith",
+       "wiki": null
+      }
+     ]
+    },
+    {
+     "number": "07",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Gerard McIntyre",
+       "wiki": null
+      }
+     ]
+    },
+    {
+     "number": "09",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Matt Juhl",
+       "wiki": null
+      }
+     ]
+    },
+    {
+     "number": "10P",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Jim Perricone",
+       "wiki": null
+      }
+     ]
+    },
+    {
+     "number": "10TRB",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Bob Martin",
+       "wiki": null
+      }
+     ]
+    },
+    {
+     "number": "10V",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Matt Vandervere",
+       "wiki": null
+      }
+     ]
+    },
+    {
+     "number": "11R",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Chase Ridenour",
+       "wiki": null
+      }
+     ]
+    },
+    {
+     "number": "12",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Lynton Jeffrey",
+       "wiki": null
+      }
+     ]
+    },
+    {
+     "number": "12N",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Cole Duncan",
+       "wiki": null
+      }
+     ]
+    },
+    {
+     "number": "12W",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Dale Wester",
+       "wiki": null
+      }
+     ]
+    },
+    {
+     "number": "14",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Jody Rosenboom",
+       "wiki": null
+      },
+      {
+       "name": "Tom Egeland",
+       "wiki": null
+      },
+      {
+       "name": "Bill Holler",
+       "wiki": null
+      }
+     ]
+    },
+    {
+     "number": "14AJ",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Wayne Modjeski",
+       "wiki": null
+      }
+     ]
+    },
+    {
+     "number": "14K",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Tori Knutson",
+       "wiki": null
+      }
+     ]
+    },
+    {
+     "number": "14T",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Jimmy Bridgeman",
+       "wiki": null
+      }
+     ]
+    },
+    {
+     "number": "14x",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Jeff Swindell",
+       "wiki": null
+      }
+     ]
+    },
+    {
+     "number": "15M",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Bobby Mincer",
+       "wiki": null
+      }
+     ]
+    },
+    {
+     "number": "16",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Travis Whitney",
+       "wiki": null
+      }
+     ]
+    },
+    {
+     "number": "16A",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Colby Copeland",
+       "wiki": null
+      }
+     ]
+    },
+    {
+     "number": "17B",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Bill Balog",
+       "wiki": null
+      }
+     ]
+    },
+    {
+     "number": "17G",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Channin Tankersley",
+       "wiki": null
+      }
+     ]
+    },
+    {
+     "number": "18S",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Michael Summers",
+       "wiki": null
+      }
+     ]
+    },
+    {
+     "number": "19AZ",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Hunter Schuerenberg",
+       "wiki": null
+      }
+     ]
+    },
+    {
+     "number": "19L",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "R.J. Johnson",
+       "wiki": null
+      }
+     ]
+    },
+    {
+     "number": "19P",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Paige Polyak",
+       "wiki": null
+      }
+     ]
+    },
+    {
+     "number": "19W",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Bobby Weuve",
+       "wiki": null
+      }
+     ]
+    },
+    {
+     "number": "20",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Nick Drake",
+       "wiki": "Nick Drake (racing driver)"
+      },
+      {
+       "name": "Hunter Schuerenberg",
+       "wiki": null
+      },
+      {
+       "name": "Brant O'Banion",
+       "wiki": null
+      },
+      {
+       "name": "Kevin Lawson",
+       "wiki": null
+      },
+      {
+       "name": "A.J. Moeller",
+       "wiki": null
+      }
+     ]
+    },
+    {
+     "number": "20A",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Jordan Adams",
+       "wiki": null
+      }
+     ]
+    },
+    {
+     "number": "20K",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Kevin Ulmer",
+       "wiki": null
+      }
+     ]
+    },
+    {
+     "number": "20L",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Dusty Lawson",
+       "wiki": null
+      }
+     ]
+    },
+    {
+     "number": "20N",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Hunter Schuerenberg",
+       "wiki": null
+      }
+     ]
+    },
+    {
+     "number": "21",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Carson Short",
+       "wiki": null
+      }
+     ]
+    },
+    {
+     "number": "21AU",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Jordyn Brazier",
+       "wiki": null
+      }
+     ]
+    },
+    {
+     "number": "21B",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Carson Macedo",
+       "wiki": null
+      }
+     ]
+    },
+    {
+     "number": "21K",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Thomas Kennedy",
+       "wiki": null
+      }
+     ]
+    },
+    {
+     "number": "21x",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Carson Short",
+       "wiki": null
+      },
+      {
+       "name": "Carson Macedo",
+       "wiki": null
+      }
+     ]
+    },
+    {
+     "number": "22",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Cole Duncan",
+       "wiki": null
+      },
+      {
+       "name": "Todd King",
+       "wiki": null
+      }
+     ]
+    },
+    {
+     "number": "22M",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Dan McCarron",
+       "wiki": null
+      }
+     ]
+    },
+    {
+     "number": "23",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Russel Borland",
+       "wiki": null
+      }
+     ]
+    },
+    {
+     "number": "23D",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Trey Datweiler",
+       "wiki": null
+      }
+     ]
+    },
+    {
+     "number": "23W",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Scott Winters",
+       "wiki": null
+      }
+     ]
+    },
+    {
+     "number": "25",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Jacob Blackhurst",
+       "wiki": null
+      }
+     ]
+    },
+    {
+     "number": "26",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Blake Egeland",
+       "wiki": null
+      }
+     ]
+    },
+    {
+     "number": "27",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Chris Ranten",
+       "wiki": null
+      }
+     ]
+    },
+    {
+     "number": "28",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Nathan Rolfe",
+       "wiki": null
+      },
+      {
+       "name": "Brian Paulus",
+       "wiki": null
+      }
+     ]
+    },
+    {
+     "number": "32",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Chase Stockon",
+       "wiki": null
+      }
+     ]
+    },
+    {
+     "number": "37",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Mitchell Faccinto",
+       "wiki": null
+      }
+     ]
+    },
+    {
+     "number": "40",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "George Hobaugh",
+       "wiki": null
+      },
+      {
+       "name": "Howard Moore",
+       "wiki": null
+      }
+     ]
+    },
+    {
+     "number": "45x",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Eric Perrott",
+       "wiki": null
+      }
+     ]
+    },
+    {
+     "number": "47",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Dale Howard",
+       "wiki": null
+      }
+     ]
+    },
+    {
+     "number": "49D",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Shawn Dancer",
+       "wiki": null
+      }
+     ]
+    },
+    {
+     "number": "49J",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Josh Schneiderman",
+       "wiki": null
+      }
+     ]
+    },
+    {
+     "number": "50Z",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Zach Chappell",
+       "wiki": null
+      }
+     ]
+    },
+    {
+     "number": "51B",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Joe B. Miller",
+       "wiki": null
+      }
+     ]
+    },
+    {
+     "number": "55",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Nick Ranten",
+       "wiki": null
+      }
+     ]
+    },
+    {
+     "number": "56N",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Davey Heskin",
+       "wiki": null
+      }
+     ]
+    },
+    {
+     "number": "64",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Scotty Thiel",
+       "wiki": null
+      }
+     ]
+    },
+    {
+     "number": "68",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Chase Johnson",
+       "wiki": null
+      }
+     ]
+    },
+    {
+     "number": "70",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Dave Blaney",
+       "wiki": "Dave Blaney"
+      },
+      {
+       "name": "Raymond Hensley",
+       "wiki": null
+      }
+     ]
+    },
+    {
+     "number": "71A",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "R.J. Johnson",
+       "wiki": null
+      }
+     ]
+    },
+    {
+     "number": "71H",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Ryan Ruhl",
+       "wiki": null
+      }
+     ]
+    },
+    {
+     "number": "71M",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Andy Bradley",
+       "wiki": null
+      }
+     ]
+    },
+    {
+     "number": "73",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Ben Schmidt",
+       "wiki": null
+      }
+     ]
+    },
+    {
+     "number": "75",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Glen Saville",
+       "wiki": null
+      }
+     ]
+    },
+    {
+     "number": "A79",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Brandon Wimmer",
+       "wiki": null
+      }
+     ]
+    },
+    {
+     "number": "79J",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Jacob Patton",
+       "wiki": null
+      }
+     ]
+    },
+    {
+     "number": "83H",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Justin Henderson",
+       "wiki": null
+      }
+     ]
+    },
+    {
+     "number": "84",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Brandon Hanks",
+       "wiki": null
+      }
+     ]
+    },
+    {
+     "number": "85",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Mike Terry",
+       "wiki": null
+      },
+      {
+       "name": "Dustin Daggett",
+       "wiki": null
+      },
+      {
+       "name": "Chase Wanner",
+       "wiki": null
+      }
+     ]
+    },
+    {
+     "number": "86",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Chris Ennis",
+       "wiki": null
+      }
+     ]
+    },
+    {
+     "number": "88N",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "D.J. Netto",
+       "wiki": null
+      }
+     ]
+    },
+    {
+     "number": "90",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Randy Waitman",
+       "wiki": null
+      }
+     ]
+    },
+    {
+     "number": "91",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Cale Thomas",
+       "wiki": null
+      }
+     ]
+    },
+    {
+     "number": "91A",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Ernie Ainsworth",
+       "wiki": null
+      }
+     ]
+    },
+    {
+     "number": "97G",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Hunter Schuerenberg",
+       "wiki": null
+      }
+     ]
+    },
+    {
+     "number": "98",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Sean Watts",
+       "wiki": null
+      },
+      {
+       "name": "Clinton Boyles",
+       "wiki": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Shark Racing",
+   "manufacturer": "Triple X",
+   "cars": [
+    {
+     "number": "1a",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Jacob Allen",
+       "wiki": null
+      }
+     ]
+    },
+    {
+     "number": "1s",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Logan Schuchart",
+       "wiki": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Kyle Larson Racing",
+   "manufacturer": "RPM",
+   "cars": [
+    {
+     "number": "1k",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Kyle Larson",
+       "wiki": "Kyle Larson"
+      }
+     ]
+    },
+    {
+     "number": "2",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Shane Stewart",
+       "wiki": "Shane Stewart"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Big Game Motorsports",
+   "manufacturer": null,
+   "cars": [
+    {
+     "number": "2m",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Kerry Madsen",
+       "wiki": "Kerry Madsen"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "TRI-C Motorsports",
+   "manufacturer": "Spike",
+   "cars": [
+    {
+     "number": "3c",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Tanner Thorson",
+       "wiki": "Tanner Thorson"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Destiny Motorsports",
+   "manufacturer": "Triple X",
+   "cars": [
+    {
+     "number": "4",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Parker Price-Miller",
+       "wiki": "Parker Price-Miller"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Kasey Kahne Racing with Mike Curb",
+   "manufacturer": null,
+   "cars": [
+    {
+     "number": "4",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Kasey Kahne",
+       "wiki": "Kasey Kahne"
+      }
+     ]
+    },
+    {
+     "number": "4k",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Kasey Kahne",
+       "wiki": "Kasey Kahne"
+      }
+     ]
+    },
+    {
+     "number": "9",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Daryn Pittman",
+       "wiki": "Daryn Pittman"
+      }
+     ]
+    },
+    {
+     "number": "49",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Brad Sweet",
+       "wiki": "Brad Sweet"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "CJB Motorsports",
+   "manufacturer": "TI22",
+   "cars": [
+    {
+     "number": "5",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "David Gravel",
+       "wiki": "David Gravel"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Chase Briscoe Racing",
+   "manufacturer": null,
+   "cars": [
+    {
+     "number": "5B",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Chase Briscoe",
+       "wiki": "Chase Briscoe"
+      },
+      {
+       "name": "Logan Seavey",
+       "wiki": "Logan Seavey"
+      },
+      {
+       "name": "Christopher Bell",
+       "wiki": "Christopher Bell (racing driver)"
+      }
+     ]
+    },
+    {
+     "number": "5C",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Christopher Bell",
+       "wiki": "Christopher Bell (racing driver)"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Lucas Wolfe Racing",
+   "manufacturer": null,
+   "cars": [
+    {
+     "number": "5w",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Lucas Wolfe",
+       "wiki": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Dave Jessup Racing",
+   "manufacturer": null,
+   "cars": [
+    {
+     "number": "7k",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Cale Conley",
+       "wiki": "Cale Conley"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Sides Motorsports",
+   "manufacturer": "Maxim",
+   "cars": [
+    {
+     "number": "7S",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Tim Kaeding",
+       "wiki": null
+      },
+      {
+       "name": "Jason Sides",
+       "wiki": null
+      }
+     ]
+    },
+    {
+     "number": "7SS",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Jason Sides",
+       "wiki": null
+      }
+     ]
+    },
+    {
+     "number": "7S50",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Keoni Texeira",
+       "wiki": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Lorenc Racing",
+   "manufacturer": null,
+   "cars": [
+    {
+     "number": "00",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Dane Lorenc",
+       "wiki": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Loyet Motorsports",
+   "manufacturer": null,
+   "cars": [
+    {
+     "number": "05",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Gary Taylor",
+       "wiki": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "SPF Racing",
+   "manufacturer": null,
+   "cars": [
+    {
+     "number": "10",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Matthew Moles",
+       "wiki": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Hunter Racing",
+   "manufacturer": "Maxim",
+   "cars": [
+    {
+     "number": "10h",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Chad Kemenah",
+       "wiki": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "McGhee Motorsports",
+   "manufacturer": null,
+   "cars": [
+    {
+     "number": "11",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Max McGhee",
+       "wiki": null
+      },
+      {
+       "name": "Dominic Scelzi",
+       "wiki": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Steve Kinser Racing",
+   "manufacturer": "DRC",
+   "cars": [
+    {
+     "number": "11k",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Kraig Kinser",
+       "wiki": "Kraig Kinser"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Robert Ballou Motorsports",
+   "manufacturer": "Boss",
+   "cars": [
+    {
+     "number": "12",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Robert Ballou",
+       "wiki": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Clyde Knipp Racing",
+   "manufacturer": "Maxim",
+   "cars": [
+    {
+     "number": "13",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Clyde Knipp",
+       "wiki": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Jimco Motorsports",
+   "manufacturer": "Eagle",
+   "cars": [
+    {
+     "number": "13JT",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Mark Dobmeier",
+       "wiki": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Buch13 Racing",
+   "manufacturer": null,
+   "cars": [
+    {
+     "number": "13x",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Paul McMahan",
+       "wiki": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "H.P. Myatt / Jason Meyers",
+   "manufacturer": "KPC",
+   "cars": [
+    {
+     "number": "14",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Jason Meyers",
+       "wiki": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Tony Stewart/Curb-Agajanian Racing",
+   "manufacturer": "J&J",
+   "cars": [
+    {
+     "number": "15",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Donny Schatz",
+       "wiki": "Donny Schatz"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Hill's Racing Team",
+   "manufacturer": "Cool",
+   "cars": [
+    {
+     "number": "15h",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Sam Hafertepe Jr.",
+       "wiki": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Stenhouse Jr. - Marshall Racing",
+   "manufacturer": "J&J",
+   "cars": [
+    {
+     "number": "17",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Sheldon Haudenschild",
+       "wiki": null
+      }
+     ]
+    },
+    {
+     "number": "17BC",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Ricky Stenhouse Jr.",
+       "wiki": "Ricky Stenhouse Jr."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "TKS Motorsports",
+   "manufacturer": "Maxim",
+   "cars": [
+    {
+     "number": "17a",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Austin McCarl",
+       "wiki": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Helms Motorsports",
+   "manufacturer": null,
+   "cars": [
+    {
+     "number": "17c",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Caleb Helms",
+       "wiki": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "KCP Racing",
+   "manufacturer": "KCP",
+   "cars": [
+    {
+     "number": "18",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Ian Madsen",
+       "wiki": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Brent Marks Racing",
+   "manufacturer": "Maxim",
+   "cars": [
+    {
+     "number": "19",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Brent Marks",
+       "wiki": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Greg Wilson Racing",
+   "manufacturer": "Maxim",
+   "cars": [
+    {
+     "number": "W20",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Greg Wilson",
+       "wiki": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Brian Brown Racing",
+   "manufacturer": null,
+   "cars": [
+    {
+     "number": "21",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Brian Brown",
+       "wiki": "Brian Brown (racing driver)"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Cori Andrews",
+   "manufacturer": null,
+   "cars": [
+    {
+     "number": "22",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Cori Andrews",
+       "wiki": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Keith Day Racing",
+   "manufacturer": null,
+   "cars": [
+    {
+     "number": "22",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Shane Golobic",
+       "wiki": "Shane Golobic"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "TMAC Motorsports",
+   "manufacturer": "Sliva",
+   "cars": [
+    {
+     "number": "24",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Terry McCarl",
+       "wiki": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Rico Abreu Racing",
+   "manufacturer": null,
+   "cars": [
+    {
+     "number": "24",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Rico Abreu",
+       "wiki": "Rico Abreu"
+      }
+     ]
+    },
+    {
+     "number": "24R",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Rico Abreu",
+       "wiki": "Rico Abreu"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Rudeen Racing",
+   "manufacturer": null,
+   "cars": [
+    {
+     "number": "26",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Joey Saldana",
+       "wiki": "Joey Saldana"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Heffner Racing",
+   "manufacturer": null,
+   "cars": [
+    {
+     "number": "27",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Greg Hodnett",
+       "wiki": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Willie Croft Racing",
+   "manufacturer": null,
+   "cars": [
+    {
+     "number": "29",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Willie Croft",
+       "wiki": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Leary Racing",
+   "manufacturer": "DRC",
+   "cars": [
+    {
+     "number": "30",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "C.J. Leary",
+       "wiki": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Swindell Speedlab",
+   "manufacturer": null,
+   "cars": [
+    {
+     "number": "39",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Spencer Bayston",
+       "wiki": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Jason Johnson Racing",
+   "manufacturer": "Maxim",
+   "cars": [
+    {
+     "number": "41",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Jason Johnson",
+       "wiki": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Gary Scelzi Motorsports",
+   "manufacturer": null,
+   "cars": [
+    {
+     "number": "41s",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Dominic Scelzi",
+       "wiki": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Gobrecht Motorsports",
+   "manufacturer": null,
+   "cars": [
+    {
+     "number": "44",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Trey Starks",
+       "wiki": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Austin Wheatley",
+   "manufacturer": null,
+   "cars": [
+    {
+     "number": "45",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Paul McMahan",
+       "wiki": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "T-Rev Performance",
+   "manufacturer": "Triple X",
+   "cars": [
+    {
+     "number": "45",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Trevor Baker",
+       "wiki": null
+      }
+     ]
+    },
+    {
+     "number": "45T",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Trevor Baker",
+       "wiki": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Gary Kauffman Racing",
+   "manufacturer": "Maxim",
+   "cars": [
+    {
+     "number": "48",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Danny Dietrich",
+       "wiki": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Demyan-Rudzik Racing",
+   "manufacturer": "Triple X",
+   "cars": [
+    {
+     "number": "49x",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Tim Shaffer",
+       "wiki": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Barry & Vivian Lewis",
+   "manufacturer": null,
+   "cars": [
+    {
+     "number": "55",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Brooke Tatnell",
+       "wiki": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Paul Silva",
+   "manufacturer": null,
+   "cars": [
+    {
+     "number": "57",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Gio Scelzi",
+       "wiki": "Gio Scelzi"
+      },
+      {
+       "name": "Gary Taylor",
+       "wiki": null
+      },
+      {
+       "name": "Kyle Larson",
+       "wiki": "Kyle Larson"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Dooling-Hayward Motorsports with RCR",
+   "manufacturer": null,
+   "cars": [
+    {
+     "number": "63",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Kevin Thomas Jr.",
+       "wiki": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Keith Kunz Motorsports",
+   "manufacturer": null,
+   "cars": [
+    {
+     "number": "67",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Ryan Robinson",
+       "wiki": null
+      },
+      {
+       "name": "Logan Seavey",
+       "wiki": "Logan Seavey"
+      }
+     ]
+    },
+    {
+     "number": "67K",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Tucker Klassmeyer",
+       "wiki": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Indy Race Parts",
+   "manufacturer": null,
+   "cars": [
+    {
+     "number": "71",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Gio Scelzi",
+       "wiki": "Gio Scelzi"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Roth Motorsports",
+   "manufacturer": null,
+   "cars": [
+    {
+     "number": "83",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Cory Eliason",
+       "wiki": null
+      }
+     ]
+    },
+    {
+     "number": "83JR",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Kyle Hirst",
+       "wiki": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Baughman-Reutzel Motorsports",
+   "manufacturer": null,
+   "cars": [
+    {
+     "number": "87",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Aaron Reutzel",
+       "wiki": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Brady Bacon Racing",
+   "manufacturer": "Triple X",
+   "cars": [
+    {
+     "number": "99",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Brady Bacon",
+       "wiki": "Brady Bacon"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "standings": [],
+ "schedule": [
+  {
+   "round": 1,
+   "date": "2018-02-09",
+   "race": "DIRTcar Nationals",
+   "track": "Volusia Speedway Park",
+   "city": "Barberville",
+   "state": "FL",
+   "winner": "Sheldon Haudenschild",
+   "winner_wiki": null
+  },
+  {
+   "round": 2,
+   "date": "2018-02-10",
+   "race": "DIRTcar Nationals",
+   "track": "Volusia Speedway Park",
+   "city": "Barberville",
+   "state": "FL",
+   "winner": "Donny Schatz",
+   "winner_wiki": "Donny Schatz"
+  },
+  {
+   "round": 3,
+   "date": "2018-02-11",
+   "race": "DIRTcar Nationals",
+   "track": "Volusia Speedway Park",
+   "city": "Barberville",
+   "state": "FL",
+   "winner": "Donny Schatz",
+   "winner_wiki": "Donny Schatz"
+  },
+  {
+   "round": 4,
+   "date": "2018-02-28",
+   "race": "FVP Outlaw Showdown",
+   "track": "The Dirt Track at Las Vegas Motor Speedway",
+   "city": "Las Vegas",
+   "state": "NV",
+   "winner": "Sheldon Haudenschild",
+   "winner_wiki": null
+  },
+  {
+   "round": 5,
+   "date": "2018-03-01",
+   "race": "FVP Outlaw Showdown",
+   "track": "The Dirt Track at Las Vegas Motor Speedway",
+   "city": "Las Vegas",
+   "state": "NV",
+   "winner": "Donny Schatz",
+   "winner_wiki": "Donny Schatz"
+  },
+  {
+   "round": 6,
+   "date": "2018-03-09",
+   "race": null,
+   "track": "Thunderbowl Raceway",
+   "city": "Tulare",
+   "state": "CA",
+   "winner": "Aaron Reutzel",
+   "winner_wiki": null
+  },
+  {
+   "round": 7,
+   "date": "2018-03-17",
+   "race": "FVP Platinum Battery Western Spring Shootout",
+   "track": "Stockton Dirt Track",
+   "city": "Stockton",
+   "state": "CA",
+   "winner": "Cory Eliason",
+   "winner_wiki": null
+  },
+  {
+   "round": 8,
+   "date": "2018-03-24",
+   "race": null,
+   "track": "Bakersfield Speedway",
+   "city": "Bakersfield",
+   "state": "CA",
+   "winner": "Sheldon Haudenschild",
+   "winner_wiki": null
+  },
+  {
+   "round": 9,
+   "date": "2018-04-07",
+   "race": "Arizona Desert Shootout",
+   "track": "Arizona Speedway",
+   "city": "Queen Creek",
+   "state": "AZ",
+   "winner": "Donny Schatz",
+   "winner_wiki": "Donny Schatz"
+  },
+  {
+   "round": 10,
+   "date": "2018-04-20",
+   "race": null,
+   "track": "Riverside International Speedway",
+   "city": "West Memphis",
+   "state": "AR",
+   "winner": "Daryn Pittman",
+   "winner_wiki": "Daryn Pittman"
+  },
+  {
+   "round": 11,
+   "date": "2018-04-21",
+   "race": "Spring Classic",
+   "track": "Federated Auto Parts Raceway at I-55",
+   "city": "Pevely",
+   "state": "MO",
+   "winner": "Daryn Pittman",
+   "winner_wiki": "Daryn Pittman"
+  },
+  {
+   "round": 12,
+   "date": "2018-04-26",
+   "race": null,
+   "track": "Cotton Bowl Speedway",
+   "city": "Paige",
+   "state": "TX",
+   "winner": "David Gravel",
+   "winner_wiki": "David Gravel"
+  },
+  {
+   "round": 13,
+   "date": "2018-04-27",
+   "race": "Texas Outlaw Nationals",
+   "track": "Devil's Bowl Speedway",
+   "city": "Mesquite",
+   "state": "TX",
+   "winner": "Daryn Pittman",
+   "winner_wiki": "Daryn Pittman"
+  },
+  {
+   "round": 14,
+   "date": "2018-04-28",
+   "race": "Texas Outlaw Nationals",
+   "track": "Devil's Bowl Speedway",
+   "city": "Mesquite",
+   "state": "TX",
+   "winner": "Donny Schatz",
+   "winner_wiki": "Donny Schatz"
+  },
+  {
+   "round": 15,
+   "date": "2018-05-04",
+   "race": null,
+   "track": "Lake Ozark Speedway",
+   "city": "Eldon",
+   "state": "MO",
+   "winner": "Donny Schatz",
+   "winner_wiki": "Donny Schatz"
+  },
+  {
+   "round": 16,
+   "date": "2018-05-05",
+   "race": null,
+   "track": "Salina Highbanks Speedway",
+   "city": "Salina",
+   "state": "OK",
+   "winner": "Brad Sweet",
+   "winner_wiki": "Brad Sweet"
+  },
+  {
+   "round": 17,
+   "date": "2018-05-11",
+   "race": "#LetsRaceTwo",
+   "track": "Eldora Speedway",
+   "city": "Rossburg",
+   "state": "OH",
+   "winner": "Donny Schatz",
+   "winner_wiki": "Donny Schatz"
+  },
+  {
+   "round": 18,
+   "date": "2018-05-12",
+   "race": "#LetsRaceTwo",
+   "track": "Eldora Speedway",
+   "city": "Rossburg",
+   "state": "OH",
+   "winner": "Donny Schatz",
+   "winner_wiki": "Donny Schatz"
+  },
+  {
+   "round": 19,
+   "date": "2018-05-13",
+   "race": null,
+   "track": "Tri-State Speedway",
+   "city": "Haubstadt",
+   "state": "IN",
+   "winner": "David Gravel",
+   "winner_wiki": "David Gravel"
+  },
+  {
+   "round": 20,
+   "date": "2018-05-25",
+   "race": "Outlaw Showdown",
+   "track": "The Dirt Track at Charlotte Motor Speedway",
+   "city": "Concord",
+   "state": "NC",
+   "winner": "Donny Schatz",
+   "winner_wiki": "Donny Schatz"
+  },
+  {
+   "round": 21,
+   "date": "2018-05-28",
+   "race": "Memorial Day Spectacular presented by KOI Auto Parts",
+   "track": "Lawrenceburg Speedway",
+   "city": "Lawrenceburg",
+   "state": "IN",
+   "winner": "Brad Sweet",
+   "winner_wiki": "Brad Sweet"
+  },
+  {
+   "round": 22,
+   "date": "2018-06-01",
+   "race": "Rumble in Michigan",
+   "track": "I-96 Speedway",
+   "city": "Lake Odessa",
+   "state": "MI",
+   "winner": "David Gravel",
+   "winner_wiki": "David Gravel"
+  },
+  {
+   "round": 23,
+   "date": "2018-06-02",
+   "race": "Badger 40",
+   "track": "Wilmot Raceway",
+   "city": "Wilmot",
+   "state": "WI",
+   "winner": "Brent Marks",
+   "winner_wiki": null
+  },
+  {
+   "round": 24,
+   "date": "2018-06-05",
+   "race": "FVP Platinum Battery Showdown",
+   "track": "Fairbury American Legion Speedway",
+   "city": "Fairbury",
+   "state": "IL",
+   "winner": "Sheldon Haudenschild",
+   "winner_wiki": null
+  },
+  {
+   "round": 25,
+   "date": "2018-06-08",
+   "race": "AGCO Jackson Nationals",
+   "track": "Jackson Motorplex",
+   "city": "Jackson",
+   "state": "MN",
+   "winner": "Jason Johnson",
+   "winner_wiki": null
+  },
+  {
+   "round": 26,
+   "date": "2018-06-09",
+   "race": "AGCO Jackson Nationals",
+   "track": "Jackson Motorplex",
+   "city": "Jackson",
+   "state": "MN",
+   "winner": "Jason Johnson",
+   "winner_wiki": null
+  },
+  {
+   "round": 27,
+   "date": "2018-06-09",
+   "race": "AGCO Jackson Nationals",
+   "track": "Jackson Motorplex",
+   "city": "Jackson",
+   "state": "MN",
+   "winner": "Donny Schatz",
+   "winner_wiki": "Donny Schatz"
+  },
+  {
+   "round": 28,
+   "date": "2018-06-15",
+   "race": "Northern Tour",
+   "track": "River Cities Speedway",
+   "city": "Grand Forks",
+   "state": "ND",
+   "winner": "Donny Schatz",
+   "winner_wiki": "Donny Schatz"
+  },
+  {
+   "round": 29,
+   "date": "2018-06-17",
+   "race": "Magic City Showdown",
+   "track": "Nodak Speedway",
+   "city": "Minot",
+   "state": "ND",
+   "winner": "Daryn Pittman",
+   "winner_wiki": "Daryn Pittman"
+  },
+  {
+   "round": 30,
+   "date": "2018-06-23",
+   "race": "Jim \"JB\" Boyd Memorial presented by Karavan Trailers",
+   "track": "Beaver Dam Raceway",
+   "city": "Beaver Dam",
+   "state": "WI",
+   "winner": "Daryn Pittman",
+   "winner_wiki": "Daryn Pittman"
+  },
+  {
+   "round": 31,
+   "date": "2018-06-29",
+   "race": "Brownells Big Guns Bash",
+   "track": "Knoxville Raceway",
+   "city": "Knoxville",
+   "state": "IA",
+   "winner": "Donny Schatz",
+   "winner_wiki": "Donny Schatz"
+  },
+  {
+   "round": 32,
+   "date": "2018-06-30",
+   "race": "Brownells Big Guns Bash",
+   "track": "Knoxville Raceway",
+   "city": "Knoxville",
+   "state": "IA",
+   "winner": "David Gravel",
+   "winner_wiki": "David Gravel"
+  },
+  {
+   "round": 33,
+   "date": "2018-07-06",
+   "race": "FVP Platinum Battery Showdown",
+   "track": "Cedar Lake Speedway",
+   "city": "New Richmond",
+   "state": "WI",
+   "winner": "Brad Sweet",
+   "winner_wiki": "Brad Sweet"
+  },
+  {
+   "round": 34,
+   "date": "2018-07-07",
+   "race": "FVP Platinum Battery Showdown",
+   "track": "Cedar Lake Speedway",
+   "city": "New Richmond",
+   "state": "WI",
+   "winner": "Kerry Madsen",
+   "winner_wiki": "Kerry Madsen"
+  },
+  {
+   "round": 35,
+   "date": "2018-07-10",
+   "race": "Ohio Logistics Brad Doty Classic",
+   "track": "Attica Raceway Park",
+   "city": "Attica",
+   "state": "OH",
+   "winner": "Donny Schatz",
+   "winner_wiki": "Donny Schatz"
+  },
+  {
+   "round": 36,
+   "date": "2018-07-12",
+   "race": "Jokers Wild",
+   "track": "Eldora Speedway",
+   "city": "Rossburg",
+   "state": "OH",
+   "winner": "Shane Stewart",
+   "winner_wiki": "Shane Stewart"
+  },
+  {
+   "round": 37,
+   "date": "2018-07-13",
+   "race": "Knight Before the Kings Royal",
+   "track": "Eldora Speedway",
+   "city": "Rossburg",
+   "state": "OH",
+   "winner": "Donny Schatz",
+   "winner_wiki": "Donny Schatz"
+  },
+  {
+   "round": 38,
+   "date": "2018-07-14",
+   "race": "Kings Royal",
+   "track": "Eldora Speedway",
+   "city": "Rossburg",
+   "state": "OH",
+   "winner": "Donny Schatz",
+   "winner_wiki": "Donny Schatz"
+  },
+  {
+   "round": 39,
+   "date": "2018-07-17",
+   "race": "Don Martin Memorial Silver Cup",
+   "track": "Lernerville Speedway",
+   "city": "Sarver",
+   "state": "PA",
+   "winner": "Kyle Larson",
+   "winner_wiki": "Kyle Larson"
+  },
+  {
+   "round": 40,
+   "date": "2018-07-19",
+   "race": "Gettysburg Clash",
+   "track": "Lincoln Speedway",
+   "city": "Abbottstown",
+   "state": "PA",
+   "winner": "Freddie Rahmer",
+   "winner_wiki": null
+  },
+  {
+   "round": 41,
+   "date": "2018-07-20",
+   "race": "Champion Racing Oil Summer Nationals",
+   "track": "Williams Grove Speedway",
+   "city": "Mechanicsburg",
+   "state": "PA",
+   "winner": "Lance Dewease",
+   "winner_wiki": null
+  },
+  {
+   "round": 42,
+   "date": "2018-07-27",
+   "race": "The Big \"R\" Outlaw Showdown",
+   "track": "Ransomville Speedway",
+   "city": "Ransomville",
+   "state": "NY",
+   "winner": "David Gravel",
+   "winner_wiki": "David Gravel"
+  },
+  {
+   "round": 43,
+   "date": "2018-07-29",
+   "race": "Empire State Challenge",
+   "track": "Weedsport Speedway",
+   "city": "Weedsport",
+   "state": "NY",
+   "winner": "Brent Marks",
+   "winner_wiki": null
+  },
+  {
+   "round": 44,
+   "date": "2018-08-03",
+   "race": "Night Before the Ironman",
+   "track": "Federated Auto Parts Raceway at I-55",
+   "city": "Pevely",
+   "state": "MO",
+   "winner": "Rico Abreu",
+   "winner_wiki": "Rico Abreu"
+  },
+  {
+   "round": 45,
+   "date": "2018-08-04",
+   "race": "Ironman 55",
+   "track": "Federated Auto Parts Raceway at I-55",
+   "city": "Pevely",
+   "state": "MO",
+   "winner": "Logan Schuchart",
+   "winner_wiki": null
+  },
+  {
+   "round": 46,
+   "date": "2018-08-08",
+   "race": "5-hour ENERGY Knoxville Nationals",
+   "track": "Knoxville Raceway",
+   "city": "Knoxville",
+   "state": "IA",
+   "winner": "Greg Hodnett",
+   "winner_wiki": null
+  },
+  {
+   "round": 47,
+   "date": "2018-08-09",
+   "race": "5-hour ENERGY Knoxville Nationals",
+   "track": "Knoxville Raceway",
+   "city": "Knoxville",
+   "state": "IA",
+   "winner": "Brad Sweet",
+   "winner_wiki": "Brad Sweet"
+  },
+  {
+   "round": 48,
+   "date": "2018-08-10",
+   "race": "5-hour ENERGY Knoxville Nationals",
+   "track": "Knoxville Raceway",
+   "city": "Knoxville",
+   "state": "IA",
+   "winner": "Logan Schuchart",
+   "winner_wiki": null
+  },
+  {
+   "round": 49,
+   "date": "2018-08-10",
+   "race": "5-hour ENERGY Knoxville Nationals",
+   "track": "Knoxville Raceway",
+   "city": "Knoxville",
+   "state": "IA",
+   "winner": "Logan Schuchart",
+   "winner_wiki": null
+  },
+  {
+   "round": 50,
+   "date": "2018-08-10",
+   "race": "SPEED SPORT World Challenge",
+   "track": "Knoxville Raceway",
+   "city": "Knoxville",
+   "state": "IA",
+   "winner": "Dominic Scelzi",
+   "winner_wiki": null
+  },
+  {
+   "round": 51,
+   "date": "2018-08-11",
+   "race": "5-hour ENERGY Knoxville Nationals",
+   "track": "Knoxville Raceway",
+   "city": "Knoxville",
+   "state": "IA",
+   "winner": "Brad Sweet",
+   "winner_wiki": "Brad Sweet"
+  },
+  {
+   "round": 52,
+   "date": "2018-08-17",
+   "race": "2nd Leg of the Northern Tour",
+   "track": "River Cities Speedway",
+   "city": "Grand Forks",
+   "state": "ND",
+   "winner": "Donny Schatz",
+   "winner_wiki": "Donny Schatz"
+  },
+  {
+   "round": 53,
+   "date": "2018-08-18",
+   "race": "Duel in the Dakotas",
+   "track": "Red River Valley Speedway",
+   "city": "West Fargo",
+   "state": "ND",
+   "winner": "Donny Schatz",
+   "winner_wiki": "Donny Schatz"
+  },
+  {
+   "round": 54,
+   "date": "2018-08-24",
+   "race": "Rushmore Outlaw Showdown",
+   "track": "Black Hills Speedway",
+   "city": "Rapid City",
+   "state": "SD",
+   "winner": "Brad Sweet",
+   "winner_wiki": "Brad Sweet"
+  },
+  {
+   "round": 55,
+   "date": "2018-08-25",
+   "race": "NAPA Auto Parts & Visit Billings presents The Brawl at Big Sky",
+   "track": "BMP Speedway",
+   "city": "Billings",
+   "state": "MT",
+   "winner": "Daryn Pittman",
+   "winner_wiki": "Daryn Pittman"
+  },
+  {
+   "round": 56,
+   "date": "2018-08-31",
+   "race": "Outlaw Energy Showdown",
+   "track": "Skagit Speedway",
+   "city": "Alger",
+   "state": "WA",
+   "winner": "Sheldon Haudenschild",
+   "winner_wiki": null
+  },
+  {
+   "round": 57,
+   "date": "2018-09-01",
+   "race": "Outlaw Energy Showdown",
+   "track": "Skagit Speedway",
+   "city": "Alger",
+   "state": "WA",
+   "winner": "Daryn Pittman",
+   "winner_wiki": "Daryn Pittman"
+  },
+  {
+   "round": 58,
+   "date": "2018-09-03",
+   "race": null,
+   "track": "Grays Harbor Raceway",
+   "city": "Elma",
+   "state": "WA",
+   "winner": "Donny Schatz",
+   "winner_wiki": "Donny Schatz"
+  },
+  {
+   "round": 59,
+   "date": "2018-09-05",
+   "race": null,
+   "track": "Willamette Speedway",
+   "city": "Lebanon",
+   "state": "OR",
+   "winner": "Donny Schatz",
+   "winner_wiki": "Donny Schatz"
+  },
+  {
+   "round": 60,
+   "date": "2018-09-07",
+   "race": "Gold Cup Race of Champions",
+   "track": "Silver Dollar Speedway",
+   "city": "Chico",
+   "state": "CA",
+   "winner": "Brad Sweet",
+   "winner_wiki": "Brad Sweet"
+  },
+  {
+   "round": 61,
+   "date": "2018-09-08",
+   "race": "Gold Cup Race of Champions",
+   "track": "Silver Dollar Speedway",
+   "city": "Chico",
+   "state": "CA",
+   "winner": "Rico Abreu",
+   "winner_wiki": "Rico Abreu"
+  },
+  {
+   "round": 62,
+   "date": "2018-09-12",
+   "race": "49er Gold Rush Classic presented by Riebes NAPA",
+   "track": "Placerville Speedway",
+   "city": "Placerville",
+   "state": "CA",
+   "winner": "Brad Sweet",
+   "winner_wiki": "Brad Sweet"
+  },
+  {
+   "round": 63,
+   "date": "2018-09-14",
+   "race": "Wine Country Outlaw Showdown",
+   "track": "Calistoga Speedway",
+   "city": "Calistoga",
+   "state": "CA",
+   "winner": "Daryn Pittman",
+   "winner_wiki": "Daryn Pittman"
+  },
+  {
+   "round": 64,
+   "date": "2018-09-15",
+   "race": "Wine Country Outlaw Showdown",
+   "track": "Calistoga Speedway",
+   "city": "Calistoga",
+   "state": "CA",
+   "winner": "Cory Eliason",
+   "winner_wiki": null
+  },
+  {
+   "round": 65,
+   "date": "2018-09-21",
+   "race": "BeFour the Crowns Showdown",
+   "track": "Eldora Speedway",
+   "city": "Rossburg",
+   "state": "OH",
+   "winner": "Brent Marks",
+   "winner_wiki": null
+  },
+  {
+   "round": 66,
+   "date": "2018-09-22",
+   "race": "Commonwealth Clash",
+   "track": "Lernerville Speedway",
+   "city": "Sarver",
+   "state": "PA",
+   "winner": "Brad Sweet",
+   "winner_wiki": "Brad Sweet"
+  },
+  {
+   "round": 67,
+   "date": "2018-09-28",
+   "race": "Champion Racing Oil National Open",
+   "track": "Williams Grove Speedway",
+   "city": "Mechanicsburg",
+   "state": "PA",
+   "winner": "Gio Scelzi",
+   "winner_wiki": "Gio Scelzi"
+  },
+  {
+   "round": 68,
+   "date": "2018-09-29",
+   "race": "Champion Racing Oil National Open",
+   "track": "Williams Grove Speedway",
+   "city": "Mechanicsburg",
+   "state": "PA",
+   "winner": "Lance Dewease",
+   "winner_wiki": null
+  },
+  {
+   "round": 69,
+   "date": "2018-10-06",
+   "race": null,
+   "track": "Fulton Speedway",
+   "city": "Fulton",
+   "state": "NY",
+   "winner": "Logan Schuchart",
+   "winner_wiki": null
+  },
+  {
+   "round": 70,
+   "date": "2018-10-13",
+   "race": "Wabash Clash",
+   "track": "Terre Haute Action Track",
+   "city": "Terre Haute",
+   "state": "IN",
+   "winner": "Brad Sweet",
+   "winner_wiki": "Brad Sweet"
+  },
+  {
+   "round": 71,
+   "date": "2018-10-14",
+   "race": "#LastCallForThemAll",
+   "track": "Eldora Speedway",
+   "city": "Rossburg",
+   "state": "OH",
+   "winner": "Christopher Bell",
+   "winner_wiki": "Christopher Bell (racing driver)"
+  },
+  {
+   "round": 72,
+   "date": "2018-10-19",
+   "race": "FVP Platinum Battery Shootout",
+   "track": "Lakeside Speedway",
+   "city": "Kansas City",
+   "state": "KS",
+   "winner": "Daryn Pittman",
+   "winner_wiki": "Daryn Pittman"
+  },
+  {
+   "round": 73,
+   "date": "2018-10-20",
+   "race": "Outlaw Boot Hill Showdown",
+   "track": "Dodge City Raceway Park",
+   "city": "Dodge City",
+   "state": "KS",
+   "winner": "Donny Schatz",
+   "winner_wiki": "Donny Schatz"
+  },
+  {
+   "round": 74,
+   "date": "2018-10-28",
+   "race": "Tuscarora 50",
+   "track": "Port Royal Speedway",
+   "city": "Port Royal",
+   "state": "PA",
+   "winner": "Donny Schatz",
+   "winner_wiki": "Donny Schatz"
+  },
+  {
+   "round": 75,
+   "date": "2018-11-01",
+   "race": "World of Outlaws World Finals",
+   "track": "The Dirt Track at Charlotte Motor Speedway",
+   "city": "Concord",
+   "state": "NC",
+   "winner": "Only the qualifying portion is held on the first day of the World Finals. The first set is for the first race, and the second set is for the second race.",
+   "winner_wiki": null
+  },
+  {
+   "round": 76,
+   "date": "2018-11-01",
+   "race": "World of Outlaws World Finals",
+   "track": "The Dirt Track at Charlotte Motor Speedway",
+   "city": "Concord",
+   "state": "NC",
+   "winner": "Only the qualifying portion is held on the first day of the World Finals. The first set is for the first race, and the second set is for the second race.",
+   "winner_wiki": null
+  },
+  {
+   "round": 77,
+   "date": "2018-11-01",
+   "race": "World of Outlaws World Finals",
+   "track": "The Dirt Track at Charlotte Motor Speedway",
+   "city": "Concord",
+   "state": "NC",
+   "winner": "Only the qualifying portion is held on the first day of the World Finals. The first set is for the first race, and the second set is for the second race.",
+   "winner_wiki": null
+  },
+  {
+   "round": 78,
+   "date": "2018-11-01",
+   "race": "World of Outlaws World Finals",
+   "track": "The Dirt Track at Charlotte Motor Speedway",
+   "city": "Concord",
+   "state": "NC",
+   "winner": "Only the qualifying portion is held on the first day of the World Finals. The first set is for the first race, and the second set is for the second race.",
+   "winner_wiki": null
+  },
+  {
+   "round": 79,
+   "date": "2018-11-03",
+   "race": "World of Outlaws World Finals",
+   "track": "The Dirt Track at Charlotte Motor Speedway",
+   "city": "Concord",
+   "state": "NC",
+   "winner": "Ian Madsen",
+   "winner_wiki": null
+  },
+  {
+   "round": 80,
+   "date": "2018-11-03",
+   "race": "World of Outlaws World Finals",
+   "track": "The Dirt Track at Charlotte Motor Speedway",
+   "city": "Concord",
+   "state": "NC",
+   "winner": "Donny Schatz",
+   "winner_wiki": "Donny Schatz"
+  }
+ ],
+ "sources": [
+  "https://en.wikipedia.org/w/index.php?title=2018_World_of_Outlaws_Craftsman_Sprint_Car_Series&oldid=1274444621",
+  "https://en.wikipedia.org/w/index.php?title=World_of_Outlaws&oldid=1363743185"
+ ]
+}

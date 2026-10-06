@@ -98,6 +98,8 @@ class TrackFacts:
         problems = []
         if not self.name:
             problems.append("missing name")
+        if not self.country:
+            problems.append("missing country")
         if self.track_type not in TRACK_TYPES:
             problems.append(f"bad track_type {self.track_type!r}")
         if self.surface is not None and self.surface not in SURFACES:

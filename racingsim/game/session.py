@@ -31,7 +31,7 @@ class Game:
     # ------------------------------------------------------------------ setup
     @classmethod
     def new(cls, first: str, last: str, region: str, age: int, discipline: str, background: str,
-            talent: str = "unknown", seed: int = 2026, scale: float = 0.6, start_year: int = 2026) -> "Game":
+            talent: str = "unknown", seed: int = 2026, scale: float = 0.4, start_year: int = 2026) -> "Game":
         start_year = int(min(2026, max(1995, start_year)))
         world = World.generate(WorldConfig(seed=seed, population_scale=scale, start_year=start_year))
         d = career.create_player(world, first, last, region, age, discipline, background, talent)

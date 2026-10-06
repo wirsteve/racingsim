@@ -736,7 +736,7 @@ on("load", async (el) => {
 });
 
 // ---- new career wizard
-const NEW = { age: 10, discipline: "karting", background: "middle", talent: "unknown", region: "NC", scale: "0.6", seed: "", start_year: 2026 };
+const NEW = { age: 10, discipline: "karting", background: "middle", talent: "unknown", region: "NC", scale: "0.4", seed: "", start_year: 2026 };
 async function newPage() {
   if (!S.setup) S.setup = await api("setup");
   const st = S.setup;
@@ -764,7 +764,7 @@ async function newPage() {
         <h3 style="margin-top:18px">Talent</h3>${cards("talent", st.talents, (i) => i.label, (i) => esc(i.detail))}
         <h3 style="margin-top:18px">World</h3>
         <div class="form-grid">
-          <label class="field">World size<select data-change="newf" data-k="scale"><option value="0.4" ${NEW.scale === "0.4" ? "selected" : ""}>Small (fast)</option><option value="0.6" ${NEW.scale === "0.6" ? "selected" : ""}>Standard</option><option value="1.0" ${NEW.scale === "1.0" ? "selected" : ""}>Large (~12k drivers)</option></select></label>
+          <label class="field">World size<select data-change="newf" data-k="scale"><option value="0.25" ${NEW.scale === "0.25" ? "selected" : ""}>Small (fast, ~15k drivers)</option><option value="0.4" ${NEW.scale === "0.4" ? "selected" : ""}>Standard (~25k drivers)</option><option value="0.7" ${NEW.scale === "0.7" ? "selected" : ""}>Large (~40k drivers, slower)</option></select></label>
           <label class="field">Random seed<input id="nf-seed" value="${esc(NEW.seed)}" placeholder="random"></label>
         </div>
         <div style="margin-top:20px"><button class="primary" data-act="start">Start career →</button> <span class="muted small" id="new-msg"></span></div>
