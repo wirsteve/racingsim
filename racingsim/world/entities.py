@@ -152,6 +152,7 @@ class Driver:
     suspension: int = 0                                          # races left on a suspension
     awards: list[str] = field(default_factory=list)              # "2027 Cup Series Rookie of the Year"
     goal: dict = field(default_factory=dict)                     # this season's owner goal (career/goals.py)
+    fans: float = 0.0                                            # fan base, thousands (world/fans.py)
     job_security: float = 60.0                                   # 0-100: how safe the seat is
 
     def __setstate__(self, state: dict) -> None:
@@ -210,6 +211,15 @@ class Team:
     roster: list[int] = field(default_factory=list)
     history: list[tuple[int, float]] = field(default_factory=list)  # (year, avg championship pct)
     reputation: float = 50.0
+    # ---- money (world/finance.py) ----
+    cash: float = 0.0           # the owner's racing account, 2025 USD
+    spend: float = 0.0          # spending level: 1.0 = the series' full-season cost per car
+    charters: int = 0           # Cup charters held (2016 on)
+    books: list[dict] = field(default_factory=list)  # one ledger per season
+
+    def __setstate__(self, state: dict) -> None:
+        state.setdefault("books", [])   # saves from before team finances
+        self.__dict__.update(state)
 
     @property
     def seats(self) -> int:

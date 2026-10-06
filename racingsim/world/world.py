@@ -228,6 +228,9 @@ class World:
         initial_personal_sponsors(w)
         from .staff import seed_staff
         seed_staff(w)
+        from . import fans, finance
+        fans.ensure(w)
+        finance.ensure(w)
         w.target_population = sum(1 for _ in w.active_drivers())
         return w
 

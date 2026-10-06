@@ -10,6 +10,7 @@ careers stall.
 
 from __future__ import annotations
 
+import math
 from collections import defaultdict
 from typing import TYPE_CHECKING
 
@@ -33,7 +34,8 @@ def _appeal(d: Driver) -> float:
     results = 0.0
     if recent:
         results = (1 - (recent.avg_finish - 1) / max(1, recent.field_size - 1)) * 30 + recent.wins * 3
-    return d.marketability * 0.6 + d.reputation * 0.6 + results + d.exposure * 0.3
+    fans = 4 * math.log10(1 + getattr(d, "fans", 0.0))          # a following sells
+    return d.marketability * 0.6 + d.reputation * 0.6 + results + d.exposure * 0.3 + fans
 
 
 def _sign(world: "World", sponsor: Sponsor, d: Driver, amount: float, years: int) -> None:

@@ -16,7 +16,7 @@ from typing import TYPE_CHECKING
 
 from ..world.entities import RETIRED, SIDELINED
 from ..rules.garage import target_class
-from ..world import annals, staff
+from ..world import annals, fans, finance, staff
 from . import goals, lifecycle, market, morale, programs, scouting, sponsorship
 
 if TYPE_CHECKING:
@@ -34,6 +34,8 @@ def begin_offseason(world: "World", results: "SeasonResults", summary: "YearSumm
     world.player_crew = {}   # freelance crew was hired for the season just run; hires from now are for next year
     morale.season_update(world, results)   # before contracts: unhappy drivers are harder to keep
     goals.review(world, results)           # the owners' verdicts: job security for the market
+    fans.season_update(world, results)     # who people came to see
+    finance.close_books(world, results)    # money in, money out: next year's spending and equipment
     _season_news(world, results)
     _pay_from_savings(world)
     # 1. The paddock digests the season: demonstrated level, exposure, reputation.

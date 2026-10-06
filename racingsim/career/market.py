@@ -327,6 +327,8 @@ def _evolve_teams(world: "World") -> None:
     """Organisations rise and fall: equipment and sponsorship drift year to year."""
     rng = world.rng
     for t in world.teams.values():
+        if t.books and t.books[-1]["year"] == world.year:
+            continue      # teams that kept books this season moved with their money (world/finance.py)
         t.equipment = clamp(t.equipment + rng.gauss(0, 2.5) + (55 - t.equipment) * 0.03, 8, 98)
         t.sponsor_funding = max(0.0, t.sponsor_funding * rng.uniform(0.88, 1.12))
 
