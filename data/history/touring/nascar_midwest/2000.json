@@ -1,16 +1,179 @@
 {
  "series": "nascar_midwest",
  "year": 2000,
- "official_name": null,
- "data_level": "champion_only",
+ "official_name": "NASCAR RE/MAX Challenge Series",
+ "data_level": "schedule",
  "champion": {
   "name": "Steve Carlson",
   "wiki": null
  },
  "teams": [],
  "standings": [],
- "schedule": [],
+ "schedule": [
+  {
+   "round": 1,
+   "date": "2000-04-02",
+   "race": "Coca Cola 200",
+   "track": "Rockford Speedway",
+   "city": "Rockford",
+   "state": "IL",
+   "winner": "Steve Carlson",
+   "winner_wiki": null
+  },
+  {
+   "round": 2,
+   "date": "2000-05-07",
+   "race": "Gateway 50",
+   "track": "Gateway International Raceway",
+   "city": "Madison",
+   "state": "IL",
+   "winner": "Brian Hoppe",
+   "winner_wiki": null
+  },
+  {
+   "round": 3,
+   "date": "2000-05-28",
+   "race": "Miller Lite 200",
+   "track": "Madison International Speedway",
+   "city": "Oregon",
+   "state": "WI",
+   "winner": "Steve Carlson",
+   "winner_wiki": null
+  },
+  {
+   "round": 4,
+   "date": "2000-05-29",
+   "race": "Game Day 200",
+   "track": "Wisconsin International Raceway",
+   "city": "Kaukauna",
+   "state": "WI",
+   "winner": "Eddie Hoffman",
+   "winner_wiki": null
+  },
+  {
+   "round": 5,
+   "date": "2000-06-03",
+   "race": "Sachs Lawlor 150",
+   "track": "Colorado National Speedway",
+   "city": "Dacono",
+   "state": "CO",
+   "winner": "Steve Carlson",
+   "winner_wiki": null
+  },
+  {
+   "round": 6,
+   "date": "2000-06-14",
+   "race": "United Auto Supply 250",
+   "track": "LaCrosse Fairgrounds Speedway",
+   "city": "West Salem",
+   "state": "WI",
+   "winner": "Jeff Kendall",
+   "winner_wiki": null
+  },
+  {
+   "round": 7,
+   "date": "2000-07-01",
+   "race": "Al Schill Jr. Memorial 150",
+   "track": "Lake Geneva Raceway",
+   "city": "Lake Geneva",
+   "state": "WI",
+   "winner": "Al Schill",
+   "winner_wiki": null
+  },
+  {
+   "round": 8,
+   "date": "2000-07-11",
+   "race": "Pepsi 250",
+   "track": "Madison International Speedway",
+   "city": "Oregon",
+   "state": "WI",
+   "winner": "Jason Schuler",
+   "winner_wiki": "Jason Schuler"
+  },
+  {
+   "round": 9,
+   "date": "2000-07-15",
+   "race": "Price Chopper 150",
+   "track": "I-70 Speedway",
+   "city": "Odessa",
+   "state": "MO",
+   "winner": "Brian Hoppe",
+   "winner_wiki": null
+  },
+  {
+   "round": 10,
+   "date": "2000-07-22",
+   "race": "Jensen 150",
+   "track": "Pikes Peak International Raceway",
+   "city": "Fountain",
+   "state": "CO",
+   "winner": "Travis Kvapil",
+   "winner_wiki": "Travis Kvapil"
+  },
+  {
+   "round": 11,
+   "date": "2000-07-29",
+   "race": "Gateway 50",
+   "track": "Gateway International Raceway",
+   "city": "Madison",
+   "state": "IL",
+   "winner": "Steve Carlson",
+   "winner_wiki": null
+  },
+  {
+   "round": 12,
+   "date": "2000-08-08",
+   "race": "Oneida Bingo & Casino 300",
+   "track": "Wisconsin International Raceway",
+   "city": "Kaukauna",
+   "state": "WI",
+   "winner": "Brian Hoppe",
+   "winner_wiki": null
+  },
+  {
+   "round": 13,
+   "date": "2000-08-27",
+   "race": "Chicago 150",
+   "track": "Chicago Motor Speedway",
+   "city": "Cicero",
+   "state": "IL",
+   "winner": "Nathan Haseleu",
+   "winner_wiki": "Nathan Haseleu"
+  },
+  {
+   "round": 14,
+   "date": "2000-09-02",
+   "race": "Ozark Challenge 150",
+   "track": "I-44 Speedway",
+   "city": "Lebanon",
+   "state": "MO",
+   "winner": "Steve Carlson",
+   "winner_wiki": null
+  },
+  {
+   "round": 15,
+   "date": "2000-09-24",
+   "race": "35th National Short Track Championship",
+   "track": "Rockford Speedway",
+   "city": "Rockford",
+   "state": "IL",
+   "winner": "Steve Carlson",
+   "winner_wiki": null
+  },
+  {
+   "round": 16,
+   "date": "2000-10-08",
+   "race": "31st Oktoberfest 200",
+   "track": "LaCrosse Fairgrounds Speedway",
+   "city": "West Salem",
+   "state": "WI",
+   "winner": "Steve Carlson",
+   "winner_wiki": null
+  }
+ ],
  "sources": [
+  "https://racingcalendar.net/championship/nascar-elite-division-midwest-series/2000",
+  "http://www.ultimateracinghistory.com/racelist.php?year=2000",
   "https://en.wikipedia.org/w/index.php?title=ARTGO&oldid=1343961991"
  ]
 }

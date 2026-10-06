@@ -1,16 +1,148 @@
 {
  "series": "pro_cup",
  "year": 2011,
- "official_name": null,
- "data_level": "champion_only",
+ "official_name": "USARacing Pro Cup Series",
+ "data_level": "schedule",
  "champion": {
   "name": "Jeff Agnew",
   "wiki": "Jeff Agnew"
  },
  "teams": [],
  "standings": [],
- "schedule": [],
+ "schedule": [
+  {
+   "round": 1,
+   "date": "2011-03-19",
+   "race": "Maudlin International 250 presented by Kangaroo Express",
+   "track": "New Smyrna Speedway",
+   "city": "New Smyrna",
+   "state": "FL",
+   "winner": "J.P. Morgan",
+   "winner_wiki": "J. P. Morgan (racing driver)"
+  },
+  {
+   "round": 2,
+   "date": "2011-04-01",
+   "race": "White's International Trucks 250",
+   "track": "Ace Speedway",
+   "city": "Altamahaw",
+   "state": "NC",
+   "winner": "Caleb Holman",
+   "winner_wiki": "Caleb Holman"
+  },
+  {
+   "round": 3,
+   "date": "2011-04-30",
+   "race": "Carolina International Trucks 250",
+   "track": "Dillon Motor Speedway",
+   "city": "Dillon",
+   "state": "SC",
+   "winner": "Brad Rogers",
+   "winner_wiki": null
+  },
+  {
+   "round": 4,
+   "date": "2011-05-14",
+   "race": "Smith International Trucks 150",
+   "track": "Rockingham Speedway",
+   "city": "Rockingham",
+   "state": "NC",
+   "winner": "Chase Elliott",
+   "winner_wiki": "Chase Elliott"
+  },
+  {
+   "round": 5,
+   "date": "2011-05-28",
+   "race": "Hampton VA 250 presented by Racing Electronics",
+   "track": "Langley Speedway",
+   "city": "Hampton",
+   "state": "VA",
+   "winner": "J.P. Morgan",
+   "winner_wiki": "J. P. Morgan (racing driver)"
+  },
+  {
+   "round": 6,
+   "date": "2011-06-11",
+   "race": "USAR Pro Cup 250 Presented by Strutmasters.com",
+   "track": "South Boston Speedway",
+   "city": "South Boston",
+   "state": "VA",
+   "winner": "Jeff Agnew",
+   "winner_wiki": "Jeff Agnew"
+  },
+  {
+   "round": 7,
+   "date": "2011-07-16",
+   "race": "MSC 250 presented by Sunoco Racing Fuels",
+   "track": "Shenandoah Speedway",
+   "city": "Shenandoah",
+   "state": "VA",
+   "winner": "Jeff Agnew",
+   "winner_wiki": "Jeff Agnew"
+  },
+  {
+   "round": 8,
+   "date": "2011-07-30",
+   "race": "Strutmasters 200",
+   "track": "Motor Mile Speedway",
+   "city": "Fairlawn",
+   "state": "VA",
+   "winner": "Jeff Agnew",
+   "winner_wiki": "Jeff Agnew"
+  },
+  {
+   "round": 9,
+   "date": "2011-08-13",
+   "race": "Pro Cup 200 Presented by Carolina Pizza Hut",
+   "track": "Concord Speedway",
+   "city": "Midland",
+   "state": "NC",
+   "winner": "Brad Rogers",
+   "winner_wiki": null
+  },
+  {
+   "round": 10,
+   "date": "2011-09-11",
+   "race": "CARS Pro Cup Salute to America",
+   "track": "Lonesome Pine Speedway",
+   "city": "Coeburn",
+   "state": "VA",
+   "winner": "Caleb Holman",
+   "winner_wiki": "Caleb Holman"
+  },
+  {
+   "round": 11,
+   "date": "2011-10-08",
+   "race": "Catawba County United Way 200 presented by Pizza Hut",
+   "track": "Hickory Motor Speedway",
+   "city": "Hickory",
+   "state": "NC",
+   "winner": "A.J. Frank",
+   "winner_wiki": "A. J. Frank"
+  },
+  {
+   "round": 12,
+   "date": "2011-10-22",
+   "race": "CARS Pro Cup 200 Presented by ESPN 93.9",
+   "track": "Myrtle Beach Speedway",
+   "city": "Myrtle Beach",
+   "state": "SC",
+   "winner": "Jeff Agnew",
+   "winner_wiki": "Jeff Agnew"
+  },
+  {
+   "round": 13,
+   "date": "2011-11-05",
+   "race": "American 200",
+   "track": "Rockingham Speedway",
+   "city": "Rockingham",
+   "state": "NC",
+   "winner": "Bryan Silas",
+   "winner_wiki": "Bryan Silas"
+  }
+ ],
  "sources": [
+  "https://www.carsandracingstuff.com/library/u/usaracingprocupseries.php",
   "https://en.wikipedia.org/w/index.php?title=CARS_Tour&oldid=1378109036"
  ]
 }

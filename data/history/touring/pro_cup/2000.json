@@ -1,16 +1,219 @@
 {
  "series": "pro_cup",
  "year": 2000,
- "official_name": null,
- "data_level": "champion_only",
+ "official_name": "USAR Hooters Pro Cup Series",
+ "data_level": "schedule",
  "champion": {
   "name": "Bobby Gill",
   "wiki": "Bobby Gill"
  },
  "teams": [],
  "standings": [],
- "schedule": [],
+ "schedule": [
+  {
+   "round": 1,
+   "date": "2000-02-26",
+   "race": "Naturally Fresh 250",
+   "track": "USA International Speedway",
+   "city": "Lakeland",
+   "state": "FL",
+   "winner": "Andy Thurman",
+   "winner_wiki": null
+  },
+  {
+   "round": 2,
+   "date": "2000-03-25",
+   "race": "Jackaroo 250",
+   "track": "St. Augustine Speedway",
+   "city": "St. Augustine",
+   "state": "FL",
+   "winner": "Bobby Gill",
+   "winner_wiki": "Bobby Gill"
+  },
+  {
+   "round": 3,
+   "date": "2000-04-21",
+   "race": "Naturally Fresh 250",
+   "track": "Ace Speedway",
+   "city": "Altamahaw",
+   "state": "NC",
+   "winner": "Bobby Gill",
+   "winner_wiki": "Bobby Gill"
+  },
+  {
+   "round": 4,
+   "date": "2000-05-06",
+   "race": "Mark Brooks Memorial",
+   "track": "Myrtle Beach Speedway",
+   "city": "Myrtle Beach",
+   "state": "SC",
+   "winner": "Mardy Lindley",
+   "winner_wiki": "Mardy Lindley"
+  },
+  {
+   "round": 5,
+   "date": "2000-05-20",
+   "race": "Miller Lite 250",
+   "track": "Gresham Motorsports Park",
+   "city": "Jefferson",
+   "state": "GA",
+   "winner": "Mardy Lindley",
+   "winner_wiki": "Mardy Lindley"
+  },
+  {
+   "round": 6,
+   "date": "2000-06-03",
+   "race": "Lucas Oil 250",
+   "track": "USA International Speedway",
+   "city": "Lakeland",
+   "state": "FL",
+   "winner": "Brian Vickers",
+   "winner_wiki": "Brian Vickers"
+  },
+  {
+   "round": 7,
+   "date": "2000-06-10",
+   "race": "Charlie Campbell Memorial",
+   "track": "Montgomery Motor Speedway",
+   "city": "Montgomery",
+   "state": "AL",
+   "winner": "Bobby Gill",
+   "winner_wiki": "Bobby Gill"
+  },
+  {
+   "round": 8,
+   "date": "2000-06-24",
+   "race": "Food City 250",
+   "track": "Lonesome Pine Speedway",
+   "city": "Coeburn",
+   "state": "VA",
+   "winner": "Bobby Gill",
+   "winner_wiki": "Bobby Gill"
+  },
+  {
+   "round": 9,
+   "date": "2000-07-08",
+   "race": "State Fair Corn Dogs 250",
+   "track": "Hickory Motor Speedway",
+   "city": "Hickory",
+   "state": "NC",
+   "winner": "Bobby Gill",
+   "winner_wiki": "Bobby Gill"
+  },
+  {
+   "round": 10,
+   "date": "2000-07-22",
+   "race": "Kroger 250 presented by Pepsi",
+   "track": "Motor Mile Speedway",
+   "city": "Radford",
+   "state": "VA",
+   "winner": "Bobby Gill",
+   "winner_wiki": "Bobby Gill"
+  },
+  {
+   "round": 11,
+   "date": "2000-08-05",
+   "race": "Miller Lite 250",
+   "track": "Gresham Motorsports Park",
+   "city": "Jefferson",
+   "state": "GA",
+   "winner": "Brian Vickers",
+   "winner_wiki": "Brian Vickers"
+  },
+  {
+   "round": 12,
+   "date": "2000-08-19",
+   "race": "State Fair Mini Corn Dogs 250",
+   "track": "South Boston Speedway",
+   "city": "South Boston",
+   "state": "VA",
+   "winner": "Hal Goodson",
+   "winner_wiki": null
+  },
+  {
+   "round": 13,
+   "date": "2000-09-02",
+   "race": "Jackaroo 250",
+   "track": "USA International Speedway",
+   "city": "Lakeland",
+   "state": "FL",
+   "winner": "Derrick Kelley",
+   "winner_wiki": "Derrick Kelley"
+  },
+  {
+   "round": 14,
+   "date": "2000-09-16",
+   "race": "Naturally Fresh 250",
+   "track": "Montgomery Motor Speedway",
+   "city": "Montgomery",
+   "state": "AL",
+   "winner": "Bobby Gill",
+   "winner_wiki": "Bobby Gill"
+  },
+  {
+   "round": 15,
+   "date": "2000-09-23",
+   "race": "Dan Duncan Memorial",
+   "track": "Greenville-Pickens Speedway",
+   "city": "Greenville",
+   "state": "SC",
+   "winner": "Jeff Agnew",
+   "winner_wiki": "Jeff Agnew"
+  },
+  {
+   "round": 16,
+   "date": "2000-10-06",
+   "race": "Hooters 250",
+   "track": "Tri-County Motor Speedway",
+   "city": "Hudson",
+   "state": "NC",
+   "winner": "Hal Goodson",
+   "winner_wiki": null
+  },
+  {
+   "round": 17,
+   "date": "2000-10-14",
+   "race": "Galaxy Foods 250",
+   "track": "Hickory Motor Speedway",
+   "city": "Hickory",
+   "state": "NC",
+   "winner": "Lee Tissot",
+   "winner_wiki": null
+  },
+  {
+   "round": 18,
+   "date": "2000-10-28",
+   "race": "Johnsonville Bratwurst 250",
+   "track": "Concord Speedway",
+   "city": "Concord",
+   "state": "NC",
+   "winner": "Clay Rogers",
+   "winner_wiki": "Clay Rogers"
+  },
+  {
+   "round": 19,
+   "date": "2000-11-11",
+   "race": "Naturally Fresh 250",
+   "track": "St. Augustine Speedway",
+   "city": "St. Augustine",
+   "state": "FL",
+   "winner": "Mario Gosselin",
+   "winner_wiki": "Mario Gosselin (racing driver)"
+  },
+  {
+   "round": 20,
+   "date": "2000-11-25",
+   "race": "Alan Kulwicki Memorial",
+   "track": "USA International Speedway",
+   "city": "Lakeland",
+   "state": "FL",
+   "winner": "Steven Christian",
+   "winner_wiki": null
+  }
+ ],
  "sources": [
+  "https://www.carsandracingstuff.com/library/h/hootersprocupseries.php",
+  "http://www.ultimateracinghistory.com/racelist.php?year=2000",
   "https://en.wikipedia.org/w/index.php?title=CARS_Tour&oldid=1378109036"
  ]
 }

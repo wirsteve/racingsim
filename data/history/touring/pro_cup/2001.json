@@ -1,16 +1,309 @@
 {
  "series": "pro_cup",
  "year": 2001,
- "official_name": null,
- "data_level": "champion_only",
+ "official_name": "USAR Hooters Pro Cup Series",
+ "data_level": "schedule",
  "champion": {
   "name": "Bobby Gill",
   "wiki": "Bobby Gill"
  },
  "teams": [],
  "standings": [],
- "schedule": [],
+ "schedule": [
+  {
+   "round": 1,
+   "date": "2001-02-24",
+   "race": "Naturally Fresh 200 (Southern Division)",
+   "track": "USA International Speedway",
+   "city": "Lakeland",
+   "state": "FL",
+   "winner": "Bobby Gill",
+   "winner_wiki": "Bobby Gill"
+  },
+  {
+   "round": 2,
+   "date": "2001-03-17",
+   "race": "Jackaroo 250 (Southern Division)",
+   "track": "St. Augustine Speedway",
+   "city": "St. Augustine",
+   "state": "FL",
+   "winner": "Jay Fogleman",
+   "winner_wiki": null
+  },
+  {
+   "round": 3,
+   "date": "2001-03-31",
+   "race": "Lucas Oil 250 presented by Food World (Southern Division)",
+   "track": "Five Flags Speedway",
+   "city": "Pensacola",
+   "state": "FL",
+   "winner": "Bobby Gill",
+   "winner_wiki": "Bobby Gill"
+  },
+  {
+   "round": 4,
+   "date": "2001-04-13",
+   "race": "Jackaroo 250 presented by Dave's Discount Furniture (Southern Division)",
+   "track": "Ace Speedway",
+   "city": "Altamahaw",
+   "state": "NC",
+   "winner": "Hal Goodson",
+   "winner_wiki": null
+  },
+  {
+   "round": 5,
+   "date": "2001-04-21",
+   "race": "Naturally Fresh 200 presented by Rolling Rock (Northern Division)",
+   "track": "Jennerstown Speedway",
+   "city": "Jennerstown",
+   "state": "PA",
+   "winner": "Stacy Puryear",
+   "winner_wiki": "Stacy Puryear"
+  },
+  {
+   "round": 6,
+   "date": "2001-04-28",
+   "race": "Naturally Fresh Mountain Spring Water 250 (Southern Division)",
+   "track": "Coastal Plains Raceway",
+   "city": "Jacksonville",
+   "state": "NC",
+   "winner": "Shane Huffman",
+   "winner_wiki": "Shane Huffman"
+  },
+  {
+   "round": 7,
+   "date": "2001-05-06",
+   "race": "Naturally Fresh 200 (Northern Division)",
+   "track": "Thompson Speedway",
+   "city": "Thompson",
+   "state": "CT",
+   "winner": "Bill Plemons, Jr.",
+   "winner_wiki": null
+  },
+  {
+   "round": 8,
+   "date": "2001-05-12",
+   "race": "Jackaroo 250 presented by Ingles (Southern Division)",
+   "track": "Gresham Motorsports Park",
+   "city": "Jefferson",
+   "state": "GA",
+   "winner": "Shane Huffman",
+   "winner_wiki": "Shane Huffman"
+  },
+  {
+   "round": 9,
+   "date": "2001-05-19",
+   "race": "Naturally Fresh 250 (Northern Division)",
+   "track": "Louisville Motor Speedway",
+   "city": "Louisville",
+   "state": "KY",
+   "winner": "Sean Studer",
+   "winner_wiki": null
+  },
+  {
+   "round": 10,
+   "date": "2001-05-26",
+   "race": "Naturally Fresh 250 presented by Galaxy Foods (Southern Division)",
+   "track": "Hickory Motor Speedway",
+   "city": "Hickory",
+   "state": "NC",
+   "winner": "Bobby Gill",
+   "winner_wiki": "Bobby Gill"
+  },
+  {
+   "round": 11,
+   "date": "2001-06-02",
+   "race": "Naturally Fresh 200 presented by Lucas Oil (Northern Division)",
+   "track": "O'Reilly Raceway Park",
+   "city": "Clermont",
+   "state": "IN",
+   "winner": "Sean Studer",
+   "winner_wiki": null
+  },
+  {
+   "round": 12,
+   "date": "2001-06-09",
+   "race": "Jackaroo 250 presented by Black's Tire (Southern Division)",
+   "track": "Myrtle Beach Speedway",
+   "city": "Myrtle Beach",
+   "state": "SC",
+   "winner": "Hal Goodson",
+   "winner_wiki": null
+  },
+  {
+   "round": 13,
+   "date": "2001-06-16",
+   "race": "Naturally Fresh 250 (Northern Division)",
+   "track": "Chemung Speedrome",
+   "city": "Chemung",
+   "state": "NY",
+   "winner": "Brian Vickers",
+   "winner_wiki": "Brian Vickers"
+  },
+  {
+   "round": 14,
+   "date": "2001-06-23",
+   "race": "Food City 250 presented by Johnsonville Bratwurst (Southern Division)",
+   "track": "Lonesome Pine Speedway",
+   "city": "Coeburn",
+   "state": "VA",
+   "winner": "Shane Huffman",
+   "winner_wiki": "Shane Huffman"
+  },
+  {
+   "round": 15,
+   "date": "2001-06-30",
+   "race": "Naturally Fresh 250 (Northern Division)",
+   "track": "Holland International Speedway",
+   "city": "Holland",
+   "state": "NY",
+   "winner": "Sean Studer",
+   "winner_wiki": null
+  },
+  {
+   "round": 16,
+   "date": "2001-07-07",
+   "race": "Miller Lite 200 (Southern Division)",
+   "track": "Montgomery Motor Speedway",
+   "city": "Montgomery",
+   "state": "AL",
+   "winner": "Steven Christian",
+   "winner_wiki": null
+  },
+  {
+   "round": 17,
+   "date": "2001-07-14",
+   "race": "Lucas Oil 250 (Northern Division)",
+   "track": "Jennerstown Speedway",
+   "city": "Jennerstown",
+   "state": "PA",
+   "winner": "Jeff Agnew",
+   "winner_wiki": "Jeff Agnew"
+  },
+  {
+   "round": 18,
+   "date": "2001-07-21",
+   "race": "Kroger 250 presented by Pepsi (Southern Division)",
+   "track": "Motor Mile Speedway",
+   "city": "Radford",
+   "state": "VA",
+   "winner": "Bobby Gill",
+   "winner_wiki": "Bobby Gill"
+  },
+  {
+   "round": 19,
+   "date": "2001-07-28",
+   "race": "Lucas Oil 250 (Northern Division)",
+   "track": "Winchester Speedway",
+   "city": "Winchester",
+   "state": "IN",
+   "winner": "Donnie Hill",
+   "winner_wiki": null
+  },
+  {
+   "round": 20,
+   "date": "2001-08-04",
+   "race": "Naturally Fresh 250 presented by Johnsonville Bratwurst (Southern Division)",
+   "track": "Hickory Motor Speedway",
+   "city": "Hickory",
+   "state": "NC",
+   "winner": "Mario Gosselin",
+   "winner_wiki": "Mario Gosselin (racing driver)"
+  },
+  {
+   "round": 21,
+   "date": "2001-08-11",
+   "race": "Miller Lite 250 (Northern Division)",
+   "track": "Illiana Motor Speedway",
+   "city": "Schererville",
+   "state": "IN",
+   "winner": "Brian Vickers",
+   "winner_wiki": "Brian Vickers"
+  },
+  {
+   "round": 22,
+   "date": "2001-08-18",
+   "race": "Naturally Fresh 250 (Southern Division)",
+   "track": "South Boston Speedway",
+   "city": "South Boston",
+   "state": "VA",
+   "winner": "Mario Gosselin",
+   "winner_wiki": "Mario Gosselin (racing driver)"
+  },
+  {
+   "round": 23,
+   "date": "2001-08-25",
+   "race": "Lucas Oil 200 (Northern Division)",
+   "track": "Cayuga International Speedway",
+   "city": "Hagersville",
+   "state": "ON",
+   "winner": "Jeff Agnew",
+   "winner_wiki": "Jeff Agnew"
+  },
+  {
+   "round": 24,
+   "date": "2001-09-01",
+   "race": "Jackaroo 200 presented by Lucas Oil (Southern Division)",
+   "track": "USA International Speedway",
+   "city": "Lakeland",
+   "state": "FL",
+   "winner": "Bobby Gill",
+   "winner_wiki": "Bobby Gill"
+  },
+  {
+   "round": 25,
+   "date": "2001-09-08",
+   "race": "Naturally Fresh 250 (Northern Division)",
+   "track": "Chemung Speedrome",
+   "city": "Chemung",
+   "state": "NY",
+   "winner": "Dave Pletcher",
+   "winner_wiki": null
+  },
+  {
+   "round": 26,
+   "date": "2001-09-29",
+   "race": "Charlie Campbell Memorial 250 (Four Champions Championship Series)",
+   "track": "Jennerstown Speedway",
+   "city": "Jennerstown",
+   "state": "PA",
+   "winner": "Shane Huffman",
+   "winner_wiki": "Shane Huffman"
+  },
+  {
+   "round": 27,
+   "date": "2001-10-13",
+   "race": "Mark Brooks Memorial 250 (Four Champions Championship Series)",
+   "track": "Myrtle Beach Speedway",
+   "city": "Myrtle Beach",
+   "state": "SC",
+   "winner": "Hal Goodson",
+   "winner_wiki": null
+  },
+  {
+   "round": 28,
+   "date": "2001-10-27",
+   "race": "Dan Duncan Memorial 250 (Four Champions Championship Series)",
+   "track": "Concord Speedway",
+   "city": "Concord",
+   "state": "NC",
+   "winner": "Hal Goodson",
+   "winner_wiki": null
+  },
+  {
+   "round": 29,
+   "date": "2001-11-24",
+   "race": "Alan Kulwicki Memorial 300 (Four Champions Championship Series)",
+   "track": "USA International Speedway",
+   "city": "Lakeland",
+   "state": "FL",
+   "winner": "Bobby Gill",
+   "winner_wiki": "Bobby Gill"
+  }
+ ],
  "sources": [
+  "https://www.carsandracingstuff.com/library/h/hootersprocupseries.php",
+  "http://www.ultimateracinghistory.com/racelist.php?year=2001",
   "https://en.wikipedia.org/w/index.php?title=CARS_Tour&oldid=1378109036"
  ]
 }

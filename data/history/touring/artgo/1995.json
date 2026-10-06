@@ -1,16 +1,199 @@
 {
  "series": "artgo",
  "year": 1995,
- "official_name": null,
- "data_level": "champion_only",
+ "official_name": "ARTGO Challenge Series",
+ "data_level": "schedule",
  "champion": {
   "name": "Kevin Cywinski",
   "wiki": null
  },
  "teams": [],
  "standings": [],
- "schedule": [],
+ "schedule": [
+  {
+   "round": 1,
+   "date": "1995-04-09",
+   "race": "18th Spring Classic",
+   "track": "Rockford Speedway",
+   "city": "Rockford",
+   "state": "IL",
+   "winner": "Kevin Cywinski",
+   "winner_wiki": "Kevin Cywinski"
+  },
+  {
+   "round": 2,
+   "date": "1995-05-21",
+   "race": "14th Chicagoland Showdown",
+   "track": "Grundy County Speedway",
+   "city": "Morris",
+   "state": "IL",
+   "winner": "Joe Shear",
+   "winner_wiki": "Joe Shear"
+  },
+  {
+   "round": 3,
+   "date": "1995-05-29",
+   "race": "13th Spring Nationals",
+   "track": "Wisconsin International Raceway",
+   "city": "Kaukauna",
+   "state": "WI",
+   "winner": "Kevin Cywinski",
+   "winner_wiki": "Kevin Cywinski"
+  },
+  {
+   "round": 4,
+   "date": "1995-06-06",
+   "race": "23rd Miller Genuine Draft 100",
+   "track": "Hawkeye Downs Speedway",
+   "city": "Cedar Rapids",
+   "state": "IA",
+   "winner": "Joe Shear",
+   "winner_wiki": "Joe Shear"
+  },
+  {
+   "round": 5,
+   "date": "1995-06-16",
+   "race": "ARTGO Western Swing Country Mart 100",
+   "track": "Lakeside Speedway",
+   "city": "Kansas City",
+   "state": "KS",
+   "winner": null,
+   "winner_wiki": null
+  },
+  {
+   "round": 6,
+   "date": "1995-06-17",
+   "race": "Ozark Challenge 100",
+   "track": "I-44 Speedway",
+   "city": "Lebanon",
+   "state": "MO",
+   "winner": "Steve Carlson",
+   "winner_wiki": null
+  },
+  {
+   "round": 7,
+   "date": "1995-06-24",
+   "race": "13th Michigan Challenge",
+   "track": "Berlin Raceway",
+   "city": "Marne",
+   "state": "MI",
+   "winner": "Dick Harrington",
+   "winner_wiki": null
+  },
+  {
+   "round": 8,
+   "date": "1995-07-12",
+   "race": "LaCrosse Fairtime 100",
+   "track": "LaCrosse Fairgrounds Speedway",
+   "city": "West Salem",
+   "state": "WI",
+   "winner": "Matt Kenseth",
+   "winner_wiki": "Matt Kenseth"
+  },
+  {
+   "round": 9,
+   "date": "1995-07-22",
+   "race": "9th Cabin Fever 100",
+   "track": "Dells Motor Speedway",
+   "city": "Wisconsin Dells",
+   "state": "WI",
+   "winner": "Tony Raines",
+   "winner_wiki": "Tony Raines"
+  },
+  {
+   "round": 10,
+   "date": "1995-08-01",
+   "race": "15th Dixieland 250",
+   "track": "Wisconsin International Raceway",
+   "city": "Kaukauna",
+   "state": "WI",
+   "winner": "Bryan Reffner",
+   "winner_wiki": "Bryan Reffner"
+  },
+  {
+   "round": 11,
+   "date": "1995-08-06",
+   "race": "21st Wayne Carter Classic",
+   "track": "Grundy County Speedway",
+   "city": "Morris",
+   "state": "IL",
+   "winner": "Joe Shear",
+   "winner_wiki": "Joe Shear"
+  },
+  {
+   "round": 12,
+   "date": "1995-09-01",
+   "race": "USA Challenge 100",
+   "track": "Bolivar Speedway",
+   "city": "Bolivar",
+   "state": "MO",
+   "winner": "Jim Weber",
+   "winner_wiki": null
+  },
+  {
+   "round": 13,
+   "date": "1995-09-02",
+   "race": "2nd Johnson Service Center Summer Showdown 100",
+   "track": "I-44 Speedway",
+   "city": "Lebanon",
+   "state": "MO",
+   "winner": "Joe Shear",
+   "winner_wiki": "Joe Shear"
+  },
+  {
+   "round": 14,
+   "date": "1995-09-03",
+   "race": "5th Country Mart 100",
+   "track": "Lakeside Speedway",
+   "city": "Kansas City",
+   "state": "KS",
+   "winner": "Tom Carlson",
+   "winner_wiki": null
+  },
+  {
+   "round": 15,
+   "date": "1995-09-09",
+   "race": "17th Tournament of Speed",
+   "track": "Wisconsin International Raceway",
+   "city": "Kaukauna",
+   "state": "WI",
+   "winner": "Jim Weber",
+   "winner_wiki": null
+  },
+  {
+   "round": 16,
+   "date": "1995-09-24",
+   "race": "30th National Short Track Championship",
+   "track": "Rockford Speedway",
+   "city": "Rockford",
+   "state": "IL",
+   "winner": "Steve Carlson",
+   "winner_wiki": null
+  },
+  {
+   "round": 17,
+   "date": "1995-10-01",
+   "race": "12th K.C. Colors World Cup 300",
+   "track": "I-70 Speedway",
+   "city": "Odessa",
+   "state": "MO",
+   "winner": "Steve Carlson",
+   "winner_wiki": null
+  },
+  {
+   "round": 18,
+   "date": "1995-10-08",
+   "race": "26th Oktoberfest",
+   "track": "LaCrosse Fairgrounds Speedway",
+   "city": "West Salem",
+   "state": "WI",
+   "winner": "Joe Shear",
+   "winner_wiki": "Joe Shear"
+  }
+ ],
  "sources": [
+  "https://racingcalendar.net/championship/nascar-elite-division-midwest-series/1995",
+  "http://www.ultimateracinghistory.com/racelist.php?year=1995",
   "https://en.wikipedia.org/w/index.php?title=ARTGO&oldid=1343961991"
  ]
 }

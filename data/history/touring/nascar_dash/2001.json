@@ -1,0 +1,1019 @@
+{
+ "series": "nascar_dash",
+ "year": 2001,
+ "official_name": "NASCAR Goody's Dash Series",
+ "data_level": "full",
+ "champion": {
+  "name": "Cam Strader",
+  "wiki": "Cam Strader"
+ },
+ "teams": [],
+ "standings": [
+  {
+   "pos": 1,
+   "name": "Cam Strader",
+   "wiki": "Cam Strader",
+   "points": 2824,
+   "wins": 4,
+   "starts": 18,
+   "top5": 14,
+   "top10": 16
+  },
+  {
+   "pos": 2,
+   "name": "Justin Hobgood",
+   "wiki": "Justin Hobgood",
+   "points": 2669,
+   "wins": 2,
+   "starts": 18,
+   "top5": 11,
+   "top10": 14
+  },
+  {
+   "pos": 3,
+   "name": "Robert Huffman",
+   "wiki": "Robert Huffman",
+   "points": 2630,
+   "wins": 4,
+   "starts": 18,
+   "top5": 10,
+   "top10": 12
+  },
+  {
+   "pos": 4,
+   "name": "Jake Hobgood",
+   "wiki": "Jake Hobgood",
+   "points": 2483,
+   "wins": 2,
+   "starts": 17,
+   "top5": 9,
+   "top10": 13
+  },
+  {
+   "pos": 5,
+   "name": "Shane Hmiel",
+   "wiki": "Shane Hmiel",
+   "points": 2373,
+   "wins": 2,
+   "starts": 17,
+   "top5": 7,
+   "top10": 13
+  },
+  {
+   "pos": 6,
+   "name": "Larry Caudill",
+   "wiki": "Larry Caudill",
+   "points": 2336,
+   "wins": 0,
+   "starts": 18,
+   "top5": 0,
+   "top10": 11
+  },
+  {
+   "pos": 7,
+   "name": "Scott Weaver",
+   "wiki": "Scott Weaver (racing driver)",
+   "points": 2313,
+   "wins": 0,
+   "starts": 18,
+   "top5": 4,
+   "top10": 7
+  },
+  {
+   "pos": 8,
+   "name": "Roger Sawyer",
+   "wiki": "Roger Sawyer",
+   "points": 2299,
+   "wins": 2,
+   "starts": 17,
+   "top5": 5,
+   "top10": 9
+  },
+  {
+   "pos": 9,
+   "name": "Wayne Edwards",
+   "wiki": "Wayne Edwards (racing driver)",
+   "points": 2194,
+   "wins": 0,
+   "starts": 18,
+   "top5": 0,
+   "top10": 5
+  },
+  {
+   "pos": 10,
+   "name": "Joey Miller",
+   "wiki": "Joey Miller (racing driver, born 1971)",
+   "points": 2181,
+   "wins": 0,
+   "starts": 17,
+   "top5": 4,
+   "top10": 9
+  },
+  {
+   "pos": 11,
+   "name": "Tim Nichols",
+   "wiki": "Tim Nichols (racing driver)",
+   "points": 2166,
+   "wins": 0,
+   "starts": 18,
+   "top5": 2,
+   "top10": 6
+  },
+  {
+   "pos": 12,
+   "name": "Eric Van Cleef",
+   "wiki": "Eric Van Cleef",
+   "points": 2057,
+   "wins": 0,
+   "starts": 18,
+   "top5": 0,
+   "top10": 6
+  },
+  {
+   "pos": 13,
+   "name": "Jimmy Britts",
+   "wiki": "Jimmy Britts",
+   "points": 2025,
+   "wins": 0,
+   "starts": 16,
+   "top5": 3,
+   "top10": 7
+  },
+  {
+   "pos": 14,
+   "name": "Danny Bagwell",
+   "wiki": "Danny Bagwell",
+   "points": 1920,
+   "wins": 0,
+   "starts": 16,
+   "top5": 2,
+   "top10": 4
+  },
+  {
+   "pos": 15,
+   "name": "Scott Redmon",
+   "wiki": "Scott Redmon",
+   "points": 1514,
+   "wins": 0,
+   "starts": 14,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 16,
+   "name": "Bobby Dayton",
+   "wiki": "Bobby Dayton",
+   "points": 1462,
+   "wins": 0,
+   "starts": 13,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 17,
+   "name": "Zach Brewer",
+   "wiki": "Zach Brewer",
+   "points": 1287,
+   "wins": 0,
+   "starts": 10,
+   "top5": 2,
+   "top10": 7
+  },
+  {
+   "pos": 18,
+   "name": "Doug Gainey",
+   "wiki": "Doug Gainey",
+   "points": 1209,
+   "wins": 0,
+   "starts": 11,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 19,
+   "name": "Greg Goodell",
+   "wiki": "Greg Goodell",
+   "points": 1205,
+   "wins": 0,
+   "starts": 11,
+   "top5": 0,
+   "top10": 1
+  },
+  {
+   "pos": 20,
+   "name": "Randy Humphrey",
+   "wiki": "Randy Humphrey",
+   "points": 1070,
+   "wins": 0,
+   "starts": 11,
+   "top5": 0,
+   "top10": 2
+  },
+  {
+   "pos": 21,
+   "name": "Ned Combs",
+   "wiki": "Ned Combs",
+   "points": 1033,
+   "wins": 0,
+   "starts": 8,
+   "top5": 1,
+   "top10": 4
+  },
+  {
+   "pos": 22,
+   "name": "Johnny Chapman",
+   "wiki": "Johnny Chapman",
+   "points": 941,
+   "wins": 0,
+   "starts": 8,
+   "top5": 3,
+   "top10": 3
+  },
+  {
+   "pos": 23,
+   "name": "Gary Moore",
+   "wiki": "Gary Moore (racing driver)",
+   "points": 867,
+   "wins": 0,
+   "starts": 7,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 24,
+   "name": "Angie Wilson",
+   "wiki": "Angie Wilson",
+   "points": 799,
+   "wins": 0,
+   "starts": 7,
+   "top5": 1,
+   "top10": 2
+  },
+  {
+   "pos": 25,
+   "name": "Mickey York",
+   "wiki": "Mickey York",
+   "points": 785,
+   "wins": 0,
+   "starts": 7,
+   "top5": 1,
+   "top10": 2
+  },
+  {
+   "pos": 26,
+   "name": "Michael Conover",
+   "wiki": "Michael Conover",
+   "points": 731,
+   "wins": 1,
+   "starts": 5,
+   "top5": 3,
+   "top10": 3
+  },
+  {
+   "pos": 27,
+   "name": "Keith Roggen",
+   "wiki": "Keith Roggen",
+   "points": 719,
+   "wins": 0,
+   "starts": 7,
+   "top5": 1,
+   "top10": 1
+  },
+  {
+   "pos": 28,
+   "name": "Charles Powell III",
+   "wiki": "Charles Powell III",
+   "points": 710,
+   "wins": 0,
+   "starts": 6,
+   "top5": 0,
+   "top10": 2
+  },
+  {
+   "pos": 29,
+   "name": "B. J. Mackey",
+   "wiki": "B. J. Mackey",
+   "points": 701,
+   "wins": 0,
+   "starts": 5,
+   "top5": 2,
+   "top10": 3
+  },
+  {
+   "pos": 30,
+   "name": "Scott Thornton",
+   "wiki": null,
+   "points": 695,
+   "wins": 0,
+   "starts": 6,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 31,
+   "name": "Mike Watts",
+   "wiki": "Mike Watts (racing driver)",
+   "points": 653,
+   "wins": 0,
+   "starts": 6,
+   "top5": 0,
+   "top10": 1
+  },
+  {
+   "pos": 32,
+   "name": "Kelly Sutton",
+   "wiki": "Kelly Sutton",
+   "points": 640,
+   "wins": 0,
+   "starts": 6,
+   "top5": 0,
+   "top10": 1
+  },
+  {
+   "pos": 33,
+   "name": "Brandon Ward",
+   "wiki": "Brandon Ward (racing driver)",
+   "points": 638,
+   "wins": 1,
+   "starts": 6,
+   "top5": 2,
+   "top10": 2
+  },
+  {
+   "pos": 34,
+   "name": "Brian Loftin",
+   "wiki": "Brian Loftin (racing driver)",
+   "points": 635,
+   "wins": 0,
+   "starts": 5,
+   "top5": 0,
+   "top10": 2
+  },
+  {
+   "pos": 35,
+   "name": "David Hutto",
+   "wiki": "David Hutto",
+   "points": 528,
+   "wins": 0,
+   "starts": 5,
+   "top5": 1,
+   "top10": 1
+  },
+  {
+   "pos": 36,
+   "name": "Brent Moore",
+   "wiki": "Brent Moore (racing driver)",
+   "points": 447,
+   "wins": 0,
+   "starts": 4,
+   "top5": 0,
+   "top10": 1
+  },
+  {
+   "pos": 37,
+   "name": "Doc Brewer",
+   "wiki": "Doc Brewer",
+   "points": 443,
+   "wins": 0,
+   "starts": 5,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 38,
+   "name": "Ricky Woodward",
+   "wiki": "Ricky Woodward",
+   "points": 438,
+   "wins": 0,
+   "starts": 6,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 39,
+   "name": "Roger Moser",
+   "wiki": "Roger Moser",
+   "points": 421,
+   "wins": 0,
+   "starts": 4,
+   "top5": 0,
+   "top10": 1
+  },
+  {
+   "pos": 40,
+   "name": "Chuck Gafrarar",
+   "wiki": "Chuck Gafrarar",
+   "points": 405,
+   "wins": 0,
+   "starts": 3,
+   "top5": 1,
+   "top10": 2
+  },
+  {
+   "pos": 41,
+   "name": "Derrick Kelley",
+   "wiki": "Derrick Kelley",
+   "points": 381,
+   "wins": 0,
+   "starts": 3,
+   "top5": 1,
+   "top10": 2
+  },
+  {
+   "pos": 42,
+   "name": "Tony Billings",
+   "wiki": null,
+   "points": 367,
+   "wins": 0,
+   "starts": 4,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 43,
+   "name": "Tony Hargraves",
+   "wiki": null,
+   "points": 360,
+   "wins": 0,
+   "starts": 3,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 44,
+   "name": "William Horton",
+   "wiki": null,
+   "points": 351,
+   "wins": 0,
+   "starts": 3,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 45,
+   "name": "Danny Snell",
+   "wiki": "Danny Snell",
+   "points": 334,
+   "wins": 0,
+   "starts": 4,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 46,
+   "name": "Davis Myers",
+   "wiki": null,
+   "points": 327,
+   "wins": 0,
+   "starts": 3,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 47,
+   "name": "Mike McConnell",
+   "wiki": "Mike McConnell (racing driver)",
+   "points": 307,
+   "wins": 0,
+   "starts": 3,
+   "top5": 0,
+   "top10": 1
+  },
+  {
+   "pos": 48,
+   "name": "Greg Miller",
+   "wiki": null,
+   "points": 270,
+   "wins": 0,
+   "starts": 3,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 49,
+   "name": "Beau Milo",
+   "wiki": null,
+   "points": 258,
+   "wins": 0,
+   "starts": 3,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 50,
+   "name": "Matt Johnson",
+   "wiki": null,
+   "points": 255,
+   "wins": 0,
+   "starts": 3,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 51,
+   "name": "Nolan Wilson",
+   "wiki": null,
+   "points": 240,
+   "wins": 0,
+   "starts": 2,
+   "top5": 0,
+   "top10": 1
+  },
+  {
+   "pos": 52,
+   "name": "Wally Leatherwood",
+   "wiki": "Wally Leatherwood",
+   "points": 239,
+   "wins": 0,
+   "starts": 2,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 53,
+   "name": "Jason Roche",
+   "wiki": null,
+   "points": 237,
+   "wins": 0,
+   "starts": 2,
+   "top5": 0,
+   "top10": 1
+  },
+  {
+   "pos": 54,
+   "name": "Maxie Bush",
+   "wiki": null,
+   "points": 236,
+   "wins": 0,
+   "starts": 2,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 55,
+   "name": "Scott Krehling",
+   "wiki": "Scott Krehling",
+   "points": 229,
+   "wins": 0,
+   "starts": 3,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 56,
+   "name": "Dan Shaver",
+   "wiki": "Dan Shaver",
+   "points": 222,
+   "wins": 0,
+   "starts": 2,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 57,
+   "name": "Charlie Barham",
+   "wiki": null,
+   "points": 221,
+   "wins": 0,
+   "starts": 2,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 58,
+   "name": "Wayne Morrow",
+   "wiki": null,
+   "points": 210,
+   "wins": 0,
+   "starts": 4,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 59,
+   "name": "Mike Huey",
+   "wiki": null,
+   "points": 206,
+   "wins": 0,
+   "starts": 2,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 60,
+   "name": "Mike Leffingwell",
+   "wiki": null,
+   "points": 206,
+   "wins": 0,
+   "starts": 2,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 61,
+   "name": "David Heitzhaus",
+   "wiki": "David Heitzhaus",
+   "points": 200,
+   "wins": 0,
+   "starts": 2,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 62,
+   "name": "Robert Luckadoo",
+   "wiki": "Robert Luckadoo",
+   "points": 191,
+   "wins": 0,
+   "starts": 2,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 63,
+   "name": "Mark King",
+   "wiki": null,
+   "points": 158,
+   "wins": 0,
+   "starts": 2,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 64,
+   "name": "Mike Swaim",
+   "wiki": "Mike Swaim",
+   "points": 146,
+   "wins": 0,
+   "starts": 2,
+   "top5": 0,
+   "top10": 1
+  },
+  {
+   "pos": 65,
+   "name": "Jason Boyd",
+   "wiki": null,
+   "points": 146,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 1
+  },
+  {
+   "pos": 66,
+   "name": "James Trout",
+   "wiki": null,
+   "points": 146,
+   "wins": 0,
+   "starts": 2,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 67,
+   "name": "Monty Klein",
+   "wiki": null,
+   "points": 125,
+   "wins": 0,
+   "starts": 2,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 68,
+   "name": "Jeff Underwood",
+   "wiki": null,
+   "points": 113,
+   "wins": 0,
+   "starts": 2,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 69,
+   "name": "Bill Hennecy",
+   "wiki": null,
+   "points": 110,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 70,
+   "name": "Scott Haller",
+   "wiki": "Scott Haller",
+   "points": 106,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 71,
+   "name": "Link Kiser",
+   "wiki": null,
+   "points": 103,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 72,
+   "name": "Renee Kopstein",
+   "wiki": null,
+   "points": 97,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 73,
+   "name": "Andy Lally",
+   "wiki": "Andy Lally",
+   "points": 85,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 74,
+   "name": "Mickey Lawson",
+   "wiki": null,
+   "points": 82,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 75,
+   "name": "David Lucas",
+   "wiki": null,
+   "points": 79,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 76,
+   "name": "Will Hobgood",
+   "wiki": "Will Hobgood",
+   "points": 79,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 77,
+   "name": "Christian Elder",
+   "wiki": "Christian Elder",
+   "points": 76,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 78,
+   "name": "Bobby Hill",
+   "wiki": null,
+   "points": 74,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 79,
+   "name": "Danny Mathis",
+   "wiki": null,
+   "points": 55,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 80,
+   "name": "Mike Gaines",
+   "wiki": null,
+   "points": 34,
+   "wins": 0,
+   "starts": 0,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 81,
+   "name": "Mark Eckard",
+   "wiki": null,
+   "points": 0,
+   "wins": 0,
+   "starts": 2,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 82,
+   "name": "Chris Strader",
+   "wiki": null,
+   "points": 0,
+   "wins": 0,
+   "starts": 2,
+   "top5": 0,
+   "top10": 0
+  }
+ ],
+ "schedule": [
+  {
+   "round": 1,
+   "date": "2001-02-10",
+   "race": "ACDelco 200 presented by Discount Auto Parts",
+   "track": "Daytona International Speedway",
+   "city": "Daytona Beach",
+   "state": "FL",
+   "winner": "Justin Hobgood",
+   "winner_wiki": "Justin Hobgood"
+  },
+  {
+   "round": 2,
+   "date": "2001-04-28",
+   "race": "Coca-Cola 150",
+   "track": "Orange County Speedway",
+   "city": "Rougemont",
+   "state": "NC",
+   "winner": "Cam Strader",
+   "winner_wiki": "Cam Strader"
+  },
+  {
+   "round": 3,
+   "date": "2001-05-12",
+   "race": "Pabst Blue Ribbon 100",
+   "track": "Darlington Raceway",
+   "city": "Darlington",
+   "state": "SC",
+   "winner": "Shane Hmiel",
+   "winner_wiki": "Shane Hmiel"
+  },
+  {
+   "round": 4,
+   "date": "2001-05-25",
+   "race": "Easy Care Vehicle Service Contract 100",
+   "track": "Lowe's Motor Speedway",
+   "city": "Concord",
+   "state": "NC",
+   "winner": "Cam Strader",
+   "winner_wiki": "Cam Strader"
+  },
+  {
+   "round": 5,
+   "date": "2001-06-02",
+   "race": "Old Milwaukee 150",
+   "track": "Louisville Motor Speedway",
+   "city": "Louisville",
+   "state": "KY",
+   "winner": "Roger Sawyer",
+   "winner_wiki": "Roger Sawyer"
+  },
+  {
+   "round": 6,
+   "date": "2001-06-09",
+   "race": "United Rentals/Global Systems, Inc. 150",
+   "track": "New River All-American Speedway",
+   "city": "Jacksonville",
+   "state": "NC",
+   "winner": "Cam Strader",
+   "winner_wiki": "Cam Strader"
+  },
+  {
+   "round": 7,
+   "date": "2001-06-16",
+   "race": "Kentucky Speedway 100",
+   "track": "Kentucky Speedway",
+   "city": "Sparta",
+   "state": "KY",
+   "winner": "Robert Huffman",
+   "winner_wiki": "Robert Huffman"
+  },
+  {
+   "round": 8,
+   "date": "2001-07-03",
+   "race": "Goody's Liberty 150 presented by WSET TV",
+   "track": "South Boston Speedway",
+   "city": "South Boston",
+   "state": "VA",
+   "winner": "Michael Conover",
+   "winner_wiki": "Michael Conover"
+  },
+  {
+   "round": 9,
+   "date": "2001-07-06",
+   "race": "DaytonaUSA.com 150",
+   "track": "Daytona International Speedway",
+   "city": "Daytona Beach",
+   "state": "FL",
+   "winner": "Robert Huffman",
+   "winner_wiki": "Robert Huffman"
+  },
+  {
+   "round": 10,
+   "date": "2001-07-14",
+   "race": "Bi-Lo/Lance Snack Foods 150",
+   "track": "Greenville-Pickens Speedway",
+   "city": "Greenville",
+   "state": "SC",
+   "winner": "Shane Hmiel",
+   "winner_wiki": "Shane Hmiel"
+  },
+  {
+   "round": 11,
+   "date": "2001-07-28",
+   "race": "Pre-Cast Concrete 150",
+   "track": "Southern National Motorsports Park",
+   "city": "Kenly",
+   "state": "NC",
+   "winner": "Roger Sawyer",
+   "winner_wiki": "Roger Sawyer"
+  },
+  {
+   "round": 12,
+   "date": "2001-08-04",
+   "race": "Old Milwaukee 150 presented by FM-94",
+   "track": "New River Valley Speedway",
+   "city": "Radford",
+   "state": "VA",
+   "winner": "Robert Huffman",
+   "winner_wiki": "Robert Huffman"
+  },
+  {
+   "round": 13,
+   "date": "2001-08-11",
+   "race": "Piggly Wiggly 150 presented by Wesson Oil Cooking Oil and Peter Pan Peanut Butter",
+   "track": "Myrtle Beach Speedway",
+   "city": "Myrtle Beach",
+   "state": "SC",
+   "winner": "Jake Hobgood",
+   "winner_wiki": "Jake Hobgood"
+  },
+  {
+   "round": 14,
+   "date": "2001-08-22",
+   "race": "Pabst Blue Ribbon 150",
+   "track": "Bristol Motor Speedway",
+   "city": "Bristol",
+   "state": "TN",
+   "winner": "Brandon Ward",
+   "winner_wiki": "Brandon Ward (racing driver)"
+  },
+  {
+   "round": 15,
+   "date": "2001-09-22",
+   "race": "Pepsi Cola 150",
+   "track": "Ace Speedway",
+   "city": "Altamahaw",
+   "state": "NC",
+   "winner": "Justin Hobgood",
+   "winner_wiki": "Justin Hobgood"
+  },
+  {
+   "round": 16,
+   "date": "2001-09-29",
+   "race": "Goody's Dash Series, NASCAR Touring 150",
+   "track": "New River All-American Speedway",
+   "city": "Jacksonville",
+   "state": "NC",
+   "winner": "Cam Strader",
+   "winner_wiki": "Cam Strader"
+  },
+  {
+   "round": 17,
+   "date": "2001-10-20",
+   "race": "Discount Auto Parts 150 presented by Mobil 1",
+   "track": "USA International Speedway",
+   "city": "Lakeland",
+   "state": "FL",
+   "winner": "Jake Hobgood",
+   "winner_wiki": "Jake Hobgood"
+  },
+  {
+   "round": 18,
+   "date": "2001-11-25",
+   "race": "MBNA All American Thanksgiving Classic",
+   "track": "Nashville Superspeedway",
+   "city": "Lebanon",
+   "state": "TN",
+   "winner": "Robert Huffman",
+   "winner_wiki": "Robert Huffman"
+  }
+ ],
+ "sources": [
+  "https://en.wikipedia.org/w/index.php?title=2001_NASCAR_Goody%27s_Dash_Series&oldid=1353820860",
+  "https://en.wikipedia.org/w/index.php?title=ISCARS_Dash_Touring_Series&oldid=1363999374"
+ ]
+}

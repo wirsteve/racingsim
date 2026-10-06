@@ -172,7 +172,8 @@
  },
  "pocono-raceway-pa": {
   "aliases": [
-   "Pocono Raceway"
+   "Pocono Raceway",
+   "Pocono International Raceway"
   ],
   "name": "Pocono Raceway",
   "match_basis": [
@@ -992,7 +993,8 @@
   "aliases": [
    "Milwaukee Mile",
    "Wisconsin State Fair Park Speedway",
-   "Wisconsin State Fair Speedway"
+   "Wisconsin State Fair Speedway",
+   "The Milwaukee Mile"
   ],
   "name": "Milwaukee Mile",
   "match_basis": [
@@ -1207,7 +1209,8 @@
   "aliases": [
    "Mansfield Motorsports Park",
    "Mansfield Motor Speedway",
-   "Mansfield Speedway"
+   "Mansfield Speedway",
+   "Mansfield Motorsports Speedway"
   ],
   "name": "Mansfield Speedway",
   "match_basis": [
@@ -1454,7 +1457,8 @@
   "aliases": [
    "Fairgrounds Speedway",
    "Music City Motorplex",
-   "Nashville Fairgrounds Speedway"
+   "Nashville Fairgrounds Speedway",
+   "Nashville Speedway"
   ],
   "name": "Nashville Fairgrounds Speedway",
   "match_basis": [
@@ -2633,7 +2637,8 @@
  },
  "altamont-raceway-park-ca": {
   "aliases": [
-   "Altamont Motorsports Park"
+   "Altamont Motorsports Park",
+   "Altamont Raceway Park"
   ],
   "name": "Altamont Raceway Park",
   "match_basis": [
@@ -2661,7 +2666,8 @@
   "aliases": [
    "Madera Speedway",
    "Good Times QMRA",
-   "Madera Raceways"
+   "Madera Raceways",
+   "Madera Raceway"
   ],
   "name": "Madera Speedway",
   "match_basis": [
@@ -2831,7 +2837,8 @@
  },
  "heartland-motorsports-park-ks": {
   "aliases": [
-   "Heartland Park Topeka"
+   "Heartland Park Topeka",
+   "Heartland Park"
   ],
   "name": "Heartland Motorsports Park",
   "match_basis": [
@@ -4348,7 +4355,8 @@
   "aliases": [
    "La Crosse Fairgrounds Speedway",
    "La Crosse Interstate Speedway",
-   "LaCrosse Fair Speedway"
+   "LaCrosse Fair Speedway",
+   "LaCrosse Fairgrounds Speedway"
   ],
   "name": "La Crosse Fairgrounds Speedway",
   "match_basis": [
@@ -6146,7 +6154,8 @@
    "https://www.myracepass.com/tracks/1330"
   ],
   "aliases": [
-   "Chicago"
+   "Chicago",
+   "Chicago Motor Speedway"
   ],
   "major_series": [
    "NASCAR Cup Series",
@@ -6462,7 +6471,9 @@
    "open_wheel"
   ],
   "confidence": "high",
-  "aliases": []
+  "aliases": [
+   "Darlington Raceway"
+  ]
  },
  "davenport-speedway-ia": {
   "name": "Davenport Speedway",
@@ -7436,7 +7447,9 @@
    "stock_car"
   ],
   "confidence": "high",
-  "aliases": []
+  "aliases": [
+   "Huntsville Speedway"
+  ]
  },
  "huset-s-speedway-sd": {
   "name": "Huset's Speedway",
@@ -7777,7 +7790,9 @@
    "stock_car"
   ],
   "confidence": "high",
-  "aliases": []
+  "aliases": [
+   "Kentucky Motor Speedway"
+  ]
  },
  "keystone-state-quarter-midget-racing-club-track-pa": {
   "name": "Keystone State Quarter Midget Racing Club Track",
@@ -8364,7 +8379,9 @@
    "NASCAR Xfinity Series (1988–1989)"
   ],
   "confidence": "high",
-  "aliases": []
+  "aliases": [
+   "Louisville Motor Speedway"
+  ]
  },
  "lucas-oil-speedway-mo": {
   "name": "Lucas Oil Speedway",
@@ -8744,7 +8761,8 @@
    "https://www.myracepass.com/tracks/2195"
   ],
   "aliases": [
-   "Nazareth National Speedway"
+   "Nazareth National Speedway",
+   "Nazareth Speedway"
   ],
   "major_series": [
    "IndyCar Series",
@@ -9167,7 +9185,8 @@
    "https://www.myracepass.com/tracks/2295"
   ],
   "aliases": [
-   "Seattle International Raceways"
+   "Seattle International Raceways",
+   "Pacific Raceways"
   ],
   "major_series": [
    "NASCAR AutoZone Elite Division, Northwest Series",
@@ -10059,7 +10078,8 @@
    "https://www.myracepass.com/tracks/2946"
   ],
   "aliases": [
-   "Olympia-Tenino Speedway"
+   "Olympia-Tenino Speedway",
+   "South Sound Speedway"
   ],
   "major_series": [
    "ARCA Menards Series West",
@@ -11320,6 +11340,36 @@
   "sources": []
  },
  "gator-motorplex-tx": {
+  "aliases": [],
+  "major_series": [],
+  "sources": []
+ },
+ "homestead-miami-speedway-fl": {
+  "aliases": [
+   "Homestead-Miami Speedway"
+  ]
+ },
+ "cajon-speedway-ca": {
+  "aliases": [
+   "Cajon Speedway"
+  ]
+ },
+ "redwood-acres-raceway-ca": {
+  "aliases": [],
+  "major_series": [],
+  "sources": []
+ },
+ "wenatchee-valley-super-oval-wa": {
+  "aliases": [],
+  "major_series": [],
+  "sources": []
+ },
+ "bolivar-speedway-mo": {
+  "aliases": [],
+  "major_series": [],
+  "sources": []
+ },
+ "golden-sands-speedway-wi": {
   "aliases": [],
   "major_series": [],
   "sources": []

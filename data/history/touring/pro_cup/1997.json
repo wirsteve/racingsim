@@ -1,16 +1,129 @@
 {
  "series": "pro_cup",
  "year": 1997,
- "official_name": null,
- "data_level": "champion_only",
+ "official_name": "USAR Hooters Pro Cup Series",
+ "data_level": "schedule",
  "champion": {
   "name": "Mario Gosselin",
   "wiki": "Mario Gosselin (racing driver)"
  },
  "teams": [],
  "standings": [],
- "schedule": [],
+ "schedule": [
+  {
+   "round": 1,
+   "date": "1997-02-09",
+   "race": "Jackaroo 250",
+   "track": "USA International Speedway",
+   "city": "Lakeland",
+   "state": "FL",
+   "winner": "Chad Chaffin",
+   "winner_wiki": "Chad Chaffin"
+  },
+  {
+   "round": 2,
+   "date": "1997-04-19",
+   "race": "Jackaroo 250",
+   "track": "Southampton Speedway",
+   "city": "Capron",
+   "state": "VA",
+   "winner": "Mario Gosselin",
+   "winner_wiki": "Mario Gosselin (racing driver)"
+  },
+  {
+   "round": 3,
+   "date": "1997-05-10",
+   "race": "Jackaroo 250",
+   "track": "Southern National Speedway",
+   "city": "Kenly",
+   "state": "NC",
+   "winner": "Mario Gosselin",
+   "winner_wiki": "Mario Gosselin (racing driver)"
+  },
+  {
+   "round": 4,
+   "date": "1997-05-25",
+   "race": "Jackaroo Meat Sauces 250",
+   "track": "Birmingham International Raceway",
+   "city": "Birmingham",
+   "state": "AL",
+   "winner": "Mario Gosselin",
+   "winner_wiki": "Mario Gosselin (racing driver)"
+  },
+  {
+   "round": 5,
+   "date": "1997-06-14",
+   "race": "Pro Shocks 250",
+   "track": "Gresham Motorsports Park",
+   "city": "Jefferson",
+   "state": "GA",
+   "winner": "Marty Ward",
+   "winner_wiki": null
+  },
+  {
+   "round": 6,
+   "date": "1997-07-19",
+   "race": "Jackaroo 250",
+   "track": "Kingsport Speedway",
+   "city": "Kingsport",
+   "state": "TN",
+   "winner": "Mario Gosselin",
+   "winner_wiki": "Mario Gosselin (racing driver)"
+  },
+  {
+   "round": 7,
+   "date": "1997-08-02",
+   "race": "Jackaroo 250",
+   "track": "Orange County Speedway",
+   "city": "Rougemont",
+   "state": "NC",
+   "winner": "Chad Chaffin",
+   "winner_wiki": "Chad Chaffin"
+  },
+  {
+   "round": 8,
+   "date": "1997-08-16",
+   "race": "Naturally Fresh 250",
+   "track": "USA International Speedway",
+   "city": "Lakeland",
+   "state": "FL",
+   "winner": "Gene Morgan",
+   "winner_wiki": null
+  },
+  {
+   "round": 9,
+   "date": "1997-09-07",
+   "race": "Miller Lite 207",
+   "track": "The Milwaukee Mile",
+   "city": "West Allis",
+   "state": "WI",
+   "winner": "Chad Chaffin",
+   "winner_wiki": "Chad Chaffin"
+  },
+  {
+   "round": 10,
+   "date": "1997-09-20",
+   "race": "Jackaroo 250",
+   "track": "South Boston Speedway",
+   "city": "South Boston",
+   "state": "VA",
+   "winner": "Mario Gosselin",
+   "winner_wiki": "Mario Gosselin (racing driver)"
+  },
+  {
+   "round": 11,
+   "date": "1997-11-29",
+   "race": "Commanders Cup 250",
+   "track": "USA International Speedway",
+   "city": "Lakeland",
+   "state": "FL",
+   "winner": "Gene Morgan",
+   "winner_wiki": null
+  }
+ ],
  "sources": [
+  "https://www.carsandracingstuff.com/library/h/hootersprocupseries.php",
+  "http://www.ultimateracinghistory.com/racelist.php?year=1997",
   "https://en.wikipedia.org/w/index.php?title=CARS_Tour&oldid=1378109036"
  ]
 }

@@ -160,7 +160,7 @@ class World:
             real = bool(sched)
             if not sched:
                 # No calendar for this season in the data: race at the venues the series is known to use.
-                pool = [t for t in hist.venues(link["source"])
+                pool = [t for t in hist.venues(link["source"], year)
                         if t in self.tracks and self.tracks.get(t).facts.available_in(year)]
                 if len(pool) < 2:
                     continue
@@ -168,7 +168,7 @@ class World:
                 pool = pool[: max(tpl.events, 6)]
                 sched = [pool[i % len(pool)] for i in range(tpl.events)]
                 local.shuffle(sched)
-            macro = self._macro_of(sched + hist.venues(link["source"])[:12], link.get("regions") or [])
+            macro = self._macro_of(sched + hist.venues(link["source"], year)[:12], link.get("regions") or [])
             if macro is None:
                 continue
             out.append({"key": link["key"], "source": link["source"], "name": hist.series_name(link, year),

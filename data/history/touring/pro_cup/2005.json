@@ -1,16 +1,318 @@
 {
  "series": "pro_cup",
  "year": 2005,
- "official_name": null,
- "data_level": "champion_only",
+ "official_name": "USAR Hooters Pro Cup Series",
+ "data_level": "schedule",
  "champion": {
   "name": "Benny Gordon",
   "wiki": "Benny Gordon"
  },
  "teams": [],
  "standings": [],
- "schedule": [],
+ "schedule": [
+  {
+   "round": 1,
+   "date": "2005-02-26",
+   "race": "Naturally Fresh 250 (Southern Division)",
+   "track": "USA International Speedway",
+   "city": "Lakeland",
+   "state": "FL",
+   "winner": "Shane Huffman",
+   "winner_wiki": "Shane Huffman"
+  },
+  {
+   "round": 2,
+   "date": "2005-03-12",
+   "race": "Hooters Pro Cup 250 (Southern Division)",
+   "track": "South Georgia Motorsports Park",
+   "city": "Cecil",
+   "state": "GA",
+   "winner": "Shane Huffman",
+   "winner_wiki": "Shane Huffman"
+  },
+  {
+   "round": 3,
+   "date": "2005-04-02",
+   "race": "BFGoodrich Tires 250 (Southern Division)",
+   "track": "Greenville-Pickens Speedway",
+   "city": "Greenville",
+   "state": "SC",
+   "winner": "Mike Garvey",
+   "winner_wiki": "Mike Garvey"
+  },
+  {
+   "round": 4,
+   "date": "2005-04-09",
+   "race": "Greased Lightning 250 (Northern Division)",
+   "track": "South Boston Speedway",
+   "city": "South Boston",
+   "state": "VA",
+   "winner": "Benny Gordon",
+   "winner_wiki": "Benny Gordon"
+  },
+  {
+   "round": 5,
+   "date": "2005-04-16",
+   "race": "Aaron's 250 (Southern Division)",
+   "track": "Gresham Motorsports Park",
+   "city": "Jefferson",
+   "state": "GA",
+   "winner": "Shane Huffman",
+   "winner_wiki": "Shane Huffman"
+  },
+  {
+   "round": 6,
+   "date": "2005-04-23",
+   "race": "Turn 4 Pizza 250 (Southern Division)",
+   "track": "Concord Speedway",
+   "city": "Midland",
+   "state": "NC",
+   "winner": "Bobby Gill",
+   "winner_wiki": "Bobby Gill"
+  },
+  {
+   "round": 7,
+   "date": "2005-04-30",
+   "race": "Food City 250 (Northern Division)",
+   "track": "Lonesome Pine Speedway",
+   "city": "Coeburn",
+   "state": "VA",
+   "winner": "Joel Kauffman",
+   "winner_wiki": "Joel Kauffman"
+  },
+  {
+   "round": 8,
+   "date": "2005-05-06",
+   "race": "BFGoodrich Tires 250 (Southern Division)",
+   "track": "Ace Speedway",
+   "city": "Altamahaw",
+   "state": "NC",
+   "winner": "Jody Lavender",
+   "winner_wiki": "Jody Lavender"
+  },
+  {
+   "round": 9,
+   "date": "2005-05-15",
+   "race": "Lucas Oil 250 (Northern Division)",
+   "track": "O'Reilly Raceway Park",
+   "city": "Brownsburg",
+   "state": "IN",
+   "winner": "Jeff Agnew",
+   "winner_wiki": "Jeff Agnew"
+  },
+  {
+   "round": 10,
+   "date": "2005-05-28",
+   "race": "Naturally Fresh 250 (Northern Division)",
+   "track": "Jennerstown Speedway",
+   "city": "Jennerstown",
+   "state": "PA",
+   "winner": "Benny Gordon",
+   "winner_wiki": "Benny Gordon"
+  },
+  {
+   "round": 11,
+   "date": "2005-06-04",
+   "race": "Naturally Fresh 250 (Southern Division)",
+   "track": "USA International Speedway",
+   "city": "Lakeland",
+   "state": "FL",
+   "winner": "Shane Huffman",
+   "winner_wiki": "Shane Huffman"
+  },
+  {
+   "round": 12,
+   "date": "2005-06-11",
+   "race": "Mansfield 250 (Southern Division)",
+   "track": "Mansfield Motorsports Speedway",
+   "city": "Mansfield",
+   "state": "OH",
+   "winner": "Joey Logano",
+   "winner_wiki": "Joey Logano"
+  },
+  {
+   "round": 13,
+   "date": "2005-06-18",
+   "race": "Miller Lite 250 (Northern Division)",
+   "track": "Lake Erie Speedway",
+   "city": "North East",
+   "state": "PA",
+   "winner": "Benny Gordon",
+   "winner_wiki": "Benny Gordon"
+  },
+  {
+   "round": 14,
+   "date": "2005-06-25",
+   "race": "Groucho's Deli 250 (Southern Division)",
+   "track": "Myrtle Beach Speedway",
+   "city": "Myrtle Beach",
+   "state": "SC",
+   "winner": "Shane Huffman",
+   "winner_wiki": "Shane Huffman"
+  },
+  {
+   "round": 15,
+   "date": "2005-07-01",
+   "race": "BFGoodrich Tires 250 (Northern Division)",
+   "track": "Kil-Kare Speedway",
+   "city": "Xenia",
+   "state": "OH",
+   "winner": "Woody Howard",
+   "winner_wiki": null
+  },
+  {
+   "round": 16,
+   "date": "2005-07-09",
+   "race": "Aaron's 250 (Southern Division)",
+   "track": "Hickory Motor Speedway",
+   "city": "Hickory",
+   "state": "NC",
+   "winner": "Shane Huffman",
+   "winner_wiki": "Shane Huffman"
+  },
+  {
+   "round": 17,
+   "date": "2005-07-16",
+   "race": "Greased Lightning 250 (Northern Division)",
+   "track": "Motor Mile Speedway",
+   "city": "Fairlawn",
+   "state": "VA",
+   "winner": "Benny Gordon",
+   "winner_wiki": "Benny Gordon"
+  },
+  {
+   "round": 18,
+   "date": "2005-07-23",
+   "race": "Merchant's Tire & Auto Centers 250 (Northern Division)",
+   "track": "Southern National Speedway",
+   "city": "Kenly",
+   "state": "NC",
+   "winner": "Mark McFarland",
+   "winner_wiki": "Mark McFarland"
+  },
+  {
+   "round": 19,
+   "date": "2005-07-30",
+   "race": "Lucas Oil 250 (Northern Division)",
+   "track": "Salem Speedway",
+   "city": "Salem",
+   "state": "IN",
+   "winner": "Woody Howard",
+   "winner_wiki": null
+  },
+  {
+   "round": 20,
+   "date": "2005-08-06",
+   "race": "Lucas Oil 250 (Northern Division)",
+   "track": "South Boston Speedway",
+   "city": "South Boston",
+   "state": "VA",
+   "winner": "Woody Howard",
+   "winner_wiki": null
+  },
+  {
+   "round": 21,
+   "date": "2005-08-13",
+   "race": "Up The Creek Fish Camp & Grill 250 (Southern Division)",
+   "track": "Gresham Motorsports Park",
+   "city": "Jefferson",
+   "state": "GA",
+   "winner": "Shane Huffman",
+   "winner_wiki": "Shane Huffman"
+  },
+  {
+   "round": 22,
+   "date": "2005-08-20",
+   "race": "Bakker Produce 250 (Northern Division)",
+   "track": "Illiana Motor Speedway",
+   "city": "Schererville",
+   "state": "IN",
+   "winner": "Jeff Agnew",
+   "winner_wiki": "Jeff Agnew"
+  },
+  {
+   "round": 23,
+   "date": "2005-08-24",
+   "race": "Food City 150 (Southern Division)",
+   "track": "Bristol Motor Speedway",
+   "city": "Bristol",
+   "state": "TN",
+   "winner": "Clay Rogers",
+   "winner_wiki": "Clay Rogers"
+  },
+  {
+   "round": 24,
+   "date": "2005-09-03",
+   "race": "Lucas Oil 250 (Southern Division)",
+   "track": "USA International Speedway",
+   "city": "Lakeland",
+   "state": "FL",
+   "winner": "Bobby Gill",
+   "winner_wiki": "Bobby Gill"
+  },
+  {
+   "round": 25,
+   "date": "2005-09-09",
+   "race": "Miller Lite 250 (Northern Division)",
+   "track": "Madison International Speedway",
+   "city": "Oregon",
+   "state": "WI",
+   "winner": "Benny Gordon",
+   "winner_wiki": "Benny Gordon"
+  },
+  {
+   "round": 26,
+   "date": "2005-09-24",
+   "race": "Charlie Campbell Memorial (Four Champions Championship Series)",
+   "track": "Jennerstown Speedway",
+   "city": "Jennerstown",
+   "state": "PA",
+   "winner": "Joe Gaita",
+   "winner_wiki": null
+  },
+  {
+   "round": 27,
+   "date": "2005-10-08",
+   "race": "Alan Kulwicki Memorial (Four Champions Championship Series)",
+   "track": "Mansfield Motorsports Speedway",
+   "city": "Mansfield",
+   "state": "OH",
+   "winner": "Michael Ritch",
+   "winner_wiki": "Michael Ritch"
+  },
+  {
+   "round": 28,
+   "date": "2005-10-22",
+   "race": "Mark Brooks Memorial (Four Champions Championship Series)",
+   "track": "Myrtle Beach Speedway",
+   "city": "Myrtle Beach",
+   "state": "SC",
+   "winner": "Benny Gordon",
+   "winner_wiki": "Benny Gordon"
+  },
+  {
+   "round": 29,
+   "date": "2005-11-05",
+   "race": "Dan Duncan Memorial (Four Champions Championship Series)",
+   "track": "Motor Mile Speedway",
+   "city": "Fairlawn",
+   "state": "VA",
+   "winner": "Shane Huffman",
+   "winner_wiki": "Shane Huffman"
+  },
+  {
+   "round": 30,
+   "date": "2005-11-26",
+   "race": "Four Champions Memorial Hooters 300 (Four Champions Championship Series)",
+   "track": "USA International Speedway",
+   "city": "Lakeland",
+   "state": "FL",
+   "winner": "Shane Huffman",
+   "winner_wiki": "Shane Huffman"
+  }
+ ],
  "sources": [
+  "https://www.carsandracingstuff.com/library/h/hootersprocupseries.php",
   "https://en.wikipedia.org/w/index.php?title=CARS_Tour&oldid=1378109036"
  ]
 }

@@ -54,6 +54,13 @@ MAPPING = {
     "cra_all_stars": ("series:jegs-cra-all-stars", "late_model_tour"),
     "apc_united": ("series:apc-united-late-model", "late_model_tour"),
     "oscaar_slm": ("series:oscaar-super-late-model", "late_model_tour"),
+    # NASCAR regional touring divisions (1995-2006) and related
+    "nascar_southeast": ("series:nascar-all-pro-southeast", "late_model_tour"),
+    "nascar_southwest": ("series:nascar-southwest-tour", "late_model_tour"),
+    "nascar_northwest": ("series:nascar-northwest-tour", "late_model_tour"),
+    "nascar_dash": ("series:nascar-goodys-dash", "late_model_tour"),
+    "nascar_autozone_elite": ("series:nascar-autozone-elite-division", None),
+    "nascar_sportsman": ("series:nascar-sportsman-division", None),
     # dirt / sprint / midget
     "woo_sprint": ("series:woo-sprint", "outlaw_sprint"),
     "high_limit": ("series:high-limit-racing", "sprint_car_tour"),

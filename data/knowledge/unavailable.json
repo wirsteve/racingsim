@@ -278,5 +278,40 @@
   "reason": "shared per-turn web-search budget exhausted by other agents",
   "checked": "2026-10-06",
   "replacement_source": "src:myracepass (hosts most of these bodies' track profiles)"
+ },
+ {
+  "source": "racing-reference.info",
+  "url": "https://www.racing-reference.info/",
+  "reason": "Cloudflare block / project rule: never fetched",
+  "checked": "2026-10-06",
+  "replacement_source": "src:urh, src:racingcalendar, src:crittenden, src:wikipedia"
+ },
+ {
+  "source": "thethirdturn.com",
+  "url": "https://thethirdturn.com/",
+  "reason": "robots.txt Disallow: / ; project rule: never fetched",
+  "checked": "2026-10-06",
+  "replacement_source": "src:urh, src:racingcalendar, src:crittenden, src:wikipedia"
+ },
+ {
+  "source": "stockcarracing.fandom.com (Stock Car Racing Wiki)",
+  "url": "https://stockcarracing.fandom.com/",
+  "reason": "Cloudflare challenge page on robots.txt; also mirrors Third Turn-style 'Central' pages - not used",
+  "checked": "2026-10-06",
+  "replacement_source": "src:urh, src:racingcalendar"
+ },
+ {
+  "source": "jayski.com",
+  "url": "https://www.jayski.com/",
+  "reason": "Cloudflare challenge page",
+  "checked": "2026-10-06",
+  "replacement_source": "src:urh"
+ },
+ {
+  "source": "web.archive.org (defunct usarprocup.com / nascar regional sites)",
+  "url": "https://web.archive.org/",
+  "reason": "HTTP 429 / connection reset through proxy; not retried",
+  "checked": "2026-10-06",
+  "replacement_source": "src:crittenden"
  }
 ]

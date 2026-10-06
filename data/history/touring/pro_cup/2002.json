@@ -1,16 +1,339 @@
 {
  "series": "pro_cup",
  "year": 2002,
- "official_name": null,
- "data_level": "champion_only",
+ "official_name": "USAR Hooters Pro Cup Series",
+ "data_level": "schedule",
  "champion": {
   "name": "Jason Sarvis",
   "wiki": null
  },
  "teams": [],
  "standings": [],
- "schedule": [],
+ "schedule": [
+  {
+   "round": 1,
+   "date": "2002-02-23",
+   "race": "Lucas Oil 250 (Southern Division)",
+   "track": "USA International Speedway",
+   "city": "Lakeland",
+   "state": "FL",
+   "winner": "Bobby Gill",
+   "winner_wiki": "Bobby Gill"
+  },
+  {
+   "round": 2,
+   "date": "2002-03-16",
+   "race": "Naturally Fresh 250 (Southern Division)",
+   "track": "Five Flags Speedway",
+   "city": "Pensacola",
+   "state": "FL",
+   "winner": "Bobby Gill",
+   "winner_wiki": "Bobby Gill"
+  },
+  {
+   "round": 3,
+   "date": "2002-04-06",
+   "race": "Jackaroo 250 (Southern Division)",
+   "track": "New Smyrna Speedway",
+   "city": "New Smyrna",
+   "state": "FL",
+   "winner": "Bobby Gill",
+   "winner_wiki": "Bobby Gill"
+  },
+  {
+   "round": 4,
+   "date": "2002-04-13",
+   "race": "Naturally Fresh 250 (Northern Division)",
+   "track": "Jennerstown Speedway",
+   "city": "Jennerstown",
+   "state": "PA",
+   "winner": "Mardy Lindley",
+   "winner_wiki": "Mardy Lindley"
+  },
+  {
+   "round": 5,
+   "date": "2002-04-19",
+   "race": "Jackaroo 250 (Southern Division)",
+   "track": "Ace Speedway",
+   "city": "Altamahaw",
+   "state": "NC",
+   "winner": "Bobby Gill",
+   "winner_wiki": "Bobby Gill"
+  },
+  {
+   "round": 6,
+   "date": "2002-04-27",
+   "race": "Bryant Heating & Cooling 150 (Southern Division)",
+   "track": "Coastal Plains Raceway",
+   "city": "Jacksonville",
+   "state": "NC",
+   "winner": "Bobby Gill",
+   "winner_wiki": "Bobby Gill"
+  },
+  {
+   "round": 7,
+   "date": "2002-04-27",
+   "race": "Miller Lite 250 (Northern Division)",
+   "track": "Illiana Motor Speedway",
+   "city": "Schererville",
+   "state": "IN",
+   "winner": "Brian Ross",
+   "winner_wiki": "Brian Ross (racing driver)"
+  },
+  {
+   "round": 8,
+   "date": "2002-05-05",
+   "race": "Naturally Fresh 250 (Northern Division)",
+   "track": "Winchester Speedway",
+   "city": "Winchester",
+   "state": "IN",
+   "winner": "Brian Ross",
+   "winner_wiki": "Brian Ross (racing driver)"
+  },
+  {
+   "round": 9,
+   "date": "2002-05-10",
+   "race": "Naturally Fresh 250 (Southern Division)",
+   "track": "Gresham Motorsports Park",
+   "city": "Jefferson",
+   "state": "GA",
+   "winner": "Bobby Gill",
+   "winner_wiki": "Bobby Gill"
+  },
+  {
+   "round": 10,
+   "date": "2002-05-19",
+   "race": "Naturally Fresh 250 (Northern Division)",
+   "track": "Salem Speedway",
+   "city": "Salem",
+   "state": "IN",
+   "winner": "Brian Ross",
+   "winner_wiki": "Brian Ross (racing driver)"
+  },
+  {
+   "round": 11,
+   "date": "2002-06-01",
+   "race": "Jackaroo 250 (Southern Division)",
+   "track": "USA International Speedway",
+   "city": "Lakeland",
+   "state": "FL",
+   "winner": "Jason Sarvis",
+   "winner_wiki": null
+  },
+  {
+   "round": 12,
+   "date": "2002-06-01",
+   "race": "Capriotto Auto Parts 150 (Northern Division)",
+   "track": "Holland International Speedway",
+   "city": "Holland",
+   "state": "NY",
+   "winner": "Jeff Agnew",
+   "winner_wiki": "Jeff Agnew"
+  },
+  {
+   "round": 13,
+   "date": "2002-06-08",
+   "race": "Naturally Fresh 250 (Northern Division)",
+   "track": "Jennerstown Speedway",
+   "city": "Jennerstown",
+   "state": "PA",
+   "winner": "Jeff Agnew",
+   "winner_wiki": "Jeff Agnew"
+  },
+  {
+   "round": 14,
+   "date": "2002-06-15",
+   "race": "Bi-Lo 250 (Southern Division)",
+   "track": "Myrtle Beach Speedway",
+   "city": "Myrtle Beach",
+   "state": "SC",
+   "winner": "Bobby Gill",
+   "winner_wiki": "Bobby Gill"
+  },
+  {
+   "round": 15,
+   "date": "2002-06-22",
+   "race": "Kroger 250 (Northern Division)",
+   "track": "O'Reilly Raceway Park",
+   "city": "Clermont",
+   "state": "IN",
+   "winner": "Brian Ross",
+   "winner_wiki": "Brian Ross (racing driver)"
+  },
+  {
+   "round": 16,
+   "date": "2002-06-29",
+   "race": "Lennox 250 (Southern Division)",
+   "track": "Southern National Speedway",
+   "city": "Kenly",
+   "state": "NC",
+   "winner": "Bobby Gill",
+   "winner_wiki": "Bobby Gill"
+  },
+  {
+   "round": 17,
+   "date": "2002-07-05",
+   "race": "Naturally Fresh 250 (Northern Division)",
+   "track": "Kil-Kare Speedway",
+   "city": "Xenia",
+   "state": "OH",
+   "winner": "Brian Ross",
+   "winner_wiki": "Brian Ross (racing driver)"
+  },
+  {
+   "round": 18,
+   "date": "2002-07-13",
+   "race": "Miller Lite 250 (Southern Division)",
+   "track": "Gresham Motorsports Park",
+   "city": "Jefferson",
+   "state": "GA",
+   "winner": "Steven Christian",
+   "winner_wiki": null
+  },
+  {
+   "round": 19,
+   "date": "2002-07-20",
+   "race": "Kroger 250 (Northern Division)",
+   "track": "Motor Mile Speedway",
+   "city": "Radford",
+   "state": "VA",
+   "winner": "Bobby Gill",
+   "winner_wiki": "Bobby Gill"
+  },
+  {
+   "round": 20,
+   "date": "2002-07-27",
+   "race": "Naturally Fresh 250 (Southern Division)",
+   "track": "Hickory Motor Speedway",
+   "city": "Hickory",
+   "state": "NC",
+   "winner": "Bobby Gill",
+   "winner_wiki": "Bobby Gill"
+  },
+  {
+   "round": 21,
+   "date": "2002-08-03",
+   "race": "Jackaroo 250 (Northern Division)",
+   "track": "Jennerstown Speedway",
+   "city": "Jennerstown",
+   "state": "PA",
+   "winner": "Bobby Gill",
+   "winner_wiki": "Bobby Gill"
+  },
+  {
+   "round": 22,
+   "date": "2002-08-10",
+   "race": "Food City 250 (Northern Division)",
+   "track": "Lonesome Pine Speedway",
+   "city": "Coeburn",
+   "state": "VA",
+   "winner": "Mardy Lindley",
+   "winner_wiki": "Mardy Lindley"
+  },
+  {
+   "round": 23,
+   "date": "2002-08-17",
+   "race": "Lucas Oil 250 (Southern Division)",
+   "track": "South Boston Speedway",
+   "city": "South Boston",
+   "state": "VA",
+   "winner": "Bobby Gill",
+   "winner_wiki": "Bobby Gill"
+  },
+  {
+   "round": 24,
+   "date": "2002-08-24",
+   "race": "Lucas Oil 250 (Northern Division)",
+   "track": "Cayuga International Speedway",
+   "city": "Hagersville",
+   "state": "ON",
+   "winner": "Mardy Lindley",
+   "winner_wiki": "Mardy Lindley"
+  },
+  {
+   "round": 25,
+   "date": "2002-08-31",
+   "race": "Miller Lite 250 (Southern Division)",
+   "track": "USA International Speedway",
+   "city": "Lakeland",
+   "state": "FL",
+   "winner": "Jason Sarvis",
+   "winner_wiki": null
+  },
+  {
+   "round": 26,
+   "date": "2002-09-06",
+   "race": "Naturally Fresh 250 (Northern Division)",
+   "track": "Motordrome Speedway",
+   "city": "Smithton",
+   "state": "PA",
+   "winner": "Jay Fogleman",
+   "winner_wiki": null
+  },
+  {
+   "round": 27,
+   "date": "2002-09-14",
+   "race": "Jackaroo 250 (Southern Division)",
+   "track": "Concord Speedway",
+   "city": "Concord",
+   "state": "NC",
+   "winner": "Bobby Gill",
+   "winner_wiki": "Bobby Gill"
+  },
+  {
+   "round": 28,
+   "date": "2002-09-22",
+   "race": "Alan Kulwicki Memorial (Four Champions Championship Series)",
+   "track": "Winchester Speedway",
+   "city": "Winchester",
+   "state": "IN",
+   "winner": "Clay Rogers",
+   "winner_wiki": "Clay Rogers"
+  },
+  {
+   "round": 29,
+   "date": "2002-10-05",
+   "race": "Charlie Campbell Memorial (Four Champions Championship Series)",
+   "track": "Jennerstown Speedway",
+   "city": "Jennerstown",
+   "state": "PA",
+   "winner": "Mardy Lindley",
+   "winner_wiki": "Mardy Lindley"
+  },
+  {
+   "round": 30,
+   "date": "2002-10-19",
+   "race": "Mark Brooks Memorial (Four Champions Championship Series)",
+   "track": "Myrtle Beach Speedway",
+   "city": "Myrtle Beach",
+   "state": "SC",
+   "winner": "Jason Sarvis",
+   "winner_wiki": null
+  },
+  {
+   "round": 31,
+   "date": "2002-11-02",
+   "race": "Dan Duncan Memorial (Four Champions Championship Series)",
+   "track": "Gresham Motorsports Park",
+   "city": "Jefferson",
+   "state": "GA",
+   "winner": "Jason Sarvis",
+   "winner_wiki": null
+  },
+  {
+   "round": 32,
+   "date": "2002-11-30",
+   "race": "Hooters 300 (Four Champions Championship Series)",
+   "track": "USA International Speedway",
+   "city": "Lakeland",
+   "state": "FL",
+   "winner": "Bobby Gill",
+   "winner_wiki": "Bobby Gill"
+  }
+ ],
  "sources": [
+  "https://www.carsandracingstuff.com/library/h/hootersprocupseries.php",
+  "http://www.ultimateracinghistory.com/racelist.php?year=2002",
   "https://en.wikipedia.org/w/index.php?title=CARS_Tour&oldid=1378109036"
  ]
 }

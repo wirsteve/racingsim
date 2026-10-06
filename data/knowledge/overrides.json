@@ -389,14 +389,127 @@
   ],
   "prefer_curated_names": false
  },
+ "series:nascar-all-pro-southeast": {
+  "game_template": "late_model_tour",
+  "history_source": "nascar_southeast",
+  "names_by_year": [
+   {
+    "from": 1995,
+    "to": 1997,
+    "name": "NASCAR Slim Jim All Pro Series"
+   },
+   {
+    "from": 1998,
+    "to": 2000,
+    "name": "NASCAR Slim Jim All-Pro Series"
+   },
+   {
+    "from": 2001,
+    "to": 2001,
+    "name": "NASCAR Gatorade All-Pro Series"
+   },
+   {
+    "from": 2002,
+    "to": 2002,
+    "name": "NASCAR Hills Bros. All-Pro Series"
+   },
+   {
+    "from": 2003,
+    "to": 2003,
+    "name": "NASCAR Kodak Southeast Series"
+   },
+   {
+    "from": 2004,
+    "to": 2006,
+    "name": "NASCAR AutoZone Elite Division Southeast Series"
+   }
+  ],
+  "prefer_curated_names": false
+ },
+ "series:nascar-autozone-elite-division": {
+  "game_template": null,
+  "history_source": "nascar_autozone_elite",
+  "names_by_year": [
+   {
+    "from": 2003,
+    "to": 2003,
+    "name": "NASCAR Elite Division"
+   },
+   {
+    "from": 2004,
+    "to": 2006,
+    "name": "NASCAR AutoZone Elite Division"
+   }
+  ],
+  "prefer_curated_names": false
+ },
+ "series:nascar-goodys-dash": {
+  "game_template": "late_model_tour",
+  "history_source": "nascar_dash",
+  "names_by_year": [
+   {
+    "from": 1995,
+    "to": 2003,
+    "name": "NASCAR Goody's Dash Series"
+   },
+   {
+    "from": 2004,
+    "to": 2004,
+    "name": "IPOWER Dash Series"
+   },
+   {
+    "from": 2005,
+    "to": 2007,
+    "name": "ISCARS Dash Touring"
+   },
+   {
+    "from": 2008,
+    "to": 2011,
+    "name": "ISCARS Dash Touring (ASA-sanctioned)"
+   }
+  ],
+  "prefer_curated_names": false
+ },
  "series:nascar-midwest-series": {
   "game_template": "late_model_tour",
   "history_source": "nascar_midwest",
   "names_by_year": [
    {
     "from": 1998,
+    "to": 2002,
+    "name": "NASCAR RE/MAX Challenge Series"
+   },
+   {
+    "from": 2003,
+    "to": 2003,
+    "name": "NASCAR International Truck and Engine Corporation Midwest Series"
+   },
+   {
+    "from": 2004,
     "to": 2006,
-    "name": "NASCAR Midwest Series (RE/MAX Challenge Series)"
+    "name": "NASCAR AutoZone Elite Division Midwest Series"
+   }
+  ],
+  "prefer_curated_names": false
+ },
+ "series:nascar-northwest-tour": {
+  "game_template": "late_model_tour",
+  "history_source": "nascar_northwest",
+  "names_by_year": [
+   {
+    "from": 1995,
+    "to": 1997,
+    "name": "NASCAR REB-CO Northwest Tour"
+   },
+   {
+    "from": 1998,
+    "to": 2003,
+    "name": "NASCAR Raybestos Brakes Northwest Series"
+   },
+   {
+    "from": 2004,
+    "to": 2006,
+    "name": "NASCAR AutoZone Elite Division Northwest Series"
    }
   ],
   "prefer_curated_names": false
@@ -429,6 +542,40 @@
     "from": 2024,
     "to": 2026,
     "name": "NASCAR Canada Series"
+   }
+  ],
+  "prefer_curated_names": false
+ },
+ "series:nascar-southwest-tour": {
+  "game_template": "late_model_tour",
+  "history_source": "nascar_southwest",
+  "names_by_year": [
+   {
+    "from": 1995,
+    "to": 1997,
+    "name": "NASCAR Featherlite Southwest Tour"
+   },
+   {
+    "from": 1998,
+    "to": 2003,
+    "name": "NASCAR Featherlite Southwest Series"
+   },
+   {
+    "from": 2004,
+    "to": 2006,
+    "name": "NASCAR AutoZone Elite Division Southwest Series"
+   }
+  ],
+  "prefer_curated_names": false
+ },
+ "series:nascar-sportsman-division": {
+  "game_template": null,
+  "history_source": "nascar_sportsman",
+  "names_by_year": [
+   {
+    "from": 1995,
+    "to": 1996,
+    "name": "NASCAR Sportsman Division"
    }
   ],
   "prefer_curated_names": false
@@ -731,8 +878,23 @@
   "names_by_year": [
    {
     "from": 1997,
-    "to": 2014,
+    "to": 2008,
     "name": "USAR Hooters Pro Cup Series"
+   },
+   {
+    "from": 2009,
+    "to": 2011,
+    "name": "USARacing Pro Cup Series"
+   },
+   {
+    "from": 2012,
+    "to": 2012,
+    "name": "CARS Rev-Oil Pro Cup Series"
+   },
+   {
+    "from": 2013,
+    "to": 2014,
+    "name": "CARS X-1R Pro Cup Series"
    }
   ],
   "prefer_curated_names": false

@@ -861,6 +861,20 @@
   "reason": "different text values"
  },
  {
+  "entity": "series:nascar-midwest-series",
+  "attribute": "name",
+  "kept": "NASCAR Midwest Series (RE/MAX Challenge Series)",
+  "other": "NASCAR Midwest Series (RE/MAX Challenge Series / AutoZone Elite Division, Midwest Series)",
+  "reason": "different text values"
+ },
+ {
+  "entity": "series:usar-pro-cup",
+  "attribute": "level",
+  "kept": "super_regional",
+  "other": "regional",
+  "reason": "different text values"
+ },
+ {
   "entity": null,
   "attribute": "name",
   "kept": "Franklin County Speedway",
@@ -2468,6 +2482,349 @@
   "attribute": "region",
   "kept": "WA",
   "other": null,
+  "reason": "different text values"
+ },
+ {
+  "entity": "birmingham-international-raceway-al",
+  "attribute": "surface",
+  "kept": "asphalt",
+  "other": null,
+  "reason": "different text values"
+ },
+ {
+  "entity": "birmingham-international-raceway-al",
+  "attribute": "length_mi",
+  "kept": 0.625,
+  "other": 5.0,
+  "reason": "different text values"
+ },
+ {
+  "entity": "birmingham-international-raceway-al",
+  "attribute": "closed",
+  "kept": 2009,
+  "other": null,
+  "reason": "different text values"
+ },
+ {
+  "entity": "birmingham-international-raceway-al",
+  "attribute": "active",
+  "kept": false,
+  "other": null,
+  "reason": "different text values"
+ },
+ {
+  "entity": "birmingham-international-raceway-al",
+  "attribute": "level",
+  "kept": "national",
+  "other": "regional",
+  "reason": "different text values"
+ },
+ {
+  "entity": "birmingham-international-raceway-al",
+  "attribute": "lat",
+  "kept": 33.49778,
+  "other": 33.4978,
+  "reason": "different text values"
+ },
+ {
+  "entity": "birmingham-international-raceway-al",
+  "attribute": "lon",
+  "kept": -86.87139,
+  "other": -86.8714,
+  "reason": "different text values"
+ },
+ {
+  "entity": "birmingham-international-raceway-al",
+  "attribute": "notable_note",
+  "kept": "hosted NASCAR Cup Series (1958–1968)",
+  "other": "banking_deg_turns: Turns: 8°\nStraights: 5°",
+  "reason": "different text values"
+ },
+ {
+  "entity": "houston-motorsports-park-tx",
+  "attribute": "surface",
+  "kept": "asphalt",
+  "other": null,
+  "reason": "different text values"
+ },
+ {
+  "entity": "houston-motorsports-park-tx",
+  "attribute": "length_mi",
+  "kept": 0.375,
+  "other": null,
+  "reason": "different text values"
+ },
+ {
+  "entity": "houston-motorsports-park-tx",
+  "attribute": "opened",
+  "kept": 1977,
+  "other": null,
+  "reason": "different text values"
+ },
+ {
+  "entity": "houston-motorsports-park-tx",
+  "attribute": "active",
+  "kept": true,
+  "other": null,
+  "reason": "different text values"
+ },
+ {
+  "entity": "houston-motorsports-park-tx",
+  "attribute": "lat",
+  "kept": 29.89114,
+  "other": 29.7903,
+  "reason": "different text values"
+ },
+ {
+  "entity": "houston-motorsports-park-tx",
+  "attribute": "lon",
+  "kept": -95.2305,
+  "other": -94.8807,
+  "reason": "different text values"
+ },
+ {
+  "entity": "south-georgia-motorsports-park-ga",
+  "attribute": "city",
+  "kept": "Adel",
+  "other": "Cecil",
+  "reason": "different text values"
+ },
+ {
+  "entity": "south-georgia-motorsports-park-ga",
+  "attribute": "surface",
+  "kept": "asphalt",
+  "other": "concrete",
+  "reason": "different text values"
+ },
+ {
+  "entity": "south-georgia-motorsports-park-ga",
+  "attribute": "length_mi",
+  "kept": 0.5,
+  "other": 0.25,
+  "reason": "different text values"
+ },
+ {
+  "entity": "south-georgia-motorsports-park-ga",
+  "attribute": "level",
+  "kept": "local",
+  "other": "regional",
+  "reason": "different text values"
+ },
+ {
+  "entity": "south-georgia-motorsports-park-ga",
+  "attribute": "lat",
+  "kept": 31.06478,
+  "other": 31.062107,
+  "reason": "different text values"
+ },
+ {
+  "entity": "south-georgia-motorsports-park-ga",
+  "attribute": "lon",
+  "kept": -83.39628,
+  "other": -83.396153,
+  "reason": "different text values"
+ },
+ {
+  "entity": "yakima-speedway-wa",
+  "attribute": "closed",
+  "kept": 2021,
+  "other": null,
+  "reason": "different text values"
+ },
+ {
+  "entity": "yakima-speedway-wa",
+  "attribute": "active",
+  "kept": false,
+  "other": null,
+  "reason": "different text values"
+ },
+ {
+  "entity": "yakima-speedway-wa",
+  "attribute": "lat",
+  "kept": 46.59333,
+  "other": 46.593333,
+  "reason": "different text values"
+ },
+ {
+  "entity": "yakima-speedway-wa",
+  "attribute": "lon",
+  "kept": -120.47917,
+  "other": -120.479167,
+  "reason": "different text values"
+ },
+ {
+  "entity": "magic-valley-speedway-id",
+  "attribute": "surface",
+  "kept": "asphalt",
+  "other": null,
+  "reason": "different text values"
+ },
+ {
+  "entity": "magic-valley-speedway-id",
+  "attribute": "length_mi",
+  "kept": 0.333,
+  "other": null,
+  "reason": "different text values"
+ },
+ {
+  "entity": "magic-valley-speedway-id",
+  "attribute": "active",
+  "kept": true,
+  "other": null,
+  "reason": "different text values"
+ },
+ {
+  "entity": "magic-valley-speedway-id",
+  "attribute": "level",
+  "kept": "local",
+  "other": "regional",
+  "reason": "different text values"
+ },
+ {
+  "entity": "magic-valley-speedway-id",
+  "attribute": "lat",
+  "kept": 42.48615,
+  "other": 42.486342,
+  "reason": "different text values"
+ },
+ {
+  "entity": "magic-valley-speedway-id",
+  "attribute": "lon",
+  "kept": -114.50191,
+  "other": -114.501828,
+  "reason": "different text values"
+ },
+ {
+  "entity": null,
+  "attribute": "name",
+  "kept": "I-94 Speedway",
+  "other": "I-94 Raceway",
+  "reason": "different text values"
+ },
+ {
+  "entity": "lake-geneva-raceway-wi",
+  "attribute": "track_type",
+  "kept": "road_course",
+  "other": "oval",
+  "reason": "different text values"
+ },
+ {
+  "entity": "lake-geneva-raceway-wi",
+  "attribute": "surface",
+  "kept": "asphalt",
+  "other": null,
+  "reason": "different text values"
+ },
+ {
+  "entity": "lake-geneva-raceway-wi",
+  "attribute": "length_mi",
+  "kept": 0.333,
+  "other": null,
+  "reason": "different text values"
+ },
+ {
+  "entity": "lake-geneva-raceway-wi",
+  "attribute": "closed",
+  "kept": 2006,
+  "other": null,
+  "reason": "different text values"
+ },
+ {
+  "entity": "lake-geneva-raceway-wi",
+  "attribute": "active",
+  "kept": false,
+  "other": null,
+  "reason": "different text values"
+ },
+ {
+  "entity": "lake-geneva-raceway-wi",
+  "attribute": "level",
+  "kept": "local",
+  "other": "regional",
+  "reason": "different text values"
+ },
+ {
+  "entity": "lake-geneva-raceway-wi",
+  "attribute": "lat",
+  "kept": 42.57735,
+  "other": 42.5774,
+  "reason": "different text values"
+ },
+ {
+  "entity": "lake-geneva-raceway-wi",
+  "attribute": "lon",
+  "kept": -88.40611,
+  "other": -88.4061,
+  "reason": "different text values"
+ },
+ {
+  "entity": null,
+  "attribute": "name",
+  "kept": "Holland International Speedway",
+  "other": "Holland Speedway",
+  "reason": "different text values"
+ },
+ {
+  "entity": null,
+  "attribute": "lat",
+  "kept": 42.631168,
+  "other": 42.6314,
+  "reason": "different text values"
+ },
+ {
+  "entity": null,
+  "attribute": "lon",
+  "kept": -78.552453,
+  "other": -78.5523,
+  "reason": "different text values"
+ },
+ {
+  "entity": "shenandoah-speedway-va",
+  "attribute": "surface",
+  "kept": "asphalt",
+  "other": "dirt",
+  "reason": "different text values"
+ },
+ {
+  "entity": "shenandoah-speedway-va",
+  "attribute": "length_mi",
+  "kept": 0.375,
+  "other": null,
+  "reason": "different text values"
+ },
+ {
+  "entity": "shenandoah-speedway-va",
+  "attribute": "opened",
+  "kept": 2005,
+  "other": null,
+  "reason": "different text values"
+ },
+ {
+  "entity": "shenandoah-speedway-va",
+  "attribute": "active",
+  "kept": true,
+  "other": null,
+  "reason": "different text values"
+ },
+ {
+  "entity": "shenandoah-speedway-va",
+  "attribute": "level",
+  "kept": "local",
+  "other": "regional",
+  "reason": "different text values"
+ },
+ {
+  "entity": "shenandoah-speedway-va",
+  "attribute": "lat",
+  "kept": 38.51136,
+  "other": 38.873299,
+  "reason": "different text values"
+ },
+ {
+  "entity": "shenandoah-speedway-va",
+  "attribute": "lon",
+  "kept": -78.63715,
+  "other": -78.523219,
   "reason": "different text values"
  }
 ]

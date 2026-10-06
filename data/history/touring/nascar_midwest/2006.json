@@ -1,16 +1,79 @@
 {
  "series": "nascar_midwest",
  "year": 2006,
- "official_name": null,
- "data_level": "champion_only",
+ "official_name": "NASCAR AutoZone Elite Division Midwest Series",
+ "data_level": "schedule",
  "champion": {
   "name": "Tim Schendel",
   "wiki": null
  },
  "teams": [],
  "standings": [],
- "schedule": [],
+ "schedule": [
+  {
+   "round": 1,
+   "date": "2006-06-03",
+   "race": "Auto Trader 150",
+   "track": "Colorado National Speedway",
+   "city": "Dacono",
+   "state": "CO",
+   "winner": "Josh Vadnais",
+   "winner_wiki": null
+  },
+  {
+   "round": 2,
+   "date": "2006-07-14",
+   "race": "Raceway Park 150",
+   "track": "Raceway Park",
+   "city": "Shakopee",
+   "state": "MN",
+   "winner": "Dan Fredrickson",
+   "winner_wiki": null
+  },
+  {
+   "round": 3,
+   "date": "2006-08-09",
+   "race": "Music City 100",
+   "track": "Nashville Fairgrounds Speedway",
+   "city": "Nashville",
+   "state": "TN",
+   "winner": "J.R. Norris",
+   "winner_wiki": null
+  },
+  {
+   "round": 4,
+   "date": "2006-08-19",
+   "race": "United Power/Touchstone Energy 150",
+   "track": "Colorado National Speedway",
+   "city": "Dacono",
+   "state": "CO",
+   "winner": "Eric Holmes",
+   "winner_wiki": "Eric Holmes (racing driver)"
+  },
+  {
+   "round": 5,
+   "date": "2006-09-23",
+   "race": "Rock 101 150",
+   "track": "Greenville-Pickens Speedway",
+   "city": "Greenville",
+   "state": "SC",
+   "winner": "Justin Wakefield",
+   "winner_wiki": null
+  },
+  {
+   "round": 6,
+   "date": "2006-10-06",
+   "race": "Oktoberfest Farewell 150",
+   "track": "LaCrosse Fairgrounds Speedway",
+   "city": "West Salem",
+   "state": "WI",
+   "winner": "Brent Kirchner",
+   "winner_wiki": null
+  }
+ ],
  "sources": [
+  "https://racingcalendar.net/championship/nascar-elite-division-midwest-series/2006",
+  "http://www.ultimateracinghistory.com/racelist.php?year=2006",
   "https://en.wikipedia.org/w/index.php?title=ARTGO&oldid=1343961991"
  ]
 }

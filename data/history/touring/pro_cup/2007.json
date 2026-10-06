@@ -1,16 +1,228 @@
 {
  "series": "pro_cup",
  "year": 2007,
- "official_name": null,
- "data_level": "champion_only",
+ "official_name": "USAR Hooters Pro Cup Series",
+ "data_level": "schedule",
  "champion": {
   "name": "Bobby Gill",
   "wiki": "Bobby Gill"
  },
  "teams": [],
  "standings": [],
- "schedule": [],
+ "schedule": [
+  {
+   "round": 1,
+   "date": "2007-03-10",
+   "race": "Sears Auto Center 200 (Southern Division)",
+   "track": "USA International Speedway",
+   "city": "Lakeland",
+   "state": "FL",
+   "winner": "Matt Hawkins",
+   "winner_wiki": "Matt Hawkins (racing driver)"
+  },
+  {
+   "round": 2,
+   "date": "2007-03-31",
+   "race": "Glover Auten Foods 250 (Southern Division)",
+   "track": "South Georgia Motorsports Park",
+   "city": "Cecil",
+   "state": "GA",
+   "winner": "Woody Howard",
+   "winner_wiki": null
+  },
+  {
+   "round": 3,
+   "date": "2007-04-14",
+   "race": "Farmer's Foods 250 (Northern Division)",
+   "track": "South Boston Speedway",
+   "city": "South Boston",
+   "state": "VA",
+   "winner": "Bobby Gill",
+   "winner_wiki": "Bobby Gill"
+  },
+  {
+   "round": 4,
+   "date": "2007-04-28",
+   "race": "Naturally Fresh 250 (Southern Division)",
+   "track": "Concord Speedway",
+   "city": "Midland",
+   "state": "NC",
+   "winner": "Chase Pistone",
+   "winner_wiki": "Chase Pistone"
+  },
+  {
+   "round": 5,
+   "date": "2007-05-03",
+   "race": "Farmer's Foods 250 (Northern Division)",
+   "track": "Shenandoah Speedway",
+   "city": "Shenandoah",
+   "state": "VA",
+   "winner": "Mark McFarland",
+   "winner_wiki": "Mark McFarland"
+  },
+  {
+   "round": 6,
+   "date": "2007-05-26",
+   "race": "Sears Auto Center 200 (Northern Division)",
+   "track": "Madison International Speedway",
+   "city": "Oregon",
+   "state": "WI",
+   "winner": "Benny Gordon",
+   "winner_wiki": "Benny Gordon"
+  },
+  {
+   "round": 7,
+   "date": "2007-06-02",
+   "race": "Aaron's 199 (Southern Division)",
+   "track": "Gresham Motorsports Park",
+   "city": "Jefferson",
+   "state": "GA",
+   "winner": "Clay Rogers",
+   "winner_wiki": "Clay Rogers"
+  },
+  {
+   "round": 8,
+   "date": "2007-06-09",
+   "race": "Greased Lightning 250 (Northern Division)",
+   "track": "Mansfield Motorsports Speedway",
+   "city": "Mansfield",
+   "state": "OH",
+   "winner": "Mark McFarland",
+   "winner_wiki": "Mark McFarland"
+  },
+  {
+   "round": 9,
+   "date": "2007-06-23",
+   "race": "Greased Lightning 200 (Southern Division)",
+   "track": "Myrtle Beach Speedway",
+   "city": "Myrtle Beach",
+   "state": "SC",
+   "winner": "Michael Ritch",
+   "winner_wiki": "Michael Ritch"
+  },
+  {
+   "round": 10,
+   "date": "2007-06-30",
+   "race": "Lucas Oil 200 (Northern Division)",
+   "track": "Salem Speedway",
+   "city": "Salem",
+   "state": "IN",
+   "winner": "Gary St. Amant",
+   "winner_wiki": "Gary St. Amant"
+  },
+  {
+   "round": 11,
+   "date": "2007-07-14",
+   "race": "Kroger 250 (Northern Division)",
+   "track": "Motor Mile Speedway",
+   "city": "Fairlawn",
+   "state": "VA",
+   "winner": "Brandon Ward",
+   "winner_wiki": "Brandon Ward (racing driver)"
+  },
+  {
+   "round": 12,
+   "date": "2007-07-21",
+   "race": "Naturally Fresh 250 (Southern Division)",
+   "track": "Southern National Speedway",
+   "city": "Kenly",
+   "state": "NC",
+   "winner": "Michael Ritch",
+   "winner_wiki": "Michael Ritch"
+  },
+  {
+   "round": 13,
+   "date": "2007-07-28",
+   "race": "BFGoodrich Tires 250 (Northern Division)",
+   "track": "Lake Erie Speedway",
+   "city": "North East",
+   "state": "PA",
+   "winner": "Benny Gordon",
+   "winner_wiki": "Benny Gordon"
+  },
+  {
+   "round": 14,
+   "date": "2007-08-04",
+   "race": "Aaron's 250 (Southern Division)",
+   "track": "Hickory Motor Speedway",
+   "city": "Hickory",
+   "state": "NC",
+   "winner": "Trevor Bayne",
+   "winner_wiki": "Trevor Bayne"
+  },
+  {
+   "round": 15,
+   "date": "2007-08-11",
+   "race": "Miller Lite 250 (Northern Division)",
+   "track": "South Boston Speedway",
+   "city": "South Boston",
+   "state": "VA",
+   "winner": "Jeff Agnew",
+   "winner_wiki": "Jeff Agnew"
+  },
+  {
+   "round": 16,
+   "date": "2007-08-22",
+   "race": "Food City 150 (Southern Division)",
+   "track": "Bristol Motor Speedway",
+   "city": "Bristol",
+   "state": "TN",
+   "winner": "Benny Gordon",
+   "winner_wiki": "Benny Gordon"
+  },
+  {
+   "round": 17,
+   "date": "2007-09-01",
+   "race": "Charlie Campbell Memorial Sears Auto Center 250 (Four Champions Championship Series)",
+   "track": "Mansfield Motorsports Speedway",
+   "city": "Mansfield",
+   "state": "OH",
+   "winner": "Bobby Gill",
+   "winner_wiki": "Bobby Gill"
+  },
+  {
+   "round": 18,
+   "date": "2007-09-22",
+   "race": "Alan Kulwicki Memorial Soy Biodiesel 225 (Four Champions Championship Series)",
+   "track": "Iowa Speedway",
+   "city": "Newton",
+   "state": "IA",
+   "winner": "Matt Carter",
+   "winner_wiki": "Matt Carter (racing driver)"
+  },
+  {
+   "round": 19,
+   "date": "2007-10-06",
+   "race": "Mark Brooks Memorial Bi-Lo 250 (Four Champions Championship Series)",
+   "track": "Myrtle Beach Speedway",
+   "city": "Myrtle Beach",
+   "state": "SC",
+   "winner": "Trevor Bayne",
+   "winner_wiki": "Trevor Bayne"
+  },
+  {
+   "round": 20,
+   "date": "2007-10-20",
+   "race": "Dan Duncan Memorial Aaron's 250 (Four Champions Championship Series)",
+   "track": "South Georgia Motorsports Park",
+   "city": "Cecil",
+   "state": "GA",
+   "winner": "Matt Hawkins",
+   "winner_wiki": "Matt Hawkins (racing driver)"
+  },
+  {
+   "round": 21,
+   "date": "2007-11-03",
+   "race": "Robert H. Brooks Memorial Aaron's 250 (Four Champions Championship Series)",
+   "track": "USA International Speedway",
+   "city": "Lakeland",
+   "state": "FL",
+   "winner": "Bobby Gill",
+   "winner_wiki": "Bobby Gill"
+  }
+ ],
  "sources": [
+  "https://www.carsandracingstuff.com/library/h/hootersprocupseries.php",
   "https://en.wikipedia.org/w/index.php?title=CARS_Tour&oldid=1378109036"
  ]
 }

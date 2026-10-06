@@ -194,6 +194,14 @@
   "accessed": "2026-10-06",
   "notes": null
  },
+ "src:crittenden": {
+  "name": "The Crittenden Automotive Library - Pro Cup series pages",
+  "url": "https://www.carsandracingstuff.com/library/h/hootersprocupseries.php",
+  "kind": "secondary",
+  "reliability": "medium",
+  "license": null,
+  "accessed": "2026-10-06"
+ },
  "src:dailysportscar-gt3-budgets-2020": {
   "name": "DailySportscar: So you want to go GT3 racing? Part 2 (2020-06-23)",
   "url": "https://www.dailysportscar.com/2020/06/23/so-you-want-to-go-gt3-racing-part-2.html",
@@ -1261,6 +1269,15 @@
   "accessed": "2026-10-06",
   "notes": "via search snippets"
  },
+ "src:racingcalendar": {
+  "name": "RacingCalendar.net championship calendars (user-submitted)",
+  "url": "https://racingcalendar.net/championships",
+  "kind": "historical_db",
+  "reliability": "low",
+  "license": null,
+  "accessed": "2026-10-06",
+  "notes": " User-submitted calendars; used for dates/venues only."
+ },
  "src:racingnews-crate": {
   "id": "src:racingnews-crate",
   "name": "Racing News: Crate late model economics (2018)",
@@ -1673,6 +1690,14 @@
   "license": null,
   "accessed": "2026-10-06"
  },
+ "src:speedwaydigest": {
+  "name": "Speedway Digest news (2013 CARS X-1R Pro Cup naming)",
+  "url": "https://speedwaydigest.com/index.php/news/racing-news/10051-clay-rogers-makes-his-return-to-the-x-1r-pro-cup-series-worth-10-000/",
+  "kind": "news",
+  "reliability": "medium",
+  "license": null,
+  "accessed": "2026-10-06"
+ },
  "src:speedwaydigest-crash-costs": {
   "name": "Speedway Digest: How much does the average racing car cost to fix?",
   "url": "https://speedwaydigest.com/index.php/news/racing-news/80536-how-much-does-the-average-racing-car-cost-to-fix-an-in-depth-exploration/",
@@ -1874,6 +1899,15 @@
   "reliability": "high",
   "license": null,
   "accessed": "2026-10-06"
+ },
+ "src:urh": {
+  "name": "Ultimate Racing History (race-by-race year lists)",
+  "url": "http://www.ultimateracinghistory.com/byyear.php",
+  "kind": "historical_db",
+  "reliability": "medium",
+  "license": null,
+  "accessed": "2026-10-06",
+  "notes": " Fetched over plain HTTP (the site serves a self-signed HTTPS certificate); robots.txt permits access."
  },
  "src:usac-age": {
   "id": "src:usac-age",

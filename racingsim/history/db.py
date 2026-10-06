@@ -289,13 +289,17 @@ class HistoryDB:
             self._sched_cache[key] = ids if rows and len(ids) >= max(3, 0.6 * len(rows)) else None
         return self._sched_cache[key]
 
-    def venues(self, source: str) -> list[str]:
-        """Every track a series has raced at in the data, most-used first."""
-        key = ("venues", source)
+    def venues(self, source: str, year: Optional[int] = None) -> list[str]:
+        """Every track a series has raced at in the data: closest seasons to ``year`` first, then most used.
+
+        A lineage can wander (Busch North raced in New England; its later K&N East years ran south),
+        so a year without a calendar borrows the venues of its nearest documented seasons."""
+        key = ("venues", source, year)
         if key not in self._sched_cache:
+            ref = year if year is not None else 0
             self._sched_cache[key] = [t for (t,) in self.conn.execute(
                 "SELECT track_id FROM race WHERE source=? AND track_id IS NOT NULL GROUP BY track_id "
-                "ORDER BY COUNT(*) DESC", (source,))]
+                "ORDER BY MIN(ABS(year - ?)) * (? > 0), COUNT(*) DESC", (source, ref, ref))]
         return self._sched_cache[key]
 
     # ------------------------------------------------------------------ careers

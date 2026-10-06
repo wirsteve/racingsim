@@ -727,7 +727,14 @@
   ],
   "discipline": "stock_car",
   "level": "regional",
-  "regions": [],
+  "regions": [
+   "IA",
+   "IL",
+   "KS",
+   "MI",
+   "MO",
+   "WI"
+  ],
   "years": {
    "from": 1995,
    "to": 1997
@@ -8111,6 +8118,107 @@
   "history_source": null
  },
  {
+  "id": "series:nascar-all-pro-southeast",
+  "name": "NASCAR Southeast Series (Slim Jim All Pro Series / AutoZone Elite Division, Southeast Series)",
+  "names_by_year": [
+   {
+    "from": 1995,
+    "to": 1997,
+    "name": "NASCAR Slim Jim All Pro Series"
+   },
+   {
+    "from": 1998,
+    "to": 2000,
+    "name": "NASCAR Slim Jim All-Pro Series"
+   },
+   {
+    "from": 2001,
+    "to": 2001,
+    "name": "NASCAR Gatorade All-Pro Series"
+   },
+   {
+    "from": 2002,
+    "to": 2002,
+    "name": "NASCAR Hills Bros. All-Pro Series"
+   },
+   {
+    "from": 2003,
+    "to": 2003,
+    "name": "NASCAR Kodak Southeast Series"
+   },
+   {
+    "from": 2004,
+    "to": 2006,
+    "name": "NASCAR AutoZone Elite Division Southeast Series"
+   }
+  ],
+  "discipline": "stock_car",
+  "level": "regional",
+  "regions": [
+   "AL",
+   "FL",
+   "GA",
+   "IL",
+   "IN",
+   "KS",
+   "KY",
+   "MO",
+   "NC",
+   "PA",
+   "SC",
+   "TN",
+   "TX",
+   "VA"
+  ],
+  "years": {
+   "from": 1995,
+   "to": 2006
+  },
+  "history_source": "nascar_southeast",
+  "confidence": "medium",
+  "sources": [
+   "src:wikipedia"
+  ],
+  "notes": "Slim Jim All Pro Series and NASCAR Southeast Series are the same lineage (All Pro 1991-2002, Kodak Southeast 2003, AutoZone Elite Division Southeast 2004-2006).",
+  "game_template": "late_model_tour",
+  "game_tier": 3,
+  "prefer_curated_names": false
+ },
+ {
+  "id": "series:nascar-autozone-elite-division",
+  "name": "NASCAR AutoZone Elite Division (umbrella of four regional late model series)",
+  "names_by_year": [
+   {
+    "from": 2003,
+    "to": 2003,
+    "name": "NASCAR Elite Division"
+   },
+   {
+    "from": 2004,
+    "to": 2006,
+    "name": "NASCAR AutoZone Elite Division"
+   }
+  ],
+  "discipline": "stock_car",
+  "level": "regional",
+  "regions": [
+   "CA"
+  ],
+  "years": {
+   "from": 2003,
+   "to": 2006
+  },
+  "history_source": "nascar_autozone_elite",
+  "confidence": "medium",
+  "sources": [
+   "src:wikipedia"
+  ],
+  "notes": "Umbrella name for NASCAR's four regional late-model tours; season files hold only the year-end Toyota All-Star Showdown Elite Division race at Irwindale.",
+  "game_template": null,
+  "game_tier": 3,
+  "prefer_curated_names": false
+ },
+ {
   "id": "series:nascar-cup",
   "name": "NASCAR Cup Series",
   "names_by_year": [
@@ -8264,23 +8372,140 @@
   "history_source": "nascar_cup"
  },
  {
+  "id": "series:nascar-goodys-dash",
+  "name": "NASCAR Goody's Dash Series (ISCARS Dash Touring from 2004)",
+  "names_by_year": [
+   {
+    "from": 1995,
+    "to": 2003,
+    "name": "NASCAR Goody's Dash Series"
+   },
+   {
+    "from": 2004,
+    "to": 2004,
+    "name": "IPOWER Dash Series"
+   },
+   {
+    "from": 2005,
+    "to": 2007,
+    "name": "ISCARS Dash Touring"
+   },
+   {
+    "from": 2008,
+    "to": 2011,
+    "name": "ISCARS Dash Touring (ASA-sanctioned)"
+   }
+  ],
+  "discipline": "stock_car",
+  "level": "regional",
+  "regions": [
+   "AL",
+   "FL",
+   "GA",
+   "KY",
+   "NC",
+   "PA",
+   "SC",
+   "TN",
+   "VA"
+  ],
+  "years": {
+   "from": 1995,
+   "to": 2011
+  },
+  "history_source": "nascar_dash",
+  "confidence": "medium",
+  "sources": [
+   "src:wikipedia"
+  ],
+  "notes": null,
+  "game_template": "late_model_tour",
+  "game_tier": 3,
+  "prefer_curated_names": false
+ },
+ {
   "id": "series:nascar-midwest-series",
   "name": "NASCAR Midwest Series (RE/MAX Challenge Series)",
   "names_by_year": [
    {
     "from": 1998,
+    "to": 2002,
+    "name": "NASCAR RE/MAX Challenge Series"
+   },
+   {
+    "from": 2003,
+    "to": 2003,
+    "name": "NASCAR International Truck and Engine Corporation Midwest Series"
+   },
+   {
+    "from": 2004,
     "to": 2006,
-    "name": "NASCAR Midwest Series (RE/MAX Challenge Series)"
+    "name": "NASCAR AutoZone Elite Division Midwest Series"
    }
   ],
   "discipline": "stock_car",
   "level": "regional",
-  "regions": [],
+  "regions": [
+   "CO",
+   "IA",
+   "IL",
+   "KS",
+   "KY",
+   "MI",
+   "MN",
+   "MO",
+   "OH",
+   "SC",
+   "TN",
+   "WI"
+  ],
   "years": {
    "from": 1998,
    "to": 2006
   },
   "history_source": "nascar_midwest",
+  "confidence": "medium",
+  "sources": [
+   "src:wikipedia"
+  ],
+  "notes": null,
+  "game_template": "late_model_tour",
+  "game_tier": 3,
+  "prefer_curated_names": false
+ },
+ {
+  "id": "series:nascar-northwest-tour",
+  "name": "NASCAR Northwest Series (Northwest Tour / AutoZone Elite Division, Northwest Series)",
+  "names_by_year": [
+   {
+    "from": 1995,
+    "to": 1997,
+    "name": "NASCAR REB-CO Northwest Tour"
+   },
+   {
+    "from": 1998,
+    "to": 2003,
+    "name": "NASCAR Raybestos Brakes Northwest Series"
+   },
+   {
+    "from": 2004,
+    "to": 2006,
+    "name": "NASCAR AutoZone Elite Division Northwest Series"
+   }
+  ],
+  "discipline": "stock_car",
+  "level": "regional",
+  "regions": [
+   "ID",
+   "MT",
+   "OR",
+   "WA"
+  ],
+  "years": {
+   "from": 1995,
+   "to": 2006
+  },
+  "history_source": "nascar_northwest",
   "confidence": "medium",
   "sources": [
    "src:wikipedia"
@@ -8344,6 +8569,82 @@
   "notes": null,
   "game_template": "stock_regional_dev",
   "game_tier": 4,
+  "prefer_curated_names": false
+ },
+ {
+  "id": "series:nascar-southwest-tour",
+  "name": "NASCAR Southwest Series (Featherlite Southwest Tour / AutoZone Elite Division, Southwest Series)",
+  "names_by_year": [
+   {
+    "from": 1995,
+    "to": 1997,
+    "name": "NASCAR Featherlite Southwest Tour"
+   },
+   {
+    "from": 1998,
+    "to": 2003,
+    "name": "NASCAR Featherlite Southwest Series"
+   },
+   {
+    "from": 2004,
+    "to": 2006,
+    "name": "NASCAR AutoZone Elite Division Southwest Series"
+   }
+  ],
+  "discipline": "stock_car",
+  "level": "regional",
+  "regions": [
+   "AZ",
+   "CA",
+   "CO",
+   "NM",
+   "NV",
+   "UT"
+  ],
+  "years": {
+   "from": 1995,
+   "to": 2006
+  },
+  "history_source": "nascar_southwest",
+  "confidence": "medium",
+  "sources": [
+   "src:wikipedia"
+  ],
+  "notes": null,
+  "game_template": "late_model_tour",
+  "game_tier": 3,
+  "prefer_curated_names": false
+ },
+ {
+  "id": "series:nascar-sportsman-division",
+  "name": "NASCAR Sportsman Division",
+  "names_by_year": [
+   {
+    "from": 1995,
+    "to": 1996,
+    "name": "NASCAR Sportsman Division"
+   }
+  ],
+  "discipline": "stock_car",
+  "level": "regional",
+  "regions": [
+   "NC",
+   "PA",
+   "SC",
+   "TN"
+  ],
+  "years": {
+   "from": 1995,
+   "to": 1996
+  },
+  "history_source": "nascar_sportsman",
+  "confidence": "medium",
+  "sources": [
+   "src:wikipedia"
+  ],
+  "notes": null,
+  "game_template": null,
+  "game_tier": 3,
   "prefer_curated_names": false
  },
  {
@@ -12137,13 +12438,45 @@
   "names_by_year": [
    {
     "from": 1997,
-    "to": 2014,
+    "to": 2008,
     "name": "USAR Hooters Pro Cup Series"
+   },
+   {
+    "from": 2009,
+    "to": 2011,
+    "name": "USARacing Pro Cup Series"
+   },
+   {
+    "from": 2012,
+    "to": 2012,
+    "name": "CARS Rev-Oil Pro Cup Series"
+   },
+   {
+    "from": 2013,
+    "to": 2014,
+    "name": "CARS X-1R Pro Cup Series"
    }
   ],
   "discipline": "stock_car",
   "level": "super_regional",
-  "regions": [],
+  "regions": [
+   "AL",
+   "CT",
+   "FL",
+   "GA",
+   "IA",
+   "IN",
+   "KY",
+   "NC",
+   "NY",
+   "OH",
+   "ON",
+   "PA",
+   "SC",
+   "TN",
+   "VA",
+   "WI"
+  ],
   "years": {
    "from": 1997,
    "to": 2014
@@ -12153,7 +12486,7 @@
   "sources": [
    "src:wikipedia"
   ],
-  "notes": null,
+  "notes": "2001-2008: separate Northern and Southern Division regular seasons (race names suffixed '(Northern Division)' / '(Southern Division)') followed by the Four Champions Championship Series that decided the overall champion; divisions merged 2009.",
   "game_template": "late_model_tour",
   "game_tier": 3,
   "prefer_curated_names": false

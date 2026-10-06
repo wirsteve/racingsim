@@ -1,16 +1,179 @@
 {
  "series": "nascar_midwest",
  "year": 1999,
- "official_name": null,
- "data_level": "champion_only",
+ "official_name": "NASCAR RE/MAX Challenge Series",
+ "data_level": "schedule",
  "champion": {
   "name": "Brian Hoppe",
   "wiki": null
  },
  "teams": [],
  "standings": [],
- "schedule": [],
+ "schedule": [
+  {
+   "round": 1,
+   "date": "1999-03-28",
+   "race": "Coca Cola Classic 200",
+   "track": "Rockford Speedway",
+   "city": "Rockford",
+   "state": "IL",
+   "winner": "Steve Carlson",
+   "winner_wiki": null
+  },
+  {
+   "round": 2,
+   "date": "1999-05-08",
+   "race": "Colorado 150",
+   "track": "Colorado National Speedway",
+   "city": "Dacono",
+   "state": "CO",
+   "winner": "Jason Schuler",
+   "winner_wiki": "Jason Schuler"
+  },
+  {
+   "round": 3,
+   "date": "1999-05-21",
+   "race": "Price Chopper 125",
+   "track": "I-70 Speedway",
+   "city": "Odessa",
+   "state": "MO",
+   "winner": "Brian Hoppe",
+   "winner_wiki": null
+  },
+  {
+   "round": 4,
+   "date": "1999-05-28",
+   "race": "Miller Lite 125",
+   "track": "Madison International Speedway",
+   "city": "Oregon",
+   "state": "WI",
+   "winner": "Steve Carlson",
+   "winner_wiki": null
+  },
+  {
+   "round": 5,
+   "date": "1999-05-31",
+   "race": "Oneida Bingo & Casino 200",
+   "track": "Wisconsin International Raceway",
+   "city": "Kaukauna",
+   "state": "WI",
+   "winner": "Scott Hansen",
+   "winner_wiki": "Scott Hansen (racing driver)"
+  },
+  {
+   "round": 6,
+   "date": "1999-06-12",
+   "race": "Flag Day 125",
+   "track": "I-44 Speedway",
+   "city": "Lebanon",
+   "state": "MO",
+   "winner": "Brian Hoppe",
+   "winner_wiki": null
+  },
+  {
+   "round": 7,
+   "date": "1999-06-27",
+   "race": "Gordie Boucher 250",
+   "track": "Madison International Speedway",
+   "city": "Oregon",
+   "state": "WI",
+   "winner": "Steve Carlson",
+   "winner_wiki": null
+  },
+  {
+   "round": 8,
+   "date": "1999-07-03",
+   "race": "Al Schill Jr. Memorial 125",
+   "track": "Lake Geneva Raceway",
+   "city": "Lake Geneva",
+   "state": "WI",
+   "winner": "Steve Carlson",
+   "winner_wiki": null
+  },
+  {
+   "round": 9,
+   "date": "1999-07-16",
+   "race": "Price Chopper 125",
+   "track": "Lakeside Speedway",
+   "city": "Kansas City",
+   "state": "KS",
+   "winner": "Brian Hoppe",
+   "winner_wiki": null
+  },
+  {
+   "round": 10,
+   "date": "1999-07-18",
+   "race": "Wayne Carter Classic 150",
+   "track": "Grundy County Speedway",
+   "city": "Morris",
+   "state": "IL",
+   "winner": "Steve Carlson",
+   "winner_wiki": null
+  },
+  {
+   "round": 11,
+   "date": "1999-07-24",
+   "race": "Jensen 150",
+   "track": "Pikes Peak International Raceway",
+   "city": "Fountain",
+   "state": "CO",
+   "winner": "Travis Kvapil",
+   "winner_wiki": "Travis Kvapil"
+  },
+  {
+   "round": 12,
+   "date": "1999-07-31",
+   "race": "Coors Light 125",
+   "track": "Hawkeye Downs Speedway",
+   "city": "Cedar Rapids",
+   "state": "IA",
+   "winner": "Steve Carlson",
+   "winner_wiki": null
+  },
+  {
+   "round": 13,
+   "date": "1999-08-10",
+   "race": "Oneida Bingo & Casino 300",
+   "track": "Wisconsin International Raceway",
+   "city": "Kaukauna",
+   "state": "WI",
+   "winner": "Scott Hansen",
+   "winner_wiki": "Scott Hansen (racing driver)"
+  },
+  {
+   "round": 14,
+   "date": "1999-08-20",
+   "race": "Gateway 50",
+   "track": "Gateway International Raceway",
+   "city": "Madison",
+   "state": "IL",
+   "winner": "Justin Diercks",
+   "winner_wiki": "Justin Diercks"
+  },
+  {
+   "round": 15,
+   "date": "1999-09-26",
+   "race": "34th National Short Track Championship",
+   "track": "Rockford Speedway",
+   "city": "Rockford",
+   "state": "IL",
+   "winner": "Steve Carlson",
+   "winner_wiki": null
+  },
+  {
+   "round": 16,
+   "date": "1999-10-10",
+   "race": "30th Oktoberfest 200",
+   "track": "LaCrosse Fairgrounds Speedway",
+   "city": "West Salem",
+   "state": "WI",
+   "winner": "Eddie Hoffman",
+   "winner_wiki": null
+  }
+ ],
  "sources": [
+  "https://racingcalendar.net/championship/nascar-elite-division-midwest-series/1999",
+  "http://www.ultimateracinghistory.com/racelist.php?year=1999",
   "https://en.wikipedia.org/w/index.php?title=ARTGO&oldid=1343961991"
  ]
 }
