@@ -29,11 +29,11 @@ Guiding policy (requirement R7):
 | 2 | Track **facts** (location, length, surface, banking, opening year) | Stored with source URLs | Low | n/a (facts are not protectable) |
 | 3 | Track **simulation ratings** | Our own derived model, labelled "not official" | Low | n/a |
 | 4 | Track **logos, layouts as artwork, photos, maps** | **Not used** | High if used | n/a |
-| 5 | Sanctioning-body & series names (NASCAR, IndyCar, ARCA, IMSA, SCCA, USAC, World of Outlaws, …) | **Not used in game data.** Series are fictional ("Premier Stock Car Cup") | High if used | Yes |
-| 6 | Event names (e.g. famous crown-jewel races) | **Not used.** Fictional event names at real venues | Medium–High if used | Yes |
-| 7 | Real **people** (drivers, owners) | **Not used in game.** All people are procedurally generated; a blocklist prevents generating famous real driver names | High if used | Yes |
+| 5 | Sanctioning-body & series names (NASCAR, IndyCar, ARCA, IMSA, SCCA, USAC, World of Outlaws, …) | **Used (personal build).** Real series names by era in `data/series_eras.json` | High if published | Yes: delete `series_eras.json` → generic template names |
+| 6 | Event names (e.g. famous crown-jewel races) | **Used (personal build).** Real event names (Snowball Derby, Chili Bowl, …) | Medium–High if published | Yes: names live in `data/series.json` only |
+| 7 | Real **people** (drivers, team names) | **Used (personal build).** Real national-series drivers and teams 1995–2026 from `data/history/` (facts: names, birth years, results). Generated people still use a blocklist to avoid colliding with famous names | High if published | Yes: `WorldConfig(real_history=False)` or delete `data/history/` |
 | 8 | Real **teams** | **Not used.** Generated team names | High if used | Yes |
-| 9 | Real **manufacturers / brands** | **Not used.** Four fictional manufacturers | High if used | Yes |
+| 9 | Real **manufacturers / brands** | **Used (personal build).** Real manufacturers with their real participation years; real national sponsor brands | High if published | Yes: `data/manufacturers.json`, `SPONSOR_NATIONAL` in `world/names.py` |
 | 10 | Real **sponsors / consumer brands** | **Not used.** Generated sponsor names | High if used | Yes |
 | 11 | Real people / series named in **research docs** | Named in `MOTORSPORTS_RESEARCH.md` and `docs/research/` as factual citations | Low (internal documentation, factual, cited) | Keep research docs out of the shipped game build |
 | 12 | Real-world economic figures (budgets, purses) | Used to calibrate, presented in game only as fictional series economics | Low | n/a |
@@ -81,6 +81,28 @@ Guiding policy (requirement R7):
   tuning in `data/track_rating_overrides.json`.
 - The game UI should label them as game ratings. They are not represented as
   measurements or official specifications.
+
+### 2.0 Personal "real everything" build (2026-10)
+The owner asked for real series, tracks, people and history for personal use. The
+game therefore now ships real series and event names, real manufacturers and
+national sponsors, and a historical database of real drivers, teams and results.
+Everything below that describes fictional abstractions is the **fallback for any
+public release**. Each real-world layer is isolated in data files so it can be
+removed without code changes:
+
+| Layer | File(s) | Remove to fall back to |
+|---|---|---|
+| Era series names | `data/series_eras.json` | generic template names |
+| Real people and teams | `data/history/` | fully generated paddock |
+| Manufacturers | `data/manufacturers.json` | generated names (`world/names.py`) |
+| National sponsors | `SPONSOR_NATIONAL` in `world/names.py` | generated regional brands |
+
+The history data are facts (names, birth years, finishing positions, schedules)
+taken from Wikipedia and Wikidata. No article prose is copied. Wikidata is CC0;
+Wikipedia text is CC BY-SA, which is why we store facts only. Racing-Reference was
+deliberately **not** scraped, because its terms restrict automated collection. Real
+people appear under their real names, with results-derived ratings that are
+clearly the game's model, not a judgment of the person.
 
 ### 2.4 Series, sanctioning bodies and events
 - **Decision:** fictional names for every championship ("Premier Stock Car Cup",
@@ -134,3 +156,5 @@ Guiding policy (requirement R7):
 > series, sanctioning body, team, manufacturer or venue. Real venue names are used
 > for identification only. All drivers, teams, series, manufacturers and sponsors
 > are fictional. Track characteristics shown in the game are internal game ratings.
+>
+> (Public-release wording. The personal build uses real names; see §2.0.)

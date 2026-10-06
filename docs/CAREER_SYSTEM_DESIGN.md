@@ -169,6 +169,21 @@ asserts these arise from a seeded simulation rather than from scripted events.
   single-page app. Ratings shown for other drivers are scouting reports whose noise
   shrinks with exposure; the player's own ratings are exact.
 
+## 8b. Historical mode
+
+Start-year worlds are built the same way as the default world. `World.generate(start_year=Y)` takes these steps in order:
+1. Builds the pyramid for year Y: era names, dormant rungs, and only venues available in Y.
+2. Asks the `HistoryDB` for each national template's real season in Y.
+3. Creates those real teams. Equipment and funding come from where their cars finished, and manufacturers are matched by name.
+4. Creates their full-time drivers. Ability is the results-to-level conversion that the scouting model also uses (`history.seed.row_level`), corrected for equipment. Potential comes from the driver's best later season.
+5. Fills the remaining seats with generated drivers.
+6. Places real future drivers:
+   - Kids are placed into youth classes near their real home state.
+   - Drivers born abroad are queued to arrive the year before their real debut.
+   - Drivers under 8 are queued to enter at 8.
+
+Each off-season, `Pyramid.refresh(year)` renames series and opens or closes rungs. National calendars switch to the real schedule for that year when one exists (at least 60% of races must map to our tracks). After the start year nothing is forced: real drivers move through the same market as everyone else.
+
 ## 9. Known simplifications / next steps
 
 * One season per year without a detailed calendar overlap model (drivers race one

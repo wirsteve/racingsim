@@ -1,8 +1,9 @@
-"""Fictional names for drivers, teams, sponsors and manufacturers.
+"""Generated names for drivers, teams and grassroots sponsors.
 
-All people and organisations are procedurally generated. Generated driver names
-are checked against a blocklist of well-known real drivers so the game never
-presents a real person as a fictional racer (see LICENSING_IP_REVIEW.md).
+Real national-series people come from the historical database (``racingsim.history``);
+everyone else is generated. Generated driver names are checked against a blocklist of
+well-known real drivers so a generated racer is never mistaken for a real person
+(see LICENSING_IP_REVIEW.md).
 """
 
 from __future__ import annotations

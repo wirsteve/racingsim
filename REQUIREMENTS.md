@@ -93,11 +93,26 @@ research must be recorded in the repository.
 | R8.4 | Browser UI: dashboard, career/driver pages (scouting reports for others, exact ratings for the player), series (standings, schedule, results, teams, champions), racing pyramid, drivers browser, teams, track database with map, crown jewels, news wire, save/load, light/dark theme, mobile layout. | [x] |
 | R8.5 | Standard library only; `python -m racingsim serve`. | [x] |
 
+---
+
+## R9 — Real-world mode and historical database
+
+| ID | Requirement | Status |
+|----|-------------|--------|
+| R9.1 | Real series names by era (e.g. Winston → Nextel → Sprint → Monster Energy → NASCAR Cup Series; CART/Champ Car; IRL → IndyCar), applied every season. | [x] |
+| R9.2 | Real tracks with opening/closing years and dormant periods; historic venues (Nazareth, Pikes Peak, Rockingham's idle years, …) available only in the years they raced. | [x] |
+| R9.3 | Choose a start year from 1995 to 2026. The national series start with that season's real teams, drivers and calendar; ratings are derived from real results. | [x] |
+| R9.4 | Real future drivers enter the world at their real ages (youth classes, or arriving from overseas before their debut). Their ceiling reflects their real achievements, but the outcome is simulated. | [x] |
+| R9.5 | Prices shown in that year's nominal dollars; manufacturers race only in their real participation years. | [x] |
+| R9.6 | History data built from Wikipedia/Wikidata with re-runnable scrapers (`tools/history/`); Racing-Reference not scraped (terms). | [x] |
+| R9.7 | Grassroots (local/regional) racing remains generated; local tracks and their divisions are real places. | [x] |
+
 ## Known gaps (tracked for the next iteration)
 
 * Agents/managers are modelled implicitly (an awareness boost for drivers with
   means or reputation), not as entities (R1.3, R2.1 "connections").
-* International ladders and venues beyond a seed set of 14 circuits (R4.1, R6.2).
+* International ladders beyond the North American pyramid (overseas drivers arrive as imports) (R4.1, R6.2).
+* Historical data for ARCA, sports cars (IMSA/ALMS/Grand-Am), sprint-car and late-model tours; the 1995–2006 Star Mazda and several early USF2000 seasons list only the champion.
 * Drivers becoming owners/promoters after retirement.
 * Calibration deviations recorded in `MOTORSPORTS_RESEARCH.md` §12.
 
@@ -115,4 +130,6 @@ research must be recorded in the repository.
 | Career systems | `racingsim/career/` |
 | Career mode | `racingsim/game/` |
 | Web UI + JSON API | `racingsim/ui/` |
+| Historical database | `data/history/`, `racingsim/history/`, `tools/history/` |
+| Track history (closures, dormancy) | `data/track_years.json`, `data/tracks/historic_venues.json` |
 | Tests | `tests/` |

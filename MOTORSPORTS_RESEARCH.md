@@ -432,6 +432,46 @@ reproduces the research's qualitative shape:
 
 ---
 
+## 14. Historical data (1995 onward)
+
+**Feasibility.** National series are well documented, but grassroots racing is not.
+Every Cup, Busch/Xfinity and Truck season since 1995, and every CART/Champ Car,
+IRL/IndyCar, Indy Lights, Star/Pro Mazda and USF2000 season, has a Wikipedia
+article with:
+- an entry list (team, manufacturer, car number, driver, full-time or part-time);
+- final standings with starts, wins, top-5s and top-10s;
+- the calendar (date, race, track as named that year, city, winner).
+
+Wikidata adds birth dates and birthplaces for about 99% of drivers who have an
+article. Racing-Reference has deeper data, but its terms restrict automated
+collection, so it was not used. There is no comparable public record for weekly
+local divisions or most regional tours, so those stay generated.
+
+**What the data shows that the game now uses.**
+- **Track churn is real.** National calendars changed every few years:
+  - North Wilkesboro left after 1996;
+  - Rockingham after 2004;
+  - Nazareth closed in 2004;
+  - Kentucky, Chicagoland and Nashville Superspeedway went dormant for years;
+  - the Charlotte Roval arrived in 2018 and street courses in 2023.
+  
+  `data/track_years.json` records corrected opening years and dormant spans so a
+  1996 world has no Kansas (opened 2001) or Iowa (2006).
+- **Series names are eras, not constants.** Winston → Nextel (2004) → Sprint (2008)
+  → Monster Energy (2017) → NASCAR Cup Series (2020). The CART and IRL split ran
+  1996–2007 and reunified in 2008. Both are recorded in `data/series_eras.json`.
+- **Age at national debut** (Cup regulars 1995–2026). Most debut in their early to
+  mid-twenties. The 1990s–2000s "young gun" wave pulled debut ages down and was
+  followed by a return to developmental mileage in the 2010s. Prospects are
+  therefore placed at their real ages, and their timing is left to the market.
+- **The import pipeline.** In open wheel a large share of national drivers were born
+  abroad (Brazil, the UK, Australia/New Zealand, Mexico, Japan…) and arrived in
+  their late teens or twenties having climbed European or other ladders. The game
+  models them as arrivals the year before their real debut rather than as American
+  kids in karting.
+- **Inflation matters for a 1995 start.** All money is held in 2025 dollars and
+  shown in nominal dollars. The CPI-style index is about 0.33 for 1995.
+
 ## 13. Open questions / next research
 
 * International ladders (Canada's Pinty's/APC/Maritimes late models, Mexico,

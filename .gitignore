@@ -3,3 +3,11 @@ __pycache__/
 .pytest_cache/
 *.sqlite
 saves/
+tools/history/cache*/
+tools/history/nascar_*/
+tools/history/cart_champcar/
+tools/history/irl_indycar/
+tools/history/indy_lights/
+tools/history/pro_mazda/
+tools/history/usf2000/
+tools/history/drivers_*.json
