@@ -68,6 +68,7 @@ ALIASES = {
     "memphis": "Memphis Motorsports Park", "pikes peak": "Pikes Peak International Raceway",
     "iowa speedway": "Iowa Speedway", "kentucky speedway": "Kentucky Speedway",
     "chicagoland": "Chicagoland Speedway", "kansas speedway": "Kansas Speedway",
+    "nashville speedway usa": "Nashville Fairgrounds Speedway", "fairgrounds speedway": "Nashville Fairgrounds Speedway",
     "nashville superspeedway": "Nashville Superspeedway", "las vegas motor speedway": "Las Vegas Motor Speedway",
     "watkins glen": "Watkins Glen International", "michigan international": "Michigan International Speedway",
     "michigan speedway": "Michigan International Speedway", "pocono": "Pocono Raceway",
