@@ -98,6 +98,46 @@ def cmd_serve(args: argparse.Namespace) -> int:
     return 0
 
 
+def cmd_data(args: argparse.Namespace) -> int:
+    import sqlite3
+
+    from .knowledge import pipeline, report
+    from .knowledge.validate import validate
+    if args.action == "update":
+        from .knowledge.update import run_updates
+        run_updates(only=args.only)
+        args.force = True
+    if args.action in ("build", "update"):
+        t0 = time.time()
+        path = pipeline.build_database(force=args.force)
+        print(f"database: {path} ({path.stat().st_size / 1e6:.1f} MB, {time.time() - t0:.1f}s)")
+        conn = sqlite3.connect(path)
+        for k, v in report.summary(conn).items():
+            print(f"  {k:<26}{v:>9,}")
+        return 0
+    path = pipeline.build_database()
+    conn = sqlite3.connect(path)
+    if args.action == "validate":
+        issues = validate(conn)
+        by = {}
+        for i in issues:
+            by.setdefault(i.level, []).append(i)
+        for level in ("error", "warning", "info"):
+            items = by.get(level, [])
+            print(f"{level.upper()}: {len(items)}")
+            for i in items[:40]:
+                print(f"  [{i.check}] {i.entity}: {i.detail}")
+            if len(items) > 40:
+                print(f"  ... {len(items) - 40} more")
+        return 1 if by.get("error") else 0
+    md = report.markdown(conn)
+    out = Path(__file__).resolve().parent.parent / "docs" / "DATA_REPORT.md"
+    out.write_text(md, encoding="utf-8")
+    print(md)
+    print(f"(written to {out})")
+    return 0
+
+
 def main(argv: list[str] | None = None) -> int:
     p = argparse.ArgumentParser(prog="racingsim")
     sub = p.add_subparsers(dest="cmd", required=True)
@@ -117,6 +157,11 @@ def main(argv: list[str] | None = None) -> int:
     e = sub.add_parser("export-tracks", help="persist the track database to SQLite")
     e.add_argument("path")
     e.set_defaults(func=cmd_export)
+    dp = sub.add_parser("data", help="build / validate / report / update the game database")
+    dp.add_argument("action", choices=["build", "validate", "report", "update"])
+    dp.add_argument("--force", action="store_true", help="rebuild even if nothing changed")
+    dp.add_argument("--only", help="update: run only the ingesters whose name contains this")
+    dp.set_defaults(func=cmd_data)
     sv = sub.add_parser("serve", help="run the game UI in your browser")
     sv.add_argument("--host", default="127.0.0.1")
     sv.add_argument("--port", type=int, default=8765)

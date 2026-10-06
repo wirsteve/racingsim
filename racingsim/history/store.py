@@ -23,7 +23,7 @@ import threading
 from pathlib import Path
 from typing import Iterable, Optional
 
-SCHEMA_VERSION = "3"
+SCHEMA_VERSION = "4"
 
 SCHEMA = """
 CREATE TABLE meta(key TEXT PRIMARY KEY, value TEXT);
@@ -66,7 +66,8 @@ def _season_dirs(directory: Path) -> list[Path]:
     return out
 
 
-def build(directory: Path, target: str | Path, tracks=None, stamp: str = "") -> sqlite3.Connection:
+def build(directory: Path, target: str | Path, tracks=None, stamp: str = "",
+          knowledge_dir: Optional[Path] = None) -> sqlite3.Connection:
     """Compile ``directory`` into SQLite at ``target`` (a path or ``":memory:"``).
 
     With ``tracks`` (a TrackDatabase) every race is matched to a track id now, so
@@ -131,6 +132,12 @@ def build(directory: Path, target: str | Path, tracks=None, stamp: str = "") -> 
         with open(f, encoding="utf-8") as fh:
             for key, meta in json.load(fh).items():
                 conn.execute("INSERT OR REPLACE INTO series VALUES (?,?)", (key, json.dumps(meta)))
+    from ..knowledge.build import build_knowledge, build_teams
+    build_teams(conn)
+    if knowledge_dir is not None and knowledge_dir.exists():
+        build_knowledge(conn, knowledge_dir)
+    if tracks is not None and hasattr(tracks, "write_sqlite"):
+        tracks.write_sqlite(conn)
     conn.execute("INSERT INTO meta VALUES ('stamp', ?)", (stamp,))
     conn.execute("INSERT INTO meta VALUES ('tracks_matched', ?)", ("1" if track_list is not None else "0",))
     conn.commit()

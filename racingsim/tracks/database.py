@@ -127,31 +127,35 @@ class TrackDatabase:
         """Persist as three tables: facts (sourced), profile and sim ratings (game-derived)."""
         conn = sqlite3.connect(path)
         try:
-            cur = conn.cursor()
-            cur.executescript(_SCHEMA)
-            for t in self._tracks.values():
-                f = t.facts
-                cur.execute(
-                    "INSERT OR REPLACE INTO track_facts VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)",
-                    (f.id, f.name, f.city, f.region, f.country, f.track_type, f.surface,
-                     f.length_mi, f.configuration, f.turns, f.banking_deg_turns,
-                     f.banking_deg_straights, f.opened, None if f.active is None else int(f.active), json.dumps(f.disciplines),
-                     f.level, f.notable_note, json.dumps([f.lat, f.lon]), json.dumps(f.sources), json.dumps(f.aliases),
-                     f.closed, json.dumps(f.dormant), json.dumps(f.history)),
-                )
-                p = t.profile
-                cur.execute(
-                    "INSERT OR REPLACE INTO track_profile VALUES (?,?,?,?,?,?)",
-                    (f.id, p.size_class, p.prestige, p.attendance_potential,
-                     json.dumps(asdict(p.weather)), json.dumps(p.series_suitability)),
-                )
-                cur.execute(
-                    f"INSERT OR REPLACE INTO track_sim_ratings VALUES ({','.join('?' * (len(SIM_RATING_FIELDS) + 2))})",
-                    (f.id, *[getattr(t.sim, k) for k in SIM_RATING_FIELDS], t.sim.derivation),
-                )
-            conn.commit()
+            self.write_sqlite(conn)
         finally:
             conn.close()
+
+    def write_sqlite(self, conn: sqlite3.Connection) -> None:
+        """Write the three track tables into an open database (the game database or a standalone file)."""
+        cur = conn.cursor()
+        cur.executescript(_SCHEMA)
+        for t in self._tracks.values():
+            f = t.facts
+            cur.execute(
+                "INSERT OR REPLACE INTO track_facts VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)",
+                (f.id, f.name, f.city, f.region, f.country, f.track_type, f.surface,
+                 f.length_mi, f.configuration, f.turns, f.banking_deg_turns,
+                 f.banking_deg_straights, f.opened, None if f.active is None else int(f.active), json.dumps(f.disciplines),
+                 f.level, f.notable_note, json.dumps([f.lat, f.lon]), json.dumps(f.sources), json.dumps(f.aliases),
+                 f.closed, json.dumps(f.dormant), json.dumps(f.history)),
+            )
+            p = t.profile
+            cur.execute(
+                "INSERT OR REPLACE INTO track_profile VALUES (?,?,?,?,?,?)",
+                (f.id, p.size_class, p.prestige, p.attendance_potential,
+                 json.dumps(asdict(p.weather)), json.dumps(p.series_suitability)),
+            )
+            cur.execute(
+                f"INSERT OR REPLACE INTO track_sim_ratings VALUES ({','.join('?' * (len(SIM_RATING_FIELDS) + 2))})",
+                (f.id, *[getattr(t.sim, k) for k in SIM_RATING_FIELDS], t.sim.derivation),
+            )
+        conn.commit()
 
 
 def _richness(f: TrackFacts) -> int:

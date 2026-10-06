@@ -1,0 +1,16 @@
+[
+ {
+  "source": "Racing-Reference",
+  "url": "https://www.racing-reference.info/",
+  "reason": "Automated requests blocked by Cloudflare ('Sorry, you have been blocked'); not circumvented",
+  "checked": "2026-10-06",
+  "replacement_source": "Wikipedia season articles + Wikidata (NASCAR national series 1995-2026), official series results pages where robots.txt allows, public datasets (see datasets.json)"
+ },
+ {
+  "source": "The Third Turn",
+  "url": "https://www.thethirdturn.com/",
+  "reason": "robots.txt 'User-agent: * Disallow: /' (only Google/Bing allowed, API path /w/ disallowed for all); not scraped",
+  "checked": "2026-10-06",
+  "replacement_source": "Wikipedia/Wikidata short-track and touring-series articles, official series and track websites, OpenStreetMap/Wikidata for venues"
+ }
+]

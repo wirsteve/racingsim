@@ -21,12 +21,9 @@ sys.path.insert(0, str(ROOT))
 
 
 def build_db() -> Path:
-    from racingsim.history import store
-    from racingsim.history.db import HISTORY_DIR, _code_and_track_inputs
+    from racingsim.knowledge.pipeline import build_database
     from racingsim.paths import DB_PATH
-    from racingsim.tracks.database import TrackDatabase
-    stamp = store.inputs_stamp(HISTORY_DIR, _code_and_track_inputs())
-    store.build(HISTORY_DIR, DB_PATH, TrackDatabase.load(), stamp=stamp).close()
+    build_database(DB_PATH, force=True)
     print(f"built {DB_PATH} ({DB_PATH.stat().st_size / 1e6:.1f} MB)")
     return DB_PATH
 

@@ -252,21 +252,13 @@ def _cached_default() -> Optional[HistoryDB]:
         return HistoryDB.open(DB_PATH) if DB_PATH.exists() else None
     if not HISTORY_DIR.exists():
         return None
-    stamp = store.inputs_stamp(HISTORY_DIR, _code_and_track_inputs())
-    if store.stored_stamp(DB_PATH) != stamp:
+    from ..knowledge.pipeline import build_database
+    try:
+        build_database(DB_PATH)
+    except OSError:  # read-only checkout: fall back to memory
         from ..tracks.database import TrackDatabase
-        try:
-            with store._LOCK:
-                store.build(HISTORY_DIR, DB_PATH, TrackDatabase.load(), stamp=stamp).close()
-        except OSError:  # read-only checkout: fall back to memory
-            return HistoryDB.load(HISTORY_DIR, TrackDatabase.load())
+        return HistoryDB.load(HISTORY_DIR, TrackDatabase.load())
     return HistoryDB.open(DB_PATH)
-
-
-def _code_and_track_inputs() -> list[Path]:
-    here = Path(__file__).resolve().parent
-    return ([here / "db.py", here / "store.py", DATA_DIR / "track_years.json", DATA_DIR / "track_rating_overrides.json"]
-            + sorted((DATA_DIR / "tracks").glob("*.json")))
 
 
 _INDEX: dict = {}
