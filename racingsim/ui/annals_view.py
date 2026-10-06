@@ -18,6 +18,10 @@ def _who(world: "World", did: int) -> dict:
 
 def records_index(world: "World") -> list[dict]:
     """Series with a records book: touring level and up, newest name, best level first."""
+    key = ("records_index", world.year, bool(world.season is not None and world.season.finished))
+    hit = world.cache.get(key)
+    if hit is not None:
+        return hit
     seen: dict[str, dict] = {}
     for d in world.drivers.values():
         for r in d.history:
@@ -29,7 +33,13 @@ def records_index(world: "World") -> list[dict]:
                 name = s.name if s is not None else (r.series_name or r.series_id)
                 seen[r.series_id] = {"id": r.series_id, "name": re.sub(r"^\d{4} ", "", name),   # "2007 IndyCar Series"
                                      "tier": r.tier, "year": r.year}
-    return sorted(seen.values(), key=lambda x: (-x["tier"], x["name"]))
+    out = sorted(seen.values(), key=lambda x: (-x["tier"], x["name"]))
+    names = [x["name"] for x in out]
+    for x in out:   # two touring series can share a name: tell them apart
+        if names.count(x["name"]) > 1:
+            x["name"] = f'{x["name"]} ({x["id"]})'
+    world.cache[key] = out
+    return out
 
 
 def records(world: "World", series_id: Optional[str]) -> dict:
@@ -59,10 +69,10 @@ def almanac(world: "World", year: Optional[int]) -> dict:
     return {
         "years": years, "year": year,
         "champions": [{"series": s, "tier": t, **_who(world, did)} for s, t, did in a["champions"]],
-        "awards": [{"award": aw, "series": s, "note": note, **_who(world, did)} for aw, s, did, note in a["awards"]],
+        "awards": [{"award": x[0], "series": x[1], "note": x[3], **_who(world, x[2])} for x in a["awards"]],
         "par": [{"par": p, "series": s, **_who(world, did)} for p, did, s in a["par"]],
         "jewels": [{"event": e, **_who(world, did)} for e, did in a["jewels"]],
-        "milestones": [{"text": t, **_who(world, did)} for t, did in a["milestones"]][:60],
+        "milestones": [{"text": m[0], **_who(world, m[1])} for m in a["milestones"]][:60],
         "hof": [_who(world, did) for did in a.get("hof", [])],
     }
 

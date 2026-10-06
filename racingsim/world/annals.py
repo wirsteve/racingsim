@@ -33,6 +33,8 @@ HOF_BAR = 160.0         # career value needed for induction
 HOF_MAX = 3             # inductees per year at most
 TIER_WEIGHT = {7: 1.0, 6: 0.45, 5: 0.25, 4: 0.12, 3: 0.05}
 START_MILESTONES = (100, 250, 500, 750)
+REF_EVENTS = 36         # a Cup-length season: wins in longer schedules are scaled to it
+REF_FIELD = 30          # titles in small fields count for less
 WIN_MILESTONES = (10, 25, 50, 100, 200)
 
 
@@ -45,25 +47,37 @@ def store(world: "World") -> dict:
 
 
 # ---------------------------------------------------------------------------------- during the season
+TRACK_WINNERS_KEPT = 200
+
+
 def note_race(world: "World", track_id: str, event: str, winner_id: int) -> None:
-    store(world)["track_winners"].setdefault(track_id, []).append([world.year, event, winner_id])
+    rows = store(world)["track_winners"].setdefault(track_id, [])
+    rows.append([world.year, event, winner_id])
+    if len(rows) > TRACK_WINNERS_KEPT:
+        del rows[: len(rows) - TRACK_WINNERS_KEPT]
 
 
 def series_wins_before(d: "Driver", series_id: str) -> int:
     return sum(r.wins for r in d.history if r.series_id == series_id)
 
 
+def past_unknown(d: "Driver", year: int) -> bool:
+    """A driver generated with a career already behind them (no records before this world began):
+    we can't tell whether this is really their first season or first win in a series."""
+    return not d.is_player and not any(r.year < year for r in d.history) and d.years_at_tier > 1
+
+
 def first_win(world: "World", d: "Driver", series, wins_this_season: int, track_name: str, week: int) -> None:
     """News when a driver wins for the first time in a touring or national series."""
     if wins_this_season != 1 or (series.tier < AWARD_TIER and not d.is_player):
         return
-    if series_wins_before(d, series.id):
+    if series_wins_before(d, series.id) or past_unknown(d, world.year):
         return
     text = f"{d.name} scores a first {series.name} win at {track_name}"
     d.log(world.year, f"first {series.name} win, at {track_name}")
     if series.tier >= 5 or d.is_player:
         world.post("milestone", text, driver_id=d.id, series_id=series.id, week=week, importance=2)
-    _milestones(world).append([text, d.id])
+    _milestones(world).append([text, d.id, series.tier])
 
 
 def _milestones(world: "World") -> list:
@@ -75,7 +89,9 @@ def season_end(world: "World", results) -> None:
     """Awards, milestones and the almanac page for the season just finished."""
     year = world.year
     alm = {"champions": [], "awards": [], "par": [], "jewels": [], "milestones": [], "hof": []}
-    alm["milestones"] = [m for m in store(world).pop("pending_milestones", [])]
+    alm["milestones"] = list(store(world).pop("pending_milestones", []))
+    prev = store(world)["almanac"].get(year - 1, {})
+    popular_before = {a[4]: a[2] for a in prev.get("awards", []) if len(a) > 4 and a[0] == "Most Popular Driver"}
     by_series: dict[str, list[tuple[int, "SeasonRecord"]]] = defaultdict(list)
     for did, rec in results.records.items():
         by_series[rec.series_id].append((did, rec))
@@ -102,7 +118,8 @@ def season_end(world: "World", results) -> None:
         if not full:
             continue
         rookies = [(did, r) for did, r in full
-                   if not any(h.series_id == sid and h.year < year for h in world.drivers[did].history)]
+                   if not any(h.series_id == sid and h.year < year for h in world.drivers[did].history)
+                   and not past_unknown(world.drivers[did], year)]
         if rookies:
             did, _ = min(rookies, key=lambda x: (x[1].championship_pos, x[0]))
             _award(world, alm, did, s, "Rookie of the Year")
@@ -116,33 +133,35 @@ def season_end(world: "World", results) -> None:
                     if doty is None or score > doty[0]:
                         doty = (score, d_id, s.name)
         if s.tier >= POPULAR_TIER:
-            last = f"{year - 1} {s.name} Most Popular Driver"
+            holder = popular_before.get(sid)   # by series id: popularity survives a sponsor rename
 
             def pop(x):
                 d = world.drivers[x[0]]
                 return (d.marketability * 0.5 + d.reputation * 0.3 + x[1].wins * 1.5
-                        + (8 if last in d.awards else 0) + rng.gauss(0, 4))
+                        + (8 if x[0] == holder else 0) + rng.gauss(0, 4))
             did, _ = max(full, key=pop)
             _award(world, alm, did, s, "Most Popular Driver")
-        for did, r in full:
-            _season_milestones(world, alm, world.drivers[did], s, r)
+        for did, r in rows:
+            if r.starts:
+                _season_milestones(world, alm, world.drivers[did], s, r)
     if doty is not None:
         d = world.drivers[doty[1]]
         d.awards.append(f"{year} Driver of the Year")
-        alm["awards"].insert(0, ["Driver of the Year", doty[2], doty[1], ""])
+        alm["awards"].insert(0, ["Driver of the Year", doty[2], doty[1], "", None])
         world.post("award", f"{d.name} is the {year} Driver of the Year", driver_id=d.id, importance=2)
     # The value leaderboard: national level and up.
     best = [(r.par, did, world.series(r.series_id).name) for did, r in results.records.items()
             if r.par is not None and r.tier >= 5]
     best.sort(key=lambda x: (-x[0], x[1]))
     alm["par"] = [[round(p, 1), did, name] for p, did, name in best[:15]]
+    alm["milestones"].sort(key=lambda m: -(m[2] if len(m) > 2 else 0))   # the biggest stages first
     store(world)["almanac"][year] = alm
 
 
 def _award(world: "World", alm: dict, did: int, s, label: str, note: str = "") -> None:
     d = world.drivers[did]
     d.awards.append(f"{world.year} {s.name} {label}")
-    alm["awards"].append([label, s.name, did, note])
+    alm["awards"].append([label, s.name, did, note, s.id])
     if s.tier >= 5 or d.is_player:
         world.post("award", f"{d.name}: {s.name} {label}" + (f" ({note})" if note else ""), driver_id=did,
                    series_id=s.id, importance=2 if d.is_player or s.tier >= 6 else 1)
@@ -161,7 +180,7 @@ def _season_milestones(world: "World", alm: dict, d: "Driver", s, rec: "SeasonRe
 
 
 def _milestone(world: "World", alm: dict, d: "Driver", s, text: str) -> None:
-    alm["milestones"].append([text, d.id])
+    alm["milestones"].append([text, d.id, s.tier])
     if s.tier >= 5 or d.is_player:
         world.post("milestone", text, driver_id=d.id, series_id=s.id, importance=1)
 
@@ -177,7 +196,11 @@ def career_value(d: "Driver") -> tuple[float, dict]:
         if not w:
             continue
         par = max(0.0, r.par or 0.0)
-        score += w * (r.wins * 4 + r.top5 * 0.6 + (40 if r.champion else 0) + par * 1.5)
+        # A win in an 80-race sprint-car season or a title in a ten-car class counts for less than
+        # in a 36-race, 40-car season.
+        per_race = min(1.0, REF_EVENTS / max(r.starts, 1))
+        field = min(1.0, (r.field_size or 0) / REF_FIELD)
+        score += w * ((r.wins * 4 + r.top5 * 0.6) * per_race + (40 if r.champion else 0) * field + par * 1.5)
         tally["wins"] += r.wins
         tally["titles"] += r.champion
         tally["top5"] += r.top5
@@ -211,7 +234,8 @@ def hall_of_fame(world: "World") -> list[str]:
     for score, did, tally, last in ballot[:HOF_MAX]:
         d = world.drivers[did]
         first = min(r.year for r in d.history)
-        case = (f"{tally['wins']} wins and {tally['titles']} titles in touring and national racing"
+        case = (f"{tally['wins']} win{'s' if tally['wins'] != 1 else ''} and {tally['titles']} "
+                f"title{'s' if tally['titles'] != 1 else ''} in touring and national racing"
                 + (f", {len(d.crown_jewels)} crown jewels" if d.crown_jewels else ""))
         a["hof"].append({"id": did, "year": year, "score": score, "career": f"{first}-{last}", "case": case})
         d.awards.append(f"Hall of Fame (class of {year})")

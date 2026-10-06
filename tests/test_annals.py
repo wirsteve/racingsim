@@ -47,7 +47,7 @@ def test_season_files_par_splits_awards_and_track_winners(world):
     assert alm["champions"] and alm["awards"]
     kinds = {a[0] for a in alm["awards"]}
     assert {"Most Valuable Driver", "Driver of the Year"} <= kinds
-    for _, _, did, _ in alm["awards"]:
+    for _, _, did, *_ in alm["awards"]:
         assert any(str(year) in x for x in world.drivers[did].awards)
     assert world.annals["track_winners"]
     cup = [r for r in recs if r.series_id == "cup_series" and r.par is not None]
@@ -96,3 +96,36 @@ def test_old_saves_load(world):
     w = world.__class__.__new__(world.__class__)
     w.__setstate__(state)
     assert w.annals == {} and A.store(w)["almanac"] == {}
+
+
+def test_review_fixes_fairness(world):
+    from racingsim.world.entities import Driver
+    # PAR is skipped when this season's fit doesn't cover every start (a pre-PAR mid-season save).
+    rows = [(i, _Acc(series_id="x", starts=10, fin_pct_sum=5.0, eq_sum=500.0)) for i in range(6)]
+    assert positions_above_replacement([20, 1000.0, 10.0, 500.0, 50000.0], rows) == {}
+    # A generated veteran has no known past: not a rookie, no "first win" news.
+    vet = next(d for d in world.drivers.values() if d.history)
+    probe = copy.copy(vet)
+    probe.history, probe.years_at_tier, probe.is_player = [], 5, False
+    assert A.past_unknown(probe, world.year)
+    probe.years_at_tier = 0
+    assert not A.past_unknown(probe, world.year)
+    # Hall of Fame: 40 wins in an 80-race season count for about what 18 do in a 36-race one.
+    def season(starts, wins, field):
+        return SeasonRecord(year=2000, series_id="x", tier=7, discipline="stock_car", team_id=None, starts=starts,
+                            wins=wins, top5=0, avg_finish=5.0, expected_finish=5.0, championship_pos=2,
+                            field_size=field, champion=False)
+    a, b = copy.copy(vet), copy.copy(vet)
+    a.history, b.history, a.crown_jewels, b.crown_jewels = [season(80, 40, 30)], [season(36, 18, 30)], [], []
+    assert A.career_value(a)[0] == pytest.approx(A.career_value(b)[0], rel=0.05)
+    # Track winners are capped per track.
+    w = copy.deepcopy(world)
+    for i in range(A.TRACK_WINNERS_KEPT + 50):
+        A.note_race(w, "t", "e", 1)
+    assert len(w.annals["track_winners"]["t"]) == A.TRACK_WINNERS_KEPT
+
+
+def test_almanac_milestones_put_the_top_level_first(world):
+    alm = world.annals["almanac"][world.year - 1]
+    tiers = [m[2] for m in alm["milestones"] if len(m) > 2]
+    assert tiers == sorted(tiers, reverse=True)
