@@ -341,7 +341,13 @@ async function driverPage(id) {
     { key: "starts", label: "St", num: true },
     { key: "wins", label: "W", num: true },
     { key: "top5", label: "T5", num: true },
-    { key: "avg_finish", label: "Avg", num: true },
+    { key: "top10", label: "T10", num: true, render: (h) => h.top10 || "" },
+    { key: "poles", label: "Poles", num: true, render: (h) => h.poles || "" },
+    { key: "laps_led", label: "Led", num: true, render: (h) => h.laps_led || "" },
+    { key: "dnfs", label: "DNF", num: true, render: (h) => h.dnfs || "" },
+    { key: "avg_start", label: "Avg st", num: true, render: (h) => h.avg_start ?? "" },
+    { key: "avg_finish", label: "Avg fin", num: true },
+    { key: "rating", label: "Rating", num: true, render: (h) => h.rating ?? "" },
     { key: "pos", label: "Pos", num: true, render: (h) => `${posCell(h.pos, h.field)}${h.champion ? " 🏆" : ""}` },
   ];
   view(`
@@ -352,10 +358,15 @@ async function driverPage(id) {
         <div class="ratings-grid">
           <div class="row"><span>Overall</span>${rating(r.overall)}</div>
           <div class="row"><span>Potential</span>${rating(r.potential)}</div>
-          ${traits.map((t) => `<div class="row"><span>${t[0].toUpperCase() + t.slice(1)}</span>${rating(r[t])}</div>`).join("")}
+          ${["aggression", "adaptability", "marketability"].filter((t) => r[t] !== undefined).map((t) => `<div class="row"><span>${t[0].toUpperCase() + t.slice(1)}</span>${rating(r[t])}</div>`).join("")}
         </div>
-        <p class="muted small" style="margin:10px 0 0">20–80 scale. ${r.exact ? "Your own driver: you know exactly where you stand." : "Accuracy improves with the driver's exposure — scouts only know what they've seen."}</p>
+        ${r.skills ? `<table class="tbl skills" style="margin-top:10px"><thead><tr><th>Skill</th><th class="num">Now</th><th class="num">Pot</th></tr></thead><tbody>
+          ${Object.values(r.skills).map((k) => `<tr title="${esc(k.about)}"><td>${esc(k.label)}</td><td class="num">${rating(k.now)}</td><td class="num muted">${k.pot}</td></tr>`).join("")}</tbody></table>` : ""}
+        ${r.tracks ? `<h4>Track experience</h4><div class="ratings-grid">${Object.values(r.tracks).map((t) => `<div class="row"><span>${esc(t.label)}</span><span class="statbar" style="display:inline-block;width:90px"><i style="width:${t.exp}%"></i></span></div>`).join("")}</div>` : ""}
+        <p class="muted small" style="margin:10px 0 0">20–80 scale (50 = average at the top level). ${r.exact ? "Your own driver: you know exactly where you stand." : "Scouts' view: 5-point steps, and only as accurate as how much they've seen of this driver."}</p>
       </div>
+      ${r.personality ? `<div class="card"><h3>Personality</h3><dl class="kv">${r.personality.map((p) => `<dt title="${esc(p.about)}">${esc(p.label)}</dt><dd>${p.value != null ? p.value + " · " : ""}${esc(p.word)}</dd>`).join("")}</dl>
+        <p class="muted small">${r.exact ? "You know yourself." : "Paddock impressions, not numbers."} Work ethic and intelligence drive development; loyalty, greed and desire to win shape contract decisions; temper shows on track.</p></div>` : ""}
       <div class="card"><h3>Profile</h3>
         <dl class="kv">
           <dt>Born</dt><dd>${d.birth_year} (age ${d.age})</dd>
@@ -541,15 +552,32 @@ function driversTable(id, rows, opts = {}) {
 
 async function racePage(key, ev, year) {
   const r = await api(`race/${encodeURIComponent(key)}/${ev}${year ? "?year=" + year : ""}`);
-  view(`<h1>${esc(r.jewel || (r.series && r.series.name) || "Race")}</h1>
-    <p class="sub">${trackLink(r.track_id, r.track)} · ${esc(r.label)}</p>
-    <div class="card flush">${table("race", [
-      { key: "pos", label: "Pos", num: true, render: (x) => posCell(x.pos) },
-      { key: "name", label: "Driver", render: (x) => `${driverLink(x.driver_id, x.name, x.is_player)}${x.co_drivers.length ? ` <span class="muted small">/ ${x.co_drivers.map((c) => esc(c.name)).join(", ")}</span>` : ""}` },
-      { key: "team", label: "Team", render: (x) => teamLink(x.team), sort: (x) => x.team?.name || "" },
+  const hasBox = r.results.some((x) => x.box);
+  const b = (x, k) => (x.box ? x.box[k] : "");
+  const rc = r.race;
+  const cols = [
+    { key: "pos", label: "Pos", num: true, render: (x) => posCell(x.pos) },
+    ...(hasBox ? [{ key: "start", label: "St", num: true, sort: (x) => b(x, "start"), render: (x) => b(x, "start") }] : []),
+    { key: "name", label: "Driver", render: (x) => `${driverLink(x.driver_id, x.name, x.is_player)}${x.co_drivers.length ? ` <span class="muted small">/ ${x.co_drivers.map((c) => esc(c.name)).join(", ")}</span>` : ""}` },
+    { key: "team", label: "Team", render: (x) => teamLink(x.team), sort: (x) => x.team?.name || "" },
+    ...(hasBox ? [
+      { key: "laps", label: "Laps", num: true, sort: (x) => b(x, "laps"), render: (x) => b(x, "laps") },
+      { key: "led", label: "Led", num: true, sort: (x) => b(x, "led"), render: (x) => (b(x, "led") || "") + (x.box && x.box.most_led ? " ★" : "") },
+      { key: "status", label: "Status", sort: (x) => b(x, "status"), render: (x) => (x.box && x.box.status !== "running" ? `<span class="badge bad">${esc(x.box.status)}</span>` : '<span class="muted small">running</span>') },
+      { key: "arp", label: "Avg run", num: true, sort: (x) => b(x, "arp"), render: (x) => b(x, "arp") },
+      { key: "passes", label: "Passes", num: true, sort: (x) => b(x, "passes"), render: (x) => b(x, "passes") },
+      { key: "fast", label: "Fast laps", num: true, sort: (x) => b(x, "fast_laps"), render: (x) => b(x, "fast_laps") || "" },
+      { key: "pits", label: "Pits", num: true, sort: (x) => b(x, "pits"), render: (x) => b(x, "pits") },
+      { key: "rating", label: "Rating", num: true, sort: (x) => b(x, "rating"), render: (x) => b(x, "rating") },
+    ] : [
       { key: "tier", label: "Usual tier", num: true, render: (x) => tierBadge(x.tier) },
       { key: "dnf", label: "", render: (x) => (x.dnf ? '<span class="badge bad">DNF</span>' : "") },
-    ], r.results, { rowClass: (x) => (x.is_player ? "me" : "") })}</div>`);
+    ]),
+  ];
+  view(`<h1>${esc(r.jewel || (r.series && r.series.name) || "Race")}</h1>
+    <p class="sub">${trackLink(r.track_id, r.track)} · ${esc(r.label)}${rc ? ` · ${rc.laps} laps · ${rc.cautions} caution${rc.cautions === 1 ? "" : "s"} for ${rc.caution_laps} laps · ${rc.lead_changes} lead change${rc.lead_changes === 1 ? "" : "s"} among ${rc.leaders} leader${rc.leaders === 1 ? "" : "s"}${rc.margin ? ` · margin ${rc.margin.toFixed(3)}s` : ""}` : ""}</p>
+    <div class="card flush">${table("race", cols, r.results, { rowClass: (x) => (x.is_player ? "me" : "") })}</div>
+    ${r.log && r.log.length ? `<div class="card" style="margin-top:16px"><h3>Lap by lap</h3><ul class="timeline">${r.log.map((l) => `<li><b>Lap ${l[0]}</b> ${esc(l[1])}</li>`).join("")}</ul></div>` : ""}`);
 }
 
 async function pyramidPage() {

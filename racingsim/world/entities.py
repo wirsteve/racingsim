@@ -43,6 +43,12 @@ class SeasonRecord:
     top10: int = 0
     winnings: float = 0.0       # purses + points fund (2025 USD)
     dnq: int = 0                # nights the car missed the feature
+    poles: int = 0
+    laps_led: int = 0
+    laps: int = 0
+    dnfs: int = 0
+    avg_start: Optional[float] = None
+    rating: Optional[float] = None  # average NASCAR-style driver rating (lap-by-lap races)
 
 
 @dataclass
@@ -128,6 +134,18 @@ class Driver:
     injury_history: int = 0
     season_spend: float = 0.0   # one-off costs this season beyond savings (coaching, entries)
     car: Optional[object] = None  # own car (racingsim.rules.car.Car) when racing a self-run class
+
+    # ---- OOTP-style ratings (racingsim/world/skills.py) ----
+    skills: dict[str, float] = field(default_factory=dict)       # skill -> offset around ability
+    track_skill: dict[str, float] = field(default_factory=dict)  # track type -> experience 0..1
+    personality: dict[str, float] = field(default_factory=dict)  # work_ethic, intelligence, ... 0-100
+    durability: float = 50.0                                     # high = rarely injured, heals fast
+
+    def __setstate__(self, state: dict) -> None:
+        # Saves from before OOTP-style ratings: per-skill data is created lazily (skills.ensure).
+        for k in ("skills", "track_skill", "personality"):
+            state.setdefault(k, {})
+        self.__dict__.update(state)
 
     @property
     def name(self) -> str:

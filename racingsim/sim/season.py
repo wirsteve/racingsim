@@ -21,10 +21,12 @@ from typing import TYPE_CHECKING, Optional
 from ..constants import SUBSTITUTE_BREAKOUT_FINISH_PCT
 from ..util import clamp
 from ..world.entities import ACTIVE, PART_TIME, RETIRED, SIDELINED, Driver, SeasonRecord
+from ..world.skills import track_type_of as skill_track_type
 from ..rules import car as C
 from ..rules import garage
 from ..rules.payouts import Purse
-from ..rules.points import format_for, heat_points, score_race, system_for
+from ..rules.points import format_for, heat_points, score_box, score_race, system_for
+from . import engine
 from .race import Entry, Finish, heats, run_race
 
 if TYPE_CHECKING:
@@ -48,6 +50,14 @@ class _Acc:
     team_id: Optional[int] = None
     top10: int = 0
     dnq: int = 0
+    poles: int = 0
+    laps_led: int = 0
+    laps: int = 0
+    dnfs: int = 0
+    start_sum: int = 0
+    rating_sum: float = 0.0
+    rated: int = 0
+    fast_laps: int = 0
 
 
 @dataclass
@@ -58,6 +68,11 @@ class SeasonResults:
     substitute_runs: list[tuple[int, str, float]] = field(default_factory=list)  # (driver, series, finish pct)
     injuries: list[tuple[int, int]] = field(default_factory=list)                 # (driver, races)
     equipment: dict[int, float] = field(default_factory=dict)
+    track_laps: dict[int, dict] = field(default_factory=dict)  # driver -> {track type: laps run}
+
+    def __setstate__(self, state: dict) -> None:
+        state.setdefault("track_laps", {})   # mid-season saves from before the lap-by-lap engine
+        self.__dict__.update(state)
 
 
 def purse_for(position: int, field_size: int, purse_win: float) -> float:
@@ -385,12 +400,24 @@ class SeasonRunner:
                 keep_ids = {id(e) for e in order[: tpl.field_size]}
                 dnq = [e for e in entries if id(e) not in keep_ids]
                 entries = [e for e in entries if id(e) in keep_ids]
-        finishes = run_race(entries, track, tpl.discipline, tpl.tier, tpl.car_weight, rng)
-        pts = score_race(system, [(f.entry.drivers[0].id, f.pace) for f in finishes], rng)
-        _tally(world, res, self.acc, finishes, s, pts, purse, heat_pts, dnq, system)
+        rr = None
+        if self.lap_by_lap(s, entries):
+            # Tours, national series and any race the player is in run lap by lap.
+            player_in = any(d.is_player for e in entries for d in e.drivers)
+            rr = engine.run(entries, track, tpl.tier, tpl.car_weight, rng, detail=player_in,
+                            stages=system.stages, free_pass=world.year >= 2003, discipline=tpl.discipline)
+            finishes = rr.finishes
+            pts = score_box(system, finishes)
+        else:
+            finishes = run_race(entries, track, tpl.discipline, tpl.tier, tpl.car_weight, rng)
+            pts = score_race(system, [(f.entry.drivers[0].id, f.pace) for f in finishes], rng)
+        _tally(world, res, self.acc, finishes, s, pts, purse, heat_pts, dnq, system, track)
         self._after_race(s, track, finishes, dnq, purse)
         self._playoff_step(s, event_idx, finishes)
-        return self._log(s, track, finishes, event_idx)
+        return self._log(s, track, finishes, event_idx, race=rr)
+
+    def lap_by_lap(self, s: "Series", entries: list[Entry]) -> bool:
+        return s.tier >= 3 or any(d.is_player for e in entries for d in e.drivers)
 
     def _after_race(self, s: "Series", track, finishes: list[Finish], dnq: list[Entry], purse: Purse) -> None:
         """Own cars after the feature: the player's car race by race, AI wrecks from the season reserve."""
@@ -429,7 +456,7 @@ class SeasonRunner:
                            series_id=s.id, week=self.week, importance=2)
 
     def _log(self, s: "Series", track, finishes: list[Finish], event_idx: int,
-             jewel: Optional[str] = None, jewel_name: Optional[str] = None) -> Optional[dict]:
+             jewel: Optional[str] = None, jewel_name: Optional[str] = None, race=None) -> Optional[dict]:
         world = self.world
         player_in = any(d.is_player for f in finishes for d in f.entry.drivers)
         winner = finishes[0].entry.drivers[0]
@@ -440,8 +467,13 @@ class SeasonRunner:
         if keep:
             info["results"] = [
                 [f.entry.drivers[0].id, f.entry.team_id, f.position, f.dnf,
-                 [d.id for d in f.entry.drivers[1:]]]
+                 [d.id for d in f.entry.drivers[1:]], f.box]
                 for f in finishes]
+            if race is not None:
+                info["race"] = {"laps": race.laps, "cautions": race.cautions, "caution_laps": race.caution_laps,
+                                "lead_changes": race.lead_changes, "leaders": race.leaders, "margin": race.margin}
+                if player_in:
+                    info["log"] = race.log[-400:]
         # Weekly local divisions keep just the winner (full results only where someone looks).
         self.race_log[jewel or s.id].append(info)
         if s is not None and s.tier == 7:
@@ -483,9 +515,11 @@ OFFSEASON_HEAL = 10
 
 def _tally(world: "World", res: SeasonResults, acc: dict[int, _Acc], finishes: list[Finish],
            s: "Series", points: dict[int, float], purses: Purse, heat_pts: Optional[dict] = None,
-           dnq: list[Entry] = (), system=None) -> None:
+           dnq: list[Entry] = (), system=None, track=None) -> None:
     n = len(finishes)
     heat_pts = heat_pts or {}
+    tt = skill_track_type(track) if track is not None else None
+    est_laps = engine.race_laps(track, s.tier) if track is not None else 0
     for f in finishes:
         pct = 1 - (f.position - 1) / max(1, n - 1)
         exp_pct = 1 - (f.expected_position - 1) / max(1, n - 1)
@@ -516,6 +550,21 @@ def _tally(world: "World", res: SeasonResults, acc: dict[int, _Acc], finishes: l
             a.points += pts
             a.purse += purse
             a.top10 += f.position <= 10
+            b = f.box
+            if b is not None:
+                a.poles += b["start"] == 1
+                a.laps_led += b["led"]
+                a.laps += b["laps"]
+                a.start_sum += b["start"]
+                a.rating_sum += b["rating"]
+                a.rated += 1
+                a.fast_laps += b["fast_laps"]
+            a.dnfs += f.dnf
+        if tt is not None:
+            laps_run = f.box["laps"] if f.box else est_laps
+            for d in f.entry.drivers:
+                tl = res.track_laps.setdefault(d.id, {})
+                tl[tt] = tl.get(tt, 0) + laps_run
         for did in f.injured:
             d = world.drivers[did]
             severe = world.rng.random() < 0.12
@@ -613,7 +662,10 @@ def _crown_jewel(world: "World", runner: "SeasonRunner", cj) -> Optional[dict]:
         if d.is_player:
             charge(d, jewel_entry_cost(d, track))
     entries = [Entry([d], _jewel_equipment(world, res, d, cj, rng)) for d in field_drivers]
-    finishes = run_race(entries, track, cj.discipline, max(cj.max_tier - 1, 2), 0.45, rng)
+    rr = engine.run(entries, track, max(cj.max_tier - 1, 2), 0.45, rng,
+                    detail=any(d.is_player for d in field_drivers), free_pass=world.year >= 2003,
+                    discipline=cj.discipline)
+    finishes = rr.finishes
     order = [f.entry.drivers[0].id for f in finishes]
     res.crown_jewel_results.append((cj.key, order))
     winner = world.drivers[order[0]]
@@ -632,7 +684,7 @@ def _crown_jewel(world: "World", runner: "SeasonRunner", cj) -> Optional[dict]:
             d.car.account += pay
             d.car.winnings += pay
             garage.log(d.car, runner.week, f"{cj.name} purse, P{pos}", pay)
-    return runner._log(None, track, finishes, 0, jewel=cj.key, jewel_name=cj.name)
+    return runner._log(None, track, finishes, 0, jewel=cj.key, jewel_name=cj.name, race=rr)
 
 
 def _jewel_equipment(world: "World", res: SeasonResults, d: Driver, cj, rng) -> float:
@@ -719,6 +771,9 @@ def _finalise_records(world: "World", res: SeasonResults, acc: dict[int, _Acc], 
                 expected_finish=a.expected_sum / a.starts if a.starts else float(s.template.field_size),
                 championship_pos=pos, field_size=n, champion=champion, series_name=s.name,
                 points=round(a.points, 1), top10=max(a.top10, a.top5), winnings=round(a.purse), dnq=a.dnq,
+                poles=a.poles, laps_led=a.laps_led, laps=a.laps, dnfs=a.dnfs,
+                avg_start=round(a.start_sum / a.rated, 1) if a.rated else None,
+                rating=round(a.rating_sum / a.rated, 1) if a.rated else None,
             )
             st = max(a.starts, 1)  # a season of DNQs: no feature starts at all
             rec.note = f"{a.fin_pct_sum / st:.3f}|{a.exp_pct_sum / st:.3f}"

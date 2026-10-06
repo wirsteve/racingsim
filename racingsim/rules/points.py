@@ -166,3 +166,24 @@ def score_race(system: System, order: list[tuple[int, float]], rng: random.Rando
 
 def heat_points(system: System, keys_by_heat_finish: list[int]) -> dict[int, float]:
     return {k: system.heat[i] for i, k in enumerate(keys_by_heat_finish) if i < len(system.heat)}
+
+
+def score_box(system: System, finishes) -> dict[int, float]:
+    """Points from a lap-by-lap race: real laps led, most laps led and stage finishes."""
+    n = len(finishes)
+    pts: dict[int, float] = {}
+    for f in finishes:
+        b = f.box or {}
+        p = system.finish_points(f.position, n) + system.show_up
+        if f.position == 1:
+            p += system.win_bonus
+        if b.get("led"):
+            p += system.led_lap
+        if b.get("most_led"):
+            p += system.most_led
+        if system.stage:
+            for sp in b.get("stage_pos", []):
+                if sp <= len(system.stage):
+                    p += system.stage[sp - 1]
+        pts[f.entry.drivers[0].id] = p
+    return pts

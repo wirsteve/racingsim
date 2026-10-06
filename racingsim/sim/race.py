@@ -41,6 +41,7 @@ class Finish:
     crashed: bool = False
     injured: list[int] = field(default_factory=list)
     expected_position: int = 0
+    box: Optional[dict] = None     # lap-by-lap engine box score (start, laps, led, status, ...)
 
 
 def _driver_pace(d: Driver, discipline: str, track: Track) -> float:
