@@ -6,7 +6,7 @@ from typing import TYPE_CHECKING
 
 from ..constants import GRASSROOTS_RETURN_PROB, QUIT_HAZARD_BY_TIER, TIER_STRENGTH
 from ..util import clamp, weighted_choice
-from ..world import skills
+from ..world import skills, staff
 from ..world.entities import ACTIVE, PART_TIME, RETIRED, SIDELINED, Driver
 
 if TYPE_CHECKING:
@@ -25,8 +25,8 @@ def develop(world: "World", results: "SeasonResults") -> None:
         seat_time = min(1.0, starts / 18)
         if age <= d.peak_age:
             rate = 0.22 if age < 15 else 0.20 if age < 19 else 0.15 if age < 24 else 0.08
-            coaching = 1 + 0.035 * d.tier  # better teams, engineers, coaches higher up
-            drive = 0.75 + d.determination / 250 + d.professionalism / 500
+            coaching = (1 + 0.035 * d.tier) * staff.coach_bonus(world, d)  # the team's driver coach
+            drive = (0.75 + d.determination / 250 + d.professionalism / 500) * (0.88 + d.morale / 500)
             growth = (d.potential - d.ability) * rate * (0.35 + 0.65 * seat_time) * coaching * drive
             d.ability = clamp(d.ability + growth + rng.gauss(0, 1.0), 1, d.potential + 1)
             # Rare late breakthroughs (research C 5.5 "late window")
@@ -134,6 +134,10 @@ def retire(world: "World", d: Driver, summary: "YearSummary") -> None:
     summary.retirements += 1
     if d.max_tier >= 4 or d.is_player:
         d.log(world.year, f"retired from driving at {d.age(world.year)}")
+    if not d.is_player:
+        s = staff.from_retired_driver(world, d)
+        if s is not None:
+            d.log(world.year, f"stayed in the sport as a {staff.ROLES[s.role][0].lower()}")
 
 
 def _return_to_grassroots(world: "World", d: Driver) -> bool:

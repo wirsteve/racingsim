@@ -366,7 +366,11 @@ async function driverPage(id) {
         <p class="muted small" style="margin:10px 0 0">20–80 scale (50 = average at the top level). ${r.exact ? "Your own driver: you know exactly where you stand." : "Scouts' view: 5-point steps, and only as accurate as how much they've seen of this driver."}</p>
       </div>
       ${r.personality ? `<div class="card"><h3>Personality</h3><dl class="kv">${r.personality.map((p) => `<dt title="${esc(p.about)}">${esc(p.label)}</dt><dd>${p.value != null ? p.value + " · " : ""}${esc(p.word)}</dd>`).join("")}</dl>
-        <p class="muted small">${r.exact ? "You know yourself." : "Paddock impressions, not numbers."} Work ethic and intelligence drive development; loyalty, greed and desire to win shape contract decisions; temper shows on track.</p></div>` : ""}
+        <p class="muted small">${r.exact ? "You know yourself." : "Paddock impressions, not numbers."} Work ethic and intelligence drive development; loyalty, greed and desire to win shape contract decisions; temper shows on track.</p>
+        ${r.mood ? `<h4>Mood</h4><dl class="kv"><dt>Morale</dt><dd>${r.mood.morale != null ? r.mood.morale + " · " : ""}${esc(r.mood.word)}</dd>
+          ${r.mood.suspension ? `<dt>Suspended</dt><dd>${r.mood.suspension} race${r.mood.suspension === 1 ? "" : "s"}</dd>` : ""}
+          <dt>Rivals</dt><dd>${r.mood.rivals.length ? r.mood.rivals.map((x) => `${driverLink(x.id, x.name)} <span class="muted small">(${esc(x.word)})</span>`).join(", ") : "<span class=\"muted\">none</span>"}</dd></dl>
+          <p class="muted small">Confident drivers are a little faster and develop faster. Get wrecked and you remember who did it.</p>` : ""}</div>` : ""}
       <div class="card"><h3>Profile</h3>
         <dl class="kv">
           <dt>Born</dt><dd>${d.birth_year} (age ${d.age})</dd>
@@ -650,8 +654,49 @@ async function teamPage(id) {
       <div class="card"><h3>What this owner values</h3>
         ${Object.entries(t.weights).map(([k, v]) => `<div class="culture"><span>${k}</span><span class="b"><i style="width:${v * 100}%;background:var(--accent)"></i></span></div>`).join("")}
         <p class="muted small">Teams that raise less money themselves lean on drivers who bring it.</p></div>
-    </div>`);
+    </div>
+    ${(t.staff || []).length ? `<div class="card flush" style="margin-top:16px"><h3 style="padding:14px 16px 0">The people</h3>${staffTable("team-staff", t.staff, true)}</div>` : ""}`);
 }
+
+// ---- staff (crew chiefs, spotters, pit crews, ...)
+const staffLink = (s) => `<a class="link" href="#/staff/${s.id}">${esc(s.name)}</a>`;
+function staffRatings(r) {
+  return Object.values(r).map((x) => `<span class="nowrap small" style="margin-right:8px">${esc(x.label)} ${rating(x.value)}</span>`).join("");
+}
+function staffTable(id, rows, teamView) {
+  return table(id, [
+    { key: "role", label: "Role", render: (s) => `${esc(s.role_label)}${s.car != null && teamView ? ` <span class="muted small">car ${s.car + 1}</span>` : ""}`, sort: (s) => s.role_label },
+    { key: "name", label: "Name", render: (s) => `${staffLink(s)}${s.former_driver ? ' <span class="badge" title="Former driver">ex-driver</span>' : ""}`, sort: (s) => s.name },
+    ...(teamView ? [] : [{ key: "team", label: "Team", render: (s) => (s.team ? `<a class="link" href="#/team/${s.team.id}">${esc(s.team.name)}</a>` : '<span class="muted">free agent</span>'), sort: (s) => s.team?.name || "" }]),
+    { key: "age", label: "Age", num: true },
+    { key: "overall", label: "Overall", num: true, render: (s) => rating(s.overall) },
+    { key: "ratings", label: "Ratings", nosort: true, render: (s) => staffRatings(s.ratings) },
+    { key: "style", label: "Style", nosort: true, render: (s) => (s.style && s.style.preference ? `<span class="small">${s.style.aggression >= 65 ? "aggressive" : s.style.aggression <= 35 ? "conservative" : "balanced"} calls · likes it ${esc(s.style.preference)}</span>` : "") },
+    { key: "wins", label: "Wins", num: true },
+    { key: "titles", label: "Titles", num: true },
+  ], rows);
+}
+async function staffPage(id) {
+  const s = await api("staff/" + id);
+  view(`<div class="card hero"><div class="avatar">${initials(s.name)}</div>
+    <div><h1>${esc(s.name)}</h1><div class="sub">${esc(s.role_label)} · age ${s.age} · ${s.team ? `<a class="link" href="#/team/${s.team.id}">${esc(s.team.name)}</a>` : "free agent"}${s.retired ? " · retired" : ""}</div>
+      ${s.former_driver ? `<div class="sub">Former driver: <a class="link" href="#/driver/${s.former_driver}">${esc(s.former_driver_name || "profile")}</a></div>` : ""}</div>
+    <div class="kpis"><div class="kpi"><div class="v">${rating(s.overall)}</div><div class="l">Overall</div></div>
+      <div class="kpi"><div class="v">${s.reputation}</div><div class="l">Reputation</div></div>
+      <div class="kpi"><div class="v">${s.wins}</div><div class="l">Wins</div></div><div class="kpi"><div class="v">${s.titles}</div><div class="l">Titles</div></div></div></div>
+    <div class="grid g2" style="margin-top:16px"><div class="card"><h3>Ratings</h3><p class="muted small">${esc(s.about)}</p>
+      <div class="ratings-grid">${Object.values(s.ratings).map((r) => `<div class="row"><span>${esc(r.label)}</span>${rating(r.value)}</div>`).join("")}</div>
+      ${s.style && s.style.preference ? `<p class="small">Strategy style: <b>${s.style.aggression >= 65 ? "aggressive" : s.style.aggression <= 35 ? "conservative" : "balanced"}</b> (${s.style.aggression}). Likes the car <b>${esc(s.style.preference)}</b>: drivers who like it the same way go faster with this crew chief.</p>` : ""}
+      ${s.salary != null ? `<p class="small">Salary ${money(s.salary)} · ${s.contract_years} more season${s.contract_years === 1 ? "" : "s"}</p>` : ""}</div>
+    <div class="card flush"><h3 style="padding:14px 16px 0">Career</h3>${table("staff-hist", [{ key: "year", label: "Year", num: true }, { key: "team", label: "Team" }, { key: "series", label: "Series" }, { key: "wins", label: "Wins", num: true }, { key: "titles", label: "Titles", num: true }], s.history.slice().reverse(), { empty: "No completed seasons yet." })}</div></div>`);
+}
+async function staffDirPage(role = "") {
+  const d = await api("staff" + (role ? "?role=" + encodeURIComponent(role) : ""));
+  view(`<h1>Staff</h1><p class="muted">Crew chiefs, spotters, pit crews, technical directors, engine builders, driver coaches and medical staff. The best teams hire first; poor results cost crew chiefs their jobs.</p>
+    <div class="tabs"><button class="${role ? "" : "on"}" data-act="staffrole" data-role="">All</button>${d.roles.map((r) => `<button class="${r.key === role ? "on" : ""}" data-act="staffrole" data-role="${r.key}" title="${esc(r.about)}">${esc(r.label)}</button>`).join("")}</div>
+    <div class="card flush">${staffTable("staff-dir", d.staff, false)}</div>`);
+}
+on("staffrole", (el) => staffDirPage(el.dataset.role));
 
 // ---- tracks + map
 const TRK_Q = {};
@@ -900,7 +945,14 @@ function renderGarage(g) {
       ${optTable("chassis", "Chassis", c.chassis, car && car.chassis.label)}
       ${optTable("engines", "Engines (rules " + yr + ")", c.engines, car && car.engine.label)}
       ${optTable("shocks", "Shocks", c.shocks, car && car.shocks.label)}</div>
-      <div class="grid">${money}${rulesCard}</div></div>`);
+      <div class="grid">${money}${crewCard(g)}${rulesCard}</div></div>`);
+}
+function crewCard(g) {
+  if (!g.crew) return "";
+  return `<div class="card"><h3>Your crew</h3><p class="muted small">Hire people for the season: a crew chief (setup, strategy, adjustments), a spotter (keeps you out of wrecks, helps restarts) and a pit crew. Freelancers leave at season end.</p>
+    ${g.crew.roles.map((r) => `<h4>${esc(r.label)}</h4>
+      ${r.hired ? `<div class="small">${staffLink(r.hired)} · ${staffRatings(r.hired.ratings)} <button class="small" data-act="garage" data-a="release" data-k="${r.role}">Let go</button></div>` : `<div class="muted small">Nobody: friends and family help out (average).</div>`}
+      <div class="table-wrap"><table class="tbl"><tbody>${r.candidates.map((c) => `<tr><td class="small">${staffLink(c)} <span class="muted">${c.age}</span></td><td class="small">${staffRatings(c.ratings)}</td><td class="num small">${usd(c.cost)}</td><td><button class="small" data-act="garage" data-a="hire" data-k="${c.id}">Hire</button></td></tr>`).join("")}</tbody></table></div>`).join("")}</div>`;
 }
 on("tires", async (el) => {
   try { const r = await api("garage", { action: "tires", value: parseInt(el.value, 10) }); renderGarage(r); toast(r.message); }
@@ -931,6 +983,8 @@ const ROUTES = [
   [/^#\/instances\/(.+)$/, (m) => instancesPage(m[1]), true],
   [/^#\/drivers$/, () => driversPage(), true],
   [/^#\/team\/(\d+)$/, (m) => teamPage(m[1]), true],
+  [/^#\/staff\/(\d+)$/, (m) => staffPage(m[1]), true],
+  [/^#\/staff$/, () => staffDirPage(), true],
   [/^#\/tracks$/, () => tracksPage(), true],
   [/^#\/track\/(.+)$/, (m) => trackPage(decodeURIComponent(m[1])), true],
   [/^#\/news$/, () => newsPage(), true],

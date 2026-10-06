@@ -30,6 +30,7 @@ class Entry:
     team_id: Optional[int] = None
     car_key: str = ""
     mech: Optional[float] = None   # this car's mechanical-failure chance (own cars: engine freshness/health)
+    crew: Optional[dict] = None    # race-day effects of the car's people (world/staff.crew_effects)
 
 
 @dataclass
@@ -106,7 +107,8 @@ def run_race(entries: list[Entry], track: Track, discipline: str, tier: int,
         lead = e.drivers[0]
         # Incidents: aggressive/inconsistent drivers crash more; crash-prone venues amplify it.
         crash_p = 0.012 + 0.05 * (s.caution_probability / 100) * (0.6 + (lead.aggression - lead.consistency + 100) / 200)
-        mech_p = e.mech if e.mech is not None else 0.01 + 0.04 * (s.mechanical_stress / 100) * (1 - e.equipment / 130)
+        mech_p = e.mech if e.mech is not None else ((0.01 + 0.04 * (s.mechanical_stress / 100) * (1 - e.equipment / 130))
+                                                    * (e.crew or {}).get("mech", 1.0))
         crashed = rng.random() < crash_p
         mech = (not crashed) and rng.random() < mech_p
         dnf = crashed or mech

@@ -114,6 +114,11 @@ class Car:
     mech_lap: float = 1.0       # per-lap mechanical hazard
     stint: float = 0.0          # this run's pace change from adjustments (points)
     adjust: float = 1.0         # how well this crew/driver adjusts (feedback): scales stint swings
+    pit_mult: float = 1.0       # pit crew speed (multiplies stop time)
+    pit_sd: float = 1.0         # pit crew consistency (multiplies stop variance and disasters)
+    strategy: float = 50.0      # crew chief's strategy rating
+    cc_aggr: float = 50.0       # crew chief's appetite for gambles (stay out, two tires)
+    injury: float = 1.0         # medical: injury chance multiplier
 
 
 @dataclass
@@ -127,6 +132,8 @@ class RaceResult:
     margin: float = 0.0
     log: list = field(default_factory=list)       # [lap, text]
     stages: list = field(default_factory=list)    # [[driver ids top 10], ...]
+    incidents: list = field(default_factory=list)  # [(instigator id, [collected ids], big one?)]
+    paybacks: list = field(default_factory=list)   # [(retaliator id, target id)]
 
 
 def race_laps(track: "Track", tier: int) -> int:
@@ -152,26 +159,36 @@ def _car(e: Entry, tt: str, cw: float, rng: random.Random, discipline: Optional[
         return sum(fn(d) for d in ds) / len(ds)
     drv = avg(lambda d: S.base(d, discipline) * S.track_factor(d, tt) + S.track_bonus(d, tt)
               + 0.5 * S.offset(d, "speed") + 0.15 * S.offset(d, "consistency"))
-    perf = (1 - cw) * drv + cw * e.equipment
-    # This weekend's setup: feedback (and the crew) narrow the miss.
-    setup = rng.gauss(0, CAL["setup_sd"] * clamp(1.15 - S.offset(lead, "feedback") / 25, 0.6, 1.5))
-    perf += setup
+    crew = e.crew or {}
+    drv += (avg(lambda d: getattr(d, "morale", 60.0)) - 60) * 0.02   # confidence: about +/-1 point
+    perf = (1 - cw) * drv + cw * (e.equipment + crew.get("power", 0.0))
+    # This weekend's setup: feedback and the crew chief/technical director narrow the miss;
+    # a crew chief who likes the car the way the driver does finds speed (chemistry).
+    setup = rng.gauss(0, CAL["setup_sd"] * clamp(1.15 - S.offset(lead, "feedback") / 25, 0.6, 1.5)
+                      * crew.get("setup_sd", 1.0))
+    perf += setup + crew.get("setup_mean", 0.0)
     qual = perf + (1 - cw) * 0.6 * S.offset(lead, "qualifying")
     aggression = lead.aggression
     risk = clamp((0.55 + (aggression - 50) / 120 - S.offset(lead, "consistency") / 40
                   - S.offset(lead, "car_control") / 50 + (S.trait(lead, "temper") - 50) / 250), 0.25, 2.2)
+    if crew:   # the spotter keeps the driver out of trouble
+        risk = clamp(risk * (1.2 - crew.get("awareness", 50) / 250), 0.2, 2.4)
     return Car(entry=e, start=0, perf=perf, qual=qual,
-               adjust=clamp(1.1 - S.offset(lead, "feedback") / 30, 0.6, 1.4),
+               adjust=clamp(1.1 - S.offset(lead, "feedback") / 30, 0.6, 1.4) * crew.get("adjust", 1.0),
+               pit_mult=crew.get("pit_s", 1.0), pit_sd=crew.get("pit_sd", 1.0),
+               strategy=crew.get("strategy", 50.0), cc_aggr=crew.get("aggression", 50.0),
+               injury=crew.get("injury", 1.0),
                tire_mgmt=clamp(0.5 + S.offset(lead, "tire_management") / 30, 0, 1),
                craft=S.offset(lead, "racecraft"), defend=S.offset(lead, "defending"),
-               restart=S.offset(lead, "restarts"), risk=risk, composure=S.offset(lead, "composure"),
+               restart=S.offset(lead, "restarts") + crew.get("restarts", 0.0), risk=risk, composure=S.offset(lead, "composure"),
                fitness=S.offset(lead, "fitness"), fuel_save=S.offset(lead, "fuel_saving"))
 
 
-def _stop_time(stop_s: float, rng: random.Random) -> float:
+def _stop_time(stop_s: float, rng: random.Random, c: Optional["Car"] = None) -> float:
     """A pit stop: usually close to the crew's norm, occasionally a disaster (loose wheel, jack)."""
-    t = stop_s + abs(rng.gauss(0, CAL["pit_sd"]))
-    if rng.random() < CAL["loose_wheel"]:
+    mult, sd = (c.pit_mult, c.pit_sd) if c is not None else (1.0, 1.0)
+    t = stop_s * mult + abs(rng.gauss(0, CAL["pit_sd"] * sd))
+    if rng.random() < CAL["loose_wheel"] * sd:
         t += rng.uniform(10, 25)
     return t
 
@@ -210,7 +227,8 @@ def run(entries: list[Entry], track: "Track", tier: int, car_weight: float, rng:
     # ---- qualifying (or heat-based lineup noise for short local races)
     q_noise = lap_s * CAL["noise"] * CAL["qual_noise"] * (1.6 if tier <= 2 else 1.0)
     for c in cars:
-        c.mech_lap = 1 - (1 - (c.entry.mech if c.entry.mech is not None else 0.03)) ** (1 / n_laps)
+        base_mech = c.entry.mech if c.entry.mech is not None else 0.03 * (c.entry.crew or {}).get("mech", 1.0)
+        c.mech_lap = 1 - (1 - base_mech) ** (1 / n_laps)
         c.time = -(c.qual - 50) * CAL["spread_per_point"] * lap_s + rng.gauss(0, q_noise)
     grid = sorted(cars, key=lambda c: c.time)
     for i, c in enumerate(grid, start=1):
@@ -248,6 +266,21 @@ def run(entries: list[Entry], track: "Track", tier: int, car_weight: float, rng:
     last_leader: Optional[Car] = None
     stage_results: list = []
     new_caution = False
+    incidents: list = []
+    paybacks: list = []
+    # Grudges: a driver with a temper and a hot rivalry may settle it today.
+    by_driver = {c.entry.drivers[0].id: c for c in cars}
+    planned: list = []
+    for c in cars:
+        d = c.entry.drivers[0]
+        for target_id, heat in (getattr(d, "rivals", None) or {}).items():
+            tgt = by_driver.get(target_id)
+            if tgt is None or heat < 35:
+                continue
+            # Only a short fuse acts on it, and even then rarely: most grudges are settled by racing hard.
+            fuse = max(0.0, S.trait(d, "temper") - 45) / 55
+            if rng.random() < heat / 100 * fuse * 0.2:
+                planned.append([rng.randint(int(n_laps * 0.2), max(int(n_laps * 0.2) + 1, int(n_laps * 0.95))), c, tgt])
 
     def incident(lap_now: int, big: bool) -> list[Car]:
         """Choose who is involved in a crash (weighted by risk, close racing mid-pack)."""
@@ -340,12 +373,30 @@ def run(entries: list[Entry], track: "Track", tier: int, car_weight: float, rng:
                             c.damage += dmg * 4
                     names = ", ".join(who(c) for c in involved[:5]) + (f" and {len(involved) - 5} more" if len(involved) > 5 else "")
                     say(lap + k, ("BIG ONE: " if big else "Caution: ") + f"crash involving {names}")
+                    if len(involved) > 1:
+                        incidents.append((involved[0].entry.drivers[0].id,
+                                          [x.entry.drivers[0].id for x in involved[1:]], big))
                 else:
                     say(lap + k, "Caution: " + rng.choice(["debris on the track", "a spin", "fluid on the track",
                                                              "a car stopped on track"]))
                 cautions += 1
                 caution_left = max(2, int(CAL["caution_laps"][tt] * rng.uniform(0.7, 1.4)))
                 new_caution = True
+            # payback: a planned retaliation happens if both are still out there under green
+            for p in [p for p in planned if lap < p[0] <= lap + k]:
+                planned.remove(p)
+                _, att, tgt = p
+                if att.running and tgt.running and caution_left <= 0:
+                    paybacks.append((att.entry.drivers[0].id, tgt.entry.drivers[0].id))
+                    if rng.random() < 0.6:
+                        tgt.running, tgt.status, tgt.crashed, tgt.out_lap = False, "crash", True, tgt.laps
+                    else:
+                        tgt.damage += 3
+                    att.damage += rng.uniform(0, 1.5)
+                    say(lap + k, f"PAYBACK: {who(att)} turns {who(tgt)} into the wall")
+                    cautions += 1
+                    caution_left = max(2, int(CAL["caution_laps"][tt] * rng.uniform(0.7, 1.2)))
+                    new_caution = True
             # mechanical failures
             for c in running:
                 if c.running and rng.random() < 1 - (1 - c.mech_lap) ** k:
@@ -356,7 +407,8 @@ def run(entries: list[Entry], track: "Track", tier: int, car_weight: float, rng:
             if stops_needed:
                 for c in running:
                     if c.running and (c.fuel_laps < k + 1 or c.tire_age > tire_life * 1.35):
-                        c.time += pit_loss + _stop_time(stop_s, rng)
+                        # A sharp strategist times the stop (traffic, the cycle) and loses less on pit road.
+                        c.time += pit_loss * (1.05 - c.strategy / 1000) + _stop_time(stop_s, rng, c)
                         c.stint = rng.gauss(0, CAL["stint_sd"] * c.adjust)
                         c.tire_age, c.fuel_laps, c.pits = 0, fuel_laps * (1 + c.fuel_save / 200), c.pits + 1
         else:
@@ -374,16 +426,25 @@ def run(entries: list[Entry], track: "Track", tier: int, car_weight: float, rng:
                 if stops_needed:
                     pitters, stayers = [], []
                     to_go = n_laps - lap
+                    two_tires = set()
                     for i, c in enumerate(order):
                         need = c.damage >= 0.3 or c.tire_age > tire_life * 0.45 or c.fuel_laps < min(to_go, fuel_laps * 0.7)
-                        gamble = (i < 8 and c.fuel_laps >= to_go and c.tire_age < tire_life * 0.8
-                                  and rng.random() < 0.35)
+                        # Crew chief's call: aggressive ones gamble on track position more often; good
+                        # strategists judge better whether the tires will really make it to the end.
+                        judged = (c.tire_age + to_go) / tire_life + rng.gauss(0, (100 - c.strategy) / 250)
+                        viable = c.fuel_laps >= to_go and judged < 0.95
+                        gamble = i < 10 and viable and rng.random() < 0.12 + c.cc_aggr / 220
                         (pitters if need and not gamble else stayers).append(c)
+                        if (need and not gamble and c.damage == 0 and 5 <= i and to_go < tire_life * 0.7
+                                and rng.random() < c.cc_aggr / 160):
+                            two_tires.add(c)
                     for c in pitters:
                         c.pits += 1
-                        c.tire_age, c.fuel_laps = 0, fuel_laps * (1 + c.fuel_save / 200)
+                        two = c in two_tires
+                        c.tire_age = c.tire_age // 2 if two else 0
+                        c.fuel_laps = fuel_laps * (1 + c.fuel_save / 200)
                         c.damage = c.damage * 0.4 if c.damage * 0.4 >= 0.3 else 0.0   # fixed what they could
-                        c._stop = _stop_time(stop_s, rng) + order.index(c) * 0.4  # noqa: SLF001
+                        c._stop = _stop_time(stop_s * (0.62 if two else 1.0), rng, c) + order.index(c) * 0.4  # noqa: SLF001
                         c.stint = rng.gauss(0, CAL["stint_sd"] * c.adjust)
                     stay = set(map(id, stayers))
                     rank = {id(c): i for i, c in enumerate(order)}
@@ -393,6 +454,9 @@ def run(entries: list[Entry], track: "Track", tier: int, car_weight: float, rng:
                                               rank[id(c)] if id(c) in stay else c._stop))  # noqa: SLF001
                     if pitters and stayers and order[0] is not leader:
                         say(lap, f"{who(order[0])} stays out and inherits the lead")
+                    fast2 = [c for c in pitters if c in two_tires][:1]
+                    if fast2:
+                        say(lap, f"{who(fast2[0])} takes two tires to gain track position")
                 # The field bunches up behind the pace car: each lap's cars in a tight line.
                 gap = min(0.3, lap_s * 0.5 / len(order))
                 base, slot = leader.time, {}
@@ -474,7 +538,7 @@ def run(entries: list[Entry], track: "Track", tier: int, car_weight: float, rng:
             sev = track.sim.crash_severity / 100
             for d in c.entry.drivers:
                 dur = (d.durability if hasattr(d, "durability") else 50)
-                if rng.random() < 0.05 * sev * injury_scale * (1.4 - dur / 100):
+                if rng.random() < 0.05 * sev * injury_scale * (1.4 - dur / 100) * c.injury:
                     injured.append(d.id)
         finishes.append(Finish(entry=c.entry, position=pos, pace=c.perf, dnf=not c.running,
                                crashed=c.crashed, injured=injured, expected_position=0, box=box))
@@ -484,7 +548,7 @@ def run(entries: list[Entry], track: "Track", tier: int, car_weight: float, rng:
         finishes[i].expected_position = rank
     return RaceResult(finishes=finishes, laps=n_laps, cautions=cautions, caution_laps=caution_laps,
                       lead_changes=lead_changes, leaders=len(leader_ids), margin=round(margin, 3),
-                      log=log, stages=stage_results)
+                      log=log, stages=stage_results, incidents=incidents, paybacks=paybacks)
 
 
 def driver_rating(pos: int, n: int, box: dict, laps: int) -> float:
