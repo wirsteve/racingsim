@@ -460,13 +460,22 @@ local divisions or most regional tours, so those stay generated.
 - **Series names are eras, not constants.** Winston → Nextel (2004) → Sprint (2008)
   → Monster Energy (2017) → NASCAR Cup Series (2020). The CART and IRL split ran
   1996–2007 and reunified in 2008. Both are recorded in `data/series_eras.json`.
-- **Age at national debut** (Cup regulars 1995–2026). Most debut in their early to
-  mid-twenties. The 1990s–2000s "young gun" wave pulled debut ages down and was
-  followed by a return to developmental mileage in the 2010s. Prospects are
-  therefore placed at their real ages, and their timing is left to the market.
-- **The import pipeline.** In open wheel a large share of national drivers were born
-  abroad (Brazil, the UK, Australia/New Zealand, Mexico, Japan…) and arrived in
-  their late teens or twenties having climbed European or other ladders. The game
+- **Age at the first full-time Cup season** (computed from `data/history/`, for
+  drivers whose first full-time season, ≥15 starts, came after 1995):
+
+  | Seasons | Drivers | Median age | Mean age |
+  |---|---|---|---|
+  | 1996–2005 | 51 | 31 | 31.0 |
+  | 2006–2015 | 42 | 26 | 26.6 |
+  | 2016–2025 | 41 | 25 | 25.4 |
+
+  The 2000s "young gun" era pulled the age down sharply. Prospects are placed at
+  their real ages, and their timing is left to the market.
+- **The import pipeline.** In open wheel, 213 of the 377 drivers in the top series
+  since 1995 (56%) were born outside the US and Canada, compared with 7 of 175 Cup
+  regulars. Most came from Brazil, the UK, Australia/New Zealand, Mexico or Japan
+  and arrived in their late teens or twenties after climbing European or other
+  ladders. The game
   models them as arrivals the year before their real debut rather than as American
   kids in karting.
 - **Inflation matters for a 1995 start.** All money is held in 2025 dollars and
