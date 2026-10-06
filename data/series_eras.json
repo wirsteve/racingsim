@@ -1534,6 +1534,32 @@
      "note": "DPi 2017-2022; GTP (LMDh/LMH) from 2023."
     }
    ]
+  },
+  "late_model_national": {
+   "eras": [
+    {
+     "from": 1995,
+     "to": 2004,
+     "name": "ASA National Tour",
+     "real_series": "American Speed Association National Tour",
+     "note": "ASA's national tour ended after 2004."
+    },
+    {
+     "from": 2005,
+     "to": 2022,
+     "name": null,
+     "real_series": null,
+     "note": "No national asphalt late-model tour; regional tours only."
+    },
+    {
+     "from": 2023,
+     "to": 2026,
+     "name": "ASA STARS National Tour",
+     "real_series": "ASA STARS National Tour",
+     "note": "Revived 2023 (Bob Sargent / Track Enterprises)."
+    }
+   ],
+   "region_names": {}
   }
  },
  "manufacturers": {

@@ -773,6 +773,33 @@
    "note": "MX-5 Cup analog: arrive-and-drive, driver-funded, scholarship ladder."
   },
   {
+   "key": "late_model_national",
+   "name": "National Late Model Tour",
+   "discipline": "stock_car",
+   "tier": 4,
+   "scope": "national",
+   "venues": [
+    "short_oval",
+    "mid_oval"
+   ],
+   "season_cost": 350000,
+   "events": 20,
+   "field_size": 30,
+   "prestige": 46,
+   "visibility": 40,
+   "car_weight": 0.5,
+   "min_age": 16,
+   "max_age": null,
+   "typical_age": [
+    18,
+    36
+   ],
+   "purse_win": 10000,
+   "license_min_tier": 2,
+   "license_min_starts": 10,
+   "note": "ASA National Tour (to 2004) / ASA STARS National Tour (2023+): the national asphalt late-model tour; mostly owner-driver and small-team efforts."
+  },
+  {
    "key": "stock_national_dev",
    "name": "National Stock Car Development Series",
    "discipline": "stock_car",

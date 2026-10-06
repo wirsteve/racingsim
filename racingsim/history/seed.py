@@ -146,10 +146,12 @@ def seed_national(world: "World", hist: HistoryDB) -> set[str]:
     created: dict[str, Driver] = {}
     national = {tpl for tpl, *_ in hist.all_sources()
                 if tpl in world.pyramid.templates and world.pyramid.templates[tpl].scope == "national"}
-    order = sorted(national, key=lambda k: -_tier(world, k))
-    for key in order:
-        series = world.pyramid.series.get(key)
-        season = hist.season(key, year)
+    pairs = [(world.pyramid.series.get(k), hist.season(k, year)) for k in national]
+    # Team-based real regional tours (e.g. Busch North / K&N East) are seeded the same way.
+    pairs += [(x, hist.raw_season(x.source, year)) for x in world.pyramid.active()
+              if x.source and x.template.team_based]
+    pairs.sort(key=lambda p: -(p[0].tier if p[0] is not None else 0))
+    for series, season in pairs:
         if series is None or series.dormant or not season:
             continue
         if not season.get("teams"):
@@ -219,7 +221,7 @@ def seed_national(world: "World", hist: HistoryDB) -> set[str]:
                 d.contract_years = world.rng.randint(1, 3)
                 d.max_tier = max(d.max_tier, tpl.tier)
         seeded.add(series.id)
-    world.real_drivers = {d.wiki: d.id for d in created.values() if getattr(d, "wiki", None)}
+    world.real_drivers = {(d.wiki or f"name:{d.name}"): d.id for d in created.values()}
     return seeded
 
 
