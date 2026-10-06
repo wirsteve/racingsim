@@ -72,6 +72,10 @@ class SeasonResults:
     equipment: dict[int, float] = field(default_factory=dict)
     track_laps: dict[int, dict] = field(default_factory=dict)  # driver -> {track type: laps run}
 
+    def __setstate__(self, state: dict) -> None:
+        state.setdefault("track_laps", {})   # mid-season saves from before the lap-by-lap engine
+        self.__dict__.update(state)
+
 
 def purse_for(position: int, field_size: int, purse_win: float) -> float:
     if purse_win <= 0:

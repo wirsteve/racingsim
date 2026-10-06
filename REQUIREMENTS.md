@@ -142,8 +142,8 @@ research must be recorded in the repository.
 | R12.1 | Component driver ratings (current/potential), track-type splits, personality; scouted display. | [x] |
 | R12.2 | Real drivers rated from race-by-race results. | [x] |
 | R12.3 | Lap-by-lap race engine with box scores, play-by-play and loop-data stats, calibrated to real data. | [x] |
-| R12.4 | Staff (crew chief, engineer, spotter, pit crew, engine builder, coach) with ratings and styles. | [ ] |
-| R12.5 | Morale, chemistry, contract negotiation driven by personality; on-track feuds and penalties. | [ ] |
+| R12.4 | Staff (crew chief, engineer, spotter, pit crew, engine builder, coach) with ratings and styles. | [x] |
+| R12.5 | Morale, chemistry, contract decisions driven by personality; on-track feuds and penalties. | [x] (negotiation terms - bonuses, clauses, buyouts - come with Phase 5) |
 | R12.6 | Splits, value metric, records, almanac, awards, Hall of Fame. | [ ] |
 | R12.7 | Team finances, fan base, owner goals, owner mode. | [ ] |
 | R12.8 | Scouting staff and budgets, development programs, realism settings, weather. | [ ] |

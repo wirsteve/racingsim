@@ -34,10 +34,10 @@ From the research. These are OOTP's design rules, translated to racing.
 | Ratings from history | Historical stats → ratings | Real NASCAR drivers rated from race-by-race results: qualifying vs race, laps led, positions gained, crash rate, track specialties | ✅ Phase 1 |
 | Scouting | Scout director ratings, budget, accuracy by age/region, league baseline | Error shrinks with the driver's exposure; 5-point steps; personality shown only as impressions | ◐ No scout staff, budget or media rankings yet |
 | Development and aging | Weighted random, coaching, playing time, personality, focus, development lab | Ability plus per-skill development: seat time, work ethic, intelligence; physical skills fade, savvy keeps growing; track types learned from laps; off-season coaching | ◐ No competition-level effect, focus sliders or off-season programs yet |
-| Personality | 6 traits; morale; chemistry | 7 traits (work ethic, intelligence, leadership, loyalty, greed, desire to win, temper) | ◐ Traits exist; morale, chemistry and contract effects come in Phase 3 |
-| Injuries | Types, body areas, proneness, re-injury, trainers | Races out, severity, durability | ◐ No injury types, concussion history, racing hurt or medical staff |
+| Personality | 6 traits; morale; chemistry | 7 traits; morale (race by race and season); rivalries from wrecks, paybacks with points, fines and suspensions; team chemistry; loyalty, desire to win and morale in contract decisions | ✅ Phase 3. Greed waits for negotiation (Phase 5) |
+| Injuries | Types, body areas, proneness, re-injury, trainers | Races out, severity, durability; team medical staff speed recovery and soften injuries | ◐ No injury types, concussion history or racing hurt |
 | Stats | Every stat, splits, logs, WAR | Per race: start, laps, laps led, status, ARP, passes, quality passes, fastest laps, pits, driver rating. Per season: poles, laps led, DNFs, average start/finish, rating, winnings, points | ◐ No track-type splits, value metric, records, almanac or HOF |
-| Team management / staff | Coaches, scouts, trainers with ratings | Teams have equipment and money only | ❌ Phase 2 |
+| Team management / staff | Coaches, scouts, trainers with ratings | Crew chiefs, spotters, pit crews, technical directors, engine builders, driver coaches, medical: ratings, styles, contracts, aging, firings, a staff market; retired drivers become staff; the player hires their own crew | ✅ Phase 2. Scouts come in Phase 6 |
 | Transactions | Trades, FA, contracts, options, waivers, draft | Silly-season market, pay seats, salaries, contract years, development programs, shootouts | ◐ No negotiation, bonuses, release clauses, development loans or buyouts |
 | Finances | Gate, media, merch, budgets, owner | The player's own car: real costs, purses, points funds; sponsors | ◐ No team finances, fan base or merchandise |
 | Career / GM | GM mode, reputation, firing, job offers | Driver career; reputation; team offers | ◐ No owner or crew-chief careers, no goals or firing |
@@ -57,8 +57,11 @@ Each phase is playable on its own and goes in as its own pull request.
 - Calibrated against real data. Remaining calibration gaps:
   - The strongest Cup entry can still win 9–14 races a season (real: 6–9). This is partly world composition: the best driver also has the best team.
   - Coarse-step AI races under-count lead changes.
+  - Laps down come from time gaps: green-flag stops and slow cars lose laps; the free pass gives one back.
+    - In a 36-car Cup field, lead-lap finishers average about 11 at Martinsville and 17 at Charlotte. Both are in the real range.
+    - Talladega averages 16 lead-lap finishers, low against the real 20–28. Our green-flag pit cycle there costs more laps than the draft would.
 
-### Phase 2: The people around the car
+### Phase 2: The people around the car ✅
 
 - **Staff entities with ratings and styles:**
   - crew chief (strategy aggression, setup, two-vs-four-tire calls);
@@ -71,7 +74,7 @@ Each phase is playable on its own and goes in as its own pull request.
 - **Crew-chief strategy in the engine:** pit calls under caution, fuel-only stops, staying out.
 - **Driver–crew-chief chemistry:** a setup preference such as loose vs tight.
 
-### Phase 3: Personality in action
+### Phase 3: Personality in action ✅ (bonuses, release clauses, buyouts, development loans and pit-road confrontations still to come)
 
 - **Morale:** results, equipment vs teammate, role, contract security.
 - **Team chemistry:** multi-car teams.

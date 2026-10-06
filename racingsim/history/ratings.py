@@ -17,6 +17,8 @@ from __future__ import annotations
 
 import math
 import sqlite3
+import re
+import unicodedata
 from collections import defaultdict
 from functools import lru_cache
 from typing import Optional
@@ -25,6 +27,13 @@ from ..util import clamp
 
 SOURCES = ("nascar_cup", "nascar_xfinity", "nascar_trucks")
 CRASH_WORDS = ("crash", "accident", "wreck", "spun", "collision")
+
+
+def name_key(name: str) -> str:
+    """Match names across sources: "A. J. Allmendinger" = "A.J. Allmendinger", "Suárez" = "Suarez"."""
+    s = unicodedata.normalize("NFKD", name or "").encode("ascii", "ignore").decode().lower()
+    s = re.sub(r"[^a-z ]+", " ", s)
+    return "".join(s.split())   # suffixes stay: Dale Earnhardt and Dale Earnhardt Jr. are two drivers
 
 
 def _track_type(name: str, length: Optional[float], surface: Optional[str]) -> str:
@@ -43,7 +52,7 @@ def _track_type(name: str, length: Optional[float], surface: Optional[str]) -> s
 
 @lru_cache(maxsize=4)
 def _rows(db_path: str, upto: int) -> dict[str, list[tuple]]:
-    """name -> [(track type, start pct, finish pct, led share, crashed, running, gained)] for races <= upto."""
+    """name key -> [(track type, start pct, finish pct, led share, crashed, running, gained)] for races <= upto."""
     conn = sqlite3.connect(f"file:{db_path}?mode=ro", uri=True)
     try:
         if not conn.execute("SELECT 1 FROM sqlite_master WHERE name = 'race_result'").fetchone():
@@ -74,13 +83,13 @@ def _rows(db_path: str, upto: int) -> dict[str, list[tuple]]:
             crashed = any(w in stat for w in CRASH_WORDS)
             running = stat.startswith("running") or (laps or 0) >= max_laps
             gained = ((start or pos) - pos) / n if running else 0.0
-            out[driver].append((tt, st, fin, (led or 0) / max_laps, crashed, running, gained))
+            out[name_key(driver)].append((tt, st, fin, (led or 0) / max_laps, crashed, running, gained))
     return dict(out)
 
 
 def profile(db_path: str, name: str, upto: int) -> Optional[dict]:
     """Skill offsets and track experience from a real driver's results; None if too few races."""
-    rows = _rows(db_path, upto).get(name)
+    rows = _rows(db_path, upto).get(name_key(name))
     if not rows or len(rows) < 10:
         return None
     n = len(rows)
@@ -119,4 +128,6 @@ def apply(d, prof: dict) -> None:
     for tt, v in prof["track_talent"].items():
         d.skills[f"tt_{tt}"] = round(v, 2)
     for tt, v in prof["track_exp"].items():
-        d.track_skill[tt] = max(d.track_skill.get(tt, 0.0), v)
+        d.skills[f"exp_{tt}"] = round(v, 3)       # floor for track_skills() when it is built
+        if d.track_skill:
+            d.track_skill[tt] = max(d.track_skill.get(tt, 0.0), v)
