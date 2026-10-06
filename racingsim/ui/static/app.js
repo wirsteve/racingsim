@@ -134,7 +134,7 @@ function renderChrome() {
   const inGame = st.phase !== "none";
   $$("#nav a").forEach((a) => {
     const n = a.dataset.nav;
-    a.style.display = !inGame && !["new", "saves"].includes(n) ? "none" : "";
+    a.style.display = !inGame && !["new", "saves", "encyclopedia"].includes(n) ? "none" : "";
   });
   $("#nav-offseason").classList.toggle("attention", st.phase === "offseason");
   if (!inGame) {
@@ -891,7 +891,7 @@ async function encyclopediaPage(tab = "overview", arg) {
       <div class="ladder">${(p.steps || []).map((s, i) => `<div class="ladder-step"><div class="t">${i + 1}. ${esc(s.stage || "")}</div>
         <div class="small">${(s.series_names || []).map((x) => (x.id && String(x.id).startsWith("series:") ? `<a class="link" href="#/encyclopedia/series/${encodeURIComponent(x.id)}">${esc(x.name)}</a>` : esc(x.name || x))).join(" · ")}</div>
         <div class="muted small">age ${factText(s.typical_age)} · ${factText(s.typical_years)} yrs · moves up ${s.advance_share ? factText({ ...s.advance_share, min: s.advance_share.min != null ? Math.round(s.advance_share.min * 100) : null, max: s.advance_share.max != null ? Math.round(s.advance_share.max * 100) : null, unit: "%" }) : "—"}</div>
-        ${s.gating ? `<div class="gating">${Object.entries(s.gating).map(([k, v]) => `<span title="${esc(k)}">${esc(k)} <i style="width:${Math.round((+v || 0) * 100)}%"></i></span>`).join("")}</div>` : ""}
+        ${s.gating ? `<div class="gating">${Object.entries(s.gating).map(([k, v]) => `<span title="${esc(k)} ${Math.round((+v || 0) * 100)}%">${esc(k)} <i style="width:${Math.max(2, Math.round((+v || 0) * 90))}px"></i></span>`).join("")}</div>` : ""}
         ${s.notes ? `<div class="small" style="margin-top:4px">${esc(s.notes)}</div>` : ""}</div>`).join('<div class="ladder-arrow">↓</div>')}</div>
       ${(p.crossovers || []).length ? `<h3 style="margin-top:12px">Crossovers</h3><ul class="timeline">${p.crossovers.map((c) => `<li>${esc(c.from_name || c.from || "")} → ${esc(c.to_name || c.to || "")} <span class="muted">(${esc(c.frequency || "")})</span> ${esc(c.notes || "")}</li>`).join("")}</ul>` : ""}
       ${(p.dead_ends || []).length ? `<h3 style="margin-top:12px">Dead ends</h3><ul class="timeline">${p.dead_ends.map((d) => `<li>${esc(typeof d === "string" ? d : JSON.stringify(d))}</li>`).join("")}</ul>` : ""}
