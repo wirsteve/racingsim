@@ -105,6 +105,7 @@ class HistoryDB:
         self._season_cache: dict = {}
         self._careers: Optional[dict] = None
         self._bios: Optional[dict] = None
+        self._linked: Optional[list] = None
         row = self.conn.execute("SELECT value FROM meta WHERE key='tracks_matched'").fetchone()
         self._matched = bool(row and row[0] == "1")
 
@@ -128,11 +129,12 @@ class HistoryDB:
 
     # ------------------------------------------------------------------ loading
     @classmethod
-    def load(cls, directory: Path = HISTORY_DIR, tracks=None) -> Optional["HistoryDB"]:
+    def load(cls, directory: Path = HISTORY_DIR, tracks=None,
+             knowledge_dir: Optional[Path] = None) -> Optional["HistoryDB"]:
         """Build an in-memory database straight from a folder of JSON files."""
         if not directory.exists() or not store._season_dirs(directory):
             return None
-        return cls(store.build(directory, ":memory:", tracks), source_dir=directory)
+        return cls(store.build(directory, ":memory:", tracks, knowledge_dir=knowledge_dir), source_dir=directory)
 
     @classmethod
     def open(cls, path: Path) -> "HistoryDB":
@@ -151,10 +153,27 @@ class HistoryDB:
         return out
 
     def _source_for(self, template_key: str, year: int) -> Optional[str]:
-        for d, lo, hi in SOURCES.get(template_key, []):
+        for d, lo, hi in self.sources_for(template_key):
             if lo <= year <= hi and self._has(d, year):
                 return d
         return None
+
+    def sources_for(self, template_key: str) -> list[tuple[str, int, int]]:
+        """(history source, first year, last year) feeding a NATIONAL rung: built-in + knowledge-linked."""
+        out = list(SOURCES.get(template_key, []))
+        tpl = _templates().get(template_key)
+        if tpl is not None and tpl.scope == "national":
+            out += [(x["source"], x["from"], x["to"]) for x in self.linked_series() if x["template"] == template_key
+                    and x["source"] not in {d for d, _, _ in out}]
+        return out
+
+    def all_sources(self) -> list[tuple[str, str, int, int]]:
+        """(template, source, first, last) for every history source with a game rung."""
+        out = [(tpl, d, lo, hi) for tpl, srcs in SOURCES.items() for d, lo, hi in srcs]
+        known = {d for _, d, _, _ in out}
+        out += [(x["template"], x["source"], x["from"], x["to"]) for x in self.linked_series()
+                if x["source"] not in known and x["template"] in _templates()]
+        return out
 
     def _has(self, source: str, year: int) -> bool:
         key = ("has", source, year)
@@ -214,6 +233,65 @@ class HistoryDB:
         self._sched_cache[key] = out
         return out
 
+    # ------------------------------------------------------------------ real series from the knowledge layer
+    def linked_series(self) -> list[dict]:
+        """Real series that play a game rung (``game_template``) and have history data (``history_source``)."""
+        if getattr(self, "_linked", None) is None:
+            try:
+                rows = self.conn.execute(
+                    "SELECT id, name, doc FROM series_info WHERE game_template IS NOT NULL "
+                    "AND history_source IS NOT NULL").fetchall()
+            except sqlite3.OperationalError:  # databases built before the knowledge layer
+                rows = []
+            out = []
+            for sid, name, doc in rows:
+                d = json.loads(doc)
+                src = d["history_source"]
+                yrs = sorted(self.seasons.get(src, []))
+                span = d.get("years") or {}
+                lo = span.get("from") or (yrs[0] if yrs else None)
+                hi = span.get("to") or (yrs[-1] if yrs else None)
+                if lo is None:
+                    continue
+                out.append({"id": sid, "key": sid.split(":", 1)[-1], "name": name, "template": d["game_template"],
+                            "source": src, "from": lo, "to": hi or 2100, "names_by_year": d.get("names_by_year") or [],
+                            "regions": d.get("regions") or [], "data_years": yrs})
+            self._linked = out
+        return self._linked
+
+    def series_name(self, linked: dict, year: int) -> str:
+        names = linked["names_by_year"]
+        for n in names:
+            if (n.get("from") or 0) <= year <= (n.get("to") or 2100) and n.get("name"):
+                return n["name"]
+        doc = self.raw_season(linked["source"], year)
+        return (doc or {}).get("official_name") or linked["name"]
+
+    def schedule_source(self, source: str, year: int, tracks) -> Optional[list[str]]:
+        """Matched calendar of any history source (≥60% of races placed at known tracks)."""
+        key = ("src", source, year)
+        if key not in self._sched_cache:
+            rows = self.conn.execute(
+                "SELECT track_id, track, city, state, race FROM race WHERE source=? AND year=? AND cancelled=0 "
+                "ORDER BY round", (source, year)).fetchall()
+            ids = []
+            for tid, name, city, state, race in rows:
+                if not self._matched or (tid and tid not in tracks):
+                    tid = match_track(tracks, name, city, state, race or "", year)
+                if tid:
+                    ids.append(tid)
+            self._sched_cache[key] = ids if rows and len(ids) >= max(3, 0.6 * len(rows)) else None
+        return self._sched_cache[key]
+
+    def venues(self, source: str) -> list[str]:
+        """Every track a series has raced at in the data, most-used first."""
+        key = ("venues", source)
+        if key not in self._sched_cache:
+            self._sched_cache[key] = [t for (t,) in self.conn.execute(
+                "SELECT track_id FROM race WHERE source=? AND track_id IS NOT NULL GROUP BY track_id "
+                "ORDER BY COUNT(*) DESC", (source,))]
+        return self._sched_cache[key]
+
     # ------------------------------------------------------------------ careers
     def careers(self) -> dict[str, list[dict]]:
         """wiki title -> list of seasons {year, template, tier, pos, n, wins, starts, team} (all series)."""
@@ -226,22 +304,36 @@ class HistoryDB:
                                      "FROM standing WHERE wiki IS NOT NULL"):
             rows_by_source.setdefault(row[0], []).append(row)
         out: dict[str, list[dict]] = {}
-        for tpl, sources in SOURCES.items():
-            for d, lo, hi in sources:
-                for src, year, pos, w, points, wins, starts, top5, top10, team in rows_by_source.get(d, []):
-                    if not (lo <= year <= hi):
-                        continue
-                    name, n, field = meta[(src, year)]
-                    out.setdefault(w, []).append({
-                        "year": year, "template": tpl, "tier": TEMPLATE_TIER[tpl], "pos": pos,
-                        "n": n, "field": field, "wins": wins or 0, "starts": starts,
-                        "top5": top5, "top10": top10, "points": points,
-                        "series_name": name, "team": team or "",
-                    })
+        tpls = _templates()
+        for tpl, d, lo, hi in self.all_sources():
+            tier = TEMPLATE_TIER.get(tpl) or tpls[tpl].tier
+            for src, year, pos, w, points, wins, starts, top5, top10, team in rows_by_source.get(d, []):
+                if not (lo <= year <= hi):
+                    continue
+                name, n, field = meta[(src, year)]
+                out.setdefault(w, []).append({
+                    "year": year, "template": tpl, "tier": tier, "pos": pos,
+                    "n": n, "field": field, "wins": wins or 0, "starts": starts,
+                    "top5": top5, "top10": top10, "points": points,
+                    "series_name": name, "team": team or "",
+                })
         for w in out:
             out[w].sort(key=lambda x: (x["year"], -x["tier"]))
         self._careers = out
         return out
+
+
+@lru_cache(maxsize=1)
+def _templates() -> dict:
+    from ..world.series import load_templates
+    return {t.key: t for t in load_templates()[0]}
+
+
+def template_discipline(key: str) -> str:
+    if key in TEMPLATE_DISCIPLINE:
+        return TEMPLATE_DISCIPLINE[key]
+    t = _templates().get(key)
+    return t.discipline if t else "stock_car"
 
 
 @lru_cache(maxsize=1)

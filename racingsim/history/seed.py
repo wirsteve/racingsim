@@ -18,7 +18,7 @@ from typing import TYPE_CHECKING, Optional
 from ..constants import TIER_SPREAD, TIER_STRENGTH
 from ..util import clamp
 from ..world.entities import ACTIVE, DISCIPLINES, Driver, SeasonRecord, Team
-from .db import SOURCES, TEMPLATE_DISCIPLINE, HistoryDB
+from .db import HistoryDB, template_discipline
 
 if TYPE_CHECKING:
     from ..world.series import Series
@@ -49,11 +49,13 @@ def _split_name(name: str) -> tuple[str, str]:
     return parts[0], " ".join(parts[1:])
 
 
-def _home(world: "World", bio: dict, discipline: str):
+def _home(world: "World", bio: dict, discipline: str, fallback: Optional[str] = None):
     state = (bio.get("state") or "").upper()
     country = bio.get("country") or "USA"
     if state in world.geo.regions:
         return world.geo.get(state), country
+    if fallback and not bio.get("country"):
+        return world.geo.get(fallback), country
     if country == "CAN":
         return world.geo.get("ON"), country
     hub = FOREIGN_HUB.get(discipline, "NC")
@@ -61,7 +63,8 @@ def _home(world: "World", bio: dict, discipline: str):
 
 
 def make_real_driver(world: "World", hist: HistoryDB, wiki: Optional[str], name: str, discipline: str,
-                     year: int, *, team_equipment: float = 60.0, default_age: int = 28) -> Driver:
+                     year: int, *, team_equipment: float = 60.0, default_age: int = 28,
+                     home: Optional[str] = None) -> Driver:
     rng = world.rng
     bio = hist.bio(wiki)
     rows = hist.careers().get(wiki or "", [])
@@ -70,7 +73,7 @@ def make_real_driver(world: "World", hist: HistoryDB, wiki: Optional[str], name:
         first = rows[0]["year"] if rows else year
         by = first - 23 if rows else year - default_age
     age = year - by
-    region, country = _home(world, bio, discipline)
+    region, country = _home(world, bio, discipline, home)
     near = [r for r in rows if abs(r["year"] - year) <= 1]
     past = [r for r in rows if r["year"] < year]
     future = [r for r in rows if r["year"] >= year]
@@ -117,7 +120,7 @@ def make_real_driver(world: "World", hist: HistoryDB, wiki: Optional[str], name:
     for r in past:
         series_id = r["template"] if r["template"] in world.pyramid.series else r["template"]
         pct = clamp(1 - ((r.get("pos") or r["n"]) - 1) / max(1, r["n"] - 1), 0, 1)
-        rec = SeasonRecord(year=r["year"], series_id=series_id, tier=r["tier"], discipline=TEMPLATE_DISCIPLINE[r["template"]],
+        rec = SeasonRecord(year=r["year"], series_id=series_id, tier=r["tier"], discipline=template_discipline(r["template"]),
                            team_id=None, starts=r.get("starts") or 0, wins=r.get("wins") or 0, top5=r.get("top5") or 0,
                            avg_finish=0.0, expected_finish=0.0, championship_pos=r.get("pos") or r["field"],
                            field_size=r["field"], champion=r.get("pos") == 1, series_name=r.get("series_name") or "",
@@ -141,12 +144,18 @@ def seed_national(world: "World", hist: HistoryDB) -> set[str]:
     year = world.year
     seeded: set[str] = set()
     created: dict[str, Driver] = {}
-    order = sorted(SOURCES, key=lambda k: -_tier(world, k))
+    national = {tpl for tpl, *_ in hist.all_sources()
+                if tpl in world.pyramid.templates and world.pyramid.templates[tpl].scope == "national"}
+    order = sorted(national, key=lambda k: -_tier(world, k))
     for key in order:
         series = world.pyramid.series.get(key)
         season = hist.season(key, year)
-        if series is None or series.dormant or not season or not season.get("teams"):
+        if series is None or series.dormant or not season:
             continue
+        if not season.get("teams"):
+            season = dict(season, teams=_teams_from_standings(season, series.template))
+            if not season["teams"]:
+                continue
         tpl = series.template
         standings = {r.get("wiki") or r.get("name"): r for r in season.get("standings") or []}
         n = max(len(standings), 2)
@@ -214,6 +223,47 @@ def seed_national(world: "World", hist: HistoryDB) -> set[str]:
     return seeded
 
 
+def seed_tours(world: "World", hist: HistoryDB) -> int:
+    """The start year's real regulars of real touring series (self-run rungs), placed in their tours."""
+    year, rng = world.year, world.rng
+    careers = hist.careers()
+    placed = 0
+    for s in sorted(world.pyramid.active(), key=lambda x: -x.tier):
+        if not s.source or s.template.team_based:
+            continue
+        doc = hist.raw_season(s.source, year)
+        if not doc or not doc.get("standings"):
+            continue
+        st = [r for r in doc["standings"] if r.get("name")]
+        races = len([r for r in doc.get("schedule") or [] if not r.get("cancelled")]) or s.template.events
+        regs = [r for r in st if (r.get("starts") or 0) >= 0.4 * races]
+        if not regs:
+            regs = [r for r in st if r.get("pos")][: s.template.field_size]
+        regs = regs[: int(s.template.field_size * 1.2)]
+        states = sorted(c for c, r in world.geo.regions.items() if r.macro_region == s.region_key)
+        for r in regs:
+            key = r.get("wiki") or f"name:{r['name']}"
+            if key in world.real_drivers:
+                continue
+            # Short-track regulars rarely have documented birth dates: age is an estimate.
+            d = make_real_driver(world, hist, r.get("wiki"), r["name"], s.discipline, year,
+                                 default_age=int(rng.triangular(19, 45, 27)),
+                                 home=rng.choice(states) if states else None)
+            if not careers.get(r.get("wiki") or ""):
+                row = {"tier": s.tier, "n": max(len(regs), 2), "pos": r.get("pos") or len(st), "wins": r.get("wins"),
+                       "starts": r.get("starts"), "field": len(st)}
+                d.ability = d.demonstrated = clamp(row_level(row) + rng.gauss(0, 2), 10, 92)
+                d.potential = clamp(d.ability + rng.uniform(0, 6), d.ability, 95)
+                d.reputation = clamp(8 + s.tier * 7 + (r.get("wins") or 0) * 2)
+                d.max_tier = s.tier
+            d.family_budget = max(d.family_budget, s.template.season_cost * rng.uniform(0.9, 1.4))
+            world.drivers[d.id] = d
+            world._seat(d, s, None)
+            world.real_drivers[key] = d.id
+            placed += 1
+    return placed
+
+
 def seed_prospects(world: "World", hist: HistoryDB) -> int:
     """Real drivers whose national careers start after the start year."""
     from ..career.market import choose_self_run
@@ -231,7 +281,7 @@ def seed_prospects(world: "World", hist: HistoryDB) -> int:
     world.history_entrants = {}
     for wiki, rows, by in pending:
         age = year - by
-        disc = TEMPLATE_DISCIPLINE[rows[0]["template"]]
+        disc = template_discipline(rows[0]["template"])
         if is_import(hist, wiki):
             # Raised abroad: they arrive in North American racing the year before their debut.
             arrival = rows[0]["year"] - 1
@@ -321,9 +371,22 @@ def history_entrants(world: "World", next_year: int) -> int:
     for wiki in entrants:
         rows = careers.get(wiki)
         if rows and wiki not in world.real_drivers:
-            if place_prospect(world, hist, wiki, rows, TEMPLATE_DISCIPLINE[rows[0]["template"]]):
+            if place_prospect(world, hist, wiki, rows, template_discipline(rows[0]["template"])):
                 n += 1
     return n
+
+
+def _teams_from_standings(season: dict, tpl) -> list[dict]:
+    """Many short-track/dirt series publish standings but no entry lists: regulars become one-car teams."""
+    st = [r for r in season.get("standings") or [] if r.get("name")]
+    races = len([r for r in season.get("schedule") or [] if not r.get("cancelled")]) or tpl.events
+    regs = [r for r in st if (r.get("starts") or 0) >= 0.5 * races] or [r for r in st if r.get("pos")][: tpl.field_size]
+    teams = []
+    for r in regs[: tpl.field_size]:
+        name = r.get("team") or f"{r['name'].split()[-1]} Racing"
+        teams.append({"team": name, "manufacturer": None,
+                      "cars": [{"full_time": True, "drivers": [{"name": r["name"], "wiki": r.get("wiki")}]}]})
+    return teams
 
 
 def _tier(world: "World", key: str) -> int:

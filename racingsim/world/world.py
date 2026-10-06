@@ -67,7 +67,8 @@ class World:
             from ..history import HistoryDB
             self.history = HistoryDB.load_default()
         self.pyramid: Pyramid = build_pyramid(self.tracks, self.geo, self.rng, year=self.year,
-                                              schedule_provider=self.schedule_provider)
+                                              schedule_provider=self.schedule_provider,
+                                              tours=self.tour_provider)
         self.drivers: dict[int, Driver] = {}
         self.teams: dict[int, Team] = {}
         self.sponsors: dict[int, Sponsor] = {}
@@ -109,7 +110,8 @@ class World:
     def advance_pyramid(self, year: int) -> None:
         """Move the racing world to ``year``: renamed series, new/dormant rungs, venues opening/closing."""
         from .factory import make_teams_for_series
-        born, died = self.pyramid.refresh(year, self.tracks, self.geo, self.rng, self.schedule_provider)
+        born, died = self.pyramid.refresh(year, self.tracks, self.geo, self.rng, self.schedule_provider,
+                                          self.tour_provider)
         dead_ids = {s.id for s in died}
         for d in self.drivers.values():
             if d.series_id in dead_ids:
@@ -136,6 +138,48 @@ class World:
         hist = getattr(self, "history", None)
         return hist.schedule(template_key, year, self.tracks) if hist is not None else None
 
+    def tour_provider(self, tpl, year: int) -> list[dict]:
+        """Real regional touring series playing rung ``tpl`` in ``year`` (from the knowledge layer + history)."""
+        hist = getattr(self, "history", None)
+        if hist is None:
+            return []
+        out = []
+        for link in hist.linked_series():
+            if link["template"] != tpl.key or not (link["from"] <= year <= link["to"]):
+                continue
+            sched = hist.schedule_source(link["source"], year, self.tracks)
+            real = bool(sched)
+            if not sched:
+                # No calendar for this season in the data: race at the venues the series is known to use.
+                pool = [t for t in hist.venues(link["source"])
+                        if t in self.tracks and self.tracks.get(t).facts.available_in(year)]
+                if len(pool) < 2:
+                    continue
+                local = random.Random(f"{link['key']}:{year}:{self.config.seed}")
+                pool = pool[: max(tpl.events, 6)]
+                sched = [pool[i % len(pool)] for i in range(tpl.events)]
+                local.shuffle(sched)
+            macro = self._macro_of(sched + hist.venues(link["source"])[:12], link.get("regions") or [])
+            if macro is None:
+                continue
+            out.append({"key": link["key"], "source": link["source"], "name": hist.series_name(link, year),
+                        "macro": macro, "schedule": sched, "real": real})
+        return out
+
+    def _macro_of(self, track_ids: list[str], states: list[str]):
+        from collections import Counter
+        votes = Counter()
+        for tid in track_ids:
+            if tid in self.tracks:
+                r = self.geo.regions.get(self.tracks.get(tid).facts.region or "")
+                if r:
+                    votes[r.macro_region] += 1
+        for code in states:
+            r = self.geo.regions.get(code)
+            if r:
+                votes[r.macro_region] += 0.5
+        return votes.most_common(1)[0][0] if votes else None
+
     def region(self, code: str) -> Region:
         return self.geo.get(code)
 
@@ -152,6 +196,8 @@ class World:
         if w.history is not None:
             from ..history.seed import seed_national
             seeded = seed_national(w, w.history)
+            from ..history.seed import seed_tours
+            seed_tours(w, w.history)
         for series in sorted(w.pyramid.series.values(), key=lambda s: -s.tier):
             if series.template.team_based:
                 w._populate_team_series(series, existing=series.id in seeded)
@@ -191,7 +237,9 @@ class World:
         tpl = series.template
         n = max(4, int(round(tpl.field_size * self.config.fill_by_tier[tpl.tier]
                              * self.config.population_scale * self.rng.uniform(0.7, 1.3))))
-        for _ in range(n):
+        if series.source:  # real tour: its real regulars are already seated; fill up around them
+            n -= sum(1 for d in self.drivers.values() if d.series_id == series.id)
+        for _ in range(max(0, n)):
             region, near = self._home_for(series)
             age = self._age_for(series)
             d = make_driver(self, discipline=tpl.discipline, age=age, region=region,

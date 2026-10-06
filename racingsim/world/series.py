@@ -114,6 +114,8 @@ class Series:
     label: str = ""                  # track short name / region label used in the name
     dormant: bool = False            # rung or venue does not exist this season
     real_schedule: bool = False      # schedule taken from the real calendar of that year
+    source: Optional[str] = None     # history source of a real touring series (None = generated)
+    real_name: str = ""              # that year's real name (real touring series)
 
     # Convenience pass-throughs
     @property
@@ -177,7 +179,7 @@ class Pyramid:
         return self.series[series_id]
 
     def refresh(self, year: int, tracks: TrackDatabase, geo: Geography, rng: random.Random,
-                schedule_provider=None) -> tuple[list[Series], list[Series]]:
+                schedule_provider=None, tours=None) -> tuple[list[Series], list[Series]]:
         """Move the pyramid to ``year``. Returns (newly active series, newly dormant series)."""
         self.year = year
         born, died = [], []
@@ -196,6 +198,9 @@ class Pyramid:
                     alive = exists and s.region_key in eligible
                     _flip(s, alive, born, died)
             elif tpl.scope == "region":
+                # Real touring series (where the data has them) replace the generated tour of their region.
+                real_tours = tours(tpl, year) if (tours and exists) else []
+                covered = {t["macro"] for t in real_tours}
                 for macro in (tpl.macro_regions or geo.macro_regions()):
                     sid = f"{tpl.key}@{macro}"
                     sched = _regional_schedule(tpl, tracks, geo, rng, macro, year) if exists else []
@@ -208,7 +213,24 @@ class Pyramid:
                     s = self.series[sid]
                     if sched:
                         s.schedule = sched
-                    _flip(s, exists and bool(sched), born, died)
+                    _flip(s, exists and bool(sched) and macro not in covered, born, died)
+                live = set()
+                for t in real_tours:
+                    sid = f"{tpl.key}@{t['key']}"
+                    live.add(sid)
+                    if sid not in self.series:
+                        self.series[sid] = Series(id=sid, template=tpl, name=t["name"], region_key=t["macro"],
+                                                  schedule=t["schedule"], label=t["name"], source=t["source"],
+                                                  dormant=True)
+                    s = self.series[sid]
+                    s.schedule, s.real_schedule, s.real_name = t["schedule"], t["real"], t["name"]
+                    s.region_key = t["macro"]
+                    pts = [tracks.get(x).facts for x in t["schedule"]]
+                    s.anchor_lat = sum(f.lat or 0 for f in pts) / len(pts)
+                    s.anchor_lon = sum(f.lon or 0 for f in pts) / len(pts)
+                    _flip(s, True, born, died)
+                for s in [x for x in self.series.values() if x.template is tpl and x.source and x.id not in live]:
+                    _flip(s, False, born, died)
             else:
                 real = schedule_provider(tpl.key, year) if (schedule_provider and exists) else None
                 sched = real or (_national_schedule(tpl, tracks, rng, year) if exists else [])
@@ -227,7 +249,10 @@ class Pyramid:
                     s.anchor_lon = sum(f.lon or 0 for f in pts) / len(pts)
                 _flip(s, exists and bool(sched), born, died)
         for s in self.series.values():
-            s.name = s.template.display_name(year, s.label, s.region_key if s.scope == "region" else None)
+            if s.source:
+                s.name = s.real_name or s.name
+            else:
+                s.name = s.template.display_name(year, s.label, s.region_key if s.scope == "region" else None)
         return born, died
 
 
@@ -272,14 +297,14 @@ def load_templates() -> tuple[list[SeriesTemplate], list[dict], dict[int, str]]:
 
 def build_pyramid(tracks: TrackDatabase, geo: Geography, rng: random.Random,
                   templates: Optional[list[SeriesTemplate]] = None, year: int = 2026,
-                  schedule_provider=None) -> Pyramid:
+                  schedule_provider=None, tours=None) -> Pyramid:
     loaded, jewels_raw, tier_names = load_templates()
     templates = templates or loaded
     known = set(CrownJewel.__dataclass_fields__)
     jewels = [CrownJewel(**{k: v for k, v in j.items() if k in known})
               for j in jewels_raw if j["track_id"] in tracks]
     pyramid = Pyramid(templates, [], jewels, tier_names, year)
-    pyramid.refresh(year, tracks, geo, rng, schedule_provider)
+    pyramid.refresh(year, tracks, geo, rng, schedule_provider, tours)
     # Start-of-world series are not "new" in any narrative sense.
     for s in list(pyramid.series.values()):
         if s.dormant or not s.schedule:
