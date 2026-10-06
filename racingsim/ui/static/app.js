@@ -163,7 +163,8 @@ function renderChrome() {
     pc.innerHTML = `<div class="pc"><div class="name">${esc(p.name)}</div>
       <div class="meta">Age ${p.age} · ${statusBadge(p.status)}</div>
       <div class="line">${p.series ? `${tierBadge(p.series.tier, p.series.tier_name)} ${esc(p.series.name)}` : '<span class="meta">No ride</span>'}</div>
-      <div class="line meta">${p.team ? esc(p.team.name) : "Own car"} · ${money(p.funding)} budget</div></div>`;
+      <div class="line meta">${p.team ? esc(p.team.name) : "Own car"} · ${money(p.funding)} budget</div>
+      ${p.owned_team ? `<div class="line meta">Owner: <a class="link" href="#/team/${p.owned_team.id}">${esc(p.owned_team.name)}</a></div>` : ""}</div>`;
   } else pc.innerHTML = "";
 }
 
@@ -371,6 +372,8 @@ async function driverPage(id) {
       ${r.personality ? `<div class="card"><h3>Personality</h3><dl class="kv">${r.personality.map((p) => `<dt title="${esc(p.about)}">${esc(p.label)}</dt><dd>${p.value != null ? p.value + " · " : ""}${esc(p.word)}</dd>`).join("")}</dl>
         <p class="muted small">${r.exact ? "You know yourself." : "Paddock impressions, not numbers."} Work ethic and intelligence drive development; loyalty, greed and desire to win shape contract decisions; temper shows on track.</p>
         ${r.mood ? `<h4>Mood</h4><dl class="kv"><dt>Morale</dt><dd>${r.mood.morale != null ? r.mood.morale + " · " : ""}${esc(r.mood.word)}</dd>
+          ${r.mood.goal ? `<dt>Owner's goal</dt><dd>${esc(r.mood.goal.label)} <span class="muted small">(${r.mood.goal.year})</span>${r.mood.goal.result ? ` · <b>${esc(r.mood.goal.result)}</b>${r.mood.goal.pos ? ` (P${r.mood.goal.pos})` : ""}` : ""}</dd>` : ""}
+          ${r.mood.security_word ? `<dt>Job security</dt><dd>${r.mood.security != null ? r.mood.security + " · " : ""}${esc(r.mood.security_word)}</dd>` : ""}
           ${r.mood.suspension ? `<dt>Suspended</dt><dd>${r.mood.suspension} race${r.mood.suspension === 1 ? "" : "s"}</dd>` : ""}
           <dt>Rivals</dt><dd>${r.mood.rivals.length ? r.mood.rivals.map((x) => `${driverLink(x.id, x.name)} <span class="muted small">(${esc(x.word)})</span>`).join(", ") : "<span class=\"muted\">none</span>"}</dd></dl>
           <p class="muted small">Confident drivers are a little faster and develop faster. Get wrecked and you remember who did it.</p>` : ""}</div>` : ""}
@@ -381,6 +384,7 @@ async function driverPage(id) {
           <dt>Category</dt><dd>${esc(d.category)} <span class="muted small">(sports-car rating)</span></dd>
           <dt>Best level</dt><dd>${tierBadge(d.max_tier)}</dd>
           <dt>Starts / wins</dt><dd>${d.starts} / ${d.wins}</dd>
+          ${d.fans ? `<dt>Fans</dt><dd>${esc(d.fans.label)}${d.fans.rank ? ` <span class="muted small">(#${d.fans.rank})</span>` : ""}</dd>` : ""}
           <dt>Momentum</dt><dd>${d.momentum > 5 ? "📈 hot" : d.momentum < -5 ? "📉 cold" : "steady"} (${d.momentum})</dd>
           ${d.program ? `<dt>Program</dt><dd><span class="badge good">${esc(d.program)} development</span></dd>` : ""}
           ${d.contract_years !== null && d.contract_years !== undefined ? `<dt>Contract</dt><dd>${d.contract_years} yr left · ${d.funded ? "funded seat" : "driver-funded"}</dd>` : ""}
@@ -434,6 +438,7 @@ function renderOffseason(o) {
   const teams = o.choices.filter((c) => c.kind === "team");
   const selfs = o.choices.filter((c) => c.kind === "self");
   const stay = o.choices.find((c) => c.kind === "stay");
+  const ownSeat = o.choices.find((c) => c.kind === "own_team");
   const s = o.season;
   const me = o.driver;
   const recap = s ? `<div class="callout"><b>${S.status.year} season:</b> P${s.pos} of ${s.field} in the ${esc(s.series.name)} — ${s.wins} wins, ${s.top5} top-5s in ${s.starts} starts (avg finish ${s.avg_finish}).${s.champion ? " <b>Champion!</b> 🏆" : ""}</div>`
@@ -457,6 +462,8 @@ function renderOffseason(o) {
       <div class="grid">
         ${stay ? `<div class="card"><h3>Your contract</h3><p>You're under contract with ${teamLink(stay.team)} in the ${seriesLink(stay.series)} (${stay.contract_years} more season${stay.contract_years > 1 ? "s" : ""}). Only a promotion will pry you loose.</p>
           <button class="primary" data-act="choose" data-id="stay">Stay put</button></div>` : ""}
+        ${ownSeat ? `<div class="card"><h3>Your own team</h3><p>Drive for ${teamLink(ownSeat.team)} in the ${seriesLink(ownSeat.series)}. The car is yours: no salary, and any losses come out of your savings.</p>
+          <button class="primary" data-act="choose" data-id="own_team">Drive my own car</button></div>` : ""}
         <div class="card"><div class="card-head"><h3>Team offers (${teams.length})</h3><span class="muted small">Owners who would pick you over the competition right now</span></div>
           ${teams.length ? `<div class="offers">${teams.map(offerCard).join("")}</div>` : `<div class="empty">No team wants you yet. Win, get seen at crown jewels, bring money, or build connections.</div>`}
         </div>
@@ -479,6 +486,7 @@ function renderOffseason(o) {
         <div class="card"><h3>Off-season actions</h3><p class="muted small">One of each per off-season. Do these before choosing a ride — owners re-evaluate you.</p>
           ${o.actions.map((a) => `<div style="margin:10px 0"><div><b>${esc(a.label)}</b></div><div class="muted small">${esc(a.detail)}</div>
             ${a.id === "relocate" ? `<select id="relocate-to" ${a.used ? "disabled" : ""}>${o.regions.map((r) => `<option value="${r.code}" ${r.code === me.home ? "selected" : ""}>${esc(r.name)}${Object.keys(r.hubs || {}).length ? " ★ hub" : ""}</option>`).join("")}</select>` : ""}
+            ${a.options ? `<select id="act-arg-${esc(a.id)}" ${a.used ? "disabled" : ""}>${a.options.map((x) => `<option value="${esc(x.value)}" ${x.selected ? "selected" : ""}>${esc(x.label)}</option>`).join("")}</select>` : ""}
             <button class="small" style="margin-top:6px" data-act="action" data-id="${a.id}" ${a.used ? "disabled" : ""}>${a.used ? "Done" : "Do it"}</button></div>`).join("")}
         </div>
         <div class="card"><h3>Where you stand</h3>
@@ -507,7 +515,8 @@ on("retire", async () => {
 });
 on("action", async (el) => {
   const id = el.dataset.id;
-  const arg = id === "relocate" ? $("#relocate-to").value : undefined;
+  const argEl = $("#act-arg-" + id);
+  const arg = id === "relocate" ? $("#relocate-to").value : argEl ? argEl.value : undefined;
   el.classList.add("busy");
   try {
     const r = await api("offseason", { action: id, arg });
@@ -663,7 +672,25 @@ async function teamPage(id) {
         ${Object.entries(t.weights).map(([k, v]) => `<div class="culture"><span>${k}</span><span class="b"><i style="width:${v * 100}%;background:var(--accent)"></i></span></div>`).join("")}
         <p class="muted small">Teams that raise less money themselves lean on drivers who bring it.</p></div>
     </div>
-    ${(t.staff || []).length ? `<div class="card flush" style="margin-top:16px"><h3 style="padding:14px 16px 0">The people</h3>${staffTable("team-staff", t.staff, true)}</div>` : ""}`);
+    ${(t.staff || []).length ? `<div class="card flush" style="margin-top:16px"><h3 style="padding:14px 16px 0">The people</h3>${staffTable("team-staff", t.staff, true)}</div>` : ""}
+    ${t.finance ? financeCard(t) : ""}`);
+}
+const FIN_LABELS = { sponsors: "Sponsors", charter: "Charter money", owner: "Owner's money", pay_drivers: "Drivers' money",
+  purse: "Purses and points fund", merchandise: "Merchandise", manufacturer: "Manufacturer support",
+  running: "Running the cars", staff: "Staff", driver_salaries: "Driver salaries" };
+function financeCard(t) {
+  const f = t.finance, b = f.last;
+  const ix = (x) => (x && x.idx) || undefined;        // each season's books in that season's dollars
+  const rows = (o) => Object.entries(o).filter(([, v]) => v).map(([k, v]) => `<dt>${esc(FIN_LABELS[k] || k)}</dt><dd>${money(v, ix(b))}</dd>`).join("");
+  const sum = (o) => Object.values(o).reduce((a, x) => a + x, 0);
+  return `<div class="grid g3" style="margin-top:16px">
+    <div class="card"><h3>${b.year} revenue</h3><dl class="kv">${rows(b.revenue)}<dt><b>Total</b></dt><dd><b>${money(sum(b.revenue), ix(b))}</b></dd></dl></div>
+    <div class="card"><h3>${b.year} costs</h3><dl class="kv">${rows(b.costs)}<dt><b>Total</b></dt><dd><b>${money(sum(b.costs), ix(b))}</b></dd></dl>
+      <p class="muted small">Spending level ${Math.round(b.spend * 100)}% of the series' full-season cost per car. What a team spends this year is next year's speed.</p></div>
+    <div class="card"><h3>The owner's books</h3><dl class="kv"><dt>Result</dt><dd style="color:var(${b.net < 0 ? "--bad" : "--good"})">${money(b.net, ix(b))}</dd><dt>Cash</dt><dd>${money(f.cash)}</dd>
+      ${f.charters ? `<dt>Charters</dt><dd>${f.charters}</dd>` : ""}<dt>Fans (drivers)</dt><dd>${esc(t.fans)}</dd></dl>
+      ${f.history.length > 1 ? `<h4>Seasons</h4><ul class="timeline">${f.history.slice().reverse().slice(0, 8).map((h) => `<li><b>${h.year}</b> revenue ${money(h.revenue, ix(h))} · result ${money(h.net, ix(h))}</li>`).join("")}</ul>` : ""}
+      <p class="muted small">Most teams lose money; owners cover part of it. Run dry and the team changes hands.</p></div></div>`;
 }
 
 // ---- staff (crew chiefs, spotters, pit crews, ...)

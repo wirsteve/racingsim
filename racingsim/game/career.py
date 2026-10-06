@@ -218,6 +218,10 @@ def offseason_menu(world: "World") -> dict:
                         "contract_years": d.contract_years})
     choices += m.player_offers
     choices += self_run_menu(world, d)
+    from . import owner
+    own = owner.drive_choice(world, d)
+    if own is not None:
+        choices.insert(0, own)
     choices.append({"id": "sit_out", "kind": "sit_out"})
     choices.append({"id": "retire", "kind": "retire"})
     coach_cost = 5_000 * (1 + d.tier)
@@ -229,6 +233,9 @@ def offseason_menu(world: "World") -> dict:
         {"id": "relocate", "label": "Relocate ($12,000)", "used": "relocate" in m.player_actions, "cost": 12_000,
          "detail": "Move closer to a racing hub (e.g. North Carolina for stock cars, Indiana for open wheel)."},
     ]
+    for a in owner.actions(world, d):
+        a["used"] = a["id"] in m.player_actions
+        actions.append(a)
     return {"choices": choices, "actions": actions}
 
 
@@ -259,6 +266,9 @@ def apply_choice(world: "World", summary: "YearSummary", option_id: str) -> str:
         return f"You'll run your own car in the {s.name}" + (" (part-time - money is tight)." if choice["part_time"] else ".")
     if kind == "stay":
         return "Staying put for another season."
+    if kind == "own_team":
+        from . import owner
+        return owner.drive(world, d, summary)
     if kind == "sit_out":
         _vacate(world, d)
         d.series_id = None
@@ -281,6 +291,12 @@ def apply_action(world: "World", action: str, arg: Optional[str] = None) -> str:
         return "No active career."
     if action in m.player_actions:
         return "You've already done that this off-season."
+    from . import owner
+    if action in ("found_team", "team_budget", "team_priority", "sell_team"):
+        msg = owner.act(world, d, action, arg)
+        if not msg.startswith(("Pick", "You already", "You don't", "Starting a team")):
+            m.player_actions.add(action)
+        return msg
     if action == "pitch":
         m.player_actions.add("pitch")
         msg = pitch_for_player(world, d)

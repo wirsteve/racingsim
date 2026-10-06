@@ -24,6 +24,7 @@ from ..world.entities import ACTIVE, PART_TIME, RETIRED, SIDELINED, Driver, Seas
 from ..world.skills import track_type_of as skill_track_type
 from ..world import annals
 from ..world import staff as staff_mod
+from ..career import goals
 from ..career import morale as morale_mod
 from ..rules import car as C
 from ..rules import garage
@@ -143,6 +144,9 @@ class SeasonRunner:
         self.crews: dict = {}
         if not world.staff:              # a save from before staff existed: hire everyone now
             staff_mod.seed_staff(world)
+        goals.set_goals(world)
+        from ..world import fans as fans_mod
+        fans_mod.ensure(world)           # (saves from before fan bases: seeded before any award is decided)
         rng = world.rng
         res = self.res
 

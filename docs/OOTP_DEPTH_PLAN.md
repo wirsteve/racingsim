@@ -39,8 +39,8 @@ From the research. These are OOTP's design rules, translated to racing.
 | Stats | Every stat, splits, logs, WAR | Per race: start, laps, laps led, status, ARP, passes, quality passes, fastest laps, pits, driver rating. Per season: poles, laps led, DNFs, average start/finish, rating, winnings, points, track-type splits and PAR (positions above replacement, a racing WAR); records books by series; a yearly almanac; winners by track; a Hall of Fame | ✅ Phase 4. Split by season and opponent strength still to come |
 | Team management / staff | Coaches, scouts, trainers with ratings | Crew chiefs, spotters, pit crews, technical directors, engine builders, driver coaches, medical: ratings, styles, contracts, aging, firings, a staff market; retired drivers become staff; the player hires their own crew | ✅ Phase 2. Scouts come in Phase 6 |
 | Transactions | Trades, FA, contracts, options, waivers, draft | Silly-season market, pay seats, salaries, contract years, development programs, shootouts | ◐ No negotiation, bonuses, release clauses, development loans or buyouts |
-| Finances | Gate, media, merch, budgets, owner | The player's own car: real costs, purses, points funds; sponsors | ◐ No team finances, fan base or merchandise |
-| Career / GM | GM mode, reputation, firing, job offers | Driver career; reputation; team offers | ◐ No owner or crew-chief careers, no goals or firing |
+| Finances | Gate, media, merch, budgets, owner | The player's own car: real costs, purses, points funds; sponsors. Every team keeps books: sponsors, Cup charters (2016+), owner money, pay drivers, purses, merchandise, manufacturer support against running costs, staff and salaries; spending sets next year's equipment; broke owners sell. Driver fan bases | ✅ Phase 5. No gate or media money for tracks |
+| Career / GM | GM mode, reputation, firing, job offers | Driver career; reputation; team offers; owner goals, job security and firing; owner mode (start, run and sell a team, drive for it) | ◐ No crew-chief career |
 | League / history | Historical leagues, expansion | 1995–2026 real series, rosters, calendars, 12k+ touring races, real rules and points by era | ✅ Exact replay mode still to come |
 | News / storylines / awards | Inbox, storylines, awards, milestones | News wire; Rookie of the Year, Most Popular Driver, Most Valuable Driver, Driver of the Year; first wins and start/win milestones; Hall of Fame inductions; rivalries and paybacks | ◐ No multi-season storylines yet |
 | Settings | Everything tunable | World size, start year | ❌ Phase 6 |
@@ -95,7 +95,9 @@ Known gaps:
   - milestones: first win, 100th start;
   - a Hall of Fame ballot.
 
-### Phase 5: The economic loop and other careers
+### Phase 5: The economic loop and other careers ✅ (owner mode up to the national level; buying a Cup charter still to come)
+
+Numbers and sources: [`research/team_economics.md`](research/team_economics.md).
 
 - Team finances: purse, charters and TV money, sponsors (primary and associate), merchandise from driver popularity, manufacturer support, costs.
 - A fan base for drivers and teams, from regional to national, driving sponsor appeal.

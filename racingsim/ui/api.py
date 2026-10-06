@@ -95,9 +95,12 @@ def scouted(world: "World", d: Driver) -> dict:
 
 def _mood(world: "World", d: Driver, exact: bool) -> dict:
     """Mood is public (the media reports it); the number is only known for your own driver."""
-    from ..career import morale
+    from ..career import goals, morale
+    g = goals.view(d)
     return {"morale": round(morale.morale(d)) if exact else None, "word": morale.word(morale.morale(d)),
-            "rivals": morale.rivals_view(world, d), "suspension": d.suspension}
+            "rivals": morale.rivals_view(world, d), "suspension": d.suspension,
+            "goal": g["goal"] if d.team_id is not None or (g["goal"] or {}).get("result") else None,
+            "security": g["security"] if exact else None, "security_word": g["word"] if d.team_id is not None else None}
 
 
 def driver_row(world: "World", d: Driver) -> dict:
@@ -167,9 +170,15 @@ def driver_detail(world: "World", did: int) -> dict:
         "proficiency": {DISC_LABEL[k]: round(v * 100) for k, v in d.proficiency.items() if v >= 0.05},
         "veteran": d.grassroots_veteran,
         "awards": list(getattr(d, "awards", [])),
+        "fans": _fans(world, d),
         "splits": _splits(d),
     })
     return row
+
+
+def _fans(world: "World", d: Driver) -> dict:
+    from ..world import fans
+    return {"label": fans.label(d.fans), "rank": fans.rank(world, d) if d.fans >= 1 else None}
 
 
 def _splits(d: Driver) -> list[dict]:
@@ -196,7 +205,8 @@ def status(game: "Game") -> dict:
         out["player"] = {"id": p.id, "name": p.name, "age": p.age(w.year), "status": p.status,
                          "series": series_brief(w, p.series_id), "team": team_brief(w, p.team_id),
                          "funding": money(p.available_funding()), "reputation": round(p.reputation),
-                         "next_race_week": runner.next_week_for(p) if game.phase == "season" else None}
+                         "next_race_week": runner.next_week_for(p) if game.phase == "season" else None,
+                         "owned_team": team_brief(w, w.__dict__.get("owned_team_id"))}
     return out
 
 
@@ -556,7 +566,10 @@ def team_detail(world: "World", tid: int) -> dict:
                 "roster": [driver_row(world, world.drivers[x]) for x in t.roster if x is not None],
                 "reputation": round(t.reputation)})
     from .staff_view import team_staff
+    from ..world import fans, finance
     out["staff"] = team_staff(world, tid)
+    out["finance"] = finance.team_view(world, t)
+    out["fans"] = fans.label(sum(world.drivers[x].fans for x in t.roster if x is not None and x in world.drivers))
     return out
 
 

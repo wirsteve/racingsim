@@ -27,7 +27,7 @@ from ..constants import TIER_STRENGTH
 from ..util import clamp, haversine_mi
 from ..world.entities import ACTIVE, PART_TIME, RETIRED, SIDELINED, Driver, Team
 from ..world.regions import travel_cost
-from . import morale
+from . import goals, morale
 from .scouting import categorize, is_aware, perceived_level, rate_for_team
 
 if TYPE_CHECKING:
@@ -327,6 +327,8 @@ def _evolve_teams(world: "World") -> None:
     """Organisations rise and fall: equipment and sponsorship drift year to year."""
     rng = world.rng
     for t in world.teams.values():
+        if t.books and t.books[-1]["year"] == world.year:
+            continue      # teams that kept books this season moved with their money (world/finance.py)
         t.equipment = clamp(t.equipment + rng.gauss(0, 2.5) + (55 - t.equipment) * 0.03, 8, 98)
         t.sponsor_funding = max(0.0, t.sponsor_funding * rng.uniform(0.88, 1.12))
 
@@ -379,6 +381,11 @@ def _tick_contracts(world: "World", queue: list, summary: "YearSummary") -> None
                         coverage.pop(d.id, None)
             elif not release and d.seat_funded and perf < -1.4 and rng.random() < 0.35:
                 release, reason = True, "was released for poor results"
+            elif not release and (fc := goals.fire_chance(d)) > 0 and rng.random() < fc:
+                release, reason = True, "was fired after missing the owner's goals"
+                if d.is_player:
+                    world.post("player", f"{team.name} have let you go: the results weren't there", driver_id=d.id,
+                               importance=3)
             if release:
                 if tpl.tier >= 4 and reason:
                     d.log(world.year, f"{reason} at {team.name} ({world.series(team.series_id).name})")
@@ -654,6 +661,9 @@ def _sign(world: "World", d: Driver, team: Team, slot: int, s: "Series", gap: fl
         old_team, old_slot = old
         _push(queue, old_team, old_slot, world.series(old_team.series_id).template)
     prev_tier = d.tier if d.series_id else -1
+    same_team = (old is not None and old[0].id == team.id) or world.market.expired.get(d.id) == team.id
+    if not same_team:
+        d.job_security = 60.0            # a new owner starts with an open mind
     team.roster[slot] = d.id
     d.team_id = team.id
     d.series_id = s.id

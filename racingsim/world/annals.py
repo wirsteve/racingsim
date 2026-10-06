@@ -16,6 +16,7 @@ award for the PAR leader, and one Driver of the Year at the top level.
 
 from __future__ import annotations
 
+import math
 from collections import defaultdict
 from typing import TYPE_CHECKING, Optional
 
@@ -137,7 +138,7 @@ def season_end(world: "World", results) -> None:
 
             def pop(x):
                 d = world.drivers[x[0]]
-                return (d.marketability * 0.5 + d.reputation * 0.3 + x[1].wins * 1.5
+                return (12 * math.log10(1 + d.fans) + d.marketability * 0.3 + x[1].wins * 1.0
                         + (8 if x[0] == holder else 0) + rng.gauss(0, 4))
             did, _ = max(full, key=pop)
             _award(world, alm, did, s, "Most Popular Driver")
