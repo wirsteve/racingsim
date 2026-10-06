@@ -414,6 +414,10 @@ def garage_action(world: "World", d: "Driver", action: str, key: Optional[str] =
             return "That person isn't available."
         if s.id in world.player_crew.values():
             return f"{s.name} already works for you."
+        if s.role in world.player_crew:
+            cur = world.staff.get(world.player_crew[s.role])
+            return (f"You already have a {ST.ROLES[s.role][0].lower()}"
+                    + (f" ({cur.name})" if cur else "") + " - let them go first.")
         tier = world.series(d.series_id).tier
         cost = ST.hire_cost(world, s, tier)
         if not _pay(d, cost):

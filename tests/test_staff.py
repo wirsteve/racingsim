@@ -79,10 +79,15 @@ def test_player_hires_a_crew(tracks):
     msg = garage_action(w, p, "hire", str(cand["id"]))
     assert "joins your crew" in msg and w.player_crew["spotter"] == cand["id"]
     assert ST.player_effects(w, p)["awareness"] == pytest.approx(w.staff[cand["id"]].ratings["awareness"])
+    other = v["crew"]["roles"][1]["candidates"][1]
+    assert "let them go first" in garage_action(w, p, "hire", str(other["id"]))   # no silent replacement
     g.sim_until("season")
+    assert w.player_crew == {}                               # freelancers leave at season end
+    nxt = garage(g)["crew"]["roles"][1]["candidates"][0]
+    assert "joins your crew" in garage_action(w, p, "hire", str(nxt["id"]))       # hired for next season
     g.choose("stay" if any(c["id"] == "stay" for c in g.menu()["choices"]) else
              next(c["id"] for c in g.menu()["choices"] if c.get("current")))
-    assert w.player_crew == {}                               # freelancers leave at season end
+    assert w.player_crew.get("spotter") == nxt["id"]
     assert before > 0
 
 
@@ -95,5 +100,21 @@ def test_old_world_without_staff_is_staffed_on_load(world):
     w = world.__class__.__new__(world.__class__)
     w.__setstate__(pickle.loads(pickle.dumps(state)))
     assert w.staff == {}
+    team = next(iter(w.teams.values()))
+    assert ST.team_staff(w, team.id) and w.staff          # any lookup staffs an old world
+    assert any(s.team_id is None for s in w.staff.values())
     SeasonRunner(w, YearSummary(year=w.year))
-    assert w.staff
+
+
+def test_better_strategists_finish_better(world):
+    tr = world.tracks.get("charlotte-motor-speedway-nc")
+    drivers = [d for d in world.drivers.values() if d.status == "active"][:24]
+    base = {"setup_mean": 0, "setup_sd": 1, "adjust": 1, "pit_s": 1, "pit_sd": 1, "strategy": 50, "aggression": 50,
+            "awareness": 50, "restarts": 0, "mech": 1, "power": 0, "development": 0, "chemistry": 0}
+    good, bad = dict(base, strategy=95), dict(base, strategy=5)
+    pos = {"good": [], "bad": []}
+    for i in range(200):
+        entries = [Entry([d], 70.0, crew=(good if (j + i) % 2 == 0 else bad)) for j, d in enumerate(drivers)]
+        for f in E.run(entries, tr, 7, 0.6, random.Random(i)).finishes:
+            pos["good" if f.entry.crew is good else "bad"].append(f.position)
+    assert statistics.mean(pos["good"]) < statistics.mean(pos["bad"]) - 0.2

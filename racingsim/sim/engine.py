@@ -227,7 +227,8 @@ def run(entries: list[Entry], track: "Track", tier: int, car_weight: float, rng:
     # ---- qualifying (or heat-based lineup noise for short local races)
     q_noise = lap_s * CAL["noise"] * CAL["qual_noise"] * (1.6 if tier <= 2 else 1.0)
     for c in cars:
-        c.mech_lap = 1 - (1 - (c.entry.mech if c.entry.mech is not None else 0.03)) ** (1 / n_laps)
+        base_mech = c.entry.mech if c.entry.mech is not None else 0.03 * (c.entry.crew or {}).get("mech", 1.0)
+        c.mech_lap = 1 - (1 - base_mech) ** (1 / n_laps)
         c.time = -(c.qual - 50) * CAL["spread_per_point"] * lap_s + rng.gauss(0, q_noise)
     grid = sorted(cars, key=lambda c: c.time)
     for i, c in enumerate(grid, start=1):
@@ -406,7 +407,8 @@ def run(entries: list[Entry], track: "Track", tier: int, car_weight: float, rng:
             if stops_needed:
                 for c in running:
                     if c.running and (c.fuel_laps < k + 1 or c.tire_age > tire_life * 1.35):
-                        c.time += pit_loss + _stop_time(stop_s, rng, c)
+                        # A sharp strategist times the stop (traffic, the cycle) and loses less on pit road.
+                        c.time += pit_loss * (1.05 - c.strategy / 1000) + _stop_time(stop_s, rng, c)
                         c.stint = rng.gauss(0, CAL["stint_sd"] * c.adjust)
                         c.tire_age, c.fuel_laps, c.pits = 0, fuel_laps * (1 + c.fuel_save / 200), c.pits + 1
         else:
@@ -427,9 +429,10 @@ def run(entries: list[Entry], track: "Track", tier: int, car_weight: float, rng:
                     two_tires = set()
                     for i, c in enumerate(order):
                         need = c.damage >= 0.3 or c.tire_age > tire_life * 0.45 or c.fuel_laps < min(to_go, fuel_laps * 0.7)
-                        # Crew chief's call: aggressive ones gamble on track position; good strategists
-                        # only gamble when the tires can make it (to_go short enough).
-                        viable = c.fuel_laps >= to_go and to_go < tire_life * (0.4 + c.strategy / 200)
+                        # Crew chief's call: aggressive ones gamble on track position more often; good
+                        # strategists judge better whether the tires will really make it to the end.
+                        judged = (c.tire_age + to_go) / tire_life + rng.gauss(0, (100 - c.strategy) / 250)
+                        viable = c.fuel_laps >= to_go and judged < 0.95
                         gamble = i < 10 and viable and rng.random() < 0.12 + c.cc_aggr / 220
                         (pitters if need and not gamble else stayers).append(c)
                         if (need and not gamble and c.damage == 0 and 5 <= i and to_go < tire_life * 0.7

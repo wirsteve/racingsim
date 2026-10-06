@@ -82,7 +82,7 @@ def incidents(world: "World", incidents: list) -> None:
 
 
 def payback(world: "World", attacker_id: int, target_id: int, tier: int, series_name: str,
-            track_name: str, week: int, acc: Optional[dict] = None) -> list[str]:
+            track_name: str, week: int, acc: Optional[dict] = None, series_id: Optional[str] = None) -> list[str]:
     """The sanctioning body's answer to an intentional wreck. Returns news lines."""
     a, t = world.drivers.get(attacker_id), world.drivers.get(target_id)
     if a is None or t is None:
@@ -91,10 +91,14 @@ def payback(world: "World", attacker_id: int, target_id: int, tier: int, series_
     heat = a.rivals.get(target_id, 0.0)
     pts = PAYBACK_POINTS.get(tier, 0)
     fine = PAYBACK_FINE.get(tier, 0)
-    if acc is not None and pts and attacker_id in acc:
-        acc[attacker_id].points -= pts
+    a_acc = acc.get(attacker_id) if acc is not None else None
+    if a_acc is not None and pts and a_acc.series_id == series_id:   # a substitute's own title isn't touched
+        a_acc.points -= pts
     if fine:
         charge(a, fine)
+        if a.is_player and a.car is not None:
+            from ..rules import garage
+            garage.log(a.car, week, f"Fine for wrecking {t.name}", -fine)
     suspended = tier >= 5 and heat >= 75 and world.rng.random() < 0.35
     if suspended:
         a.suspension = max(a.suspension, 1)
@@ -159,8 +163,6 @@ def season_update(world: "World", results) -> None:
                 m += chemistry(world, team) * 4
         if d.team_id is not None:
             m += 2 if d.contract_years >= 2 else -2 if d.contract_years <= 0 else 0
-        if d.suspension:
-            d.suspension = 0
         d.morale = round(clamp(m, 1, 99), 1)
         if d.rivals:
             d.rivals = {k: round(v * 0.7, 1) for k, v in d.rivals.items()
@@ -175,8 +177,8 @@ def resign_chance(d: "Driver") -> float:
 
 def switch_margin(d: "Driver") -> float:
     """Equipment edge another team at the same level needs to lure this driver away."""
-    return (5 + (S.trait(d, "loyalty") - 50) / 6 - (S.trait(d, "ambition") - 50) / 10
-            - (NEUTRAL - morale(d)) / 8)
+    return max(1.0, 5 + (S.trait(d, "loyalty") - 50) / 6 - (S.trait(d, "ambition") - 50) / 10
+               - (NEUTRAL - morale(d)) / 8)
 
 
 def rivals_view(world: "World", d: "Driver", limit: int = 5) -> list[dict]:
