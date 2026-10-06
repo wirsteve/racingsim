@@ -1,0 +1,1606 @@
+{
+ "series": "formula_2000",
+ "year": 2012,
+ "official_name": "2012 U.S. F2000 National Championship",
+ "data_level": "full",
+ "teams_source": "teams_table",
+ "teams": [
+  {
+   "team": "Cape Motorsports w/ Wayne Taylor Racing",
+   "team_wiki": "Cape_Motorsports",
+   "owner": null,
+   "manufacturer": null,
+   "chassis": null,
+   "cars": [
+    {
+     "number": "2",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Spencer Pigot",
+       "wiki": "Spencer_Pigot",
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "3",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Trent Hindman",
+       "wiki": "Trent_Hindman",
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "13",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Henrik Furuseth",
+       "wiki": "Henrik_Furuseth",
+       "rounds": "All",
+       "nat": "NOR"
+      }
+     ]
+    },
+    {
+     "number": "83",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Matthew Brabham",
+       "wiki": "Matthew_Brabham",
+       "rounds": "All",
+       "nat": "AUS"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Belardi Auto Racing",
+   "team_wiki": "Belardi_Auto_Racing",
+   "owner": null,
+   "manufacturer": null,
+   "chassis": null,
+   "cars": [
+    {
+     "number": "4",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Roman Lagudi",
+       "wiki": null,
+       "rounds": "All",
+       "nat": "AUS"
+      }
+     ]
+    },
+    {
+     "number": "9",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Luca Forgeois",
+       "wiki": null,
+       "rounds": "1–10",
+       "nat": "USA"
+      },
+      {
+       "name": "Wayne Boyd",
+       "wiki": "Wayne_Boyd",
+       "rounds": "11–14",
+       "nat": "GBR"
+      }
+     ]
+    },
+    {
+     "number": "11",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Colin Thompson",
+       "wiki": "Colin_Thompson_(racing_driver)",
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "14",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Scott Anderson",
+       "wiki": "Scott_Anderson_(racing_driver)",
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Pabst Racing Services",
+   "team_wiki": "Pabst_Racing_Services",
+   "owner": null,
+   "manufacturer": null,
+   "chassis": null,
+   "cars": [
+    {
+     "number": "5",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Dalton Kellett",
+       "wiki": "Dalton_Kellett",
+       "rounds": "All",
+       "nat": "CAN"
+      }
+     ]
+    },
+    {
+     "number": "6",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "J. R. Smart",
+       "wiki": null,
+       "rounds": "3–4, 6–14",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "18",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Shannon McIntosh",
+       "wiki": "Shannon_McIntosh_(racing_driver)",
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Andretti Autosport",
+   "team_wiki": "Andretti_Autosport",
+   "owner": null,
+   "manufacturer": null,
+   "chassis": null,
+   "cars": [
+    {
+     "number": "7",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Thomas McGregor",
+       "wiki": null,
+       "rounds": "All",
+       "nat": "CAN"
+      }
+     ]
+    },
+    {
+     "number": "8",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Shelby Blackstock",
+       "wiki": "Shelby_Blackstock",
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "ZSports Midwest w/ Team E Racing",
+   "team_wiki": null,
+   "owner": null,
+   "manufacturer": null,
+   "chassis": null,
+   "cars": [
+    {
+     "number": "10",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "R. C. Enerson",
+       "wiki": "R._C._Enerson",
+       "rounds": "1–4, 6–14",
+       "nat": "USA"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Robinson Motor Sports",
+   "team_wiki": null,
+   "owner": null,
+   "manufacturer": null,
+   "chassis": null,
+   "cars": [
+    {
+     "number": "12",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Eric Filgueiras",
+       "wiki": null,
+       "rounds": "1–2",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "25",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Joel Janco",
+       "wiki": null,
+       "rounds": "3–14",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "92",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Mark Eaton",
+       "wiki": null,
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "97",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Paul Alspach",
+       "wiki": null,
+       "rounds": "1–2, 6–7",
+       "nat": "USA"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Genoa Racing/Primus Racing",
+   "team_wiki": "O2_Racing_Technology",
+   "owner": null,
+   "manufacturer": null,
+   "chassis": null,
+   "cars": [
+    {
+     "number": "13",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Isaac Lyons",
+       "wiki": null,
+       "rounds": "1–2",
+       "nat": "GBR"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "ArmsUp Motorsports",
+   "team_wiki": null,
+   "owner": null,
+   "manufacturer": null,
+   "chassis": null,
+   "cars": [
+    {
+     "number": "15",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Luigi Biangardi",
+       "wiki": null,
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "16",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "James Dayson",
+       "wiki": null,
+       "rounds": "8–14",
+       "nat": "CAN"
+      }
+     ]
+    },
+    {
+     "number": "59",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Bobby Kelley",
+       "wiki": null,
+       "rounds": "1–2",
+       "nat": "USA"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Afterburner Autosport",
+   "team_wiki": null,
+   "owner": null,
+   "manufacturer": null,
+   "chassis": null,
+   "cars": [
+    {
+     "number": "17",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Timmy Megenbier",
+       "wiki": null,
+       "rounds": "1–5",
+       "nat": "USA"
+      },
+      {
+       "name": "Brian Tomasi",
+       "wiki": null,
+       "rounds": "6–10",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "21",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Heamin Choi",
+       "wiki": "Heamin_Choi",
+       "rounds": "1–10",
+       "nat": "KOR"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "JDC Motorsports",
+   "team_wiki": "JDC_MotorSports",
+   "owner": null,
+   "manufacturer": null,
+   "chassis": null,
+   "cars": [
+    {
+     "number": "19",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Neil Alberico",
+       "wiki": "Neil_Alberico",
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "38",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Scott Hargrove",
+       "wiki": "Scott_Hargrove",
+       "rounds": "1–4, 8–14",
+       "nat": "CAN"
+      }
+     ]
+    },
+    {
+     "number": "54",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Michael Johnson",
+       "wiki": null,
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "85",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Chris Miller",
+       "wiki": "Chris_Miller_(racing_driver)",
+       "rounds": "1–7",
+       "nat": "USA"
+      },
+      {
+       "name": "Luca Forgeois",
+       "wiki": null,
+       "rounds": "13–14",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "93",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Zac Silver",
+       "wiki": null,
+       "rounds": "1–4",
+       "nat": "USA"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "JAY Motorsports",
+   "team_wiki": null,
+   "owner": null,
+   "manufacturer": null,
+   "chassis": null,
+   "cars": [
+    {
+     "number": "23",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Jason Wolfe",
+       "wiki": "Jason_Wolfe_(racing_driver)",
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "91",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Patrick Gallagher",
+       "wiki": "Patrick_Gallagher_(racing_driver)",
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "65",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Michael Geldart",
+       "wiki": null,
+       "rounds": "1–2",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "98",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Jim Libecco",
+       "wiki": null,
+       "rounds": "1–7, 11–14",
+       "nat": "USA"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "AcceleRace Motorsports",
+   "team_wiki": null,
+   "owner": null,
+   "manufacturer": null,
+   "chassis": null,
+   "cars": [
+    {
+     "number": "28",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Ardie Greenamyer",
+       "wiki": null,
+       "rounds": "1–2",
+       "nat": "USA"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Special Addition Racing",
+   "team_wiki": null,
+   "owner": null,
+   "manufacturer": null,
+   "chassis": null,
+   "cars": [
+    {
+     "number": "41",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Wally Osinga",
+       "wiki": null,
+       "rounds": "1–4",
+       "nat": "USA"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "PRL Motorsports",
+   "team_wiki": null,
+   "owner": null,
+   "manufacturer": null,
+   "chassis": null,
+   "cars": [
+    {
+     "number": "48",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Patryk Tararuj",
+       "wiki": null,
+       "rounds": "11–12",
+       "nat": "POL"
+      },
+      {
+       "name": "Patrick Linn",
+       "wiki": null,
+       "rounds": "1–10, 13–14",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "99",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Patrick Linn",
+       "wiki": null,
+       "rounds": "11–12",
+       "nat": "USA"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "MDL Racing",
+   "team_wiki": "MDL_Racing",
+   "owner": null,
+   "manufacturer": null,
+   "chassis": null,
+   "cars": [
+    {
+     "number": "56",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Matthew Di Leo",
+       "wiki": "Matthew_Di_Leo",
+       "rounds": "All",
+       "nat": "CAN"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Alliance Autosport",
+   "team_wiki": null,
+   "owner": null,
+   "manufacturer": null,
+   "chassis": null,
+   "cars": [
+    {
+     "number": "71",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Scott Rettich",
+       "wiki": "Scott_Rettich",
+       "rounds": "1–4, 6–7",
+       "nat": "USA"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "One Formula Racing",
+   "team_wiki": null,
+   "owner": null,
+   "manufacturer": null,
+   "chassis": null,
+   "cars": [
+    {
+     "number": "77",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Colette Davis",
+       "wiki": null,
+       "rounds": "1–4",
+       "nat": "USA"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Cruzinc Racing",
+   "team_wiki": null,
+   "owner": null,
+   "manufacturer": null,
+   "chassis": null,
+   "cars": [
+    {
+     "number": "86",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Eric Cruz",
+       "wiki": null,
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "standings": [
+  {
+   "pos": 1,
+   "name": "Matthew Brabham",
+   "wiki": "Matthew_Brabham",
+   "points": 339,
+   "wins": 4,
+   "podiums": 11,
+   "top5": 12,
+   "starts": 14,
+   "nat": "AUS",
+   "results": [
+    1,
+    2,
+    2,
+    2,
+    2,
+    3,
+    25,
+    1,
+    1,
+    3,
+    2,
+    1,
+    4,
+    8
+   ]
+  },
+  {
+   "pos": 2,
+   "name": "Spencer Pigot",
+   "wiki": "Spencer_Pigot",
+   "points": 332,
+   "wins": 8,
+   "podiums": 11,
+   "top5": 11,
+   "starts": 14,
+   "nat": "USA",
+   "results": [
+    3,
+    1,
+    1,
+    1,
+    1,
+    1,
+    23,
+    16,
+    3,
+    2,
+    1,
+    24,
+    1,
+    1
+   ]
+  },
+  {
+   "pos": 3,
+   "name": "Scott Anderson",
+   "wiki": "Scott_Anderson_(racing_driver)",
+   "points": 256,
+   "wins": 2,
+   "podiums": 6,
+   "top5": 9,
+   "starts": 14,
+   "nat": "USA",
+   "results": [
+    5,
+    8,
+    28,
+    10,
+    4,
+    2,
+    1,
+    3,
+    2,
+    1,
+    5,
+    2,
+    26,
+    6
+   ]
+  },
+  {
+   "pos": 4,
+   "name": "Matthew Di Leo",
+   "wiki": "Matthew_Di_Leo",
+   "points": 220,
+   "wins": 0,
+   "podiums": 4,
+   "top5": 7,
+   "starts": 14,
+   "nat": "CAN",
+   "results": [
+    12,
+    4,
+    18,
+    3,
+    8,
+    7,
+    2,
+    2,
+    4,
+    5,
+    3,
+    6,
+    7,
+    21
+   ]
+  },
+  {
+   "pos": 5,
+   "name": "Trent Hindman",
+   "wiki": "Trent_Hindman",
+   "points": 189,
+   "wins": 0,
+   "podiums": 2,
+   "top5": 7,
+   "starts": 14,
+   "nat": "USA",
+   "results": [
+    36,
+    30,
+    5,
+    4,
+    5,
+    4,
+    3,
+    4,
+    6,
+    8,
+    25,
+    12,
+    8,
+    3
+   ]
+  },
+  {
+   "pos": 6,
+   "name": "Roman Lagudi",
+   "wiki": null,
+   "points": 173,
+   "wins": 0,
+   "podiums": 4,
+   "top5": 6,
+   "starts": 12,
+   "nat": "AUS",
+   "results": [
+    2,
+    3,
+    3,
+    5,
+    3,
+    5,
+    16,
+    7,
+    9,
+    28,
+    7,
+    27,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 7,
+   "name": "Neil Alberico",
+   "wiki": "Neil_Alberico",
+   "points": 170,
+   "wins": 0,
+   "podiums": 1,
+   "top5": 6,
+   "starts": 14,
+   "nat": "USA",
+   "results": [
+    9,
+    5,
+    17,
+    34,
+    16,
+    19,
+    6,
+    5,
+    5,
+    6,
+    13,
+    5,
+    2,
+    5
+   ]
+  },
+  {
+   "pos": 8,
+   "name": "Shelby Blackstock",
+   "wiki": "Shelby_Blackstock",
+   "points": 153,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 2,
+   "starts": 14,
+   "nat": "USA",
+   "results": [
+    7,
+    32,
+    6,
+    8,
+    18,
+    6,
+    5,
+    21,
+    8,
+    4,
+    21,
+    8,
+    6,
+    7
+   ]
+  },
+  {
+   "pos": 9,
+   "name": "Thomas McGregor",
+   "wiki": null,
+   "points": 134,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 1,
+   "starts": 14,
+   "nat": "CAN",
+   "results": [
+    4,
+    7,
+    7,
+    7,
+    12,
+    27,
+    10,
+    23,
+    28,
+    21,
+    9,
+    9,
+    9,
+    9
+   ]
+  },
+  {
+   "pos": 10,
+   "name": "Luigi Biangardi",
+   "wiki": null,
+   "points": 129,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 3,
+   "starts": 14,
+   "nat": "USA",
+   "results": [
+    35,
+    9,
+    4,
+    33,
+    11,
+    29,
+    4,
+    6,
+    7,
+    7,
+    4,
+    27,
+    24,
+    22
+   ]
+  },
+  {
+   "pos": 11,
+   "name": "Scott Hargrove",
+   "wiki": "Scott_Hargrove",
+   "points": 128,
+   "wins": 0,
+   "podiums": 1,
+   "top5": 3,
+   "starts": 11,
+   "nat": "CAN",
+   "results": [
+    11,
+    11,
+    30,
+    32,
+    null,
+    null,
+    null,
+    8,
+    13,
+    9,
+    6,
+    3,
+    5,
+    4
+   ]
+  },
+  {
+   "pos": 12,
+   "name": "Colin Thompson",
+   "wiki": "Colin_Thompson_(racing_driver)",
+   "points": 103,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 1,
+   "starts": 14,
+   "nat": "USA",
+   "results": [
+    8,
+    10,
+    31,
+    13,
+    14,
+    8,
+    28,
+    9,
+    10,
+    20,
+    12,
+    4,
+    10,
+    10
+   ]
+  },
+  {
+   "pos": 13,
+   "name": "Jason Wolfe",
+   "wiki": "Jason_Wolfe_(racing_driver)",
+   "points": 84,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 14,
+   "nat": "USA",
+   "results": [
+    14,
+    34,
+    19,
+    9,
+    10,
+    12,
+    29,
+    26,
+    14,
+    23,
+    10,
+    10,
+    25,
+    13
+   ]
+  },
+  {
+   "pos": 14,
+   "name": "Dalton Kellett",
+   "wiki": "Dalton_Kellett",
+   "points": 78,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 14,
+   "nat": "CAN",
+   "results": [
+    10,
+    19,
+    33,
+    14,
+    20,
+    9,
+    7,
+    10,
+    16,
+    22,
+    26,
+    21,
+    11,
+    26
+   ]
+  },
+  {
+   "pos": 15,
+   "name": "Michael Johnson",
+   "wiki": null,
+   "points": 72,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 14,
+   "nat": "USA",
+   "results": [
+    18,
+    27,
+    13,
+    25,
+    17,
+    13,
+    24,
+    11,
+    29,
+    10,
+    14,
+    26,
+    12,
+    11
+   ]
+  },
+  {
+   "pos": 16,
+   "name": "Luca Forgeois",
+   "wiki": null,
+   "points": 66,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 12,
+   "nat": "USA",
+   "results": [
+    33,
+    26,
+    26,
+    6,
+    6,
+    10,
+    22,
+    24,
+    12,
+    27,
+    null,
+    null,
+    23,
+    12
+   ]
+  },
+  {
+   "pos": 17,
+   "name": "Heamin Choi",
+   "wiki": "Heamin_Choi",
+   "points": 55,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 10,
+   "nat": "KOR",
+   "results": [
+    16,
+    18,
+    10,
+    12,
+    15,
+    26,
+    15,
+    12,
+    27,
+    12,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 18,
+   "name": "Shannon McIntosh",
+   "wiki": "Shannon_McIntosh_(racing_driver)",
+   "points": 54,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 14,
+   "nat": "USA",
+   "results": [
+    15,
+    23,
+    11,
+    24,
+    13,
+    21,
+    18,
+    25,
+    21,
+    14,
+    24,
+    15,
+    16,
+    20
+   ]
+  },
+  {
+   "pos": 19,
+   "name": "Timmy Megenbier",
+   "wiki": null,
+   "points": 53,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 5,
+   "nat": "USA",
+   "results": [
+    6,
+    6,
+    32,
+    11,
+    9,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 20,
+   "name": "Chris Miller",
+   "wiki": "Chris_Miller_(racing_driver)",
+   "points": 52,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 10,
+   "nat": "USA",
+   "results": [
+    26,
+    15,
+    8,
+    26,
+    19,
+    11,
+    13,
+    22,
+    11,
+    25,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 21,
+   "name": "Zac Silver",
+   "wiki": null,
+   "points": 20,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 4,
+   "nat": "USA",
+   "results": [
+    13,
+    12,
+    34,
+    19,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 22,
+   "name": "Isaac Lyons",
+   "wiki": null,
+   "points": 2,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 2,
+   "nat": "GBR",
+   "results": [
+    31,
+    35,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 23,
+   "name": "Unregistered drivers ineligible for points",
+   "wiki": null,
+   "points": null,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 0,
+   "nat": null,
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 24,
+   "name": "Wayne Boyd",
+   "wiki": "Wayne_Boyd",
+   "points": null,
+   "wins": 0,
+   "podiums": 2,
+   "top5": 2,
+   "starts": 4,
+   "nat": "GBR",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    26,
+    11,
+    3,
+    2
+   ]
+  },
+  {
+   "pos": 25,
+   "name": "R. C. Enerson",
+   "wiki": "R._C._Enerson",
+   "points": null,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 1,
+   "nat": "USA",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    7,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 26,
+   "name": "Brian Tomasi",
+   "wiki": null,
+   "points": null,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 3,
+   "nat": "USA",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    17,
+    "DNS",
+    13,
+    15,
+    "DNS",
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 27,
+   "name": "J. R. Smart",
+   "wiki": null,
+   "points": null,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 1,
+   "nat": "USA",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    21,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  }
+ ],
+ "schedule": [
+  {
+   "round": 1,
+   "date": "2012-03-15",
+   "race": "support event for the Mobil 1 Twelve Hours of Sebring",
+   "track": "Sebring International Raceway",
+   "city": "Sebring",
+   "state": "FL",
+   "country": "USA",
+   "winner": "Matthew Brabham",
+   "winner_wiki": "Matthew_Brabham",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 2,
+   "date": "2012-03-15",
+   "race": "support event for the Mobil 1 Twelve Hours of Sebring",
+   "track": "Sebring International Raceway",
+   "city": "Sebring",
+   "state": "FL",
+   "country": "USA",
+   "winner": "Spencer Pigot",
+   "winner_wiki": "Spencer_Pigot",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 3,
+   "date": "2012-03-24",
+   "race": "USF2000 St. Petersburg Grand Prix presented by Allied Building Products",
+   "track": "Streets of St. Petersburg",
+   "city": "St. Petersburg",
+   "state": "FL",
+   "country": "USA",
+   "winner": "Spencer Pigot",
+   "winner_wiki": "Spencer_Pigot",
+   "track_type": "street",
+   "cancelled": false
+  },
+  {
+   "round": 4,
+   "date": "2012-03-24",
+   "race": "USF2000 St. Petersburg Grand Prix presented by Allied Building Products",
+   "track": "Streets of St. Petersburg",
+   "city": "St. Petersburg",
+   "state": "FL",
+   "country": "USA",
+   "winner": "Spencer Pigot",
+   "winner_wiki": "Spencer_Pigot",
+   "track_type": "street",
+   "cancelled": false
+  },
+  {
+   "round": 5,
+   "date": "2012-05-26",
+   "race": "Night Before the 500",
+   "track": "Lucas Oil Raceway",
+   "city": "Clermont",
+   "state": "IN",
+   "country": "USA",
+   "winner": "Spencer Pigot",
+   "winner_wiki": "Spencer_Pigot",
+   "track_type": "oval",
+   "cancelled": false
+  },
+  {
+   "round": 6,
+   "date": "2012-08-04",
+   "race": "Mid-Ohio Grand Prix presented by Allied Building Products",
+   "track": "Mid-Ohio Sports Car Course",
+   "city": "Lexington",
+   "state": "OH",
+   "country": "USA",
+   "winner": "Spencer Pigot",
+   "winner_wiki": "Spencer_Pigot",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 7,
+   "date": "2012-08-04",
+   "race": "Mid-Ohio Grand Prix presented by Allied Building Products",
+   "track": "Mid-Ohio Sports Car Course",
+   "city": "Lexington",
+   "state": "OH",
+   "country": "USA",
+   "winner": "Scott Anderson",
+   "winner_wiki": "Scott_Anderson_(racing_driver)",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 8,
+   "date": "2012-08-17",
+   "race": "support event for the Road Race Showcase",
+   "track": "Road America",
+   "city": "Elkhart Lake",
+   "state": "WI",
+   "country": "USA",
+   "winner": "Matthew Brabham",
+   "winner_wiki": "Matthew_Brabham",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 9,
+   "date": "2012-08-17",
+   "race": "support event for the Road Race Showcase",
+   "track": "Road America",
+   "city": "Elkhart Lake",
+   "state": "WI",
+   "country": "USA",
+   "winner": "Matthew Brabham",
+   "winner_wiki": "Matthew_Brabham",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 10,
+   "date": "2012-08-17",
+   "race": "support event for the Road Race Showcase",
+   "track": "Road America",
+   "city": "Elkhart Lake",
+   "state": "WI",
+   "country": "USA",
+   "winner": "Scott Anderson",
+   "winner_wiki": "Scott_Anderson_(racing_driver)",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 11,
+   "date": "2012-09-01",
+   "race": "USF2000 Baltimore Grand Prix Presented by Allied Building Products",
+   "track": "Streets of Baltimore",
+   "city": "Baltimore",
+   "state": "MD",
+   "country": "USA",
+   "winner": "Spencer Pigot",
+   "winner_wiki": "Spencer_Pigot",
+   "track_type": "street",
+   "cancelled": false
+  },
+  {
+   "round": 12,
+   "date": "2012-09-01",
+   "race": "USF2000 Baltimore Grand Prix Presented by Allied Building Products",
+   "track": "Streets of Baltimore",
+   "city": "Baltimore",
+   "state": "MD",
+   "country": "USA",
+   "winner": "Matthew Brabham",
+   "winner_wiki": "Matthew_Brabham",
+   "track_type": "street",
+   "cancelled": false
+  },
+  {
+   "round": 13,
+   "date": "2012-09-14",
+   "race": "USF2000 Grand Prix of Virginia",
+   "track": "Virginia International Raceway",
+   "city": "Danville",
+   "state": "VA",
+   "country": "USA",
+   "winner": "Spencer Pigot",
+   "winner_wiki": "Spencer_Pigot",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 14,
+   "date": "2012-09-14",
+   "race": "USF2000 Grand Prix of Virginia",
+   "track": "Virginia International Raceway",
+   "city": "Danville",
+   "state": "VA",
+   "country": "USA",
+   "winner": "Spencer Pigot",
+   "winner_wiki": "Spencer_Pigot",
+   "track_type": "road",
+   "cancelled": false
+  }
+ ],
+ "sources": [
+  "https://en.wikipedia.org/wiki/2012_U.S._F2000_National_Championship",
+  "https://www.wikidata.org (driver bios)"
+ ]
+}

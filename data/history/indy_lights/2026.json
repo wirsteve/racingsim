@@ -1,0 +1,1481 @@
+{
+ "series": "formula_lights",
+ "year": 2026,
+ "official_name": "2026 Indy NXT by Firestone",
+ "era": "IRL feeder (Infiniti Pro / Indy Pro / Indy Lights / Indy NXT)",
+ "data_level": "full",
+ "teams_source": "teams_table",
+ "teams": [
+  {
+   "team": "Abel Motorsports",
+   "team_wiki": "Abel_Motorsports",
+   "owner": null,
+   "manufacturer": null,
+   "chassis": "Dallara IL-15",
+   "cars": [
+    {
+     "number": "12",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Max Garcia",
+       "wiki": "Max_Garcia_(racing_driver)",
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "48",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Jordan Missig",
+       "wiki": "Jordan_Missig",
+       "rounds": "1–13",
+       "nat": "USA"
+      },
+      {
+       "name": "Jacob Abel",
+       "wiki": "Jacob_Abel_(racing_driver)",
+       "rounds": "14–17",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "57",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Colin Kaminsky",
+       "wiki": "Colin_Kaminsky",
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    }
+   ],
+   "chassis_note": "spec chassis (from page text)"
+  },
+  {
+   "team": "Abel Motorsports with Force Indy",
+   "team_wiki": "Abel_Motorsports",
+   "owner": null,
+   "manufacturer": null,
+   "chassis": "Dallara IL-15",
+   "cars": [
+    {
+     "number": "99",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Myles Rowe",
+       "wiki": "Myles_Rowe",
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    }
+   ],
+   "chassis_note": "spec chassis (from page text)"
+  },
+  {
+   "team": "Andretti Global",
+   "team_wiki": "Andretti_Global",
+   "owner": null,
+   "manufacturer": null,
+   "chassis": "Dallara IL-15",
+   "cars": [
+    {
+     "number": "26",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Lochie Hughes",
+       "wiki": "Lochie_Hughes",
+       "rounds": "All",
+       "nat": "AUS"
+      }
+     ]
+    },
+    {
+     "number": "27",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Sebastian Murray",
+       "wiki": "Sebastian_Murray",
+       "rounds": "All",
+       "nat": "GBR"
+      }
+     ]
+    },
+    {
+     "number": "28",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Max Taylor",
+       "wiki": "Max_Taylor_(racing_driver)",
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "29",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Josh Pierson",
+       "wiki": "Josh_Pierson",
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    }
+   ],
+   "chassis_note": "spec chassis (from page text)"
+  },
+  {
+   "team": "A. J. Foyt Racing",
+   "team_wiki": "A._J._Foyt_Racing",
+   "owner": null,
+   "manufacturer": null,
+   "chassis": "Dallara IL-15",
+   "cars": [
+    {
+     "number": "4",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Nicholas Monteiro",
+       "wiki": "Nicholas_Monteiro",
+       "rounds": "All",
+       "nat": "BRA"
+      }
+     ]
+    },
+    {
+     "number": "14",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Alessandro de Tullio",
+       "wiki": "Alessandro_de_Tullio",
+       "rounds": "All",
+       "nat": "ARG"
+      }
+     ]
+    }
+   ],
+   "chassis_note": "spec chassis (from page text)"
+  },
+  {
+   "team": "Cape Motorsports Powered by ECR",
+   "team_wiki": "Cape_Motorsports",
+   "owner": null,
+   "manufacturer": null,
+   "chassis": "Dallara IL-15",
+   "cars": [
+    {
+     "number": "20",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Matteo Nannini",
+       "wiki": "Matteo_Nannini",
+       "rounds": "All",
+       "nat": "ITA"
+      }
+     ]
+    },
+    {
+     "number": "21",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Nikita Johnson",
+       "wiki": "Nikita_Johnson",
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    }
+   ],
+   "chassis_note": "spec chassis (from page text)"
+  },
+  {
+   "team": "Chip Ganassi Racing",
+   "team_wiki": "Chip_Ganassi_Racing",
+   "owner": null,
+   "manufacturer": null,
+   "chassis": "Dallara IL-15",
+   "cars": [
+    {
+     "number": "8",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "James Roe",
+       "wiki": "James_Roe_(racing_driver)",
+       "rounds": "All",
+       "nat": "IRL"
+      }
+     ]
+    },
+    {
+     "number": "9",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Bryce Aron",
+       "wiki": "Bryce_Aron",
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "10",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Niels Koolen",
+       "wiki": "Niels_Koolen",
+       "rounds": "All",
+       "nat": "NLD"
+      }
+     ]
+    },
+    {
+     "number": "11",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Carson Etter",
+       "wiki": "Carson_Etter",
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    }
+   ],
+   "chassis_note": "spec chassis (from page text)"
+  },
+  {
+   "team": "Cusick Morgan Motorsports",
+   "team_wiki": "Cusick_Morgan_Motorsports",
+   "owner": null,
+   "manufacturer": null,
+   "chassis": "Dallara IL-15",
+   "cars": [
+    {
+     "number": "15",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Nicolas Stati",
+       "wiki": "Nicolas_Stati",
+       "rounds": "1–7, 9–17",
+       "nat": "AUS"
+      },
+      {
+       "name": "Yuven Sundaramoorthy",
+       "wiki": "Yuven_Sundaramoorthy",
+       "rounds": "8",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "68",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Juan Manuel Correa",
+       "wiki": "Juan_Manuel_Correa",
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    }
+   ],
+   "chassis_note": "spec chassis (from page text)"
+  },
+  {
+   "team": "HMD Motorsports",
+   "team_wiki": "HMD_Motorsports",
+   "owner": null,
+   "manufacturer": null,
+   "chassis": "Dallara IL-15",
+   "cars": [
+    {
+     "number": "17",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Salvador de Alba",
+       "wiki": "Salvador_de_Alba",
+       "rounds": "1–13, 15",
+       "nat": "MEX"
+      },
+      {
+       "name": "Bart Harrison",
+       "wiki": "Bart_Harrison",
+       "rounds": "14, 16–17",
+       "nat": "GBR"
+      }
+     ]
+    },
+    {
+     "number": "45",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Jack Beeton",
+       "wiki": "Jack_Beeton",
+       "rounds": "All",
+       "nat": "AUS"
+      }
+     ]
+    },
+    {
+     "number": "67",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Enzo Fittipaldi",
+       "wiki": "Enzo_Fittipaldi",
+       "rounds": "All",
+       "nat": "BRA"
+      }
+     ]
+    },
+    {
+     "number": "71",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Tymek Kucharczyk",
+       "wiki": "Tymek_Kucharczyk",
+       "rounds": "All",
+       "nat": "POL"
+      }
+     ]
+    }
+   ],
+   "chassis_note": "spec chassis (from page text)"
+  },
+  {
+   "team": "Juncos Hollinger Racing",
+   "team_wiki": "Juncos_Hollinger_Racing",
+   "owner": null,
+   "manufacturer": null,
+   "chassis": "Dallara IL-15",
+   "cars": [
+    {
+     "number": "75",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Alexander Koreiba",
+       "wiki": "Alexander_Koreiba",
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "76",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Ricardo Escotto",
+       "wiki": "Ricardo_Escotto",
+       "rounds": "1–10",
+       "nat": "MEX"
+      },
+      {
+       "name": "Nolan Allaer",
+       "wiki": "Nolan_Allaer",
+       "rounds": "11–12, 14, 16–17",
+       "nat": "USA"
+      }
+     ]
+    }
+   ],
+   "chassis_note": "spec chassis (from page text)"
+  }
+ ],
+ "standings": [
+  {
+   "pos": 1,
+   "name": "Nikita Johnson",
+   "wiki": "Nikita_Johnson",
+   "points": 585,
+   "wins": 2,
+   "podiums": 9,
+   "top5": 10,
+   "starts": 17,
+   "nat": "USA",
+   "results": [
+    1,
+    6,
+    1,
+    3,
+    3,
+    6,
+    6,
+    7,
+    6,
+    3,
+    7,
+    3,
+    2,
+    8,
+    5,
+    2,
+    2
+   ]
+  },
+  {
+   "pos": 2,
+   "name": "Enzo Fittipaldi",
+   "wiki": "Enzo_Fittipaldi",
+   "points": 556,
+   "wins": 4,
+   "podiums": 7,
+   "top5": 10,
+   "starts": 17,
+   "nat": "BRA",
+   "results": [
+    17,
+    2,
+    2,
+    4,
+    1,
+    3,
+    1,
+    13,
+    22,
+    4,
+    1,
+    1,
+    11,
+    7,
+    7,
+    8,
+    5
+   ]
+  },
+  {
+   "pos": 3,
+   "name": "Tymek Kucharczyk",
+   "wiki": "Tymek_Kucharczyk",
+   "points": 551,
+   "wins": 2,
+   "podiums": 8,
+   "top5": 12,
+   "starts": 17,
+   "nat": "POL",
+   "results": [
+    3,
+    3,
+    3,
+    5,
+    4,
+    1,
+    3,
+    9,
+    8,
+    2,
+    2,
+    5,
+    18,
+    4,
+    12,
+    10,
+    1
+   ]
+  },
+  {
+   "pos": 4,
+   "name": "Max Taylor",
+   "wiki": "Max_Taylor_(racing_driver)",
+   "points": 470,
+   "wins": 1,
+   "podiums": 5,
+   "top5": 9,
+   "starts": 17,
+   "nat": "USA",
+   "results": [
+    2,
+    1,
+    19,
+    2,
+    5,
+    2,
+    20,
+    5,
+    12,
+    17,
+    10,
+    9,
+    5,
+    3,
+    4,
+    7,
+    14
+   ]
+  },
+  {
+   "pos": 5,
+   "name": "Lochie Hughes",
+   "wiki": "Lochie_Hughes",
+   "points": 453,
+   "wins": 1,
+   "podiums": 4,
+   "top5": 8,
+   "starts": 17,
+   "nat": "AUS",
+   "results": [
+    5,
+    5,
+    12,
+    16,
+    2,
+    4,
+    21,
+    6,
+    1,
+    20,
+    5,
+    10,
+    7,
+    2,
+    14,
+    14,
+    3
+   ]
+  },
+  {
+   "pos": 6,
+   "name": "Alessandro de Tullio",
+   "wiki": "Alessandro_de_Tullio",
+   "points": 442,
+   "wins": 2,
+   "podiums": 4,
+   "top5": 5,
+   "starts": 17,
+   "nat": "ARG",
+   "results": [
+    10,
+    11,
+    20,
+    1,
+    9,
+    5,
+    22,
+    2,
+    3,
+    23,
+    6,
+    8,
+    9,
+    1,
+    6,
+    18,
+    8
+   ]
+  },
+  {
+   "pos": 7,
+   "name": "Juan Manuel Correa",
+   "wiki": "Juan_Manuel_Correa",
+   "points": 389,
+   "wins": 0,
+   "podiums": 1,
+   "top5": 4,
+   "starts": 17,
+   "nat": "USA",
+   "results": [
+    9,
+    4,
+    11,
+    8,
+    12,
+    11,
+    9,
+    14,
+    7,
+    7,
+    22,
+    4,
+    23,
+    6,
+    2,
+    4,
+    12
+   ]
+  },
+  {
+   "pos": 8,
+   "name": "Myles Rowe",
+   "wiki": "Myles_Rowe",
+   "points": 388,
+   "wins": 1,
+   "podiums": 3,
+   "top5": 5,
+   "starts": 17,
+   "nat": "USA",
+   "results": [
+    6,
+    9,
+    5,
+    23,
+    7,
+    24,
+    2,
+    1,
+    9,
+    5,
+    9,
+    16,
+    3,
+    22,
+    21,
+    23,
+    6
+   ]
+  },
+  {
+   "pos": 9,
+   "name": "Jack Beeton",
+   "wiki": "Jack_Beeton",
+   "points": 382,
+   "wins": 0,
+   "podiums": 3,
+   "top5": 4,
+   "starts": 17,
+   "nat": "AUS",
+   "results": [
+    11,
+    15,
+    9,
+    9,
+    21,
+    13,
+    13,
+    11,
+    4,
+    6,
+    3,
+    2,
+    8,
+    13,
+    3,
+    19,
+    10
+   ]
+  },
+  {
+   "pos": 10,
+   "name": "Max Garcia",
+   "wiki": "Max_Garcia_(racing_driver)",
+   "points": 381,
+   "wins": 1,
+   "podiums": 2,
+   "top5": 5,
+   "starts": 17,
+   "nat": "USA",
+   "results": [
+    12,
+    14,
+    4,
+    24,
+    15,
+    23,
+    4,
+    8,
+    10,
+    18,
+    8,
+    7,
+    4,
+    9,
+    1,
+    3,
+    21
+   ]
+  },
+  {
+   "pos": 11,
+   "name": "Josh Pierson",
+   "wiki": "Josh_Pierson",
+   "points": 364,
+   "wins": 1,
+   "podiums": 3,
+   "top5": 3,
+   "starts": 17,
+   "nat": "USA",
+   "results": [
+    7,
+    23,
+    24,
+    14,
+    6,
+    8,
+    14,
+    3,
+    2,
+    22,
+    11,
+    6,
+    6,
+    21,
+    22,
+    1,
+    24
+   ]
+  },
+  {
+   "pos": 12,
+   "name": "Matteo Nannini",
+   "wiki": "Matteo_Nannini",
+   "points": 362,
+   "wins": 2,
+   "podiums": 2,
+   "top5": 3,
+   "starts": 17,
+   "nat": "ITA",
+   "results": [
+    19,
+    8,
+    15,
+    13,
+    23,
+    7,
+    11,
+    20,
+    5,
+    1,
+    14,
+    12,
+    1,
+    20,
+    20,
+    11,
+    7
+   ]
+  },
+  {
+   "pos": 13,
+   "name": "Sebastian Murray",
+   "wiki": "Sebastian_Murray",
+   "points": 306,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 2,
+   "starts": 17,
+   "nat": "GBR",
+   "results": [
+    4,
+    7,
+    22,
+    10,
+    20,
+    9,
+    5,
+    12,
+    13,
+    15,
+    15,
+    15,
+    13,
+    15,
+    11,
+    22,
+    11
+   ]
+  },
+  {
+   "pos": 14,
+   "name": "Bryce Aron",
+   "wiki": "Bryce_Aron",
+   "points": 298,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 17,
+   "nat": "USA",
+   "results": [
+    18,
+    18,
+    8,
+    7,
+    22,
+    12,
+    8,
+    23,
+    21,
+    10,
+    16,
+    14,
+    10,
+    16,
+    8,
+    6,
+    9
+   ]
+  },
+  {
+   "pos": 15,
+   "name": "Niels Koolen",
+   "wiki": "Niels_Koolen",
+   "points": 268,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 2,
+   "starts": 17,
+   "nat": "NLD",
+   "results": [
+    22,
+    13,
+    17,
+    20,
+    8,
+    14,
+    23,
+    4,
+    11,
+    9,
+    13,
+    13,
+    21,
+    17,
+    23,
+    5,
+    23
+   ]
+  },
+  {
+   "pos": 16,
+   "name": "Salvador de Alba",
+   "wiki": "Salvador_de_Alba",
+   "points": 245,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 1,
+   "starts": 14,
+   "nat": "MEX",
+   "results": [
+    8,
+    20,
+    18,
+    11,
+    13,
+    10,
+    12,
+    22,
+    18,
+    8,
+    4,
+    11,
+    12,
+    null,
+    19,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 17,
+   "name": "Nicolas Stati",
+   "wiki": "Nicolas_Stati",
+   "points": 227,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 16,
+   "nat": "AUS",
+   "results": [
+    16,
+    21,
+    10,
+    15,
+    14,
+    21,
+    7,
+    null,
+    17,
+    12,
+    23,
+    17,
+    15,
+    23,
+    13,
+    17,
+    15
+   ]
+  },
+  {
+   "pos": 18,
+   "name": "Colin Kaminsky",
+   "wiki": "Colin_Kaminsky",
+   "points": 222,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 17,
+   "nat": "USA",
+   "results": [
+    15,
+    24,
+    16,
+    18,
+    16,
+    15,
+    10,
+    17,
+    20,
+    21,
+    17,
+    22,
+    19,
+    12,
+    18,
+    15,
+    13
+   ]
+  },
+  {
+   "pos": 19,
+   "name": "Jordan Missig",
+   "wiki": "Jordan_Missig",
+   "points": 216,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 13,
+   "nat": "USA",
+   "results": [
+    14,
+    10,
+    6,
+    6,
+    11,
+    16,
+    15,
+    10,
+    24,
+    16,
+    12,
+    20,
+    22,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 20,
+   "name": "James Roe",
+   "wiki": "James_Roe_(racing_driver)",
+   "points": 214,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 17,
+   "nat": "IRL",
+   "results": [
+    21,
+    17,
+    23,
+    12,
+    10,
+    22,
+    18,
+    18,
+    15,
+    19,
+    20,
+    19,
+    16,
+    14,
+    15,
+    21,
+    16
+   ]
+  },
+  {
+   "pos": 21,
+   "name": "Alexander Koreiba",
+   "wiki": "Alexander_Koreiba",
+   "points": 207,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 17,
+   "nat": "USA",
+   "results": [
+    20,
+    16,
+    13,
+    22,
+    19,
+    17,
+    16,
+    24,
+    23,
+    14,
+    19,
+    24,
+    14,
+    18,
+    10,
+    16,
+    18
+   ]
+  },
+  {
+   "pos": 22,
+   "name": "Carson Etter",
+   "wiki": "Carson_Etter",
+   "points": 182,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 17,
+   "nat": "USA",
+   "results": [
+    24,
+    19,
+    21,
+    21,
+    17,
+    19,
+    19,
+    16,
+    16,
+    13,
+    21,
+    23,
+    20,
+    24,
+    16,
+    20,
+    19
+   ]
+  },
+  {
+   "pos": 23,
+   "name": "Nicholas Monteiro",
+   "wiki": "Nicholas_Monteiro",
+   "points": 179,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 17,
+   "nat": "BRA",
+   "results": [
+    23,
+    22,
+    14,
+    19,
+    18,
+    18,
+    17,
+    15,
+    19,
+    24,
+    18,
+    21,
+    17,
+    19,
+    17,
+    24,
+    20
+   ]
+  },
+  {
+   "pos": 24,
+   "name": "Ricardo Escotto",
+   "wiki": "Ricardo_Escotto",
+   "points": 142,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 10,
+   "nat": "MEX",
+   "results": [
+    13,
+    12,
+    7,
+    17,
+    24,
+    20,
+    24,
+    19,
+    14,
+    11,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 25,
+   "name": "Jacob Abel",
+   "wiki": "Jacob_Abel_(racing_driver)",
+   "points": 101,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 2,
+   "starts": 4,
+   "nat": "USA",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    5,
+    9,
+    13,
+    4
+   ]
+  },
+  {
+   "pos": 26,
+   "name": "Nolan Allaer",
+   "wiki": "Nolan_Allaer",
+   "points": 67,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 5,
+   "nat": "USA",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    24,
+    18,
+    null,
+    11,
+    null,
+    9,
+    22
+   ]
+  },
+  {
+   "pos": 27,
+   "name": "Bart Harrison",
+   "wiki": "Bart_Harrison",
+   "points": 51,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 3,
+   "nat": "GBR",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    10,
+    null,
+    12,
+    17
+   ]
+  },
+  {
+   "pos": 28,
+   "name": "Yuven Sundaramoorthy",
+   "wiki": "Yuven_Sundaramoorthy",
+   "points": 9,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 1,
+   "nat": "USA",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    21,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  }
+ ],
+ "schedule": [
+  {
+   "round": 1,
+   "date": "2026-03-01",
+   "race": "Indy NXT by Firestone Grand Prix of St. Petersburg",
+   "track": "St. Petersburg Street Circuit",
+   "city": "St. Petersburg",
+   "state": "FL",
+   "country": "USA",
+   "winner": "Nikita Johnson",
+   "winner_wiki": "Nikita_Johnson",
+   "track_type": "street",
+   "cancelled": false
+  },
+  {
+   "round": 2,
+   "date": "2026-03-15",
+   "race": "Indy NXT by Firestone Grand Prix of Arlington",
+   "track": "Arlington Street Circuit",
+   "city": "Arlington",
+   "state": "TX",
+   "country": "USA",
+   "winner": "Max Taylor",
+   "winner_wiki": "Max_Taylor_(racing_driver)",
+   "track_type": "street",
+   "cancelled": false
+  },
+  {
+   "round": 3,
+   "date": "2026-03-28",
+   "race": "Indy NXT by Firestone Grand Prix of Alabama",
+   "track": "Barber Motorsports Park",
+   "city": "Birmingham",
+   "state": "AL",
+   "country": "USA",
+   "winner": "Nikita Johnson",
+   "winner_wiki": "Nikita_Johnson",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 4,
+   "date": "2026-03-29",
+   "race": "Indy NXT by Firestone Grand Prix of Alabama",
+   "track": "Barber Motorsports Park",
+   "city": "Birmingham",
+   "state": "AL",
+   "country": "USA",
+   "winner": "Alessandro de Tullio",
+   "winner_wiki": "Alessandro_de_Tullio",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 5,
+   "date": "2026-05-08",
+   "race": "Indy NXT by Firestone Grand Prix of Indianapolis",
+   "track": "Indianapolis Motor Speedway Road Course",
+   "city": "Speedway",
+   "state": "IN",
+   "country": "USA",
+   "winner": "Enzo Fittipaldi",
+   "winner_wiki": "Enzo_Fittipaldi",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 6,
+   "date": "2026-05-09",
+   "race": "Indy NXT by Firestone Grand Prix of Indianapolis",
+   "track": "Indianapolis Motor Speedway Road Course",
+   "city": "Speedway",
+   "state": "IN",
+   "country": "USA",
+   "winner": "Tymek Kucharczyk",
+   "winner_wiki": "Tymek_Kucharczyk",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 7,
+   "date": "2026-05-31",
+   "race": "Indy NXT by Firestone Detroit Grand Prix",
+   "track": "Detroit Street Circuit",
+   "city": "Detroit",
+   "state": "MI",
+   "country": "USA",
+   "winner": "Enzo Fittipaldi",
+   "winner_wiki": "Enzo_Fittipaldi",
+   "track_type": "street",
+   "cancelled": false
+  },
+  {
+   "round": 8,
+   "date": "2026-06-07",
+   "race": "Indy NXT by Firestone at World Wide Technology Raceway",
+   "track": "World Wide Technology Raceway",
+   "city": "Madison",
+   "state": "IL",
+   "country": "USA",
+   "winner": "Myles Rowe",
+   "winner_wiki": "Myles_Rowe",
+   "track_type": "oval",
+   "cancelled": false
+  },
+  {
+   "round": 9,
+   "date": "2026-06-20",
+   "race": "Indy NXT by Firestone Grand Prix at Road America",
+   "track": "Road America",
+   "city": "Elkhart Lake",
+   "state": "WI",
+   "country": "USA",
+   "winner": "Lochie Hughes",
+   "winner_wiki": "Lochie_Hughes",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 10,
+   "date": "2026-06-21",
+   "race": "Indy NXT by Firestone Grand Prix at Road America",
+   "track": "Road America",
+   "city": "Elkhart Lake",
+   "state": "WI",
+   "country": "USA",
+   "winner": "Matteo Nannini",
+   "winner_wiki": "Matteo_Nannini",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 11,
+   "date": "2026-07-04",
+   "race": "Indy NXT by Firestone Grand Prix at Mid-Ohio",
+   "track": "Mid-Ohio Sports Car Course",
+   "city": "Lexington",
+   "state": "OH",
+   "country": "USA",
+   "winner": "Enzo Fittipaldi",
+   "winner_wiki": "Enzo_Fittipaldi",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 12,
+   "date": "2026-07-05",
+   "race": "Indy NXT by Firestone Grand Prix at Mid-Ohio",
+   "track": "Mid-Ohio Sports Car Course",
+   "city": "Lexington",
+   "state": "OH",
+   "country": "USA",
+   "winner": "Enzo Fittipaldi",
+   "winner_wiki": "Enzo_Fittipaldi",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 13,
+   "date": "2026-07-19",
+   "race": "Indy NXT by Firestone Music City Grand Prix",
+   "track": "Nashville Superspeedway",
+   "city": "Lebanon",
+   "state": "TN",
+   "country": "USA",
+   "winner": "Matteo Nannini",
+   "winner_wiki": "Matteo_Nannini",
+   "track_type": "oval",
+   "cancelled": false
+  },
+  {
+   "round": 14,
+   "date": "2026-08-09",
+   "race": "Indy NXT by Firestone Grand Prix of Portland",
+   "track": "Portland International Raceway",
+   "city": "Portland",
+   "state": "OR",
+   "country": "USA",
+   "winner": "Alessandro de Tullio",
+   "winner_wiki": "Alessandro_de_Tullio",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 15,
+   "date": "2026-08-30",
+   "race": "Indy NXT by Firestone at the Milwaukee Mile",
+   "track": "Milwaukee Mile",
+   "city": "West Allis",
+   "state": "WI",
+   "country": "USA",
+   "winner": "Max Garcia",
+   "winner_wiki": "Max_Garcia_(racing_driver)",
+   "track_type": "oval",
+   "cancelled": false
+  },
+  {
+   "round": 16,
+   "date": "2026-09-05",
+   "race": "Indy NXT by Firestone Grand Prix of Monterey",
+   "track": "WeatherTech Raceway Laguna Seca",
+   "city": "Monterey",
+   "state": "CA",
+   "country": "USA",
+   "winner": "Josh Pierson",
+   "winner_wiki": "Josh_Pierson",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 17,
+   "date": "2026-09-06",
+   "race": "Indy NXT by Firestone Grand Prix of Monterey",
+   "track": "WeatherTech Raceway Laguna Seca",
+   "city": "Monterey",
+   "state": "CA",
+   "country": "USA",
+   "winner": "Tymek Kucharczyk",
+   "winner_wiki": "Tymek_Kucharczyk",
+   "track_type": "road",
+   "cancelled": false
+  }
+ ],
+ "sources": [
+  "https://en.wikipedia.org/wiki/2026_Indy_NXT",
+  "https://www.wikidata.org (driver bios)"
+ ]
+}

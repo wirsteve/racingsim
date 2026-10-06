@@ -1,0 +1,776 @@
+{
+ "series": "formula_lights",
+ "year": 2018,
+ "official_name": "2018 Indy Lights season",
+ "era": "IRL feeder (Infiniti Pro / Indy Pro / Indy Lights / Indy NXT)",
+ "data_level": "full",
+ "teams_source": "teams_table",
+ "teams": [
+  {
+   "team": "Andretti Autosport",
+   "team_wiki": "Andretti_Autosport",
+   "owner": null,
+   "manufacturer": null,
+   "chassis": null,
+   "cars": [
+    {
+     "number": "27",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Patricio O'Ward",
+       "wiki": "Pato_O'Ward",
+       "rounds": "All",
+       "nat": "MEX"
+      }
+     ]
+    },
+    {
+     "number": "28",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Dalton Kellett",
+       "wiki": "Dalton_Kellett",
+       "rounds": "All",
+       "nat": "CAN"
+      }
+     ]
+    },
+    {
+     "number": "48",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Ryan Norman",
+       "wiki": "Ryan_Norman",
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Andretti Steinbrenner Racing",
+   "team_wiki": "Andretti_Autosport",
+   "owner": null,
+   "manufacturer": null,
+   "chassis": null,
+   "cars": [
+    {
+     "number": "98",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Colton Herta",
+       "wiki": "Colton_Herta",
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Belardi Auto Racing",
+   "team_wiki": "Belardi_Auto_Racing",
+   "owner": null,
+   "manufacturer": null,
+   "chassis": null,
+   "cars": [
+    {
+     "number": "5",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Santiago Urrutia",
+       "wiki": "Santiago_Urrutia",
+       "rounds": "All",
+       "nat": "URY"
+      }
+     ]
+    },
+    {
+     "number": "9",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Aaron Telitz",
+       "wiki": "Aaron_Telitz",
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Juncos Racing",
+   "team_wiki": "Juncos_Racing",
+   "owner": null,
+   "manufacturer": null,
+   "chassis": null,
+   "cars": [
+    {
+     "number": "7",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Alfonso Celis Jr.",
+       "wiki": "Alfonso_Celis_Jr.",
+       "rounds": "3–4",
+       "nat": "MEX"
+      },
+      {
+       "name": "Heamin Choi",
+       "wiki": "Heamin_Choi",
+       "rounds": "16–17",
+       "nat": "KOR"
+      }
+     ]
+    },
+    {
+     "number": "23",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Victor Franzoni",
+       "wiki": "Victor_Franzoni",
+       "rounds": "All",
+       "nat": "BRA"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Team Pelfrey",
+   "team_wiki": "Team_Pelfrey",
+   "owner": null,
+   "manufacturer": null,
+   "chassis": null,
+   "cars": [
+    {
+     "number": "2",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Neil Alberico",
+       "wiki": "Neil_Alberico",
+       "rounds": "1–2",
+       "nat": "USA"
+      },
+      {
+       "name": "Davey Hamilton Jr.",
+       "wiki": "Davey_Hamilton_Jr.",
+       "rounds": "7",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "3",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Shelby Blackstock",
+       "wiki": "Shelby_Blackstock",
+       "rounds": "1–2",
+       "nat": "USA"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "standings": [
+  {
+   "pos": 1,
+   "name": "Patricio O'Ward",
+   "wiki": "Pato_O'Ward",
+   "points": 491,
+   "wins": 9,
+   "podiums": 13,
+   "top5": 15,
+   "starts": 17,
+   "nat": "MEX",
+   "results": [
+    1,
+    7,
+    1,
+    1,
+    4,
+    7,
+    2,
+    2,
+    4,
+    1,
+    1,
+    2,
+    1,
+    1,
+    3,
+    1,
+    1
+   ]
+  },
+  {
+   "pos": 2,
+   "name": "Colton Herta",
+   "wiki": "Colton_Herta",
+   "points": 447,
+   "wins": 4,
+   "podiums": 13,
+   "top5": 14,
+   "starts": 17,
+   "nat": "USA",
+   "results": [
+    3,
+    8,
+    2,
+    3,
+    1,
+    1,
+    1,
+    1,
+    2,
+    2,
+    7,
+    6,
+    2,
+    2,
+    2,
+    2,
+    4
+   ]
+  },
+  {
+   "pos": 3,
+   "name": "Santiago Urrutia",
+   "wiki": "Santiago_Urrutia",
+   "points": 395,
+   "wins": 2,
+   "podiums": 8,
+   "top5": 15,
+   "starts": 17,
+   "nat": "URY",
+   "results": [
+    2,
+    1,
+    3,
+    5,
+    2,
+    4,
+    4,
+    4,
+    7,
+    3,
+    2,
+    1,
+    6,
+    4,
+    4,
+    4,
+    3
+   ]
+  },
+  {
+   "pos": 4,
+   "name": "Ryan Norman",
+   "wiki": "Ryan_Norman",
+   "points": 345,
+   "wins": 1,
+   "podiums": 4,
+   "top5": 13,
+   "starts": 17,
+   "nat": "USA",
+   "results": [
+    6,
+    3,
+    5,
+    7,
+    5,
+    5,
+    5,
+    6,
+    5,
+    4,
+    3,
+    4,
+    5,
+    3,
+    1,
+    5,
+    8
+   ]
+  },
+  {
+   "pos": 5,
+   "name": "Victor Franzoni",
+   "wiki": "Victor_Franzoni",
+   "points": 341,
+   "wins": 1,
+   "podiums": 5,
+   "top5": 10,
+   "starts": 17,
+   "nat": "BRA",
+   "results": [
+    4,
+    4,
+    4,
+    2,
+    6,
+    3,
+    8,
+    3,
+    1,
+    6,
+    6,
+    7,
+    4,
+    6,
+    6,
+    3,
+    5
+   ]
+  },
+  {
+   "pos": 6,
+   "name": "Aaron Telitz",
+   "wiki": "Aaron_Telitz",
+   "points": 316,
+   "wins": 0,
+   "podiums": 5,
+   "top5": 9,
+   "starts": 16,
+   "nat": "USA",
+   "results": [
+    "DNS",
+    9,
+    8,
+    4,
+    3,
+    2,
+    6,
+    5,
+    3,
+    7,
+    4,
+    3,
+    7,
+    7,
+    5,
+    6,
+    2
+   ]
+  },
+  {
+   "pos": 7,
+   "name": "Dalton Kellett",
+   "wiki": "Dalton_Kellett",
+   "points": 299,
+   "wins": 0,
+   "podiums": 2,
+   "top5": 6,
+   "starts": 17,
+   "nat": "CAN",
+   "results": [
+    8,
+    6,
+    6,
+    6,
+    7,
+    6,
+    3,
+    7,
+    6,
+    5,
+    5,
+    5,
+    3,
+    5,
+    7,
+    7,
+    7
+   ]
+  },
+  {
+   "pos": 8,
+   "name": "Shelby Blackstock",
+   "wiki": "Shelby_Blackstock",
+   "points": 42,
+   "wins": 0,
+   "podiums": 1,
+   "top5": 2,
+   "starts": 2,
+   "nat": "USA",
+   "results": [
+    5,
+    2,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 9,
+   "name": "Neil Alberico",
+   "wiki": "Neil_Alberico",
+   "points": 31,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 1,
+   "starts": 2,
+   "nat": "USA",
+   "results": [
+    7,
+    5,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 10,
+   "name": "Heamin Choi",
+   "wiki": "Heamin_Choi",
+   "points": 28,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 2,
+   "nat": "KOR",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    8,
+    6
+   ]
+  },
+  {
+   "pos": 11,
+   "name": "Alfonso Celis Jr.",
+   "wiki": "Alfonso_Celis_Jr.",
+   "points": 27,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 2,
+   "nat": "MEX",
+   "results": [
+    null,
+    null,
+    7,
+    8,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 12,
+   "name": "Davey Hamilton Jr.",
+   "wiki": "Davey_Hamilton_Jr.",
+   "points": 21,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 1,
+   "nat": "USA",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    7,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  }
+ ],
+ "schedule": [
+  {
+   "round": 1,
+   "date": "2018-03-10",
+   "race": "St. Petersburg 100",
+   "track": "Streets of St. Petersburg",
+   "city": "St. Petersburg",
+   "state": "FL",
+   "country": "USA",
+   "winner": "Patricio O'Ward",
+   "winner_wiki": "Pato_O'Ward",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 2,
+   "date": "2018-03-11",
+   "race": "St. Petersburg 100",
+   "track": "Streets of St. Petersburg",
+   "city": "St. Petersburg",
+   "state": "FL",
+   "country": "USA",
+   "winner": "Santiago Urrutia",
+   "winner_wiki": "Santiago_Urrutia",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 3,
+   "date": "2018-04-21",
+   "race": "Legacy Indy Lights 100",
+   "track": "Barber Motorsports Park",
+   "city": "Birmingham",
+   "state": "AL",
+   "country": "USA",
+   "winner": "Patricio O'Ward",
+   "winner_wiki": "Pato_O'Ward",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 4,
+   "date": "2018-04-22",
+   "race": "Legacy Indy Lights 100",
+   "track": "Barber Motorsports Park",
+   "city": "Birmingham",
+   "state": "AL",
+   "country": "USA",
+   "winner": "Patricio O'Ward",
+   "winner_wiki": "Pato_O'Ward",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 5,
+   "date": "2018-05-11",
+   "race": "Grand Prix of Indianapolis",
+   "track": "Indianapolis Motor Speedway",
+   "city": "Speedway",
+   "state": "IN",
+   "country": "USA",
+   "winner": "Colton Herta",
+   "winner_wiki": "Colton_Herta",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 6,
+   "date": "2018-05-12",
+   "race": "Grand Prix of Indianapolis",
+   "track": "Indianapolis Motor Speedway",
+   "city": "Speedway",
+   "state": "IN",
+   "country": "USA",
+   "winner": "Colton Herta",
+   "winner_wiki": "Colton_Herta",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 7,
+   "date": "2018-05-25",
+   "race": "Freedom 100",
+   "track": "Indianapolis Motor Speedway",
+   "city": "Speedway",
+   "state": "IN",
+   "country": "USA",
+   "winner": "Colton Herta",
+   "winner_wiki": "Colton_Herta",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 8,
+   "date": "2018-06-23",
+   "race": "Mazda Grand Prix of Road America",
+   "track": "Road America",
+   "city": "Elkhart Lake",
+   "state": "WI",
+   "country": "USA",
+   "winner": "Colton Herta",
+   "winner_wiki": "Colton_Herta",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 9,
+   "date": "2018-06-24",
+   "race": "Mazda Grand Prix of Road America",
+   "track": "Road America",
+   "city": "Elkhart Lake",
+   "state": "WI",
+   "country": "USA",
+   "winner": "Victor Franzoni",
+   "winner_wiki": "Victor_Franzoni",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 10,
+   "date": "2018-07-08",
+   "race": "Mazda Iowa 100",
+   "track": "Iowa Speedway",
+   "city": "Newton",
+   "state": "IA",
+   "country": "USA",
+   "winner": "Patricio O'Ward",
+   "winner_wiki": "Pato_O'Ward",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 11,
+   "date": "2018-07-14",
+   "race": "Grand Prix of Toronto",
+   "track": "Exhibition Place",
+   "city": "Toronto",
+   "state": "ON",
+   "country": "CAN",
+   "winner": "Patricio O'Ward",
+   "winner_wiki": "Pato_O'Ward",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 12,
+   "date": "2018-07-15",
+   "race": "Grand Prix of Toronto",
+   "track": "Exhibition Place",
+   "city": "Toronto",
+   "state": "ON",
+   "country": "CAN",
+   "winner": "Santiago Urrutia",
+   "winner_wiki": "Santiago_Urrutia",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 13,
+   "date": "2018-07-28",
+   "race": "Grand Prix of Mid-Ohio",
+   "track": "Mid-Ohio Sports Car Course",
+   "city": "Lexington",
+   "state": "OH",
+   "country": "USA",
+   "winner": "Patricio O'Ward",
+   "winner_wiki": "Pato_O'Ward",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 14,
+   "date": "2018-07-29",
+   "race": "Grand Prix of Mid-Ohio",
+   "track": "Mid-Ohio Sports Car Course",
+   "city": "Lexington",
+   "state": "OH",
+   "country": "USA",
+   "winner": "Patricio O'Ward",
+   "winner_wiki": "Pato_O'Ward",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 15,
+   "date": "2018-08-25",
+   "race": "Illinois 100",
+   "track": "Gateway Motorsports Park",
+   "city": "Madison",
+   "state": "IL",
+   "country": "USA",
+   "winner": "Ryan Norman",
+   "winner_wiki": "Ryan_Norman",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 16,
+   "date": "2018-09-01",
+   "race": "Grand Prix of Portland",
+   "track": "Portland International Raceway",
+   "city": "Portland",
+   "state": "OR",
+   "country": "USA",
+   "winner": "Patricio O'Ward",
+   "winner_wiki": "Pato_O'Ward",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 17,
+   "date": "2018-09-02",
+   "race": "Grand Prix of Portland",
+   "track": "Portland International Raceway",
+   "city": "Portland",
+   "state": "OR",
+   "country": "USA",
+   "winner": "Patricio O'Ward",
+   "winner_wiki": "Pato_O'Ward",
+   "track_type": null,
+   "cancelled": false
+  }
+ ],
+ "sources": [
+  "https://en.wikipedia.org/wiki/2018_Indy_Lights",
+  "https://www.wikidata.org (driver bios)"
+ ]
+}

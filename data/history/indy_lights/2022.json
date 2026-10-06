@@ -1,0 +1,941 @@
+{
+ "series": "formula_lights",
+ "year": 2022,
+ "official_name": "2022 Indy Lights",
+ "era": "IRL feeder (Infiniti Pro / Indy Pro / Indy Lights / Indy NXT)",
+ "data_level": "full",
+ "teams_source": "teams_table",
+ "teams": [
+  {
+   "team": "Abel Motorsports",
+   "team_wiki": "Abel_Motorsports",
+   "owner": null,
+   "manufacturer": null,
+   "chassis": null,
+   "cars": [
+    {
+     "number": "11",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Antonio Serravalle",
+       "wiki": "Antonio_Serravalle",
+       "rounds": "1–2",
+       "nat": "CAN"
+      }
+     ]
+    },
+    {
+     "number": "15",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Flinn Lazier",
+       "wiki": "Flinn_Lazier",
+       "rounds": "12–14",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "51",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Jacob Abel",
+       "wiki": "Jacob_Abel_(racing_driver)",
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "61",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Ryan Phinny",
+       "wiki": "Ryan_Phinny",
+       "rounds": "3–6",
+       "nat": "USA"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Andretti Autosport",
+   "team_wiki": "Andretti_Autosport",
+   "owner": null,
+   "manufacturer": null,
+   "chassis": null,
+   "cars": [
+    {
+     "number": "2",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Sting Ray Robb",
+       "wiki": "Sting_Ray_Robb",
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "27",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Hunter McElrea",
+       "wiki": "Hunter_McElrea",
+       "rounds": "All",
+       "nat": null
+      }
+     ]
+    },
+    {
+     "number": "28",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Christian Rasmussen",
+       "wiki": "Christian_Rasmussen_(racing_driver)",
+       "rounds": "All",
+       "nat": "DNK"
+      }
+     ]
+    },
+    {
+     "number": "83",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Matthew Brabham",
+       "wiki": "Matthew_Brabham",
+       "rounds": "All",
+       "nat": "AUS"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Force Indy",
+   "team_wiki": null,
+   "owner": null,
+   "manufacturer": null,
+   "chassis": null,
+   "cars": [
+    {
+     "number": "99",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Ernie Francis Jr.",
+       "wiki": "Ernie_Francis_Jr.",
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Global Racing Group with HMD Motorsports",
+   "team_wiki": "HMD_Motorsports",
+   "owner": null,
+   "manufacturer": null,
+   "chassis": null,
+   "cars": [
+    {
+     "number": "24",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Benjamin Pedersen",
+       "wiki": "Benjamin_Pedersen",
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "HMD Motorsports with Dale Coyne Racing",
+   "team_wiki": "HMD_Motorsports",
+   "owner": null,
+   "manufacturer": null,
+   "chassis": null,
+   "cars": [
+    {
+     "number": "7",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Christian Bogle",
+       "wiki": "Christian_Bogle",
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "11",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Antonio Serravalle",
+       "wiki": "Antonio_Serravalle",
+       "rounds": "3–9",
+       "nat": "CAN"
+      },
+      {
+       "name": "James Roe",
+       "wiki": "James_Roe_(racing_driver)",
+       "rounds": "10–11",
+       "nat": "IRE"
+      },
+      {
+       "name": "Nolan Siegel",
+       "wiki": "Nolan_Siegel",
+       "rounds": "13–14",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "21",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Kyffin Simpson",
+       "wiki": "Kyffin_Simpson",
+       "rounds": "9–14",
+       "nat": "CAY"
+      }
+     ]
+    },
+    {
+     "number": "26",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Linus Lundqvist",
+       "wiki": "Linus_Lundqvist",
+       "rounds": "All",
+       "nat": "SWE"
+      }
+     ]
+    },
+    {
+     "number": "59",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Manuel Sulaimán",
+       "wiki": "Manuel_Sulaimán",
+       "rounds": "1–2",
+       "nat": "MEX"
+      }
+     ]
+    },
+    {
+     "number": "68",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Danial Frost",
+       "wiki": "Danial_Frost",
+       "rounds": "All",
+       "nat": "SGP"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "TJ Speed Motorsports",
+   "team_wiki": null,
+   "owner": null,
+   "manufacturer": null,
+   "chassis": null,
+   "cars": [
+    {
+     "number": "12",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "James Roe",
+       "wiki": "James_Roe_(racing_driver)",
+       "rounds": "1–9",
+       "nat": "IRE"
+      }
+     ]
+    },
+    {
+     "number": "21",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Kyffin Simpson",
+       "wiki": "Kyffin_Simpson",
+       "rounds": "1–8",
+       "nat": "CAY"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "standings": [
+  {
+   "pos": 1,
+   "name": "Linus Lundqvist",
+   "wiki": "Linus_Lundqvist",
+   "points": 575,
+   "wins": 5,
+   "podiums": 9,
+   "top5": 13,
+   "starts": 14,
+   "nat": "SWE",
+   "results": [
+    3,
+    1,
+    5,
+    1,
+    1,
+    1,
+    4,
+    3,
+    4,
+    1,
+    2,
+    3,
+    6,
+    4
+   ]
+  },
+  {
+   "pos": 2,
+   "name": "Sting Ray Robb",
+   "wiki": "Sting_Ray_Robb",
+   "points": 483,
+   "wins": 1,
+   "podiums": 8,
+   "top5": 11,
+   "starts": 14,
+   "nat": "USA",
+   "results": [
+    4,
+    3,
+    3,
+    3,
+    11,
+    3,
+    2,
+    5,
+    5,
+    2,
+    6,
+    6,
+    1,
+    2
+   ]
+  },
+  {
+   "pos": 3,
+   "name": "Matthew Brabham",
+   "wiki": "Matthew_Brabham",
+   "points": 471,
+   "wins": 2,
+   "podiums": 7,
+   "top5": 9,
+   "starts": 14,
+   "nat": "AUS",
+   "results": [
+    1,
+    7,
+    10,
+    9,
+    3,
+    4,
+    6,
+    2,
+    3,
+    4,
+    1,
+    2,
+    8,
+    3
+   ]
+  },
+  {
+   "pos": 4,
+   "name": "Hunter McElrea",
+   "wiki": "Hunter_McElrea",
+   "points": 460,
+   "wins": 2,
+   "podiums": 7,
+   "top5": 9,
+   "starts": 14,
+   "nat": null,
+   "results": [
+    14,
+    12,
+    2,
+    6,
+    12,
+    2,
+    3,
+    1,
+    1,
+    3,
+    5,
+    5,
+    3,
+    8
+   ]
+  },
+  {
+   "pos": 5,
+   "name": "Benjamin Pedersen",
+   "wiki": "Benjamin_Pedersen",
+   "points": 443,
+   "wins": 1,
+   "podiums": 5,
+   "top5": 7,
+   "starts": 14,
+   "nat": "USA",
+   "results": [
+    2,
+    2,
+    11,
+    4,
+    2,
+    6,
+    11,
+    6,
+    9,
+    6,
+    3,
+    1,
+    5,
+    6
+   ]
+  },
+  {
+   "pos": 6,
+   "name": "Christian Rasmussen",
+   "wiki": "Christian_Rasmussen_(racing_driver)",
+   "points": 440,
+   "wins": 2,
+   "podiums": 5,
+   "top5": 8,
+   "starts": 14,
+   "nat": "DNK",
+   "results": [
+    12,
+    11,
+    4,
+    2,
+    13,
+    13,
+    1,
+    4,
+    2,
+    5,
+    12,
+    7,
+    2,
+    1
+   ]
+  },
+  {
+   "pos": 7,
+   "name": "Danial Frost",
+   "wiki": "Danial_Frost",
+   "points": 382,
+   "wins": 1,
+   "podiums": 1,
+   "top5": 5,
+   "starts": 14,
+   "nat": "SGP",
+   "results": [
+    5,
+    4,
+    1,
+    7,
+    10,
+    5,
+    8,
+    13,
+    7,
+    10,
+    4,
+    10,
+    7,
+    7
+   ]
+  },
+  {
+   "pos": 8,
+   "name": "Jacob Abel",
+   "wiki": "Jacob_Abel_(racing_driver)",
+   "points": 355,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 5,
+   "starts": 14,
+   "nat": "USA",
+   "results": [
+    10,
+    6,
+    8,
+    5,
+    14,
+    12,
+    5,
+    11,
+    6,
+    9,
+    7,
+    4,
+    4,
+    5
+   ]
+  },
+  {
+   "pos": 9,
+   "name": "Kyffin Simpson",
+   "wiki": "Kyffin_Simpson",
+   "points": 312,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 2,
+   "starts": 14,
+   "nat": "CAY",
+   "results": [
+    11,
+    5,
+    12,
+    8,
+    5,
+    7,
+    9,
+    9,
+    11,
+    8,
+    10,
+    9,
+    12,
+    12
+   ]
+  },
+  {
+   "pos": 10,
+   "name": "Ernie Francis Jr.",
+   "wiki": "Ernie_Francis_Jr.",
+   "points": 299,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 14,
+   "nat": "USA",
+   "results": [
+    7,
+    8,
+    9,
+    10,
+    9,
+    10,
+    10,
+    10,
+    8,
+    11,
+    9,
+    8,
+    11,
+    13
+   ]
+  },
+  {
+   "pos": 11,
+   "name": "Christian Bogle",
+   "wiki": "Christian_Bogle",
+   "points": 298,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 1,
+   "starts": 14,
+   "nat": "USA",
+   "results": [
+    9,
+    14,
+    7,
+    14,
+    4,
+    14,
+    12,
+    7,
+    10,
+    7,
+    11,
+    11,
+    9,
+    10
+   ]
+  },
+  {
+   "pos": 12,
+   "name": "James Roe",
+   "wiki": "James_Roe_(racing_driver)",
+   "points": 219,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 11,
+   "nat": "IRE",
+   "results": [
+    13,
+    13,
+    13,
+    13,
+    7,
+    9,
+    7,
+    12,
+    13,
+    12,
+    8,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 13,
+   "name": "Antonio Serravalle",
+   "wiki": "Antonio_Serravalle",
+   "points": 204,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 9,
+   "nat": "CAN",
+   "results": [
+    8,
+    9,
+    6,
+    11,
+    6,
+    8,
+    13,
+    8,
+    12,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 14,
+   "name": "Ryan Phinny",
+   "wiki": "Ryan_Phinny",
+   "points": 77,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 4,
+   "nat": "USA",
+   "results": [
+    null,
+    null,
+    14,
+    12,
+    8,
+    11,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 15,
+   "name": "Flinn Lazier",
+   "wiki": "Flinn_Lazier",
+   "points": 54,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 3,
+   "nat": "USA",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    12,
+    13,
+    11
+   ]
+  },
+  {
+   "pos": 16,
+   "name": "Manuel Sulaimán",
+   "wiki": "Manuel_Sulaimán",
+   "points": 48,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 2,
+   "nat": "MEX",
+   "results": [
+    6,
+    10,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 17,
+   "name": "Nolan Siegel",
+   "wiki": "Nolan_Siegel",
+   "points": 42,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 2,
+   "nat": "USA",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    10,
+    9
+   ]
+  }
+ ],
+ "schedule": [
+  {
+   "round": 1,
+   "date": "2022-02-27",
+   "race": "Indy Lights Grand Prix of St. Petersburg",
+   "track": "Streets of St. Petersburg",
+   "city": "St. Petersburg",
+   "state": "FL",
+   "country": "USA",
+   "winner": "Matthew Brabham",
+   "winner_wiki": "Matthew_Brabham",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 2,
+   "date": "2022-05-01",
+   "race": "Indy Lights Grand Prix of Barber Motorsports Park",
+   "track": "Barber Motorsports Park",
+   "city": "Birmingham",
+   "state": "AL",
+   "country": "USA",
+   "winner": "Linus Lundqvist",
+   "winner_wiki": "Linus_Lundqvist",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 3,
+   "date": "2022-05-13",
+   "race": "Indy Lights Grand Prix of Indianapolis",
+   "track": "Indianapolis Motor Speedway",
+   "city": "Speedway",
+   "state": "IN",
+   "country": "USA",
+   "winner": "Danial Frost",
+   "winner_wiki": "Danial_Frost",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 4,
+   "date": "2022-05-13",
+   "race": "Indy Lights Grand Prix of Indianapolis",
+   "track": "Indianapolis Motor Speedway",
+   "city": "Speedway",
+   "state": "IN",
+   "country": "USA",
+   "winner": "Linus Lundqvist",
+   "winner_wiki": "Linus_Lundqvist",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 5,
+   "date": "2022-06-04",
+   "race": "Indy Lights Detroit Grand Prix",
+   "track": "The Raceway at Belle Isle Park",
+   "city": "Detroit",
+   "state": "MI",
+   "country": "USA",
+   "winner": "Linus Lundqvist",
+   "winner_wiki": "Linus_Lundqvist",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 6,
+   "date": "2022-06-04",
+   "race": "Indy Lights Detroit Grand Prix",
+   "track": "The Raceway at Belle Isle Park",
+   "city": "Detroit",
+   "state": "MI",
+   "country": "USA",
+   "winner": "Linus Lundqvist",
+   "winner_wiki": "Linus_Lundqvist",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 7,
+   "date": "2022-06-12",
+   "race": "Indy Lights Grand Prix at Road America",
+   "track": "Road America",
+   "city": "Elkhart Lake",
+   "state": "WI",
+   "country": "USA",
+   "winner": "Christian Rasmussen",
+   "winner_wiki": "Christian_Rasmussen_(racing_driver)",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 8,
+   "date": "2022-07-03",
+   "race": "Indy Lights at Mid-Ohio",
+   "track": "Mid-Ohio Sports Car Course",
+   "city": "Lexington",
+   "state": "OH",
+   "country": "USA",
+   "winner": "Hunter McElrea",
+   "winner_wiki": "Hunter_McElrea",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 9,
+   "date": "2022-07-23",
+   "race": "Indy Lights at Iowa Speedway",
+   "track": "Iowa Speedway",
+   "city": "Newton",
+   "state": "IA",
+   "country": "USA",
+   "winner": "Hunter McElrea",
+   "winner_wiki": "Hunter_McElrea",
+   "track_type": "oval",
+   "cancelled": false
+  },
+  {
+   "round": 10,
+   "date": "2022-08-07",
+   "race": "Indy Lights Music City Grand Prix",
+   "track": "Nashville Street Circuit",
+   "city": "Nashville",
+   "state": "TN",
+   "country": "USA",
+   "winner": "Linus Lundqvist",
+   "winner_wiki": "Linus_Lundqvist",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 11,
+   "date": "2022-08-20",
+   "race": "Indy Lights at World Wide Technology Raceway",
+   "track": "World Wide Technology Raceway",
+   "city": "Madison",
+   "state": "IL",
+   "country": "USA",
+   "winner": "Matthew Brabham",
+   "winner_wiki": "Matthew_Brabham",
+   "track_type": "oval",
+   "cancelled": false
+  },
+  {
+   "round": 12,
+   "date": "2022-09-04",
+   "race": "Indy Lights Grand Prix of Portland",
+   "track": "Portland International Raceway",
+   "city": "Portland",
+   "state": "OR",
+   "country": "USA",
+   "winner": "Benjamin Pedersen",
+   "winner_wiki": "Benjamin_Pedersen",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 13,
+   "date": "2022-09-10",
+   "race": "Indy Lights Grand Prix of Monterey",
+   "track": "WeatherTech Raceway Laguna Seca",
+   "city": "Monterey",
+   "state": "CA",
+   "country": "USA",
+   "winner": "Sting Ray Robb",
+   "winner_wiki": "Sting_Ray_Robb",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 14,
+   "date": "2022-09-10",
+   "race": "Indy Lights Grand Prix of Monterey",
+   "track": "WeatherTech Raceway Laguna Seca",
+   "city": "Monterey",
+   "state": "CA",
+   "country": "USA",
+   "winner": "Christian Rasmussen",
+   "winner_wiki": "Christian_Rasmussen_(racing_driver)",
+   "track_type": "road",
+   "cancelled": false
+  }
+ ],
+ "sources": [
+  "https://en.wikipedia.org/wiki/2022_Indy_Lights",
+  "https://www.wikidata.org (driver bios)"
+ ]
+}

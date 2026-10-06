@@ -1,0 +1,837 @@
+{
+ "series": "formula_lights",
+ "year": 2001,
+ "official_name": "2001 CART PPG/Dayton Indy Lights Championship Powered By Buick",
+ "era": "CART Indy Lights",
+ "data_level": "full",
+ "teams_source": "teams_table",
+ "teams": [
+  {
+   "team": "Brian Stewart Racing",
+   "team_wiki": null,
+   "owner": null,
+   "manufacturer": "Buick",
+   "chassis": "Lola T97/20",
+   "cars": [
+    {
+     "number": "2",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Larry Mason",
+       "wiki": null,
+       "rounds": "2",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "3",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Andy Booth",
+       "wiki": "Andy_Booth_(racing_driver)",
+       "rounds": "2",
+       "nat": "NZL"
+      }
+     ]
+    }
+   ],
+   "manufacturer_note": "spec engine (from page text)",
+   "chassis_note": "spec chassis (from page text)"
+  },
+  {
+   "team": "Conquest Racing",
+   "team_wiki": "Conquest_Racing",
+   "owner": null,
+   "manufacturer": "Buick",
+   "chassis": "Lola T97/20",
+   "cars": [
+    {
+     "number": "11",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Kristian Kolby",
+       "wiki": "Kristian_Kolby",
+       "rounds": "1–8",
+       "nat": "DNK"
+      },
+      {
+       "name": "Matt Halliday",
+       "wiki": "Matthew_Halliday_(racing_driver)",
+       "rounds": "12",
+       "nat": "NZL"
+      }
+     ]
+    },
+    {
+     "number": "21",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Matt Halliday",
+       "wiki": "Matthew_Halliday_(racing_driver)",
+       "rounds": "4–11",
+       "nat": "NZL"
+      },
+      {
+       "name": "Nilton Rossoni",
+       "wiki": "Nilton_Rossoni",
+       "rounds": "1",
+       "nat": "BRA"
+      }
+     ]
+    }
+   ],
+   "manufacturer_note": "spec engine (from page text)",
+   "chassis_note": "spec chassis (from page text)"
+  },
+  {
+   "team": "Dorricott Racing",
+   "team_wiki": null,
+   "owner": null,
+   "manufacturer": "Buick",
+   "chassis": "Lola T97/20",
+   "cars": [
+    {
+     "number": "30",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Townsend Bell",
+       "wiki": "Townsend_Bell",
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "31",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Damien Faulkner",
+       "wiki": "Damien_Faulkner",
+       "rounds": "All",
+       "nat": "IRL"
+      }
+     ]
+    },
+    {
+     "number": "32",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Jon Fogarty",
+       "wiki": "Jon_Fogarty",
+       "rounds": "1–4, 10–11",
+       "nat": "USA"
+      },
+      {
+       "name": "Geoff Boss",
+       "wiki": "Geoff_Boss",
+       "rounds": "7–8",
+       "nat": "USA"
+      }
+     ]
+    }
+   ],
+   "manufacturer_note": "spec engine (from page text)",
+   "chassis_note": "spec chassis (from page text)"
+  },
+  {
+   "team": "Indy Regency Racing",
+   "team_wiki": "Indy_Regency_Racing",
+   "owner": null,
+   "manufacturer": "Buick",
+   "chassis": "Lola T97/20",
+   "cars": [
+    {
+     "number": "12",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Cory Witherill",
+       "wiki": "Cory_Witherill",
+       "rounds": "1–2, 4–12",
+       "nat": "USA"
+      }
+     ]
+    }
+   ],
+   "manufacturer_note": "spec engine (from page text)",
+   "chassis_note": "spec chassis (from page text)"
+  },
+  {
+   "team": "Mexpro Racing",
+   "team_wiki": null,
+   "owner": null,
+   "manufacturer": "Buick",
+   "chassis": "Lola T97/20",
+   "cars": [
+    {
+     "number": "15",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Rudy Junco Jr.",
+       "wiki": null,
+       "rounds": "1–6, 8–9, 11–12",
+       "nat": "MEX"
+      }
+     ]
+    },
+    {
+     "number": "16",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Derek Higgins",
+       "wiki": "Derek_Higgins",
+       "rounds": "All",
+       "nat": "IRL"
+      }
+     ]
+    }
+   ],
+   "manufacturer_note": "spec engine (from page text)",
+   "chassis_note": "spec chassis (from page text)"
+  },
+  {
+   "team": "PacWest Lights",
+   "team_wiki": "PacWest_Racing",
+   "owner": null,
+   "manufacturer": "Buick",
+   "chassis": "Lola T97/20",
+   "cars": [
+    {
+     "number": "1",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Dan Wheldon",
+       "wiki": "Dan_Wheldon",
+       "rounds": "All",
+       "nat": "GBR"
+      }
+     ]
+    },
+    {
+     "number": "17",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Mario Domínguez",
+       "wiki": "Mario_Domínguez_(racing_driver)",
+       "rounds": "All",
+       "nat": "MEX"
+      }
+     ]
+    }
+   ],
+   "manufacturer_note": "spec engine (from page text)",
+   "chassis_note": "spec chassis (from page text)"
+  },
+  {
+   "team": "Roquin Motorsports",
+   "team_wiki": "Rolando_Quintanilla",
+   "owner": null,
+   "manufacturer": "Buick",
+   "chassis": "Lola T97/20",
+   "cars": [
+    {
+     "number": "64",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Rolando Quintanilla",
+       "wiki": "Rolando_Quintanilla",
+       "rounds": "All",
+       "nat": "MEX"
+      }
+     ]
+    },
+    {
+     "number": "65",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Luis Díaz",
+       "wiki": "Luis_Díaz_(racing_driver)",
+       "rounds": "All",
+       "nat": "MEX"
+      }
+     ]
+    }
+   ],
+   "manufacturer_note": "spec engine (from page text)",
+   "chassis_note": "spec chassis (from page text)"
+  }
+ ],
+ "standings": [
+  {
+   "pos": 1,
+   "name": "Townsend Bell",
+   "wiki": "Townsend_Bell",
+   "points": 192,
+   "wins": 6,
+   "podiums": 8,
+   "top5": 9,
+   "starts": 12,
+   "nat": "USA",
+   "results": [
+    2,
+    1,
+    8,
+    1,
+    6,
+    5,
+    1,
+    1,
+    9,
+    2,
+    1,
+    1
+   ]
+  },
+  {
+   "pos": 2,
+   "name": "Dan Wheldon",
+   "wiki": "Dan_Wheldon",
+   "points": 149,
+   "wins": 2,
+   "podiums": 7,
+   "top5": 9,
+   "starts": 12,
+   "nat": "GBR",
+   "results": [
+    5,
+    2,
+    10,
+    3,
+    10,
+    3,
+    7,
+    2,
+    1,
+    1,
+    5,
+    2
+   ]
+  },
+  {
+   "pos": 3,
+   "name": "Damien Faulkner",
+   "wiki": "Damien_Faulkner",
+   "points": 141,
+   "wins": 2,
+   "podiums": 6,
+   "top5": 8,
+   "starts": 12,
+   "nat": "IRL",
+   "results": [
+    7,
+    13,
+    1,
+    7,
+    1,
+    2,
+    3,
+    3,
+    5,
+    3,
+    4,
+    7
+   ]
+  },
+  {
+   "pos": 4,
+   "name": "Mario Domínguez",
+   "wiki": "Mario_Domínguez_(racing_driver)",
+   "points": 120,
+   "wins": 0,
+   "podiums": 3,
+   "top5": 7,
+   "starts": 12,
+   "nat": "MEX",
+   "results": [
+    4,
+    4,
+    6,
+    2,
+    11,
+    10,
+    2,
+    6,
+    2,
+    4,
+    10,
+    5
+   ]
+  },
+  {
+   "pos": 5,
+   "name": "Derek Higgins",
+   "wiki": "Derek_Higgins",
+   "points": 113,
+   "wins": 1,
+   "podiums": 4,
+   "top5": 6,
+   "starts": 11,
+   "nat": "IRL",
+   "results": [
+    1,
+    3,
+    2,
+    "DNS",
+    3,
+    11,
+    9,
+    12,
+    4,
+    6,
+    6,
+    4
+   ]
+  },
+  {
+   "pos": 6,
+   "name": "Matt Halliday",
+   "wiki": "Matthew_Halliday_(racing_driver)",
+   "points": 89,
+   "wins": 0,
+   "podiums": 2,
+   "top5": 6,
+   "starts": 9,
+   "nat": "NZL",
+   "results": [
+    null,
+    null,
+    null,
+    9,
+    4,
+    4,
+    4,
+    5,
+    3,
+    8,
+    7,
+    3
+   ]
+  },
+  {
+   "pos": 7,
+   "name": "Luis Díaz",
+   "wiki": "Luis_Díaz_(racing_driver)",
+   "points": 88,
+   "wins": 0,
+   "podiums": 1,
+   "top5": 4,
+   "starts": 12,
+   "nat": "MEX",
+   "results": [
+    11,
+    9,
+    4,
+    4,
+    9,
+    7,
+    5,
+    11,
+    6,
+    7,
+    3,
+    6
+   ]
+  },
+  {
+   "pos": 8,
+   "name": "Kristian Kolby",
+   "wiki": "Kristian_Kolby",
+   "points": 80,
+   "wins": 1,
+   "podiums": 2,
+   "top5": 4,
+   "starts": 8,
+   "nat": "DNK",
+   "results": [
+    6,
+    5,
+    3,
+    6,
+    8,
+    1,
+    10,
+    4,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 9,
+   "name": "Rudy Junco Jr.",
+   "wiki": null,
+   "points": 67,
+   "wins": 0,
+   "podiums": 1,
+   "top5": 2,
+   "starts": 10,
+   "nat": "MEX",
+   "results": [
+    8,
+    8,
+    7,
+    5,
+    2,
+    9,
+    null,
+    7,
+    7,
+    null,
+    9,
+    8
+   ]
+  },
+  {
+   "pos": 10,
+   "name": "Rolando Quintanilla",
+   "wiki": "Rolando_Quintanilla",
+   "points": 62,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 2,
+   "starts": 12,
+   "nat": "MEX",
+   "results": [
+    10,
+    11,
+    5,
+    8,
+    5,
+    8,
+    8,
+    9,
+    8,
+    9,
+    8,
+    9
+   ]
+  },
+  {
+   "pos": 11,
+   "name": "Jon Fogarty",
+   "wiki": "Jon_Fogarty",
+   "points": 48,
+   "wins": 0,
+   "podiums": 2,
+   "top5": 3,
+   "starts": 6,
+   "nat": "USA",
+   "results": [
+    3,
+    12,
+    9,
+    10,
+    null,
+    null,
+    null,
+    null,
+    null,
+    5,
+    2,
+    null
+   ]
+  },
+  {
+   "pos": 12,
+   "name": "Cory Witherill",
+   "wiki": "Cory_Witherill",
+   "points": 44,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 11,
+   "nat": "USA",
+   "results": [
+    9,
+    7,
+    null,
+    11,
+    7,
+    6,
+    11,
+    8,
+    10,
+    10,
+    11,
+    10
+   ]
+  },
+  {
+   "pos": 13,
+   "name": "Geoff Boss",
+   "wiki": "Geoff_Boss",
+   "points": 11,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 2,
+   "nat": "USA",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    6,
+    10,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 14,
+   "name": "Andy Booth",
+   "wiki": "Andy_Booth_(racing_driver)",
+   "points": 8,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 1,
+   "nat": "NZL",
+   "results": [
+    null,
+    6,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 15,
+   "name": "Larry Mason",
+   "wiki": null,
+   "points": 3,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 1,
+   "nat": "USA",
+   "results": [
+    null,
+    10,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 16,
+   "name": "Nilton Rossoni",
+   "wiki": "Nilton_Rossoni",
+   "points": 1,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 1,
+   "nat": "BRA",
+   "results": [
+    12,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  }
+ ],
+ "schedule": [
+  {
+   "round": 1,
+   "date": "2001-03-11",
+   "race": null,
+   "track": "Fundidora Park",
+   "city": "Monterrey",
+   "state": null,
+   "country": "MEX",
+   "winner": "Derek Higgins",
+   "winner_wiki": "Derek_Higgins",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 2,
+   "date": "2001-04-08",
+   "race": null,
+   "track": "Long Beach street circuit",
+   "city": "Long Beach",
+   "state": "CA",
+   "country": "USA",
+   "winner": "Townsend Bell",
+   "winner_wiki": "Townsend_Bell",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 3,
+   "date": "2001-04-28",
+   "race": null,
+   "track": "Texas Motor Speedway",
+   "city": "Fort Worth",
+   "state": "TX",
+   "country": "USA",
+   "winner": "Damien Faulkner",
+   "winner_wiki": "Damien_Faulkner",
+   "track_type": "oval",
+   "cancelled": false
+  },
+  {
+   "round": 4,
+   "date": "2001-06-03",
+   "race": null,
+   "track": "Milwaukee Mile",
+   "city": "West Allis",
+   "state": "WI",
+   "country": "USA",
+   "winner": "Townsend Bell",
+   "winner_wiki": "Townsend_Bell",
+   "track_type": "oval",
+   "cancelled": false
+  },
+  {
+   "round": 5,
+   "date": "2001-06-24",
+   "race": null,
+   "track": "Portland International Raceway",
+   "city": "Portland",
+   "state": "OR",
+   "country": "USA",
+   "winner": "Damien Faulkner",
+   "winner_wiki": "Damien_Faulkner",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 6,
+   "date": "2001-07-08",
+   "race": null,
+   "track": "Kansas Speedway",
+   "city": "Kansas City",
+   "state": "KS",
+   "country": "USA",
+   "winner": "Kristian Kolby",
+   "winner_wiki": "Kristian_Kolby",
+   "track_type": "oval",
+   "cancelled": false
+  },
+  {
+   "round": 7,
+   "date": "2001-07-15",
+   "race": null,
+   "track": "Exhibition Place",
+   "city": "Toronto",
+   "state": null,
+   "country": "CAN",
+   "winner": "Townsend Bell",
+   "winner_wiki": "Townsend_Bell",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 8,
+   "date": "2001-08-12",
+   "race": null,
+   "track": "Mid-Ohio Sports Car Course",
+   "city": "Lexington",
+   "state": "OH",
+   "country": "USA",
+   "winner": "Townsend Bell",
+   "winner_wiki": "Townsend_Bell",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 9,
+   "date": "2001-08-26",
+   "race": null,
+   "track": "Gateway International Raceway",
+   "city": "Madison",
+   "state": "IL",
+   "country": "USA",
+   "winner": "Dan Wheldon",
+   "winner_wiki": "Dan_Wheldon",
+   "track_type": "oval",
+   "cancelled": false
+  },
+  {
+   "round": 10,
+   "date": "2001-10-05",
+   "race": null,
+   "track": "Road Atlanta",
+   "city": "Braselton",
+   "state": "GA",
+   "country": "USA",
+   "winner": "Dan Wheldon",
+   "winner_wiki": "Dan_Wheldon",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 11,
+   "date": "2001-10-14",
+   "race": null,
+   "track": "Laguna Seca Raceway",
+   "city": "Monterey",
+   "state": "CA",
+   "country": "USA",
+   "winner": "Townsend Bell",
+   "winner_wiki": "Townsend_Bell",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 12,
+   "date": "2001-11-04",
+   "race": null,
+   "track": "California Speedway",
+   "city": "Fontana",
+   "state": "CA",
+   "country": "USA",
+   "winner": "Townsend Bell",
+   "winner_wiki": "Townsend_Bell",
+   "track_type": "oval",
+   "cancelled": false
+  }
+ ],
+ "sources": [
+  "https://en.wikipedia.org/wiki/2001_Indy_Lights_season",
+  "https://www.wikidata.org (driver bios)"
+ ]
+}

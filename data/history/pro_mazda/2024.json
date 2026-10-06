@@ -1,0 +1,1691 @@
+{
+ "series": "formula_pro",
+ "year": 2024,
+ "official_name": "2024 USF Pro 2000 Championship presented by Continental",
+ "data_level": "full",
+ "teams_source": "teams_table",
+ "teams": [
+  {
+   "team": "BN Racing",
+   "team_wiki": "BN_Racing",
+   "owner": null,
+   "manufacturer": "Mazda",
+   "chassis": null,
+   "cars": [
+    {
+     "number": "74",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Nicolás Baptiste",
+       "wiki": "Nicolás_Baptiste",
+       "rounds": "1–14",
+       "nat": "COL"
+      }
+     ]
+    },
+    {
+     "number": "77",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Ricardo Escotto",
+       "wiki": "Ricardo_Escotto",
+       "rounds": "All",
+       "nat": "MEX"
+      }
+     ]
+    },
+    {
+     "number": "78",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Arturo Flores",
+       "wiki": null,
+       "rounds": "6–8, 10–12",
+       "nat": "MEX"
+      },
+      {
+       "name": "Alessandro de Tullio",
+       "wiki": "Alessandro_de_Tullio",
+       "rounds": "13–18",
+       "nat": "USA"
+      }
+     ]
+    }
+   ],
+   "manufacturer_note": "spec engine (from page text)"
+  },
+  {
+   "team": "Comet/NCMP Racing",
+   "team_wiki": null,
+   "owner": null,
+   "manufacturer": "Mazda",
+   "chassis": null,
+   "cars": [
+    {
+     "number": "21",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Logan Adams",
+       "wiki": null,
+       "rounds": "1–8, 10–16",
+       "nat": "USA"
+      }
+     ]
+    }
+   ],
+   "manufacturer_note": "spec engine (from page text)"
+  },
+  {
+   "team": "DEForce Racing",
+   "team_wiki": "DEForce_Racing",
+   "owner": null,
+   "manufacturer": "Mazda",
+   "chassis": null,
+   "cars": [
+    {
+     "number": "7",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Mac Clark",
+       "wiki": "Mac_Clark",
+       "rounds": "1–16",
+       "nat": "CAN"
+      }
+     ]
+    },
+    {
+     "number": "9",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Nicholas Monteiro",
+       "wiki": "Nicholas_Monteiro",
+       "rounds": "All",
+       "nat": "BRA"
+      }
+     ]
+    },
+    {
+     "number": "10",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Jorge Garciarce",
+       "wiki": "Jorge_Garciarce",
+       "rounds": "All",
+       "nat": "MEX"
+      }
+     ]
+    }
+   ],
+   "manufacturer_note": "spec engine (from page text)"
+  },
+  {
+   "team": "Exclusive Autosport",
+   "team_wiki": null,
+   "owner": null,
+   "manufacturer": "Mazda",
+   "chassis": null,
+   "cars": [
+    {
+     "number": "92",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Braden Eves",
+       "wiki": "Braden_Eves",
+       "rounds": "1–14",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "95",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Avery Towns",
+       "wiki": null,
+       "rounds": "1–2",
+       "nat": "USA"
+      }
+     ]
+    }
+   ],
+   "manufacturer_note": "spec engine (from page text)"
+  },
+  {
+   "team": "FatBoy Racing!",
+   "team_wiki": null,
+   "owner": null,
+   "manufacturer": "Mazda",
+   "chassis": null,
+   "cars": [
+    {
+     "number": "83",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Charles Finelli",
+       "wiki": null,
+       "rounds": "6–12",
+       "nat": "USA"
+      }
+     ]
+    }
+   ],
+   "manufacturer_note": "spec engine (from page text)"
+  },
+  {
+   "team": "Jay Howard Driver Development",
+   "team_wiki": "Jay_Howard_Driver_Development",
+   "owner": null,
+   "manufacturer": "Mazda",
+   "chassis": null,
+   "cars": [
+    {
+     "number": "4",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Tanner DeFabis",
+       "wiki": null,
+       "rounds": "17–18",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "6",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Frankie Mossman",
+       "wiki": "Frankie_Mossman",
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    }
+   ],
+   "manufacturer_note": "spec engine (from page text)"
+  },
+  {
+   "team": "Pabst Racing",
+   "team_wiki": "Pabst_Racing",
+   "owner": null,
+   "manufacturer": "Mazda",
+   "chassis": null,
+   "cars": [
+    {
+     "number": "18",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Simon Sikes",
+       "wiki": "Simon_Sikes",
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "19",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Christian Brooks",
+       "wiki": "Christian_Brooks",
+       "rounds": "1–14",
+       "nat": "USA"
+      },
+      {
+       "name": "Glenn van Berlo",
+       "wiki": "Glenn_van_Berlo",
+       "rounds": "15–18",
+       "nat": "NLD"
+      }
+     ]
+    },
+    {
+     "number": "20",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Jace Denmark",
+       "wiki": "Jace_Denmark",
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    }
+   ],
+   "manufacturer_note": "spec engine (from page text)"
+  },
+  {
+   "team": "TJ Speed Motorsports",
+   "team_wiki": null,
+   "owner": null,
+   "manufacturer": "Mazda",
+   "chassis": null,
+   "cars": [
+    {
+     "number": "26",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Liam Sceats",
+       "wiki": "Liam_Sceats",
+       "rounds": "All",
+       "nat": "NZL"
+      }
+     ]
+    },
+    {
+     "number": "27",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Hunter Yeany",
+       "wiki": "Hunter_Yeany",
+       "rounds": "1–8",
+       "nat": "USA"
+      },
+      {
+       "name": "Francesco Pizzi",
+       "wiki": "Francesco_Pizzi",
+       "rounds": "9",
+       "nat": "ITA"
+      }
+     ]
+    },
+    {
+     "number": "28",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "David Morales",
+       "wiki": "David_Morales_(racing_driver)",
+       "rounds": "1–5",
+       "nat": "USA"
+      },
+      {
+       "name": "Bryce Aron",
+       "wiki": "Bryce_Aron",
+       "rounds": "9",
+       "nat": "USA"
+      },
+      {
+       "name": "Cooper Becklin",
+       "wiki": "Cooper_Becklin",
+       "rounds": "10–18",
+       "nat": "USA"
+      }
+     ]
+    }
+   ],
+   "manufacturer_note": "spec engine (from page text)"
+  },
+  {
+   "team": "Turn 3 Motorsport",
+   "team_wiki": "Turn_3_Motorsport",
+   "owner": null,
+   "manufacturer": "Mazda",
+   "chassis": null,
+   "cars": [
+    {
+     "number": "2",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Adam Fitzgerald",
+       "wiki": "Adam_Fitzgerald_(racing_driver)",
+       "rounds": "1–8",
+       "nat": "IRL"
+      }
+     ]
+    },
+    {
+     "number": "3",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Danny Dyszelski",
+       "wiki": "Danny_Dyszelski",
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "33",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Tyke Durst",
+       "wiki": null,
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "44",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Lochie Hughes",
+       "wiki": "Lochie_Hughes",
+       "rounds": "All",
+       "nat": "AUS"
+      }
+     ]
+    },
+    {
+     "number": "68",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Ethan Ho",
+       "wiki": "Ethan_Ho",
+       "rounds": "1–14",
+       "nat": "USA"
+      }
+     ]
+    }
+   ],
+   "manufacturer_note": "spec engine (from page text)"
+  },
+  {
+   "team": "Velocity Racing Development",
+   "team_wiki": "Velocity_Racing_Development",
+   "owner": null,
+   "manufacturer": "Mazda",
+   "chassis": null,
+   "cars": [
+    {
+     "number": "17",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Nikita Johnson",
+       "wiki": "Nikita_Johnson",
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "32",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Shawn Rashid",
+       "wiki": null,
+       "rounds": "1–5, 15–16",
+       "nat": "USA"
+      },
+      {
+       "name": "Nico Christodoulou",
+       "wiki": "Nico_Christodoulou",
+       "rounds": "10–14",
+       "nat": "CAN"
+      }
+     ]
+    },
+    {
+     "number": "65",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Noah Ping",
+       "wiki": null,
+       "rounds": "17–18",
+       "nat": "USA"
+      }
+     ]
+    }
+   ],
+   "manufacturer_note": "spec engine (from page text)"
+  }
+ ],
+ "standings": [
+  {
+   "pos": 1,
+   "name": "Lochie Hughes",
+   "wiki": "Lochie_Hughes",
+   "points": 395,
+   "wins": 5,
+   "podiums": 11,
+   "top5": 13,
+   "starts": 18,
+   "nat": "AUS",
+   "results": [
+    1,
+    2,
+    19,
+    18,
+    10,
+    3,
+    2,
+    3,
+    3,
+    1,
+    1,
+    1,
+    4,
+    7,
+    5,
+    1,
+    6,
+    2
+   ]
+  },
+  {
+   "pos": 2,
+   "name": "Nikita Johnson",
+   "wiki": "Nikita_Johnson",
+   "points": 355,
+   "wins": 8,
+   "podiums": 10,
+   "top5": 11,
+   "starts": 18,
+   "nat": "USA",
+   "results": [
+    4,
+    1,
+    2,
+    1,
+    1,
+    1,
+    "DSQ",
+    2,
+    17,
+    7,
+    13,
+    6,
+    1,
+    1,
+    17,
+    12,
+    1,
+    1
+   ]
+  },
+  {
+   "pos": 3,
+   "name": "Jace Denmark",
+   "wiki": "Jace_Denmark",
+   "points": 345,
+   "wins": 0,
+   "podiums": 9,
+   "top5": 12,
+   "starts": 18,
+   "nat": "USA",
+   "results": [
+    20,
+    7,
+    3,
+    7,
+    2,
+    12,
+    3,
+    6,
+    2,
+    4,
+    4,
+    3,
+    2,
+    2,
+    2,
+    3,
+    14,
+    4
+   ]
+  },
+  {
+   "pos": 4,
+   "name": "Simon Sikes",
+   "wiki": "Simon_Sikes",
+   "points": 272,
+   "wins": 2,
+   "podiums": 5,
+   "top5": 8,
+   "starts": 18,
+   "nat": "USA",
+   "results": [
+    21,
+    11,
+    10,
+    3,
+    4,
+    7,
+    15,
+    1,
+    15,
+    20,
+    17,
+    5,
+    5,
+    8,
+    1,
+    8,
+    2,
+    3
+   ]
+  },
+  {
+   "pos": 5,
+   "name": "Liam Sceats",
+   "wiki": "Liam_Sceats",
+   "points": 256,
+   "wins": 1,
+   "podiums": 5,
+   "top5": 6,
+   "starts": 18,
+   "nat": "NZL",
+   "results": [
+    3,
+    6,
+    18,
+    8,
+    11,
+    2,
+    1,
+    5,
+    9,
+    8,
+    3,
+    8,
+    14,
+    19,
+    16,
+    2,
+    15,
+    12
+   ]
+  },
+  {
+   "pos": 6,
+   "name": "Christian Brooks",
+   "wiki": "Christian_Brooks",
+   "points": 232,
+   "wins": 0,
+   "podiums": 4,
+   "top5": 7,
+   "starts": 14,
+   "nat": "USA",
+   "results": [
+    2,
+    5,
+    8,
+    10,
+    7,
+    8,
+    5,
+    7,
+    11,
+    5,
+    2,
+    2,
+    3,
+    18,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 7,
+   "name": "Danny Dyszelski",
+   "wiki": "Danny_Dyszelski",
+   "points": 230,
+   "wins": 0,
+   "podiums": 2,
+   "top5": 6,
+   "starts": 18,
+   "nat": "USA",
+   "results": [
+    19,
+    3,
+    4,
+    19,
+    8,
+    11,
+    7,
+    19,
+    4,
+    6,
+    5,
+    4,
+    18,
+    3,
+    13,
+    16,
+    7,
+    8
+   ]
+  },
+  {
+   "pos": 8,
+   "name": "Frankie Mossman",
+   "wiki": "Frankie_Mossman",
+   "points": 222,
+   "wins": 0,
+   "podiums": 2,
+   "top5": 3,
+   "starts": 18,
+   "nat": "USA",
+   "results": [
+    8,
+    4,
+    9,
+    11,
+    9,
+    19,
+    10,
+    8,
+    8,
+    2,
+    19,
+    19,
+    7,
+    20,
+    8,
+    6,
+    3,
+    6
+   ]
+  },
+  {
+   "pos": 9,
+   "name": "Ricardo Escotto",
+   "wiki": "Ricardo_Escotto",
+   "points": 218,
+   "wins": 0,
+   "podiums": 2,
+   "top5": 5,
+   "starts": 18,
+   "nat": "MEX",
+   "results": [
+    16,
+    17,
+    7,
+    6,
+    6,
+    4,
+    12,
+    9,
+    14,
+    3,
+    15,
+    17,
+    9,
+    5,
+    3,
+    17,
+    4,
+    13
+   ]
+  },
+  {
+   "pos": 10,
+   "name": "Jorge Garciarce",
+   "wiki": "Jorge_Garciarce",
+   "points": 199,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 1,
+   "starts": 18,
+   "nat": "MEX",
+   "results": [
+    11,
+    10,
+    13,
+    9,
+    14,
+    10,
+    16,
+    12,
+    10,
+    9,
+    7,
+    10,
+    8,
+    15,
+    7,
+    5,
+    13,
+    7
+   ]
+  },
+  {
+   "pos": 11,
+   "name": "Mac Clark",
+   "wiki": "Mac_Clark",
+   "points": 187,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 4,
+   "starts": 16,
+   "nat": "CAN",
+   "results": [
+    6,
+    9,
+    5,
+    4,
+    5,
+    21,
+    18,
+    21,
+    6,
+    10,
+    20,
+    15,
+    6,
+    9,
+    6,
+    4,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 12,
+   "name": "Braden Eves",
+   "wiki": "Braden_Eves",
+   "points": 170,
+   "wins": 1,
+   "podiums": 1,
+   "top5": 3,
+   "starts": 14,
+   "nat": "USA",
+   "results": [
+    5,
+    8,
+    12,
+    16,
+    16,
+    18,
+    4,
+    11,
+    1,
+    15,
+    6,
+    14,
+    12,
+    17,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 13,
+   "name": "Nicholas Monteiro",
+   "wiki": "Nicholas_Monteiro",
+   "points": 162,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 18,
+   "nat": "BRA",
+   "results": [
+    12,
+    15,
+    16,
+    15,
+    17,
+    13,
+    8,
+    16,
+    12,
+    11,
+    11,
+    9,
+    17,
+    11,
+    10,
+    7,
+    11,
+    10
+   ]
+  },
+  {
+   "pos": 14,
+   "name": "Hunter Yeany",
+   "wiki": "Hunter_Yeany",
+   "points": 148,
+   "wins": 1,
+   "podiums": 3,
+   "top5": 5,
+   "starts": 8,
+   "nat": "USA",
+   "results": [
+    7,
+    13,
+    1,
+    2,
+    3,
+    5,
+    11,
+    4,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 15,
+   "name": "Nicolás Baptiste",
+   "wiki": "Nicolás_Baptiste",
+   "points": 143,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 1,
+   "starts": 14,
+   "nat": "COL",
+   "results": [
+    9,
+    18,
+    6,
+    5,
+    12,
+    6,
+    6,
+    10,
+    7,
+    18,
+    16,
+    11,
+    19,
+    16,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 16,
+   "name": "Logan Adams",
+   "wiki": null,
+   "points": 114,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 1,
+   "starts": 14,
+   "nat": "USA",
+   "results": [
+    13,
+    12,
+    14,
+    14,
+    18,
+    16,
+    "DNS",
+    14,
+    null,
+    12,
+    8,
+    20,
+    16,
+    4,
+    11,
+    10,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 17,
+   "name": "Tyke Durst",
+   "wiki": null,
+   "points": 107,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 18,
+   "nat": "USA",
+   "results": [
+    17,
+    16,
+    11,
+    17,
+    19,
+    17,
+    17,
+    20,
+    13,
+    14,
+    10,
+    18,
+    20,
+    13,
+    12,
+    14,
+    12,
+    15
+   ]
+  },
+  {
+   "pos": 18,
+   "name": "Cooper Becklin",
+   "wiki": "Cooper_Becklin",
+   "points": 90,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 9,
+   "nat": "USA",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    13,
+    9,
+    12,
+    15,
+    12,
+    9,
+    9,
+    10,
+    11
+   ]
+  },
+  {
+   "pos": 19,
+   "name": "Ethan Ho",
+   "wiki": "Ethan_Ho",
+   "points": 80,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 13,
+   "nat": "USA",
+   "results": [
+    10,
+    20,
+    20,
+    12,
+    13,
+    20,
+    9,
+    13,
+    16,
+    16,
+    21,
+    "DNS",
+    13,
+    14,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 20,
+   "name": "Alessandro de Tullio",
+   "wiki": "Alessandro_de_Tullio",
+   "points": 66,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 1,
+   "starts": 6,
+   "nat": "USA",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    11,
+    10,
+    4,
+    15,
+    8,
+    14
+   ]
+  },
+  {
+   "pos": 21,
+   "name": "Adam Fitzgerald",
+   "wiki": "Adam_Fitzgerald_(racing_driver)",
+   "points": 51,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 8,
+   "nat": "IRL",
+   "results": [
+    15,
+    14,
+    17,
+    13,
+    15,
+    9,
+    19,
+    15,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 22,
+   "name": "Glenn van Berlo",
+   "wiki": "Glenn_van_Berlo",
+   "points": 50,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 2,
+   "starts": 4,
+   "nat": "NLD",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    15,
+    11,
+    5,
+    5
+   ]
+  },
+  {
+   "pos": 23,
+   "name": "Nico Christodoulou",
+   "wiki": "Nico_Christodoulou",
+   "points": 48,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 5,
+   "nat": "CAN",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    21,
+    14,
+    7,
+    10,
+    6,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 24,
+   "name": "Arturo Flores",
+   "wiki": null,
+   "points": 39,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 6,
+   "nat": "MEX",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    15,
+    13,
+    17,
+    null,
+    17,
+    12,
+    13,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 25,
+   "name": "Charles Finelli",
+   "wiki": null,
+   "points": 27,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 6,
+   "nat": "USA",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    14,
+    14,
+    18,
+    "DNS",
+    19,
+    18,
+    16,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 26,
+   "name": "Bryce Aron",
+   "wiki": "Bryce_Aron",
+   "points": 26,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 1,
+   "starts": 1,
+   "nat": "USA",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    5,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 27,
+   "name": "Shawn Rashid",
+   "wiki": null,
+   "points": 19,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 4,
+   "nat": "USA",
+   "results": [
+    18,
+    21,
+    "WTH",
+    "WTH",
+    "WTH",
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    14,
+    13,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 28,
+   "name": "Tanner DeFabis",
+   "wiki": null,
+   "points": 17,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 2,
+   "nat": "USA",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    9,
+    16
+   ]
+  },
+  {
+   "pos": 28,
+   "name": "Noah Ping",
+   "wiki": null,
+   "points": 17,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 2,
+   "nat": "USA",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    16,
+    9
+   ]
+  },
+  {
+   "pos": 30,
+   "name": "Avery Towns",
+   "wiki": null,
+   "points": 9,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 2,
+   "nat": "USA",
+   "results": [
+    14,
+    19,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 31,
+   "name": "David Morales",
+   "wiki": "David_Morales_(racing_driver)",
+   "points": 7,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 2,
+   "nat": "USA",
+   "results": [
+    22,
+    "DNS",
+    15,
+    "DNS",
+    "DNS",
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 32,
+   "name": "Francesco Pizzi",
+   "wiki": "Francesco_Pizzi",
+   "points": 5,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 1,
+   "nat": "ITA",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    18,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  }
+ ],
+ "schedule": [
+  {
+   "round": 1,
+   "date": "2024-03-08",
+   "race": "Foundation Building Materials Grand Prix of St. Petersburg",
+   "track": "Streets of St. Petersburg",
+   "city": "St. Petersburg",
+   "state": "FL",
+   "country": "USA",
+   "winner": "Lochie Hughes",
+   "winner_wiki": "Lochie_Hughes",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 2,
+   "date": "2024-03-08",
+   "race": "Foundation Building Materials Grand Prix of St. Petersburg",
+   "track": "Streets of St. Petersburg",
+   "city": "St. Petersburg",
+   "state": "FL",
+   "country": "USA",
+   "winner": "Nikita Johnson",
+   "winner_wiki": "Nikita_Johnson",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 3,
+   "date": "2024-04-05",
+   "race": "Continental Tire Grand Prix of Louisiana",
+   "track": "NOLA Motorsports Park",
+   "city": "Avondale",
+   "state": "LA",
+   "country": "USA",
+   "winner": "Hunter Yeany",
+   "winner_wiki": "Hunter_Yeany",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 4,
+   "date": "2024-04-05",
+   "race": "Continental Tire Grand Prix of Louisiana",
+   "track": "NOLA Motorsports Park",
+   "city": "Avondale",
+   "state": "LA",
+   "country": "USA",
+   "winner": "Nikita Johnson",
+   "winner_wiki": "Nikita_Johnson",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 5,
+   "date": "2024-04-05",
+   "race": "Continental Tire Grand Prix of Louisiana",
+   "track": "NOLA Motorsports Park",
+   "city": "Avondale",
+   "state": "LA",
+   "country": "USA",
+   "winner": "Nikita Johnson",
+   "winner_wiki": "Nikita_Johnson",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 6,
+   "date": "2024-05-09",
+   "race": "VP Racing Grand Prix of Indianapolis",
+   "track": "Indianapolis Motor Speedway Road Course",
+   "city": "Speedway",
+   "state": "IN",
+   "country": "USA",
+   "winner": "Nikita Johnson",
+   "winner_wiki": "Nikita_Johnson",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 7,
+   "date": "2024-05-09",
+   "race": "VP Racing Grand Prix of Indianapolis",
+   "track": "Indianapolis Motor Speedway Road Course",
+   "city": "Speedway",
+   "state": "IN",
+   "country": "USA",
+   "winner": "Liam Sceats",
+   "winner_wiki": "Liam_Sceats",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 8,
+   "date": "2024-05-09",
+   "race": "VP Racing Grand Prix of Indianapolis",
+   "track": "Indianapolis Motor Speedway Road Course",
+   "city": "Speedway",
+   "state": "IN",
+   "country": "USA",
+   "winner": "Simon Sikes",
+   "winner_wiki": "Simon_Sikes",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 9,
+   "date": "2024-05-23",
+   "race": "Continental Tire Freedom 90",
+   "track": "Lucas Oil Indianapolis Raceway Park",
+   "city": "Brownsburg",
+   "state": "IN",
+   "country": "USA",
+   "winner": "Braden Eves",
+   "winner_wiki": "Braden_Eves",
+   "track_type": "oval",
+   "cancelled": false
+  },
+  {
+   "round": 10,
+   "date": "2024-06-06",
+   "race": "Elite Engines Grand Prix of Road America",
+   "track": "Road America",
+   "city": "Elkhart Lake",
+   "state": "WI",
+   "country": "USA",
+   "winner": "Lochie Hughes",
+   "winner_wiki": "Lochie_Hughes",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 11,
+   "date": "2024-06-06",
+   "race": "Elite Engines Grand Prix of Road America",
+   "track": "Road America",
+   "city": "Elkhart Lake",
+   "state": "WI",
+   "country": "USA",
+   "winner": "Lochie Hughes",
+   "winner_wiki": "Lochie_Hughes",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 12,
+   "date": "2024-06-06",
+   "race": "Elite Engines Grand Prix of Road America",
+   "track": "Road America",
+   "city": "Elkhart Lake",
+   "state": "WI",
+   "country": "USA",
+   "winner": "Lochie Hughes",
+   "winner_wiki": "Lochie_Hughes",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 13,
+   "date": "2024-07-04",
+   "race": "Tatuus Grand Prix of Mid-Ohio",
+   "track": "Mid-Ohio Sports Car Course",
+   "city": "Lexington",
+   "state": "OH",
+   "country": "USA",
+   "winner": "Nikita Johnson",
+   "winner_wiki": "Nikita_Johnson",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 14,
+   "date": "2024-07-04",
+   "race": "Tatuus Grand Prix of Mid-Ohio",
+   "track": "Mid-Ohio Sports Car Course",
+   "city": "Lexington",
+   "state": "OH",
+   "country": "USA",
+   "winner": "Nikita Johnson",
+   "winner_wiki": "Nikita_Johnson",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 15,
+   "date": "2024-07-19",
+   "race": "Continental Tire Grand Prix of Toronto",
+   "track": "Exhibition Place",
+   "city": "Toronto",
+   "state": "ON",
+   "country": "CAN",
+   "winner": "Simon Sikes",
+   "winner_wiki": "Simon_Sikes",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 16,
+   "date": "2024-07-19",
+   "race": "Continental Tire Grand Prix of Toronto",
+   "track": "Exhibition Place",
+   "city": "Toronto",
+   "state": "ON",
+   "country": "CAN",
+   "winner": "Lochie Hughes",
+   "winner_wiki": "Lochie_Hughes",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 17,
+   "date": "2024-08-22",
+   "race": "Continental Tire Grand Prix of Portland",
+   "track": "Portland International Raceway",
+   "city": "Portland",
+   "state": "OR",
+   "country": "USA",
+   "winner": "Nikita Johnson",
+   "winner_wiki": "Nikita_Johnson",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 18,
+   "date": "2024-08-22",
+   "race": "Continental Tire Grand Prix of Portland",
+   "track": "Portland International Raceway",
+   "city": "Portland",
+   "state": "OR",
+   "country": "USA",
+   "winner": "Nikita Johnson",
+   "winner_wiki": "Nikita_Johnson",
+   "track_type": "road",
+   "cancelled": false
+  }
+ ],
+ "sources": [
+  "https://en.wikipedia.org/wiki/2024_USF_Pro_2000_Championship",
+  "https://www.wikidata.org (driver bios)"
+ ]
+}

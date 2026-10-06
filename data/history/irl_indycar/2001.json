@@ -1,0 +1,2550 @@
+{
+ "series": "open_wheel_top_irl",
+ "year": 2001,
+ "official_name": "2001 Indy Racing Northern Light Series",
+ "era": "Indy Racing League",
+ "data_level": "full",
+ "teams_source": "teams_table",
+ "teams": [
+  {
+   "team": "Team Menard",
+   "team_wiki": "Team_Menard",
+   "owner": null,
+   "manufacturer": "Oldsmobile",
+   "chassis": "Dallara",
+   "cars": [
+    {
+     "number": "2",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Greg Ray",
+       "wiki": "Greg_Ray",
+       "rounds": "1–10",
+       "nat": "USA"
+      },
+      {
+       "name": "Jaques Lazier",
+       "wiki": "Jaques_Lazier",
+       "rounds": "11–13",
+       "nat": "USA"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Galles Racing",
+   "team_wiki": "Galles_Racing",
+   "owner": null,
+   "manufacturer": "Oldsmobile",
+   "chassis": "G-Force",
+   "cars": [
+    {
+     "number": "3",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Al Unser Jr.",
+       "wiki": "Al_Unser_Jr.",
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "31",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Casey Mears",
+       "wiki": "Casey_Mears",
+       "rounds": "1–4",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "32",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Didier André",
+       "wiki": "Didier_André",
+       "rounds": "All",
+       "nat": "FRA"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Panther Racing",
+   "team_wiki": "Panther_Racing",
+   "owner": null,
+   "manufacturer": "Oldsmobile",
+   "chassis": "Dallara",
+   "cars": [
+    {
+     "number": "4",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Sam Hornish Jr.",
+       "wiki": "Sam_Hornish_Jr.",
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Treadway-Hubbard Racing",
+   "team_wiki": "Treadway_Racing",
+   "owner": null,
+   "manufacturer": "Oldsmobile",
+   "chassis": "G-Force",
+   "cars": [
+    {
+     "number": "5",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Arie Luyendyk",
+       "wiki": "Arie_Luyendyk",
+       "rounds": "4",
+       "nat": "NLD"
+      },
+      {
+       "name": "Rick Treadway",
+       "wiki": "Rick_Treadway",
+       "rounds": "10, 12–13",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "21",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Felipe Giaffone",
+       "wiki": "Felipe_Giaffone",
+       "rounds": "All",
+       "nat": "BRA"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Tri-Star Motorsports",
+   "team_wiki": "Tri-Star_Motorsports",
+   "owner": null,
+   "manufacturer": "Oldsmobile",
+   "chassis": "Dallara",
+   "cars": [
+    {
+     "number": "6",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Tyce Carlson",
+       "wiki": "Tyce_Carlson",
+       "rounds": "1",
+       "nat": "USA"
+      },
+      {
+       "name": "Jon Herb",
+       "wiki": "Jon_Herb",
+       "rounds": "2–4, 8",
+       "nat": "USA"
+      },
+      {
+       "name": "Jeret Schroeder",
+       "wiki": "Jeret_Schroeder",
+       "rounds": "5, 7",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "60",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Richie Hearn",
+       "wiki": "Richie_Hearn",
+       "rounds": "4",
+       "nat": "USA"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Dick Simon Racing",
+   "team_wiki": "Dick_Simon_Racing",
+   "owner": null,
+   "manufacturer": "Oldsmobile",
+   "chassis": "Dallara",
+   "cars": [
+    {
+     "number": "7",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Stéphan Grégoire",
+       "wiki": "Stéphan_Grégoire",
+       "rounds": "1–3",
+       "nat": "FRA"
+      }
+     ]
+    },
+    {
+     "number": "17",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Roberto Guerrero",
+       "wiki": "Roberto_Guerrero",
+       "rounds": "4",
+       "nat": "COL"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Kelley Racing",
+   "team_wiki": "Kelley_Racing",
+   "owner": null,
+   "manufacturer": "Oldsmobile",
+   "chassis": "Dallara",
+   "cars": [
+    {
+     "number": "8",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Scott Sharp",
+       "wiki": "Scott_Sharp",
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "28",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Mark Dismore",
+       "wiki": "Mark_Dismore",
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "PDM Racing",
+   "team_wiki": "PDM_Racing",
+   "owner": null,
+   "manufacturer": "Oldsmobile",
+   "chassis": "G-Force",
+   "cars": [
+    {
+     "number": "9",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Jeret Schroeder",
+       "wiki": "Jeret_Schroeder",
+       "rounds": "1–4, 8",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "18",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Jon Herb",
+       "wiki": "Jon_Herb",
+       "rounds": "12–13",
+       "nat": "USA"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Cahill Racing",
+   "team_wiki": "Cahill_Racing",
+   "owner": null,
+   "manufacturer": "Oldsmobile",
+   "chassis": "Dallara",
+   "cars": [
+    {
+     "number": "10",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Robby McGehee",
+       "wiki": "Robby_McGehee",
+       "rounds": "1–5, 8–13",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "11",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Dr. Jack Miller",
+       "wiki": "Jack_Miller_(racing_driver)",
+       "rounds": "3",
+       "nat": "USA"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "A. J. Foyt Enterprises",
+   "team_wiki": "A._J._Foyt_Enterprises",
+   "owner": null,
+   "manufacturer": "Oldsmobile",
+   "chassis": "Dallara",
+   "cars": [
+    {
+     "number": "11",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Donnie Beechler",
+       "wiki": "Donnie_Beechler",
+       "rounds": "4–12",
+       "nat": "USA"
+      },
+      {
+       "name": "Greg Ray",
+       "wiki": "Greg_Ray",
+       "rounds": "13",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "14",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Eliseo Salazar",
+       "wiki": "Eliseo_Salazar",
+       "rounds": "All",
+       "nat": "CHL"
+      }
+     ]
+    },
+    {
+     "number": "41",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Robby Gordon",
+       "wiki": "Robby_Gordon",
+       "rounds": "4",
+       "nat": "USA"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Bradley Motorsports",
+   "team_wiki": "Bradley_Motorsports",
+   "owner": null,
+   "manufacturer": "Oldsmobile",
+   "chassis": "Dallara",
+   "cars": [
+    {
+     "number": "12",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Buzz Calkins",
+       "wiki": "Buzz_Calkins",
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Walker Racing",
+   "team_wiki": "Walker_Racing",
+   "owner": null,
+   "manufacturer": "Oldsmobile",
+   "chassis": "Dallara",
+   "cars": [
+    {
+     "number": "15",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Sarah Fisher",
+       "wiki": "Sarah_Fisher",
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Indy Regency Racing",
+   "team_wiki": "Indy_Regency_Racing",
+   "owner": null,
+   "manufacturer": "Oldsmobile",
+   "chassis": "G-Force",
+   "cars": [
+    {
+     "number": "16",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Cory Witherill",
+       "wiki": "Cory_Witherill",
+       "rounds": "3–4",
+       "nat": "USA"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Dreyer & Reinbold Racing",
+   "team_wiki": "Dreyer_&_Reinbold_Racing",
+   "owner": null,
+   "manufacturer": "Infiniti",
+   "chassis": "G-Force",
+   "cars": [
+    {
+     "number": "24",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Robbie Buhl",
+       "wiki": "Robbie_Buhl",
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Blueprint Racing",
+   "team_wiki": "Blueprint_Racing",
+   "owner": null,
+   "manufacturer": "Oldsmobile",
+   "chassis": "G-Force",
+   "cars": [
+    {
+     "number": "27",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "John Hollansworth Jr.",
+       "wiki": "John_Hollansworth_Jr.",
+       "rounds": "2",
+       "nat": "USA"
+      },
+      {
+       "name": "Jim Guthrie",
+       "wiki": "Jim_Guthrie_(racing_driver)",
+       "rounds": "4",
+       "nat": "USA"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "McCormack Motorsports",
+   "team_wiki": "McCormack_Motorsports",
+   "owner": null,
+   "manufacturer": "Oldsmobile",
+   "chassis": "G-Force",
+   "cars": [
+    {
+     "number": "30",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Brandon Erwin",
+       "wiki": "Brandon_Erwin",
+       "rounds": "1–3, 5",
+       "nat": "USA"
+      },
+      {
+       "name": "Jimmy Kite",
+       "wiki": "Jimmy_Kite",
+       "rounds": "4",
+       "nat": "USA"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Chip Ganassi Racing",
+   "team_wiki": "Chip_Ganassi_Racing",
+   "owner": null,
+   "manufacturer": "Oldsmobile",
+   "chassis": "G-Force",
+   "cars": [
+    {
+     "number": "33",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Tony Stewart",
+       "wiki": "Tony_Stewart",
+       "rounds": "4",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "44",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Jimmy Vasser",
+       "wiki": "Jimmy_Vasser",
+       "rounds": "4",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "49",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Nicolas Minassian",
+       "wiki": "Nicolas_Minassian",
+       "rounds": "4",
+       "nat": "FRA"
+      }
+     ]
+    },
+    {
+     "number": "50",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Bruno Junqueira",
+       "wiki": "Bruno_Junqueira",
+       "rounds": "4",
+       "nat": "BRA"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Conquest Racing",
+   "team_wiki": "Conquest_Racing",
+   "owner": null,
+   "manufacturer": "Infiniti",
+   "chassis": "Dallara",
+   "cars": [
+    {
+     "number": "34",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Laurent Redon",
+       "wiki": "Laurent_Redon",
+       "rounds": "12–13",
+       "nat": "FRA"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Heritage Motorsports",
+   "team_wiki": "Heritage_Motorsports",
+   "owner": null,
+   "manufacturer": "Oldsmobile",
+   "chassis": "G-Force",
+   "cars": [
+    {
+     "number": "35",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Jeff Ward",
+       "wiki": null,
+       "rounds": "1–7, 9–13",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "36",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Stéphan Grégoire",
+       "wiki": "Stéphan_Grégoire",
+       "rounds": "4",
+       "nat": "FRA"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Brayton Racing",
+   "team_wiki": "Brayton_Racing",
+   "owner": null,
+   "manufacturer": "Oldsmobile",
+   "chassis": "Dallara",
+   "cars": [
+    {
+     "number": "37",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Steve Knapp",
+       "wiki": "Steve_Knapp",
+       "rounds": "4",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "61",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Memo Gidley",
+       "wiki": "Memo_Gidley",
+       "rounds": "4",
+       "nat": "USA"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Team Green",
+   "team_wiki": "Andretti_Autosport",
+   "owner": null,
+   "manufacturer": "Oldsmobile",
+   "chassis": "Dallara",
+   "cars": [
+    {
+     "number": "39",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Michael Andretti",
+       "wiki": "Michael_Andretti",
+       "rounds": "4",
+       "nat": "USA"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Sam Schmidt Motorsports",
+   "team_wiki": "Sam_Schmidt_Motorsports",
+   "owner": null,
+   "manufacturer": "Oldsmobile",
+   "chassis": "Dallara",
+   "cars": [
+    {
+     "number": "44",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Anthony Lazzaro",
+       "wiki": "Anthony_Lazzaro_(racing_driver)",
+       "rounds": "11, 13",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "99",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Davey Hamilton",
+       "wiki": "Davey_Hamilton",
+       "rounds": "1–5",
+       "nat": "USA"
+      },
+      {
+       "name": "Richie Hearn",
+       "wiki": "Richie_Hearn",
+       "rounds": "6, 12",
+       "nat": "USA"
+      },
+      {
+       "name": "Jaques Lazier",
+       "wiki": "Jaques_Lazier",
+       "rounds": "7–10",
+       "nat": "USA"
+      },
+      {
+       "name": "Alex Barron",
+       "wiki": "Alex_Barron_(racing_driver)",
+       "rounds": "11",
+       "nat": "USA"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Team Cheever",
+   "team_wiki": "Team_Cheever",
+   "owner": null,
+   "manufacturer": "Infiniti",
+   "chassis": "Dallara",
+   "cars": [
+    {
+     "number": "51",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Eddie Cheever",
+       "wiki": "Eddie_Cheever",
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "52",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Scott Goodyear",
+       "wiki": "Scott_Goodyear",
+       "rounds": "4",
+       "nat": "CAN"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Vertex-Cunningham Racing",
+   "team_wiki": "Vertex-Cunningham_Racing",
+   "owner": null,
+   "manufacturer": "Oldsmobile",
+   "chassis": "Dallara",
+   "cars": [
+    {
+     "number": "55",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Shigeaki Hattori",
+       "wiki": "Shigeaki_Hattori",
+       "rounds": "All",
+       "nat": "JPN"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Team Penske",
+   "team_wiki": "Team_Penske",
+   "owner": null,
+   "manufacturer": "Oldsmobile",
+   "chassis": "Dallara",
+   "cars": [
+    {
+     "number": "66",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Gil de Ferran",
+       "wiki": "Gil_de_Ferran",
+       "rounds": "1, 4",
+       "nat": "BRA"
+      }
+     ]
+    },
+    {
+     "number": "68",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Hélio Castroneves",
+       "wiki": "Hélio_Castroneves",
+       "rounds": "1, 4",
+       "nat": "BRA"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Team Xtreme",
+   "team_wiki": "Team_Xtreme_Racing_(IndyCar)",
+   "owner": null,
+   "manufacturer": "Oldsmobile",
+   "chassis": "G-Force",
+   "cars": [
+    {
+     "number": "77",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Jaques Lazier",
+       "wiki": "Jaques_Lazier",
+       "rounds": "4–6",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "88",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Airton Daré",
+       "wiki": "Airton_Daré",
+       "rounds": "All",
+       "nat": "BRA"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Zali Racing",
+   "team_wiki": "Zali_Racing",
+   "owner": null,
+   "manufacturer": "Oldsmobile",
+   "chassis": "G-Force",
+   "cars": [
+    {
+     "number": "81",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "John Paul Jr.",
+       "wiki": "John_Paul_Jr._(racing_driver)",
+       "rounds": "4",
+       "nat": "USA"
+      },
+      {
+       "name": "Billy Roe",
+       "wiki": "Billy_Roe",
+       "rounds": "5–13",
+       "nat": "USA"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Hemelgarn Racing",
+   "team_wiki": "Hemelgarn_Racing",
+   "owner": null,
+   "manufacturer": "Oldsmobile",
+   "chassis": "Dallara",
+   "cars": [
+    {
+     "number": "91",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Buddy Lazier",
+       "wiki": "Buddy_Lazier",
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "92",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Stan Wattles",
+       "wiki": "Stan_Wattles",
+       "rounds": "1–3",
+       "nat": "USA"
+      },
+      {
+       "name": "Chris Menninga",
+       "wiki": "Chris_Menninga",
+       "rounds": "11–13",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "93",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Steve Knapp",
+       "wiki": "Steve_Knapp",
+       "rounds": "4",
+       "nat": "USA"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Curb-Agajanian-Beck Motorsports",
+   "team_wiki": "Curb_Agajanian_Performance_Group",
+   "owner": null,
+   "manufacturer": "Oldsmobile",
+   "chassis": "Dallara",
+   "cars": [
+    {
+     "number": "98",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Billy Boat",
+       "wiki": "Billy_Boat",
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "standings": [
+  {
+   "pos": 1,
+   "name": "Sam Hornish Jr.",
+   "wiki": "Sam_Hornish_Jr.",
+   "points": 503,
+   "wins": 3,
+   "podiums": 10,
+   "top5": 11,
+   "starts": 13,
+   "nat": "USA",
+   "results": [
+    1,
+    1,
+    4,
+    14,
+    3,
+    2,
+    2,
+    2,
+    6,
+    3,
+    3,
+    2,
+    1
+   ]
+  },
+  {
+   "pos": 2,
+   "name": "Buddy Lazier",
+   "wiki": "Buddy_Lazier",
+   "points": 398,
+   "wins": 4,
+   "podiums": 5,
+   "top5": 7,
+   "starts": 13,
+   "nat": "USA",
+   "results": [
+    3,
+    20,
+    6,
+    18,
+    4,
+    1,
+    1,
+    5,
+    1,
+    1,
+    13,
+    11,
+    17
+   ]
+  },
+  {
+   "pos": 3,
+   "name": "Scott Sharp",
+   "wiki": "Scott_Sharp",
+   "points": 355,
+   "wins": 1,
+   "podiums": 4,
+   "top5": 7,
+   "starts": 13,
+   "nat": "USA",
+   "results": [
+    4,
+    8,
+    2,
+    33,
+    1,
+    8,
+    5,
+    17,
+    5,
+    2,
+    8,
+    25,
+    2
+   ]
+  },
+  {
+   "pos": 4,
+   "name": "Billy Boat",
+   "wiki": "Billy_Boat",
+   "points": 313,
+   "wins": 0,
+   "podiums": 1,
+   "top5": 4,
+   "starts": 13,
+   "nat": "USA",
+   "results": [
+    5,
+    13,
+    14,
+    9,
+    5,
+    4,
+    18,
+    9,
+    2,
+    6,
+    6,
+    12,
+    12
+   ]
+  },
+  {
+   "pos": 5,
+   "name": "Eliseo Salazar",
+   "wiki": "Eliseo_Salazar",
+   "points": 308,
+   "wins": 0,
+   "podiums": 2,
+   "top5": 4,
+   "starts": 13,
+   "nat": "CHL",
+   "results": [
+    2,
+    3,
+    5,
+    7,
+    7,
+    14,
+    12,
+    7,
+    11,
+    15,
+    17,
+    18,
+    4
+   ]
+  },
+  {
+   "pos": 6,
+   "name": "Felipe Giaffone",
+   "wiki": "Felipe_Giaffone",
+   "points": 304,
+   "wins": 0,
+   "podiums": 1,
+   "top5": 3,
+   "starts": 13,
+   "nat": "BRA",
+   "results": [
+    6,
+    4,
+    10,
+    10,
+    2,
+    7,
+    11,
+    4,
+    8,
+    8,
+    20,
+    10,
+    21
+   ]
+  },
+  {
+   "pos": 7,
+   "name": "Al Unser Jr.",
+   "wiki": "Al_Unser_Jr.",
+   "points": 287,
+   "wins": 1,
+   "podiums": 2,
+   "top5": 3,
+   "starts": 13,
+   "nat": "USA",
+   "results": [
+    23,
+    6,
+    17,
+    30,
+    8,
+    11,
+    3,
+    20,
+    14,
+    4,
+    1,
+    8,
+    6
+   ]
+  },
+  {
+   "pos": 8,
+   "name": "Eddie Cheever",
+   "wiki": "Eddie_Cheever",
+   "points": 261,
+   "wins": 1,
+   "podiums": 2,
+   "top5": 3,
+   "starts": 13,
+   "nat": "USA",
+   "results": [
+    19,
+    9,
+    24,
+    26,
+    12,
+    6,
+    13,
+    1,
+    15,
+    21,
+    4,
+    3,
+    18
+   ]
+  },
+  {
+   "pos": 9,
+   "name": "Buzz Calkins",
+   "wiki": "Buzz_Calkins",
+   "points": 242,
+   "wins": 0,
+   "podiums": 1,
+   "top5": 1,
+   "starts": 13,
+   "nat": "USA",
+   "results": [
+    9,
+    16,
+    3,
+    12,
+    15,
+    15,
+    10,
+    13,
+    9,
+    16,
+    22,
+    9,
+    10
+   ]
+  },
+  {
+   "pos": 10,
+   "name": "Airton Daré",
+   "wiki": "Airton_Daré",
+   "points": 239,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 1,
+   "starts": 13,
+   "nat": "BRA",
+   "results": [
+    10,
+    23,
+    9,
+    8,
+    19,
+    5,
+    15,
+    6,
+    17,
+    20,
+    9,
+    19,
+    7
+   ]
+  },
+  {
+   "pos": 11,
+   "name": "Jeff Ward",
+   "wiki": null,
+   "points": 238,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 2,
+   "starts": 12,
+   "nat": "USA",
+   "results": [
+    7,
+    5,
+    7,
+    24,
+    16,
+    12,
+    8,
+    null,
+    20,
+    10,
+    7,
+    4,
+    24
+   ]
+  },
+  {
+   "pos": 12,
+   "name": "Robbie Buhl",
+   "wiki": "Robbie_Buhl",
+   "points": 237,
+   "wins": 0,
+   "podiums": 2,
+   "top5": 3,
+   "starts": 13,
+   "nat": "USA",
+   "results": [
+    11,
+    24,
+    20,
+    15,
+    21,
+    3,
+    9,
+    21,
+    13,
+    9,
+    5,
+    22,
+    3
+   ]
+  },
+  {
+   "pos": 13,
+   "name": "Shigeaki Hattori",
+   "wiki": "Shigeaki_Hattori",
+   "points": 215,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 11,
+   "nat": "JPN",
+   "results": [
+    13,
+    15,
+    8,
+    "DNQ",
+    10,
+    "DNS",
+    14,
+    8,
+    7,
+    7,
+    15,
+    21,
+    16
+   ]
+  },
+  {
+   "pos": 14,
+   "name": "Mark Dismore",
+   "wiki": "Mark_Dismore",
+   "points": 205,
+   "wins": 0,
+   "podiums": 1,
+   "top5": 1,
+   "starts": 13,
+   "nat": "USA",
+   "results": [
+    25,
+    7,
+    26,
+    16,
+    20,
+    13,
+    6,
+    11,
+    16,
+    22,
+    2,
+    17,
+    23
+   ]
+  },
+  {
+   "pos": 15,
+   "name": "Donnie Beechler",
+   "wiki": "Donnie_Beechler",
+   "points": 204,
+   "wins": 0,
+   "podiums": 1,
+   "top5": 3,
+   "starts": 9,
+   "nat": "USA",
+   "results": [
+    null,
+    null,
+    null,
+    25,
+    6,
+    16,
+    7,
+    3,
+    10,
+    5,
+    14,
+    5,
+    null
+   ]
+  },
+  {
+   "pos": 16,
+   "name": "Robby McGehee",
+   "wiki": "Robby_McGehee",
+   "points": 196,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 1,
+   "starts": 11,
+   "nat": "USA",
+   "results": [
+    8,
+    12,
+    21,
+    11,
+    14,
+    null,
+    null,
+    10,
+    4,
+    18,
+    10,
+    20,
+    14
+   ]
+  },
+  {
+   "pos": 17,
+   "name": "Jaques Lazier",
+   "wiki": "Jaques_Lazier",
+   "points": 195,
+   "wins": 1,
+   "podiums": 2,
+   "top5": 2,
+   "starts": 10,
+   "nat": "USA",
+   "results": [
+    null,
+    null,
+    null,
+    22,
+    9,
+    17,
+    19,
+    18,
+    3,
+    12,
+    16,
+    1,
+    20
+   ]
+  },
+  {
+   "pos": 18,
+   "name": "Greg Ray",
+   "wiki": "Greg_Ray",
+   "points": 193,
+   "wins": 1,
+   "podiums": 1,
+   "top5": 1,
+   "starts": 10,
+   "nat": "USA",
+   "results": [
+    22,
+    21,
+    1,
+    17,
+    11,
+    18,
+    "WTH",
+    14,
+    18,
+    13,
+    null,
+    null,
+    8
+   ]
+  },
+  {
+   "pos": 19,
+   "name": "Sarah Fisher",
+   "wiki": "Sarah_Fisher",
+   "points": 188,
+   "wins": 0,
+   "podiums": 1,
+   "top5": 1,
+   "starts": 13,
+   "nat": "USA",
+   "results": [
+    17,
+    2,
+    11,
+    31,
+    18,
+    10,
+    17,
+    12,
+    19,
+    19,
+    11,
+    24,
+    25
+   ]
+  },
+  {
+   "pos": 20,
+   "name": "Didier André",
+   "wiki": "Didier_André",
+   "points": 188,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 1,
+   "starts": 12,
+   "nat": "FRA",
+   "results": [
+    27,
+    10,
+    13,
+    "DNQ",
+    17,
+    19,
+    4,
+    16,
+    21,
+    11,
+    12,
+    13,
+    15
+   ]
+  },
+  {
+   "pos": 21,
+   "name": "Billy Roe",
+   "wiki": "Billy_Roe",
+   "points": 101,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 9,
+   "nat": "USA",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    13,
+    20,
+    20,
+    22,
+    12,
+    14,
+    23,
+    23,
+    22
+   ]
+  },
+  {
+   "pos": 22,
+   "name": "Jeret Schroeder",
+   "wiki": "Jeret_Schroeder",
+   "points": 77,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 7,
+   "nat": "USA",
+   "results": [
+    26,
+    14,
+    19,
+    20,
+    23,
+    null,
+    16,
+    15,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 23,
+   "name": "Jon Herb",
+   "wiki": "Jon_Herb",
+   "points": 70,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 6,
+   "nat": "USA",
+   "results": [
+    null,
+    25,
+    16,
+    27,
+    null,
+    null,
+    null,
+    19,
+    null,
+    null,
+    null,
+    15,
+    9
+   ]
+  },
+  {
+   "pos": 24,
+   "name": "Hélio Castroneves",
+   "wiki": "Hélio_Castroneves",
+   "points": 64,
+   "wins": 1,
+   "podiums": 1,
+   "top5": 1,
+   "starts": 2,
+   "nat": "BRA",
+   "results": [
+    18,
+    null,
+    null,
+    1,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 25,
+   "name": "Rick Treadway",
+   "wiki": "Rick_Treadway",
+   "points": 59,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 1,
+   "starts": 3,
+   "nat": "USA",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    17,
+    null,
+    14,
+    5
+   ]
+  },
+  {
+   "pos": 26,
+   "name": "Davey Hamilton",
+   "wiki": "Davey_Hamilton",
+   "points": 54,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 5,
+   "nat": "USA",
+   "results": [
+    12,
+    19,
+    18,
+    23,
+    24,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 27,
+   "name": "Richie Hearn",
+   "wiki": "Richie_Hearn",
+   "points": 50,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 2,
+   "nat": "USA",
+   "results": [
+    null,
+    null,
+    null,
+    "DNQ",
+    null,
+    9,
+    null,
+    null,
+    null,
+    null,
+    null,
+    6,
+    null
+   ]
+  },
+  {
+   "pos": 28,
+   "name": "Gil de Ferran",
+   "wiki": "Gil_de_Ferran",
+   "points": 46,
+   "wins": 0,
+   "podiums": 1,
+   "top5": 1,
+   "starts": 2,
+   "nat": "BRA",
+   "results": [
+    24,
+    null,
+    null,
+    2,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 29,
+   "name": "Laurent Redon",
+   "wiki": "Laurent_Redon",
+   "points": 45,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 2,
+   "nat": "FRA",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    7,
+    11
+   ]
+  },
+  {
+   "pos": 30,
+   "name": "Brandon Erwin",
+   "wiki": "Brandon_Erwin",
+   "points": 40,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 4,
+   "nat": "USA",
+   "results": [
+    14,
+    17,
+    27,
+    "WTH",
+    22,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 31,
+   "name": "Casey Mears",
+   "wiki": "Casey_Mears",
+   "points": 36,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 3,
+   "nat": "USA",
+   "results": [
+    20,
+    11,
+    23,
+    "DNQ",
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 32,
+   "name": "Stan Wattles",
+   "wiki": "Stan_Wattles",
+   "points": 36,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 3,
+   "nat": "USA",
+   "results": [
+    16,
+    26,
+    12,
+    "WTH",
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 33,
+   "name": "Chris Menninga",
+   "wiki": "Chris_Menninga",
+   "points": 36,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 3,
+   "nat": "USA",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    19,
+    16,
+    19
+   ]
+  },
+  {
+   "pos": 34,
+   "name": "Michael Andretti",
+   "wiki": "Michael_Andretti",
+   "points": 35,
+   "wins": 0,
+   "podiums": 1,
+   "top5": 1,
+   "starts": 1,
+   "nat": "USA",
+   "results": [
+    null,
+    null,
+    null,
+    3,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 35,
+   "name": "Stéphan Grégoire",
+   "wiki": "Stéphan_Grégoire",
+   "points": 34,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 4,
+   "nat": "FRA",
+   "results": [
+    21,
+    22,
+    15,
+    28,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 36,
+   "name": "Jimmy Vasser",
+   "wiki": "Jimmy_Vasser",
+   "points": 32,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 1,
+   "starts": 1,
+   "nat": "USA",
+   "results": [
+    null,
+    null,
+    null,
+    4,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 37,
+   "name": "Bruno Junqueira",
+   "wiki": "Bruno_Junqueira",
+   "points": 30,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 1,
+   "starts": 1,
+   "nat": "BRA",
+   "results": [
+    null,
+    null,
+    null,
+    5,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 38,
+   "name": "Anthony Lazzaro",
+   "wiki": "Anthony_Lazzaro_(racing_driver)",
+   "points": 29,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 2,
+   "nat": "USA",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    18,
+    null,
+    13
+   ]
+  },
+  {
+   "pos": 39,
+   "name": "Tony Stewart",
+   "wiki": "Tony_Stewart",
+   "points": 28,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 1,
+   "nat": "USA",
+   "results": [
+    null,
+    null,
+    null,
+    6,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 40,
+   "name": "Cory Witherill",
+   "wiki": "Cory_Witherill",
+   "points": 19,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 2,
+   "nat": "USA",
+   "results": [
+    null,
+    null,
+    22,
+    19,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 41,
+   "name": "Arie Luyendyk",
+   "wiki": "Arie_Luyendyk",
+   "points": 17,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 1,
+   "nat": "NLD",
+   "results": [
+    null,
+    null,
+    null,
+    13,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 42,
+   "name": "Tyce Carlson",
+   "wiki": "Tyce_Carlson",
+   "points": 15,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 1,
+   "nat": "USA",
+   "results": [
+    15,
+    null,
+    null,
+    "WTH",
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 43,
+   "name": "John Hollansworth Jr.",
+   "wiki": "John_Hollansworth_Jr.",
+   "points": 12,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 1,
+   "nat": "USA",
+   "results": [
+    null,
+    18,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 44,
+   "name": "Alex Barron",
+   "wiki": "Alex_Barron_(racing_driver)",
+   "points": 9,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 1,
+   "nat": "USA",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    21,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 45,
+   "name": "Robby Gordon",
+   "wiki": "Robby_Gordon",
+   "points": 9,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 1,
+   "nat": "USA",
+   "results": [
+    null,
+    null,
+    null,
+    21,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 46,
+   "name": "Dr. Jack Miller",
+   "wiki": "Jack_Miller_(racing_driver)",
+   "points": 5,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 1,
+   "nat": "USA",
+   "results": [
+    null,
+    null,
+    25,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 47,
+   "name": "Nicolas Minassian",
+   "wiki": "Nicolas_Minassian",
+   "points": 1,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 1,
+   "nat": "FRA",
+   "results": [
+    null,
+    null,
+    null,
+    29,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 48,
+   "name": "Scott Goodyear",
+   "wiki": "Scott_Goodyear",
+   "points": 1,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 1,
+   "nat": "CAN",
+   "results": [
+    null,
+    null,
+    null,
+    32,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 49,
+   "name": "Raul Boesel",
+   "wiki": "Raul_Boesel",
+   "points": 0,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 0,
+   "nat": "BRA",
+   "results": [
+    null,
+    null,
+    null,
+    "WTH",
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 50,
+   "name": "Memo Gidley",
+   "wiki": "Memo_Gidley",
+   "points": 0,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 0,
+   "nat": "USA",
+   "results": [
+    null,
+    null,
+    null,
+    "DNQ",
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 51,
+   "name": "Roberto Guerrero",
+   "wiki": "Roberto_Guerrero",
+   "points": 0,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 0,
+   "nat": "COL",
+   "results": [
+    null,
+    null,
+    null,
+    "DNQ",
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 52,
+   "name": "Jim Guthrie",
+   "wiki": "Jim_Guthrie_(racing_driver)",
+   "points": 0,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 0,
+   "nat": "USA",
+   "results": [
+    null,
+    null,
+    null,
+    "DNQ",
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 53,
+   "name": "Jimmy Kite",
+   "wiki": "Jimmy_Kite",
+   "points": 0,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 0,
+   "nat": "USA",
+   "results": [
+    null,
+    null,
+    null,
+    "DNQ",
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 54,
+   "name": "Steve Knapp",
+   "wiki": "Steve_Knapp",
+   "points": 0,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 0,
+   "nat": "USA",
+   "results": [
+    null,
+    null,
+    null,
+    "DNQ",
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 55,
+   "name": "John Paul Jr.",
+   "wiki": "John_Paul_Jr._(racing_driver)",
+   "points": 0,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 0,
+   "nat": "USA",
+   "results": [
+    null,
+    null,
+    null,
+    "DNQ",
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  }
+ ],
+ "schedule": [
+  {
+   "round": 1,
+   "date": "2001-03-18",
+   "race": "Pennzoil Copper World Indy 200",
+   "track": "Phoenix International Raceway",
+   "city": "Phoenix",
+   "state": "AZ",
+   "country": "USA",
+   "winner": "Sam Hornish Jr.",
+   "winner_wiki": "Sam_Hornish_Jr.",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 2,
+   "date": "2001-04-08",
+   "race": "Infiniti Grand Prix of Miami",
+   "track": "Homestead-Miami Speedway",
+   "city": "Homestead",
+   "state": "FL",
+   "country": "USA",
+   "winner": "Sam Hornish Jr.",
+   "winner_wiki": "Sam_Hornish_Jr.",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 3,
+   "date": "2001-04-28",
+   "race": "zMax 500",
+   "track": "Atlanta Motor Speedway",
+   "city": "Hampton",
+   "state": "GA",
+   "country": "USA",
+   "winner": "Greg Ray",
+   "winner_wiki": "Greg_Ray",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 4,
+   "date": "2001-05-27",
+   "race": "85th Indianapolis 500",
+   "track": "Indianapolis Motor Speedway",
+   "city": "Speedway",
+   "state": "IN",
+   "country": "USA",
+   "winner": "Hélio Castroneves",
+   "winner_wiki": "Hélio_Castroneves",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 5,
+   "date": "2001-06-09",
+   "race": "Casino Magic 500",
+   "track": "Texas Motor Speedway",
+   "city": "Fort Worth",
+   "state": "TX",
+   "country": "USA",
+   "winner": "Scott Sharp",
+   "winner_wiki": "Scott_Sharp",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 6,
+   "date": "2001-06-17",
+   "race": "Radisson Indy 200",
+   "track": "Pikes Peak International Raceway",
+   "city": "Fountain",
+   "state": "CO",
+   "country": "USA",
+   "winner": "Buddy Lazier",
+   "winner_wiki": "Buddy_Lazier",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 7,
+   "date": "2001-06-30",
+   "race": "SunTrust Indy Challenge",
+   "track": "Richmond International Raceway",
+   "city": "Richmond",
+   "state": "VA",
+   "country": "USA",
+   "winner": "Buddy Lazier",
+   "winner_wiki": "Buddy_Lazier",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 8,
+   "date": "2001-07-08",
+   "race": "Ameristar Casino Indy 200",
+   "track": "Kansas Speedway",
+   "city": "Kansas City",
+   "state": "KS",
+   "country": "USA",
+   "winner": "Eddie Cheever",
+   "winner_wiki": "Eddie_Cheever",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 9,
+   "date": "2001-07-21",
+   "race": "Harrah's 200",
+   "track": "Nashville Superspeedway",
+   "city": "Lebanon",
+   "state": "TN",
+   "country": "USA",
+   "winner": "Buddy Lazier",
+   "winner_wiki": "Buddy_Lazier",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 10,
+   "date": "2001-08-12",
+   "race": "Belterra Resort Indy 300",
+   "track": "Kentucky Speedway",
+   "city": "Sparta",
+   "state": "KY",
+   "country": "USA",
+   "winner": "Buddy Lazier",
+   "winner_wiki": "Buddy_Lazier",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 11,
+   "date": "2001-08-26",
+   "race": "Gateway Indy 250",
+   "track": "Gateway International Raceway",
+   "city": "Madison",
+   "state": "IL",
+   "country": "USA",
+   "winner": "Al Unser Jr.",
+   "winner_wiki": "Al_Unser_Jr.",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 12,
+   "date": "2001-09-02",
+   "race": "Delphi Indy 300",
+   "track": "Chicagoland Speedway",
+   "city": "Joliet",
+   "state": "IL",
+   "country": "USA",
+   "winner": "Jaques Lazier",
+   "winner_wiki": "Jaques_Lazier",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 13,
+   "date": "2001-10-06",
+   "race": "Chevy 500",
+   "track": "Texas Motor Speedway",
+   "city": "Fort Worth",
+   "state": "TX",
+   "country": "USA",
+   "winner": "Sam Hornish Jr.",
+   "winner_wiki": "Sam_Hornish_Jr.",
+   "track_type": null,
+   "cancelled": false
+  }
+ ],
+ "sources": [
+  "https://en.wikipedia.org/wiki/2001_Indy_Racing_League",
+  "https://www.wikidata.org (driver bios)"
+ ]
+}

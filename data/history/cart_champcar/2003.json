@@ -1,0 +1,1525 @@
+{
+ "series": "open_wheel_top",
+ "year": 2003,
+ "official_name": "2003 Champ Car World Series",
+ "data_level": "full",
+ "teams_source": "teams_table",
+ "teams": [
+  {
+   "team": "Newman/Haas Racing",
+   "team_wiki": "Newman/Haas_Racing",
+   "owner": null,
+   "manufacturer": "Cosworth",
+   "chassis": "Lola B02/00",
+   "cars": [
+    {
+     "number": "1",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Bruno Junqueira",
+       "wiki": "Bruno_Junqueira",
+       "rounds": "All",
+       "nat": "BRA"
+      }
+     ]
+    },
+    {
+     "number": "2",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Sébastien Bourdais",
+       "wiki": "Sébastien_Bourdais",
+       "rounds": "All",
+       "nat": "FRA"
+      }
+     ]
+    }
+   ],
+   "manufacturer_note": "spec engine (from page text)"
+  },
+  {
+   "team": "Team Player's",
+   "team_wiki": "Forsythe/Pettit_Racing",
+   "owner": null,
+   "manufacturer": "Cosworth",
+   "chassis": "Lola B02/00",
+   "cars": [
+    {
+     "number": "3",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Paul Tracy",
+       "wiki": "Paul_Tracy",
+       "rounds": "All",
+       "nat": "CAN"
+      }
+     ]
+    },
+    {
+     "number": "32",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Patrick Carpentier",
+       "wiki": "Patrick_Carpentier",
+       "rounds": "All",
+       "nat": "CAN"
+      }
+     ]
+    }
+   ],
+   "manufacturer_note": "spec engine (from page text)"
+  },
+  {
+   "team": "Herdez Competition",
+   "team_wiki": "HVM_Racing",
+   "owner": null,
+   "manufacturer": "Cosworth",
+   "chassis": "Lola B02/00",
+   "cars": [
+    {
+     "number": "4",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Roberto Moreno",
+       "wiki": "Roberto_Moreno",
+       "rounds": "1–16, 18",
+       "nat": "BRA"
+      },
+      {
+       "name": "Roberto González",
+       "wiki": "Roberto_González_(racing_driver)",
+       "rounds": "17",
+       "nat": "MEX"
+      }
+     ]
+    },
+    {
+     "number": "55",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Mario Domínguez",
+       "wiki": "Mario_Domínguez_(racing_driver)",
+       "rounds": "All",
+       "nat": "MEX"
+      }
+     ]
+    }
+   ],
+   "manufacturer_note": "spec engine (from page text)"
+  },
+  {
+   "team": "Walker Racing",
+   "team_wiki": "Walker_Racing",
+   "owner": null,
+   "manufacturer": "Cosworth",
+   "chassis": "Reynard 02I",
+   "cars": [
+    {
+     "number": "5",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Rodolfo Lavín",
+       "wiki": "Rodolfo_Lavín",
+       "rounds": "All",
+       "nat": "MEX"
+      }
+     ]
+    },
+    {
+     "number": "15",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Darren Manning",
+       "wiki": "Darren_Manning",
+       "rounds": "All",
+       "nat": "GBR"
+      }
+     ]
+    },
+    {
+     "number": "25",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Luis Díaz",
+       "wiki": "Luis_Díaz_(racing_driver)",
+       "rounds": "17",
+       "nat": "MEX"
+      }
+     ]
+    }
+   ],
+   "manufacturer_note": "spec engine (from page text)"
+  },
+  {
+   "team": "Fittipaldi-Dingman Racing",
+   "team_wiki": "Fittipaldi-Dingman_Racing",
+   "owner": null,
+   "manufacturer": "Cosworth",
+   "chassis": "Reynard 02I",
+   "cars": [
+    {
+     "number": "7",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Tiago Monteiro",
+       "wiki": "Tiago_Monteiro",
+       "rounds": "All",
+       "nat": "PRT"
+      }
+     ]
+    }
+   ],
+   "manufacturer_note": "spec engine (from page text)"
+  },
+  {
+   "team": "Team Rahal",
+   "team_wiki": "Rahal_Letterman_Lanigan_Racing",
+   "owner": null,
+   "manufacturer": "Cosworth",
+   "chassis": "Lola B02/00",
+   "cars": [
+    {
+     "number": "9",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Michel Jourdain Jr.",
+       "wiki": "Michel_Jourdain_Jr.",
+       "rounds": "All",
+       "nat": "MEX"
+      }
+     ]
+    }
+   ],
+   "manufacturer_note": "spec engine (from page text)"
+  },
+  {
+   "team": "Dale Coyne Racing",
+   "team_wiki": "Dale_Coyne_Racing",
+   "owner": null,
+   "manufacturer": "Cosworth",
+   "chassis": "Lola B02/00",
+   "cars": [
+    {
+     "number": "11",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Roberto González",
+       "wiki": "Roberto_González_(racing_driver)",
+       "rounds": "1",
+       "nat": "MEX"
+      },
+      {
+       "name": "Alex Yoong",
+       "wiki": "Alex_Yoong",
+       "rounds": "2–5",
+       "nat": "MYS"
+      },
+      {
+       "name": "Gualter Salles",
+       "wiki": "Gualter_Salles",
+       "rounds": "6",
+       "nat": "BRA"
+      },
+      {
+       "name": "Geoff Boss",
+       "wiki": "Geoff_Boss",
+       "rounds": "7–18",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "19",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Joël Camathias",
+       "wiki": "Joël_Camathias",
+       "rounds": "1–7",
+       "nat": "CHE"
+      },
+      {
+       "name": "Gualter Salles",
+       "wiki": "Gualter_Salles",
+       "rounds": "8–9, 11–15, 17–18",
+       "nat": "BRA"
+      },
+      {
+       "name": "Alex Sperafico",
+       "wiki": "Alex_Sperafico",
+       "rounds": "10, 16",
+       "nat": "BRA"
+      }
+     ]
+    }
+   ],
+   "manufacturer_note": "spec engine (from page text)"
+  },
+  {
+   "team": "American Spirit Team Johansson",
+   "team_wiki": "American_Spirit_Team_Johansson",
+   "owner": null,
+   "manufacturer": "Cosworth",
+   "chassis": "Reynard 02I",
+   "cars": [
+    {
+     "number": "12",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Jimmy Vasser",
+       "wiki": "Jimmy_Vasser",
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "31",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Ryan Hunter-Reay",
+       "wiki": "Ryan_Hunter-Reay",
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    }
+   ],
+   "manufacturer_note": "spec engine (from page text)"
+  },
+  {
+   "team": "Patrick Racing",
+   "team_wiki": "Patrick_Racing",
+   "owner": null,
+   "manufacturer": "Cosworth",
+   "chassis": "Lola B02/00",
+   "cars": [
+    {
+     "number": "20",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Oriol Servià",
+       "wiki": "Oriol_Servià",
+       "rounds": "All",
+       "nat": "ESP"
+      }
+     ]
+    }
+   ],
+   "manufacturer_note": "spec engine (from page text)"
+  },
+  {
+   "team": "PK Racing",
+   "team_wiki": "KV_Racing_Technology",
+   "owner": null,
+   "manufacturer": "Cosworth",
+   "chassis": "Lola B02/00",
+   "cars": [
+    {
+     "number": "27",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Patrick Lemarié",
+       "wiki": "Patrick_Lemarié",
+       "rounds": "1–6",
+       "nat": "FRA"
+      },
+      {
+       "name": "Bryan Herta",
+       "wiki": "Bryan_Herta",
+       "rounds": "7",
+       "nat": "USA"
+      },
+      {
+       "name": "Max Papis",
+       "wiki": "Max_Papis",
+       "rounds": "8-14",
+       "nat": "ITA"
+      },
+      {
+       "name": "Mika Salo",
+       "wiki": "Mika_Salo",
+       "rounds": "15–18",
+       "nat": "FIN"
+      }
+     ]
+    }
+   ],
+   "manufacturer_note": "spec engine (from page text)"
+  },
+  {
+   "team": "Rocketsports Racing",
+   "team_wiki": "Rocketsports_Racing",
+   "owner": null,
+   "manufacturer": "Cosworth",
+   "chassis": "Lola B02/00",
+   "cars": [
+    {
+     "number": "33",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Alex Tagliani",
+       "wiki": "Alex_Tagliani",
+       "rounds": "All",
+       "nat": "CAN"
+      }
+     ]
+    }
+   ],
+   "manufacturer_note": "spec engine (from page text)"
+  },
+  {
+   "team": "Mi-Jack Conquest Racing",
+   "team_wiki": "Conquest_Racing",
+   "owner": null,
+   "manufacturer": "Cosworth",
+   "chassis": "Reynard 02I",
+   "cars": [
+    {
+     "number": "34",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Mário Haberfeld",
+       "wiki": "Mário_Haberfeld",
+       "rounds": "All",
+       "nat": "BRA"
+      }
+     ]
+    }
+   ],
+   "manufacturer_note": "spec engine (from page text)"
+  },
+  {
+   "team": "Fernández Racing",
+   "team_wiki": "Fernández_Racing",
+   "owner": null,
+   "manufacturer": "Cosworth",
+   "chassis": "Lola B02/00",
+   "cars": [
+    {
+     "number": "51",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Adrián Fernández",
+       "wiki": "Adrián_Fernández",
+       "rounds": "All",
+       "nat": "MEX"
+      }
+     ]
+    }
+   ],
+   "manufacturer_note": "spec engine (from page text)"
+  }
+ ],
+ "standings": [
+  {
+   "pos": 1,
+   "name": "Paul Tracy",
+   "wiki": "Paul_Tracy",
+   "points": 226,
+   "wins": 7,
+   "podiums": 10,
+   "top5": 11,
+   "starts": 18,
+   "nat": "CAN",
+   "results": [
+    1,
+    1,
+    1,
+    17,
+    12,
+    12,
+    3,
+    2,
+    2,
+    1,
+    1,
+    15,
+    1,
+    6,
+    4,
+    16,
+    1,
+    13
+   ]
+  },
+  {
+   "pos": 2,
+   "name": "Bruno Junqueira",
+   "wiki": "Bruno_Junqueira",
+   "points": 199,
+   "wins": 2,
+   "podiums": 9,
+   "top5": 12,
+   "starts": 18,
+   "nat": "BRA",
+   "results": [
+    3,
+    5,
+    3,
+    2,
+    4,
+    17,
+    2,
+    4,
+    3,
+    3,
+    2,
+    1,
+    13,
+    13,
+    1,
+    9,
+    7,
+    15
+   ]
+  },
+  {
+   "pos": 3,
+   "name": "Michel Jourdain Jr.",
+   "wiki": "Michel_Jourdain_Jr.",
+   "points": 195,
+   "wins": 2,
+   "podiums": 6,
+   "top5": 11,
+   "starts": 18,
+   "nat": "MEX",
+   "results": [
+    2,
+    2,
+    15,
+    6,
+    3,
+    1,
+    4,
+    12,
+    7,
+    2,
+    4,
+    16,
+    4,
+    1,
+    6,
+    7,
+    4,
+    4
+   ]
+  },
+  {
+   "pos": 4,
+   "name": "Sébastien Bourdais",
+   "wiki": "Sébastien_Bourdais",
+   "points": 159,
+   "wins": 3,
+   "podiums": 7,
+   "top5": 9,
+   "starts": 18,
+   "nat": "FRA",
+   "results": [
+    11,
+    17,
+    16,
+    1,
+    1,
+    9,
+    17,
+    14,
+    1,
+    4,
+    3,
+    2,
+    5,
+    19,
+    2,
+    17,
+    2,
+    17
+   ]
+  },
+  {
+   "pos": 5,
+   "name": "Patrick Carpentier",
+   "wiki": "Patrick_Carpentier",
+   "points": 146,
+   "wins": 1,
+   "podiums": 4,
+   "top5": 8,
+   "starts": 18,
+   "nat": "CAN",
+   "results": [
+    8,
+    8,
+    6,
+    5,
+    7,
+    3,
+    1,
+    16,
+    4,
+    7,
+    13,
+    5,
+    2,
+    3,
+    17,
+    6,
+    14,
+    5
+   ]
+  },
+  {
+   "pos": 6,
+   "name": "Mario Domínguez",
+   "wiki": "Mario_Domínguez_(racing_driver)",
+   "points": 118,
+   "wins": 1,
+   "podiums": 4,
+   "top5": 7,
+   "starts": 18,
+   "nat": "MEX",
+   "results": [
+    14,
+    13,
+    5,
+    3,
+    2,
+    8,
+    10,
+    10,
+    5,
+    12,
+    10,
+    14,
+    16,
+    5,
+    7,
+    1,
+    3,
+    10
+   ]
+  },
+  {
+   "pos": 7,
+   "name": "Oriol Servià",
+   "wiki": "Oriol_Servià",
+   "points": 108,
+   "wins": 0,
+   "podiums": 3,
+   "top5": 7,
+   "starts": 18,
+   "nat": "ESP",
+   "results": [
+    12,
+    18,
+    12,
+    4,
+    5,
+    2,
+    6,
+    5,
+    6,
+    5,
+    16,
+    18,
+    18,
+    2,
+    3,
+    19,
+    13,
+    19
+   ]
+  },
+  {
+   "pos": 8,
+   "name": "Adrián Fernández",
+   "wiki": "Adrián_Fernández",
+   "points": 105,
+   "wins": 1,
+   "podiums": 2,
+   "top5": 4,
+   "starts": 18,
+   "nat": "MEX",
+   "results": [
+    15,
+    4,
+    2,
+    12,
+    15,
+    6,
+    7,
+    1,
+    11,
+    9,
+    12,
+    12,
+    7,
+    8,
+    5,
+    8,
+    8,
+    12
+   ]
+  },
+  {
+   "pos": 9,
+   "name": "Darren Manning",
+   "wiki": "Darren_Manning",
+   "points": 103,
+   "wins": 0,
+   "podiums": 1,
+   "top5": 3,
+   "starts": 18,
+   "nat": "GBR",
+   "results": [
+    13,
+    7,
+    8,
+    10,
+    6,
+    4,
+    18,
+    6,
+    10,
+    8,
+    5,
+    6,
+    8,
+    10,
+    8,
+    11,
+    9,
+    2
+   ]
+  },
+  {
+   "pos": 10,
+   "name": "Alex Tagliani",
+   "wiki": "Alex_Tagliani",
+   "points": 97,
+   "wins": 0,
+   "podiums": 3,
+   "top5": 5,
+   "starts": 18,
+   "nat": "CAN",
+   "results": [
+    19,
+    3,
+    10,
+    8,
+    18,
+    5,
+    14,
+    3,
+    8,
+    17,
+    14,
+    3,
+    6,
+    4,
+    9,
+    13,
+    16,
+    7
+   ]
+  },
+  {
+   "pos": 11,
+   "name": "Jimmy Vasser",
+   "wiki": "Jimmy_Vasser",
+   "points": 72,
+   "wins": 0,
+   "podiums": 1,
+   "top5": 3,
+   "starts": 18,
+   "nat": "USA",
+   "results": [
+    6,
+    14,
+    4,
+    19,
+    8,
+    11,
+    8,
+    7,
+    13,
+    13,
+    11,
+    9,
+    15,
+    16,
+    11,
+    4,
+    17,
+    3
+   ]
+  },
+  {
+   "pos": 12,
+   "name": "Mário Haberfeld",
+   "wiki": "Mário_Haberfeld",
+   "points": 71,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 3,
+   "starts": 18,
+   "nat": "BRA",
+   "results": [
+    4,
+    16,
+    9,
+    9,
+    14,
+    7,
+    5,
+    8,
+    15,
+    19,
+    7,
+    8,
+    10,
+    11,
+    10,
+    5,
+    12,
+    14
+   ]
+  },
+  {
+   "pos": 13,
+   "name": "Roberto Moreno",
+   "wiki": "Roberto_Moreno",
+   "points": 67,
+   "wins": 0,
+   "podiums": 1,
+   "top5": 2,
+   "starts": 17,
+   "nat": "BRA",
+   "results": [
+    5,
+    6,
+    17,
+    7,
+    10,
+    19,
+    15,
+    9,
+    18,
+    6,
+    17,
+    7,
+    19,
+    7,
+    16,
+    2,
+    null,
+    16
+   ]
+  },
+  {
+   "pos": 14,
+   "name": "Ryan Hunter-Reay",
+   "wiki": "Ryan_Hunter-Reay",
+   "points": 64,
+   "wins": 1,
+   "podiums": 2,
+   "top5": 2,
+   "starts": 18,
+   "nat": "USA",
+   "results": [
+    16,
+    12,
+    7,
+    16,
+    11,
+    16,
+    12,
+    17,
+    9,
+    11,
+    6,
+    10,
+    3,
+    17,
+    15,
+    12,
+    11,
+    1
+   ]
+  },
+  {
+   "pos": 15,
+   "name": "Tiago Monteiro",
+   "wiki": "Tiago_Monteiro",
+   "points": 29,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 17,
+   "nat": "PRT",
+   "results": [
+    7,
+    19,
+    11,
+    14,
+    13,
+    10,
+    9,
+    19,
+    "WTH",
+    10,
+    15,
+    17,
+    11,
+    18,
+    13,
+    15,
+    6,
+    18
+   ]
+  },
+  {
+   "pos": 16,
+   "name": "Mika Salo",
+   "wiki": "Mika_Salo",
+   "points": 26,
+   "wins": 0,
+   "podiums": 1,
+   "top5": 2,
+   "starts": 4,
+   "nat": "FIN",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    14,
+    3,
+    5,
+    11
+   ]
+  },
+  {
+   "pos": 17,
+   "name": "Max Papis",
+   "wiki": "Max_Papis",
+   "points": 25,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 1,
+   "starts": 7,
+   "nat": "ITA",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    15,
+    12,
+    16,
+    9,
+    4,
+    9,
+    9,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 18,
+   "name": "Rodolfo Lavín",
+   "wiki": "Rodolfo_Lavín",
+   "points": 17,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 18,
+   "nat": "MEX",
+   "results": [
+    18,
+    15,
+    18,
+    15,
+    9,
+    14,
+    19,
+    11,
+    14,
+    15,
+    8,
+    19,
+    12,
+    15,
+    19,
+    18,
+    18,
+    8
+   ]
+  },
+  {
+   "pos": 19,
+   "name": "Gualter Salles",
+   "wiki": "Gualter_Salles",
+   "points": 11,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 10,
+   "nat": "BRA",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    13,
+    null,
+    18,
+    17,
+    null,
+    18,
+    11,
+    17,
+    12,
+    18,
+    null,
+    15,
+    6
+   ]
+  },
+  {
+   "pos": 20,
+   "name": "Geoff Boss",
+   "wiki": "Geoff_Boss",
+   "points": 8,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 12,
+   "nat": "USA",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    16,
+    13,
+    16,
+    14,
+    19,
+    13,
+    14,
+    14,
+    12,
+    10,
+    20,
+    9
+   ]
+  },
+  {
+   "pos": 21,
+   "name": "Patrick Lemarié",
+   "wiki": "Patrick_Lemarié",
+   "points": 8,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 6,
+   "nat": "FRA",
+   "results": [
+    10,
+    10,
+    13,
+    11,
+    19,
+    18,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 22,
+   "name": "Joël Camathias",
+   "wiki": "Joël_Camathias",
+   "points": 6,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 7,
+   "nat": "CHE",
+   "results": [
+    9,
+    11,
+    14,
+    13,
+    16,
+    15,
+    13,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 23,
+   "name": "Alex Yoong",
+   "wiki": "Alex_Yoong",
+   "points": 4,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 4,
+   "nat": "MYS",
+   "results": [
+    null,
+    9,
+    19,
+    18,
+    17,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 24,
+   "name": "Roberto González",
+   "wiki": "Roberto_González_(racing_driver)",
+   "points": 3,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 2,
+   "nat": "MEX",
+   "results": [
+    17,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    10,
+    null
+   ]
+  },
+  {
+   "pos": 25,
+   "name": "Bryan Herta",
+   "wiki": "Bryan_Herta",
+   "points": 2,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 1,
+   "nat": "USA",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    11,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 26,
+   "name": "Alex Sperafico",
+   "wiki": "Alex_Sperafico",
+   "points": 0,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 2,
+   "nat": "BRA",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    18,
+    null,
+    null,
+    null,
+    null,
+    null,
+    14,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 27,
+   "name": "Luis Díaz",
+   "wiki": "Luis_Díaz_(racing_driver)",
+   "points": 0,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 1,
+   "nat": "MEX",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    19,
+    null
+   ]
+  }
+ ],
+ "schedule": [
+  {
+   "round": 1,
+   "date": "2003-02-23",
+   "race": "St. Petersburg",
+   "track": "St. Petersburg Street Circuit",
+   "city": "St. Petersburg",
+   "state": "FL",
+   "country": "USA",
+   "winner": "Paul Tracy",
+   "winner_wiki": "Paul_Tracy",
+   "track_type": "street",
+   "cancelled": false
+  },
+  {
+   "round": 2,
+   "date": "2003-03-23",
+   "race": "Monterrey",
+   "track": "Fundidora Park",
+   "city": "Monterrey",
+   "state": null,
+   "country": "MEX",
+   "winner": "Paul Tracy",
+   "winner_wiki": "Paul_Tracy",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 3,
+   "date": "2003-04-13",
+   "race": "Long Beach",
+   "track": "Streets of Long Beach",
+   "city": "Long Beach",
+   "state": "CA",
+   "country": "USA",
+   "winner": "Paul Tracy",
+   "winner_wiki": "Paul_Tracy",
+   "track_type": "street",
+   "cancelled": false
+  },
+  {
+   "round": 4,
+   "date": "2003-05-05",
+   "race": "Brands Hatch",
+   "track": "Brands Hatch",
+   "city": "Longfield",
+   "state": null,
+   "country": "GBR",
+   "winner": "Sébastien Bourdais",
+   "winner_wiki": "Sébastien_Bourdais",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 5,
+   "date": "2003-05-11",
+   "race": "EuroSpeedway",
+   "track": "EuroSpeedway Lausitz",
+   "city": "Klettwitz",
+   "state": null,
+   "country": "DEU",
+   "winner": "Sébastien Bourdais",
+   "winner_wiki": "Sébastien_Bourdais",
+   "track_type": "oval",
+   "cancelled": false
+  },
+  {
+   "round": 6,
+   "date": "2003-05-31",
+   "race": "Milwaukee",
+   "track": "Milwaukee Mile",
+   "city": "West Allis",
+   "state": "WI",
+   "country": "USA",
+   "winner": "Michel Jourdain Jr.",
+   "winner_wiki": "Michel_Jourdain_Jr.",
+   "track_type": "oval",
+   "cancelled": false
+  },
+  {
+   "round": 7,
+   "date": "2003-06-15",
+   "race": "Laguna Seca",
+   "track": "Mazda Raceway Laguna Seca",
+   "city": "Monterey",
+   "state": "CA",
+   "country": "USA",
+   "winner": "Patrick Carpentier",
+   "winner_wiki": "Patrick_Carpentier",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 8,
+   "date": "2003-06-22",
+   "race": "Portland",
+   "track": "Portland International Raceway",
+   "city": "Portland",
+   "state": "OR",
+   "country": "USA",
+   "winner": "Adrián Fernández",
+   "winner_wiki": "Adrián_Fernández",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 9,
+   "date": "2003-07-05",
+   "race": "Cleveland",
+   "track": "Cleveland Burke Lakefront Airport",
+   "city": "Cleveland",
+   "state": "OH",
+   "country": "USA",
+   "winner": "Sébastien Bourdais",
+   "winner_wiki": "Sébastien_Bourdais",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 10,
+   "date": "2003-07-13",
+   "race": "Toronto",
+   "track": "Exhibition Place",
+   "city": "Toronto",
+   "state": "ON",
+   "country": "CAN",
+   "winner": "Paul Tracy",
+   "winner_wiki": "Paul_Tracy",
+   "track_type": "street",
+   "cancelled": false
+  },
+  {
+   "round": 11,
+   "date": "2003-07-27",
+   "race": "Vancouver",
+   "track": "Concord Pacific Place",
+   "city": "Vancouver",
+   "state": "BC",
+   "country": "CAN",
+   "winner": "Paul Tracy",
+   "winner_wiki": "Paul_Tracy",
+   "track_type": "street",
+   "cancelled": false
+  },
+  {
+   "round": 12,
+   "date": "2003-08-03",
+   "race": "Road America",
+   "track": "Road America",
+   "city": "Elkhart Lake",
+   "state": "WI",
+   "country": "USA",
+   "winner": "Bruno Junqueira",
+   "winner_wiki": "Bruno_Junqueira",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 13,
+   "date": "2003-08-10",
+   "race": "Mid-Ohio",
+   "track": "Mid-Ohio Sports Car Course",
+   "city": "Lexington",
+   "state": "OH",
+   "country": "USA",
+   "winner": "Paul Tracy",
+   "winner_wiki": "Paul_Tracy",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 14,
+   "date": "2003-08-24",
+   "race": "Montreal",
+   "track": "Circuit Gilles Villeneuve",
+   "city": "Montreal",
+   "state": "QC",
+   "country": "CAN",
+   "winner": "Michel Jourdain Jr.",
+   "winner_wiki": "Michel_Jourdain_Jr.",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 15,
+   "date": "2003-08-31",
+   "race": "Denver",
+   "track": "Denver Civic Center",
+   "city": "Denver",
+   "state": "CO",
+   "country": "USA",
+   "winner": "Bruno Junqueira",
+   "winner_wiki": "Bruno_Junqueira",
+   "track_type": "street",
+   "cancelled": false
+  },
+  {
+   "round": 16,
+   "date": "2003-09-28",
+   "race": "Miami",
+   "track": "Miami Bayfront Park Street Circuit",
+   "city": "Miami",
+   "state": "FL",
+   "country": "USA",
+   "winner": "Mario Domínguez",
+   "winner_wiki": "Mario_Domínguez_(racing_driver)",
+   "track_type": "street",
+   "cancelled": false
+  },
+  {
+   "round": 17,
+   "date": "2003-10-12",
+   "race": "Mexico City",
+   "track": "Autódromo Hermanos Rodríguez",
+   "city": "Mexico City",
+   "state": null,
+   "country": "MEX",
+   "winner": "Paul Tracy",
+   "winner_wiki": "Paul_Tracy",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 18,
+   "date": "2003-10-26",
+   "race": "Surfers Paradise",
+   "track": "Surfers Paradise Street Circuit",
+   "city": "Surfers Paradise",
+   "state": null,
+   "country": "AUS",
+   "winner": "Ryan Hunter-Reay",
+   "winner_wiki": "Ryan_Hunter-Reay",
+   "track_type": "street",
+   "cancelled": false
+  },
+  {
+   "round": 19,
+   "date": null,
+   "race": "Fontana",
+   "track": null,
+   "city": null,
+   "state": null,
+   "country": "USA",
+   "winner": null,
+   "winner_wiki": null,
+   "track_type": null,
+   "cancelled": true
+  }
+ ],
+ "sources": [
+  "https://en.wikipedia.org/wiki/2003_Champ_Car_World_Series",
+  "https://www.wikidata.org (driver bios)"
+ ]
+}

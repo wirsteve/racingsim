@@ -1,0 +1,1340 @@
+{
+ "series": "formula_lights",
+ "year": 2004,
+ "official_name": "2004 Menards IRL Infiniti Pro Series season",
+ "era": "IRL feeder (Infiniti Pro / Indy Pro / Indy Lights / Indy NXT)",
+ "data_level": "full",
+ "teams_source": "teams_table",
+ "teams": [
+  {
+   "team": "Keith Duesenberg Racing",
+   "team_wiki": null,
+   "owner": null,
+   "manufacturer": "Infiniti",
+   "chassis": "Dallara IL-02",
+   "cars": [
+    {
+     "number": "2",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Phil Giebler",
+       "wiki": "Phil_Giebler",
+       "rounds": "1–3, 11",
+       "nat": "USA"
+      },
+      {
+       "name": "Alfred Unser",
+       "wiki": "Al_Richard_Unser",
+       "rounds": "4–10, 12",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "22",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Ross Fonferko",
+       "wiki": null,
+       "rounds": "5",
+       "nat": "USA"
+      },
+      {
+       "name": "Phil Giebler",
+       "wiki": "Phil_Giebler",
+       "rounds": "7–9",
+       "nat": "USA"
+      },
+      {
+       "name": "P. J. Abbott",
+       "wiki": "P._J._Abbott",
+       "rounds": "12",
+       "nat": "USA"
+      }
+     ]
+    }
+   ],
+   "manufacturer_note": "spec engine (from page text)",
+   "chassis_note": "spec chassis (from page text)"
+  },
+  {
+   "team": "Brian Stewart Racing",
+   "team_wiki": null,
+   "owner": null,
+   "manufacturer": "Infiniti",
+   "chassis": "Dallara IL-02",
+   "cars": [
+    {
+     "number": "3",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Jesse Mason",
+       "wiki": "Jesse_Mason",
+       "rounds": "1–10",
+       "nat": "CAN"
+      },
+      {
+       "name": "Marty Roth",
+       "wiki": "Marty_Roth",
+       "rounds": "11",
+       "nat": "CAN"
+      },
+      {
+       "name": "Ryan Hampton",
+       "wiki": "Ryan_Hampton_(racing_driver)",
+       "rounds": "12",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "33",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Tony Turco",
+       "wiki": null,
+       "rounds": "1",
+       "nat": "USA"
+      },
+      {
+       "name": "Leonardo Maia",
+       "wiki": "Leonardo_Maia",
+       "rounds": "2–12",
+       "nat": "BRA"
+      }
+     ]
+    }
+   ],
+   "manufacturer_note": "spec engine (from page text)",
+   "chassis_note": "spec chassis (from page text)"
+  },
+  {
+   "team": "Roth Racing",
+   "team_wiki": "Roth_Racing",
+   "owner": null,
+   "manufacturer": "Infiniti",
+   "chassis": "Dallara IL-02",
+   "cars": [
+    {
+     "number": "4",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Marty Roth",
+       "wiki": "Marty_Roth",
+       "rounds": "1–3",
+       "nat": "CAN"
+      }
+     ]
+    }
+   ],
+   "manufacturer_note": "spec engine (from page text)",
+   "chassis_note": "spec chassis (from page text)"
+  },
+  {
+   "team": "Sam Schmidt Motorsports",
+   "team_wiki": "Arrow_McLaren_SP",
+   "owner": null,
+   "manufacturer": "Infiniti",
+   "chassis": "Dallara IL-02",
+   "cars": [
+    {
+     "number": "5",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Arie Luyendyk Jr.",
+       "wiki": "Arie_Luyendyk_Jr.",
+       "rounds": "1–7",
+       "nat": "NLD"
+      },
+      {
+       "name": "Travis Gregg",
+       "wiki": "Travis_Gregg",
+       "rounds": "8, 10, 12",
+       "nat": "USA"
+      },
+      {
+       "name": "Shinji Kashima",
+       "wiki": null,
+       "rounds": "11",
+       "nat": "JPN"
+      }
+     ]
+    },
+    {
+     "number": "11",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Thiago Medeiros",
+       "wiki": "Thiago_Medeiros",
+       "rounds": "All",
+       "nat": "BRA"
+      }
+     ]
+    },
+    {
+     "number": "64",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Brad Pollard",
+       "wiki": null,
+       "rounds": "4–6",
+       "nat": "USA"
+      },
+      {
+       "name": "Scott Mayer",
+       "wiki": "Scott_Mayer_(racing_driver)",
+       "rounds": "10, 12",
+       "nat": "USA"
+      },
+      {
+       "name": "P. J. Abbott",
+       "wiki": "P._J._Abbott",
+       "rounds": "11",
+       "nat": "USA"
+      }
+     ]
+    }
+   ],
+   "manufacturer_note": "spec engine (from page text)",
+   "chassis_note": "spec chassis (from page text)"
+  },
+  {
+   "team": "Racing Professionals",
+   "team_wiki": "Racing_Professionals",
+   "owner": null,
+   "manufacturer": "Infiniti",
+   "chassis": "Dallara IL-02",
+   "cars": [
+    {
+     "number": "6",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Jon Herb",
+       "wiki": "Jon_Herb",
+       "rounds": "3, 11–12",
+       "nat": "USA"
+      }
+     ]
+    }
+   ],
+   "manufacturer_note": "spec engine (from page text)",
+   "chassis_note": "spec chassis (from page text)"
+  },
+  {
+   "team": "Roquin Motorsports",
+   "team_wiki": "Rolando_Quintanilla",
+   "owner": null,
+   "manufacturer": "Infiniti",
+   "chassis": "Dallara IL-02",
+   "cars": [
+    {
+     "number": "9",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Matt Beardsley",
+       "wiki": null,
+       "rounds": "9",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "10",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Rolando Quintanilla",
+       "wiki": "Rolando_Quintanilla",
+       "rounds": "1–5, 7–12",
+       "nat": "MEX"
+      }
+     ]
+    }
+   ],
+   "manufacturer_note": "spec engine (from page text)",
+   "chassis_note": "spec chassis (from page text)"
+  },
+  {
+   "team": "Beardsley Motorsports",
+   "team_wiki": null,
+   "owner": null,
+   "manufacturer": "Infiniti",
+   "chassis": "Dallara IL-02",
+   "cars": [
+    {
+     "number": "12",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Matt Beardsley",
+       "wiki": null,
+       "rounds": "1–3",
+       "nat": "USA"
+      }
+     ]
+    }
+   ],
+   "manufacturer_note": "spec engine (from page text)",
+   "chassis_note": "spec chassis (from page text)"
+  },
+  {
+   "team": "A. J. Foyt Enterprises",
+   "team_wiki": "A._J._Foyt_Enterprises",
+   "owner": null,
+   "manufacturer": "Infiniti",
+   "chassis": "Dallara IL-02",
+   "cars": [
+    {
+     "number": "14",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Jeff Simmons",
+       "wiki": "Jeff_Simmons_(racing_driver)",
+       "rounds": "3",
+       "nat": "USA"
+      }
+     ]
+    }
+   ],
+   "manufacturer_note": "spec engine (from page text)",
+   "chassis_note": "spec chassis (from page text)"
+  },
+  {
+   "team": "Bullet-Team Motorsports",
+   "team_wiki": null,
+   "owner": null,
+   "manufacturer": "Infiniti",
+   "chassis": "Dallara IL-02",
+   "cars": [
+    {
+     "number": "21",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Taylor Fletcher",
+       "wiki": null,
+       "rounds": "3, 10–11",
+       "nat": "USA"
+      }
+     ]
+    }
+   ],
+   "manufacturer_note": "spec engine (from page text)",
+   "chassis_note": "spec chassis (from page text)"
+  },
+  {
+   "team": "Kenn Hardley Racing",
+   "team_wiki": null,
+   "owner": null,
+   "manufacturer": "Infiniti",
+   "chassis": "Dallara IL-02",
+   "cars": [
+    {
+     "number": "24",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Brad Pollard",
+       "wiki": null,
+       "rounds": "1–3",
+       "nat": "USA"
+      },
+      {
+       "name": "Jeff Simmons",
+       "wiki": "Jeff_Simmons_(racing_driver)",
+       "rounds": "9–12",
+       "nat": "USA"
+      },
+      {
+       "name": "Billy Roe",
+       "wiki": "Billy_Roe",
+       "rounds": "4–8",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "42",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Billy Roe",
+       "wiki": "Billy_Roe",
+       "rounds": "2–3",
+       "nat": "USA"
+      }
+     ]
+    }
+   ],
+   "manufacturer_note": "spec engine (from page text)",
+   "chassis_note": "spec chassis (from page text)"
+  },
+  {
+   "team": "AFS Racing",
+   "team_wiki": "AFS_Racing",
+   "owner": null,
+   "manufacturer": "Infiniti",
+   "chassis": "Dallara IL-02",
+   "cars": [
+    {
+     "number": "25",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Jay Drake",
+       "wiki": "Jay_Drake",
+       "rounds": "3",
+       "nat": "USA"
+      },
+      {
+       "name": "Arie Luyendyk Jr.",
+       "wiki": "Arie_Luyendyk_Jr.",
+       "rounds": "10–12",
+       "nat": "NLD"
+      }
+     ]
+    },
+    {
+     "number": "27",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Arie Luyendyk Jr.",
+       "wiki": "Arie_Luyendyk_Jr.",
+       "rounds": "8–9",
+       "nat": "NLD"
+      },
+      {
+       "name": "Gary Peterson",
+       "wiki": null,
+       "rounds": "2–3, 7, 10–12",
+       "nat": "USA"
+      }
+     ]
+    }
+   ],
+   "manufacturer_note": "spec engine (from page text)",
+   "chassis_note": "spec chassis (from page text)"
+  },
+  {
+   "team": "Mo Nunn Racing",
+   "team_wiki": "Mo_Nunn",
+   "owner": null,
+   "manufacturer": "Infiniti",
+   "chassis": "Dallara IL-02",
+   "cars": [
+    {
+     "number": "67",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "James Chesson",
+       "wiki": "James_Chesson",
+       "rounds": "10–12",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "76",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "P. J. Chesson",
+       "wiki": "P._J._Chesson",
+       "rounds": "4–12",
+       "nat": "USA"
+      }
+     ]
+    }
+   ],
+   "manufacturer_note": "spec engine (from page text)",
+   "chassis_note": "spec chassis (from page text)"
+  },
+  {
+   "team": "Hemelgarn 91/Johnson Motorsports",
+   "team_wiki": "Hemelgarn_Racing",
+   "owner": null,
+   "manufacturer": "Infiniti",
+   "chassis": "Dallara IL-02",
+   "cars": [
+    {
+     "number": "91",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Paul Dana",
+       "wiki": "Paul_Dana",
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "92",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Cory Witherill",
+       "wiki": "Cory_Witherill",
+       "rounds": "3, 10",
+       "nat": "USA"
+      }
+     ]
+    }
+   ],
+   "manufacturer_note": "spec engine (from page text)",
+   "chassis_note": "spec chassis (from page text)"
+  }
+ ],
+ "standings": [
+  {
+   "pos": 1,
+   "name": "Thiago Medeiros",
+   "wiki": "Thiago_Medeiros",
+   "points": 513,
+   "wins": 6,
+   "podiums": 9,
+   "top5": 9,
+   "starts": 12,
+   "nat": "BRA",
+   "results": [
+    2,
+    1,
+    1,
+    1,
+    1,
+    6,
+    2,
+    6,
+    3,
+    1,
+    9,
+    1
+   ]
+  },
+  {
+   "pos": 2,
+   "name": "Paul Dana",
+   "wiki": "Paul_Dana",
+   "points": 379,
+   "wins": 1,
+   "podiums": 5,
+   "top5": 7,
+   "starts": 12,
+   "nat": "USA",
+   "results": [
+    8,
+    5,
+    10,
+    2,
+    2,
+    1,
+    4,
+    2,
+    2,
+    8,
+    12,
+    11
+   ]
+  },
+  {
+   "pos": 3,
+   "name": "Arie Luyendyk Jr.",
+   "wiki": "Arie_Luyendyk_Jr.",
+   "points": 330,
+   "wins": 0,
+   "podiums": 2,
+   "top5": 6,
+   "starts": 12,
+   "nat": "NLD",
+   "results": [
+    9,
+    2,
+    3,
+    7,
+    11,
+    9,
+    8,
+    4,
+    5,
+    4,
+    14,
+    4
+   ]
+  },
+  {
+   "pos": 4,
+   "name": "P. J. Chesson",
+   "wiki": "P._J._Chesson",
+   "points": 317,
+   "wins": 3,
+   "podiums": 5,
+   "top5": 7,
+   "starts": 9,
+   "nat": "USA",
+   "results": [
+    null,
+    null,
+    null,
+    8,
+    6,
+    2,
+    1,
+    1,
+    1,
+    5,
+    2,
+    5
+   ]
+  },
+  {
+   "pos": 5,
+   "name": "Leonardo Maia",
+   "wiki": "Leonardo_Maia",
+   "points": 292,
+   "wins": 0,
+   "podiums": 2,
+   "top5": 3,
+   "starts": 11,
+   "nat": "BRA",
+   "results": [
+    null,
+    3,
+    6,
+    10,
+    10,
+    7,
+    7,
+    3,
+    7,
+    7,
+    4,
+    12
+   ]
+  },
+  {
+   "pos": 6,
+   "name": "Jesse Mason",
+   "wiki": "Jesse_Mason",
+   "points": 283,
+   "wins": 0,
+   "podiums": 2,
+   "top5": 5,
+   "starts": 10,
+   "nat": "CAN",
+   "results": [
+    3,
+    4,
+    15,
+    6,
+    3,
+    4,
+    6,
+    8,
+    4,
+    9,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 7,
+   "name": "Rolando Quintanilla",
+   "wiki": "Rolando_Quintanilla",
+   "points": 264,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 2,
+   "starts": 11,
+   "nat": "MEX",
+   "results": [
+    6,
+    6,
+    14,
+    4,
+    9,
+    null,
+    11,
+    7,
+    11,
+    10,
+    5,
+    8
+   ]
+  },
+  {
+   "pos": 8,
+   "name": "Alfred Unser",
+   "wiki": "Al_Richard_Unser",
+   "points": 252,
+   "wins": 0,
+   "podiums": 5,
+   "top5": 6,
+   "starts": 8,
+   "nat": "USA",
+   "results": [
+    null,
+    null,
+    null,
+    3,
+    5,
+    3,
+    3,
+    11,
+    6,
+    3,
+    null,
+    3
+   ]
+  },
+  {
+   "pos": 9,
+   "name": "Phil Giebler",
+   "wiki": "Phil_Giebler",
+   "points": 215,
+   "wins": 1,
+   "podiums": 2,
+   "top5": 4,
+   "starts": 7,
+   "nat": "USA",
+   "results": [
+    1,
+    7,
+    5,
+    null,
+    null,
+    null,
+    5,
+    10,
+    8,
+    null,
+    3,
+    null
+   ]
+  },
+  {
+   "pos": 10,
+   "name": "Billy Roe",
+   "wiki": "Billy_Roe",
+   "points": 164,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 1,
+   "starts": 7,
+   "nat": "USA",
+   "results": [
+    null,
+    9,
+    9,
+    9,
+    4,
+    8,
+    10,
+    9,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 11,
+   "name": "Brad Pollard",
+   "wiki": null,
+   "points": 152,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 3,
+   "starts": 6,
+   "nat": "USA",
+   "results": [
+    5,
+    11,
+    11,
+    5,
+    8,
+    5,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 12,
+   "name": "Jeff Simmons",
+   "wiki": "Jeff_Simmons_(racing_driver)",
+   "points": 150,
+   "wins": 0,
+   "podiums": 2,
+   "top5": 2,
+   "starts": 5,
+   "nat": "USA",
+   "results": [
+    null,
+    null,
+    2,
+    null,
+    null,
+    null,
+    null,
+    null,
+    9,
+    2,
+    10,
+    6
+   ]
+  },
+  {
+   "pos": 13,
+   "name": "Gary Peterson",
+   "wiki": null,
+   "points": 112,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 6,
+   "nat": "USA",
+   "results": [
+    null,
+    12,
+    13,
+    null,
+    null,
+    null,
+    9,
+    null,
+    null,
+    14,
+    8,
+    15
+   ]
+  },
+  {
+   "pos": 14,
+   "name": "James Chesson",
+   "wiki": "James_Chesson",
+   "points": 95,
+   "wins": 1,
+   "podiums": 1,
+   "top5": 1,
+   "starts": 3,
+   "nat": "USA",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    6,
+    1,
+    13
+   ]
+  },
+  {
+   "pos": 15,
+   "name": "Travis Gregg",
+   "wiki": "Travis_Gregg",
+   "points": 89,
+   "wins": 0,
+   "podiums": 1,
+   "top5": 2,
+   "starts": 3,
+   "nat": "USA",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    5,
+    null,
+    13,
+    null,
+    2
+   ]
+  },
+  {
+   "pos": 16,
+   "name": "Matt Beardsley",
+   "wiki": null,
+   "points": 88,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 4,
+   "nat": "USA",
+   "results": [
+    10,
+    8,
+    8,
+    null,
+    null,
+    null,
+    null,
+    null,
+    10,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 17,
+   "name": "Marty Roth",
+   "wiki": "Marty_Roth",
+   "points": 79,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 4,
+   "nat": "CAN",
+   "results": [
+    7,
+    10,
+    16,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    11,
+    null
+   ]
+  },
+  {
+   "pos": 18,
+   "name": "Jon Herb",
+   "wiki": "Jon_Herb",
+   "points": 67,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 3,
+   "nat": "USA",
+   "results": [
+    null,
+    null,
+    17,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    6,
+    7
+   ]
+  },
+  {
+   "pos": 19,
+   "name": "Taylor Fletcher",
+   "wiki": null,
+   "points": 52,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 3,
+   "nat": "USA",
+   "results": [
+    null,
+    null,
+    12,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    11,
+    15,
+    null
+   ]
+  },
+  {
+   "pos": 20,
+   "name": "P. J. Abbott",
+   "wiki": "P._J._Abbott",
+   "points": 48,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 2,
+   "nat": "USA",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    7,
+    9
+   ]
+  },
+  {
+   "pos": 21,
+   "name": "Cory Witherill",
+   "wiki": "Cory_Witherill",
+   "points": 41,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 2,
+   "nat": "USA",
+   "results": [
+    null,
+    null,
+    7,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    15,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 22,
+   "name": "Scott Mayer",
+   "wiki": "Scott_Mayer_(racing_driver)",
+   "points": 38,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 2,
+   "nat": "USA",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    12,
+    null,
+    10
+   ]
+  },
+  {
+   "pos": 23,
+   "name": "Tony Turco",
+   "wiki": null,
+   "points": 32,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 1,
+   "starts": 1,
+   "nat": "USA",
+   "results": [
+    4,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 24,
+   "name": "Jay Drake",
+   "wiki": "Jay_Drake",
+   "points": 32,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 1,
+   "starts": 1,
+   "nat": "USA",
+   "results": [
+    null,
+    null,
+    4,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 25,
+   "name": "Ross Fonferko",
+   "wiki": null,
+   "points": 26,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 1,
+   "nat": "USA",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    7,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 26,
+   "name": "Shinji Kashima",
+   "wiki": null,
+   "points": 17,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 1,
+   "nat": "JPN",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    13,
+    null
+   ]
+  },
+  {
+   "pos": 27,
+   "name": "Ryan Hampton",
+   "wiki": "Ryan_Hampton_(racing_driver)",
+   "points": 16,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 1,
+   "nat": "USA",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    14
+   ]
+  }
+ ],
+ "schedule": [
+  {
+   "round": 1,
+   "date": "2004-02-29",
+   "race": "Homestead-Miami 100",
+   "track": "Homestead–Miami Speedway",
+   "city": "Homestead",
+   "state": "FL",
+   "country": "USA",
+   "winner": "Phil Giebler",
+   "winner_wiki": "Phil_Giebler",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 2,
+   "date": "2004-03-20",
+   "race": "Phoenix 100",
+   "track": "Phoenix International Raceway",
+   "city": "Avondale",
+   "state": "AZ",
+   "country": "USA",
+   "winner": "Thiago Medeiros",
+   "winner_wiki": "Thiago_Medeiros",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 3,
+   "date": "2004-05-22",
+   "race": "Futaba Freedom 100",
+   "track": "Indianapolis Motor Speedway",
+   "city": "Speedway",
+   "state": "IN",
+   "country": "USA",
+   "winner": "Thiago Medeiros",
+   "winner_wiki": "Thiago_Medeiros",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 4,
+   "date": "2004-07-03",
+   "race": "Aventis Racing for Kids 100",
+   "track": "Kansas Speedway",
+   "city": "Kansas City",
+   "state": "KS",
+   "country": "USA",
+   "winner": "Thiago Medeiros",
+   "winner_wiki": "Thiago_Medeiros",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 5,
+   "date": "2004-07-17",
+   "race": "Cleanevent 100",
+   "track": "Nashville Superspeedway",
+   "city": "Lebanon",
+   "state": "TN",
+   "country": "USA",
+   "winner": "Thiago Medeiros",
+   "winner_wiki": "Thiago_Medeiros",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 6,
+   "date": "2004-07-25",
+   "race": "Milwaukee 100",
+   "track": "Milwaukee Mile",
+   "city": "West Allis",
+   "state": "WI",
+   "country": "USA",
+   "winner": "Paul Dana",
+   "winner_wiki": "Paul_Dana",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 7,
+   "date": "2004-08-01",
+   "race": "Paramount Health Insurance 100",
+   "track": "Michigan International Speedway",
+   "city": "Brooklyn",
+   "state": "MI",
+   "country": "USA",
+   "winner": "P. J. Chesson",
+   "winner_wiki": "P._J._Chesson",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 8,
+   "date": "2004-08-14",
+   "race": "Kentucky 100",
+   "track": "Kentucky Speedway",
+   "city": "Sparta",
+   "state": "KY",
+   "country": "USA",
+   "winner": "P. J. Chesson",
+   "winner_wiki": "P._J._Chesson",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 9,
+   "date": "2004-08-22",
+   "race": "Pikes Peak 100",
+   "track": "Pikes Peak International Raceway",
+   "city": "Fountain",
+   "state": "CO",
+   "country": "USA",
+   "winner": "P. J. Chesson",
+   "winner_wiki": "P._J._Chesson",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 10,
+   "date": "2004-09-11",
+   "race": "Chicago 100",
+   "track": "Chicagoland Speedway",
+   "city": "Joliet",
+   "state": "IL",
+   "country": "USA",
+   "winner": "Thiago Medeiros",
+   "winner_wiki": "Thiago_Medeiros",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 11,
+   "date": "2004-10-02",
+   "race": "California 100",
+   "track": "California Speedway",
+   "city": "Fontana",
+   "state": "CA",
+   "country": "USA",
+   "winner": "James Chesson",
+   "winner_wiki": "James_Chesson",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 12,
+   "date": "2004-10-16",
+   "race": "Texas 100",
+   "track": "Texas Motor Speedway",
+   "city": "Fort Worth",
+   "state": "TX",
+   "country": "USA",
+   "winner": "Thiago Medeiros",
+   "winner_wiki": "Thiago_Medeiros",
+   "track_type": null,
+   "cancelled": false
+  }
+ ],
+ "sources": [
+  "https://en.wikipedia.org/wiki/2004_Infiniti_Pro_Series",
+  "https://www.wikidata.org (driver bios)"
+ ]
+}

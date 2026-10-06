@@ -1,0 +1,1239 @@
+{
+ "series": "formula_lights",
+ "year": 2023,
+ "official_name": "2023 Firestone Indy NXT Series",
+ "era": "IRL feeder (Infiniti Pro / Indy Pro / Indy Lights / Indy NXT)",
+ "data_level": "full",
+ "teams_source": "teams_table",
+ "teams": [
+  {
+   "team": "Abel Motorsports",
+   "team_wiki": "Abel_Motorsports",
+   "owner": null,
+   "manufacturer": "AER",
+   "chassis": null,
+   "cars": [
+    {
+     "number": "51",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Jacob Abel",
+       "wiki": "Jacob_Abel_(racing_driver)",
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "55",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Francesco Pizzi",
+       "wiki": "Francesco_Pizzi",
+       "rounds": "9–10, 13–14",
+       "nat": "ITA"
+      }
+     ]
+    },
+    {
+     "number": "57",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Colin Kaminsky",
+       "wiki": "Colin_Kaminsky",
+       "rounds": "1–6, 10–11",
+       "nat": "USA"
+      },
+      {
+       "name": "Yuven Sundaramoorthy",
+       "wiki": "Yuven_Sundaramoorthy",
+       "rounds": "9, 12–14",
+       "nat": "USA"
+      }
+     ]
+    }
+   ],
+   "manufacturer_note": "spec engine (from page text)"
+  },
+  {
+   "team": "Andretti Autosport",
+   "team_wiki": "Andretti_Autosport",
+   "owner": null,
+   "manufacturer": "AER",
+   "chassis": null,
+   "cars": [
+    {
+     "number": "26",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Louis Foster",
+       "wiki": "Louis_Foster",
+       "rounds": "All",
+       "nat": "GBR"
+      }
+     ]
+    },
+    {
+     "number": "27",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Hunter McElrea",
+       "wiki": "Hunter_McElrea",
+       "rounds": "All",
+       "nat": "NZL"
+      }
+     ]
+    },
+    {
+     "number": "28",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Jamie Chadwick",
+       "wiki": "Jamie_Chadwick",
+       "rounds": "All",
+       "nat": "GBR"
+      }
+     ]
+    },
+    {
+     "number": "29",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "James Roe",
+       "wiki": "James_Roe_(racing_driver)",
+       "rounds": "All",
+       "nat": "IRE"
+      }
+     ]
+    }
+   ],
+   "manufacturer_note": "spec engine (from page text)"
+  },
+  {
+   "team": "Cape Motorsports",
+   "team_wiki": "Cape_Motorsports",
+   "owner": null,
+   "manufacturer": "AER",
+   "chassis": null,
+   "cars": [
+    {
+     "number": "47",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Enaam Ahmed",
+       "wiki": "Enaam_Ahmed",
+       "rounds": "1–7",
+       "nat": "PAK"
+      },
+      {
+       "name": "Matthew Brabham",
+       "wiki": "Matthew_Brabham",
+       "rounds": "9",
+       "nat": "AUS"
+      },
+      {
+       "name": "Kiko Porto",
+       "wiki": "Kiko_Porto",
+       "rounds": "10, 13–14",
+       "nat": "BRA"
+      }
+     ]
+    },
+    {
+     "number": "98",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Jagger Jones",
+       "wiki": "Jagger_Jones",
+       "rounds": "1–10, 12-14",
+       "nat": "USA"
+      }
+     ]
+    }
+   ],
+   "manufacturer_note": "spec engine (from page text)"
+  },
+  {
+   "team": "HMD Motorsports",
+   "team_wiki": "HMD_Motorsports",
+   "owner": null,
+   "manufacturer": "AER",
+   "chassis": null,
+   "cars": [
+    {
+     "number": "14",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Josh Pierson",
+       "wiki": "Josh_Pierson",
+       "rounds": "1, 3, 6–12",
+       "nat": "USA"
+      },
+      {
+       "name": "Toby Sowery",
+       "wiki": "Toby_Sowery",
+       "rounds": "2, 4–5",
+       "nat": "GBR"
+      }
+     ]
+    },
+    {
+     "number": "21",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Kyffin Simpson",
+       "wiki": "Kyffin_Simpson",
+       "rounds": "1–10, 12–14",
+       "nat": "CAY"
+      }
+     ]
+    }
+   ],
+   "manufacturer_note": "spec engine (from page text)"
+  },
+  {
+   "team": "HMD Motorsports with Dale Coyne Racing",
+   "team_wiki": "HMD_Motorsports",
+   "owner": null,
+   "manufacturer": "AER",
+   "chassis": null,
+   "cars": [
+    {
+     "number": "3",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Josh Green",
+       "wiki": "Josh_Green_(racing_driver)",
+       "rounds": "1–6",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "6",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Christian Rasmussen",
+       "wiki": "Christian_Rasmussen_(racing_driver)",
+       "rounds": "All",
+       "nat": "DNK"
+      }
+     ]
+    },
+    {
+     "number": "7",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Christian Bogle",
+       "wiki": "Christian_Bogle",
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "10",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Rasmus Lindh",
+       "wiki": "Rasmus_Lindh",
+       "rounds": "1",
+       "nat": "SWE"
+      },
+      {
+       "name": "Reece Gold",
+       "wiki": "Reece_Gold",
+       "rounds": "3–14",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "39",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Nolan Siegel",
+       "wiki": "Nolan_Siegel",
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "68",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Danial Frost",
+       "wiki": "Danial_Frost",
+       "rounds": "All",
+       "nat": "SGP"
+      }
+     ]
+    }
+   ],
+   "manufacturer_note": "spec engine (from page text)"
+  },
+  {
+   "team": "HMD Motorsports with Force Indy",
+   "team_wiki": "HMD_Motorsports",
+   "owner": null,
+   "manufacturer": "AER",
+   "chassis": null,
+   "cars": [
+    {
+     "number": "99",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Ernie Francis Jr.",
+       "wiki": "Ernie_Francis_Jr.",
+       "rounds": "1–2, 4–14",
+       "nat": "USA"
+      }
+     ]
+    }
+   ],
+   "manufacturer_note": "spec engine (from page text)"
+  },
+  {
+   "team": "Juncos Hollinger Racing",
+   "team_wiki": "Juncos_Hollinger_Racing",
+   "owner": null,
+   "manufacturer": "AER",
+   "chassis": null,
+   "cars": [
+    {
+     "number": "75",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Matteo Nannini",
+       "wiki": "Matteo_Nannini",
+       "rounds": "1–7",
+       "nat": "ITA"
+      },
+      {
+       "name": "Matthew Brabham",
+       "wiki": "Matthew_Brabham",
+       "rounds": "8, 11",
+       "nat": "AUS"
+      },
+      {
+       "name": "Victor Franzoni",
+       "wiki": "Victor_Franzoni",
+       "rounds": "9–10, 12–14",
+       "nat": "BRA"
+      }
+     ]
+    },
+    {
+     "number": "76",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Reece Gold",
+       "wiki": "Reece_Gold",
+       "rounds": "1–2",
+       "nat": "USA"
+      },
+      {
+       "name": "Rasmus Lindh",
+       "wiki": "Rasmus_Lindh",
+       "rounds": "3–11",
+       "nat": "SWE"
+      },
+      {
+       "name": "Matthew Brabham",
+       "wiki": "Matthew_Brabham",
+       "rounds": "12–14",
+       "nat": "AUS"
+      }
+     ]
+    }
+   ],
+   "manufacturer_note": "spec engine (from page text)"
+  }
+ ],
+ "standings": [
+  {
+   "pos": 1,
+   "name": "Christian Rasmussen",
+   "wiki": "Christian_Rasmussen_(racing_driver)",
+   "points": 539,
+   "wins": 5,
+   "podiums": 8,
+   "top5": 11,
+   "starts": 14,
+   "nat": "DNK",
+   "results": [
+    4,
+    1,
+    5,
+    9,
+    2,
+    19,
+    3,
+    1,
+    1,
+    6,
+    1,
+    5,
+    2,
+    1
+   ]
+  },
+  {
+   "pos": 2,
+   "name": "Hunter McElrea",
+   "wiki": "Hunter_McElrea",
+   "points": 474,
+   "wins": 2,
+   "podiums": 6,
+   "top5": 11,
+   "starts": 14,
+   "nat": "NZL",
+   "results": [
+    5,
+    13,
+    4,
+    7,
+    4,
+    3,
+    4,
+    5,
+    2,
+    1,
+    3,
+    15,
+    1,
+    2
+   ]
+  },
+  {
+   "pos": 3,
+   "name": "Nolan Siegel",
+   "wiki": "Nolan_Siegel",
+   "points": 415,
+   "wins": 2,
+   "podiums": 5,
+   "top5": 6,
+   "starts": 14,
+   "nat": "USA",
+   "results": [
+    2,
+    2,
+    13,
+    8,
+    1,
+    1,
+    15,
+    15,
+    5,
+    12,
+    6,
+    2,
+    16,
+    7
+   ]
+  },
+  {
+   "pos": 4,
+   "name": "Louis Foster",
+   "wiki": "Louis_Foster",
+   "points": 410,
+   "wins": 2,
+   "podiums": 6,
+   "top5": 6,
+   "starts": 14,
+   "nat": "GBR",
+   "results": [
+    14,
+    14,
+    2,
+    19,
+    3,
+    6,
+    1,
+    7,
+    6,
+    17,
+    2,
+    1,
+    18,
+    3
+   ]
+  },
+  {
+   "pos": 5,
+   "name": "Jacob Abel",
+   "wiki": "Jacob_Abel_(racing_driver)",
+   "points": 397,
+   "wins": 0,
+   "podiums": 4,
+   "top5": 8,
+   "starts": 14,
+   "nat": "USA",
+   "results": [
+    3,
+    16,
+    9,
+    4,
+    9,
+    2,
+    6,
+    2,
+    3,
+    4,
+    4,
+    16,
+    14,
+    5
+   ]
+  },
+  {
+   "pos": 6,
+   "name": "Danial Frost",
+   "wiki": "Danial_Frost",
+   "points": 361,
+   "wins": 1,
+   "podiums": 3,
+   "top5": 5,
+   "starts": 14,
+   "nat": "SGP",
+   "results": [
+    1,
+    10,
+    11,
+    18,
+    5,
+    7,
+    11,
+    14,
+    16,
+    7,
+    5,
+    3,
+    3,
+    6
+   ]
+  },
+  {
+   "pos": 7,
+   "name": "James Roe",
+   "wiki": "James_Roe_(racing_driver)",
+   "points": 335,
+   "wins": 0,
+   "podiums": 1,
+   "top5": 4,
+   "starts": 14,
+   "nat": "IRE",
+   "results": [
+    17,
+    5,
+    7,
+    10,
+    6,
+    5,
+    12,
+    9,
+    4,
+    2,
+    15,
+    8,
+    9,
+    15
+   ]
+  },
+  {
+   "pos": 8,
+   "name": "Reece Gold",
+   "wiki": "Reece_Gold",
+   "points": 334,
+   "wins": 1,
+   "podiums": 2,
+   "top5": 4,
+   "starts": 14,
+   "nat": "USA",
+   "results": [
+    8,
+    17,
+    16,
+    1,
+    12,
+    4,
+    5,
+    12,
+    9,
+    3,
+    9,
+    14,
+    10,
+    14
+   ]
+  },
+  {
+   "pos": 9,
+   "name": "Ernie Francis Jr.",
+   "wiki": "Ernie_Francis_Jr.",
+   "points": 300,
+   "wins": 0,
+   "podiums": 1,
+   "top5": 1,
+   "starts": 13,
+   "nat": "USA",
+   "results": [
+    6,
+    8,
+    null,
+    3,
+    7,
+    12,
+    13,
+    8,
+    18,
+    14,
+    8,
+    7,
+    7,
+    8
+   ]
+  },
+  {
+   "pos": 10,
+   "name": "Kyffin Simpson",
+   "wiki": "Kyffin_Simpson",
+   "points": 283,
+   "wins": 0,
+   "podiums": 2,
+   "top5": 4,
+   "starts": 13,
+   "nat": "CAY",
+   "results": [
+    10,
+    18,
+    3,
+    13,
+    17,
+    8,
+    2,
+    16,
+    15,
+    5,
+    null,
+    13,
+    4,
+    17
+   ]
+  },
+  {
+   "pos": 11,
+   "name": "Christian Bogle",
+   "wiki": "Christian_Bogle",
+   "points": 266,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 1,
+   "starts": 14,
+   "nat": "USA",
+   "results": [
+    12,
+    7,
+    18,
+    6,
+    15,
+    13,
+    16,
+    13,
+    12,
+    13,
+    11,
+    4,
+    11,
+    16
+   ]
+  },
+  {
+   "pos": 12,
+   "name": "Jamie Chadwick",
+   "wiki": "Jamie_Chadwick",
+   "points": 262,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 14,
+   "nat": "GBR",
+   "results": [
+    13,
+    11,
+    15,
+    11,
+    16,
+    15,
+    10,
+    10,
+    8,
+    10,
+    12,
+    6,
+    15,
+    12
+   ]
+  },
+  {
+   "pos": 13,
+   "name": "Jagger Jones",
+   "wiki": "Jagger_Jones",
+   "points": 241,
+   "wins": 0,
+   "podiums": 1,
+   "top5": 1,
+   "starts": 13,
+   "nat": "USA",
+   "results": [
+    18,
+    12,
+    14,
+    2,
+    19,
+    9,
+    14,
+    11,
+    17,
+    18,
+    null,
+    12,
+    8,
+    10
+   ]
+  },
+  {
+   "pos": 14,
+   "name": "Rasmus Lindh",
+   "wiki": "Rasmus_Lindh",
+   "points": 210,
+   "wins": 0,
+   "podiums": 1,
+   "top5": 1,
+   "starts": 10,
+   "nat": "SWE",
+   "results": [
+    9,
+    null,
+    8,
+    12,
+    14,
+    18,
+    7,
+    3,
+    7,
+    15,
+    14,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 15,
+   "name": "Josh Pierson",
+   "wiki": "Josh_Pierson",
+   "points": 173,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 9,
+   "nat": "USA",
+   "results": [
+    16,
+    null,
+    17,
+    null,
+    null,
+    11,
+    9,
+    6,
+    10,
+    8,
+    10,
+    17,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 16,
+   "name": "Matthew Brabham",
+   "wiki": "Matthew_Brabham",
+   "points": 159,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 3,
+   "starts": 6,
+   "nat": "AUS",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    4,
+    13,
+    null,
+    7,
+    9,
+    5,
+    4
+   ]
+  },
+  {
+   "pos": 17,
+   "name": "Colin Kaminsky",
+   "wiki": "Colin_Kaminsky",
+   "points": 159,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 8,
+   "nat": "USA",
+   "results": [
+    11,
+    6,
+    12,
+    16,
+    8,
+    10,
+    null,
+    null,
+    null,
+    11,
+    13,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 18,
+   "name": "Enaam Ahmed",
+   "wiki": "Enaam_Ahmed",
+   "points": 150,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 2,
+   "starts": 7,
+   "nat": "PAK",
+   "results": [
+    19,
+    4,
+    10,
+    5,
+    10,
+    17,
+    8,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 19,
+   "name": "Matteo Nannini",
+   "wiki": "Matteo_Nannini",
+   "points": 146,
+   "wins": 1,
+   "podiums": 1,
+   "top5": 1,
+   "starts": 7,
+   "nat": "ITA",
+   "results": [
+    15,
+    15,
+    1,
+    14,
+    11,
+    16,
+    17,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 20,
+   "name": "Josh Green",
+   "wiki": "Josh_Green_(racing_driver)",
+   "points": 119,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 6,
+   "nat": "USA",
+   "results": [
+    7,
+    9,
+    6,
+    15,
+    18,
+    14,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 21,
+   "name": "Victor Franzoni",
+   "wiki": "Victor_Franzoni",
+   "points": 91,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 5,
+   "nat": "BRA",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    14,
+    19,
+    null,
+    11,
+    6,
+    13
+   ]
+  },
+  {
+   "pos": 22,
+   "name": "Yuven Sundaramoorthy",
+   "wiki": "Yuven_Sundaramoorthy",
+   "points": 77,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 4,
+   "nat": "USA",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    11,
+    null,
+    null,
+    10,
+    13,
+    9
+   ]
+  },
+  {
+   "pos": 23,
+   "name": "Toby Sowery",
+   "wiki": "Toby_Sowery",
+   "points": 65,
+   "wins": 0,
+   "podiums": 1,
+   "top5": 1,
+   "starts": 3,
+   "nat": "GBR",
+   "results": [
+    null,
+    3,
+    null,
+    17,
+    13,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 24,
+   "name": "Francesco Pizzi",
+   "wiki": "Francesco_Pizzi",
+   "points": 55,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 4,
+   "nat": "ITA",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    19,
+    16,
+    null,
+    null,
+    12,
+    18
+   ]
+  },
+  {
+   "pos": 25,
+   "name": "Kiko Porto",
+   "wiki": "Kiko_Porto",
+   "points": 54,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 3,
+   "nat": "BRA",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    9,
+    null,
+    null,
+    17,
+    11
+   ]
+  }
+ ],
+ "schedule": [
+  {
+   "round": 1,
+   "date": "2023-03-05",
+   "race": "Indy NXT by Firestone Grand Prix of St. Petersburg",
+   "track": "Streets of St. Petersburg",
+   "city": "St. Petersburg",
+   "state": "FL",
+   "country": "USA",
+   "winner": "Danial Frost",
+   "winner_wiki": "Danial_Frost",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 2,
+   "date": "2023-04-30",
+   "race": "Indy NXT by Firestone Grand Prix of Alabama",
+   "track": "Barber Motorsports Park",
+   "city": "Birmingham",
+   "state": "AL",
+   "country": "USA",
+   "winner": "Christian Rasmussen",
+   "winner_wiki": "Christian_Rasmussen_(racing_driver)",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 3,
+   "date": "2023-05-13",
+   "race": "Indy NXT by Firestone Grand Prix of Indianapolis",
+   "track": "Indianapolis Motor Speedway Road Course",
+   "city": "Speedway",
+   "state": "IN",
+   "country": "USA",
+   "winner": "Matteo Nannini",
+   "winner_wiki": "Matteo_Nannini",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 4,
+   "date": "2023-06-03",
+   "race": "Indy NXT by Firestone Detroit Grand Prix",
+   "track": "Detroit Street Circuit",
+   "city": "Detroit",
+   "state": "MI",
+   "country": "USA",
+   "winner": "Reece Gold",
+   "winner_wiki": "Reece_Gold",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 5,
+   "date": "2023-06-03",
+   "race": "Indy NXT by Firestone Detroit Grand Prix",
+   "track": "Detroit Street Circuit",
+   "city": "Detroit",
+   "state": "MI",
+   "country": "USA",
+   "winner": "Nolan Siegel",
+   "winner_wiki": "Nolan_Siegel",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 6,
+   "date": "2023-06-18",
+   "race": "Indy NXT by Firestone Grand Prix at Road America",
+   "track": "Road America",
+   "city": "Elkhart Lake",
+   "state": "WI",
+   "country": "USA",
+   "winner": "Nolan Siegel",
+   "winner_wiki": "Nolan_Siegel",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 7,
+   "date": "2023-07-02",
+   "race": "Indy NXT by Firestone Grand Prix at Mid-Ohio",
+   "track": "Mid-Ohio Sports Car Course",
+   "city": "Lexington",
+   "state": "OH",
+   "country": "USA",
+   "winner": "Louis Foster",
+   "winner_wiki": "Louis_Foster",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 8,
+   "date": "2023-07-22",
+   "race": "Indy NXT by Firestone at Iowa Speedway",
+   "track": "Iowa Speedway",
+   "city": "Newton",
+   "state": "IA",
+   "country": "USA",
+   "winner": "Christian Rasmussen",
+   "winner_wiki": "Christian_Rasmussen_(racing_driver)",
+   "track_type": "oval",
+   "cancelled": false
+  },
+  {
+   "round": 9,
+   "date": "2023-08-06",
+   "race": "Indy NXT by Firestone Music City Grand Prix",
+   "track": "Nashville Street Circuit",
+   "city": "Nashville",
+   "state": "TN",
+   "country": "USA",
+   "winner": "Christian Rasmussen",
+   "winner_wiki": "Christian_Rasmussen_(racing_driver)",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 10,
+   "date": "2023-08-11",
+   "race": "Indy NXT by Firestone Grand Prix of Indianapolis",
+   "track": "Indianapolis Motor Speedway Road Course",
+   "city": "Speedway",
+   "state": "IN",
+   "country": "USA",
+   "winner": "Hunter McElrea",
+   "winner_wiki": "Hunter_McElrea",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 11,
+   "date": "2023-08-26",
+   "race": "Indy NXT by Firestone OUTFRONT Showdown",
+   "track": "World Wide Technology Raceway",
+   "city": "Madison",
+   "state": "IL",
+   "country": "USA",
+   "winner": "Christian Rasmussen",
+   "winner_wiki": "Christian_Rasmussen_(racing_driver)",
+   "track_type": "oval",
+   "cancelled": false
+  },
+  {
+   "round": 12,
+   "date": "2023-09-03",
+   "race": "Indy NXT by Firestone Grand Prix of Portland",
+   "track": "Portland International Raceway",
+   "city": "Portland",
+   "state": "OR",
+   "country": "USA",
+   "winner": "Louis Foster",
+   "winner_wiki": "Louis_Foster",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 13,
+   "date": "2023-09-09",
+   "race": "Indy NXT by Firestone Grand Prix of Monterey",
+   "track": "WeatherTech Raceway Laguna Seca",
+   "city": "Monterey",
+   "state": "CA",
+   "country": "USA",
+   "winner": "Hunter McElrea",
+   "winner_wiki": "Hunter_McElrea",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 14,
+   "date": "2023-09-09",
+   "race": "Indy NXT by Firestone Grand Prix of Monterey",
+   "track": "WeatherTech Raceway Laguna Seca",
+   "city": "Monterey",
+   "state": "CA",
+   "country": "USA",
+   "winner": "Christian Rasmussen",
+   "winner_wiki": "Christian_Rasmussen_(racing_driver)",
+   "track_type": "road",
+   "cancelled": false
+  }
+ ],
+ "sources": [
+  "https://en.wikipedia.org/wiki/2023_Indy_NXT",
+  "https://www.wikidata.org (driver bios)"
+ ]
+}

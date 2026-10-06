@@ -1,0 +1,948 @@
+{
+ "series": "formula_lights",
+ "year": 2017,
+ "official_name": "2017 Indy Lights season",
+ "era": "IRL feeder (Infiniti Pro / Indy Pro / Indy Lights / Indy NXT)",
+ "data_level": "full",
+ "teams_source": "teams_table",
+ "teams": [
+  {
+   "team": "Andretti Autosport",
+   "team_wiki": "Andretti_Autosport",
+   "owner": null,
+   "manufacturer": "Mazda",
+   "chassis": "Dallara",
+   "cars": [
+    {
+     "number": "27",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Nico Jamin",
+       "wiki": "Nico_Jamin",
+       "rounds": "All",
+       "nat": "FRA"
+      }
+     ]
+    },
+    {
+     "number": "28",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Dalton Kellett",
+       "wiki": "Dalton_Kellett",
+       "rounds": "All",
+       "nat": "CAN"
+      }
+     ]
+    },
+    {
+     "number": "48",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Ryan Norman",
+       "wiki": "Ryan_Norman",
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    }
+   ],
+   "manufacturer_note": "spec engine (from page text)",
+   "chassis_note": "spec chassis (from page text)"
+  },
+  {
+   "team": "Andretti Steinbrenner Racing",
+   "team_wiki": "Andretti_Autosport",
+   "owner": null,
+   "manufacturer": "Mazda",
+   "chassis": "Dallara",
+   "cars": [
+    {
+     "number": "98",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Colton Herta",
+       "wiki": "Colton_Herta",
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    }
+   ],
+   "manufacturer_note": "spec engine (from page text)",
+   "chassis_note": "spec chassis (from page text)"
+  },
+  {
+   "team": "Belardi Auto Racing",
+   "team_wiki": "Belardi_Auto_Racing",
+   "owner": null,
+   "manufacturer": "Mazda",
+   "chassis": "Dallara",
+   "cars": [
+    {
+     "number": "5",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Santiago Urrutia",
+       "wiki": "Santiago_Urrutia",
+       "rounds": "All",
+       "nat": "URY"
+      }
+     ]
+    },
+    {
+     "number": "9",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Aaron Telitz",
+       "wiki": "Aaron_Telitz",
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "51",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Shelby Blackstock",
+       "wiki": "Shelby_Blackstock",
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "84",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Chad Boat",
+       "wiki": "Chad_Boat",
+       "rounds": "15",
+       "nat": "USA"
+      }
+     ]
+    }
+   ],
+   "manufacturer_note": "spec engine (from page text)",
+   "chassis_note": "spec chassis (from page text)"
+  },
+  {
+   "team": "Carlin",
+   "team_wiki": "Carlin_Motorsport",
+   "owner": null,
+   "manufacturer": "Mazda",
+   "chassis": "Dallara",
+   "cars": [
+    {
+     "number": "11",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Garth Rickards",
+       "wiki": "Garth_Rickards",
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "13",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Zachary Claman DeMelo",
+       "wiki": "Zachary_Claman_DeMelo",
+       "rounds": "All",
+       "nat": "CAN"
+      }
+     ]
+    },
+    {
+     "number": "22",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Neil Alberico",
+       "wiki": "Neil_Alberico",
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "26",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Matheus Leist",
+       "wiki": "Matheus_Leist",
+       "rounds": "All",
+       "nat": "BRA"
+      }
+     ]
+    }
+   ],
+   "manufacturer_note": "spec engine (from page text)",
+   "chassis_note": "spec chassis (from page text)"
+  },
+  {
+   "team": "Juncos Racing",
+   "team_wiki": "Juncos_Racing",
+   "owner": null,
+   "manufacturer": "Mazda",
+   "chassis": "Dallara",
+   "cars": [
+    {
+     "number": "18",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Kyle Kaiser",
+       "wiki": "Kyle_Kaiser",
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "31",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Nicolás Dapero",
+       "wiki": "Nicolás_Dapero",
+       "rounds": "All",
+       "nat": "ARG"
+      }
+     ]
+    }
+   ],
+   "manufacturer_note": "spec engine (from page text)",
+   "chassis_note": "spec chassis (from page text)"
+  },
+  {
+   "team": "Team Pelfrey",
+   "team_wiki": "Team_Pelfrey",
+   "owner": null,
+   "manufacturer": "Mazda",
+   "chassis": "Dallara",
+   "cars": [
+    {
+     "number": "2",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Juan Piedrahíta",
+       "wiki": "Juan_Piedrahita",
+       "rounds": "All",
+       "nat": "COL"
+      }
+     ]
+    },
+    {
+     "number": "3",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Patricio O'Ward",
+       "wiki": "Pato_O'Ward",
+       "rounds": "1–4",
+       "nat": "MEX"
+      }
+     ]
+    }
+   ],
+   "manufacturer_note": "spec engine (from page text)",
+   "chassis_note": "spec chassis (from page text)"
+  }
+ ],
+ "standings": [
+  {
+   "pos": 1,
+   "name": "Kyle Kaiser",
+   "wiki": "Kyle_Kaiser",
+   "points": 330,
+   "wins": 3,
+   "podiums": 8,
+   "top5": 11,
+   "starts": 16,
+   "nat": "USA",
+   "results": [
+    6,
+    4,
+    2,
+    2,
+    3,
+    1,
+    9,
+    3,
+    2,
+    5,
+    1,
+    1,
+    12,
+    12,
+    4,
+    7
+   ]
+  },
+  {
+   "pos": 2,
+   "name": "Santiago Urrutia",
+   "wiki": "Santiago_Urrutia",
+   "points": 310,
+   "wins": 2,
+   "podiums": 9,
+   "top5": 10,
+   "starts": 16,
+   "nat": "URY",
+   "results": [
+    13,
+    2,
+    15,
+    13,
+    7,
+    2,
+    5,
+    2,
+    11,
+    2,
+    3,
+    11,
+    1,
+    2,
+    1,
+    2
+   ]
+  },
+  {
+   "pos": 3,
+   "name": "Colton Herta",
+   "wiki": "Colton_Herta",
+   "points": 300,
+   "wins": 2,
+   "podiums": 7,
+   "top5": 9,
+   "starts": 16,
+   "nat": "USA",
+   "results": [
+    2,
+    1,
+    10,
+    1,
+    12,
+    10,
+    13,
+    12,
+    3,
+    4,
+    4,
+    10,
+    2,
+    6,
+    3,
+    3
+   ]
+  },
+  {
+   "pos": 4,
+   "name": "Matheus Leist",
+   "wiki": "Matheus_Leist",
+   "points": 279,
+   "wins": 3,
+   "podiums": 4,
+   "top5": 9,
+   "starts": 16,
+   "nat": "BRA",
+   "results": [
+    15,
+    11,
+    4,
+    7,
+    5,
+    3,
+    1,
+    1,
+    4,
+    1,
+    13,
+    5,
+    11,
+    10,
+    10,
+    4
+   ]
+  },
+  {
+   "pos": 5,
+   "name": "Zachary Claman DeMelo",
+   "wiki": "Zachary_Claman_DeMelo",
+   "points": 274,
+   "wins": 1,
+   "podiums": 4,
+   "top5": 7,
+   "starts": 16,
+   "nat": "CAN",
+   "results": [
+    8,
+    7,
+    5,
+    14,
+    2,
+    11,
+    6,
+    10,
+    1,
+    6,
+    2,
+    3,
+    5,
+    4,
+    6,
+    6
+   ]
+  },
+  {
+   "pos": 6,
+   "name": "Aaron Telitz",
+   "wiki": "Aaron_Telitz",
+   "points": 271,
+   "wins": 2,
+   "podiums": 4,
+   "top5": 9,
+   "starts": 16,
+   "nat": "USA",
+   "results": [
+    1,
+    5,
+    13,
+    5,
+    6,
+    13,
+    2,
+    11,
+    5,
+    9,
+    5,
+    2,
+    8,
+    5,
+    15,
+    1
+   ]
+  },
+  {
+   "pos": 7,
+   "name": "Nico Jamin",
+   "wiki": "Nico_Jamin",
+   "points": 269,
+   "wins": 3,
+   "podiums": 5,
+   "top5": 7,
+   "starts": 16,
+   "nat": "FRA",
+   "results": [
+    7,
+    14,
+    1,
+    3,
+    1,
+    4,
+    10,
+    6,
+    14,
+    7,
+    14,
+    12,
+    3,
+    1,
+    11,
+    5
+   ]
+  },
+  {
+   "pos": 8,
+   "name": "Neil Alberico",
+   "wiki": "Neil_Alberico",
+   "points": 225,
+   "wins": 0,
+   "podiums": 2,
+   "top5": 5,
+   "starts": 16,
+   "nat": "USA",
+   "results": [
+    3,
+    15,
+    3,
+    4,
+    4,
+    6,
+    4,
+    7,
+    8,
+    11,
+    8,
+    14,
+    6,
+    9,
+    12,
+    11
+   ]
+  },
+  {
+   "pos": 9,
+   "name": "Juan Piedrahita",
+   "wiki": "Juan_Piedrahita",
+   "points": 208,
+   "wins": 0,
+   "podiums": 1,
+   "top5": 4,
+   "starts": 15,
+   "nat": "COL",
+   "results": [
+    14,
+    10,
+    11,
+    11,
+    "DNS",
+    5,
+    8,
+    5,
+    10,
+    10,
+    6,
+    4,
+    10,
+    11,
+    2,
+    9
+   ]
+  },
+  {
+   "pos": 10,
+   "name": "Shelby Blackstock",
+   "wiki": "Shelby_Blackstock",
+   "points": 207,
+   "wins": 0,
+   "podiums": 1,
+   "top5": 3,
+   "starts": 16,
+   "nat": "USA",
+   "results": [
+    4,
+    6,
+    7,
+    8,
+    9,
+    14,
+    11,
+    8,
+    6,
+    13,
+    11,
+    13,
+    4,
+    3,
+    9,
+    12
+   ]
+  },
+  {
+   "pos": 11,
+   "name": "Ryan Norman",
+   "wiki": "Ryan_Norman",
+   "points": 200,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 1,
+   "starts": 16,
+   "nat": "USA",
+   "results": [
+    10,
+    9,
+    12,
+    9,
+    8,
+    7,
+    14,
+    4,
+    7,
+    8,
+    10,
+    6,
+    9,
+    7,
+    8,
+    10
+   ]
+  },
+  {
+   "pos": 12,
+   "name": "Dalton Kellett",
+   "wiki": "Dalton_Kellett",
+   "points": 198,
+   "wins": 0,
+   "podiums": 2,
+   "top5": 2,
+   "starts": 16,
+   "nat": "CAN",
+   "results": [
+    12,
+    12,
+    6,
+    10,
+    13,
+    9,
+    3,
+    9,
+    9,
+    3,
+    12,
+    9,
+    7,
+    13,
+    7,
+    13
+   ]
+  },
+  {
+   "pos": 13,
+   "name": "Nicolás Dapero",
+   "wiki": "Nicolás_Dapero",
+   "points": 187,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 1,
+   "starts": 16,
+   "nat": "ARG",
+   "results": [
+    9,
+    8,
+    9,
+    6,
+    11,
+    8,
+    12,
+    14,
+    12,
+    12,
+    7,
+    7,
+    14,
+    8,
+    5,
+    8
+   ]
+  },
+  {
+   "pos": 14,
+   "name": "Garth Rickards",
+   "wiki": "Garth_Rickards",
+   "points": 146,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 15,
+   "nat": "USA",
+   "results": [
+    11,
+    13,
+    14,
+    12,
+    10,
+    12,
+    7,
+    13,
+    13,
+    14,
+    9,
+    8,
+    13,
+    14,
+    13,
+    "DNS"
+   ]
+  },
+  {
+   "pos": 15,
+   "name": "Patricio O'Ward",
+   "wiki": "Pato_O'Ward",
+   "points": 58,
+   "wins": 0,
+   "podiums": 1,
+   "top5": 2,
+   "starts": 4,
+   "nat": "MEX",
+   "results": [
+    5,
+    3,
+    8,
+    15,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 16,
+   "name": "Chad Boat",
+   "wiki": "Chad_Boat",
+   "points": 7,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 1,
+   "nat": "USA",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    14,
+    null
+   ]
+  }
+ ],
+ "schedule": [
+  {
+   "round": 1,
+   "date": "2017-03-11",
+   "race": "St. Petersburg 100",
+   "track": "Streets of St. Petersburg",
+   "city": "St. Petersburg",
+   "state": "FL",
+   "country": "USA",
+   "winner": "Aaron Telitz",
+   "winner_wiki": "Aaron_Telitz",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 2,
+   "date": "2017-03-12",
+   "race": "St. Petersburg 100",
+   "track": "Streets of St. Petersburg",
+   "city": "St. Petersburg",
+   "state": "FL",
+   "country": "USA",
+   "winner": "Colton Herta",
+   "winner_wiki": "Colton_Herta",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 3,
+   "date": "2017-04-22",
+   "race": "Legacy Indy Lights 100",
+   "track": "Barber Motorsports Park",
+   "city": "Birmingham",
+   "state": "AL",
+   "country": "USA",
+   "winner": "Nico Jamin",
+   "winner_wiki": "Nico_Jamin",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 4,
+   "date": "2017-04-23",
+   "race": "Legacy Indy Lights 100",
+   "track": "Barber Motorsports Park",
+   "city": "Birmingham",
+   "state": "AL",
+   "country": "USA",
+   "winner": "Colton Herta",
+   "winner_wiki": "Colton_Herta",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 5,
+   "date": "2017-05-12",
+   "race": "Grand Prix of Indianapolis",
+   "track": "Indianapolis Motor Speedway",
+   "city": "Speedway",
+   "state": "IN",
+   "country": "USA",
+   "winner": "Nico Jamin",
+   "winner_wiki": "Nico_Jamin",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 6,
+   "date": "2017-05-13",
+   "race": "Grand Prix of Indianapolis",
+   "track": "Indianapolis Motor Speedway",
+   "city": "Speedway",
+   "state": "IN",
+   "country": "USA",
+   "winner": "Kyle Kaiser",
+   "winner_wiki": "Kyle_Kaiser",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 7,
+   "date": "2017-05-26",
+   "race": "Freedom 100",
+   "track": "Indianapolis Motor Speedway",
+   "city": "Speedway",
+   "state": "IN",
+   "country": "USA",
+   "winner": "Matheus Leist",
+   "winner_wiki": "Matheus_Leist",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 8,
+   "date": "2017-06-24",
+   "race": "Grand Prix of Road America",
+   "track": "Road America",
+   "city": "Elkhart Lake",
+   "state": "WI",
+   "country": "USA",
+   "winner": "Matheus Leist",
+   "winner_wiki": "Matheus_Leist",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 9,
+   "date": "2017-06-25",
+   "race": "Grand Prix of Road America",
+   "track": "Road America",
+   "city": "Elkhart Lake",
+   "state": "WI",
+   "country": "USA",
+   "winner": "Zachary Claman DeMelo",
+   "winner_wiki": "Zachary_Claman_DeMelo",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 10,
+   "date": "2017-07-09",
+   "race": "Mazda Iowa 100",
+   "track": "Iowa Speedway",
+   "city": "Newton",
+   "state": "IA",
+   "country": "USA",
+   "winner": "Matheus Leist",
+   "winner_wiki": "Matheus_Leist",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 11,
+   "date": "2017-07-15",
+   "race": "Grand Prix of Toronto",
+   "track": "Exhibition Place",
+   "city": "Toronto",
+   "state": "ON",
+   "country": "CAN",
+   "winner": "Kyle Kaiser",
+   "winner_wiki": "Kyle_Kaiser",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 12,
+   "date": "2017-07-16",
+   "race": "Grand Prix of Toronto",
+   "track": "Exhibition Place",
+   "city": "Toronto",
+   "state": "ON",
+   "country": "CAN",
+   "winner": "Kyle Kaiser",
+   "winner_wiki": "Kyle_Kaiser",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 13,
+   "date": "2017-07-29",
+   "race": "Grand Prix of Mid-Ohio",
+   "track": "Mid-Ohio Sports Car Course",
+   "city": "Lexington",
+   "state": "OH",
+   "country": "USA",
+   "winner": "Santiago Urrutia",
+   "winner_wiki": "Santiago_Urrutia",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 14,
+   "date": "2017-07-30",
+   "race": "Grand Prix of Mid-Ohio",
+   "track": "Mid-Ohio Sports Car Course",
+   "city": "Lexington",
+   "state": "OH",
+   "country": "USA",
+   "winner": "Nico Jamin",
+   "winner_wiki": "Nico_Jamin",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 15,
+   "date": "2017-08-26",
+   "race": "Illinois 100",
+   "track": "Gateway Motorsports Park",
+   "city": "Madison",
+   "state": "IL",
+   "country": "USA",
+   "winner": "Santiago Urrutia",
+   "winner_wiki": "Santiago_Urrutia",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 16,
+   "date": "2017-09-03",
+   "race": "Grand Prix of Watkins Glen",
+   "track": "Watkins Glen International",
+   "city": "Watkins Glen",
+   "state": "NY",
+   "country": "USA",
+   "winner": "Aaron Telitz",
+   "winner_wiki": "Aaron_Telitz",
+   "track_type": null,
+   "cancelled": false
+  }
+ ],
+ "sources": [
+  "https://en.wikipedia.org/wiki/2017_Indy_Lights",
+  "https://www.wikidata.org (driver bios)"
+ ]
+}

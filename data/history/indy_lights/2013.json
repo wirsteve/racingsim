@@ -1,0 +1,929 @@
+{
+ "series": "formula_lights",
+ "year": 2013,
+ "official_name": "2013 Indy Lights season",
+ "era": "IRL feeder (Infiniti Pro / Indy Pro / Indy Lights / Indy NXT)",
+ "data_level": "full",
+ "teams_source": "teams_table",
+ "teams": [
+  {
+   "team": "Schmidt Peterson Motorsports",
+   "team_wiki": "Sam_Schmidt_Motorsports",
+   "owner": null,
+   "manufacturer": null,
+   "chassis": "Dallara",
+   "cars": [
+    {
+     "number": "7",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Gabby Chaves",
+       "wiki": "Gabby_Chaves",
+       "rounds": "All",
+       "nat": "COL"
+      }
+     ]
+    },
+    {
+     "number": "8",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Sage Karam",
+       "wiki": "Sage_Karam",
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "67",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Kyle O'Gara",
+       "wiki": "Kyle_O'Gara",
+       "rounds": "4, 12",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "77",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Jack Hawksworth",
+       "wiki": "Jack_Hawksworth",
+       "rounds": "All",
+       "nat": "GBR"
+      }
+     ]
+    }
+   ],
+   "chassis_note": "spec chassis (from page text)"
+  },
+  {
+   "team": "Team Moore Racing",
+   "team_wiki": "Team_Moore_Racing",
+   "owner": null,
+   "manufacturer": null,
+   "chassis": "Dallara",
+   "cars": [
+    {
+     "number": "2",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Juan Pablo García",
+       "wiki": "Juan_Pablo_García_(racing_driver)",
+       "rounds": "1–10",
+       "nat": "MEX"
+      },
+      {
+       "name": "Peter Dempsey",
+       "wiki": "Peter_Dempsey",
+       "rounds": "11",
+       "nat": "IRL"
+      }
+     ]
+    },
+    {
+     "number": "22",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Ethan Ringel",
+       "wiki": "Ethan_Ringel",
+       "rounds": "1",
+       "nat": "USA"
+      },
+      {
+       "name": "Victor Carbone",
+       "wiki": "Victor_Carbone",
+       "rounds": "2",
+       "nat": "BRA"
+      },
+      {
+       "name": "Mikaël Grenier",
+       "wiki": "Mikaël_Grenier",
+       "rounds": "3",
+       "nat": "CAN"
+      },
+      {
+       "name": "Jimmy Simpson",
+       "wiki": "Jimmy_Simpson_(racing_driver)",
+       "rounds": "4",
+       "nat": "USA"
+      },
+      {
+       "name": "Conor Daly",
+       "wiki": "Conor_Daly",
+       "rounds": "11",
+       "nat": "USA"
+      }
+     ]
+    }
+   ],
+   "chassis_note": "spec chassis (from page text)"
+  },
+  {
+   "team": "Andretti Autosport AFS Racing",
+   "team_wiki": "Andretti_Autosport",
+   "owner": null,
+   "manufacturer": null,
+   "chassis": "Dallara",
+   "cars": [
+    {
+     "number": "12",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Zach Veach",
+       "wiki": "Zach_Veach",
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "26",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Carlos Muñoz",
+       "wiki": "Carlos_Muñoz_(racing_driver)",
+       "rounds": "All",
+       "nat": "COL"
+      }
+     ]
+    }
+   ],
+   "chassis_note": "spec chassis (from page text)"
+  },
+  {
+   "team": "Belardi Auto Racing",
+   "team_wiki": "Belardi_Auto_Racing",
+   "owner": null,
+   "manufacturer": null,
+   "chassis": "Dallara",
+   "cars": [
+    {
+     "number": "4",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Jorge Goncalvez",
+       "wiki": "Jorge_Goncalvez_(racing_driver)",
+       "rounds": "All",
+       "nat": "VEN"
+      }
+     ]
+    },
+    {
+     "number": "5",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Peter Dempsey",
+       "wiki": "Peter_Dempsey",
+       "rounds": "1–10",
+       "nat": "IRL"
+      },
+      {
+       "name": "Juan Pablo García",
+       "wiki": "Juan_Pablo_García_(racing_driver)",
+       "rounds": "11–12",
+       "nat": "MEX"
+      }
+     ]
+    },
+    {
+     "number": "6",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Giancarlo Serenelli",
+       "wiki": "Giancarlo_Serenelli",
+       "rounds": "9–12",
+       "nat": "VEN"
+      }
+     ]
+    }
+   ],
+   "chassis_note": "spec chassis (from page text)"
+  },
+  {
+   "team": "Bryan Herta Autosport Jeffery Mark Motorsports",
+   "team_wiki": "Bryan_Herta_Autosport",
+   "owner": null,
+   "manufacturer": null,
+   "chassis": "Dallara",
+   "cars": [
+    {
+     "number": "28",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Chase Austin",
+       "wiki": "Chase_Austin",
+       "rounds": "4",
+       "nat": "USA"
+      },
+      {
+       "name": "Axcil Jefferies",
+       "wiki": "Axcil_Jefferies",
+       "rounds": "9, 11",
+       "nat": "ZWE"
+      }
+     ]
+    }
+   ],
+   "chassis_note": "spec chassis (from page text)"
+  },
+  {
+   "team": "MDL Racing",
+   "team_wiki": "MDL_Racing",
+   "owner": null,
+   "manufacturer": null,
+   "chassis": "Dallara",
+   "cars": [
+    {
+     "number": "56",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Matthew Di Leo",
+       "wiki": "Matthew_Di_Leo",
+       "rounds": "3, 8–11",
+       "nat": "CAN"
+      }
+     ]
+    }
+   ],
+   "chassis_note": "spec chassis (from page text)"
+  },
+  {
+   "team": "Pabst Racing",
+   "team_wiki": "Pabst_Racing",
+   "owner": null,
+   "manufacturer": null,
+   "chassis": "Dallara",
+   "cars": [
+    {
+     "number": "17",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Dalton Kellett",
+       "wiki": "Dalton_Kellett",
+       "rounds": "10",
+       "nat": "CAN"
+      }
+     ]
+    }
+   ],
+   "chassis_note": "spec chassis (from page text)"
+  }
+ ],
+ "standings": [
+  {
+   "pos": 1,
+   "name": "Sage Karam",
+   "wiki": "Sage_Karam",
+   "points": 460,
+   "wins": 3,
+   "podiums": 9,
+   "top5": 10,
+   "starts": 12,
+   "nat": "USA",
+   "results": [
+    3,
+    4,
+    3,
+    3,
+    1,
+    1,
+    2,
+    6,
+    8,
+    2,
+    1,
+    3
+   ]
+  },
+  {
+   "pos": 2,
+   "name": "Gabby Chaves",
+   "wiki": "Gabby_Chaves",
+   "points": 449,
+   "wins": 1,
+   "podiums": 10,
+   "top5": 11,
+   "starts": 12,
+   "nat": "COL",
+   "results": [
+    8,
+    3,
+    2,
+    2,
+    4,
+    2,
+    3,
+    3,
+    1,
+    3,
+    2,
+    2
+   ]
+  },
+  {
+   "pos": 3,
+   "name": "Carlos Muñoz",
+   "wiki": "Carlos_Muñoz_(racing_driver)",
+   "points": 441,
+   "wins": 4,
+   "podiums": 5,
+   "top5": 8,
+   "starts": 12,
+   "nat": "COL",
+   "results": [
+    7,
+    1,
+    1,
+    4,
+    2,
+    8,
+    1,
+    4,
+    4,
+    9,
+    12,
+    1
+   ]
+  },
+  {
+   "pos": 4,
+   "name": "Jack Hawksworth",
+   "wiki": "Jack_Hawksworth",
+   "points": 412,
+   "wins": 3,
+   "podiums": 6,
+   "top5": 7,
+   "starts": 12,
+   "nat": "GBR",
+   "results": [
+    1,
+    2,
+    8,
+    10,
+    8,
+    3,
+    5,
+    1,
+    3,
+    1,
+    6,
+    9
+   ]
+  },
+  {
+   "pos": 5,
+   "name": "Peter Dempsey",
+   "wiki": "Peter_Dempsey",
+   "points": 360,
+   "wins": 1,
+   "podiums": 4,
+   "top5": 6,
+   "starts": 11,
+   "nat": "IRL",
+   "results": [
+    2,
+    6,
+    10,
+    1,
+    6,
+    4,
+    7,
+    2,
+    2,
+    4,
+    9,
+    null
+   ]
+  },
+  {
+   "pos": 6,
+   "name": "Jorge Goncalvez",
+   "wiki": "Jorge_Goncalvez_(racing_driver)",
+   "points": 336,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 6,
+   "starts": 12,
+   "nat": "VEN",
+   "results": [
+    6,
+    5,
+    4,
+    6,
+    7,
+    5,
+    8,
+    8,
+    9,
+    5,
+    4,
+    5
+   ]
+  },
+  {
+   "pos": 7,
+   "name": "Zach Veach",
+   "wiki": "Zach_Veach",
+   "points": 333,
+   "wins": 0,
+   "podiums": 1,
+   "top5": 6,
+   "starts": 12,
+   "nat": "USA",
+   "results": [
+    5,
+    9,
+    9,
+    5,
+    3,
+    7,
+    4,
+    7,
+    5,
+    8,
+    10,
+    4
+   ]
+  },
+  {
+   "pos": 8,
+   "name": "Juan Pablo García",
+   "wiki": "Juan_Pablo_García_(racing_driver)",
+   "points": 312,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 3,
+   "starts": 11,
+   "nat": "MEX",
+   "results": [
+    4,
+    8,
+    6,
+    9,
+    5,
+    6,
+    6,
+    5,
+    6,
+    "DNS",
+    8,
+    6
+   ]
+  },
+  {
+   "pos": 9,
+   "name": "Matthew Di Leo",
+   "wiki": "Matthew_Di_Leo",
+   "points": 119,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 1,
+   "starts": 5,
+   "nat": "CAN",
+   "results": [
+    null,
+    null,
+    5,
+    null,
+    null,
+    null,
+    null,
+    9,
+    10,
+    6,
+    11,
+    null
+   ]
+  },
+  {
+   "pos": 10,
+   "name": "Giancarlo Serenelli",
+   "wiki": "Giancarlo_Serenelli",
+   "points": 97,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 4,
+   "nat": "VEN",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    11,
+    7,
+    7,
+    7
+   ]
+  },
+  {
+   "pos": 11,
+   "name": "Axcil Jefferies",
+   "wiki": "Axcil_Jefferies",
+   "points": 56,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 1,
+   "starts": 2,
+   "nat": "ZWE",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    7,
+    null,
+    5,
+    null
+   ]
+  },
+  {
+   "pos": 12,
+   "name": "Kyle O'Gara",
+   "wiki": "Kyle_O'Gara",
+   "points": 43,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 2,
+   "nat": "USA",
+   "results": [
+    null,
+    null,
+    null,
+    11,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    8
+   ]
+  },
+  {
+   "pos": 13,
+   "name": "Conor Daly",
+   "wiki": "Conor_Daly",
+   "points": 35,
+   "wins": 0,
+   "podiums": 1,
+   "top5": 1,
+   "starts": 1,
+   "nat": "USA",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    3,
+    null
+   ]
+  },
+  {
+   "pos": 14,
+   "name": "Victor Carbone",
+   "wiki": "Victor_Carbone",
+   "points": 26,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 1,
+   "nat": "BRA",
+   "results": [
+    null,
+    7,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 15,
+   "name": "Mikaël Grenier",
+   "wiki": "Mikaël_Grenier",
+   "points": 26,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 1,
+   "nat": "CAN",
+   "results": [
+    null,
+    null,
+    7,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 16,
+   "name": "Jimmy Simpson",
+   "wiki": "Jimmy_Simpson_(racing_driver)",
+   "points": 26,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 1,
+   "nat": "USA",
+   "results": [
+    null,
+    null,
+    null,
+    7,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 17,
+   "name": "Chase Austin",
+   "wiki": "Chase_Austin",
+   "points": 24,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 1,
+   "nat": "USA",
+   "results": [
+    null,
+    null,
+    null,
+    8,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 18,
+   "name": "Ethan Ringel",
+   "wiki": "Ethan_Ringel",
+   "points": 22,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 1,
+   "nat": "USA",
+   "results": [
+    9,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 19,
+   "name": "Dalton Kellett",
+   "wiki": "Dalton_Kellett",
+   "points": 20,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 1,
+   "nat": "CAN",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    10,
+    null,
+    null
+   ]
+  }
+ ],
+ "schedule": [
+  {
+   "round": 1,
+   "date": "2013-03-23",
+   "race": "St. Petersburg 100",
+   "track": "Streets of St. Petersburg",
+   "city": "St. Petersburg",
+   "state": "FL",
+   "country": "USA",
+   "winner": "Jack Hawksworth",
+   "winner_wiki": "Jack_Hawksworth",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 2,
+   "date": "2013-04-06",
+   "race": "Legacy Indy Lights 100",
+   "track": "Barber Motorsports Park",
+   "city": "Birmingham",
+   "state": "AL",
+   "country": "USA",
+   "winner": "Carlos Muñoz",
+   "winner_wiki": "Carlos_Muñoz_(racing_driver)",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 3,
+   "date": "2013-04-20",
+   "race": "Long Beach 100",
+   "track": "Streets of Long Beach",
+   "city": "Long Beach",
+   "state": "CA",
+   "country": "USA",
+   "winner": "Carlos Muñoz",
+   "winner_wiki": "Carlos_Muñoz_(racing_driver)",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 4,
+   "date": "2013-05-24",
+   "race": "Firestone Freedom 100",
+   "track": "Indianapolis Motor Speedway",
+   "city": "Speedway",
+   "state": "IN",
+   "country": "USA",
+   "winner": "Peter Dempsey",
+   "winner_wiki": "Peter_Dempsey",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 5,
+   "date": "2013-06-14",
+   "race": "Milwaukee Race",
+   "track": "Milwaukee Mile",
+   "city": "West Allis",
+   "state": "WI",
+   "country": "USA",
+   "winner": "Sage Karam",
+   "winner_wiki": "Sage_Karam",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 6,
+   "date": "2013-06-22",
+   "race": "Iowa Speedway 100",
+   "track": "Iowa Speedway",
+   "city": "Newton",
+   "state": "IA",
+   "country": "USA",
+   "winner": "Sage Karam",
+   "winner_wiki": "Sage_Karam",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 7,
+   "date": "2013-07-06",
+   "race": "Pocono Race",
+   "track": "Pocono Raceway",
+   "city": "Long Pond",
+   "state": "PA",
+   "country": "USA",
+   "winner": "Carlos Muñoz",
+   "winner_wiki": "Carlos_Muñoz_(racing_driver)",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 8,
+   "date": "2013-07-12",
+   "race": "Grand Prix of Toronto",
+   "track": "Exhibition Place",
+   "city": "Toronto",
+   "state": null,
+   "country": "CAN",
+   "winner": "Jack Hawksworth",
+   "winner_wiki": "Jack_Hawksworth",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 9,
+   "date": "2013-08-03",
+   "race": "Grand Prix of Mid-Ohio",
+   "track": "Mid-Ohio Sports Car Course",
+   "city": "Lexington",
+   "state": "OH",
+   "country": "USA",
+   "winner": "Gabby Chaves",
+   "winner_wiki": "Gabby_Chaves",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 10,
+   "date": "2013-08-31",
+   "race": "Grand Prix of Baltimore",
+   "track": "Streets of Baltimore",
+   "city": "Baltimore",
+   "state": "MD",
+   "country": "USA",
+   "winner": "Jack Hawksworth",
+   "winner_wiki": "Jack_Hawksworth",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 11,
+   "date": "2013-10-05",
+   "race": "Grand Prix of Houston",
+   "track": "Reliant Park",
+   "city": "Houston",
+   "state": "TX",
+   "country": "USA",
+   "winner": "Sage Karam",
+   "winner_wiki": "Sage_Karam",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 12,
+   "date": "2013-10-18",
+   "race": "Lefty's Kids Club 100",
+   "track": "Auto Club Speedway",
+   "city": "Fontana",
+   "state": "CA",
+   "country": "USA",
+   "winner": "Carlos Muñoz",
+   "winner_wiki": "Carlos_Muñoz_(racing_driver)",
+   "track_type": null,
+   "cancelled": false
+  }
+ ],
+ "sources": [
+  "https://en.wikipedia.org/wiki/2013_Indy_Lights",
+  "https://www.wikidata.org (driver bios)"
+ ]
+}

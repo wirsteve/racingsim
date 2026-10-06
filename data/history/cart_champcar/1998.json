@@ -1,0 +1,1904 @@
+{
+ "series": "open_wheel_top",
+ "year": 1998,
+ "official_name": "1998 FedEx Championship Series",
+ "data_level": "full",
+ "teams_source": "teams_table",
+ "teams": [
+  {
+   "team": "Chip Ganassi Racing",
+   "team_wiki": "Chip_Ganassi_Racing",
+   "owner": null,
+   "manufacturer": "Honda",
+   "chassis": "Reynard",
+   "cars": [
+    {
+     "number": "1",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Alex Zanardi",
+       "wiki": "Alex_Zanardi",
+       "rounds": "All",
+       "nat": "ITA"
+      }
+     ]
+    },
+    {
+     "number": "12",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Jimmy Vasser",
+       "wiki": "Jimmy_Vasser",
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Marlboro Team Penske",
+   "team_wiki": "Team_Penske",
+   "owner": null,
+   "manufacturer": "Mercedes",
+   "chassis": "Penske PC-27",
+   "cars": [
+    {
+     "number": "2",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Al Unser Jr.",
+       "wiki": "Al_Unser_Jr.",
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "3",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "André Ribeiro",
+       "wiki": "André_Ribeiro_(racing_driver)",
+       "rounds": "All",
+       "nat": "BRA"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Walker Racing",
+   "team_wiki": "Walker_Racing",
+   "owner": null,
+   "manufacturer": "Honda",
+   "chassis": "Reynard",
+   "cars": [
+    {
+     "number": "5",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Gil de Ferran",
+       "wiki": "Gil_de_Ferran",
+       "rounds": "All",
+       "nat": "BRA"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Newman-Haas Racing",
+   "team_wiki": "Newman-Haas_Racing",
+   "owner": null,
+   "manufacturer": "Ford XB",
+   "chassis": "Swift",
+   "cars": [
+    {
+     "number": "6",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Michael Andretti",
+       "wiki": "Michael_Andretti",
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "11",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Christian Fittipaldi",
+       "wiki": "Christian_Fittipaldi",
+       "rounds": "1–6, 8–19",
+       "nat": "BRA"
+      },
+      {
+       "name": "Roberto Moreno",
+       "wiki": "Roberto_Moreno",
+       "rounds": "7",
+       "nat": "BRA"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Team Rahal",
+   "team_wiki": "Team_Rahal",
+   "owner": null,
+   "manufacturer": "Ford XB",
+   "chassis": "Reynard",
+   "cars": [
+    {
+     "number": "7",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Bobby Rahal",
+       "wiki": "Bobby_Rahal",
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "8",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Bryan Herta",
+       "wiki": "Bryan_Herta",
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Hogan Racing",
+   "team_wiki": "Hogan_Racing",
+   "owner": null,
+   "manufacturer": "Mercedes",
+   "chassis": "Reynard",
+   "cars": [
+    {
+     "number": "9",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "JJ Lehto",
+       "wiki": "JJ_Lehto",
+       "rounds": "All",
+       "nat": "FIN"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Della Penna Motorsports",
+   "team_wiki": "Della_Penna_Motorsports",
+   "owner": null,
+   "manufacturer": "Ford XB",
+   "chassis": "Swift",
+   "cars": [
+    {
+     "number": "10",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Richie Hearn",
+       "wiki": "Richie_Hearn",
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "43",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Hideshi Matsuda",
+       "wiki": "Hideshi_Matsuda",
+       "rounds": "2",
+       "nat": "JPN"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Project CART",
+   "team_wiki": "Project_Indy",
+   "owner": null,
+   "manufacturer": "Mercedes",
+   "chassis": "Reynard",
+   "cars": [
+    {
+     "number": "15",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Roberto Moreno",
+       "wiki": "Roberto_Moreno",
+       "rounds": "1–2",
+       "nat": "BRA"
+      },
+      {
+       "name": "Domenico Schiattarella",
+       "wiki": "Domenico_Schiattarella",
+       "rounds": "3",
+       "nat": "ITA"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Bettenhausen Racing",
+   "team_wiki": "HVM_Racing",
+   "owner": null,
+   "manufacturer": "Mercedes",
+   "chassis": "Reynard",
+   "cars": [
+    {
+     "number": "16",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Hélio Castroneves",
+       "wiki": "Hélio_Castroneves",
+       "rounds": "All",
+       "nat": "BRA"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "PacWest Racing Group",
+   "team_wiki": "PacWest_Racing",
+   "owner": null,
+   "manufacturer": "Mercedes",
+   "chassis": "Reynard",
+   "cars": [
+    {
+     "number": "17",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Maurício Gugelmin",
+       "wiki": "Maurício_Gugelmin",
+       "rounds": "1–3",
+       "nat": "BRA"
+      }
+     ]
+    },
+    {
+     "number": "18",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Mark Blundell",
+       "wiki": "Mark_Blundell",
+       "rounds": "1–3",
+       "nat": "GBR"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Payton/Coyne Racing",
+   "team_wiki": "Dale_Coyne_Racing",
+   "owner": null,
+   "manufacturer": "Ford XB",
+   "chassis": "Reynard",
+   "cars": [
+    {
+     "number": "19",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Michel Jourdain Jr.",
+       "wiki": "Michel_Jourdain_Jr.",
+       "rounds": "All",
+       "nat": "MEX"
+      }
+     ]
+    },
+    {
+     "number": "34",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Dennis Vitolo",
+       "wiki": "Dennis_Vitolo",
+       "rounds": "1, 4, 6–10, 12, 15–19",
+       "nat": "USA"
+      },
+      {
+       "name": "Gualter Salles",
+       "wiki": "Gualter_Salles",
+       "rounds": "2–3, 5, 11, 13–14",
+       "nat": "BRA"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Patrick Racing",
+   "team_wiki": "Patrick_Racing",
+   "owner": null,
+   "manufacturer": "Ford XB",
+   "chassis": "Reynard",
+   "cars": [
+    {
+     "number": "20",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Scott Pruett",
+       "wiki": "Scott_Pruett",
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "40",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Adrián Fernández",
+       "wiki": "Adrián_Fernández",
+       "rounds": "All",
+       "nat": "MEX"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Tasman Motorsports Group",
+   "team_wiki": "Tasman_Motorsports",
+   "owner": null,
+   "manufacturer": "Honda",
+   "chassis": "Reynard",
+   "cars": [
+    {
+     "number": "21",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Tony Kanaan",
+       "wiki": "Tony_Kanaan",
+       "rounds": "All",
+       "nat": "BRA"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Arciero-Wells Racing",
+   "team_wiki": "Arciero-Wells_Racing",
+   "owner": null,
+   "manufacturer": "Toyota",
+   "chassis": "Reynard",
+   "cars": [
+    {
+     "number": "24",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Hiro Matsushita",
+       "wiki": "Hiro_Matsushita",
+       "rounds": "1–3, 5",
+       "nat": "JPN"
+      },
+      {
+       "name": "Robby Gordon",
+       "wiki": "Robby_Gordon",
+       "rounds": "4, 6–19",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "25",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Max Papis",
+       "wiki": "Max_Papis",
+       "rounds": "All",
+       "nat": "ITA"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Team KOOL Green",
+   "team_wiki": "Andretti_Green_Racing",
+   "owner": null,
+   "manufacturer": "Honda",
+   "chassis": "Reynard",
+   "cars": [
+    {
+     "number": "26",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Paul Tracy",
+       "wiki": "Paul_Tracy",
+       "rounds": "All",
+       "nat": "CAN"
+      }
+     ]
+    },
+    {
+     "number": "27",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Dario Franchitti",
+       "wiki": "Dario_Franchitti",
+       "rounds": "All",
+       "nat": "GBR"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Forsythe Racing",
+   "team_wiki": "Forsythe_Racing",
+   "owner": null,
+   "manufacturer": "Mercedes",
+   "chassis": "Reynard",
+   "cars": [
+    {
+     "number": "33",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Patrick Carpentier",
+       "wiki": "Patrick_Carpentier",
+       "rounds": "All",
+       "nat": "CAN"
+      }
+     ]
+    },
+    {
+     "number": "99",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Greg Moore",
+       "wiki": "Greg_Moore_(racing_driver)",
+       "rounds": "All",
+       "nat": "CAN"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "All American Racing",
+   "team_wiki": "Anglo_American_Racers",
+   "owner": null,
+   "manufacturer": "Toyota",
+   "chassis": "Reynard",
+   "cars": [
+    {
+     "number": "98",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "P. J. Jones",
+       "wiki": "P._J._Jones",
+       "rounds": "1–15",
+       "nat": "USA"
+      },
+      {
+       "name": "Vincenzo Sospiri",
+       "wiki": "Vincenzo_Sospiri",
+       "rounds": "16–19",
+       "nat": "ITA"
+      }
+     ]
+    },
+    {
+     "number": "36",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Alex Barron",
+       "wiki": "Alex_Barron_(racing_driver)",
+       "rounds": "1–12",
+       "nat": "USA"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Davis Racing",
+   "team_wiki": "Davis_Racing",
+   "owner": null,
+   "manufacturer": "Ford XB",
+   "chassis": "Lola",
+   "cars": [
+    {
+     "number": "77",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Arnd Meier",
+       "wiki": "Arnd_Meier",
+       "rounds": "All",
+       "nat": "DEU"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "standings": [
+  {
+   "pos": 1,
+   "name": "Alex Zanardi",
+   "wiki": "Alex_Zanardi",
+   "points": 285,
+   "wins": 7,
+   "podiums": 15,
+   "top5": 16,
+   "starts": 19,
+   "nat": "ITA",
+   "results": [
+    3,
+    23,
+    1,
+    2,
+    2,
+    1,
+    8,
+    1,
+    1,
+    1,
+    1,
+    3,
+    12,
+    2,
+    4,
+    2,
+    2,
+    1,
+    3
+   ]
+  },
+  {
+   "pos": 2,
+   "name": "Jimmy Vasser",
+   "wiki": "Jimmy_Vasser",
+   "points": 169,
+   "wins": 3,
+   "podiums": 5,
+   "top5": 8,
+   "starts": 19,
+   "nat": "USA",
+   "results": [
+    16,
+    7,
+    8,
+    1,
+    6,
+    4,
+    1,
+    6,
+    8,
+    7,
+    3,
+    2,
+    27,
+    9,
+    26,
+    5,
+    4,
+    24,
+    1
+   ]
+  },
+  {
+   "pos": 3,
+   "name": "Dario Franchitti",
+   "wiki": "Dario_Franchitti",
+   "points": 160,
+   "wins": 3,
+   "podiums": 6,
+   "top5": 9,
+   "starts": 19,
+   "nat": "GBR",
+   "results": [
+    9,
+    8,
+    2,
+    21,
+    19,
+    27,
+    4,
+    4,
+    21,
+    3,
+    20,
+    21,
+    26,
+    1,
+    1,
+    4,
+    1,
+    2,
+    22
+   ]
+  },
+  {
+   "pos": 4,
+   "name": "Adrián Fernández",
+   "wiki": "Adrián_Fernández",
+   "points": 154,
+   "wins": 2,
+   "podiums": 4,
+   "top5": 8,
+   "starts": 19,
+   "nat": "MEX",
+   "results": [
+    6,
+    1,
+    4,
+    26,
+    3,
+    18,
+    9,
+    2,
+    24,
+    5,
+    9,
+    23,
+    1,
+    5,
+    15,
+    7,
+    6,
+    6,
+    4
+   ]
+  },
+  {
+   "pos": 5,
+   "name": "Greg Moore",
+   "wiki": "Greg_Moore_(racing_driver)",
+   "points": 141,
+   "wins": 2,
+   "podiums": 6,
+   "top5": 8,
+   "starts": 19,
+   "nat": "CAN",
+   "results": [
+    2,
+    4,
+    6,
+    3,
+    1,
+    3,
+    13,
+    5,
+    27,
+    25,
+    11,
+    1,
+    22,
+    21,
+    20,
+    21,
+    26,
+    8,
+    2
+   ]
+  },
+  {
+   "pos": 6,
+   "name": "Scott Pruett",
+   "wiki": "Scott_Pruett",
+   "points": 121,
+   "wins": 0,
+   "podiums": 3,
+   "top5": 8,
+   "starts": 19,
+   "nat": "USA",
+   "results": [
+    5,
+    21,
+    12,
+    22,
+    18,
+    5,
+    10,
+    9,
+    2,
+    4,
+    6,
+    4,
+    2,
+    20,
+    3,
+    18,
+    11,
+    4,
+    20
+   ]
+  },
+  {
+   "pos": 7,
+   "name": "Michael Andretti",
+   "wiki": "Michael_Andretti",
+   "points": 112,
+   "wins": 1,
+   "podiums": 5,
+   "top5": 6,
+   "starts": 19,
+   "nat": "USA",
+   "results": [
+    1,
+    14,
+    21,
+    18,
+    5,
+    2,
+    26,
+    10,
+    17,
+    2,
+    2,
+    6,
+    21,
+    15,
+    2,
+    10,
+    28,
+    20,
+    18
+   ]
+  },
+  {
+   "pos": 8,
+   "name": "Bryan Herta",
+   "wiki": "Bryan_Herta",
+   "points": 97,
+   "wins": 1,
+   "podiums": 3,
+   "top5": 5,
+   "starts": 19,
+   "nat": "USA",
+   "results": [
+    8,
+    28,
+    3,
+    8,
+    4,
+    23,
+    11,
+    21,
+    3,
+    13,
+    5,
+    10,
+    25,
+    23,
+    22,
+    1,
+    8,
+    10,
+    15
+   ]
+  },
+  {
+   "pos": 9,
+   "name": "Tony Kanaan",
+   "wiki": "Tony_Kanaan",
+   "points": 92,
+   "wins": 0,
+   "podiums": 2,
+   "top5": 5,
+   "starts": 19,
+   "nat": "BRA",
+   "results": [
+    29,
+    6,
+    5,
+    9,
+    27,
+    24,
+    17,
+    8,
+    4,
+    14,
+    22,
+    11,
+    8,
+    4,
+    18,
+    3,
+    3,
+    7,
+    19
+   ]
+  },
+  {
+   "pos": 10,
+   "name": "Bobby Rahal",
+   "wiki": "Bobby_Rahal",
+   "points": 82,
+   "wins": 0,
+   "podiums": 1,
+   "top5": 3,
+   "starts": 19,
+   "nat": "USA",
+   "results": [
+    19,
+    17,
+    17,
+    6,
+    8,
+    8,
+    5,
+    11,
+    6,
+    8,
+    4,
+    7,
+    3,
+    8,
+    25,
+    16,
+    23,
+    25,
+    11
+   ]
+  },
+  {
+   "pos": 11,
+   "name": "Al Unser Jr.",
+   "wiki": "Al_Unser_Jr.",
+   "points": 72,
+   "wins": 0,
+   "podiums": 2,
+   "top5": 4,
+   "starts": 19,
+   "nat": "USA",
+   "results": [
+    22,
+    2,
+    29,
+    15,
+    16,
+    19,
+    3,
+    24,
+    5,
+    17,
+    17,
+    22,
+    6,
+    27,
+    5,
+    6,
+    7,
+    22,
+    27
+   ]
+  },
+  {
+   "pos": 12,
+   "name": "Gil de Ferran",
+   "wiki": "Gil_de_Ferran",
+   "points": 67,
+   "wins": 0,
+   "podiums": 2,
+   "top5": 3,
+   "starts": 19,
+   "nat": "BRA",
+   "results": [
+    7,
+    3,
+    20,
+    4,
+    26,
+    6,
+    22,
+    3,
+    20,
+    6,
+    27,
+    16,
+    9,
+    16,
+    13,
+    19,
+    21,
+    14,
+    17
+   ]
+  },
+  {
+   "pos": 13,
+   "name": "Paul Tracy",
+   "wiki": "Paul_Tracy",
+   "points": 61,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 3,
+   "starts": 19,
+   "nat": "CAN",
+   "results": [
+    27,
+    5,
+    25,
+    5,
+    25,
+    26,
+    7,
+    7,
+    28,
+    19,
+    14,
+    9,
+    5,
+    6,
+    11,
+    8,
+    20,
+    23,
+    14
+   ]
+  },
+  {
+   "pos": 14,
+   "name": "Christian Fittipaldi",
+   "wiki": "Christian_Fittipaldi",
+   "points": 56,
+   "wins": 0,
+   "podiums": 2,
+   "top5": 3,
+   "starts": 18,
+   "nat": "BRA",
+   "results": [
+    4,
+    25,
+    26,
+    11,
+    21,
+    11,
+    "WTH",
+    17,
+    26,
+    11,
+    16,
+    25,
+    13,
+    3,
+    14,
+    9,
+    27,
+    3,
+    7
+   ]
+  },
+  {
+   "pos": 15,
+   "name": "Maurício Gugelmin",
+   "wiki": "Maurício_Gugelmin",
+   "points": 49,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 2,
+   "starts": 19,
+   "nat": "BRA",
+   "results": [
+    10,
+    20,
+    10,
+    17,
+    9,
+    16,
+    21,
+    19,
+    7,
+    20,
+    12,
+    13,
+    4,
+    19,
+    6,
+    27,
+    18,
+    12,
+    5
+   ]
+  },
+  {
+   "pos": 16,
+   "name": "Richie Hearn",
+   "wiki": "Richie_Hearn",
+   "points": 47,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 1,
+   "starts": 19,
+   "nat": "USA",
+   "results": [
+    13,
+    27,
+    23,
+    10,
+    7,
+    28,
+    6,
+    23,
+    10,
+    18,
+    7,
+    5,
+    24,
+    13,
+    16,
+    11,
+    9,
+    18,
+    8
+   ]
+  },
+  {
+   "pos": 17,
+   "name": "Hélio Castroneves",
+   "wiki": "Hélio_Castroneves",
+   "points": 36,
+   "wins": 0,
+   "podiums": 1,
+   "top5": 1,
+   "starts": 19,
+   "nat": "BRA",
+   "results": [
+    24,
+    11,
+    9,
+    23,
+    23,
+    7,
+    2,
+    12,
+    13,
+    27,
+    10,
+    12,
+    17,
+    26,
+    24,
+    23,
+    24,
+    21,
+    10
+   ]
+  },
+  {
+   "pos": 18,
+   "name": "Mark Blundell",
+   "wiki": "Mark_Blundell",
+   "points": 36,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 19,
+   "nat": "GBR",
+   "results": [
+    12,
+    10,
+    7,
+    20,
+    11,
+    10,
+    12,
+    22,
+    22,
+    10,
+    26,
+    17,
+    19,
+    7,
+    12,
+    25,
+    14,
+    11,
+    6
+   ]
+  },
+  {
+   "pos": 19,
+   "name": "Patrick Carpentier",
+   "wiki": "Patrick_Carpentier",
+   "points": 27,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 19,
+   "nat": "CAN",
+   "results": [
+    11,
+    19,
+    28,
+    13,
+    17,
+    15,
+    25,
+    15,
+    9,
+    9,
+    25,
+    8,
+    7,
+    28,
+    27,
+    17,
+    22,
+    9,
+    26
+   ]
+  },
+  {
+   "pos": 20,
+   "name": "JJ Lehto",
+   "wiki": "JJ_Lehto",
+   "points": 25,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 1,
+   "starts": 19,
+   "nat": "FIN",
+   "results": [
+    14,
+    29,
+    18,
+    16,
+    10,
+    9,
+    19,
+    26,
+    25,
+    28,
+    24,
+    20,
+    15,
+    18,
+    8,
+    28,
+    10,
+    5,
+    21
+   ]
+  },
+  {
+   "pos": 21,
+   "name": "Max Papis",
+   "wiki": "Max_Papis",
+   "points": 25,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 1,
+   "starts": 19,
+   "nat": "ITA",
+   "results": [
+    26,
+    13,
+    24,
+    14,
+    28,
+    22,
+    16,
+    18,
+    11,
+    12,
+    8,
+    19,
+    14,
+    11,
+    9,
+    12,
+    5,
+    17,
+    16
+   ]
+  },
+  {
+   "pos": 22,
+   "name": "André Ribeiro",
+   "wiki": "André_Ribeiro_(racing_driver)",
+   "points": 13,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 18,
+   "nat": "BRA",
+   "results": [
+    17,
+    9,
+    22,
+    "DNQ",
+    22,
+    20,
+    18,
+    16,
+    15,
+    22,
+    23,
+    28,
+    10,
+    25,
+    7,
+    14,
+    17,
+    13,
+    28
+   ]
+  },
+  {
+   "pos": 23,
+   "name": "Robby Gordon",
+   "wiki": "Robby_Gordon",
+   "points": 13,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 15,
+   "nat": "USA",
+   "results": [
+    null,
+    null,
+    null,
+    7,
+    null,
+    13,
+    20,
+    14,
+    23,
+    23,
+    13,
+    27,
+    11,
+    12,
+    23,
+    13,
+    13,
+    16,
+    9
+   ]
+  },
+  {
+   "pos": 24,
+   "name": "Michel Jourdain Jr.",
+   "wiki": "Michel_Jourdain_Jr.",
+   "points": 5,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 19,
+   "nat": "MEX",
+   "results": [
+    28,
+    22,
+    27,
+    12,
+    24,
+    17,
+    15,
+    13,
+    19,
+    26,
+    18,
+    18,
+    28,
+    14,
+    10,
+    24,
+    25,
+    26,
+    12
+   ]
+  },
+  {
+   "pos": 25,
+   "name": "Arnd Meier",
+   "wiki": "Arnd_Meier",
+   "points": 4,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 19,
+   "nat": "DEU",
+   "results": [
+    21,
+    15,
+    15,
+    24,
+    14,
+    21,
+    23,
+    27,
+    12,
+    16,
+    15,
+    14,
+    18,
+    10,
+    28,
+    15,
+    16,
+    27,
+    24
+   ]
+  },
+  {
+   "pos": 26,
+   "name": "P. J. Jones",
+   "wiki": "P._J._Jones",
+   "points": 3,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 15,
+   "nat": "USA",
+   "results": [
+    20,
+    30,
+    11,
+    19,
+    13,
+    12,
+    14,
+    25,
+    16,
+    21,
+    19,
+    24,
+    20,
+    22,
+    21,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 27,
+   "name": "Alex Barron",
+   "wiki": "Alex_Barron_(racing_driver)",
+   "points": 2,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 17,
+   "nat": "USA",
+   "results": [
+    18,
+    24,
+    14,
+    "DNQ",
+    12,
+    14,
+    "DNQ",
+    20,
+    14,
+    15,
+    28,
+    15,
+    16,
+    24,
+    19,
+    20,
+    12,
+    19,
+    13
+   ]
+  },
+  {
+   "pos": 28,
+   "name": "Gualter Salles",
+   "wiki": "Gualter_Salles",
+   "points": 1,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 6,
+   "nat": "BRA",
+   "results": [
+    null,
+    12,
+    13,
+    null,
+    20,
+    null,
+    null,
+    null,
+    null,
+    null,
+    21,
+    null,
+    23,
+    17,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 29,
+   "name": "Vincenzo Sospiri",
+   "wiki": "Vincenzo_Sospiri",
+   "points": 0,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 4,
+   "nat": "ITA",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    22,
+    15,
+    15,
+    23
+   ]
+  },
+  {
+   "pos": 30,
+   "name": "Hiro Matsushita",
+   "wiki": "Hiro_Matsushita",
+   "points": 0,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 4,
+   "nat": "JPN",
+   "results": [
+    23,
+    16,
+    19,
+    null,
+    15,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 31,
+   "name": "Roberto Moreno",
+   "wiki": "Roberto_Moreno",
+   "points": 0,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 3,
+   "nat": "BRA",
+   "results": [
+    15,
+    26,
+    null,
+    null,
+    null,
+    null,
+    24,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 32,
+   "name": "Domenico Schiattarella",
+   "wiki": "Domenico_Schiattarella",
+   "points": 0,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 1,
+   "nat": "ITA",
+   "results": [
+    null,
+    null,
+    16,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 33,
+   "name": "Dennis Vitolo",
+   "wiki": "Dennis_Vitolo",
+   "points": 0,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 11,
+   "nat": "USA",
+   "results": [
+    25,
+    null,
+    null,
+    25,
+    null,
+    25,
+    "DNQ",
+    28,
+    18,
+    24,
+    null,
+    26,
+    null,
+    null,
+    17,
+    26,
+    19,
+    "DNQ",
+    25
+   ]
+  },
+  {
+   "pos": 34,
+   "name": "Hideshi Matsuda",
+   "wiki": "Hideshi_Matsuda",
+   "points": 0,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 1,
+   "nat": "JPN",
+   "results": [
+    null,
+    18,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  }
+ ],
+ "schedule": [
+  {
+   "round": 1,
+   "date": "1998-03-15",
+   "race": "Marlboro Grand Prix of Miami",
+   "track": "Homestead-Miami Speedway",
+   "city": "Homestead",
+   "state": "FL",
+   "country": "USA",
+   "winner": "Michael Andretti",
+   "winner_wiki": "Michael_Andretti",
+   "track_type": "oval",
+   "cancelled": false
+  },
+  {
+   "round": 2,
+   "date": "1998-03-28",
+   "race": "Budweiser 500K",
+   "track": "Twin Ring Motegi",
+   "city": "Motegi",
+   "state": null,
+   "country": "JPN",
+   "winner": "Adrián Fernández",
+   "winner_wiki": "Adrián_Fernández",
+   "track_type": "oval",
+   "cancelled": false
+  },
+  {
+   "round": 3,
+   "date": "1998-04-05",
+   "race": "Toyota Grand Prix of Long Beach",
+   "track": "Streets of Long Beach",
+   "city": "Long Beach",
+   "state": "CA",
+   "country": "USA",
+   "winner": "Alex Zanardi",
+   "winner_wiki": "Alex_Zanardi",
+   "track_type": "street",
+   "cancelled": false
+  },
+  {
+   "round": 4,
+   "date": "1998-04-27",
+   "race": "Bosch Spark Plug Grand Prix",
+   "track": "Nazareth Speedway",
+   "city": "Nazareth",
+   "state": "PA",
+   "country": "USA",
+   "winner": "Jimmy Vasser",
+   "winner_wiki": "Jimmy_Vasser",
+   "track_type": "oval",
+   "cancelled": false
+  },
+  {
+   "round": 5,
+   "date": "1998-05-10",
+   "race": "Rio 400K",
+   "track": "Autódromo de Jacarepaguá",
+   "city": "Rio de Janeiro",
+   "state": null,
+   "country": "BRA",
+   "winner": "Greg Moore",
+   "winner_wiki": "Greg_Moore_(racing_driver)",
+   "track_type": "oval",
+   "cancelled": false
+  },
+  {
+   "round": 6,
+   "date": "1998-05-23",
+   "race": "Motorola 300",
+   "track": "Gateway International Raceway",
+   "city": "Madison",
+   "state": "IL",
+   "country": "USA",
+   "winner": "Alex Zanardi",
+   "winner_wiki": "Alex_Zanardi",
+   "track_type": "oval",
+   "cancelled": false
+  },
+  {
+   "round": 7,
+   "date": "1998-05-31",
+   "race": "Miller Lite 200",
+   "track": "Milwaukee Mile",
+   "city": "West Allis",
+   "state": "WI",
+   "country": "USA",
+   "winner": "Jimmy Vasser",
+   "winner_wiki": "Jimmy_Vasser",
+   "track_type": "oval",
+   "cancelled": false
+  },
+  {
+   "round": 8,
+   "date": "1998-06-07",
+   "race": "ITT Automotive Detroit Grand Prix",
+   "track": "The Raceway on Belle Isle Park",
+   "city": "Detroit",
+   "state": "MI",
+   "country": "USA",
+   "winner": "Alex Zanardi",
+   "winner_wiki": "Alex_Zanardi",
+   "track_type": "street",
+   "cancelled": false
+  },
+  {
+   "round": 9,
+   "date": "1998-06-21",
+   "race": "Budweiser/G. I. Joe's 200",
+   "track": "Portland International Raceway",
+   "city": "Portland",
+   "state": "OR",
+   "country": "USA",
+   "winner": "Alex Zanardi",
+   "winner_wiki": "Alex_Zanardi",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 10,
+   "date": "1998-07-12",
+   "race": "Medic Drug Grand Prix of Cleveland",
+   "track": "Cleveland Burke Lakefront Airport",
+   "city": "Cleveland",
+   "state": "OH",
+   "country": "USA",
+   "winner": "Alex Zanardi",
+   "winner_wiki": "Alex_Zanardi",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 11,
+   "date": "1998-07-19",
+   "race": "Molson Indy Toronto",
+   "track": "Exhibition Place",
+   "city": "Toronto",
+   "state": "ON",
+   "country": "CAN",
+   "winner": "Alex Zanardi",
+   "winner_wiki": "Alex_Zanardi",
+   "track_type": "street",
+   "cancelled": false
+  },
+  {
+   "round": 12,
+   "date": "1998-07-26",
+   "race": "U.S. 500",
+   "track": "Michigan Speedway",
+   "city": "Brooklyn",
+   "state": "MI",
+   "country": "USA",
+   "winner": "Greg Moore",
+   "winner_wiki": "Greg_Moore_(racing_driver)",
+   "track_type": "oval",
+   "cancelled": false
+  },
+  {
+   "round": 13,
+   "date": "1998-08-09",
+   "race": "Miller Lite 200",
+   "track": "Mid-Ohio Sports Car Course",
+   "city": "Lexington",
+   "state": "OH",
+   "country": "USA",
+   "winner": "Adrián Fernández",
+   "winner_wiki": "Adrián_Fernández",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 14,
+   "date": "1998-08-16",
+   "race": "Texaco/Havoline 200",
+   "track": "Road America",
+   "city": "Elkhart Lake",
+   "state": "WI",
+   "country": "USA",
+   "winner": "Dario Franchitti",
+   "winner_wiki": "Dario_Franchitti",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 15,
+   "date": "1998-09-06",
+   "race": "Molson Indy Vancouver",
+   "track": "Streets of Vancouver",
+   "city": "Vancouver",
+   "state": "BC",
+   "country": "CAN",
+   "winner": "Dario Franchitti",
+   "winner_wiki": "Dario_Franchitti",
+   "track_type": "street",
+   "cancelled": false
+  },
+  {
+   "round": 16,
+   "date": "1998-09-13",
+   "race": "Honda Grand Prix of Monterey",
+   "track": "Laguna Seca Raceway",
+   "city": "Monterey",
+   "state": "CA",
+   "country": "USA",
+   "winner": "Bryan Herta",
+   "winner_wiki": "Bryan_Herta",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 17,
+   "date": "1998-10-04",
+   "race": "Texaco Grand Prix of Houston",
+   "track": "George R. Brown Convention Center",
+   "city": "Houston",
+   "state": "TX",
+   "country": "USA",
+   "winner": "Dario Franchitti",
+   "winner_wiki": "Dario_Franchitti",
+   "track_type": "street",
+   "cancelled": false
+  },
+  {
+   "round": 18,
+   "date": "1998-10-18",
+   "race": "Honda Indy 300",
+   "track": "Surfers Paradise Street Circuit",
+   "city": "Surfers Paradise",
+   "state": null,
+   "country": "AUS",
+   "winner": "Alex Zanardi",
+   "winner_wiki": "Alex_Zanardi",
+   "track_type": "street",
+   "cancelled": false
+  },
+  {
+   "round": 19,
+   "date": "1998-11-01",
+   "race": "Marlboro 500",
+   "track": "California Speedway",
+   "city": "Fontana",
+   "state": "CA",
+   "country": "USA",
+   "winner": "Jimmy Vasser",
+   "winner_wiki": "Jimmy_Vasser",
+   "track_type": "oval",
+   "cancelled": false
+  }
+ ],
+ "sources": [
+  "https://en.wikipedia.org/wiki/1998_CART_FedEx_Championship_Series",
+  "https://www.wikidata.org (driver bios)"
+ ]
+}

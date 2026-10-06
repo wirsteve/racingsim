@@ -1,0 +1,1627 @@
+{
+ "series": "formula_2000",
+ "year": 2018,
+ "official_name": "2018 Cooper Tires USF2000 Championship Powered by Mazda",
+ "data_level": "full",
+ "teams_source": "teams_table",
+ "teams": [
+  {
+   "team": "Abel Motorsports",
+   "team_wiki": "Abel_Motorsports",
+   "owner": null,
+   "manufacturer": null,
+   "chassis": null,
+   "cars": [
+    {
+     "number": "79",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Jacob Abel",
+       "wiki": "Jacob_Abel_(racing_driver)",
+       "rounds": "6–7, 10–12",
+       "nat": "USA"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "ArmsUp Motorsports",
+   "team_wiki": null,
+   "owner": null,
+   "manufacturer": null,
+   "chassis": null,
+   "cars": [
+    {
+     "number": "9",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Dakota Dickerson",
+       "wiki": "Dakota_Dickerson",
+       "rounds": "6–14",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "14",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Max Peichel",
+       "wiki": null,
+       "rounds": "3–4, 6–9, 13–14",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "30",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Keith Donegan",
+       "wiki": "Keith_Donegan",
+       "rounds": "1–5",
+       "nat": "IRL"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "BN Racing",
+   "team_wiki": "BN_Racing",
+   "owner": null,
+   "manufacturer": null,
+   "chassis": null,
+   "cars": [
+    {
+     "number": "28",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Jamie Caroline",
+       "wiki": "Jamie_Caroline",
+       "rounds": "1–4",
+       "nat": "GBR"
+      },
+      {
+       "name": "Keith Donegan",
+       "wiki": "Keith_Donegan",
+       "rounds": "6–12",
+       "nat": "IRL"
+      }
+     ]
+    },
+    {
+     "number": "29",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Russell McDonough",
+       "wiki": null,
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Cape Motorsports",
+   "team_wiki": "Cape_Motorsports",
+   "owner": null,
+   "manufacturer": null,
+   "chassis": null,
+   "cars": [
+    {
+     "number": "8",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Kyle Kirkwood",
+       "wiki": "Kyle_Kirkwood",
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "DEForce Racing",
+   "team_wiki": "DEForce_Racing",
+   "owner": null,
+   "manufacturer": null,
+   "chassis": null,
+   "cars": [
+    {
+     "number": "7",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "James Raven",
+       "wiki": null,
+       "rounds": "10–12",
+       "nat": "GBR"
+      }
+     ]
+    },
+    {
+     "number": "10",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Zach Holden",
+       "wiki": null,
+       "rounds": "1–5",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "11",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Kory Enders",
+       "wiki": null,
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "12",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "José Sierra",
+       "wiki": null,
+       "rounds": "All",
+       "nat": "MEX"
+      }
+     ]
+    },
+    {
+     "number": "27",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Colin Kaminsky",
+       "wiki": "Colin_Kaminsky",
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Exclusive Autosport",
+   "team_wiki": null,
+   "owner": null,
+   "manufacturer": null,
+   "chassis": null,
+   "cars": [
+    {
+     "number": "90",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Manuel Cabrera",
+       "wiki": null,
+       "rounds": "1–7",
+       "nat": "MEX"
+      },
+      {
+       "name": "Yuven Sundaramoorthy",
+       "wiki": "Yuven_Sundaramoorthy",
+       "rounds": "10–12",
+       "nat": "USA"
+      },
+      {
+       "name": "Kellen Ritter",
+       "wiki": null,
+       "rounds": "13–14",
+       "nat": "CAN"
+      }
+     ]
+    },
+    {
+     "number": "91",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Igor Fraga",
+       "wiki": "Igor_Fraga",
+       "rounds": "All",
+       "nat": "BRA"
+      }
+     ]
+    },
+    {
+     "number": "92",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Danial Frost",
+       "wiki": "Danial_Frost",
+       "rounds": "6–12",
+       "nat": "SIN"
+      }
+     ]
+    },
+    {
+     "number": "93",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Jayson Clunie",
+       "wiki": null,
+       "rounds": "1–2",
+       "nat": "CAN"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Newman Wachs Racing",
+   "team_wiki": "Newman_Wachs_Racing",
+   "owner": null,
+   "manufacturer": null,
+   "chassis": null,
+   "cars": [
+    {
+     "number": "36",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Darren Keane",
+       "wiki": null,
+       "rounds": "1–12",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "37",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "David Osborne",
+       "wiki": null,
+       "rounds": "1–7, 10–12",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "38",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Oscar DeLuzuriaga",
+       "wiki": null,
+       "rounds": "All",
+       "nat": "GBR"
+      }
+     ]
+    },
+    {
+     "number": "41",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Braden Eves",
+       "wiki": "Braden_Eves",
+       "rounds": "13–14",
+       "nat": "USA"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Pabst Racing Services",
+   "team_wiki": "Pabst_Racing_Services",
+   "owner": null,
+   "manufacturer": null,
+   "chassis": null,
+   "cars": [
+    {
+     "number": "21",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Calvin Ming",
+       "wiki": "Calvin_Ming",
+       "rounds": "All",
+       "nat": "GUY"
+      }
+     ]
+    },
+    {
+     "number": "22",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Lucas Kohl",
+       "wiki": "Lucas_Kohl",
+       "rounds": "All",
+       "nat": "BRA"
+      }
+     ]
+    },
+    {
+     "number": "23",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Rasmus Lindh",
+       "wiki": "Rasmus_Lindh",
+       "rounds": "All",
+       "nat": "SWE"
+      }
+     ]
+    },
+    {
+     "number": "24",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Kaylen Frederick",
+       "wiki": "Kaylen_Frederick",
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Sol.O Racing",
+   "team_wiki": null,
+   "owner": null,
+   "manufacturer": null,
+   "chassis": null,
+   "cars": [
+    {
+     "number": "5",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Mathias Soler-Obel",
+       "wiki": null,
+       "rounds": "1–7",
+       "nat": "COL"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Swan-RJB Motorsports",
+   "team_wiki": null,
+   "owner": null,
+   "manufacturer": null,
+   "chassis": null,
+   "cars": [
+    {
+     "number": "19",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Alexandre Baron",
+       "wiki": "Alexandre_Baron",
+       "rounds": "1–7",
+       "nat": "FRA"
+      }
+     ]
+    },
+    {
+     "number": "20",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "James Roe",
+       "wiki": "James_Roe_(racing_driver)",
+       "rounds": "3–4",
+       "nat": "IRL"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Team Benik",
+   "team_wiki": null,
+   "owner": null,
+   "manufacturer": null,
+   "chassis": null,
+   "cars": [
+    {
+     "number": "31",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Sabré Cook",
+       "wiki": "Sabré_Cook",
+       "rounds": "1–4, 6–7, 10–12",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "51",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Michael d'Orlando",
+       "wiki": "Michael_d'Orlando",
+       "rounds": "1–4, 6–7, 10–12",
+       "nat": "USA"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Team Pelfrey",
+   "team_wiki": "Team_Pelfrey",
+   "owner": null,
+   "manufacturer": null,
+   "chassis": null,
+   "cars": [
+    {
+     "number": "80",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Julian van der Watt",
+       "wiki": null,
+       "rounds": "All",
+       "nat": "ZAF"
+      }
+     ]
+    },
+    {
+     "number": "81",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Kyle Dupell",
+       "wiki": null,
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "82",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Bruna Tomaselli",
+       "wiki": "Bruna_Tomaselli",
+       "rounds": "All",
+       "nat": "BRA"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "standings": [
+  {
+   "pos": 1,
+   "name": "Kyle Kirkwood",
+   "wiki": "Kyle_Kirkwood",
+   "points": 440,
+   "wins": 12,
+   "podiums": 13,
+   "top5": 14,
+   "starts": 14,
+   "nat": "USA",
+   "results": [
+    1,
+    5,
+    2,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ]
+  },
+  {
+   "pos": 2,
+   "name": "Rasmus Lindh",
+   "wiki": "Rasmus_Lindh",
+   "points": 238,
+   "wins": 0,
+   "podiums": 5,
+   "top5": 9,
+   "starts": 14,
+   "nat": "SWE",
+   "results": [
+    10,
+    24,
+    14,
+    3,
+    3,
+    4,
+    18,
+    4,
+    3,
+    10,
+    4,
+    3,
+    4,
+    2
+   ]
+  },
+  {
+   "pos": 3,
+   "name": "Lucas Kohl",
+   "wiki": "Lucas_Kohl",
+   "points": 215,
+   "wins": 0,
+   "podiums": 4,
+   "top5": 7,
+   "starts": 14,
+   "nat": "BRA",
+   "results": [
+    13,
+    3,
+    26,
+    7,
+    4,
+    23,
+    3,
+    9,
+    15,
+    2,
+    2,
+    6,
+    5,
+    5
+   ]
+  },
+  {
+   "pos": 4,
+   "name": "Igor Fraga",
+   "wiki": "Igor_Fraga",
+   "points": 213,
+   "wins": 0,
+   "podiums": 3,
+   "top5": 6,
+   "starts": 14,
+   "nat": "BRA",
+   "results": [
+    8,
+    2,
+    8,
+    17,
+    7,
+    8,
+    5,
+    7,
+    2,
+    17,
+    3,
+    5,
+    15,
+    4
+   ]
+  },
+  {
+   "pos": 5,
+   "name": "Calvin Ming",
+   "wiki": "Calvin_Ming",
+   "points": 206,
+   "wins": 0,
+   "podiums": 2,
+   "top5": 4,
+   "starts": 14,
+   "nat": "GUY",
+   "results": [
+    4,
+    8,
+    6,
+    19,
+    9,
+    6,
+    15,
+    6,
+    11,
+    3,
+    5,
+    7,
+    2,
+    6
+   ]
+  },
+  {
+   "pos": 6,
+   "name": "Kaylen Frederick",
+   "wiki": "Kaylen_Frederick",
+   "points": 173,
+   "wins": 0,
+   "podiums": 4,
+   "top5": 4,
+   "starts": 14,
+   "nat": "USA",
+   "results": [
+    11,
+    9,
+    22,
+    21,
+    2,
+    2,
+    2,
+    3,
+    8,
+    24,
+    23,
+    19,
+    7,
+    15
+   ]
+  },
+  {
+   "pos": 7,
+   "name": "Julian van der Watt",
+   "wiki": null,
+   "points": 162,
+   "wins": 0,
+   "podiums": 1,
+   "top5": 4,
+   "starts": 14,
+   "nat": "ZAF",
+   "results": [
+    5,
+    11,
+    7,
+    8,
+    19,
+    24,
+    17,
+    10,
+    5,
+    5,
+    8,
+    14,
+    9,
+    3
+   ]
+  },
+  {
+   "pos": 8,
+   "name": "Kory Enders",
+   "wiki": null,
+   "points": 143,
+   "wins": 0,
+   "podiums": 1,
+   "top5": 3,
+   "starts": 14,
+   "nat": "USA",
+   "results": [
+    19,
+    10,
+    5,
+    6,
+    11,
+    5,
+    19,
+    16,
+    14,
+    9,
+    16,
+    24,
+    3,
+    9
+   ]
+  },
+  {
+   "pos": 9,
+   "name": "Keith Donegan",
+   "wiki": "Keith_Donegan",
+   "points": 139,
+   "wins": 0,
+   "podiums": 1,
+   "top5": 4,
+   "starts": 12,
+   "nat": "IRL",
+   "results": [
+    14,
+    13,
+    24,
+    11,
+    6,
+    3,
+    13,
+    5,
+    17,
+    4,
+    21,
+    4,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 10,
+   "name": "Colin Kaminsky",
+   "wiki": "Colin_Kaminsky",
+   "points": 134,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 1,
+   "starts": 14,
+   "nat": "USA",
+   "results": [
+    6,
+    22,
+    9,
+    16,
+    13,
+    12,
+    4,
+    12,
+    18,
+    12,
+    7,
+    12,
+    17,
+    8
+   ]
+  },
+  {
+   "pos": 11,
+   "name": "José Sierra",
+   "wiki": null,
+   "points": 128,
+   "wins": 0,
+   "podiums": 2,
+   "top5": 3,
+   "starts": 14,
+   "nat": "MEX",
+   "results": [
+    2,
+    6,
+    3,
+    26,
+    5,
+    9,
+    23,
+    18,
+    7,
+    19,
+    19,
+    22,
+    12,
+    17
+   ]
+  },
+  {
+   "pos": 12,
+   "name": "Alexandre Baron",
+   "wiki": "Alexandre_Baron",
+   "points": 123,
+   "wins": 2,
+   "podiums": 3,
+   "top5": 3,
+   "starts": 7,
+   "nat": "FRA",
+   "results": [
+    22,
+    1,
+    1,
+    2,
+    21,
+    7,
+    7,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 13,
+   "name": "Dakota Dickerson",
+   "wiki": "Dakota_Dickerson",
+   "points": 120,
+   "wins": 0,
+   "podiums": 1,
+   "top5": 1,
+   "starts": 9,
+   "nat": "USA",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    14,
+    9,
+    2,
+    6,
+    6,
+    6,
+    18,
+    8,
+    7
+   ]
+  },
+  {
+   "pos": 14,
+   "name": "Darren Keane",
+   "wiki": null,
+   "points": 105,
+   "wins": 0,
+   "podiums": 1,
+   "top5": 2,
+   "starts": 12,
+   "nat": "USA",
+   "results": [
+    3,
+    12,
+    23,
+    4,
+    8,
+    10,
+    20,
+    17,
+    12,
+    21,
+    17,
+    17,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 15,
+   "name": "Kyle Dupell",
+   "wiki": null,
+   "points": 100,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 14,
+   "nat": "USA",
+   "results": [
+    9,
+    15,
+    16,
+    23,
+    17,
+    13,
+    21,
+    15,
+    9,
+    15,
+    14,
+    13,
+    10,
+    10
+   ]
+  },
+  {
+   "pos": 16,
+   "name": "Bruna Tomaselli",
+   "wiki": "Bruna_Tomaselli",
+   "points": 87,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 14,
+   "nat": "BRA",
+   "results": [
+    7,
+    14,
+    19,
+    22,
+    14,
+    17,
+    11,
+    13,
+    13,
+    20,
+    13,
+    16,
+    18,
+    16
+   ]
+  },
+  {
+   "pos": 17,
+   "name": "Danial Frost",
+   "wiki": "Danial_Frost",
+   "points": 77,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 1,
+   "starts": 7,
+   "nat": "SIN",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    19,
+    16,
+    8,
+    4,
+    7,
+    9,
+    9,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 18,
+   "name": "Oscar DeLuzuriaga",
+   "wiki": null,
+   "points": 69,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 14,
+   "nat": "GBR",
+   "results": [
+    20,
+    19,
+    20,
+    13,
+    16,
+    21,
+    12,
+    11,
+    10,
+    22,
+    24,
+    21,
+    13,
+    14
+   ]
+  },
+  {
+   "pos": 19,
+   "name": "Russell McDonough",
+   "wiki": null,
+   "points": 60,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 14,
+   "nat": "USA",
+   "results": [
+    23,
+    25,
+    18,
+    12,
+    20,
+    16,
+    26,
+    14,
+    16,
+    23,
+    12,
+    23,
+    16,
+    11
+   ]
+  },
+  {
+   "pos": 20,
+   "name": "Michael d'Orlando",
+   "wiki": "Michael_d'Orlando",
+   "points": 56,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 9,
+   "nat": "USA",
+   "results": [
+    16,
+    23,
+    25,
+    15,
+    null,
+    22,
+    6,
+    null,
+    null,
+    8,
+    20,
+    8,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 21,
+   "name": "Mathias Soler-Obel",
+   "wiki": null,
+   "points": 56,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 7,
+   "nat": "COL",
+   "results": [
+    12,
+    16,
+    13,
+    18,
+    12,
+    11,
+    14,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 22,
+   "name": "Manuel Cabrera",
+   "wiki": null,
+   "points": 55,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 7,
+   "nat": "MEX",
+   "results": [
+    25,
+    21,
+    11,
+    9,
+    10,
+    26,
+    8,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 23,
+   "name": "Jacob Abel",
+   "wiki": "Jacob_Abel_(racing_driver)",
+   "points": 47,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 5,
+   "nat": "USA",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    15,
+    10,
+    null,
+    null,
+    11,
+    11,
+    11,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 24,
+   "name": "David Osborne",
+   "wiki": null,
+   "points": 46,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 10,
+   "nat": "USA",
+   "results": [
+    18,
+    18,
+    15,
+    20,
+    15,
+    18,
+    22,
+    null,
+    null,
+    13,
+    15,
+    15,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 25,
+   "name": "Jamie Caroline",
+   "wiki": "Jamie_Caroline",
+   "points": 40,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 2,
+   "starts": 4,
+   "nat": "GBR",
+   "results": [
+    24,
+    4,
+    4,
+    24,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 26,
+   "name": "Max Peichel",
+   "wiki": null,
+   "points": 35,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 6,
+   "nat": "USA",
+   "results": [
+    null,
+    null,
+    17,
+    10,
+    null,
+    20,
+    24,
+    "DNS",
+    "DNS",
+    null,
+    null,
+    null,
+    14,
+    12
+   ]
+  },
+  {
+   "pos": 27,
+   "name": "James Raven",
+   "wiki": null,
+   "points": 33,
+   "wins": 0,
+   "podiums": 1,
+   "top5": 1,
+   "starts": 3,
+   "nat": "GBR",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    18,
+    18,
+    2,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 28,
+   "name": "Zach Holden",
+   "wiki": null,
+   "points": 32,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 5,
+   "nat": "USA",
+   "results": [
+    21,
+    7,
+    10,
+    25,
+    18,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 29,
+   "name": "Yuven Sundaramoorthy",
+   "wiki": "Yuven_Sundaramoorthy",
+   "points": 29,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 3,
+   "nat": "USA",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    14,
+    10,
+    10,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 30,
+   "name": "Sabré Cook",
+   "wiki": "Sabré_Cook",
+   "points": 27,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 9,
+   "nat": "USA",
+   "results": [
+    15,
+    17,
+    21,
+    14,
+    null,
+    25,
+    25,
+    null,
+    null,
+    16,
+    22,
+    20,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 31,
+   "name": "James Roe",
+   "wiki": "James_Roe_(racing_driver)",
+   "points": 26,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 1,
+   "starts": 2,
+   "nat": "IRL",
+   "results": [
+    null,
+    null,
+    12,
+    5,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 32,
+   "name": "Braden Eves",
+   "wiki": "Braden_Eves",
+   "points": 18,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 2,
+   "nat": "USA",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    6,
+    18
+   ]
+  },
+  {
+   "pos": 33,
+   "name": "Kellen Ritter",
+   "wiki": null,
+   "points": 18,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 2,
+   "nat": "CAN",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    11,
+    13
+   ]
+  },
+  {
+   "pos": 34,
+   "name": "Jayson Clunie",
+   "wiki": null,
+   "points": 5,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 2,
+   "nat": "CAN",
+   "results": [
+    17,
+    20,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  }
+ ],
+ "schedule": [
+  {
+   "round": 1,
+   "date": "2018-03-10",
+   "race": "Cooper Tires USF2000 Grand Prix of St. Petersburg",
+   "track": "Streets of St. Petersburg",
+   "city": "St. Petersburg",
+   "state": "FL",
+   "country": "USA",
+   "winner": "Kyle Kirkwood",
+   "winner_wiki": "Kyle_Kirkwood",
+   "track_type": "street",
+   "cancelled": false
+  },
+  {
+   "round": 2,
+   "date": "2018-03-10",
+   "race": "Cooper Tires USF2000 Grand Prix of St. Petersburg",
+   "track": "Streets of St. Petersburg",
+   "city": "St. Petersburg",
+   "state": "FL",
+   "country": "USA",
+   "winner": "Alexandre Baron",
+   "winner_wiki": "Alexandre_Baron",
+   "track_type": "street",
+   "cancelled": false
+  },
+  {
+   "round": 3,
+   "date": "2018-05-11",
+   "race": "USF2000 Royal Purple Grand Prix of Indianapolis",
+   "track": "Indianapolis Motor Speedway Road Course",
+   "city": "Speedway",
+   "state": "IN",
+   "country": "USA",
+   "winner": "Alexandre Baron",
+   "winner_wiki": "Alexandre_Baron",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 4,
+   "date": "2018-05-11",
+   "race": "USF2000 Royal Purple Grand Prix of Indianapolis",
+   "track": "Indianapolis Motor Speedway Road Course",
+   "city": "Speedway",
+   "state": "IN",
+   "country": "USA",
+   "winner": "Kyle Kirkwood",
+   "winner_wiki": "Kyle_Kirkwood",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 5,
+   "date": "2018-05-25",
+   "race": "Cooper Tires Freedom 75",
+   "track": "Lucas Oil Raceway",
+   "city": "Clermont",
+   "state": "IN",
+   "country": "USA",
+   "winner": "Kyle Kirkwood",
+   "winner_wiki": "Kyle_Kirkwood",
+   "track_type": "oval",
+   "cancelled": false
+  },
+  {
+   "round": 6,
+   "date": "2018-06-23",
+   "race": "Cooper Tires Grand Prix of Road America",
+   "track": "Road America",
+   "city": "Elkhart Lake",
+   "state": "WI",
+   "country": "USA",
+   "winner": "Kyle Kirkwood",
+   "winner_wiki": "Kyle_Kirkwood",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 7,
+   "date": "2018-06-23",
+   "race": "Cooper Tires Grand Prix of Road America",
+   "track": "Road America",
+   "city": "Elkhart Lake",
+   "state": "WI",
+   "country": "USA",
+   "winner": "Kyle Kirkwood",
+   "winner_wiki": "Kyle_Kirkwood",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 8,
+   "date": "2018-07-14",
+   "race": "Cooper Tires USF2000 Grand Prix of Toronto",
+   "track": "Exhibition Place",
+   "city": "Toronto",
+   "state": "ON",
+   "country": "CAN",
+   "winner": "Kyle Kirkwood",
+   "winner_wiki": "Kyle_Kirkwood",
+   "track_type": "street",
+   "cancelled": false
+  },
+  {
+   "round": 9,
+   "date": "2018-07-14",
+   "race": "Cooper Tires USF2000 Grand Prix of Toronto",
+   "track": "Exhibition Place",
+   "city": "Toronto",
+   "state": "ON",
+   "country": "CAN",
+   "winner": "Kyle Kirkwood",
+   "winner_wiki": "Kyle_Kirkwood",
+   "track_type": "street",
+   "cancelled": false
+  },
+  {
+   "round": 10,
+   "date": "2018-07-27",
+   "race": "Cooper Tires USF2000 Mid-Ohio Grand Prix",
+   "track": "Mid-Ohio Sports Car Course",
+   "city": "Lexington",
+   "state": "OH",
+   "country": "USA",
+   "winner": "Kyle Kirkwood",
+   "winner_wiki": "Kyle_Kirkwood",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 11,
+   "date": "2018-07-27",
+   "race": "Cooper Tires USF2000 Mid-Ohio Grand Prix",
+   "track": "Mid-Ohio Sports Car Course",
+   "city": "Lexington",
+   "state": "OH",
+   "country": "USA",
+   "winner": "Kyle Kirkwood",
+   "winner_wiki": "Kyle_Kirkwood",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 12,
+   "date": "2018-07-27",
+   "race": "Cooper Tires USF2000 Mid-Ohio Grand Prix",
+   "track": "Mid-Ohio Sports Car Course",
+   "city": "Lexington",
+   "state": "OH",
+   "country": "USA",
+   "winner": "Kyle Kirkwood",
+   "winner_wiki": "Kyle_Kirkwood",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 13,
+   "date": "2018-09-01",
+   "race": "Cooper Tires USF2000 Grand Prix of Portland",
+   "track": "Portland International Raceway",
+   "city": "Portland",
+   "state": "OR",
+   "country": "USA",
+   "winner": "Kyle Kirkwood",
+   "winner_wiki": "Kyle_Kirkwood",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 14,
+   "date": "2018-09-01",
+   "race": "Cooper Tires USF2000 Grand Prix of Portland",
+   "track": "Portland International Raceway",
+   "city": "Portland",
+   "state": "OR",
+   "country": "USA",
+   "winner": "Kyle Kirkwood",
+   "winner_wiki": "Kyle_Kirkwood",
+   "track_type": "road",
+   "cancelled": false
+  }
+ ],
+ "sources": [
+  "https://en.wikipedia.org/wiki/2018_U.S._F2000_National_Championship",
+  "https://www.wikidata.org (driver bios)"
+ ]
+}

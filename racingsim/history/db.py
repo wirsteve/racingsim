@@ -72,6 +72,7 @@ ALIASES = {
     "nashville superspeedway": "Nashville Superspeedway", "las vegas motor speedway": "Las Vegas Motor Speedway",
     "watkins glen": "Watkins Glen International", "michigan international": "Michigan International Speedway",
     "michigan speedway": "Michigan International Speedway", "pocono": "Pocono Raceway",
+    "exhibition place": "Toronto Street Circuit", "streets of toronto": "Toronto Street Circuit",
     "milwaukee mile": "Milwaukee Mile", "wisconsin state fair park": "Milwaukee Mile",
     "texas motor speedway": "Texas Motor Speedway", "bristol": "Bristol Motor Speedway",
     "bristol international": "Bristol Motor Speedway",
@@ -151,12 +152,13 @@ class HistoryDB:
         out = None
         if season and season.get("schedule"):
             ids = []
-            for race in season["schedule"]:
+            races = [r for r in season["schedule"] if not r.get("cancelled")]
+            for race in races:
                 tid = match_track(tracks, race.get("track"), race.get("city"), race.get("state"),
                                   race.get("race") or "", year)
                 if tid:
                     ids.append(tid)
-            if len(ids) >= max(3, 0.6 * len(season["schedule"])):
+            if len(ids) >= max(3, 0.6 * len(races)):
                 out = ids
         self._sched_cache[key] = out
         return out

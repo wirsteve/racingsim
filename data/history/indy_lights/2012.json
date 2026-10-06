@@ -1,0 +1,1306 @@
+{
+ "series": "formula_lights",
+ "year": 2012,
+ "official_name": "2012 Indy Lights season",
+ "era": "IRL feeder (Infiniti Pro / Indy Pro / Indy Lights / Indy NXT)",
+ "data_level": "full",
+ "teams_source": "teams_table",
+ "teams": [
+  {
+   "team": "Sam Schmidt Motorsports",
+   "team_wiki": "Sam_Schmidt_Motorsports",
+   "owner": null,
+   "manufacturer": null,
+   "chassis": "Dallara",
+   "cars": [
+    {
+     "number": "3",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Victor Carbone",
+       "wiki": "Victor_Carbone",
+       "rounds": "All",
+       "nat": "BRA"
+      }
+     ]
+    },
+    {
+     "number": "7",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Oliver Webb",
+       "wiki": "Oliver_Webb",
+       "rounds": "All",
+       "nat": "GBR"
+      }
+     ]
+    },
+    {
+     "number": "11",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Esteban Guerrieri",
+       "wiki": "Esteban_Guerrieri",
+       "rounds": "All",
+       "nat": "ARG"
+      }
+     ]
+    },
+    {
+     "number": "77",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Tristan Vautier",
+       "wiki": "Tristan_Vautier",
+       "rounds": "All",
+       "nat": "FRA"
+      }
+     ]
+    }
+   ],
+   "chassis_note": "spec chassis (from page text)"
+  },
+  {
+   "team": "Team Moore Racing",
+   "team_wiki": "Team_Moore_Racing",
+   "owner": null,
+   "manufacturer": null,
+   "chassis": "Dallara",
+   "cars": [
+    {
+     "number": "2",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Gustavo Yacamán",
+       "wiki": "Gustavo_Yacamán",
+       "rounds": "All",
+       "nat": "COL"
+      }
+     ]
+    },
+    {
+     "number": "22",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "David Ostella",
+       "wiki": "David_Ostella",
+       "rounds": "All",
+       "nat": "CAN"
+      }
+     ]
+    }
+   ],
+   "chassis_note": "spec chassis (from page text)"
+  },
+  {
+   "team": "Andretti Autosport AFS Racing",
+   "team_wiki": "Andretti_Autosport",
+   "owner": null,
+   "manufacturer": null,
+   "chassis": "Dallara",
+   "cars": [
+    {
+     "number": "26",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Carlos Muñoz",
+       "wiki": "Carlos_Muñoz_(racing_driver)",
+       "rounds": "All",
+       "nat": "COL"
+      }
+     ]
+    },
+    {
+     "number": "27",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Sebastián Saavedra",
+       "wiki": "Sebastián_Saavedra",
+       "rounds": "All",
+       "nat": "COL"
+      }
+     ]
+    }
+   ],
+   "chassis_note": "spec chassis (from page text)"
+  },
+  {
+   "team": "Bryan Herta Autosport",
+   "team_wiki": "Bryan_Herta_Autosport",
+   "owner": null,
+   "manufacturer": null,
+   "chassis": "Dallara",
+   "cars": [
+    {
+     "number": "28",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Troy Castaneda",
+       "wiki": "Troy_Castaneda",
+       "rounds": "1–2",
+       "nat": "USA"
+      },
+      {
+       "name": "Nick Andries",
+       "wiki": "Nick_Andries",
+       "rounds": "3",
+       "nat": "USA"
+      },
+      {
+       "name": "Anders Krohn",
+       "wiki": "Anders_Krohn",
+       "rounds": "4, 7",
+       "nat": "NOR"
+      }
+     ]
+    }
+   ],
+   "chassis_note": "spec chassis (from page text)"
+  },
+  {
+   "team": "Juncos Racing",
+   "team_wiki": "Juncos_Racing",
+   "owner": null,
+   "manufacturer": null,
+   "chassis": "Dallara",
+   "cars": [
+    {
+     "number": "86",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "João Victor Horto",
+       "wiki": "João_Victor_Horto",
+       "rounds": "1–2, 4",
+       "nat": "BRA"
+      },
+      {
+       "name": "Bruno Palli",
+       "wiki": null,
+       "rounds": "12",
+       "nat": "VEN"
+      },
+      {
+       "name": "Chase Austin",
+       "wiki": "Chase_Austin",
+       "rounds": "7",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "87",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Chase Austin",
+       "wiki": "Chase_Austin",
+       "rounds": "4",
+       "nat": "USA"
+      }
+     ]
+    }
+   ],
+   "chassis_note": "spec chassis (from page text)"
+  },
+  {
+   "team": "Team E",
+   "team_wiki": null,
+   "owner": null,
+   "manufacturer": null,
+   "chassis": "Dallara",
+   "cars": [
+    {
+     "number": "17",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Brandon Wagner",
+       "wiki": "Brandon_Wagner",
+       "rounds": "4",
+       "nat": "USA"
+      }
+     ]
+    }
+   ],
+   "chassis_note": "spec chassis (from page text)"
+  },
+  {
+   "team": "Belardi Auto Racing",
+   "team_wiki": "Belardi_Auto_Racing",
+   "owner": null,
+   "manufacturer": null,
+   "chassis": "Dallara",
+   "cars": [
+    {
+     "number": "4",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Jorge Goncalvez",
+       "wiki": "Jorge_Goncalvez_(racing_driver)",
+       "rounds": "All",
+       "nat": "VEN"
+      }
+     ]
+    },
+    {
+     "number": "9",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Alon Day",
+       "wiki": "Alon_Day",
+       "rounds": "1–7",
+       "nat": "ISR"
+      },
+      {
+       "name": "Peter Dempsey",
+       "wiki": "Peter_Dempsey",
+       "rounds": "8–12",
+       "nat": "IRL"
+      }
+     ]
+    },
+    {
+     "number": "19",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Mike Larrison",
+       "wiki": "Mike_Larrison",
+       "rounds": "4, 6–7, 12",
+       "nat": "USA"
+      }
+     ]
+    }
+   ],
+   "chassis_note": "spec chassis (from page text)"
+  },
+  {
+   "team": "Brooks Associates Racing",
+   "team_wiki": "Brooks_Associates_Racing",
+   "owner": null,
+   "manufacturer": null,
+   "chassis": "Dallara",
+   "cars": [
+    {
+     "number": "8",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Alex Jones",
+       "wiki": "Alex_Jones_(racing_driver)",
+       "rounds": "3",
+       "nat": "GBR"
+      },
+      {
+       "name": "Adderly Fong",
+       "wiki": "Adderly_Fong",
+       "rounds": "11",
+       "nat": "HKG"
+      }
+     ]
+    }
+   ],
+   "chassis_note": "spec chassis (from page text)"
+  },
+  {
+   "team": "Fan Force United",
+   "team_wiki": "Fan_Force_United",
+   "owner": null,
+   "manufacturer": null,
+   "chassis": "Dallara",
+   "cars": [
+    {
+     "number": "24",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Armaan Ebrahim",
+       "wiki": "Armaan_Ebrahim",
+       "rounds": "1–5",
+       "nat": "IND"
+      },
+      {
+       "name": "Bryan Clauson",
+       "wiki": "Bryan_Clauson",
+       "rounds": "6–7",
+       "nat": "USA"
+      },
+      {
+       "name": "Stefan Wilson",
+       "wiki": "Stefan_Wilson",
+       "rounds": "12",
+       "nat": "GBR"
+      }
+     ]
+    },
+    {
+     "number": "42",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Emerson Newton-John",
+       "wiki": "Emerson_Newton-John",
+       "rounds": "4, 11",
+       "nat": "USA"
+      }
+     ]
+    }
+   ],
+   "chassis_note": "spec chassis (from page text)"
+  },
+  {
+   "team": "Younessi Racing",
+   "team_wiki": "Younessi_Racing",
+   "owner": null,
+   "manufacturer": null,
+   "chassis": "Dallara",
+   "cars": [
+    {
+     "number": "15",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Peter Dempsey",
+       "wiki": "Peter_Dempsey",
+       "rounds": "4–5",
+       "nat": "IRL"
+      }
+     ]
+    },
+    {
+     "number": "16",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Rodin Younessi",
+       "wiki": "Rodin_Younessi",
+       "rounds": "1, 5",
+       "nat": "USA"
+      }
+     ]
+    }
+   ],
+   "chassis_note": "spec chassis (from page text)"
+  },
+  {
+   "team": "Jeffrey Mark Motorsport",
+   "team_wiki": null,
+   "owner": null,
+   "manufacturer": null,
+   "chassis": "Dallara",
+   "cars": [
+    {
+     "number": "76",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Juan Pablo Garcia",
+       "wiki": "Juan_Pablo_García_(racing_driver)",
+       "rounds": "All",
+       "nat": "MEX"
+      }
+     ]
+    }
+   ],
+   "chassis_note": "spec chassis (from page text)"
+  },
+  {
+   "team": "Hillenburg Motorsports",
+   "team_wiki": null,
+   "owner": null,
+   "manufacturer": null,
+   "chassis": "Dallara",
+   "cars": [
+    {
+     "number": "20",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Darryl Wills",
+       "wiki": "Darryl_Wills",
+       "rounds": "1–3",
+       "nat": "USA"
+      }
+     ]
+    }
+   ],
+   "chassis_note": "spec chassis (from page text)"
+  }
+ ],
+ "standings": [
+  {
+   "pos": 1,
+   "name": "Tristan Vautier",
+   "wiki": "Tristan_Vautier",
+   "points": 461,
+   "wins": 4,
+   "podiums": 7,
+   "top5": 10,
+   "starts": 12,
+   "nat": "FRA",
+   "results": [
+    1,
+    2,
+    3,
+    3,
+    5,
+    1,
+    4,
+    11,
+    6,
+    1,
+    1,
+    4
+   ]
+  },
+  {
+   "pos": 2,
+   "name": "Esteban Guerrieri",
+   "wiki": "Esteban_Guerrieri",
+   "points": 453,
+   "wins": 3,
+   "podiums": 9,
+   "top5": 10,
+   "starts": 12,
+   "nat": "ARG",
+   "results": [
+    2,
+    3,
+    1,
+    1,
+    7,
+    3,
+    1,
+    6,
+    3,
+    4,
+    3,
+    3
+   ]
+  },
+  {
+   "pos": 3,
+   "name": "Gustavo Yacamán",
+   "wiki": "Gustavo_Yacamán",
+   "points": 394,
+   "wins": 2,
+   "podiums": 5,
+   "top5": 7,
+   "starts": 12,
+   "nat": "COL",
+   "results": [
+    6,
+    4,
+    10,
+    4,
+    1,
+    8,
+    2,
+    1,
+    7,
+    2,
+    2,
+    11
+   ]
+  },
+  {
+   "pos": 4,
+   "name": "Sebastián Saavedra",
+   "wiki": "Sebastián_Saavedra",
+   "points": 383,
+   "wins": 1,
+   "podiums": 6,
+   "top5": 7,
+   "starts": 12,
+   "nat": "COL",
+   "results": [
+    3,
+    1,
+    2,
+    5,
+    6,
+    2,
+    13,
+    2,
+    2,
+    9,
+    10,
+    14
+   ]
+  },
+  {
+   "pos": 5,
+   "name": "Carlos Muñoz",
+   "wiki": "Carlos_Muñoz_(racing_driver)",
+   "points": 377,
+   "wins": 2,
+   "podiums": 5,
+   "top5": 7,
+   "starts": 12,
+   "nat": "COL",
+   "results": [
+    14,
+    14,
+    5,
+    2,
+    2,
+    5,
+    7,
+    10,
+    1,
+    3,
+    11,
+    1
+   ]
+  },
+  {
+   "pos": 6,
+   "name": "Victor Carbone",
+   "wiki": "Victor_Carbone",
+   "points": 340,
+   "wins": 0,
+   "podiums": 2,
+   "top5": 7,
+   "starts": 11,
+   "nat": "BRA",
+   "results": [
+    5,
+    5,
+    4,
+    6,
+    4,
+    6,
+    3,
+    3,
+    8,
+    8,
+    "DNS",
+    5
+   ]
+  },
+  {
+   "pos": 7,
+   "name": "Oliver Webb",
+   "wiki": "Oliver_Webb",
+   "points": 310,
+   "wins": 0,
+   "podiums": 1,
+   "top5": 5,
+   "starts": 12,
+   "nat": "GBR",
+   "results": [
+    4,
+    13,
+    6,
+    15,
+    3,
+    12,
+    12,
+    5,
+    4,
+    5,
+    6,
+    8
+   ]
+  },
+  {
+   "pos": 8,
+   "name": "David Ostella",
+   "wiki": "David_Ostella",
+   "points": 298,
+   "wins": 0,
+   "podiums": 1,
+   "top5": 4,
+   "starts": 12,
+   "nat": "CAN",
+   "results": [
+    15,
+    9,
+    8,
+    18,
+    13,
+    4,
+    5,
+    7,
+    10,
+    6,
+    4,
+    2
+   ]
+  },
+  {
+   "pos": 9,
+   "name": "Juan Pablo Garcia",
+   "wiki": "Juan_Pablo_García_(racing_driver)",
+   "points": 260,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 12,
+   "nat": "MEX",
+   "results": [
+    7,
+    8,
+    7,
+    11,
+    9,
+    11,
+    14,
+    8,
+    9,
+    10,
+    9,
+    10
+   ]
+  },
+  {
+   "pos": 10,
+   "name": "Jorge Goncalvez",
+   "wiki": "Jorge_Goncalvez_(racing_driver)",
+   "points": 247,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 11,
+   "nat": "VEN",
+   "results": [
+    11,
+    10,
+    9,
+    12,
+    "DNS",
+    9,
+    6,
+    9,
+    11,
+    7,
+    7,
+    13
+   ]
+  },
+  {
+   "pos": 11,
+   "name": "Peter Dempsey",
+   "wiki": "Peter_Dempsey",
+   "points": 164,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 3,
+   "starts": 7,
+   "nat": "IRL",
+   "results": [
+    null,
+    null,
+    null,
+    14,
+    11,
+    null,
+    null,
+    4,
+    5,
+    11,
+    5,
+    12
+   ]
+  },
+  {
+   "pos": 12,
+   "name": "Alon Day",
+   "wiki": "Alon_Day",
+   "points": 147,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 6,
+   "nat": "ISR",
+   "results": [
+    12,
+    6,
+    11,
+    8,
+    8,
+    7,
+    "DNS",
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 13,
+   "name": "Armaan Ebrahim",
+   "wiki": "Armaan_Ebrahim",
+   "points": 97,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 5,
+   "nat": "IND",
+   "results": [
+    8,
+    12,
+    12,
+    13,
+    10,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 14,
+   "name": "Mike Larrison",
+   "wiki": "Mike_Larrison",
+   "points": 80,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 4,
+   "nat": "USA",
+   "results": [
+    null,
+    null,
+    null,
+    9,
+    null,
+    13,
+    11,
+    null,
+    null,
+    null,
+    null,
+    9
+   ]
+  },
+  {
+   "pos": 15,
+   "name": "João Victor Horto",
+   "wiki": "João_Victor_Horto",
+   "points": 69,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 3,
+   "nat": "BRA",
+   "results": [
+    13,
+    7,
+    null,
+    7,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 16,
+   "name": "Darryl Wills",
+   "wiki": "Darryl_Wills",
+   "points": 54,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 3,
+   "nat": "USA",
+   "results": [
+    10,
+    11,
+    15,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 17,
+   "name": "Chase Austin",
+   "wiki": "Chase_Austin",
+   "points": 44,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 2,
+   "nat": "USA",
+   "results": [
+    null,
+    null,
+    null,
+    10,
+    null,
+    null,
+    8,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 18,
+   "name": "Bryan Clauson",
+   "wiki": "Bryan_Clauson",
+   "points": 40,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 2,
+   "nat": "USA",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    10,
+    10,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 19,
+   "name": "Troy Castaneda",
+   "wiki": "Troy_Castaneda",
+   "points": 37,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 2,
+   "nat": "USA",
+   "results": [
+    9,
+    15,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 20,
+   "name": "Anders Krohn",
+   "wiki": "Anders_Krohn",
+   "points": 34,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 2,
+   "nat": "NOR",
+   "results": [
+    null,
+    null,
+    null,
+    19,
+    null,
+    null,
+    9,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 21,
+   "name": "Rodin Younessi",
+   "wiki": "Rodin_Younessi",
+   "points": 32,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 2,
+   "nat": "USA",
+   "results": [
+    16,
+    null,
+    null,
+    null,
+    12,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 22,
+   "name": "Emerson Newton-John",
+   "wiki": "Emerson_Newton-John",
+   "points": 31,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 2,
+   "nat": "USA",
+   "results": [
+    null,
+    null,
+    null,
+    17,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    12,
+    null
+   ]
+  },
+  {
+   "pos": 23,
+   "name": "Stefan Wilson",
+   "wiki": "Stefan_Wilson",
+   "points": 28,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 1,
+   "nat": "GBR",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    6
+   ]
+  },
+  {
+   "pos": 24,
+   "name": "Bruno Palli",
+   "wiki": null,
+   "points": 26,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 1,
+   "nat": "VEN",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    7
+   ]
+  },
+  {
+   "pos": 25,
+   "name": "Adderly Fong",
+   "wiki": "Adderly_Fong",
+   "points": 24,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 1,
+   "nat": "HKG",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    8,
+    null
+   ]
+  },
+  {
+   "pos": 26,
+   "name": "Nick Andries",
+   "wiki": "Nick_Andries",
+   "points": 17,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 1,
+   "nat": "USA",
+   "results": [
+    null,
+    null,
+    13,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 27,
+   "name": "Alex Jones",
+   "wiki": "Alex_Jones_(racing_driver)",
+   "points": 16,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 1,
+   "nat": "GBR",
+   "results": [
+    null,
+    null,
+    14,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 28,
+   "name": "Brandon Wagner",
+   "wiki": "Brandon_Wagner",
+   "points": 14,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 1,
+   "nat": "USA",
+   "results": [
+    null,
+    null,
+    null,
+    16,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  }
+ ],
+ "schedule": [
+  {
+   "round": 1,
+   "date": "2012-03-24",
+   "race": "St. Petersburg 100",
+   "track": "Streets of St. Petersburg",
+   "city": "St. Petersburg",
+   "state": "FL",
+   "country": "USA",
+   "winner": "Tristan Vautier",
+   "winner_wiki": "Tristan_Vautier",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 2,
+   "date": "2012-04-01",
+   "race": "Grand Prix of Alabama",
+   "track": "Barber Motorsports Park",
+   "city": "Birmingham",
+   "state": "AL",
+   "country": "USA",
+   "winner": "Sebastián Saavedra",
+   "winner_wiki": "Sebastián_Saavedra",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 3,
+   "date": "2012-04-15",
+   "race": "Grand Prix of Long Beach",
+   "track": "Streets of Long Beach",
+   "city": "Long Beach",
+   "state": "CA",
+   "country": "USA",
+   "winner": "Esteban Guerrieri",
+   "winner_wiki": "Esteban_Guerrieri",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 4,
+   "date": "2012-05-25",
+   "race": "Firestone Freedom 100",
+   "track": "Indianapolis Motor Speedway",
+   "city": "Speedway",
+   "state": "IN",
+   "country": "USA",
+   "winner": "Esteban Guerrieri",
+   "winner_wiki": "Esteban_Guerrieri",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 5,
+   "date": "2012-06-02",
+   "race": "Detroit Belle Isle Grand Prix",
+   "track": "Belle Isle",
+   "city": "Detroit",
+   "state": "MI",
+   "country": "USA",
+   "winner": "Gustavo Yacamán",
+   "winner_wiki": "Gustavo_Yacamán",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 6,
+   "date": "2012-06-15",
+   "race": "Firestone Indy Lights 100",
+   "track": "Milwaukee Mile",
+   "city": "West Allis",
+   "state": "WI",
+   "country": "USA",
+   "winner": "Tristan Vautier",
+   "winner_wiki": "Tristan_Vautier",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 7,
+   "date": "2012-06-22",
+   "race": "Sukup 100",
+   "track": "Iowa Speedway",
+   "city": "Newton",
+   "state": "IA",
+   "country": "USA",
+   "winner": "Esteban Guerrieri",
+   "winner_wiki": "Esteban_Guerrieri",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 8,
+   "date": "2012-07-07",
+   "race": "Toronto 100",
+   "track": "Exhibition Place",
+   "city": "Toronto",
+   "state": "ON",
+   "country": "CAN",
+   "winner": "Gustavo Yacamán",
+   "winner_wiki": "Gustavo_Yacamán",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 9,
+   "date": "2012-07-21",
+   "race": "Edmonton 100",
+   "track": "Edmonton City Centre Airport",
+   "city": "Edmonton",
+   "state": "AB",
+   "country": "CAN",
+   "winner": "Carlos Muñoz",
+   "winner_wiki": "Carlos_Muñoz_(racing_driver)",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 10,
+   "date": "2012-08-05",
+   "race": "Grand Prix de Trois-Rivières",
+   "track": "Circuit Trois-Rivières",
+   "city": "Trois-Rivières",
+   "state": "QC",
+   "country": "CAN",
+   "winner": "Tristan Vautier",
+   "winner_wiki": "Tristan_Vautier",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 11,
+   "date": "2012-09-01",
+   "race": "Grand Prix of Baltimore",
+   "track": "Streets of Baltimore",
+   "city": "Baltimore",
+   "state": "MD",
+   "country": "USA",
+   "winner": "Tristan Vautier",
+   "winner_wiki": "Tristan_Vautier",
+   "track_type": null,
+   "cancelled": false
+  },
+  {
+   "round": 12,
+   "date": "2012-09-15",
+   "race": "Auto Club Speedway Foundation 100",
+   "track": "Auto Club Speedway",
+   "city": "Fontana",
+   "state": "CA",
+   "country": "USA",
+   "winner": "Carlos Muñoz",
+   "winner_wiki": "Carlos_Muñoz_(racing_driver)",
+   "track_type": null,
+   "cancelled": false
+  }
+ ],
+ "sources": [
+  "https://en.wikipedia.org/wiki/2012_Indy_Lights",
+  "https://www.wikidata.org (driver bios)"
+ ]
+}

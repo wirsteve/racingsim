@@ -1,0 +1,1004 @@
+{
+ "series": "formula_lights",
+ "year": 2021,
+ "official_name": "2021 Indy Lights season",
+ "era": "IRL feeder (Infiniti Pro / Indy Pro / Indy Lights / Indy NXT)",
+ "data_level": "full",
+ "teams_source": "teams_table",
+ "teams": [
+  {
+   "team": "Andretti Autosport",
+   "team_wiki": "Andretti_Autosport",
+   "owner": null,
+   "manufacturer": null,
+   "chassis": null,
+   "cars": [
+    {
+     "number": "27",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Robert Megennis",
+       "wiki": "Robert_Megennis",
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "28",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Kyle Kirkwood",
+       "wiki": "Kyle_Kirkwood",
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "68",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Danial Frost",
+       "wiki": "Danial_Frost",
+       "rounds": "All",
+       "nat": "SGP"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Andretti Steinbrenner Autosport",
+   "team_wiki": "Andretti_Autosport",
+   "owner": null,
+   "manufacturer": null,
+   "chassis": null,
+   "cars": [
+    {
+     "number": "17",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Devlin DeFrancesco",
+       "wiki": "Devlin_DeFrancesco",
+       "rounds": "All",
+       "nat": "CAN"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Carlin",
+   "team_wiki": "Carlin_Motorsport",
+   "owner": null,
+   "manufacturer": null,
+   "chassis": null,
+   "cars": [
+    {
+     "number": "5",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Alex Peroni",
+       "wiki": "Alex_Peroni",
+       "rounds": "1–14",
+       "nat": "AUS"
+      }
+     ]
+    },
+    {
+     "number": "7",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Christian Bogle",
+       "wiki": "Christian_Bogle",
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Global Racing Group with HMD Motorsports",
+   "team_wiki": "HMD_Motorsports",
+   "owner": null,
+   "manufacturer": null,
+   "chassis": null,
+   "cars": [
+    {
+     "number": "24",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Benjamin Pedersen",
+       "wiki": "Benjamin_Pedersen",
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "26",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Linus Lundqvist",
+       "wiki": "Linus_Lundqvist",
+       "rounds": "All",
+       "nat": "SWE"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "HMD Motorsports",
+   "team_wiki": "HMD_Motorsports",
+   "owner": null,
+   "manufacturer": null,
+   "chassis": null,
+   "cars": [
+    {
+     "number": "59",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Nikita Lastochkin",
+       "wiki": "Nikita_Lastochkin",
+       "rounds": "1–12",
+       "nat": "RUS"
+      },
+      {
+       "name": "Manuel Sulaimán",
+       "wiki": "Manuel_Sulaimán",
+       "rounds": "15–20",
+       "nat": "MEX"
+      }
+     ]
+    },
+    {
+     "number": "79",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "David Malukas",
+       "wiki": "David_Malukas",
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Juncos Racing Juncos Hollinger Racing",
+   "team_wiki": "Juncos_Hollinger_Racing",
+   "owner": null,
+   "manufacturer": null,
+   "chassis": null,
+   "cars": [
+    {
+     "number": "2",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Sting Ray Robb",
+       "wiki": "Sting_Ray_Robb",
+       "rounds": "All",
+       "nat": "USA"
+      }
+     ]
+    },
+    {
+     "number": "51",
+     "full_time": true,
+     "drivers": [
+      {
+       "name": "Toby Sowery",
+       "wiki": "Toby_Sowery",
+       "rounds": "1–14",
+       "nat": "GBR"
+      },
+      {
+       "name": "Rasmus Lindh",
+       "wiki": "Rasmus_Lindh",
+       "rounds": "15–20",
+       "nat": "SWE"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": "Pserra Racing/AS Promotions",
+   "team_wiki": null,
+   "owner": null,
+   "manufacturer": null,
+   "chassis": null,
+   "cars": [
+    {
+     "number": "11",
+     "full_time": false,
+     "drivers": [
+      {
+       "name": "Antonio Serravalle",
+       "wiki": "Antonio_Serravalle",
+       "rounds": "1–14, 19–20",
+       "nat": "CAN"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "standings": [
+  {
+   "pos": 1,
+   "name": "Kyle Kirkwood",
+   "wiki": "Kyle_Kirkwood",
+   "points": 537,
+   "wins": 10,
+   "podiums": 14,
+   "top5": 18,
+   "starts": 20,
+   "nat": "USA",
+   "results": [
+    9,
+    5,
+    1,
+    2,
+    4,
+    4,
+    1,
+    1,
+    1,
+    12,
+    1,
+    1,
+    2,
+    2,
+    2,
+    1,
+    1,
+    1,
+    1,
+    5
+   ]
+  },
+  {
+   "pos": 2,
+   "name": "David Malukas",
+   "wiki": "David_Malukas",
+   "points": 524,
+   "wins": 7,
+   "podiums": 16,
+   "top5": 18,
+   "starts": 20,
+   "nat": "USA",
+   "results": [
+    13,
+    1,
+    3,
+    1,
+    2,
+    1,
+    5,
+    3,
+    7,
+    1,
+    3,
+    3,
+    1,
+    1,
+    1,
+    2,
+    4,
+    2,
+    2,
+    2
+   ]
+  },
+  {
+   "pos": 3,
+   "name": "Linus Lundqvist",
+   "wiki": "Linus_Lundqvist",
+   "points": 449,
+   "wins": 3,
+   "podiums": 11,
+   "top5": 17,
+   "starts": 20,
+   "nat": "SWE",
+   "results": [
+    1,
+    2,
+    9,
+    3,
+    1,
+    5,
+    2,
+    2,
+    4,
+    5,
+    4,
+    4,
+    9,
+    4,
+    3,
+    3,
+    2,
+    3,
+    6,
+    1
+   ]
+  },
+  {
+   "pos": 4,
+   "name": "Benjamin Pedersen",
+   "wiki": "Benjamin_Pedersen",
+   "points": 356,
+   "wins": 0,
+   "podiums": 6,
+   "top5": 9,
+   "starts": 20,
+   "nat": "USA",
+   "results": [
+    2,
+    7,
+    10,
+    6,
+    10,
+    9,
+    11,
+    6,
+    2,
+    7,
+    7,
+    8,
+    3,
+    3,
+    4,
+    4,
+    3,
+    5,
+    9,
+    3
+   ]
+  },
+  {
+   "pos": 5,
+   "name": "Danial Frost",
+   "wiki": "Danial_Frost",
+   "points": 338,
+   "wins": 0,
+   "podiums": 4,
+   "top5": 7,
+   "starts": 20,
+   "nat": "SGP",
+   "results": [
+    7,
+    12,
+    2,
+    4,
+    6,
+    8,
+    6,
+    12,
+    11,
+    3,
+    2,
+    2,
+    6,
+    10,
+    8,
+    6,
+    8,
+    4,
+    4,
+    6
+   ]
+  },
+  {
+   "pos": 6,
+   "name": "Devlin DeFrancesco",
+   "wiki": "Devlin_DeFrancesco",
+   "points": 326,
+   "wins": 0,
+   "podiums": 2,
+   "top5": 9,
+   "starts": 20,
+   "nat": "CAN",
+   "results": [
+    3,
+    3,
+    12,
+    5,
+    7,
+    6,
+    7,
+    5,
+    10,
+    6,
+    5,
+    5,
+    4,
+    5,
+    11,
+    7,
+    9,
+    8,
+    8,
+    4
+   ]
+  },
+  {
+   "pos": 7,
+   "name": "Robert Megennis",
+   "wiki": "Robert_Megennis",
+   "points": 319,
+   "wins": 0,
+   "podiums": 3,
+   "top5": 6,
+   "starts": 20,
+   "nat": "USA",
+   "results": [
+    6,
+    13,
+    4,
+    7,
+    8,
+    7,
+    8,
+    8,
+    3,
+    2,
+    8,
+    7,
+    7,
+    7,
+    5,
+    5,
+    10,
+    6,
+    3,
+    9
+   ]
+  },
+  {
+   "pos": 8,
+   "name": "Sting Ray Robb",
+   "wiki": "Sting_Ray_Robb",
+   "points": 249,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 1,
+   "starts": 20,
+   "nat": "USA",
+   "results": [
+    8,
+    8,
+    6,
+    13,
+    9,
+    10,
+    10,
+    10,
+    8,
+    9,
+    11,
+    10,
+    12,
+    11,
+    9,
+    11,
+    6,
+    9,
+    5,
+    7
+   ]
+  },
+  {
+   "pos": 9,
+   "name": "Toby Sowery",
+   "wiki": "Toby_Sowery",
+   "points": 236,
+   "wins": 0,
+   "podiums": 3,
+   "top5": 7,
+   "starts": 14,
+   "nat": "GBR",
+   "results": [
+    4,
+    4,
+    13,
+    9,
+    3,
+    2,
+    3,
+    4,
+    5,
+    13,
+    6,
+    6,
+    11,
+    8,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 10,
+   "name": "Alex Peroni",
+   "wiki": "Alex_Peroni",
+   "points": 228,
+   "wins": 0,
+   "podiums": 1,
+   "top5": 7,
+   "starts": 14,
+   "nat": "AUS",
+   "results": [
+    5,
+    6,
+    5,
+    8,
+    5,
+    3,
+    4,
+    13,
+    13,
+    4,
+    9,
+    9,
+    5,
+    6,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 11,
+   "name": "Christian Bogle",
+   "wiki": "Christian_Bogle",
+   "points": 227,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 20,
+   "nat": "USA",
+   "results": [
+    10,
+    10,
+    11,
+    12,
+    12,
+    12,
+    13,
+    7,
+    9,
+    8,
+    10,
+    13,
+    8,
+    9,
+    10,
+    8,
+    11,
+    11,
+    12,
+    10
+   ]
+  },
+  {
+   "pos": 12,
+   "name": "Antonio Serravalle",
+   "wiki": "Antonio_Serravalle",
+   "points": 175,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 16,
+   "nat": "CAN",
+   "results": [
+    12,
+    11,
+    7,
+    10,
+    11,
+    11,
+    12,
+    11,
+    6,
+    10,
+    13,
+    12,
+    10,
+    12,
+    null,
+    null,
+    null,
+    null,
+    11,
+    12
+   ]
+  },
+  {
+   "pos": 13,
+   "name": "Nikita Lastochkin",
+   "wiki": "Nikita_Lastochkin",
+   "points": 123,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 12,
+   "nat": "RUS",
+   "results": [
+    11,
+    9,
+    8,
+    11,
+    13,
+    13,
+    9,
+    9,
+    12,
+    11,
+    12,
+    11,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "pos": 14,
+   "name": "Rasmus Lindh",
+   "wiki": "Rasmus_Lindh",
+   "points": 81,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 1,
+   "starts": 6,
+   "nat": "SWE",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    7,
+    9,
+    5,
+    7,
+    10,
+    8
+   ]
+  },
+  {
+   "pos": 15,
+   "name": "Manuel Sulaimán",
+   "wiki": "Manuel_Sulaimán",
+   "points": 75,
+   "wins": 0,
+   "podiums": 0,
+   "top5": 0,
+   "starts": 6,
+   "nat": "MEX",
+   "results": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    6,
+    10,
+    7,
+    10,
+    7,
+    11
+   ]
+  }
+ ],
+ "schedule": [
+  {
+   "round": 1,
+   "date": "2021-04-17",
+   "race": "Indy Lights Grand Prix of Barber Motorsports Park Presented by Cooper Tires",
+   "track": "Barber Motorsports Park",
+   "city": "Birmingham",
+   "state": "AL",
+   "country": "USA",
+   "winner": "Linus Lundqvist",
+   "winner_wiki": "Linus_Lundqvist",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 2,
+   "date": "2021-04-17",
+   "race": "Indy Lights Grand Prix of Barber Motorsports Park Presented by Cooper Tires",
+   "track": "Barber Motorsports Park",
+   "city": "Birmingham",
+   "state": "AL",
+   "country": "USA",
+   "winner": "David Malukas",
+   "winner_wiki": "David_Malukas",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 3,
+   "date": "2021-04-24",
+   "race": "Indy Lights Grand Prix of St. Petersburg Presented by Foundation Building Materials",
+   "track": "Streets of St. Petersburg",
+   "city": "St. Petersburg",
+   "state": "FL",
+   "country": "USA",
+   "winner": "Kyle Kirkwood",
+   "winner_wiki": "Kyle_Kirkwood",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 4,
+   "date": "2021-04-24",
+   "race": "Indy Lights Grand Prix of St. Petersburg Presented by Andersen Interior Contracting",
+   "track": "Streets of St. Petersburg",
+   "city": "St. Petersburg",
+   "state": "FL",
+   "country": "USA",
+   "winner": "David Malukas",
+   "winner_wiki": "David_Malukas",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 5,
+   "date": "2021-05-14",
+   "race": "Indy Lights Grand Prix of Indianapolis Presented by Cooper Tires",
+   "track": "Indianapolis Motor Speedway",
+   "city": "Speedway",
+   "state": "IN",
+   "country": "USA",
+   "winner": "Linus Lundqvist",
+   "winner_wiki": "Linus_Lundqvist",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 6,
+   "date": "2021-05-14",
+   "race": "Indy Lights Grand Prix of Indianapolis Presented by Cooper Tires",
+   "track": "Indianapolis Motor Speedway",
+   "city": "Speedway",
+   "state": "IN",
+   "country": "USA",
+   "winner": "David Malukas",
+   "winner_wiki": "David_Malukas",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 7,
+   "date": "2021-06-12",
+   "race": "Indy Lights Grand Prix of Detroit Presented by Cooper Tires",
+   "track": "The Raceway at Belle Isle Park",
+   "city": "Detroit",
+   "state": "MI",
+   "country": "USA",
+   "winner": "Kyle Kirkwood",
+   "winner_wiki": "Kyle_Kirkwood",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 8,
+   "date": "2021-06-12",
+   "race": "Indy Lights Grand Prix of Detroit Presented by Cooper Tires",
+   "track": "The Raceway at Belle Isle Park",
+   "city": "Detroit",
+   "state": "MI",
+   "country": "USA",
+   "winner": "Kyle Kirkwood",
+   "winner_wiki": "Kyle_Kirkwood",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 9,
+   "date": "2021-06-19",
+   "race": "Cooper Tires Grand Prix of Road America Powered by AER",
+   "track": "Road America",
+   "city": "Elkhart Lake",
+   "state": "WI",
+   "country": "USA",
+   "winner": "Kyle Kirkwood",
+   "winner_wiki": "Kyle_Kirkwood",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 10,
+   "date": "2021-06-19",
+   "race": "Cooper Tires Grand Prix of Road America Powered by AER",
+   "track": "Road America",
+   "city": "Elkhart Lake",
+   "state": "WI",
+   "country": "USA",
+   "winner": "David Malukas",
+   "winner_wiki": "David_Malukas",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 11,
+   "date": "2021-07-03",
+   "race": "Cooper Tires Indy Lights Grand Prix of Mid-Ohio",
+   "track": "Mid-Ohio Sports Car Course",
+   "city": "Lexington",
+   "state": "OH",
+   "country": "USA",
+   "winner": "Kyle Kirkwood",
+   "winner_wiki": "Kyle_Kirkwood",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 12,
+   "date": "2021-07-03",
+   "race": "Cooper Tires Indy Lights Grand Prix of Mid-Ohio",
+   "track": "Mid-Ohio Sports Car Course",
+   "city": "Lexington",
+   "state": "OH",
+   "country": "USA",
+   "winner": "Kyle Kirkwood",
+   "winner_wiki": "Kyle_Kirkwood",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 13,
+   "date": "2021-08-20",
+   "race": "Cooper Tires Indy Lights Oval Challenge of St. Louis",
+   "track": "Gateway Motorsports Park",
+   "city": "Madison",
+   "state": "IL",
+   "country": "USA",
+   "winner": "David Malukas",
+   "winner_wiki": "David_Malukas",
+   "track_type": "oval",
+   "cancelled": false
+  },
+  {
+   "round": 14,
+   "date": "2021-08-20",
+   "race": "Cooper Tires Indy Lights Oval Challenge of St. Louis",
+   "track": "Gateway Motorsports Park",
+   "city": "Madison",
+   "state": "IL",
+   "country": "USA",
+   "winner": "David Malukas",
+   "winner_wiki": "David_Malukas",
+   "track_type": "oval",
+   "cancelled": false
+  },
+  {
+   "round": 15,
+   "date": "2021-09-11",
+   "race": "Cooper Tires Indy Lights Grand Prix of Portland",
+   "track": "Portland International Raceway",
+   "city": "Portland",
+   "state": "OR",
+   "country": "USA",
+   "winner": "David Malukas",
+   "winner_wiki": "David_Malukas",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 16,
+   "date": "2021-09-11",
+   "race": "Cooper Tires Indy Lights Grand Prix of Portland",
+   "track": "Portland International Raceway",
+   "city": "Portland",
+   "state": "OR",
+   "country": "USA",
+   "winner": "Kyle Kirkwood",
+   "winner_wiki": "Kyle_Kirkwood",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 17,
+   "date": "2021-09-18",
+   "race": "Indy Lights Grand Prix of Monterey Presented by Cooper Tires",
+   "track": "WeatherTech Raceway Laguna Seca",
+   "city": "Monterey",
+   "state": "CA",
+   "country": "USA",
+   "winner": "Kyle Kirkwood",
+   "winner_wiki": "Kyle_Kirkwood",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 18,
+   "date": "2021-09-18",
+   "race": "Indy Lights Grand Prix of Monterey Presented by Cooper Tires",
+   "track": "WeatherTech Raceway Laguna Seca",
+   "city": "Monterey",
+   "state": "CA",
+   "country": "USA",
+   "winner": "Kyle Kirkwood",
+   "winner_wiki": "Kyle_Kirkwood",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 19,
+   "date": "2021-10-01",
+   "race": "VP Racing Fuels Champhionship Weekend Presented By Cooper Tires",
+   "track": "Mid-Ohio Sports Car Course",
+   "city": "Lexington",
+   "state": "OH",
+   "country": "USA",
+   "winner": "Kyle Kirkwood",
+   "winner_wiki": "Kyle_Kirkwood",
+   "track_type": "road",
+   "cancelled": false
+  },
+  {
+   "round": 20,
+   "date": "2021-10-01",
+   "race": "VP Racing Fuels Champhionship Weekend Presented By Cooper Tires",
+   "track": "Mid-Ohio Sports Car Course",
+   "city": "Lexington",
+   "state": "OH",
+   "country": "USA",
+   "winner": "Linus Lundqvist",
+   "winner_wiki": "Linus_Lundqvist",
+   "track_type": "road",
+   "cancelled": false
+  }
+ ],
+ "sources": [
+  "https://en.wikipedia.org/wiki/2021_Indy_Lights",
+  "https://www.wikidata.org (driver bios)"
+ ]
+}
