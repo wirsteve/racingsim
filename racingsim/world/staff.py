@@ -127,8 +127,10 @@ def staff_team(world: "World", team: "Team", rng: Optional[random.Random] = None
 def seed_staff(world: "World") -> None:
     """World generation: staff every team-run team and build a free-agent pool."""
     rng = random.Random(world.config.seed * 31 + 7)
+    world.cache["staff_seeding"] = True      # lookups below must not try to seed again
     for team in sorted(world.teams.values(), key=lambda t: t.id):
         staff_team(world, team, rng)
+    world.cache.pop("staff_seeding", None)
     for role in ROLES:
         n = max(3, len(world.teams) // 6)
         for _ in range(n):
@@ -159,7 +161,14 @@ def salary_for(world: "World", s: Staff, team: "Team") -> float:
 
 
 # ------------------------------------------------------------------------------ lookup
+def ensure_seeded(world: "World") -> None:
+    """Saves from before staff existed: hire everyone (and build the free-agent pool) on first use."""
+    if not world.staff and world.teams and not world.cache.get("staff_seeding"):
+        seed_staff(world)
+
+
 def rebuild_index(world: "World") -> dict:
+    ensure_seeded(world)
     idx: dict[int, list[Staff]] = {}
     for s in world.staff.values():
         if s.team_id is not None and not s.retired:
@@ -189,7 +198,8 @@ def driver_preference(d: "Driver") -> str:
 
 # ------------------------------------------------------------------------------ effects
 def crew_effects(world: "World", team_id: Optional[int], car: int, driver: Optional["Driver"]) -> Optional[dict]:
-    """What this car's people are worth on race day (None = no staff: neutral)."""
+    """What this car's people are worth on race day (None for cars without a team; missing roles count as
+    average)."""
     if team_id is None:
         return None
     return effects(lambda role: member(world, team_id, role, car), driver)
@@ -278,7 +288,7 @@ def offseason(world: "World", summary=None) -> list[str]:
     rng = world.rng
     news = []
     year = world.year
-    world.player_crew = {}   # freelance hires were for one season
+    ensure_seeded(world)
     team_pct = _team_results(world)
     for s in sorted(world.staff.values(), key=lambda x: x.id):
         if s.retired:
@@ -327,7 +337,8 @@ def _team_results(world: "World") -> dict[int, float]:
 
 
 def _hire_round(world: "World", rng: random.Random, news: list[str]) -> None:
-    """Open positions are filled top-down: the best teams hire (and poach) first."""
+    """Open positions are filled top-down: the best teams hire first, from the free agents when someone
+    suitable is available, otherwise a newcomer. Old unemployed staff drift out of the sport."""
     pool: dict[str, list[Staff]] = {}
     for s in world.staff.values():
         if not s.retired and s.team_id is None:
@@ -345,7 +356,7 @@ def _hire_round(world: "World", rng: random.Random, news: list[str]) -> None:
                 if (role, car) in have:
                     continue
                 cands = [s for s in pool.get(role, []) if s.overall() <= q + 12]
-                pick = cands[0] if cands and rng.random() < 0.85 else None
+                pick = cands[0] if cands else None
                 if pick is None:
                     pick = new_staff(world, role, q + rng.gauss(-3, 5), rng, age=int(clamp(rng.gauss(36, 7), 24, 60)))
                 else:
@@ -353,6 +364,12 @@ def _hire_round(world: "World", rng: random.Random, news: list[str]) -> None:
                 hire(world, pick, team, car, years=rng.randint(1, 3))
                 if role == "crew_chief" and world.series(team.series_id).tier >= 5:
                     news.append(f"{team.name} hire {pick.name} as crew chief")
+    # Nobody waits forever: the free-agent pool stays about the size it started at.
+    cap = max(3, len(world.teams) // 6)
+    for role, left in pool.items():
+        for i, s in enumerate(sorted(left, key=lambda x: -x.overall())):
+            if i >= cap or (s.age(world.year) >= 55 and rng.random() < 0.3):
+                s.retired = True
 
 
 def from_retired_driver(world: "World", d: "Driver") -> Optional[Staff]:

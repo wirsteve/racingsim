@@ -335,6 +335,7 @@ class SeasonRunner:
         track = world.tracks.get(track_id)
         drivers = self.by_series[sid]
         entries: list[Entry] = []
+        suspended: list[Driver] = []     # serve the race only if it actually runs
         if tpl.team_based:
             for team in world.teams_in(sid):
                 for car in range(team.cars):
@@ -346,7 +347,9 @@ class SeasonRunner:
                         if d is None or d.status == RETIRED:
                             continue
                         car_eq = res.equipment.get(d.id, car_eq)
-                        if (d.injury_races > 0 or _sits_out(d) or not tpl.age_allows_track(d.age(world.year), track)
+                        if d.suspension > 0:
+                            suspended.append(d)
+                        if (d.injury_races > 0 or d.suspension > 0 or not tpl.age_allows_track(d.age(world.year), track)
                                 or rng.random() > self.attendance.get(d.id, 1.0)):
                             sub = _pick_substitute(world, self.sub_pool, s, track, team, self.busy)
                             if sub is not None:
@@ -359,16 +362,15 @@ class SeasonRunner:
                         # The car is the team's, whoever drives it - and so are the people around it.
                         crew = self.crew(team.id, car, car_drivers[0])
                         eq = car_eq + (crew["development"] * 2.0 * self.week / SEASON_WEEKS if crew else 0.0)
-                        mech = None
-                        if crew:
-                            mech = 0.03 * crew["mech"]
                         entries.append(Entry(car_drivers, eq, team_id=team.id, car_key=f"{team.id}:{car}",
-                                             mech=mech, crew=crew))
+                                             crew=crew))
         else:
             cls = garage.class_of(s)
             pool = []
             for d in drivers:
-                if d.injury_races > 0 or _sits_out(d):
+                if d.suspension > 0:
+                    suspended.append(d)
+                if d.injury_races > 0 or d.suspension > 0:
                     continue
                 if d.is_player:
                     if cls is not None and d.car is not None and not garage.can_race(
@@ -390,6 +392,8 @@ class SeasonRunner:
                                      crew=staff_mod.player_effects(world, d) if d.is_player else None))
         if len(entries) < 3:
             return None
+        for d in suspended:
+            _serve_suspension(world, d, track, sid, self.week)
         if not tpl.team_based:
             cls = garage.class_of(s)
             for e in entries:
@@ -425,12 +429,13 @@ class SeasonRunner:
             finishes = run_race(entries, track, tpl.discipline, tpl.tier, tpl.car_weight, rng)
             pts = score_race(system, [(f.entry.drivers[0].id, f.pace) for f in finishes], rng)
         _tally(world, res, self.acc, finishes, s, pts, purse, heat_pts, dnq, system, track)
-        self._personal(finishes, rr, tpl.tier, s.name, track.name)
+        self._personal(finishes, rr, tpl.tier, s.name, track.name, s.id)
         self._after_race(s, track, finishes, dnq, purse)
         self._playoff_step(s, event_idx, finishes)
         return self._log(s, track, finishes, event_idx, race=rr)
 
-    def _personal(self, finishes: list[Finish], rr, tier: int, series_name: str, track_name: str) -> None:
+    def _personal(self, finishes: list[Finish], rr, tier: int, series_name: str, track_name: str,
+                  series_id: str) -> None:
         """Morale after the race; grudges from wrecks; the sanctioning body's answer to paybacks."""
         n = len(finishes)
         for f in finishes:
@@ -440,7 +445,7 @@ class SeasonRunner:
             return
         morale_mod.incidents(self.world, rr.incidents)
         for att, tgt in rr.paybacks:
-            morale_mod.payback(self.world, att, tgt, tier, series_name, track_name, self.week, self.acc)
+            morale_mod.payback(self.world, att, tgt, tier, series_name, track_name, self.week, self.acc, series_id)
 
     def crew(self, team_id: int, car: int, driver: Driver) -> Optional[dict]:
         """Race-day effects of this car's crew chief, spotter, pit crew, engine shop and doctor (cached per
@@ -633,12 +638,12 @@ def _tally(world: "World", res: SeasonResults, acc: dict[int, _Acc], finishes: l
         a.purse += purses.dnq()
 
 
-def _sits_out(d: Driver) -> bool:
-    """A suspended driver misses this race (and serves one race of the suspension)."""
-    if d.suspension > 0:
-        d.suspension -= 1
-        return True
-    return False
+def _serve_suspension(world: "World", d: Driver, track, series_id: str, week: int) -> None:
+    """A suspended driver sat out a race that ran: one race of the suspension is served."""
+    d.suspension = max(0, d.suspension - 1)
+    if d.is_player:
+        world.post("player", f"You sat out {track.name}: suspended by the series", driver_id=d.id,
+                   series_id=series_id, week=week, importance=2)
 
 
 def _substitute_pool(world: "World") -> list[Driver]:

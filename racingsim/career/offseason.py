@@ -30,6 +30,7 @@ NEWSWORTHY = ("won the", "development program", "Shootout", "Combine", "first pr
 def begin_offseason(world: "World", results: "SeasonResults", summary: "YearSummary") -> None:
     world.market.event_marks = {d.id: len(d.events) for d in world.drivers.values()}
     staff.record_season(world, results)
+    world.player_crew = {}   # freelance crew was hired for the season just run; hires from now are for next year
     morale.season_update(world, results)   # before contracts: unhappy drivers are harder to keep
     _season_news(world, results)
     _pay_from_savings(world)

@@ -47,22 +47,28 @@ def test_wrecks_build_grudges_and_paybacks_happen(world):
 
 
 def test_payback_penalties(world):
-    from racingsim.sim.season import _Acc, _sits_out
+    from racingsim.sim.season import _Acc, _serve_suspension
     a, t = _active(world, 2)
     a.rivals = {t.id: 90.0}
     a.savings, a.suspension = 1_000_000.0, 0
     acc = {a.id: _Acc(series_id="x", points=100.0)}
+    other = {a.id: _Acc(series_id="y", points=100.0)}
+    M.payback(world, a.id, t.id, 7, "Cup", "Martinsville", 5, other, "x")
+    assert other[a.id].points == 100.0              # a substitute's own championship is untouched
+    a.suspension = 0
     world.rng.seed(1)
     news = []
     for _ in range(10):            # suspensions are a judgement call: likely over ten tries at heat 90
         a.rivals[t.id] = 90.0
-        news += M.payback(world, a.id, t.id, 7, "Cup", "Martinsville", 5, acc)
+        news += M.payback(world, a.id, t.id, 7, "Cup", "Martinsville", 5, acc, "x")
     assert acc[a.id].points == 100.0 - 10 * M.PAYBACK_POINTS[7]
     assert a.savings < 1_000_000.0
     assert t.rivals.get(a.id, 0) > 0                 # the target remembers
     assert a.rivals[t.id] < 90                       # settled, for now
     assert a.suspension == 1 and any("suspended" in n for n in news)
-    assert _sits_out(a) and a.suspension == 0 and not _sits_out(a)
+    tr = world.tracks.get("martinsville-speedway-va")
+    _serve_suspension(world, a, tr, "x", 6)
+    assert a.suspension == 0
 
 
 def test_team_chemistry(world):
@@ -105,7 +111,7 @@ def test_offseason_morale_and_rivals_cool(world):
     d.morale, d.suspension = 95, 1
     M.season_update(world, SeasonResults())
     assert d.rivals == {other.id: 35.0}               # cooled; unknown drivers dropped
-    assert d.morale < 95 and d.suspension == 0
+    assert d.morale < 95 and d.suspension == 1      # a late-season suspension carries into next year
 
 
 def test_seasons_run_with_personality(world):
