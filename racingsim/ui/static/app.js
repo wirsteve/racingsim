@@ -807,6 +807,7 @@ const ROUTES = [
   [/^#\/tracks$/, () => tracksPage(), true],
   [/^#\/track\/(.+)$/, (m) => trackPage(decodeURIComponent(m[1])), true],
   [/^#\/news$/, () => newsPage(), true],
+  [/^#\/encyclopedia(?:\/([a-z]+))?(?:\/(.+))?$/, (m) => encyclopediaPage(m[1] || "overview", m[2] && decodeURIComponent(m[2])), false],
   [/^#\/saves$/, () => savesPage(), false],
   [/^#\/new$/, () => newPage(), false],
 ];
@@ -841,3 +842,114 @@ async function route() {
 })();
 window.addEventListener("hashchange", route);
 refreshStatus().then(route).catch((e) => view(`<div class="card"><h2>Can't reach the game server</h2><p class="muted">${esc(e.message)}</p></div>`));
+
+// ---------------------------------------------------------------- encyclopedia (knowledge layer)
+const CONF = (c) => c ? `<span class="badge ${c === "high" ? "good" : c === "medium" ? "warn" : ""}" title="confidence">${esc(c)}</span>` : `<span class="muted small">unrated</span>`;
+function factText(f) {
+  if (!f) return "—";
+  if (f.category) return esc(f.category);
+  const unit = f.unit ? ` <span class="muted small">${esc(f.unit)}</span>` : "";
+  const n = (x) => (typeof x === "number" ? (Math.abs(x) >= 1000 ? Math.round(x).toLocaleString() : String(+x.toFixed(2))) : esc(x));
+  if (f.min != null && f.max != null && f.min !== f.max) return `${n(f.min)}–${n(f.max)}${unit}`;
+  const v = f.value ?? f.min ?? f.max;
+  return v == null ? "—" : `${typeof v === "object" ? esc(JSON.stringify(v)) : n(v)}${unit}`;
+}
+const KTABS = [["overview", "Overview"], ["series", "Series"], ["paths", "Career paths"], ["bodies", "Sanctioning bodies"], ["classes", "Car classes"], ["factors", "What drives careers"], ["sources", "Sources"]];
+async function encyclopediaPage(tab = "overview", arg) {
+  const tabs = `<div class="tabs">${KTABS.map(([k, l]) => `<button class="${k === tab ? "on" : ""}" data-act="ktab" data-tab="${k}">${l}</button>`).join("")}</div>`;
+  const head = `<h1>Racing Encyclopedia</h1><p class="muted">The real-world racing ladder the game is built on: researched series, career paths, money and sources. Every number carries a confidence level and its sources.</p>${tabs}`;
+  if (tab === "overview") {
+    const k = await api("knowledge");
+    const c = k.counts;
+    const kv = (l, v) => `<div class="kpi"><div class="v">${(v ?? 0).toLocaleString()}</div><div class="l">${l}</div></div>`;
+    view(`${head}<div class="card"><div class="kpis" style="flex-wrap:wrap">${kv("series profiles", c.series_profiles)}${kv("career paths", c.career_paths)}${kv("tracks", c.tracks)}${kv("historical drivers", c.historical_drivers)}${kv("historical seasons", c.history_seasons)}${kv("races", c.history_races)}${kv("sources", c.sources)}${kv("ranged facts", c.ranged_facts)}</div></div>
+      <div class="grid g2" style="margin-top:16px"><div class="card flush"><h3>Confidence by category</h3>${table("kconf", [{ key: "cat", label: "Category" }, { key: "high", label: "High", num: true }, { key: "medium", label: "Medium", num: true }, { key: "low", label: "Low", num: true }, { key: "unrated", label: "Unrated", num: true }],
+        Object.entries(k.confidence).map(([cat, v]) => ({ cat, high: v.high || 0, medium: v.medium || 0, low: v.low || 0, unrated: v.unrated || 0 })))}</div>
+      <div class="card"><h3>Known gaps</h3>${k.gaps.length ? `<ul class="timeline">${k.gaps.map((g) => `<li>${esc(g)}</li>`).join("")}</ul>` : '<p class="muted">None recorded.</p>'}</div></div>`);
+    return;
+  }
+  if (tab === "series" && arg) return knowledgeSeriesPage(arg, head);
+  if (tab === "series") {
+    const rows = await api("knowledge/series");
+    view(`${head}<div class="toolbar"><input id="ks-q" placeholder="Filter series…" data-change="ksq"></div><div class="card flush">${table("ks", [
+      { key: "name", label: "Series", render: (r) => `<a class="link" href="#/encyclopedia/series/${encodeURIComponent(r.id)}">${esc(r.name)}</a>` },
+      { key: "tier", label: "Tier", num: true, render: (r) => (r.tier != null ? tierBadge(r.tier, "") : "—") },
+      { key: "discipline", label: "Discipline", render: (r) => esc((r.discipline || "").replace(/_/g, " ")) },
+      { key: "level", label: "Level" },
+      { key: "regions", label: "Region", render: (r) => esc((r.regions || []).slice(0, 6).join(", ")) },
+      { key: "cost", label: "Season cost", sort: (r) => r.annual_cost_usd?.min, render: (r) => factText(r.annual_cost_usd) },
+      { key: "age", label: "Typical age", sort: (r) => r.typical_age?.min, render: (r) => factText(r.typical_age) },
+      { key: "confidence", label: "Confidence", render: (r) => CONF(r.confidence) },
+    ], rows, { tall: true })}</div>`);
+    on("ksq", (el) => { const q = el.value.toLowerCase(); S.tables.ks.rows = rows.filter((r) => (r.name + " " + r.discipline + " " + (r.regions || []).join(" ")).toLowerCase().includes(q)); $("#tbl-ks").innerHTML = renderTable("ks"); });
+    return;
+  }
+  if (tab === "paths") {
+    const paths = await api("knowledge/paths");
+    view(`${head}${paths.length ? "" : '<div class="card empty">No career paths yet.</div>'}${paths.map((p) => `<div class="card" style="margin-bottom:16px"><div class="card-head"><h3>${esc(p.name)}</h3>${CONF(p.confidence)}</div>
+      <p class="muted">${esc(p.description || "")}</p>
+      <div class="ladder">${(p.steps || []).map((s, i) => `<div class="ladder-step"><div class="t">${i + 1}. ${esc(s.stage || "")}</div>
+        <div class="small">${(s.series_names || []).map((x) => (x.id && String(x.id).startsWith("series:") ? `<a class="link" href="#/encyclopedia/series/${encodeURIComponent(x.id)}">${esc(x.name)}</a>` : esc(x.name || x))).join(" · ")}</div>
+        <div class="muted small">age ${factText(s.typical_age)} · ${factText(s.typical_years)} yrs · moves up ${s.advance_share ? factText({ ...s.advance_share, min: s.advance_share.min != null ? Math.round(s.advance_share.min * 100) : null, max: s.advance_share.max != null ? Math.round(s.advance_share.max * 100) : null, unit: "%" }) : "—"}</div>
+        ${s.gating ? `<div class="gating">${Object.entries(s.gating).map(([k, v]) => `<span title="${esc(k)}">${esc(k)} <i style="width:${Math.round((+v || 0) * 100)}%"></i></span>`).join("")}</div>` : ""}
+        ${s.notes ? `<div class="small" style="margin-top:4px">${esc(s.notes)}</div>` : ""}</div>`).join('<div class="ladder-arrow">↓</div>')}</div>
+      ${(p.crossovers || []).length ? `<h3 style="margin-top:12px">Crossovers</h3><ul class="timeline">${p.crossovers.map((c) => `<li>${esc(c.from_name || c.from || "")} → ${esc(c.to_name || c.to || "")} <span class="muted">(${esc(c.frequency || "")})</span> ${esc(c.notes || "")}</li>`).join("")}</ul>` : ""}
+      ${(p.dead_ends || []).length ? `<h3 style="margin-top:12px">Dead ends</h3><ul class="timeline">${p.dead_ends.map((d) => `<li>${esc(typeof d === "string" ? d : JSON.stringify(d))}</li>`).join("")}</ul>` : ""}
+      ${(p.examples || []).length ? `<h3 style="margin-top:12px">Real examples</h3><ul class="timeline">${p.examples.map((e) => `<li><b>${esc((e.driver || "").replace(/^driver:/, "").replace(/_/g, " "))}</b> ${esc(e.route || e.notes || "")}</li>`).join("")}</ul>` : ""}
+    </div>`).join("")}`);
+    return;
+  }
+  if (tab === "bodies" || tab === "classes") {
+    const rows = await api(tab === "bodies" ? "knowledge/bodies" : "knowledge/classes");
+    const cols = tab === "bodies"
+      ? [{ key: "name", label: "Body" }, { key: "abbrev", label: "Abbrev." }, { key: "scope", label: "Scope", render: (r) => esc(typeof r.scope === "string" ? r.scope : JSON.stringify(r.scope || "")) }, { key: "founded", label: "Founded", num: true }, { key: "website", label: "Website", render: (r) => (r.website ? `<a class="link" href="${esc(r.website)}" target="_blank" rel="noopener">${esc(r.website.replace(/^https?:\/\//, ""))}</a>` : "") }, { key: "confidence", label: "Confidence", render: (r) => CONF(r.confidence) }]
+      : [{ key: "name", label: "Class" }, { key: "discipline", label: "Discipline" }, { key: "drivetrain", label: "Layout", render: (r) => esc(typeof r.drivetrain === "string" ? r.drivetrain : r.drivetrain?.category || "") }, { key: "hp", label: "Horsepower", sort: (r) => r.horsepower?.min, render: (r) => factText(r.horsepower) }, { key: "wt", label: "Weight", sort: (r) => r.weight_lb?.min, render: (r) => factText(r.weight_lb) }, { key: "cost", label: "New car", sort: (r) => r.new_car_cost_usd?.min, render: (r) => factText(r.new_car_cost_usd) }, { key: "confidence", label: "Confidence", render: (r) => CONF(r.confidence) }];
+    view(`${head}<div class="card flush">${table("kb", cols, rows, { tall: true })}</div>`);
+    return;
+  }
+  if (tab === "factors") {
+    const [factors, stages] = await Promise.all([api("knowledge/factors"), api("knowledge/stages")]);
+    const tiers = [0, 1, 2, 3, 4, 5, 6, 7];
+    view(`${head}<div class="card flush"><h3>How much each factor drives advancement, by tier</h3>${table("kf", [
+      { key: "name", label: "Factor", render: (r) => `<b>${esc(r.name || r.id)}</b><div class="muted small">${esc(typeof r.description === "string" ? r.description : "")}</div>` },
+      ...tiers.map((t) => ({ key: "t" + t, label: "T" + t, num: true, render: (r) => { const w = (r.weight_by_level || {})[t] ?? (r.weight_by_level || {})["T" + t] ?? (r.weight_by_level || {})[String(t)]; return w ? factText(typeof w === "object" ? w : { value: w }) : "—"; } })),
+      { key: "confidence", label: "Conf.", render: (r) => CONF(r.confidence) }], factors)}</div>
+      <div class="card flush" style="margin-top:16px"><h3>Career stages</h3>${table("kst", [
+      { key: "name", label: "Stage" }, { key: "age", label: "Ages", render: (r) => factText(r.age_range) }, { key: "dur", label: "Typical years", render: (r) => factText(r.typical_duration_years) },
+      { key: "exits", label: "Exits", render: (r) => esc((r.exits || []).map((e) => `${e.outcome}: ${e.share ? factText(e.share).replace(/<[^>]+>/g, "") : "?"}`).join(" · ")) },
+      { key: "confidence", label: "Conf.", render: (r) => CONF(r.confidence) }], stages)}</div>`);
+    return;
+  }
+  if (tab === "sources") {
+    const k = await api("knowledge/sources");
+    view(`${head}<div class="card flush"><h3>Sources (${k.sources.length})</h3>${table("ksrc", [
+      { key: "name", label: "Source", render: (r) => (r.url && /^https?:/.test(r.url) ? `<a class="link" href="${esc(r.url)}" target="_blank" rel="noopener">${esc(r.name || r.id)}</a>` : esc(r.name || r.id)) },
+      { key: "kind", label: "Kind" }, { key: "reliability", label: "Reliability" }, { key: "license", label: "License" }, { key: "accessed", label: "Accessed" }, { key: "uses", label: "Ledger entries", num: true }], k.sources, { tall: true })}</div>
+      <div class="card flush" style="margin-top:16px"><h3>Sources skipped (automated access restricted)</h3>${table("kun", [{ key: "source", label: "Source" }, { key: "reason", label: "Reason" }, { key: "replacement", label: "Replaced by" }, { key: "checked", label: "Checked" }], k.unavailable)}</div>
+      <div class="card flush" style="margin-top:16px"><h3>Public datasets evaluated</h3>${table("kds", [{ key: "name", label: "Dataset", render: (r) => (r.url ? `<a class="link" href="${esc(r.url)}" target="_blank" rel="noopener">${esc(r.name)}</a>` : esc(r.name)) }, { key: "coverage", label: "Coverage" }, { key: "license", label: "License" }, { key: "usefulness", label: "Usefulness" }, { key: "decision", label: "Decision" }], k.datasets, { tall: true })}</div>`);
+  }
+}
+async function knowledgeSeriesPage(id, head) {
+  const s = await api("knowledge/series/" + encodeURIComponent(id));
+  const facts = s.facts || [];
+  const link = (x) => `<a class="link" href="#/encyclopedia/series/${encodeURIComponent(x.id)}">${esc(x.name)}</a>`;
+  const feeders = (s.links || []).filter((l) => l.kind === "feeder").concat((s.linked_from || []).filter((l) => l.kind === "next"));
+  const nexts = (s.links || []).filter((l) => l.kind === "next").concat((s.linked_from || []).filter((l) => l.kind === "feeder"));
+  const uniq = (a) => a.filter((x, i) => a.findIndex((y) => y.id === x.id) === i);
+  const text = (v) => (v == null ? "" : typeof v === "string" ? v : v.category || v.value || JSON.stringify(v));
+  view(`${head}<div class="card hero"><div><h1>${esc(s.name)}</h1><div class="sub">${s.game_tier != null ? tierBadge(s.game_tier, "") : ""} ${esc(s.level || "")} · ${esc((s.discipline || "").replace(/_/g, " "))} · ${esc((s.regions || []).join(", "))} ${CONF(s.confidence)}</div>
+    ${s.body_detail ? `<div class="small">Sanctioned by ${esc(s.body_detail.name)}</div>` : ""}</div></div>
+    <div class="grid g2" style="margin-top:16px">
+      <div class="card"><h3>Profile</h3><dl class="kv">
+        ${[["Experience", s.experience_level], ["Team structure", s.team_structure], ["Equipment", s.equipment_ownership], ["Licensing", s.licensing], ["Prerequisites", s.prerequisites], ["Dead ends", s.dead_ends], ["Notes", s.notes]].filter(([, v]) => v).map(([k, v]) => `<dt>${k}</dt><dd>${esc(text(v))}</dd>`).join("")}
+        ${s.advancement_drivers ? `<dt>Advancement driven by</dt><dd>${esc(Object.entries(s.advancement_drivers).filter(([k]) => !["confidence", "sources", "notes"].includes(k)).map(([k, v]) => `${k} ${Math.round(v * 100)}%`).join(" · "))}</dd>` : ""}
+      </dl>
+      ${feeders.length ? `<h3 style="margin-top:12px">Feeds from</h3>${uniq(feeders).map(link).join(" · ")}` : ""}
+      ${nexts.length ? `<h3 style="margin-top:12px">Next steps</h3>${uniq(nexts).map(link).join(" · ")}` : ""}
+      ${s.car_class_detail ? `<h3 style="margin-top:12px">Car</h3><p class="small">${esc(s.car_class_detail.name)} — ${esc(text(s.car_class_detail.chassis))} ${esc(text(s.car_class_detail.drivetrain))}; ${factText(s.car_class_detail.horsepower)} hp, ${factText(s.car_class_detail.weight_lb)} lb</p>` : ""}
+      ${s.seasons && s.seasons.length ? `<h3 style="margin-top:12px">Seasons in the database</h3><p class="small">${s.seasons.length} (${s.seasons[0].year}–${s.seasons[s.seasons.length - 1].year})</p>` : ""}</div>
+      <div class="card flush"><h3>Facts</h3>${table("kfacts", [{ key: "attribute", label: "Attribute", render: (r) => esc(r.attribute.replace(/_/g, " ")) }, { key: "v", label: "Value", render: (r) => factText(r) }, { key: "confidence", label: "Conf.", render: (r) => CONF(r.confidence) }, { key: "sources", label: "Sources", render: (r) => esc((r.sources || []).map((x) => x.replace(/^src:/, "")).join(", ")) }], facts)}</div>
+    </div>
+    <div class="card" style="margin-top:16px"><h3>Sources</h3>${(s.source_detail || []).map((x) => `<div class="small">${x.url && /^https?:/.test(x.url) ? `<a class="link" href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.name)}</a>` : esc(x.name)} <span class="muted">${esc(x.kind || "")} · ${esc(x.reliability || "")}</span></div>`).join("") || '<span class="muted">—</span>'}</div>`);
+}
+on("ktab", (el) => { location.hash = `#/encyclopedia/${el.dataset.tab}`; });

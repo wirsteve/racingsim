@@ -283,3 +283,10 @@ input[type=range] { padding: 0; }
 p, .field, .small { overflow-wrap: anywhere; }
 .grid > * { min-width: 0; }
 .field select, .field input { min-width: 0; width: 100%; box-sizing: border-box; }
+.ladder { display: flex; flex-direction: column; align-items: stretch; gap: 2px; }
+.ladder-step { border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; background: var(--panel); }
+.ladder-step .t { font-weight: 700; }
+.ladder-arrow { text-align: center; color: var(--muted); }
+.gating { display: flex; flex-wrap: wrap; gap: 4px 12px; margin-top: 6px; font-size: .75rem; color: var(--muted); }
+.gating span { display: inline-flex; align-items: center; gap: 4px; }
+.gating i { display: inline-block; height: 5px; max-width: 60px; background: var(--accent); border-radius: 3px; }

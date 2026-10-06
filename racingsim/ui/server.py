@@ -79,6 +79,9 @@ def handle(method: str, path: str, query: dict, body: dict):
             return {"phase": "none"}
         return api.status(STATE.game)
 
+    if head == "knowledge":
+        return _knowledge(route[1:])
+
     g = _game()
     w = g.world
     if head == "save" and method == "POST":
@@ -156,6 +159,27 @@ def handle(method: str, path: str, query: dict, body: dict):
         return api.offseason(g)
     if head == "regions":
         return api.regions(w)
+    raise ApiError("not found", 404)
+
+
+def _knowledge(route: list[str]):
+    """Encyclopedia: the racing knowledge layer (series, ladders, sources). Works without a game loaded."""
+    from ..knowledge.api import Knowledge
+    k = Knowledge.default()
+    if k is None:
+        raise ApiError("knowledge database not available", 404)
+    what = route[0] if route else ""
+    if what == "":
+        return k.summary()
+    if what == "series" and len(route) > 1:
+        out = k.series_detail(route[1])
+        if out is None:
+            raise ApiError("no such series", 404)
+        return out
+    simple = {"series": k.series, "paths": k.paths, "bodies": k.bodies, "classes": k.car_classes,
+              "factors": k.factors, "stages": k.stages, "transitions": k.transitions, "sources": k.sources}
+    if what in simple:
+        return simple[what]()
     raise ApiError("not found", 404)
 
 
