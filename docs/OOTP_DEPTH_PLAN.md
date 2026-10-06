@@ -83,6 +83,10 @@ Each phase is playable on its own and goes in as its own pull request.
 
 ### Phase 4: Stats and long memory ✅
 
+Known gaps:
+- Records and Rookie of the Year follow the series id. A real-history era with its own id (e.g. the IRL years of IndyCar) keeps its own records book.
+- Drivers generated with a career already behind them have no records from before the world began. They aren't counted as rookies or first-time winners, and their Hall of Fame case counts only the seasons played in this world.
+
 - **Splits:** by track type and by season.
 - **A value metric:** Positions Above Replacement, finishes against what the car's equipment should deliver (a racing WAR).
 - **Records books:** by series and track.

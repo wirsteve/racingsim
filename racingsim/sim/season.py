@@ -838,12 +838,13 @@ def positions_above_replacement(fit: Optional[list], rows: list[tuple[int, _Acc]
     Per series and season: finishing percentile (1 = win, 0 = last) is regressed on the car's equipment
     across every start, which says what each car should do. A driver's edge is their average finish
     against that line. Replacement level is the 20th percentile of the regulars' edges - the kind of
-    driver a team can always find. PAR = (edge - replacement) x starts / 2: one PAR is two
-    last-to-first swings, about 80 positions over a season in a 40-car field. Like baseball's WAR,
-    a solid regular is worth 3-5 a season and a great season 8-10.
+    driver a team can always find. PAR = (edge - replacement) x starts, scaled to a 30-race season
+    and halved: one PAR is about two last-to-first swings (some 80 positions in a 40-car field).
+    Like baseball's WAR, a solid regular is worth 2-4 a season and a great season 6-9, whether the
+    series runs 10 races or 80.
     """
-    if not fit or fit[0] < 10:
-        return {}
+    if not fit or fit[0] < 10 or fit[0] != sum(a.starts for _, a in rows):
+        return {}      # (a mid-season save from before PAR existed: this season's data is incomplete)
     n, sx, sy, sxy, sxx = fit
     var = sxx - sx * sx / n
     b = (sxy - sx * sy / n) / var if var > 1e-6 else 0.0
@@ -857,7 +858,10 @@ def positions_above_replacement(fit: Optional[list], rows: list[tuple[int, _Acc]
     if len(regular) < 5:
         return {}
     repl = regular[len(regular) // 5]
-    return {did: round((e - repl) * a.starts / 2, 1) for did, a in rows if (e := edge.get(did)) is not None}
+    # Scaled to a 30-race season so an 80-race sprint-car tour and a 10-race sports-car season compare.
+    events = max(a.starts for _, a in rows)
+    scale = min(2.0, max(0.4, 30 / max(events, 1))) / 2
+    return {did: round((e - repl) * a.starts * scale, 1) for did, a in rows if (e := edge.get(did)) is not None}
 
 
 def _finalise_records(world: "World", res: SeasonResults, acc: dict[int, _Acc], summary,
@@ -898,7 +902,8 @@ def _finalise_records(world: "World", res: SeasonResults, acc: dict[int, _Acc], 
             st = max(a.starts, 1)  # a season of DNQs: no feature starts at all
             rec.note = f"{a.fin_pct_sum / st:.3f}|{a.exp_pct_sum / st:.3f}"
             rec.par = par.get(did)
-            rec.splits = {k: list(v) for k, v in a.splits.items()}
+            if s.tier >= 3 or d.is_player:
+                rec.splits = {k: list(v) for k, v in a.splits.items()}
             d.history.append(rec)
             d.career_starts += a.starts
             d.career_wins += a.wins

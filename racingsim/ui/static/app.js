@@ -406,7 +406,7 @@ async function driverPage(id) {
     </div>
     <div class="grid g-main" style="margin-top:16px">
       <div class="grid"><div class="card flush"><h3>Career history</h3>${table("hist", histCols, d.history.slice().reverse(), { empty: "No completed seasons yet." })}
-        <p class="muted small" style="padding:0 16px 12px">PAR: positions above replacement - how much better they finished than a replacement-level driver would in the same cars (1 PAR ≈ 80 positions over a season in a 40-car field). A solid regular is worth 3-5; a great season 8-10.</p></div>
+        <p class="muted small" style="padding:0 16px 12px">PAR: positions above replacement - how much better they finished than a replacement-level driver would in the same cars (1 PAR ≈ 80 positions in a 40-car field, scaled to a 30-race season). A solid regular is worth 2-4; a great season 6-9.</p></div>
         ${(d.splits || []).length ? `<div class="card flush"><h3>By track type <span class="muted small">(touring and national)</span></h3>${table("splits", [
           { key: "type", label: "Track type" }, { key: "starts", label: "St", num: true }, { key: "wins", label: "W", num: true },
           { key: "top5", label: "T5", num: true }, { key: "avg_finish", label: "Avg fin", num: true }, { key: "laps_led", label: "Led", num: true }], d.splits)}</div>` : ""}</div>
