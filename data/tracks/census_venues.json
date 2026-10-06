@@ -1,1 +1,955 @@
-[]
+[
+ {
+  "name": "Havasu 95 Speedway",
+  "city": "Lake Havasu City",
+  "region": "AZ",
+  "country": "USA",
+  "track_type": "oval",
+  "surface": "asphalt",
+  "length_mi": 0.402,
+  "banking_deg_turns": 10.0,
+  "opened": 1989,
+  "closed": null,
+  "active": null,
+  "disciplines": [
+   "stock_car"
+  ],
+  "level": "regional",
+  "lat": 34.446,
+  "lon": -114.249,
+  "sources": [
+   "https://en.wikipedia.org/w/index.php?title=Havasu_95_Speedway&oldid=1344685701",
+   "https://www.wikidata.org/wiki/Q5683161"
+  ],
+  "aliases": [],
+  "notable_note": "banking_deg_turns: Turns, 10 degrees; straights, 2°"
+ },
+ {
+  "name": "Motoplex Speedway",
+  "city": "Vernon",
+  "region": "BC",
+  "country": "CAN",
+  "track_type": "oval",
+  "surface": "asphalt",
+  "length_mi": 0.5,
+  "banking_deg_turns": 1.0,
+  "opened": 2000,
+  "closed": 2015,
+  "active": false,
+  "disciplines": [
+   "stock_car"
+  ],
+  "level": "regional",
+  "lat": 50.37,
+  "lon": -119.306,
+  "sources": [
+   "https://en.wikipedia.org/w/index.php?title=Motoplex_Speedway&oldid=1344839190",
+   "https://www.wikidata.org/wiki/Q1265566"
+  ],
+  "aliases": [
+   "SunValley Speedway"
+  ],
+  "notable_note": "banking_deg_turns: Turns 1/2: 11°\nTurns 3/4: 14°"
+ },
+ {
+  "name": "Orange Show Speedway",
+  "city": "San Bernardino",
+  "region": "CA",
+  "country": "USA",
+  "track_type": "oval",
+  "surface": "asphalt",
+  "length_mi": 0.25,
+  "banking_deg_turns": 10.0,
+  "opened": 1947,
+  "closed": null,
+  "active": null,
+  "disciplines": [
+   "stock_car"
+  ],
+  "level": "regional",
+  "lat": 34.08682,
+  "lon": -117.29258,
+  "sources": [
+   "https://en.wikipedia.org/w/index.php?title=Orange_Show_Speedway&oldid=1371889208",
+   "https://www.wikidata.org/wiki/Q7099719"
+  ],
+  "aliases": [],
+  "notable_note": "banking_deg_turns: 10+ degrees"
+ },
+ {
+  "name": "Shasta Speedway",
+  "city": "Anderson",
+  "region": "CA",
+  "country": "USA",
+  "track_type": "oval",
+  "surface": "asphalt",
+  "length_mi": 0.375,
+  "banking_deg_turns": null,
+  "opened": null,
+  "closed": null,
+  "active": null,
+  "disciplines": [
+   "stock_car"
+  ],
+  "level": "regional",
+  "lat": 40.455156,
+  "lon": -122.311228,
+  "sources": [
+   "https://en.wikipedia.org/w/index.php?title=Shasta_Speedway&oldid=1377492362",
+   "https://www.wikidata.org/wiki/Q129262205"
+  ],
+  "aliases": []
+ },
+ {
+  "name": "Palm Beach International Raceway",
+  "city": "Palm Beach County",
+  "region": "FL",
+  "country": "USA",
+  "track_type": "road_course",
+  "surface": "asphalt",
+  "length_mi": 2.043,
+  "banking_deg_turns": null,
+  "opened": 1965,
+  "closed": null,
+  "active": null,
+  "disciplines": [
+   "stock_car"
+  ],
+  "level": "regional",
+  "lat": 26.9221,
+  "lon": -80.3056,
+  "sources": [
+   "https://en.wikipedia.org/w/index.php?title=Palm_Beach_International_Raceway&oldid=1375915430",
+   "https://www.wikidata.org/wiki/Q3361549"
+  ],
+  "aliases": [
+   "Moroso Motorsports Park"
+  ]
+ },
+ {
+  "name": "Grundy County Speedway",
+  "city": "Morris",
+  "region": "IL",
+  "country": "USA",
+  "track_type": "oval",
+  "surface": null,
+  "length_mi": null,
+  "banking_deg_turns": null,
+  "opened": null,
+  "closed": null,
+  "active": null,
+  "disciplines": [
+   "late_model"
+  ],
+  "level": "regional",
+  "lat": 41.410721,
+  "lon": -88.416757,
+  "sources": [
+   "https://en.wikipedia.org/w/index.php?title=2007_ASA_Midwest_Tour_season&oldid=1372078285",
+   "https://en.wikipedia.org/w/index.php?title=2008_ASA_Midwest_Tour_season&oldid=1372079069",
+   "https://en.wikipedia.org/w/index.php?title=2011_ASA_Midwest_Tour_season&oldid=1372082299",
+   "https://www.openstreetmap.org/node/4354872320 (ODbL)"
+  ],
+  "aliases": []
+ },
+ {
+  "name": "Auto City Speedway",
+  "city": "Clio",
+  "region": "MI",
+  "country": "USA",
+  "track_type": "oval",
+  "surface": null,
+  "length_mi": null,
+  "banking_deg_turns": null,
+  "opened": null,
+  "closed": null,
+  "active": null,
+  "disciplines": [
+   "late_model"
+  ],
+  "level": "regional",
+  "lat": 43.155346,
+  "lon": -83.700938,
+  "sources": [
+   "https://en.wikipedia.org/w/index.php?title=Champion_Racing_Association&oldid=1366562433",
+   "https://www.openstreetmap.org/way/8662195 (ODbL)"
+  ],
+  "aliases": []
+ },
+ {
+  "name": "Norway Speedway",
+  "city": "Norway",
+  "region": "MI",
+  "country": "USA",
+  "track_type": "oval",
+  "surface": "asphalt",
+  "length_mi": 1.0,
+  "banking_deg_turns": null,
+  "opened": null,
+  "closed": null,
+  "active": null,
+  "disciplines": [
+   "late_model"
+  ],
+  "level": "regional",
+  "lat": 45.7744,
+  "lon": -87.9091,
+  "sources": [
+   "https://en.wikipedia.org/w/index.php?title=Norway_Speedway&oldid=1377499594",
+   "https://www.wikidata.org/wiki/Q7060857"
+  ],
+  "aliases": []
+ },
+ {
+  "name": "Whittemore Speedway",
+  "city": "Whittemore",
+  "region": "MI",
+  "country": "USA",
+  "track_type": "oval",
+  "surface": null,
+  "length_mi": null,
+  "banking_deg_turns": null,
+  "opened": null,
+  "closed": null,
+  "active": null,
+  "disciplines": [
+   "late_model"
+  ],
+  "level": "regional",
+  "lat": 44.228838,
+  "lon": -83.801037,
+  "sources": [
+   "https://en.wikipedia.org/w/index.php?title=Champion_Racing_Association&oldid=1366562433",
+   "https://www.openstreetmap.org/way/210275265 (ODbL)"
+  ],
+  "aliases": []
+ },
+ {
+  "name": "I-94 Speedway",
+  "city": "Sauk Centre",
+  "region": "MN",
+  "country": "USA",
+  "track_type": "oval",
+  "surface": "dirt",
+  "length_mi": null,
+  "banking_deg_turns": null,
+  "opened": null,
+  "closed": null,
+  "active": null,
+  "disciplines": [
+   "late_model"
+  ],
+  "level": "regional",
+  "lat": 46.305978,
+  "lon": -96.097351,
+  "sources": [
+   "https://en.wikipedia.org/w/index.php?title=2007_ASA_Midwest_Tour_season&oldid=1372078285",
+   "https://en.wikipedia.org/w/index.php?title=2008_ASA_Midwest_Tour_season&oldid=1372079069",
+   "https://www.openstreetmap.org/relation/10671923 (ODbL)"
+  ],
+  "aliases": []
+ },
+ {
+  "name": "Raceway Park",
+  "city": "Shakopee",
+  "region": "MN",
+  "country": "USA",
+  "track_type": "oval",
+  "surface": "asphalt",
+  "length_mi": 0.25,
+  "banking_deg_turns": null,
+  "opened": 1954,
+  "closed": 2013,
+  "active": false,
+  "disciplines": [
+   "late_model"
+  ],
+  "level": "regional",
+  "lat": 44.793889,
+  "lon": -93.435278,
+  "sources": [
+   "https://en.wikipedia.org/w/index.php?title=Raceway_Park_%28Minnesota%29&oldid=1355117822",
+   "https://www.wikidata.org/wiki/Q7279044"
+  ],
+  "aliases": []
+ },
+ {
+  "name": "Montana Raceway Park",
+  "city": "Kalispell",
+  "region": "MT",
+  "country": "USA",
+  "track_type": "oval",
+  "surface": "asphalt",
+  "length_mi": 0.25,
+  "banking_deg_turns": null,
+  "opened": 1991,
+  "closed": 2020,
+  "active": false,
+  "disciplines": [
+   "stock_car"
+  ],
+  "level": "regional",
+  "lat": 48.2925,
+  "lon": -114.338,
+  "sources": [
+   "https://en.wikipedia.org/w/index.php?title=Montana_Raceway_Park&oldid=1314946467",
+   "https://www.wikidata.org/wiki/Q6904309"
+  ],
+  "aliases": [
+   "Raceway Park",
+   "Kalispell Raceway Park",
+   "Flathead Valley Raceway Park"
+  ]
+ },
+ {
+  "name": "Coastal Plains Raceway",
+  "city": "Jacksonville",
+  "region": "NC",
+  "country": "USA",
+  "track_type": "oval",
+  "surface": null,
+  "length_mi": null,
+  "banking_deg_turns": null,
+  "opened": null,
+  "closed": null,
+  "active": null,
+  "disciplines": [
+   "modified"
+  ],
+  "level": "regional",
+  "lat": 34.809468,
+  "lon": -77.497889,
+  "sources": [
+   "https://en.wikipedia.org/w/index.php?title=SMART_Modified_Tour&oldid=1375874989",
+   "https://www.openstreetmap.org/way/588102778 (ODbL)",
+   "https://en.wikipedia.org/w/index.php?title=2025_SMART_Modified_Tour&oldid=1371184172"
+  ],
+  "aliases": []
+ },
+ {
+  "name": "East Carolina Motor Speedway",
+  "city": "Robersonville",
+  "region": "NC",
+  "country": "USA",
+  "track_type": "oval",
+  "surface": "dirt",
+  "length_mi": null,
+  "banking_deg_turns": null,
+  "opened": null,
+  "closed": null,
+  "active": null,
+  "disciplines": [
+   "modified"
+  ],
+  "level": "regional",
+  "lat": 35.172094,
+  "lon": -81.108596,
+  "sources": [
+   "https://en.wikipedia.org/w/index.php?title=2016_NASCAR_Whelen_Southern_Modified_Tour&oldid=1333785231",
+   "https://www.openstreetmap.org/way/914234652 (ODbL)"
+  ],
+  "aliases": []
+ },
+ {
+  "name": "Friendship Motor Speedway",
+  "city": "Elkin",
+  "region": "NC",
+  "country": "USA",
+  "track_type": "oval",
+  "surface": "dirt",
+  "length_mi": null,
+  "banking_deg_turns": null,
+  "opened": null,
+  "closed": null,
+  "active": null,
+  "disciplines": [
+   "modified"
+  ],
+  "level": "regional",
+  "lat": 36.267836,
+  "lon": -80.791509,
+  "sources": [
+   "https://en.wikipedia.org/w/index.php?title=SMART_Modified_Tour&oldid=1375874989",
+   "https://www.openstreetmap.org/way/352387310 (ODbL)"
+  ],
+  "aliases": []
+ },
+ {
+  "name": "Claremont Motorsports Park",
+  "city": "Claremont",
+  "region": "NH",
+  "country": "USA",
+  "track_type": "oval",
+  "surface": "asphalt",
+  "length_mi": 0.333,
+  "banking_deg_turns": null,
+  "opened": 1947,
+  "closed": null,
+  "active": null,
+  "disciplines": [
+   "modified"
+  ],
+  "level": "regional",
+  "lat": 43.391944,
+  "lon": -72.351944,
+  "sources": [
+   "https://en.wikipedia.org/w/index.php?title=Claremont_Motorsports_Park&oldid=1365686153",
+   "https://www.wikidata.org/wiki/Q136735774"
+  ],
+  "aliases": [
+   "Claremont Speedway",
+   "Twin State Speedway"
+  ]
+ },
+ {
+  "name": "Eastbound International Speedway",
+  "city": "Avondale",
+  "region": "NL",
+  "country": "CAN",
+  "track_type": "oval",
+  "surface": null,
+  "length_mi": null,
+  "banking_deg_turns": null,
+  "opened": null,
+  "closed": null,
+  "active": null,
+  "disciplines": [
+   "stock_car"
+  ],
+  "level": "regional",
+  "lat": 47.372597,
+  "lon": -53.236486,
+  "sources": [
+   "https://en.wikipedia.org/w/index.php?title=2022_NASCAR_Pinty%27s_Series&oldid=1377100102",
+   "https://en.wikipedia.org/w/index.php?title=2023_NASCAR_Pinty%27s_Series&oldid=1377097178",
+   "https://en.wikipedia.org/w/index.php?title=2024_NASCAR_Canada_Series&oldid=1377096592",
+   "https://www.openstreetmap.org/way/855664862 (ODbL)"
+  ],
+  "aliases": []
+ },
+ {
+  "name": "Sandia Speedway",
+  "city": "Albuquerque",
+  "region": "NM",
+  "country": "USA",
+  "track_type": "road_course",
+  "surface": "asphalt",
+  "length_mi": 1.7,
+  "banking_deg_turns": 0.0,
+  "opened": null,
+  "closed": null,
+  "active": null,
+  "disciplines": [
+   "stock_car"
+  ],
+  "level": "regional",
+  "lat": 35.02,
+  "lon": -106.858,
+  "sources": [
+   "https://en.wikipedia.org/w/index.php?title=Sandia_Speedway&oldid=1314951600",
+   "https://www.wikidata.org/wiki/Q7416329"
+  ],
+  "aliases": [
+   "NAPA Speedway"
+  ],
+  "notable_note": "banking_deg_turns: 0°"
+ },
+ {
+  "name": "Adirondack International Speedway",
+  "city": "New Bremen",
+  "region": "NY",
+  "country": "USA",
+  "track_type": "oval",
+  "surface": "asphalt",
+  "length_mi": 0.5,
+  "banking_deg_turns": 10.0,
+  "opened": 2001,
+  "closed": null,
+  "active": null,
+  "disciplines": [
+   "stock_car"
+  ],
+  "level": "regional",
+  "lat": 43.8536,
+  "lon": -75.4519,
+  "sources": [
+   "https://en.wikipedia.org/w/index.php?title=Adirondack_International_Speedway&oldid=1375968726",
+   "https://www.wikidata.org/wiki/Q134479390"
+  ],
+  "aliases": [
+   "Adirondack Motorsports Park"
+  ],
+  "notable_note": "banking_deg_turns: 10 to 15 degrees"
+ },
+ {
+  "name": "Holland International Speedway",
+  "city": "Holland",
+  "region": "NY",
+  "country": "USA",
+  "track_type": "oval",
+  "surface": null,
+  "length_mi": null,
+  "banking_deg_turns": null,
+  "opened": null,
+  "closed": null,
+  "active": null,
+  "disciplines": [
+   "modified"
+  ],
+  "level": "regional",
+  "lat": 42.631168,
+  "lon": -78.552453,
+  "sources": [
+   "https://en.wikipedia.org/w/index.php?title=2006_NASCAR_Whelen_Modified_Tour&oldid=1376601316",
+   "https://www.openstreetmap.org/way/34426688 (ODbL)"
+  ],
+  "aliases": []
+ },
+ {
+  "name": "Lancaster Motorplex",
+  "city": "Lancaster",
+  "region": "NY",
+  "country": "USA",
+  "track_type": "oval",
+  "surface": "asphalt",
+  "length_mi": 0.6,
+  "banking_deg_turns": 6.0,
+  "opened": 1959,
+  "closed": null,
+  "active": null,
+  "disciplines": [
+   "modified"
+  ],
+  "level": "regional",
+  "lat": 42.9506,
+  "lon": -78.6271,
+  "sources": [
+   "https://en.wikipedia.org/w/index.php?title=Lancaster_Motorplex&oldid=1359385241",
+   "https://www.wikidata.org/wiki/Q133696326"
+  ],
+  "aliases": [
+   "New York International Raceway Park",
+   "Lancaster Raceway Park",
+   "Lancaster Motorsports Park",
+   "Lancaster Speedway",
+   "Lancaster National Speedway",
+   "Elegant Builders Raceway Park",
+   "Dunn Tire Raceway Park"
+  ],
+  "notable_note": "banking_deg_turns: 6° (turns 1-2), 9° (turns 3-4)"
+ },
+ {
+  "name": "Spencer Speedway",
+  "city": "Williamson",
+  "region": "NY",
+  "country": "USA",
+  "track_type": "oval",
+  "surface": "asphalt",
+  "length_mi": 0.5,
+  "banking_deg_turns": null,
+  "opened": 1955,
+  "closed": null,
+  "active": null,
+  "disciplines": [
+   "modified"
+  ],
+  "level": "regional",
+  "lat": 43.2269,
+  "lon": -77.2369,
+  "sources": [
+   "https://en.wikipedia.org/w/index.php?title=Spencer_Speedway&oldid=1314984440",
+   "https://www.wikidata.org/wiki/Q7576182"
+  ],
+  "aliases": [
+   "Apple Valley Speedway",
+   "Williamson International Speedway"
+  ]
+ },
+ {
+  "name": "Kil-Kare Raceway",
+  "city": "Xenia Township",
+  "region": "OH",
+  "country": "USA",
+  "track_type": "oval",
+  "surface": null,
+  "length_mi": null,
+  "banking_deg_turns": null,
+  "opened": null,
+  "closed": null,
+  "active": null,
+  "disciplines": [
+   "stock_car"
+  ],
+  "level": "regional",
+  "lat": 39.7064,
+  "lon": -83.9733,
+  "sources": [
+   "https://en.wikipedia.org/w/index.php?title=Kil-Kare_Raceway&oldid=1353742402",
+   "https://www.wikidata.org/wiki/Q6406477"
+  ],
+  "aliases": [
+   "Kil-Kare Speedway"
+  ]
+ },
+ {
+  "name": "Barrie Speedway",
+  "city": "Barrie",
+  "region": "ON",
+  "country": "CAN",
+  "track_type": "oval",
+  "surface": "asphalt",
+  "length_mi": 0.333,
+  "banking_deg_turns": null,
+  "opened": 1965,
+  "closed": null,
+  "active": null,
+  "disciplines": [
+   "stock_car"
+  ],
+  "level": "regional",
+  "lat": 44.477,
+  "lon": -79.515,
+  "sources": [
+   "https://en.wikipedia.org/w/index.php?title=Barrie_Speedway&oldid=1368421672",
+   "https://www.wikidata.org/wiki/Q808913"
+  ],
+  "aliases": []
+ },
+ {
+  "name": "Exhibition Place",
+  "city": "Toronto",
+  "region": "ON",
+  "country": "CAN",
+  "track_type": "oval",
+  "surface": null,
+  "length_mi": null,
+  "banking_deg_turns": null,
+  "opened": null,
+  "closed": null,
+  "active": null,
+  "disciplines": [
+   "stock_car"
+  ],
+  "level": "regional",
+  "lat": 43.632778,
+  "lon": -79.416111,
+  "sources": [
+   "https://en.wikipedia.org/w/index.php?title=Exhibition_Place&oldid=1368539283",
+   "https://www.wikidata.org/wiki/Q1383752"
+  ],
+  "aliases": []
+ },
+ {
+  "name": "Kawartha Speedway",
+  "city": "Cavan Monaghan",
+  "region": "ON",
+  "country": "CAN",
+  "track_type": "oval",
+  "surface": "asphalt",
+  "length_mi": 0.375,
+  "banking_deg_turns": null,
+  "opened": 1972,
+  "closed": null,
+  "active": null,
+  "disciplines": [
+   "stock_car"
+  ],
+  "level": "regional",
+  "lat": 44.2089,
+  "lon": -78.3914,
+  "sources": [
+   "https://en.wikipedia.org/w/index.php?title=Kawartha_Speedway&oldid=1344840152",
+   "https://www.wikidata.org/wiki/Q1737291"
+  ],
+  "aliases": []
+ },
+ {
+  "name": "Douglas County Speedway",
+  "city": "Roseburg",
+  "region": "OR",
+  "country": "USA",
+  "track_type": "oval",
+  "surface": "dirt",
+  "length_mi": 0.375,
+  "banking_deg_turns": null,
+  "opened": null,
+  "closed": null,
+  "active": null,
+  "disciplines": [
+   "stock_car"
+  ],
+  "level": "regional",
+  "lat": 43.196464,
+  "lon": -123.35793,
+  "sources": [
+   "https://en.wikipedia.org/w/index.php?title=Douglas_County_Speedway&oldid=1348757832",
+   "https://www.wikidata.org/wiki/Q108899087"
+  ],
+  "aliases": [
+   "Roseburg Speedway"
+  ]
+ },
+ {
+  "name": "Motordrome Speedway",
+  "city": "Smithton",
+  "region": "PA",
+  "country": "USA",
+  "track_type": "oval",
+  "surface": null,
+  "length_mi": null,
+  "banking_deg_turns": null,
+  "opened": null,
+  "closed": null,
+  "active": null,
+  "disciplines": [
+   "stock_car"
+  ],
+  "level": "regional",
+  "lat": 40.1761,
+  "lon": -79.7274,
+  "sources": [
+   "https://en.wikipedia.org/w/index.php?title=Motordrome_Speedway&oldid=1375968968",
+   "https://www.wikidata.org/wiki/Q6918298"
+  ],
+  "aliases": []
+ },
+ {
+  "name": "Autodrome Montmagny",
+  "city": "Montmagny",
+  "region": "QC",
+  "country": "CAN",
+  "track_type": "oval",
+  "surface": "asphalt",
+  "length_mi": 0.375,
+  "banking_deg_turns": null,
+  "opened": 1994,
+  "closed": null,
+  "active": null,
+  "disciplines": [
+   "stock_car"
+  ],
+  "level": "regional",
+  "lat": 46.937778,
+  "lon": -70.553333,
+  "sources": [
+   "https://en.wikipedia.org/w/index.php?title=Autodrome_Montmagny&oldid=1366628660",
+   "https://www.wikidata.org/wiki/Q2872550"
+  ],
+  "aliases": [
+   "Autodrome Montmagny Speedway"
+  ]
+ },
+ {
+  "name": "Autodrome Saint-Eustache",
+  "city": "Saint-Eustache",
+  "region": "QC",
+  "country": "CAN",
+  "track_type": "oval",
+  "surface": "asphalt",
+  "length_mi": 0.4,
+  "banking_deg_turns": null,
+  "opened": 1965,
+  "closed": 2019,
+  "active": false,
+  "disciplines": [
+   "stock_car"
+  ],
+  "level": "regional",
+  "lat": 45.5733,
+  "lon": -73.9625,
+  "sources": [
+   "https://en.wikipedia.org/w/index.php?title=Autodrome_Saint-Eustache&oldid=1346246193",
+   "https://www.wikidata.org/wiki/Q2872557"
+  ],
+  "aliases": [
+   "Circuit Deux Montagne",
+   "Autodrome St. Eustache"
+  ]
+ },
+ {
+  "name": "Dillon Motor Speedway",
+  "city": "Dillon",
+  "region": "SC",
+  "country": "USA",
+  "track_type": "oval",
+  "surface": null,
+  "length_mi": null,
+  "banking_deg_turns": null,
+  "opened": null,
+  "closed": null,
+  "active": null,
+  "disciplines": [
+   "late_model",
+   "modified"
+  ],
+  "level": "regional",
+  "lat": 34.453262,
+  "lon": -79.368186,
+  "sources": [
+   "https://en.wikipedia.org/w/index.php?title=2021_CARS_Tour&oldid=1374800796",
+   "https://en.wikipedia.org/w/index.php?title=2021_Southern_Modified_Auto_Racing_Teams_season&oldid=1376749004",
+   "https://en.wikipedia.org/w/index.php?title=2023_CARS_Tour&oldid=1377148754",
+   "https://www.openstreetmap.org/way/426571873 (ODbL)"
+  ],
+  "aliases": []
+ },
+ {
+  "name": "Sutherland Automotive Speedway",
+  "city": "Saskatoon",
+  "region": "SK",
+  "country": "CAN",
+  "track_type": "oval",
+  "surface": "asphalt",
+  "length_mi": 0.333,
+  "banking_deg_turns": 5.0,
+  "opened": null,
+  "closed": null,
+  "active": null,
+  "disciplines": [
+   "stock_car"
+  ],
+  "level": "regional",
+  "lat": 52.2183,
+  "lon": -106.661,
+  "sources": [
+   "https://en.wikipedia.org/w/index.php?title=Sutherland_Automotive_Speedway&oldid=1344839088",
+   "https://www.wikidata.org/wiki/Q4826095"
+  ],
+  "aliases": [
+   "Auto Clearing Motor Speedway",
+   "Wyant Group Raceway"
+  ],
+  "notable_note": "banking_deg_turns: Progressive banking\nStraightaways: 5°\nCorners: 7, 9.5, 11°"
+ },
+ {
+  "name": "Kingsport Speedway",
+  "city": "Kingsport",
+  "region": "TN",
+  "country": "USA",
+  "track_type": "oval",
+  "surface": null,
+  "length_mi": null,
+  "banking_deg_turns": null,
+  "opened": null,
+  "closed": null,
+  "active": null,
+  "disciplines": [
+   "late_model"
+  ],
+  "level": "regional",
+  "lat": 36.569393,
+  "lon": -82.503203,
+  "sources": [
+   "https://en.wikipedia.org/w/index.php?title=2018_CARS_Tour&oldid=1374800927",
+   "https://www.openstreetmap.org/way/1505986547 (ODbL)"
+  ],
+  "aliases": []
+ },
+ {
+  "name": "Newport Speedway",
+  "city": "Newport",
+  "region": "TN",
+  "country": "USA",
+  "track_type": "oval",
+  "surface": null,
+  "length_mi": null,
+  "banking_deg_turns": null,
+  "opened": null,
+  "closed": null,
+  "active": null,
+  "disciplines": [
+   "late_model"
+  ],
+  "level": "regional",
+  "lat": 36.018322,
+  "lon": -83.208873,
+  "sources": [
+   "https://en.wikipedia.org/w/index.php?title=2025_ASA_STARS_National_Tour&oldid=1345847755",
+   "https://en.wikipedia.org/w/index.php?title=2026_ASA_STARS_National_Tour&oldid=1378729359",
+   "https://en.wikipedia.org/w/index.php?title=2026_CARS_Tour&oldid=1378124127",
+   "https://www.openstreetmap.org/way/550187165 (ODbL)"
+  ],
+  "aliases": []
+ },
+ {
+  "name": "Franklin County Speedway",
+  "city": "Callaway",
+  "region": "VA",
+  "country": "USA",
+  "track_type": "oval",
+  "surface": null,
+  "length_mi": null,
+  "banking_deg_turns": null,
+  "opened": null,
+  "closed": null,
+  "active": null,
+  "disciplines": [
+   "late_model",
+   "modified"
+  ],
+  "level": "regional",
+  "lat": 37.018611111,
+  "lon": -80.043333333,
+  "sources": [
+   "https://en.wikipedia.org/w/index.php?title=2020_CARS_Tour&oldid=1374800843",
+   "https://en.wikipedia.org/w/index.php?title=2021_Southern_Modified_Auto_Racing_Teams_season&oldid=1376749004",
+   "https://en.wikipedia.org/w/index.php?title=2022_CARS_Tour&oldid=1376740028",
+   "https://www.wikidata.org/wiki/Q20704855",
+   "https://en.wikipedia.org/w/index.php?title=2025_SMART_Modified_Tour&oldid=1371184172",
+   "https://en.wikipedia.org/w/index.php?title=2026_SMART_Modified_Tour&oldid=1377688566"
+  ],
+  "aliases": []
+ },
+ {
+  "name": "Jefferson Speedway",
+  "city": "Cambridge",
+  "region": "WI",
+  "country": "USA",
+  "track_type": "oval",
+  "surface": null,
+  "length_mi": null,
+  "banking_deg_turns": null,
+  "opened": null,
+  "closed": null,
+  "active": null,
+  "disciplines": [
+   "late_model"
+  ],
+  "level": "regional",
+  "lat": 43.004597,
+  "lon": -88.936446,
+  "sources": [
+   "https://en.wikipedia.org/w/index.php?title=2007_ASA_Midwest_Tour_season&oldid=1372078285",
+   "https://en.wikipedia.org/w/index.php?title=2008_ASA_Midwest_Tour_season&oldid=1372079069",
+   "https://en.wikipedia.org/w/index.php?title=ASA_Midwest_Tour&oldid=1367657938",
+   "https://www.openstreetmap.org/way/518865303 (ODbL)"
+  ],
+  "aliases": []
+ },
+ {
+  "name": "State Park Speedway",
+  "city": "Wausau",
+  "region": "WI",
+  "country": "USA",
+  "track_type": "oval",
+  "surface": null,
+  "length_mi": null,
+  "banking_deg_turns": null,
+  "opened": null,
+  "closed": null,
+  "active": null,
+  "disciplines": [
+   "late_model"
+  ],
+  "level": "regional",
+  "lat": 44.932124,
+  "lon": -89.709196,
+  "sources": [
+   "https://en.wikipedia.org/w/index.php?title=2011_ASA_Midwest_Tour_season&oldid=1372082299",
+   "https://en.wikipedia.org/w/index.php?title=2012_ASA_Midwest_Tour_season&oldid=1372083381",
+   "https://en.wikipedia.org/w/index.php?title=ASA_Midwest_Tour&oldid=1367657938",
+   "https://www.openstreetmap.org/relation/14284269 (ODbL)"
+  ],
+  "aliases": []
+ }
+]

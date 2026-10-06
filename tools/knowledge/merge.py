@@ -246,6 +246,19 @@ def _tok(name: str) -> set[str]:
     return {t for t in norm_text(name).split() if t not in GENERIC and len(t) > 1}
 
 
+def _clean_numbers(c: dict) -> None:
+    """Numeric facts sometimes arrive as text ("12-24", "0.5 mi"): keep the first number, note the text."""
+    for k, cast in (("banking_deg_turns", float), ("banking_deg_straights", float), ("length_mi", float),
+                    ("opened", int), ("closed", int), ("turns", int)):
+        v = c.get(k)
+        if v is None or isinstance(v, (int, float)) and not isinstance(v, bool):
+            continue
+        m = re.search(r"\d+(?:\.\d+)?", str(v))
+        c[k] = cast(float(m.group())) if m else None
+        if m and str(v).strip() != m.group():
+            c["notable_note"] = "; ".join(x for x in (c.get("notable_note"), f"{k}: {v}") if x)
+
+
 def merge_tracks(candidates: list[dict], existing: list[dict], merger: Merger) -> tuple[list[dict], dict]:
     from racingsim.tracks.model import TrackFacts
     ex_index = []
@@ -260,6 +273,7 @@ def merge_tracks(candidates: list[dict], existing: list[dict], merger: Merger) -
         if not c.get("name") or c.get("lat") is None or c.get("lon") is None:
             rejected += 1
             continue
+        _clean_numbers(c)
         c.setdefault("country", "USA")
         c.setdefault("track_type", "oval")
         c.setdefault("level", "local")
@@ -325,6 +339,16 @@ def main(staging: list[Path]) -> int:
             track_candidates += items(load(d / name))
         track_enrich_in += items(load(d / "tracks_enrich.json"))
     merged, alias = merge_entities(groups, merger)
+    # Curated field overrides (persisted): e.g. which game rung / history source a series uses.
+    overrides = load(KDIR / "overrides.json") or {}
+    for d in staging:
+        for k, v in (load(d / "overrides.json") or {}).items():
+            overrides.setdefault(canon_id(k), {}).update(v)
+    for eid, fields in overrides.items():
+        e = merged["series.json"].get(alias.get(eid, eid))
+        if e is not None:
+            e.update(fields)
+    (KDIR / "overrides.json").write_text(json.dumps(dict(sorted(overrides.items())), indent=1), encoding="utf-8")
     KDIR.mkdir(parents=True, exist_ok=True)
     for f, by_id in merged.items():
         rows = sorted(by_id.values(), key=lambda e: str(e.get("id") or e.get("name")))

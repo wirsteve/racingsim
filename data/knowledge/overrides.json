@@ -1,0 +1,458 @@
+{
+ "series:apc-united-late-model": {
+  "game_template": "late_model_tour",
+  "history_source": "apc_united",
+  "names_by_year": [
+   {
+    "from": 2015,
+    "to": 2025,
+    "name": "APC United Late Model Series"
+   }
+  ],
+  "prefer_curated_names": false
+ },
+ "series:arca-menards": {
+  "game_template": "stock_national_dev",
+  "history_source": "arca",
+  "names_by_year": [
+   {
+    "from": 1995,
+    "to": 1997,
+    "name": "ARCA Bondo/Mar-Hyde Series"
+   },
+   {
+    "from": 1998,
+    "to": 2000,
+    "name": "ARCA Bondo/Mar-Hyde Series"
+   },
+   {
+    "from": 2001,
+    "to": 2009,
+    "name": "ARCA Re/Max Series"
+   },
+   {
+    "from": 2010,
+    "to": 2018,
+    "name": "ARCA Racing Series"
+   },
+   {
+    "from": 2019,
+    "to": 2026,
+    "name": "ARCA Menards Series"
+   }
+  ],
+  "prefer_curated_names": false
+ },
+ "series:arca-menards-east": {
+  "game_template": "stock_regional_dev",
+  "history_source": "arca_east",
+  "names_by_year": [
+   {
+    "from": 1995,
+    "to": 2005,
+    "name": "NASCAR Busch North Series"
+   },
+   {
+    "from": 2006,
+    "to": 2006,
+    "name": "NASCAR Busch East Series"
+   },
+   {
+    "from": 2010,
+    "to": 2011,
+    "name": "NASCAR K&N Pro Series East"
+   },
+   {
+    "from": 2007,
+    "to": 2007,
+    "name": "NASCAR Busch East Series"
+   },
+   {
+    "from": 2008,
+    "to": 2009,
+    "name": "NASCAR Camping World East Series"
+   },
+   {
+    "from": 2012,
+    "to": 2019,
+    "name": "NASCAR K&N Pro Series East"
+   },
+   {
+    "from": 2020,
+    "to": 2026,
+    "name": "ARCA Menards Series East"
+   }
+  ],
+  "prefer_curated_names": false
+ },
+ "series:arca-menards-west": {
+  "game_template": "stock_regional_dev",
+  "history_source": "arca_west",
+  "names_by_year": [
+   {
+    "from": 1995,
+    "to": 2003,
+    "name": "NASCAR Winston West Series"
+   },
+   {
+    "from": 2004,
+    "to": 2005,
+    "name": "NASCAR West Series"
+   },
+   {
+    "from": 2006,
+    "to": 2006,
+    "name": "NASCAR AutoZone West Series"
+   },
+   {
+    "from": 2007,
+    "to": 2007,
+    "name": "NASCAR West Series"
+   },
+   {
+    "from": 2008,
+    "to": 2009,
+    "name": "NASCAR Camping World West Series"
+   },
+   {
+    "from": 2010,
+    "to": 2019,
+    "name": "NASCAR K&N Pro Series West"
+   },
+   {
+    "from": 2020,
+    "to": 2026,
+    "name": "ARCA Menards Series West"
+   }
+  ],
+  "prefer_curated_names": false
+ },
+ "series:artgo-challenge": {
+  "game_template": "late_model_tour",
+  "history_source": "artgo",
+  "names_by_year": [
+   {
+    "from": 1995,
+    "to": 1997,
+    "name": "ARTGO Challenge Series"
+   }
+  ],
+  "prefer_curated_names": false
+ },
+ "series:asa-cra-super-series": {
+  "game_template": "late_model_tour",
+  "history_source": "cra_super_series",
+  "names_by_year": [
+   {
+    "from": 1997,
+    "to": 2100,
+    "name": "ASA/CRA Super Series"
+   }
+  ],
+  "prefer_curated_names": false
+ },
+ "series:asa-late-model-challenge": {
+  "game_template": "late_model_tour",
+  "history_source": "asa_late_model",
+  "names_by_year": [
+   {
+    "from": 2003,
+    "to": 2010,
+    "name": "ASA Late Model Series (Challenge Division)"
+   }
+  ],
+  "prefer_curated_names": false
+ },
+ "series:asa-late-model-north": {
+  "game_template": "late_model_tour",
+  "history_source": "asa_late_model_north",
+  "names_by_year": [
+   {
+    "from": 2006,
+    "to": 2010,
+    "name": "ASA Late Model Series (Northern Division)"
+   }
+  ],
+  "prefer_curated_names": false
+ },
+ "series:asa-late-model-south": {
+  "game_template": "late_model_tour",
+  "history_source": "asa_late_model_south",
+  "names_by_year": [
+   {
+    "from": 2006,
+    "to": 2009,
+    "name": "ASA Late Model Series (Southern Division)"
+   }
+  ],
+  "prefer_curated_names": false
+ },
+ "series:asa-midwest-tour": {
+  "game_template": "late_model_tour",
+  "history_source": "arca_midwest",
+  "names_by_year": [
+   {
+    "from": 2013,
+    "to": 2026,
+    "name": "ARCA Midwest Tour"
+   },
+   {
+    "from": 2007,
+    "to": 2012,
+    "name": "ASA Midwest Tour"
+   }
+  ],
+  "prefer_curated_names": false
+ },
+ "series:asa-national-tour": {
+  "game_template": "late_model_national",
+  "history_source": "asa",
+  "names_by_year": [
+   {
+    "from": 1995,
+    "to": 2004,
+    "name": "ASA National Tour"
+   }
+  ],
+  "prefer_curated_names": false
+ },
+ "series:asa-southern-super-series": {
+  "game_template": "late_model_tour",
+  "history_source": "southern_super_series",
+  "names_by_year": [
+   {
+    "from": 2025,
+    "to": 2025,
+    "name": "ASA Southern Super Series"
+   }
+  ],
+  "prefer_curated_names": false
+ },
+ "series:asa-stars-national": {
+  "game_template": "late_model_national",
+  "history_source": "asa_stars",
+  "names_by_year": [
+   {
+    "from": 2023,
+    "to": 2026,
+    "name": "ASA STARS National Tour"
+   }
+  ],
+  "prefer_curated_names": false
+ },
+ "series:cars-tour-lmsc": {
+  "game_template": "late_model_tour",
+  "history_source": "cars_lms",
+  "names_by_year": [
+   {
+    "from": 2015,
+    "to": 2026,
+    "name": "CARS Late Model Stock Car Tour"
+   }
+  ],
+  "prefer_curated_names": true
+ },
+ "series:cars-tour-plm": {
+  "game_template": "late_model_tour",
+  "history_source": "cars_slm",
+  "names_by_year": [
+   {
+    "from": 2015,
+    "to": 2022,
+    "name": "CARS Super Late Model Tour"
+   },
+   {
+    "from": 2023,
+    "to": 2026,
+    "name": "CARS Pro Late Model Tour"
+   }
+  ],
+  "prefer_curated_names": true
+ },
+ "series:cascar-super-series": {
+  "game_template": "stock_regional_dev",
+  "history_source": "cascar",
+  "names_by_year": [
+   {
+    "from": 1995,
+    "to": 2006,
+    "name": "CASCAR Super Series"
+   }
+  ],
+  "prefer_curated_names": false
+ },
+ "series:jegs-cra-all-stars": {
+  "game_template": "late_model_tour",
+  "history_source": "cra_all_stars",
+  "names_by_year": [
+   {
+    "from": 2011,
+    "to": 2025,
+    "name": "JEGS/CRA All-Stars Tour"
+   }
+  ],
+  "prefer_curated_names": false
+ },
+ "series:nascar-midwest-series": {
+  "game_template": "late_model_tour",
+  "history_source": "nascar_midwest",
+  "names_by_year": [
+   {
+    "from": 1998,
+    "to": 2006,
+    "name": "NASCAR Midwest Series (RE/MAX Challenge Series)"
+   }
+  ],
+  "prefer_curated_names": false
+ },
+ "series:nascar-pintys": {
+  "game_template": "stock_regional_dev",
+  "history_source": "pinty",
+  "names_by_year": [
+   {
+    "from": 2007,
+    "to": 2015,
+    "name": "NASCAR Canadian Tire Series"
+   },
+   {
+    "from": 2016,
+    "to": 2019,
+    "name": "NASCAR Pinty's Series"
+   },
+   {
+    "from": 2020,
+    "to": 2020,
+    "name": "NASCAR Pinty's FanCave Challenge"
+   },
+   {
+    "from": 2021,
+    "to": 2023,
+    "name": "NASCAR Pinty's Series"
+   },
+   {
+    "from": 2024,
+    "to": 2026,
+    "name": "NASCAR Canada Series"
+   }
+  ],
+  "prefer_curated_names": false
+ },
+ "series:nascar-whelen-modified-tour": {
+  "game_template": "modified_tour",
+  "history_source": "whelen_modified",
+  "names_by_year": [
+   {
+    "from": 1995,
+    "to": 2004,
+    "name": "NASCAR Featherlite Modified Tour"
+   },
+   {
+    "from": 2005,
+    "to": 2026,
+    "name": "NASCAR Whelen Modified Tour"
+   }
+  ],
+  "prefer_curated_names": false
+ },
+ "series:nascar-whelen-southern-modified-tour": {
+  "game_template": "modified_tour",
+  "history_source": "whelen_southern_modified",
+  "names_by_year": [
+   {
+    "from": 2005,
+    "to": 2016,
+    "name": "NASCAR Whelen Southern Modified Tour"
+   }
+  ],
+  "prefer_curated_names": false
+ },
+ "series:oscaar-modified": {
+  "game_template": "modified_tour",
+  "history_source": "oscaar_modified",
+  "names_by_year": [
+   {
+    "from": 2012,
+    "to": 2025,
+    "name": "OSCAAR Modified Series"
+   }
+  ],
+  "prefer_curated_names": false
+ },
+ "series:oscaar-super-late-model": {
+  "game_template": "late_model_tour",
+  "history_source": "oscaar_slm",
+  "names_by_year": [
+   {
+    "from": 2002,
+    "to": 2017,
+    "name": "OSCAAR Outlaw Super Late Model Series"
+   }
+  ],
+  "prefer_curated_names": false
+ },
+ "series:pass-north": {
+  "game_template": "late_model_tour",
+  "history_source": "pass_north",
+  "names_by_year": [
+   {
+    "from": 2001,
+    "to": 2023,
+    "name": "PASS North Super Late Models"
+   }
+  ],
+  "prefer_curated_names": false
+ },
+ "series:pass-south": {
+  "game_template": "late_model_tour",
+  "history_source": "pass_south",
+  "names_by_year": [
+   {
+    "from": 2006,
+    "to": 2018,
+    "name": "PASS South Super Late Models"
+   }
+  ],
+  "prefer_curated_names": false
+ },
+ "series:pass-super-late-model": {
+  "game_template": "late_model_tour",
+  "history_source": "pass_national",
+  "names_by_year": [
+   {
+    "from": 2008,
+    "to": 2023,
+    "name": "PASS National Super Late Model Series"
+   }
+  ],
+  "prefer_curated_names": false
+ },
+ "series:smart-modified-tour": {
+  "game_template": "modified_tour",
+  "history_source": "smart_modified",
+  "names_by_year": [
+   {
+    "from": 2021,
+    "to": 2021,
+    "name": "Southern Modified Auto Racing Teams"
+   },
+   {
+    "from": 2022,
+    "to": 2026,
+    "name": "SMART Modified Tour"
+   }
+  ],
+  "prefer_curated_names": false
+ },
+ "series:usar-pro-cup": {
+  "game_template": "late_model_tour",
+  "history_source": "pro_cup",
+  "names_by_year": [
+   {
+    "from": 1997,
+    "to": 2014,
+    "name": "USAR Hooters Pro Cup Series"
+   }
+  ],
+  "prefer_curated_names": false
+ }
+}

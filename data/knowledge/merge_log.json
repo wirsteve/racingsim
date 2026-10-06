@@ -19,5 +19,341 @@
   "kept": "Sanctioned Indy/Champ cars until CART split (1979); ran the professional USAC Road Racing Championship 1958-1962; today sanctions the USF Pro Championships, SRO America series (GT World Challenge America, GT4 America, TC America; since 2017) and Porsche Sprint Challenge NA. ACCUS member club.",
   "other": "National sprint car title dates to 1956; minimum license age 15; formerly sanctioned USAC .25 quarter midgets (now NASCAR Youth Series per Wikipedia).",
   "reason": "different text values"
+ },
+ {
+  "entity": "series:cars-tour-lmsc",
+  "attribute": "history_source",
+  "kept": "cars_lms",
+  "other": null,
+  "reason": "different text values"
+ },
+ {
+  "entity": "series:cars-tour-plm",
+  "attribute": "history_source",
+  "kept": "cars_slm",
+  "other": null,
+  "reason": "different text values"
+ },
+ {
+  "entity": "series:asa-stars-national",
+  "attribute": "game_template",
+  "kept": "late_model_national",
+  "other": "late_model_tour",
+  "reason": "different text values"
+ },
+ {
+  "entity": "series:asa-stars-national",
+  "attribute": "history_source",
+  "kept": "asa_stars",
+  "other": null,
+  "reason": "different text values"
+ },
+ {
+  "entity": "series:asa-midwest-tour",
+  "attribute": "history_source",
+  "kept": "arca_midwest",
+  "other": null,
+  "reason": "different text values"
+ },
+ {
+  "entity": null,
+  "attribute": "years.to",
+  "kept": 2023,
+  "other": null,
+  "reason": "different text values"
+ },
+ {
+  "entity": "series:pass-super-late-model",
+  "attribute": "history_source",
+  "kept": "pass_national",
+  "other": null,
+  "reason": "different text values"
+ },
+ {
+  "entity": null,
+  "attribute": "years.from",
+  "kept": 2025,
+  "other": null,
+  "reason": "different text values"
+ },
+ {
+  "entity": null,
+  "attribute": "years.to",
+  "kept": 2025,
+  "other": null,
+  "reason": "different text values"
+ },
+ {
+  "entity": "series:asa-southern-super-series",
+  "attribute": "history_source",
+  "kept": "southern_super_series",
+  "other": null,
+  "reason": "different text values"
+ },
+ {
+  "entity": "series:asa-cra-super-series",
+  "attribute": "history_source",
+  "kept": "cra_super_series",
+  "other": null,
+  "reason": "different text values"
+ },
+ {
+  "entity": "series:nascar-whelen-modified-tour",
+  "attribute": "history_source",
+  "kept": "whelen_modified",
+  "other": null,
+  "reason": "different text values"
+ },
+ {
+  "entity": null,
+  "attribute": "years.from",
+  "kept": 1995,
+  "other": null,
+  "reason": "different text values"
+ },
+ {
+  "entity": "series:arca-menards-east",
+  "attribute": "history_source",
+  "kept": "arca_east",
+  "other": null,
+  "reason": "different text values"
+ },
+ {
+  "entity": null,
+  "attribute": "years.from",
+  "kept": 1995,
+  "other": null,
+  "reason": "different text values"
+ },
+ {
+  "entity": "series:arca-menards-west",
+  "attribute": "history_source",
+  "kept": "arca_west",
+  "other": null,
+  "reason": "different text values"
+ },
+ {
+  "entity": "series:arca-menards",
+  "attribute": "history_source",
+  "kept": "arca",
+  "other": null,
+  "reason": "different text values"
+ },
+ {
+  "entity": "series:arca-menards",
+  "attribute": "level",
+  "kept": "national development",
+  "other": "national",
+  "reason": "different text values"
+ },
+ {
+  "entity": null,
+  "attribute": "years.from",
+  "kept": 1953,
+  "other": 1995,
+  "reason": "different text values"
+ },
+ {
+  "entity": "series:arca-menards",
+  "attribute": "notes",
+  "kept": "NASCAR bought ARCA 2018; East/West merged 2020. 2024: Sawalich 9 wins in 14, Zilisch 5 in 8.",
+  "other": null,
+  "reason": "different text values"
+ },
+ {
+  "entity": "series:arca-menards-east",
+  "attribute": "name",
+  "kept": "ARCA Menards Series East (former NASCAR K&N Pro Series East)",
+  "other": "ARCA Menards Series East",
+  "reason": "different text values"
+ },
+ {
+  "entity": "series:arca-menards-east",
+  "attribute": "level",
+  "kept": "regional development",
+  "other": "super_regional",
+  "reason": "different text values"
+ },
+ {
+  "entity": "series:arca-menards-east",
+  "attribute": "notes",
+  "kept": "Larson 2012 champion (Rev Racing, D4D); Wallace D4D 2010-11; A. Dillon 2008 ROTY; Byron 2015 champion.",
+  "other": null,
+  "reason": "different text values"
+ },
+ {
+  "entity": "series:arca-menards-west",
+  "attribute": "name",
+  "kept": "ARCA Menards Series West (former NASCAR K&N Pro Series West)",
+  "other": "ARCA Menards Series West",
+  "reason": "different text values"
+ },
+ {
+  "entity": "series:arca-menards-west",
+  "attribute": "level",
+  "kept": "regional development",
+  "other": "super_regional",
+  "reason": "different text values"
+ },
+ {
+  "entity": "series:arca-menards-west",
+  "attribute": "notes",
+  "kept": "Harvick raced Featherlite Southwest Series late models from 1992 (lineage).",
+  "other": null,
+  "reason": "different text values"
+ },
+ {
+  "entity": "series:nascar-whelen-modified-tour",
+  "attribute": "discipline",
+  "kept": "modified",
+  "other": "stock_car",
+  "reason": "different text values"
+ },
+ {
+  "entity": "series:nascar-whelen-modified-tour",
+  "attribute": "level",
+  "kept": "regional",
+  "other": "super_regional",
+  "reason": "different text values"
+ },
+ {
+  "entity": null,
+  "attribute": "years.from",
+  "kept": 1985,
+  "other": 1995,
+  "reason": "different text values"
+ },
+ {
+  "entity": "series:nascar-whelen-modified-tour",
+  "attribute": "notes",
+  "kept": "Champions: Mike Stefanik 7, Doug Coby 6 (2012-17, 2019), Justin Bonsignore 4, Ron Silk 2.",
+  "other": null,
+  "reason": "different text values"
+ },
+ {
+  "entity": "series:asa-stars-national",
+  "attribute": "name",
+  "kept": "ASA STARS National Tour (super late models)",
+  "other": "ASA STARS National Tour",
+  "reason": "different text values"
+ },
+ {
+  "entity": "series:asa-stars-national",
+  "attribute": "level",
+  "kept": "regional/national",
+  "other": "national",
+  "reason": "different text values"
+ },
+ {
+  "entity": "series:asa-stars-national",
+  "attribute": "notes",
+  "kept": "Champions: Ty Majeski 2023, Casey Roderick 2024, Cole Butcher 2025.",
+  "other": null,
+  "reason": "different text values"
+ },
+ {
+  "entity": "series:asa-stars-national",
+  "attribute": "game_tier",
+  "kept": 3,
+  "other": 4,
+  "reason": "different text values"
+ },
+ {
+  "entity": "series:asa-southern-super-series",
+  "attribute": "name",
+  "kept": "ASA Southern Super Series (super late models)",
+  "other": "ASA Southern Super Series",
+  "reason": "different text values"
+ },
+ {
+  "entity": "series:asa-southern-super-series",
+  "attribute": "notes",
+  "kept": "Bubba Pollard 41+ career SSS wins; 2014 champion; Stephen Nasse, Jake Finch regulars.",
+  "other": null,
+  "reason": "different text values"
+ },
+ {
+  "entity": "series:asa-midwest-tour",
+  "attribute": "name",
+  "kept": "ASA Midwest Tour (ARCA Midwest Tour 2012-2022)",
+  "other": "ARCA Midwest Tour",
+  "reason": "different text values"
+ },
+ {
+  "entity": "series:asa-midwest-tour",
+  "attribute": "notes",
+  "kept": "Lineage ARTGO (1975) and NASCAR Midwest Series (1998-2006). Majeski 5 titles, Casey Johnson 4.",
+  "other": null,
+  "reason": "different text values"
+ },
+ {
+  "entity": "series:cars-tour-lmsc",
+  "attribute": "notes",
+  "kept": "Owners include Dale Jr., Burton, Harvick, Trackhouse; FS1 debut 2025 at North Wilkesboro.",
+  "other": null,
+  "reason": "different text values"
+ },
+ {
+  "entity": "series:cars-tour-plm",
+  "attribute": "name",
+  "kept": "CARS Pro Late Model Tour",
+  "other": "CARS Super Late Model / Pro Late Model Tour",
+  "reason": "different text values"
+ },
+ {
+  "entity": "series:cars-tour-plm",
+  "attribute": "notes",
+  "kept": "2025 champion Ben Maier.",
+  "other": null,
+  "reason": "different text values"
+ },
+ {
+  "entity": "series:pass-super-late-model",
+  "attribute": "name",
+  "kept": "PASS Super Late Models (North/South/National)",
+  "other": "PASS National Super Late Model Series",
+  "reason": "different text values"
+ },
+ {
+  "entity": "series:pass-super-late-model",
+  "attribute": "level",
+  "kept": "regional",
+  "other": "super_regional",
+  "reason": "different text values"
+ },
+ {
+  "entity": null,
+  "attribute": "years.from",
+  "kept": 2001,
+  "other": 2008,
+  "reason": "different text values"
+ },
+ {
+  "entity": "series:asa-cra-super-series",
+  "attribute": "name",
+  "kept": "ASA/CRA Super Series (SLM) and JEGS/CRA All-Stars Tour (crate)",
+  "other": "ASA/CRA Super Series",
+  "reason": "different text values"
+ },
+ {
+  "entity": "series:asa-cra-super-series",
+  "attribute": "notes",
+  "kept": "JEGS/CRA All-Stars crate tour founded 2011 with Chevrolet Performance; Cody Coughlin 4-time champion.",
+  "other": null,
+  "reason": "different text values"
+ },
+ {
+  "entity": null,
+  "attribute": "name",
+  "kept": "Franklin County Speedway",
+  "other": "Franklin County Raceway",
+  "reason": "different text values"
+ },
+ {
+  "entity": null,
+  "attribute": "name",
+  "kept": "Coastal Plains Raceway",
+  "other": "Coastal Plains Speedway",
+  "reason": "different text values"
  }
 ]

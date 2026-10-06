@@ -1,0 +1,759 @@
+{
+ "series": "cars_lms",
+ "year": 2020,
+ "official_name": "CARS Tour",
+ "data_level": "full",
+ "champion": {
+  "name": "Jared Fryar",
+  "wiki": "Jared Fryar"
+ },
+ "teams": [],
+ "standings": [
+  {
+   "pos": 1,
+   "name": "Jared Fryar",
+   "wiki": "Jared Fryar",
+   "points": 280,
+   "wins": 1,
+   "starts": 10,
+   "top5": 7,
+   "top10": 8
+  },
+  {
+   "pos": 2,
+   "name": "Layne Riggs",
+   "wiki": "Layne Riggs",
+   "points": 279,
+   "wins": 2,
+   "starts": 10,
+   "top5": 7,
+   "top10": 8
+  },
+  {
+   "pos": 3,
+   "name": "Corey Heim",
+   "wiki": "Corey Heim",
+   "points": 275,
+   "wins": 1,
+   "starts": 10,
+   "top5": 5,
+   "top10": 8
+  },
+  {
+   "pos": 4,
+   "name": "Bobby McCarty",
+   "wiki": "Bobby McCarty",
+   "points": 256,
+   "wins": 1,
+   "starts": 10,
+   "top5": 3,
+   "top10": 7
+  },
+  {
+   "pos": 5,
+   "name": "Nolan Pope",
+   "wiki": "Nolan Pope",
+   "points": 247,
+   "wins": 1,
+   "starts": 10,
+   "top5": 3,
+   "top10": 8
+  },
+  {
+   "pos": 6,
+   "name": "Connor Mosack",
+   "wiki": "Connor Mosack",
+   "points": 245,
+   "wins": 0,
+   "starts": 10,
+   "top5": 3,
+   "top10": 8
+  },
+  {
+   "pos": 7,
+   "name": "Jonathan Findley",
+   "wiki": "Jonathan Findley",
+   "points": 213,
+   "wins": 1,
+   "starts": 10,
+   "top5": 2,
+   "top10": 5
+  },
+  {
+   "pos": 8,
+   "name": "Chad McCumbee",
+   "wiki": "Chad McCumbee",
+   "points": 210,
+   "wins": 0,
+   "starts": 10,
+   "top5": 2,
+   "top10": 4
+  },
+  {
+   "pos": 9,
+   "name": "Jonathan Shafer",
+   "wiki": "Jonathan Shafer",
+   "points": 193,
+   "wins": 0,
+   "starts": 9,
+   "top5": 1,
+   "top10": 4
+  },
+  {
+   "pos": 10,
+   "name": "Brandon Pierce",
+   "wiki": "Brandon Pierce",
+   "points": 189,
+   "wins": 0,
+   "starts": 9,
+   "top5": 1,
+   "top10": 4
+  },
+  {
+   "pos": 11,
+   "name": "Justin Johnson",
+   "wiki": "Justin Johnson (racing driver, born 1987)",
+   "points": 185,
+   "wins": 0,
+   "starts": 10,
+   "top5": 0,
+   "top10": 1
+  },
+  {
+   "pos": 12,
+   "name": "Mini Tyrrell",
+   "wiki": "Mini Tyrrell",
+   "points": 181,
+   "wins": 0,
+   "starts": 10,
+   "top5": 3,
+   "top10": 4
+  },
+  {
+   "pos": 13,
+   "name": "Matt Cox",
+   "wiki": "Matt Cox (racing driver)",
+   "points": 174,
+   "wins": 0,
+   "starts": 10,
+   "top5": 0,
+   "top10": 1
+  },
+  {
+   "pos": 14,
+   "name": "Ronald Hill",
+   "wiki": "Ronald Hill (racing driver)",
+   "points": 171,
+   "wins": 0,
+   "starts": 10,
+   "top5": 0,
+   "top10": 2
+  },
+  {
+   "pos": 15,
+   "name": "Deac McCaskill",
+   "wiki": "Deac McCaskill",
+   "points": 161,
+   "wins": 0,
+   "starts": 7,
+   "top5": 2,
+   "top10": 4
+  },
+  {
+   "pos": 16,
+   "name": "Jessica Cann",
+   "wiki": null,
+   "points": 150,
+   "wins": 0,
+   "starts": 9,
+   "top5": 0,
+   "top10": 2
+  },
+  {
+   "pos": 17,
+   "name": "Tyler Matthews",
+   "wiki": "Tyler Matthews",
+   "points": 147,
+   "wins": 0,
+   "starts": 10,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 18,
+   "name": "Trevor Ward",
+   "wiki": "Trevor Ward (racing driver)",
+   "points": 95,
+   "wins": 0,
+   "starts": 5,
+   "top5": 1,
+   "top10": 1
+  },
+  {
+   "pos": 19,
+   "name": "Gage Painter",
+   "wiki": null,
+   "points": 80,
+   "wins": 0,
+   "starts": 4,
+   "top5": 1,
+   "top10": 1
+  },
+  {
+   "pos": 20,
+   "name": "Blake Stallings",
+   "wiki": "Blake Stallings",
+   "points": 74,
+   "wins": 0,
+   "starts": 3,
+   "top5": 1,
+   "top10": 2
+  },
+  {
+   "pos": 21,
+   "name": "Craig Moore",
+   "wiki": null,
+   "points": 71,
+   "wins": 0,
+   "starts": 4,
+   "top5": 0,
+   "top10": 1
+  },
+  {
+   "pos": 22,
+   "name": "Josh Berry",
+   "wiki": "Josh Berry",
+   "points": 65,
+   "wins": 1,
+   "starts": 2,
+   "top5": 2,
+   "top10": 2
+  },
+  {
+   "pos": 23,
+   "name": "Stacy Puryear",
+   "wiki": "Stacy Puryear",
+   "points": 65,
+   "wins": 0,
+   "starts": 3,
+   "top5": 0,
+   "top10": 2
+  },
+  {
+   "pos": 24,
+   "name": "Sammy Smith",
+   "wiki": "Sammy Smith",
+   "points": 61,
+   "wins": 0,
+   "starts": 3,
+   "top5": 1,
+   "top10": 1
+  },
+  {
+   "pos": 25,
+   "name": "Timothy Peters",
+   "wiki": "Timothy Peters",
+   "points": 58,
+   "wins": 0,
+   "starts": 3,
+   "top5": 1,
+   "top10": 1
+  },
+  {
+   "pos": 26,
+   "name": "Mike Looney",
+   "wiki": "Mike Looney",
+   "points": 57,
+   "wins": 0,
+   "starts": 2,
+   "top5": 1,
+   "top10": 1
+  },
+  {
+   "pos": 27,
+   "name": "Taylor Gray",
+   "wiki": "Taylor Gray (racing driver)",
+   "points": 52,
+   "wins": 1,
+   "starts": 2,
+   "top5": 1,
+   "top10": 1
+  },
+  {
+   "pos": 28,
+   "name": "Sam Butler",
+   "wiki": "Sam Butler (racing driver)",
+   "points": 49,
+   "wins": 0,
+   "starts": 2,
+   "top5": 0,
+   "top10": 1
+  },
+  {
+   "pos": 29,
+   "name": "Camden Gullie",
+   "wiki": null,
+   "points": 48,
+   "wins": 0,
+   "starts": 3,
+   "top5": 0,
+   "top10": 1
+  },
+  {
+   "pos": 30,
+   "name": "Ryan Millington",
+   "wiki": "Ryan Millington",
+   "points": 44,
+   "wins": 1,
+   "starts": 2,
+   "top5": 1,
+   "top10": 1
+  },
+  {
+   "pos": 31,
+   "name": "Justin Carroll",
+   "wiki": null,
+   "points": 39,
+   "wins": 0,
+   "starts": 2,
+   "top5": 0,
+   "top10": 1
+  },
+  {
+   "pos": 32,
+   "name": "Mike Darne",
+   "wiki": "Mike Darne",
+   "points": 39,
+   "wins": 0,
+   "starts": 2,
+   "top5": 0,
+   "top10": 1
+  },
+  {
+   "pos": 33,
+   "name": "Austin Somero",
+   "wiki": "Austin Somero",
+   "points": 37,
+   "wins": 0,
+   "starts": 2,
+   "top5": 0,
+   "top10": 1
+  },
+  {
+   "pos": 34,
+   "name": "Chris Chapman",
+   "wiki": null,
+   "points": 37,
+   "wins": 0,
+   "starts": 2,
+   "top5": 0,
+   "top10": 1
+  },
+  {
+   "pos": 35,
+   "name": "Adam Lemke",
+   "wiki": "Adam Lemke",
+   "points": 31,
+   "wins": 0,
+   "starts": 2,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 36,
+   "name": "Grayson Cullather",
+   "wiki": null,
+   "points": 31,
+   "wins": 0,
+   "starts": 2,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 37,
+   "name": "Travis Truett",
+   "wiki": null,
+   "points": 30,
+   "wins": 0,
+   "starts": 2,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 38,
+   "name": "Lee Pulliam",
+   "wiki": "Lee Pulliam",
+   "points": 29,
+   "wins": 0,
+   "starts": 1,
+   "top5": 1,
+   "top10": 1
+  },
+  {
+   "pos": 39,
+   "name": "Drew Dollar",
+   "wiki": "Drew Dollar",
+   "points": 24,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 1
+  },
+  {
+   "pos": 40,
+   "name": "Brandon Clements",
+   "wiki": null,
+   "points": 22,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 41,
+   "name": "Trey Crews",
+   "wiki": "Trey Crews",
+   "points": 21,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 42,
+   "name": "Cameron Bolin",
+   "wiki": "Cameron Bolin",
+   "points": 19,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 43,
+   "name": "Kyle Dudley",
+   "wiki": "Kyle Dudley",
+   "points": 18,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 44,
+   "name": "Taylor Satterfield",
+   "wiki": "Taylor Satterfield",
+   "points": 18,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 45,
+   "name": "William Cox III",
+   "wiki": null,
+   "points": 18,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 46,
+   "name": "Ralph Carnes",
+   "wiki": null,
+   "points": 15,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 47,
+   "name": "Terry Carroll",
+   "wiki": null,
+   "points": 14,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 48,
+   "name": "Chris Carroll",
+   "wiki": null,
+   "points": 13,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 49,
+   "name": "Logan Jones",
+   "wiki": "Logan Jones (racing driver)",
+   "points": 13,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 50,
+   "name": "Ricky Gillespie",
+   "wiki": null,
+   "points": 12,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 51,
+   "name": "Trey Gibson",
+   "wiki": null,
+   "points": 12,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 52,
+   "name": "Bubba Pollard",
+   "wiki": "Bubba Pollard",
+   "points": 10,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 53,
+   "name": "Chris Burns",
+   "wiki": null,
+   "points": 10,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 54,
+   "name": "Peyton Sellers",
+   "wiki": "Peyton Sellers",
+   "points": 10,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 55,
+   "name": "Tommy Lemons Jr.",
+   "wiki": "Tommy Lemons Jr.",
+   "points": 10,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 56,
+   "name": "Dillon Houser",
+   "wiki": null,
+   "points": 9,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 57,
+   "name": "Justin S. Carroll",
+   "wiki": "Justin Carroll",
+   "points": 9,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 58,
+   "name": "Riley Gentry",
+   "wiki": "Riley Gentry",
+   "points": 8,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 59,
+   "name": "Janson Marchbanks",
+   "wiki": null,
+   "points": 7,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 60,
+   "name": "Ross Dalton",
+   "wiki": "Ross Dalton",
+   "points": 6,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 61,
+   "name": "Jackie Manley",
+   "wiki": null,
+   "points": 3,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 62,
+   "name": "Anthony Anders",
+   "wiki": null,
+   "points": 2,
+   "wins": 0,
+   "starts": 0,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 63,
+   "name": "Jake Crum",
+   "wiki": "Jake Crum",
+   "points": 2,
+   "wins": 0,
+   "starts": 0,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 64,
+   "name": "Jeremy Burns",
+   "wiki": "Jeremy Burns",
+   "points": 2,
+   "wins": 0,
+   "starts": 0,
+   "top5": 0,
+   "top10": 0
+  }
+ ],
+ "schedule": [
+  {
+   "round": 1,
+   "date": "2020-03-07",
+   "race": null,
+   "track": "Southern National Motorsports Park",
+   "city": "Kenly",
+   "state": "NC",
+   "winner": "Taylor Gray",
+   "winner_wiki": "Taylor Gray (racing driver)"
+  },
+  {
+   "round": 2,
+   "date": "2020-06-06",
+   "race": null,
+   "track": "Ace Speedway",
+   "city": "Altamahaw",
+   "state": "NC",
+   "winner": "Ryan Millington",
+   "winner_wiki": "Ryan Millington"
+  },
+  {
+   "round": 3,
+   "date": "2020-06-13",
+   "race": null,
+   "track": "Hickory Motor Speedway",
+   "city": "Hickory",
+   "state": "NC",
+   "winner": "Corey Heim",
+   "winner_wiki": "Corey Heim"
+  },
+  {
+   "round": 4,
+   "date": "2020-08-01",
+   "race": null,
+   "track": "Hickory Motor Speedway",
+   "city": "Hickory",
+   "state": "NC",
+   "winner": "Bobby McCarty",
+   "winner_wiki": "Bobby McCarty"
+  },
+  {
+   "round": 5,
+   "date": "2020-08-08",
+   "race": null,
+   "track": "Dominion Raceway",
+   "city": "Thornburg",
+   "state": "VA",
+   "winner": "Jonathan Findley",
+   "winner_wiki": "Jonathan Findley"
+  },
+  {
+   "round": 6,
+   "date": "2020-08-22",
+   "race": null,
+   "track": "Franklin County Speedway",
+   "city": "Callaway",
+   "state": "VA",
+   "winner": "Jared Fryar",
+   "winner_wiki": "Jared Fryar"
+  },
+  {
+   "round": 7,
+   "date": "2020-08-29",
+   "race": null,
+   "track": "Langley Speedway",
+   "city": "Hampton",
+   "state": "VA",
+   "winner": "Layne Riggs",
+   "winner_wiki": "Layne Riggs"
+  },
+  {
+   "round": 8,
+   "date": "2020-09-12",
+   "race": null,
+   "track": "Carteret County Speedway",
+   "city": "Swansboro",
+   "state": "NC",
+   "winner": "Layne Riggs",
+   "winner_wiki": "Layne Riggs"
+  },
+  {
+   "round": 9,
+   "date": "2020-10-03",
+   "race": null,
+   "track": "Florence Motor Speedway",
+   "city": "Timmonsville",
+   "state": "SC",
+   "winner": "Nolan Pope",
+   "winner_wiki": "Nolan Pope"
+  },
+  {
+   "round": 10,
+   "date": "2020-10-25",
+   "race": null,
+   "track": "Greenville-Pickens Speedway",
+   "city": "Greenville",
+   "state": "SC",
+   "winner": "Josh Berry",
+   "winner_wiki": "Josh Berry"
+  }
+ ],
+ "sources": [
+  "https://en.wikipedia.org/w/index.php?title=2020_CARS_Tour&oldid=1374800843",
+  "https://en.wikipedia.org/w/index.php?title=CARS_Tour&oldid=1378109036"
+ ]
+}

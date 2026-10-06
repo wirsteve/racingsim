@@ -258,17 +258,20 @@ class HistoryDB:
                     continue
                 out.append({"id": sid, "key": sid.split(":", 1)[-1], "name": name, "template": d["game_template"],
                             "source": src, "from": lo, "to": hi or 2100, "names_by_year": d.get("names_by_year") or [],
-                            "regions": d.get("regions") or [], "data_years": yrs})
+                            "regions": d.get("regions") or [], "data_years": yrs,
+                            "prefer_names": bool(d.get("prefer_curated_names"))})
             self._linked = out
         return self._linked
 
     def series_name(self, linked: dict, year: int) -> str:
-        names = linked["names_by_year"]
-        for n in names:
+        """That year's real name: the season's own record first, then the curated name history."""
+        doc = self.raw_season(linked["source"], year)
+        if doc and doc.get("official_name") and not linked.get("prefer_names"):
+            return doc["official_name"]
+        for n in linked["names_by_year"]:
             if (n.get("from") or 0) <= year <= (n.get("to") or 2100) and n.get("name"):
                 return n["name"]
-        doc = self.raw_season(linked["source"], year)
-        return (doc or {}).get("official_name") or linked["name"]
+        return linked["name"]
 
     def schedule_source(self, source: str, year: int, tracks) -> Optional[list[str]]:
         """Matched calendar of any history source (≥60% of races placed at known tracks)."""

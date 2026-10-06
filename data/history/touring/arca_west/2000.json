@@ -1,0 +1,909 @@
+{
+ "series": "arca_west",
+ "year": 2000,
+ "official_name": "NASCAR Winston West Series",
+ "data_level": "full",
+ "champion": {
+  "name": "Brendan Gaughan",
+  "wiki": "Brendan Gaughan"
+ },
+ "teams": [],
+ "standings": [
+  {
+   "pos": 1,
+   "name": "Brendan Gaughan",
+   "wiki": "Brendan Gaughan",
+   "points": 1956,
+   "wins": 2,
+   "starts": 12,
+   "top5": 9,
+   "top10": 11
+  },
+  {
+   "pos": 2,
+   "name": "Bobby Dotter",
+   "wiki": "Bobby Dotter",
+   "points": 1792,
+   "wins": 4,
+   "starts": 12,
+   "top5": 5,
+   "top10": 9
+  },
+  {
+   "pos": 3,
+   "name": "Steve Portenga",
+   "wiki": "Steve Portenga",
+   "points": 1748,
+   "wins": 0,
+   "starts": 12,
+   "top5": 3,
+   "top10": 8
+  },
+  {
+   "pos": 4,
+   "name": "John Metcalf",
+   "wiki": "John Metcalf (racing driver)",
+   "points": 1705,
+   "wins": 0,
+   "starts": 12,
+   "top5": 4,
+   "top10": 7
+  },
+  {
+   "pos": 5,
+   "name": "Kevin Richards",
+   "wiki": "Kevin Richards (racing driver)",
+   "points": 1683,
+   "wins": 1,
+   "starts": 12,
+   "top5": 4,
+   "top10": 6
+  },
+  {
+   "pos": 6,
+   "name": "Bill Sedgwick",
+   "wiki": "Bill Sedgwick",
+   "points": 1659,
+   "wins": 0,
+   "starts": 12,
+   "top5": 4,
+   "top10": 8
+  },
+  {
+   "pos": 7,
+   "name": "Eric Norris",
+   "wiki": "Eric Norris",
+   "points": 1621,
+   "wins": 1,
+   "starts": 12,
+   "top5": 3,
+   "top10": 5
+  },
+  {
+   "pos": 8,
+   "name": "Mike Duncan",
+   "wiki": "Mike Duncan (racing driver)",
+   "points": 1604,
+   "wins": 0,
+   "starts": 12,
+   "top5": 4,
+   "top10": 7
+  },
+  {
+   "pos": 9,
+   "name": "Joe Bean",
+   "wiki": "Joe Bean (racing driver)",
+   "points": 1579,
+   "wins": 1,
+   "starts": 12,
+   "top5": 4,
+   "top10": 5
+  },
+  {
+   "pos": 10,
+   "name": "Scott Gaylord",
+   "wiki": "Scott Gaylord",
+   "points": 1568,
+   "wins": 0,
+   "starts": 12,
+   "top5": 2,
+   "top10": 5
+  },
+  {
+   "pos": 11,
+   "name": "Sammy Potashnick",
+   "wiki": "Sammy Potashnick",
+   "points": 1396,
+   "wins": 0,
+   "starts": 12,
+   "top5": 2,
+   "top10": 4
+  },
+  {
+   "pos": 12,
+   "name": "Rick Bogart",
+   "wiki": "Rick Bogart (racing driver)",
+   "points": 1359,
+   "wins": 0,
+   "starts": 12,
+   "top5": 0,
+   "top10": 3
+  },
+  {
+   "pos": 13,
+   "name": "Jeff Jefferson",
+   "wiki": "Jeff Jefferson (racing driver)",
+   "points": 1344,
+   "wins": 1,
+   "starts": 11,
+   "top5": 3,
+   "top10": 5
+  },
+  {
+   "pos": 14,
+   "name": "Troy Cline",
+   "wiki": "Troy Cline",
+   "points": 1341,
+   "wins": 0,
+   "starts": 11,
+   "top5": 0,
+   "top10": 2
+  },
+  {
+   "pos": 15,
+   "name": "Jason Small",
+   "wiki": "Jason Small (racing driver)",
+   "points": 1264,
+   "wins": 0,
+   "starts": 11,
+   "top5": 1,
+   "top10": 4
+  },
+  {
+   "pos": 16,
+   "name": "Jack Sellers",
+   "wiki": "Jack Sellers",
+   "points": 1254,
+   "wins": 0,
+   "starts": 12,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 17,
+   "name": "Austin Cameron",
+   "wiki": "Austin Cameron",
+   "points": 1187,
+   "wins": 0,
+   "starts": 9,
+   "top5": 3,
+   "top10": 4
+  },
+  {
+   "pos": 18,
+   "name": "Gene Christensen",
+   "wiki": null,
+   "points": 1103,
+   "wins": 0,
+   "starts": 11,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 19,
+   "name": "Mike Grady",
+   "wiki": null,
+   "points": 1061,
+   "wins": 0,
+   "starts": 9,
+   "top5": 0,
+   "top10": 1
+  },
+  {
+   "pos": 20,
+   "name": "Johnny Borneman III",
+   "wiki": "Johnny Borneman III",
+   "points": 723,
+   "wins": 0,
+   "starts": 5,
+   "top5": 1,
+   "top10": 4
+  },
+  {
+   "pos": 21,
+   "name": "Rod Bennett",
+   "wiki": null,
+   "points": 667,
+   "wins": 0,
+   "starts": 5,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 22,
+   "name": "Mark Reed",
+   "wiki": "Mark Reed (racing driver)",
+   "points": 655,
+   "wins": 0,
+   "starts": 5,
+   "top5": 1,
+   "top10": 3
+  },
+  {
+   "pos": 23,
+   "name": "Travis Powell",
+   "wiki": null,
+   "points": 543,
+   "wins": 0,
+   "starts": 4,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 24,
+   "name": "Sean Woodside",
+   "wiki": "Sean Woodside",
+   "points": 542,
+   "wins": 0,
+   "starts": 4,
+   "top5": 1,
+   "top10": 3
+  },
+  {
+   "pos": 25,
+   "name": "Dan Obrist",
+   "wiki": "Dan Obrist",
+   "points": 412,
+   "wins": 0,
+   "starts": 3,
+   "top5": 1,
+   "top10": 2
+  },
+  {
+   "pos": 26,
+   "name": "Gary Smith",
+   "wiki": "Gary Smith (racing driver)",
+   "points": 409,
+   "wins": 0,
+   "starts": 4,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 27,
+   "name": "Jerry Cain",
+   "wiki": null,
+   "points": 400,
+   "wins": 0,
+   "starts": 4,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 28,
+   "name": "Ken Schrader",
+   "wiki": "Ken Schrader",
+   "points": 363,
+   "wins": 0,
+   "starts": 3,
+   "top5": 1,
+   "top10": 1
+  },
+  {
+   "pos": 29,
+   "name": "Tim Buckley",
+   "wiki": null,
+   "points": 336,
+   "wins": 0,
+   "starts": 3,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 30,
+   "name": "Dan Holcomb",
+   "wiki": null,
+   "points": 334,
+   "wins": 0,
+   "starts": 3,
+   "top5": 0,
+   "top10": 1
+  },
+  {
+   "pos": 31,
+   "name": "David Starr",
+   "wiki": "David Starr (racing driver)",
+   "points": 326,
+   "wins": 1,
+   "starts": 2,
+   "top5": 1,
+   "top10": 2
+  },
+  {
+   "pos": 32,
+   "name": "Brett Thompson",
+   "wiki": "Brett Thompson (racing driver)",
+   "points": 325,
+   "wins": 0,
+   "starts": 2,
+   "top5": 0,
+   "top10": 1
+  },
+  {
+   "pos": 33,
+   "name": "Eric Holmes",
+   "wiki": "Eric Holmes (racing driver)",
+   "points": 288,
+   "wins": 0,
+   "starts": 3,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 34,
+   "name": "Jerry Glanville",
+   "wiki": "Jerry Glanville",
+   "points": 280,
+   "wins": 0,
+   "starts": 2,
+   "top5": 0,
+   "top10": 1
+  },
+  {
+   "pos": 35,
+   "name": "Jeff Barrister",
+   "wiki": null,
+   "points": 276,
+   "wins": 0,
+   "starts": 2,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 36,
+   "name": "Brandon Ash",
+   "wiki": "Brandon Ash",
+   "points": 258,
+   "wins": 0,
+   "starts": 3,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 37,
+   "name": "Greg Voigt",
+   "wiki": null,
+   "points": 252,
+   "wins": 0,
+   "starts": 2,
+   "top5": 1,
+   "top10": 1
+  },
+  {
+   "pos": 38,
+   "name": "Davy Lee Liniger",
+   "wiki": null,
+   "points": 248,
+   "wins": 0,
+   "starts": 2,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 39,
+   "name": "Tony Schmidt",
+   "wiki": null,
+   "points": 239,
+   "wins": 0,
+   "starts": 2,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 40,
+   "name": "Kenny Smith",
+   "wiki": null,
+   "points": 212,
+   "wins": 0,
+   "starts": 2,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 41,
+   "name": "Charlie Solomon",
+   "wiki": null,
+   "points": 200,
+   "wins": 0,
+   "starts": 2,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 42,
+   "name": "Matt Crafton",
+   "wiki": "Matt Crafton",
+   "points": 180,
+   "wins": 0,
+   "starts": 1,
+   "top5": 1,
+   "top10": 1
+  },
+  {
+   "pos": 43,
+   "name": "Wayne Jacks",
+   "wiki": "Wayne Jacks",
+   "points": 179,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 44,
+   "name": "Greg Davis",
+   "wiki": null,
+   "points": 173,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 45,
+   "name": "Craig Raudman",
+   "wiki": "Craig Raudman",
+   "points": 158,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 46,
+   "name": "Clint Mears",
+   "wiki": "Clint Mears",
+   "points": 152,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 47,
+   "name": "Lance Hooper",
+   "wiki": "Lance Hooper",
+   "points": 151,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 1
+  },
+  {
+   "pos": 48,
+   "name": "Garland Self",
+   "wiki": null,
+   "points": 142,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 1
+  },
+  {
+   "pos": 49,
+   "name": "Jeff Murray",
+   "wiki": null,
+   "points": 140,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 50,
+   "name": "Scott Lynch",
+   "wiki": "Scott Lynch (racing driver)",
+   "points": 138,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 1
+  },
+  {
+   "pos": 51,
+   "name": "Marty Houston",
+   "wiki": "Marty Houston",
+   "points": 138,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 1
+  },
+  {
+   "pos": 52,
+   "name": "Kevin Culver",
+   "wiki": null,
+   "points": 134,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 1
+  },
+  {
+   "pos": 53,
+   "name": "Gary Collins",
+   "wiki": "Gary Collins (racing driver)",
+   "points": 130,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 54,
+   "name": "Mike Hamby",
+   "wiki": null,
+   "points": 124,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 55,
+   "name": "Butch Miller",
+   "wiki": "Butch Miller (racing driver)",
+   "points": 124,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 56,
+   "name": "Gene Woods",
+   "wiki": null,
+   "points": 124,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 57,
+   "name": "Hershel McGriff",
+   "wiki": "Hershel McGriff",
+   "points": 121,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 58,
+   "name": "Bow Carpenter",
+   "wiki": null,
+   "points": 121,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 59,
+   "name": "Rick Sutherland",
+   "wiki": null,
+   "points": 118,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 60,
+   "name": "Les Den Herder",
+   "wiki": null,
+   "points": 115,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 61,
+   "name": "Kevin Harvick",
+   "wiki": "Kevin Harvick",
+   "points": 109,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 62,
+   "name": "Tony Kester",
+   "wiki": null,
+   "points": 106,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 63,
+   "name": "Zan Sharp",
+   "wiki": null,
+   "points": 103,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 64,
+   "name": "Tony Hunt",
+   "wiki": null,
+   "points": 100,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 65,
+   "name": "David Gilliland",
+   "wiki": "David Gilliland",
+   "points": 100,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 66,
+   "name": "Dwayne Leik",
+   "wiki": "Dwayne Leik",
+   "points": 97,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 67,
+   "name": "Gary Morris",
+   "wiki": null,
+   "points": 94,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 68,
+   "name": "A. J. Alsup",
+   "wiki": null,
+   "points": 91,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 69,
+   "name": "Jeff Davis",
+   "wiki": "Jeff Davis (racing driver)",
+   "points": 91,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 70,
+   "name": "L. J. Pryor",
+   "wiki": null,
+   "points": 85,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 71,
+   "name": "Tim Woods",
+   "wiki": "Tim Woods (racing driver)",
+   "points": 82,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 72,
+   "name": "Jerry Kobza",
+   "wiki": "Jerry Kobza",
+   "points": 82,
+   "wins": 0,
+   "starts": 0,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 73,
+   "name": "Scott Busby",
+   "wiki": null,
+   "points": 79,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 74,
+   "name": "Johnny Benson Jr.",
+   "wiki": "Johnny Benson Jr.",
+   "points": 77,
+   "wins": 1,
+   "starts": 1,
+   "top5": 1,
+   "top10": 1
+  },
+  {
+   "pos": 75,
+   "name": "Dan Holtz",
+   "wiki": null,
+   "points": 76,
+   "wins": 0,
+   "starts": 0,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 76,
+   "name": "Rich DeLong Jr.",
+   "wiki": "Rich DeLong Jr.",
+   "points": 76,
+   "wins": 0,
+   "starts": 1,
+   "top5": 0,
+   "top10": 0
+  },
+  {
+   "pos": 77,
+   "name": "Michael Walker",
+   "wiki": null,
+   "points": 70,
+   "wins": 0,
+   "starts": 0,
+   "top5": 0,
+   "top10": 0
+  }
+ ],
+ "schedule": [
+  {
+   "round": 1,
+   "date": "2000-03-18",
+   "race": "NAPA Auto Parts 100",
+   "track": "Phoenix International Raceway",
+   "city": "Avondale",
+   "state": "AZ",
+   "winner": "Kevin Richards",
+   "winner_wiki": "Kevin Richards (racing driver)"
+  },
+  {
+   "round": 2,
+   "date": "2000-03-25",
+   "race": "Outback Steakhouse Presents the Coors 200",
+   "track": "Mesa Marin Raceway",
+   "city": "Bakersfield",
+   "state": "CA",
+   "winner": "Brendan Gaughan",
+   "winner_wiki": "Brendan Gaughan"
+  },
+  {
+   "round": 3,
+   "date": "2000-04-22",
+   "race": "The Orleans 150",
+   "track": "Las Vegas Motor Speedway",
+   "city": "Las Vegas",
+   "state": "NV",
+   "winner": "David Starr",
+   "winner_wiki": "David Starr (racing driver)"
+  },
+  {
+   "round": 4,
+   "date": "2000-04-29",
+   "race": "Pontiac Widetrack Grand Prix 200",
+   "track": "California Speedway",
+   "city": "Fontana",
+   "state": "CA",
+   "winner": "Johnny Benson Jr.",
+   "winner_wiki": "Johnny Benson Jr."
+  },
+  {
+   "round": 5,
+   "date": "2000-05-21",
+   "race": "Salinas 250",
+   "track": "Laguna Seca Raceway",
+   "city": "Monterey",
+   "state": "CA",
+   "winner": "Bobby Dotter",
+   "winner_wiki": "Bobby Dotter"
+  },
+  {
+   "round": 6,
+   "date": "2000-06-24",
+   "race": "Home Depot 250",
+   "track": "Irwindale Speedway",
+   "city": "Irwindale",
+   "state": "CA",
+   "winner": "Bobby Dotter",
+   "winner_wiki": "Bobby Dotter"
+  },
+  {
+   "round": 7,
+   "date": "2000-07-04",
+   "race": "NAPA Auto Parts 200",
+   "track": "Portland Speedway",
+   "city": "Portland",
+   "state": "OR",
+   "winner": "Jeff Jefferson",
+   "winner_wiki": "Jeff Jefferson (racing driver)"
+  },
+  {
+   "round": 8,
+   "date": "2000-07-16",
+   "race": "Coors Light 200",
+   "track": "Evergreen Speedway",
+   "city": "Monroe",
+   "state": "WA",
+   "winner": "Brendan Gaughan",
+   "winner_wiki": "Brendan Gaughan"
+  },
+  {
+   "round": 9,
+   "date": "2000-08-19",
+   "race": "Home Depot 250",
+   "track": "Irwindale Speedway",
+   "city": "Irwindale",
+   "state": "CA",
+   "winner": "Joe Bean",
+   "winner_wiki": "Joe Bean (racing driver)"
+  },
+  {
+   "round": 10,
+   "date": "2000-09-04",
+   "race": "Bank One 250",
+   "track": "Rocky Mountain Raceways",
+   "city": "West Valley City",
+   "state": "UT",
+   "winner": "Bobby Dotter",
+   "winner_wiki": "Bobby Dotter"
+  },
+  {
+   "round": 11,
+   "date": "2000-10-22",
+   "race": "Spears Manufacturing 250",
+   "track": "Mesa Marin Raceway",
+   "city": "Bakersfield",
+   "state": "CA",
+   "winner": "Eric Norris",
+   "winner_wiki": "Eric Norris"
+  },
+  {
+   "round": 12,
+   "date": "2000-11-11",
+   "race": "Home Depot 300",
+   "track": "Irwindale Speedway",
+   "city": "Irwindale",
+   "state": "CA",
+   "winner": "Bobby Dotter",
+   "winner_wiki": "Bobby Dotter"
+  }
+ ],
+ "sources": [
+  "https://en.wikipedia.org/w/index.php?title=2000_NASCAR_Winston_West_Series&oldid=1378302250",
+  "https://en.wikipedia.org/w/index.php?title=ARCA_Menards_Series_West&oldid=1378751108"
+ ]
+}
