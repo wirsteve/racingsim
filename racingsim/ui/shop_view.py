@@ -56,7 +56,7 @@ def car_row(w, d, cls, car, track, primary: bool, idx: int = -1) -> dict:
             "shocks": sh.label if sh else car.shocks,
             "rating": round(C.rating(car, cls, track, d.feedback, tire_wear=C.steady_wear(cls, car.new_tires, track),
                                      bonus=SH.rating_bonus(w, d, cls, track, car=car))),
-            "resale": round(C.resale(car, cls))}
+            "resale": round(C.resale(car, cls) * (1 if primary or idx < 0 else SH.PRIVATE_SALE))}
 
 
 def shop(game: "Game") -> dict:
@@ -114,7 +114,7 @@ def shop(game: "Game") -> dict:
         spares.append({"idx": i, "label": opt.label, "q": round(e["q"]), "runs": e["runs"],
                        "health": round(e["health"]), "sealed": opt.sealed,
                        "freshen": round(SH.freshen_cost(w, opt, e["health"])),
-                       "value": round(opt.usd * 0.55 * (0.3 + 0.7 * e["health"] / 100))})
+                       "value": round(SH.engine_value(opt, e))})
     out["engines"] = spares
     fb = SH.fac(op, "fab")
     kit = spec["build"].get("kit_share", 0.8)
@@ -158,10 +158,14 @@ def team_info(w, d):
     for k in SH.TEAM_FACILITIES:
         f = spec[k]
         lv = SH.team_level(t, k)
-        effect = {"rnd": f"+{f['equipment'] * lv:g} equipment a season",
-                  "engineering": f"+{f['setup'] * lv:g} setup on race day",
-                  "pit": f"stops {round(f['pit'] * lv * 100)}% faster",
-                  "transport": f"sponsors +{round(f['sponsor'] * lv * 100)}%, failures -{round(f['mech'] * lv * 100)}%"}[k]
+        if k == "rnd":
+            effect = f"+{f['equipment'] * lv:g} equipment a season"
+        elif k == "engineering":
+            effect = f"+{f['setup'] * lv:g} setup on race day"
+        elif k == "pit":
+            effect = f"stops {round(f['pit'] * lv * 100)}% faster"
+        else:
+            effect = f"sponsors +{round(f['sponsor'] * lv * 100)}%, failures -{round(f['mech'] * lv * 100)}%"
         rows.append({"key": k, "label": f["label"], "about": f["about"], "level": lv,
                      "next": round(f["price"][lv] * base) if lv < 3 else None,
                      "upkeep": round(f["upkeep"] * base), "effect": effect})

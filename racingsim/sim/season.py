@@ -178,6 +178,14 @@ class SeasonRunner:
                         ht = garage.home_track(world, s)
                         self.mech[d.id] = C.mech_risk(cls, d.car, ht.sim.mechanical_stress if ht else 50)
 
+        # A player with a race shop but no own car this season (a team seat) still pays its rent and upkeep.
+        p = world.player
+        if p is not None and p.status != RETIRED and world.__dict__.get("shop") is not None \
+                and shop.get(world).season != world.year:
+            def pay(amount: float, text: str) -> None:
+                charge(p, amount)
+                p.log(world.year, f"{text}: ${amount:,.0f}")
+            shop.season_start(world, p, None, None, pay)
         self.sub_pool = _substitute_pool(world)
         self.calendar: dict[int, list[tuple[str, int]]] = defaultdict(list)
         for sid in sorted(self.by_series):

@@ -76,6 +76,8 @@ class Operation:
     market: dict = field(default_factory=dict)      # {"stamp", "items"}
     seq: int = 0                                    # numbers cars and listings
     season: int = 0                                 # the last season the shop's upkeep was paid
+    peak: float = 0.0                               # the highest upkeep level paid for this season
+    capital: float = 0.0                            # the player's own savings put into the shop (come back in full)
 
 
 def get(world: "World") -> Operation:
@@ -96,6 +98,53 @@ def fac(op: Operation, name: str) -> dict:
 
 def hauler(op: Operation) -> dict:
     return hauler_opt(op.hauler) or haulers()[0]
+
+
+def _usd(world: "World", x: float) -> str:
+    """Money in a message, in the season's own dollars (the model runs in 2025 dollars)."""
+    from ..history.economy import price_index
+    return f"${x * price_index(world.year):,.0f}"
+
+
+def _buy(world: "World", d: "Driver", amount: float) -> bool:
+    """Pay for shop capital: in season the racing account first, then savings; in the off-season savings, then
+    next season's racing money. Savings that go into the shop are the player's own capital: selling it
+    returns them in full."""
+    from .garage import _pay
+    if amount <= 0:
+        return True
+    before = d.savings
+    if not _pay(d, amount):
+        return False
+    get(world).capital += max(0.0, before - d.savings)
+    return True
+
+
+def _proceeds(world: "World", d: "Driver", value: float) -> None:
+    """Money from selling shop capital. The player's own capital comes back in full; the rest was the
+    family's and sponsors' racing money: in season it goes back into the racing account, in the off-season
+    the family keeps half (as close_account does with money left unspent)."""
+    op = get(world)
+    value = max(0.0, value)
+    own = min(value, op.capital)
+    op.capital -= own
+    car = d.car
+    if car is not None and car.account is not None:
+        car.account += value
+        car.drawn += own
+    else:
+        d.savings += own + 0.5 * (value - own)
+
+
+def engine_value(opt, e: dict) -> float:
+    """A spare engine on the used market: like an engine in a car (rules/car.py resale)."""
+    if opt is None:
+        return 0.0
+    over = clamp((e["runs"] - opt.rebuild_races) / opt.rebuild_races, 0, 2) if opt.rebuild_races else 0.0
+    return opt.usd * 0.55 * (0.3 + 0.7 * e["health"] / 100) * (1 - 0.3 * over / 2)
+
+
+PRIVATE_SALE = 0.8       # of a car's market value a racer gets selling it themselves (the dealer's margin is the buyer's)
 
 
 def in_season(world: "World") -> bool:
@@ -192,6 +241,8 @@ def typical(season_cost: float) -> Operation:
 def overhead(world: "World", template, base: float) -> float:
     """Tonight's crew, practice and spares cost with the typical operation's upkeep taken out (the
     player pays their own at the start of the season)."""
+    if get(world).season != world.year:      # nothing paid for this season (an old save loaded mid-season)
+        return base
     events = max(1, template.events)
     return max(0.4 * base, base - upkeep(typical(template.season_cost)) / events)
 
@@ -204,13 +255,15 @@ def season_upkeep(world: "World", template, base: float) -> float:
     off here instead.)"""
     events = max(1, template.events)
     t = upkeep(typical(template.season_cost))
-    removed = (base - overhead(world, template, base)) * events
+    removed = max(0.4 * base, base - t / events)
+    removed = (base - removed) * events
     return max(0.0, upkeep(get(world)) - (t - removed))
 
 
-def season_start(world: "World", d: "Driver", cls: CarClass, template, pay) -> None:
+def season_start(world: "World", d: "Driver", cls: Optional[CarClass], template, pay) -> None:
     """Once a season, at the first look at the account: the cars and the rig age a year, the
-    upkeep is paid and builds finished over the winter roll out."""
+    upkeep is paid and builds finished over the winter roll out. (``cls`` None: the player isn't racing
+    their own car this season, and the shop's upkeep is paid in full.)"""
     op = get(world)
     if op.season == world.year:
         return
@@ -224,7 +277,8 @@ def season_start(world: "World", d: "Driver", cls: CarClass, template, pay) -> N
     if not first:
         op.hauler_age += 1
     tick(world, d)
-    cost = season_upkeep(world, template, C.overhead_per_night(cls, template))
+    op.peak = upkeep(op)
+    cost = season_upkeep(world, template, C.overhead_per_night(cls, template)) if cls is not None else upkeep(op)
     if cost >= 1:
         pay(cost, f"Shop & hauler for the season: {hauler(op)['label'].lower()}, {fac(op, 'space')['label'].lower()} "
                   "(rent, insurance, tags, upkeep)")
@@ -248,6 +302,8 @@ def practice(world: "World", d: "Driver", cls: CarClass, track, wk: int, scale: 
     d.car.condition = clamp(d.car.condition - dmg * 100, 0, 100)
     op = get(world)
     spare = _best_backup(world, d, cls)
+    if spare is not None and C.rating(spare, cls, track, d.feedback) <= C.rating(d.car, cls, track, d.feedback):
+        spare = None                             # the bent primary is still the better car
     if spare is not None and hauler(op)["cars"] >= 2:
         idx = op.backups.index(spare)
         make_primary(world, d, idx)
@@ -291,6 +347,8 @@ def tick(world: "World", d: "Driver") -> list[str]:
         else:
             op.backups.append(car)
         notes.append(f"{car.tag} is finished and ready to race.")
+        from .garage import all_class
+        sync(world, d, all_class(car.cls))
         world.post("player", f"Your new build ({car.tag}) is finished", driver_id=d.id, importance=1)
     return notes
 
@@ -319,7 +377,7 @@ def _move_books(src: "C.Car", dst: "C.Car") -> None:
 
 def _swap_in(world: "World", d: "Driver", car: "C.Car") -> None:
     """``car`` becomes the primary; the old primary goes into the fleet (or is sold if it's for another class)."""
-    from .garage import _refund, all_class
+    from .garage import all_class
     old = d.car
     d.car = car
     if old is None:
@@ -329,7 +387,7 @@ def _swap_in(world: "World", d: "Driver", car: "C.Car") -> None:
         get(world).backups.append(old)
         return
     oc = all_class(old.cls)
-    _refund(d, C.resale(old, oc) if oc else 0.0)
+    _proceeds(world, d, PRIVATE_SALE * C.resale(old, oc) if oc else 0.0)
 
 
 def clear_other_classes(world: "World", d: "Driver", cls: CarClass) -> None:
@@ -349,13 +407,12 @@ def clear_other_classes(world: "World", d: "Driver", cls: CarClass) -> None:
             keep.append(e)
             continue
         oc = next((c for c in (all_class(k) for k in _classes()) if c and c.engine(e["key"])), None)
-        opt = oc.engine(e["key"]) if oc else None
-        value += opt.usd * 0.55 * (0.3 + 0.7 * e["health"] / 100) if opt else 0.0
+        value += engine_value(oc.engine(e["key"]) if oc else None, e)
     op.engines = keep
     op.market = {}
     if value >= 1:
         d.savings += value
-        d.log(world.year, f"sold the old class's spare cars and engines for ${value:,.0f}")
+        d.log(world.year, f"sold the old class's spare cars and engines for {_usd(world, value)}")
 
 
 def _classes():
@@ -428,11 +485,13 @@ def shop_action(world: "World", d: "Driver", action: str, key: Optional[str] = N
             return "That's the rig you have."
         cur = hauler(op)
         trade = hauler_trade(op)
-        if not G._settle(d, h["usd"], trade):
-            return f"The {h['label'].lower()} costs ${h['usd']:,.0f} (your {cur['label'].lower()} fetches ${trade:,.0f})."
+        if trade >= h["usd"]:
+            _proceeds(world, d, trade - h["usd"])
+        elif not _buy(world, d, h["usd"] - trade):
+            return f"The {h['label'].lower()} costs {_usd(world, h['usd'])} (your {cur['label'].lower()} fetches {_usd(world, trade)})."
         before = upkeep(op)
-        op.hauler, op.hauler_age = h["key"], 0
-        _ledger(world, d, f"Hauler: {h['label']} (sold the {cur['label'].lower()} for ${trade:,.0f})", -(h["usd"] - trade))
+        op.hauler, op.hauler_age = h["key"], 0 if in_season(world) else -1   # off-season: new for next season
+        _ledger(world, d, f"Hauler: {h['label']} (sold the {cur['label'].lower()} for {_usd(world, trade)})", -(h["usd"] - trade))
         _prorate(world, d, before)
         return f"Your rig is now the {h['label'].lower()}."
     if action in ("upgrade", "downgrade"):
@@ -444,8 +503,8 @@ def shop_action(world: "World", d: "Driver", action: str, key: Optional[str] = N
             if lv + 1 >= len(levels):
                 return f"Your {data()['facilities'][key]['label'].lower()} is as good as it gets."
             nxt = levels[lv + 1]
-            if not G._pay(d, nxt["usd"]):
-                return f"{nxt['label']} costs ${nxt['usd']:,.0f} - more than you have."
+            if not _buy(world, d, nxt["usd"]):
+                return f"{nxt['label']} costs {_usd(world, nxt['usd'])} - more than you have."
             before = upkeep(op)
             op.levels[key] = lv + 1
             _ledger(world, d, f"Shop: {nxt['label']}", -nxt["usd"])
@@ -459,11 +518,11 @@ def shop_action(world: "World", d: "Driver", action: str, key: Optional[str] = N
         if key == "space" and len(op.engines) > levels[lv - 1]["engines"]:
             return "Sell some spare engines first."
         back = SELL_BACK * levels[lv]["usd"]
-        G._refund(d, back)
+        _proceeds(world, d, back)
         op.levels[key] = lv - 1
         _ledger(world, d, f"Sold off: {levels[lv]['label']}", back)
         sync(world, d, G.target_class(world, d))
-        return f"Sold off the {levels[lv]['label'].lower()} for ${back:,.0f}."
+        return f"Sold off the {levels[lv]['label'].lower()} for {_usd(world, back)}."
     cls = G.target_class(world, d)
     if cls is None:
         return "You don't run your own car in a class with a garage."
@@ -475,8 +534,8 @@ def shop_action(world: "World", d: "Driver", action: str, key: Optional[str] = N
         replace = d.car is None or d.car.cls != cls.key
         if not replace and cars_kept(world, d) >= cars:
             return f"No room in the shop: your {fac(op, 'space')['label'].lower()} holds {cars} cars."
-        if not G._pay(d, item["price"]):
-            return f"The seller wants ${item['price']:,.0f} - more than you have."
+        if not _buy(world, d, item["price"]):
+            return f"The seller wants {_usd(world, item['price'])} - more than you have."
         car = item["car"]
         car.tag = _tag(op)
         _stamp(world, car)
@@ -512,8 +571,8 @@ def shop_action(world: "World", d: "Driver", action: str, key: Optional[str] = N
             return f"No room in the shop for another car: your {fac(op, 'space')['label'].lower()} holds {cars}."
         kit = data()["build"].get("kit_share", 0.8) * ch.usd
         price = kit + (0 if spare else en.usd) + sh.usd
-        if not G._pay(d, price):
-            return f"The build needs ${price:,.0f} in parts - more than you have."
+        if not _buy(world, d, price):
+            return f"The build needs {_usd(world, price)} in parts - more than you have."
         car = C.build(cls, ch, en, sh, d.car.new_tires if d.car else cls.tires.typical_new)
         car.chassis_q = clamp(ch.quality + fb["build"], 0, 100)
         if spare is not None:
@@ -528,7 +587,10 @@ def shop_action(world: "World", d: "Driver", action: str, key: Optional[str] = N
         sync(world, d, cls)
         return f"{car.tag} goes on the jig: ready {when}." + (" " + " ".join(notes) if notes else "")
     if action == "primary":
-        msg = make_primary(world, d, _int(key))
+        i = _int(key)
+        if 0 <= i < len(op.backups) and op.backups[i].cls != cls.key:
+            return f"That car isn't a {cls.label.lower()}."
+        msg = make_primary(world, d, i)
         sync(world, d, cls)
         return msg
     if action == "sell_car":
@@ -536,18 +598,19 @@ def shop_action(world: "World", d: "Driver", action: str, key: Optional[str] = N
         if not 0 <= i < len(op.backups):
             return "No such car."
         car = op.backups.pop(i)
-        value = C.resale(car, cls) if car.cls == cls.key else 0.0
-        G._refund(d, value)
+        oc = G.all_class(car.cls)
+        value = PRIVATE_SALE * C.resale(car, oc) if oc else 0.0
+        _proceeds(world, d, value)
         _ledger(world, d, f"Sold {car.tag or 'a backup car'}", value)
-        return f"Sold {car.tag or 'the car'} for ${value:,.0f}."
+        return f"Sold {car.tag or 'the car'} for {_usd(world, value)}."
     if action == "buy_engine":
         en = cls.engine(key or "")
         if en is None or not en.available(world.year):
             return "That engine isn't legal this season."
         if len(op.engines) >= engines:
             return f"No room for another spare engine (your shop keeps {engines})."
-        if not G._pay(d, en.usd):
-            return f"A {en.label} costs ${en.usd:,.0f} - more than you have."
+        if not _buy(world, d, en.usd):
+            return f"A {en.label} costs {_usd(world, en.usd)} - more than you have."
         op.engines.append({"key": en.key, "q": en.quality, "runs": 0, "health": 100.0})
         _ledger(world, d, f"Spare engine: {en.label}", -en.usd)
         return f"A fresh {en.label} goes on the engine stand."
@@ -558,20 +621,20 @@ def shop_action(world: "World", d: "Driver", action: str, key: Optional[str] = N
         e = op.engines[i]
         opt = cls.engine(e["key"])
         if action == "sell_engine":
-            value = (opt.usd * 0.55 * (0.3 + 0.7 * e["health"] / 100)) if opt else 0.0
+            value = engine_value(opt, e)
             op.engines.pop(i)
-            G._refund(d, value)
+            _proceeds(world, d, value)
             _ledger(world, d, f"Sold a spare {opt.label if opt else 'engine'}", value)
-            return f"Sold the spare engine for ${value:,.0f}."
+            return f"Sold the spare engine for {_usd(world, value)}."
         if action == "freshen_engine":
             if opt is None:
                 return "Unknown engine."
             cost = freshen_cost(world, opt, e["health"])
-            if not G._pay(d, cost):
-                return f"A freshen costs ${cost:,.0f} - more than you have."
+            if not _buy(world, d, cost):
+                return f"A freshen costs {_usd(world, cost)} - more than you have."
             e["runs"], e["health"] = 0, 100.0
             _ledger(world, d, f"Spare engine freshened ({opt.label})", -cost)
-            return f"The spare {opt.label} is fresh (${cost:,.0f})."
+            return f"The spare {opt.label} is fresh ({_usd(world, cost)})."
         car = d.car
         if car is None or car.cls != cls.key:
             return "You need a car to put it in."
@@ -585,12 +648,16 @@ def shop_action(world: "World", d: "Driver", action: str, key: Optional[str] = N
 
 
 def _prorate(world: "World", d: "Driver", before: float) -> None:
-    """A bigger rig or shop bought mid-season: the rest of this season's extra upkeep is paid now."""
+    """A bigger rig or shop bought mid-season: the rest of this season's extra upkeep is paid now (over the
+    most already paid for this season, so selling off and buying back doesn't pay twice)."""
     from ..sim.season import SEASON_WEEKS, charge
     from .garage import spend
-    extra = (upkeep(get(world)) - before) * max(0, SEASON_WEEKS - week(world)) / SEASON_WEEKS
+    op = get(world)
+    paid = max(before, op.peak) if op.season == world.year else before
+    extra = (upkeep(op) - paid) * max(0, SEASON_WEEKS - week(world)) / SEASON_WEEKS
     if not in_season(world) or extra < 1 or d.car is None:
         return
+    op.peak = upkeep(op)
     if not spend(d, extra):
         charge(d, extra)
     _ledger(world, d, "Upkeep for the rest of the season", -extra)
@@ -611,7 +678,7 @@ def freshen_cost(world: "World", opt, health: float) -> float:
 
 
 def hauler_trade(op: Operation) -> float:
-    return hauler(op)["usd"] * HAULER_RESALE * 0.9 ** op.hauler_age
+    return hauler(op)["usd"] * HAULER_RESALE * 0.9 ** max(0, op.hauler_age)
 
 
 def _ledger(world: "World", d: "Driver", text: str, amount: float) -> None:
@@ -674,13 +741,13 @@ def team_action(world: "World", d: "Driver", action: str, key: Optional[str]) ->
     price = spec["price"][lv] * team_cost_base(world, t)
     have = max(0.0, t.cash) + max(0.0, d.savings)
     if price > have:
-        return f"That costs ${price:,.0f}: the team has ${max(0.0, t.cash):,.0f} and you have ${d.savings:,.0f}."
+        return f"That costs {_usd(world, price)}: the team has {_usd(world, max(0.0, t.cash))} and you have {_usd(world, d.savings)}."
     from_team = min(max(0.0, t.cash), price)
     t.cash -= from_team
     d.savings -= price - from_team
     if not isinstance(getattr(t, "facilities", None), dict):
         t.facilities = {}
     t.facilities[key] = lv + 1
-    world.post("player", f"{t.name} invests ${price:,.0f} in {spec['label'].lower()} (level {lv + 1})",
+    world.post("player", f"{t.name} invests {_usd(world, price)} in {spec['label'].lower()} (level {lv + 1})",
                driver_id=d.id, importance=1)
-    return f"{t.name}: {spec['label'].lower()} up to level {lv + 1} (${price:,.0f})."
+    return f"{t.name}: {spec['label'].lower()} up to level {lv + 1} ({_usd(world, price)})."

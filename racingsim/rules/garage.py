@@ -375,6 +375,7 @@ def garage_action(world: "World", d: "Driver", action: str, key: Optional[str] =
             return f"That package costs ${price:,.0f} (trade-in ${trade:,.0f}) - more than you have."
         new = C.build(cls, ch, en, sh, car.new_tires if car is not None else cls.tires.typical_new)
         new.year = world.year
+        SH._stamp(world, new)
         if car is not None:   # the season's money and history move to the new car (read after paying)
             for attr in ("account", "ledger", "winnings", "drawn", "races", "auto_rebuild", "auto_repair", "reserve"):
                 setattr(new, attr, getattr(car, attr))
@@ -394,6 +395,8 @@ def garage_action(world: "World", d: "Driver", action: str, key: Optional[str] =
         if not _settle(d, opt.usd, trade):
             return f"{opt.label} costs ${opt.usd:,.0f} (old chassis fetches ${trade:,.0f})."
         car.chassis, car.chassis_q, car.chassis_age, car.condition = opt.key, opt.quality, opt.age, 100.0
+        car.season_seen = 0
+        SH._stamp(world, car)          # a new chassis counts its age from its first season
         log(car, week, f"Chassis: {opt.label} (sold old for ${trade:,.0f})", -(opt.usd - trade))
         return f"New chassis: {opt.label}."
     if action == "engine":
