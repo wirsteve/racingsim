@@ -1092,6 +1092,7 @@ const ROUTES = [
   [/^#\/watch\/([^/]+)\/(\d+)(?:\/(\d+))?$/, (m) => watchPage(decodeURIComponent(m[1]), m[2], m[3]), true],
   [/^#\/jewels$/, () => jewelsPage(), true],
   [/^#\/garage$/, () => garagePage(), true],
+  [/^#\/shop$/, () => shopPage(), true],
   [/^#\/pyramid$/, () => pyramidPage(), true],
   [/^#\/instances\/(.+)$/, (m) => instancesPage(m[1]), true],
   [/^#\/drivers$/, () => driversPage(), true],

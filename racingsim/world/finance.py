@@ -41,6 +41,7 @@ import math
 from typing import TYPE_CHECKING, Optional
 
 from ..util import clamp
+from ..rules import shop
 from . import fans as F
 
 if TYPE_CHECKING:
@@ -162,10 +163,13 @@ def close_books(world: "World", results) -> None:
             running = tpl.season_cost * t.cars * t.spend
             staff_pay = sum(m.salary for m in team_staff(world, t.id))
             salaries = sum(d.salary for d in drivers if d.seat_funded)
+            facilities = shop.team_upkeep(world, t)
             revenue = {"sponsors": sponsors, "charter": charter, "owner": owner, "pay_drivers": brought,
                        "purse": purse, "merchandise": merch, "manufacturer": mfr}
             costs = {"running": running - min(staff_pay, running * 0.6), "staff": min(staff_pay, running * 0.6),
                      "driver_salaries": salaries}
+            if facilities:
+                costs["facilities"] = facilities
             net = sum(revenue.values()) - sum(costs.values())
             t.cash = round(t.cash + net)
             ledgers.append((t, pct, drivers, sum(revenue.values()), salaries))
@@ -182,7 +186,7 @@ def close_books(world: "World", results) -> None:
         moved = []
         for t, pct, drivers, earned, salaries in ledgers:
             x = clamp(math.log2(max(t.spend, 0.05) / max(mean_spend, 0.05)), -1.5, 1.5)
-            target = mean_eq + 0.75 * (t.equipment - mean_eq) + SPEND_EFFECT * x
+            target = mean_eq + 0.75 * (t.equipment - mean_eq) + SPEND_EFFECT * x + shop.team_equipment(t)
             moved.append((t, t.equipment + 0.35 * (target - t.equipment) + rng.gauss(0, 2)))
         if moved:   # the series as a whole keeps its level (drifting slowly back to where it started)
             anchor = world.__dict__.get("equipment_anchor", {}).get(sid, mean_eq)
@@ -225,7 +229,7 @@ def _sponsors(world: "World", t: "Team", tpl, pct: float, fans: float, fan_media
     """Sponsors follow results and fans against the rest of the series (an average team holds steady),
     and drift back toward what this team has always been able to raise."""
     rel = clamp(math.log10(max(fans, 0.01) / max(fan_median, 0.01)), -1.5, 1.5)
-    factor = (0.85 + 0.3 * pct) * (1 + 0.04 * rel)
+    factor = (0.85 + 0.3 * pct) * (1 + 0.04 * rel) * shop.team_sponsor(t)
     per_seat = tpl.season_cost / max(1, tpl.drivers_per_car)
     new = t.sponsor_funding * clamp(factor + world.rng.gauss(0, 0.04), 0.85, 1.15)
     anchor = t.funding_anchor or t.sponsor_funding

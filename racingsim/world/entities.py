@@ -220,9 +220,11 @@ class Team:
     player_owned: bool = False  # owner mode (game/owner.py)
     funding_anchor: float = 0.0  # what the organisation raised when its books opened (sponsors drift back to it)
     budget_mode: str = "normal"
+    facilities: dict = field(default_factory=dict)  # owner mode: R&D, engineering, pit, transport levels
 
     def __setstate__(self, state: dict) -> None:
         state.setdefault("books", [])   # saves from before team finances
+        state.setdefault("facilities", {})
         self.__dict__.update(state)
 
     @property

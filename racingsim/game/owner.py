@@ -77,9 +77,14 @@ def actions(world: "World", d: "Driver") -> list[dict]:
          "detail": "Who your team signs for open seats when the market runs.",
          "options": [{"value": k, "label": k.title()} for k in PRIORITY]},
         {"id": "sell_team", "label": f"Sell {t.name}",
-         "detail": f"A buyer pays about ${SELL_BACK * buy_in(world.series(t.series_id).template):,.0f} for the shop "
-                   "and cars, plus whatever cash the team holds."},
+         "detail": f"A buyer pays about ${SELL_BACK * buy_in(world.series(t.series_id).template) + _facilities(world, t):,.0f} "
+                   "for the shop, the cars and the facilities you built, plus whatever cash the team holds."},
     ]
+
+
+def _facilities(world: "World", t: "Team") -> float:
+    from ..rules.shop import team_value
+    return team_value(world, t)
 
 
 def act(world: "World", d: "Driver", action: str, arg: Optional[str]) -> Optional[str]:
@@ -157,8 +162,9 @@ def sell(world: "World", d: "Driver") -> str:
     t = owned(world)
     if t is None:
         return "You don't own a team."
+    from ..rules.shop import team_value
     tpl = world.series(t.series_id).template
-    price = SELL_BACK * buy_in(tpl) + max(0.0, t.cash)
+    price = SELL_BACK * buy_in(tpl) + max(0.0, t.cash) + team_value(world, t)
     d.savings += price
     t.cash = round(0.25 * tpl.season_cost * t.cars)   # the buyer brings money of their own
     t.player_owned = False

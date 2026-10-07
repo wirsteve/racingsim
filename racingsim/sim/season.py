@@ -30,6 +30,7 @@ from ..career import goals
 from ..career import morale as morale_mod
 from ..rules import car as C
 from ..rules import garage
+from ..rules import shop
 from ..rules.payouts import Purse
 from ..rules.points import format_for, heat_points, score_box, score_race, system_for
 from . import engine
@@ -177,6 +178,14 @@ class SeasonRunner:
                         ht = garage.home_track(world, s)
                         self.mech[d.id] = C.mech_risk(cls, d.car, ht.sim.mechanical_stress if ht else 50)
 
+        # A player with a race shop but no own car this season (a team seat) still pays its rent and upkeep.
+        p = world.player
+        if p is not None and p.status != RETIRED and world.__dict__.get("shop") is not None \
+                and shop.get(world).season != world.year:
+            def pay(amount: float, text: str) -> None:
+                charge(p, amount)
+                p.log(world.year, f"{text}: ${amount:,.0f}")
+            shop.season_start(world, p, None, None, pay)
         self.sub_pool = _substitute_pool(world)
         self.calendar: dict[int, list[tuple[str, int]]] = defaultdict(list)
         for sid in sorted(self.by_series):
@@ -208,6 +217,9 @@ class SeasonRunner:
         # Nobody can race twice in a week: regulars of series racing this week are taken.
         self.busy = {d.id for sid, _ in week_events for d in self.by_series.get(sid, ())}
         self.injury_mark = len(self.res.injuries)
+        p = self.world.player
+        if p is not None and self.world.__dict__.get("shop") is not None:
+            shop.tick(self.world, p)             # builds finished this week join the fleet
         for sid, idx in week_events:
             info = self._run_event(sid, idx)
             if info:
@@ -400,6 +412,10 @@ class SeasonRunner:
                 if d.injury_races > 0 or d.suspension > 0:
                     continue
                 if d.is_player:
+                    if cls is not None and d.car is not None:
+                        swap = shop.ready_car(world, d, cls)
+                        if swap:
+                            world.post("player", swap, driver_id=d.id, series_id=sid, week=self.week, importance=2)
                     if cls is not None and d.car is not None and not garage.can_race(
                             d, cls, garage.travel_per_night(world, d, s)):
                         why = ("the engine is blown - rebuild or replace it in the Garage" if d.car.engine_health <= 0
@@ -428,8 +444,9 @@ class SeasonRunner:
                 if d.is_player and cls is not None and d.car is not None:
                     # Pay for tonight only once we know the race runs.
                     e.equipment = garage.before_race(world, d, cls, track, self.week,
-                                                     garage.travel_per_night(world, d, s), C.overhead_per_night(cls, tpl))
-                    e.mech = C.mech_risk(cls, d.car, track.sim.mechanical_stress)
+                                                     garage.travel_per_night(world, d, s),
+                                                     shop.overhead(world, tpl, C.overhead_per_night(cls, tpl)))
+                    e.mech = C.mech_risk(cls, d.car, track.sim.mechanical_stress) * shop.mech_mult(world)
         system = self.system(s)
         purse = self.purse(s)
         heat_pts: dict[int, float] = {}
@@ -489,6 +506,8 @@ class SeasonRunner:
                 chem = morale_mod.chemistry(self.world, team) if team else 0.0
                 eff["team_chemistry"] = chem
                 eff["setup_mean"] += chem * 0.6     # a shop that works together finds speed
+                if team is not None and team.__dict__.get("facilities"):
+                    shop.team_crew(team, eff)       # what an owner put into the team's facilities
             self.crews[key] = eff
         return self.crews[key]
 
