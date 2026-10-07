@@ -136,6 +136,7 @@ class RaceResult:
     paybacks: list = field(default_factory=list)   # [(retaliator id, target id)]
     weather: Optional[dict] = None                 # sim/weather.py: hot, wet, rain-shortened, delay
     scheduled: int = 0                             # laps scheduled (a rain-shortened race runs fewer)
+    replay: Optional[dict] = None                  # lap-by-lap frames for the race viewer (detail mode only)
 
 
 def race_laps(track: "Track", tier: int) -> int:
@@ -207,6 +208,24 @@ def _sync_laps(running: list[Car], completed: int, lap_s: float) -> None:
     lead_t = min(c.time for c in running)
     for c in running:
         c.laps = completed - max(0, int((c.time - lead_t) // lap_s))
+
+
+def _frame(cars: list[Car], order: list[Car], lap: int, green: bool, caution_left: int, pits_seen: list) -> list:
+    """One replay frame: running order with each car's gap to the leader (tenths of a second, laps down
+    included) and a code - 0 running, 1 pitted this step, 2 out (crash), 3 out (failure)."""
+    idx = {id(c): i for i, c in enumerate(cars)}
+    lead_t = order[0].time if order else 0.0
+    rows = []
+    for c in order:
+        i = idx[id(c)]
+        code = 1 if c.pits > pits_seen[i] else 0
+        pits_seen[i] = c.pits
+        rows.append([i, int(round((c.time - lead_t) * 10)), code])
+    for i, c in enumerate(cars):
+        if not c.running:
+            rows.append([i, -1, 2 if c.crashed else 3])
+    flag = "G" if green and caution_left <= 0 else "Y"
+    return [lap, flag, rows]
 
 
 # --------------------------------------------------------------------------- the race
@@ -286,6 +305,9 @@ def run(entries: list[Entry], track: "Track", tier: int, car_weight: float, rng:
     if wx == "rain_short":
         # The rain comes: the race goes the distance it can, and it's official.
         n_laps = max(1, round(n_laps * weather.get("share", 0.75)))
+    # Replay frames (races you watch): one per step - [lap, flag, [[car, gap tenths, code], ...] in order].
+    frames: list = [] if detail else None
+    pits_seen = [0] * len(cars)
     lap = 0
     caution_left = 0
     cautions = caution_laps = lead_changes = 0
@@ -531,6 +553,8 @@ def run(entries: list[Entry], track: "Track", tier: int, car_weight: float, rng:
                 c.pos_laps += k
                 if i <= 15:
                     c.top15_laps += k
+        if frames is not None:
+            frames.append(_frame(cars, order, lap, green, caution_left, pits_seen))
         if stage_ends and lap >= stage_ends[0]:
             # Scored at the stage lap - under yellow too (then there's no extra caution).
             stage_ends.pop(0)
@@ -576,9 +600,17 @@ def run(entries: list[Entry], track: "Track", tier: int, car_weight: float, rng:
     by_eq = sorted(range(len(finishes)), key=lambda i: -finishes[i].entry.equipment)
     for rank, i in enumerate(by_eq, start=1):
         finishes[i].expected_position = rank
+    replay = None
+    if frames is not None:
+        idx = {id(c): i for i, c in enumerate(cars)}
+        replay = {"lap_s": round(lap_s, 3), "laps": n_laps, "scheduled": scheduled, "track_type": tt,
+                  "cars": [{"id": c.entry.drivers[0].id, "name": who(c), "start": c.start,
+                            "team": c.entry.team_id, "car_key": c.entry.car_key} for c in cars],
+                  "finish": [idx[id(c)] for c in final], "frames": frames}
     return RaceResult(finishes=finishes, laps=n_laps, cautions=cautions, caution_laps=caution_laps,
                       lead_changes=lead_changes, leaders=len(leader_ids), margin=round(margin, 3),
-                      log=log, stages=stage_results, incidents=incidents, paybacks=paybacks, weather=weather, scheduled=scheduled)
+                      log=log, stages=stage_results, incidents=incidents, paybacks=paybacks, weather=weather, scheduled=scheduled,
+                      replay=replay)
 
 
 def driver_rating(pos: int, n: int, box: dict, laps: int) -> float:

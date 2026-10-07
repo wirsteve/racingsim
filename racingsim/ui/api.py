@@ -8,6 +8,7 @@ whose accuracy improves with the driver's exposure, as in the career model.
 from __future__ import annotations
 
 import random
+import zlib
 from collections import Counter, defaultdict
 from typing import TYPE_CHECKING, Optional
 
@@ -306,8 +307,48 @@ def race_result(world: "World", key: str, event: int, year: Optional[int] = None
                              "tier": d.tier, "box": box})
             return {"track": e["track"], "track_id": e["track_id"], "week": e["week"], "label": week_label(e["week"]),
                     "series": series_brief(world, e["series_id"]), "jewel": e.get("jewel_name"), "results": rows,
-                    "race": e.get("race"), "log": e.get("log")}
+                    "race": e.get("race"), "log": e.get("log"), "has_replay": "replay" in e}
     return None
+
+
+def _race_entry(world: "World", key: str, event: int, year: Optional[int]) -> Optional[dict]:
+    if year is None or year == world.year:
+        logs = world.season.race_log if world.season else {}
+    else:
+        logs = world.race_logs.get(year, {})
+    return next((e for e in logs.get(key, []) if e["event"] == event), None)
+
+
+def car_number(seed: int, taken: set) -> int:
+    """A stable car number for the race viewer (1-99, unique within the field)."""
+    n = (seed * 37) % 99 + 1
+    while n in taken:
+        n = n % 99 + 1
+    taken.add(n)
+    return n
+
+
+def replay(world: "World", key: str, event: int, year: Optional[int] = None) -> Optional[dict]:
+    """Everything the race viewer needs: the frames, the field with numbers and colours, the track."""
+    e = _race_entry(world, key, event, year)
+    if e is None or "replay" not in e:
+        return None
+    rp = e["replay"]
+    track = world.tracks.get(e["track_id"])
+    taken: set = set()
+    cars = []
+    for c in rp["cars"]:
+        d = world.drivers.get(c["id"])
+        team = world.teams.get(c["team"]) if c.get("team") is not None else None
+        seed = (zlib.crc32(c["car_key"].encode()) % 9973) if c.get("car_key") else c["id"]
+        hue_seed = c["team"] if c.get("team") is not None else c["id"]
+        cars.append({**c, "num": car_number(seed, taken),
+                     "hue": (hue_seed * 137) % 360, "me": bool(d and d.is_player),
+                     "team_name": team.name if team else None})
+    return {"track": e["track"], "track_id": e["track_id"], "series": series_brief(world, e["series_id"]),
+            "jewel": e.get("jewel_name"), "label": week_label(e["week"]), "race": e.get("race"),
+            "length_mi": track.facts.length_mi if track else None, "seed": sum(map(ord, e["track_id"])),
+            "replay": {**rp, "cars": cars}, "log": e.get("log") or []}
 
 
 def dashboard(game: "Game") -> dict:

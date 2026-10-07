@@ -358,6 +358,11 @@ class World:
             self.race_logs[self.year] = dict(self.season.race_log)
             for y in [y for y in self.race_logs if y < self.year - 2]:
                 del self.race_logs[y]
+            for y, logs in self.race_logs.items():       # replays are big: keep the season just run
+                if y < self.year:
+                    for infos in logs.values():
+                        for info in infos:
+                            info.pop("replay", None)
         summary.drivers_by_tier = self.tier_counts()
         self.summaries.append(summary)
         self.year += 1

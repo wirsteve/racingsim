@@ -89,7 +89,10 @@ def handle(method: str, path: str, query: dict, body: dict):
         return {"saved": path.stem}
     if head == "sim" and method == "POST":
         ran = g.sim_until(str(body.get("until", "week")))
-        return {"status": api.status(g), "races": len(ran)}
+        mine = [x for x in ran if x.get("player") and "replay" in x]
+        last = mine[-1] if mine else None
+        return {"status": api.status(g), "races": len(ran),
+                "player_race": {"key": last.get("jewel") or last["series_id"], "event": last["event"]} if last else None}
     if head == "dashboard":
         return api.dashboard(g)
     if head == "news":
@@ -113,6 +116,13 @@ def handle(method: str, path: str, query: dict, body: dict):
         if route[1] not in w.pyramid.series:
             raise ApiError("no such series", 404)
         return api.series_detail(w, route[1])
+    if head == "replay" and len(route) > 2:
+        if not route[2].isdigit():
+            raise ApiError("event must be a number")
+        res = api.replay(w, route[1], int(route[2]), int(query["year"]) if query.get("year", "").isdigit() else None)
+        if res is None:
+            raise ApiError("no replay for that race (replays are kept for your own races this season and last)", 404)
+        return res
     if head == "race" and len(route) > 2:
         res = api.race_result(w, route[1], int(route[2]), int(query["year"]) if query.get("year") else None)
         if res is None:
