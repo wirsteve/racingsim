@@ -213,6 +213,7 @@ async function dashboardPage() {
   view(`
     ${callout}
     ${heroCard(me)}
+    ${raceDay(d, me)}
     <div class="grid g-main" style="margin-top:16px">
       <div class="grid">
         <div class="card flush">
@@ -238,6 +239,24 @@ async function dashboardPage() {
         <div class="card"><div class="card-head"><h3>News wire</h3><a class="link small" href="#/news">All →</a></div>${newsList(d.news.slice(0, 14))}</div>
       </div>
     </div>`);
+}
+
+// The next race on your schedule, with a button that runs the week up to the green flag.
+function raceDay(d, me) {
+  if (!me.series || d.status.phase !== "season") return "";
+  const next = (d.upcoming || [])[0];
+  const last = (d.recent || []).slice().reverse().find((x) => x.player_pos);
+  const weeks = next ? Math.max(0, next.week - d.status.week) : 0;
+  const lit = next ? Math.max(0, 5 - Math.min(5, weeks)) : 0;
+  const lastHtml = last ? `<div class="rd-last">Last time out: <b>P${last.player_pos}</b> at ${esc(last.track)} ·
+      <a href="#/race/${encodeURIComponent(me.series.id)}/${last.event}">box score</a></div>` : "";
+  if (!next) return `<div class="card raceday"><div class="rd-flag"></div><div><div class="rd-k">Season</div><div class="rd-track">No more races on your schedule</div>${lastHtml}</div><div></div></div>`;
+  return `<div class="card raceday"><div class="rd-flag"></div>
+    <div style="padding:14px 0"><div class="rd-k">Next race · ${esc(next.label)}${weeks ? ` · in ${weeks} week${weeks > 1 ? "s" : ""}` : " · this week"}</div>
+      <div class="rd-track">${esc(next.track)}</div>
+      <div class="rd-sub">${esc([next.city, next.region].filter(Boolean).join(", "))} · ${esc(me.series.name)}</div></div>
+    <div class="rd-go"><div>${lastHtml}</div><span class="lights" aria-hidden="true">${[0, 1, 2, 3, 4].map((i) => `<i class="${i < lit ? "on" : ""}"></i>`).join("")}</span>
+      <button class="btn go" data-act="sim" data-until="race">Go racing ▸</button></div></div>`;
 }
 
 function heroCard(me) {
