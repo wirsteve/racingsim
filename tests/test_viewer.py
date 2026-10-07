@@ -40,3 +40,11 @@ def test_sim_to_race_opens_the_viewer():
     assert len(set(nums)) == len(nums) and all(1 <= n <= 99 for n in nums)
     assert api.race_result(g.world, info.get("jewel") or info["series_id"], info["event"])["has_replay"]
     assert api.replay(g.world, "nope", 0) is None
+    # A co-driver is recognised as well as the starting driver.
+    car = next(c for c in info["replay"]["cars"] if c["id"] == g.world.player.id)
+    other = next(c for c in info["replay"]["cars"] if c["id"] != g.world.player.id)
+    car["id"], other["ids"] = other["id"], [other["id"], g.world.player.id]
+    car["ids"] = [car["id"]]
+    rp = api.replay(g.world, info.get("jewel") or info["series_id"], info["event"])
+    assert sum(c["me"] for c in rp["replay"]["cars"]) == 1
+    assert api.car_number(5, set(range(1, 100))) in range(1, 100)     # a field of 99+ never hangs

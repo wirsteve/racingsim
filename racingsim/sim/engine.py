@@ -604,7 +604,8 @@ def run(entries: list[Entry], track: "Track", tier: int, car_weight: float, rng:
     if frames is not None:
         idx = {id(c): i for i, c in enumerate(cars)}
         replay = {"lap_s": round(lap_s, 3), "laps": n_laps, "scheduled": scheduled, "track_type": tt,
-                  "cars": [{"id": c.entry.drivers[0].id, "name": who(c), "start": c.start,
+                  "cars": [{"id": c.entry.drivers[0].id, "ids": [d.id for d in c.entry.drivers],
+                            "name": who(c), "start": c.start,
                             "team": c.entry.team_id, "car_key": c.entry.car_key} for c in cars],
                   "finish": [idx[id(c)] for c in final], "frames": frames}
     return RaceResult(finishes=finishes, laps=n_laps, cautions=cautions, caution_laps=caution_laps,

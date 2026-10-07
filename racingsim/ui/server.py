@@ -92,7 +92,8 @@ def handle(method: str, path: str, query: dict, body: dict):
         mine = [x for x in ran if x.get("player") and "replay" in x]
         last = mine[-1] if mine else None
         return {"status": api.status(g), "races": len(ran),
-                "player_race": {"key": last.get("jewel") or last["series_id"], "event": last["event"]} if last else None}
+                "player_race": {"key": last.get("jewel") or last["series_id"], "event": last["event"],
+                                "year": w.year} if last else None}
     if head == "dashboard":
         return api.dashboard(g)
     if head == "news":
@@ -119,7 +120,10 @@ def handle(method: str, path: str, query: dict, body: dict):
     if head == "replay" and len(route) > 2:
         if not route[2].isdigit():
             raise ApiError("event must be a number")
-        res = api.replay(w, route[1], int(route[2]), int(query["year"]) if query.get("year", "").isdigit() else None)
+        yr = query.get("year")
+        if yr is not None and not yr.isdigit():
+            raise ApiError("year must be a number")
+        res = api.replay(w, route[1], int(route[2]), int(yr) if yr else None)
         if res is None:
             raise ApiError("no replay for that race (replays are kept for your own races this season and last)", 404)
         return res

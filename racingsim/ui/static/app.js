@@ -177,7 +177,8 @@ on("sim", async (el) => {
     S.status = r.status;
     renderChrome();
     if (r.player_race && until === "race") {        // straight to the green flag
-      location.hash = `#/watch/${encodeURIComponent(r.player_race.key)}/${r.player_race.event}`;
+      if (S.status.phase === "offseason") toast(`Season ${before.year} complete: watch your last race, then on to the off-season.`);
+      location.hash = `#/watch/${encodeURIComponent(r.player_race.key)}/${r.player_race.event}/${r.player_race.year}`;
       return;
     }
     if (S.status.phase === "offseason") {
@@ -607,7 +608,7 @@ async function racePage(key, ev, year) {
     ]),
   ];
   view(`<h1>${esc(r.jewel || (r.series && r.series.name) || "Race")}</h1>
-    ${r.has_replay ? `<a class="btn primary" href="#/watch/${encodeURIComponent(key)}/${ev}${year ? "/" + year : ""}">▶ Watch the race</a>` : ""}
+    ${r.has_replay ? `<a class="btn primary" href="#/watch/${encodeURIComponent(key)}/${ev}/${year || S.status.year}">▶ Watch the race</a>` : ""}
     <p class="sub">${trackLink(r.track_id, r.track)} · ${esc(r.label)}${rc ? ` · ${rc.laps}${rc.scheduled && rc.scheduled > rc.laps ? ` of ${rc.scheduled}` : ""} laps${rc.weather ? ` · ${esc(rc.weather)}` : ""} · ${rc.cautions} caution${rc.cautions === 1 ? "" : "s"} for ${rc.caution_laps} laps · ${rc.lead_changes} lead change${rc.lead_changes === 1 ? "" : "s"} among ${rc.leaders} leader${rc.leaders === 1 ? "" : "s"}${rc.margin ? ` · margin ${rc.margin.toFixed(3)}s` : ""}` : ""}</p>
     <div class="card flush">${table("race", cols, r.results, { rowClass: (x) => (x.is_player ? "me" : "") })}</div>
     ${r.log && r.log.length ? `<div class="card" style="margin-top:16px"><h3>Lap by lap</h3><ul class="timeline">${r.log.map((l) => `<li><b>Lap ${l[0]}</b> ${esc(l[1])}</li>`).join("")}</ul></div>` : ""}`);
