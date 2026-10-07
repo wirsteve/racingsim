@@ -176,6 +176,11 @@ on("sim", async (el) => {
     const r = await api("sim", { until });
     S.status = r.status;
     renderChrome();
+    if (r.player_race && until === "race") {        // straight to the green flag
+      if (S.status.phase === "offseason") toast(`Season ${before.year} complete: watch your last race, then on to the off-season.`);
+      location.hash = `#/watch/${encodeURIComponent(r.player_race.key)}/${r.player_race.event}/${r.player_race.year}`;
+      return;
+    }
     if (S.status.phase === "offseason") {
       toast(`Season ${before.year} complete. Time for the silly season.`);
       location.hash = "#/offseason";
@@ -603,6 +608,7 @@ async function racePage(key, ev, year) {
     ]),
   ];
   view(`<h1>${esc(r.jewel || (r.series && r.series.name) || "Race")}</h1>
+    ${r.has_replay ? `<a class="btn primary" href="#/watch/${encodeURIComponent(key)}/${ev}/${year || S.status.year}">▶ Watch the race</a>` : ""}
     <p class="sub">${trackLink(r.track_id, r.track)} · ${esc(r.label)}${rc ? ` · ${rc.laps}${rc.scheduled && rc.scheduled > rc.laps ? ` of ${rc.scheduled}` : ""} laps${rc.weather ? ` · ${esc(rc.weather)}` : ""} · ${rc.cautions} caution${rc.cautions === 1 ? "" : "s"} for ${rc.caution_laps} laps · ${rc.lead_changes} lead change${rc.lead_changes === 1 ? "" : "s"} among ${rc.leaders} leader${rc.leaders === 1 ? "" : "s"}${rc.margin ? ` · margin ${rc.margin.toFixed(3)}s` : ""}` : ""}</p>
     <div class="card flush">${table("race", cols, r.results, { rowClass: (x) => (x.is_player ? "me" : "") })}</div>
     ${r.log && r.log.length ? `<div class="card" style="margin-top:16px"><h3>Lap by lap</h3><ul class="timeline">${r.log.map((l) => `<li><b>Lap ${l[0]}</b> ${esc(l[1])}</li>`).join("")}</ul></div>` : ""}`);
@@ -1083,6 +1089,7 @@ const ROUTES = [
   [/^#\/myseries$/, () => (S.status.player && S.status.player.series ? seriesPage(S.status.player.series.id) : view('<div class="card empty">You are not entered in a series.</div>')), true],
   [/^#\/series\/(.+)$/, (m) => seriesPage(decodeURIComponent(m[1])), true],
   [/^#\/race\/([^/]+)\/(\d+)(?:\/(\d+))?$/, (m) => racePage(decodeURIComponent(m[1]), m[2], m[3]), true],
+  [/^#\/watch\/([^/]+)\/(\d+)(?:\/(\d+))?$/, (m) => watchPage(decodeURIComponent(m[1]), m[2], m[3]), true],
   [/^#\/jewels$/, () => jewelsPage(), true],
   [/^#\/garage$/, () => garagePage(), true],
   [/^#\/pyramid$/, () => pyramidPage(), true],

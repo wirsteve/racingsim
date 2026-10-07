@@ -552,6 +552,8 @@ class SeasonRunner:
                                 "weather": (race.weather or {}).get("text")}
                 if player_in:
                     info["log"] = race.log[-400:]
+                    if race.replay:
+                        info["replay"] = race.replay   # the race viewer (kept for this season and last)
         # Weekly local divisions keep just the winner (full results only where someone looks).
         self.race_log[jewel or s.id].append(info)
         if jewel is not None or (s is not None and s.tier >= 3):

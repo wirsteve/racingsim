@@ -103,6 +103,10 @@ python -m pytest -q                                     # run the tests
   Truck Series; CART/Champ Car, IRL/IndyCar, Indy Lights, Star/Pro Mazda and USF2000.
   Rosters, standings and calendars, plus 2,500 driver bios. Built from Wikipedia and
   Wikidata with the scrapers in [`tools/history/`](tools/history/).
+* **Watch your races**: an animated track map (ovals turn left, tri-ovals, road courses, dirt),
+  cars with numbers, a live leaderboard with gaps and pit stops, green/caution/white/checkered
+  flags, the pace car and a play-by-play ticker; play, pause, scrub and speed controls.
+  "Next race" takes you straight to the green flag.
 * **Lap-by-lap racing** (`racingsim/sim/engine.py`): qualifying, tire falloff, fuel windows,
   pit cycles, passing against track difficulty, cautions, superspeedway big ones, restarts,
   stages, box scores (laps led, average running position, passes, driver rating) and
