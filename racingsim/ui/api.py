@@ -44,6 +44,14 @@ def scale(x: float) -> int:
     return int(round(clamp(20 + (x - 15) * 0.75, 20, 80)))
 
 
+def spendable(d) -> float:
+    """What the player can spend right now: in season, the racing account (family, sponsors and the savings
+    put in) plus savings; otherwise what they can bring to next season."""
+    if d.car is not None and d.car.account is not None:
+        return max(0.0, d.car.account) + max(0.0, d.savings)
+    return d.available_funding()
+
+
 def money(x: float) -> float:
     return round(float(x), 0)
 
@@ -165,7 +173,7 @@ def driver_detail(world: "World", did: int) -> dict:
                     "sponsors": [{"name": world.sponsors[x.sponsor_id].name, "amount": money(x.amount),
                                   "years_left": x.years_left} for x in d.sponsors if x.sponsor_id in world.sponsors],
                     "scholarship": money(d.scholarship), "salary": money(d.salary),
-                    "available": money(d.available_funding())}
+                    "available": money(spendable(d))}
     else:
         finances = {"sponsors": [{"name": world.sponsors[x.sponsor_id].name}
                                  for x in d.sponsors if x.sponsor_id in world.sponsors]}
@@ -214,7 +222,7 @@ def status(game: "Game") -> dict:
     if p is not None:
         out["player"] = {"id": p.id, "name": p.name, "age": p.age(w.year), "status": p.status,
                          "series": series_brief(w, p.series_id), "team": team_brief(w, p.team_id),
-                         "funding": money(p.available_funding()), "reputation": round(p.reputation),
+                         "funding": money(spendable(p)), "reputation": round(p.reputation),
                          "next_race_week": runner.next_week_for(p) if game.phase == "season" else None,
                          "owned_team": team_brief(w, w.__dict__.get("owned_team_id"))}
     return out
@@ -257,7 +265,7 @@ def standings_rows(world: "World", sid: str, limit: Optional[int] = None) -> lis
                          "wins": r.wins, "top5": r.top5, "top10": getattr(r, "top10", 0), "dnq": getattr(r, "dnq", 0),
                          "winnings": round(getattr(r, "winnings", 0.0)) or None,
                          "avg_finish": round(r.avg_finish, 1) if r.avg_finish else None,
-                         "champion": r.champion, "final": True})
+                         "champion": r.champion, "final": True, "season": r.year})
         lead = next((x["points"] for x in rows if x["points"] is not None), None)
         for x in rows:
             x["behind"] = max(0, lead - x["points"]) if lead is not None and x["points"] is not None else None

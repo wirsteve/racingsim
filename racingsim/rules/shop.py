@@ -35,6 +35,7 @@ from typing import TYPE_CHECKING, Optional
 from ..util import clamp, load_json
 from . import car as C
 from .classes import CarClass
+from .fail import Fail
 
 if TYPE_CHECKING:
     from ..world.entities import Driver, Team
@@ -74,10 +75,11 @@ class Operation:
     engines: list = field(default_factory=list)     # spare engines: {"key", "q", "runs", "health"}
     projects: list = field(default_factory=list)    # builds: {"car", "ready_week", "year"}
     market: dict = field(default_factory=dict)      # {"stamp", "items"}
-    seq: int = 0                                    # numbers cars and listings
+    seq: int = 0                                    # numbers used-car listings
     season: int = 0                                 # the last season the shop's upkeep was paid
     peak: float = 0.0                               # the highest upkeep level paid for this season
     capital: float = 0.0                            # the player's own savings put into the shop (come back in full)
+    cars_named: int = 0                             # numbers the fleet's cars ("Car 3")
 
 
 def get(world: "World") -> Operation:
@@ -361,8 +363,8 @@ def _stamp(world: "World", car: "C.Car") -> None:
 
 
 def _tag(op: Operation) -> str:
-    op.seq += 1
-    return f"Car {op.seq}"
+    op.cars_named += 1
+    return f"Car {op.cars_named}"
 
 
 BOOKS = ("account", "ledger", "winnings", "drawn", "races", "auto_rebuild", "auto_repair", "reserve", "year",
@@ -423,7 +425,7 @@ def _classes():
 def make_primary(world: "World", d: "Driver", idx: int) -> str:
     op = get(world)
     if not 0 <= idx < len(op.backups):
-        return "No such car."
+        return Fail("No such car.")
     car = op.backups.pop(idx)
     old = d.car
     if old is not None:
@@ -480,15 +482,15 @@ def shop_action(world: "World", d: "Driver", action: str, key: Optional[str] = N
     if action == "hauler":
         h = hauler_opt(key or "")
         if h is None:
-            return "Unknown hauler."
+            return Fail("Unknown hauler.")
         if h["key"] == op.hauler:
-            return "That's the rig you have."
+            return Fail("That's the rig you have.")
         cur = hauler(op)
         trade = hauler_trade(op)
         if trade >= h["usd"]:
             _proceeds(world, d, trade - h["usd"])
         elif not _buy(world, d, h["usd"] - trade):
-            return f"The {h['label'].lower()} costs {_usd(world, h['usd'])} (your {cur['label'].lower()} fetches {_usd(world, trade)})."
+            return Fail(f"The {h['label'].lower()} costs {_usd(world, h['usd'])} (your {cur['label'].lower()} fetches {_usd(world, trade)}).")
         before = upkeep(op)
         op.hauler, op.hauler_age = h["key"], 0 if in_season(world) else -1   # off-season: new for next season
         _ledger(world, d, f"Hauler: {h['label']} (sold the {cur['label'].lower()} for {_usd(world, trade)})", -(h["usd"] - trade))
@@ -496,15 +498,15 @@ def shop_action(world: "World", d: "Driver", action: str, key: Optional[str] = N
         return f"Your rig is now the {h['label'].lower()}."
     if action in ("upgrade", "downgrade"):
         if key not in FACILITIES:
-            return "Unknown facility."
+            return Fail("Unknown facility.")
         levels = data()["facilities"][key]["levels"]
         lv = level(op, key)
         if action == "upgrade":
             if lv + 1 >= len(levels):
-                return f"Your {data()['facilities'][key]['label'].lower()} is as good as it gets."
+                return Fail(f"Your {data()['facilities'][key]['label'].lower()} is as good as it gets.")
             nxt = levels[lv + 1]
             if not _buy(world, d, nxt["usd"]):
-                return f"{nxt['label']} costs {_usd(world, nxt['usd'])} - more than you have."
+                return Fail(f"{nxt['label']} costs {_usd(world, nxt['usd'])} - more than you have.")
             before = upkeep(op)
             op.levels[key] = lv + 1
             _ledger(world, d, f"Shop: {nxt['label']}", -nxt["usd"])
@@ -512,11 +514,11 @@ def shop_action(world: "World", d: "Driver", action: str, key: Optional[str] = N
             sync(world, d, G.target_class(world, d))
             return f"New in the shop: {nxt['label'].lower()}."
         if lv == 0:
-            return "Nothing to sell off."
+            return Fail("Nothing to sell off.")
         if key == "space" and cars_kept(world, d) > levels[lv - 1]["cars"]:
-            return f"The {levels[lv - 1]['label'].lower()} only holds {levels[lv - 1]['cars']} cars: sell some first."
+            return Fail(f"The {levels[lv - 1]['label'].lower()} only holds {levels[lv - 1]['cars']} cars: sell some first.")
         if key == "space" and len(op.engines) > levels[lv - 1]["engines"]:
-            return "Sell some spare engines first."
+            return Fail("Sell some spare engines first.")
         back = SELL_BACK * levels[lv]["usd"]
         _proceeds(world, d, back)
         op.levels[key] = lv - 1
@@ -525,17 +527,17 @@ def shop_action(world: "World", d: "Driver", action: str, key: Optional[str] = N
         return f"Sold off the {levels[lv]['label'].lower()} for {_usd(world, back)}."
     cls = G.target_class(world, d)
     if cls is None:
-        return "You don't run your own car in a class with a garage."
+        return Fail("You don't run your own car in a class with a garage.")
     cars, engines = capacity(world)
     if action == "buy_used":
         item = next((x for x in market(world, d, cls) if str(x["id"]) == str(key)), None)
         if item is None:
-            return "That car has been sold."
+            return Fail("That car has been sold.")
         replace = d.car is None or d.car.cls != cls.key
         if not replace and cars_kept(world, d) >= cars:
-            return f"No room in the shop: your {fac(op, 'space')['label'].lower()} holds {cars} cars."
+            return Fail(f"No room in the shop: your {fac(op, 'space')['label'].lower()} holds {cars} cars.")
         if not _buy(world, d, item["price"]):
-            return f"The seller wants {_usd(world, item['price'])} - more than you have."
+            return Fail(f"The seller wants {_usd(world, item['price'])} - more than you have.")
         car = item["car"]
         car.tag = _tag(op)
         _stamp(world, car)
@@ -550,10 +552,10 @@ def shop_action(world: "World", d: "Driver", action: str, key: Optional[str] = N
     if action == "build":
         fb = fac(op, "fab")
         if fb.get("build") is None:
-            return "You need at least a welder and a tube bender to build a car."
+            return Fail("You need at least a welder and a tube bender to build a car.")
         parts = (key or "").split("|")
         if len(parts) != 3:
-            return "Pick a chassis, an engine and shocks."
+            return Fail("Pick a chassis, an engine and shocks.")
         ch = cls.chassis_opt(parts[0])
         sh = cls.shock(parts[2]) if cls.shocks else C.Option("stock", "Stock", 0, 50)
         spare = None
@@ -564,15 +566,15 @@ def shop_action(world: "World", d: "Driver", action: str, key: Optional[str] = N
         else:
             en = cls.engine(parts[1])
         if ch is None or en is None or sh is None:
-            return "Pick a chassis, an engine and shocks."
+            return Fail("Pick a chassis, an engine and shocks.")
         if spare is None and not en.available(world.year):
-            return f"{en.label} isn't legal in {world.year}."
+            return Fail(f"{en.label} isn't legal in {world.year}.")
         if cars_kept(world, d) >= cars and d.car is not None and d.car.cls == cls.key:
-            return f"No room in the shop for another car: your {fac(op, 'space')['label'].lower()} holds {cars}."
+            return Fail(f"No room in the shop for another car: your {fac(op, 'space')['label'].lower()} holds {cars}.")
         kit = data()["build"].get("kit_share", 0.8) * ch.usd
         price = kit + (0 if spare else en.usd) + sh.usd
         if not _buy(world, d, price):
-            return f"The build needs {_usd(world, price)} in parts - more than you have."
+            return Fail(f"The build needs {_usd(world, price)} in parts - more than you have.")
         car = C.build(cls, ch, en, sh, d.car.new_tires if d.car else cls.tires.typical_new)
         car.chassis_q = clamp(ch.quality + fb["build"], 0, 100)
         if spare is not None:
@@ -589,14 +591,14 @@ def shop_action(world: "World", d: "Driver", action: str, key: Optional[str] = N
     if action == "primary":
         i = _int(key)
         if 0 <= i < len(op.backups) and op.backups[i].cls != cls.key:
-            return f"That car isn't a {cls.label.lower()}."
+            return Fail(f"That car isn't a {cls.label.lower()}.")
         msg = make_primary(world, d, i)
         sync(world, d, cls)
         return msg
     if action == "sell_car":
         i = _int(key)
         if not 0 <= i < len(op.backups):
-            return "No such car."
+            return Fail("No such car.")
         car = op.backups.pop(i)
         oc = G.all_class(car.cls)
         value = PRIVATE_SALE * C.resale(car, oc) if oc else 0.0
@@ -606,18 +608,18 @@ def shop_action(world: "World", d: "Driver", action: str, key: Optional[str] = N
     if action == "buy_engine":
         en = cls.engine(key or "")
         if en is None or not en.available(world.year):
-            return "That engine isn't legal this season."
+            return Fail("That engine isn't legal this season.")
         if len(op.engines) >= engines:
-            return f"No room for another spare engine (your shop keeps {engines})."
+            return Fail(f"No room for another spare engine (your shop keeps {engines}).")
         if not _buy(world, d, en.usd):
-            return f"A {en.label} costs {_usd(world, en.usd)} - more than you have."
+            return Fail(f"A {en.label} costs {_usd(world, en.usd)} - more than you have.")
         op.engines.append({"key": en.key, "q": en.quality, "runs": 0, "health": 100.0})
         _ledger(world, d, f"Spare engine: {en.label}", -en.usd)
         return f"A fresh {en.label} goes on the engine stand."
     if action in ("swap_engine", "sell_engine", "freshen_engine"):
         i = _int(key)
         if not 0 <= i < len(op.engines):
-            return "No such engine."
+            return Fail("No such engine.")
         e = op.engines[i]
         opt = cls.engine(e["key"])
         if action == "sell_engine":
@@ -628,23 +630,23 @@ def shop_action(world: "World", d: "Driver", action: str, key: Optional[str] = N
             return f"Sold the spare engine for {_usd(world, value)}."
         if action == "freshen_engine":
             if opt is None:
-                return "Unknown engine."
+                return Fail("Unknown engine.")
             cost = freshen_cost(world, opt, e["health"])
             if not _buy(world, d, cost):
-                return f"A freshen costs {_usd(world, cost)} - more than you have."
+                return Fail(f"A freshen costs {_usd(world, cost)} - more than you have.")
             e["runs"], e["health"] = 0, 100.0
             _ledger(world, d, f"Spare engine freshened ({opt.label})", -cost)
             return f"The spare {opt.label} is fresh ({_usd(world, cost)})."
         car = d.car
         if car is None or car.cls != cls.key:
-            return "You need a car to put it in."
+            return Fail("You need a car to put it in.")
         old = {"key": car.engine, "q": car.engine_q, "runs": car.engine_runs, "health": car.engine_health}
         car.engine, car.engine_q, car.engine_runs, car.engine_health = e["key"], e["q"], e["runs"], e["health"]
         op.engines[i] = old
         sync(world, d, cls)
         _ledger(world, d, f"Engine swap: {opt.label if opt else e['key']} in, old engine on the stand", 0)
         return f"The {opt.label if opt else 'spare'} is in the car; the old engine is on the stand."
-    return "Unknown shop action."
+    return Fail("Unknown shop action.")
 
 
 def _prorate(world: "World", d: "Driver", before: float) -> None:
@@ -731,17 +733,17 @@ def team_action(world: "World", d: "Driver", action: str, key: Optional[str]) ->
     from ..game.owner import owned
     t = owned(world)
     if t is None:
-        return "You don't own a team."
+        return Fail("You don't own a team.")
     if action != "team_upgrade" or key not in TEAM_FACILITIES:
-        return "Unknown team action."
+        return Fail("Unknown team action.")
     spec = data()["team"][key]
     lv = team_level(t, key)
     if lv >= 3:
-        return f"{t.name}'s {spec['label'].lower()} is as good as it gets."
+        return Fail(f"{t.name}'s {spec['label'].lower()} is as good as it gets.")
     price = spec["price"][lv] * team_cost_base(world, t)
     have = max(0.0, t.cash) + max(0.0, d.savings)
     if price > have:
-        return f"That costs {_usd(world, price)}: the team has {_usd(world, max(0.0, t.cash))} and you have {_usd(world, d.savings)}."
+        return Fail(f"That costs {_usd(world, price)}: the team has {_usd(world, max(0.0, t.cash))} and you have {_usd(world, d.savings)}.")
     from_team = min(max(0.0, t.cash), price)
     t.cash -= from_team
     d.savings -= price - from_team

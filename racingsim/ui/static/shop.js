@@ -36,14 +36,14 @@ function renderShop(g) {
       <div class="t">${esc(o.label)}</div><div class="muted small">${esc(o.about)}</div>
       <div class="small">${esc(o.effect)}</div>
       <div class="small">Price ${usd(o.usd)} · upkeep ${usd(o.upkeep)}/season</div>
-      <button class="small" data-act="shop" data-a="hauler" data-k="${o.key}">${o.usd >= h.trade ? `Buy (${usd(o.usd - h.trade)} after trade-in)` : `Trade down (${usd(h.trade - o.usd)} back)`}</button></div>`).join("")}</div></div>`;
+      <button class="small" data-act="shop" data-a="hauler" data-k="${o.key}" data-confirm="${esc(o.usd >= h.trade ? `Buy the ${o.label.toLowerCase()} for ${usd(o.usd - h.trade)} after the trade-in?` : `Trade down to the ${o.label.toLowerCase()}?`)}">${o.usd >= h.trade ? `Buy (${usd(o.usd - h.trade)} after trade-in)` : `Trade down (${usd(h.trade - o.usd)} back)`}</button></div>`).join("")}</div></div>`;
   const facs = `<div class="card"><h2>The shop</h2><div class="fac-grid">${g.facilities.map((f) => {
     const lv = f.levels[f.level], nx = f.levels[f.level + 1];
     return `<div class="fac"><div class="fac-head"><b>${esc(f.label)}</b>${pips(f.level, f.levels.length)}</div>
       <div class="t">${esc(lv.label)}</div><div class="muted small">${esc(lv.about)}</div><div class="small eff">${esc(lv.effect)}</div>
       ${nx ? `<div class="fac-next"><div class="small"><b>Next: ${esc(nx.label)}</b> — ${usd(nx.usd)}, upkeep ${usd(nx.upkeep)}/season</div><div class="small muted">${esc(nx.effect)}</div>
         <button class="small primary" data-act="shop" data-a="upgrade" data-k="${f.key}">Upgrade</button></div>` : `<div class="small ok-text">Top of the line.</div>`}
-      ${f.level > 0 ? `<button class="small ghost" data-act="shop" data-a="downgrade" data-k="${f.key}" title="Sell it off for 40% of what it cost">Sell off</button>` : ""}</div>`;
+      ${f.level > 0 ? `<button class="small ghost" data-act="shop" data-a="downgrade" data-k="${f.key}" title="Sell it off for 40% of what it cost" data-confirm="Sell off the ${esc(lv.label.toLowerCase())} for 40% of what it cost?">Sell off</button>` : ""}</div>`;
   }).join("")}</div></div>`;
   let fleet = "";
   if (g.class) {
@@ -100,7 +100,7 @@ function buildCost() {
 on("buildcost", buildCost);
 async function shopDo(body, el) {
   if (el) el.classList.add("busy");
-  try { const r = await api("shop", body); renderShop(r); toast(r.message); refreshStatus(); }
+  try { const r = await api("shop", body); renderShop(r); toast(r.message, r.ok === false); refreshStatus(); }
   catch (e) { toast(e.message, true); if (el) el.classList.remove("busy"); }
 }
 on("shop", (el) => {

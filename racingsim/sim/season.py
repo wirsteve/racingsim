@@ -28,6 +28,7 @@ from . import weather as weather_mod
 from ..world import staff as staff_mod
 from ..career import goals
 from ..career import morale as morale_mod
+from ..history.economy import nominal_usd
 from ..rules import car as C
 from ..rules import garage
 from ..rules import shop
@@ -184,7 +185,7 @@ class SeasonRunner:
                 and shop.get(world).season != world.year:
             def pay(amount: float, text: str) -> None:
                 charge(p, amount)
-                p.log(world.year, f"{text}: ${amount:,.0f}")
+                p.log(world.year, f"{text}: {nominal_usd(world.year, amount)}")
             shop.season_start(world, p, None, None, pay)
         self.sub_pool = _substitute_pool(world)
         self.calendar: dict[int, list[tuple[str, int]]] = defaultdict(list)
@@ -789,7 +790,10 @@ def _crown_jewel(world: "World", runner: "SeasonRunner", cj) -> Optional[dict]:
     for d in field_drivers:
         entered[d.id] = entered.get(d.id, 0) + 1
         if d.is_player:
-            charge(d, jewel_entry_cost(d, track))
+            cost = jewel_entry_cost(d, track)
+            charge(d, cost)
+            if d.car is not None and d.car.account is not None:
+                garage.log(d.car, runner.week, f"{cj.name}: entry and travel", -cost)
     entries = [Entry([d], _jewel_equipment(world, res, d, cj, rng)) for d in field_drivers]
     realism = world_settings.all_settings(world)
     wx = weather_mod.roll(track, max(cj.max_tier - 1, 3), rng, realism["weather"])   # big events wait out the rain
@@ -849,7 +853,7 @@ def jewel_block_reasons(world: "World", d: Driver, cj, track=None) -> list[str]:
     if not (d.primary_discipline == cj.discipline or any(r.discipline == cj.discipline for r in d.history[-5:])):
         why.append(cj.discipline.replace("_", " ") + " experience")
     if d.is_player and track is not None and d.available_funding() < jewel_entry_cost(d, track):
-        why.append(f"${jewel_entry_cost(d, track):,.0f} entry + travel")
+        why.append(f"{nominal_usd(world.year, jewel_entry_cost(d, track))} entry + travel")
     return why
 
 

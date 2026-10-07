@@ -17,6 +17,7 @@ from urllib.parse import parse_qs, unquote, urlparse
 
 from ..game.session import Game
 from ..paths import STATIC_DIR
+from ..rules.fail import Fail
 from . import api
 
 STATIC = STATIC_DIR
@@ -59,8 +60,20 @@ def handle(method: str, path: str, query: dict, body: dict):
     if head == "new" and method == "POST":
         if not isinstance(body.get("region"), str):
             raise ApiError("pick a home region")
+        first, last = str(body.get("first") or "").strip(), str(body.get("last") or "").strip()
+        if not first or not last:
+            raise ApiError("Enter your driver's first and last name.")
+        if len(first) > 40 or len(last) > 40:
+            raise ApiError("Names are limited to 40 characters.")
+        seed = body.get("seed")
+        if seed not in (None, "") and not str(seed).strip().lstrip("-").isdigit():
+            raise ApiError("The world seed must be a whole number.")
+        from ..game.career import BACKGROUNDS, START_DISCIPLINES, TALENTS
+        if body.get("background", "middle") not in BACKGROUNDS or body.get("discipline", "karting") not in START_DISCIPLINES \
+                or body.get("talent", "unknown") not in TALENTS:
+            raise ApiError("Pick a discipline, a family background and a talent level.")
         STATE.game = Game.new(
-            first=body.get("first", ""), last=body.get("last", ""), region=body["region"],
+            first=first, last=last, region=body["region"],
             age=int(body.get("age", 10)), discipline=body.get("discipline", "karting"),
             background=body.get("background", "middle"), talent=body.get("talent", "unknown"),
             seed=int(body.get("seed") or 2026), scale=min(1.5, max(0.1, float(body.get("scale") or 0.4))),
@@ -222,7 +235,7 @@ def handle(method: str, path: str, query: dict, body: dict):
             if value is not None and not isinstance(value, (int, bool)):
                 raise ApiError("value must be a number")
             msg = garage_action(w, w.player, action, key, int(value) if value is not None else None)
-            return {"message": msg, **garage_view.garage(g)}
+            return {"message": msg, "ok": not isinstance(msg, Fail), **garage_view.garage(g)}
         return garage_view.garage(g)
     if head == "shop":
         from . import shop_view
@@ -236,7 +249,7 @@ def handle(method: str, path: str, query: dict, body: dict):
             if key is not None and not isinstance(key, (str, int)):
                 raise ApiError("key must be a string")
             msg = shop_action(w, w.player, action, None if key is None else str(key))
-            return {"message": msg, **shop_view.shop(g)}
+            return {"message": msg, "ok": not isinstance(msg, Fail), **shop_view.shop(g)}
         return shop_view.shop(g)
     raise ApiError("not found", 404)
 
@@ -307,7 +320,10 @@ class Handler(BaseHTTPRequestHandler):
             except ApiError as e:
                 self._json(e.status, {"error": str(e)})
             except (ValueError, KeyError) as e:
-                self._json(400, {"error": str(e)})
+                msg = str(e)
+                if msg.startswith(("invalid literal", "could not convert")):
+                    msg = "Expected a number in the address or request."
+                self._json(400, {"error": msg})
             except Exception as e:  # pragma: no cover - surfaced to the UI
                 traceback.print_exc()
                 self._json(500, {"error": f"{type(e).__name__}: {e}"})

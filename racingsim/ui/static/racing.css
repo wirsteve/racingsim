@@ -141,7 +141,7 @@ tr.me td:first-child { box-shadow: inset 4px 0 0 var(--race-yellow); }
 @keyframes lightsOn { from { background: #2a0d0b; box-shadow: none; } }
 
 /* Table cells keep words whole (the table scrolls sideways instead of breaking "Results" into letters). */
-td a.link, td .small, td .muted { overflow-wrap: normal; }
+.card td a.link, td.small, td .small, td .muted, td.muted { overflow-wrap: normal; }
 td a.link { color: var(--text); font-weight: 600; }
 td a.link:hover { color: var(--accent); }
 tr.me td a.link { color: var(--accent); }
@@ -156,3 +156,7 @@ tr.me td a.link { color: var(--accent); }
 }
 .fleet { grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); }
 .car-head b { white-space: nowrap; }
+
+/* Forms never push the page sideways. */
+select, input:not([type=checkbox]):not([type=radio]) { max-width: 100%; }
+@media (max-width: 700px) { #sidebar #theme-toggle { display: inline-block; flex: none; margin: 0; padding: 4px 8px; } }

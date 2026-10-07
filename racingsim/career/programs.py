@@ -14,6 +14,7 @@ from __future__ import annotations
 
 from typing import TYPE_CHECKING
 
+from ..history.economy import nominal_usd
 from ..constants import PROGRAM_AGE_MEAN, PROGRAM_AGE_RANGE, PROGRAM_AGE_SD, TIER_STRENGTH
 from ..util import clamp
 from ..world.entities import RETIRED, Driver
@@ -35,7 +36,7 @@ def award_champion_scholarships(world: "World", results: "SeasonResults") -> Non
         if tpl.champion_scholarship > 0:
             d = world.drivers[did]
             d.scholarship += tpl.champion_scholarship
-            d.log(world.year, f"earned a ${tpl.champion_scholarship:,.0f} advancement scholarship")
+            d.log(world.year, f"earned a {nominal_usd(world.year, tpl.champion_scholarship)} advancement scholarship")
 
 
 def manufacturer_programs(world: "World", summary: "YearSummary") -> None:
@@ -157,7 +158,7 @@ def run_shootouts(world: "World", summary: "YearSummary") -> None:
             winner.reputation = clamp(winner.reputation + 10)
             winner.connections[f"target:{so['target_template']}"] = 1.0
             verb = "won the" if n_win == 1 else "was selected by the"
-            winner.log(year, f"{verb} {so['name']} (${so['award']:,.0f} toward the {_target_name(world, target, winner)})")
+            winner.log(year, f"{verb} {so['name']} ({nominal_usd(world.year, so['award'])} toward the {_target_name(world, target, winner)})")
             summary.signings.append(f"{winner.name} wins {so['name']}")
         for d in ranked[n_win:n_win + 2]:
             d.exposure = clamp(d.exposure + 8)

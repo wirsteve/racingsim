@@ -18,6 +18,7 @@ from __future__ import annotations
 import random
 from typing import TYPE_CHECKING, Optional
 
+from ..history.economy import nominal_usd
 from ..constants import TIER_STRENGTH
 from ..util import clamp
 from ..world.entities import RETIRED, SIDELINED, Driver
@@ -228,7 +229,7 @@ def offseason_menu(world: "World") -> dict:
     actions = [
         {"id": "pitch", "label": "Pitch to sponsors", "used": "pitch" in m.player_actions,
          "detail": "Make the rounds with local and regional businesses (national brands if you race nationally)."},
-        {"id": "coach", "label": f"Hire a driver coach (${coach_cost:,.0f})", "used": "coach" in m.player_actions,
+        {"id": "coach", "label": f"Hire a driver coach ({nominal_usd(world.year, coach_cost)})", "used": "coach" in m.player_actions,
          "cost": coach_cost, "detail": "Off-season coaching and sim work: a development boost if you can afford it."},
         {"id": "relocate", "label": "Relocate ($12,000)", "used": "relocate" in m.player_actions, "cost": 12_000,
          "detail": "Move closer to a racing hub (e.g. North Carolina for stock cars, Indiana for open wheel)."},
@@ -246,7 +247,7 @@ def offseason_menu(world: "World") -> dict:
     actions.append({"id": "scouting", "label": "Scouting budget", "used": "scouting" in m.player_actions,
                     "detail": "How well you can read other drivers next season: better scouting means sharper reports "
                               "on rivals, teammates and the drivers you might hire.",
-                    "options": [{"value": k, "label": f"{k.title()}" + (f" (${v[1] * tier_mult:,.0f})" if v[1] else ""),
+                    "options": [{"value": k, "label": f"{k.title()}" + (f" ({nominal_usd(world.year, v[1] * tier_mult)})" if v[1] else ""),
                                  "selected": k == level} for k, v in SCOUTING_LEVELS.items()]})
     for a in owner.actions(world, d):
         a["used"] = a["id"] in m.player_actions
@@ -338,7 +339,7 @@ def apply_action(world: "World", action: str, arg: Optional[str] = None) -> str:
             _spend(d, cost)
         world.scouting_level = arg
         m.player_actions.add("scouting")
-        return f"Scouting set to {arg} for next season" + (f" (${cost:,.0f})." if cost else ".")
+        return f"Scouting set to {arg} for next season" + (f" ({nominal_usd(world.year, cost)})." if cost else ".")
     if action == "pitch":
         m.player_actions.add("pitch")
         msg = pitch_for_player(world, d)

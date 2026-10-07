@@ -78,6 +78,7 @@ class Game:
     def _end_season(self) -> None:
         results = self.runner.res
         begin_offseason(self.world, results, self.summary)
+        self.last_message = ""          # last winter's decision isn't this winter's
         self.world.market.player_actions = set()
         self.world.market.player_offers = None
         self.phase = "offseason"

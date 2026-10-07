@@ -23,6 +23,7 @@ import math
 from collections import defaultdict
 from typing import TYPE_CHECKING, Optional
 
+from ..history.economy import nominal_usd
 from ..constants import TIER_STRENGTH
 from ..util import clamp, haversine_mi
 from ..world.entities import ACTIVE, PART_TIME, RETIRED, SIDELINED, Driver, Team
@@ -695,7 +696,7 @@ def _sign(world: "World", d: Driver, team: Team, slot: int, s: "Series", gap: fl
     d.max_tier = max(d.max_tier, tpl.tier)
     resigned = world.market.expired.get(d.id) == team.id
     if not resigned and (tpl.tier >= 3 and tpl.tier != prev_tier or (tpl.tier >= 5 and old is None)):
-        how = "funded seat" if funded else f"bringing ${min(gap, d.available_funding()):,.0f}"
+        how = "funded seat" if funded else f"bringing {nominal_usd(world.year, min(gap, d.available_funding()))}"
         if absorbed:
             how = "team found the funding"
         d.log(world.year + 1, f"signed with {team.name} in the {s.name} ({how})")

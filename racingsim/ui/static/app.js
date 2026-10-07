@@ -5,13 +5,17 @@
 const $ = (s, el = document) => el.querySelector(s);
 const $$ = (s, el = document) => [...el.querySelectorAll(s)];
 const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
-const S = { status: null, setup: null, handlers: {}, tables: {}, route: "" };
+const S = { status: null, setup: null, handlers: {}, tables: {}, route: "", gen: 0, simming: false };
 
+// A page load that finishes after the player has moved on is dropped (route() bumps S.gen).
+const STALE = "stale page";
 async function api(path, body) {
   const opt = body !== undefined
     ? { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(body) }
     : {};
+  const gen = S.gen;
   const r = await fetch("/api/" + path, opt);
+  if (body === undefined && gen !== S.gen) throw new Error(STALE);
   let j = {};
   try { j = await r.json(); } catch (_) { /* ignore */ }
   if (!r.ok) throw new Error(j.error || r.statusText);
@@ -65,6 +69,7 @@ function statusBadge(s) {
 }
 
 function toast(msg, isError = false, ms = 4200) {
+  if (msg === STALE || !msg) return;
   const t = $("#toast");
   t.textContent = msg;
   t.className = isError ? "error" : "";
@@ -119,6 +124,7 @@ document.addEventListener("change", (e) => {
   if (a && S.handlers[a.dataset.change]) S.handlers[a.dataset.change](a, e);
 });
 
+window.addEventListener("unhandledrejection", (e) => { if (e.reason && e.reason.message === STALE) e.preventDefault(); });
 function view(html) { $("#view").innerHTML = html; window.scrollTo(0, 0); }
 function on(name, fn) { S.handlers[name] = fn; }
 on("records", (el) => { location.hash = "#/records/" + encodeURIComponent(el.value); });
@@ -152,7 +158,7 @@ function renderChrome() {
     const nr = st.player && st.player.next_race_week;
     ctl.innerHTML = `
       <button data-act="sim" data-until="week">Next week</button>
-      <button data-act="sim" data-until="race" ${nr ? "" : "disabled"} title="${nr ? "Your next race: week " + nr : "No more races for you this season"}">Next race ▸</button>
+      <button data-act="sim" data-until="race" ${nr ? "" : 'disabled data-off="1"'} title="${nr ? "Your next race: week " + nr : "No more races for you this season"}">Next race ▸</button>
       <button class="primary" data-act="sim" data-until="season">Sim to season end ▸▸</button>`;
   } else {
     clock.innerHTML = `<span class="year">${st.year}</span><span class="wk">Off-season · silly season</span>`;
@@ -163,14 +169,17 @@ function renderChrome() {
     pc.innerHTML = `<div class="pc"><div class="name">${esc(p.name)}</div>
       <div class="meta">Age ${p.age} · ${statusBadge(p.status)}</div>
       <div class="line">${p.series ? `${tierBadge(p.series.tier, p.series.tier_name)} ${esc(p.series.name)}` : '<span class="meta">No ride</span>'}</div>
-      <div class="line meta">${p.team ? esc(p.team.name) : "Own car"} · ${money(p.funding)} budget</div>
+      <div class="line meta">${p.status === "retired" ? "Retired" : p.team ? esc(p.team.name) : p.series ? "Own car" : "No ride"} · ${money(p.funding)} to spend</div>
       ${p.owned_team ? `<div class="line meta">Owner: <a class="link" href="#/team/${p.owned_team.id}">${esc(p.owned_team.name)}</a></div>` : ""}</div>`;
   } else pc.innerHTML = "";
 }
 
 on("sim", async (el) => {
+  if (S.simming) return;               // one sim at a time, however many clicks
+  S.simming = true;
   const until = el.dataset.until;
-  $$("#sim-controls button").forEach((b) => b.classList.add("busy"));
+  const btns = $$('[data-act="sim"]');
+  btns.forEach((b) => { b.classList.add("busy"); b.disabled = true; });
   const before = S.status;
   try {
     const r = await api("sim", { until });
@@ -193,7 +202,8 @@ on("sim", async (el) => {
   } catch (err) {
     toast(err.message, true);
   } finally {
-    $$("#sim-controls button").forEach((b) => b.classList.remove("busy"));
+    S.simming = false;
+    $$('[data-act="sim"]').forEach((b) => { b.classList.remove("busy"); b.disabled = b.dataset.off === "1"; });
   }
 });
 
@@ -217,7 +227,7 @@ async function dashboardPage() {
     <div class="grid g-main" style="margin-top:16px">
       <div class="grid">
         <div class="card flush">
-          <div class="card-head" style="padding:14px 16px 0"><h3>Standings · ${me.series ? esc(me.series.name) : "—"}</h3>
+          <div class="card-head" style="padding:14px 16px 0"><h3>${stRows[0] && stRows[0].final ? `${stRows[0].season} final standings` : "Standings"} · ${me.series ? esc(me.series.name) : "—"}</h3>
           ${me.series ? `<a class="link small" href="#/series/${encodeURIComponent(me.series.id)}">Full series →</a>` : ""}</div>
           ${me.series ? table("dash-st", standingCols(), stRows, { rowClass: (r) => (r.is_player ? "me" : ""), empty: "No races run yet — standings appear after the first race." }) : '<div class="empty">—</div>'}
         </div>
@@ -294,13 +304,14 @@ const standingCols = () => [
 
 function scheduleTable(id, rows, series, results) {
   const cols = [
-    { key: "week", label: "When", render: (r) => `<span class="nowrap">${esc(r.label)}</span>`, num: false },
+    { key: "week", label: "When", render: (r) => (results && r.winner && r.has_results && series
+      ? `<a class="link nowrap" href="#/race/${encodeURIComponent(series.id)}/${r.event}" title="Results">${esc(r.label)} ›</a>`
+      : `<span class="nowrap">${esc(r.label)}</span>`), num: false },
     { key: "track", label: "Track", render: (r) => `${trackLink(r.track_id, r.track)} <span class="muted small">${esc(r.city || "")}${r.region ? ", " + esc(r.region) : ""}</span>` },
   ];
   if (results) {
     cols.push({ key: "winner", label: "Winner", render: (r) => (r.winner ? driverLink(r.winner.id, r.winner.name) : "—"), sort: (r) => r.winner?.name });
     cols.push({ key: "player_pos", label: "You", num: true, render: (r) => posCell(r.player_pos) });
-    cols.push({ key: "x", label: "", nosort: true, render: (r) => (r.winner && r.has_results && series ? `<a class="link small" href="#/race/${encodeURIComponent(series.id)}/${r.event}">Results</a>` : "") });
   }
   return table(id, cols, rows, { empty: results ? "No races yet." : "No more races this season." });
 }
@@ -539,6 +550,7 @@ on("retire", async () => {
 });
 on("action", async (el) => {
   const id = el.dataset.id;
+  if (id === "sell_team" && !confirm("Sell your team? This can't be undone.")) return;
   const argEl = $("#act-arg-" + id);
   const arg = id === "relocate" ? $("#relocate-to").value : argEl ? argEl.value : undefined;
   el.classList.add("busy");
@@ -556,7 +568,7 @@ async function seriesPage(id, tab = "standings") {
   const chip = (l, v) => `<span class="chip">${l} <b>${v}</b></span>`;
   const tabs = [["standings", "Standings"], ["schedule", "Schedule & results"], ["field", s.template.team_based ? "Teams" : "Field"], ["power", "Power rankings"], ["champions", "Champions"], ["about", "About"]];
   const body = {
-    standings: () => `<div class="card flush">${table("ser-st", standingCols(), s.standings, { rowClass: (r) => (r.is_player ? "me" : ""), empty: "No standings yet." })}</div>`,
+    standings: () => `<div class="card flush">${s.standings[0] && s.standings[0].final ? `<h3 style="padding:14px 16px 0">${s.standings[0].season} final standings</h3>` : ""}${table("ser-st", standingCols(), s.standings, { rowClass: (r) => (r.is_player ? "me" : ""), empty: "No standings yet." })}</div>`,
     schedule: () => `<div class="card flush">${scheduleTable("ser-sch", s.schedule, s, true)}</div>`,
     field: () => t.team_based
       ? `<div class="grid g2">${s.teams.map((tm) => `<div class="card"><div class="card-head"><div><b>${teamLink(tm)}</b> ${tm.manufacturer ? `<span class="badge">${esc(tm.manufacturer)}</span>` : ""}</div>${rating(Math.round(20 + tm.equipment * 0.6), { title: "Equipment" })}</div>
@@ -893,14 +905,14 @@ document.addEventListener("input", (e) => {
 on("save-settings", async () => {
   const values = {};
   $$("[data-setting]").forEach((el) => { values[el.dataset.setting] = Number(el.value); });
-  await api("settings", { values });
-  settingsPage();
+  try { await api("settings", { values }); await settingsPage(); toast("Settings saved."); }
+  catch (e) { toast(e.message, true); }
 });
 on("reset-settings", async () => {
   const values = {};
   $$("[data-setting]").forEach((el) => { values[el.dataset.setting] = 1; });
-  await api("settings", { values });
-  settingsPage();
+  try { await api("settings", { values }); await settingsPage(); toast("Settings back to their defaults."); }
+  catch (e) { toast(e.message, true); }
 });
 
 async function hofPage() {
@@ -926,7 +938,7 @@ async function savesPage() {
   view(`<h1>Save / Load</h1>
     <div class="grid g2">
       <div class="card"><h3>Save current game</h3>${inGame ? `<div class="toolbar"><input id="save-name" placeholder="Save name" value="${esc((S.status.player ? S.status.player.name.split(" ").pop() : "world") + "_" + S.status.year)}"><button class="primary" data-act="save">Save</button></div>` : '<div class="muted">No game loaded.</div>'}
-        <p class="muted small">Saves live in the <code>saves/</code> folder of the project.</p></div>
+        <p class="muted small">Saves are kept in racingsim's <code>saves</code> folder (set <code>RACINGSIM_HOME</code> to keep them somewhere else).</p></div>
       <div class="card flush"><h3>Saved games</h3>${table("saves", [
         { key: "name", label: "Name", render: (s) => `<b>${esc(s.name)}</b>` },
         { key: "modified", label: "Saved", num: true, render: (s) => new Date(s.modified * 1000).toLocaleString() },
@@ -1047,7 +1059,7 @@ function renderGarage(g) {
         <dt>Engine</dt><dd><b>${esc(e.label)}</b> · quality ${e.quality}${e.sealed ? ' · <span class="badge">sealed</span>' : ""}<br>
           ${e.interval ? `${e.runs}/${e.interval} races since freshen ${bar(100 * Math.min(1, e.runs / e.interval), e.runs > e.interval ? "var(--bad)" : e.runs > 0.8 * e.interval ? "var(--warn)" : "var(--good)")}` : `${e.runs} races`}
           · health ${health(e.health)} ${e.health}%
-          <button class="small" data-act="garage" data-a="rebuild">${e.health <= 0 ? "Rebuild" : "Freshen"} (${usd(e.rebuild_usd)}${e.health < 100 ? "+" : ""})</button></dd>
+          <button class="small" data-act="garage" data-a="rebuild" ${e.fresh ? "disabled" : ""}>${e.health <= 0 ? "Rebuild" : "Freshen"} (${usd(e.rebuild_usd)})</button></dd>
         <dt>Shocks</dt><dd><b>${esc(car.shocks.label)}</b> · quality ${car.shocks.quality}</dd>
         <dt>Tires</dt><dd>set wear ${bar(100 - ti.wear * 100)} ${Math.round(ti.wear * 100)}% worn · each night wears ~${Math.round(ti.wear_per_race * 100)}%<br>
           New tires each night: <select data-change="tires">${Array.from({ length: ti.max_new + 1 }, (_, i) => `<option ${i === ti.new_per_night ? "selected" : ""}>${i}</option>`).join("")}</select>
@@ -1068,7 +1080,7 @@ function renderGarage(g) {
       <dt>Savings</dt><dd>${usd(g.money.savings)}</dd>
       <dt>Each night</dt><dd>${usd(car.night_cost)} entry, fuel & tires + engine wear ${usd(car.engine_wear_per_race)}${car.overhead_per_night ? ` + crew, hauler, practice & spares ${usd(car.overhead_per_night)}` : ""}</dd>
       <dt>${car.remaining_races} races left</dt><dd>≈ ${usd(car.season_running)} running costs (before travel, wrecks and purses)</dd></dl>
-      ${car.ledger.length ? `<h4>Ledger</h4><div class="table-wrap" style="max-height:340px;overflow:auto"><table class="tbl"><tbody>${car.ledger.slice().reverse().map((l) => `<tr><td class="muted small nowrap">${l[3] || ""} ${l[0] === 99 ? "end" : l[0] ? "wk " + l[0] : ""}</td><td class="small">${esc(l[1])}</td><td class="num ${l[2] < 0 ? "neg" : "pos"}">${usd(l[2], 1)}</td></tr>`).join("")}</tbody></table></div>` : ""}</div>` : "";
+      ${car.ledger.length ? `<h4>Ledger</h4><div class="table-wrap" style="max-height:340px;overflow:auto"><table class="tbl"><tbody>${car.ledger.slice().reverse().map((l) => `<tr><td class="muted small nowrap">${l[3] || ""} ${l[0] === 99 ? "end" : l[0] ? "wk " + l[0] : ""}</td><td class="small">${esc(l[1])}</td><td class="num ${l[2] < 0 ? "neg" : "pos"}">${l[2] ? usd(l[2], 1) : ""}</td></tr>`).join("")}</tbody></table></div>` : ""}</div>` : "";
   view(`<h1>Garage <span class="muted small">${esc(g.series.name)}</span></h1>
     ${g.message ? `<div class="callout">${esc(g.message)}</div>` : ""}
     ${g.hint ? `<div class="callout">${esc(g.hint)}</div>` : ""}
@@ -1083,19 +1095,21 @@ function crewCard(g) {
   return `<div class="card"><h3>Your crew</h3><p class="muted small">Hire people for the season: a crew chief (setup, strategy, adjustments), a spotter (keeps you out of wrecks, helps restarts) and a pit crew. Freelancers leave at season end.</p>
     ${g.crew.roles.map((r) => `<h4>${esc(r.label)}</h4>
       ${r.hired ? `<div class="small">${staffLink(r.hired)} · ${staffRatings(r.hired.ratings)} <button class="small" data-act="garage" data-a="release" data-k="${r.role}">Let go</button></div>` : `<div class="muted small">Nobody: friends and family help out (average).</div>`}
-      <div class="table-wrap"><table class="tbl"><tbody>${r.candidates.map((c) => `<tr><td class="small">${staffLink(c)} <span class="muted">${c.age}</span></td><td class="small">${staffRatings(c.ratings)}</td><td class="num small">${usd(c.cost)}</td><td><button class="small" data-act="garage" data-a="hire" data-k="${c.id}">Hire</button></td></tr>`).join("")}</tbody></table></div>`).join("")}</div>`;
+      <div class="table-wrap"><table class="tbl"><tbody>${r.candidates.map((c) => `<tr><td class="small">${staffLink(c)} <span class="muted">${c.age}</span>
+        <div class="nowrap" style="margin-top:4px"><b>${usd(c.cost)}</b> <button class="small" data-act="garage" data-a="hire" data-k="${c.id}">Hire</button></div></td>
+        <td class="small">${staffRatings(c.ratings)}</td></tr>`).join("")}</tbody></table></div>`).join("")}</div>`;
 }
 on("tires", async (el) => {
-  try { const r = await api("garage", { action: "tires", value: parseInt(el.value, 10) }); renderGarage(r); toast(r.message); }
+  try { const r = await api("garage", { action: "tires", value: parseInt(el.value, 10) }); renderGarage(r); toast(r.message, r.ok === false); }
   catch (e) { toast(e.message, true); }
 });
 on("auto", async (el) => {
-  try { const r = await api("garage", { action: el.dataset.k, value: el.checked ? 1 : 0 }); renderGarage(r); toast(r.message); }
+  try { const r = await api("garage", { action: el.dataset.k, value: el.checked ? 1 : 0 }); renderGarage(r); toast(r.message, r.ok === false); }
   catch (e) { toast(e.message, true); }
 });
 on("garage", async (el) => {
   el.classList.add("busy");
-  try { const r = await api("garage", { action: el.dataset.a, key: el.dataset.k }); renderGarage(r); toast(r.message); refreshStatus(); }
+  try { const r = await api("garage", { action: el.dataset.a, key: el.dataset.k }); renderGarage(r); toast(r.message, r.ok === false); refreshStatus(); }
   catch (e) { toast(e.message, true); el.classList.remove("busy"); }
 });
 
@@ -1133,6 +1147,7 @@ const ROUTES = [
 async function route() {
   const h = location.hash || "#/";
   S.route = h;
+  S.gen = (S.gen || 0) + 1;
   if (!S.status) await refreshStatus();
   const inGame = S.status.phase !== "none";
   for (const [re, fn, needsGame] of ROUTES) {
@@ -1140,7 +1155,9 @@ async function route() {
     if (!m) continue;
     if (needsGame && !inGame) { location.hash = "#/new"; return; }
     $$("#nav a").forEach((a) => a.classList.toggle("active", a.getAttribute("href") === h || (h === "#/" && a.dataset.nav === "dashboard")));
-    try { await fn(m); } catch (e) { view(`<div class="card"><h2>Something went wrong</h2><p class="muted">${esc(e.message)}</p></div>`); }
+    try { await fn(m); } catch (e) {
+      if (e.message !== STALE) view(`<div class="card"><h2>Something went wrong</h2><p class="muted">${esc(e.message)}</p></div>`);
+    }
     return;
   }
   view(`<div class="card empty">Page not found. <a class="link" href="#/">Dashboard</a></div>`);
