@@ -307,8 +307,9 @@ h4 { margin: 14px 0 6px; font-size: 13px; text-transform: uppercase; letter-spac
 .flag.green { background: #11a84a; color: #fff; }
 .flag.yellow { background: #ffd400; color: #111; animation: wflash 1s infinite; }
 .flag.white { background: #fff; color: #111; }
-.flag.checkered { color: #111; background: repeating-conic-gradient(#111 0 25%, #fff 0 50%) 0 0 / 16px 16px; text-shadow: 0 0 4px #fff, 0 0 4px #fff; }
+.flag.checkered { color: #111; background: linear-gradient(#fff, #fff) center / calc(100% - 16px) 60% no-repeat, repeating-conic-gradient(#111 0 25%, #fff 0 50%) 0 0 / 16px 16px; }
 @keyframes wflash { 50% { filter: brightness(.75); } }
+@media (prefers-reduced-motion: reduce) { .flag.yellow { animation: none; } }
 .watch-body { display: grid; grid-template-columns: minmax(0, 1fr) 320px; gap: 14px; margin-top: 12px; }
 @media (max-width: 980px) { .watch-body { grid-template-columns: 1fr; } }
 .watch-track-box svg { width: 100%; height: auto; display: block; border-radius: 14px; }

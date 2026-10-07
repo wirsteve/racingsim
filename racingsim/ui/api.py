@@ -322,6 +322,8 @@ def _race_entry(world: "World", key: str, event: int, year: Optional[int]) -> Op
 def car_number(seed: int, taken: set) -> int:
     """A stable car number for the race viewer (1-99, unique within the field)."""
     n = (seed * 37) % 99 + 1
+    if len(taken) >= 99:             # a field bigger than the numbers: share them
+        return n
     while n in taken:
         n = n % 99 + 1
     taken.add(n)
@@ -337,13 +339,13 @@ def replay(world: "World", key: str, event: int, year: Optional[int] = None) -> 
     track = world.tracks.get(e["track_id"])
     taken: set = set()
     cars = []
+    me = world.player.id if world.player is not None else None
     for c in rp["cars"]:
-        d = world.drivers.get(c["id"])
         team = world.teams.get(c["team"]) if c.get("team") is not None else None
         seed = (zlib.crc32(c["car_key"].encode()) % 9973) if c.get("car_key") else c["id"]
         hue_seed = c["team"] if c.get("team") is not None else c["id"]
         cars.append({**c, "num": car_number(seed, taken),
-                     "hue": (hue_seed * 137) % 360, "me": bool(d and d.is_player),
+                     "hue": (hue_seed * 137) % 360, "me": me is not None and me in (c.get("ids") or [c["id"]]),
                      "team_name": team.name if team else None})
     return {"track": e["track"], "track_id": e["track_id"], "series": series_brief(world, e["series_id"]),
             "jewel": e.get("jewel_name"), "label": week_label(e["week"]), "race": e.get("race"),
