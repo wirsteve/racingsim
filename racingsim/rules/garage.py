@@ -14,6 +14,7 @@ from typing import TYPE_CHECKING, Optional
 
 from ..util import clamp
 from . import car as C
+from . import shop as SH
 from .classes import CarClass, class_for_template
 
 if TYPE_CHECKING:
@@ -67,7 +68,19 @@ def open_account(world: "World", d: "Driver", series: "Series", cls: CarClass) -
         car.drawn = draw
         car.winnings = 0.0
         log(car, 0, f"{world.year} season budget ({series.name})", car.account)
+        bonus = SH.sponsor_bonus(world, d)
+        if bonus >= 1:
+            car.account += bonus
+            log(car, 0, f"Sponsors like the {SH.hauler(SH.get(world))['label'].lower()}", bonus)
     car.races = 0
+
+    def pay(amount: float, text: str) -> None:
+        if not spend(d, amount):
+            from ..sim.season import charge
+            charge(d, amount)
+        log(d.car, 0, text, -amount)
+    SH.season_start(world, d, cls, series.template, pay)
+    SH.sync(world, d, cls)
 
 
 def starter_car(world: "World", d: "Driver", cls: CarClass) -> None:
@@ -79,6 +92,7 @@ def starter_car(world: "World", d: "Driver", cls: CarClass) -> None:
             value = C.resale(d.car, old_cls)
             d.savings += value
             d.log(world.year, f"sold the {old_cls.label.lower()} for ${value:,.0f}")
+    SH.clear_other_classes(world, d, cls)
     money = d.available_funding() + d.savings * 0.5
     # Keep about half the money for running the season.
     budget = money * 0.5
@@ -98,7 +112,7 @@ def all_class(key: str) -> Optional[CarClass]:
 
 
 def player_rating(world: "World", d: "Driver", cls: CarClass, track) -> float:
-    return C.rating(d.car, cls, track, d.feedback)
+    return C.rating(d.car, cls, track, d.feedback, bonus=SH.rating_bonus(world, d, cls, track))
 
 
 def log(car: "C.Car", week: int, text: str, amount: float) -> None:
@@ -121,6 +135,7 @@ def spend(d: "Driver", amount: float) -> bool:
 
 # ---------------------------------------------------------------------- race night (player)
 def can_race(d: "Driver", cls: CarClass, travel: float = 0.0) -> bool:
+    """``travel``: tonight's tow money (already scaled by the hauler, see travel_per_night)."""
     car = d.car
     return (car is not None and car.engine_health > 0
             and (car.account or 0.0) + d.savings >= cls.per_race_fixed() + travel)
@@ -132,6 +147,10 @@ def before_race(world: "World", d: "Driver", cls: CarClass, track, week: int, tr
 
     ``overhead`` is the programme's crew, hauler, practice and spares cost per night; it is
     skipped first when money is short (you can always show up with fewer spares)."""
+    from ..world import settings as ST
+    note = SH.practice(world, d, cls, track, week, ST.get(world, "crashes"))
+    if note:
+        world.post("player", note, driver_id=d.id, week=week, importance=2)
     car = d.car
     n = min(car.new_tires, C.max_new(cls))
     have = (car.account or 0) + d.savings
@@ -149,8 +168,8 @@ def before_race(world: "World", d: "Driver", cls: CarClass, track, week: int, tr
     log(car, week, f"{track.name}: entry, pit passes, fuel{', travel' if travel else ''}"
         + (f", {n} new tire{'s' if n > 1 else ''}" if n else ", no new tires"), -cost)
     if over:
-        log(car, week, "Crew, hauler, practice tires & spares", -over)
-    return C.rating(car, cls, track, d.feedback)
+        log(car, week, "Crew, practice tires, spares & food", -over)
+    return player_rating(world, d, cls, track)
 
 
 def after_race(world: "World", d: "Driver", cls: CarClass, track, week: int, finish, purse: float) -> list[str]:
@@ -168,7 +187,7 @@ def after_race(world: "World", d: "Driver", cls: CarClass, track, week: int, fin
     if finish.crashed:
         dmg = C.crash_damage(rng, track.sim.crash_severity)
         car.condition = clamp(car.condition - dmg * 100, 0, 100)
-        cost = C.repair_cost(cls, dmg)
+        cost = C.repair_cost(cls, dmg) * SH.repair_mult(world)
         notes.append(f"Wrecked: about ${cost:,.0f} of damage")
         if car.auto_repair:
             msg = repair(world, d, cls, week)
@@ -183,7 +202,8 @@ def after_race(world: "World", d: "Driver", cls: CarClass, track, week: int, fin
             if "don't have" in msg:
                 notes.append(msg)
     opt = cls.engine(car.engine)
-    if car.auto_rebuild and opt and opt.rebuild_races and car.engine_runs >= opt.rebuild_races and car.engine_health > 0:
+    if (car.auto_rebuild and opt and opt.rebuild_races and car.engine_runs >= opt.rebuild_races * car.interval_mult
+            and car.engine_health > 0):
         msg = rebuild(world, d, cls, week)
         if "don't have" in msg:
             notes.append(msg)
@@ -195,7 +215,7 @@ def repair(world: "World", d: "Driver", cls: CarClass, week: int) -> str:
     dmg = (100 - car.condition) / 100
     if dmg <= 0.005:
         return "The car is straight."
-    cost = C.repair_cost(cls, dmg)
+    cost = C.repair_cost(cls, dmg) * SH.repair_mult(world)
     if not spend(d, cost):
         return f"Repairs need ${cost:,.0f} - you don't have it."
     car.condition = 100.0
@@ -209,9 +229,7 @@ def rebuild(world: "World", d: "Driver", cls: CarClass, week: int) -> str:
     if opt is None:
         return "Unknown engine."
     blown = car.engine_health <= 0
-    cost = opt.rebuild_usd * (1 + (100 - car.engine_health) / 70)
-    if blown:
-        cost = max(cost, opt.usd * 0.6)
+    cost = SH.freshen_cost(world, opt, car.engine_health)
     if not spend(d, cost):
         return f"A {'rebuild' if not blown else 'replacement short block'} costs ${cost:,.0f} - you don't have it."
     car.engine_runs, car.engine_health = 0, 100.0
@@ -266,7 +284,7 @@ def travel_per_night(world: "World", d: "Driver", series: "Series") -> float:
     from ..career.market import season_cost_for
     events = max(1, series.template.events if series.scope == "track" else len(series.schedule))
     total = season_cost_for(world, d, series) - series.template.season_cost
-    return max(0.0, total) / events
+    return max(0.0, total) / events * SH.travel_mult(world)
 
 
 def claim_check(world: "World", d: "Driver", cls: CarClass, finish, week: int) -> Optional[str]:

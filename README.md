@@ -133,6 +133,13 @@ python -m pytest -q                                     # run the tests
   sources. Chassis, engine packages (built, crate, sealed, spec, claimer — legal by year),
   shocks and tire rules; engines need freshening, tires wear, wrecks cost money, claim rules
   bite. Your **Garage** shows the car, the class rules and a race-by-race money ledger.
+* **Your own race shop** (`racingsim/rules/shop.py`, `data/rules/shop.json`): the hauler (an
+  open trailer behind the family pickup up to a semi transporter), shop space, fabrication,
+  an engine room and setup tools, each with real prices and upkeep
+  (`docs/research/race_shop_economics.md`). Build cars from bare chassis kits, keep backups
+  (a stacker or semi brings one to the track when practice goes wrong), keep spare engines on
+  the stand, and buy from used-car classifieds that turn over every few weeks. A team owner
+  invests in R&D, engineering, pit-crew training and transporters.
 * **Real points and purses**: era-correct NASCAR points (Latford, 2004/2007, one-point,
   stages, 2026) with the Chase and elimination playoffs; weekly tracks score like their
   sanctioning body (IMCA, DIRTcar, WISSOTA, Hickory-style, Stafford-style …), with heats,

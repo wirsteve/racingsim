@@ -1,0 +1,297 @@
+{
+ "_about": "The player's race shop: haulers, shop facilities and team (owner mode) facilities. Money in 2025 USD. Prices are midpoints of researched ranges (docs/research/race_shop_economics.md); effects are game-design values (EST) unless a note says otherwise.",
+ "haulers": [
+  {
+   "key": "open",
+   "label": "Open car trailer",
+   "usd": 5200,
+   "upkeep": 700,
+   "cars": 1,
+   "travel": 0.9,
+   "mech": 1.05,
+   "sponsor": 0.0,
+   "about": "An 18-20 ft open steel trailer behind the family pickup. Cheap to tow; the car rides in the weather and the spares ride in the truck bed.",
+   "note": "18 ft open trailer $4,300-7,200 new (2025-26 dealer listings, high); towed with the family pickup."
+  },
+  {
+   "key": "enclosed",
+   "label": "Enclosed trailer (24 ft)",
+   "usd": 15000,
+   "upkeep": 1600,
+   "cars": 1,
+   "travel": 1.0,
+   "mech": 0.95,
+   "sponsor": 0.01,
+   "about": "A 24 ft enclosed trailer: room for a tire rack, a toolbox and the spare parts you'd otherwise leave at home. Sides that carry a sponsor's name.",
+   "note": "24 ft enclosed $11,000-22,000 new (2024-26, medium); trailer + contents insurance $1,000-1,500/yr (medium)."
+  },
+  {
+   "key": "race_trailer",
+   "label": "Race trailer & dually (32 ft)",
+   "usd": 80000,
+   "upkeep": 7000,
+   "cars": 1,
+   "travel": 1.12,
+   "mech": 0.9,
+   "sponsor": 0.03,
+   "about": "A 32 ft gooseneck race trailer with cabinets, a generator, an awning and a lounge, pulled by a one-ton dually. The touring racer's rig.",
+   "note": "EST: a gooseneck race trailer ($60-95k new for a 48 ft, 2025) bought used, plus a used one-ton dually (new 3/4-ton diesel from ~$58k, 2025)."
+  },
+  {
+   "key": "stacker",
+   "label": "Stacker trailer & truck",
+   "usd": 175000,
+   "upkeep": 15000,
+   "cars": 2,
+   "travel": 1.28,
+   "mech": 0.86,
+   "sponsor": 0.05,
+   "about": "A 48 ft stacker with a hydraulic lift: two cars, a full parts shop and a tire bay, behind a medium-duty truck. The backup car comes to every race.",
+   "note": "28 ft stacker with lift $105-128k new (2024-26, medium) plus a truck; a toter + stacker 'mobile race shop' $150-250k (2017, medium)."
+  },
+  {
+   "key": "semi",
+   "label": "Semi transporter",
+   "usd": 300000,
+   "upkeep": 32000,
+   "cars": 2,
+   "travel": 1.35,
+   "mech": 0.82,
+   "sponsor": 0.08,
+   "about": "A used tractor and a 53 ft race transporter: two cars upstairs, a machine shop downstairs and a lounge up front. Needs a CDL driver. Sponsors notice.",
+   "note": "Used semi rig ~$250k at dirt late model / modified level (2017) and $300-350k at Xfinity (2025), medium; ~$0.82/mi running before driver pay (EST from ATRI). Upkeep includes a part-time CDL driver (EST)."
+  }
+ ],
+ "facilities": {
+  "space": {
+   "label": "Shop space",
+   "levels": [
+    {
+     "label": "Home garage",
+     "usd": 0,
+     "upkeep": 0,
+     "cars": 2,
+     "engines": 1,
+     "about": "The garage at home: room for the race car and one more, if the family car lives outside."
+    },
+    {
+     "label": "Rented shop bay",
+     "usd": 3500,
+     "upkeep": 13000,
+     "cars": 3,
+     "engines": 2,
+     "about": "A 1,500 sq ft bay in an industrial park: a lift, benches and room for three cars."
+    },
+    {
+     "label": "Two-bay race shop",
+     "usd": 12000,
+     "upkeep": 27000,
+     "cars": 4,
+     "engines": 3,
+     "about": "3,000 sq ft, two roll-up doors, a parts room and a tire room."
+    },
+    {
+     "label": "Race shop & offices",
+     "usd": 40000,
+     "upkeep": 55000,
+     "cars": 6,
+     "engines": 5,
+     "about": "A 6,000 sq ft building with offices for sponsors to visit and room for a fleet."
+    }
+   ],
+   "note": "Rent at the national industrial average, ~$8.76 per sq ft per year (2025, high); Mooresville race shops run $14 + $2.75 NNN (2025, medium)."
+  },
+  "fab": {
+   "label": "Fabrication",
+   "levels": [
+    {
+     "label": "Hand tools",
+     "usd": 0,
+     "upkeep": 0,
+     "repair": 1.0,
+     "build": null,
+     "build_weeks": 0,
+     "inspect": 10,
+     "about": "Wrenches and a grinder. Bent cars go to a chassis shop; you buy cars turnkey."
+    },
+    {
+     "label": "Welder & tube bender",
+     "usd": 6000,
+     "upkeep": 800,
+     "repair": 0.85,
+     "build": -2,
+     "build_weeks": 4,
+     "inspect": 8,
+     "about": "A MIG welder, a tube notcher and bender: fix your own wrecks and assemble a car from a bare chassis (an amateur build gives a little away)."
+    },
+    {
+     "label": "Chassis jig & fixture table",
+     "usd": 15000,
+     "upkeep": 1500,
+     "repair": 0.72,
+     "build": 1,
+     "build_weeks": 3,
+     "inspect": 3,
+     "about": "A surface plate and jig: frames come back straight and builds come out square. You can measure a used car before you buy it."
+    },
+    {
+     "label": "Full fab shop",
+     "usd": 45000,
+     "upkeep": 4000,
+     "repair": 0.62,
+     "build": 4,
+     "build_weeks": 2,
+     "inspect": 2,
+     "aging": 0.75,
+     "about": "TIG, a CNC tube bender, a sheet-metal brake and a body bench: your own builds are as good as the builders' and your chassis last longer."
+    }
+   ],
+   "note": "TIG welder $3,300-3,800, two-post lift $6,100-7,000 (retail, high). No public price for a chassis jig: EST."
+  },
+  "engine": {
+   "label": "Engine room",
+   "levels": [
+    {
+     "label": "None",
+     "usd": 0,
+     "upkeep": 0,
+     "freshen": 1.0,
+     "interval": 1.0,
+     "power": 0,
+     "about": "Engines go to your builder for every freshen."
+    },
+    {
+     "label": "Engine room",
+     "usd": 5000,
+     "upkeep": 500,
+     "freshen": 0.9,
+     "interval": 1.0,
+     "power": 0,
+     "about": "A clean room, a parts washer, leak-down and valve-spring testers: you do the teardown and the builder does the machine work."
+    },
+    {
+     "label": "Machine tools & flow bench",
+     "usd": 35000,
+     "upkeep": 3000,
+     "freshen": 0.78,
+     "interval": 1.1,
+     "power": 0.5,
+     "about": "Valve job, honing and a flow bench in house: cheaper freshens that last longer."
+    },
+    {
+     "label": "Engine dyno cell",
+     "usd": 75000,
+     "upkeep": 10000,
+     "freshen": 0.68,
+     "interval": 1.2,
+     "power": 2.5,
+     "about": "Your own engine dyno: every engine is tuned before it goes in the car. (Sealed engines still go to the approved rebuilder.)"
+    }
+   ],
+   "note": "An engine dyno cell all-in ~$70,000-80,000 (forum, low). Engine room and machine tools: EST."
+  },
+  "setup": {
+   "label": "Setup tools",
+   "levels": [
+    {
+     "label": "Tape measure",
+     "usd": 0,
+     "upkeep": 0,
+     "setup": 0,
+     "shocks": 0,
+     "feedback": 1.0,
+     "about": "A tape measure, a bubble level and a notebook."
+    },
+    {
+     "label": "Scales & alignment",
+     "usd": 5000,
+     "upkeep": 300,
+     "setup": 0.8,
+     "shocks": 0,
+     "feedback": 1.0,
+     "about": "Wireless corner scales, a toe plate and caster/camber gauges: the car goes to the track the way you set it up."
+    },
+    {
+     "label": "Shock dyno",
+     "usd": 12000,
+     "upkeep": 800,
+     "setup": 1.6,
+     "shocks": 6,
+     "feedback": 1.1,
+     "about": "Build and match your own shocks instead of buying off the shelf."
+    },
+    {
+     "label": "Data & simulation",
+     "usd": 25000,
+     "upkeep": 12000,
+     "setup": 2.6,
+     "shocks": 6,
+     "feedback": 1.4,
+     "about": "Data acquisition in the car, a setup program and a few seven-post shaker-rig days a year: the driver's feedback turns into speed."
+    }
+   ],
+   "note": "Wireless scales $1,450-2,700 and a setup rack $3,050-6,500 (retail, high); shock dynos $6,000-17,700 (2025, medium); driver-in-loop sim ~$12,000 a day (2017, medium). Seven-post rental rates: not found."
+  }
+ },
+ "team": {
+  "_about": "Owner mode facilities for a team-run team. Prices and upkeep are shares of the series' full-season cost per car (EST: no source gives these for teams below the Cup level).",
+  "rnd": {
+   "label": "Fabrication & R&D",
+   "price": [
+    0.1,
+    0.18,
+    0.3
+   ],
+   "upkeep": 0.03,
+   "equipment": 1.5,
+   "about": "Build your own chassis and bodies and develop parts between races: equipment grows faster."
+  },
+  "engineering": {
+   "label": "Engineering",
+   "price": [
+    0.08,
+    0.15,
+    0.25
+   ],
+   "upkeep": 0.03,
+   "setup": 0.4,
+   "about": "Simulator time, seven-post shaker rig and wind tunnel days: better race-day setups."
+  },
+  "pit": {
+   "label": "Pit crew training",
+   "price": [
+    0.03,
+    0.06,
+    0.1
+   ],
+   "upkeep": 0.01,
+   "pit": 0.03,
+   "about": "A pit-stop practice facility, a strength coach and video review: faster, steadier stops."
+  },
+  "transport": {
+   "label": "Transporters",
+   "price": [
+    0.04,
+    0.08,
+    0.14
+   ],
+   "upkeep": 0.01,
+   "sponsor": 0.02,
+   "mech": 0.03,
+   "about": "Newer haulers with full parts shops: sponsors like the look and the spares on board save races."
+  }
+ },
+ "build": {
+  "kit_share": 0.8,
+  "_note": "A bare chassis (frame, suspension mounts, body kit) costs about 80% of a turnkey roller; you supply the labour (EST)."
+ },
+ "market": {
+  "listings": 6,
+  "refresh_weeks": 4,
+  "markup": [
+   0.8,
+   1.3
+  ]
+ },
+ "_sources": "docs/research/race_shop_economics.md"
+}

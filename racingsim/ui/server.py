@@ -220,6 +220,20 @@ def handle(method: str, path: str, query: dict, body: dict):
             msg = garage_action(w, w.player, action, key, int(value) if value is not None else None)
             return {"message": msg, **garage_view.garage(g)}
         return garage_view.garage(g)
+    if head == "shop":
+        from . import shop_view
+        if method == "POST":
+            from ..rules.shop import shop_action
+            if w.player is None:
+                raise ApiError("no driver", 409)
+            action, key = body.get("action"), body.get("key")
+            if not isinstance(action, str):
+                raise ApiError("action required")
+            if key is not None and not isinstance(key, (str, int)):
+                raise ApiError("key must be a string")
+            msg = shop_action(w, w.player, action, None if key is None else str(key))
+            return {"message": msg, **shop_view.shop(g)}
+        return shop_view.shop(g)
     raise ApiError("not found", 404)
 
 

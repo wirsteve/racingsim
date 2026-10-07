@@ -157,8 +157,9 @@ def sell(world: "World", d: "Driver") -> str:
     t = owned(world)
     if t is None:
         return "You don't own a team."
+    from ..rules.shop import team_value
     tpl = world.series(t.series_id).template
-    price = SELL_BACK * buy_in(tpl) + max(0.0, t.cash)
+    price = SELL_BACK * buy_in(tpl) + max(0.0, t.cash) + team_value(world, t)
     d.savings += price
     t.cash = round(0.25 * tpl.season_cost * t.cars)   # the buyer brings money of their own
     t.player_owned = False

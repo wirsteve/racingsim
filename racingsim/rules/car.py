@@ -62,6 +62,9 @@ class Car:
     year: int = 0                   # season the ledger is currently writing
     races: int = 0
     ledger: list = field(default_factory=list)  # player: [week, text, amount]
+    tag: str = ""                   # player: the car's name in the fleet ("Car 2")
+    season_seen: int = 0            # player: the season the car last started (chassis age counts from it)
+    interval_mult: float = 1.0      # player: the engine room stretches the freshen interval (rules/shop.py)
 
     # ------------------------------------------------------------------ components
     def chassis_score(self, cls: CarClass) -> float:
@@ -70,7 +73,7 @@ class Car:
 
     def engine_score(self, cls: CarClass) -> float:
         opt = cls.engine(self.engine)
-        interval = opt.rebuild_races if opt and opt.rebuild_races else 0
+        interval = opt.rebuild_races * self.interval_mult if opt and opt.rebuild_races else 0
         fresh = 1.0
         if interval and self.engine_runs > interval:
             fresh = 1 - 0.18 * min(1.0, (self.engine_runs - interval) / interval)
@@ -84,7 +87,8 @@ class Car:
         opt = cls.engine(self.engine)
         if not opt or not opt.rebuild_races:
             return 0.0
-        return clamp((self.engine_runs - opt.rebuild_races) / opt.rebuild_races, 0, 2)
+        interval = opt.rebuild_races * self.interval_mult
+        return clamp((self.engine_runs - interval) / interval, 0, 2)
 
 
 def weights(track: Optional["Track"]) -> tuple[float, float, float, float]:
@@ -98,12 +102,14 @@ def weights(track: Optional["Track"]) -> tuple[float, float, float, float]:
             0.22 * (0.5 + 1.0 * td / 100), 0.12 * (0.7 + 0.6 * (100 - hp) / 100))
 
 
-def rating(car: Car, cls: CarClass, track: Optional["Track"], feedback: float, tire_wear: Optional[float] = None) -> float:
+def rating(car: Car, cls: CarClass, track: Optional["Track"], feedback: float, tire_wear: Optional[float] = None,
+           bonus: float = 0.0) -> float:
+    """``bonus``: raw points from the racer's shop (rules/shop.py rating_bonus)."""
     wc, we, wt, ws = weights(track)
     tw = car.tire_wear if tire_wear is None else tire_wear
     raw = (wc * car.chassis_score(cls) + we * car.engine_score(cls) + wt * 100 * (1 - 0.65 * tw)
            + ws * car.shocks_q) / (wc + we + wt + ws)
-    raw += (feedback - 50) * 0.10   # setup: a driver who can tell the crew what the car is doing
+    raw += (feedback - 50) * 0.10 + bonus   # setup: a driver who can tell the crew what the car is doing
     return clamp(50 + (raw - REF_RAW) * SCALE * cls.spread, 5, 97)
 
 
