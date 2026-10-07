@@ -1,0 +1,158 @@
+/* racingsim pit-lane theme: race typography, a pit-wall header, timing-tower tables, flag colours.
+   Loaded after style.css; it restyles components without changing their layout contracts. */
+
+:root {
+  --display: "Bahnschrift", "DIN Condensed", "DIN Alternate", "Roboto Condensed", "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
+  --race-red: #e10600;
+  --race-yellow: #ffc906;
+  --race-green: #0fa958;
+  --pit: #11151c;          /* the pit wall: header, sidebar, table heads */
+  --pit-2: #1a2029;
+  --pit-line: #2a313d;
+  --accent: #e10600;
+  --accent-2: #b80500;
+  --accent-soft: #ffe7e5;
+  --bg: #eceef1;
+  --row-hl: #fff4c2;
+  --radius: 6px;
+  --checker: repeating-conic-gradient(#111 0 25%, #f4f4f4 0 50%) 0 0 / 10px 10px;
+  --carbon: repeating-linear-gradient(45deg, rgba(255,255,255,.025) 0 2px, transparent 2px 4px),
+            repeating-linear-gradient(-45deg, rgba(0,0,0,.25) 0 2px, transparent 2px 4px);
+}
+:root[data-theme="dark"] {
+  --accent: #ff2a1f; --accent-2: #ff4a40; --accent-soft: #3a1514; --bg: #0c0f14; --panel: #151a22; --panel-2: #1a212b;
+  --line: #262e3a; --row-hl: #3a3213;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --accent: #ff2a1f; --accent-2: #ff4a40; --accent-soft: #3a1514; --bg: #0c0f14; --panel: #151a22; --panel-2: #1a212b;
+    --line: #262e3a; --row-hl: #3a3213;
+  }
+}
+
+/* ---------- type */
+h1, h2, h3, .brand, #clock .year, .kpi .v, .watch-track, .watch-lap, .flag, th, button, .btn, .badge, #nav a, .nav-sep {
+  font-family: var(--display);
+}
+h1 { font-size: 2rem; font-weight: 900; font-style: italic; text-transform: uppercase; letter-spacing: .01em; line-height: 1.05; }
+#view > h1:first-child, #view > div > h1:first-child { display: inline-block; padding-bottom: 6px; margin-bottom: 14px;
+  background: linear-gradient(90deg, var(--race-red) 0 60%, var(--race-yellow) 60% 80%, transparent 80%) left bottom / 100% 4px no-repeat; }
+h2 { font-size: 1.25rem; font-weight: 800; font-style: italic; text-transform: uppercase; }
+h3 { font-weight: 800; font-style: italic; letter-spacing: .07em; color: var(--text); font-size: .9rem; }
+.card > h3:first-child::before, .card-head > h3::before, .card > h2:first-child::before {
+  content: ""; display: inline-block; width: 10px; height: 10px; margin-right: 8px; vertical-align: 0; background: var(--checker); background-size: 5px 5px;
+  border-radius: 1px;
+}
+
+/* ---------- sidebar: carbon pit wall */
+#sidebar { background: var(--pit); background-image: var(--carbon); border-right: 3px solid var(--race-red); }
+.brand { font-size: 1.4rem; font-style: italic; font-weight: 900; text-transform: uppercase; letter-spacing: .02em; }
+.brand .r2 { color: var(--race-red); }
+.brand-mark { width: 34px; height: 30px; border-radius: 3px; background: none; padding: 0; }
+.brand-mark svg { width: 34px; height: 30px; display: block; }
+.pc { background: rgba(255,255,255,.04); border: 1px solid var(--pit-line); border-left: 3px solid var(--race-yellow); border-radius: 4px; }
+#nav a { border-radius: 0; font-size: .93rem; font-weight: 600; letter-spacing: .02em; text-transform: uppercase; font-style: italic;
+  padding: 5px 12px; border-left: 3px solid transparent; }
+#nav a:hover { background: rgba(255,255,255,.06); border-left-color: var(--pit-line); }
+#nav a.active { background: linear-gradient(90deg, var(--race-red), rgba(225,6,0,.55)); border-left-color: var(--race-yellow); }
+.nav-sep { color: var(--race-yellow); opacity: .8; font-weight: 800; font-style: italic; letter-spacing: .14em; }
+
+/* ---------- topbar: the pit wall with a checkered strip */
+#topbar { background: var(--pit); background-image: var(--carbon); border-bottom: 0; color: #e8ecf2; padding-bottom: 14px; }
+#topbar::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 6px; background: var(--checker); background-size: 6px 6px; opacity: .9; }
+#clock .year { font-size: 1.7rem; font-weight: 900; font-style: italic; color: #fff; }
+#clock .wk { color: #aab3c2; font-style: italic; }
+.progress { width: 200px; height: 8px; background: #2a313d; border-radius: 2px; position: relative; overflow: visible; }
+.progress > i { background: linear-gradient(90deg, var(--race-green), var(--race-yellow)); border-radius: 2px; position: relative; }
+.progress > i::after { content: ""; position: absolute; right: -6px; top: -4px; width: 12px; height: 16px; border-radius: 3px;
+  background: var(--race-red); box-shadow: 0 0 0 2px #fff; }
+#sim-controls button, #sim-controls .btn { text-transform: uppercase; font-style: italic; font-weight: 800; letter-spacing: .03em; border-radius: 3px;
+  background: #222a35; border-color: #39424f; color: #fff; }
+#sim-controls button:hover { border-color: #fff; }
+#sim-controls [data-until="race"] { background: var(--race-green); border-color: var(--race-green); }
+#sim-controls [data-until="race"]:hover { filter: brightness(1.1); }
+#sim-controls button.primary, #sim-controls .btn.primary { background: #fff; color: #111; border: 2px solid transparent;
+  border-image: repeating-linear-gradient(90deg, #111 0 6px, #fff 6px 12px) 2; }
+
+/* ---------- buttons, badges */
+button, .btn { border-radius: 4px; font-weight: 700; letter-spacing: .02em; }
+button.primary, .btn.primary { text-transform: uppercase; font-style: italic; font-weight: 800; letter-spacing: .04em;
+  clip-path: polygon(7px 0, 100% 0, calc(100% - 7px) 100%, 0 100%); padding-left: 18px; padding-right: 18px; }
+button.small.primary { padding-left: 13px; padding-right: 13px; }
+.badge { border-radius: 3px; font-weight: 800; font-style: italic; text-transform: uppercase; letter-spacing: .04em; font-size: .7rem; }
+.badge.tier { clip-path: polygon(4px 0, 100% 0, calc(100% - 4px) 100%, 0 100%); padding: 1px 9px; }
+
+/* ---------- cards: a racing stripe across the top */
+.card { position: relative; border-radius: var(--radius); border-color: var(--line); }
+.card::before { content: ""; position: absolute; left: 0; top: 0; right: 0; height: 3px; border-radius: var(--radius) var(--radius) 0 0;
+  background: linear-gradient(90deg, var(--race-red) 0 56px, var(--race-yellow) 56px 70px, transparent 70px); }
+.card.empty::before { display: none; }
+.callout { border-left: 4px solid var(--race-yellow); }
+
+/* ---------- tables: the timing tower */
+th { background: var(--pit); color: #cfd6e0; font-weight: 700; letter-spacing: .08em; font-size: .78rem; border-bottom: 2px solid var(--race-red); }
+th.sortable:hover { color: var(--race-yellow); }
+tbody tr:nth-child(even) td { background: color-mix(in srgb, var(--panel-2) 70%, transparent); }
+tr:hover td { background: var(--accent-soft) !important; }
+tr.me td { background: var(--row-hl) !important; }
+tr.me td:first-child { box-shadow: inset 4px 0 0 var(--race-yellow); }
+.pos-1 { display: inline-block; min-width: 30px; text-align: center; background: var(--race-yellow); color: #111; font-weight: 900; font-style: italic; border-radius: 2px; padding: 0 4px; }
+.pos-top5 { font-weight: 800; color: var(--accent); }
+
+/* ---------- the driver card: a helmet */
+.hero { background: var(--panel); background-image: linear-gradient(105deg, transparent 0 62%, rgba(225,6,0,.07) 62% 70%, rgba(255,201,6,.08) 70% 74%, transparent 74%); }
+.avatar { width: 68px; height: 68px; border-radius: 50% 50% 38% 38%; background: radial-gradient(circle at 30% 25%, #ff6b5e, var(--race-red) 45%, #7a0300);
+  position: relative; font-family: var(--display); font-style: italic; font-weight: 900; font-size: 1.5rem; color: #fff; box-shadow: inset 0 -4px 0 rgba(0,0,0,.2); }
+.avatar::after { content: ""; position: absolute; left: 10px; right: 6px; top: 38%; height: 13px; border-radius: 3px 12px 12px 3px;
+  background: linear-gradient(180deg, #1b2533, #3c5170); opacity: .55; }
+.kpi .v { font-weight: 900; font-style: italic; font-size: 1.5rem; }
+.kpi .l { font-weight: 700; letter-spacing: .1em; }
+
+/* ---------- race day panel (dashboard) */
+.raceday { display: grid; grid-template-columns: auto 1fr auto; gap: 18px; align-items: center; margin-top: 16px; padding: 0; overflow: hidden;
+  background: var(--pit); background-image: var(--carbon); color: #eef1f5; border: 0; }
+.raceday::before { display: none; }
+.raceday .rd-flag { align-self: stretch; width: 18px; background: var(--checker); background-size: 9px 9px; }
+.raceday .rd-k { font-family: var(--display); font-weight: 800; font-style: italic; letter-spacing: .14em; color: var(--race-yellow); font-size: .8rem; text-transform: uppercase; }
+.raceday .rd-track { font-family: var(--display); font-weight: 900; font-style: italic; font-size: 1.7rem; text-transform: uppercase; line-height: 1.05; }
+.raceday .rd-sub { color: #aab3c2; font-size: .88rem; }
+.raceday .rd-go { padding: 14px 18px 14px 0; display: flex; gap: 10px; align-items: center; flex-wrap: wrap; justify-content: flex-end; }
+.raceday .rd-last { color: #cfd6e0; font-size: .85rem; }
+.raceday .rd-last a { color: var(--race-yellow); }
+.lights { display: inline-flex; gap: 5px; margin-right: 6px; }
+.lights i { width: 12px; height: 12px; border-radius: 50%; background: #2a0d0b; box-shadow: inset 0 0 0 1px #000; }
+.lights i.on { background: radial-gradient(circle at 35% 35%, #ff8a80, var(--race-red)); box-shadow: 0 0 8px rgba(255,40,30,.7); }
+.btn.go { background: var(--race-green); border-color: var(--race-green); color: #fff; text-transform: uppercase; font-style: italic; font-weight: 900;
+  clip-path: polygon(8px 0, 100% 0, calc(100% - 8px) 100%, 0 100%); padding: 10px 22px; font-size: 1rem; }
+@media (max-width: 700px) { .raceday { grid-template-columns: auto 1fr; } .raceday .rd-go { grid-column: 1 / -1; padding: 0 14px 14px; justify-content: flex-start; } }
+
+/* ---------- tabs and choice cards */
+.tabs button { font-style: italic; text-transform: uppercase; font-weight: 800; letter-spacing: .04em; }
+.tabs button.on { border-bottom-width: 3px; }
+.choice-card.on { box-shadow: inset 4px 0 0 var(--race-red); }
+#toast { background: var(--pit); border-left: 4px solid var(--race-yellow); border-radius: 4px; }
+#toast.error { border-left-color: #fff; }
+
+@media (prefers-reduced-motion: no-preference) {
+  .lights i.on { animation: lightsOn .35s ease-out both; }
+  .lights i.on:nth-child(2) { animation-delay: .25s; } .lights i.on:nth-child(3) { animation-delay: .5s; }
+  .lights i.on:nth-child(4) { animation-delay: .75s; } .lights i.on:nth-child(5) { animation-delay: 1s; }
+}
+@keyframes lightsOn { from { background: #2a0d0b; box-shadow: none; } }
+
+/* Table cells keep words whole (the table scrolls sideways instead of breaking "Results" into letters). */
+td a.link, td .small, td .muted { overflow-wrap: normal; }
+td a.link { color: var(--text); font-weight: 600; }
+td a.link:hover { color: var(--accent); }
+tr.me td a.link { color: var(--accent); }
+/* The visor sits behind the initials. */
+.avatar { z-index: 0; isolation: isolate; }
+.avatar::after { z-index: -1; }
+.avatar { padding-bottom: 16px; }
+.avatar::after { top: auto; bottom: 12px; height: 11px; }
+@media (max-width: 700px) {
+  #sidebar { border-right: 0; border-bottom: 3px solid var(--race-red); }
+  #topbar { position: relative; }
+}
+.fleet { grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); }
+.car-head b { white-space: nowrap; }
