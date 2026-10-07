@@ -33,3 +33,8 @@ def price_index(year: int) -> float:
         return t[year]
     lo, hi = min(t), max(t)
     return t[lo] if year < lo else t[hi]
+
+
+def nominal_usd(year: int, x: float) -> str:
+    """A model amount (2025 dollars) as text in that season's own dollars, for messages and ledger lines."""
+    return f"${x * price_index(year):,.0f}"

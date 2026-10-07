@@ -8,6 +8,7 @@ from typing import TYPE_CHECKING
 from ..history.economy import price_index
 from ..rules import car as C
 from ..rules import garage as G
+from ..rules import shop as SH
 from ..rules.classes import CarClass
 from ..util import load_json
 
@@ -71,10 +72,11 @@ def car_info(world, d, cls: CarClass, track) -> dict:
     return {
         "chassis": {"label": ch.label if ch else car.chassis, "quality": round(car.chassis_q),
                     "age": car.chassis_age, "condition": round(car.condition), "score": round(car.chassis_score(cls)),
-                    "weight": round(wc / tot, 2), "repair_usd": round(C.repair_cost(cls, (100 - car.condition) / 100))},
+                    "weight": round(wc / tot, 2), "repair_usd": round(C.repair_cost(cls, (100 - car.condition) / 100) * SH.repair_mult(world))},
         "engine": {"label": en.label if en else car.engine, "quality": round(car.engine_q), "runs": car.engine_runs,
                    "interval": en.rebuild_races if en else 0, "health": round(car.engine_health),
-                   "rebuild_usd": en.rebuild_usd if en else 0, "score": round(car.engine_score(cls)),
+                   "rebuild_usd": round(SH.freshen_cost(world, en, car.engine_health)) if en else 0,
+                   "fresh": car.engine_runs == 0 and car.engine_health >= 100, "score": round(car.engine_score(cls)),
                    "sealed": en.sealed if en else False, "claim_usd": en.claim_usd if en else 0,
                    "weight": round(we / tot, 2)},
         "shocks": {"label": sh.label if sh else car.shocks, "quality": round(car.shocks_q), "weight": round(ws / tot, 2)},

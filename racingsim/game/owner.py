@@ -18,6 +18,7 @@ from __future__ import annotations
 
 from typing import TYPE_CHECKING, Optional
 
+from ..history.economy import nominal_usd
 from ..util import clamp
 
 if TYPE_CHECKING:
@@ -66,7 +67,7 @@ def actions(world: "World", d: "Driver") -> list[dict]:
         return [{"id": "found_team", "label": "Start a team",
                  "detail": "Put your savings into a team of your own: one car, a small shop and a staff. "
                            "Losses come out of your savings.",
-                 "options": [{"value": o["value"], "label": f'{o["label"]} (T{o["tier"]}) - ${o["cost"]:,.0f}'
+                 "options": [{"value": o["value"], "label": f'{o["label"]} (T{o["tier"]}) - {nominal_usd(world.year, o["cost"])}'
                               + ("" if o["afford"] else " (can't afford)")} for o in opts]}]
     return [
         {"id": "team_budget", "label": f"{t.name}: budget",
@@ -77,7 +78,7 @@ def actions(world: "World", d: "Driver") -> list[dict]:
          "detail": "Who your team signs for open seats when the market runs.",
          "options": [{"value": k, "label": k.title()} for k in PRIORITY]},
         {"id": "sell_team", "label": f"Sell {t.name}",
-         "detail": f"A buyer pays about ${SELL_BACK * buy_in(world.series(t.series_id).template) + _facilities(world, t):,.0f} "
+         "detail": f"A buyer pays about {nominal_usd(world.year, SELL_BACK * buy_in(world.series(t.series_id).template) + _facilities(world, t))} "
                    "for the shop, the cars and the facilities you built, plus whatever cash the team holds."},
     ]
 
@@ -124,7 +125,7 @@ def found(world: "World", d: "Driver", series_id: Optional[str]) -> str:
     tpl = s.template
     cost = buy_in(tpl)
     if d.savings < cost:
-        return f"Starting a team in the {s.name} takes about ${cost:,.0f}; you have ${d.savings:,.0f}."
+        return f"Starting a team in the {s.name} takes about {nominal_usd(world.year, cost)}; you have {nominal_usd(world.year, d.savings)}."
     d.savings -= cost
     rivals = sorted(t.equipment for t in world.teams_in(s.id)) or [40.0]
     name = f"{d.last_name} Motorsports"
@@ -151,7 +152,7 @@ def found(world: "World", d: "Driver", series_id: Optional[str]) -> str:
     for slot in range(t.seats):          # the market fills the seats unless the owner drives
         _push(world.market.queue, t, slot, tpl)
     d.log(world.year, f"founded {t.name} in the {s.name}")
-    world.post("player", f"You founded {t.name} to race in the {s.name} (${cost:,.0f})", driver_id=d.id,
+    world.post("player", f"You founded {t.name} to race in the {s.name} ({nominal_usd(world.year, cost)})", driver_id=d.id,
                series_id=s.id, importance=3)
     world.market.player_offers = None
     return f"{t.name} is open for business in the {s.name}. Drive for it yourself, or let the market find a driver."
@@ -174,9 +175,9 @@ def sell(world: "World", d: "Driver") -> str:
         from .career import _vacate
         _vacate(world, d)
     d.log(world.year, f"sold {t.name}")
-    world.post("player", f"You sold {t.name} for ${price:,.0f}", driver_id=d.id, importance=3)
+    world.post("player", f"You sold {t.name} for {nominal_usd(world.year, price)}", driver_id=d.id, importance=3)
     world.market.player_offers = None
-    return f"Sold {t.name} for ${price:,.0f}."
+    return f"Sold {t.name} for {nominal_usd(world.year, price)}."
 
 
 def drive_choice(world: "World", d: "Driver") -> Optional[dict]:
@@ -232,7 +233,7 @@ def settle(world: "World", t: "Team", tpl) -> Optional[str]:
         world.owned_team_id = None
         return "sold"
     if draw:
-        world.post("player", f"{t.name} lost money: you covered ${draw:,.0f} from your savings", driver_id=d.id,
+        world.post("player", f"{t.name} lost money: you covered {nominal_usd(world.year, draw)} from your savings", driver_id=d.id,
                    importance=2)
     return None
 

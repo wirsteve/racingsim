@@ -14,6 +14,7 @@ import math
 from collections import defaultdict
 from typing import TYPE_CHECKING
 
+from ..history.economy import nominal_usd
 from ..constants import SPONSOR_COLLAPSE_BASE, SPONSOR_COLLAPSE_NATIONAL
 from ..util import clamp
 from ..world.entities import RETIRED, SIDELINED, Driver, Sponsor, SponsorDeal
@@ -165,7 +166,7 @@ def pitch_for_player(world: "World", d: Driver) -> str:
             if amount < 250:
                 continue
             _sign(world, s, d, amount, rng.randint(1, 2))
-            wins.append(f"{s.name} (${amount:,.0f}/season)")
+            wins.append(f"{s.name} ({nominal_usd(world.year, amount)}/season)")
             national_signed = national_signed or s.scope == "national"
         if len(wins) >= 2:
             break

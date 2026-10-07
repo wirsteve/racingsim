@@ -202,7 +202,7 @@ async function watchPage(key, ev, year) {
     if (st.flag !== fc) { st.flag = fc; flag.className = "flag " + fc; flag.textContent = ft; }
     if (!st.drag) $("#w-scrub").value = t.toFixed(1);
     // leaderboard and ticker: only when the frame changes
-    const boardKey = `${bi}:${done}`;
+    const boardKey = `${bi}:${done}:${yellow}:${Math.floor(t)}`;
     if (boardKey === st.board) { if (done) showFinal(); return; }
     st.board = boardKey;
     const rows = B[2].filter((row) => row[1] >= 0);
@@ -216,7 +216,8 @@ async function watchPage(key, ev, year) {
       return `<div class="wrow${c.me ? " me" : ""}"><span>${k + 1}</span><span class="wnum" style="background:${color(c)};color:${ink(c)}">${c.num}</span><span class="wname">${esc(c.name)}${row[2] === 1 ? ' <span class="wpit">PIT</span>' : ""}</span><span class="wgap">${gtxt}</span></div>`;
     }).join("") + (out.length ? `<div class="wout">OUT: ${out.map((row) => `${esc(cars[row[0]].name)} (${row[2] === 2 ? "crash" : "mechanical"})`).join(", ")}</div>` : "");
     // ticker
-    const lines = log.filter((l) => l[0] <= (done ? 1e9 : t)).slice(-7).reverse();
+    // Under a fresh caution the ticker already says why (the crash is logged at the end of the step).
+    const lines = log.filter((l) => l[0] <= (done ? 1e9 : yellow ? Math.max(t, B[0]) : t)).slice(-7).reverse();
     $("#w-ticker").innerHTML = lines.map((l) => `<div><b>${l[0] ? "Lap " + l[0] : "Pre-race"}</b> ${esc(l[1])}</div>`).join("") || '<div class="muted">Drivers, start your engines.</div>';
     if (me >= 0) {
       const p = rows.findIndex((row) => row[0] === me);

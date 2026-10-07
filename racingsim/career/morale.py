@@ -17,6 +17,7 @@ from __future__ import annotations
 
 from typing import TYPE_CHECKING, Optional
 
+from ..history.economy import nominal_usd
 from ..util import clamp
 from ..world import skills as S
 
@@ -107,7 +108,7 @@ def payback(world: "World", attacker_id: int, target_id: int, tier: int, series_
     add_heat(t, attacker_id, 30 * S.trait(t, "temper") / 50)
     a.morale = round(clamp(morale(a) + 2, 1, 99), 1)     # it felt good
     t.morale = round(clamp(morale(t) - 4, 1, 99), 1)
-    pen = ([f"docked {pts} points"] if pts else []) + ([f"fined ${fine:,.0f}"] if fine else [])
+    pen = ([f"docked {pts} points"] if pts else []) + ([f"fined {nominal_usd(world.year, fine)}"] if fine else [])
     text = f"{a.name} wrecks {t.name} in retaliation at {track_name} ({series_name})"
     if pen:
         text += ": " + " and ".join(pen)
