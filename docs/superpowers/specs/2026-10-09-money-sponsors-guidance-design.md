@@ -57,7 +57,7 @@ lands (separate task) and are only changed if they turn out broken.
   only for weekends you race. A weekend you skip isn't funded and isn't spent.
 - **Your own money.** Savings stay yours. The 25% savings draw into the season's account
   goes away; you spend savings directly when the account is short (as `spend()` does today).
-- **Sponsors** pay per race weekend too (see 3), plus result bonuses.
+- **Sponsors** pay on their deal's terms (see 3), plus result bonuses.
 - **Purses** as today (payout sheets, tow money for DNQs).
 - **Capital purchases** (cars, engines, haulers, shop upgrades) are paid from what you have
   now: the account plus savings. Future family weekends can't be spent in advance, so a
@@ -102,7 +102,10 @@ lands (separate task) and are only changed if they turn out broken.
   - `mood`: 0-100.
   - Grassroots sizes come from the research (local decal sponsors in the hundreds to low
     thousands of dollars a season).
-- **Payments** land per race weekend as ledger lines. Bonuses are paid after the race.
+- **Payments** follow the research (`docs/research/grassroots_money.md`, EST):
+  - deals of $1,000 or less are paid up front when signed;
+  - bigger deals pay half up front and half at mid-season.
+  - Bonuses are paid after the race, as ledger lines.
 - **Mood** follows whether expectations are met (results, starts, exposure). Below 30 you
   get a warning ("Wheeler Auto Body isn't happy: they wanted top-10s"). Below 10 the sponsor
   stops paying and leaves mid-season.
@@ -146,6 +149,32 @@ savings) · covers ≈ N of M races."
   - **Race:** Home, Garage, Race Shop, Sponsors, My Series, Crown Jewels.
   - **World:** the existing world pages.
   - **Game:** Settings, Save / Load, How to play, New Career.
+
+## Numbers (from `docs/research/grassroots_money.md`, 2025 dollars)
+
+| Item | Game value | Confidence |
+|---|---|---|
+| Club kart race day, all-in (entry $60, pit pass, transponder, tires ≈ $95, fuel, local travel $65) | $240 | entry fees high; the total is EST |
+| Club membership, per family per year | $250 | high (range $135-500) |
+| Club race days per season | 10 (range 6-15) | high |
+| Club season running cost | ≈ $3,800 | EST |
+| First club season with a used kart and gear | ≈ $6,700 | EST |
+| Used LO206 kart package / new race-ready | $2,200 / $5,000 | low / EST |
+| LO206 engine | sealed: no rebuilds; head service $200 every ~2 seasons, short block $300 every ~3-4 | low |
+| Regional kart weekend, all-in | ≈ $1,300 | EST (forum $1,500) |
+| Kart prizes | trophies only; contingency of 1 tire set for a win in ~20% of club series | high / EST |
+| Weekly purses (mini stock, street stock, limited late model) | $300 / $400-700 / $1,000 to win | high (match the existing payout sheets) |
+| Short-track contingency | $75 a win per decal, 0-3 programs per class | medium |
+| Local kart sponsor | $250 a season, cash or product | EST |
+| Small car decal sponsor / street-stock hood / local late-model primary | $750 / $2,500 / $12,000 a season | EST / medium / low |
+| Sponsors per racer | kart 0-3; street stock 2-6; late model 5-12 | EST |
+| Sponsor share of budget | kart club 5%; street stock 20%; local late model 30% | EST |
+| Family payment | membership up front, everything else pay-as-you-go per race day | medium |
+
+Progression facts for the later gates check:
+- kart classes by age: Kid Kart 5-8, Cadet 7-12, Junior 12-15, Senior 15+;
+- local stock cars from 14 with a licence;
+- rookies start at the rear for their first 3 races.
 
 ## Data and compatibility
 
